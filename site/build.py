@@ -15,6 +15,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "_site"
 SITE_NAME = "AI競馬 全レース予想と成績"
+DOMAIN = "www.ai-keiba-log.com"
+BASE_URL = f"https://{DOMAIN}/"
 JST = timezone(timedelta(hours=9))
 MARKS = ["◎", "〇", "▲", "△", "☆"]
 
@@ -30,7 +32,7 @@ def load_json(p: Path):
         return None
 
 
-def page(title: str, body: str, depth: int = 0, desc: str = "") -> str:
+def page(title: str, body: str, depth: int = 0, desc: str = "", canon: str = "") -> str:
     up = "../" * depth
     return f"""<!doctype html>
 <html lang="ja"><head><meta charset="utf-8">
@@ -38,6 +40,7 @@ def page(title: str, body: str, depth: int = 0, desc: str = "") -> str:
 <title>{esc(title)} | {SITE_NAME}</title>
 <meta name="description" content="{esc(desc or 'AIが日本の競馬（JRA・地方）の全レースを毎日分析し、外れも含めた全予想の回収率を公開しています。')}">
 <link rel="stylesheet" href="{up}style.css">
+<link rel="canonical" href="{BASE_URL}{canon}">
 </head><body>
 <header class="top"><div class="wrap">
 <a class="logo" href="{up}index.html">{SITE_NAME}</a>
@@ -286,6 +289,11 @@ def build() -> None:
     (OUT / "index.html").write_text(page("本日の全レース予想", body), encoding="utf-8")
     (OUT / "results.html").write_text(results_page(led), encoding="utf-8")
     (OUT / "about.html").write_text(page("予想の方法", ABOUT), encoding="utf-8")
+    (OUT / "CNAME").write_text(DOMAIN + "\n", encoding="utf-8")
+    (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {BASE_URL}sitemap.xml\n", encoding="utf-8")
+    urls = sorted(str(p.relative_to(OUT)).replace("\\", "/") for p in OUT.rglob("*.html"))
+    sm = "".join(f"<url><loc>{BASE_URL}{'' if u == 'index.html' else u}</loc></url>" for u in urls)
+    (OUT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + sm + "</urlset>\n", encoding="utf-8")
     print(f"built {len(dates)} days into {OUT}")
 
 
