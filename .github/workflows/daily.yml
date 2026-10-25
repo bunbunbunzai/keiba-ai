@@ -1,0 +1,102 @@
+name: daily (毎日の自動取得)
+
+# 時刻はUTC。日本時間 = UTC+9
+on:
+  schedule:
+    - cron: "0 9 * * *"    # 18:00 JST 翌日分の出馬表＋近走（前日夜の分析用）
+    - cron: "30 1 * * *"   # 10:30 JST 当日の出馬表を取り直す（オッズ・馬体重・取消の反映、昼の分析用）
+    - cron: "30 12 * * *"  # 21:30 JST 当日の結果・払戻 → 回収率
+  workflow_dispatch:
+    inputs:
+      phase:
+        description: "eve / noon / night"
+        required: true
+      date:
+        description: "対象日 YYYYMMDD（空なら自動）"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-commit
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      phase: ${{ steps.p.outputs.phase }}
+      date: ${{ steps.p.outputs.date }}
+    steps:
+      - id: p
+        run: |
+          PHASE="${{ inputs.phase }}"
+          if [ -z "$PHASE" ]; then
+            case "${{ github.event.schedule }}" in
+              "0 9 * * *") PHASE=eve ;;
+              "30 1 * * *") PHASE=noon ;;
+              *) PHASE=night ;;
+            esac
+          fi
+          D="${{ inputs.date }}"
+          if [ -z "$D" ]; then
+            if [ "$PHASE" = eve ]; then D=$(TZ=Asia/Tokyo date -d tomorrow +%Y%m%d); else D=$(TZ=Asia/Tokyo date +%Y%m%d); fi
+          fi
+          echo "phase=$PHASE" >> "$GITHUB_OUTPUT"; echo "date=$D" >> "$GITHUB_OUTPUT"
+
+  fetch:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    strategy:
+      fail-fast: false
+      matrix:
+        source: [jra, rakuten]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: 取得
+        env:
+          PHASE: ${{ needs.plan.outputs.phase }}
+          D: ${{ needs.plan.outputs.date }}
+          SRC: ${{ matrix.source }}
+        run: |
+          cd scraper
+          case "$PHASE-$SRC" in
+            eve-jra)      python jra_cards.py --date "$D" ;;
+            noon-jra)     python jra_cards.py --date "$D" --past 0 ;;
+            eve-rakuten)  python rakuten.py --date "$D" --kinds card && python parse_rakuten.py --date "$D" ;;
+            noon-rakuten) python rakuten.py --date "$D" --kinds card --after-now && python parse_rakuten.py --date "$D" ;;
+            night-*)      python results.py --date "$D" --source "$SRC" ;;
+          esac
+        continue-on-error: true
+      - name: 保存
+        run: |
+          git config user.name "keiba-ai-bot"
+          git config user.email "keiba-ai-bot@users.noreply.github.com"
+          git add data
+          git commit -m "${{ needs.plan.outputs.phase }} ${{ matrix.source }} ${{ needs.plan.outputs.date }}" || exit 0
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
+
+  score:
+    needs: [plan, fetch]
+    if: needs.plan.outputs.phase == 'night'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: cd scraper && python score.py --date ${{ needs.plan.outputs.date }}
+      - name: 保存
+        run: |
+          git config user.name "keiba-ai-bot"
+          git config user.email "keiba-ai-bot@users.noreply.github.com"
+          git add -A data results_ledger.csv
+          git commit -m "score ${{ needs.plan.outputs.date }}" || exit 0
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done

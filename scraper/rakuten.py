@@ -48,13 +48,35 @@ def race_ids(sess: PoliteSession, target: str, venue_rid: str) -> list[str]:
     return sorted({m for m in RACEID_RE.findall(html) if m[:16] == venue_rid[:16] and not m.endswith("00")})
 
 
-def discover(target: str, kinds: list[str], limit_races: int | None = None) -> dict:
+def _started(target: str, rid: str) -> bool:
+    """前日に保存した出馬表の発走時刻を見て、発走10分前を過ぎていれば True。"""
+    import json
+    from datetime import datetime, timedelta, timezone
+
+    from common import DATA_DIR
+
+    f = DATA_DIR / "races" / target / f"{rid}.json"
+    if not f.exists():
+        return False
+    pt = json.loads(f.read_text(encoding="utf-8")).get("post_time") or ""
+    if not re.fullmatch(r"\d{1,2}:\d{2}", pt):
+        return False
+    jst = timezone(timedelta(hours=9))
+    now = datetime.now(jst)
+    h, m = map(int, pt.split(":"))
+    post = datetime.strptime(target, "%Y%m%d").replace(hour=h, minute=m, tzinfo=jst)
+    return now > post - timedelta(minutes=10)
+
+
+def discover(target: str, kinds: list[str], limit_races: int | None = None, after_now: bool = False) -> dict:
     sess = PoliteSession(min_interval=60.0)
     log = {"date": target, "venues": [], "pages": []}
     for v in venue_lists(sess, target):
         rids = race_ids(sess, target, v)
         log["venues"].append({"venue_rid": v, "races": rids})
         for rid in rids[:limit_races]:
+            if after_now and _started(target, rid):
+                continue
             for kind in kinds:
                 url = BASE + PAGES[kind].format(rid=rid)
                 try:
@@ -72,6 +94,7 @@ if __name__ == "__main__":
     ap.add_argument("--date", default=Date.today().strftime("%Y%m%d"))
     ap.add_argument("--kinds", default="card")
     ap.add_argument("--limit-races", type=int, default=None, help="各場の先頭Nレースだけ（試運転用）")
+    ap.add_argument("--after-now", action="store_true", help="まだ発走していないレースだけ取る（当日昼用）")
     a = ap.parse_args()
-    lg = discover(a.date, a.kinds.split(","), a.limit_races)
+    lg = discover(a.date, a.kinds.split(","), a.limit_races, a.after_now)
     print(f"rakuten {a.date}: venues {len(lg['venues'])}, pages {len(lg['pages'])}")

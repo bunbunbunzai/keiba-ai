@@ -218,6 +218,20 @@ def run(target: str, past: int = 5, max_horses: int = 10_000) -> int:
         html = open_action(sess, path, cname)
         save_raw("jra_allraces", target, re.sub(r"[^0-9A-Za-z]", "_", cname), html)
         for race in parse_all_races(html):
+            rid = f"jra_{target}_{race.get('venue', 'X')}_{race['race_no']:02d}"
+            prev_f = DATA_DIR / "races" / target / f"{rid}.json"
+            if past == 0:  # 当日昼：出馬表（オッズ・馬体重）だけ更新し、近走は前日分を引き継ぐ
+                prev = {}
+                if prev_f.exists():
+                    import json
+                    prev = {h["number"]: h for h in json.loads(prev_f.read_text(encoding="utf-8")).get("horses", [])}
+                for h in race["horses"]:
+                    old = prev.get(h["number"], {})
+                    h["profile"], h["past"] = old.get("profile"), old.get("past")
+                race.update(race_id=rid, source="jra")
+                save_json(f"races/{target}/{rid}.json", race)
+                written += 1
+                continue
             for h in race["horses"]:
                 if n_horse >= max_horses:
                     break
@@ -243,7 +257,6 @@ def run(target: str, past: int = 5, max_horses: int = 10_000) -> int:
                         except Exception as e:  # noqa: BLE001
                             r["result_error"] = str(e)
                     h["past"].append(r)
-            rid = f"jra_{target}_{race.get('venue', 'X')}_{race['race_no']:02d}"
             race.update(race_id=rid, source="jra")
             save_json(f"races/{target}/{rid}.json", race)
             written += 1
