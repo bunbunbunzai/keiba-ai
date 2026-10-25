@@ -112,7 +112,7 @@ def table_by_headers(soup, must: list[str]):
 
 def rows_as_dicts(t) -> list[dict]:
     head = t.find("thead")
-    cols = [text(th) for th in (head or t).find_all("tr")[0].find_all(["th", "td"])]
+    cols = [text(th).replace(" ", "") for th in (head or t).find_all("tr")[0].find_all(["th", "td"])]
     out = []
     for tr in (t.find("tbody") or t).find_all("tr"):
         tds = tr.find_all(["td", "th"])
@@ -180,13 +180,18 @@ def parse_result(html: str) -> dict:
             "popularity": num(d.get("単勝人気"), int),
         })
     pay = {}
-    for kind in ("単勝", "複勝", "枠連", "ワイド", "馬連", "馬単", "3連複", "3連単"):
-        el = s.find(lambda tag: tag.name in ("th", "dt", "li", "div") and text(tag) == kind)
-        if not el:
+    for dl in s.find_all("dl"):
+        dt = dl.find("dt")
+        kind = text(dt)
+        if kind not in ("単勝", "複勝", "枠連", "ワイド", "馬連", "馬単", "3連複", "3連単"):
             continue
-        box = el.find_parent(["tr", "li", "dl", "div"]) or el.parent
-        nums = re.findall(r"([\d\-]+)\s+([\d,]+)円", text(box))
-        pay[kind] = [{"combo": c, "yen": int(y.replace(",", ""))} for c, y in nums]
+        items = []
+        for line in dl.select("div.line"):
+            c, y = line.select_one("div.num"), line.select_one("div.yen")
+            if c and y and num(text(y), int):
+                items.append({"combo": text(c), "yen": num(text(y), int), "pop": num(text(line.select_one("div.pop")), int)})
+        if items:
+            pay[kind] = items
     return {"rows": rows, "payouts": pay}
 
 
