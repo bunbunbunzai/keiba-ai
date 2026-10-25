@@ -1,0 +1,146 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 2,
+   "name": "シアルナーレ",
+   "time": "2:01.6",
+   "margin": "",
+   "corners": "2-2-2",
+   "last3f": 35.1,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "number": 4,
+   "name": "ウイニングレイ",
+   "time": "2:01.7",
+   "margin": "クビ",
+   "corners": "3-3-3",
+   "last3f": 35.0,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "number": 7,
+   "name": "ヴェルバーニア",
+   "time": "2:01.7",
+   "margin": "クビ",
+   "corners": "4-4-3",
+   "last3f": 34.9,
+   "popularity": 1
+  },
+  {
+   "finish": "4",
+   "number": 3,
+   "name": "マテンロウアルカナ",
+   "time": "2:02.4",
+   "margin": "４",
+   "corners": "1-1-1",
+   "last3f": 35.9,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "number": 1,
+   "name": "アースグレイジング",
+   "time": "2:02.6",
+   "margin": "１ 1/4",
+   "corners": "5-5-6",
+   "last3f": 35.3,
+   "popularity": 5
+  },
+  {
+   "finish": "6",
+   "number": 5,
+   "name": "ブライトシーン",
+   "time": "2:02.9",
+   "margin": "２",
+   "corners": "7-7-6",
+   "last3f": 35.6,
+   "popularity": 6
+  },
+  {
+   "finish": "7",
+   "number": 6,
+   "name": "スキエンティア",
+   "time": "2:03.2",
+   "margin": "２",
+   "corners": "5-5-5",
+   "last3f": 36.1,
+   "popularity": 7
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "2",
+    "yen": 230,
+    "pop": 2
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "2",
+    "yen": 150,
+    "pop": 2
+   },
+   {
+    "combo": "4",
+    "yen": 210,
+    "pop": 3
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-4",
+    "yen": 160,
+    "pop": 3
+   },
+   {
+    "combo": "2-7",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "4-7",
+    "yen": 140,
+    "pop": 2
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-4",
+    "yen": 490,
+    "pop": 2
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "2-4",
+    "yen": 770,
+    "pop": 3
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-4-7",
+    "yen": 250,
+    "pop": 1
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "2-4-7",
+    "yen": 1500,
+    "pop": 6
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261025",
+ "venue_code": "05",
+ "race_no": 2,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202604090220261025/7A",
+ "title": "レース結果 JRA"
+}

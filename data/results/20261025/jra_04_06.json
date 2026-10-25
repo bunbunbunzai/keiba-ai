@@ -1,0 +1,198 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 3,
+   "name": "ハイライトニング",
+   "time": "1:51.6",
+   "margin": "",
+   "corners": "6-6-6-6",
+   "last3f": 36.3,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 6,
+   "name": "タルタロス",
+   "time": "1:52.4",
+   "margin": "５",
+   "corners": "8-8-8-7",
+   "last3f": 36.8,
+   "popularity": 6
+  },
+  {
+   "finish": "3",
+   "number": 10,
+   "name": "ロードフロリゼル",
+   "time": "1:52.7",
+   "margin": "２",
+   "corners": "4-3-2-2",
+   "last3f": 37.8,
+   "popularity": 5
+  },
+  {
+   "finish": "4",
+   "number": 4,
+   "name": "ヒヒーン",
+   "time": "1:52.9",
+   "margin": "１ 1/4",
+   "corners": "2-2-2-2",
+   "last3f": 38.0,
+   "popularity": 7
+  },
+  {
+   "finish": "5",
+   "number": 11,
+   "name": "ブーケドグレイス",
+   "time": "1:53.0",
+   "margin": "クビ",
+   "corners": "10-10-10-9",
+   "last3f": 37.2,
+   "popularity": 9
+  },
+  {
+   "finish": "6",
+   "number": 1,
+   "name": "トップデュオ",
+   "time": "1:53.0",
+   "margin": "アタマ",
+   "corners": "3-3-4-4",
+   "last3f": 37.9,
+   "popularity": 2
+  },
+  {
+   "finish": "7",
+   "number": 9,
+   "name": "ステイクオール",
+   "time": "1:53.1",
+   "margin": "３／４",
+   "corners": "4-5-4-4",
+   "last3f": 38.0,
+   "popularity": 3
+  },
+  {
+   "finish": "8",
+   "number": 8,
+   "name": "ベルウッドピース",
+   "time": "1:53.4",
+   "margin": "１ 3/4",
+   "corners": "9-8-8-9",
+   "last3f": 37.7,
+   "popularity": 4
+  },
+  {
+   "finish": "9",
+   "number": 2,
+   "name": "スクイーズアウト",
+   "time": "1:53.4",
+   "margin": "クビ",
+   "corners": "1-1-1-1",
+   "last3f": 38.6,
+   "popularity": 8
+  },
+  {
+   "finish": "10",
+   "number": 7,
+   "name": "ジロラータ",
+   "time": "1:53.7",
+   "margin": "２",
+   "corners": "10-10-10-11",
+   "last3f": 37.9,
+   "popularity": 10
+  },
+  {
+   "finish": "11",
+   "number": 5,
+   "name": "チュラビックタイム",
+   "time": "1:54.4",
+   "margin": "４",
+   "corners": "7-6-6-7",
+   "last3f": 39.0,
+   "popularity": 11
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "3",
+    "yen": 280,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "3",
+    "yen": 160,
+    "pop": 2
+   },
+   {
+    "combo": "6",
+    "yen": 260,
+    "pop": 6
+   },
+   {
+    "combo": "10",
+    "yen": 190,
+    "pop": 4
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-6",
+    "yen": 1230,
+    "pop": 6
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-6",
+    "yen": 480,
+    "pop": 5
+   },
+   {
+    "combo": "3-10",
+    "yen": 600,
+    "pop": 9
+   },
+   {
+    "combo": "6-10",
+    "yen": 1230,
+    "pop": 16
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-6",
+    "yen": 1520,
+    "pop": 6
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "3-6",
+    "yen": 1860,
+    "pop": 7
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-6-10",
+    "yen": 3960,
+    "pop": 12
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "3-6-10",
+    "yen": 13810,
+    "pop": 44
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261025",
+ "venue_code": "04",
+ "race_no": 6,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0104202604040620261025/C5",
+ "title": "レース結果 JRA"
+}

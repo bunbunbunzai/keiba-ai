@@ -1,0 +1,218 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 3,
+   "name": "ノヴァルクス",
+   "time": "1:51.1",
+   "margin": "",
+   "corners": "12-12-12",
+   "last3f": 33.9,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 8,
+   "name": "エバースカイ",
+   "time": "1:51.4",
+   "margin": "１ 1/2",
+   "corners": "5-4-5",
+   "last3f": 34.8,
+   "popularity": 7
+  },
+  {
+   "finish": "3",
+   "number": 5,
+   "name": "シーバップ",
+   "time": "1:51.5",
+   "margin": "１／２",
+   "corners": "6-8-9",
+   "last3f": 34.6,
+   "popularity": 4
+  },
+  {
+   "finish": "4",
+   "number": 11,
+   "name": "レナセール",
+   "time": "1:51.7",
+   "margin": "１ 1/4",
+   "corners": "7-6-5",
+   "last3f": 35.0,
+   "popularity": 2
+  },
+  {
+   "finish": "5",
+   "number": 4,
+   "name": "キタノクラウド",
+   "time": "1:51.7",
+   "margin": "アタマ",
+   "corners": "11-9-8",
+   "last3f": 34.9,
+   "popularity": 10
+  },
+  {
+   "finish": "6",
+   "number": 6,
+   "name": "ブレッシングロード",
+   "time": "1:51.7",
+   "margin": "クビ",
+   "corners": "2-1-1",
+   "last3f": 35.4,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "number": 1,
+   "name": "ロカルゼ",
+   "time": "1:51.9",
+   "margin": "１ 1/4",
+   "corners": "7-6-5",
+   "last3f": 35.3,
+   "popularity": 6
+  },
+  {
+   "finish": "8",
+   "number": 10,
+   "name": "ブロナバラッド",
+   "time": "1:52.0",
+   "margin": "１／２",
+   "corners": "3-2-4",
+   "last3f": 35.5,
+   "popularity": 8
+  },
+  {
+   "finish": "9",
+   "number": 7,
+   "name": "ヴィラン",
+   "time": "1:52.3",
+   "margin": "２",
+   "corners": "1-2-2",
+   "last3f": 36.0,
+   "popularity": 3
+  },
+  {
+   "finish": "10",
+   "number": 2,
+   "name": "テンダネス",
+   "time": "1:52.3",
+   "margin": "ハナ",
+   "corners": "4-4-2",
+   "last3f": 35.9,
+   "popularity": 12
+  },
+  {
+   "finish": "11",
+   "number": 9,
+   "name": "グラスリズム",
+   "time": "1:53.5",
+   "margin": "７",
+   "corners": "9-11-10",
+   "last3f": 36.5,
+   "popularity": 9
+  },
+  {
+   "finish": "12",
+   "number": 12,
+   "name": "テーオーフォアマン",
+   "time": "1:53.8",
+   "margin": "１ 3/4",
+   "corners": "12-13-13",
+   "last3f": 36.4,
+   "popularity": 11
+  },
+  {
+   "finish": "13",
+   "number": 13,
+   "name": "アンベリール",
+   "time": "1:54.1",
+   "margin": "１ 3/4",
+   "corners": "9-9-10",
+   "last3f": 37.1,
+   "popularity": 13
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "3",
+    "yen": 160,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "3",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "8",
+    "yen": 380,
+    "pop": 7
+   },
+   {
+    "combo": "5",
+    "yen": 240,
+    "pop": 4
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-6",
+    "yen": 1110,
+    "pop": 4
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-8",
+    "yen": 580,
+    "pop": 6
+   },
+   {
+    "combo": "3-5",
+    "yen": 400,
+    "pop": 3
+   },
+   {
+    "combo": "5-8",
+    "yen": 2260,
+    "pop": 24
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-8",
+    "yen": 1440,
+    "pop": 6
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "3-8",
+    "yen": 1680,
+    "pop": 7
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-5-8",
+    "yen": 3880,
+    "pop": 14
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "3-8-5",
+    "yen": 12040,
+    "pop": 41
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261025",
+ "venue_code": "05",
+ "race_no": 5,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202604090520261025/99",
+ "title": "レース結果 JRA"
+}

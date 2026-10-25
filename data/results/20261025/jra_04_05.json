@@ -1,0 +1,268 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 2,
+   "name": "ワイルドシャチョウ",
+   "time": "1:24.2",
+   "margin": "",
+   "corners": "1-1",
+   "last3f": 36.9,
+   "popularity": 4
+  },
+  {
+   "finish": "2",
+   "number": 13,
+   "name": "バックトゥザスター",
+   "time": "1:24.5",
+   "margin": "１ 1/2",
+   "corners": "3-3",
+   "last3f": 36.9,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "number": 3,
+   "name": "アルジャンレオ",
+   "time": "1:24.5",
+   "margin": "クビ",
+   "corners": "2-2",
+   "last3f": 37.1,
+   "popularity": 1
+  },
+  {
+   "finish": "4",
+   "number": 1,
+   "name": "ミスターキリシマ",
+   "time": "1:25.3",
+   "margin": "５",
+   "corners": "4-4",
+   "last3f": 37.0,
+   "popularity": 14
+  },
+  {
+   "finish": "5",
+   "number": 12,
+   "name": "タケル",
+   "time": "1:26.2",
+   "margin": "５",
+   "corners": "6-6",
+   "last3f": 37.2,
+   "popularity": 5
+  },
+  {
+   "finish": "6",
+   "number": 17,
+   "name": "ミネットドール",
+   "time": "1:26.4",
+   "margin": "３／４",
+   "corners": "11-10",
+   "last3f": 36.7,
+   "popularity": 3
+  },
+  {
+   "finish": "7",
+   "number": 8,
+   "name": "マリンスター",
+   "time": "1:26.4",
+   "margin": "クビ",
+   "corners": "11-12",
+   "last3f": 36.6,
+   "popularity": 13
+  },
+  {
+   "finish": "8",
+   "number": 10,
+   "name": "パロディ",
+   "time": "1:26.7",
+   "margin": "１ 1/2",
+   "corners": "9-8",
+   "last3f": 37.3,
+   "popularity": 12
+  },
+  {
+   "finish": "9",
+   "number": 16,
+   "name": "クラフティ",
+   "time": "1:26.9",
+   "margin": "１",
+   "corners": "4-4",
+   "last3f": 38.6,
+   "popularity": 7
+  },
+  {
+   "finish": "10",
+   "number": 4,
+   "name": "オーケープライム",
+   "time": "1:27.6",
+   "margin": "４",
+   "corners": "14-13",
+   "last3f": 37.7,
+   "popularity": 17
+  },
+  {
+   "finish": "11",
+   "number": 5,
+   "name": "カフジペピーノ",
+   "time": "1:27.6",
+   "margin": "クビ",
+   "corners": "15-15",
+   "last3f": 37.4,
+   "popularity": 9
+  },
+  {
+   "finish": "12",
+   "number": 7,
+   "name": "パーシビア",
+   "time": "1:27.9",
+   "margin": "１ 1/2",
+   "corners": "17-17",
+   "last3f": 36.1,
+   "popularity": 15
+  },
+  {
+   "finish": "13",
+   "number": 11,
+   "name": "エクセルスカイ",
+   "time": "1:28.1",
+   "margin": "１ 1/4",
+   "corners": "9-10",
+   "last3f": 38.7,
+   "popularity": 11
+  },
+  {
+   "finish": "14",
+   "number": 14,
+   "name": "ナバラ",
+   "time": "1:28.3",
+   "margin": "１ 1/2",
+   "corners": "7-7",
+   "last3f": 39.2,
+   "popularity": 16
+  },
+  {
+   "finish": "15",
+   "number": 15,
+   "name": "サークル",
+   "time": "1:28.9",
+   "margin": "３ 1/2",
+   "corners": "16-16",
+   "last3f": 37.5,
+   "popularity": 8
+  },
+  {
+   "finish": "16",
+   "number": 6,
+   "name": "シャトースタービル",
+   "time": "1:29.0",
+   "margin": "３／４",
+   "corners": "17-17",
+   "last3f": 37.2,
+   "popularity": 18
+  },
+  {
+   "finish": "17",
+   "number": 9,
+   "name": "キーチラナキラ",
+   "time": "1:29.3",
+   "margin": "２",
+   "corners": "11-13",
+   "last3f": 39.5,
+   "popularity": 6
+  },
+  {
+   "finish": "18",
+   "number": 18,
+   "name": "ユメイチズ",
+   "time": "1:29.8",
+   "margin": "３",
+   "corners": "7-8",
+   "last3f": 40.7,
+   "popularity": 10
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "2",
+    "yen": 730,
+    "pop": 4
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "2",
+    "yen": 210,
+    "pop": 4
+   },
+   {
+    "combo": "13",
+    "yen": 150,
+    "pop": 1
+   },
+   {
+    "combo": "3",
+    "yen": 150,
+    "pop": 2
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-7",
+    "yen": 1720,
+    "pop": 9
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-13",
+    "yen": 660,
+    "pop": 4
+   },
+   {
+    "combo": "2-3",
+    "yen": 530,
+    "pop": 2
+   },
+   {
+    "combo": "3-13",
+    "yen": 380,
+    "pop": 1
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-13",
+    "yen": 1750,
+    "pop": 5
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "2-13",
+    "yen": 3680,
+    "pop": 12
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-3-13",
+    "yen": 2330,
+    "pop": 2
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "2-13-3",
+    "yen": 15370,
+    "pop": 16
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261025",
+ "venue_code": "04",
+ "race_no": 5,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0104202604040520261025/10",
+ "title": "レース結果 JRA"
+}

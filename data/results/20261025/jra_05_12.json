@@ -1,0 +1,218 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 11,
+   "name": "タイセイジェイド",
+   "time": "1:37.6",
+   "margin": "",
+   "corners": "3-2",
+   "last3f": 37.0,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "number": 8,
+   "name": "ブレスドナイル",
+   "time": "1:37.6",
+   "margin": "アタマ",
+   "corners": "7-6",
+   "last3f": 36.7,
+   "popularity": 6
+  },
+  {
+   "finish": "3",
+   "number": 2,
+   "name": "ビンバラ",
+   "time": "1:37.7",
+   "margin": "１／２",
+   "corners": "4-4",
+   "last3f": 36.9,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "number": 12,
+   "name": "プレースメント",
+   "time": "1:37.9",
+   "margin": "１",
+   "corners": "8-8",
+   "last3f": 36.7,
+   "popularity": 1
+  },
+  {
+   "finish": "5",
+   "number": 6,
+   "name": "サムワンライクユー",
+   "time": "1:38.3",
+   "margin": "２ 1/2",
+   "corners": "11-10",
+   "last3f": 36.8,
+   "popularity": 13
+  },
+  {
+   "finish": "6",
+   "number": 5,
+   "name": "ライカ",
+   "time": "1:38.5",
+   "margin": "１ 1/2",
+   "corners": "9-8",
+   "last3f": 37.3,
+   "popularity": 10
+  },
+  {
+   "finish": "7",
+   "number": 13,
+   "name": "ガーデンカメリア",
+   "time": "1:38.5",
+   "margin": "アタマ",
+   "corners": "5-7",
+   "last3f": 37.5,
+   "popularity": 8
+  },
+  {
+   "finish": "8",
+   "number": 7,
+   "name": "カンレイスキー",
+   "time": "1:38.7",
+   "margin": "１ 1/2",
+   "corners": "2-2",
+   "last3f": 38.2,
+   "popularity": 9
+  },
+  {
+   "finish": "9",
+   "number": 3,
+   "name": "レッドエウロス",
+   "time": "1:39.2",
+   "margin": "３",
+   "corners": "5-4",
+   "last3f": 38.5,
+   "popularity": 4
+  },
+  {
+   "finish": "9",
+   "number": 10,
+   "name": "アルデキングダム",
+   "time": "1:39.2",
+   "margin": "同着",
+   "corners": "13-13",
+   "last3f": 36.3,
+   "popularity": 7
+  },
+  {
+   "finish": "11",
+   "number": 9,
+   "name": "ハギンス",
+   "time": "1:39.7",
+   "margin": "３",
+   "corners": "9-10",
+   "last3f": 38.2,
+   "popularity": 12
+  },
+  {
+   "finish": "12",
+   "number": 1,
+   "name": "マサッチェハマー",
+   "time": "1:40.6",
+   "margin": "５",
+   "corners": "1-1",
+   "last3f": 40.3,
+   "popularity": 5
+  },
+  {
+   "finish": "13",
+   "number": 4,
+   "name": "サルファー",
+   "time": "1:40.7",
+   "margin": "１／２",
+   "corners": "12-12",
+   "last3f": 39.0,
+   "popularity": 11
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "11",
+    "yen": 340,
+    "pop": 2
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "11",
+    "yen": 170,
+    "pop": 3
+   },
+   {
+    "combo": "8",
+    "yen": 240,
+    "pop": 4
+   },
+   {
+    "combo": "2",
+    "yen": 160,
+    "pop": 2
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "6-7",
+    "yen": 1380,
+    "pop": 5
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "8-11",
+    "yen": 520,
+    "pop": 3
+   },
+   {
+    "combo": "2-11",
+    "yen": 620,
+    "pop": 7
+   },
+   {
+    "combo": "2-8",
+    "yen": 750,
+    "pop": 11
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "8-11",
+    "yen": 1330,
+    "pop": 3
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "11-8",
+    "yen": 1960,
+    "pop": 5
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-8-11",
+    "yen": 3090,
+    "pop": 8
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "11-8-2",
+    "yen": 15140,
+    "pop": 41
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261025",
+ "venue_code": "05",
+ "race_no": 12,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202604091220261025/CC",
+ "title": "レース結果 JRA"
+}

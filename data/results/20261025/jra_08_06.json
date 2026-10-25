@@ -1,0 +1,208 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 12,
+   "name": "タイセイドラード",
+   "time": "1:49.1",
+   "margin": "",
+   "corners": "2-2-2-2",
+   "last3f": 35.9,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "number": 6,
+   "name": "タマモランプ",
+   "time": "1:49.2",
+   "margin": "クビ",
+   "corners": "1-1-1-1",
+   "last3f": 36.1,
+   "popularity": 6
+  },
+  {
+   "finish": "3",
+   "number": 11,
+   "name": "ヤエギリ",
+   "time": "1:49.3",
+   "margin": "３／４",
+   "corners": "6-6-6-4",
+   "last3f": 35.6,
+   "popularity": 1
+  },
+  {
+   "finish": "4",
+   "number": 4,
+   "name": "コルヴァス",
+   "time": "1:50.0",
+   "margin": "４",
+   "corners": "7-7-7-4",
+   "last3f": 36.3,
+   "popularity": 7
+  },
+  {
+   "finish": "5",
+   "number": 1,
+   "name": "ダイメイクマモト",
+   "time": "1:50.7",
+   "margin": "４",
+   "corners": "3-3-3-3",
+   "last3f": 37.3,
+   "popularity": 4
+  },
+  {
+   "finish": "6",
+   "number": 2,
+   "name": "ペイシャプル",
+   "time": "1:50.8",
+   "margin": "１",
+   "corners": "3-3-3-4",
+   "last3f": 37.3,
+   "popularity": 8
+  },
+  {
+   "finish": "7",
+   "number": 5,
+   "name": "エイユーファイヤー",
+   "time": "1:51.0",
+   "margin": "３／４",
+   "corners": "8-8-8-8",
+   "last3f": 37.1,
+   "popularity": 3
+  },
+  {
+   "finish": "8",
+   "number": 9,
+   "name": "ナウオアネヴァー",
+   "time": "1:51.2",
+   "margin": "１",
+   "corners": "11-11-11-10",
+   "last3f": 37.1,
+   "popularity": 10
+  },
+  {
+   "finish": "9",
+   "number": 10,
+   "name": "インディゴ",
+   "time": "1:51.8",
+   "margin": "４",
+   "corners": "8-8-9-10",
+   "last3f": 37.9,
+   "popularity": 5
+  },
+  {
+   "finish": "10",
+   "number": 3,
+   "name": "アメリカンランナー",
+   "time": "1:52.3",
+   "margin": "３",
+   "corners": "8-8-9-8",
+   "last3f": 38.4,
+   "popularity": 9
+  },
+  {
+   "finish": "11",
+   "number": 7,
+   "name": "メイショウアイナ",
+   "time": "1:52.4",
+   "margin": "クビ",
+   "corners": "11-11-11-10",
+   "last3f": 38.3,
+   "popularity": 12
+  },
+  {
+   "finish": "12",
+   "number": 8,
+   "name": "カレンパンピナップ",
+   "time": "1:53.0",
+   "margin": "３ 1/2",
+   "corners": "3-3-3-4",
+   "last3f": 39.6,
+   "popularity": 11
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "12",
+    "yen": 390,
+    "pop": 2
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "12",
+    "yen": 160,
+    "pop": 3
+   },
+   {
+    "combo": "6",
+    "yen": 260,
+    "pop": 5
+   },
+   {
+    "combo": "11",
+    "yen": 120,
+    "pop": 1
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-8",
+    "yen": 310,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "6-12",
+    "yen": 920,
+    "pop": 13
+   },
+   {
+    "combo": "11-12",
+    "yen": 290,
+    "pop": 2
+   },
+   {
+    "combo": "6-11",
+    "yen": 540,
+    "pop": 6
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "6-12",
+    "yen": 3340,
+    "pop": 14
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "12-6",
+    "yen": 5610,
+    "pop": 23
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "6-11-12",
+    "yen": 2450,
+    "pop": 10
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "12-6-11",
+    "yen": 18160,
+    "pop": 63
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261025",
+ "venue_code": "08",
+ "race_no": 6,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202604090620261025/2C",
+ "title": "レース結果 JRA"
+}

@@ -1,0 +1,208 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 10,
+   "name": "ポストトゥルース",
+   "time": "1:35.0",
+   "margin": "",
+   "corners": "7-7",
+   "last3f": 34.1,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "number": 1,
+   "name": "イグナイトフィール",
+   "time": "1:35.2",
+   "margin": "１ 1/2",
+   "corners": "4-5",
+   "last3f": 34.5,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "number": 11,
+   "name": "アイレバルバドス",
+   "time": "1:35.4",
+   "margin": "１",
+   "corners": "8-7",
+   "last3f": 34.4,
+   "popularity": 7
+  },
+  {
+   "finish": "4",
+   "number": 6,
+   "name": "セイウントレジャ",
+   "time": "1:35.7",
+   "margin": "２",
+   "corners": "10-9",
+   "last3f": 34.5,
+   "popularity": 6
+  },
+  {
+   "finish": "5",
+   "number": 9,
+   "name": "ヒシホライゾン",
+   "time": "1:35.7",
+   "margin": "ハナ",
+   "corners": "4-5",
+   "last3f": 35.1,
+   "popularity": 1
+  },
+  {
+   "finish": "6",
+   "number": 4,
+   "name": "エリステソーロ",
+   "time": "1:36.0",
+   "margin": "１ 3/4",
+   "corners": "2-2",
+   "last3f": 35.6,
+   "popularity": 4
+  },
+  {
+   "finish": "7",
+   "number": 7,
+   "name": "フライングビー",
+   "time": "1:36.2",
+   "margin": "１ 1/4",
+   "corners": "8-9",
+   "last3f": 35.1,
+   "popularity": 11
+  },
+  {
+   "finish": "8",
+   "number": 2,
+   "name": "レンミッキ",
+   "time": "1:36.3",
+   "margin": "クビ",
+   "corners": "2-2",
+   "last3f": 35.9,
+   "popularity": 5
+  },
+  {
+   "finish": "9",
+   "number": 3,
+   "name": "イキデイナセ",
+   "time": "1:36.8",
+   "margin": "３",
+   "corners": "1-1",
+   "last3f": 38.2,
+   "popularity": 9
+  },
+  {
+   "finish": "10",
+   "number": 5,
+   "name": "ツェルプスト",
+   "time": "1:37.1",
+   "margin": "２",
+   "corners": "6-4",
+   "last3f": 36.6,
+   "popularity": 8
+  },
+  {
+   "finish": "11",
+   "number": 12,
+   "name": "テングカゼ",
+   "time": "1:37.6",
+   "margin": "３",
+   "corners": "12-12",
+   "last3f": 35.6,
+   "popularity": 10
+  },
+  {
+   "finish": "12",
+   "number": 8,
+   "name": "ワンダリングスター",
+   "time": "1:37.7",
+   "margin": "１",
+   "corners": "10-11",
+   "last3f": 36.2,
+   "popularity": 12
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "10",
+    "yen": 270,
+    "pop": 2
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "10",
+    "yen": 150,
+    "pop": 2
+   },
+   {
+    "combo": "1",
+    "yen": 210,
+    "pop": 3
+   },
+   {
+    "combo": "11",
+    "yen": 540,
+    "pop": 7
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-7",
+    "yen": 380,
+    "pop": 2
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-10",
+    "yen": 350,
+    "pop": 3
+   },
+   {
+    "combo": "10-11",
+    "yen": 1050,
+    "pop": 13
+   },
+   {
+    "combo": "1-11",
+    "yen": 1370,
+    "pop": 15
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-10",
+    "yen": 970,
+    "pop": 3
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "10-1",
+    "yen": 1530,
+    "pop": 4
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-10-11",
+    "yen": 6250,
+    "pop": 14
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "10-1-11",
+    "yen": 17420,
+    "pop": 47
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261025",
+ "venue_code": "05",
+ "race_no": 3,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202604090320261025/2F",
+ "title": "レース結果 JRA"
+}

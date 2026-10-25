@@ -1,0 +1,161 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 8,
+   "name": "ダノンカンタービレ",
+   "time": "1:52.0",
+   "margin": "",
+   "corners": "3-3",
+   "last3f": 34.0,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 1,
+   "name": "ノイエルング",
+   "time": "1:52.2",
+   "margin": "１ 1/4",
+   "corners": "3-4",
+   "last3f": 34.1,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "number": 7,
+   "name": "ゴールデンプロミス",
+   "time": "1:52.2",
+   "margin": "クビ",
+   "corners": "5-4",
+   "last3f": 34.1,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "number": 2,
+   "name": "テールルージュ",
+   "time": "1:52.4",
+   "margin": "１ 1/4",
+   "corners": "7-7",
+   "last3f": 34.1,
+   "popularity": 6
+  },
+  {
+   "finish": "5",
+   "number": 4,
+   "name": "セレーネサンライズ",
+   "time": "1:52.4",
+   "margin": "ハナ",
+   "corners": "2-2",
+   "last3f": 34.5,
+   "popularity": 5
+  },
+  {
+   "finish": "6",
+   "number": 3,
+   "name": "ホオマナ",
+   "time": "1:52.9",
+   "margin": "３",
+   "corners": "1-1",
+   "last3f": 35.1,
+   "popularity": 8
+  },
+  {
+   "finish": "7",
+   "number": 6,
+   "name": "サイモングレイス",
+   "time": "1:53.6",
+   "margin": "４",
+   "corners": "5-6",
+   "last3f": 35.4,
+   "popularity": 4
+  },
+  {
+   "finish": "8",
+   "number": 5,
+   "name": "ウインリヒト",
+   "time": "1:53.6",
+   "margin": "クビ",
+   "corners": "7-7",
+   "last3f": 35.2,
+   "popularity": 7
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "8",
+    "yen": 180,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "8",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "1",
+    "yen": 110,
+    "pop": 2
+   },
+   {
+    "combo": "7",
+    "yen": 110,
+    "pop": 3
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-8",
+    "yen": 120,
+    "pop": 1
+   },
+   {
+    "combo": "7-8",
+    "yen": 140,
+    "pop": 2
+   },
+   {
+    "combo": "1-7",
+    "yen": 160,
+    "pop": 3
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-8",
+    "yen": 190,
+    "pop": 1
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "8-1",
+    "yen": 370,
+    "pop": 1
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-7-8",
+    "yen": 170,
+    "pop": 1
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "8-1-7",
+    "yen": 640,
+    "pop": 1
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261025",
+ "venue_code": "08",
+ "race_no": 5,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202604090520261025/77",
+ "title": "レース結果 JRA"
+}

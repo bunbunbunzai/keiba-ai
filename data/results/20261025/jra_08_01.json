@@ -1,0 +1,161 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 1,
+   "name": "ナオミガサイキョウ",
+   "time": "1:52.8",
+   "margin": "",
+   "corners": "4-4-3-2",
+   "last3f": 38.4,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 5,
+   "name": "アップルペアー",
+   "time": "1:54.2",
+   "margin": "８",
+   "corners": "8-8-8-8",
+   "last3f": 38.2,
+   "popularity": 7
+  },
+  {
+   "finish": "3",
+   "number": 4,
+   "name": "ミール",
+   "time": "1:54.5",
+   "margin": "１ 1/2",
+   "corners": "3-3-4-4",
+   "last3f": 39.9,
+   "popularity": 5
+  },
+  {
+   "finish": "4",
+   "number": 2,
+   "name": "キミチャン",
+   "time": "1:54.7",
+   "margin": "１ 1/2",
+   "corners": "6-6-5-5",
+   "last3f": 39.7,
+   "popularity": 6
+  },
+  {
+   "finish": "5",
+   "number": 3,
+   "name": "マリナーヴァレイ",
+   "time": "1:54.7",
+   "margin": "ハナ",
+   "corners": "2-2-2-1",
+   "last3f": 40.5,
+   "popularity": 2
+  },
+  {
+   "finish": "6",
+   "number": 6,
+   "name": "ウインブリーズ",
+   "time": "1:55.4",
+   "margin": "４",
+   "corners": "4-5-5-5",
+   "last3f": 40.4,
+   "popularity": 3
+  },
+  {
+   "finish": "7",
+   "number": 8,
+   "name": "マリアーナ",
+   "time": "1:55.6",
+   "margin": "１ 1/2",
+   "corners": "1-1-1-2",
+   "last3f": 41.4,
+   "popularity": 4
+  },
+  {
+   "finish": "8",
+   "number": 7,
+   "name": "オージーブラック",
+   "time": "1:55.7",
+   "margin": "クビ",
+   "corners": "6-6-7-7",
+   "last3f": 40.1,
+   "popularity": 8
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "1",
+    "yen": 140,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "1",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "5",
+    "yen": 580,
+    "pop": 7
+   },
+   {
+    "combo": "4",
+    "yen": 300,
+    "pop": 5
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-5",
+    "yen": 720,
+    "pop": 8
+   },
+   {
+    "combo": "1-4",
+    "yen": 520,
+    "pop": 5
+   },
+   {
+    "combo": "4-5",
+    "yen": 3590,
+    "pop": 21
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-5",
+    "yen": 2100,
+    "pop": 7
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "1-5",
+    "yen": 2350,
+    "pop": 8
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-4-5",
+    "yen": 8520,
+    "pop": 18
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "1-5-4",
+    "yen": 27870,
+    "pop": 65
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261025",
+ "venue_code": "08",
+ "race_no": 1,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202604090120261025/A3",
+ "title": "レース結果 JRA"
+}

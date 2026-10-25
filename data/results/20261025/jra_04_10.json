@@ -1,0 +1,208 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 8,
+   "name": "ハートメテオ",
+   "time": "2:03.6",
+   "margin": "",
+   "corners": "8-8",
+   "last3f": 35.8,
+   "popularity": 6
+  },
+  {
+   "finish": "2",
+   "number": 4,
+   "name": "ズイウンゴサイ",
+   "time": "2:03.6",
+   "margin": "クビ",
+   "corners": "10-10",
+   "last3f": 35.7,
+   "popularity": 4
+  },
+  {
+   "finish": "3",
+   "number": 10,
+   "name": "ロゼル",
+   "time": "2:03.8",
+   "margin": "１",
+   "corners": "2-2",
+   "last3f": 36.6,
+   "popularity": 12
+  },
+  {
+   "finish": "4",
+   "number": 1,
+   "name": "マイネルアズーロ",
+   "time": "2:04.0",
+   "margin": "３／４",
+   "corners": "6-7",
+   "last3f": 36.4,
+   "popularity": 2
+  },
+  {
+   "finish": "5",
+   "number": 9,
+   "name": "マイネルマスター",
+   "time": "2:04.0",
+   "margin": "クビ",
+   "corners": "4-3",
+   "last3f": 36.7,
+   "popularity": 7
+  },
+  {
+   "finish": "6",
+   "number": 7,
+   "name": "ベネスピラ",
+   "time": "2:04.2",
+   "margin": "１ 1/4",
+   "corners": "3-4",
+   "last3f": 36.8,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "number": 3,
+   "name": "フルレゾン",
+   "time": "2:04.2",
+   "margin": "アタマ",
+   "corners": "10-10",
+   "last3f": 36.3,
+   "popularity": 9
+  },
+  {
+   "finish": "8",
+   "number": 12,
+   "name": "コンフォルツァ",
+   "time": "2:04.8",
+   "margin": "３ 1/2",
+   "corners": "6-6",
+   "last3f": 37.3,
+   "popularity": 1
+  },
+  {
+   "finish": "9",
+   "number": 11,
+   "name": "ジェットブレード",
+   "time": "2:04.9",
+   "margin": "１／２",
+   "corners": "8-8",
+   "last3f": 37.1,
+   "popularity": 10
+  },
+  {
+   "finish": "10",
+   "number": 6,
+   "name": "ジャンビ",
+   "time": "2:05.1",
+   "margin": "３／４",
+   "corners": "12-12",
+   "last3f": 37.0,
+   "popularity": 8
+  },
+  {
+   "finish": "11",
+   "number": 5,
+   "name": "フォルテフィオーレ",
+   "time": "2:05.3",
+   "margin": "１ 1/2",
+   "corners": "4-4",
+   "last3f": 37.9,
+   "popularity": 11
+  },
+  {
+   "finish": "12",
+   "number": 2,
+   "name": "シルバーリム",
+   "time": "2:05.5",
+   "margin": "３／４",
+   "corners": "1-1",
+   "last3f": 38.4,
+   "popularity": 3
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "8",
+    "yen": 910,
+    "pop": 6
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "8",
+    "yen": 330,
+    "pop": 7
+   },
+   {
+    "combo": "4",
+    "yen": 200,
+    "pop": 2
+   },
+   {
+    "combo": "10",
+    "yen": 1980,
+    "pop": 12
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-6",
+    "yen": 2660,
+    "pop": 13
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-8",
+    "yen": 2040,
+    "pop": 21
+   },
+   {
+    "combo": "8-10",
+    "yen": 12680,
+    "pop": 59
+   },
+   {
+    "combo": "4-10",
+    "yen": 8160,
+    "pop": 51
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-8",
+    "yen": 6110,
+    "pop": 21
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "8-4",
+    "yen": 12050,
+    "pop": 44
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-8-10",
+    "yen": 166440,
+    "pop": 182
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "8-4-10",
+    "yen": 1093940,
+    "pop": 1043
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261025",
+ "venue_code": "04",
+ "race_no": 10,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0104202604041020261025/D9",
+ "title": "レース結果 JRA"
+}

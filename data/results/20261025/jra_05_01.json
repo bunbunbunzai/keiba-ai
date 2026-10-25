@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 16,
+   "name": "テールエメール",
+   "time": "1:39.2",
+   "margin": "",
+   "corners": "6-7",
+   "last3f": 37.4,
+   "popularity": 6
+  },
+  {
+   "finish": "2",
+   "number": 13,
+   "name": "メジャーシンガー",
+   "time": "1:39.7",
+   "margin": "３",
+   "corners": "3-2",
+   "last3f": 38.4,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "number": 11,
+   "name": "ユイノゲリラゴウウ",
+   "time": "1:40.2",
+   "margin": "３",
+   "corners": "10-8",
+   "last3f": 38.1,
+   "popularity": 8
+  },
+  {
+   "finish": "4",
+   "number": 4,
+   "name": "コペルニクス",
+   "time": "1:40.4",
+   "margin": "１ 1/2",
+   "corners": "5-5",
+   "last3f": 38.8,
+   "popularity": 10
+  },
+  {
+   "finish": "5",
+   "number": 12,
+   "name": "ロータスピーク",
+   "time": "1:40.6",
+   "margin": "１",
+   "corners": "6-2",
+   "last3f": 39.3,
+   "popularity": 3
+  },
+  {
+   "finish": "6",
+   "number": 9,
+   "name": "ヴァルガルデーナ",
+   "time": "1:40.7",
+   "margin": "クビ",
+   "corners": "12-11",
+   "last3f": 38.3,
+   "popularity": 13
+  },
+  {
+   "finish": "7",
+   "number": 7,
+   "name": "オペレッタテソーロ",
+   "time": "1:40.8",
+   "margin": "１／２",
+   "corners": "2-2",
+   "last3f": 39.5,
+   "popularity": 9
+  },
+  {
+   "finish": "8",
+   "number": 8,
+   "name": "オーディンスピア",
+   "time": "1:41.0",
+   "margin": "１ 1/2",
+   "corners": "10-8",
+   "last3f": 39.0,
+   "popularity": 4
+  },
+  {
+   "finish": "9",
+   "number": 2,
+   "name": "エコロゴッド",
+   "time": "1:41.8",
+   "margin": "５",
+   "corners": "3-5",
+   "last3f": 40.2,
+   "popularity": 2
+  },
+  {
+   "finish": "10",
+   "number": 15,
+   "name": "ヴェットビルズ",
+   "time": "1:41.9",
+   "margin": "クビ",
+   "corners": "16-16",
+   "last3f": 38.7,
+   "popularity": 16
+  },
+  {
+   "finish": "11",
+   "number": 1,
+   "name": "トラストフィスティ",
+   "time": "1:42.2",
+   "margin": "２",
+   "corners": "13-15",
+   "last3f": 39.2,
+   "popularity": 11
+  },
+  {
+   "finish": "12",
+   "number": 10,
+   "name": "サクシードシチー",
+   "time": "1:42.4",
+   "margin": "１",
+   "corners": "9-8",
+   "last3f": 40.3,
+   "popularity": 5
+  },
+  {
+   "finish": "13",
+   "number": 6,
+   "name": "テルケンレンジシ",
+   "time": "1:43.0",
+   "margin": "３ 1/2",
+   "corners": "13-12",
+   "last3f": 40.4,
+   "popularity": 15
+  },
+  {
+   "finish": "14",
+   "number": 3,
+   "name": "エルシオン",
+   "time": "1:43.4",
+   "margin": "２ 1/2",
+   "corners": "13-13",
+   "last3f": 40.6,
+   "popularity": 12
+  },
+  {
+   "finish": "15",
+   "number": 5,
+   "name": "ローザベッラ",
+   "time": "1:43.6",
+   "margin": "１ 1/4",
+   "corners": "1-1",
+   "last3f": 42.4,
+   "popularity": 7
+  },
+  {
+   "finish": "16",
+   "number": 14,
+   "name": "マイサマーガール",
+   "time": "1:44.7",
+   "margin": "７",
+   "corners": "6-13",
+   "last3f": 42.0,
+   "popularity": 14
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "16",
+    "yen": 990,
+    "pop": 6
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "16",
+    "yen": 320,
+    "pop": 6
+   },
+   {
+    "combo": "13",
+    "yen": 180,
+    "pop": 2
+   },
+   {
+    "combo": "11",
+    "yen": 470,
+    "pop": 8
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "7-8",
+    "yen": 2080,
+    "pop": 11
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "13-16",
+    "yen": 520,
+    "pop": 5
+   },
+   {
+    "combo": "11-16",
+    "yen": 1750,
+    "pop": 24
+   },
+   {
+    "combo": "11-13",
+    "yen": 1250,
+    "pop": 19
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "13-16",
+    "yen": 1460,
+    "pop": 6
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "16-13",
+    "yen": 3590,
+    "pop": 14
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "11-13-16",
+    "yen": 7710,
+    "pop": 32
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "16-13-11",
+    "yen": 40860,
+    "pop": 163
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261025",
+ "venue_code": "05",
+ "race_no": 1,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202604090120261025/C5",
+ "title": "レース結果 JRA"
+}

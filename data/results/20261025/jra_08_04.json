@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 11,
+   "name": "パッションシーザー",
+   "time": "1:25.8",
+   "margin": "",
+   "corners": "2-2",
+   "last3f": 36.9,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 10,
+   "name": "メイショウアンブル",
+   "time": "1:25.9",
+   "margin": "３／４",
+   "corners": "5-3",
+   "last3f": 36.6,
+   "popularity": 9
+  },
+  {
+   "finish": "3",
+   "number": 3,
+   "name": "リワナグ",
+   "time": "1:26.2",
+   "margin": "１ 3/4",
+   "corners": "1-1",
+   "last3f": 37.5,
+   "popularity": 5
+  },
+  {
+   "finish": "4",
+   "number": 5,
+   "name": "ヤソタケル",
+   "time": "1:26.6",
+   "margin": "２ 1/2",
+   "corners": "10-9",
+   "last3f": 36.8,
+   "popularity": 14
+  },
+  {
+   "finish": "5",
+   "number": 14,
+   "name": "オウゴンノヤ",
+   "time": "1:26.6",
+   "margin": "ハナ",
+   "corners": "9-9",
+   "last3f": 36.9,
+   "popularity": 6
+  },
+  {
+   "finish": "6",
+   "number": 6,
+   "name": "アスレイ",
+   "time": "1:26.8",
+   "margin": "１ 1/4",
+   "corners": "7-7",
+   "last3f": 37.4,
+   "popularity": 10
+  },
+  {
+   "finish": "7",
+   "number": 16,
+   "name": "テムルヴァン",
+   "time": "1:27.1",
+   "margin": "２",
+   "corners": "11-11",
+   "last3f": 37.0,
+   "popularity": 13
+  },
+  {
+   "finish": "8",
+   "number": 15,
+   "name": "ザラフェット",
+   "time": "1:27.3",
+   "margin": "１ 1/4",
+   "corners": "3-3",
+   "last3f": 38.2,
+   "popularity": 3
+  },
+  {
+   "finish": "9",
+   "number": 4,
+   "name": "マーゴットヴィム",
+   "time": "1:27.3",
+   "margin": "ハナ",
+   "corners": "14-13",
+   "last3f": 36.9,
+   "popularity": 2
+  },
+  {
+   "finish": "10",
+   "number": 1,
+   "name": "ブルーエノワール",
+   "time": "1:27.4",
+   "margin": "クビ",
+   "corners": "15-15",
+   "last3f": 36.2,
+   "popularity": 8
+  },
+  {
+   "finish": "11",
+   "number": 13,
+   "name": "フィアローゼン",
+   "time": "1:27.4",
+   "margin": "ハナ",
+   "corners": "5-3",
+   "last3f": 38.2,
+   "popularity": 12
+  },
+  {
+   "finish": "12",
+   "number": 9,
+   "name": "クーアイエルフ",
+   "time": "1:27.8",
+   "margin": "２ 1/2",
+   "corners": "3-6",
+   "last3f": 38.7,
+   "popularity": 16
+  },
+  {
+   "finish": "13",
+   "number": 7,
+   "name": "スナークゴーギャン",
+   "time": "1:27.8",
+   "margin": "ハナ",
+   "corners": "11-11",
+   "last3f": 37.7,
+   "popularity": 4
+  },
+  {
+   "finish": "14",
+   "number": 8,
+   "name": "スマートサロン",
+   "time": "1:28.4",
+   "margin": "３ 1/2",
+   "corners": "7-7",
+   "last3f": 38.9,
+   "popularity": 7
+  },
+  {
+   "finish": "15",
+   "number": 2,
+   "name": "サイボーグ",
+   "time": "1:28.4",
+   "margin": "アタマ",
+   "corners": "16-16",
+   "last3f": 36.0,
+   "popularity": 11
+  },
+  {
+   "finish": "16",
+   "number": 12,
+   "name": "アランチャ",
+   "time": "1:28.9",
+   "margin": "３ 1/2",
+   "corners": "11-14",
+   "last3f": 38.7,
+   "popularity": 15
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "11",
+    "yen": 280,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "11",
+    "yen": 150,
+    "pop": 1
+   },
+   {
+    "combo": "10",
+    "yen": 730,
+    "pop": 9
+   },
+   {
+    "combo": "3",
+    "yen": 260,
+    "pop": 5
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-6",
+    "yen": 6180,
+    "pop": 21
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "10-11",
+    "yen": 2260,
+    "pop": 26
+   },
+   {
+    "combo": "3-11",
+    "yen": 670,
+    "pop": 6
+   },
+   {
+    "combo": "3-10",
+    "yen": 5490,
+    "pop": 50
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "10-11",
+    "yen": 6770,
+    "pop": 25
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "11-10",
+    "yen": 8270,
+    "pop": 33
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-10-11",
+    "yen": 18740,
+    "pop": 60
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "11-10-3",
+    "yen": 84990,
+    "pop": 271
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261025",
+ "venue_code": "08",
+ "race_no": 4,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202604090420261025/C2",
+ "title": "レース結果 JRA"
+}

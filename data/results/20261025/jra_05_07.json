@@ -1,0 +1,238 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 6,
+   "name": "ミヤエスケープ",
+   "time": "1:24.4",
+   "margin": "",
+   "corners": "1-1",
+   "last3f": 36.4,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 10,
+   "name": "ルージュナリッシュ",
+   "time": "1:24.4",
+   "margin": "クビ",
+   "corners": "2-2",
+   "last3f": 36.3,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "number": 9,
+   "name": "ユーティジャーニー",
+   "time": "1:24.6",
+   "margin": "１ 1/4",
+   "corners": "5-4",
+   "last3f": 36.3,
+   "popularity": 8
+  },
+  {
+   "finish": "4",
+   "number": 7,
+   "name": "フクシマブリルハム",
+   "time": "1:25.1",
+   "margin": "３",
+   "corners": "10-11",
+   "last3f": 36.1,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "number": 5,
+   "name": "ステラノヴァ",
+   "time": "1:25.1",
+   "margin": "クビ",
+   "corners": "8-8",
+   "last3f": 36.4,
+   "popularity": 2
+  },
+  {
+   "finish": "6",
+   "number": 3,
+   "name": "スタートレイン",
+   "time": "1:25.2",
+   "margin": "３／４",
+   "corners": "4-4",
+   "last3f": 36.9,
+   "popularity": 7
+  },
+  {
+   "finish": "7",
+   "number": 11,
+   "name": "アイアンナックル",
+   "time": "1:25.3",
+   "margin": "１／２",
+   "corners": "8-8",
+   "last3f": 36.5,
+   "popularity": 11
+  },
+  {
+   "finish": "8",
+   "number": 4,
+   "name": "ロードフロイデ",
+   "time": "1:25.3",
+   "margin": "アタマ",
+   "corners": "6-6",
+   "last3f": 36.8,
+   "popularity": 6
+  },
+  {
+   "finish": "9",
+   "number": 14,
+   "name": "タイセイブルーム",
+   "time": "1:25.6",
+   "margin": "１ 3/4",
+   "corners": "12-11",
+   "last3f": 36.6,
+   "popularity": 5
+  },
+  {
+   "finish": "10",
+   "number": 12,
+   "name": "サーロー",
+   "time": "1:25.7",
+   "margin": "クビ",
+   "corners": "13-13",
+   "last3f": 36.5,
+   "popularity": 14
+  },
+  {
+   "finish": "11",
+   "number": 1,
+   "name": "ヴァルボナ",
+   "time": "1:26.0",
+   "margin": "１ 3/4",
+   "corners": "10-10",
+   "last3f": 37.1,
+   "popularity": 13
+  },
+  {
+   "finish": "12",
+   "number": 15,
+   "name": "ユキノサイエンス",
+   "time": "1:26.1",
+   "margin": "クビ",
+   "corners": "2-3",
+   "last3f": 37.9,
+   "popularity": 10
+  },
+  {
+   "finish": "13",
+   "number": 2,
+   "name": "リネンタイリン",
+   "time": "1:26.1",
+   "margin": "クビ",
+   "corners": "7-7",
+   "last3f": 37.5,
+   "popularity": 9
+  },
+  {
+   "finish": "14",
+   "number": 13,
+   "name": "アイファージェット",
+   "time": "1:27.2",
+   "margin": "７",
+   "corners": "15-14",
+   "last3f": 37.4,
+   "popularity": 15
+  },
+  {
+   "finish": "15",
+   "number": 8,
+   "name": "マカイゾウ",
+   "time": "1:27.2",
+   "margin": "クビ",
+   "corners": "14-14",
+   "last3f": 37.5,
+   "popularity": 12
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "6",
+    "yen": 200,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "6",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "10",
+    "yen": 260,
+    "pop": 4
+   },
+   {
+    "combo": "9",
+    "yen": 470,
+    "pop": 8
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-6",
+    "yen": 710,
+    "pop": 2
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "6-10",
+    "yen": 570,
+    "pop": 4
+   },
+   {
+    "combo": "6-9",
+    "yen": 860,
+    "pop": 7
+   },
+   {
+    "combo": "9-10",
+    "yen": 2800,
+    "pop": 31
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "6-10",
+    "yen": 1180,
+    "pop": 3
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "6-10",
+    "yen": 1880,
+    "pop": 5
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "6-9-10",
+    "yen": 8180,
+    "pop": 24
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "6-10-9",
+    "yen": 26140,
+    "pop": 65
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261025",
+ "venue_code": "05",
+ "race_no": 7,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202604090720261025/03",
+ "title": "レース結果 JRA"
+}

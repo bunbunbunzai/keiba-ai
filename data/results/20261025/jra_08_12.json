@@ -1,0 +1,208 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 5,
+   "name": "アンビシャスヨシノ",
+   "time": "1:22.1",
+   "margin": "",
+   "corners": "9-8",
+   "last3f": 35.4,
+   "popularity": 4
+  },
+  {
+   "finish": "2",
+   "number": 12,
+   "name": "ポッドドンナー",
+   "time": "1:22.3",
+   "margin": "１ 1/4",
+   "corners": "2-3",
+   "last3f": 36.1,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "number": 7,
+   "name": "ジーベック",
+   "time": "1:22.5",
+   "margin": "１ 1/4",
+   "corners": "11-11",
+   "last3f": 35.2,
+   "popularity": 9
+  },
+  {
+   "finish": "4",
+   "number": 10,
+   "name": "ラピダリア",
+   "time": "1:22.5",
+   "margin": "クビ",
+   "corners": "12-12",
+   "last3f": 35.0,
+   "popularity": 12
+  },
+  {
+   "finish": "5",
+   "number": 11,
+   "name": "ソニックステップ",
+   "time": "1:22.6",
+   "margin": "クビ",
+   "corners": "5-5",
+   "last3f": 36.2,
+   "popularity": 3
+  },
+  {
+   "finish": "6",
+   "number": 6,
+   "name": "ジュルナール",
+   "time": "1:22.6",
+   "margin": "クビ",
+   "corners": "2-3",
+   "last3f": 36.5,
+   "popularity": 8
+  },
+  {
+   "finish": "7",
+   "number": 4,
+   "name": "スーパージョック",
+   "time": "1:22.9",
+   "margin": "１ 1/2",
+   "corners": "5-5",
+   "last3f": 36.5,
+   "popularity": 5
+  },
+  {
+   "finish": "8",
+   "number": 9,
+   "name": "フェスティヴドレス",
+   "time": "1:23.0",
+   "margin": "３／４",
+   "corners": "5-7",
+   "last3f": 36.7,
+   "popularity": 6
+  },
+  {
+   "finish": "9",
+   "number": 8,
+   "name": "ラヴオントップ",
+   "time": "1:23.4",
+   "margin": "２ 1/2",
+   "corners": "10-10",
+   "last3f": 36.5,
+   "popularity": 10
+  },
+  {
+   "finish": "10",
+   "number": 3,
+   "name": "ニホンピロカラット",
+   "time": "1:23.5",
+   "margin": "クビ",
+   "corners": "1-1",
+   "last3f": 37.5,
+   "popularity": 7
+  },
+  {
+   "finish": "11",
+   "number": 1,
+   "name": "ペプチドレオン",
+   "time": "1:23.6",
+   "margin": "１／２",
+   "corners": "2-2",
+   "last3f": 37.5,
+   "popularity": 2
+  },
+  {
+   "finish": "12",
+   "number": 2,
+   "name": "セールヴォラン",
+   "time": "1:23.8",
+   "margin": "１ 1/4",
+   "corners": "8-8",
+   "last3f": 37.3,
+   "popularity": 11
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "5",
+    "yen": 620,
+    "pop": 4
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "5",
+    "yen": 200,
+    "pop": 3
+   },
+   {
+    "combo": "12",
+    "yen": 160,
+    "pop": 2
+   },
+   {
+    "combo": "7",
+    "yen": 600,
+    "pop": 9
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-8",
+    "yen": 620,
+    "pop": 2
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "5-12",
+    "yen": 390,
+    "pop": 3
+   },
+   {
+    "combo": "5-7",
+    "yen": 2790,
+    "pop": 29
+   },
+   {
+    "combo": "7-12",
+    "yen": 1850,
+    "pop": 22
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "5-12",
+    "yen": 880,
+    "pop": 3
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "5-12",
+    "yen": 2840,
+    "pop": 10
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "5-7-12",
+    "yen": 11670,
+    "pop": 39
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "5-12-7",
+    "yen": 61450,
+    "pop": 204
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261025",
+ "venue_code": "08",
+ "race_no": 12,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202604091220261025/AA",
+ "title": "レース結果 JRA"
+}

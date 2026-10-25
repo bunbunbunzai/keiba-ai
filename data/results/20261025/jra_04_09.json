@@ -1,0 +1,228 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 1,
+   "name": "テルヴィセクス",
+   "time": "1:36.7",
+   "margin": "",
+   "corners": "8-9",
+   "last3f": 35.7,
+   "popularity": 9
+  },
+  {
+   "finish": "2",
+   "number": 8,
+   "name": "ジーティーシンドウ",
+   "time": "1:36.9",
+   "margin": "１ 1/2",
+   "corners": "12-12",
+   "last3f": 35.7,
+   "popularity": 5
+  },
+  {
+   "finish": "3",
+   "number": 13,
+   "name": "ルージュリリック",
+   "time": "1:37.0",
+   "margin": "クビ",
+   "corners": "1-1",
+   "last3f": 37.4,
+   "popularity": 8
+  },
+  {
+   "finish": "4",
+   "number": 7,
+   "name": "ジャンヌローサ",
+   "time": "1:37.2",
+   "margin": "１ 1/4",
+   "corners": "4-3",
+   "last3f": 37.0,
+   "popularity": 12
+  },
+  {
+   "finish": "5",
+   "number": 3,
+   "name": "ダノンブランニュー",
+   "time": "1:37.2",
+   "margin": "クビ",
+   "corners": "11-12",
+   "last3f": 36.0,
+   "popularity": 4
+  },
+  {
+   "finish": "6",
+   "number": 2,
+   "name": "シャンパンライフ",
+   "time": "1:37.2",
+   "margin": "アタマ",
+   "corners": "4-5",
+   "last3f": 36.8,
+   "popularity": 1
+  },
+  {
+   "finish": "7",
+   "number": 10,
+   "name": "ゴールドブレス",
+   "time": "1:37.3",
+   "margin": "クビ",
+   "corners": "6-7",
+   "last3f": 36.7,
+   "popularity": 7
+  },
+  {
+   "finish": "8",
+   "number": 6,
+   "name": "コウギョク",
+   "time": "1:37.5",
+   "margin": "１ 1/4",
+   "corners": "3-3",
+   "last3f": 37.2,
+   "popularity": 2
+  },
+  {
+   "finish": "9",
+   "number": 9,
+   "name": "ジュナベーラ",
+   "time": "1:38.0",
+   "margin": "３",
+   "corners": "9-7",
+   "last3f": 37.2,
+   "popularity": 3
+  },
+  {
+   "finish": "10",
+   "number": 4,
+   "name": "クモヒトツナイ",
+   "time": "1:38.1",
+   "margin": "３／４",
+   "corners": "14-14",
+   "last3f": 36.4,
+   "popularity": 13
+  },
+  {
+   "finish": "11",
+   "number": 11,
+   "name": "ジェゼロ",
+   "time": "1:38.3",
+   "margin": "１",
+   "corners": "6-5",
+   "last3f": 37.9,
+   "popularity": 11
+  },
+  {
+   "finish": "12",
+   "number": 14,
+   "name": "クイーンズワーフ",
+   "time": "1:38.4",
+   "margin": "１／２",
+   "corners": "2-2",
+   "last3f": 38.4,
+   "popularity": 10
+  },
+  {
+   "finish": "13",
+   "number": 5,
+   "name": "シャルムグリーン",
+   "time": "1:39.2",
+   "margin": "５",
+   "corners": "9-9",
+   "last3f": 38.2,
+   "popularity": 6
+  },
+  {
+   "finish": "14",
+   "number": 12,
+   "name": "デビューフライト",
+   "time": "1:39.7",
+   "margin": "３",
+   "corners": "12-9",
+   "last3f": 38.7,
+   "popularity": 14
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "1",
+    "yen": 2070,
+    "pop": 9
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "1",
+    "yen": 870,
+    "pop": 11
+   },
+   {
+    "combo": "8",
+    "yen": 390,
+    "pop": 5
+   },
+   {
+    "combo": "13",
+    "yen": 500,
+    "pop": 8
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-5",
+    "yen": 11270,
+    "pop": 28
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-8",
+    "yen": 5200,
+    "pop": 52
+   },
+   {
+    "combo": "1-13",
+    "yen": 5220,
+    "pop": 53
+   },
+   {
+    "combo": "8-13",
+    "yen": 2460,
+    "pop": 28
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-8",
+    "yen": 16800,
+    "pop": 50
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "1-8",
+    "yen": 36070,
+    "pop": 106
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-8-13",
+    "yen": 77520,
+    "pop": 196
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "1-8-13",
+    "yen": 490990,
+    "pop": 1105
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261025",
+ "venue_code": "04",
+ "race_no": 9,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0104202604040920261025/E4",
+ "title": "レース結果 JRA"
+}

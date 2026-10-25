@@ -1,0 +1,188 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 5,
+   "name": "エコロヴァルド",
+   "time": "1:53.2",
+   "margin": "",
+   "corners": "7-7-7-7",
+   "last3f": 37.6,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 4,
+   "name": "プリメラエストレラ",
+   "time": "1:53.4",
+   "margin": "１",
+   "corners": "1-1-1-1",
+   "last3f": 38.8,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "number": 8,
+   "name": "マルスフィス",
+   "time": "1:54.1",
+   "margin": "４",
+   "corners": "4-4-3-2",
+   "last3f": 39.2,
+   "popularity": 6
+  },
+  {
+   "finish": "4",
+   "number": 9,
+   "name": "カフジカニステル",
+   "time": "1:54.4",
+   "margin": "１ 3/4",
+   "corners": "9-9-9-9",
+   "last3f": 38.5,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "number": 3,
+   "name": "アルヴィットーリア",
+   "time": "1:54.7",
+   "margin": "１ 1/2",
+   "corners": "7-7-7-6",
+   "last3f": 39.2,
+   "popularity": 8
+  },
+  {
+   "finish": "6",
+   "number": 2,
+   "name": "オーケーグラン",
+   "time": "1:55.8",
+   "margin": "７",
+   "corners": "4-4-3-4",
+   "last3f": 40.8,
+   "popularity": 3
+  },
+  {
+   "finish": "7",
+   "number": 1,
+   "name": "レガーメフォルテ",
+   "time": "1:55.8",
+   "margin": "クビ",
+   "corners": "2-2-2-2",
+   "last3f": 41.1,
+   "popularity": 4
+  },
+  {
+   "finish": "8",
+   "number": 10,
+   "name": "トラモンターナ",
+   "time": "1:55.8",
+   "margin": "アタマ",
+   "corners": "4-4-6-5",
+   "last3f": 40.5,
+   "popularity": 7
+  },
+  {
+   "finish": "9",
+   "number": 6,
+   "name": "ラプユフラット",
+   "time": "1:56.5",
+   "margin": "４",
+   "corners": "10-9-9-9",
+   "last3f": 40.6,
+   "popularity": 10
+  },
+  {
+   "finish": "9",
+   "number": 7,
+   "name": "シャインロード",
+   "time": "1:56.5",
+   "margin": "同着",
+   "corners": "2-2-5-7",
+   "last3f": 41.4,
+   "popularity": 9
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "5",
+    "yen": 250,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "5",
+    "yen": 150,
+    "pop": 2
+   },
+   {
+    "combo": "4",
+    "yen": 120,
+    "pop": 1
+   },
+   {
+    "combo": "8",
+    "yen": 320,
+    "pop": 7
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-5",
+    "yen": 420,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-5",
+    "yen": 230,
+    "pop": 1
+   },
+   {
+    "combo": "5-8",
+    "yen": 470,
+    "pop": 7
+   },
+   {
+    "combo": "4-8",
+    "yen": 930,
+    "pop": 14
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-5",
+    "yen": 510,
+    "pop": 1
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "5-4",
+    "yen": 880,
+    "pop": 1
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-5-8",
+    "yen": 1580,
+    "pop": 4
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "5-4-8",
+    "yen": 4960,
+    "pop": 8
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261025",
+ "venue_code": "04",
+ "race_no": 2,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0104202604040220261025/F1",
+ "title": "レース結果 JRA"
+}

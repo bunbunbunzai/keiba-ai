@@ -1,0 +1,268 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 3,
+   "name": "ルージュスプリヤ",
+   "time": "1:07.3",
+   "margin": "",
+   "corners": "1-1",
+   "last3f": 34.4,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 18,
+   "name": "マウンテンバローズ",
+   "time": "1:07.9",
+   "margin": "３ 1/2",
+   "corners": "4-5",
+   "last3f": 34.6,
+   "popularity": 4
+  },
+  {
+   "finish": "3",
+   "number": 10,
+   "name": "タマモブラウンタイ",
+   "time": "1:07.9",
+   "margin": "アタマ",
+   "corners": "4-3",
+   "last3f": 34.7,
+   "popularity": 5
+  },
+  {
+   "finish": "4",
+   "number": 15,
+   "name": "グッドピース",
+   "time": "1:07.9",
+   "margin": "クビ",
+   "corners": "9-9",
+   "last3f": 33.9,
+   "popularity": 6
+  },
+  {
+   "finish": "5",
+   "number": 7,
+   "name": "エクストラバック",
+   "time": "1:08.0",
+   "margin": "クビ",
+   "corners": "12-12",
+   "last3f": 33.6,
+   "popularity": 9
+  },
+  {
+   "finish": "6",
+   "number": 6,
+   "name": "スイミーユニバンス",
+   "time": "1:08.0",
+   "margin": "クビ",
+   "corners": "14-14",
+   "last3f": 33.2,
+   "popularity": 8
+  },
+  {
+   "finish": "7",
+   "number": 1,
+   "name": "サディーク",
+   "time": "1:08.1",
+   "margin": "クビ",
+   "corners": "7-6",
+   "last3f": 34.5,
+   "popularity": 2
+  },
+  {
+   "finish": "8",
+   "number": 9,
+   "name": "メイショウゴールド",
+   "time": "1:08.2",
+   "margin": "３／４",
+   "corners": "10-9",
+   "last3f": 34.1,
+   "popularity": 7
+  },
+  {
+   "finish": "9",
+   "number": 5,
+   "name": "ピースフルナイト",
+   "time": "1:08.3",
+   "margin": "１",
+   "corners": "12-12",
+   "last3f": 33.9,
+   "popularity": 17
+  },
+  {
+   "finish": "10",
+   "number": 16,
+   "name": "パリコレジェンヌ",
+   "time": "1:08.4",
+   "margin": "３／４",
+   "corners": "10-11",
+   "last3f": 34.2,
+   "popularity": 10
+  },
+  {
+   "finish": "11",
+   "number": 17,
+   "name": "マーゴットミスト",
+   "time": "1:08.4",
+   "margin": "ハナ",
+   "corners": "2-3",
+   "last3f": 35.3,
+   "popularity": 3
+  },
+  {
+   "finish": "12",
+   "number": 8,
+   "name": "エイヨーアメジスト",
+   "time": "1:08.4",
+   "margin": "ハナ",
+   "corners": "14-14",
+   "last3f": 33.6,
+   "popularity": 16
+  },
+  {
+   "finish": "13",
+   "number": 2,
+   "name": "トウカイエルデ",
+   "time": "1:08.5",
+   "margin": "１／２",
+   "corners": "18-18",
+   "last3f": 33.1,
+   "popularity": 11
+  },
+  {
+   "finish": "14",
+   "number": 13,
+   "name": "カガラプンツェル",
+   "time": "1:08.6",
+   "margin": "１／２",
+   "corners": "2-2",
+   "last3f": 35.6,
+   "popularity": 12
+  },
+  {
+   "finish": "15",
+   "number": 11,
+   "name": "ストロングボンド",
+   "time": "1:08.7",
+   "margin": "１／２",
+   "corners": "16-16",
+   "last3f": 33.6,
+   "popularity": 18
+  },
+  {
+   "finish": "16",
+   "number": 12,
+   "name": "ベビーズブレス",
+   "time": "1:08.7",
+   "margin": "クビ",
+   "corners": "6-7",
+   "last3f": 35.1,
+   "popularity": 15
+  },
+  {
+   "finish": "17",
+   "number": 14,
+   "name": "セレッソデアモール",
+   "time": "1:09.2",
+   "margin": "３",
+   "corners": "7-7",
+   "last3f": 35.6,
+   "popularity": 13
+  },
+  {
+   "finish": "18",
+   "number": 4,
+   "name": "ハルオーブ",
+   "time": "1:09.3",
+   "margin": "クビ",
+   "corners": "16-16",
+   "last3f": 34.1,
+   "popularity": 14
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "3",
+    "yen": 190,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "3",
+    "yen": 130,
+    "pop": 1
+   },
+   {
+    "combo": "18",
+    "yen": 310,
+    "pop": 6
+   },
+   {
+    "combo": "10",
+    "yen": 290,
+    "pop": 5
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-8",
+    "yen": 410,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-18",
+    "yen": 590,
+    "pop": 4
+   },
+   {
+    "combo": "3-10",
+    "yen": 580,
+    "pop": 3
+   },
+   {
+    "combo": "10-18",
+    "yen": 2140,
+    "pop": 28
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-18",
+    "yen": 1220,
+    "pop": 3
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "3-18",
+    "yen": 1490,
+    "pop": 3
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-10-18",
+    "yen": 5830,
+    "pop": 15
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "3-18-10",
+    "yen": 15740,
+    "pop": 33
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261025",
+ "venue_code": "08",
+ "race_no": 8,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202604090820261025/96",
+ "title": "レース結果 JRA"
+}

@@ -1,0 +1,218 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 7,
+   "name": "ベルメグスタ",
+   "time": "1:11.9",
+   "margin": "",
+   "corners": "2-3",
+   "last3f": 37.3,
+   "popularity": 4
+  },
+  {
+   "finish": "2",
+   "number": 12,
+   "name": "テーオージャスミン",
+   "time": "1:11.9",
+   "margin": "アタマ",
+   "corners": "4-2",
+   "last3f": 37.2,
+   "popularity": 11
+  },
+  {
+   "finish": "3",
+   "number": 11,
+   "name": "リアシュアー",
+   "time": "1:12.0",
+   "margin": "３／４",
+   "corners": "7-6",
+   "last3f": 36.7,
+   "popularity": 9
+  },
+  {
+   "finish": "4",
+   "number": 9,
+   "name": "クールガモーン",
+   "time": "1:12.2",
+   "margin": "１ 1/4",
+   "corners": "6-6",
+   "last3f": 37.1,
+   "popularity": 2
+  },
+  {
+   "finish": "5",
+   "number": 6,
+   "name": "クラストムーン",
+   "time": "1:12.3",
+   "margin": "１／２",
+   "corners": "8-6",
+   "last3f": 36.8,
+   "popularity": 1
+  },
+  {
+   "finish": "6",
+   "number": 8,
+   "name": "コールオンユー",
+   "time": "1:12.4",
+   "margin": "クビ",
+   "corners": "8-9",
+   "last3f": 36.9,
+   "popularity": 10
+  },
+  {
+   "finish": "7",
+   "number": 10,
+   "name": "ルナディアナ",
+   "time": "1:12.4",
+   "margin": "クビ",
+   "corners": "5-5",
+   "last3f": 37.4,
+   "popularity": 8
+  },
+  {
+   "finish": "8",
+   "number": 4,
+   "name": "ブランカバローズ",
+   "time": "1:12.6",
+   "margin": "１ 1/2",
+   "corners": "1-1",
+   "last3f": 38.2,
+   "popularity": 3
+  },
+  {
+   "finish": "9",
+   "number": 1,
+   "name": "ワイドアイリー",
+   "time": "1:12.7",
+   "margin": "クビ",
+   "corners": "12-12",
+   "last3f": 36.7,
+   "popularity": 12
+  },
+  {
+   "finish": "10",
+   "number": 3,
+   "name": "コパノアクション",
+   "time": "1:12.9",
+   "margin": "１ 1/4",
+   "corners": "8-9",
+   "last3f": 37.4,
+   "popularity": 5
+  },
+  {
+   "finish": "11",
+   "number": 5,
+   "name": "リアルジャパン",
+   "time": "1:13.1",
+   "margin": "１ 1/4",
+   "corners": "13-12",
+   "last3f": 36.9,
+   "popularity": 7
+  },
+  {
+   "finish": "12",
+   "number": 2,
+   "name": "メイショウノゾミ",
+   "time": "1:13.1",
+   "margin": "クビ",
+   "corners": "11-11",
+   "last3f": 37.3,
+   "popularity": 13
+  },
+  {
+   "finish": "13",
+   "number": 13,
+   "name": "ハナビ",
+   "time": "1:16.5",
+   "margin": "大差",
+   "corners": "2-3",
+   "last3f": 41.9,
+   "popularity": 6
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "7",
+    "yen": 880,
+    "pop": 4
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "7",
+    "yen": 440,
+    "pop": 7
+   },
+   {
+    "combo": "12",
+    "yen": 1580,
+    "pop": 11
+   },
+   {
+    "combo": "11",
+    "yen": 850,
+    "pop": 9
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-8",
+    "yen": 750,
+    "pop": 3
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "7-12",
+    "yen": 5770,
+    "pop": 47
+   },
+   {
+    "combo": "7-11",
+    "yen": 4100,
+    "pop": 42
+   },
+   {
+    "combo": "11-12",
+    "yen": 16260,
+    "pop": 68
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "7-12",
+    "yen": 20370,
+    "pop": 46
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "7-12",
+    "yen": 34490,
+    "pop": 87
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "7-11-12",
+    "yen": 149060,
+    "pop": 200
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "7-12-11",
+    "yen": 642050,
+    "pop": 997
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261025",
+ "venue_code": "04",
+ "race_no": 1,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0104202604040120261025/3C",
+ "title": "レース結果 JRA"
+}

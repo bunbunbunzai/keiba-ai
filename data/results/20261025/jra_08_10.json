@@ -1,0 +1,238 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 12,
+   "name": "メイショウズイウン",
+   "time": "1:47.6",
+   "margin": "",
+   "corners": "9-9-5-4",
+   "last3f": 35.7,
+   "popularity": 12
+  },
+  {
+   "finish": "2",
+   "number": 10,
+   "name": "カナルビーグル",
+   "time": "1:47.6",
+   "margin": "クビ",
+   "corners": "10-11-10-8",
+   "last3f": 35.5,
+   "popularity": 9
+  },
+  {
+   "finish": "3",
+   "number": 3,
+   "name": "クインズショコラ",
+   "time": "1:48.1",
+   "margin": "３",
+   "corners": "2-2-2-1",
+   "last3f": 36.6,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "number": 13,
+   "name": "ゴールデンクラウド",
+   "time": "1:48.3",
+   "margin": "３／４",
+   "corners": "5-6-9-8",
+   "last3f": 36.2,
+   "popularity": 1
+  },
+  {
+   "finish": "5",
+   "number": 8,
+   "name": "オウギノカナメ",
+   "time": "1:48.3",
+   "margin": "クビ",
+   "corners": "13-12-12-11",
+   "last3f": 36.0,
+   "popularity": 14
+  },
+  {
+   "finish": "6",
+   "number": 4,
+   "name": "ペイシャモノノフ",
+   "time": "1:48.4",
+   "margin": "クビ",
+   "corners": "15-15-15-15",
+   "last3f": 35.6,
+   "popularity": 10
+  },
+  {
+   "finish": "7",
+   "number": 9,
+   "name": "ミッキーヌチバナ",
+   "time": "1:48.4",
+   "margin": "クビ",
+   "corners": "3-3-1-2",
+   "last3f": 36.9,
+   "popularity": 8
+  },
+  {
+   "finish": "8",
+   "number": 5,
+   "name": "リアライズカミオン",
+   "time": "1:48.6",
+   "margin": "３／４",
+   "corners": "5-6-5-8",
+   "last3f": 36.8,
+   "popularity": 5
+  },
+  {
+   "finish": "9",
+   "number": 6,
+   "name": "ギュルヴィ",
+   "time": "1:48.8",
+   "margin": "１ 1/4",
+   "corners": "12-12-14-14",
+   "last3f": 36.2,
+   "popularity": 2
+  },
+  {
+   "finish": "10",
+   "number": 11,
+   "name": "レヴォントゥレット",
+   "time": "1:49.0",
+   "margin": "１",
+   "corners": "4-4-2-2",
+   "last3f": 37.4,
+   "popularity": 4
+  },
+  {
+   "finish": "11",
+   "number": 15,
+   "name": "ジンセイ",
+   "time": "1:49.2",
+   "margin": "１ 1/4",
+   "corners": "5-4-5-7",
+   "last3f": 37.3,
+   "popularity": 11
+  },
+  {
+   "finish": "12",
+   "number": 14,
+   "name": "サンマルパトロール",
+   "time": "1:49.9",
+   "margin": "４",
+   "corners": "14-14-13-12",
+   "last3f": 37.5,
+   "popularity": 15
+  },
+  {
+   "finish": "13",
+   "number": 7,
+   "name": "モンブランミノル",
+   "time": "1:50.5",
+   "margin": "３ 1/2",
+   "corners": "5-6-5-4",
+   "last3f": 38.7,
+   "popularity": 7
+  },
+  {
+   "finish": "14",
+   "number": 2,
+   "name": "シゲルショウグン",
+   "time": "1:50.8",
+   "margin": "２",
+   "corners": "1-1-2-4",
+   "last3f": 39.3,
+   "popularity": 6
+  },
+  {
+   "finish": "15",
+   "number": 1,
+   "name": "ルヴァンユニベール",
+   "time": "1:50.8",
+   "margin": "アタマ",
+   "corners": "10-10-10-12",
+   "last3f": 38.7,
+   "popularity": 13
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "12",
+    "yen": 2640,
+    "pop": 12
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "12",
+    "yen": 610,
+    "pop": 11
+   },
+   {
+    "combo": "10",
+    "yen": 710,
+    "pop": 12
+   },
+   {
+    "combo": "3",
+    "yen": 250,
+    "pop": 3
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "6-7",
+    "yen": 1540,
+    "pop": 5
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "10-12",
+    "yen": 3800,
+    "pop": 60
+   },
+   {
+    "combo": "3-12",
+    "yen": 3030,
+    "pop": 45
+   },
+   {
+    "combo": "3-10",
+    "yen": 2840,
+    "pop": 39
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "10-12",
+    "yen": 15090,
+    "pop": 62
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "12-10",
+    "yen": 37190,
+    "pop": 135
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-10-12",
+    "yen": 43250,
+    "pop": 173
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "12-10-3",
+    "yen": 374360,
+    "pop": 1365
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261025",
+ "venue_code": "08",
+ "race_no": 10,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202604091020261025/40",
+ "title": "レース結果 JRA"
+}

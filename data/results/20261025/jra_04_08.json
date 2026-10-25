@@ -1,0 +1,228 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 12,
+   "name": "ドメイン",
+   "time": "2:40.2",
+   "margin": "",
+   "corners": "2-2-1-1",
+   "last3f": 38.2,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "number": 14,
+   "name": "スノーディーヴァ",
+   "time": "2:40.4",
+   "margin": "１",
+   "corners": "7-7-5-5",
+   "last3f": 37.6,
+   "popularity": 6
+  },
+  {
+   "finish": "3",
+   "number": 4,
+   "name": "リバーソニック",
+   "time": "2:40.4",
+   "margin": "ハナ",
+   "corners": "5-4-3-3",
+   "last3f": 37.9,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "number": 13,
+   "name": "アスクドゥチャンプ",
+   "time": "2:40.5",
+   "margin": "３／４",
+   "corners": "3-4-4-4",
+   "last3f": 37.9,
+   "popularity": 1
+  },
+  {
+   "finish": "5",
+   "number": 8,
+   "name": "シャンドラファール",
+   "time": "2:41.5",
+   "margin": "６",
+   "corners": "6-6-5-7",
+   "last3f": 38.7,
+   "popularity": 5
+  },
+  {
+   "finish": "6",
+   "number": 1,
+   "name": "ライヴスプーン",
+   "time": "2:41.7",
+   "margin": "３／４",
+   "corners": "1-1-2-2",
+   "last3f": 39.7,
+   "popularity": 8
+  },
+  {
+   "finish": "7",
+   "number": 10,
+   "name": "クラテロス",
+   "time": "2:42.0",
+   "margin": "１ 3/4",
+   "corners": "9-9-8-9",
+   "last3f": 38.9,
+   "popularity": 4
+  },
+  {
+   "finish": "8",
+   "number": 3,
+   "name": "ウインターブレス",
+   "time": "2:42.1",
+   "margin": "クビ",
+   "corners": "13-12-8-7",
+   "last3f": 39.0,
+   "popularity": 11
+  },
+  {
+   "finish": "9",
+   "number": 5,
+   "name": "クレスコドルフィン",
+   "time": "2:42.1",
+   "margin": "ハナ",
+   "corners": "10-10-8-9",
+   "last3f": 38.9,
+   "popularity": 12
+  },
+  {
+   "finish": "10",
+   "number": 11,
+   "name": "モヴレクス",
+   "time": "2:42.4",
+   "margin": "２",
+   "corners": "10-10-11-11",
+   "last3f": 39.1,
+   "popularity": 13
+  },
+  {
+   "finish": "11",
+   "number": 7,
+   "name": "ゴーントゥファー",
+   "time": "2:42.7",
+   "margin": "１ 3/4",
+   "corners": "10-12-13-13",
+   "last3f": 38.8,
+   "popularity": 14
+  },
+  {
+   "finish": "12",
+   "number": 2,
+   "name": "オメガストリーム",
+   "time": "2:43.0",
+   "margin": "１ 3/4",
+   "corners": "3-3-5-5",
+   "last3f": 40.1,
+   "popularity": 9
+  },
+  {
+   "finish": "13",
+   "number": 9,
+   "name": "トーアケルキラ",
+   "time": "2:43.6",
+   "margin": "３ 1/2",
+   "corners": "7-7-11-12",
+   "last3f": 40.3,
+   "popularity": 7
+  },
+  {
+   "finish": "中止",
+   "number": 6,
+   "name": "リオンサーガ",
+   "time": "",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "12",
+    "yen": 470,
+    "pop": 2
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "12",
+    "yen": 210,
+    "pop": 4
+   },
+   {
+    "combo": "14",
+    "yen": 290,
+    "pop": 6
+   },
+   {
+    "combo": "4",
+    "yen": 170,
+    "pop": 2
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "7-8",
+    "yen": 680,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "12-14",
+    "yen": 1530,
+    "pop": 20
+   },
+   {
+    "combo": "4-12",
+    "yen": 650,
+    "pop": 5
+   },
+   {
+    "combo": "4-14",
+    "yen": 830,
+    "pop": 9
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "12-14",
+    "yen": 4110,
+    "pop": 16
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "12-14",
+    "yen": 6210,
+    "pop": 27
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-12-14",
+    "yen": 6210,
+    "pop": 20
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "12-14-4",
+    "yen": 31230,
+    "pop": 96
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261025",
+ "venue_code": "04",
+ "race_no": 8,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0104202604040820261025/2F",
+ "title": "レース結果 JRA"
+}

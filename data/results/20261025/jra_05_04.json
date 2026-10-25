@@ -1,0 +1,198 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 3,
+   "name": "ハーバーライト",
+   "time": "3:21.7",
+   "margin": "",
+   "corners": "4-4-2-2",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "2",
+   "number": 2,
+   "name": "ノーブルクライ",
+   "time": "3:22.0",
+   "margin": "１ 3/4",
+   "corners": "6-6-5-4",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "3",
+   "number": 7,
+   "name": "キャプテンシー",
+   "time": "3:22.2",
+   "margin": "１",
+   "corners": "1-1-1-1",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "number": 4,
+   "name": "フェスティヴビーム",
+   "time": "3:22.6",
+   "margin": "２ 1/2",
+   "corners": "5-5-3-3",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "number": 6,
+   "name": "グランナヴィール",
+   "time": "3:24.3",
+   "margin": "１０",
+   "corners": "7-7-7-6",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "6",
+   "number": 5,
+   "name": "アウルムレガリア",
+   "time": "3:25.9",
+   "margin": "１０",
+   "corners": "8-8-8-8",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "7",
+   "number": 10,
+   "name": "ヘイマー",
+   "time": "3:26.8",
+   "margin": "５",
+   "corners": "3-3-6-7",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "8",
+   "number": 11,
+   "name": "ドリームクルーズ",
+   "time": "3:28.6",
+   "margin": "大差",
+   "corners": "2-2-4-5",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "9",
+   "number": 9,
+   "name": "ヨシノヤッタルデー",
+   "time": "3:30.9",
+   "margin": "大差",
+   "corners": "9-9-9-9",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "10",
+   "number": 8,
+   "name": "ソリダリティ",
+   "time": "3:31.2",
+   "margin": "１ 3/4",
+   "corners": "11-10-11-10",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "11",
+   "number": 1,
+   "name": "トロピカルヒーロー",
+   "time": "3:33.0",
+   "margin": "大差",
+   "corners": "10-10-10-11",
+   "last3f": null,
+   "popularity": 10
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "3",
+    "yen": 580,
+    "pop": 3
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "3",
+    "yen": 180,
+    "pop": 3
+   },
+   {
+    "combo": "2",
+    "yen": 190,
+    "pop": 4
+   },
+   {
+    "combo": "7",
+    "yen": 150,
+    "pop": 2
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-3",
+    "yen": 1640,
+    "pop": 7
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-3",
+    "yen": 550,
+    "pop": 8
+   },
+   {
+    "combo": "3-7",
+    "yen": 350,
+    "pop": 4
+   },
+   {
+    "combo": "2-7",
+    "yen": 410,
+    "pop": 6
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-3",
+    "yen": 1700,
+    "pop": 8
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "3-2",
+    "yen": 3160,
+    "pop": 15
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-3-7",
+    "yen": 1580,
+    "pop": 7
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "3-2-7",
+    "yen": 12850,
+    "pop": 55
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261025",
+ "venue_code": "05",
+ "race_no": 4,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202604090420261025/E4",
+ "title": "レース結果 JRA"
+}
