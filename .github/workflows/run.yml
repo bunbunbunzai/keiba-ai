@@ -32,7 +32,7 @@ jobs:
           SCRIPT: ${{ inputs.script }}
           ARGS: ${{ inputs.args }}
         run: |
-          case "$SCRIPT" in jra_cards|rakuten|parse_rakuten|jra) ;; *) echo "unknown script"; exit 1;; esac
+          case "$SCRIPT" in jra_cards|rakuten|parse_rakuten|jra|results|score) ;; *) echo "unknown script"; exit 1;; esac
           cd scraper && python "$SCRIPT.py" $ARGS
         continue-on-error: true
       - name: 保存
