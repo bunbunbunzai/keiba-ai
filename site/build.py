@@ -32,7 +32,7 @@ def load_json(p: Path):
         return None
 
 
-def page(title: str, body: str, depth: int = 0, desc: str = "", canon: str = "") -> str:
+def page(title: str, body: str, depth: int = 0, desc: str = "", canon: str | None = None) -> str:
     up = "../" * depth
     return f"""<!doctype html>
 <html lang="ja"><head><meta charset="utf-8">
@@ -40,7 +40,7 @@ def page(title: str, body: str, depth: int = 0, desc: str = "", canon: str = "")
 <title>{esc(title)} | {SITE_NAME}</title>
 <meta name="description" content="{esc(desc or 'AIが日本の競馬（JRA・地方）の全レースを毎日分析し、外れも含めた全予想の回収率を公開しています。')}">
 <link rel="stylesheet" href="{up}style.css">
-<link rel="canonical" href="{BASE_URL}{canon}">
+{"" if canon is None else f'<link rel="canonical" href="{BASE_URL}{canon}">'}
 </head><body>
 <header class="top"><div class="wrap">
 <a class="logo" href="{up}index.html">{SITE_NAME}</a>
@@ -145,7 +145,7 @@ def race_page(date: str, p: dict) -> str:
 <tbody>{''.join(rows)}</tbody></table></div></section>
 {f'<section class="card"><h2>更新履歴</h2><ul>{updates}</ul></section>' if updates else ''}
 """
-    return page(race_title(p), body, depth=2, desc=f"{race_title(p)}のAI予想（{fmt_date(date)}）。全頭の評価点と買い目、結果。")
+    return page(race_title(p), body, depth=2, desc=f"{race_title(p)}のAI予想（{fmt_date(date)}）。全頭の評価点と買い目、結果。", canon=f"races/{date}/{p['race_id']}.html")
 
 
 def day_section(date: str, preds: list[dict]) -> str:
@@ -286,7 +286,7 @@ def build() -> None:
             "<button data-conf='B'>B</button><button data-conf='C'>C</button><button data-conf='見送り'>見送り</button></div>")
     body = (f"<h1>本日の全レース予想</h1><p class='meta'>最終更新 {now}　累計回収率 {roi_txt(st, rt)}（{len(led)}レース）</p>"
             + filt + ("".join(sections) or "<p>予想はまだありません。</p>"))
-    (OUT / "index.html").write_text(page("本日の全レース予想", body), encoding="utf-8")
+    (OUT / "index.html").write_text(page("本日の全レース予想", body, canon=""), encoding="utf-8")
     (OUT / "results.html").write_text(results_page(led), encoding="utf-8")
     (OUT / "about.html").write_text(page("予想の方法", ABOUT), encoding="utf-8")
     (OUT / "CNAME").write_text(DOMAIN + "\n", encoding="utf-8")
