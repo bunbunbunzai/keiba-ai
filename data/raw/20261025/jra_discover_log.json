@@ -1,0 +1,910 @@
+{
+ "date": "20261025",
+ "pages": [
+  {
+   "kind": "card",
+   "cname": "pw01dli00/F3",
+   "label": "card_entry",
+   "depth": 0
+  },
+  {
+   "kind": "card",
+   "cname": "pw01ide01/4F",
+   "label": "開催お知らせ",
+   "depth": 1
+  },
+  {
+   "kind": "card",
+   "cname": "pw15oli00/6D",
+   "label": "オッズ",
+   "depth": 1
+  },
+  {
+   "kind": "card",
+   "cname": "pw01sli00/AF",
+   "label": "レース結果",
+   "depth": 1
+  },
+  {
+   "kind": "card",
+   "cname": "pw01hli00/03",
+   "label": "払戻金",
+   "depth": 1
+  },
+  {
+   "kind": "card",
+   "cname": "pw03trl00/29",
+   "label": "特別レース登録馬",
+   "depth": 1
+  },
+  {
+   "kind": "card",
+   "cname": "pw02uliD19999",
+   "label": "競走馬検索",
+   "depth": 1
+  },
+  {
+   "kind": "card",
+   "cname": "pr13rli00/8E",
+   "label": "レコードタイム表",
+   "depth": 1
+  },
+  {
+   "kind": "card",
+   "cname": "pv156liH1/98",
+   "label": "競走馬登録・抹消一覧",
+   "depth": 1
+  },
+  {
+   "kind": "card",
+   "cname": "pr12rnk00/01",
+   "label": "払戻金ランキング",
+   "depth": 1
+  },
+  {
+   "kind": "card",
+   "cname": "pw01skl00999999/B3",
+   "label": "過去のレース結果",
+   "depth": 1
+  },
+  {
+   "kind": "card",
+   "cname": "pk01skl009999/A6",
+   "label": "海外 過去のレース結果",
+   "depth": 1
+  },
+  {
+   "kind": "card",
+   "cname": "pw01drl10052026040820261024/A3",
+   "label": "4回東京8日 馬番確定",
+   "depth": 1
+  },
+  {
+   "kind": "card",
+   "cname": "pw01drl10082026040820261024/81",
+   "label": "4回京都8日 馬番確定",
+   "depth": 1
+  },
+  {
+   "kind": "card",
+   "cname": "pw01drl10042026040320261024/1A",
+   "label": "4回新潟3日 馬番確定",
+   "depth": 1
+  },
+  {
+   "kind": "card",
+   "cname": "pw17hde10202610241/93",
+   "label": "",
+   "depth": 1
+  },
+  {
+   "kind": "card",
+   "cname": "pw01drl00052026040920261025/AA",
+   "label": "4回東京9日 馬番確定",
+   "depth": 1
+  },
+  {
+   "kind": "card",
+   "cname": "pw01drl00082026040920261025/88",
+   "label": "4回京都9日 馬番確定",
+   "depth": 1
+  },
+  {
+   "kind": "card",
+   "cname": "pw01drl00042026040420261025/21",
+   "label": "4回新潟4日 馬番確定",
+   "depth": 1
+  },
+  {
+   "kind": "card",
+   "cname": "pw17hde01202610251/E5",
+   "label": "",
+   "depth": 1
+  },
+  {
+   "kind": "card",
+   "cname": "pw01d5010A0/B8",
+   "label": "10月24日（土曜）・10月25日（日曜）",
+   "depth": 1
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ou1005202604081120261024Z/08",
+   "label": "オッズ",
+   "depth": 1
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS308202604091120261025Z/DC",
+   "label": "オッズ",
+   "depth": 1
+  },
+  {
+   "kind": "card",
+   "cname": "pw15orl00052026040920261025/24",
+   "label": "4回東京9日",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw15orl00082026040920261025/02",
+   "label": "4回京都9日",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw15orl00042026040420261025/9B",
+   "label": "4回新潟4日",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw01srl00052026040920261025/66",
+   "label": "4回東京9日",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw01srl00082026040920261025/44",
+   "label": "4回京都9日",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw01srl00042026040420261025/DD",
+   "label": "4回新潟4日",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw01hde01052026040920261025/52",
+   "label": "4回東京9日",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw01hde01082026040920261025/30",
+   "label": "4回京都9日",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw01hde01042026040420261025/C9",
+   "label": "4回新潟4日",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw01des01052026040920261025/BB",
+   "label": "全てのレースを表示",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS305202604090120261025Z/AC",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS305202604090220261025Z/61",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS305202604090320261025Z/16",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS305202604090420261025Z/CB",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS305202604090520261025Z/80",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS305202604090620261025Z/35",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS305202604090720261025Z/EA",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS305202604090820261025Z/9F",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS305202604090920261025Z/54",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS305202604091020261025Z/49",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS305202604091120261025Z/FE",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS305202604091220261025Z/B3",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw01des01082026040920261025/99",
+   "label": "全てのレースを表示",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS308202604090120261025Z/8A",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS308202604090220261025Z/3F",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS308202604090320261025Z/F4",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS308202604090420261025Z/A9",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS308202604090520261025Z/5E",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS308202604090620261025Z/13",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS308202604090720261025Z/C8",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS308202604090820261025Z/7D",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS308202604090920261025Z/32",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS308202604091020261025Z/27",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS308202604091220261025Z/91",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw01des01042026040420261025/32",
+   "label": "全てのレースを表示",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS304202604040120261025Z/23",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS304202604040220261025Z/D8",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS304202604040320261025Z/8D",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS304202604040420261025Z/42",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS304202604040520261025Z/F7",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS304202604040620261025Z/AC",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS304202604040720261025Z/61",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS304202604040820261025Z/16",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS304202604040920261025Z/CB",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS304202604041020261025Z/C0",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS304202604041120261025Z/75",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151ouS304202604041220261025Z/2A",
+   "label": "最終",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw153ouS308202604091120261025Z/E4",
+   "label": "枠連",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw154ouS308202604091120261025Z/68",
+   "label": "馬連",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw155ouS308202604091120261025Z/EC",
+   "label": "ワイド",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw156ouS308202604091120261025Z/70",
+   "label": "馬単",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw157ouS308202604091120261025Z99/56",
+   "label": "3連複",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw158ouS308202604091120261025Z/78",
+   "label": "3連単",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw151opS308202604091120261025Z/FE",
+   "label": "人気順",
+   "depth": 2
+  },
+  {
+   "kind": "card",
+   "cname": "pw153ouS305202604090120261025Z/B4",
+   "label": "枠連",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw154ouS305202604090120261025Z/38",
+   "label": "馬連",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw155ouS305202604090120261025Z/BC",
+   "label": "ワイド",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw156ouS305202604090120261025Z/40",
+   "label": "馬単",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw157ouS305202604090120261025Z99/26",
+   "label": "3連複",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw158ouS305202604090120261025Z/48",
+   "label": "3連単",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw154ouS305202604090220261025Z/ED",
+   "label": "馬連",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw155ouS305202604090220261025Z/71",
+   "label": "ワイド",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw156ouS305202604090220261025Z/F5",
+   "label": "馬単",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw157ouS305202604090220261025Z99/DB",
+   "label": "3連複",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw158ouS305202604090220261025Z/FD",
+   "label": "3連単",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw153ouS305202604090320261025Z/1E",
+   "label": "枠連",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw154ouS305202604090320261025Z/A2",
+   "label": "馬連",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw155ouS305202604090320261025Z/26",
+   "label": "ワイド",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw156ouS305202604090320261025Z/AA",
+   "label": "馬単",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw157ouS305202604090320261025Z99/90",
+   "label": "3連複",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw158ouS305202604090320261025Z/B2",
+   "label": "3連単",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw153ouS305202604090420261025Z/D3",
+   "label": "枠連",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw154ouS305202604090420261025Z/57",
+   "label": "馬連",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw155ouS305202604090420261025Z/DB",
+   "label": "ワイド",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw156ouS305202604090420261025Z/5F",
+   "label": "馬単",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw157ouS305202604090420261025Z99/45",
+   "label": "3連複",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw158ouS305202604090420261025Z/67",
+   "label": "3連単",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw153ouS305202604090520261025Z/88",
+   "label": "枠連",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw154ouS305202604090520261025Z/0C",
+   "label": "馬連",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw155ouS305202604090520261025Z/90",
+   "label": "ワイド",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw156ouS305202604090520261025Z/14",
+   "label": "馬単",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw157ouS305202604090520261025Z99/FA",
+   "label": "3連複",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw158ouS305202604090520261025Z/1C",
+   "label": "3連単",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw153ouS305202604090620261025Z/3D",
+   "label": "枠連",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw154ouS305202604090620261025Z/C1",
+   "label": "馬連",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw155ouS305202604090620261025Z/45",
+   "label": "ワイド",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw156ouS305202604090620261025Z/C9",
+   "label": "馬単",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw157ouS305202604090620261025Z99/AF",
+   "label": "3連複",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw158ouS305202604090620261025Z/D1",
+   "label": "3連単",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw153ouS305202604090720261025Z/F2",
+   "label": "枠連",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw154ouS305202604090720261025Z/76",
+   "label": "馬連",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw155ouS305202604090720261025Z/FA",
+   "label": "ワイド",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw156ouS305202604090720261025Z/7E",
+   "label": "馬単",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw157ouS305202604090720261025Z99/64",
+   "label": "3連複",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw158ouS305202604090720261025Z/86",
+   "label": "3連単",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw153ouS305202604090820261025Z/A7",
+   "label": "枠連",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw154ouS305202604090820261025Z/2B",
+   "label": "馬連",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw155ouS305202604090820261025Z/AF",
+   "label": "ワイド",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw156ouS305202604090820261025Z/33",
+   "label": "馬単",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw157ouS305202604090820261025Z99/19",
+   "label": "3連複",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw158ouS305202604090820261025Z/3B",
+   "label": "3連単",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw153ouS305202604090920261025Z/5C",
+   "label": "枠連",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw154ouS305202604090920261025Z/E0",
+   "label": "馬連",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw155ouS305202604090920261025Z/64",
+   "label": "ワイド",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw156ouS305202604090920261025Z/E8",
+   "label": "馬単",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw157ouS305202604090920261025Z99/CE",
+   "label": "3連複",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw158ouS305202604090920261025Z/F0",
+   "label": "3連単",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw153ouS305202604091020261025Z/51",
+   "label": "枠連",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw154ouS305202604091020261025Z/D5",
+   "label": "馬連",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw155ouS305202604091020261025Z/59",
+   "label": "ワイド",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw156ouS305202604091020261025Z/DD",
+   "label": "馬単",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw157ouS305202604091020261025Z99/C3",
+   "label": "3連複",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw158ouS305202604091020261025Z/E5",
+   "label": "3連単",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw153ouS305202604091120261025Z/06",
+   "label": "枠連",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw154ouS305202604091120261025Z/8A",
+   "label": "馬連",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw155ouS305202604091120261025Z/0E",
+   "label": "ワイド",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw156ouS305202604091120261025Z/92",
+   "label": "馬単",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw157ouS305202604091120261025Z99/78",
+   "label": "3連複",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw158ouS305202604091120261025Z/9A",
+   "label": "3連単",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw153ouS305202604091220261025Z/BB",
+   "label": "枠連",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw154ouS305202604091220261025Z/3F",
+   "label": "馬連",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw155ouS305202604091220261025Z/C3",
+   "label": "ワイド",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw156ouS305202604091220261025Z/47",
+   "label": "馬単",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw157ouS305202604091220261025Z99/2D",
+   "label": "3連複",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw158ouS305202604091220261025Z/4F",
+   "label": "3連単",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw154ouS308202604090120261025Z/16",
+   "label": "馬連",
+   "depth": 3
+  },
+  {
+   "kind": "card",
+   "cname": "pw155ouS308202604090120261025Z/9A",
+   "label": "ワイド",
+   "depth": 3
+  }
+ ],
+ "entry": {
+  "card": "pw01dli00/F3",
+  "odds": "pw15oli00/6D",
+  "result": "pw01sli00/AF"
+ }
+}
