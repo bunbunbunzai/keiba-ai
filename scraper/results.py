@@ -45,22 +45,31 @@ def jra(target: str) -> int:
 
 
 # ---------------- 楽天競馬 ----------------
-def parse_rakuten_dividend(html: str) -> dict:
+def parse_rakuten_payouts(html: str) -> dict:
+    """競走成績ページ内の払戻金表（summary="払戻金"）を読む。th の直後の number/money セルが組。"""
+    from jra_cards import lines_of
+
     s = BeautifulSoup(html, "html.parser")
+    t = s.find("table", attrs={"summary": "払戻金"})
     pay: dict = {}
-    for th in s.find_all(["th", "dt"]):
+    if not t:
+        return pay
+    for th in t.find_all("th"):
         k = text(th).replace(" ", "")
         if k not in KINDS:
             continue
-        kind = NORMAL.get(k, k)
-        row = th.find_parent("tr") or th.find_parent("dl")
-        # 同じ券種で複数行（複勝・ワイド）→ rowspan で続く行も拾う
-        span = int(th.get("rowspan", 1)) if th.name == "th" else 1
-        rows = [row] + (row.find_next_siblings("tr")[: span - 1] if row and row.name == "tr" else [])
-        for r in rows:
-            t = text(r).replace(k, " ")
-            for combo, yen in re.findall(r"(\d+(?:\s*[-－→]\s*\d+)*)\s+([\d,]+)\s*円", t):
-                pay.setdefault(kind, []).append({"combo": re.sub(r"\s*[－→]\s*|\s*-\s*", "-", combo), "yen": int(yen.replace(",", ""))})
+        nc = th.find_next_sibling("td", class_="number")
+        mc = th.find_next_sibling("td", class_="money")
+        if not (nc and mc):
+            continue
+        combos, yens = lines_of(nc), lines_of(mc)
+        for c, y in zip(combos, yens):
+            yy = num(y, int)
+            if yy and re.fullmatch(r"\d+(-\d+)*", c):
+                pay.setdefault(NORMAL.get(k, k), []).append({"combo": c, "yen": yy})
+    refund = t.find(string=re.compile("返還"))
+    if refund:
+        pay["_refund"] = re.findall(r"(\d+)番", str(refund.parent.get_text()))
     return pay
 
 
@@ -76,7 +85,7 @@ def parse_rakuten_performance(html: str) -> list[dict]:
             "time": d.get("タイム"),
             "margin": d.get("着差"),
             "corners": "-".join(re.findall(r"\d+", d.get("コーナー通過順", d.get("コーナー通過順位", "")))),
-            "last3f": num(d.get("上がり3F") or d.get("上り3F") or d.get("上がり")),
+            "last3f": num(d.get("推定上がり") or d.get("上がり3F") or d.get("上がり")),
             "popularity": num(d.get("人気"), int),
             "raw": d,
         })
@@ -92,11 +101,9 @@ def rakuten(target: str, limit_races: int | None = None) -> int:
         for rid in race_ids(sess, target, v)[:limit_races]:
             out = {"source": "rakuten", "date": target, "race_id": rid}
             try:
-                dh = sess.get(BASE + PAGES["dividend"].format(rid=rid)).text
-                save_raw("rakuten_dividend", target, rid, dh)
-                out["payouts"] = parse_rakuten_dividend(dh)
                 ph = sess.get(BASE + PAGES["performance"].format(rid=rid)).text
                 save_raw("rakuten_performance", target, rid, ph)
+                out["payouts"] = parse_rakuten_payouts(ph)
                 out["rows"] = parse_rakuten_performance(ph)
             except Exception as e:  # noqa: BLE001
                 out["error"] = str(e)

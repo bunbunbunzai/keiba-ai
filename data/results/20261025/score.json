@@ -1,0 +1,30 @@
+{
+ "date": "20261025",
+ "races_scored": 1,
+ "stake": 900,
+ "return": 2000,
+ "roi": 222.2,
+ "hit_races": 1,
+ "honmei_win": 0,
+ "honmei_top3": 1,
+ "races": [
+  {
+   "race_id": "jra_20261025_京都_11",
+   "confidence": "C",
+   "honmei": 6,
+   "honmei_finish": "2",
+   "top3": [
+    9,
+    6,
+    10
+   ],
+   "stake": 900,
+   "return": 2000,
+   "hits": [
+    "ワイド 6-10 1270円",
+    "複勝 6 730円"
+   ],
+   "voided": false
+  }
+ ]
+}

@@ -55,7 +55,7 @@ def score_race(pred: dict, res: dict) -> dict:
         "stake": stake,
         "return": ret,
         "hits": hits,
-        "voided": not rows,
+        "voided": not res.get("payouts") or all(k.startswith("_") for k in res.get("payouts", {})),
     }
 
 

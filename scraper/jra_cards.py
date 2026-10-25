@@ -27,6 +27,19 @@ def text(el) -> str:
     return " ".join(el.get_text(" ", strip=True).split()) if el else ""
 
 
+def lines_of(el) -> list[str]:
+    """<br>区切りのセルを行のリストにする。"""
+    out, cur = [], []
+    for node in el.descendants:
+        if getattr(node, "name", None) == "br":
+            out.append(" ".join(cur).strip()); cur = []
+        elif isinstance(node, str) and node.strip():
+            cur.append(node.strip())
+    if cur:
+        out.append(" ".join(cur).strip())
+    return [x for x in out if x]
+
+
 def num(s, cast=float):
     m = re.search(r"-?\d+(?:\.\d+)?", (s or "").replace(",", ""))
     return cast(m.group()) if m else None
