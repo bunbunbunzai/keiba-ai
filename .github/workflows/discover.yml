@@ -1,0 +1,53 @@
+name: discover (試運転：生HTMLの収集)
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "対象日 YYYYMMDD（空なら今日・日本時間）"
+        required: false
+      source:
+        description: "jra / rakuten / both"
+        default: both
+      rakuten_limit:
+        description: "楽天：各場の先頭Nレースだけ（試運転は2）"
+        default: "2"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-commit
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: 対象日
+        id: d
+        run: |
+          D="${{ inputs.date }}"
+          if [ -z "$D" ]; then D=$(TZ=Asia/Tokyo date +%Y%m%d); fi
+          echo "date=$D" >> "$GITHUB_OUTPUT"
+      - name: JRA
+        if: inputs.source != 'rakuten'
+        run: python scraper/jra.py --date ${{ steps.d.outputs.date }} --kinds card,odds,result --max-pages 150
+        continue-on-error: true
+      - name: 楽天競馬
+        if: inputs.source != 'jra'
+        run: python scraper/rakuten.py --date ${{ steps.d.outputs.date }} --kinds card,odds,performance,dividend --limit-races ${{ inputs.rakuten_limit }}
+        continue-on-error: true
+      - name: 保存
+        run: |
+          git config user.name "keiba-ai-bot"
+          git config user.email "keiba-ai-bot@users.noreply.github.com"
+          git add data
+          git commit -m "discover ${{ steps.d.outputs.date }}" || echo "no changes"
+          git pull --rebase && git push
