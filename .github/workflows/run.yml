@@ -1,0 +1,44 @@
+name: run (手動実行：取得・解析スクリプト)
+
+on:
+  workflow_dispatch:
+    inputs:
+      script:
+        description: "jra_cards / rakuten / parse_rakuten / jra"
+        required: true
+      args:
+        description: "引数（例：--date 20261025 --max-horses 40）"
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-commit
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: 実行
+        env:
+          SCRIPT: ${{ inputs.script }}
+          ARGS: ${{ inputs.args }}
+        run: |
+          case "$SCRIPT" in jra_cards|rakuten|parse_rakuten|jra) ;; *) echo "unknown script"; exit 1;; esac
+          cd scraper && python "$SCRIPT.py" $ARGS
+        continue-on-error: true
+      - name: 保存
+        run: |
+          git config user.name "keiba-ai-bot"
+          git config user.email "keiba-ai-bot@users.noreply.github.com"
+          git add data
+          git commit -m "run ${{ inputs.script }} ${{ inputs.args }}" || echo "no changes"
+          git pull --rebase && git push

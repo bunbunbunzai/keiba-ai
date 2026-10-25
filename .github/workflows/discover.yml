@@ -38,11 +38,11 @@ jobs:
           echo "date=$D" >> "$GITHUB_OUTPUT"
       - name: JRA
         if: inputs.source != 'rakuten'
-        run: python scraper/jra.py --date ${{ steps.d.outputs.date }} --kinds card,odds,result --max-pages 150
+        run: cd scraper && python jra.py --date ${{ steps.d.outputs.date }} --kinds card,odds,result --max-pages 150
         continue-on-error: true
       - name: 楽天競馬
         if: inputs.source != 'jra'
-        run: python scraper/rakuten.py --date ${{ steps.d.outputs.date }} --kinds card,odds,performance,dividend --limit-races ${{ inputs.rakuten_limit }}
+        run: cd scraper && python rakuten.py --date ${{ steps.d.outputs.date }} --kinds card,odds,performance,dividend --limit-races ${{ inputs.rakuten_limit }}
         continue-on-error: true
       - name: 保存
         run: |
