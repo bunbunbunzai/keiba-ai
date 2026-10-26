@@ -108,8 +108,15 @@ def parse_card(html: str, race_id: str) -> dict:
             dm = re.match(r"(芝|ダ|障)?([\d,]+)m", dist.get_text(strip=True))
             if dm:
                 race.update(surface=dm.group(1), distance=int(dm.group(2).replace(",", "")))
-        dd = note.find("dd")
-        race["post_time"] = dd.get_text(strip=True) if dd else None
+        race["post_time"] = None
+        for dt in note.find_all("dt"):
+            dd = dt.find_next_sibling("dd")
+            k = dt.get_text(strip=True)
+            if dd and "発走" in k:
+                m2 = re.search(r"\d{1,2}:\d{2}", dd.get_text())
+                race["post_time"] = m2.group() if m2 else None
+            elif dd and k in ("天候", "馬場"):
+                race["weather" if k == "天候" else "track"] = dd.get_text(strip=True)
         h2 = note.find("h2")
         race["race_name"] = " ".join(h2.get_text(" ", strip=True).split()) if h2 else None
         cond = note.find("ul", class_="horseCondition")
