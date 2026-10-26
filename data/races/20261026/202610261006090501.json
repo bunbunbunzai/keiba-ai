@@ -7,7 +7,7 @@
  "race_no": 1,
  "surface": "ダ",
  "distance": 1000,
- "post_time": "11:45",
+ "post_time": "曇",
  "race_name": "Ｃ２ Ｃ２",
  "conditions": "サラブレッド系　一般",
  "horses": [
@@ -19,13 +19,13 @@
    "sire": "インカンテーション",
    "dam": "レッドシャトル",
    "damsire": "タイキシャトル",
-   "odds": null,
-   "popularity": null,
+   "odds": 7.8,
+   "popularity": 4,
    "sex_age": "牝6",
    "weight": 54.0,
    "jockey": "小林凌",
    "trainer": "佐藤祐",
-   "body_weight_change": "-",
+   "body_weight_change": "466+3",
    "past": [
     {
      "finish": "2",
@@ -158,7 +158,7 @@
    "weight": 54.0,
    "jockey": "佐々志",
    "trainer": "佐藤祐",
-   "body_weight_change": "-",
+   "body_weight_change": "423-3",
    "past": [
     {
      "finish": "5",
@@ -282,13 +282,13 @@
    "sire": "フォーウィールドライブ",
    "dam": "ワンモアバイト",
    "damsire": "ロードカナロア",
-   "odds": null,
-   "popularity": null,
+   "odds": 2.7,
+   "popularity": 1,
    "sex_age": "牝3",
    "weight": 54.0,
    "jockey": "菅原辰",
    "trainer": "高橋純",
-   "body_weight_change": "-",
+   "body_weight_change": "397-1",
    "past": [
     {
      "finish": "2",
@@ -412,13 +412,13 @@
    "sire": "ヴァンゴッホ",
    "dam": "サンデーインアスク",
    "damsire": "ディープインパクト",
-   "odds": null,
-   "popularity": null,
+   "odds": 5.0,
+   "popularity": 2,
    "sex_age": "牝3",
    "weight": 54.0,
    "jockey": "大坪慎",
    "trainer": "三野通",
-   "body_weight_change": "-",
+   "body_weight_change": "437+7",
    "past": [
     {
      "finish": "4",
@@ -542,13 +542,13 @@
    "sire": "アルアイン",
    "dam": "マナエヴァ",
    "damsire": "クロフネ",
-   "odds": null,
-   "popularity": null,
+   "odds": 5.1,
+   "popularity": 3,
    "sex_age": "牡3",
    "weight": 56.0,
    "jockey": "南郷家",
    "trainer": "陶文峰",
-   "body_weight_change": "-",
+   "body_weight_change": "486-5",
    "past": [
     {
      "finish": "3",
@@ -678,7 +678,7 @@
    "weight": 50.0,
    "jockey": "★齋藤友",
    "trainer": "佐藤敏",
-   "body_weight_change": "-",
+   "body_weight_change": "440±0",
    "past": [
     {
      "finish": "7",
@@ -811,7 +811,7 @@
    "weight": 53.0,
    "jockey": "☆坂井瑛",
    "trainer": "飯田弘",
-   "body_weight_change": "-",
+   "body_weight_change": "481-3",
    "past": [
     {
      "finish": "10",
@@ -935,13 +935,13 @@
    "sire": "タリスマニック",
    "dam": "ラブセイナ",
    "damsire": "ディープインパクト",
-   "odds": null,
-   "popularity": null,
+   "odds": 9.1,
+   "popularity": 5,
    "sex_age": "牝4",
    "weight": 52.0,
    "jockey": "◇関本玲",
    "trainer": "関本浩",
-   "body_weight_change": "-",
+   "body_weight_change": "425+3",
    "past": [
     {
      "finish": "5",
@@ -1074,7 +1074,7 @@
    "weight": 54.0,
    "jockey": "阿部英",
    "trainer": "及川良",
-   "body_weight_change": "-",
+   "body_weight_change": "394±0",
    "past": [
     {
      "finish": "7",
@@ -1206,7 +1206,7 @@
    "weight": 54.0,
    "jockey": "山本紀",
    "trainer": "高橋純",
-   "body_weight_change": "-",
+   "body_weight_change": "453-3",
    "past": [
     {
      "finish": "11",
@@ -1339,7 +1339,7 @@
    "weight": 56.0,
    "jockey": "塚本涼",
    "trainer": "酒井仁",
-   "body_weight_change": "-",
+   "body_weight_change": "522±0",
    "past": [
     {
      "finish": "6",
@@ -1472,7 +1472,7 @@
    "weight": 54.0,
    "jockey": "鈴木祐",
    "trainer": "関本浩",
-   "body_weight_change": "-",
+   "body_weight_change": "454-2",
    "past": [
     {
      "finish": "8",
