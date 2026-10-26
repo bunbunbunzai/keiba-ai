@@ -68,7 +68,7 @@ jobs:
           cd scraper
           case "$PHASE-$SRC" in
             eve-jra)      python jra_cards.py --date "$D" ;;
-            noon-jra)     python jra_cards.py --date "$D" --past 0 ;;
+            noon-jra)     python jra_cards.py --date "$D" --past 0 && python results.py --date "$D" --source jra ;;
             eve-rakuten)  python rakuten.py --date "$D" --kinds card && python parse_rakuten.py --date "$D" ;;
             noon-rakuten) python rakuten.py --date "$D" --kinds card --after-now && python parse_rakuten.py --date "$D" ;;
             night-*)      python results.py --date "$D" --source "$SRC" ;;
