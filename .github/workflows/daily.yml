@@ -5,13 +5,7 @@ on:
   # GitHub の schedule は混雑時に数時間遅れたり、落ちたりする（毎時0分・30分は特に混む）。
   # そのため分をずらし、各フェーズに予備の時刻を1つずつ置く。
   # 予備は「本番が成功済み（data/runs/<日付>/<phase>-<source>.done がある）」なら何もしない。
-  schedule:
-    - cron: "7 8 * * *"    # 17:07 JST eve   翌日分の出馬表＋近走（前日夜の分析用）
-    - cron: "41 9 * * *"   # 18:41 JST eve   予備
-    - cron: "13 1 * * *"   # 10:13 JST noon  当日の出馬表を取り直す（オッズ・馬体重・取消の反映、昼の分析用）
-    - cron: "47 1 * * *"   # 10:47 JST noon  予備
-    - cron: "33 12 * * *"  # 21:33 JST night 当日の結果・払戻 → 回収率
-    - cron: "19 14 * * *"  # 23:19 JST night 予備
+  # GitHubの定時実行は遅延・欠落が多いため使わない。Claudeの定期タスクが workflow_dispatch で起動する
   workflow_dispatch:
     inputs:
       phase:
