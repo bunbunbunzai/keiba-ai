@@ -8,11 +8,12 @@ JRA   ：レース結果メニュー → 対象日の開催ごとの一覧（pw0
 from __future__ import annotations
 
 import argparse
+import json
 import re
 
 from bs4 import BeautifulSoup
 
-from common import PoliteSession, save_json, save_raw
+from common import DATA_DIR, PoliteSession, save_json, save_raw
 from jra import BASE as JRA_BASE, ENTRY, actions, open_action
 from jra_cards import cached_result, num, parse_result, rows_as_dicts, table_by_headers, text
 
@@ -99,6 +100,9 @@ def rakuten(target: str, limit_races: int | None = None) -> int:
     n = 0
     for v in venue_lists(sess, target):
         for rid in race_ids(sess, target, v)[:limit_races]:
+            done = DATA_DIR / "results" / target / f"{rid}.json"
+            if done.exists() and not json.loads(done.read_text(encoding="utf-8")).get("error"):
+                continue  # 取得済みはとばす（再実行時は失敗分だけ取り直す）
             out = {"source": "rakuten", "date": target, "race_id": rid}
             try:
                 ph = sess.get(BASE + PAGES["performance"].format(rid=rid)).text

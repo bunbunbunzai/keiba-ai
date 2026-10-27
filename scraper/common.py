@@ -33,8 +33,15 @@ class PoliteSession:
         self._last = time.monotonic()
 
     def get(self, url: str, **kw) -> requests.Response:
-        self._wait()
-        r = self.s.get(url, timeout=30, **kw)
+        for attempt in range(3):  # 接続切れは間隔を空けて最大3回まで
+            self._wait()
+            try:
+                r = self.s.get(url, timeout=30, **kw)
+                break
+            except requests.ConnectionError:
+                if attempt == 2:
+                    raise
+                time.sleep(10 * (attempt + 1))
         if self.encoding:
             r.encoding = self.encoding
         r.raise_for_status()
