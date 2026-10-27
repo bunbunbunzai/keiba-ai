@@ -1,0 +1,205 @@
+{
+ "source": "rakuten",
+ "date": "20261027",
+ "race_id": "202610272433150104",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "12",
+    "yen": 250
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "12-8",
+    "yen": 850
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "12",
+    "yen": 120
+   },
+   {
+    "combo": "8",
+    "yen": 180
+   },
+   {
+    "combo": "9",
+    "yen": 420
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "8-12",
+    "yen": 310
+   },
+   {
+    "combo": "9-12",
+    "yen": 630
+   },
+   {
+    "combo": "8-9",
+    "yen": 1330
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "6-8",
+    "yen": 520
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "8-9-12",
+    "yen": 2230
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "12-8-9",
+    "yen": 6990
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "8-12",
+    "yen": 540
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 12,
+   "name": "ショルタメンテ",
+   "time": "1:38.1",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 40.1,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 8,
+   "name": "ファフロツキーズ",
+   "time": "1:38.4",
+   "margin": "１ １／２",
+   "pos4": 2,
+   "last3f": 40.3,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 9,
+   "name": "チョコブラウニー",
+   "time": "1:38.9",
+   "margin": "２ １／２",
+   "pos4": 3,
+   "last3f": 40.6,
+   "popularity": 7
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 6,
+   "name": "ソパデアホ",
+   "time": "1:39.8",
+   "margin": "４",
+   "pos4": 3,
+   "last3f": 41.5,
+   "popularity": 2
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 7,
+   "name": "ローズバラード",
+   "time": "1:40.4",
+   "margin": "３",
+   "pos4": 5,
+   "last3f": 42.3,
+   "popularity": 8
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 5,
+   "name": "ドナシュネル",
+   "time": "1:40.8",
+   "margin": "２",
+   "pos4": 6,
+   "last3f": 41.7,
+   "popularity": 4
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 4,
+   "name": "メイショウイサミ",
+   "time": "1:41.0",
+   "margin": "１",
+   "pos4": 6,
+   "last3f": 41.5,
+   "popularity": 6
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "セイヒンクイーン",
+   "time": "1:42.3",
+   "margin": "６",
+   "pos4": 11,
+   "last3f": 41.6,
+   "popularity": 11
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "ゴールデンボート",
+   "time": "1:42.5",
+   "margin": "１",
+   "pos4": 6,
+   "last3f": 44.0,
+   "popularity": 5
+  },
+  {
+   "finish": "10",
+   "frame": 8,
+   "number": 11,
+   "name": "スマートピクタス",
+   "time": "1:42.5",
+   "margin": "ハナ",
+   "pos4": 10,
+   "last3f": 44.0,
+   "popularity": 12
+  },
+  {
+   "finish": "11",
+   "frame": 7,
+   "number": 10,
+   "name": "レッドジルベスター",
+   "time": "1:43.2",
+   "margin": "３",
+   "pos4": 11,
+   "last3f": 43.7,
+   "popularity": 9
+  },
+  {
+   "finish": "12",
+   "frame": 1,
+   "number": 1,
+   "name": "ケープティアラ",
+   "time": "1:43.4",
+   "margin": "１",
+   "pos4": 6,
+   "last3f": 45.3,
+   "popularity": 10
+  }
+ ]
+}

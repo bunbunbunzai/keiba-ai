@@ -1,0 +1,183 @@
+{
+ "source": "rakuten",
+ "date": "20261027",
+ "race_id": "202610271006090601",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "6",
+    "yen": 180
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "6-9",
+    "yen": 1970
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "6",
+    "yen": 110
+   },
+   {
+    "combo": "9",
+    "yen": 250
+   },
+   {
+    "combo": "8",
+    "yen": 160
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "6-9",
+    "yen": 440
+   },
+   {
+    "combo": "6-8",
+    "yen": 290
+   },
+   {
+    "combo": "8-9",
+    "yen": 860
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "6-8",
+    "yen": 1170
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "6-8-9",
+    "yen": 1560
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "6-9-8",
+    "yen": 6330
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "6-9",
+    "yen": 1380
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 6,
+   "name": "ライブリピュア",
+   "time": "1:26.3",
+   "margin": "",
+   "pos4": 2,
+   "last3f": 38.1,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 9,
+   "name": "ミクリ",
+   "time": "1:27.4",
+   "margin": "７",
+   "pos4": 5,
+   "last3f": 39.0,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 8,
+   "name": "マリーオラス",
+   "time": "1:27.6",
+   "margin": "３／４",
+   "pos4": 1,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 3,
+   "name": "オッピポイカ",
+   "time": "1:27.7",
+   "margin": "３／４",
+   "pos4": 3,
+   "last3f": 39.1,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 7,
+   "name": "ビームービー",
+   "time": "1:28.0",
+   "margin": "１ １／２",
+   "pos4": 10,
+   "last3f": 37.9,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 5,
+   "name": "ファイヤサラマンダ",
+   "time": "1:28.1",
+   "margin": "１／２",
+   "pos4": 6,
+   "last3f": 39.4,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 2,
+   "number": 2,
+   "name": "ロッキータイタン",
+   "time": "1:28.5",
+   "margin": "２ １／２",
+   "pos4": 8,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "ミスメリッサ",
+   "time": "1:28.9",
+   "margin": "２ １／２",
+   "pos4": 7,
+   "last3f": 40.1,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 10,
+   "name": "ハミッツキャンディ",
+   "time": "1:29.6",
+   "margin": "４",
+   "pos4": 9,
+   "last3f": 40.3,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 4,
+   "number": 4,
+   "name": "パカラパカラ",
+   "time": "1:31.5",
+   "margin": "大差",
+   "pos4": 4,
+   "last3f": 43.6,
+   "popularity": null
+  }
+ ]
+}

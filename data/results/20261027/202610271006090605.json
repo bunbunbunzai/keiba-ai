@@ -1,0 +1,205 @@
+{
+ "source": "rakuten",
+ "date": "20261027",
+ "race_id": "202610271006090605",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "4",
+    "yen": 330
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "4-5",
+    "yen": 3100
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "4",
+    "yen": 150
+   },
+   {
+    "combo": "5",
+    "yen": 370
+   },
+   {
+    "combo": "6",
+    "yen": 150
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-5",
+    "yen": 620
+   },
+   {
+    "combo": "4-6",
+    "yen": 310
+   },
+   {
+    "combo": "5-6",
+    "yen": 500
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-5",
+    "yen": 420
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-5-6",
+    "yen": 1470
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "4-5-6",
+    "yen": 9050
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-5",
+    "yen": 2190
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 4,
+   "name": "タニマサベーカ",
+   "time": "1:13.5",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 37.9,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "トゥーナフラワー",
+   "time": "1:13.9",
+   "margin": "２ １／２",
+   "pos4": 4,
+   "last3f": 37.4,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 6,
+   "name": "リリアナフェアリー",
+   "time": "1:14.2",
+   "margin": "１ ３／４",
+   "pos4": 3,
+   "last3f": 38.1,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 7,
+   "name": "ミスターアルデ",
+   "time": "1:14.3",
+   "margin": "３／４",
+   "pos4": 6,
+   "last3f": 38.0,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 8,
+   "name": "ロッサヴィール",
+   "time": "1:14.3",
+   "margin": "クビ",
+   "pos4": 8,
+   "last3f": 37.9,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 9,
+   "name": "ルーナ",
+   "time": "1:14.6",
+   "margin": "１ １／２",
+   "pos4": 2,
+   "last3f": 38.8,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 12,
+   "name": "ファイストス",
+   "time": "1:14.8",
+   "margin": "１",
+   "pos4": 5,
+   "last3f": 38.8,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 11,
+   "name": "メダツヤツ",
+   "time": "1:15.0",
+   "margin": "１ １／２",
+   "pos4": 12,
+   "last3f": 38.2,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 3,
+   "number": 3,
+   "name": "ウェズン",
+   "time": "1:15.5",
+   "margin": "３",
+   "pos4": 11,
+   "last3f": 38.7,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 2,
+   "number": 2,
+   "name": "カリスティア",
+   "time": "1:16.0",
+   "margin": "３",
+   "pos4": 10,
+   "last3f": 39.1,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 1,
+   "number": 1,
+   "name": "フークレグルス",
+   "time": "1:16.0",
+   "margin": "アタマ",
+   "pos4": 7,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 7,
+   "number": 10,
+   "name": "メッチャサザン",
+   "time": "1:16.7",
+   "margin": "４",
+   "pos4": 9,
+   "last3f": 40.6,
+   "popularity": null
+  }
+ ]
+}

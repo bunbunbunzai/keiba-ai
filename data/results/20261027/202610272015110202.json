@@ -1,0 +1,194 @@
+{
+ "source": "rakuten",
+ "date": "20261027",
+ "race_id": "202610272015110202",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "8",
+    "yen": 150
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "8-2",
+    "yen": 430
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "8",
+    "yen": 110
+   },
+   {
+    "combo": "2",
+    "yen": 160
+   },
+   {
+    "combo": "1",
+    "yen": 230
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-8",
+    "yen": 160
+   },
+   {
+    "combo": "1-8",
+    "yen": 570
+   },
+   {
+    "combo": "1-2",
+    "yen": 670
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-7",
+    "yen": 230
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-2-8",
+    "yen": 980
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "8-2-1",
+    "yen": 3300
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-8",
+    "yen": 260
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 8,
+   "name": "ブッソラ",
+   "time": "1:14.7",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 38.0,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 2,
+   "number": 2,
+   "name": "ミヤコノセイホク",
+   "time": "1:15.2",
+   "margin": "２ １／２",
+   "pos4": 5,
+   "last3f": 38.0,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 1,
+   "number": 1,
+   "name": "ソレイユダーム",
+   "time": "1:16.6",
+   "margin": "７",
+   "pos4": 2,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 6,
+   "name": "ケンヴィント",
+   "time": "1:16.6",
+   "margin": "アタマ",
+   "pos4": 8,
+   "last3f": 39.1,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 7,
+   "name": "アズマジョシ",
+   "time": "1:16.7",
+   "margin": "１／２",
+   "pos4": 2,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 10,
+   "name": "オオイノオウマサン",
+   "time": "1:17.3",
+   "margin": "３",
+   "pos4": 9,
+   "last3f": 39.8,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 4,
+   "name": "ダスマパーティ",
+   "time": "1:17.7",
+   "margin": "２",
+   "pos4": 5,
+   "last3f": 40.6,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "ユウユウザローズ",
+   "time": "1:18.6",
+   "margin": "４",
+   "pos4": 5,
+   "last3f": 41.6,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 5,
+   "name": "コンニチヒヒーン",
+   "time": "1:19.4",
+   "margin": "４",
+   "pos4": 10,
+   "last3f": 41.9,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 9,
+   "name": "ユウユウプロースト",
+   "time": "1:20.1",
+   "margin": "３ １／２",
+   "pos4": 10,
+   "last3f": 42.8,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 8,
+   "number": 11,
+   "name": "リバーライン",
+   "time": "1:22.1",
+   "margin": "１０",
+   "pos4": 2,
+   "last3f": 45.3,
+   "popularity": null
+  }
+ ]
+}

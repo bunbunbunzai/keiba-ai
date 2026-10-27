@@ -1,0 +1,155 @@
+{
+ "source": "rakuten",
+ "date": "20261027",
+ "race_id": "202610272218130205",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "3",
+    "yen": 150
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "3-8",
+    "yen": 240
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "3",
+    "yen": 100
+   },
+   {
+    "combo": "8",
+    "yen": 120
+   },
+   {
+    "combo": "4",
+    "yen": 290
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-8",
+    "yen": 120
+   },
+   {
+    "combo": "3-4",
+    "yen": 390
+   },
+   {
+    "combo": "4-8",
+    "yen": 730
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-4-8",
+    "yen": 850
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "3-8-4",
+    "yen": 1810
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-8",
+    "yen": 160
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 3,
+   "number": 3,
+   "name": "デアアテナ",
+   "time": "1:38.4",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 40.0,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 8,
+   "name": "テーオーニュートン",
+   "time": "1:38.4",
+   "margin": "ハナ",
+   "pos4": 1,
+   "last3f": 40.0,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "ストロボエッジ",
+   "time": "1:40.5",
+   "margin": "大差",
+   "pos4": 3,
+   "last3f": 41.0,
+   "popularity": 5
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 7,
+   "name": "ファントムグレース",
+   "time": "1:40.9",
+   "margin": "２",
+   "pos4": 6,
+   "last3f": 40.8,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 5,
+   "name": "ショウガノキズナ",
+   "time": "1:41.2",
+   "margin": "１ １／２",
+   "pos4": 5,
+   "last3f": 41.8,
+   "popularity": 7
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 6,
+   "name": "モーモーインディゴ",
+   "time": "1:41.6",
+   "margin": "２",
+   "pos4": 8,
+   "last3f": 39.5,
+   "popularity": 8
+  },
+  {
+   "finish": "7",
+   "frame": 1,
+   "number": 1,
+   "name": "ローズライズ",
+   "time": "1:43.3",
+   "margin": "８",
+   "pos4": 4,
+   "last3f": 44.3,
+   "popularity": 3
+  },
+  {
+   "finish": "8",
+   "frame": 2,
+   "number": 2,
+   "name": "ゴールドアバンティ",
+   "time": "1:43.7",
+   "margin": "２",
+   "pos4": 6,
+   "last3f": 44.1,
+   "popularity": 6
+  }
+ ]
+}

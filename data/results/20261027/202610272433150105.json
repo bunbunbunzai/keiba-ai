@@ -1,0 +1,205 @@
+{
+ "source": "rakuten",
+ "date": "20261027",
+ "race_id": "202610272433150105",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "5",
+    "yen": 620
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "5-10",
+    "yen": 30930
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "5",
+    "yen": 200
+   },
+   {
+    "combo": "10",
+    "yen": 2140
+   },
+   {
+    "combo": "7",
+    "yen": 310
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "5-10",
+    "yen": 5210
+   },
+   {
+    "combo": "5-7",
+    "yen": 1110
+   },
+   {
+    "combo": "7-10",
+    "yen": 8250
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-7",
+    "yen": 3230
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "5-7-10",
+    "yen": 44250
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "5-10-7",
+    "yen": 249820
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "5-10",
+    "yen": 14080
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 5,
+   "name": "ポセイドンテソーロ",
+   "time": "1:39.1",
+   "margin": "",
+   "pos4": 3,
+   "last3f": 41.2,
+   "popularity": 3
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 10,
+   "name": "ピグマリオン",
+   "time": "1:39.2",
+   "margin": "クビ",
+   "pos4": 3,
+   "last3f": 41.1,
+   "popularity": 10
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 7,
+   "name": "ヤマトスイフト",
+   "time": "1:39.4",
+   "margin": "１ １／２",
+   "pos4": 2,
+   "last3f": 41.3,
+   "popularity": 6
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "レディトゥランブル",
+   "time": "1:39.7",
+   "margin": "１ １／２",
+   "pos4": 1,
+   "last3f": 42.1,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "frame": 3,
+   "number": 3,
+   "name": "グランドサークル",
+   "time": "1:40.3",
+   "margin": "３",
+   "pos4": 5,
+   "last3f": 42.1,
+   "popularity": 11
+  },
+  {
+   "finish": "6",
+   "frame": 1,
+   "number": 1,
+   "name": "プリヴィマーク",
+   "time": "1:40.5",
+   "margin": "１",
+   "pos4": 8,
+   "last3f": 40.6,
+   "popularity": 9
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 4,
+   "name": "ポンテヴェッキオ",
+   "time": "1:40.5",
+   "margin": "クビ",
+   "pos4": 6,
+   "last3f": 41.6,
+   "popularity": 5
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 12,
+   "name": "スコアレジーナ",
+   "time": "1:41.9",
+   "margin": "７",
+   "pos4": 7,
+   "last3f": 43.3,
+   "popularity": 12
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 11,
+   "name": "リベンジャー",
+   "time": "1:42.4",
+   "margin": "２ １／２",
+   "pos4": 12,
+   "last3f": 40.7,
+   "popularity": 1
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 6,
+   "name": "ノアソノマ",
+   "time": "1:43.3",
+   "margin": "４",
+   "pos4": 9,
+   "last3f": 44.2,
+   "popularity": 7
+  },
+  {
+   "finish": "11",
+   "frame": 7,
+   "number": 9,
+   "name": "カタカムナ",
+   "time": "1:43.4",
+   "margin": "クビ",
+   "pos4": 9,
+   "last3f": 44.4,
+   "popularity": 8
+  },
+  {
+   "finish": "12",
+   "frame": 6,
+   "number": 8,
+   "name": "オーキッドワン",
+   "time": "1:44.0",
+   "margin": "３",
+   "pos4": 11,
+   "last3f": 44.7,
+   "popularity": 2
+  }
+ ]
+}

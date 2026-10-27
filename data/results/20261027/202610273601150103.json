@@ -1,0 +1,155 @@
+{
+ "source": "rakuten",
+ "date": "20261027",
+ "race_id": "202610273601150103",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "8",
+    "yen": 280
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "8-6",
+    "yen": 420
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "8",
+    "yen": 110
+   },
+   {
+    "combo": "6",
+    "yen": 100
+   },
+   {
+    "combo": "3",
+    "yen": 110
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "6-8",
+    "yen": 110
+   },
+   {
+    "combo": "3-8",
+    "yen": 270
+   },
+   {
+    "combo": "3-6",
+    "yen": 230
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-6-8",
+    "yen": 350
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "8-6-3",
+    "yen": 1560
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "6-8",
+    "yen": 200
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 8,
+   "name": "ベラジオマルティン",
+   "time": "1:08.6",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 37.7,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 6,
+   "name": "マナウィラ",
+   "time": "1:09.2",
+   "margin": "３",
+   "pos4": 2,
+   "last3f": 38.1,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "スティルアーク",
+   "time": "1:09.4",
+   "margin": "１",
+   "pos4": 3,
+   "last3f": 38.4,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 1,
+   "number": 1,
+   "name": "バウマイオール",
+   "time": "1:10.5",
+   "margin": "５",
+   "pos4": 5,
+   "last3f": 39.2,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 4,
+   "name": "キュピタス",
+   "time": "1:10.7",
+   "margin": "３／４",
+   "pos4": 5,
+   "last3f": 39.4,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "サンヨウイニシャル",
+   "time": "1:12.1",
+   "margin": "７",
+   "pos4": 7,
+   "last3f": 40.7,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 5,
+   "name": "ザーゲアバンティ",
+   "time": "1:12.6",
+   "margin": "２ １／２",
+   "pos4": 7,
+   "last3f": 41.3,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 7,
+   "name": "リコーツェッペリン",
+   "time": "1:13.1",
+   "margin": "２ １／２",
+   "pos4": 4,
+   "last3f": 42.0,
+   "popularity": null
+  }
+ ]
+}

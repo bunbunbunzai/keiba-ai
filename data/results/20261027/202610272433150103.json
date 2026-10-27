@@ -1,0 +1,205 @@
+{
+ "source": "rakuten",
+ "date": "20261027",
+ "race_id": "202610272433150103",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "4",
+    "yen": 140
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "4-5",
+    "yen": 710
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "4",
+    "yen": 100
+   },
+   {
+    "combo": "5",
+    "yen": 130
+   },
+   {
+    "combo": "8",
+    "yen": 130
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-5",
+    "yen": 230
+   },
+   {
+    "combo": "4-8",
+    "yen": 230
+   },
+   {
+    "combo": "5-8",
+    "yen": 560
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-5",
+    "yen": 630
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-5-8",
+    "yen": 770
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "4-5-8",
+    "yen": 2430
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-5",
+    "yen": 590
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 4,
+   "name": "オーシャンミューズ",
+   "time": "1:38.9",
+   "margin": "",
+   "pos4": 4,
+   "last3f": 40.3,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "ルミナスレイナ",
+   "time": "1:39.1",
+   "margin": "１ １／２",
+   "pos4": 1,
+   "last3f": 41.3,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 8,
+   "name": "ミスデルマー",
+   "time": "1:39.3",
+   "margin": "１",
+   "pos4": 2,
+   "last3f": 41.1,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "frame": 1,
+   "number": 1,
+   "name": "ウシワカマル",
+   "time": "1:39.5",
+   "margin": "３／４",
+   "pos4": 2,
+   "last3f": 41.5,
+   "popularity": 9
+  },
+  {
+   "finish": "5",
+   "frame": 2,
+   "number": 2,
+   "name": "アオゾラランチ",
+   "time": "1:39.6",
+   "margin": "３／４",
+   "pos4": 4,
+   "last3f": 41.3,
+   "popularity": 4
+  },
+  {
+   "finish": "6",
+   "frame": 3,
+   "number": 3,
+   "name": "ウインビスタ",
+   "time": "1:39.7",
+   "margin": "クビ",
+   "pos4": 7,
+   "last3f": 40.9,
+   "popularity": 10
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 9,
+   "name": "サンライズハリー",
+   "time": "1:40.1",
+   "margin": "２",
+   "pos4": 4,
+   "last3f": 41.8,
+   "popularity": 6
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 11,
+   "name": "コスモゼーリエ",
+   "time": "1:40.9",
+   "margin": "４",
+   "pos4": 11,
+   "last3f": 42.7,
+   "popularity": 7
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 10,
+   "name": "ミツカネルナ",
+   "time": "1:40.9",
+   "margin": "アタマ",
+   "pos4": 10,
+   "last3f": 42.7,
+   "popularity": 5
+  },
+  {
+   "finish": "10",
+   "frame": 8,
+   "number": 12,
+   "name": "リュウノバモス",
+   "time": "1:41.0",
+   "margin": "１／２",
+   "pos4": 8,
+   "last3f": 42.9,
+   "popularity": 8
+  },
+  {
+   "finish": "11",
+   "frame": 6,
+   "number": 7,
+   "name": "ウワサノモアナ",
+   "time": "1:41.1",
+   "margin": "１／２",
+   "pos4": 9,
+   "last3f": 41.9,
+   "popularity": 12
+  },
+  {
+   "finish": "12",
+   "frame": 5,
+   "number": 6,
+   "name": "シルヴァークラウン",
+   "time": "1:43.4",
+   "margin": "大差",
+   "pos4": 12,
+   "last3f": 43.6,
+   "popularity": 11
+  }
+ ]
+}

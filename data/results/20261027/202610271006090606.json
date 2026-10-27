@@ -1,0 +1,205 @@
+{
+ "source": "rakuten",
+ "date": "20261027",
+ "race_id": "202610271006090606",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "12",
+    "yen": 2940
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "12-4",
+    "yen": 10360
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "12",
+    "yen": 390
+   },
+   {
+    "combo": "4",
+    "yen": 170
+   },
+   {
+    "combo": "3",
+    "yen": 240
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-12",
+    "yen": 1590
+   },
+   {
+    "combo": "3-12",
+    "yen": 1870
+   },
+   {
+    "combo": "3-4",
+    "yen": 600
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-8",
+    "yen": 3070
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-4-12",
+    "yen": 8760
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "12-4-3",
+    "yen": 140360
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-12",
+    "yen": 4690
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 12,
+   "name": "マカベウス",
+   "time": "1:13.2",
+   "margin": "",
+   "pos4": 8,
+   "last3f": 36.4,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 4,
+   "number": 4,
+   "name": "リュウノソウル",
+   "time": "1:13.3",
+   "margin": "３／４",
+   "pos4": 5,
+   "last3f": 36.7,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "スターライトテール",
+   "time": "1:13.3",
+   "margin": "ハナ",
+   "pos4": 7,
+   "last3f": 36.4,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "アズーラ",
+   "time": "1:13.9",
+   "margin": "４",
+   "pos4": 4,
+   "last3f": 37.6,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 6,
+   "name": "アグリオ",
+   "time": "1:14.0",
+   "margin": "１／２",
+   "pos4": 6,
+   "last3f": 37.1,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 5,
+   "name": "エイシンツーリング",
+   "time": "1:14.1",
+   "margin": "１／２",
+   "pos4": 1,
+   "last3f": 38.2,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 9,
+   "name": "インテンシーヴォ",
+   "time": "1:14.3",
+   "margin": "１ １／２",
+   "pos4": 2,
+   "last3f": 38.2,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "ウチュウノハナ",
+   "time": "1:14.7",
+   "margin": "２ １／２",
+   "pos4": 10,
+   "last3f": 37.6,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 6,
+   "number": 7,
+   "name": "シャトーボビー",
+   "time": "1:14.9",
+   "margin": "１ １／４",
+   "pos4": 3,
+   "last3f": 38.9,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 6,
+   "number": 8,
+   "name": "モリオン",
+   "time": "1:15.0",
+   "margin": "クビ",
+   "pos4": 9,
+   "last3f": 38.0,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 7,
+   "number": 10,
+   "name": "オビディアント",
+   "time": "1:15.3",
+   "margin": "２",
+   "pos4": 12,
+   "last3f": 38.0,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 8,
+   "number": 11,
+   "name": "アイルビーゼア",
+   "time": "1:15.9",
+   "margin": "４",
+   "pos4": 11,
+   "last3f": 39.5,
+   "popularity": null
+  }
+ ]
+}

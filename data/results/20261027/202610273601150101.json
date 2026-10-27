@@ -1,0 +1,155 @@
+{
+ "source": "rakuten",
+ "date": "20261027",
+ "race_id": "202610273601150101",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "1",
+    "yen": 440
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "1-6",
+    "yen": 3420
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "1",
+    "yen": 170
+   },
+   {
+    "combo": "6",
+    "yen": 220
+   },
+   {
+    "combo": "2",
+    "yen": 220
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-6",
+    "yen": 640
+   },
+   {
+    "combo": "1-2",
+    "yen": 610
+   },
+   {
+    "combo": "2-6",
+    "yen": 830
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-2-6",
+    "yen": 3390
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "1-6-2",
+    "yen": 16820
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-6",
+    "yen": 2290
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 1,
+   "number": 1,
+   "name": "アスフィート",
+   "time": "1:02.9",
+   "margin": "",
+   "pos4": 2,
+   "last3f": 38.2,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 6,
+   "name": "エムティベリー",
+   "time": "1:03.2",
+   "margin": "１ １／２",
+   "pos4": 6,
+   "last3f": 38.3,
+   "popularity": 6
+  },
+  {
+   "finish": "3",
+   "frame": 2,
+   "number": 2,
+   "name": "アイリスベビー",
+   "time": "1:03.5",
+   "margin": "１ １／２",
+   "pos4": 1,
+   "last3f": 39.1,
+   "popularity": 5
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 5,
+   "name": "タケノクイーン",
+   "time": "1:03.5",
+   "margin": "アタマ",
+   "pos4": 4,
+   "last3f": 38.8,
+   "popularity": 3
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 4,
+   "name": "キューティーホープ",
+   "time": "1:03.7",
+   "margin": "１",
+   "pos4": 2,
+   "last3f": 39.2,
+   "popularity": 1
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 7,
+   "name": "ウィルスパングル",
+   "time": "1:04.0",
+   "margin": "１ １／２",
+   "pos4": 7,
+   "last3f": 38.6,
+   "popularity": 7
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 3,
+   "name": "グリーズキャット",
+   "time": "1:04.3",
+   "margin": "１ １／２",
+   "pos4": 7,
+   "last3f": 38.9,
+   "popularity": 8
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 8,
+   "name": "スレイヤーウィップ",
+   "time": "1:05.5",
+   "margin": "６",
+   "pos4": 4,
+   "last3f": 41.0,
+   "popularity": 4
+  }
+ ]
+}

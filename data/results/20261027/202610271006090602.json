@@ -1,0 +1,183 @@
+{
+ "source": "rakuten",
+ "date": "20261027",
+ "race_id": "202610271006090602",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "7",
+    "yen": 100
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "7-5",
+    "yen": 310
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "7",
+    "yen": 100
+   },
+   {
+    "combo": "5",
+    "yen": 160
+   },
+   {
+    "combo": "6",
+    "yen": 290
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "5-7",
+    "yen": 180
+   },
+   {
+    "combo": "6-7",
+    "yen": 310
+   },
+   {
+    "combo": "5-6",
+    "yen": 780
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-7",
+    "yen": 300
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "5-6-7",
+    "yen": 890
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "7-5-6",
+    "yen": 1650
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "5-7",
+    "yen": 300
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 7,
+   "name": "スレイクイーン",
+   "time": "1:25.8",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 37.5,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "エクスペクタント",
+   "time": "1:26.6",
+   "margin": "５",
+   "pos4": 4,
+   "last3f": 38.0,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 6,
+   "name": "クラージュクリール",
+   "time": "1:26.8",
+   "margin": "１",
+   "pos4": 2,
+   "last3f": 38.4,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "エルドラド",
+   "time": "1:26.8",
+   "margin": "アタマ",
+   "pos4": 2,
+   "last3f": 38.2,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 8,
+   "name": "マイネルヒッツェ",
+   "time": "1:26.8",
+   "margin": "アタマ",
+   "pos4": 6,
+   "last3f": 37.1,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 10,
+   "name": "エクセプション",
+   "time": "1:27.5",
+   "margin": "４",
+   "pos4": 10,
+   "last3f": 37.1,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 9,
+   "name": "リオンアンサー",
+   "time": "1:27.6",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": 38.9,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 4,
+   "number": 4,
+   "name": "ジョードプル",
+   "time": "1:27.9",
+   "margin": "１ ３／４",
+   "pos4": 9,
+   "last3f": 37.6,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 1,
+   "number": 1,
+   "name": "アルデムラータ",
+   "time": "1:28.3",
+   "margin": "２ １／２",
+   "pos4": 8,
+   "last3f": 38.4,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 3,
+   "number": 3,
+   "name": "ブンブンマル",
+   "time": "1:30.0",
+   "margin": "１０",
+   "pos4": 7,
+   "last3f": 40.9,
+   "popularity": null
+  }
+ ]
+}

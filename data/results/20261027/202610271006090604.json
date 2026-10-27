@@ -1,0 +1,194 @@
+{
+ "source": "rakuten",
+ "date": "20261027",
+ "race_id": "202610271006090604",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "2",
+    "yen": 770
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "2-8",
+    "yen": 2660
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "2",
+    "yen": 270
+   },
+   {
+    "combo": "8",
+    "yen": 160
+   },
+   {
+    "combo": "4",
+    "yen": 360
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-8",
+    "yen": 530
+   },
+   {
+    "combo": "2-4",
+    "yen": 1480
+   },
+   {
+    "combo": "4-8",
+    "yen": 610
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-7",
+    "yen": 810
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-4-8",
+    "yen": 3660
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "2-8-4",
+    "yen": 19770
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-8",
+    "yen": 1290
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 2,
+   "number": 2,
+   "name": "ナーシリーヤ",
+   "time": "1:25.6",
+   "margin": "",
+   "pos4": 4,
+   "last3f": 36.9,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 8,
+   "name": "テキサスバローズ",
+   "time": "1:26.0",
+   "margin": "２ １／２",
+   "pos4": 2,
+   "last3f": 37.5,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "タイセイギガース",
+   "time": "1:26.3",
+   "margin": "１ ３／４",
+   "pos4": 1,
+   "last3f": 38.0,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 5,
+   "name": "ハピナスター",
+   "time": "1:26.3",
+   "margin": "アタマ",
+   "pos4": 6,
+   "last3f": 37.0,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 3,
+   "number": 3,
+   "name": "ゴールドフリーダム",
+   "time": "1:26.4",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": 37.6,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 10,
+   "name": "ドナアフロディテ",
+   "time": "1:26.7",
+   "margin": "２",
+   "pos4": 7,
+   "last3f": 38.1,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 1,
+   "number": 1,
+   "name": "ヒシタイカン",
+   "time": "1:26.8",
+   "margin": "１／２",
+   "pos4": 9,
+   "last3f": 37.1,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 6,
+   "number": 7,
+   "name": "ミーンアロット",
+   "time": "1:27.0",
+   "margin": "３／４",
+   "pos4": 8,
+   "last3f": 38.0,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 9,
+   "name": "イーリスアスター",
+   "time": "1:27.3",
+   "margin": "２",
+   "pos4": 3,
+   "last3f": 38.9,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 6,
+   "number": 6,
+   "name": "ベラジオホープ",
+   "time": "1:27.9",
+   "margin": "４",
+   "pos4": 10,
+   "last3f": 38.5,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 8,
+   "number": 11,
+   "name": "ノーブルガイザー",
+   "time": "-",
+   "margin": "取消",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
+}
