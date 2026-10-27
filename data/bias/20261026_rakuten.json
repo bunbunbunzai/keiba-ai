@@ -1,0 +1,72 @@
+{
+ "date": "20261026",
+ "updated": "2026-10-27 12:50",
+ "bias": {
+  "盛岡ダ": {
+   "judgement": "先行有利",
+   "confidence": "中",
+   "races": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "front_share": 0.75,
+   "inner_share": 0.46,
+   "outer_share": 0.21,
+   "horses": 24
+  },
+  "大井ダ": {
+   "judgement": "先行有利",
+   "confidence": "中",
+   "races": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "front_share": 0.76,
+   "inner_share": 0.32,
+   "outer_share": 0.4,
+   "horses": 25
+  },
+  "佐賀ダ": {
+   "judgement": "先行有利",
+   "confidence": "強",
+   "races": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "front_share": 1.0,
+   "inner_share": 0.33,
+   "outer_share": 0.46,
+   "horses": 24
+  }
+ }
+}

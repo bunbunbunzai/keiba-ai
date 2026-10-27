@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
     inputs:
       phase:
-        description: "eve / noon / night"
+        description: "eve / noon / mid / night"
         required: true
       date:
         description: "対象日 YYYYMMDD（空なら自動）"
@@ -83,10 +83,12 @@ jobs:
           cd scraper
           case "$PHASE-$SRC" in
             eve-jra)      python jra_cards.py --date "$D" ;;
-            noon-jra)     python jra_cards.py --date "$D" --past 0 && python results.py --date "$D" --source jra ;;
+            noon-jra)     python jra_cards.py --date "$D" --past 0 && python results.py --date "$D" --source jra; python bias.py --date "$D" --source "$SRC" ;;
+            mid-jra)      python jra_cards.py --date "$D" --past 0 && python results.py --date "$D" --source jra; python bias.py --date "$D" --source "$SRC" ;;
             eve-rakuten)  python rakuten.py --date "$D" --kinds card && python parse_rakuten.py --date "$D" ;;
             noon-rakuten) python rakuten.py --date "$D" --kinds card --after-now && python parse_rakuten.py --date "$D" ;;
-            night-*)      python results.py --date "$D" --source "$SRC" ;;
+            mid-rakuten)  python results.py --date "$D" --source rakuten --finished-only; python bias.py --date "$D" --source "$SRC"; python rakuten.py --date "$D" --kinds card --after-now && python parse_rakuten.py --date "$D" ;;
+            night-*)      python results.py --date "$D" --source "$SRC"; python bias.py --date "$D" --source "$SRC" ;;
           esac
         continue-on-error: true
       - name: 保存

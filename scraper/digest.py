@@ -50,11 +50,25 @@ def past_line(p: dict) -> str:
     return " ".join(x for x in parts if x)
 
 
-def detail(r: dict) -> str:
+def bias_line(date: str, r: dict) -> str:
+    key = f"{r.get('venue')}{'芝' if r.get('surface') == '芝' else 'ダ'}"
+    for src in ("jra", "rakuten"):
+        f = DATA_DIR / "bias" / f"{date}_{src}.json"
+        if f.exists():
+            b = json.loads(f.read_text(encoding="utf-8")).get("bias", {}).get(key)
+            upd = json.loads(f.read_text(encoding="utf-8")).get("updated")
+            if b:
+                return (f"当日バイアス：{key}＝{b['judgement']}【{b['confidence']}】（{len(b['races'])}R参照："
+                        f"{','.join(map(str, b['races']))}R、連対馬の先行{int(b['front_share'] * 100)}%・内枠{int(b['inner_share'] * 100)}%・"
+                        f"外枠{int(b['outer_share'] * 100)}%、{upd}時点）")
+    return "当日バイアス：未判定"
+
+
+def detail(r: dict, date: str = "") -> str:
     head = (f"{r.get('race_id')} | {r.get('venue')}{r.get('race_no')}R {r.get('post_time') or ''} "
             f"{r.get('surface') or ''}{r.get('distance') or ''}m {r.get('field')}頭 | "
             f"{r.get('race_name') or r.get('title_text') or ''} {r.get('conditions') or ''}")
-    lines = [head]
+    lines = [head, bias_line(date, r) if date else ""]
     for h in r.get("horses", []):
         prof = h.get("profile") or {}
         sire = h.get("sire") or prof.get("父") or ""
@@ -80,7 +94,7 @@ if __name__ == "__main__":
     a = ap.parse_args()
     rs = races(a.date)
     if a.race:
-        print("\n".join(detail(r) for r in rs if r["race_id"] == a.race))
+        print("\n".join(detail(r, a.date) for r in rs if r["race_id"] == a.race))
     else:
         done = predicted(a.date) if a.pending else set()
         for r in rs:

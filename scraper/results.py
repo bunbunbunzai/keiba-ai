@@ -46,6 +46,21 @@ def jra(target: str) -> int:
 
 
 # ---------------- 楽天競馬 ----------------
+def _finished(target: str, rid: str) -> bool:
+    """発走から15分以上たったレースだけ True（日中のバイアス判定用）。"""
+    from datetime import datetime, timedelta, timezone
+
+    f = DATA_DIR / "races" / target / f"{rid}.json"
+    if not f.exists():
+        return False
+    pt = json.loads(f.read_text(encoding="utf-8")).get("post_time") or ""
+    if not re.fullmatch(r"\d{1,2}:\d{2}", pt):
+        return False
+    jst = timezone(timedelta(hours=9))
+    h, m = map(int, pt.split(":"))
+    post = datetime.strptime(target, "%Y%m%d").replace(hour=h, minute=m, tzinfo=jst)
+    return datetime.now(jst) > post + timedelta(minutes=15)
+
 def parse_rakuten_payouts(html: str) -> dict:
     """競走成績ページ内の払戻金表（summary="払戻金"）を読む。th の直後の number/money セルが組。"""
     from jra_cards import lines_of
@@ -74,26 +89,56 @@ def parse_rakuten_payouts(html: str) -> dict:
     return pay
 
 
+def corner_positions(order: str) -> dict:
+    """「10,7,(1,5),6=4,3」のような通過順を {馬番: 位置} にする。括弧内は同じ位置。"""
+    pos, cur, out = 1, [], {}
+    i = 0
+    toks = re.findall(r"\(|\)|\d+", order)
+    group = None
+    for t in toks:
+        if t == "(":
+            group = []
+        elif t == ")":
+            for n in group or []:
+                out[n] = pos
+            pos += len(group or [])
+            group = None
+        elif group is not None:
+            group.append(int(t))
+        else:
+            out[int(t)] = pos
+            pos += 1
+    return out
+
+
 def parse_rakuten_performance(html: str) -> list[dict]:
     s = BeautifulSoup(html, "html.parser")
     t = table_by_headers(s, ["着順", "馬名"])
+    # コーナー通過順位表の最後の行（ふつうは4角）から各馬の位置を出す
+    ct = s.find("table", attrs={"summary": "コーナー通過順位"})
+    last_corner = {}
+    if ct:
+        tds = ct.find_all("td")
+        if tds:
+            last_corner = corner_positions(text(tds[-1]))
     rows = []
     for d in rows_as_dicts(t) if t else []:
+        n = num(d.get("馬番"), int)
         rows.append({
             "finish": d.get("着順"),
-            "number": num(d.get("馬番"), int),
+            "frame": num(d.get("枠"), int),
+            "number": n,
             "name": d.get("馬名"),
             "time": d.get("タイム"),
             "margin": d.get("着差"),
-            "corners": "-".join(re.findall(r"\d+", d.get("コーナー通過順", d.get("コーナー通過順位", "")))),
+            "pos4": last_corner.get(n),
             "last3f": num(d.get("推定上がり") or d.get("上がり3F") or d.get("上がり")),
             "popularity": num(d.get("人気"), int),
-            "raw": d,
         })
     return rows
 
 
-def rakuten(target: str, limit_races: int | None = None) -> int:
+def rakuten(target: str, limit_races: int | None = None, finished_only: bool = False) -> int:
     from rakuten import BASE, PAGES, race_ids, venue_lists
 
     sess = PoliteSession(min_interval=60.0)
@@ -103,6 +148,8 @@ def rakuten(target: str, limit_races: int | None = None) -> int:
             done = DATA_DIR / "results" / target / f"{rid}.json"
             if done.exists() and not json.loads(done.read_text(encoding="utf-8")).get("error"):
                 continue  # 取得済みはとばす（再実行時は失敗分だけ取り直す）
+            if finished_only and not _finished(target, rid):
+                continue
             out = {"source": "rakuten", "date": target, "race_id": rid}
             try:
                 ph = sess.get(BASE + PAGES["performance"].format(rid=rid)).text
@@ -121,8 +168,9 @@ if __name__ == "__main__":
     ap.add_argument("--date", required=True)
     ap.add_argument("--source", default="both")
     ap.add_argument("--limit-races", type=int, default=None)
+    ap.add_argument("--finished-only", action="store_true", help="発走済みのレースだけ（日中のバイアス判定用）")
     a = ap.parse_args()
     if a.source in ("jra", "both"):
         print("JRA results:", jra(a.date))
     if a.source in ("rakuten", "both"):
-        print("rakuten results:", rakuten(a.date, a.limit_races))
+        print("rakuten results:", rakuten(a.date, a.limit_races, a.finished_only))
