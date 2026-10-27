@@ -32,12 +32,18 @@ def first(rows, pos):
 
 
 def score_race(pred: dict, res: dict) -> dict:
-    pay = {k: {norm(k, p["combo"]): p["yen"] for p in v} for k, v in res.get("payouts", {}).items()}
+    payouts = res.get("payouts", {})
+    pay = {k: {norm(k, p["combo"]): p["yen"] for p in v} for k, v in payouts.items() if not k.startswith("_")}
+    refund = {str(int(x)) for x in payouts.get("_refund", [])}
     bets = pred.get("bets", [])
     stake = 100 * len(bets)
     ret = 0
     hits = []
     for b in bets:
+        if refund & set(norm(b["type"], b["combo"]).split("-")):
+            ret += 100
+            hits.append(f'{b["type"]} {b["combo"]} 返還100円')
+            continue
         y = pay.get(b["type"], {}).get(norm(b["type"], b["combo"]))
         if y:
             ret += y
