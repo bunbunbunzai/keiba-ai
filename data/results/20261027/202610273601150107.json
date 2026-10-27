@@ -1,0 +1,155 @@
+{
+ "source": "rakuten",
+ "date": "20261027",
+ "race_id": "202610273601150107",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "5",
+    "yen": 270
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "5-3",
+    "yen": 820
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "5",
+    "yen": 100
+   },
+   {
+    "combo": "3",
+    "yen": 150
+   },
+   {
+    "combo": "8",
+    "yen": 160
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-5",
+    "yen": 190
+   },
+   {
+    "combo": "5-8",
+    "yen": 290
+   },
+   {
+    "combo": "3-8",
+    "yen": 540
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-5-8",
+    "yen": 680
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "5-3-8",
+    "yen": 3200
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-5",
+    "yen": 410
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 5,
+   "name": "フォーチュンベル",
+   "time": "1:14.9",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 38.9,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "frame": 3,
+   "number": 3,
+   "name": "イセッセイ",
+   "time": "1:15.6",
+   "margin": "３",
+   "pos4": 3,
+   "last3f": 39.4,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 8,
+   "name": "キタノオンザバス",
+   "time": "1:15.7",
+   "margin": "１／２",
+   "pos4": 3,
+   "last3f": 39.5,
+   "popularity": 4
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 7,
+   "name": "マナモアナ",
+   "time": "1:15.8",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": 38.9,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 4,
+   "name": "ルーセントムーン",
+   "time": "1:16.6",
+   "margin": "４",
+   "pos4": 5,
+   "last3f": 39.5,
+   "popularity": 6
+  },
+  {
+   "finish": "6",
+   "frame": 1,
+   "number": 1,
+   "name": "サクセスドラム",
+   "time": "1:16.8",
+   "margin": "１",
+   "pos4": 1,
+   "last3f": 40.9,
+   "popularity": 1
+  },
+  {
+   "finish": "7",
+   "frame": 2,
+   "number": 2,
+   "name": "アースウルフ",
+   "time": "1:17.3",
+   "margin": "２ １／２",
+   "pos4": 8,
+   "last3f": 40.0,
+   "popularity": 7
+  },
+  {
+   "finish": "8",
+   "frame": 6,
+   "number": 6,
+   "name": "サトノアンナ",
+   "time": "1:17.4",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": 40.8,
+   "popularity": 8
+  }
+ ]
+}

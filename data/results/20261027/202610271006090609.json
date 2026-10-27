@@ -1,0 +1,205 @@
+{
+ "source": "rakuten",
+ "date": "20261027",
+ "race_id": "202610271006090609",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "1",
+    "yen": 190
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "1-12",
+    "yen": 960
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "1",
+    "yen": 130
+   },
+   {
+    "combo": "12",
+    "yen": 170
+   },
+   {
+    "combo": "4",
+    "yen": 340
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-12",
+    "yen": 290
+   },
+   {
+    "combo": "1-4",
+    "yen": 380
+   },
+   {
+    "combo": "4-12",
+    "yen": 1440
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-8",
+    "yen": 540
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-4-12",
+    "yen": 2640
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "1-12-4",
+    "yen": 6850
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-12",
+    "yen": 750
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 1,
+   "number": 1,
+   "name": "アイズ",
+   "time": "1:39.3",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 38.9,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 12,
+   "name": "マイネルアストリア",
+   "time": "1:40.1",
+   "margin": "５",
+   "pos4": 2,
+   "last3f": 39.4,
+   "popularity": 4
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "サウンドノバ",
+   "time": "1:40.5",
+   "margin": "２ １／２",
+   "pos4": 3,
+   "last3f": 39.9,
+   "popularity": 7
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 11,
+   "name": "ハチャトリアン",
+   "time": "1:40.7",
+   "margin": "１ １／４",
+   "pos4": 8,
+   "last3f": 39.2,
+   "popularity": 6
+  },
+  {
+   "finish": "5",
+   "frame": 2,
+   "number": 2,
+   "name": "テーオールノワール",
+   "time": "1:40.8",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": 39.5,
+   "popularity": 8
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 7,
+   "name": "コスモパンドラ",
+   "time": "1:41.3",
+   "margin": "３",
+   "pos4": 10,
+   "last3f": 39.4,
+   "popularity": 9
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 9,
+   "name": "フィリオアレグロ",
+   "time": "1:41.5",
+   "margin": "１",
+   "pos4": 7,
+   "last3f": 40.6,
+   "popularity": 5
+  },
+  {
+   "finish": "8",
+   "frame": 5,
+   "number": 6,
+   "name": "プリンスメーカー",
+   "time": "1:41.6",
+   "margin": "１／２",
+   "pos4": 4,
+   "last3f": 40.6,
+   "popularity": 3
+  },
+  {
+   "finish": "9",
+   "frame": 3,
+   "number": 3,
+   "name": "マロンジェム",
+   "time": "1:41.8",
+   "margin": "３／４",
+   "pos4": 9,
+   "last3f": 39.9,
+   "popularity": 11
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 10,
+   "name": "コスモベラエステラ",
+   "time": "1:41.8",
+   "margin": "クビ",
+   "pos4": 11,
+   "last3f": 39.4,
+   "popularity": 12
+  },
+  {
+   "finish": "11",
+   "frame": 6,
+   "number": 8,
+   "name": "ビッグリュウオー",
+   "time": "1:42.4",
+   "margin": "４",
+   "pos4": 11,
+   "last3f": 40.7,
+   "popularity": 10
+  },
+  {
+   "finish": "12",
+   "frame": 5,
+   "number": 5,
+   "name": "ゴッドヴァレー",
+   "time": "1:43.0",
+   "margin": "４",
+   "pos4": 6,
+   "last3f": 42.4,
+   "popularity": 2
+  }
+ ]
+}

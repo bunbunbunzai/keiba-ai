@@ -1,0 +1,172 @@
+{
+ "source": "rakuten",
+ "date": "20261027",
+ "race_id": "202610273601150106",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "5",
+    "yen": 640
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "5-7",
+    "yen": 1330
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "5",
+    "yen": 180
+   },
+   {
+    "combo": "7",
+    "yen": 100
+   },
+   {
+    "combo": "3",
+    "yen": 1340
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "5-7",
+    "yen": 210
+   },
+   {
+    "combo": "3-5",
+    "yen": 6060
+   },
+   {
+    "combo": "3-7",
+    "yen": 1970
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-7",
+    "yen": 250
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-5-7",
+    "yen": 6650
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "5-7-3",
+    "yen": 36890
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "5-7",
+    "yen": 290
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 5,
+   "name": "オハマチャン",
+   "time": "1:03.4",
+   "margin": "",
+   "pos4": 3,
+   "last3f": 38.0,
+   "popularity": 3
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 7,
+   "name": "アークメディナ",
+   "time": "1:03.5",
+   "margin": "１／２",
+   "pos4": 2,
+   "last3f": 38.9,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "スグレタモノガイナ",
+   "time": "1:03.9",
+   "margin": "２",
+   "pos4": 5,
+   "last3f": 37.9,
+   "popularity": 8
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "トモニミルホープ",
+   "time": "1:03.9",
+   "margin": "アタマ",
+   "pos4": 6,
+   "last3f": 37.4,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 8,
+   "name": "バブリーダッシュ",
+   "time": "1:04.1",
+   "margin": "３／４",
+   "pos4": 8,
+   "last3f": 37.5,
+   "popularity": 2
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 9,
+   "name": "ミスカノヤローザ",
+   "time": "1:04.3",
+   "margin": "１",
+   "pos4": 4,
+   "last3f": 38.9,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 4,
+   "name": "グランハート",
+   "time": "1:04.3",
+   "margin": "クビ",
+   "pos4": 6,
+   "last3f": 38.0,
+   "popularity": 6
+  },
+  {
+   "finish": "8",
+   "frame": 6,
+   "number": 6,
+   "name": "ハッピーモカ",
+   "time": "1:04.4",
+   "margin": "１／２",
+   "pos4": 1,
+   "last3f": 40.0,
+   "popularity": 7
+  },
+  {
+   "finish": "9",
+   "frame": 1,
+   "number": 1,
+   "name": "アーススカーレット",
+   "time": "1:06.9",
+   "margin": "大差",
+   "pos4": 9,
+   "last3f": 39.6,
+   "popularity": 9
+  }
+ ]
+}

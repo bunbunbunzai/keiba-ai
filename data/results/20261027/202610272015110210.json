@@ -1,0 +1,227 @@
+{
+ "source": "rakuten",
+ "date": "20261027",
+ "race_id": "202610272015110210",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "5",
+    "yen": 250
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "5-13",
+    "yen": 840
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "5",
+    "yen": 130
+   },
+   {
+    "combo": "13",
+    "yen": 130
+   },
+   {
+    "combo": "3",
+    "yen": 190
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "5-13",
+    "yen": 250
+   },
+   {
+    "combo": "3-5",
+    "yen": 400
+   },
+   {
+    "combo": "3-13",
+    "yen": 650
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-8",
+    "yen": 420
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-5-13",
+    "yen": 1480
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "5-13-3",
+    "yen": 5050
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "5-13",
+    "yen": 550
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 5,
+   "name": "フラグランツァ",
+   "time": "1:57.6",
+   "margin": "",
+   "pos4": 2,
+   "last3f": 38.0,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 13,
+   "name": "ジャスティンロング",
+   "time": "1:59.3",
+   "margin": "８",
+   "pos4": 6,
+   "last3f": 39.3,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "ユーロハートビート",
+   "time": "1:59.4",
+   "margin": "クビ",
+   "pos4": 6,
+   "last3f": 39.4,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "トゥーナウィッシュ",
+   "time": "1:59.8",
+   "margin": "２",
+   "pos4": 9,
+   "last3f": 39.5,
+   "popularity": 7
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 7,
+   "name": "ニシノコヌカアメ",
+   "time": "2:00.1",
+   "margin": "１ １／２",
+   "pos4": 2,
+   "last3f": 40.9,
+   "popularity": 6
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 14,
+   "name": "コウソクユノ",
+   "time": "2:00.4",
+   "margin": "１ ３／４",
+   "pos4": 2,
+   "last3f": 41.1,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "frame": 1,
+   "number": 1,
+   "name": "ジュアルエリモ",
+   "time": "2:00.7",
+   "margin": "１ １／２",
+   "pos4": 12,
+   "last3f": 40.1,
+   "popularity": 12
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 4,
+   "name": "エスカラムサ",
+   "time": "2:01.0",
+   "margin": "１ １／２",
+   "pos4": 1,
+   "last3f": 41.9,
+   "popularity": 11
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 11,
+   "name": "ブレスト",
+   "time": "2:01.0",
+   "margin": "クビ",
+   "pos4": 14,
+   "last3f": 39.7,
+   "popularity": 13
+  },
+  {
+   "finish": "10",
+   "frame": 6,
+   "number": 10,
+   "name": "ミュークエンペラー",
+   "time": "2:01.5",
+   "margin": "２ １／２",
+   "pos4": 10,
+   "last3f": 41.0,
+   "popularity": 14
+  },
+  {
+   "finish": "11",
+   "frame": 7,
+   "number": 12,
+   "name": "グリスタン",
+   "time": "2:02.3",
+   "margin": "４",
+   "pos4": 6,
+   "last3f": 42.9,
+   "popularity": 4
+  },
+  {
+   "finish": "12",
+   "frame": 5,
+   "number": 8,
+   "name": "ウインデイブレイク",
+   "time": "2:02.4",
+   "margin": "クビ",
+   "pos4": 2,
+   "last3f": 43.2,
+   "popularity": 10
+  },
+  {
+   "finish": "13",
+   "frame": 6,
+   "number": 9,
+   "name": "ドリームパンサー",
+   "time": "2:02.5",
+   "margin": "１／２",
+   "pos4": 13,
+   "last3f": 41.8,
+   "popularity": 8
+  },
+  {
+   "finish": "14",
+   "frame": 4,
+   "number": 6,
+   "name": "ロココ",
+   "time": "2:05.3",
+   "margin": "大差",
+   "pos4": 10,
+   "last3f": 45.0,
+   "popularity": 9
+  }
+ ]
+}

@@ -1,0 +1,183 @@
+{
+ "source": "rakuten",
+ "date": "20261027",
+ "race_id": "202610272218130211",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "10",
+    "yen": 880
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "10-4",
+    "yen": 2340
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "10",
+    "yen": 190
+   },
+   {
+    "combo": "4",
+    "yen": 130
+   },
+   {
+    "combo": "8",
+    "yen": 180
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-10",
+    "yen": 220
+   },
+   {
+    "combo": "8-10",
+    "yen": 610
+   },
+   {
+    "combo": "4-8",
+    "yen": 340
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-8",
+    "yen": 530
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-8-10",
+    "yen": 1730
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "10-4-8",
+    "yen": 13590
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-10",
+    "yen": 540
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 10,
+   "name": "ホワイトヘッド",
+   "time": "1:52.2",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.1,
+   "popularity": 3
+  },
+  {
+   "finish": "2",
+   "frame": 4,
+   "number": 4,
+   "name": "アオイミモザ",
+   "time": "1:52.2",
+   "margin": "ハナ",
+   "pos4": 1,
+   "last3f": 39.1,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 8,
+   "name": "フランコルシャン",
+   "time": "1:52.3",
+   "margin": "クビ",
+   "pos4": 3,
+   "last3f": 39.0,
+   "popularity": 4
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 3,
+   "name": "スナドケイ",
+   "time": "1:52.8",
+   "margin": "２ １／２",
+   "pos4": 7,
+   "last3f": 39.0,
+   "popularity": 6
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 5,
+   "name": "オレンタノ",
+   "time": "1:52.9",
+   "margin": "クビ",
+   "pos4": 7,
+   "last3f": 38.8,
+   "popularity": 9
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "ハクサンミラクル",
+   "time": "1:53.0",
+   "margin": "１／２",
+   "pos4": 4,
+   "last3f": 39.4,
+   "popularity": 8
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 7,
+   "name": "ガルムキャット",
+   "time": "1:53.0",
+   "margin": "アタマ",
+   "pos4": 6,
+   "last3f": 39.3,
+   "popularity": 5
+  },
+  {
+   "finish": "8",
+   "frame": 6,
+   "number": 6,
+   "name": "エルオレンス",
+   "time": "1:53.8",
+   "margin": "４",
+   "pos4": 4,
+   "last3f": 40.5,
+   "popularity": 2
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 9,
+   "name": "フェイマスダンディ",
+   "time": "1:55.6",
+   "margin": "９",
+   "pos4": 9,
+   "last3f": 41.8,
+   "popularity": 7
+  },
+  {
+   "finish": "-",
+   "frame": 1,
+   "number": 1,
+   "name": "ルーンファクター",
+   "time": "-",
+   "margin": "取消",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
+}

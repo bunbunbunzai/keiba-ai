@@ -1,0 +1,216 @@
+{
+ "source": "rakuten",
+ "date": "20261027",
+ "race_id": "202610272015110204",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "1",
+    "yen": 360
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "1-8",
+    "yen": 680
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "1",
+    "yen": 140
+   },
+   {
+    "combo": "8",
+    "yen": 120
+   },
+   {
+    "combo": "3",
+    "yen": 220
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-8",
+    "yen": 220
+   },
+   {
+    "combo": "1-3",
+    "yen": 490
+   },
+   {
+    "combo": "3-8",
+    "yen": 370
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-6",
+    "yen": 400
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-3-8",
+    "yen": 740
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "1-8-3",
+    "yen": 2570
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-8",
+    "yen": 350
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 1,
+   "number": 1,
+   "name": "リアライズブルーム",
+   "time": "1:43.6",
+   "margin": "",
+   "pos4": 4,
+   "last3f": 39.0,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 8,
+   "name": "マイネルシュラハト",
+   "time": "1:44.2",
+   "margin": "３",
+   "pos4": 3,
+   "last3f": 39.8,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "カリビアンダンサー",
+   "time": "1:44.5",
+   "margin": "１ １／２",
+   "pos4": 1,
+   "last3f": 40.1,
+   "popularity": 4
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "コンプレックス",
+   "time": "1:45.2",
+   "margin": "３ １／２",
+   "pos4": 5,
+   "last3f": 40.2,
+   "popularity": 13
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 12,
+   "name": "マーゴットリック",
+   "time": "1:45.2",
+   "margin": "クビ",
+   "pos4": 1,
+   "last3f": 40.8,
+   "popularity": 3
+  },
+  {
+   "finish": "6",
+   "frame": 4,
+   "number": 4,
+   "name": "ルカドリーマー",
+   "time": "1:45.4",
+   "margin": "１",
+   "pos4": 6,
+   "last3f": 40.2,
+   "popularity": 9
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 7,
+   "name": "アフリカンブラック",
+   "time": "1:46.2",
+   "margin": "４",
+   "pos4": 10,
+   "last3f": 40.3,
+   "popularity": 8
+  },
+  {
+   "finish": "8",
+   "frame": 4,
+   "number": 5,
+   "name": "ロックイットダウン",
+   "time": "1:46.3",
+   "margin": "３／４",
+   "pos4": 13,
+   "last3f": 39.6,
+   "popularity": 5
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 6,
+   "name": "ポロリス",
+   "time": "1:46.7",
+   "margin": "２",
+   "pos4": 6,
+   "last3f": 41.7,
+   "popularity": 10
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 11,
+   "name": "ハッピーワイド",
+   "time": "1:46.9",
+   "margin": "３／４",
+   "pos4": 9,
+   "last3f": 41.6,
+   "popularity": 12
+  },
+  {
+   "finish": "11",
+   "frame": 6,
+   "number": 9,
+   "name": "ヤマジュンハッピ",
+   "time": "1:47.0",
+   "margin": "３／４",
+   "pos4": 10,
+   "last3f": 42.0,
+   "popularity": 11
+  },
+  {
+   "finish": "12",
+   "frame": 7,
+   "number": 10,
+   "name": "トゥーナルビーズ",
+   "time": "1:48.4",
+   "margin": "７",
+   "pos4": 12,
+   "last3f": 43.4,
+   "popularity": 7
+  },
+  {
+   "finish": "13",
+   "frame": 8,
+   "number": 13,
+   "name": "アレステリオス",
+   "time": "1:49.9",
+   "margin": "７",
+   "pos4": 6,
+   "last3f": 45.4,
+   "popularity": 6
+  }
+ ]
+}

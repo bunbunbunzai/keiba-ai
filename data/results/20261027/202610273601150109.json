@@ -1,0 +1,205 @@
+{
+ "source": "rakuten",
+ "date": "20261027",
+ "race_id": "202610273601150109",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "6",
+    "yen": 12240
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "6-2",
+    "yen": 94060
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "6",
+    "yen": 840
+   },
+   {
+    "combo": "2",
+    "yen": 190
+   },
+   {
+    "combo": "3",
+    "yen": 120
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-6",
+    "yen": 7680
+   },
+   {
+    "combo": "3-6",
+    "yen": 1610
+   },
+   {
+    "combo": "2-3",
+    "yen": 400
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-5",
+    "yen": 5220
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-3-6",
+    "yen": 11740
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "6-2-3",
+    "yen": 270590
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-6",
+    "yen": 31650
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 6,
+   "name": "ジャスパーロイヤル",
+   "time": "1:01.8",
+   "margin": "",
+   "pos4": 3,
+   "last3f": 37.7,
+   "popularity": 10
+  },
+  {
+   "finish": "2",
+   "frame": 2,
+   "number": 2,
+   "name": "エクセレンウイナー",
+   "time": "1:02.0",
+   "margin": "１",
+   "pos4": 4,
+   "last3f": 37.8,
+   "popularity": 4
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "マカラス",
+   "time": "1:02.1",
+   "margin": "１／２",
+   "pos4": 9,
+   "last3f": 37.1,
+   "popularity": 1
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 11,
+   "name": "フィンガルスケーブ",
+   "time": "1:02.1",
+   "margin": "クビ",
+   "pos4": 4,
+   "last3f": 37.9,
+   "popularity": 3
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 12,
+   "name": "ユーキャンフライ",
+   "time": "1:02.2",
+   "margin": "３／４",
+   "pos4": 2,
+   "last3f": 38.4,
+   "popularity": 2
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 7,
+   "name": "ベルオーブ",
+   "time": "1:02.3",
+   "margin": "クビ",
+   "pos4": 6,
+   "last3f": 37.7,
+   "popularity": 9
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 10,
+   "name": "イーデンテソーロ",
+   "time": "1:02.5",
+   "margin": "１",
+   "pos4": 6,
+   "last3f": 37.5,
+   "popularity": 8
+  },
+  {
+   "finish": "8",
+   "frame": 5,
+   "number": 5,
+   "name": "セイランマクフィ",
+   "time": "1:02.5",
+   "margin": "ハナ",
+   "pos4": 1,
+   "last3f": 38.9,
+   "popularity": 5
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 9,
+   "name": "アトニモサキニモ",
+   "time": "1:02.5",
+   "margin": "クビ",
+   "pos4": 6,
+   "last3f": 37.8,
+   "popularity": 6
+  },
+  {
+   "finish": "10",
+   "frame": 1,
+   "number": 1,
+   "name": "アイガイッパイ",
+   "time": "1:02.9",
+   "margin": "２",
+   "pos4": 9,
+   "last3f": 37.9,
+   "popularity": 7
+  },
+  {
+   "finish": "11",
+   "frame": 4,
+   "number": 4,
+   "name": "プレイフルネス",
+   "time": "1:03.3",
+   "margin": "２",
+   "pos4": 9,
+   "last3f": 38.5,
+   "popularity": 12
+  },
+  {
+   "finish": "12",
+   "frame": 6,
+   "number": 8,
+   "name": "メビウス",
+   "time": "1:04.0",
+   "margin": "３",
+   "pos4": 12,
+   "last3f": 38.6,
+   "popularity": 11
+  }
+ ]
+}

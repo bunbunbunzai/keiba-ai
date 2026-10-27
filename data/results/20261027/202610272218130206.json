@@ -1,0 +1,183 @@
+{
+ "source": "rakuten",
+ "date": "20261027",
+ "race_id": "202610272218130206",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "4",
+    "yen": 150
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "4-6",
+    "yen": 260
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "4",
+    "yen": 100
+   },
+   {
+    "combo": "6",
+    "yen": 100
+   },
+   {
+    "combo": "3",
+    "yen": 110
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-6",
+    "yen": 110
+   },
+   {
+    "combo": "3-4",
+    "yen": 120
+   },
+   {
+    "combo": "3-6",
+    "yen": 130
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-6",
+    "yen": 180
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-4-6",
+    "yen": 140
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "4-6-3",
+    "yen": 450
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-6",
+    "yen": 200
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 4,
+   "name": "リアアーテシアン",
+   "time": "1:38.1",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 38.9,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 6,
+   "name": "ナックレジーナ",
+   "time": "1:38.7",
+   "margin": "３",
+   "pos4": 1,
+   "last3f": 39.4,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "ナムラステラ",
+   "time": "1:39.1",
+   "margin": "２",
+   "pos4": 3,
+   "last3f": 39.5,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "シンデレラヒメ",
+   "time": "1:41.1",
+   "margin": "大差",
+   "pos4": 6,
+   "last3f": 40.7,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 5,
+   "name": "ストライプブルー",
+   "time": "1:41.5",
+   "margin": "２",
+   "pos4": 5,
+   "last3f": 41.6,
+   "popularity": 5
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 10,
+   "name": "クリノヒビキ",
+   "time": "1:41.7",
+   "margin": "１",
+   "pos4": 7,
+   "last3f": 40.8,
+   "popularity": 7
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 7,
+   "name": "フィーユポワソン",
+   "time": "1:43.0",
+   "margin": "６",
+   "pos4": 7,
+   "last3f": 42.6,
+   "popularity": 6
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 9,
+   "name": "マジックスクロール",
+   "time": "1:43.0",
+   "margin": "クビ",
+   "pos4": 4,
+   "last3f": 43.4,
+   "popularity": 9
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 8,
+   "name": "レイモアナ",
+   "time": "1:44.5",
+   "margin": "７",
+   "pos4": 9,
+   "last3f": 41.4,
+   "popularity": 8
+  },
+  {
+   "finish": "-",
+   "frame": 1,
+   "number": 1,
+   "name": "アラビアンドーロ",
+   "time": "-",
+   "margin": "取消",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
+}

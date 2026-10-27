@@ -1,0 +1,205 @@
+{
+ "source": "rakuten",
+ "date": "20261027",
+ "race_id": "202610272015110209",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "7",
+    "yen": 490
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "7-3",
+    "yen": 1750
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "7",
+    "yen": 130
+   },
+   {
+    "combo": "3",
+    "yen": 120
+   },
+   {
+    "combo": "2",
+    "yen": 120
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-7",
+    "yen": 250
+   },
+   {
+    "combo": "2-7",
+    "yen": 290
+   },
+   {
+    "combo": "2-3",
+    "yen": 200
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-6",
+    "yen": 760
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-3-7",
+    "yen": 710
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "7-3-2",
+    "yen": 5100
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-7",
+    "yen": 770
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 7,
+   "name": "シャンデリアソング",
+   "time": "1:00.2",
+   "margin": "",
+   "pos4": 7,
+   "last3f": 35.8,
+   "popularity": 3
+  },
+  {
+   "finish": "2",
+   "frame": 3,
+   "number": 3,
+   "name": "ヘイシリン",
+   "time": "1:00.4",
+   "margin": "１",
+   "pos4": 3,
+   "last3f": 36.5,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "frame": 2,
+   "number": 2,
+   "name": "スノーキャンドル",
+   "time": "1:00.4",
+   "margin": "クビ",
+   "pos4": 2,
+   "last3f": 36.8,
+   "popularity": 1
+  },
+  {
+   "finish": "4",
+   "frame": 1,
+   "number": 1,
+   "name": "フェスティヴルディ",
+   "time": "1:00.4",
+   "margin": "ハナ",
+   "pos4": 4,
+   "last3f": 36.2,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 12,
+   "name": "チリンドリベント",
+   "time": "1:00.7",
+   "margin": "１ １／２",
+   "pos4": 1,
+   "last3f": 37.5,
+   "popularity": 4
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 6,
+   "name": "ティーズアペックス",
+   "time": "1:00.8",
+   "margin": "３／４",
+   "pos4": 9,
+   "last3f": 36.0,
+   "popularity": 6
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 8,
+   "name": "サムデイ",
+   "time": "1:00.8",
+   "margin": "アタマ",
+   "pos4": 9,
+   "last3f": 36.3,
+   "popularity": 10
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 11,
+   "name": "バンボリーナ",
+   "time": "1:01.0",
+   "margin": "３／４",
+   "pos4": 4,
+   "last3f": 37.1,
+   "popularity": 11
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 5,
+   "name": "ゴールドカグヤヒメ",
+   "time": "1:01.2",
+   "margin": "１ １／４",
+   "pos4": 7,
+   "last3f": 36.7,
+   "popularity": 9
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 9,
+   "name": "ウィンターサン",
+   "time": "1:01.4",
+   "margin": "１",
+   "pos4": 12,
+   "last3f": 36.2,
+   "popularity": 12
+  },
+  {
+   "finish": "11",
+   "frame": 4,
+   "number": 4,
+   "name": "フェレザ",
+   "time": "1:01.8",
+   "margin": "２",
+   "pos4": 9,
+   "last3f": 37.6,
+   "popularity": 8
+  },
+  {
+   "finish": "12",
+   "frame": 7,
+   "number": 10,
+   "name": "リック",
+   "time": "1:02.2",
+   "margin": "２",
+   "pos4": 4,
+   "last3f": 38.1,
+   "popularity": 7
+  }
+ ]
+}

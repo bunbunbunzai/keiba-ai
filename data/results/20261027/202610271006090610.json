@@ -1,0 +1,205 @@
+{
+ "source": "rakuten",
+ "date": "20261027",
+ "race_id": "202610271006090610",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "3",
+    "yen": 210
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "3-12",
+    "yen": 3290
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "3",
+    "yen": 120
+   },
+   {
+    "combo": "12",
+    "yen": 220
+   },
+   {
+    "combo": "10",
+    "yen": 150
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-12",
+    "yen": 910
+   },
+   {
+    "combo": "3-10",
+    "yen": 200
+   },
+   {
+    "combo": "10-12",
+    "yen": 1130
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-8",
+    "yen": 700
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-10-12",
+    "yen": 2460
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "3-12-10",
+    "yen": 15210
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-12",
+    "yen": 2620
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 3,
+   "number": 3,
+   "name": "ガビーズデトワール",
+   "time": "1:39.9",
+   "margin": "",
+   "pos4": 4,
+   "last3f": 37.8,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 12,
+   "name": "チェンドル",
+   "time": "1:40.0",
+   "margin": "１／２",
+   "pos4": 6,
+   "last3f": 37.7,
+   "popularity": 10
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 10,
+   "name": "モウレツ",
+   "time": "1:40.0",
+   "margin": "アタマ",
+   "pos4": 1,
+   "last3f": 38.6,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "frame": 1,
+   "number": 1,
+   "name": "アストラン",
+   "time": "1:40.3",
+   "margin": "１ ３／４",
+   "pos4": 6,
+   "last3f": 38.4,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 7,
+   "name": "アカイツメ",
+   "time": "1:40.4",
+   "margin": "クビ",
+   "pos4": 3,
+   "last3f": 38.6,
+   "popularity": 7
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 6,
+   "name": "ストロングフーヴス",
+   "time": "1:40.7",
+   "margin": "１ １／２",
+   "pos4": 11,
+   "last3f": 37.3,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 8,
+   "name": "マグナドムス",
+   "time": "1:40.7",
+   "margin": "クビ",
+   "pos4": 2,
+   "last3f": 39.1,
+   "popularity": 8
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 9,
+   "name": "ツキノワ",
+   "time": "1:41.0",
+   "margin": "１ ３／４",
+   "pos4": 8,
+   "last3f": 39.4,
+   "popularity": 6
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "ノクターナリティ",
+   "time": "1:41.1",
+   "margin": "クビ",
+   "pos4": 10,
+   "last3f": 38.7,
+   "popularity": 9
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 5,
+   "name": "ヴェニーレ",
+   "time": "1:41.2",
+   "margin": "１／２",
+   "pos4": 9,
+   "last3f": 39.0,
+   "popularity": 12
+  },
+  {
+   "finish": "11",
+   "frame": 8,
+   "number": 11,
+   "name": "ファーザーアウェイ",
+   "time": "1:41.5",
+   "margin": "１ ３／４",
+   "pos4": 4,
+   "last3f": 39.9,
+   "popularity": 3
+  },
+  {
+   "finish": "12",
+   "frame": 4,
+   "number": 4,
+   "name": "ツワモノ",
+   "time": "1:42.7",
+   "margin": "７",
+   "pos4": 12,
+   "last3f": 39.8,
+   "popularity": 11
+  }
+ ]
+}
