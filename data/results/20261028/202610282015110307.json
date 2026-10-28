@@ -1,0 +1,216 @@
+{
+ "source": "rakuten",
+ "date": "20261028",
+ "race_id": "202610282015110307",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "11",
+    "yen": 2150
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "11-10",
+    "yen": 7240
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "11",
+    "yen": 550
+   },
+   {
+    "combo": "10",
+    "yen": 130
+   },
+   {
+    "combo": "6",
+    "yen": 160
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "10-11",
+    "yen": 1280
+   },
+   {
+    "combo": "6-11",
+    "yen": 1320
+   },
+   {
+    "combo": "6-10",
+    "yen": 230
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "7-7",
+    "yen": 3980
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "6-10-11",
+    "yen": 5940
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "11-10-6",
+    "yen": 32660
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "10-11",
+    "yen": 3570
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 11,
+   "name": "ジャズスマイル",
+   "time": "1:43.4",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.8,
+   "popularity": 6
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 10,
+   "name": "エロース",
+   "time": "1:43.8",
+   "margin": "２",
+   "pos4": 4,
+   "last3f": 39.9,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 6,
+   "name": "ワールドフォンテン",
+   "time": "1:43.8",
+   "margin": "アタマ",
+   "pos4": 6,
+   "last3f": 39.7,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 3,
+   "name": "ノンフィクション",
+   "time": "1:43.8",
+   "margin": "ハナ",
+   "pos4": 10,
+   "last3f": 38.6,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 12,
+   "name": "アクアジェット",
+   "time": "1:44.4",
+   "margin": "３",
+   "pos4": 4,
+   "last3f": 40.7,
+   "popularity": 10
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 9,
+   "name": "マウリノ",
+   "time": "1:44.4",
+   "margin": "クビ",
+   "pos4": 2,
+   "last3f": 40.8,
+   "popularity": 3
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 4,
+   "name": "ハイアップグレード",
+   "time": "1:44.4",
+   "margin": "ハナ",
+   "pos4": 10,
+   "last3f": 39.6,
+   "popularity": 13
+  },
+  {
+   "finish": "8",
+   "frame": 5,
+   "number": 7,
+   "name": "アキミューミュー",
+   "time": "1:44.7",
+   "margin": "１ １／２",
+   "pos4": 9,
+   "last3f": 40.3,
+   "popularity": 7
+  },
+  {
+   "finish": "9",
+   "frame": 1,
+   "number": 1,
+   "name": "フタバサクセス",
+   "time": "1:45.5",
+   "margin": "４",
+   "pos4": 13,
+   "last3f": 39.8,
+   "popularity": 12
+  },
+  {
+   "finish": "10",
+   "frame": 4,
+   "number": 5,
+   "name": "ワイドモヒート",
+   "time": "1:46.3",
+   "margin": "４",
+   "pos4": 12,
+   "last3f": 41.0,
+   "popularity": 11
+  },
+  {
+   "finish": "11",
+   "frame": 2,
+   "number": 2,
+   "name": "ヒンナ",
+   "time": "1:46.7",
+   "margin": "２",
+   "pos4": 6,
+   "last3f": 43.0,
+   "popularity": 4
+  },
+  {
+   "finish": "12",
+   "frame": 8,
+   "number": 13,
+   "name": "バレアレス",
+   "time": "1:46.8",
+   "margin": "１／２",
+   "pos4": 2,
+   "last3f": 43.2,
+   "popularity": 8
+  },
+  {
+   "finish": "13",
+   "frame": 6,
+   "number": 8,
+   "name": "エヌケイサイボウ",
+   "time": "1:47.0",
+   "margin": "３／４",
+   "pos4": 8,
+   "last3f": 43.1,
+   "popularity": 9
+  }
+ ]
+}

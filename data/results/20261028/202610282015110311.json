@@ -1,0 +1,216 @@
+{
+ "source": "rakuten",
+ "date": "20261028",
+ "race_id": "202610282015110311",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "3",
+    "yen": 440
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "3-7",
+    "yen": 950
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "3",
+    "yen": 130
+   },
+   {
+    "combo": "7",
+    "yen": 120
+   },
+   {
+    "combo": "13",
+    "yen": 210
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-7",
+    "yen": 210
+   },
+   {
+    "combo": "3-13",
+    "yen": 540
+   },
+   {
+    "combo": "7-13",
+    "yen": 450
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-5",
+    "yen": 400
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-7-13",
+    "yen": 1430
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "3-7-13",
+    "yen": 6870
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-7",
+    "yen": 420
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 3,
+   "number": 3,
+   "name": "ソニックスター",
+   "time": "1:39.3",
+   "margin": "",
+   "pos4": 5,
+   "last3f": 37.6,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 7,
+   "name": "リコースパロー",
+   "time": "1:40.0",
+   "margin": "３ １／２",
+   "pos4": 1,
+   "last3f": 38.7,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 13,
+   "name": "ナンセイホワイト",
+   "time": "1:40.1",
+   "margin": "１／２",
+   "pos4": 1,
+   "last3f": 38.7,
+   "popularity": 6
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 6,
+   "name": "ゴールドレガシー",
+   "time": "1:40.7",
+   "margin": "３",
+   "pos4": 9,
+   "last3f": 38.2,
+   "popularity": 9
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 5,
+   "name": "ウィリアムバローズ",
+   "time": "1:40.7",
+   "margin": "クビ",
+   "pos4": 6,
+   "last3f": 38.7,
+   "popularity": 4
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 11,
+   "name": "ベルグラシアス",
+   "time": "1:40.9",
+   "margin": "１",
+   "pos4": 12,
+   "last3f": 37.9,
+   "popularity": 13
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 4,
+   "name": "ランリョウオー",
+   "time": "1:40.9",
+   "margin": "クビ",
+   "pos4": 11,
+   "last3f": 38.1,
+   "popularity": 8
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 12,
+   "name": "バハルダール",
+   "time": "1:40.9",
+   "margin": "ハナ",
+   "pos4": 7,
+   "last3f": 38.7,
+   "popularity": 11
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "ハデスキーパー",
+   "time": "1:41.1",
+   "margin": "３／４",
+   "pos4": 12,
+   "last3f": 37.9,
+   "popularity": 10
+  },
+  {
+   "finish": "10",
+   "frame": 1,
+   "number": 1,
+   "name": "スマイルマンボ",
+   "time": "1:41.3",
+   "margin": "１",
+   "pos4": 3,
+   "last3f": 39.6,
+   "popularity": 7
+  },
+  {
+   "finish": "11",
+   "frame": 7,
+   "number": 10,
+   "name": "アルムラトゥール",
+   "time": "1:41.6",
+   "margin": "１ １／２",
+   "pos4": 7,
+   "last3f": 39.8,
+   "popularity": 5
+  },
+  {
+   "finish": "12",
+   "frame": 6,
+   "number": 8,
+   "name": "アレスグート",
+   "time": "1:41.6",
+   "margin": "クビ",
+   "pos4": 9,
+   "last3f": 39.1,
+   "popularity": 12
+  },
+  {
+   "finish": "13",
+   "frame": 6,
+   "number": 9,
+   "name": "ベアバッキューン",
+   "time": "1:42.9",
+   "margin": "６",
+   "pos4": 3,
+   "last3f": 41.4,
+   "popularity": 3
+  }
+ ]
+}

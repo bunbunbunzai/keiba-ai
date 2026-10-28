@@ -1,0 +1,205 @@
+{
+ "source": "rakuten",
+ "date": "20261028",
+ "race_id": "202610282726170112",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "3",
+    "yen": 2260
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "3-9",
+    "yen": 15000
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "3",
+    "yen": 270
+   },
+   {
+    "combo": "9",
+    "yen": 250
+   },
+   {
+    "combo": "12",
+    "yen": 100
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-9",
+    "yen": 1440
+   },
+   {
+    "combo": "3-12",
+    "yen": 570
+   },
+   {
+    "combo": "9-12",
+    "yen": 360
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-7",
+    "yen": 1970
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-9-12",
+    "yen": 2260
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "3-9-12",
+    "yen": 38060
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-9",
+    "yen": 8020
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 3,
+   "number": 3,
+   "name": "ギユウ",
+   "time": "1:31.1",
+   "margin": "",
+   "pos4": 2,
+   "last3f": 39.3,
+   "popularity": 6
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 9,
+   "name": "アスコットダンス",
+   "time": "1:31.2",
+   "margin": "クビ",
+   "pos4": 1,
+   "last3f": 40.0,
+   "popularity": 4
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 12,
+   "name": "ジャスティンアポロ",
+   "time": "1:31.8",
+   "margin": "３ １／２",
+   "pos4": 2,
+   "last3f": 40.4,
+   "popularity": 1
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 11,
+   "name": "チョッパスニー",
+   "time": "1:32.2",
+   "margin": "２ １／２",
+   "pos4": 4,
+   "last3f": 40.6,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "frame": 2,
+   "number": 2,
+   "name": "アンデルマット",
+   "time": "1:32.2",
+   "margin": "クビ",
+   "pos4": 8,
+   "last3f": 40.4,
+   "popularity": 8
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 5,
+   "name": "インオービット",
+   "time": "1:32.4",
+   "margin": "３／４",
+   "pos4": 9,
+   "last3f": 39.5,
+   "popularity": 10
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 4,
+   "name": "サバンナモンキー",
+   "time": "1:32.8",
+   "margin": "２ １／２",
+   "pos4": 9,
+   "last3f": 40.5,
+   "popularity": 9
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 10,
+   "name": "ルクスドリーム",
+   "time": "1:33.0",
+   "margin": "１ １／４",
+   "pos4": 4,
+   "last3f": 41.3,
+   "popularity": 3
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 6,
+   "name": "グローリアスキング",
+   "time": "1:33.1",
+   "margin": "クビ",
+   "pos4": 11,
+   "last3f": 40.3,
+   "popularity": 12
+  },
+  {
+   "finish": "10",
+   "frame": 6,
+   "number": 7,
+   "name": "ナムラオットー",
+   "time": "1:33.2",
+   "margin": "３／４",
+   "pos4": 4,
+   "last3f": 41.7,
+   "popularity": 7
+  },
+  {
+   "finish": "11",
+   "frame": 6,
+   "number": 8,
+   "name": "ヤマニンコルザ",
+   "time": "1:35.1",
+   "margin": "大差",
+   "pos4": 4,
+   "last3f": 44.0,
+   "popularity": 2
+  },
+  {
+   "finish": "12",
+   "frame": 1,
+   "number": 1,
+   "name": "ホウオウヌーヴォー",
+   "time": "1:36.2",
+   "margin": "７",
+   "pos4": 12,
+   "last3f": 41.0,
+   "popularity": 11
+  }
+ ]
+}

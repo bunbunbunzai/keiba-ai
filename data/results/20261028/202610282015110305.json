@@ -1,0 +1,227 @@
+{
+ "source": "rakuten",
+ "date": "20261028",
+ "race_id": "202610282015110305",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "10",
+    "yen": 510
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "10-8",
+    "yen": 2220
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "10",
+    "yen": 140
+   },
+   {
+    "combo": "8",
+    "yen": 160
+   },
+   {
+    "combo": "7",
+    "yen": 280
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "8-10",
+    "yen": 470
+   },
+   {
+    "combo": "7-10",
+    "yen": 640
+   },
+   {
+    "combo": "7-8",
+    "yen": 840
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-6",
+    "yen": 780
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "7-8-10",
+    "yen": 3120
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "10-8-7",
+    "yen": 14330
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "8-10",
+    "yen": 1080
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 10,
+   "name": "アップタウンガール",
+   "time": "1:44.4",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.9,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 8,
+   "name": "ブルーキャット",
+   "time": "1:44.5",
+   "margin": "１／２",
+   "pos4": 1,
+   "last3f": 40.2,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 7,
+   "name": "ナックジャスパー",
+   "time": "1:44.6",
+   "margin": "１／２",
+   "pos4": 5,
+   "last3f": 39.9,
+   "popularity": 4
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 12,
+   "name": "カルサパラストリス",
+   "time": "1:44.6",
+   "margin": "アタマ",
+   "pos4": 6,
+   "last3f": 39.5,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 5,
+   "name": "ヤマノリッチ",
+   "time": "1:44.9",
+   "margin": "１ １／２",
+   "pos4": 6,
+   "last3f": 39.8,
+   "popularity": 11
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 13,
+   "name": "ロイヤルドリーム",
+   "time": "1:45.1",
+   "margin": "１ １／４",
+   "pos4": 6,
+   "last3f": 40.3,
+   "popularity": 1
+  },
+  {
+   "finish": "7",
+   "frame": 1,
+   "number": 1,
+   "name": "ヤッティライネン",
+   "time": "1:45.6",
+   "margin": "２ １／２",
+   "pos4": 11,
+   "last3f": 40.2,
+   "popularity": 9
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 14,
+   "name": "ユイノサンバンカン",
+   "time": "1:45.9",
+   "margin": "１ １／２",
+   "pos4": 9,
+   "last3f": 40.8,
+   "popularity": 10
+  },
+  {
+   "finish": "9",
+   "frame": 4,
+   "number": 6,
+   "name": "ケンブリッジグレイ",
+   "time": "1:46.2",
+   "margin": "１ １／２",
+   "pos4": 3,
+   "last3f": 41.8,
+   "popularity": 7
+  },
+  {
+   "finish": "10",
+   "frame": 6,
+   "number": 9,
+   "name": "フラワーキングエス",
+   "time": "1:46.3",
+   "margin": "３／４",
+   "pos4": 9,
+   "last3f": 41.0,
+   "popularity": 12
+  },
+  {
+   "finish": "11",
+   "frame": 3,
+   "number": 4,
+   "name": "ファサード",
+   "time": "1:46.4",
+   "margin": "３／４",
+   "pos4": 3,
+   "last3f": 41.9,
+   "popularity": 6
+  },
+  {
+   "finish": "12",
+   "frame": 7,
+   "number": 11,
+   "name": "ラッケンブース",
+   "time": "1:47.8",
+   "margin": "７",
+   "pos4": 12,
+   "last3f": 42.4,
+   "popularity": 14
+  },
+  {
+   "finish": "13",
+   "frame": 3,
+   "number": 3,
+   "name": "アウフヴィント",
+   "time": "1:48.4",
+   "margin": "３",
+   "pos4": 13,
+   "last3f": 42.8,
+   "popularity": 8
+  },
+  {
+   "finish": "14",
+   "frame": 2,
+   "number": 2,
+   "name": "シストロン",
+   "time": "1:48.9",
+   "margin": "２ １／２",
+   "pos4": 14,
+   "last3f": 43.2,
+   "popularity": 13
+  }
+ ]
+}

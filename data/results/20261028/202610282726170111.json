@@ -1,0 +1,183 @@
+{
+ "source": "rakuten",
+ "date": "20261028",
+ "race_id": "202610282726170111",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "8",
+    "yen": 140
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "8-2",
+    "yen": 470
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "8",
+    "yen": 100
+   },
+   {
+    "combo": "2",
+    "yen": 120
+   },
+   {
+    "combo": "3",
+    "yen": 120
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-8",
+    "yen": 160
+   },
+   {
+    "combo": "3-8",
+    "yen": 150
+   },
+   {
+    "combo": "2-3",
+    "yen": 220
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-7",
+    "yen": 470
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-3-8",
+    "yen": 260
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "8-2-3",
+    "yen": 1090
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-8",
+    "yen": 420
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 8,
+   "name": "ポイントネモ",
+   "time": "2:06.0",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 38.6,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "frame": 2,
+   "number": 2,
+   "name": "シャフメラン",
+   "time": "2:06.5",
+   "margin": "３",
+   "pos4": 3,
+   "last3f": 39.2,
+   "popularity": 4
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "ケンフィールド",
+   "time": "2:07.1",
+   "margin": "３ １／２",
+   "pos4": 1,
+   "last3f": 39.9,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 9,
+   "name": "タマモマスラオ",
+   "time": "2:07.8",
+   "margin": "４",
+   "pos4": 4,
+   "last3f": 40.5,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 6,
+   "name": "ダノンアンドレ",
+   "time": "2:08.3",
+   "margin": "３",
+   "pos4": 5,
+   "last3f": 40.6,
+   "popularity": 3
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 7,
+   "name": "クリフハンガー",
+   "time": "2:08.3",
+   "margin": "クビ",
+   "pos4": 6,
+   "last3f": 39.9,
+   "popularity": 6
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 4,
+   "name": "ニシノオールマイト",
+   "time": "2:10.1",
+   "margin": "大差",
+   "pos4": 7,
+   "last3f": 42.0,
+   "popularity": 10
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 10,
+   "name": "テイケイホロムア",
+   "time": "2:10.7",
+   "margin": "３ １／２",
+   "pos4": 9,
+   "last3f": 41.7,
+   "popularity": 9
+  },
+  {
+   "finish": "9",
+   "frame": 1,
+   "number": 1,
+   "name": "イチバンボシ",
+   "time": "2:11.1",
+   "margin": "２ １／２",
+   "pos4": 9,
+   "last3f": 42.3,
+   "popularity": 8
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 5,
+   "name": "マメーアップル",
+   "time": "2:11.7",
+   "margin": "３ １／２",
+   "pos4": 8,
+   "last3f": 43.9,
+   "popularity": 7
+  }
+ ]
+}

@@ -1,0 +1,205 @@
+{
+ "source": "rakuten",
+ "date": "20261028",
+ "race_id": "202610283601150212",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "2",
+    "yen": 1520
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "2-8",
+    "yen": 4470
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "2",
+    "yen": 380
+   },
+   {
+    "combo": "8",
+    "yen": 110
+   },
+   {
+    "combo": "11",
+    "yen": 260
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-8",
+    "yen": 670
+   },
+   {
+    "combo": "2-11",
+    "yen": 2090
+   },
+   {
+    "combo": "8-11",
+    "yen": 520
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-6",
+    "yen": 1330
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-8-11",
+    "yen": 4420
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "2-8-11",
+    "yen": 33360
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-8",
+    "yen": 1560
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 2,
+   "number": 2,
+   "name": "デーモンスレイヤー",
+   "time": "1:01.5",
+   "margin": "",
+   "pos4": 3,
+   "last3f": 36.9,
+   "popularity": 6
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 8,
+   "name": "シラントロ",
+   "time": "1:01.5",
+   "margin": "アタマ",
+   "pos4": 1,
+   "last3f": 37.0,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 11,
+   "name": "サヤオンニ",
+   "time": "1:01.9",
+   "margin": "２",
+   "pos4": 3,
+   "last3f": 37.3,
+   "popularity": 8
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 6,
+   "name": "キアキア",
+   "time": "1:02.2",
+   "margin": "１ １／２",
+   "pos4": 5,
+   "last3f": 37.3,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 4,
+   "name": "ミソドレミ",
+   "time": "1:02.5",
+   "margin": "１ １／２",
+   "pos4": 1,
+   "last3f": 38.2,
+   "popularity": 2
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 7,
+   "name": "グラストップロード",
+   "time": "1:02.6",
+   "margin": "クビ",
+   "pos4": 8,
+   "last3f": 37.2,
+   "popularity": 7
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 12,
+   "name": "ヨシノカムイ",
+   "time": "1:02.7",
+   "margin": "１／２",
+   "pos4": 5,
+   "last3f": 37.8,
+   "popularity": 5
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "ジャスパードリーム",
+   "time": "1:02.8",
+   "margin": "１／２",
+   "pos4": 11,
+   "last3f": 36.6,
+   "popularity": 9
+  },
+  {
+   "finish": "9",
+   "frame": 3,
+   "number": 3,
+   "name": "ササキンメロディ",
+   "time": "1:02.9",
+   "margin": "クビ",
+   "pos4": 7,
+   "last3f": 37.7,
+   "popularity": 3
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 10,
+   "name": "ロアリングフレイム",
+   "time": "1:03.0",
+   "margin": "３／４",
+   "pos4": 10,
+   "last3f": 37.9,
+   "popularity": 10
+  },
+  {
+   "finish": "11",
+   "frame": 7,
+   "number": 9,
+   "name": "コンバットグランデ",
+   "time": "1:03.5",
+   "margin": "２ １／２",
+   "pos4": 8,
+   "last3f": 38.1,
+   "popularity": 11
+  },
+  {
+   "finish": "12",
+   "frame": 5,
+   "number": 5,
+   "name": "ワールドウィスラー",
+   "time": "1:05.0",
+   "margin": "７",
+   "pos4": 12,
+   "last3f": 38.3,
+   "popularity": 12
+  }
+ ]
+}

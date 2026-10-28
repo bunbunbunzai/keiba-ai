@@ -1,0 +1,194 @@
+{
+ "source": "rakuten",
+ "date": "20261028",
+ "race_id": "202610282015110308",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "5",
+    "yen": 140
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "5-9",
+    "yen": 780
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "5",
+    "yen": 120
+   },
+   {
+    "combo": "9",
+    "yen": 190
+   },
+   {
+    "combo": "10",
+    "yen": 280
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "5-9",
+    "yen": 320
+   },
+   {
+    "combo": "5-10",
+    "yen": 430
+   },
+   {
+    "combo": "9-10",
+    "yen": 1200
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-7",
+    "yen": 530
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "5-9-10",
+    "yen": 1620
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "5-9-10",
+    "yen": 3770
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "5-9",
+    "yen": 720
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 5,
+   "name": "リコーヒューズ",
+   "time": "1:26.9",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 38.7,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 9,
+   "name": "ダイヤメ",
+   "time": "1:28.0",
+   "margin": "５",
+   "pos4": 3,
+   "last3f": 39.4,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 10,
+   "name": "エスプリワールド",
+   "time": "1:28.2",
+   "margin": "１",
+   "pos4": 7,
+   "last3f": 38.5,
+   "popularity": 6
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 4,
+   "name": "メズマライズ",
+   "time": "1:28.4",
+   "margin": "１",
+   "pos4": 1,
+   "last3f": 40.3,
+   "popularity": 2
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 8,
+   "name": "ラバテラリュージュ",
+   "time": "1:28.7",
+   "margin": "１ １／２",
+   "pos4": 8,
+   "last3f": 38.8,
+   "popularity": 9
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 6,
+   "name": "ハルイチバン",
+   "time": "1:28.9",
+   "margin": "１ １／４",
+   "pos4": 6,
+   "last3f": 39.5,
+   "popularity": 8
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 11,
+   "name": "ピルゴスアイトス",
+   "time": "1:29.0",
+   "margin": "クビ",
+   "pos4": 9,
+   "last3f": 39.0,
+   "popularity": 5
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "マニス",
+   "time": "1:29.2",
+   "margin": "１",
+   "pos4": 9,
+   "last3f": 39.0,
+   "popularity": 11
+  },
+  {
+   "finish": "9",
+   "frame": 3,
+   "number": 3,
+   "name": "マイネルヴェーゼン",
+   "time": "1:29.7",
+   "margin": "２ １／２",
+   "pos4": 11,
+   "last3f": 39.4,
+   "popularity": 4
+  },
+  {
+   "finish": "10",
+   "frame": 6,
+   "number": 7,
+   "name": "サウンドキングダム",
+   "time": "1:30.1",
+   "margin": "２",
+   "pos4": 4,
+   "last3f": 41.5,
+   "popularity": 7
+  },
+  {
+   "finish": "11",
+   "frame": 2,
+   "number": 2,
+   "name": "ロンフォン",
+   "time": "1:31.5",
+   "margin": "７",
+   "pos4": 4,
+   "last3f": 42.9,
+   "popularity": 10
+  }
+ ]
+}

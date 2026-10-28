@@ -1,0 +1,194 @@
+{
+ "source": "rakuten",
+ "date": "20261028",
+ "race_id": "202610282015110303",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "6",
+    "yen": 900
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "6-8",
+    "yen": 9690
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "6",
+    "yen": 270
+   },
+   {
+    "combo": "8",
+    "yen": 260
+   },
+   {
+    "combo": "4",
+    "yen": 150
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "6-8",
+    "yen": 1120
+   },
+   {
+    "combo": "4-6",
+    "yen": 530
+   },
+   {
+    "combo": "4-8",
+    "yen": 570
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "6-7",
+    "yen": 1280
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-6-8",
+    "yen": 4070
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "6-8-4",
+    "yen": 53660
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "6-8",
+    "yen": 4750
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 6,
+   "name": "ジョイグリーン",
+   "time": "1:45.1",
+   "margin": "",
+   "pos4": 2,
+   "last3f": 41.7,
+   "popularity": 5
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 8,
+   "name": "ココミサイル",
+   "time": "1:45.3",
+   "margin": "１",
+   "pos4": 5,
+   "last3f": 41.4,
+   "popularity": 6
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "ラジャブルック",
+   "time": "1:45.3",
+   "margin": "ハナ",
+   "pos4": 2,
+   "last3f": 41.4,
+   "popularity": 1
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "グレートロッタリー",
+   "time": "1:45.4",
+   "margin": "１／２",
+   "pos4": 9,
+   "last3f": 40.8,
+   "popularity": 10
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 7,
+   "name": "ココクイック",
+   "time": "1:46.0",
+   "margin": "３",
+   "pos4": 7,
+   "last3f": 41.6,
+   "popularity": 8
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 9,
+   "name": "フロンテアムーン",
+   "time": "1:46.2",
+   "margin": "１",
+   "pos4": 1,
+   "last3f": 42.9,
+   "popularity": 3
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 11,
+   "name": "マクシーン",
+   "time": "1:46.3",
+   "margin": "１／２",
+   "pos4": 6,
+   "last3f": 42.5,
+   "popularity": 4
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "エトワールブルー",
+   "time": "1:46.4",
+   "margin": "１／２",
+   "pos4": 7,
+   "last3f": 42.1,
+   "popularity": 9
+  },
+  {
+   "finish": "9",
+   "frame": 3,
+   "number": 3,
+   "name": "レッドスカイ",
+   "time": "1:46.9",
+   "margin": "２ １／２",
+   "pos4": 9,
+   "last3f": 42.1,
+   "popularity": 11
+  },
+  {
+   "finish": "10",
+   "frame": 8,
+   "number": 10,
+   "name": "サラン",
+   "time": "1:47.5",
+   "margin": "３",
+   "pos4": 11,
+   "last3f": 43.1,
+   "popularity": 7
+  },
+  {
+   "finish": "11",
+   "frame": 5,
+   "number": 5,
+   "name": "アリハム",
+   "time": "1:49.0",
+   "margin": "７",
+   "pos4": 2,
+   "last3f": 45.6,
+   "popularity": 2
+  }
+ ]
+}

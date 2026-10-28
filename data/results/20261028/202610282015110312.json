@@ -1,0 +1,216 @@
+{
+ "source": "rakuten",
+ "date": "20261028",
+ "race_id": "202610282015110312",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "13",
+    "yen": 430
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "13-11",
+    "yen": 1400
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "13",
+    "yen": 180
+   },
+   {
+    "combo": "11",
+    "yen": 140
+   },
+   {
+    "combo": "3",
+    "yen": 200
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "11-13",
+    "yen": 330
+   },
+   {
+    "combo": "3-13",
+    "yen": 540
+   },
+   {
+    "combo": "3-11",
+    "yen": 460
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "7-8",
+    "yen": 600
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-11-13",
+    "yen": 1390
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "13-11-3",
+    "yen": 7050
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "11-13",
+    "yen": 740
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 13,
+   "name": "サンディエゴ",
+   "time": "2:39.0",
+   "margin": "",
+   "pos4": 5,
+   "last3f": 39.2,
+   "popularity": 3
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 11,
+   "name": "ヴュルディヒ",
+   "time": "2:39.2",
+   "margin": "１ １／４",
+   "pos4": 3,
+   "last3f": 40.1,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "トクシーティグレ",
+   "time": "2:40.0",
+   "margin": "４",
+   "pos4": 5,
+   "last3f": 40.0,
+   "popularity": 4
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 8,
+   "name": "グリークトレジャー",
+   "time": "2:40.2",
+   "margin": "３／４",
+   "pos4": 1,
+   "last3f": 41.3,
+   "popularity": 10
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 5,
+   "name": "ストライクノワール",
+   "time": "2:40.3",
+   "margin": "１／２",
+   "pos4": 1,
+   "last3f": 41.4,
+   "popularity": 1
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 10,
+   "name": "ファーストメイト",
+   "time": "2:40.3",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": 40.4,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "frame": 1,
+   "number": 1,
+   "name": "アーススピリット",
+   "time": "2:41.0",
+   "margin": "３ １／２",
+   "pos4": 3,
+   "last3f": 42.0,
+   "popularity": 7
+  },
+  {
+   "finish": "8",
+   "frame": 5,
+   "number": 6,
+   "name": "シンクグッド",
+   "time": "2:41.4",
+   "margin": "２",
+   "pos4": 9,
+   "last3f": 41.6,
+   "popularity": 8
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 7,
+   "name": "リックマーベル",
+   "time": "2:41.5",
+   "margin": "１／２",
+   "pos4": 10,
+   "last3f": 41.1,
+   "popularity": 11
+  },
+  {
+   "finish": "10",
+   "frame": 6,
+   "number": 9,
+   "name": "アレアラミア",
+   "time": "2:45.5",
+   "margin": "大差",
+   "pos4": 10,
+   "last3f": 45.3,
+   "popularity": 6
+  },
+  {
+   "finish": "11",
+   "frame": 2,
+   "number": 2,
+   "name": "コスモブライヤー",
+   "time": "2:45.5",
+   "margin": "ハナ",
+   "pos4": 5,
+   "last3f": 46.1,
+   "popularity": 9
+  },
+  {
+   "finish": "12",
+   "frame": 4,
+   "number": 4,
+   "name": "ラストラブラブ",
+   "time": "2:47.0",
+   "margin": "７",
+   "pos4": 12,
+   "last3f": 46.7,
+   "popularity": 12
+  },
+  {
+   "finish": "-",
+   "frame": 8,
+   "number": 12,
+   "name": "オーサムデアラー",
+   "time": "-",
+   "margin": "取消",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
+}

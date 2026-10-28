@@ -1,0 +1,205 @@
+{
+ "source": "rakuten",
+ "date": "20261028",
+ "race_id": "202610282433150209",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "12",
+    "yen": 250
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "12-8",
+    "yen": 480
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "12",
+    "yen": 120
+   },
+   {
+    "combo": "8",
+    "yen": 100
+   },
+   {
+    "combo": "4",
+    "yen": 260
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "8-12",
+    "yen": 130
+   },
+   {
+    "combo": "4-12",
+    "yen": 550
+   },
+   {
+    "combo": "4-8",
+    "yen": 350
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "6-8",
+    "yen": 180
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-8-12",
+    "yen": 1040
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "12-8-4",
+    "yen": 4590
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "8-12",
+    "yen": 220
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 12,
+   "name": "ヌビアン",
+   "time": "1:36.7",
+   "margin": "",
+   "pos4": 2,
+   "last3f": 40.1,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 8,
+   "name": "アミナス",
+   "time": "1:36.9",
+   "margin": "１",
+   "pos4": 1,
+   "last3f": 40.3,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "セイスイカルメン",
+   "time": "1:37.5",
+   "margin": "３",
+   "pos4": 8,
+   "last3f": 38.8,
+   "popularity": 4
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 11,
+   "name": "テイクザスローン",
+   "time": "1:37.5",
+   "margin": "ハナ",
+   "pos4": 3,
+   "last3f": 40.5,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 10,
+   "name": "アルマフレイヤ",
+   "time": "1:37.6",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": 40.2,
+   "popularity": 9
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 5,
+   "name": "ピュアバルキリー",
+   "time": "1:38.2",
+   "margin": "３",
+   "pos4": 7,
+   "last3f": 40.4,
+   "popularity": 6
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 9,
+   "name": "ウインエンブレム",
+   "time": "1:38.4",
+   "margin": "３／４",
+   "pos4": 4,
+   "last3f": 41.3,
+   "popularity": 3
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "ハートニヒヲツケテ",
+   "time": "1:38.9",
+   "margin": "２ １／２",
+   "pos4": 9,
+   "last3f": 40.1,
+   "popularity": 8
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 6,
+   "name": "ルヴレアール",
+   "time": "1:39.6",
+   "margin": "３",
+   "pos4": 6,
+   "last3f": 42.8,
+   "popularity": 7
+  },
+  {
+   "finish": "10",
+   "frame": 6,
+   "number": 7,
+   "name": "サンルーナ",
+   "time": "1:40.2",
+   "margin": "３",
+   "pos4": 11,
+   "last3f": 41.6,
+   "popularity": 10
+  },
+  {
+   "finish": "11",
+   "frame": 1,
+   "number": 1,
+   "name": "フクチャンフクメイ",
+   "time": "1:40.2",
+   "margin": "クビ",
+   "pos4": 9,
+   "last3f": 42.0,
+   "popularity": 12
+  },
+  {
+   "finish": "12",
+   "frame": 2,
+   "number": 2,
+   "name": "キーサーバー",
+   "time": "1:41.1",
+   "margin": "４",
+   "pos4": 12,
+   "last3f": 41.2,
+   "popularity": 11
+  }
+ ]
+}

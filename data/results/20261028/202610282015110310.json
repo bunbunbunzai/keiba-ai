@@ -1,0 +1,194 @@
+{
+ "source": "rakuten",
+ "date": "20261028",
+ "race_id": "202610282015110310",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "2",
+    "yen": 180
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "2-8",
+    "yen": 620
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "2",
+    "yen": 100
+   },
+   {
+    "combo": "8",
+    "yen": 150
+   },
+   {
+    "combo": "10",
+    "yen": 150
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-8",
+    "yen": 190
+   },
+   {
+    "combo": "2-10",
+    "yen": 210
+   },
+   {
+    "combo": "8-10",
+    "yen": 380
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-7",
+    "yen": 440
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-8-10",
+    "yen": 500
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "2-8-10",
+    "yen": 1880
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-8",
+    "yen": 430
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 2,
+   "number": 2,
+   "name": "ミクニサンシャイン",
+   "time": "1:27.2",
+   "margin": "",
+   "pos4": 4,
+   "last3f": 38.1,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 8,
+   "name": "ブラックタロー",
+   "time": "1:27.2",
+   "margin": "アタマ",
+   "pos4": 8,
+   "last3f": 37.3,
+   "popularity": 4
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 10,
+   "name": "サヨノホーチュラス",
+   "time": "1:27.4",
+   "margin": "１",
+   "pos4": 3,
+   "last3f": 38.6,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 3,
+   "name": "ドライブミーホーム",
+   "time": "1:28.0",
+   "margin": "３",
+   "pos4": 9,
+   "last3f": 37.9,
+   "popularity": 8
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 4,
+   "name": "ドレインザスワンプ",
+   "time": "1:28.0",
+   "margin": "同着",
+   "pos4": 1,
+   "last3f": 39.4,
+   "popularity": 7
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 5,
+   "name": "コーゲンシルバー",
+   "time": "1:28.0",
+   "margin": "アタマ",
+   "pos4": 6,
+   "last3f": 38.6,
+   "popularity": 9
+  },
+  {
+   "finish": "7",
+   "frame": 1,
+   "number": 1,
+   "name": "グリーズマン",
+   "time": "1:28.4",
+   "margin": "２",
+   "pos4": 9,
+   "last3f": 38.6,
+   "popularity": 6
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 11,
+   "name": "レゲエビーチ",
+   "time": "1:28.8",
+   "margin": "２",
+   "pos4": 4,
+   "last3f": 39.8,
+   "popularity": 3
+  },
+  {
+   "finish": "9",
+   "frame": 6,
+   "number": 7,
+   "name": "コパノトーマス",
+   "time": "1:28.9",
+   "margin": "クビ",
+   "pos4": 6,
+   "last3f": 39.6,
+   "popularity": 5
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 9,
+   "name": "ヨゾラノムコウニ",
+   "time": "1:30.0",
+   "margin": "５",
+   "pos4": 1,
+   "last3f": 41.4,
+   "popularity": 10
+  },
+  {
+   "finish": "11",
+   "frame": 6,
+   "number": 6,
+   "name": "ユイノコミチ",
+   "time": "1:30.8",
+   "margin": "４",
+   "pos4": 11,
+   "last3f": 39.9,
+   "popularity": 11
+  }
+ ]
+}

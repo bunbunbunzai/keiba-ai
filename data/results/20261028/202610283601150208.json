@@ -1,0 +1,205 @@
+{
+ "source": "rakuten",
+ "date": "20261028",
+ "race_id": "202610283601150208",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "12",
+    "yen": 140
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "12-7",
+    "yen": 650
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "12",
+    "yen": 100
+   },
+   {
+    "combo": "7",
+    "yen": 250
+   },
+   {
+    "combo": "3",
+    "yen": 200
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "7-12",
+    "yen": 290
+   },
+   {
+    "combo": "3-12",
+    "yen": 260
+   },
+   {
+    "combo": "3-7",
+    "yen": 1330
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "6-8",
+    "yen": 390
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-7-12",
+    "yen": 1220
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "12-7-3",
+    "yen": 2800
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "7-12",
+    "yen": 490
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 12,
+   "name": "メイショウカラクサ",
+   "time": "1:02.8",
+   "margin": "",
+   "pos4": 2,
+   "last3f": 38.3,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 7,
+   "name": "アクアノート",
+   "time": "1:02.8",
+   "margin": "クビ",
+   "pos4": 1,
+   "last3f": 38.7,
+   "popularity": 4
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "ウナトライオン",
+   "time": "1:02.9",
+   "margin": "３／４",
+   "pos4": 8,
+   "last3f": 37.2,
+   "popularity": 5
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 9,
+   "name": "オセロ",
+   "time": "1:03.0",
+   "margin": "１／２",
+   "pos4": 5,
+   "last3f": 37.6,
+   "popularity": 3
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 8,
+   "name": "ツキカゲ",
+   "time": "1:03.6",
+   "margin": "３",
+   "pos4": 9,
+   "last3f": 37.7,
+   "popularity": 7
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 6,
+   "name": "スイレンチャン",
+   "time": "1:03.8",
+   "margin": "３／４",
+   "pos4": 7,
+   "last3f": 38.4,
+   "popularity": 9
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 5,
+   "name": "ワールドユニティ",
+   "time": "1:03.8",
+   "margin": "クビ",
+   "pos4": 11,
+   "last3f": 37.4,
+   "popularity": 6
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 10,
+   "name": "コユキチャン",
+   "time": "1:03.9",
+   "margin": "３／４",
+   "pos4": 12,
+   "last3f": 37.6,
+   "popularity": 8
+  },
+  {
+   "finish": "9",
+   "frame": 1,
+   "number": 1,
+   "name": "マイニオサラスタス",
+   "time": "1:04.0",
+   "margin": "１／２",
+   "pos4": 3,
+   "last3f": 39.4,
+   "popularity": 12
+  },
+  {
+   "finish": "10",
+   "frame": 2,
+   "number": 2,
+   "name": "プラクシテレス",
+   "time": "1:04.9",
+   "margin": "４",
+   "pos4": 5,
+   "last3f": 40.0,
+   "popularity": 11
+  },
+  {
+   "finish": "11",
+   "frame": 8,
+   "number": 11,
+   "name": "カネトシセレスト",
+   "time": "1:05.2",
+   "margin": "１ １／２",
+   "pos4": 10,
+   "last3f": 39.3,
+   "popularity": 10
+  },
+  {
+   "finish": "12",
+   "frame": 4,
+   "number": 4,
+   "name": "ニットウエース",
+   "time": "1:05.8",
+   "margin": "３",
+   "pos4": 4,
+   "last3f": 40.9,
+   "popularity": 2
+  }
+ ]
+}
