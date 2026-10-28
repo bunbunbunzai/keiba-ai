@@ -1,0 +1,183 @@
+{
+ "source": "rakuten",
+ "date": "20261028",
+ "race_id": "202610282726170102",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "10",
+    "yen": 1900
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "10-8",
+    "yen": 14410
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "10",
+    "yen": 530
+   },
+   {
+    "combo": "8",
+    "yen": 170
+   },
+   {
+    "combo": "9",
+    "yen": 530
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "8-10",
+    "yen": 1410
+   },
+   {
+    "combo": "9-10",
+    "yen": 1930
+   },
+   {
+    "combo": "8-9",
+    "yen": 2210
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "7-8",
+    "yen": 1210
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "8-9-10",
+    "yen": 17590
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "10-8-9",
+    "yen": 144050
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "8-10",
+    "yen": 5350
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 10,
+   "name": "アイサマン",
+   "time": "1:34.6",
+   "margin": "",
+   "pos4": 3,
+   "last3f": 40.7,
+   "popularity": 8
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 8,
+   "name": "エザルターレ",
+   "time": "1:34.9",
+   "margin": "１ ３／４",
+   "pos4": 2,
+   "last3f": 41.4,
+   "popularity": 4
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 9,
+   "name": "メイショウギシオー",
+   "time": "1:35.4",
+   "margin": "３",
+   "pos4": 1,
+   "last3f": 42.3,
+   "popularity": 6
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 6,
+   "name": "オーシンボンバー",
+   "time": "1:36.0",
+   "margin": "３ １／２",
+   "pos4": 5,
+   "last3f": 41.5,
+   "popularity": 2
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 4,
+   "name": "サインポール",
+   "time": "1:36.3",
+   "margin": "１ １／２",
+   "pos4": 7,
+   "last3f": 41.8,
+   "popularity": 9
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 5,
+   "name": "ドゥーエニシング",
+   "time": "1:36.3",
+   "margin": "アタマ",
+   "pos4": 3,
+   "last3f": 42.9,
+   "popularity": 3
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 7,
+   "name": "アクイール",
+   "time": "1:36.4",
+   "margin": "クビ",
+   "pos4": 7,
+   "last3f": 42.7,
+   "popularity": 7
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "グランテミス",
+   "time": "1:36.8",
+   "margin": "２ １／２",
+   "pos4": 10,
+   "last3f": 41.1,
+   "popularity": 10
+  },
+  {
+   "finish": "9",
+   "frame": 1,
+   "number": 1,
+   "name": "ララヴァンダンジュ",
+   "time": "1:37.0",
+   "margin": "１ １／２",
+   "pos4": 5,
+   "last3f": 43.6,
+   "popularity": 1
+  },
+  {
+   "finish": "10",
+   "frame": 2,
+   "number": 2,
+   "name": "クァンタムリープ",
+   "time": "1:37.1",
+   "margin": "１／２",
+   "pos4": 9,
+   "last3f": 43.0,
+   "popularity": 5
+  }
+ ]
+}

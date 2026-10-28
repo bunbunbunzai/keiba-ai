@@ -1,0 +1,205 @@
+{
+ "source": "rakuten",
+ "date": "20261028",
+ "race_id": "202610282433150203",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "9",
+    "yen": 330
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "9-12",
+    "yen": 1080
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "9",
+    "yen": 160
+   },
+   {
+    "combo": "12",
+    "yen": 130
+   },
+   {
+    "combo": "5",
+    "yen": 410
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "9-12",
+    "yen": 260
+   },
+   {
+    "combo": "5-9",
+    "yen": 1440
+   },
+   {
+    "combo": "5-12",
+    "yen": 760
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "7-8",
+    "yen": 320
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "5-9-12",
+    "yen": 2490
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "9-12-5",
+    "yen": 9980
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "9-12",
+    "yen": 460
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 9,
+   "name": "オーパパ",
+   "time": "1:36.4",
+   "margin": "",
+   "pos4": 2,
+   "last3f": 38.8,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 12,
+   "name": "クレセントゼファー",
+   "time": "1:36.6",
+   "margin": "１",
+   "pos4": 1,
+   "last3f": 39.2,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 5,
+   "name": "ブリリアンス",
+   "time": "1:38.1",
+   "margin": "７",
+   "pos4": 3,
+   "last3f": 40.4,
+   "popularity": 6
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 4,
+   "name": "アニゴザントス",
+   "time": "1:38.1",
+   "margin": "クビ",
+   "pos4": 10,
+   "last3f": 39.1,
+   "popularity": 8
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 11,
+   "name": "グランスプリント",
+   "time": "1:38.1",
+   "margin": "クビ",
+   "pos4": 4,
+   "last3f": 40.6,
+   "popularity": 3
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "ボドニーク",
+   "time": "1:38.2",
+   "margin": "クビ",
+   "pos4": 6,
+   "last3f": 39.8,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "frame": 1,
+   "number": 1,
+   "name": "オーブレーヌ",
+   "time": "1:39.4",
+   "margin": "６",
+   "pos4": 8,
+   "last3f": 41.1,
+   "popularity": 9
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 10,
+   "name": "エトワールフィーユ",
+   "time": "1:39.5",
+   "margin": "１／２",
+   "pos4": 9,
+   "last3f": 41.2,
+   "popularity": 11
+  },
+  {
+   "finish": "9",
+   "frame": 6,
+   "number": 7,
+   "name": "ラブミーアゲイン",
+   "time": "1:39.9",
+   "margin": "２",
+   "pos4": 5,
+   "last3f": 42.4,
+   "popularity": 4
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 6,
+   "name": "パーフェクトスノー",
+   "time": "1:39.9",
+   "margin": "クビ",
+   "pos4": 11,
+   "last3f": 41.0,
+   "popularity": 10
+  },
+  {
+   "finish": "11",
+   "frame": 6,
+   "number": 8,
+   "name": "スウィートラキ",
+   "time": "1:40.4",
+   "margin": "２ １／２",
+   "pos4": 6,
+   "last3f": 42.6,
+   "popularity": 7
+  },
+  {
+   "finish": "12",
+   "frame": 3,
+   "number": 3,
+   "name": "カイトアザリー",
+   "time": "1:41.5",
+   "margin": "５",
+   "pos4": 12,
+   "last3f": 42.5,
+   "popularity": 12
+  }
+ ]
+}

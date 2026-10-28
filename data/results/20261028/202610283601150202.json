@@ -1,0 +1,155 @@
+{
+ "source": "rakuten",
+ "date": "20261028",
+ "race_id": "202610283601150202",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "7",
+    "yen": 410
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "7-4",
+    "yen": 6230
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "7",
+    "yen": 140
+   },
+   {
+    "combo": "4",
+    "yen": 380
+   },
+   {
+    "combo": "8",
+    "yen": 110
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-7",
+    "yen": 790
+   },
+   {
+    "combo": "7-8",
+    "yen": 210
+   },
+   {
+    "combo": "4-8",
+    "yen": 860
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-7-8",
+    "yen": 1590
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "7-4-8",
+    "yen": 13090
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-7",
+    "yen": 3450
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 7,
+   "name": "ハナノコルンルン",
+   "time": "1:03.3",
+   "margin": "",
+   "pos4": 5,
+   "last3f": 37.9,
+   "popularity": 3
+  },
+  {
+   "finish": "2",
+   "frame": 4,
+   "number": 4,
+   "name": "ミッドナイトハニー",
+   "time": "1:03.9",
+   "margin": "３",
+   "pos4": 3,
+   "last3f": 38.8,
+   "popularity": 5
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 8,
+   "name": "スキップストーン",
+   "time": "1:04.0",
+   "margin": "３／４",
+   "pos4": 1,
+   "last3f": 39.4,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 6,
+   "name": "マルホ",
+   "time": "1:04.1",
+   "margin": "クビ",
+   "pos4": 1,
+   "last3f": 39.5,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "frame": 2,
+   "number": 2,
+   "name": "ダンストンフォルテ",
+   "time": "1:04.5",
+   "margin": "２",
+   "pos4": 3,
+   "last3f": 39.6,
+   "popularity": 1
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 5,
+   "name": "シセイフット",
+   "time": "1:04.7",
+   "margin": "１",
+   "pos4": 6,
+   "last3f": 37.9,
+   "popularity": 6
+  },
+  {
+   "finish": "7",
+   "frame": 1,
+   "number": 1,
+   "name": "オーキクナアレ",
+   "time": "1:05.4",
+   "margin": "３",
+   "pos4": 6,
+   "last3f": 38.6,
+   "popularity": 7
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "キジルクーム",
+   "time": "1:05.4",
+   "margin": "ハナ",
+   "pos4": 6,
+   "last3f": 38.8,
+   "popularity": 8
+  }
+ ]
+}

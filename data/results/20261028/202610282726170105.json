@@ -1,0 +1,194 @@
+{
+ "source": "rakuten",
+ "date": "20261028",
+ "race_id": "202610282726170105",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "5",
+    "yen": 170
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "5-10",
+    "yen": 350
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "5",
+    "yen": 100
+   },
+   {
+    "combo": "10",
+    "yen": 100
+   },
+   {
+    "combo": "6",
+    "yen": 150
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "5-10",
+    "yen": 160
+   },
+   {
+    "combo": "5-6",
+    "yen": 200
+   },
+   {
+    "combo": "6-10",
+    "yen": 340
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-8",
+    "yen": 190
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "5-6-10",
+    "yen": 520
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "5-10-6",
+    "yen": 1320
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "5-10",
+    "yen": 210
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 5,
+   "name": "エクスペリオン",
+   "time": "1:21.8",
+   "margin": "",
+   "pos4": 3,
+   "last3f": 38.6,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 10,
+   "name": "ワキノグラス",
+   "time": "1:21.8",
+   "margin": "クビ",
+   "pos4": 1,
+   "last3f": 39.9,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 6,
+   "name": "ブレッシングアイル",
+   "time": "1:23.3",
+   "margin": "９",
+   "pos4": 2,
+   "last3f": 41.1,
+   "popularity": 4
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "バークエム",
+   "time": "1:23.6",
+   "margin": "１ ３／４",
+   "pos4": 5,
+   "last3f": 41.0,
+   "popularity": 6
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 4,
+   "name": "キモンキャリントン",
+   "time": "1:23.9",
+   "margin": "１ １／２",
+   "pos4": 3,
+   "last3f": 41.3,
+   "popularity": 3
+  },
+  {
+   "finish": "6",
+   "frame": 1,
+   "number": 1,
+   "name": "トライファン",
+   "time": "1:24.5",
+   "margin": "４",
+   "pos4": 6,
+   "last3f": 41.0,
+   "popularity": 8
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 7,
+   "name": "ノブノキャット",
+   "time": "1:24.5",
+   "margin": "アタマ",
+   "pos4": 6,
+   "last3f": 41.7,
+   "popularity": 9
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 11,
+   "name": "ミトロージア",
+   "time": "1:25.4",
+   "margin": "５",
+   "pos4": 10,
+   "last3f": 42.3,
+   "popularity": 5
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 8,
+   "name": "フェスティヴルキナ",
+   "time": "1:25.5",
+   "margin": "クビ",
+   "pos4": 8,
+   "last3f": 42.9,
+   "popularity": 7
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 9,
+   "name": "シルエッタ",
+   "time": "1:26.6",
+   "margin": "７",
+   "pos4": 9,
+   "last3f": 44.0,
+   "popularity": 10
+  },
+  {
+   "finish": "11",
+   "frame": 3,
+   "number": 3,
+   "name": "ニューアスラーダ",
+   "time": "1:27.1",
+   "margin": "３",
+   "pos4": 10,
+   "last3f": 43.3,
+   "popularity": 11
+  }
+ ]
+}

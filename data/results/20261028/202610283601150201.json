@@ -1,0 +1,155 @@
+{
+ "source": "rakuten",
+ "date": "20261028",
+ "race_id": "202610283601150201",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "2",
+    "yen": 160
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "2-5",
+    "yen": 650
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "2",
+    "yen": 100
+   },
+   {
+    "combo": "5",
+    "yen": 120
+   },
+   {
+    "combo": "7",
+    "yen": 100
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-5",
+    "yen": 210
+   },
+   {
+    "combo": "2-7",
+    "yen": 130
+   },
+   {
+    "combo": "5-7",
+    "yen": 210
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-5-7",
+    "yen": 280
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "2-5-7",
+    "yen": 1570
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-5",
+    "yen": 570
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 2,
+   "number": 2,
+   "name": "ランシュネル",
+   "time": "1:54.8",
+   "margin": "",
+   "pos4": 4,
+   "last3f": 39.9,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "カームリン",
+   "time": "1:55.0",
+   "margin": "３／４",
+   "pos4": 1,
+   "last3f": 40.9,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 7,
+   "name": "バラデロ",
+   "time": "1:55.4",
+   "margin": "２",
+   "pos4": 5,
+   "last3f": 40.5,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 3,
+   "name": "カマンチャカ",
+   "time": "1:55.8",
+   "margin": "２",
+   "pos4": 1,
+   "last3f": 41.2,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "frame": 1,
+   "number": 1,
+   "name": "ナガイアイダ",
+   "time": "1:55.8",
+   "margin": "クビ",
+   "pos4": 3,
+   "last3f": 40.7,
+   "popularity": 6
+  },
+  {
+   "finish": "6",
+   "frame": 4,
+   "number": 4,
+   "name": "パンチャギ",
+   "time": "1:55.9",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": 41.0,
+   "popularity": 8
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 6,
+   "name": "オーバーチュア",
+   "time": "1:56.5",
+   "margin": "３",
+   "pos4": 8,
+   "last3f": 41.2,
+   "popularity": 7
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 8,
+   "name": "カルリトス",
+   "time": "1:57.8",
+   "margin": "６",
+   "pos4": 5,
+   "last3f": 43.0,
+   "popularity": 4
+  }
+ ]
+}

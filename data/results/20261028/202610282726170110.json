@@ -1,0 +1,194 @@
+{
+ "source": "rakuten",
+ "date": "20261028",
+ "race_id": "202610282726170110",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "10",
+    "yen": 170
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "10-2",
+    "yen": 300
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "10",
+    "yen": 100
+   },
+   {
+    "combo": "2",
+    "yen": 110
+   },
+   {
+    "combo": "9",
+    "yen": 160
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-10",
+    "yen": 140
+   },
+   {
+    "combo": "9-10",
+    "yen": 190
+   },
+   {
+    "combo": "2-9",
+    "yen": 240
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-8",
+    "yen": 160
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-9-10",
+    "yen": 390
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "10-2-9",
+    "yen": 1070
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-10",
+    "yen": 220
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 10,
+   "name": "ゴーゴーツヨシ",
+   "time": "1:32.1",
+   "margin": "",
+   "pos4": 3,
+   "last3f": 38.9,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 2,
+   "number": 2,
+   "name": "ジーティーエイト",
+   "time": "1:32.2",
+   "margin": "クビ",
+   "pos4": 1,
+   "last3f": 39.4,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 9,
+   "name": "リリーオブザハート",
+   "time": "1:32.2",
+   "margin": "ハナ",
+   "pos4": 1,
+   "last3f": 39.2,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 11,
+   "name": "グロリアスアポイ",
+   "time": "1:32.3",
+   "margin": "１／２",
+   "pos4": 8,
+   "last3f": 38.5,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 6,
+   "name": "ゼンダンスバシリ",
+   "time": "1:32.4",
+   "margin": "クビ",
+   "pos4": 6,
+   "last3f": 39.1,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 5,
+   "name": "エイシンビルボード",
+   "time": "1:32.7",
+   "margin": "２",
+   "pos4": 4,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 8,
+   "name": "タオロマイ",
+   "time": "1:32.9",
+   "margin": "３／４",
+   "pos4": 7,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "スルーザミル",
+   "time": "1:32.9",
+   "margin": "アタマ",
+   "pos4": 8,
+   "last3f": 39.3,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 6,
+   "number": 7,
+   "name": "グランレイハート",
+   "time": "1:32.9",
+   "margin": "クビ",
+   "pos4": 4,
+   "last3f": 40.0,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 4,
+   "number": 4,
+   "name": "プロピエダッド",
+   "time": "1:34.2",
+   "margin": "８",
+   "pos4": 10,
+   "last3f": 40.7,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 1,
+   "number": 1,
+   "name": "ビーマイセルフ",
+   "time": "1:35.8",
+   "margin": "１０",
+   "pos4": 11,
+   "last3f": 41.8,
+   "popularity": null
+  }
+ ]
+}

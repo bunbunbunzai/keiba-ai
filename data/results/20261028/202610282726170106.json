@@ -1,0 +1,205 @@
+{
+ "source": "rakuten",
+ "date": "20261028",
+ "race_id": "202610282726170106",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "12",
+    "yen": 580
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "12-11",
+    "yen": 860
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "12",
+    "yen": 130
+   },
+   {
+    "combo": "11",
+    "yen": 100
+   },
+   {
+    "combo": "8",
+    "yen": 280
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "11-12",
+    "yen": 160
+   },
+   {
+    "combo": "8-12",
+    "yen": 730
+   },
+   {
+    "combo": "8-11",
+    "yen": 490
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "8-8",
+    "yen": 240
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "8-11-12",
+    "yen": 1010
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "12-11-8",
+    "yen": 6090
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "11-12",
+    "yen": 230
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 12,
+   "name": "クリノオーサム",
+   "time": "50.8",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 36.4,
+   "popularity": 3
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 11,
+   "name": "テーオーヴァルナイ",
+   "time": "51.0",
+   "margin": "１",
+   "pos4": 4,
+   "last3f": 36.1,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 8,
+   "name": "エイラク",
+   "time": "51.0",
+   "margin": "クビ",
+   "pos4": 1,
+   "last3f": 36.7,
+   "popularity": 5
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 6,
+   "name": "ユナモンスター",
+   "time": "51.5",
+   "margin": "３",
+   "pos4": 3,
+   "last3f": 37.0,
+   "popularity": 2
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 5,
+   "name": "アイアンオバーカム",
+   "time": "51.9",
+   "margin": "２ １／２",
+   "pos4": 6,
+   "last3f": 37.0,
+   "popularity": 4
+  },
+  {
+   "finish": "6",
+   "frame": 4,
+   "number": 4,
+   "name": "アクアホワイト",
+   "time": "52.3",
+   "margin": "２ １／２",
+   "pos4": 10,
+   "last3f": 37.1,
+   "popularity": 9
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 7,
+   "name": "レスプレンドール",
+   "time": "52.6",
+   "margin": "１ ３／４",
+   "pos4": 8,
+   "last3f": 37.7,
+   "popularity": 7
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "コイビトミサキ",
+   "time": "52.6",
+   "margin": "アタマ",
+   "pos4": 9,
+   "last3f": 37.4,
+   "popularity": 11
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "リベリューラ",
+   "time": "53.1",
+   "margin": "３",
+   "pos4": 5,
+   "last3f": 38.5,
+   "popularity": 6
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 9,
+   "name": "モーニンムスメ",
+   "time": "53.4",
+   "margin": "２",
+   "pos4": 12,
+   "last3f": 38.1,
+   "popularity": 10
+  },
+  {
+   "finish": "11",
+   "frame": 7,
+   "number": 10,
+   "name": "エリュシデータ",
+   "time": "53.4",
+   "margin": "クビ",
+   "pos4": 10,
+   "last3f": 38.5,
+   "popularity": 12
+  },
+  {
+   "finish": "12",
+   "frame": 1,
+   "number": 1,
+   "name": "モンシュヴァル",
+   "time": "53.8",
+   "margin": "２ １／２",
+   "pos4": 7,
+   "last3f": 38.9,
+   "popularity": 8
+  }
+ ]
+}

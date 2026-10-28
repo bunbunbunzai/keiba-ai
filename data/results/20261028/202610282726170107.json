@@ -1,0 +1,183 @@
+{
+ "source": "rakuten",
+ "date": "20261028",
+ "race_id": "202610282726170107",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "2",
+    "yen": 240
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "2-9",
+    "yen": 320
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "2",
+    "yen": 130
+   },
+   {
+    "combo": "9",
+    "yen": 100
+   },
+   {
+    "combo": "10",
+    "yen": 220
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-9",
+    "yen": 130
+   },
+   {
+    "combo": "2-10",
+    "yen": 530
+   },
+   {
+    "combo": "9-10",
+    "yen": 330
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-8",
+    "yen": 180
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-9-10",
+    "yen": 700
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "2-9-10",
+    "yen": 1880
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-9",
+    "yen": 200
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 2,
+   "number": 2,
+   "name": "タガノアキレア",
+   "time": "1:32.9",
+   "margin": "",
+   "pos4": 2,
+   "last3f": 40.4,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 9,
+   "name": "エコロセレナ",
+   "time": "1:33.2",
+   "margin": "１ ３／４",
+   "pos4": 1,
+   "last3f": 41.3,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 10,
+   "name": "メイショウランケイ",
+   "time": "1:33.3",
+   "margin": "クビ",
+   "pos4": 2,
+   "last3f": 41.1,
+   "popularity": 6
+  },
+  {
+   "finish": "4",
+   "frame": 1,
+   "number": 1,
+   "name": "インナーヴォイス",
+   "time": "1:33.4",
+   "margin": "３／４",
+   "pos4": 4,
+   "last3f": 39.9,
+   "popularity": 3
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 4,
+   "name": "ヤマニンラベーラ",
+   "time": "1:34.4",
+   "margin": "６",
+   "pos4": 7,
+   "last3f": 40.7,
+   "popularity": 7
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 6,
+   "name": "クリノアチーバー",
+   "time": "1:34.5",
+   "margin": "１／２",
+   "pos4": 4,
+   "last3f": 42.2,
+   "popularity": 4
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 8,
+   "name": "イザベラサンライズ",
+   "time": "1:35.0",
+   "margin": "３",
+   "pos4": 6,
+   "last3f": 41.9,
+   "popularity": 9
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "チョウダントツ",
+   "time": "1:36.4",
+   "margin": "８",
+   "pos4": 9,
+   "last3f": 42.5,
+   "popularity": 10
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 7,
+   "name": "ベベル",
+   "time": "1:37.2",
+   "margin": "５",
+   "pos4": 8,
+   "last3f": 43.9,
+   "popularity": 8
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 5,
+   "name": "エナノムスメ",
+   "time": "1:40.7",
+   "margin": "大差",
+   "pos4": 9,
+   "last3f": 48.2,
+   "popularity": 5
+  }
+ ]
+}

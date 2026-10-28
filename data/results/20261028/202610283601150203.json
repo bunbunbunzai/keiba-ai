@@ -1,0 +1,194 @@
+{
+ "source": "rakuten",
+ "date": "20261028",
+ "race_id": "202610283601150203",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "8",
+    "yen": 3120
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "8-3",
+    "yen": 84470
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "8",
+    "yen": 1200
+   },
+   {
+    "combo": "3",
+    "yen": 1210
+   },
+   {
+    "combo": "4",
+    "yen": 190
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-8",
+    "yen": 13370
+   },
+   {
+    "combo": "4-8",
+    "yen": 2670
+   },
+   {
+    "combo": "3-4",
+    "yen": 2780
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-7",
+    "yen": 97380
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-4-8",
+    "yen": 92570
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "8-3-4",
+    "yen": 1086120
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-8",
+    "yen": 102660
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 8,
+   "name": "メーラヴェルデ",
+   "time": "1:04.2",
+   "margin": "",
+   "pos4": 6,
+   "last3f": 37.8,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 3,
+   "number": 3,
+   "name": "ダイメイゼット",
+   "time": "1:04.2",
+   "margin": "アタマ",
+   "pos4": 1,
+   "last3f": 38.7,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "セキテイビビ",
+   "time": "1:04.4",
+   "margin": "３／４",
+   "pos4": 1,
+   "last3f": 38.7,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 7,
+   "name": "コンチムサシ",
+   "time": "1:04.4",
+   "margin": "アタマ",
+   "pos4": 3,
+   "last3f": 38.4,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 6,
+   "name": "トムワールド",
+   "time": "1:04.7",
+   "margin": "１ １／２",
+   "pos4": 6,
+   "last3f": 38.3,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 1,
+   "number": 1,
+   "name": "ベルトモ",
+   "time": "1:04.7",
+   "margin": "ハナ",
+   "pos4": 3,
+   "last3f": 38.7,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 5,
+   "name": "マジーフレッシュ",
+   "time": "1:04.7",
+   "margin": "クビ",
+   "pos4": 3,
+   "last3f": 38.7,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 11,
+   "name": "クワイエットゼロ",
+   "time": "1:04.8",
+   "margin": "クビ",
+   "pos4": 9,
+   "last3f": 38.1,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "デイブレークスベル",
+   "time": "1:05.3",
+   "margin": "２ １／２",
+   "pos4": 6,
+   "last3f": 39.0,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 9,
+   "name": "ラウスダケ",
+   "time": "1:06.5",
+   "margin": "６",
+   "pos4": 10,
+   "last3f": 39.4,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 8,
+   "number": 10,
+   "name": "キタノシュナイダー",
+   "time": "1:06.6",
+   "margin": "１／２",
+   "pos4": 10,
+   "last3f": 39.6,
+   "popularity": null
+  }
+ ]
+}
