@@ -3,7 +3,7 @@ name: pages (サイトの生成と公開)
 on:
   push:
     branches: [main]
-    paths: ["predictions/**", "data/results/**", "results_ledger.csv", "site/**"]
+    paths: ["predictions/**", "data/results/**", "results_ledger.csv", "site/**", "columns/**"]
   workflow_run:
     workflows: ["daily (毎日の自動取得)"]
     types: [completed]

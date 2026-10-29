@@ -20,6 +20,8 @@ from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+import column
+
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "_site"
 SITE_NAME = "AI競馬ログ"
@@ -101,7 +103,7 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False
 </head><body>
 <header class="top"><div class="wrap">
 <a class="logo" href="/">{SITE_NAME}<small>{SITE_SUB}</small></a>
-<nav><a href="/">今日の予想</a><a href="/results/">成績</a><a href="/about/">予想の方法</a></nav>
+<nav><a href="/">今日の予想</a><a href="/results/">成績</a>{'<a href="/column/">コラム</a>' if HAS_COLUMN else ''}<a href="/about/">予想の方法</a></nav>
 </div></header>
 <main class="wrap">{body}</main>
 <footer class="wrap foot">
@@ -111,6 +113,9 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False
 </footer>
 <script src="/app.js"></script>
 </body></html>"""
+
+
+HAS_COLUMN = any(not c["draft"] for c in column.columns())
 
 
 def write(path: str, content: str) -> None:
@@ -501,7 +506,11 @@ table{border-collapse:collapse;width:100%;font-size:14px}th,td{border-bottom:1px
 .filters{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.filters button{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:16px;padding:3px 12px;font:inherit;font-size:13px;cursor:pointer}.filters button.on{background:var(--acc);color:#fff;border-color:var(--acc)}
 .days{list-style:none;padding:0;display:grid;gap:6px}.days a{display:flex;justify-content:space-between;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 12px;color:var(--fg)}
 .pn{display:flex;justify-content:space-between;gap:12px;margin:20px 0;font-size:14px}
-.foot{color:var(--mut);font-size:12px;padding:24px 16px 40px}"""
+.foot{color:var(--mut);font-size:12px;padding:24px 16px 40px}
+.col{line-height:1.85}.col h2{margin:28px 0 8px;padding-bottom:4px;border-bottom:2px solid var(--line)}.col table{margin:8px 0}
+.note{background:var(--card);border:1px dashed var(--line);border-radius:8px;padding:8px 12px;font-size:14px;color:var(--mut)}
+.draft{background:#fff4d6;color:#6b4e00;border-radius:6px;padding:6px 10px;font-size:13px;margin-top:12px}
+.cols{list-style:none;padding:0;display:grid;gap:8px}.cols a{display:flex;flex-direction:column;gap:2px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 14px;color:var(--fg)}.cols span{color:var(--mut);font-size:13px}"""
 
 JS = """(function(){
 var st={venue:'all',conf:'all'};
@@ -573,6 +582,8 @@ def build() -> None:
                           desc="AI競馬ログの予想の作り方（評価の5軸・印・自信度・買い目）と、回収率の計算方法。"))
     write("/operator/", page(f"運営者情報 | {SITE_NAME}", OPERATOR, "/operator/"))
     write("/privacy/", page(f"プライバシーポリシー | {SITE_NAME}", PRIVACY, "/privacy/"))
+    today_iso = now.strftime("%Y-%m-%d")
+    lastmod.update(column.build(write, page, jsonld, BASE_URL, SITE_NAME, STATS_FROM, today_iso))
     for old, new in (("results.html", "/results/"), ("about.html", "/about/")):
         (OUT / old).write_text(redirect_page(new), encoding="utf-8")
     (OUT / "CNAME").write_text(DOMAIN + "\n", encoding="utf-8")
@@ -580,8 +591,7 @@ def build() -> None:
     (OUT / "llms.txt").write_text(
         f"# {SITE_NAME}\n\n> AI（Claude）が日本の競馬（JRA・地方）の全レースを毎日予想し、外れも含めた全予想の回収率を公開するサイト。\n\n"
         f"- [今日の予想]({BASE_URL}/)\n- [成績・回収率]({BASE_URL}/results/)：累計{t['n']}レース・回収率{t['roi']}\n"
-        f"- [予想の方法]({BASE_URL}/about/)\n- [全予想の記録CSV]({REPO}/blob/main/results_ledger.csv)\n", encoding="utf-8")
-    today_iso = now.strftime("%Y-%m-%d")
+        f"- [予想の方法]({BASE_URL}/about/)\n" + (f"- [初心者向けコラム]({BASE_URL}/column/)：馬券の種類・回収率・人気と勝率などを実データで解説\n" if HAS_COLUMN else "") + f"- [全予想の記録CSV]({REPO}/blob/main/results_ledger.csv)\n", encoding="utf-8")
     fixed = {"/": today_iso, "/results/": today_iso, "/about/": None, "/operator/": None, "/privacy/": None}
     sm = "".join(f"<url><loc>{BASE_URL}{u}</loc>{f'<lastmod>{m}</lastmod>' if m else ''}</url>"
                  for u, m in list(fixed.items()) + sorted(lastmod.items(), reverse=True))
