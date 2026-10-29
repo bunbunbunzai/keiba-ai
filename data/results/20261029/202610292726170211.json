@@ -1,0 +1,208 @@
+{
+ "source": "rakuten",
+ "date": "20261029",
+ "race_id": "202610292726170211",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "11",
+    "yen": 140
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "11-10",
+    "yen": 270
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "11",
+    "yen": 100
+   },
+   {
+    "combo": "10",
+    "yen": 120
+   },
+   {
+    "combo": "7",
+    "yen": 160
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "10-11",
+    "yen": 120
+   },
+   {
+    "combo": "7-11",
+    "yen": 250
+   },
+   {
+    "combo": "7-10",
+    "yen": 380
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "7-8",
+    "yen": 170
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "7-10-11",
+    "yen": 480
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "11-10-7",
+    "yen": 1270
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "10-11",
+    "yen": 170
+   }
+  ],
+  "_refund": [
+   "1"
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 11,
+   "name": "ジョイドール",
+   "time": "1:30.8",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.4,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 10,
+   "name": "チャーミングナイト",
+   "time": "1:30.9",
+   "margin": "クビ",
+   "pos4": 3,
+   "last3f": 39.7,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 7,
+   "name": "ゴッズフェイヴリト",
+   "time": "1:31.5",
+   "margin": "４",
+   "pos4": 4,
+   "last3f": 40.0,
+   "popularity": 5
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 3,
+   "name": "バドラ",
+   "time": "1:31.8",
+   "margin": "１ １／２",
+   "pos4": 1,
+   "last3f": 40.9,
+   "popularity": 3
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 12,
+   "name": "クールスカイ",
+   "time": "1:31.9",
+   "margin": "１／２",
+   "pos4": 4,
+   "last3f": 40.9,
+   "popularity": 6
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 5,
+   "name": "コパノエドシリーズ",
+   "time": "1:32.1",
+   "margin": "１ １／４",
+   "pos4": 7,
+   "last3f": 40.6,
+   "popularity": 4
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 4,
+   "name": "コパノジャマイカ",
+   "time": "1:32.5",
+   "margin": "２ １／２",
+   "pos4": 4,
+   "last3f": 41.4,
+   "popularity": 8
+  },
+  {
+   "finish": "8",
+   "frame": 5,
+   "number": 6,
+   "name": "ラゲルサ",
+   "time": "1:33.0",
+   "margin": "３",
+   "pos4": 10,
+   "last3f": 41.4,
+   "popularity": 11
+  },
+  {
+   "finish": "9",
+   "frame": 6,
+   "number": 8,
+   "name": "シェナグレース",
+   "time": "1:33.9",
+   "margin": "５",
+   "pos4": 7,
+   "last3f": 42.7,
+   "popularity": 10
+  },
+  {
+   "finish": "10",
+   "frame": 2,
+   "number": 2,
+   "name": "ニッポンセーラ",
+   "time": "1:34.7",
+   "margin": "５",
+   "pos4": 9,
+   "last3f": 43.1,
+   "popularity": 9
+  },
+  {
+   "finish": "11",
+   "frame": 7,
+   "number": 9,
+   "name": "ヒロシゲワンダー",
+   "time": "1:35.6",
+   "margin": "５",
+   "pos4": 11,
+   "last3f": 44.6,
+   "popularity": 7
+  },
+  {
+   "finish": "-",
+   "frame": 1,
+   "number": 1,
+   "name": "エアフルト",
+   "time": "-",
+   "margin": "除外",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
+}

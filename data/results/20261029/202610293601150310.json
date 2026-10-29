@@ -1,0 +1,205 @@
+{
+ "source": "rakuten",
+ "date": "20261029",
+ "race_id": "202610293601150310",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "7",
+    "yen": 900
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "7-9",
+    "yen": 70550
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "7",
+    "yen": 360
+   },
+   {
+    "combo": "9",
+    "yen": 2380
+   },
+   {
+    "combo": "8",
+    "yen": 1540
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "7-9",
+    "yen": 13520
+   },
+   {
+    "combo": "7-8",
+    "yen": 3020
+   },
+   {
+    "combo": "8-9",
+    "yen": 22180
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "6-7",
+    "yen": 9850
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "7-8-9",
+    "yen": 209370
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "7-9-8",
+    "yen": 1605200
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "7-9",
+    "yen": 41910
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 7,
+   "name": "ツムグ",
+   "time": "1:03.4",
+   "margin": "",
+   "pos4": 5,
+   "last3f": 38.5,
+   "popularity": 5
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 9,
+   "name": "ベストカリフ",
+   "time": "1:03.6",
+   "margin": "１",
+   "pos4": 10,
+   "last3f": 37.3,
+   "popularity": 11
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 8,
+   "name": "フックセンチョウ",
+   "time": "1:03.6",
+   "margin": "クビ",
+   "pos4": 8,
+   "last3f": 37.9,
+   "popularity": 9
+  },
+  {
+   "finish": "4",
+   "frame": 1,
+   "number": 1,
+   "name": "ロザヴィータ",
+   "time": "1:04.1",
+   "margin": "２ １／２",
+   "pos4": 3,
+   "last3f": 39.5,
+   "popularity": 7
+  },
+  {
+   "finish": "5",
+   "frame": 3,
+   "number": 3,
+   "name": "フクノハリファ",
+   "time": "1:04.4",
+   "margin": "１ １／２",
+   "pos4": 1,
+   "last3f": 40.5,
+   "popularity": 8
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 12,
+   "name": "アースリンゴ",
+   "time": "1:04.4",
+   "margin": "アタマ",
+   "pos4": 12,
+   "last3f": 37.7,
+   "popularity": 10
+  },
+  {
+   "finish": "7",
+   "frame": 2,
+   "number": 2,
+   "name": "ビッグチャン",
+   "time": "1:04.4",
+   "margin": "アタマ",
+   "pos4": 1,
+   "last3f": 40.3,
+   "popularity": 2
+  },
+  {
+   "finish": "8",
+   "frame": 5,
+   "number": 5,
+   "name": "フリーダムスタイル",
+   "time": "1:04.5",
+   "margin": "１／２",
+   "pos4": 8,
+   "last3f": 38.8,
+   "popularity": 6
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 11,
+   "name": "シルバーコムコム",
+   "time": "1:04.7",
+   "margin": "１",
+   "pos4": 3,
+   "last3f": 40.4,
+   "popularity": 3
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 6,
+   "name": "フレッシュノウエ",
+   "time": "1:05.0",
+   "margin": "１ １／２",
+   "pos4": 5,
+   "last3f": 39.9,
+   "popularity": 4
+  },
+  {
+   "finish": "11",
+   "frame": 4,
+   "number": 4,
+   "name": "ハッピーピンク",
+   "time": "1:05.8",
+   "margin": "４",
+   "pos4": 10,
+   "last3f": 39.9,
+   "popularity": 1
+  },
+  {
+   "finish": "12",
+   "frame": 7,
+   "number": 10,
+   "name": "エイシンキャノピー",
+   "time": "1:06.2",
+   "margin": "２",
+   "pos4": 5,
+   "last3f": 41.6,
+   "popularity": 12
+  }
+ ]
+}

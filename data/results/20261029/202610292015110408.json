@@ -1,0 +1,172 @@
+{
+ "source": "rakuten",
+ "date": "20261029",
+ "race_id": "202610292015110408",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "9",
+    "yen": 340
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "9-5",
+    "yen": 1380
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "9",
+    "yen": 140
+   },
+   {
+    "combo": "5",
+    "yen": 140
+   },
+   {
+    "combo": "1",
+    "yen": 160
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "5-9",
+    "yen": 280
+   },
+   {
+    "combo": "1-9",
+    "yen": 340
+   },
+   {
+    "combo": "1-5",
+    "yen": 280
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-8",
+    "yen": 370
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-5-9",
+    "yen": 890
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "9-5-1",
+    "yen": 5000
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "5-9",
+    "yen": 810
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 9,
+   "name": "キセログラフィカ",
+   "time": "1:42.7",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.0,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "スカイイズユアーズ",
+   "time": "1:43.0",
+   "margin": "１ ３／４",
+   "pos4": 1,
+   "last3f": 39.3,
+   "popularity": 4
+  },
+  {
+   "finish": "3",
+   "frame": 1,
+   "number": 1,
+   "name": "グレイテストワーク",
+   "time": "1:43.0",
+   "margin": "クビ",
+   "pos4": 4,
+   "last3f": 39.1,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 7,
+   "name": "ボラボラフレイバー",
+   "time": "1:43.3",
+   "margin": "１ ３／４",
+   "pos4": 4,
+   "last3f": 39.4,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 8,
+   "name": "フクオトコ",
+   "time": "1:43.5",
+   "margin": "１",
+   "pos4": 6,
+   "last3f": 39.5,
+   "popularity": 3
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "オンリーユーズド",
+   "time": "1:44.4",
+   "margin": "４",
+   "pos4": 1,
+   "last3f": 40.7,
+   "popularity": 8
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 3,
+   "name": "ディアモアー",
+   "time": "1:44.7",
+   "margin": "１ １／２",
+   "pos4": 7,
+   "last3f": 40.4,
+   "popularity": 7
+  },
+  {
+   "finish": "8",
+   "frame": 4,
+   "number": 4,
+   "name": "ヴォラーレ",
+   "time": "1:45.6",
+   "margin": "４",
+   "pos4": 8,
+   "last3f": 40.7,
+   "popularity": 9
+  },
+  {
+   "finish": "9",
+   "frame": 6,
+   "number": 6,
+   "name": "リアンフォール",
+   "time": "1:46.0",
+   "margin": "２",
+   "pos4": 9,
+   "last3f": 41.5,
+   "popularity": 6
+  }
+ ]
+}

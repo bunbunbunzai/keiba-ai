@@ -1,0 +1,172 @@
+{
+ "source": "rakuten",
+ "date": "20261029",
+ "race_id": "202610292015110403",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "7",
+    "yen": 170
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "7-9",
+    "yen": 480
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "7",
+    "yen": 100
+   },
+   {
+    "combo": "9",
+    "yen": 120
+   },
+   {
+    "combo": "2",
+    "yen": 120
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "7-9",
+    "yen": 150
+   },
+   {
+    "combo": "2-7",
+    "yen": 160
+   },
+   {
+    "combo": "2-9",
+    "yen": 260
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "7-8",
+    "yen": 180
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-7-9",
+    "yen": 420
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "7-9-2",
+    "yen": 1440
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "7-9",
+    "yen": 250
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 7,
+   "name": "リアンズレーヴ",
+   "time": "1:45.1",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.1,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 9,
+   "name": "ルビーポセイドン",
+   "time": "1:45.2",
+   "margin": "１／２",
+   "pos4": 1,
+   "last3f": 39.2,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "frame": 2,
+   "number": 2,
+   "name": "ロアンヌ",
+   "time": "1:45.6",
+   "margin": "２",
+   "pos4": 3,
+   "last3f": 39.3,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 6,
+   "name": "セイシンドラゴン",
+   "time": "1:45.8",
+   "margin": "１ １／４",
+   "pos4": 5,
+   "last3f": 39.1,
+   "popularity": 8
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 8,
+   "name": "ディセントラリーフ",
+   "time": "1:45.8",
+   "margin": "アタマ",
+   "pos4": 4,
+   "last3f": 39.6,
+   "popularity": 5
+  },
+  {
+   "finish": "6",
+   "frame": 4,
+   "number": 4,
+   "name": "タンボラーダ",
+   "time": "1:46.9",
+   "margin": "５",
+   "pos4": 7,
+   "last3f": 40.0,
+   "popularity": 4
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 5,
+   "name": "ルナベレッツァ",
+   "time": "1:47.0",
+   "margin": "１／２",
+   "pos4": 5,
+   "last3f": 40.3,
+   "popularity": 9
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "コーズフォルテ",
+   "time": "1:47.8",
+   "margin": "４",
+   "pos4": 9,
+   "last3f": 40.6,
+   "popularity": 7
+  },
+  {
+   "finish": "9",
+   "frame": 1,
+   "number": 1,
+   "name": "ポコポッチ",
+   "time": "1:47.9",
+   "margin": "１／２",
+   "pos4": 7,
+   "last3f": 41.0,
+   "popularity": 6
+  }
+ ]
+}

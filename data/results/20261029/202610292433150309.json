@@ -1,0 +1,205 @@
+{
+ "source": "rakuten",
+ "date": "20261029",
+ "race_id": "202610292433150309",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "12",
+    "yen": 160
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "12-5",
+    "yen": 390
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "12",
+    "yen": 100
+   },
+   {
+    "combo": "5",
+    "yen": 130
+   },
+   {
+    "combo": "2",
+    "yen": 130
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "5-12",
+    "yen": 160
+   },
+   {
+    "combo": "2-12",
+    "yen": 170
+   },
+   {
+    "combo": "2-5",
+    "yen": 320
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-8",
+    "yen": 220
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-5-12",
+    "yen": 360
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "12-5-2",
+    "yen": 1290
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "5-12",
+    "yen": 230
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 12,
+   "name": "ドリームオブコージ",
+   "time": "1:36.9",
+   "margin": "",
+   "pos4": 5,
+   "last3f": 38.7,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "デナリ",
+   "time": "1:37.0",
+   "margin": "１／２",
+   "pos4": 1,
+   "last3f": 39.4,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "frame": 2,
+   "number": 2,
+   "name": "ハレテル",
+   "time": "1:38.3",
+   "margin": "６",
+   "pos4": 3,
+   "last3f": 40.6,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 9,
+   "name": "バンシイハーピー",
+   "time": "1:38.8",
+   "margin": "２ １／２",
+   "pos4": 7,
+   "last3f": 40.9,
+   "popularity": 10
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 10,
+   "name": "ピンチ",
+   "time": "1:38.8",
+   "margin": "ハナ",
+   "pos4": 8,
+   "last3f": 40.3,
+   "popularity": 8
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 11,
+   "name": "ゴールドマスター",
+   "time": "1:39.1",
+   "margin": "１ １／２",
+   "pos4": 4,
+   "last3f": 41.2,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 3,
+   "name": "ニシキクイーン",
+   "time": "1:39.5",
+   "margin": "２",
+   "pos4": 5,
+   "last3f": 41.3,
+   "popularity": 7
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "センカンナガト",
+   "time": "1:39.7",
+   "margin": "３／４",
+   "pos4": 11,
+   "last3f": 40.2,
+   "popularity": 6
+  },
+  {
+   "finish": "9",
+   "frame": 6,
+   "number": 7,
+   "name": "ベアベルヴォワ",
+   "time": "1:39.9",
+   "margin": "１",
+   "pos4": 9,
+   "last3f": 41.0,
+   "popularity": 9
+  },
+  {
+   "finish": "10",
+   "frame": 4,
+   "number": 4,
+   "name": "フィリアアスティ",
+   "time": "1:40.4",
+   "margin": "２ １／２",
+   "pos4": 2,
+   "last3f": 42.8,
+   "popularity": 4
+  },
+  {
+   "finish": "11",
+   "frame": 6,
+   "number": 8,
+   "name": "ヴィオラリク",
+   "time": "1:40.7",
+   "margin": "１ １／２",
+   "pos4": 9,
+   "last3f": 42.0,
+   "popularity": 12
+  },
+  {
+   "finish": "12",
+   "frame": 5,
+   "number": 6,
+   "name": "ゴールドタッチ",
+   "time": "1:45.1",
+   "margin": "大差",
+   "pos4": 12,
+   "last3f": 47.4,
+   "popularity": 11
+  }
+ ]
+}

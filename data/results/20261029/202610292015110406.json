@@ -1,0 +1,227 @@
+{
+ "source": "rakuten",
+ "date": "20261029",
+ "race_id": "202610292015110406",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "11",
+    "yen": 540
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "11-14",
+    "yen": 2000
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "11",
+    "yen": 140
+   },
+   {
+    "combo": "14",
+    "yen": 110
+   },
+   {
+    "combo": "1",
+    "yen": 150
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "11-14",
+    "yen": 280
+   },
+   {
+    "combo": "1-11",
+    "yen": 390
+   },
+   {
+    "combo": "1-14",
+    "yen": 400
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "7-8",
+    "yen": 310
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-11-14",
+    "yen": 1330
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "11-14-1",
+    "yen": 7630
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "11-14",
+    "yen": 590
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 11,
+   "name": "アロハフリューゲル",
+   "time": "1:28.6",
+   "margin": "",
+   "pos4": 3,
+   "last3f": 38.6,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 14,
+   "name": "ジャスティンレビン",
+   "time": "1:28.6",
+   "margin": "アタマ",
+   "pos4": 3,
+   "last3f": 38.6,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "frame": 1,
+   "number": 1,
+   "name": "プラウドメアリー",
+   "time": "1:29.1",
+   "margin": "２ １／２",
+   "pos4": 1,
+   "last3f": 39.4,
+   "popularity": 4
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 8,
+   "name": "ビップクララ",
+   "time": "1:29.4",
+   "margin": "１ ３／４",
+   "pos4": 8,
+   "last3f": 38.9,
+   "popularity": 8
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 6,
+   "name": "プレイバック",
+   "time": "1:29.7",
+   "margin": "１ １／２",
+   "pos4": 8,
+   "last3f": 39.4,
+   "popularity": 12
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "ベルジャッド",
+   "time": "1:29.8",
+   "margin": "３／４",
+   "pos4": 1,
+   "last3f": 40.1,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 4,
+   "name": "ボンヴィアッジョ",
+   "time": "1:29.9",
+   "margin": "３／４",
+   "pos4": 3,
+   "last3f": 40.0,
+   "popularity": 11
+  },
+  {
+   "finish": "8",
+   "frame": 6,
+   "number": 9,
+   "name": "ジャスミン",
+   "time": "1:30.0",
+   "margin": "１／２",
+   "pos4": 13,
+   "last3f": 39.1,
+   "popularity": 10
+  },
+  {
+   "finish": "9",
+   "frame": 4,
+   "number": 5,
+   "name": "オオサキサンダー",
+   "time": "1:30.8",
+   "margin": "４",
+   "pos4": 6,
+   "last3f": 40.6,
+   "popularity": 13
+  },
+  {
+   "finish": "10",
+   "frame": 6,
+   "number": 10,
+   "name": "ジーニーキック",
+   "time": "1:30.9",
+   "margin": "１／２",
+   "pos4": 11,
+   "last3f": 40.6,
+   "popularity": 9
+  },
+  {
+   "finish": "11",
+   "frame": 3,
+   "number": 3,
+   "name": "ライヴマルガリータ",
+   "time": "1:31.0",
+   "margin": "３／４",
+   "pos4": 6,
+   "last3f": 40.8,
+   "popularity": 7
+  },
+  {
+   "finish": "12",
+   "frame": 5,
+   "number": 7,
+   "name": "オテモヤン",
+   "time": "1:31.1",
+   "margin": "１／２",
+   "pos4": 11,
+   "last3f": 40.5,
+   "popularity": 6
+  },
+  {
+   "finish": "13",
+   "frame": 8,
+   "number": 13,
+   "name": "レンソイス",
+   "time": "1:31.6",
+   "margin": "２ １／２",
+   "pos4": 13,
+   "last3f": 40.9,
+   "popularity": 14
+  },
+  {
+   "finish": "14",
+   "frame": 7,
+   "number": 12,
+   "name": "シューゼウス",
+   "time": "1:35.4",
+   "margin": "大差",
+   "pos4": 8,
+   "last3f": 45.4,
+   "popularity": 3
+  }
+ ]
+}

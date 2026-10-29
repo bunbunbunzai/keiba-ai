@@ -1,0 +1,158 @@
+{
+ "source": "rakuten",
+ "date": "20261029",
+ "race_id": "202610293601150304",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "7",
+    "yen": 340
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "7-2",
+    "yen": 1970
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "7",
+    "yen": 170
+   },
+   {
+    "combo": "2",
+    "yen": 230
+   },
+   {
+    "combo": "4",
+    "yen": 150
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-7",
+    "yen": 460
+   },
+   {
+    "combo": "4-7",
+    "yen": 310
+   },
+   {
+    "combo": "2-4",
+    "yen": 810
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-4-7",
+    "yen": 2250
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "7-2-4",
+    "yen": 10180
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-7",
+    "yen": 1150
+   }
+  ],
+  "_refund": [
+   "3"
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 7,
+   "name": "レディーダイヤ",
+   "time": "1:15.9",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.5,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "frame": 2,
+   "number": 2,
+   "name": "ウィンターキャビン",
+   "time": "1:16.2",
+   "margin": "１ １／２",
+   "pos4": 1,
+   "last3f": 40.1,
+   "popularity": 4
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "コスモバラス",
+   "time": "1:16.6",
+   "margin": "２",
+   "pos4": 6,
+   "last3f": 39.2,
+   "popularity": 6
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 6,
+   "name": "ミーディアムセラア",
+   "time": "1:16.6",
+   "margin": "アタマ",
+   "pos4": 3,
+   "last3f": 40.1,
+   "popularity": 1
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 8,
+   "name": "サージェントペパー",
+   "time": "1:16.7",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": 39.7,
+   "popularity": 5
+  },
+  {
+   "finish": "6",
+   "frame": 1,
+   "number": 1,
+   "name": "スティールゴールド",
+   "time": "1:16.7",
+   "margin": "ハナ",
+   "pos4": 6,
+   "last3f": 39.5,
+   "popularity": 3
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 5,
+   "name": "ジンダバード",
+   "time": "1:17.9",
+   "margin": "６",
+   "pos4": 3,
+   "last3f": 41.4,
+   "popularity": 7
+  },
+  {
+   "finish": "-",
+   "frame": 3,
+   "number": 3,
+   "name": "ジャクソンヴォイス",
+   "time": "-",
+   "margin": "除外",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
+}

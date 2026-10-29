@@ -1,0 +1,155 @@
+{
+ "source": "rakuten",
+ "date": "20261029",
+ "race_id": "202610293601150308",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "8",
+    "yen": 1330
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "8-6",
+    "yen": 5580
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "8",
+    "yen": 170
+   },
+   {
+    "combo": "6",
+    "yen": 120
+   },
+   {
+    "combo": "3",
+    "yen": 140
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "6-8",
+    "yen": 610
+   },
+   {
+    "combo": "3-8",
+    "yen": 1060
+   },
+   {
+    "combo": "3-6",
+    "yen": 360
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-6-8",
+    "yen": 3860
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "8-6-3",
+    "yen": 22490
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "6-8",
+    "yen": 2330
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 8,
+   "name": "リムショット",
+   "time": "1:59.1",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 40.6,
+   "popularity": 5
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 6,
+   "name": "フォーティンブラス",
+   "time": "1:59.1",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": 39.1,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "カムイノウタゲ",
+   "time": "1:59.2",
+   "margin": "１／２",
+   "pos4": 3,
+   "last3f": 40.7,
+   "popularity": 4
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 4,
+   "name": "メイショウハリソン",
+   "time": "1:59.5",
+   "margin": "１ １／２",
+   "pos4": 1,
+   "last3f": 41.2,
+   "popularity": 3
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 7,
+   "name": "ジャストグレース",
+   "time": "1:59.8",
+   "margin": "１ １／２",
+   "pos4": 6,
+   "last3f": 40.1,
+   "popularity": 6
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "ホウオウアーネスト",
+   "time": "1:59.9",
+   "margin": "クビ",
+   "pos4": 4,
+   "last3f": 40.2,
+   "popularity": 1
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 5,
+   "name": "ロサドラーダ",
+   "time": "2:00.3",
+   "margin": "２",
+   "pos4": 7,
+   "last3f": 39.7,
+   "popularity": 7
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "アルマブレイド",
+   "time": "2:02.0",
+   "margin": "８",
+   "pos4": 8,
+   "last3f": 41.6,
+   "popularity": 8
+  }
+ ]
+}

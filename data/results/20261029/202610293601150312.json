@@ -1,0 +1,205 @@
+{
+ "source": "rakuten",
+ "date": "20261029",
+ "race_id": "202610293601150312",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "7",
+    "yen": 2540
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "7-11",
+    "yen": 25200
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "7",
+    "yen": 710
+   },
+   {
+    "combo": "11",
+    "yen": 520
+   },
+   {
+    "combo": "9",
+    "yen": 180
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "7-11",
+    "yen": 2310
+   },
+   {
+    "combo": "7-9",
+    "yen": 1460
+   },
+   {
+    "combo": "9-11",
+    "yen": 980
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "6-8",
+    "yen": 1110
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "7-9-11",
+    "yen": 10870
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "7-11-9",
+    "yen": 99070
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "7-11",
+    "yen": 10670
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 7,
+   "name": "クインズメレンゲ",
+   "time": "1:14.3",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.0,
+   "popularity": 8
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 11,
+   "name": "グレートスティック",
+   "time": "1:14.7",
+   "margin": "２",
+   "pos4": 2,
+   "last3f": 39.2,
+   "popularity": 6
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 9,
+   "name": "ウィンストラテジー",
+   "time": "1:14.7",
+   "margin": "ハナ",
+   "pos4": 11,
+   "last3f": 37.8,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "frame": 1,
+   "number": 1,
+   "name": "モンタルチーノ",
+   "time": "1:15.1",
+   "margin": "２",
+   "pos4": 6,
+   "last3f": 39.5,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 6,
+   "name": "アースコーリング",
+   "time": "1:15.2",
+   "margin": "１／２",
+   "pos4": 4,
+   "last3f": 39.3,
+   "popularity": 5
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 12,
+   "name": "タイセイシャルト",
+   "time": "1:15.4",
+   "margin": "３／４",
+   "pos4": 3,
+   "last3f": 39.8,
+   "popularity": 1
+  },
+  {
+   "finish": "7",
+   "frame": 2,
+   "number": 2,
+   "name": "ジャスパーシャイン",
+   "time": "1:15.5",
+   "margin": "３／４",
+   "pos4": 12,
+   "last3f": 38.0,
+   "popularity": 10
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "スティールブライト",
+   "time": "1:15.5",
+   "margin": "ハナ",
+   "pos4": 8,
+   "last3f": 39.6,
+   "popularity": 9
+  },
+  {
+   "finish": "9",
+   "frame": 6,
+   "number": 8,
+   "name": "ハニーベリー",
+   "time": "1:15.8",
+   "margin": "１ １／２",
+   "pos4": 6,
+   "last3f": 40.0,
+   "popularity": 7
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 5,
+   "name": "サウンドロックス",
+   "time": "1:15.9",
+   "margin": "３／４",
+   "pos4": 8,
+   "last3f": 39.5,
+   "popularity": 11
+  },
+  {
+   "finish": "11",
+   "frame": 4,
+   "number": 4,
+   "name": "クレーバーベン",
+   "time": "1:15.9",
+   "margin": "ハナ",
+   "pos4": 8,
+   "last3f": 40.1,
+   "popularity": 3
+  },
+  {
+   "finish": "12",
+   "frame": 7,
+   "number": 10,
+   "name": "マジカルレイズ",
+   "time": "1:15.9",
+   "margin": "アタマ",
+   "pos4": 4,
+   "last3f": 40.3,
+   "popularity": 12
+  }
+ ]
+}

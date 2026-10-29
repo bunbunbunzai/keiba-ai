@@ -1,0 +1,227 @@
+{
+ "source": "rakuten",
+ "date": "20261029",
+ "race_id": "202610293601150311",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "6",
+    "yen": 1140
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "6-9",
+    "yen": 4880
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "6",
+    "yen": 250
+   },
+   {
+    "combo": "9",
+    "yen": 190
+   },
+   {
+    "combo": "8",
+    "yen": 200
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "6-9",
+    "yen": 540
+   },
+   {
+    "combo": "6-8",
+    "yen": 990
+   },
+   {
+    "combo": "8-9",
+    "yen": 700
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-6",
+    "yen": 970
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "6-8-9",
+    "yen": 4680
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "6-9-8",
+    "yen": 41360
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "6-9",
+    "yen": 1590
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 6,
+   "name": "クラプロスパー",
+   "time": "1:13.5",
+   "margin": "",
+   "pos4": 5,
+   "last3f": 37.4,
+   "popularity": 7
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 9,
+   "name": "セルアウトクラウド",
+   "time": "1:13.7",
+   "margin": "３／４",
+   "pos4": 1,
+   "last3f": 38.4,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 8,
+   "name": "ミカミッチー",
+   "time": "1:13.8",
+   "margin": "１／２",
+   "pos4": 11,
+   "last3f": 37.4,
+   "popularity": 5
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "エイシンスクルド",
+   "time": "1:14.1",
+   "margin": "１ １／２",
+   "pos4": 2,
+   "last3f": 38.3,
+   "popularity": 9
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 7,
+   "name": "ツリーオブライフ",
+   "time": "1:14.1",
+   "margin": "ハナ",
+   "pos4": 7,
+   "last3f": 37.7,
+   "popularity": 10
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 11,
+   "name": "ミラクルヴェリテ",
+   "time": "1:14.1",
+   "margin": "ハナ",
+   "pos4": 9,
+   "last3f": 37.5,
+   "popularity": 4
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 10,
+   "name": "カズドリーム",
+   "time": "1:14.2",
+   "margin": "クビ",
+   "pos4": 2,
+   "last3f": 38.5,
+   "popularity": 2
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "コンテミュール",
+   "time": "1:14.3",
+   "margin": "１／２",
+   "pos4": 5,
+   "last3f": 38.0,
+   "popularity": 6
+  },
+  {
+   "finish": "9",
+   "frame": 3,
+   "number": 4,
+   "name": "プレストジュピター",
+   "time": "1:14.4",
+   "margin": "１／２",
+   "pos4": 7,
+   "last3f": 38.1,
+   "popularity": 13
+  },
+  {
+   "finish": "10",
+   "frame": 3,
+   "number": 3,
+   "name": "ワールドエンジェル",
+   "time": "1:15.3",
+   "margin": "４",
+   "pos4": 2,
+   "last3f": 39.7,
+   "popularity": 3
+  },
+  {
+   "finish": "11",
+   "frame": 8,
+   "number": 13,
+   "name": "クィーンズファミリ",
+   "time": "1:15.4",
+   "margin": "クビ",
+   "pos4": 14,
+   "last3f": 38.4,
+   "popularity": 12
+  },
+  {
+   "finish": "12",
+   "frame": 8,
+   "number": 14,
+   "name": "イコロ",
+   "time": "1:15.6",
+   "margin": "１",
+   "pos4": 12,
+   "last3f": 39.2,
+   "popularity": 14
+  },
+  {
+   "finish": "13",
+   "frame": 4,
+   "number": 5,
+   "name": "エルダーフラワー",
+   "time": "1:15.9",
+   "margin": "１ １／２",
+   "pos4": 12,
+   "last3f": 38.8,
+   "popularity": 11
+  },
+  {
+   "finish": "14",
+   "frame": 7,
+   "number": 12,
+   "name": "カエリールークス",
+   "time": "1:16.2",
+   "margin": "１ １／２",
+   "pos4": 9,
+   "last3f": 40.1,
+   "popularity": 8
+  }
+ ]
+}

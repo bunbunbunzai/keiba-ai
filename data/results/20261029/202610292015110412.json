@@ -1,0 +1,227 @@
+{
+ "source": "rakuten",
+ "date": "20261029",
+ "race_id": "202610292015110412",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "8",
+    "yen": 480
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "8-14",
+    "yen": 7300
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "8",
+    "yen": 170
+   },
+   {
+    "combo": "14",
+    "yen": 310
+   },
+   {
+    "combo": "3",
+    "yen": 160
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "8-14",
+    "yen": 1450
+   },
+   {
+    "combo": "3-8",
+    "yen": 380
+   },
+   {
+    "combo": "3-14",
+    "yen": 1050
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-8",
+    "yen": 840
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-8-14",
+    "yen": 4890
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "8-14-3",
+    "yen": 29650
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "8-14",
+    "yen": 4110
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 8,
+   "name": "ボーヌロマネ",
+   "time": "1:45.6",
+   "margin": "",
+   "pos4": 8,
+   "last3f": 39.4,
+   "popularity": 3
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 14,
+   "name": "シャドウキャッスル",
+   "time": "1:45.6",
+   "margin": "クビ",
+   "pos4": 1,
+   "last3f": 40.7,
+   "popularity": 6
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "メイショウタビズキ",
+   "time": "1:45.9",
+   "margin": "１ １／２",
+   "pos4": 2,
+   "last3f": 40.3,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 6,
+   "name": "セキトバシューズ",
+   "time": "1:46.0",
+   "margin": "クビ",
+   "pos4": 4,
+   "last3f": 40.1,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 5,
+   "name": "スルガダイナゴン",
+   "time": "1:46.4",
+   "margin": "２",
+   "pos4": 4,
+   "last3f": 40.6,
+   "popularity": 5
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 7,
+   "name": "チャダルクン",
+   "time": "1:46.5",
+   "margin": "３／４",
+   "pos4": 4,
+   "last3f": 40.6,
+   "popularity": 9
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 4,
+   "name": "イエスウィズキャン",
+   "time": "1:46.5",
+   "margin": "クビ",
+   "pos4": 8,
+   "last3f": 40.3,
+   "popularity": 8
+  },
+  {
+   "finish": "8",
+   "frame": 6,
+   "number": 9,
+   "name": "スミソニアン",
+   "time": "1:46.6",
+   "margin": "クビ",
+   "pos4": 13,
+   "last3f": 39.6,
+   "popularity": 14
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 13,
+   "name": "ショウナンヤッホー",
+   "time": "1:46.6",
+   "margin": "クビ",
+   "pos4": 8,
+   "last3f": 40.4,
+   "popularity": 1
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 11,
+   "name": "グロリオサ",
+   "time": "1:46.9",
+   "margin": "１ １／２",
+   "pos4": 8,
+   "last3f": 40.9,
+   "popularity": 7
+  },
+  {
+   "finish": "11",
+   "frame": 7,
+   "number": 12,
+   "name": "アウトビアンキ",
+   "time": "1:47.0",
+   "margin": "クビ",
+   "pos4": 4,
+   "last3f": 41.5,
+   "popularity": 10
+  },
+  {
+   "finish": "12",
+   "frame": 1,
+   "number": 1,
+   "name": "タケノシンセイ",
+   "time": "1:47.8",
+   "margin": "４",
+   "pos4": 12,
+   "last3f": 41.2,
+   "popularity": 11
+  },
+  {
+   "finish": "13",
+   "frame": 2,
+   "number": 2,
+   "name": "テンドウ",
+   "time": "1:48.5",
+   "margin": "３ １／２",
+   "pos4": 2,
+   "last3f": 43.2,
+   "popularity": 12
+  },
+  {
+   "finish": "14",
+   "frame": 6,
+   "number": 10,
+   "name": "サドル",
+   "time": "1:50.5",
+   "margin": "１０",
+   "pos4": 13,
+   "last3f": 44.6,
+   "popularity": 13
+  }
+ ]
+}
