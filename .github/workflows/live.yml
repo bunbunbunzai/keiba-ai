@@ -1,0 +1,44 @@
+name: live (レースごとの結果・回収率の即時集計)
+
+# daily の noon / mid が終わったあとに自動で起動される（手動でも可）。
+# 新しい起動が来たら古いほうは止める（同時に2本は動かさない）。
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "対象日 YYYYMMDD（空なら今日）"
+        required: false
+      until:
+        description: "終了時刻 HH:MM（日本時間）"
+        required: false
+        default: "21:25"
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: live
+  cancel-in-progress: true
+
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: ライブ集計
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          D="${{ inputs.date }}"; [ -z "$D" ] && D=$(TZ=Asia/Tokyo date +%Y%m%d)
+          U="${{ inputs.until }}"; [ -z "$U" ] && U=21:25
+          git config user.name "keiba-ai-bot"
+          git config user.email "keiba-ai-bot@users.noreply.github.com"
+          python scraper/live.py --date "$D" --until "$U"

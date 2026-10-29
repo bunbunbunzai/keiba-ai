@@ -126,8 +126,17 @@ def all_dates() -> list[str]:
     return sorted({p.name for p in (ROOT / "predictions").glob("*") if p.is_dir()}, reverse=True)
 
 
+SCORE_UPDATED: dict[str, str] = {}
+
+
+def scored(p: dict) -> dict | None:
+    sc = p.get("_score")
+    return sc if sc and "stake" in sc and not sc.get("voided") else None
+
+
 def predictions(date: str) -> list[dict]:
     score = load_json(ROOT / "data" / "results" / date / "score.json") or {}
+    SCORE_UPDATED[date] = (score.get("updated") or "")[-5:]
     sc_by = {r.get("race_id"): r for r in score.get("races", [])}
     out = []
     for f in sorted((ROOT / "predictions" / date).glob("*.json")):
@@ -230,8 +239,10 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
         hit = sc["return"] > 0
         res_html = (f"<section class='card'><h2>結果</h2><p>1〜3着：{esc(' - '.join(str(x) for x in top3))}"
                     f"／◎は{esc(sc.get('honmei_finish') or '-')}着</p>"
-                    f"<p class='big {'hit' if hit else 'miss'}'>{'的中' if hit else '不的中'}　投資{sc['stake']:,}円・払戻{sc['return']:,}円</p>"
-                    + "".join(f"<p>{esc(x)}</p>" for x in sc.get("hits", [])) + "</section>")
+                    f"<p class='big {'hit' if hit else 'miss'}'>{'的中' if hit else '不的中'}　投資{sc['stake']:,}円・払戻{sc['return']:,}円・"
+                    f"このレースの回収率{roi_txt(sc['stake'], sc['return'])}（収支{sc['return'] - sc['stake']:+,}円）</p>"
+                    + "".join(f"<p>{esc(x)}</p>" for x in sc.get("hits", []))
+                    + (f"<p class='meta'>{esc(SCORE_UPDATED.get(date))}集計</p>" if SCORE_UPDATED.get(date) else "") + "</section>")
     updates = "".join(f"<li><b>{esc(u.get('at'))}</b> {esc(u.get('text'))}</li>" for u in p.get("updates", []))
     meta = "・".join(x for x in [
         fmt_date(date),
@@ -284,10 +295,11 @@ def redirect_page(to: str) -> str:
 
 # ---------------- 一覧 ----------------
 def race_item(date: str, p: dict) -> str:
-    sc = p.get("_score")
+    sc = scored(p)
     badge = ""
-    if sc and "stake" in sc and not sc.get("voided"):
-        badge = f"<span class='hit'>的中 {sc['return']:,}円</span>" if sc["return"] else "<span class='miss'>不的中</span>"
+    if sc and sc["stake"]:
+        badge = (f"<span class='res hit'>的中 払戻{sc['return']:,}円・回収率{roi_txt(sc['stake'], sc['return'])}</span>" if sc["return"]
+                 else f"<span class='res miss'>不的中 −{sc['stake']:,}円</span>")
     hon = p.get("marks", {}).get("◎")
     hon_txt = "見送り" if p.get("confidence") == "見送り" else f"◎{hon} {horse_name(p, hon)}"
     pt = p["_race"].get("post_time") or ""
@@ -309,10 +321,38 @@ def filters(venues: list[str]) -> str:
             "<button data-conf='B'>B</button><button data-conf='C'>C</button><button data-conf='見送り'>見送り</button></div>")
 
 
+def scoreboard(date: str, preds: list[dict]) -> str:
+    """当日のここまでの成績（レースが確定するたびに更新）。"""
+    bet = [p for p in preds if p.get("confidence") != "見送り"]
+    done = [scored(p) for p in bet if scored(p)]
+    if not done:
+        return f"<section class='card live'><h2>当日の成績</h2><p>確定 0／{len(bet)}レース。最初のレースが確定すると、ここに的中と回収率が出る。</p></section>"
+    st, rt = sum(s["stake"] for s in done), sum(s["return"] for s in done)
+    hit = sum(1 for s in done if s["return"] > 0)
+    win = sum(1 for s in done if str(s.get("honmei_finish")) == "1")
+    top3 = sum(1 for s in done if str(s.get("honmei_finish")) in ("1", "2", "3"))
+    rows = []
+    for v in sorted({venue_of(p) for p in bet}):
+        vb = [p for p in bet if venue_of(p) == v]
+        vd = [scored(p) for p in vb if scored(p)]
+        vs, vr = sum(s["stake"] for s in vd), sum(s["return"] for s in vd)
+        rows.append(f"<tr><td>{esc(VENUE_NAME.get(v, v))}</td><td>{len(vd)}／{len(vb)}</td>"
+                    f"<td>{sum(1 for s in vd if s['return'] > 0)}</td><td>{roi_txt(vs, vr)}</td><td>{vr - vs:+,}円</td></tr>")
+    upd = SCORE_UPDATED.get(date)
+    return (f"<section class='card live'><h2>当日の成績{f'（{esc(upd)}時点）' if upd else ''}</h2>"
+            f"<div class='kpis'><div><b>{len(done)}／{len(bet)}</b><span>確定レース</span></div>"
+            f"<div><b>{hit}</b><span>的中レース（{100 * hit / len(done):.0f}%）</span></div>"
+            f"<div><b>{roi_txt(st, rt)}</b><span>当日回収率</span></div>"
+            f"<div><b>{rt - st:+,}円</b><span>収支（投資{st:,}円）</span></div>"
+            f"<div><b>{win}・{top3}</b><span>◎の1着・3着内</span></div></div>"
+            f"<div class='scroll'><table><thead><tr><th>場</th><th>確定</th><th>的中</th><th>回収率</th><th>収支</th></tr></thead>"
+            f"<tbody>{''.join(rows)}</tbody></table></div>"
+            f"<p class='meta'>レースが確定するたびに自動で更新（数分おき）。各点100円の均等買い、見送りは除く。</p></section>")
+
+
 def day_list(date: str, preds: list[dict]) -> str:
     venues = sorted({venue_of(p) for p in preds})
-    st, rt = day_stats(preds)
-    return (f"<p class='meta'>{len(preds)}レース　当日回収率 {roi_txt(st, rt)}</p>" + filters(venues)
+    return (scoreboard(date, preds) + filters(venues)
             + "<ul class='races'>" + "".join(race_item(date, p) for p in preds) + "</ul>")
 
 
@@ -393,7 +433,7 @@ ABOUT = f"""<h1>予想の方法</h1>
 <section class="card"><h2>更新のタイミング</h2><ul>
 <li>前日夜：翌日の出馬表と各馬の近5走をもとに、午前に発走するレースを予想</li>
 <li>当日昼：当日のオッズ・馬体重と、午前の結果から判定した馬場の傾向をもとに、午後のレースを予想（前日の予想も見直す）</li>
-<li>全レース終了後：結果と払戻を取り込み、回収率を記録</li></ul></section>
+<li>各レースの確定後（数分おき）：結果と払戻を取り込み、的中と回収率を更新。全レース終了後に1日分を確定</li></ul></section>
 <section class="card"><h2>評価の5軸（45点満点）</h2><ul>
 <li>能力（×3）：直近5走のレースレベル、着差、時計。不利のあった走は内容で補正</li>
 <li>条件適性（×2）：距離、コース、馬場状態、回り</li>
@@ -448,7 +488,7 @@ h1{font-size:24px;margin:20px 0 4px}h2{font-size:18px;margin:0 0 8px}h3{font-siz
 .marks b{font-size:22px;color:var(--acc)}.marks span{font-weight:600}.subs{color:var(--mut);margin:4px 0 8px}
 .races{list-style:none;padding:0;margin:0;display:grid;gap:6px}.races a{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 12px;color:var(--fg)}
 .races li.next a{border:2px solid var(--acc)}.races li.next .rt::after{content:" 次に発走";color:var(--acc);font-weight:700}
-.races li.gone a{opacity:.75}
+.races li.gone a{opacity:.85}.res{font-size:13px}.res.wait{color:var(--mut)}.live .kpis{margin:8px 0}
 .rno{font-weight:700;min-width:84px}.rt{color:var(--mut);font-size:13px;min-width:44px}.hon{flex:1;min-width:150px}
 .conf{display:inline-block;min-width:28px;text-align:center;border-radius:4px;font-size:12px;font-weight:700;padding:0 6px;border:1px solid var(--line)}
 .cA{background:#1f6f4a;color:#fff}.cB{background:#3f8f6a;color:#fff}.cC{background:#c9c6b8;color:#1d1d1b}
@@ -471,7 +511,7 @@ document.querySelectorAll('.filters').forEach(function(f){f.addEventListener('cl
  f.querySelectorAll('button').forEach(function(x){x.classList.toggle('on',x===b)});var k=f.dataset.kind;st[k]=b.dataset[k];apply();});});
 var now=new Date(Date.now()+9*3600e3),s=now.toISOString().replace(/[-:T]/g,'').slice(0,12),first=null;
 document.querySelectorAll('.races li[data-post]').forEach(function(li){var p=li.dataset.post;if(p.length<12)return;
- if(p<=s)li.classList.add('gone');else if(!first){first=li;}});
+ if(p<=s){li.classList.add('gone');if(!li.querySelector('.res')&&li.dataset.conf!=='見送り'){var w=document.createElement('span');w.className='res wait';w.textContent='結果待ち';li.querySelector('a').appendChild(w);}}else if(!first){first=li;}});
 if(first&&document.body.contains(first)&&document.querySelector('.today')){first.classList.add('next');}
 })();"""
 

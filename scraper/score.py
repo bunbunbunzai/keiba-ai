@@ -60,6 +60,7 @@ def score_race(pred: dict, res: dict) -> dict:
         "top3": top3,
         "stake": stake,
         "return": ret,
+        "roi": round(100 * ret / stake, 1) if stake else None,
         "hits": hits,
         "voided": not res.get("payouts") or all(k.startswith("_") for k in res.get("payouts", {})),
     }
@@ -79,8 +80,11 @@ def run(date: str) -> dict:
     done = [r for r in races if "stake" in r and not r["voided"]]
     stake = sum(r["stake"] for r in done)
     ret = sum(r["return"] for r in done)
+    from datetime import datetime, timedelta, timezone
     summary = {
         "date": date,
+        "updated": datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d %H:%M"),
+        "races_total": len(races),
         "races_scored": len(done),
         "stake": stake,
         "return": ret,

@@ -1,5 +1,7 @@
 {
  "date": "20261029",
+ "updated": "2026-10-29 23:51",
+ "races_total": 48,
  "races_scored": 48,
  "stake": 32900,
  "return": 11850,
@@ -20,6 +22,7 @@
    ],
    "stake": 600,
    "return": 0,
+   "roi": 0.0,
    "hits": [],
    "voided": false
   },
@@ -35,6 +38,7 @@
    ],
    "stake": 700,
    "return": 910,
+   "roi": 130.0,
    "hits": [
     "単勝 14 910円"
    ],
@@ -52,6 +56,7 @@
    ],
    "stake": 700,
    "return": 250,
+   "roi": 35.7,
    "hits": [
     "馬連 7-9 250円"
    ],
@@ -69,6 +74,7 @@
    ],
    "stake": 700,
    "return": 1410,
+   "roi": 201.4,
    "hits": [
     "馬連 3-11 1410円"
    ],
@@ -86,6 +92,7 @@
    ],
    "stake": 700,
    "return": 140,
+   "roi": 20.0,
    "hits": [
     "ワイド 5-9 140円"
    ],
@@ -103,6 +110,7 @@
    ],
    "stake": 700,
    "return": 0,
+   "roi": 0.0,
    "hits": [],
    "voided": false
   },
@@ -118,6 +126,7 @@
    ],
    "stake": 800,
    "return": 0,
+   "roi": 0.0,
    "hits": [],
    "voided": false
   },
@@ -133,6 +142,7 @@
    ],
    "stake": 600,
    "return": 0,
+   "roi": 0.0,
    "hits": [],
    "voided": false
   },
@@ -148,6 +158,7 @@
    ],
    "stake": 700,
    "return": 0,
+   "roi": 0.0,
    "hits": [],
    "voided": false
   },
@@ -163,6 +174,7 @@
    ],
    "stake": 700,
    "return": 0,
+   "roi": 0.0,
    "hits": [],
    "voided": false
   },
@@ -178,6 +190,7 @@
    ],
    "stake": 800,
    "return": 840,
+   "roi": 105.0,
    "hits": [
     "馬連 13-14 290円",
     "ワイド 1-14 210円",
@@ -197,6 +210,7 @@
    ],
    "stake": 700,
    "return": 0,
+   "roi": 0.0,
    "hits": [],
    "voided": false
   },
@@ -212,6 +226,7 @@
    ],
    "stake": 700,
    "return": 0,
+   "roi": 0.0,
    "hits": [],
    "voided": false
   },
@@ -227,6 +242,7 @@
    ],
    "stake": 700,
    "return": 0,
+   "roi": 0.0,
    "hits": [],
    "voided": false
   },
@@ -242,6 +258,7 @@
    ],
    "stake": 700,
    "return": 0,
+   "roi": 0.0,
    "hits": [],
    "voided": false
   },
@@ -257,6 +274,7 @@
    ],
    "stake": 800,
    "return": 150,
+   "roi": 18.8,
    "hits": [
     "ワイド 3-12 150円"
    ],
@@ -274,6 +292,7 @@
    ],
    "stake": 700,
    "return": 350,
+   "roi": 50.0,
    "hits": [
     "馬連 10-11 350円"
    ],
@@ -291,6 +310,7 @@
    ],
    "stake": 700,
    "return": 470,
+   "roi": 67.1,
    "hits": [
     "馬連 4-12 300円",
     "ワイド 4-12 170円"
@@ -309,6 +329,7 @@
    ],
    "stake": 700,
    "return": 280,
+   "roi": 40.0,
    "hits": [
     "ワイド 3-8 280円"
    ],
@@ -326,6 +347,7 @@
    ],
    "stake": 800,
    "return": 270,
+   "roi": 33.8,
    "hits": [
     "馬連 12-7 270円"
    ],
@@ -343,6 +365,7 @@
    ],
    "stake": 700,
    "return": 400,
+   "roi": 57.1,
    "hits": [
     "馬連 12-5 230円",
     "ワイド 12-2 170円"
@@ -361,6 +384,7 @@
    ],
    "stake": 700,
    "return": 0,
+   "roi": 0.0,
    "hits": [],
    "voided": false
   },
@@ -376,6 +400,7 @@
    ],
    "stake": 800,
    "return": 700,
+   "roi": 87.5,
    "hits": [
     "馬連 12-4 700円"
    ],
@@ -393,6 +418,7 @@
    ],
    "stake": 800,
    "return": 1710,
+   "roi": 213.8,
    "hits": [
     "馬連 11-12 340円",
     "ワイド 11-12 190円",
@@ -413,6 +439,7 @@
    ],
    "stake": 600,
    "return": 0,
+   "roi": 0.0,
    "hits": [],
    "voided": false
   },
@@ -428,6 +455,7 @@
    ],
    "stake": 600,
    "return": 0,
+   "roi": 0.0,
    "hits": [],
    "voided": false
   },
@@ -443,6 +471,7 @@
    ],
    "stake": 600,
    "return": 0,
+   "roi": 0.0,
    "hits": [],
    "voided": false
   },
@@ -458,6 +487,7 @@
    ],
    "stake": 600,
    "return": 0,
+   "roi": 0.0,
    "hits": [],
    "voided": false
   },
@@ -473,6 +503,7 @@
    ],
    "stake": 600,
    "return": 0,
+   "roi": 0.0,
    "hits": [],
    "voided": false
   },
@@ -488,6 +519,7 @@
    ],
    "stake": 800,
    "return": 260,
+   "roi": 32.5,
    "hits": [
     "馬連 3-11 260円"
    ],
@@ -505,6 +537,7 @@
    ],
    "stake": 900,
    "return": 0,
+   "roi": 0.0,
    "hits": [],
    "voided": false
   },
@@ -520,6 +553,7 @@
    ],
    "stake": 0,
    "return": 0,
+   "roi": null,
    "hits": [],
    "voided": false
   },
@@ -535,6 +569,7 @@
    ],
    "stake": 900,
    "return": 0,
+   "roi": 0.0,
    "hits": [],
    "voided": false
   },
@@ -550,6 +585,7 @@
    ],
    "stake": 800,
    "return": 430,
+   "roi": 53.8,
    "hits": [
     "馬連 2-4 300円",
     "ワイド 2-6 130円"
@@ -568,6 +604,7 @@
    ],
    "stake": 1000,
    "return": 0,
+   "roi": 0.0,
    "hits": [],
    "voided": false
   },
@@ -583,6 +620,7 @@
    ],
    "stake": 800,
    "return": 0,
+   "roi": 0.0,
    "hits": [],
    "voided": false
   },
@@ -598,6 +636,7 @@
    ],
    "stake": 600,
    "return": 0,
+   "roi": 0.0,
    "hits": [],
    "voided": false
   },
@@ -613,6 +652,7 @@
    ],
    "stake": 600,
    "return": 330,
+   "roi": 55.0,
    "hits": [
     "馬連 6-10 170円",
     "ワイド 6-10 160円"
@@ -631,6 +671,7 @@
    ],
    "stake": 700,
    "return": 290,
+   "roi": 41.4,
    "hits": [
     "ワイド 8-12 290円"
    ],
@@ -648,6 +689,7 @@
    ],
    "stake": 600,
    "return": 300,
+   "roi": 50.0,
    "hits": [
     "馬連 1-3 返還100円",
     "馬連 3-6 返還100円",
@@ -667,6 +709,7 @@
    ],
    "stake": 700,
    "return": 0,
+   "roi": 0.0,
    "hits": [],
    "voided": false
   },
@@ -682,6 +725,7 @@
    ],
    "stake": 600,
    "return": 0,
+   "roi": 0.0,
    "hits": [],
    "voided": false
   },
@@ -697,6 +741,7 @@
    ],
    "stake": 700,
    "return": 0,
+   "roi": 0.0,
    "hits": [],
    "voided": false
   },
@@ -712,6 +757,7 @@
    ],
    "stake": 600,
    "return": 0,
+   "roi": 0.0,
    "hits": [],
    "voided": false
   },
@@ -727,6 +773,7 @@
    ],
    "stake": 700,
    "return": 230,
+   "roi": 32.9,
    "hits": [
     "馬連 8-10 230円"
    ],
@@ -744,6 +791,7 @@
    ],
    "stake": 0,
    "return": 0,
+   "roi": null,
    "hits": [],
    "voided": false
   },
@@ -759,6 +807,7 @@
    ],
    "stake": 900,
    "return": 2130,
+   "roi": 236.7,
    "hits": [
     "馬連 6-9 1590円",
     "ワイド 6-9 540円"
@@ -777,6 +826,7 @@
    ],
    "stake": 800,
    "return": 0,
+   "roi": 0.0,
    "hits": [],
    "voided": false
   }

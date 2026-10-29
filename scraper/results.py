@@ -21,6 +21,20 @@ KINDS = ("単勝", "複勝", "枠連", "枠複", "ワイド", "馬連", "馬複"
 NORMAL = {"枠複": "枠連", "馬複": "馬連", "三連複": "3連複", "三連単": "3連単"}
 
 
+def has_payouts(f) -> bool:
+    if not f.exists():
+        return False
+    d = json.loads(f.read_text(encoding="utf-8"))
+    return not d.get("error") and any(not k.startswith("_") for k in (d.get("payouts") or {}))
+
+
+def drop_cache(url: str) -> None:
+    from jra_cards import CNAME_RE
+    cm = CNAME_RE.search(url)
+    if cm:
+        (DATA_DIR / "cache" / "jra_result" / f"{re.sub(r'[^0-9A-Za-z]', '_', cm.group(1))}.html").unlink(missing_ok=True)
+
+
 # ---------------- JRA ----------------
 def jra(target: str) -> int:
     sess = PoliteSession(min_interval=3.0, encoding="shift_jis")
@@ -33,10 +47,14 @@ def jra(target: str) -> int:
         s = BeautifulSoup(html, "html.parser")
         links = sorted({a["href"] for a in s.find_all("a", href=True) if "pw01sde" in a["href"] and target in a["href"]})
         for url in links:
-            rh = cached_result(sess, url)
-            res = parse_result(rh)
             m = re.search(r"pw01sde\d{2}(\d{2})(\d{4})(\d{2})(\d{2})(\d{2})", url)
             venue_code, rno = (m.group(1), int(m.group(5))) if m else ("XX", 0)
+            if has_payouts(DATA_DIR / "results" / target / f"jra_{venue_code}_{rno:02d}.json"):
+                continue  # 確定済みは取り直さない
+            rh = cached_result(sess, url)
+            res = parse_result(rh)
+            if not res.get("payouts"):
+                drop_cache(url)  # 未確定のページはキャッシュしない（次回取り直す）
             title = BeautifulSoup(rh, "html.parser").title
             res.update(source="jra", date=target, venue_code=venue_code, race_no=rno, url=url,
                        title=text(title))
@@ -46,8 +64,8 @@ def jra(target: str) -> int:
 
 
 # ---------------- 楽天競馬 ----------------
-def _finished(target: str, rid: str) -> bool:
-    """発走から15分以上たったレースだけ True（日中のバイアス判定用）。"""
+def _finished(target: str, rid: str, minutes: int = 15) -> bool:
+    """発走から minutes 分以上たったレースだけ True（日中の取得用）。"""
     from datetime import datetime, timedelta, timezone
 
     f = DATA_DIR / "races" / target / f"{rid}.json"
@@ -59,7 +77,7 @@ def _finished(target: str, rid: str) -> bool:
     jst = timezone(timedelta(hours=9))
     h, m = map(int, pt.split(":"))
     post = datetime.strptime(target, "%Y%m%d").replace(hour=h, minute=m, tzinfo=jst)
-    return datetime.now(jst) > post + timedelta(minutes=15)
+    return datetime.now(jst) > post + timedelta(minutes=minutes)
 
 def parse_rakuten_payouts(html: str) -> dict:
     """競走成績ページ内の払戻金表（summary="払戻金"）を読む。th の直後の number/money セルが組。"""
@@ -138,19 +156,35 @@ def parse_rakuten_performance(html: str) -> list[dict]:
     return rows
 
 
-def rakuten(target: str, limit_races: int | None = None, finished_only: bool = False) -> int:
+def local_race_ids(target: str) -> list[list[str]]:
+    """取得済みの出馬表から楽天のレースIDを発走順に（一覧ページを開かずに済む）。"""
+    rs = []
+    for f in (DATA_DIR / "races" / target).glob("*.json"):
+        if f.stem.startswith("jra_"):
+            continue
+        pt = json.loads(f.read_text(encoding="utf-8")).get("post_time") or "99:99"
+        rs.append((pt.zfill(5), f.stem))
+    return [[rid for _, rid in sorted(rs)]]
+
+
+def rakuten(target: str, limit_races: int | None = None, finished_only: bool = False,
+            local: bool = False, after_min: int = 15, max_tries: int = 8) -> int:
     from rakuten import BASE, PAGES, race_ids, venue_lists
 
     sess = PoliteSession(min_interval=60.0)
     n = 0
-    for v in venue_lists(sess, target):
-        for rid in race_ids(sess, target, v)[:limit_races]:
+    groups = local_race_ids(target) if local else [race_ids(sess, target, v) for v in venue_lists(sess, target)]
+    for ids in groups:
+        for rid in ids[:limit_races]:
             done = DATA_DIR / "results" / target / f"{rid}.json"
-            if done.exists() and not json.loads(done.read_text(encoding="utf-8")).get("error"):
-                continue  # 取得済みはとばす（再実行時は失敗分だけ取り直す）
-            if finished_only and not _finished(target, rid):
+            prev = json.loads(done.read_text(encoding="utf-8")) if done.exists() else {}
+            if has_payouts(done):
+                continue  # 確定済みはとばす（払戻が出ていなければ取り直す）
+            if prev.get("tries", 0) >= max_tries:
+                continue  # 取消・中止などで払戻が出ないレースは打ち切る
+            if finished_only and not _finished(target, rid, after_min):
                 continue
-            out = {"source": "rakuten", "date": target, "race_id": rid}
+            out = {"source": "rakuten", "date": target, "race_id": rid, "tries": prev.get("tries", 0) + 1}
             try:
                 ph = sess.get(BASE + PAGES["performance"].format(rid=rid)).text
                 save_raw("rakuten_performance", target, rid, ph)
@@ -169,8 +203,10 @@ if __name__ == "__main__":
     ap.add_argument("--source", default="both")
     ap.add_argument("--limit-races", type=int, default=None)
     ap.add_argument("--finished-only", action="store_true", help="発走済みのレースだけ（日中のバイアス判定用）")
+    ap.add_argument("--local", action="store_true", help="レース一覧を取得済みの出馬表から作る")
+    ap.add_argument("--after-min", type=int, default=15)
     a = ap.parse_args()
     if a.source in ("jra", "both"):
         print("JRA results:", jra(a.date))
     if a.source in ("rakuten", "both"):
-        print("rakuten results:", rakuten(a.date, a.limit_races, a.finished_only))
+        print("rakuten results:", rakuten(a.date, a.limit_races, a.finished_only, a.local, a.after_min))
