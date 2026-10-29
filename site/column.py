@@ -262,8 +262,14 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
                  "<a href='/'>今日の予想</a>・<a href='/results/'>成績</a>・<a href='/about/'>予想の方法</a></p>"
                  "<p class='meta'>馬券の購入は20歳から。予想は的中や利益を保証するものではない。</p></section>"
                  + (f"<section class='card'><h2>ほかのコラム</h2><ul>{related}</ul></section>" if related else ""))
+        img = ROOT / "site" / "assets" / f"col-{c['slug']}.jpg"
+        og_img = f"/assets/col-{c['slug']}.jpg" if img.exists() else "/og/default.jpg"
+        if img.exists():
+            html_ = html_.replace("</h1>", "</h1>", 1).replace(
+                "<p class='meta'>公開", f"<img class='hero' src='/assets/col-{c['slug']}.jpg' alt='' width='1200' height='800'><p class='meta'>公開", 1)
+            ld["image"] = base_url + og_img
         write(path, page(f"{title} | {site_name}", html_, path, desc=desc, noindex=c["draft"],
-                         head_extra=jsonld(ld) + jsonld(crumb)))
+                         head_extra=jsonld(ld) + jsonld(crumb), og_image=og_img))
         if not c["draft"]:
             lastmod[path] = today_iso
     items = "".join(f"<li><a href='/column/{c['slug']}/'><b>{esc(subst(c.get('title', ''), v))}</b>"

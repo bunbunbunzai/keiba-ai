@@ -21,6 +21,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import column
+import og
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "_site"
@@ -86,7 +87,12 @@ def jsonld(obj) -> str:
     return f'<script type="application/ld+json">{json.dumps(obj, ensure_ascii=False)}</script>'
 
 
-def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False, head_extra: str = "") -> str:
+OG_DAYS = 30  # レースごとの共有画像を作る期間（古いレースはサイト共通の画像を使う）
+ASSETS = Path(__file__).resolve().parent / "assets"
+
+
+def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False, head_extra: str = "",
+         og_image: str = "/og/default.jpg") -> str:
     d = desc or "AIが日本の競馬（JRA・地方）の全レースを毎日予想し、外れも含めた全予想の回収率を公開しています。"
     return f"""<!doctype html>
 <html lang="ja"><head><meta charset="utf-8">
@@ -97,12 +103,14 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False
 {'<meta name="robots" content="noindex">' if noindex else ''}
 <meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(d)}">
 <meta property="og:url" content="{BASE_URL}{path}"><meta property="og:type" content="website"><meta property="og:site_name" content="{SITE_NAME}">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="{BASE_URL}{og_image}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{BASE_URL}{og_image}">
+{FAVICON}
 <link rel="stylesheet" href="/style.css">
 {head_extra}
 </head><body>
 <header class="top"><div class="wrap">
-<a class="logo" href="/">{SITE_NAME}<small>{SITE_SUB}</small></a>
+<a class="logo" href="/">{'<img src="/assets/logo-mark-96.png" alt="" width="40" height="40">' if LOGO else ''}<span>{SITE_NAME}<small>{SITE_SUB}</small></span></a>
 <nav><a href="/">今日の予想</a><a href="/results/">成績</a>{'<a href="/column/">コラム</a>' if HAS_COLUMN else ''}<a href="/about/">予想の方法</a></nav>
 </div></header>
 <main class="wrap">{body}</main>
@@ -115,6 +123,9 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False
 </body></html>"""
 
 
+FAVICON = ('<link rel="icon" href="/assets/favicon.png" type="image/png"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">'
+           if (ASSETS / "favicon.png").exists() else "")
+LOGO = (ASSETS / "logo-mark.png").exists()
 HAS_COLUMN = any(not c["draft"] for c in column.columns())
 
 
@@ -289,7 +300,29 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
     hon = p.get("marks", {}).get("◎")
     title = f"{race_label(p)} 予想【{md(date)}】AI全頭評価・買い目と結果 | {SITE_NAME}"
     desc = answer_sentence(date, p) + " 全頭の評価点・短評と買い目を掲載。"
-    return page(title, body, path, desc=desc, noindex=p.get("confidence") == "見送り", head_extra="".join(jsonld(x) for x in ld))
+    return page(title, body, path, desc=desc, noindex=p.get("confidence") == "見送り", head_extra="".join(jsonld(x) for x in ld),
+                og_image=race_og(date, p))
+
+
+def race_og(date: str, p: dict) -> str:
+    """直近 OG_DAYS 日のレースは専用の共有画像を作る。"""
+    cutoff = (datetime.now(JST) - timedelta(days=OG_DAYS)).strftime("%Y%m%d")
+    if date < cutoff:
+        return "/og/default.jpg"
+    r = p["_race"]
+    rel = f"/og/{date}/{VENUE_SLUG.get(venue_of(p), 'venue')}-{race_no(p):02d}.jpg"
+    marks = [] if p.get("confidence") == "見送り" else [
+        (m, str(n), horse_name(p, n)) for m in ("◎", "〇", "▲") for n in [p.get("marks", {}).get(m)] if n is not None]
+    sc = scored(p)
+    res = None
+    if sc and sc["stake"]:
+        res = ((f"的中 回収率{roi_txt(sc['stake'], sc['return'])}", True) if sc["return"] else ("不的中", False))
+    meta = "・".join(x for x in [f"{r['post_time']}発走" if r.get("post_time") else "",
+                                f"{r.get('surface') or ''}{r.get('distance')}m" if r.get("distance") else "",
+                                f"{r.get('field')}頭" if r.get("field") else ""] if x)
+    og.race_image(OUT / rel.lstrip("/"), f"{fmt_date(date)} {VENUE_NAME.get(venue_of(p), venue_of(p))}",
+                  f"{race_label(p)} AI予想", meta, marks, p.get("confidence") or "", res)
+    return rel
 
 
 def redirect_page(to: str) -> str:
@@ -482,7 +515,7 @@ CSS = """:root{--bg:#f6f5f1;--fg:#1d1d1b;--mut:#6b6a63;--card:#fff;--line:#e3e1d
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 "Hiragino Sans","Noto Sans JP",system-ui,sans-serif}
 a{color:var(--acc);text-decoration:none}.wrap{max-width:960px;margin:0 auto;padding:0 16px}
 .top{background:var(--card);border-bottom:1px solid var(--line)}.top .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;justify-content:space-between;padding:12px 16px}
-.logo{font-weight:700;color:var(--fg);display:flex;flex-direction:column;line-height:1.3}.logo small{font-weight:400;font-size:12px;color:var(--mut)}
+.logo{font-weight:700;color:var(--fg);display:flex;align-items:center;gap:10px;line-height:1.3}.logo span{display:flex;flex-direction:column}.logo img{border-radius:8px}.logo small{font-weight:400;font-size:12px;color:var(--mut)}
 nav{display:flex;gap:16px;font-size:14px}
 h1{font-size:24px;margin:20px 0 4px}h2{font-size:18px;margin:0 0 8px}h3{font-size:15px;margin:16px 0 6px}
 .meta,.crumb{color:var(--mut);font-size:13px;margin:0 0 10px}.crumb{margin-top:12px}
@@ -507,7 +540,7 @@ table{border-collapse:collapse;width:100%;font-size:14px}th,td{border-bottom:1px
 .days{list-style:none;padding:0;display:grid;gap:6px}.days a{display:flex;justify-content:space-between;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 12px;color:var(--fg)}
 .pn{display:flex;justify-content:space-between;gap:12px;margin:20px 0;font-size:14px}
 .foot{color:var(--mut);font-size:12px;padding:24px 16px 40px}
-.col{line-height:1.85}.col h2{margin:28px 0 8px;padding-bottom:4px;border-bottom:2px solid var(--line)}.col table{margin:8px 0}
+.col{line-height:1.85}.col .hero{width:100%;height:auto;border-radius:10px;margin:8px 0}.col h2{margin:28px 0 8px;padding-bottom:4px;border-bottom:2px solid var(--line)}.col table{margin:8px 0}
 .note{background:var(--card);border:1px dashed var(--line);border-radius:8px;padding:8px 12px;font-size:14px;color:var(--mut)}
 .draft{background:#fff4d6;color:#6b4e00;border-radius:6px;padding:6px 10px;font-size:13px;margin-top:12px}
 .cols{list-style:none;padding:0;display:grid;gap:8px}.cols a{display:flex;flex-direction:column;gap:2px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 14px;color:var(--fg)}.cols span{color:var(--mut);font-size:13px}"""
@@ -532,6 +565,10 @@ def build() -> None:
     (OUT / "style.css").write_text(CSS, encoding="utf-8")
     (OUT / "app.js").write_text(JS, encoding="utf-8")
     (OUT / ".nojekyll").write_text("", encoding="utf-8")
+    if ASSETS.exists():
+        shutil.copytree(ASSETS, OUT / "assets", ignore=shutil.ignore_patterns("og-base.png", "*-src.png"))
+    og.site_image(OUT / "og" / "default.jpg", "全レースAI予想と回収率の記録",
+                  ["中央競馬・地方競馬の全レースを毎日予想", "外れも含めた全成績を公開"])
     now = datetime.now(JST)
     today = now.strftime("%Y%m%d")
     dates = all_dates()
