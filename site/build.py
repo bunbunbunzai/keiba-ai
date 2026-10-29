@@ -83,6 +83,27 @@ def race_path(d: str, p: dict) -> str:
     return f"{day_path(d)}{VENUE_SLUG.get(v, 'venue')}/{race_no(p):02d}r/"
 
 
+def frame_of(num, field: int):
+    """枠番の標準の割り当て（頭数が8を超えると外枠から2頭ずつ）。"""
+    try:
+        n, f = int(num), int(field)
+    except (TypeError, ValueError):
+        return ""
+    if f <= 8:
+        return n
+    base, extra = divmod(f, 8)  # 外側の extra 枠が1頭多い
+    sizes = [base + (1 if i >= 8 - extra else 0) for i in range(8)]
+    for i, sz in enumerate(sizes):
+        if n <= sz:
+            return i + 1
+        n -= sz
+    return 8
+
+
+def venue_path(v: str) -> str:
+    return f"/venue/{VENUE_SLUG.get(v, 'venue')}/"
+
+
 def jsonld(obj) -> str:
     return f'<script type="application/ld+json">{json.dumps(obj, ensure_ascii=False)}</script>'
 
@@ -105,13 +126,13 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False
 <meta property="og:url" content="{BASE_URL}{path}"><meta property="og:type" content="website"><meta property="og:site_name" content="{SITE_NAME}">
 <meta property="og:image" content="{BASE_URL}{og_image}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{BASE_URL}{og_image}">
-{FAVICON}
+{FAVICON}<link rel="alternate" type="application/rss+xml" title="{SITE_NAME}" href="/feed.xml">
 <link rel="stylesheet" href="/style.css">
 {head_extra}
 </head><body>
 <header class="top"><div class="wrap">
 <a class="logo" href="/">{'<img src="/assets/logo-mark-96.png" alt="" width="40" height="40">' if LOGO else ''}<span>{SITE_NAME}<small>{SITE_SUB}</small></span></a>
-<nav><a href="/">今日の予想</a><a href="/results/">成績</a>{'<a href="/column/">コラム</a>' if HAS_COLUMN else ''}<a href="/about/">予想の方法</a></nav>
+<nav><a href="/">今日の予想</a><a href="/results/">成績</a><a href="/venue/">競馬場</a>{'<a href="/column/">コラム</a>' if HAS_COLUMN else ''}<a href="/about/">予想の方法</a></nav>
 </div></header>
 <main class="wrap">{body}</main>
 <footer class="wrap foot">
@@ -161,6 +182,7 @@ def predictions(date: str) -> list[dict]:
             continue
         p["_race"] = load_json(ROOT / "data" / "races" / date / f"{p['race_id']}.json") or {}
         p["_score"] = sc_by.get(p["race_id"])
+        p["_result"] = load_json(ROOT / "data" / "results" / date / f"{p.get('results_key') or p['race_id']}.json") or {}
         out.append(p)
     out.sort(key=lambda p: (p["_race"].get("post_time") or "99:99", venue_of(p), race_no(p)))
     return out
@@ -174,6 +196,24 @@ def ledger() -> list[dict]:
         rows = list(csv.DictReader(fh))
     # 試運転分と見送り（投資0円）は成績から外す
     return [r for r in rows if r["date"] >= STATS_FROM and int(r["stake"] or 0) > 0]
+
+
+BIAS: dict[str, dict] = {}
+
+
+def bias_for(date: str, p: dict) -> tuple[str, dict] | None:
+    """その日のその場（芝/ダ）の最新のバイアス判定。"""
+    if date not in BIAS:
+        b, upd = {}, ""
+        for src in ("jra", "rakuten"):
+            d = load_json(ROOT / "data" / "bias" / f"{date}_{src}.json") or {}
+            b.update(d.get("bias", {}))
+            upd = max(upd, d.get("updated") or "")
+        BIAS[date] = {"bias": b, "updated": upd}
+    r = p["_race"]
+    key = f"{venue_of(p)}{'芝' if r.get('surface') == '芝' else 'ダ'}"
+    v = BIAS[date]["bias"].get(key)
+    return (key, dict(v, updated=BIAS[date]["updated"][-5:])) if v else None
 
 
 # ---------------- 部品 ----------------
@@ -227,17 +267,35 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
     evals = {e.get("number"): e for e in p.get("horses", [])}
     sc = p.get("_score") or {}
     top3 = sc.get("top3") or []
+    fin_by = {x.get("number"): x for x in (p.get("_result") or {}).get("rows", []) or []}
     rows = []
     for num in sorted(set(horses) | set(evals), key=lambda x: (x is None, x)):
         h, e = horses.get(num, {}), evals.get(num, {})
-        fin = ""
-        if num in top3:
-            fin = f"{top3.index(num) + 1}着"
+        fr = fin_by.get(num) or {}
+        fin = fr.get("finish")
+        if fin is None and num in top3:
+            fin = top3.index(num) + 1
+        fin_txt = f"{fin}着" if str(fin or "").isdigit() else (esc(fin) if fin else "")
+        odds, wp = h.get("odds"), e.get("win_pct")
+        val, tag = "", ""
+        try:
+            if odds and wp:
+                v = float(odds) * float(wp) / 100
+                val = f"{v:.2f}"
+                tag = "<span class='tag good'>妙味</span>" if v >= 1.2 else "<span class='tag bad'>過剰人気</span>" if v < 0.8 else ""
+        except (TypeError, ValueError):
+            pass
+        pop = h.get("popularity") or fr.get("popularity")
         rows.append(
-            f"<tr class='{'mk' if num in mk else ''}'><td>{esc(h.get('frame'))}</td><td>{esc(num)}</td>"
-            f"<td class='mark'>{esc(mk.get(num, ''))}</td><td>{esc(h.get('name') or e.get('name'))}</td>"
-            f"<td>{esc(h.get('jockey'))}</td><td>{esc(h.get('odds'))}</td><td>{esc(e.get('score'))}</td>"
-            f"<td>{esc(fin)}</td><td class='cmt'>{esc(e.get('comment'))}</td></tr>")
+            f"<li class='hr{' mk' if num in mk else ''}{' top' if str(fin) in ('1', '2', '3') else ''}'>"
+            f"<span class='c-no'><b class='fr f{esc(h.get('frame') or fr.get('frame') or frame_of(num, len(horses) or len(evals)))}'>{esc(num)}</b></span>"
+            f"<span class='c-mk mark'>{esc(mk.get(num, ''))}</span>"
+            f"<span class='c-nm'><b>{esc(h.get('name') or e.get('name'))}</b><small>{esc(h.get('jockey'))}{' ・' + esc(h.get('sex_age')) if h.get('sex_age') else ''}</small></span>"
+            f"<span class='c-od'>{esc(odds) if odds else '-'}<small>{f'{esc(pop)}人気' if pop else ''}</small></span>"
+            f"<span class='c-sc'>{esc(e.get('score')) if e.get('score') is not None else '-'}<small>{f'勝率{esc(wp)}%' if wp else ''}</small></span>"
+            f"<span class='c-vl'>{val or '-'}{tag}</span>"
+            f"<span class='c-fn'>{fin_txt}</span>"
+            f"<span class='c-cm'>{esc(e.get('comment'))}</span></li>")
     hits = set()
     for x in sc.get("hits", []) or []:
         hits.add(" ".join(x.split()[:2]))
@@ -253,12 +311,23 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
     res_html = ""
     if sc and "stake" in sc and not sc.get("voided"):
         hit = sc["return"] > 0
+        tg = 0 < sc["return"] < sc["stake"]
         res_html = (f"<section class='card'><h2>結果</h2><p>1〜3着：{esc(' - '.join(str(x) for x in top3))}"
                     f"／◎は{esc(sc.get('honmei_finish') or '-')}着</p>"
-                    f"<p class='big {'hit' if hit else 'miss'}'>{'的中' if hit else '不的中'}　投資{sc['stake']:,}円・払戻{sc['return']:,}円・"
+                    f"<p class='big {'tg' if tg else 'hit' if hit else 'miss'}'>{'的中（トリガミ：払戻が投資を下回る）' if tg else '的中' if hit else '不的中'}　投資{sc['stake']:,}円・払戻{sc['return']:,}円・"
                     f"このレースの回収率{roi_txt(sc['stake'], sc['return'])}（収支{sc['return'] - sc['stake']:+,}円）</p>"
                     + "".join(f"<p>{esc(x)}</p>" for x in sc.get("hits", []))
                     + (f"<p class='meta'>{esc(SCORE_UPDATED.get(date))}集計</p>" if SCORE_UPDATED.get(date) else "") + "</section>")
+    bias_html = ""
+    bz = bias_for(date, p)
+    if bz:
+        key, b = bz
+        bias_html = (f"<section class='card bias'><h2>当日のトラックバイアス</h2><p class='big'>{esc(key)}：{esc(b['judgement'])}"
+                     f"<span class='conf'>確度{esc(b['confidence'])}</span></p>"
+                     f"<p class='meta'>{esc(len(b.get('races', [])))}レース（{esc(','.join(map(str, b.get('races', []))))}R）の1・2着馬から判定。"
+                     f"先行{int(b['front_share'] * 100)}%・内枠{int(b['inner_share'] * 100)}%・外枠{int(b['outer_share'] * 100)}%"
+                     f"（{esc(b['updated'])}時点の最新判定。予想に使った時点の判定は更新履歴を参照）。"
+                     + ("<a href='/column/track-bias/'>トラックバイアスとは</a>" if HAS_COLUMN else "") + "</p></section>")
     updates = "".join(f"<li><b>{esc(u.get('at'))}</b> {esc(u.get('text'))}</li>" for u in p.get("updates", []))
     meta = "・".join(x for x in [
         fmt_date(date),
@@ -282,7 +351,7 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
             {"@type": "ListItem", "position": 3, "name": race_label(p), "item": BASE_URL + path}]},
     ]
     body = f"""
-<p class="crumb"><a href="/">トップ</a> › <a href="{day_path(date)}">{fmt_date(date)}</a> › {esc(VENUE_NAME.get(venue, venue))} › {race_no(p)}R</p>
+<p class="crumb"><a href="/">トップ</a> › <a href="{day_path(date)}">{fmt_date(date)}</a> › <a href="{venue_path(venue)}">{esc(VENUE_NAME.get(venue, venue))}</a> › {race_no(p)}R</p>
 <h1>{esc(race_label(p))} 予想</h1><p class="meta">{esc(meta)}</p>
 <p class="answer">{esc(answer_sentence(date, p))}</p>
 <section class="card"><div class="marks">{marks_html}</div>{f"<p class='subs'>{esc(subs)}</p>" if subs else ''}
@@ -291,9 +360,10 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
 <h3>買い目（各100円・計{len(p.get('bets', []))}点）</h3><ul class="bets">{bets or '<li>買い目なし</li>'}</ul></section>
 {res_html}
 <section class="card"><h2>展開予想</h2><p>{esc(p.get('pace'))}</p></section>
-<section class="card"><h2>全頭評価</h2><div class="scroll"><table class="horses">
-<thead><tr><th>枠</th><th>馬番</th><th>印</th><th>馬名</th><th>騎手</th><th>単勝</th><th>評価点</th><th>着順</th><th>短評</th></tr></thead>
-<tbody>{''.join(rows)}</tbody></table></div></section>
+{bias_html}
+<section class="card"><h2>全頭評価</h2>
+<ul class="hl"><li class="hr hd"><span class="c-no">馬番</span><span class="c-mk">印</span><span class="c-nm">馬名・騎手</span><span class="c-od">単勝</span><span class="c-sc">評価点</span><span class="c-vl">妙味</span><span class="c-fn">着順</span><span class="c-cm">短評</span></li>{''.join(rows)}</ul>
+<p class="meta">評価点は45点満点。妙味は「AIの想定勝率×単勝オッズ」で、1.2以上を妙味あり、0.8未満を過剰人気としている（オッズは取得時点のもの）。</p></section>
 {f'<section class="card"><h2>更新履歴</h2><ul>{updates}</ul></section>' if updates else ''}
 {nav}
 """
@@ -316,7 +386,7 @@ def race_og(date: str, p: dict) -> str:
     sc = scored(p)
     res = None
     if sc and sc["stake"]:
-        res = ((f"的中 回収率{roi_txt(sc['stake'], sc['return'])}", True) if sc["return"] else ("不的中", False))
+        res = ((f"的中 回収率{roi_txt(sc['stake'], sc['return'])}", sc["return"] >= sc["stake"]) if sc["return"] else ("不的中", False))
     meta = "・".join(x for x in [f"{r['post_time']}発走" if r.get("post_time") else "",
                                 f"{r.get('surface') or ''}{r.get('distance')}m" if r.get("distance") else "",
                                 f"{r.get('field')}頭" if r.get("field") else ""] if x)
@@ -336,8 +406,12 @@ def race_item(date: str, p: dict) -> str:
     sc = scored(p)
     badge = ""
     if sc and sc["stake"]:
-        badge = (f"<span class='res hit'>的中 払戻{sc['return']:,}円・回収率{roi_txt(sc['stake'], sc['return'])}</span>" if sc["return"]
-                 else f"<span class='res miss'>不的中 −{sc['stake']:,}円</span>")
+        if not sc["return"]:
+            badge = f"<span class='res miss'>不的中 −{sc['stake']:,}円</span>"
+        elif sc["return"] < sc["stake"]:
+            badge = f"<span class='res tg'>的中（トリガミ）払戻{sc['return']:,}円・回収率{roi_txt(sc['stake'], sc['return'])}</span>"
+        else:
+            badge = f"<span class='res hit'>的中 払戻{sc['return']:,}円・回収率{roi_txt(sc['stake'], sc['return'])}</span>"
     hon = p.get("marks", {}).get("◎")
     hon_txt = "見送り" if p.get("confidence") == "見送り" else f"◎{hon} {horse_name(p, hon)}"
     pt = p["_race"].get("post_time") or ""
@@ -379,7 +453,7 @@ def scoreboard(date: str, preds: list[dict]) -> str:
     upd = SCORE_UPDATED.get(date)
     return (f"<section class='card live'><h2>当日の成績{f'（{esc(upd)}時点）' if upd else ''}</h2>"
             f"<div class='kpis'><div><b>{len(done)}／{len(bet)}</b><span>確定レース</span></div>"
-            f"<div><b>{hit}</b><span>的中レース（{100 * hit / len(done):.0f}%）</span></div>"
+            f"<div><b>{hit}</b><span>的中レース（{100 * hit / len(done):.0f}%）・うちプラス{sum(1 for s in done if s['return'] > s['stake'])}</span></div>"
             f"<div><b>{roi_txt(st, rt)}</b><span>当日回収率</span></div>"
             f"<div><b>{rt - st:+,}円</b><span>収支（投資{st:,}円）</span></div>"
             f"<div><b>{win}・{top3}</b><span>◎の1着・3着内</span></div></div>"
@@ -395,20 +469,25 @@ def day_list(date: str, preds: list[dict]) -> str:
 
 
 # ---------------- 成績 ----------------
-def svg_line(points: list[float], w=640, h=160) -> str:
+def svg_line(points: list[float], w=640, h=180, labels: list[str] | None = None) -> str:
     if len(points) < 2:
         return ""
+    h_plot = h - 20 if labels else h
     lo, hi = min(points + [100]), max(points + [100])
     pad = (hi - lo) * 0.1 or 10
     lo, hi = lo - pad, hi + pad
-    xs = [i * (w - 40) / (len(points) - 1) + 30 for i in range(len(points))]
-    ys = [h - 20 - (v - lo) / (hi - lo) * (h - 40) for v in points]
-    y100 = h - 20 - (100 - lo) / (hi - lo) * (h - 40)
+    xs = [i * (w - 60) / (len(points) - 1) + 40 for i in range(len(points))]
+    ys = [h_plot - 20 - (v - lo) / (hi - lo) * (h_plot - 40) for v in points]
+    y100 = h_plot - 20 - (100 - lo) / (hi - lo) * (h_plot - 40)
+    step = max(1, len(points) // 8)
+    lab = "".join(f"<text x='{xs[i]:.1f}' y='{h - 4}' class='lbl mid'>{esc(labels[i])}</text>"
+                  for i in range(0, len(points), step)) if labels else ""
+    dots = "".join(f"<circle cx='{x:.1f}' cy='{y:.1f}' r='2.5' class='pt'/>" for x, y in zip(xs, ys)) if len(points) <= 40 else ""
     path = " ".join(f"{'M' if i == 0 else 'L'}{x:.1f},{y:.1f}" for i, (x, y) in enumerate(zip(xs, ys)))
     return (f"<svg viewBox='0 0 {w} {h}' class='chart' role='img' aria-label='累計回収率の推移'>"
             f"<line x1='30' x2='{w - 10}' y1='{y100:.1f}' y2='{y100:.1f}' class='base'/>"
             f"<text x='2' y='{y100 + 4:.1f}' class='lbl'>100%</text>"
-            f"<path d='{path}' class='ln'/><circle cx='{xs[-1]:.1f}' cy='{ys[-1]:.1f}' r='4' class='pt'/>"
+            f"<path d='{path}' class='ln'/>{dots}{lab}<circle cx='{xs[-1]:.1f}' cy='{ys[-1]:.1f}' r='4' class='pt'/>"
             f"<text x='{xs[-1] - 4:.1f}' y='{ys[-1] - 8:.1f}' class='lbl end'>{points[-1]:.1f}%</text></svg>")
 
 
@@ -434,8 +513,8 @@ def results_page(rows: list[dict], venue_of_race: dict) -> str:
     t = totals(rows)
     asof = fmt_date(days[-1]) if days else ""
 
-    def table(groups: dict, label: str) -> str:
-        body = "".join(f"<tr><td>{esc(k)}</td><td>{v['n']}</td><td>{v['roi']}</td><td>{v['hit']}</td><td>{v['win']}</td><td>{v['top3']}</td></tr>"
+    def table(groups: dict, label: str, raw: bool = False) -> str:
+        body = "".join(f"<tr><td>{k if raw else esc(k)}</td><td>{v['n']}</td><td>{v['roi']}</td><td>{v['hit']}</td><td>{v['win']}</td><td>{v['top3']}</td></tr>"
                        for k, v in groups.items())
         return (f"<table><thead><tr><th>{label}</th><th>レース</th><th>回収率</th><th>的中率</th><th>◎勝率</th><th>◎複勝率</th></tr></thead>"
                 f"<tbody>{body}</tbody></table>")
@@ -446,13 +525,15 @@ def results_page(rows: list[dict], venue_of_race: dict) -> str:
     for r in rows:
         conf[r["confidence"] or "-"].append(r)
         ven[venue_of_race.get(r["race_id"], "-")].append(r)
+    venue_link = lambda k: f"<a href='{venue_path(k)}'>{esc(VENUE_NAME.get(k, k))}</a>" if k in VENUE_SLUG else esc(k)
     body = f"""<h1>成績</h1>
 <p class="answer">{SITE_NAME}のAI予想の成績は、{asof}時点で{t['n']}レース・累計回収率{t['roi']}（◎勝率{t['win']}、◎複勝率{t['top3']}）。外れも含めた全予想を、買い目各点100円の均等買いとして集計している。</p>
 <div class="kpis"><div><b>{t['n']}</b><span>集計レース</span></div><div><b>{t['roi']}</b><span>累計回収率</span></div>
 <div><b>{t['win']}</b><span>◎勝率</span></div><div><b>{t['top3']}</b><span>◎複勝率</span></div></div>
-<section class="card"><h2>累計回収率の推移</h2>{svg_line(cum) or '<p>2日分以上たまると表示します。</p>'}</section>
+<section class="card"><h2>累計回収率の推移</h2>{svg_line(cum, labels=[md(d) for d in days]) or '<p>2日分以上たまると表示します。</p>'}</section>
 <section class="card"><h2>自信度別</h2><div class="scroll">{table({k: totals(v) for k, v in sorted(conf.items())}, '自信度')}</div></section>
-<section class="card"><h2>場別</h2><div class="scroll">{table({VENUE_NAME.get(k, k): totals(v) for k, v in sorted(ven.items(), key=lambda kv: -len(kv[1]))}, '場')}</div></section>
+<section class="card"><h2>場別</h2><div class="scroll">{table({venue_link(k): totals(v) for k, v in sorted(ven.items(), key=lambda kv: -len(kv[1]))}, '場', raw=True)}</div></section>
+<section class="card"><h2>券種別</h2>{column.stats(STATS_FROM)[1]["table_bets"]}</section>
 <section class="card"><h2>日別</h2><div class="scroll">{table(daily, '日付')}</div></section>
 <p class="meta">集計対象は自動運用を始めた2026年10月26日以降で、見送り（買い目なし）は除いている。全予想の記録（CSV）は<a href="{REPO}/blob/main/results_ledger.csv">GitHub</a>で公開している。</p>"""
     ld = {"@context": "https://schema.org", "@type": "Dataset", "name": f"{SITE_NAME} AI競馬予想 全成績",
@@ -463,6 +544,67 @@ def results_page(rows: list[dict], venue_of_race: dict) -> str:
     return page(f"AI競馬予想の成績・回収率（{t['n']}レース累計{t['roi']}） | {SITE_NAME}", body, "/results/",
                 desc=f"AI競馬予想の全成績。{asof}時点で{t['n']}レース、累計回収率{t['roi']}、◎勝率{t['win']}。自信度別・場別・日別の回収率。",
                 head_extra=jsonld(ld))
+
+
+# ---------------- 競馬場ページ ----------------
+def venue_pages(by_date: dict, led: list[dict], venue_of_race: dict) -> dict[str, str]:
+    """/venue/<slug>/：場ごとの成績・当日バイアスの履歴・最近の予想。{path: lastmod} を返す。"""
+    groups = defaultdict(list)  # slug -> [(date, p)]
+    for d, ps in by_date.items():
+        for p in ps:
+            v = venue_of(p)
+            if v in VENUE_SLUG:
+                groups[VENUE_SLUG[v]].append((d, p))
+    out = {}
+    for slug, items in groups.items():
+        items.sort(key=lambda x: (x[0], x[1]["_race"].get("post_time") or ""), reverse=True)
+        v = venue_of(items[0][1])
+        name = VENUE_NAME.get(v, v)
+        rows = [r for r in led if VENUE_SLUG.get(venue_of_race.get(r["race_id"], "")) == slug]
+        t = totals(rows)
+        dates = sorted({d for d, _ in items}, reverse=True)
+        # バイアスの履歴
+        brows = []
+        for d in dates[:30]:
+            for src in ("jra", "rakuten"):
+                for key, b in ((load_json(ROOT / "data" / "bias" / f"{d}_{src}.json") or {}).get("bias") or {}).items():
+                    if key.startswith(v):
+                        brows.append(f"<tr><td><a href='{day_path(d)}'>{fmt_date(d)}</a></td><td>{esc(key)}</td><td>{esc(b['judgement'])}</td>"
+                                     f"<td>{esc(b['confidence'])}</td><td>{int(b['front_share'] * 100)}%</td><td>{len(b.get('races', []))}</td></tr>")
+        bias_html = ("<section class='card'><h2>当日バイアスの履歴</h2><div class='scroll'><table><thead><tr><th>日付</th><th>コース</th><th>判定</th><th>確度</th>"
+                     "<th>連対馬の先行率</th><th>参照R</th></tr></thead><tbody>" + "".join(brows) + "</tbody></table></div>"
+                     "<p class='meta'>その日に確定したレースの1・2着馬の4コーナー位置と馬番から判定（最終判定）。</p></section>") if brows else ""
+        recent = []
+        for d in dates[:3]:
+            lis = "".join(race_item(d, p) for dd, p in sorted(items, key=lambda x: x[1]["_race"].get("post_time") or "") if dd == d)
+            recent.append(f"<h3><a href='{day_path(d)}'>{fmt_date(d)}</a></h3><ul class='races'>{lis}</ul>")
+        days_html = "".join(f"<li><a href='{day_path(d)}'><span>{fmt_date(d)}</span><span>{sum(1 for dd, _ in items if dd == d)}レース</span></a></li>"
+                            for d in dates[3:30])
+        path = f"/venue/{slug}/"
+        lead = (f"{name}競馬のAI予想は、{fmt_date(dates[-1])}から{len(items)}レースを公開している。" +
+                (f"成績は{t['n']}レース・回収率{t['roi']}、◎勝率{t['win']}・◎複勝率{t['top3']}（各点100円の均等買い、外れも含む）。" if t["n"] else "成績はレースの確定後に集計する。"))
+        body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/venue/'>競馬場</a> › {esc(name)}</p>"
+                f"<h1>{esc(name)}競馬のAI予想と成績</h1><p class='answer'>{esc(lead)}</p>"
+                f"<div class='kpis'><div><b>{t['n']}</b><span>集計レース</span></div><div><b>{t['roi']}</b><span>回収率</span></div>"
+                f"<div><b>{t['hit']}</b><span>的中率</span></div><div><b>{t['top3']}</b><span>◎複勝率</span></div></div>"
+                f"<section class='card'><h2>最近の予想</h2>{''.join(recent)}</section>{bias_html}"
+                + (f"<section class='card'><h2>過去の開催日</h2><ul class='days'>{days_html}</ul></section>" if days_html else ""))
+        ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": SITE_NAME, "item": BASE_URL + "/"},
+            {"@type": "ListItem", "position": 2, "name": "競馬場", "item": BASE_URL + "/venue/"},
+            {"@type": "ListItem", "position": 3, "name": name, "item": BASE_URL + path}]}
+        write(path, page(f"{name}競馬のAI予想・回収率と当日バイアス | {SITE_NAME}", body, path,
+                         desc=f"{name}競馬の全レースAI予想。{lead[:80]}", head_extra=jsonld(ld)))
+        out[path] = f"{dates[0][:4]}-{dates[0][4:6]}-{dates[0][6:8]}"
+    # 一覧
+    lis = "".join(f"<li><a href='/venue/{slug}/'><span>{esc(VENUE_NAME.get(venue_of(items[0][1]), venue_of(items[0][1])))}</span>"
+                  f"<span>{len(items)}レース</span></a></li>" for slug, items in sorted(groups.items(), key=lambda kv: -len(kv[1])))
+    write("/venue/", page(f"競馬場別のAI予想と成績 | {SITE_NAME}",
+                          f"<p class='crumb'><a href='/'>トップ</a> › 競馬場</p><h1>競馬場別のAI予想と成績</h1>"
+                          f"<p class='answer'>中央・地方の各競馬場ごとに、AI予想・回収率・当日バイアスの履歴をまとめている。</p><ul class='days'>{lis}</ul>",
+                          "/venue/", desc="競馬場ごとのAI予想・回収率・トラックバイアスの履歴。"))
+    out["/venue/"] = max(out.values()) if out else None
+    return out
 
 
 # ---------------- 固定ページ ----------------
@@ -526,7 +668,7 @@ h1{font-size:24px;margin:20px 0 4px}h2{font-size:18px;margin:0 0 8px}h3{font-siz
 .marks b{font-size:22px;color:var(--acc)}.marks span{font-weight:600}.subs{color:var(--mut);margin:4px 0 8px}
 .races{list-style:none;padding:0;margin:0;display:grid;gap:6px}.races a{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 12px;color:var(--fg)}
 .races li.next a{border:2px solid var(--acc)}.races li.next .rt::after{content:" 次に発走";color:var(--acc);font-weight:700}
-.races li.gone a{opacity:.85}.res{font-size:13px}.res.wait{color:var(--mut)}.live .kpis{margin:8px 0}
+.races li.gone a{opacity:.85}.res{font-size:13px}.tg{color:#b7791f;font-weight:700}.res.wait{color:var(--mut)}.live .kpis{margin:8px 0}
 .rno{font-weight:700;min-width:84px}.rt{color:var(--mut);font-size:13px;min-width:44px}.hon{flex:1;min-width:150px}
 .conf{display:inline-block;min-width:28px;text-align:center;border-radius:4px;font-size:12px;font-weight:700;padding:0 6px;border:1px solid var(--line)}
 .cA{background:#1f6f4a;color:#fff}.cB{background:#3f8f6a;color:#fff}.cC{background:#c9c6b8;color:#1d1d1b}
@@ -535,11 +677,21 @@ table{border-collapse:collapse;width:100%;font-size:14px}th,td{border-bottom:1px
 .bets{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0}.bets li{border:1px solid var(--line);border-radius:6px;padding:2px 8px;font-size:14px}.bets li.won{background:var(--won);border-color:var(--hit);color:var(--hit);font-weight:700}
 .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:16px 0}.kpis div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px}
 .kpis b{display:block;font-size:24px}.kpis span{color:var(--mut);font-size:13px}
-.chart{width:100%;height:auto}.chart .ln{fill:none;stroke:var(--acc);stroke-width:2.5}.chart .base{stroke:var(--mut);stroke-dasharray:4 4}.chart .pt{fill:var(--acc)}.chart .lbl{fill:var(--mut);font-size:12px}.chart .end{text-anchor:end;fill:var(--fg)}
+.chart{width:100%;height:auto}.chart .ln{fill:none;stroke:var(--acc);stroke-width:2.5}.chart .base{stroke:var(--mut);stroke-dasharray:4 4}.chart .pt{fill:var(--acc)}.chart .lbl{fill:var(--mut);font-size:12px}.chart .end{text-anchor:end;fill:var(--fg)}.chart .mid{text-anchor:middle}
 .filters{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.filters button{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:16px;padding:3px 12px;font:inherit;font-size:13px;cursor:pointer}.filters button.on{background:var(--acc);color:#fff;border-color:var(--acc)}
 .days{list-style:none;padding:0;display:grid;gap:6px}.days a{display:flex;justify-content:space-between;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 12px;color:var(--fg)}
 .pn{display:flex;justify-content:space-between;gap:12px;margin:20px 0;font-size:14px}
 .foot{color:var(--mut);font-size:12px;padding:24px 16px 40px}
+.hl{list-style:none;padding:0;margin:0}.hr{display:grid;grid-template-columns:48px 28px minmax(150px,1.4fr) 70px 64px 76px 48px 2.2fr;gap:4px 10px;align-items:start;padding:8px 6px;border-bottom:1px solid var(--line);font-size:14px}
+.hr small{display:block;color:var(--mut);font-size:12px;font-weight:400}.hr.hd{font-size:12px;color:var(--mut);font-weight:700;border-bottom:2px solid var(--line)}
+.hr.mk{background:rgba(31,111,74,.06)}.hr.top .c-fn{color:var(--hit);font-weight:700}.c-cm{color:var(--fg);font-size:13px;line-height:1.6}
+.fr{display:inline-block;min-width:28px;text-align:center;border-radius:4px;border:1px solid var(--line);padding:1px 4px}
+.f1{background:#fff;color:#111}.f2{background:#222;color:#fff}.f3{background:#d33;color:#fff}.f4{background:#2a5bd7;color:#fff}.f5{background:#f2c200;color:#111}.f6{background:#1f8f4a;color:#fff}.f7{background:#f08a24;color:#111}.f8{background:#f4a6c6;color:#111}
+.tag{display:inline-block;margin-left:4px;font-size:11px;border-radius:4px;padding:0 4px}.tag.good{background:var(--acc);color:#fff}.tag.bad{background:var(--line);color:var(--fg)}
+.bias .conf{margin-left:8px;vertical-align:middle}
+@media (max-width:720px){.hr.hd{display:none}.hr{grid-template-columns:40px 22px 1fr 1fr 1fr;grid-template-areas:"no mk nm nm fn" "no mk od sc vl" "cm cm cm cm cm";padding:10px 4px;gap:4px 8px}
+.c-no{grid-area:no}.c-mk{grid-area:mk;font-size:18px}.c-nm{grid-area:nm}.c-fn{grid-area:fn;text-align:right}.c-od{grid-area:od}.c-sc{grid-area:sc}.c-vl{grid-area:vl;text-align:right}.c-cm{grid-area:cm}
+.c-od::before{content:"単勝";display:block;color:var(--mut);font-size:11px}.c-sc::before{content:"評価点";display:block;color:var(--mut);font-size:11px}.c-vl::before{content:"妙味";display:block;color:var(--mut);font-size:11px}}
 .col{line-height:1.85}.col .hero{width:100%;height:auto;border-radius:10px;margin:8px 0}.col h2{margin:28px 0 8px;padding-bottom:4px;border-bottom:2px solid var(--line)}.col table{margin:8px 0}
 .note{background:var(--card);border:1px dashed var(--line);border-radius:8px;padding:8px 12px;font-size:14px;color:var(--mut)}
 .draft{background:#fff4d6;color:#6b4e00;border-radius:6px;padding:6px 10px;font-size:13px;margin-top:12px}
@@ -615,6 +767,7 @@ def build() -> None:
     write("/", page(f"{SITE_NAME}｜今日の競馬AI予想（JRA・地方 全レース）と回収率", body, "/",
                     desc=f"AIが中央競馬・地方競馬の全レースを毎日予想。今日の予想と、外れも含めた全成績（累計回収率{t['roi']}）を公開。"))
     write("/results/", results_page(led, venue_of_race))
+    lastmod.update(venue_pages(by_date, led, venue_of_race))
     write("/about/", page(f"予想の方法とよくある質問 | {SITE_NAME}", ABOUT, "/about/", head_extra=jsonld(FAQ_LD),
                           desc="AI競馬ログの予想の作り方（評価の5軸・印・自信度・買い目）と、回収率の計算方法。"))
     write("/operator/", page(f"運営者情報 | {SITE_NAME}", OPERATOR, "/operator/"))
@@ -623,6 +776,20 @@ def build() -> None:
     lastmod.update(column.build(write, page, jsonld, BASE_URL, SITE_NAME, STATS_FROM, today_iso))
     for old, new in (("results.html", "/results/"), ("about.html", "/about/")):
         (OUT / old).write_text(redirect_page(new), encoding="utf-8")
+    write("/404.html", page(f"ページが見つかりません | {SITE_NAME}",
+                            "<h1>ページが見つかりません</h1><p class='answer'>URLが変わったか、削除された可能性がある。</p>"
+                            "<ul><li><a href='/'>今日の予想</a></li><li><a href='/results/'>成績</a></li><li><a href='/venue/'>競馬場別</a></li></ul>",
+                            "/404.html", noindex=True))
+    items = []
+    for d, n, roi in day_rows[:30]:
+        items.append(f"<item><title>{esc(fmt_date(d))}の競馬AI予想（{n}レース・回収率{esc(roi)}）</title>"
+                     f"<link>{BASE_URL}{day_path(d)}</link><guid>{BASE_URL}{day_path(d)}</guid>"
+                     f"<pubDate>{datetime.strptime(d, '%Y%m%d').replace(tzinfo=JST, hour=9).strftime('%a, %d %b %Y %H:%M:%S %z')}</pubDate>"
+                     f"<description>{esc(fmt_date(d))}の中央・地方全{n}レースのAI予想と結果。当日回収率{esc(roi)}。</description></item>")
+    (OUT / "feed.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel>'
+        f"<title>{SITE_NAME}</title><link>{BASE_URL}/</link><description>{SITE_SUB}</description><language>ja</language>"
+        + "".join(items) + "</channel></rss>\n", encoding="utf-8")
     (OUT / "CNAME").write_text(DOMAIN + "\n", encoding="utf-8")
     (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {BASE_URL}/sitemap.xml\n", encoding="utf-8")
     (OUT / "llms.txt").write_text(
