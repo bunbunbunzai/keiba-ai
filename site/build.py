@@ -566,7 +566,7 @@ def build() -> None:
     (OUT / "app.js").write_text(JS, encoding="utf-8")
     (OUT / ".nojekyll").write_text("", encoding="utf-8")
     if ASSETS.exists():
-        shutil.copytree(ASSETS, OUT / "assets", ignore=shutil.ignore_patterns("og-base.png", "*-src.png"))
+        shutil.copytree(ASSETS, OUT / "assets", ignore=shutil.ignore_patterns("og-base.png", "src"))
     og.site_image(OUT / "og" / "default.jpg", "全レースAI予想と回収率の記録",
                   ["中央競馬・地方競馬の全レースを毎日予想", "外れも含めた全成績を公開"])
     now = datetime.now(JST)
