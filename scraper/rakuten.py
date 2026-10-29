@@ -68,7 +68,9 @@ def _started(target: str, rid: str) -> bool:
     return now > post - timedelta(minutes=10)
 
 
-def discover(target: str, kinds: list[str], limit_races: int | None = None, after_now: bool = False) -> dict:
+def discover(target: str, kinds: list[str], limit_races: int | None = None, after_now: bool = False,
+             side=None) -> dict:
+    """side: 各ページを取る前に呼ぶ関数（同じセッションで当日の確定結果を取り込む。live.Interleaver）"""
     sess = PoliteSession(min_interval=60.0)
     log = {"date": target, "venues": [], "pages": []}
     for v in venue_lists(sess, target):
@@ -79,6 +81,11 @@ def discover(target: str, kinds: list[str], limit_races: int | None = None, afte
                 continue
             for kind in kinds:
                 url = BASE + PAGES[kind].format(rid=rid)
+                if side:
+                    try:
+                        side(sess)
+                    except Exception as e:  # noqa: BLE001
+                        print("interleave error:", e)
                 try:
                     html = sess.get(url).text
                     save_raw(f"rakuten_{kind}", target, rid, html)
@@ -95,6 +102,13 @@ if __name__ == "__main__":
     ap.add_argument("--kinds", default="card")
     ap.add_argument("--limit-races", type=int, default=None, help="各場の先頭Nレースだけ（試運転用）")
     ap.add_argument("--after-now", action="store_true", help="まだ発走していないレースだけ取る（当日昼用）")
+    ap.add_argument("--interleave-results", action="store_true", help="合間に当日の確定結果を取り込み、5分ごとに集計・push")
     a = ap.parse_args()
-    lg = discover(a.date, a.kinds.split(","), a.limit_races, a.after_now)
+    side = None
+    if a.interleave_results:
+        from live import Interleaver
+        side = Interleaver()
+    lg = discover(a.date, a.kinds.split(","), a.limit_races, a.after_now, side)
+    if side:
+        side.done()
     print(f"rakuten {a.date}: venues {len(lg['venues'])}, pages {len(lg['pages'])}")

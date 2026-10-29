@@ -184,17 +184,37 @@ def rakuten(target: str, limit_races: int | None = None, finished_only: bool = F
                 continue  # 取消・中止などで払戻が出ないレースは打ち切る
             if finished_only and not _finished(target, rid, after_min):
                 continue
-            out = {"source": "rakuten", "date": target, "race_id": rid, "tries": prev.get("tries", 0) + 1}
-            try:
-                ph = sess.get(BASE + PAGES["performance"].format(rid=rid)).text
-                save_raw("rakuten_performance", target, rid, ph)
-                out["payouts"] = parse_rakuten_payouts(ph)
-                out["rows"] = parse_rakuten_performance(ph)
-            except Exception as e:  # noqa: BLE001
-                out["error"] = str(e)
-            save_json(f"results/{target}/{rid}.json", out)
+            fetch_one(sess, target, rid, prev)
             n += 1
     return n
+
+
+def fetch_one(sess, target: str, rid: str, prev: dict | None = None) -> dict:
+    from rakuten import BASE, PAGES
+
+    prev = prev or {}
+    out = {"source": "rakuten", "date": target, "race_id": rid, "tries": prev.get("tries", 0) + 1}
+    try:
+        ph = sess.get(BASE + PAGES["performance"].format(rid=rid)).text
+        save_raw("rakuten_performance", target, rid, ph)
+        out["payouts"] = parse_rakuten_payouts(ph)
+        out["rows"] = parse_rakuten_performance(ph)
+    except Exception as e:  # noqa: BLE001
+        out["error"] = str(e)
+    save_json(f"results/{target}/{rid}.json", out)
+    return out
+
+
+def next_unconfirmed(target: str, after_min: int = 8, max_tries: int = 8):
+    """発走から after_min 分たって、まだ払戻が取れていない楽天のレースを1つ返す。"""
+    for rid in local_race_ids(target)[0]:
+        done = DATA_DIR / "results" / target / f"{rid}.json"
+        if has_payouts(done) or not _finished(target, rid, after_min):
+            continue
+        prev = json.loads(done.read_text(encoding="utf-8")) if done.exists() else {}
+        if prev.get("tries", 0) < max_tries:
+            return rid, prev
+    return None
 
 
 if __name__ == "__main__":

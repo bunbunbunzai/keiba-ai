@@ -77,18 +77,22 @@ jobs:
         id: get
         if: steps.chk.outputs.skip == '0'
         env:
+          GH_TOKEN: ${{ github.token }}
           PHASE: ${{ needs.plan.outputs.phase }}
           D: ${{ needs.plan.outputs.date }}
           SRC: ${{ matrix.source }}
         run: |
+          git config user.name "keiba-ai-bot"
+          git config user.email "keiba-ai-bot@users.noreply.github.com"
           cd scraper
+          IL=--interleave-results
           case "$PHASE-$SRC" in
             eve-jra)      python jra_cards.py --date "$D" ;;
             noon-jra)     python jra_cards.py --date "$D" --past 0 && python results.py --date "$D" --source jra; python bias.py --date "$D" --source "$SRC" ;;
             mid-jra)      python jra_cards.py --date "$D" --past 0 && python results.py --date "$D" --source jra; python bias.py --date "$D" --source "$SRC" ;;
-            eve-rakuten)  python rakuten.py --date "$D" --kinds card && python parse_rakuten.py --date "$D" ;;
-            noon-rakuten) python rakuten.py --date "$D" --kinds card --after-now && python parse_rakuten.py --date "$D" ;;
-            mid-rakuten)  python results.py --date "$D" --source rakuten --finished-only; python bias.py --date "$D" --source "$SRC"; python rakuten.py --date "$D" --kinds card --after-now && python parse_rakuten.py --date "$D" ;;
+            eve-rakuten)  python rakuten.py --date "$D" --kinds card $IL && python parse_rakuten.py --date "$D" ;;
+            noon-rakuten) python rakuten.py --date "$D" --kinds card --after-now $IL && python parse_rakuten.py --date "$D" ;;
+            mid-rakuten)  python results.py --date "$D" --source rakuten --finished-only; python bias.py --date "$D" --source "$SRC"; python rakuten.py --date "$D" --kinds card --after-now $IL && python parse_rakuten.py --date "$D" ;;
             night-*)      python results.py --date "$D" --source "$SRC"; python bias.py --date "$D" --source "$SRC" ;;
           esac
         continue-on-error: true

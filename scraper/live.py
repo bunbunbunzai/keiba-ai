@@ -64,6 +64,41 @@ def push(date: str, n: int) -> None:
     print("push failed")
 
 
+def flush(date: str, before: int) -> int:
+    after = confirmed(date)
+    print(f"{now():%H:%M} 確定 {before}→{after}")
+    if after != before:
+        sh("python", "scraper/score.py", "--date", date)
+        for src in ("jra", "rakuten"):
+            sh("python", "scraper/bias.py", "--date", date, "--source", src)
+        push(date, after)
+    return after
+
+
+class Interleaver:
+    """出馬表などを取る長い処理の合間に、同じセッション（同じ60秒間隔）で確定結果を1件ずつ取る。
+    rakuten.discover の各リクエストの前に呼ばれる。5分ごとに集計して push する。"""
+
+    def __init__(self, every: int = 300):
+        self.date = now().strftime("%Y%m%d")
+        self.base = confirmed(self.date)
+        self.last = time.monotonic()
+        self.every = every
+
+    def __call__(self, sess) -> None:
+        import results
+
+        nx = results.next_unconfirmed(self.date)
+        if nx:
+            results.fetch_one(sess, self.date, *nx)
+        if time.monotonic() - self.last >= self.every:
+            self.done()
+
+    def done(self) -> None:
+        self.base = flush(self.date, self.base)
+        self.last = time.monotonic()
+
+
 def cycle(date: str) -> None:
     import results
 
@@ -79,13 +114,7 @@ def cycle(date: str) -> None:
             results.rakuten(date, finished_only=True, local=True, after_min=8)
         except Exception as e:  # noqa: BLE001
             print("rakuten error:", e)
-    after = confirmed(date)
-    print(f"{now():%H:%M} 確定 {before}→{after}")
-    if after != before:
-        sh("python", "scraper/score.py", "--date", date)
-        for src in ("jra", "rakuten"):
-            sh("python", "scraper/bias.py", "--date", date, "--source", src)
-        push(date, after)
+    flush(date, before)
 
 
 def main() -> None:
