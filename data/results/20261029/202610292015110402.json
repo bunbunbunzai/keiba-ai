@@ -1,0 +1,227 @@
+{
+ "source": "rakuten",
+ "date": "20261029",
+ "race_id": "202610292015110402",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "14",
+    "yen": 910
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "14-4",
+    "yen": 4030
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "14",
+    "yen": 270
+   },
+   {
+    "combo": "4",
+    "yen": 130
+   },
+   {
+    "combo": "8",
+    "yen": 1200
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-14",
+    "yen": 640
+   },
+   {
+    "combo": "8-14",
+    "yen": 10380
+   },
+   {
+    "combo": "4-8",
+    "yen": 2980
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-8",
+    "yen": 560
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-8-14",
+    "yen": 22420
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "14-4-8",
+    "yen": 134720
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-14",
+    "yen": 1190
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 14,
+   "name": "マーカンエミーオ",
+   "time": "1:15.3",
+   "margin": "",
+   "pos4": 2,
+   "last3f": 38.4,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 3,
+   "number": 4,
+   "name": "ローゼンナイツ",
+   "time": "1:15.5",
+   "margin": "１ １／４",
+   "pos4": 4,
+   "last3f": 38.4,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 8,
+   "name": "ファインスカート",
+   "time": "1:15.7",
+   "margin": "１",
+   "pos4": 5,
+   "last3f": 38.5,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 7,
+   "name": "ダーカザンブラック",
+   "time": "1:15.7",
+   "margin": "ハナ",
+   "pos4": 5,
+   "last3f": 38.3,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 10,
+   "name": "シューキング",
+   "time": "1:15.9",
+   "margin": "１",
+   "pos4": 2,
+   "last3f": 39.0,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 9,
+   "name": "ゴッドモード",
+   "time": "1:16.1",
+   "margin": "３／４",
+   "pos4": 9,
+   "last3f": 38.4,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 12,
+   "name": "セイウンヤタガラス",
+   "time": "1:16.1",
+   "margin": "アタマ",
+   "pos4": 5,
+   "last3f": 38.7,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 11,
+   "name": "ツクシ",
+   "time": "1:16.2",
+   "margin": "１／２",
+   "pos4": 5,
+   "last3f": 39.1,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 4,
+   "number": 6,
+   "name": "オルチャタ",
+   "time": "1:16.6",
+   "margin": "２",
+   "pos4": 12,
+   "last3f": 38.7,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 3,
+   "number": 3,
+   "name": "レッドフローガ",
+   "time": "1:16.6",
+   "margin": "アタマ",
+   "pos4": 11,
+   "last3f": 39.0,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 8,
+   "number": 13,
+   "name": "アネラカイカマヒネ",
+   "time": "1:16.8",
+   "margin": "１",
+   "pos4": 1,
+   "last3f": 40.0,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 1,
+   "number": 1,
+   "name": "ブライトフォース",
+   "time": "1:16.9",
+   "margin": "１／２",
+   "pos4": 9,
+   "last3f": 39.4,
+   "popularity": null
+  },
+  {
+   "finish": "13",
+   "frame": 4,
+   "number": 5,
+   "name": "アイズアフロディテ",
+   "time": "1:17.8",
+   "margin": "４",
+   "pos4": 13,
+   "last3f": 39.5,
+   "popularity": null
+  },
+  {
+   "finish": "14",
+   "frame": 2,
+   "number": 2,
+   "name": "ワイズゴーゴー",
+   "time": "1:18.0",
+   "margin": "３／４",
+   "pos4": 13,
+   "last3f": 39.8,
+   "popularity": null
+  }
+ ]
+}

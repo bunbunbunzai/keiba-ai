@@ -1,0 +1,140 @@
+{
+ "source": "rakuten",
+ "date": "20261029",
+ "race_id": "202610293601150301",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "5",
+    "yen": 120
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "5-4",
+    "yen": 760
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "5",
+    "yen": 140
+   },
+   {
+    "combo": "4",
+    "yen": 780
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-5",
+    "yen": 210
+   },
+   {
+    "combo": "3-5",
+    "yen": 130
+   },
+   {
+    "combo": "3-4",
+    "yen": 420
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-4-5",
+    "yen": 590
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "5-4-3",
+    "yen": 1610
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-5",
+    "yen": 660
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 5,
+   "name": "ベストカーラ",
+   "time": "1:02.0",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 37.6,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "frame": 4,
+   "number": 4,
+   "name": "プラウドホウショウ",
+   "time": "1:02.6",
+   "margin": "３",
+   "pos4": 2,
+   "last3f": 37.8,
+   "popularity": 4
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "プリンセスジャス",
+   "time": "1:03.0",
+   "margin": "２",
+   "pos4": 6,
+   "last3f": 37.3,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 7,
+   "name": "メンコイコイ",
+   "time": "1:03.7",
+   "margin": "３",
+   "pos4": 2,
+   "last3f": 38.9,
+   "popularity": 2
+  },
+  {
+   "finish": "5",
+   "frame": 1,
+   "number": 1,
+   "name": "ラディアントレイ",
+   "time": "1:04.2",
+   "margin": "２ １／２",
+   "pos4": 5,
+   "last3f": 39.0,
+   "popularity": 5
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 6,
+   "name": "オーロラヒメアオイ",
+   "time": "1:05.9",
+   "margin": "８",
+   "pos4": 2,
+   "last3f": 41.2,
+   "popularity": 6
+  },
+  {
+   "finish": "7",
+   "frame": 2,
+   "number": 2,
+   "name": "カプリチオテソーロ",
+   "time": "1:07.9",
+   "margin": "大差",
+   "pos4": 7,
+   "last3f": 41.9,
+   "popularity": 7
+  }
+ ]
+}

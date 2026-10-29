@@ -1,0 +1,205 @@
+{
+ "source": "rakuten",
+ "date": "20261029",
+ "race_id": "202610292433150301",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "12",
+    "yen": 620
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "12-5",
+    "yen": 4570
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "12",
+    "yen": 160
+   },
+   {
+    "combo": "5",
+    "yen": 180
+   },
+   {
+    "combo": "1",
+    "yen": 110
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "5-12",
+    "yen": 470
+   },
+   {
+    "combo": "1-12",
+    "yen": 160
+   },
+   {
+    "combo": "1-5",
+    "yen": 240
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-8",
+    "yen": 1790
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-5-12",
+    "yen": 690
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "12-5-1",
+    "yen": 8670
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "5-12",
+    "yen": 1860
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 12,
+   "name": "フルーツベイビー",
+   "time": "1:36.2",
+   "margin": "",
+   "pos4": 3,
+   "last3f": 38.7,
+   "popularity": 3
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "ファインヒメ",
+   "time": "1:36.4",
+   "margin": "１",
+   "pos4": 1,
+   "last3f": 38.9,
+   "popularity": 4
+  },
+  {
+   "finish": "3",
+   "frame": 1,
+   "number": 1,
+   "name": "マーゴットデウス",
+   "time": "1:36.9",
+   "margin": "２ １／２",
+   "pos4": 2,
+   "last3f": 39.2,
+   "popularity": 1
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 9,
+   "name": "フライトマップ",
+   "time": "1:37.0",
+   "margin": "１／２",
+   "pos4": 4,
+   "last3f": 39.3,
+   "popularity": 2
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 8,
+   "name": "グレーターグレイ",
+   "time": "1:38.4",
+   "margin": "７",
+   "pos4": 7,
+   "last3f": 39.8,
+   "popularity": 9
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "シンクシビリティ",
+   "time": "1:38.5",
+   "margin": "１／２",
+   "pos4": 5,
+   "last3f": 40.2,
+   "popularity": 6
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 11,
+   "name": "ニキータ",
+   "time": "1:39.7",
+   "margin": "６",
+   "pos4": 5,
+   "last3f": 41.9,
+   "popularity": 7
+  },
+  {
+   "finish": "8",
+   "frame": 4,
+   "number": 4,
+   "name": "インサラータ",
+   "time": "1:40.0",
+   "margin": "１ １／２",
+   "pos4": 8,
+   "last3f": 41.4,
+   "popularity": 5
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 10,
+   "name": "ウォーターリッシュ",
+   "time": "1:40.7",
+   "margin": "３",
+   "pos4": 10,
+   "last3f": 41.1,
+   "popularity": 12
+  },
+  {
+   "finish": "10",
+   "frame": 6,
+   "number": 7,
+   "name": "スピネルテソーロ",
+   "time": "1:41.3",
+   "margin": "３",
+   "pos4": 9,
+   "last3f": 43.1,
+   "popularity": 11
+  },
+  {
+   "finish": "11",
+   "frame": 3,
+   "number": 3,
+   "name": "メイショウキタダケ",
+   "time": "1:41.6",
+   "margin": "１ １／２",
+   "pos4": 11,
+   "last3f": 42.2,
+   "popularity": 10
+  },
+  {
+   "finish": "12",
+   "frame": 5,
+   "number": 6,
+   "name": "ストレンジャー",
+   "time": "1:41.9",
+   "margin": "１ １／２",
+   "pos4": 12,
+   "last3f": 43.0,
+   "popularity": 8
+  }
+ ]
+}

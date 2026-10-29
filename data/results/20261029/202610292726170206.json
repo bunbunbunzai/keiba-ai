@@ -1,0 +1,205 @@
+{
+ "source": "rakuten",
+ "date": "20261029",
+ "race_id": "202610292726170206",
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "3",
+    "yen": 150
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "3-11",
+    "yen": 370
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "3",
+    "yen": 100
+   },
+   {
+    "combo": "11",
+    "yen": 100
+   },
+   {
+    "combo": "4",
+    "yen": 140
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-11",
+    "yen": 120
+   },
+   {
+    "combo": "3-4",
+    "yen": 210
+   },
+   {
+    "combo": "4-11",
+    "yen": 270
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-8",
+    "yen": 180
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-4-11",
+    "yen": 440
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "3-11-4",
+    "yen": 1190
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-11",
+    "yen": 260
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 3,
+   "number": 3,
+   "name": "イイクニパッション",
+   "time": "1:20.5",
+   "margin": "",
+   "pos4": 3,
+   "last3f": 39.0,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 11,
+   "name": "テラシエスタ",
+   "time": "1:20.8",
+   "margin": "１ ３／４",
+   "pos4": 3,
+   "last3f": 39.4,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "アイムアクイーン",
+   "time": "1:21.3",
+   "margin": "３",
+   "pos4": 5,
+   "last3f": 39.6,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 12,
+   "name": "ゼットヒーロ",
+   "time": "1:21.3",
+   "margin": "クビ",
+   "pos4": 1,
+   "last3f": 40.1,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 5,
+   "name": "ハイライフ",
+   "time": "1:21.6",
+   "margin": "１ １／２",
+   "pos4": 6,
+   "last3f": 39.4,
+   "popularity": 9
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 8,
+   "name": "アレナトーレ",
+   "time": "1:21.7",
+   "margin": "１／２",
+   "pos4": 1,
+   "last3f": 40.5,
+   "popularity": 7
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 10,
+   "name": "ナツミカンチャン",
+   "time": "1:22.4",
+   "margin": "４",
+   "pos4": 9,
+   "last3f": 40.1,
+   "popularity": 6
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "ロングセラーアスク",
+   "time": "1:22.8",
+   "margin": "２ １／２",
+   "pos4": 8,
+   "last3f": 41.0,
+   "popularity": 8
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "ヴェニスクィーン",
+   "time": "1:23.2",
+   "margin": "２ １／２",
+   "pos4": 6,
+   "last3f": 41.7,
+   "popularity": 5
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 9,
+   "name": "アウタースペース",
+   "time": "1:23.2",
+   "margin": "ハナ",
+   "pos4": 9,
+   "last3f": 40.7,
+   "popularity": 10
+  },
+  {
+   "finish": "11",
+   "frame": 5,
+   "number": 6,
+   "name": "ブルーデイジー",
+   "time": "1:23.9",
+   "margin": "４",
+   "pos4": 12,
+   "last3f": 40.8,
+   "popularity": 11
+  },
+  {
+   "finish": "12",
+   "frame": 6,
+   "number": 7,
+   "name": "ニシノミニョンヌ",
+   "time": "1:25.4",
+   "margin": "９",
+   "pos4": 11,
+   "last3f": 43.2,
+   "popularity": 12
+  }
+ ]
+}
