@@ -1,0 +1,784 @@
+{
+ "date": "20261029",
+ "races_scored": 48,
+ "stake": 32900,
+ "return": 11850,
+ "roi": 36.0,
+ "hit_races": 20,
+ "honmei_win": 7,
+ "honmei_top3": 22,
+ "races": [
+  {
+   "race_id": "202610292015110401",
+   "confidence": "C",
+   "honmei": 6,
+   "honmei_finish": "6",
+   "top3": [
+    8,
+    3,
+    2
+   ],
+   "stake": 600,
+   "return": 0,
+   "hits": [],
+   "voided": false
+  },
+  {
+   "race_id": "202610292015110402",
+   "confidence": "B",
+   "honmei": 14,
+   "honmei_finish": "1",
+   "top3": [
+    14,
+    4,
+    8
+   ],
+   "stake": 700,
+   "return": 910,
+   "hits": [
+    "単勝 14 910円"
+   ],
+   "voided": false
+  },
+  {
+   "race_id": "202610292015110403",
+   "confidence": "C",
+   "honmei": 9,
+   "honmei_finish": "2",
+   "top3": [
+    7,
+    9,
+    2
+   ],
+   "stake": 700,
+   "return": 250,
+   "hits": [
+    "馬連 7-9 250円"
+   ],
+   "voided": false
+  },
+  {
+   "race_id": "202610292015110404",
+   "confidence": "C",
+   "honmei": 7,
+   "honmei_finish": "9",
+   "top3": [
+    3,
+    11,
+    8
+   ],
+   "stake": 700,
+   "return": 1410,
+   "hits": [
+    "馬連 3-11 1410円"
+   ],
+   "voided": false
+  },
+  {
+   "race_id": "202610292015110405",
+   "confidence": "C",
+   "honmei": 9,
+   "honmei_finish": "3",
+   "top3": [
+    5,
+    8,
+    9
+   ],
+   "stake": 700,
+   "return": 140,
+   "hits": [
+    "ワイド 5-9 140円"
+   ],
+   "voided": false
+  },
+  {
+   "race_id": "202610292015110406",
+   "confidence": "C",
+   "honmei": 1,
+   "honmei_finish": "3",
+   "top3": [
+    11,
+    14,
+    1
+   ],
+   "stake": 700,
+   "return": 0,
+   "hits": [],
+   "voided": false
+  },
+  {
+   "race_id": "202610292015110407",
+   "confidence": "B",
+   "honmei": 2,
+   "honmei_finish": "6",
+   "top3": [
+    3,
+    7,
+    6
+   ],
+   "stake": 800,
+   "return": 0,
+   "hits": [],
+   "voided": false
+  },
+  {
+   "race_id": "202610292015110408",
+   "confidence": "C",
+   "honmei": 7,
+   "honmei_finish": "4",
+   "top3": [
+    9,
+    5,
+    1
+   ],
+   "stake": 600,
+   "return": 0,
+   "hits": [],
+   "voided": false
+  },
+  {
+   "race_id": "202610292015110409",
+   "confidence": "C",
+   "honmei": 3,
+   "honmei_finish": "9",
+   "top3": [
+    1,
+    9,
+    11
+   ],
+   "stake": 700,
+   "return": 0,
+   "hits": [],
+   "voided": false
+  },
+  {
+   "race_id": "202610292015110410",
+   "confidence": "C",
+   "honmei": 6,
+   "honmei_finish": "1",
+   "top3": [
+    6,
+    15,
+    11
+   ],
+   "stake": 700,
+   "return": 0,
+   "hits": [],
+   "voided": false
+  },
+  {
+   "race_id": "202610292015110411",
+   "confidence": "B",
+   "honmei": 1,
+   "honmei_finish": "3",
+   "top3": [
+    13,
+    14,
+    1
+   ],
+   "stake": 800,
+   "return": 840,
+   "hits": [
+    "馬連 13-14 290円",
+    "ワイド 1-14 210円",
+    "3連複 1-13-14 340円"
+   ],
+   "voided": false
+  },
+  {
+   "race_id": "202610292015110412",
+   "confidence": "B",
+   "honmei": 3,
+   "honmei_finish": "3",
+   "top3": [
+    8,
+    14,
+    3
+   ],
+   "stake": 700,
+   "return": 0,
+   "hits": [],
+   "voided": false
+  },
+  {
+   "race_id": "202610292433150301",
+   "confidence": "B",
+   "honmei": 1,
+   "honmei_finish": "3",
+   "top3": [
+    12,
+    5,
+    1
+   ],
+   "stake": 700,
+   "return": 0,
+   "hits": [],
+   "voided": false
+  },
+  {
+   "race_id": "202610292433150302",
+   "confidence": "C",
+   "honmei": 1,
+   "honmei_finish": "10",
+   "top3": [
+    11,
+    10,
+    8
+   ],
+   "stake": 700,
+   "return": 0,
+   "hits": [],
+   "voided": false
+  },
+  {
+   "race_id": "202610292433150303",
+   "confidence": "C",
+   "honmei": 3,
+   "honmei_finish": "4",
+   "top3": [
+    5,
+    6,
+    12
+   ],
+   "stake": 700,
+   "return": 0,
+   "hits": [],
+   "voided": false
+  },
+  {
+   "race_id": "202610292433150304",
+   "confidence": "C",
+   "honmei": 3,
+   "honmei_finish": "2",
+   "top3": [
+    11,
+    3,
+    12
+   ],
+   "stake": 800,
+   "return": 150,
+   "hits": [
+    "ワイド 3-12 150円"
+   ],
+   "voided": false
+  },
+  {
+   "race_id": "202610292433150305",
+   "confidence": "B",
+   "honmei": 10,
+   "honmei_finish": "2",
+   "top3": [
+    11,
+    10,
+    4
+   ],
+   "stake": 700,
+   "return": 350,
+   "hits": [
+    "馬連 10-11 350円"
+   ],
+   "voided": false
+  },
+  {
+   "race_id": "202610292433150306",
+   "confidence": "C",
+   "honmei": 4,
+   "honmei_finish": "1",
+   "top3": [
+    4,
+    12,
+    11
+   ],
+   "stake": 700,
+   "return": 470,
+   "hits": [
+    "馬連 4-12 300円",
+    "ワイド 4-12 170円"
+   ],
+   "voided": false
+  },
+  {
+   "race_id": "202610292433150307",
+   "confidence": "C",
+   "honmei": 3,
+   "honmei_finish": "1",
+   "top3": [
+    3,
+    10,
+    8
+   ],
+   "stake": 700,
+   "return": 280,
+   "hits": [
+    "ワイド 3-8 280円"
+   ],
+   "voided": false
+  },
+  {
+   "race_id": "202610292433150308",
+   "confidence": "C",
+   "honmei": 5,
+   "honmei_finish": "6",
+   "top3": [
+    12,
+    7,
+    6
+   ],
+   "stake": 800,
+   "return": 270,
+   "hits": [
+    "馬連 12-7 270円"
+   ],
+   "voided": false
+  },
+  {
+   "race_id": "202610292433150309",
+   "confidence": "C",
+   "honmei": 12,
+   "honmei_finish": "1",
+   "top3": [
+    12,
+    5,
+    2
+   ],
+   "stake": 700,
+   "return": 400,
+   "hits": [
+    "馬連 12-5 230円",
+    "ワイド 12-2 170円"
+   ],
+   "voided": false
+  },
+  {
+   "race_id": "202610292433150310",
+   "confidence": "B",
+   "honmei": 4,
+   "honmei_finish": "6",
+   "top3": [
+    3,
+    2,
+    5
+   ],
+   "stake": 700,
+   "return": 0,
+   "hits": [],
+   "voided": false
+  },
+  {
+   "race_id": "202610292433150311",
+   "confidence": "C",
+   "honmei": 10,
+   "honmei_finish": "7",
+   "top3": [
+    4,
+    12,
+    11
+   ],
+   "stake": 800,
+   "return": 700,
+   "hits": [
+    "馬連 12-4 700円"
+   ],
+   "voided": false
+  },
+  {
+   "race_id": "202610292433150312",
+   "confidence": "C",
+   "honmei": 11,
+   "honmei_finish": "2",
+   "top3": [
+    12,
+    11,
+    7
+   ],
+   "stake": 800,
+   "return": 1710,
+   "hits": [
+    "馬連 11-12 340円",
+    "ワイド 11-12 190円",
+    "ワイド 11-7 460円",
+    "3連複 7-11-12 720円"
+   ],
+   "voided": false
+  },
+  {
+   "race_id": "202610292726170201",
+   "confidence": "B",
+   "honmei": 2,
+   "honmei_finish": "8",
+   "top3": [
+    9,
+    11,
+    5
+   ],
+   "stake": 600,
+   "return": 0,
+   "hits": [],
+   "voided": false
+  },
+  {
+   "race_id": "202610292726170202",
+   "confidence": "C",
+   "honmei": 8,
+   "honmei_finish": "3",
+   "top3": [
+    9,
+    3,
+    8
+   ],
+   "stake": 600,
+   "return": 0,
+   "hits": [],
+   "voided": false
+  },
+  {
+   "race_id": "202610292726170203",
+   "confidence": "B",
+   "honmei": 10,
+   "honmei_finish": "1",
+   "top3": [
+    10,
+    6,
+    1
+   ],
+   "stake": 600,
+   "return": 0,
+   "hits": [],
+   "voided": false
+  },
+  {
+   "race_id": "202610292726170204",
+   "confidence": "B",
+   "honmei": 2,
+   "honmei_finish": "6",
+   "top3": [
+    5,
+    12,
+    11
+   ],
+   "stake": 600,
+   "return": 0,
+   "hits": [],
+   "voided": false
+  },
+  {
+   "race_id": "202610292726170205",
+   "confidence": "C",
+   "honmei": 7,
+   "honmei_finish": "7",
+   "top3": [
+    11,
+    5,
+    1
+   ],
+   "stake": 600,
+   "return": 0,
+   "hits": [],
+   "voided": false
+  },
+  {
+   "race_id": "202610292726170206",
+   "confidence": "C",
+   "honmei": 2,
+   "honmei_finish": "9",
+   "top3": [
+    3,
+    11,
+    4
+   ],
+   "stake": 800,
+   "return": 260,
+   "hits": [
+    "馬連 3-11 260円"
+   ],
+   "voided": false
+  },
+  {
+   "race_id": "202610292726170207",
+   "confidence": "C",
+   "honmei": 6,
+   "honmei_finish": "3",
+   "top3": [
+    9,
+    3,
+    6
+   ],
+   "stake": 900,
+   "return": 0,
+   "hits": [],
+   "voided": false
+  },
+  {
+   "race_id": "202610292726170208",
+   "confidence": "見送り",
+   "honmei": 5,
+   "honmei_finish": "4",
+   "top3": [
+    4,
+    10,
+    3
+   ],
+   "stake": 0,
+   "return": 0,
+   "hits": [],
+   "voided": false
+  },
+  {
+   "race_id": "202610292726170209",
+   "confidence": "C",
+   "honmei": 4,
+   "honmei_finish": "6",
+   "top3": [
+    9,
+    8,
+    10
+   ],
+   "stake": 900,
+   "return": 0,
+   "hits": [],
+   "voided": false
+  },
+  {
+   "race_id": "202610292726170210",
+   "confidence": "B",
+   "honmei": 2,
+   "honmei_finish": "2",
+   "top3": [
+    4,
+    2,
+    6
+   ],
+   "stake": 800,
+   "return": 430,
+   "hits": [
+    "馬連 2-4 300円",
+    "ワイド 2-6 130円"
+   ],
+   "voided": false
+  },
+  {
+   "race_id": "202610292726170211",
+   "confidence": "C",
+   "honmei": 3,
+   "honmei_finish": "4",
+   "top3": [
+    11,
+    10,
+    7
+   ],
+   "stake": 1000,
+   "return": 0,
+   "hits": [],
+   "voided": false
+  },
+  {
+   "race_id": "202610292726170212",
+   "confidence": "C",
+   "honmei": 5,
+   "honmei_finish": "3",
+   "top3": [
+    8,
+    9,
+    5
+   ],
+   "stake": 800,
+   "return": 0,
+   "hits": [],
+   "voided": false
+  },
+  {
+   "race_id": "202610293601150301",
+   "confidence": "B",
+   "honmei": 7,
+   "honmei_finish": "4",
+   "top3": [
+    5,
+    4,
+    3
+   ],
+   "stake": 600,
+   "return": 0,
+   "hits": [],
+   "voided": false
+  },
+  {
+   "race_id": "202610293601150302",
+   "confidence": "B",
+   "honmei": 10,
+   "honmei_finish": "1",
+   "top3": [
+    10,
+    6,
+    5
+   ],
+   "stake": 600,
+   "return": 330,
+   "hits": [
+    "馬連 6-10 170円",
+    "ワイド 6-10 160円"
+   ],
+   "voided": false
+  },
+  {
+   "race_id": "202610293601150303",
+   "confidence": "C",
+   "honmei": 12,
+   "honmei_finish": "3",
+   "top3": [
+    8,
+    3,
+    12
+   ],
+   "stake": 700,
+   "return": 290,
+   "hits": [
+    "ワイド 8-12 290円"
+   ],
+   "voided": false
+  },
+  {
+   "race_id": "202610293601150304",
+   "confidence": "C",
+   "honmei": 1,
+   "honmei_finish": "6",
+   "top3": [
+    7,
+    2,
+    4
+   ],
+   "stake": 600,
+   "return": 300,
+   "hits": [
+    "馬連 1-3 返還100円",
+    "馬連 3-6 返還100円",
+    "ワイド 1-3 返還100円"
+   ],
+   "voided": false
+  },
+  {
+   "race_id": "202610293601150305",
+   "confidence": "C",
+   "honmei": 9,
+   "honmei_finish": "9",
+   "top3": [
+    12,
+    10,
+    5
+   ],
+   "stake": 700,
+   "return": 0,
+   "hits": [],
+   "voided": false
+  },
+  {
+   "race_id": "202610293601150306",
+   "confidence": "C",
+   "honmei": 7,
+   "honmei_finish": "4",
+   "top3": [
+    1,
+    12,
+    3
+   ],
+   "stake": 600,
+   "return": 0,
+   "hits": [],
+   "voided": false
+  },
+  {
+   "race_id": "202610293601150307",
+   "confidence": "C",
+   "honmei": 10,
+   "honmei_finish": "4",
+   "top3": [
+    12,
+    9,
+    11
+   ],
+   "stake": 700,
+   "return": 0,
+   "hits": [],
+   "voided": false
+  },
+  {
+   "race_id": "202610293601150308",
+   "confidence": "B",
+   "honmei": 2,
+   "honmei_finish": "6",
+   "top3": [
+    8,
+    6,
+    3
+   ],
+   "stake": 600,
+   "return": 0,
+   "hits": [],
+   "voided": false
+  },
+  {
+   "race_id": "202610293601150309",
+   "confidence": "B",
+   "honmei": 5,
+   "honmei_finish": "7",
+   "top3": [
+    8,
+    10,
+    3
+   ],
+   "stake": 700,
+   "return": 230,
+   "hits": [
+    "馬連 8-10 230円"
+   ],
+   "voided": false
+  },
+  {
+   "race_id": "202610293601150310",
+   "confidence": "見送り",
+   "honmei": 11,
+   "honmei_finish": "9",
+   "top3": [
+    7,
+    9,
+    8
+   ],
+   "stake": 0,
+   "return": 0,
+   "hits": [],
+   "voided": false
+  },
+  {
+   "race_id": "202610293601150311",
+   "confidence": "C",
+   "honmei": 9,
+   "honmei_finish": "2",
+   "top3": [
+    6,
+    9,
+    8
+   ],
+   "stake": 900,
+   "return": 2130,
+   "hits": [
+    "馬連 6-9 1590円",
+    "ワイド 6-9 540円"
+   ],
+   "voided": false
+  },
+  {
+   "race_id": "202610293601150312",
+   "confidence": "C",
+   "honmei": 6,
+   "honmei_finish": "5",
+   "top3": [
+    7,
+    11,
+    9
+   ],
+   "stake": 800,
+   "return": 0,
+   "hits": [],
+   "voided": false
+  }
+ ]
+}
