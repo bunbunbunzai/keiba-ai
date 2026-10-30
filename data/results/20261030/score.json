@@ -1,0 +1,41 @@
+{
+ "date": "20261030",
+ "updated": "2026-10-30 12:25",
+ "races_total": 3,
+ "races_scored": 1,
+ "stake": 600,
+ "return": 370,
+ "roi": 61.7,
+ "hit_races": 1,
+ "honmei_win": 0,
+ "honmei_top3": 0,
+ "races": [
+  {
+   "race_id": "202610302218130301",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "202610302433150401",
+   "confidence": "B",
+   "honmei": 8,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 600,
+   "return": 370,
+   "roi": 61.7,
+   "hits": [
+    "馬連 7-8 240円",
+    "ワイド 7-8 130円"
+   ],
+   "voided": false
+  },
+  {
+   "race_id": "202610302433150402",
+   "status": "結果未取得"
+  }
+ ]
+}
