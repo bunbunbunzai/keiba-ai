@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261030",
  "race_id": "202610302433150403",
- "tries": 1,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -67,7 +67,143 @@
     "combo": "3-8",
     "yen": 370
    }
+  ],
+  "_refund": [
+   "9"
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 3,
+   "number": 3,
+   "name": "カシマスウィープ",
+   "time": "1:37.4",
+   "margin": "",
+   "pos4": 2,
+   "last3f": 39.2,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 8,
+   "name": "パキラスイート",
+   "time": "1:37.6",
+   "margin": "１",
+   "pos4": 2,
+   "last3f": 39.5,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 12,
+   "name": "セイウンピカイチ",
+   "time": "1:37.6",
+   "margin": "アタマ",
+   "pos4": 4,
+   "last3f": 39.3,
+   "popularity": 5
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 6,
+   "name": "スマートサターン",
+   "time": "1:38.0",
+   "margin": "２",
+   "pos4": 1,
+   "last3f": 40.0,
+   "popularity": 6
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 10,
+   "name": "ベルフォン",
+   "time": "1:38.0",
+   "margin": "アタマ",
+   "pos4": 7,
+   "last3f": 39.0,
+   "popularity": 4
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 5,
+   "name": "ルナフェイズ",
+   "time": "1:38.4",
+   "margin": "２",
+   "pos4": 9,
+   "last3f": 39.5,
+   "popularity": 11
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 11,
+   "name": "グラスチアー",
+   "time": "1:38.5",
+   "margin": "クビ",
+   "pos4": 10,
+   "last3f": 39.6,
+   "popularity": 10
+  },
+  {
+   "finish": "8",
+   "frame": 2,
+   "number": 2,
+   "name": "バイアンドホールド",
+   "time": "1:38.9",
+   "margin": "２",
+   "pos4": 4,
+   "last3f": 40.8,
+   "popularity": 3
+  },
+  {
+   "finish": "9",
+   "frame": 6,
+   "number": 7,
+   "name": "スマートヌーメン",
+   "time": "1:39.0",
+   "margin": "１／２",
+   "pos4": 11,
+   "last3f": 39.7,
+   "popularity": 8
+  },
+  {
+   "finish": "10",
+   "frame": 4,
+   "number": 4,
+   "name": "ビッグベッター",
+   "time": "1:39.6",
+   "margin": "３",
+   "pos4": 6,
+   "last3f": 41.7,
+   "popularity": 7
+  },
+  {
+   "finish": "11",
+   "frame": 1,
+   "number": 1,
+   "name": "ミートザターゲット",
+   "time": "1:40.0",
+   "margin": "２",
+   "pos4": 8,
+   "last3f": 41.2,
+   "popularity": 9
+  },
+  {
+   "finish": "-",
+   "frame": 7,
+   "number": 9,
+   "name": "プレミアシップ",
+   "time": "-",
+   "margin": "除外",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }

@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261030",
  "race_id": "202610302015110501",
- "tries": 1,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,160 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 5,
+   "name": "ミンナノブンモ",
+   "time": "1:44.9",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 40.6,
+   "popularity": 5
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 11,
+   "name": "ラバテラジェーン",
+   "time": "1:45.9",
+   "margin": "５",
+   "pos4": 9,
+   "last3f": 41.0,
+   "popularity": 8
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 10,
+   "name": "アフリカンビート",
+   "time": "1:45.9",
+   "margin": "クビ",
+   "pos4": 1,
+   "last3f": 41.7,
+   "popularity": 1
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 8,
+   "name": "ブッコワース",
+   "time": "1:46.0",
+   "margin": "１／２",
+   "pos4": 5,
+   "last3f": 41.5,
+   "popularity": 13
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 7,
+   "name": "ブラントンアロー",
+   "time": "1:46.2",
+   "margin": "１ １／４",
+   "pos4": 5,
+   "last3f": 41.3,
+   "popularity": 12
+  },
+  {
+   "finish": "6",
+   "frame": 3,
+   "number": 4,
+   "name": "ファインデイ",
+   "time": "1:46.3",
+   "margin": "１／２",
+   "pos4": 10,
+   "last3f": 41.0,
+   "popularity": 7
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 3,
+   "name": "パンオショコラ",
+   "time": "1:46.6",
+   "margin": "１ １／２",
+   "pos4": 4,
+   "last3f": 42.1,
+   "popularity": 9
+  },
+  {
+   "finish": "8",
+   "frame": 2,
+   "number": 2,
+   "name": "ロードオブキング",
+   "time": "1:46.8",
+   "margin": "１",
+   "pos4": 12,
+   "last3f": 41.5,
+   "popularity": 6
+  },
+  {
+   "finish": "9",
+   "frame": 4,
+   "number": 6,
+   "name": "ラブリーヨシノ",
+   "time": "1:47.0",
+   "margin": "１",
+   "pos4": 1,
+   "last3f": 42.8,
+   "popularity": 2
+  },
+  {
+   "finish": "10",
+   "frame": 6,
+   "number": 9,
+   "name": "シャークコパ",
+   "time": "1:47.1",
+   "margin": "３／４",
+   "pos4": 14,
+   "last3f": 41.8,
+   "popularity": 14
+  },
+  {
+   "finish": "11",
+   "frame": 1,
+   "number": 1,
+   "name": "マキズシトイナ",
+   "time": "1:47.1",
+   "margin": "ハナ",
+   "pos4": 10,
+   "last3f": 42.2,
+   "popularity": 11
+  },
+  {
+   "finish": "12",
+   "frame": 7,
+   "number": 12,
+   "name": "スコッチキルト",
+   "time": "1:47.2",
+   "margin": "１／２",
+   "pos4": 5,
+   "last3f": 42.7,
+   "popularity": 3
+  },
+  {
+   "finish": "13",
+   "frame": 8,
+   "number": 14,
+   "name": "コーントップス",
+   "time": "1:47.3",
+   "margin": "１／２",
+   "pos4": 12,
+   "last3f": 42.4,
+   "popularity": 10
+  },
+  {
+   "finish": "14",
+   "frame": 8,
+   "number": 13,
+   "name": "リュウグウノユメ",
+   "time": "1:48.2",
+   "margin": "４",
+   "pos4": 5,
+   "last3f": 43.6,
+   "popularity": 4
+  }
+ ]
 }

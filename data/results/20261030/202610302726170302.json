@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261030",
  "race_id": "202610302726170302",
- "tries": 1,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -63,5 +63,94 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 7,
+   "name": "ヴェリタレガーメ",
+   "time": "1:35.6",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 40.6,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "ウメスイショウ",
+   "time": "1:36.4",
+   "margin": "５",
+   "pos4": 1,
+   "last3f": 41.7,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "マルカハルト",
+   "time": "1:36.4",
+   "margin": "クビ",
+   "pos4": 3,
+   "last3f": 41.5,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 8,
+   "name": "ジャンクテレボウイ",
+   "time": "1:36.7",
+   "margin": "１ １／２",
+   "pos4": 5,
+   "last3f": 40.8,
+   "popularity": 8
+  },
+  {
+   "finish": "5",
+   "frame": 3,
+   "number": 3,
+   "name": "オトワオー",
+   "time": "1:36.7",
+   "margin": "アタマ",
+   "pos4": 3,
+   "last3f": 42.0,
+   "popularity": 6
+  },
+  {
+   "finish": "6",
+   "frame": 1,
+   "number": 1,
+   "name": "マソラ",
+   "time": "1:38.3",
+   "margin": "１０",
+   "pos4": 6,
+   "last3f": 43.2,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "frame": 2,
+   "number": 2,
+   "name": "キセキノイチマイ",
+   "time": "1:38.5",
+   "margin": "３／４",
+   "pos4": 6,
+   "last3f": 43.3,
+   "popularity": 4
+  },
+  {
+   "finish": "8",
+   "frame": 6,
+   "number": 6,
+   "name": "アウローラボルト",
+   "time": "1:38.6",
+   "margin": "１／２",
+   "pos4": 8,
+   "last3f": 41.3,
+   "popularity": 7
+  }
+ ]
 }

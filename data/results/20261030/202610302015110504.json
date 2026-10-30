@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261030",
  "race_id": "202610302015110504",
- "tries": 1,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "アクチュエル",
    "time": "1:13.5",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 37.8,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ラインホープ",
    "time": "1:13.6",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 38.1,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ラマントヴァーナ",
    "time": "1:14.1",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 38.2,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "アイローサ",
    "time": "1:14.1",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 38.5,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "シャンハイヨシノ",
    "time": "1:14.2",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 37.9,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "オレンジルシファー",
    "time": "1:14.4",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 36.8,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "ダイワカレンシチー",
    "time": "1:15.1",
    "margin": "３ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 37.6,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ロヴァニエミ",
    "time": "1:15.6",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 37.6,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "ムサシペニー",
    "time": "1:19.8",
    "margin": "大差",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 44.2,
    "popularity": null
   }
  ]

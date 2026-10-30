@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261030",
  "race_id": "202610302726170303",
- "tries": 1,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,105 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 9,
+   "name": "イトシノファーザ",
+   "time": "1:33.9",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.7,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 6,
+   "name": "アルバトロン",
+   "time": "1:35.2",
+   "margin": "８",
+   "pos4": 1,
+   "last3f": 41.4,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 5,
+   "name": "ヤクモフローラ",
+   "time": "1:35.3",
+   "margin": "１／２",
+   "pos4": 8,
+   "last3f": 41.1,
+   "popularity": 4
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 7,
+   "name": "ゴールドブレゲ",
+   "time": "1:35.6",
+   "margin": "２",
+   "pos4": 7,
+   "last3f": 41.5,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "frame": 3,
+   "number": 3,
+   "name": "ディーノエンジュ",
+   "time": "1:35.9",
+   "margin": "１ １／２",
+   "pos4": 5,
+   "last3f": 41.9,
+   "popularity": 2
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "ダランダダーン",
+   "time": "1:36.0",
+   "margin": "１／２",
+   "pos4": 3,
+   "last3f": 42.0,
+   "popularity": 8
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 8,
+   "name": "カツヨウザン",
+   "time": "1:36.4",
+   "margin": "２ １／２",
+   "pos4": 5,
+   "last3f": 42.5,
+   "popularity": 6
+  },
+  {
+   "finish": "8",
+   "frame": 4,
+   "number": 4,
+   "name": "ガミラスサイパン",
+   "time": "1:37.3",
+   "margin": "５",
+   "pos4": 3,
+   "last3f": 43.6,
+   "popularity": 9
+  },
+  {
+   "finish": "9",
+   "frame": 1,
+   "number": 1,
+   "name": "クラインアベニュー",
+   "time": "1:39.0",
+   "margin": "大差",
+   "pos4": 9,
+   "last3f": 44.1,
+   "popularity": 7
+  }
+ ]
 }

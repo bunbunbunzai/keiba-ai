@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261030",
  "race_id": "202610302218130303",
- "tries": 1,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,116 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 8,
+   "name": "クィーンコッチャン",
+   "time": "1:32.1",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.7,
+   "popularity": 3
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 9,
+   "name": "バーストオブカラー",
+   "time": "1:32.1",
+   "margin": "ハナ",
+   "pos4": 2,
+   "last3f": 39.2,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "frame": 2,
+   "number": 2,
+   "name": "マイネルエトルタ",
+   "time": "1:33.0",
+   "margin": "４",
+   "pos4": 4,
+   "last3f": 39.6,
+   "popularity": 4
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 3,
+   "name": "アマソナ",
+   "time": "1:33.4",
+   "margin": "２",
+   "pos4": 4,
+   "last3f": 40.2,
+   "popularity": 9
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 5,
+   "name": "バーニングフレーム",
+   "time": "1:33.6",
+   "margin": "３／４",
+   "pos4": 9,
+   "last3f": 39.1,
+   "popularity": 8
+  },
+  {
+   "finish": "6",
+   "frame": 4,
+   "number": 4,
+   "name": "フェスティヴイリス",
+   "time": "1:33.8",
+   "margin": "１ １／２",
+   "pos4": 7,
+   "last3f": 40.2,
+   "popularity": 10
+  },
+  {
+   "finish": "7",
+   "frame": 1,
+   "number": 1,
+   "name": "ウインラブソング",
+   "time": "1:33.8",
+   "margin": "クビ",
+   "pos4": 3,
+   "last3f": 41.2,
+   "popularity": 1
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 10,
+   "name": "リュウノアーチスト",
+   "time": "1:34.3",
+   "margin": "２ １／２",
+   "pos4": 7,
+   "last3f": 40.8,
+   "popularity": 5
+  },
+  {
+   "finish": "9",
+   "frame": 6,
+   "number": 6,
+   "name": "ダイバーシティ",
+   "time": "1:34.4",
+   "margin": "３／４",
+   "pos4": 9,
+   "last3f": 40.3,
+   "popularity": 6
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 7,
+   "name": "アベニンマリア",
+   "time": "1:34.6",
+   "margin": "１",
+   "pos4": 4,
+   "last3f": 42.0,
+   "popularity": 7
+  }
+ ]
 }

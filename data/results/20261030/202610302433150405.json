@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261030",
  "race_id": "202610302433150405",
- "tries": 1,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 11,
+   "name": "アンファール",
+   "time": "1:30.1",
+   "margin": "",
+   "pos4": 2,
+   "last3f": 38.7,
+   "popularity": 3
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 6,
+   "name": "ガヴァルニー",
+   "time": "1:30.1",
+   "margin": "クビ",
+   "pos4": 1,
+   "last3f": 39.1,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 9,
+   "name": "アジュアカレンツ",
+   "time": "1:30.7",
+   "margin": "３",
+   "pos4": 3,
+   "last3f": 39.7,
+   "popularity": 1
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 10,
+   "name": "アショカ",
+   "time": "1:30.9",
+   "margin": "１ １／２",
+   "pos4": 5,
+   "last3f": 39.2,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "frame": 3,
+   "number": 3,
+   "name": "モンサンフリージア",
+   "time": "1:31.2",
+   "margin": "１ １／２",
+   "pos4": 8,
+   "last3f": 39.0,
+   "popularity": 10
+  },
+  {
+   "finish": "6",
+   "frame": 4,
+   "number": 4,
+   "name": "アブソリュート",
+   "time": "1:31.4",
+   "margin": "１",
+   "pos4": 5,
+   "last3f": 39.8,
+   "popularity": 4
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 5,
+   "name": "シャインモノリス",
+   "time": "1:31.5",
+   "margin": "クビ",
+   "pos4": 4,
+   "last3f": 40.0,
+   "popularity": 9
+  },
+  {
+   "finish": "8",
+   "frame": 2,
+   "number": 2,
+   "name": "ポケッティーノ",
+   "time": "1:32.0",
+   "margin": "２ １／２",
+   "pos4": 10,
+   "last3f": 39.3,
+   "popularity": 6
+  },
+  {
+   "finish": "9",
+   "frame": 1,
+   "number": 1,
+   "name": "コスモコロネット",
+   "time": "1:32.2",
+   "margin": "１",
+   "pos4": 9,
+   "last3f": 40.0,
+   "popularity": 11
+  },
+  {
+   "finish": "10",
+   "frame": 8,
+   "number": 12,
+   "name": "カムイパパイヤ",
+   "time": "1:32.4",
+   "margin": "１",
+   "pos4": 10,
+   "last3f": 40.3,
+   "popularity": 11
+  },
+  {
+   "finish": "11",
+   "frame": 6,
+   "number": 7,
+   "name": "テルケンレンジョイ",
+   "time": "1:32.9",
+   "margin": "２ １／２",
+   "pos4": 12,
+   "last3f": 39.1,
+   "popularity": 8
+  },
+  {
+   "finish": "12",
+   "frame": 6,
+   "number": 8,
+   "name": "スイートゥンビター",
+   "time": "1:33.0",
+   "margin": "クビ",
+   "pos4": 7,
+   "last3f": 41.2,
+   "popularity": 7
+  }
+ ]
 }
