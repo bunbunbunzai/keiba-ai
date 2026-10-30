@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261030",
  "race_id": "202610302015110509",
- "tries": 1,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "イフウドウドウ",
    "time": "1:42.3",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 39.6,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ウータンビート",
    "time": "1:42.3",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 40.5,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "アドマイヤエアル",
    "time": "1:42.5",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 40.3,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "ヴァルチャースター",
    "time": "1:42.8",
    "margin": "１ ３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 40.9,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "リケアミネオラ",
    "time": "1:42.9",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 39.5,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "エターナルヴァウ",
    "time": "1:43.2",
    "margin": "１ ３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 40.0,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "ナイトウォーリア",
    "time": "1:43.3",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 40.8,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ユーヒナタ",
    "time": "1:43.3",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 40.1,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "マイネルイージス",
    "time": "1:43.6",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 40.5,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "ウエストリーダー",
    "time": "1:43.6",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 14,
+   "last3f": 39.8,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "クアッズ",
    "time": "1:43.9",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 41.6,
    "popularity": null
   },
   {
@@ -198,8 +198,8 @@
    "name": "ユウユウスターリー",
    "time": "1:44.1",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 41.4,
    "popularity": null
   },
   {
@@ -209,8 +209,8 @@
    "name": "サンピアノソナタ",
    "time": "1:45.4",
    "margin": "６",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 43.1,
    "popularity": null
   },
   {
@@ -220,8 +220,8 @@
    "name": "ネフェルトゥム",
    "time": "1:45.8",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 43.9,
    "popularity": null
   }
  ]
