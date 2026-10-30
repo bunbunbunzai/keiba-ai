@@ -28,6 +28,15 @@ def has_payouts(f) -> bool:
     return not d.get("error") and any(not k.startswith("_") for k in (d.get("payouts") or {}))
 
 
+def has_full_result(f) -> bool:
+    """払戻に加えて着順（と4角位置）まで取れているか。楽天は確定直後だと払戻だけ出て
+    全着順が「ページに反映されるまでしばらくお待ちください」のことがあるので、その場合は取り直す。"""
+    if not has_payouts(f):
+        return False
+    rows = json.loads(f.read_text(encoding="utf-8")).get("rows") or []
+    return bool(rows) and any(r.get("pos4") is not None for r in rows)
+
+
 def drop_cache(url: str) -> None:
     from jra_cards import CNAME_RE
     cm = CNAME_RE.search(url)
@@ -178,8 +187,8 @@ def rakuten(target: str, limit_races: int | None = None, finished_only: bool = F
         for rid in ids[:limit_races]:
             done = DATA_DIR / "results" / target / f"{rid}.json"
             prev = json.loads(done.read_text(encoding="utf-8")) if done.exists() else {}
-            if has_payouts(done):
-                continue  # 確定済みはとばす（払戻が出ていなければ取り直す）
+            if has_full_result(done):
+                continue  # 確定済みはとばす（払戻か着順が出ていなければ取り直す）
             if prev.get("tries", 0) >= max_tries:
                 continue  # 取消・中止などで払戻が出ないレースは打ち切る
             if finished_only and not _finished(target, rid, after_min):
@@ -209,7 +218,7 @@ def next_unconfirmed(target: str, after_min: int = 8, max_tries: int = 8):
     """発走から after_min 分たって、まだ払戻が取れていない楽天のレースを1つ返す。"""
     for rid in local_race_ids(target)[0]:
         done = DATA_DIR / "results" / target / f"{rid}.json"
-        if has_payouts(done) or not _finished(target, rid, after_min):
+        if has_full_result(done) or not _finished(target, rid, after_min):
             continue
         prev = json.loads(done.read_text(encoding="utf-8")) if done.exists() else {}
         if prev.get("tries", 0) < max_tries:
