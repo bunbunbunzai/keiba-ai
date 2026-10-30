@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261030",
  "race_id": "202610302726170309",
- "tries": 1,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,105 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 9,
+   "name": "ヴァンセゾニエ",
+   "time": "50.0",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 36.1,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 8,
+   "name": "アッケシ",
+   "time": "50.2",
+   "margin": "１ １／４",
+   "pos4": 4,
+   "last3f": 35.7,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 7,
+   "name": "チーフインザスカイ",
+   "time": "50.6",
+   "margin": "２ １／２",
+   "pos4": 4,
+   "last3f": 36.1,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 5,
+   "name": "セレリタス",
+   "time": "50.7",
+   "margin": "３／４",
+   "pos4": 2,
+   "last3f": 36.7,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 3,
+   "number": 3,
+   "name": "ミストルティン",
+   "time": "50.9",
+   "margin": "１ １／４",
+   "pos4": 4,
+   "last3f": 36.5,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "ヴェレノージ",
+   "time": "51.2",
+   "margin": "１ ３／４",
+   "pos4": 8,
+   "last3f": 36.3,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 4,
+   "name": "メイショウマサツラ",
+   "time": "51.7",
+   "margin": "３",
+   "pos4": 4,
+   "last3f": 37.2,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "バクレツマホウ",
+   "time": "51.7",
+   "margin": "アタマ",
+   "pos4": 3,
+   "last3f": 37.6,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 6,
+   "number": 6,
+   "name": "ハーティパーティ",
+   "time": "53.0",
+   "margin": "８",
+   "pos4": 9,
+   "last3f": 37.5,
+   "popularity": null
+  }
+ ]
 }

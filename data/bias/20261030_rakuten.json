@@ -1,6 +1,6 @@
 {
  "date": "20261030",
- "updated": "2026-10-30 18:54",
+ "updated": "2026-10-30 19:07",
  "bias": {
   "大井ダ": {
    "judgement": "先行有利・外",
@@ -13,7 +13,8 @@
     5,
     6,
     7,
-    8
+    8,
+    9
    ],
    "front_share": 0.81,
    "inner_share": 0.19,
@@ -58,10 +59,10 @@
     11,
     12
    ],
-   "front_share": 0.91,
-   "inner_share": 0.41,
-   "outer_share": 0.27,
-   "horses": 22
+   "front_share": 0.88,
+   "inner_share": 0.42,
+   "outer_share": 0.29,
+   "horses": 24
   },
   "園田ダ": {
    "judgement": "先行有利",
@@ -74,12 +75,13 @@
     5,
     6,
     7,
-    8
+    8,
+    9
    ],
    "front_share": 1.0,
-   "inner_share": 0.31,
-   "outer_share": 0.44,
-   "horses": 16
+   "inner_share": 0.28,
+   "outer_share": 0.5,
+   "horses": 18
   }
  }
 }

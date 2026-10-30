@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261030",
  "race_id": "202610302433150412",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -77,9 +77,9 @@
    "name": "キャンディタフト",
    "time": "1:35.7",
    "margin": "",
-   "pos4": null,
+   "pos4": 3,
    "last3f": 38.5,
-   "popularity": null
+   "popularity": 6
   },
   {
    "finish": "2",
@@ -88,9 +88,9 @@
    "name": "フークベルエ",
    "time": "1:36.4",
    "margin": "３",
-   "pos4": null,
+   "pos4": 9,
    "last3f": 38.4,
-   "popularity": null
+   "popularity": 2
   },
   {
    "finish": "3",
@@ -99,9 +99,9 @@
    "name": "セレスト",
    "time": "1:36.6",
    "margin": "１",
-   "pos4": null,
+   "pos4": 5,
    "last3f": 39.5,
-   "popularity": null
+   "popularity": 7
   },
   {
    "finish": "4",
@@ -110,9 +110,9 @@
    "name": "ヤモリアツマレ",
    "time": "1:36.6",
    "margin": "ハナ",
-   "pos4": null,
+   "pos4": 6,
    "last3f": 38.7,
-   "popularity": null
+   "popularity": 5
   },
   {
    "finish": "5",
@@ -121,9 +121,9 @@
    "name": "バウアピアーズ",
    "time": "1:36.8",
    "margin": "１",
-   "pos4": null,
+   "pos4": 2,
    "last3f": 39.5,
-   "popularity": null
+   "popularity": 4
   },
   {
    "finish": "6",
@@ -132,9 +132,9 @@
    "name": "ヴィクトリアランド",
    "time": "1:36.9",
    "margin": "３／４",
-   "pos4": null,
+   "pos4": 10,
    "last3f": 38.9,
-   "popularity": null
+   "popularity": 12
   },
   {
    "finish": "7",
@@ -143,9 +143,9 @@
    "name": "フーダオラ",
    "time": "1:37.1",
    "margin": "１",
-   "pos4": null,
+   "pos4": 1,
    "last3f": 40.2,
-   "popularity": null
+   "popularity": 1
   },
   {
    "finish": "8",
@@ -154,9 +154,9 @@
    "name": "チャコワールド",
    "time": "1:37.2",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 8,
    "last3f": 39.3,
-   "popularity": null
+   "popularity": 10
   },
   {
    "finish": "9",
@@ -165,9 +165,9 @@
    "name": "グランキューブ",
    "time": "1:37.4",
    "margin": "１",
-   "pos4": null,
+   "pos4": 4,
    "last3f": 40.5,
-   "popularity": null
+   "popularity": 8
   },
   {
    "finish": "10",
@@ -176,9 +176,9 @@
    "name": "ゴーゴーゴウト",
    "time": "1:37.5",
    "margin": "１／２",
-   "pos4": null,
+   "pos4": 7,
    "last3f": 40.6,
-   "popularity": null
+   "popularity": 3
   },
   {
    "finish": "11",
@@ -187,9 +187,9 @@
    "name": "ミヤビエクセレント",
    "time": "1:37.8",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 11,
    "last3f": 40.4,
-   "popularity": null
+   "popularity": 9
   },
   {
    "finish": "12",
@@ -198,9 +198,9 @@
    "name": "マルクパージュ",
    "time": "1:37.9",
    "margin": "１／２",
-   "pos4": null,
+   "pos4": 12,
    "last3f": 40.6,
-   "popularity": null
+   "popularity": 11
   }
  ]
 }
