@@ -5,7 +5,13 @@ on:
   # GitHub の schedule は混雑時に数時間遅れたり、落ちたりする（毎時0分・30分は特に混む）。
   # そのため分をずらし、各フェーズに予備の時刻を1つずつ置く。
   # 予備は「本番が成功済み（data/runs/<日付>/<phase>-<source>.done がある）」なら何もしない。
-  # GitHubの定時実行は遅延・欠落が多いため使わない。Claudeの定期タスクが workflow_dispatch で起動する
+  # 本番は Claude の定期タスクが workflow_dispatch で起動する。
+  # 下の schedule は予備：Claude側の起動が失敗した日（使用量上限など）だけ動く。本番が成功済みなら何もしない。
+  schedule:
+    - cron: "47 1 * * *"   # 10:47 昼（noon）の予備
+    - cron: "7 7 * * *"    # 16:07 午後（mid）の予備
+    - cron: "41 9 * * *"   # 18:41 夕方（eve）の予備
+    - cron: "17 13 * * *"  # 22:17 夜（night）の予備
   workflow_dispatch:
     inputs:
       phase:
@@ -37,6 +43,7 @@ jobs:
             case "${{ github.event.schedule }}" in
               "7 8 * * *"|"41 9 * * *") PHASE=eve ;;
               "13 1 * * *"|"47 1 * * *") PHASE=noon ;;
+              "7 7 * * *") PHASE=mid ;;
               *) PHASE=night ;;
             esac
           fi
@@ -68,7 +75,8 @@ jobs:
           SRC: ${{ matrix.source }}
         run: |
           M="data/runs/$D/$PHASE-$SRC.done"
-          if [ "${{ github.event_name }}" = schedule ] && [ -f "$M" ]; then
+          git fetch -q origin main
+          if [ "${{ github.event_name }}" = schedule ] && git cat-file -e "origin/main:$M" 2>/dev/null; then
             echo "already done: $M"; echo "skip=1" >> "$GITHUB_OUTPUT"
           else
             echo "skip=0" >> "$GITHUB_OUTPUT"
@@ -146,4 +154,9 @@ jobs:
     steps:
       - env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run live.yml -R "${{ github.repository }}" -f date=${{ needs.plan.outputs.date }} -f until=21:25
+        run: |
+          # 予備の回で、すでにライブ集計が動いていれば起動し直さない（動いている分を止めないため）
+          if [ "${{ github.event_name }}" = schedule ] && [ -n "$(gh run list -R "${{ github.repository }}" --workflow live.yml --status in_progress --json databaseId -q '.[].databaseId')" ]; then
+            echo "live already running"; exit 0
+          fi
+          gh workflow run live.yml -R "${{ github.repository }}" -f date=${{ needs.plan.outputs.date }} -f until=21:25
