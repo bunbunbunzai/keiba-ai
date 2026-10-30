@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261030",
  "race_id": "202610302726170312",
- "tries": 1,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 10,
+   "name": "アラムベイ",
+   "time": "1:19.1",
+   "margin": "",
+   "pos4": 2,
+   "last3f": 38.3,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 3,
+   "number": 3,
+   "name": "ノックシュライン",
+   "time": "1:19.6",
+   "margin": "３",
+   "pos4": 1,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 1,
+   "number": 1,
+   "name": "サンライズロイ",
+   "time": "1:19.7",
+   "margin": "１／２",
+   "pos4": 6,
+   "last3f": 38.8,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 9,
+   "name": "アップップ",
+   "time": "1:19.8",
+   "margin": "クビ",
+   "pos4": 2,
+   "last3f": 39.1,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 5,
+   "name": "アドミ",
+   "time": "1:20.0",
+   "margin": "１ １／２",
+   "pos4": 7,
+   "last3f": 38.9,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 11,
+   "name": "イスラアズール",
+   "time": "1:20.1",
+   "margin": "クビ",
+   "pos4": 2,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 12,
+   "name": "フルリール",
+   "time": "1:20.8",
+   "margin": "４",
+   "pos4": 9,
+   "last3f": 39.3,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 5,
+   "number": 6,
+   "name": "シークレットロゴ",
+   "time": "1:21.3",
+   "margin": "３",
+   "pos4": 8,
+   "last3f": 40.1,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "モノノフイエロー",
+   "time": "1:21.7",
+   "margin": "２ １／２",
+   "pos4": 10,
+   "last3f": 40.5,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 4,
+   "number": 4,
+   "name": "ジョコーソ",
+   "time": "1:21.7",
+   "margin": "クビ",
+   "pos4": 12,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 6,
+   "number": 8,
+   "name": "ヘイスト",
+   "time": "1:22.2",
+   "margin": "３",
+   "pos4": 2,
+   "last3f": 42.7,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 6,
+   "number": 7,
+   "name": "グリッタードール",
+   "time": "1:22.6",
+   "margin": "２ １／２",
+   "pos4": 11,
+   "last3f": 41.3,
+   "popularity": null
+  }
+ ]
 }
