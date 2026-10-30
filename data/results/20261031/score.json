@@ -1,0 +1,62 @@
+{
+ "date": "20261031",
+ "updated": "2026-10-31 04:20",
+ "races_total": 12,
+ "races_scored": 0,
+ "stake": 0,
+ "return": 0,
+ "roi": null,
+ "hit_races": 0,
+ "honmei_win": 0,
+ "honmei_top3": 0,
+ "races": [
+  {
+   "race_id": "jra_20261031_京都_01",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261031_京都_02",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261031_京都_03",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261031_京都_04",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261031_京都_05",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261031_京都_06",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261031_東京_01",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261031_東京_02",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261031_東京_03",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261031_東京_04",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261031_東京_05",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261031_東京_06",
+   "status": "結果未取得"
+  }
+ ]
+}
