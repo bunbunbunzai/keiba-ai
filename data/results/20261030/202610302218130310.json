@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261030",
  "race_id": "202610302218130310",
- "tries": 5,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "ハートロック",
    "time": "1:38.1",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 39.9,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ノブトモ",
    "time": "1:38.2",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 39.4,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "フェイマスグラース",
    "time": "1:38.5",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 39.9,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "ミヅルーラー",
    "time": "1:38.5",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 40.1,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "メイショウゴルシ",
    "time": "1:38.9",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 40.4,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ドンタカーミ",
    "time": "1:39.1",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 40.0,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "スリーオウギ",
    "time": "1:39.6",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 39.4,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "クマサンアリガトウ",
    "time": "1:40.5",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 42.4,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "フルゴリラ",
    "time": "1:41.1",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 42.0,
    "popularity": null
   }
  ]
