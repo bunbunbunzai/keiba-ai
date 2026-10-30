@@ -1,0 +1,173 @@
+{
+ "source": "rakuten",
+ "date": "20261030",
+ "race_id": "202610302726170307",
+ "tries": 1,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "6",
+    "yen": 220
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "6-3",
+    "yen": 490
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "6",
+    "yen": 100
+   },
+   {
+    "combo": "3",
+    "yen": 100
+   },
+   {
+    "combo": "4",
+    "yen": 100
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-6",
+    "yen": 130
+   },
+   {
+    "combo": "4-6",
+    "yen": 140
+   },
+   {
+    "combo": "3-4",
+    "yen": 140
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-6",
+    "yen": 250
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-4-6",
+    "yen": 190
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "6-3-4",
+    "yen": 830
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-6",
+    "yen": 230
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 6,
+   "name": "ミスジェイド",
+   "time": "1:30.8",
+   "margin": "",
+   "pos4": 3,
+   "last3f": 39.0,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 3,
+   "number": 3,
+   "name": "ジュディーイメル",
+   "time": "1:31.0",
+   "margin": "１",
+   "pos4": 1,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "ルビーブロンド",
+   "time": "1:31.7",
+   "margin": "４",
+   "pos4": 2,
+   "last3f": 40.0,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 5,
+   "name": "ハイレジリエンス",
+   "time": "1:32.6",
+   "margin": "５",
+   "pos4": 6,
+   "last3f": 40.7,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 7,
+   "name": "ニットウライズ",
+   "time": "1:33.0",
+   "margin": "２ １／２",
+   "pos4": 5,
+   "last3f": 41.0,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 8,
+   "name": "プリュスエクラ",
+   "time": "1:33.4",
+   "margin": "２ １／２",
+   "pos4": 4,
+   "last3f": 42.0,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 2,
+   "number": 2,
+   "name": "エルヴィオラ",
+   "time": "1:33.9",
+   "margin": "３",
+   "pos4": 6,
+   "last3f": 42.1,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "マイエラ",
+   "time": "1:37.0",
+   "margin": "大差",
+   "pos4": 8,
+   "last3f": 45.3,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 8,
+   "number": 9,
+   "name": "エイシンビギー",
+   "time": "-",
+   "margin": "中止",
+   "pos4": 9,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
+}
