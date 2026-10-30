@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261030",
  "race_id": "202610302218130311",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -67,8 +67,8 @@
    "name": "ダイヤモンドビーチ",
    "time": "1:29.9",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 37.9,
    "popularity": null
   },
   {
@@ -78,8 +78,8 @@
    "name": "ハングローズ",
    "time": "1:30.0",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 38.1,
    "popularity": null
   },
   {
@@ -89,8 +89,8 @@
    "name": "トウショウクラウド",
    "time": "1:30.5",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 37.8,
    "popularity": null
   },
   {
@@ -100,8 +100,8 @@
    "name": "ベストタンゴ",
    "time": "1:31.1",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 38.0,
    "popularity": null
   },
   {
@@ -111,8 +111,8 @@
    "name": "セッカチケーン",
    "time": "1:31.3",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 39.5,
    "popularity": null
   },
   {
@@ -122,8 +122,8 @@
    "name": "プライムライン",
    "time": "1:31.7",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 39.9,
    "popularity": null
   }
  ]
