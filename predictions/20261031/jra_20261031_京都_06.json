@@ -1,0 +1,32 @@
+{
+  "race_id": "jra_20261031_京都_06",
+  "results_key": "jra_08_06",
+  "venue": "京都",
+  "race_no": 6,
+  "race_name": "メイクデビュー京都",
+  "phase": "前日夜",
+  "summary": "新馬戦で全16頭に近走データがないため見送りとする。参考の◎は父Life Is Goodで武豊騎手が騎乗する10スターシーカーだ。",
+  "confidence": "見送り",
+  "marks": {"◎": 10, "〇": 8, "▲": 3, "△": [1, 12]},
+  "pace": "全頭が初出走で、通過順から脚質は読めない。16頭立てのダ1400mで、序盤の位置取り争いが激しくなる可能性がある。",
+  "bets": [],
+  "horses": [
+    {"number": 1, "name": "レッドガレオン", "score": 27, "win_pct": 8, "comment": "近走データなし。父ルヴァンスレーヴでダート向きの血統だ。"},
+    {"number": 2, "name": "モアザンヴォルト", "score": 27, "win_pct": 0, "comment": "近走データなし。評価は平均点とした。"},
+    {"number": 3, "name": "クローネンリーベ", "score": 28, "win_pct": 11, "comment": "近走データなし。父マインドユアビスケッツでC.デムーロ騎手が騎乗する。"},
+    {"number": 4, "name": "サマーレディ", "score": 27, "win_pct": 0, "comment": "近走データなし。評価は平均点とした。"},
+    {"number": 5, "name": "キングゴールド", "score": 27, "win_pct": 0, "comment": "近走データなし。評価は平均点とした。"},
+    {"number": 6, "name": "クリコリンダ", "score": 27, "win_pct": 0, "comment": "近走データなし。評価は平均点とした。"},
+    {"number": 7, "name": "ドリームハロウ", "score": 27, "win_pct": 0, "comment": "近走データなし。減量騎手で55kgで出走する。"},
+    {"number": 8, "name": "ジーティーイレブン", "score": 28, "win_pct": 12, "comment": "近走データなし。父Life Is Good、矢作厩舎で浜中騎手が騎乗する。"},
+    {"number": 9, "name": "トップエンドパワー", "score": 27, "win_pct": 6, "comment": "近走データなし。父Nashville、母父War Frontの米国血統だ。"},
+    {"number": 10, "name": "スターシーカー", "score": 28, "win_pct": 13, "comment": "近走データなし。父Life Is Goodで武豊騎手が騎乗し、人的面の評価は上位だ。"},
+    {"number": 11, "name": "ナムラウルフ", "score": 27, "win_pct": 0, "comment": "近走データなし。父クリソベリルでダート向きの血統だ。"},
+    {"number": 12, "name": "ホーフアイゼン", "score": 27, "win_pct": 7, "comment": "近走データなし。父American Pharoahでダート向きの血統だ。"},
+    {"number": 13, "name": "ルシエルノーブル", "score": 27, "win_pct": 0, "comment": "近走データなし。減量騎手で54kgで出走する。"},
+    {"number": 14, "name": "サイモンレコルト", "score": 27, "win_pct": 0, "comment": "近走データなし。評価は平均点とした。"},
+    {"number": 15, "name": "マスターピース", "score": 27, "win_pct": 0, "comment": "近走データなし。評価は平均点とした。"},
+    {"number": 16, "name": "ビップカレッジ", "score": 27, "win_pct": 0, "comment": "近走データなし。評価は平均点とした。"}
+  ],
+  "updates": [{"at": "10/30 21:00", "text": "前日予想"}]
+}

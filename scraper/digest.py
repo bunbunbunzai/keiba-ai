@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from pathlib import Path
 
 from common import DATA_DIR
@@ -31,7 +32,9 @@ def predicted(date: str) -> set[str]:
 
 
 def past_line(p: dict) -> str:
-    d = (p.get("date") or "")[-5:].replace("年", "/").replace("月", "/").replace("日", "")
+    raw = p.get("date") or ""
+    m = re.search(r"(\d{1,2})\D(\d{1,2})\D?$", raw)
+    d = f"{int(m.group(1))}/{int(m.group(2))}" if m else raw[-5:]
     parts = [
         d,
         p.get("venue") or "",
