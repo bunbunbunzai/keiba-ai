@@ -50,6 +50,15 @@ def confirmed(date: str) -> int:
     return n
 
 
+def deploy() -> None:
+    """GitHub Actions 内からの push では pages が起動しないため、明示的に起動する。"""
+    if not os.environ.get("GH_TOKEN"):
+        return
+    repo = os.environ.get("GITHUB_REPOSITORY", "bunbunbunzai/keiba-ai")
+    r = sh("gh", "workflow", "run", "pages.yml", "-R", repo)
+    print("pages dispatch:", "ok" if r.returncode == 0 else r.stderr.strip()[:200])
+
+
 def push(date: str, n: int) -> None:
     sh("git", "add", "-A", "data", "results_ledger.csv")
     if sh("git", "diff", "--cached", "--quiet").returncode == 0:
@@ -58,6 +67,7 @@ def push(date: str, n: int) -> None:
     for _ in range(4):
         if sh("git", "pull", "--rebase", "-X", "theirs").returncode == 0 and sh("git", "push").returncode == 0:
             print("pushed", n)
+            deploy()
             return
         sh("git", "rebase", "--abort")
         time.sleep(10)
