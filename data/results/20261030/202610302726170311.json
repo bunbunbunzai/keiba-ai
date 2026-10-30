@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261030",
  "race_id": "202610302726170311",
- "tries": 1,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 7,
+   "name": "エレインアスティ",
+   "time": "1:27.6",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 38.5,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 1,
+   "number": 1,
+   "name": "ヴィーリヤ",
+   "time": "1:28.6",
+   "margin": "６",
+   "pos4": 2,
+   "last3f": 39.1,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 11,
+   "name": "グレイスオブゴッド",
+   "time": "1:28.7",
+   "margin": "クビ",
+   "pos4": 2,
+   "last3f": 39.0,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 6,
+   "name": "ジューンキートス",
+   "time": "1:29.3",
+   "margin": "４",
+   "pos4": 5,
+   "last3f": 39.1,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 5,
+   "name": "シトラルテミニ",
+   "time": "1:29.5",
+   "margin": "１ １／４",
+   "pos4": 7,
+   "last3f": 38.6,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 8,
+   "name": "ファンシンレディー",
+   "time": "1:30.0",
+   "margin": "３",
+   "pos4": 5,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 2,
+   "number": 2,
+   "name": "シンリンゲンカイ",
+   "time": "1:30.1",
+   "margin": "クビ",
+   "pos4": 4,
+   "last3f": 41.0,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "オズモポリタン",
+   "time": "1:30.7",
+   "margin": "３ １／２",
+   "pos4": 7,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 9,
+   "name": "レクランスリール",
+   "time": "1:31.2",
+   "margin": "３",
+   "pos4": 11,
+   "last3f": 40.3,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 10,
+   "name": "レディオガガ",
+   "time": "1:31.3",
+   "margin": "クビ",
+   "pos4": 7,
+   "last3f": 41.5,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 4,
+   "number": 4,
+   "name": "マダムホーク",
+   "time": "1:32.1",
+   "margin": "５",
+   "pos4": 7,
+   "last3f": 41.9,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 8,
+   "number": 12,
+   "name": "ゼットシルヴィア",
+   "time": "-",
+   "margin": "除外",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
