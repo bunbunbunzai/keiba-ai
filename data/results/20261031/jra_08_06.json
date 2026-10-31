@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 14,
+   "name": "サイモンレコルト",
+   "time": "1:25.1",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "2",
+   "number": 15,
+   "name": "マスターピース",
+   "time": "1:25.4",
+   "margin": "１ 3/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "3",
+   "number": 10,
+   "name": "スターシーカー",
+   "time": "1:25.4",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "4",
+   "number": 2,
+   "name": "モアザンヴォルト",
+   "time": "1:25.9",
+   "margin": "３",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "5",
+   "number": 1,
+   "name": "レッドガレオン",
+   "time": "1:26.2",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "6",
+   "number": 8,
+   "name": "ジーティーイレブン",
+   "time": "1:26.4",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "7",
+   "number": 12,
+   "name": "ホーフアイゼン",
+   "time": "1:26.5",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "8",
+   "number": 6,
+   "name": "クリコリンダ",
+   "time": "1:26.6",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "9",
+   "number": 13,
+   "name": "ルシエルノーブル",
+   "time": "1:26.7",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "10",
+   "number": 9,
+   "name": "トップエンドパワー",
+   "time": "1:26.8",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "11",
+   "number": 7,
+   "name": "ドリームハロウ",
+   "time": "1:26.9",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "12",
+   "number": 3,
+   "name": "クローネンリーベ",
+   "time": "1:26.9",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "13",
+   "number": 16,
+   "name": "ビップカレッジ",
+   "time": "1:28.7",
+   "margin": "大差",
+   "corners": "",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "14",
+   "number": 4,
+   "name": "サマーレディ",
+   "time": "1:29.1",
+   "margin": "２ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "15",
+   "number": 5,
+   "name": "キングゴールド",
+   "time": "1:30.2",
+   "margin": "７",
+   "corners": "",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "16",
+   "number": 11,
+   "name": "ナムラウルフ",
+   "time": "1:31.2",
+   "margin": "６",
+   "corners": "",
+   "last3f": null,
+   "popularity": 16
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "14",
+    "yen": 3030,
+    "pop": 11
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "14",
+    "yen": 650,
+    "pop": 11
+   },
+   {
+    "combo": "15",
+    "yen": 300,
+    "pop": 5
+   },
+   {
+    "combo": "10",
+    "yen": 170,
+    "pop": 1
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "7-8",
+    "yen": 6880,
+    "pop": 23
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "14-15",
+    "yen": 3510,
+    "pop": 49
+   },
+   {
+    "combo": "10-14",
+    "yen": 2070,
+    "pop": 28
+   },
+   {
+    "combo": "10-15",
+    "yen": 1140,
+    "pop": 10
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "14-15",
+    "yen": 13120,
+    "pop": 50
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "14-15",
+    "yen": 27330,
+    "pop": 101
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "10-14-15",
+    "yen": 19800,
+    "pop": 81
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "14-15-10",
+    "yen": 167980,
+    "pop": 633
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261031",
+ "venue_code": "08",
+ "race_no": 6,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202604100620261031/97",
+ "title": "レース結果 JRA"
+}
