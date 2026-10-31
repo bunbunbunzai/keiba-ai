@@ -607,6 +607,27 @@ def venue_pages(by_date: dict, led: list[dict], venue_of_race: dict) -> dict[str
     return out
 
 
+# ---------------- SNS投稿の確認ページ（検索には出さない） ----------------
+def social_page() -> None:
+    sdir = ROOT / "social"
+    if not sdir.exists():
+        return
+    shutil.copytree(sdir, OUT / "social", dirs_exist_ok=True, ignore=shutil.ignore_patterns("*.json"))
+    label = {"posted": "投稿済み", "draft": "下書き（鍵が未設定）", "pending": "投稿待ち", "failed": "失敗", "off": "対象外"}
+    blocks = []
+    for d in sorted((p.name for p in sdir.iterdir() if p.is_dir()), reverse=True)[:7]:
+        st = load_json(sdir / d / "posts.json") or {}
+        for pid, e in sorted((st.get("posts") or {}).items(), key=lambda kv: kv[1].get("created", ""), reverse=True):
+            blocks.append(
+                f"<section class='card sp'><img src='{esc(e['image'])}' alt='' loading='lazy' width='270' height='338'>"
+                f"<div><p class='meta'>{esc(fmt_date(d))}・{esc(e.get('kind'))}・作成 {esc(e.get('created'))}</p>"
+                f"<p>X：{esc(label.get(e.get('x'), e.get('x')))}　Instagram：{esc(label.get(e.get('instagram'), e.get('instagram')))}</p>"
+                f"<h3>Xの文面</h3><pre>{esc(e.get('x_text'))}</pre><h3>Instagramの文面</h3><pre>{esc(e.get('ig_caption'))}</pre>"
+                + "".join(f"<p class='miss'>{esc(k)}：{esc(e[k])}</p>" for k in ('x_error', 'instagram_error') if e.get(k)) + "</div></section>")
+    write("/social/", page(f"SNS投稿の確認 | {SITE_NAME}", "<h1>SNS投稿の確認</h1><p class='meta'>運営者用。直近7日分の自動投稿（下書きを含む）。</p>"
+                           + ("".join(blocks) or "<p>まだありません。</p>"), "/social/", noindex=True))
+
+
 # ---------------- 固定ページ ----------------
 ABOUT = f"""<h1>予想の方法</h1>
 <p class="answer">{SITE_NAME}は、AI（Anthropic社のClaude）が日本の中央競馬（JRA）と地方競馬の全レースを毎日予想し、外れも含めた全予想の回収率を公開するサイトである。</p>
@@ -682,6 +703,8 @@ table{border-collapse:collapse;width:100%;font-size:14px}th,td{border-bottom:1px
 .days{list-style:none;padding:0;display:grid;gap:6px}.days a{display:flex;justify-content:space-between;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 12px;color:var(--fg)}
 .pn{display:flex;justify-content:space-between;gap:12px;margin:20px 0;font-size:14px}
 .foot{color:var(--mut);font-size:12px;padding:24px 16px 40px}
+.sp{display:grid;grid-template-columns:270px 1fr;gap:16px}.sp img{width:100%;height:auto;border-radius:8px}.sp pre{white-space:pre-wrap;font:inherit;font-size:13px;background:var(--bg);padding:8px;border-radius:6px}
+@media (max-width:720px){.sp{grid-template-columns:1fr}}
 .hl{list-style:none;padding:0;margin:0}.hr{display:grid;grid-template-columns:48px 28px minmax(150px,1.4fr) 70px 64px 76px 48px 2.2fr;gap:4px 10px;align-items:start;padding:8px 6px;border-bottom:1px solid var(--line);font-size:14px}
 .hr small{display:block;color:var(--mut);font-size:12px;font-weight:400}.hr.hd{font-size:12px;color:var(--mut);font-weight:700;border-bottom:2px solid var(--line)}
 .hr.mk{background:rgba(31,111,74,.06)}.hr.top .c-fn{color:var(--hit);font-weight:700}.c-cm{color:var(--fg);font-size:13px;line-height:1.6}
@@ -776,6 +799,7 @@ def build() -> None:
     lastmod.update(column.build(write, page, jsonld, BASE_URL, SITE_NAME, STATS_FROM, today_iso))
     for old, new in (("results.html", "/results/"), ("about.html", "/about/")):
         (OUT / old).write_text(redirect_page(new), encoding="utf-8")
+    social_page()
     write("/404.html", page(f"ページが見つかりません | {SITE_NAME}",
                             "<h1>ページが見つかりません</h1><p class='answer'>URLが変わったか、削除された可能性がある。</p>"
                             "<ul><li><a href='/'>今日の予想</a></li><li><a href='/results/'>成績</a></li><li><a href='/venue/'>競馬場別</a></li></ul>",

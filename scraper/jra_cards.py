@@ -83,6 +83,14 @@ def parse_all_races(html: str) -> list[dict]:
         m = re.search(r"\d+時\d+分\s+(.*?)\s+コース", head)
         if m:
             r["title_text"] = m.group(1)
+        gi = li.select_one(".grade_icon img")
+        if gi:
+            g = re.search(r"icon_grade_(\w+?)\.", gi.get("src") or "")
+            r["grade"] = {"g1": "G1", "g2": "G2", "g3": "G3", "jg1": "J・G1", "jg2": "J・G2", "jg3": "J・G3", "l": "L"}.get(
+                g.group(1).lower() if g else "", gi.get("alt") or None)
+        rn = li.select_one(".race_title .race_name")
+        if rn:
+            r["race_name"] = rn.get_text(" ", strip=True)
         m = re.search(r"コース：?\s*([\d,]+)\s*メートル\s*（(芝|ダート|障害)[^）]*）", head)
         if m:
             r["distance"] = int(m.group(1).replace(",", ""))

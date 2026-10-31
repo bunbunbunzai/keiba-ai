@@ -1,0 +1,60 @@
+name: social (X・Instagramへの自動投稿)
+
+# サイトの公開が終わるたびに動く。
+# 1. 公開済みの画像があれば X・Instagram に投稿（鍵が未設定なら下書きのまま）
+# 2. 新しく条件を満たした投稿（的中・重賞・毎晩の全成績）の画像と文面を作って push し、サイトを再公開（→ 次の回で投稿）
+on:
+  workflow_run:
+    workflows: ["pages (サイトの生成と公開)"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "対象日 YYYYMMDD（空なら今日）"
+        required: false
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: social
+  cancel-in-progress: false
+
+jobs:
+  social:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: 投稿と準備
+        id: s
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: |
+          D="${{ inputs.date }}"; [ -z "$D" ] && D=$(TZ=Asia/Tokyo date +%Y%m%d)
+          OUT=$(python scraper/social.py --date "$D" | tail -1); echo "$OUT"
+          echo "prepared=$(echo "$OUT" | python -c 'import sys,json;print(json.load(sys.stdin)["prepared"])')" >> "$GITHUB_OUTPUT"
+      - name: 保存
+        run: |
+          git config user.name "keiba-ai-bot"
+          git config user.email "keiba-ai-bot@users.noreply.github.com"
+          git add social
+          git commit -m "social $(TZ=Asia/Tokyo date +%m%d-%H%M)" || exit 0
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && break; sleep 5; done
+      - name: 新しい画像があればサイトを再公開（次の回で投稿する）
+        if: steps.s.outputs.prepared != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml -R "${{ github.repository }}"
