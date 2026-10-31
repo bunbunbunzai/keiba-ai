@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261031",
  "race_id": "202610313230120409",
- "tries": 2,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -81,5 +81,116 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 6,
+   "name": "ライジングハース",
+   "time": "1:29.7",
+   "margin": "",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 10,
+   "name": "レイフロレット",
+   "time": "1:29.7",
+   "margin": "同着",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 5,
+   "name": "ミセスジョーンズ",
+   "time": "1:29.9",
+   "margin": "１ １／４",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "ユイアヴェニール",
+   "time": "1:30.4",
+   "margin": "２ １／２",
+   "pos4": 4,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 1,
+   "number": 1,
+   "name": "カシノハンゾウ",
+   "time": "1:32.5",
+   "margin": "大差",
+   "pos4": 5,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 8,
+   "name": "スティルザワン",
+   "time": "1:32.7",
+   "margin": "１ １／４",
+   "pos4": 8,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 4,
+   "name": "ジオパークピリカ",
+   "time": "1:33.2",
+   "margin": "２ １／２",
+   "pos4": 6,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "ドライカプチーノ",
+   "time": "1:33.8",
+   "margin": "３",
+   "pos4": 7,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 7,
+   "name": "ドゥエルセーラ",
+   "time": "1:34.3",
+   "margin": "２ １／２",
+   "pos4": 10,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 8,
+   "number": 9,
+   "name": "マーシャン",
+   "time": "1:34.4",
+   "margin": "１／２",
+   "pos4": 9,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
