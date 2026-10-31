@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 2,
+   "name": "テイエムスティール",
+   "time": "1:32.9",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "number": 11,
+   "name": "タイムレスキス",
+   "time": "",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "3",
+   "number": 9,
+   "name": "アイスヴィレッジ",
+   "time": "",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "4",
+   "number": 15,
+   "name": "メイショウトウコウ",
+   "time": "",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "number": 1,
+   "name": "スマートティアナ",
+   "time": "",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "2",
+    "yen": 540,
+    "pop": 2
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "2",
+    "yen": 230,
+    "pop": 2
+   },
+   {
+    "combo": "11",
+    "yen": 410,
+    "pop": 6
+   },
+   {
+    "combo": "9",
+    "yen": 1220,
+    "pop": 11
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-6",
+    "yen": 1950,
+    "pop": 8
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-11",
+    "yen": 1400,
+    "pop": 12
+   },
+   {
+    "combo": "2-9",
+    "yen": 4010,
+    "pop": 42
+   },
+   {
+    "combo": "9-11",
+    "yen": 6320,
+    "pop": 57
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-11",
+    "yen": 3870,
+    "pop": 13
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "2-11",
+    "yen": 6500,
+    "pop": 25
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-9-11",
+    "yen": 36300,
+    "pop": 107
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "2-11-9",
+    "yen": 147000,
+    "pop": 448
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261031",
+ "venue_code": "08",
+ "race_no": 12,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202604101220261031/15",
+ "title": "レース結果 JRA"
+}
