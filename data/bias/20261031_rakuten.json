@@ -1,6 +1,6 @@
 {
  "date": "20261031",
- "updated": "2026-10-31 16:03",
+ "updated": "2026-10-31 16:16",
  "bias": {
   "高知ダ": {
    "judgement": "先行有利・外",
@@ -19,12 +19,13 @@
    "confidence": "弱",
    "races": [
     1,
-    2
+    2,
+    3
    ],
-   "front_share": 0.5,
+   "front_share": 0.67,
    "inner_share": 0.5,
-   "outer_share": 0.25,
-   "horses": 4
+   "outer_share": 0.33,
+   "horses": 6
   }
  }
 }
