@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261031",
  "race_id": "202610313129090507",
- "tries": 3,
+ "tries": 6,
  "payouts": {
   "単勝": [
    {
@@ -77,7 +77,7 @@
    "name": "クロニクル",
    "time": "1:24.4",
    "margin": "",
-   "pos4": null,
+   "pos4": 1,
    "last3f": null,
    "popularity": null
   },
@@ -88,7 +88,7 @@
    "name": "マジックタッチ",
    "time": "1:24.7",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 1,
    "last3f": null,
    "popularity": null
   },
@@ -99,7 +99,7 @@
    "name": "ペップセ",
    "time": "1:25.3",
    "margin": "３",
-   "pos4": null,
+   "pos4": 7,
    "last3f": null,
    "popularity": null
   },
@@ -110,7 +110,7 @@
    "name": "アイブランコ",
    "time": "1:25.5",
    "margin": "１",
-   "pos4": null,
+   "pos4": 4,
    "last3f": null,
    "popularity": null
   },
@@ -121,7 +121,7 @@
    "name": "ニコラウス",
    "time": "1:25.9",
    "margin": "２",
-   "pos4": null,
+   "pos4": 3,
    "last3f": null,
    "popularity": null
   },
@@ -132,7 +132,7 @@
    "name": "テソリーノ",
    "time": "1:26.2",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 9,
    "last3f": null,
    "popularity": null
   },
@@ -143,7 +143,7 @@
    "name": "ショウネンジダイ",
    "time": "1:26.3",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 4,
    "last3f": null,
    "popularity": null
   },
@@ -154,7 +154,7 @@
    "name": "ココリハクタク",
    "time": "1:26.9",
    "margin": "３",
-   "pos4": null,
+   "pos4": 7,
    "last3f": null,
    "popularity": null
   },
@@ -165,7 +165,7 @@
    "name": "シュクメルリ",
    "time": "1:26.9",
    "margin": "アタマ",
-   "pos4": null,
+   "pos4": 4,
    "last3f": null,
    "popularity": null
   },
@@ -176,7 +176,7 @@
    "name": "オセアハートマン",
    "time": "1:28.1",
    "margin": "６",
-   "pos4": null,
+   "pos4": 9,
    "last3f": null,
    "popularity": null
   }
