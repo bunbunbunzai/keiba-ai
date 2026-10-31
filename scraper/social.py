@@ -414,4 +414,8 @@ if __name__ == "__main__":
     cfg = load(SOCIAL / "config.json", {}) or {}
     posted = 0 if a.prepare_only else publish(a.date, a.dry_run)
     made = prepare(a.date, cfg)
-    print(json.dumps({"posted": posted, "prepared": made, "x_keys": has_x(), "ig_keys": has_ig()}))
+    status = {"x_keys": has_x(), "ig_keys": has_ig()}  # 鍵の有無だけ（中身は書かない）
+    sp = SOCIAL / "status.json"
+    if load(sp, {}) != status:
+        sp.write_text(json.dumps(status), encoding="utf-8")
+    print(json.dumps({"posted": posted, "prepared": made, **status}))
