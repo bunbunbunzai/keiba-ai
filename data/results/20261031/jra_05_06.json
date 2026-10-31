@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 16,
+   "name": "タケルムサシ",
+   "time": "2:10.4",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "2",
+   "number": 11,
+   "name": "ターフクリスタル",
+   "time": "2:11.3",
+   "margin": "５",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "number": 5,
+   "name": "グランドスウェル",
+   "time": "2:11.7",
+   "margin": "２ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "4",
+   "number": 15,
+   "name": "モデレートゲイル",
+   "time": "2:11.8",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "5",
+   "number": 12,
+   "name": "クアッドフォルツァ",
+   "time": "2:11.9",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "6",
+   "number": 8,
+   "name": "ワンダーブリッツ",
+   "time": "2:12.5",
+   "margin": "３ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "7",
+   "number": 9,
+   "name": "ピードモント",
+   "time": "2:12.6",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "8",
+   "number": 14,
+   "name": "ブレイクザアイス",
+   "time": "2:12.7",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "9",
+   "number": 10,
+   "name": "ルシャルムール",
+   "time": "2:12.8",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "10",
+   "number": 3,
+   "name": "オルブライト",
+   "time": "2:13.0",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "11",
+   "number": 6,
+   "name": "カサビセンス",
+   "time": "2:13.5",
+   "margin": "３",
+   "corners": "",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "12",
+   "number": 7,
+   "name": "エクセルクラウン",
+   "time": "2:14.2",
+   "margin": "４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "13",
+   "number": 4,
+   "name": "カイトヴィント",
+   "time": "2:14.3",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "14",
+   "number": 1,
+   "name": "ソニックキャット",
+   "time": "2:16.3",
+   "margin": "大差",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "15",
+   "number": 2,
+   "name": "ジオストラテジー",
+   "time": "2:19.6",
+   "margin": "大差",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "取消",
+   "number": 13,
+   "name": "タマモトリノ",
+   "time": "",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": null
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "16",
+    "yen": 1000,
+    "pop": 5
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "16",
+    "yen": 350,
+    "pop": 7
+   },
+   {
+    "combo": "11",
+    "yen": 160,
+    "pop": 1
+   },
+   {
+    "combo": "5",
+    "yen": 240,
+    "pop": 4
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "6-8",
+    "yen": 820,
+    "pop": 3
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "11-16",
+    "yen": 750,
+    "pop": 8
+   },
+   {
+    "combo": "5-16",
+    "yen": 1750,
+    "pop": 23
+   },
+   {
+    "combo": "5-11",
+    "yen": 540,
+    "pop": 4
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "11-16",
+    "yen": 2600,
+    "pop": 10
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "16-11",
+    "yen": 4940,
+    "pop": 23
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "5-11-16",
+    "yen": 7530,
+    "pop": 34
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "16-11-5",
+    "yen": 40750,
+    "pop": 160
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261031",
+ "venue_code": "05",
+ "race_no": 6,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202604100620261031/B9",
+ "title": "レース結果 JRA"
+}
