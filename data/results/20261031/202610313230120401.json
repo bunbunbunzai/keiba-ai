@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261031",
  "race_id": "202610313230120401",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -67,7 +67,7 @@
    "name": "サンベニト",
    "time": "55.7",
    "margin": "",
-   "pos4": null,
+   "pos4": 1,
    "last3f": null,
    "popularity": null
   },
@@ -78,7 +78,7 @@
    "name": "テムグロリア",
    "time": "56.2",
    "margin": "２ １／２",
-   "pos4": null,
+   "pos4": 3,
    "last3f": null,
    "popularity": null
   },
@@ -89,7 +89,7 @@
    "name": "カロンテソーロ",
    "time": "57.0",
    "margin": "４",
-   "pos4": null,
+   "pos4": 2,
    "last3f": null,
    "popularity": null
   },
@@ -100,7 +100,7 @@
    "name": "キートゥサクセス",
    "time": "58.3",
    "margin": "７",
-   "pos4": null,
+   "pos4": 5,
    "last3f": null,
    "popularity": null
   },
@@ -111,7 +111,7 @@
    "name": "シシキバーレ",
    "time": "58.3",
    "margin": "アタマ",
-   "pos4": null,
+   "pos4": 4,
    "last3f": null,
    "popularity": null
   },
@@ -122,7 +122,7 @@
    "name": "カシノスアレス",
    "time": "59.0",
    "margin": "４",
-   "pos4": null,
+   "pos4": 6,
    "last3f": null,
    "popularity": null
   }

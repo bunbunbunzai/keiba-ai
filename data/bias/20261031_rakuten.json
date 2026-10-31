@@ -1,5 +1,17 @@
 {
  "date": "20261031",
- "updated": "2026-10-31 15:00",
- "bias": {}
+ "updated": "2026-10-31 15:10",
+ "bias": {
+  "佐賀ダ": {
+   "judgement": "先行有利",
+   "confidence": "弱",
+   "races": [
+    1
+   ],
+   "front_share": 1.0,
+   "inner_share": 0.5,
+   "outer_share": 0.5,
+   "horses": 2
+  }
+ }
 }

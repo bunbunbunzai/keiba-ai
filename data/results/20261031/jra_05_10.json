@@ -1,0 +1,188 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 7,
+   "name": "フジガイフウ",
+   "time": "1:33.2",
+   "margin": "",
+   "corners": "3-3",
+   "last3f": 33.9,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "number": 3,
+   "name": "シャンソンドール",
+   "time": "1:33.3",
+   "margin": "１／２",
+   "corners": "3-3",
+   "last3f": 34.1,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "number": 1,
+   "name": "ケイケイ",
+   "time": "1:33.4",
+   "margin": "１",
+   "corners": "8-8",
+   "last3f": 33.7,
+   "popularity": 7
+  },
+  {
+   "finish": "4",
+   "number": 5,
+   "name": "シャンパンマーク",
+   "time": "1:33.5",
+   "margin": "１／２",
+   "corners": "6-6",
+   "last3f": 34.0,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "number": 10,
+   "name": "クールデイトナ",
+   "time": "1:33.6",
+   "margin": "３／４",
+   "corners": "3-3",
+   "last3f": 34.4,
+   "popularity": 4
+  },
+  {
+   "finish": "6",
+   "number": 6,
+   "name": "シャイニースイフト",
+   "time": "1:34.0",
+   "margin": "２",
+   "corners": "10-10",
+   "last3f": 34.1,
+   "popularity": 8
+  },
+  {
+   "finish": "7",
+   "number": 4,
+   "name": "キシダンチョウ",
+   "time": "1:34.1",
+   "margin": "１／２",
+   "corners": "1-1",
+   "last3f": 35.1,
+   "popularity": 3
+  },
+  {
+   "finish": "8",
+   "number": 8,
+   "name": "パワースナッチ",
+   "time": "1:34.1",
+   "margin": "クビ",
+   "corners": "2-2",
+   "last3f": 35.1,
+   "popularity": 6
+  },
+  {
+   "finish": "9",
+   "number": 2,
+   "name": "ブライティアダイヤ",
+   "time": "1:34.7",
+   "margin": "３ 1/2",
+   "corners": "8-8",
+   "last3f": 35.0,
+   "popularity": 9
+  },
+  {
+   "finish": "10",
+   "number": 9,
+   "name": "ホークマン",
+   "time": "1:34.7",
+   "margin": "クビ",
+   "corners": "7-6",
+   "last3f": 35.2,
+   "popularity": 10
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "7",
+    "yen": 210,
+    "pop": 2
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "7",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "3",
+    "yen": 110,
+    "pop": 2
+   },
+   {
+    "combo": "1",
+    "yen": 330,
+    "pop": 7
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-7",
+    "yen": 190,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-7",
+    "yen": 130,
+    "pop": 1
+   },
+   {
+    "combo": "1-7",
+    "yen": 620,
+    "pop": 10
+   },
+   {
+    "combo": "1-3",
+    "yen": 730,
+    "pop": 12
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-7",
+    "yen": 190,
+    "pop": 1
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "7-3",
+    "yen": 360,
+    "pop": 1
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-3-7",
+    "yen": 1600,
+    "pop": 6
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "7-3-1",
+    "yen": 3720,
+    "pop": 13
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261031",
+ "venue_code": "05",
+ "race_no": 10,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202604101020261031/CD",
+ "title": "レース結果 JRA"
+}
