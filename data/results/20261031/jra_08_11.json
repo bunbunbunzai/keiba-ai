@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 4,
+   "name": "ニクスルーナ",
+   "time": "1:21.3",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "2",
+   "number": 10,
+   "name": "フェリチタ",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "3",
+   "number": 5,
+   "name": "バタフライ",
+   "time": "",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "4",
+   "number": 8,
+   "name": "ブライトスクリプト",
+   "time": "",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "5",
+   "number": 6,
+   "name": "イモージェン",
+   "time": "",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "4",
+    "yen": 630,
+    "pop": 3
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "4",
+    "yen": 250,
+    "pop": 4
+   },
+   {
+    "combo": "10",
+    "yen": 280,
+    "pop": 5
+   },
+   {
+    "combo": "5",
+    "yen": 2060,
+    "pop": 11
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-8",
+    "yen": 2610,
+    "pop": 11
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-10",
+    "yen": 1090,
+    "pop": 12
+   },
+   {
+    "combo": "4-5",
+    "yen": 6250,
+    "pop": 46
+   },
+   {
+    "combo": "5-10",
+    "yen": 8270,
+    "pop": 49
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-10",
+    "yen": 3740,
+    "pop": 13
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "4-10",
+    "yen": 7170,
+    "pop": 27
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-5-10",
+    "yen": 88020,
+    "pop": 134
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "4-10-5",
+    "yen": 383850,
+    "pop": 659
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261031",
+ "venue_code": "08",
+ "race_no": 11,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202604101120261031/60",
+ "title": "レース結果 JRA"
+}
