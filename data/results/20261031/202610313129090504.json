@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261031",
  "race_id": "202610313129090504",
- "tries": 4,
+ "tries": 6,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,127 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 10,
+   "name": "スタークルージング",
+   "time": "1:33.7",
+   "margin": "",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 1,
+   "number": 1,
+   "name": "グッドヴァイブス",
+   "time": "1:33.8",
+   "margin": "クビ",
+   "pos4": 2,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 5,
+   "name": "サイモンプレジール",
+   "time": "1:33.8",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 11,
+   "name": "ダノンブロッサム",
+   "time": "1:33.8",
+   "margin": "アタマ",
+   "pos4": 4,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 8,
+   "name": "ヴィクトリーナイト",
+   "time": "1:33.8",
+   "margin": "アタマ",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 9,
+   "name": "ノアプレスリー",
+   "time": "1:34.0",
+   "margin": "３／４",
+   "pos4": 6,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 6,
+   "name": "ミナトノソウタ",
+   "time": "1:34.0",
+   "margin": "ハナ",
+   "pos4": 6,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 6,
+   "number": 7,
+   "name": "マイネルサンテ",
+   "time": "1:34.6",
+   "margin": "３",
+   "pos4": 8,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "ブランカアンヘル",
+   "time": "1:35.2",
+   "margin": "３",
+   "pos4": 11,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 3,
+   "number": 3,
+   "name": "アルデココ",
+   "time": "1:35.7",
+   "margin": "２ １／２",
+   "pos4": 10,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 4,
+   "number": 4,
+   "name": "エメラルハッピー",
+   "time": "1:36.3",
+   "margin": "３",
+   "pos4": 8,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
