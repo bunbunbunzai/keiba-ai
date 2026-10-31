@@ -1,0 +1,188 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 7,
+   "name": "カムアップローゼス",
+   "time": "1:58.4",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 1,
+   "name": "ダノンカゼルタ",
+   "time": "1:58.5",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "3",
+   "number": 2,
+   "name": "キタサンハナビラ",
+   "time": "1:58.6",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "4",
+   "number": 8,
+   "name": "スカイスプレンダー",
+   "time": "1:58.6",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "5",
+   "number": 5,
+   "name": "オメガインペリアル",
+   "time": "1:58.6",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "6",
+   "number": 4,
+   "name": "ホウオウタイタン",
+   "time": "1:58.8",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "7",
+   "number": 3,
+   "name": "スターリングアップ",
+   "time": "1:59.2",
+   "margin": "２ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "8",
+   "number": 6,
+   "name": "ダイヤモンドハンズ",
+   "time": "1:59.2",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "9",
+   "number": 10,
+   "name": "ビッグデイメイク",
+   "time": "2:00.4",
+   "margin": "７",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "10",
+   "number": 9,
+   "name": "ミカエルパシャ",
+   "time": "2:00.5",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "7",
+    "yen": 280,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "7",
+    "yen": 140,
+    "pop": 1
+   },
+   {
+    "combo": "1",
+    "yen": 730,
+    "pop": 9
+   },
+   {
+    "combo": "2",
+    "yen": 440,
+    "pop": 6
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-7",
+    "yen": 3640,
+    "pop": 10
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-7",
+    "yen": 1220,
+    "pop": 14
+   },
+   {
+    "combo": "2-7",
+    "yen": 970,
+    "pop": 11
+   },
+   {
+    "combo": "1-2",
+    "yen": 4470,
+    "pop": 32
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-7",
+    "yen": 3780,
+    "pop": 12
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "7-1",
+    "yen": 4900,
+    "pop": 18
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-2-7",
+    "yen": 14910,
+    "pop": 45
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "7-1-2",
+    "yen": 53840,
+    "pop": 171
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261031",
+ "venue_code": "08",
+ "race_no": 9,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202604100920261031/B6",
+ "title": "レース結果 JRA"
+}
