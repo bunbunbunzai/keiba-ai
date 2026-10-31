@@ -1,0 +1,228 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 8,
+   "name": "マメタンク",
+   "time": "1:10.6",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "2",
+   "number": 13,
+   "name": "ライトオブヌカタ",
+   "time": "1:11.0",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "number": 12,
+   "name": "モンサンゴールデン",
+   "time": "1:11.0",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "4",
+   "number": 9,
+   "name": "ルイステソーロ",
+   "time": "1:11.0",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "5",
+   "number": 1,
+   "name": "ミサビスケッツ",
+   "time": "1:11.2",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "6",
+   "number": 6,
+   "name": "ズバットマサムネ",
+   "time": "1:11.2",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "7",
+   "number": 3,
+   "name": "ダノンモンテローザ",
+   "time": "1:11.3",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "8",
+   "number": 10,
+   "name": "バッハアルプゼー",
+   "time": "1:11.5",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "9",
+   "number": 7,
+   "name": "ジーベック",
+   "time": "1:11.6",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "10",
+   "number": 11,
+   "name": "ワイノナオミ",
+   "time": "1:11.6",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "11",
+   "number": 5,
+   "name": "ダズリングダンス",
+   "time": "1:11.9",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "12",
+   "number": 14,
+   "name": "バイファーザベスト",
+   "time": "1:12.1",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "13",
+   "number": 2,
+   "name": "ストラテージュ",
+   "time": "1:12.5",
+   "margin": "２ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "14",
+   "number": 4,
+   "name": "ビッグドリーム",
+   "time": "1:12.6",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "8",
+    "yen": 450,
+    "pop": 3
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "8",
+    "yen": 190,
+    "pop": 3
+   },
+   {
+    "combo": "13",
+    "yen": 170,
+    "pop": 2
+   },
+   {
+    "combo": "12",
+    "yen": 240,
+    "pop": 5
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-8",
+    "yen": 780,
+    "pop": 2
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "8-13",
+    "yen": 440,
+    "pop": 3
+   },
+   {
+    "combo": "8-12",
+    "yen": 880,
+    "pop": 9
+   },
+   {
+    "combo": "12-13",
+    "yen": 830,
+    "pop": 8
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "8-13",
+    "yen": 940,
+    "pop": 2
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "8-13",
+    "yen": 1770,
+    "pop": 2
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "8-12-13",
+    "yen": 3110,
+    "pop": 6
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "8-13-12",
+    "yen": 13210,
+    "pop": 26
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261031",
+ "venue_code": "08",
+ "race_no": 8,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202604100820261031/01",
+ "title": "レース結果 JRA"
+}
