@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 4,
+   "name": "ワンスフォーユー",
+   "time": "1:24.9",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 9,
+   "name": "スマートポーション",
+   "time": "",
+   "margin": "１ 3/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "3",
+   "number": 3,
+   "name": "スマートブライド",
+   "time": "",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "number": 13,
+   "name": "ユイノエスポワール",
+   "time": "",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "5",
+   "number": 11,
+   "name": "ソラティオ",
+   "time": "",
+   "margin": "２ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "4",
+    "yen": 180,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "4",
+    "yen": 120,
+    "pop": 1
+   },
+   {
+    "combo": "9",
+    "yen": 400,
+    "pop": 6
+   },
+   {
+    "combo": "3",
+    "yen": 230,
+    "pop": 3
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-6",
+    "yen": 1290,
+    "pop": 5
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-9",
+    "yen": 680,
+    "pop": 8
+   },
+   {
+    "combo": "3-4",
+    "yen": 370,
+    "pop": 2
+   },
+   {
+    "combo": "3-9",
+    "yen": 1460,
+    "pop": 14
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-9",
+    "yen": 1420,
+    "pop": 5
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "4-9",
+    "yen": 1780,
+    "pop": 5
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-4-9",
+    "yen": 3920,
+    "pop": 11
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "4-9-3",
+    "yen": 10860,
+    "pop": 32
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261031",
+ "venue_code": "05",
+ "race_no": 9,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202604100920261031/D8",
+ "title": "レース結果 JRA"
+}
