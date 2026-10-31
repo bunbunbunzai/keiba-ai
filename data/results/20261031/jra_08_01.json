@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 5,
+   "name": "マルモリマイベスト",
+   "time": "1:24.1",
+   "margin": "",
+   "corners": "7-6",
+   "last3f": 36.5,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 13,
+   "name": "ジャスコヒラリアス",
+   "time": "1:24.3",
+   "margin": "１",
+   "corners": "1-1",
+   "last3f": 37.3,
+   "popularity": 6
+  },
+  {
+   "finish": "3",
+   "number": 4,
+   "name": "ランズエンド",
+   "time": "1:25.3",
+   "margin": "６",
+   "corners": "9-8",
+   "last3f": 37.5,
+   "popularity": 13
+  },
+  {
+   "finish": "4",
+   "number": 14,
+   "name": "ピコジャック",
+   "time": "1:25.3",
+   "margin": "クビ",
+   "corners": "2-2",
+   "last3f": 38.1,
+   "popularity": 7
+  },
+  {
+   "finish": "5",
+   "number": 8,
+   "name": "ベラジオセブン",
+   "time": "1:25.6",
+   "margin": "１ 3/4",
+   "corners": "16-14",
+   "last3f": 36.9,
+   "popularity": 4
+  },
+  {
+   "finish": "6",
+   "number": 10,
+   "name": "ダイユウエゾフジ",
+   "time": "1:25.6",
+   "margin": "ハナ",
+   "corners": "9-10",
+   "last3f": 37.6,
+   "popularity": 10
+  },
+  {
+   "finish": "7",
+   "number": 1,
+   "name": "スリーオブスペイズ",
+   "time": "1:25.8",
+   "margin": "１ 1/4",
+   "corners": "4-2",
+   "last3f": 38.5,
+   "popularity": 2
+  },
+  {
+   "finish": "8",
+   "number": 9,
+   "name": "エアロクリスタ",
+   "time": "1:25.9",
+   "margin": "３／４",
+   "corners": "5-4",
+   "last3f": 38.5,
+   "popularity": 3
+  },
+  {
+   "finish": "9",
+   "number": 11,
+   "name": "エリーマイラヴ",
+   "time": "1:26.0",
+   "margin": "クビ",
+   "corners": "7-8",
+   "last3f": 38.2,
+   "popularity": 9
+  },
+  {
+   "finish": "10",
+   "number": 3,
+   "name": "ウィナーズクロノ",
+   "time": "1:26.0",
+   "margin": "ハナ",
+   "corners": "13-14",
+   "last3f": 37.6,
+   "popularity": 14
+  },
+  {
+   "finish": "11",
+   "number": 6,
+   "name": "ピエナマーズ",
+   "time": "1:26.2",
+   "margin": "１ 1/4",
+   "corners": "9-10",
+   "last3f": 38.3,
+   "popularity": 12
+  },
+  {
+   "finish": "12",
+   "number": 16,
+   "name": "ヴァルダンセ",
+   "time": "1:26.3",
+   "margin": "３／４",
+   "corners": "5-4",
+   "last3f": 38.8,
+   "popularity": 11
+  },
+  {
+   "finish": "13",
+   "number": 7,
+   "name": "シムサラビン",
+   "time": "1:26.5",
+   "margin": "１",
+   "corners": "13-12",
+   "last3f": 38.1,
+   "popularity": 5
+  },
+  {
+   "finish": "14",
+   "number": 2,
+   "name": "ゴールドアーク",
+   "time": "1:26.9",
+   "margin": "２ 1/2",
+   "corners": "13-14",
+   "last3f": 38.5,
+   "popularity": 16
+  },
+  {
+   "finish": "15",
+   "number": 15,
+   "name": "ヤマトデュノール",
+   "time": "1:27.0",
+   "margin": "３／４",
+   "corners": "12-12",
+   "last3f": 38.8,
+   "popularity": 15
+  },
+  {
+   "finish": "16",
+   "number": 12,
+   "name": "アセンシオン",
+   "time": "1:29.2",
+   "margin": "大差",
+   "corners": "2-6",
+   "last3f": 41.9,
+   "popularity": 8
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "5",
+    "yen": 180,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "5",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "13",
+    "yen": 330,
+    "pop": 5
+   },
+   {
+    "combo": "4",
+    "yen": 1220,
+    "pop": 13
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-7",
+    "yen": 620,
+    "pop": 2
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "5-13",
+    "yen": 590,
+    "pop": 5
+   },
+   {
+    "combo": "4-5",
+    "yen": 2320,
+    "pop": 25
+   },
+   {
+    "combo": "4-13",
+    "yen": 9430,
+    "pop": 65
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "5-13",
+    "yen": 1510,
+    "pop": 5
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "5-13",
+    "yen": 1830,
+    "pop": 6
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-5-13",
+    "yen": 26800,
+    "pop": 76
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "5-13-4",
+    "yen": 90500,
+    "pop": 241
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261031",
+ "venue_code": "08",
+ "race_no": 1,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202604100120261031/0E",
+ "title": "レース結果 JRA"
+}

@@ -1,0 +1,188 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 9,
+   "name": "ローザヴェローナ",
+   "time": "1:35.2",
+   "margin": "",
+   "corners": "3-3",
+   "last3f": 33.6,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 6,
+   "name": "クリガーレ",
+   "time": "1:36.0",
+   "margin": "５",
+   "corners": "3-3",
+   "last3f": 34.3,
+   "popularity": 5
+  },
+  {
+   "finish": "3",
+   "number": 7,
+   "name": "トーセンイルン",
+   "time": "1:36.1",
+   "margin": "１",
+   "corners": "2-2",
+   "last3f": 34.6,
+   "popularity": 6
+  },
+  {
+   "finish": "4",
+   "number": 2,
+   "name": "ドナフェリーチェ",
+   "time": "1:36.2",
+   "margin": "１／２",
+   "corners": "5-5",
+   "last3f": 34.3,
+   "popularity": 2
+  },
+  {
+   "finish": "5",
+   "number": 10,
+   "name": "コスモシグナス",
+   "time": "1:36.4",
+   "margin": "１ 1/4",
+   "corners": "9-9",
+   "last3f": 33.9,
+   "popularity": 4
+  },
+  {
+   "finish": "6",
+   "number": 8,
+   "name": "アイビークロノス",
+   "time": "1:36.4",
+   "margin": "ハナ",
+   "corners": "7-7",
+   "last3f": 34.2,
+   "popularity": 7
+  },
+  {
+   "finish": "7",
+   "number": 5,
+   "name": "ダンツトリノ",
+   "time": "1:36.4",
+   "margin": "ハナ",
+   "corners": "9-9",
+   "last3f": 33.9,
+   "popularity": 8
+  },
+  {
+   "finish": "8",
+   "number": 1,
+   "name": "ヒミツヘイキ",
+   "time": "1:36.6",
+   "margin": "１",
+   "corners": "5-5",
+   "last3f": 34.7,
+   "popularity": 9
+  },
+  {
+   "finish": "9",
+   "number": 3,
+   "name": "セラフィムコード",
+   "time": "1:36.9",
+   "margin": "２",
+   "corners": "1-1",
+   "last3f": 35.4,
+   "popularity": 3
+  },
+  {
+   "finish": "10",
+   "number": 4,
+   "name": "キタノバトゥーキ",
+   "time": "1:37.9",
+   "margin": "６",
+   "corners": "7-8",
+   "last3f": 35.6,
+   "popularity": 10
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "9",
+    "yen": 110,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "9",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "6",
+    "yen": 250,
+    "pop": 4
+   },
+   {
+    "combo": "7",
+    "yen": 280,
+    "pop": 5
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "6-8",
+    "yen": 820,
+    "pop": 4
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "6-9",
+    "yen": 380,
+    "pop": 3
+   },
+   {
+    "combo": "7-9",
+    "yen": 480,
+    "pop": 5
+   },
+   {
+    "combo": "6-7",
+    "yen": 2340,
+    "pop": 20
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "6-9",
+    "yen": 960,
+    "pop": 4
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "9-6",
+    "yen": 1070,
+    "pop": 5
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "6-7-9",
+    "yen": 3140,
+    "pop": 11
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "9-6-7",
+    "yen": 6850,
+    "pop": 26
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261031",
+ "venue_code": "05",
+ "race_no": 2,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202604100220261031/E5",
+ "title": "レース結果 JRA"
+}

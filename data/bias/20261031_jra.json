@@ -1,6 +1,6 @@
 {
  "date": "20261031",
- "updated": "2026-10-31 10:09",
+ "updated": "2026-10-31 10:50",
  "bias": {
   "東京ダ": {
    "judgement": "フラット・外",
@@ -11,6 +11,39 @@
    "front_share": 0.5,
    "inner_share": 0.0,
    "outer_share": 0.5,
+   "horses": 2
+  },
+  "東京芝": {
+   "judgement": "先行有利・外",
+   "confidence": "弱",
+   "races": [
+    2
+   ],
+   "front_share": 1.0,
+   "inner_share": 0.0,
+   "outer_share": 0.5,
+   "horses": 2
+  },
+  "京都ダ": {
+   "judgement": "フラット",
+   "confidence": "弱",
+   "races": [
+    1
+   ],
+   "front_share": 0.5,
+   "inner_share": 0.5,
+   "outer_share": 0.5,
+   "horses": 2
+  },
+  "京都芝": {
+   "judgement": "差し有利",
+   "confidence": "弱",
+   "races": [
+    2
+   ],
+   "front_share": 0.0,
+   "inner_share": 0.0,
+   "outer_share": 0.0,
    "horses": 2
   }
  }
