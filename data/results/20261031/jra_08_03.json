@@ -1,0 +1,161 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 7,
+   "name": "ディープリメンバー",
+   "time": "1:47.3",
+   "margin": "",
+   "corners": "3-2",
+   "last3f": 34.9,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 8,
+   "name": "アイオリスパルス",
+   "time": "1:47.7",
+   "margin": "２ 1/2",
+   "corners": "1-1",
+   "last3f": 35.5,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "number": 4,
+   "name": "ポカポカヨウキ",
+   "time": "1:47.7",
+   "margin": "ハナ",
+   "corners": "5-5",
+   "last3f": 35.0,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "number": 1,
+   "name": "シルクウォード",
+   "time": "1:48.0",
+   "margin": "２",
+   "corners": "7-6",
+   "last3f": 35.0,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "number": 2,
+   "name": "ウィリーウィリー",
+   "time": "1:48.2",
+   "margin": "１",
+   "corners": "3-2",
+   "last3f": 35.8,
+   "popularity": 6
+  },
+  {
+   "finish": "6",
+   "number": 3,
+   "name": "メメヤンチャヒメ",
+   "time": "1:48.3",
+   "margin": "１",
+   "corners": "5-6",
+   "last3f": 35.4,
+   "popularity": 7
+  },
+  {
+   "finish": "7",
+   "number": 6,
+   "name": "サントボーム",
+   "time": "1:48.4",
+   "margin": "クビ",
+   "corners": "7-8",
+   "last3f": 35.2,
+   "popularity": 8
+  },
+  {
+   "finish": "8",
+   "number": 5,
+   "name": "ブラックミューズ",
+   "time": "1:49.2",
+   "margin": "５",
+   "corners": "2-2",
+   "last3f": 36.9,
+   "popularity": 4
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "7",
+    "yen": 180,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "7",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "8",
+    "yen": 120,
+    "pop": 2
+   },
+   {
+    "combo": "4",
+    "yen": 130,
+    "pop": 3
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "7-8",
+    "yen": 160,
+    "pop": 1
+   },
+   {
+    "combo": "4-7",
+    "yen": 180,
+    "pop": 2
+   },
+   {
+    "combo": "4-8",
+    "yen": 250,
+    "pop": 4
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "7-8",
+    "yen": 350,
+    "pop": 1
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "7-8",
+    "yen": 540,
+    "pop": 1
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-7-8",
+    "yen": 380,
+    "pop": 1
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "7-8-4",
+    "yen": 1230,
+    "pop": 1
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261031",
+ "venue_code": "08",
+ "race_no": 3,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202604100320261031/78",
+ "title": "レース結果 JRA"
+}
