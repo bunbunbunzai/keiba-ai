@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 10,
+   "name": "フォコンノワール",
+   "time": "2:03.6",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "number": 1,
+   "name": "ソトッキー",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "3",
+   "number": 4,
+   "name": "アントレピード",
+   "time": "",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "4",
+   "number": 5,
+   "name": "アンドロニクス",
+   "time": "",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "5",
+   "number": 11,
+   "name": "ヒロノリホープ",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "10",
+    "yen": 300,
+    "pop": 2
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "10",
+    "yen": 140,
+    "pop": 1
+   },
+   {
+    "combo": "1",
+    "yen": 220,
+    "pop": 4
+   },
+   {
+    "combo": "4",
+    "yen": 390,
+    "pop": 8
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-7",
+    "yen": 1160,
+    "pop": 5
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-10",
+    "yen": 510,
+    "pop": 6
+   },
+   {
+    "combo": "4-10",
+    "yen": 1130,
+    "pop": 14
+   },
+   {
+    "combo": "1-4",
+    "yen": 1730,
+    "pop": 21
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-10",
+    "yen": 1340,
+    "pop": 6
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "10-1",
+    "yen": 2290,
+    "pop": 9
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-4-10",
+    "yen": 5970,
+    "pop": 24
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "10-1-4",
+    "yen": 21020,
+    "pop": 71
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261031",
+ "venue_code": "08",
+ "race_no": 5,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202604100520261031/E2",
+ "title": "レース結果 JRA"
+}

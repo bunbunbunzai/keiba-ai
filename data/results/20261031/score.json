@@ -1,8 +1,8 @@
 {
  "date": "20261031",
- "updated": "2026-10-31 12:24",
- "races_total": 12,
- "races_scored": 9,
+ "updated": "2026-10-31 12:34",
+ "races_total": 60,
+ "races_scored": 10,
  "stake": 5900,
  "return": 8460,
  "roi": 143.4,
@@ -10,6 +10,582 @@
  "honmei_win": 5,
  "honmei_top3": 8,
  "races": [
+  {
+   "race_id": "202610310304150401",
+   "confidence": "C",
+   "honmei": 2,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 700,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610310304150402",
+   "confidence": "C",
+   "honmei": 3,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 600,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610310304150403",
+   "confidence": "C",
+   "honmei": 6,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 600,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610310304150404",
+   "confidence": "C",
+   "honmei": 9,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 600,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610310304150405",
+   "confidence": "C",
+   "honmei": 9,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 700,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610310304150406",
+   "confidence": "C",
+   "honmei": 1,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 700,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610310304150407",
+   "confidence": "C",
+   "honmei": 4,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 700,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610310304150408",
+   "confidence": "C",
+   "honmei": 1,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 700,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610310304150409",
+   "confidence": "C",
+   "honmei": 7,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 700,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610310304150410",
+   "confidence": "C",
+   "honmei": 3,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 700,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610310304150411",
+   "confidence": "B",
+   "honmei": 4,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 700,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610310304150412",
+   "confidence": "C",
+   "honmei": 3,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 700,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610313129090501",
+   "confidence": "C",
+   "honmei": 4,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 500,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610313129090502",
+   "confidence": "C",
+   "honmei": 2,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 500,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610313129090503",
+   "confidence": "B",
+   "honmei": 3,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 600,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610313129090504",
+   "confidence": "C",
+   "honmei": 11,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 600,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610313129090505",
+   "confidence": "C",
+   "honmei": 10,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 600,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610313129090506",
+   "confidence": "C",
+   "honmei": 7,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 700,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610313129090507",
+   "confidence": "見送り",
+   "honmei": 8,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 0,
+   "return": 0,
+   "roi": null,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610313129090508",
+   "confidence": "C",
+   "honmei": 3,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 600,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610313129090509",
+   "confidence": "C",
+   "honmei": 5,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 700,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610313129090510",
+   "confidence": "C",
+   "honmei": 5,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 700,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610313129090511",
+   "confidence": "B",
+   "honmei": 1,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 700,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610313129090512",
+   "confidence": "C",
+   "honmei": 11,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 600,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610313230120401",
+   "confidence": "見送り",
+   "honmei": null,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 0,
+   "return": 0,
+   "roi": null,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610313230120402",
+   "confidence": "C",
+   "honmei": 2,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 900,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610313230120403",
+   "confidence": "B",
+   "honmei": 4,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 900,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610313230120404",
+   "confidence": "C",
+   "honmei": 9,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 800,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610313230120405",
+   "confidence": "B",
+   "honmei": 6,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 800,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610313230120406",
+   "confidence": "B",
+   "honmei": 6,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 900,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610313230120407",
+   "confidence": "B",
+   "honmei": 2,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 900,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610313230120408",
+   "confidence": "B",
+   "honmei": 3,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 800,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610313230120409",
+   "confidence": "B",
+   "honmei": 6,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 800,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610313230120410",
+   "confidence": "B",
+   "honmei": 6,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 900,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610313230120411",
+   "confidence": "C",
+   "honmei": 11,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 1000,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202610313230120412",
+   "confidence": "C",
+   "honmei": 8,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 900,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
   {
    "race_id": "jra_20261031_京都_01",
    "confidence": "B",
@@ -90,10 +666,46 @@
   },
   {
    "race_id": "jra_20261031_京都_05",
-   "status": "結果未取得"
+   "confidence": "見送り",
+   "honmei": 5,
+   "honmei_finish": "4",
+   "top3": [
+    10,
+    1,
+    4
+   ],
+   "stake": 0,
+   "return": 0,
+   "roi": null,
+   "hits": [],
+   "voided": false
   },
   {
    "race_id": "jra_20261031_京都_06",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261031_京都_07",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261031_京都_08",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261031_京都_09",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261031_京都_10",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261031_京都_11",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261031_京都_12",
    "status": "結果未取得"
   },
   {
@@ -185,6 +797,30 @@
   },
   {
    "race_id": "jra_20261031_東京_06",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261031_東京_07",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261031_東京_08",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261031_東京_09",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261031_東京_10",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261031_東京_11",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261031_東京_12",
    "status": "結果未取得"
   }
  ]
