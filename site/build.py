@@ -25,8 +25,8 @@ import og
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "_site"
-SITE_NAME = "AI競馬ログ"
-SITE_SUB = "全レースAI予想と回収率の記録"
+SITE_NAME = "競馬カルテ"
+SITE_SUB = "AIが全レース・全頭を診断　外れも含めた成績を公開"
 DOMAIN = "www.ai-keiba-log.com"
 BASE_URL = f"https://{DOMAIN}"
 REPO = "https://github.com/bunbunbunzai/keiba-ai"
@@ -792,7 +792,7 @@ def build() -> None:
     write("/results/", results_page(led, venue_of_race))
     lastmod.update(venue_pages(by_date, led, venue_of_race))
     write("/about/", page(f"予想の方法とよくある質問 | {SITE_NAME}", ABOUT, "/about/", head_extra=jsonld(FAQ_LD),
-                          desc="AI競馬ログの予想の作り方（評価の5軸・印・自信度・買い目）と、回収率の計算方法。"))
+                          desc="競馬カルテの予想の作り方（評価の5軸・印・自信度・買い目）と、回収率の計算方法。"))
     write("/operator/", page(f"運営者情報 | {SITE_NAME}", OPERATOR, "/operator/"))
     write("/privacy/", page(f"プライバシーポリシー | {SITE_NAME}", PRIVACY, "/privacy/"))
     today_iso = now.strftime("%Y-%m-%d")
