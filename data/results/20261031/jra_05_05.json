@@ -1,0 +1,178 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 8,
+   "name": "エクアトーレ",
+   "time": "1:48.8",
+   "margin": "",
+   "corners": "6-5-5",
+   "last3f": 33.8,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 2,
+   "name": "ラヴェーラ",
+   "time": "1:49.3",
+   "margin": "３",
+   "corners": "1-1-1",
+   "last3f": 34.7,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "number": 4,
+   "name": "ヴィルアペックス",
+   "time": "1:49.3",
+   "margin": "ハナ",
+   "corners": "2-2-2",
+   "last3f": 34.6,
+   "popularity": 7
+  },
+  {
+   "finish": "4",
+   "number": 6,
+   "name": "タイセイリメンバー",
+   "time": "1:49.3",
+   "margin": "ハナ",
+   "corners": "9-9-8",
+   "last3f": 34.0,
+   "popularity": 3
+  },
+  {
+   "finish": "5",
+   "number": 1,
+   "name": "サスケサートゥル",
+   "time": "1:49.5",
+   "margin": "１ 1/4",
+   "corners": "3-3-3",
+   "last3f": 34.7,
+   "popularity": 9
+  },
+  {
+   "finish": "6",
+   "number": 5,
+   "name": "ハクアイソー",
+   "time": "1:49.6",
+   "margin": "１／２",
+   "corners": "7-7-5",
+   "last3f": 34.5,
+   "popularity": 4
+  },
+  {
+   "finish": "7",
+   "number": 9,
+   "name": "バーンユアハート",
+   "time": "1:49.6",
+   "margin": "クビ",
+   "corners": "8-8-8",
+   "last3f": 34.3,
+   "popularity": 6
+  },
+  {
+   "finish": "8",
+   "number": 7,
+   "name": "シャルマンスリール",
+   "time": "1:51.7",
+   "margin": "大差",
+   "corners": "3-3-3",
+   "last3f": 36.9,
+   "popularity": 8
+  },
+  {
+   "finish": "9",
+   "number": 3,
+   "name": "ケープルグラン",
+   "time": "1:52.1",
+   "margin": "２",
+   "corners": "3-5-5",
+   "last3f": 37.1,
+   "popularity": 5
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "8",
+    "yen": 140,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "8",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "2",
+    "yen": 140,
+    "pop": 2
+   },
+   {
+    "combo": "4",
+    "yen": 420,
+    "pop": 7
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-8",
+    "yen": 320,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-8",
+    "yen": 170,
+    "pop": 1
+   },
+   {
+    "combo": "4-8",
+    "yen": 750,
+    "pop": 11
+   },
+   {
+    "combo": "2-4",
+    "yen": 1310,
+    "pop": 14
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-8",
+    "yen": 300,
+    "pop": 1
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "8-2",
+    "yen": 390,
+    "pop": 1
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-4-8",
+    "yen": 2100,
+    "pop": 7
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "8-2-4",
+    "yen": 4730,
+    "pop": 14
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261031",
+ "venue_code": "05",
+ "race_no": 5,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202604100520261031/04",
+ "title": "レース結果 JRA"
+}
