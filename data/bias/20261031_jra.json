@@ -1,6 +1,6 @@
 {
  "date": "20261031",
- "updated": "2026-10-31 11:34",
+ "updated": "2026-10-31 11:49",
  "bias": {
   "東京ダ": {
    "judgement": "先行有利",
@@ -39,10 +39,11 @@
   },
   "京都芝": {
    "judgement": "フラット・外",
-   "confidence": "弱",
+   "confidence": "中",
    "races": [
     2,
-    3
+    3,
+    4
    ],
    "front_share": 0.5,
    "inner_share": 0.0,

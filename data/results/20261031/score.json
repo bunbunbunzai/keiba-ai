@@ -1,14 +1,14 @@
 {
  "date": "20261031",
- "updated": "2026-10-31 11:34",
+ "updated": "2026-10-31 11:49",
  "races_total": 12,
- "races_scored": 7,
- "stake": 5000,
- "return": 7230,
- "roi": 144.6,
- "hit_races": 6,
- "honmei_win": 3,
- "honmei_top3": 6,
+ "races_scored": 8,
+ "stake": 5900,
+ "return": 8460,
+ "roi": 143.4,
+ "hit_races": 7,
+ "honmei_win": 4,
+ "honmei_top3": 7,
  "races": [
   {
    "race_id": "jra_20261031_京都_01",
@@ -69,7 +69,24 @@
   },
   {
    "race_id": "jra_20261031_京都_04",
-   "status": "結果未取得"
+   "confidence": "C",
+   "honmei": 1,
+   "honmei_finish": "1",
+   "top3": [
+    1,
+    5,
+    4
+   ],
+   "stake": 900,
+   "return": 1230,
+   "roi": 136.7,
+   "hits": [
+    "馬連 1-5 330円",
+    "ワイド 1-5 180円",
+    "ワイド 1-4 200円",
+    "3連複 1-4-5 520円"
+   ],
+   "voided": false
   },
   {
    "race_id": "jra_20261031_京都_05",
