@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 12,
+   "name": "ホウオウシュウ",
+   "time": "1:38.5",
+   "margin": "",
+   "corners": "8-7",
+   "last3f": 37.4,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "number": 11,
+   "name": "ランフェザー",
+   "time": "1:38.9",
+   "margin": "２ 1/2",
+   "corners": "3-2",
+   "last3f": 38.3,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "number": 6,
+   "name": "イントゥーザブルー",
+   "time": "1:39.1",
+   "margin": "１",
+   "corners": "1-1",
+   "last3f": 38.7,
+   "popularity": 7
+  },
+  {
+   "finish": "4",
+   "number": 15,
+   "name": "アークレイリ",
+   "time": "1:39.1",
+   "margin": "ハナ",
+   "corners": "6-5",
+   "last3f": 38.2,
+   "popularity": 6
+  },
+  {
+   "finish": "5",
+   "number": 5,
+   "name": "ハイファイネスト",
+   "time": "1:39.4",
+   "margin": "２",
+   "corners": "2-2",
+   "last3f": 38.9,
+   "popularity": 5
+  },
+  {
+   "finish": "6",
+   "number": 14,
+   "name": "パレスラン",
+   "time": "1:39.8",
+   "margin": "２ 1/2",
+   "corners": "6-8",
+   "last3f": 38.6,
+   "popularity": 3
+  },
+  {
+   "finish": "7",
+   "number": 7,
+   "name": "フジサンインフレ",
+   "time": "1:39.8",
+   "margin": "ハナ",
+   "corners": "8-9",
+   "last3f": 38.4,
+   "popularity": 4
+  },
+  {
+   "finish": "8",
+   "number": 2,
+   "name": "ニシノツムジカゼ",
+   "time": "1:40.2",
+   "margin": "２",
+   "corners": "3-5",
+   "last3f": 39.2,
+   "popularity": 10
+  },
+  {
+   "finish": "9",
+   "number": 16,
+   "name": "ウスズミザクラ",
+   "time": "1:40.4",
+   "margin": "１ 1/4",
+   "corners": "11-13",
+   "last3f": 38.4,
+   "popularity": 15
+  },
+  {
+   "finish": "10",
+   "number": 13,
+   "name": "チャリンコリン",
+   "time": "1:40.5",
+   "margin": "１",
+   "corners": "16-16",
+   "last3f": 38.1,
+   "popularity": 8
+  },
+  {
+   "finish": "11",
+   "number": 3,
+   "name": "ドーンオブホープ",
+   "time": "1:41.3",
+   "margin": "５",
+   "corners": "3-4",
+   "last3f": 40.5,
+   "popularity": 11
+  },
+  {
+   "finish": "12",
+   "number": 10,
+   "name": "サクラトップオメガ",
+   "time": "1:41.7",
+   "margin": "２ 1/2",
+   "corners": "11-11",
+   "last3f": 39.8,
+   "popularity": 14
+  },
+  {
+   "finish": "13",
+   "number": 9,
+   "name": "サイボーグ",
+   "time": "1:41.8",
+   "margin": "３／４",
+   "corners": "15-14",
+   "last3f": 39.7,
+   "popularity": 9
+  },
+  {
+   "finish": "14",
+   "number": 4,
+   "name": "ボディビルダー",
+   "time": "1:41.8",
+   "margin": "アタマ",
+   "corners": "14-14",
+   "last3f": 39.6,
+   "popularity": 12
+  },
+  {
+   "finish": "15",
+   "number": 8,
+   "name": "フィックスユー",
+   "time": "1:42.3",
+   "margin": "３",
+   "corners": "10-10",
+   "last3f": 40.7,
+   "popularity": 13
+  },
+  {
+   "finish": "16",
+   "number": 1,
+   "name": "トルタネーラ",
+   "time": "1:44.4",
+   "margin": "大差",
+   "corners": "11-11",
+   "last3f": 42.5,
+   "popularity": 16
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "12",
+    "yen": 460,
+    "pop": 2
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "12",
+    "yen": 150,
+    "pop": 2
+   },
+   {
+    "combo": "11",
+    "yen": 100,
+    "pop": 1
+   },
+   {
+    "combo": "6",
+    "yen": 510,
+    "pop": 7
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "6-6",
+    "yen": 280,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "11-12",
+    "yen": 190,
+    "pop": 1
+   },
+   {
+    "combo": "6-12",
+    "yen": 2320,
+    "pop": 21
+   },
+   {
+    "combo": "6-11",
+    "yen": 850,
+    "pop": 9
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "11-12",
+    "yen": 280,
+    "pop": 1
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "12-11",
+    "yen": 680,
+    "pop": 2
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "6-11-12",
+    "yen": 2980,
+    "pop": 11
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "12-11-6",
+    "yen": 15640,
+    "pop": 44
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261031",
+ "venue_code": "05",
+ "race_no": 1,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202604100120261031/30",
+ "title": "レース結果 JRA"
+}
