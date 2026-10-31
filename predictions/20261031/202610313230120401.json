@@ -1,0 +1,20 @@
+{
+  "race_id": "202610313230120401",
+  "results_key": "202610313230120401",
+  "venue": "佐賀", "race_no": 1, "race_name": "ホープフルデビュー",
+  "phase": "当日昼",
+  "summary": "2歳新馬戦で6頭すべてに近走データがないため見送りとする。",
+  "confidence": "見送り",
+  "marks": {},
+  "pace": "全頭が初出走で通過順のデータがなく、脚質やペースは読めない。",
+  "bets": [],
+  "horses": [
+    {"number": 1, "name": "カロンテソーロ", "score": 27, "win_pct": 0, "comment": "初出走で判断材料は血統と騎手のみ。最内枠を生かせるか。"},
+    {"number": 2, "name": "テムグロリア", "score": 27, "win_pct": 0, "comment": "初出走でデータがない。"},
+    {"number": 3, "name": "シシキバーレ", "score": 27, "win_pct": 0, "comment": "初出走でデータがない。父ミッキーアイルで短距離向きの血統だ。"},
+    {"number": 4, "name": "カシノスアレス", "score": 27, "win_pct": 0, "comment": "初出走でデータがない。"},
+    {"number": 5, "name": "キートゥサクセス", "score": 27, "win_pct": 0, "comment": "初出走でデータがない。"},
+    {"number": 6, "name": "サンベニト", "score": 27, "win_pct": 0, "comment": "初出走でデータがない。牝馬で54kgの1kg減。"}
+  ],
+  "updates": [{"at": "10/31 12:13", "text": "当日昼予想"}]
+}
