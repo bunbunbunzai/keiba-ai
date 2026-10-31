@@ -95,7 +95,13 @@ def race_image(out: Path, date_txt: str, label: str, meta: str, marks: list[tupl
 def site_image(out: Path, title: str, lines: list[str]) -> None:
     im = canvas()
     d = ImageDraw.Draw(im)
-    d.text((76, 70), "競馬カルテ", font=font(64), fill=GREEN)
+    logo = HERE / "assets" / "logo-mark.png"
+    x = 76
+    if logo.exists():
+        lg = Image.open(logo).convert("RGBA").resize((92, 92), Image.LANCZOS)
+        im.paste(lg, (72, 62), lg)
+        x = 180
+    d.text((x, 70), "競馬カルテ", font=font(64), fill=GREEN)
     d.text((80, 160), title, font=fit(d, title, 38, 640), fill=INK)
     y = 240
     for ln in lines:
