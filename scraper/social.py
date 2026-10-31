@@ -212,7 +212,9 @@ def texts(date: str, c: dict, cfg: dict) -> dict:
             lines.append(f"最高：{venue(best)}{rno(best)}R 払戻{best['_score']['return']:,}円")
         lines.append(f"累計回収率{ledger_roi()}")
         lines = [x for x in lines if x]
-        tags = ["#競馬予想", "#地方競馬", "#AI予想", "#回収率"]
+        jra = any(str(p["race_id"]).startswith("jra_") for p in rs)
+        local = any(not str(p["race_id"]).startswith("jra_") for p in rs)
+        tags = ["#競馬予想"] + (["#中央競馬"] if jra else []) + (["#地方競馬"] if local else []) + ["#AI予想", "#回収率"]
         url = BASE_URL + f"/{date[:4]}/{date[4:6]}/{date[6:8]}/"
     else:
         p, sc = c["p"], c["p"]["_score"]
