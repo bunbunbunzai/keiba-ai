@@ -369,10 +369,12 @@ def live(url: str) -> bool:
         return False
 
 
-def publish(date: str, dry: bool = False) -> int:
+def publish(date: str, dry: bool = False, only: str = "") -> int:
     st = load_state(date)
     n = 0
     for pid, e in st["posts"].items():
+        if only and pid != only:
+            continue
         todo = [k for k in ("x", "instagram") if e.get(k) in ("pending", "draft")]
         if not todo:
             continue
@@ -410,10 +412,11 @@ if __name__ == "__main__":
     ap.add_argument("--date", default=now().strftime("%Y%m%d"))
     ap.add_argument("--prepare-only", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--only", default="", help="この投稿IDだけ出す（手動テスト用。準備はしない）")
     a = ap.parse_args()
     cfg = load(SOCIAL / "config.json", {}) or {}
-    posted = 0 if a.prepare_only else publish(a.date, a.dry_run)
-    made = prepare(a.date, cfg)
+    posted = 0 if a.prepare_only else publish(a.date, a.dry_run, a.only)
+    made = 0 if a.only else prepare(a.date, cfg)
     status = {"x_keys": has_x(), "ig_keys": has_ig()}  # 鍵の有無だけ（中身は書かない）
     sp = SOCIAL / "status.json"
     if load(sp, {}) != status:

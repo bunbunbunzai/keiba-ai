@@ -12,6 +12,9 @@ on:
       date:
         description: "対象日 YYYYMMDD（空なら今日）"
         required: false
+      only:
+        description: "この投稿IDだけ出す（手動テスト用）"
+        required: false
 
 permissions:
   contents: write
@@ -44,7 +47,8 @@ jobs:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
         run: |
           D="${{ inputs.date }}"; [ -z "$D" ] && D=$(TZ=Asia/Tokyo date +%Y%m%d)
-          OUT=$(python scraper/social.py --date "$D" | tail -1); echo "$OUT"
+          O="${{ inputs.only }}"
+          OUT=$(python scraper/social.py --date "$D" ${O:+--only "$O"} | tail -1); echo "$OUT"
           echo "prepared=$(echo "$OUT" | python -c 'import sys,json;print(json.load(sys.stdin)["prepared"])')" >> "$GITHUB_OUTPUT"
       - name: 保存
         run: |
