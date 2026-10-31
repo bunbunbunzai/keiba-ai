@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 6,
+   "name": "ジェイパームス",
+   "time": "1:35.1",
+   "margin": "",
+   "corners": "14-14",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "2",
+   "number": 9,
+   "name": "リサシテーション",
+   "time": "1:35.2",
+   "margin": "１／２",
+   "corners": "13-13",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "3",
+   "number": 12,
+   "name": "クレーキング",
+   "time": "1:35.4",
+   "margin": "１ 1/2",
+   "corners": "8-7",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "number": 16,
+   "name": "ピエマンソン",
+   "time": "1:35.5",
+   "margin": "１／２",
+   "corners": "5-4",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "5",
+   "number": 13,
+   "name": "クールブロン",
+   "time": "1:35.6",
+   "margin": "１／２",
+   "corners": "8-7",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "6",
+   "number": 11,
+   "name": "エスカル",
+   "time": "1:35.7",
+   "margin": "１／２",
+   "corners": "3-3",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "7",
+   "number": 7,
+   "name": "シュラザック",
+   "time": "1:35.7",
+   "margin": "クビ",
+   "corners": "7-7",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "8",
+   "number": 14,
+   "name": "ナイトアクアリウム",
+   "time": "1:35.8",
+   "margin": "３／４",
+   "corners": "16-16",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "9",
+   "number": 8,
+   "name": "ハワイアンタイム",
+   "time": "1:36.0",
+   "margin": "１ 1/4",
+   "corners": "2-2",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "10",
+   "number": 1,
+   "name": "ハセドン",
+   "time": "1:36.1",
+   "margin": "クビ",
+   "corners": "10-10",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "11",
+   "number": 15,
+   "name": "ショウナンライシン",
+   "time": "1:36.2",
+   "margin": "３／４",
+   "corners": "15-15",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "12",
+   "number": 3,
+   "name": "ロードラビリンス",
+   "time": "1:36.2",
+   "margin": "ハナ",
+   "corners": "10-10",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "13",
+   "number": 10,
+   "name": "アドマイヤデイトナ",
+   "time": "1:36.2",
+   "margin": "クビ",
+   "corners": "10-10",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "14",
+   "number": 5,
+   "name": "イムホテプ",
+   "time": "1:37.0",
+   "margin": "５",
+   "corners": "5-4",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "15",
+   "number": 4,
+   "name": "サフランヒーロー",
+   "time": "1:39.3",
+   "margin": "大差",
+   "corners": "1-1",
+   "last3f": null,
+   "popularity": 16
+  },
+  {
+   "finish": "16",
+   "number": 2,
+   "name": "シーズンリッチ",
+   "time": "1:40.3",
+   "margin": "６",
+   "corners": "4-4",
+   "last3f": null,
+   "popularity": 13
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "6",
+    "yen": 690,
+    "pop": 3
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "6",
+    "yen": 270,
+    "pop": 5
+   },
+   {
+    "combo": "9",
+    "yen": 350,
+    "pop": 7
+   },
+   {
+    "combo": "12",
+    "yen": 220,
+    "pop": 2
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-5",
+    "yen": 1760,
+    "pop": 9
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "6-9",
+    "yen": 1490,
+    "pop": 19
+   },
+   {
+    "combo": "6-12",
+    "yen": 960,
+    "pop": 7
+   },
+   {
+    "combo": "9-12",
+    "yen": 1350,
+    "pop": 16
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "6-9",
+    "yen": 3840,
+    "pop": 17
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "6-9",
+    "yen": 7040,
+    "pop": 27
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "6-9-12",
+    "yen": 6900,
+    "pop": 19
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "6-9-12",
+    "yen": 39580,
+    "pop": 115
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261031",
+ "venue_code": "05",
+ "race_no": 11,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202604101120261031/82",
+ "title": "レース結果 JRA"
+}
