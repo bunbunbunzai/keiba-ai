@@ -1,0 +1,218 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 7,
+   "name": "ヘリテージブルーム",
+   "time": "1:25.0",
+   "margin": "",
+   "corners": "2-3",
+   "last3f": 36.0,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 5,
+   "name": "レディサン",
+   "time": "1:25.1",
+   "margin": "クビ",
+   "corners": "11-13",
+   "last3f": 35.3,
+   "popularity": 9
+  },
+  {
+   "finish": "3",
+   "number": 10,
+   "name": "ヴィンブルレー",
+   "time": "1:25.2",
+   "margin": "１／２",
+   "corners": "13-11",
+   "last3f": 35.6,
+   "popularity": 6
+  },
+  {
+   "finish": "4",
+   "number": 3,
+   "name": "ダイシンリンク",
+   "time": "1:25.2",
+   "margin": "アタマ",
+   "corners": "2-2",
+   "last3f": 36.3,
+   "popularity": 2
+  },
+  {
+   "finish": "5",
+   "number": 4,
+   "name": "ベルメサイア",
+   "time": "1:25.3",
+   "margin": "１／２",
+   "corners": "7-9",
+   "last3f": 35.9,
+   "popularity": 7
+  },
+  {
+   "finish": "6",
+   "number": 12,
+   "name": "パープルナイト",
+   "time": "1:25.5",
+   "margin": "１ 1/2",
+   "corners": "7-7",
+   "last3f": 36.2,
+   "popularity": 10
+  },
+  {
+   "finish": "7",
+   "number": 9,
+   "name": "トーホウキザン",
+   "time": "1:25.6",
+   "margin": "１／２",
+   "corners": "7-7",
+   "last3f": 36.3,
+   "popularity": 10
+  },
+  {
+   "finish": "8",
+   "number": 2,
+   "name": "プレダトゥール",
+   "time": "1:25.7",
+   "margin": "クビ",
+   "corners": "4-4",
+   "last3f": 36.6,
+   "popularity": 5
+  },
+  {
+   "finish": "9",
+   "number": 13,
+   "name": "アクアマリーナ",
+   "time": "1:25.9",
+   "margin": "１ 1/4",
+   "corners": "4-4",
+   "last3f": 36.8,
+   "popularity": 4
+  },
+  {
+   "finish": "10",
+   "number": 6,
+   "name": "レジーナローズ",
+   "time": "1:25.9",
+   "margin": "クビ",
+   "corners": "4-4",
+   "last3f": 36.7,
+   "popularity": 8
+  },
+  {
+   "finish": "11",
+   "number": 1,
+   "name": "スーパーバイザー",
+   "time": "1:26.2",
+   "margin": "２",
+   "corners": "1-1",
+   "last3f": 37.4,
+   "popularity": 12
+  },
+  {
+   "finish": "12",
+   "number": 11,
+   "name": "ミライテーラー",
+   "time": "1:26.3",
+   "margin": "クビ",
+   "corners": "7-9",
+   "last3f": 36.8,
+   "popularity": 3
+  },
+  {
+   "finish": "13",
+   "number": 8,
+   "name": "メモリーグラス",
+   "time": "1:26.7",
+   "margin": "２ 1/2",
+   "corners": "11-11",
+   "last3f": 37.0,
+   "popularity": 13
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "7",
+    "yen": 160,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "7",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "5",
+    "yen": 1020,
+    "pop": 10
+   },
+   {
+    "combo": "10",
+    "yen": 390,
+    "pop": 7
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-5",
+    "yen": 930,
+    "pop": 4
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "5-7",
+    "yen": 1490,
+    "pop": 15
+   },
+   {
+    "combo": "7-10",
+    "yen": 750,
+    "pop": 7
+   },
+   {
+    "combo": "5-10",
+    "yen": 9500,
+    "pop": 48
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "5-7",
+    "yen": 4420,
+    "pop": 11
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "7-5",
+    "yen": 6290,
+    "pop": 17
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "5-7-10",
+    "yen": 20780,
+    "pop": 48
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "7-5-10",
+    "yen": 80080,
+    "pop": 182
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261031",
+ "venue_code": "05",
+ "race_no": 8,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202604100820261031/23",
+ "title": "レース結果 JRA"
+}
