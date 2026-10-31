@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261031",
  "race_id": "202610313129090502",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -67,8 +67,8 @@
    "name": "ハルガキタ",
    "time": "1:26.9",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 40.4,
    "popularity": null
   },
   {
@@ -78,8 +78,8 @@
    "name": "ベラジオイザーニャ",
    "time": "1:27.4",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 40.9,
    "popularity": null
   },
   {
@@ -89,8 +89,8 @@
    "name": "スパイスタウン",
    "time": "1:27.5",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 39.9,
    "popularity": null
   },
   {
@@ -100,8 +100,8 @@
    "name": "ロイヤルクォーク",
    "time": "1:27.6",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 40.9,
    "popularity": null
   },
   {
@@ -111,8 +111,8 @@
    "name": "ブラックパトロール",
    "time": "1:28.1",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 40.8,
    "popularity": null
   },
   {
@@ -122,8 +122,8 @@
    "name": "スミスバローズ",
    "time": "1:28.2",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 41.1,
    "popularity": null
   }
  ]

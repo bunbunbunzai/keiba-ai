@@ -1,18 +1,18 @@
 {
  "date": "20261031",
- "updated": "2026-10-31 15:54",
+ "updated": "2026-10-31 15:56",
  "bias": {
   "高知ダ": {
-   "judgement": "フラット・外",
+   "judgement": "先行有利・外",
    "confidence": "弱",
    "races": [
     1,
     2
    ],
-   "front_share": 0.5,
+   "front_share": 0.75,
    "inner_share": 0.0,
    "outer_share": 1.0,
-   "horses": 2
+   "horses": 4
   },
   "佐賀ダ": {
    "judgement": "フラット",
