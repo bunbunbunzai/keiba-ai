@@ -2,7 +2,172 @@
  "source": "rakuten",
  "date": "20261031",
  "race_id": "202610313129090506",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 4,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "8",
+    "yen": 2360
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "8-4",
+    "yen": 3910
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "8",
+    "yen": 170
+   },
+   {
+    "combo": "4",
+    "yen": 120
+   },
+   {
+    "combo": "9",
+    "yen": 750
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-8",
+    "yen": 220
+   },
+   {
+    "combo": "8-9",
+    "yen": 4210
+   },
+   {
+    "combo": "4-9",
+    "yen": 1220
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-8",
+    "yen": 1040
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-8-9",
+    "yen": 6360
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "8-4-9",
+    "yen": 51420
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-8",
+    "yen": 680
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 8,
+   "name": "リワードエレイン",
+   "time": "1:25.3",
+   "margin": "",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 4,
+   "number": 4,
+   "name": "ローガンパス",
+   "time": "1:25.4",
+   "margin": "１／２",
+   "pos4": 2,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 9,
+   "name": "ダノンジャスティス",
+   "time": "1:25.6",
+   "margin": "１",
+   "pos4": 2,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 1,
+   "number": 1,
+   "name": "バイユーラン",
+   "time": "1:26.0",
+   "margin": "２",
+   "pos4": 7,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 5,
+   "name": "ディースプレマシー",
+   "time": "1:26.2",
+   "margin": "１",
+   "pos4": 4,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 7,
+   "name": "ダイタジャスティス",
+   "time": "1:26.3",
+   "margin": "１／２",
+   "pos4": 4,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 6,
+   "name": "ハッピービバーク",
+   "time": "1:26.8",
+   "margin": "２ １／２",
+   "pos4": 6,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "カポデテュティカピ",
+   "time": "1:27.1",
+   "margin": "１ １／２",
+   "pos4": 8,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "ボマライン",
+   "time": "1:28.5",
+   "margin": "７",
+   "pos4": 9,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
