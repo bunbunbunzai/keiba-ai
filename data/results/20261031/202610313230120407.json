@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261031",
  "race_id": "202610313230120407",
- "tries": 4,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -78,8 +78,8 @@
    "time": "1:31.8",
    "margin": "",
    "pos4": 1,
-   "last3f": null,
-   "popularity": null
+   "last3f": 40.3,
+   "popularity": 4
   },
   {
    "finish": "2",
@@ -89,8 +89,8 @@
    "time": "1:32.0",
    "margin": "１",
    "pos4": 2,
-   "last3f": null,
-   "popularity": null
+   "last3f": 40.3,
+   "popularity": 1
   },
   {
    "finish": "3",
@@ -100,8 +100,8 @@
    "time": "1:32.2",
    "margin": "１",
    "pos4": 5,
-   "last3f": null,
-   "popularity": null
+   "last3f": 39.3,
+   "popularity": 2
   },
   {
    "finish": "4",
@@ -111,8 +111,8 @@
    "time": "1:32.2",
    "margin": "ハナ",
    "pos4": 4,
-   "last3f": null,
-   "popularity": null
+   "last3f": 39.8,
+   "popularity": 9
   },
   {
    "finish": "5",
@@ -122,8 +122,8 @@
    "time": "1:32.7",
    "margin": "２ １／２",
    "pos4": 7,
-   "last3f": null,
-   "popularity": null
+   "last3f": 39.5,
+   "popularity": 5
   },
   {
    "finish": "6",
@@ -133,8 +133,8 @@
    "time": "1:32.8",
    "margin": "１／２",
    "pos4": 6,
-   "last3f": null,
-   "popularity": null
+   "last3f": 40.3,
+   "popularity": 8
   },
   {
    "finish": "7",
@@ -144,8 +144,8 @@
    "time": "1:33.0",
    "margin": "１ １／４",
    "pos4": 3,
-   "last3f": null,
-   "popularity": null
+   "last3f": 40.9,
+   "popularity": 3
   },
   {
    "finish": "8",
@@ -155,8 +155,8 @@
    "time": "1:33.4",
    "margin": "２",
    "pos4": 8,
-   "last3f": null,
-   "popularity": null
+   "last3f": 40.8,
+   "popularity": 6
   },
   {
    "finish": "9",
@@ -166,8 +166,8 @@
    "time": "1:33.4",
    "margin": "クビ",
    "pos4": 9,
-   "last3f": null,
-   "popularity": null
+   "last3f": 40.7,
+   "popularity": 10
   },
   {
    "finish": "10",
@@ -177,8 +177,8 @@
    "time": "1:33.9",
    "margin": "２ １／２",
    "pos4": 10,
-   "last3f": null,
-   "popularity": null
+   "last3f": 41.2,
+   "popularity": 11
   },
   {
    "finish": "11",
@@ -188,8 +188,8 @@
    "time": "1:34.8",
    "margin": "５",
    "pos4": 11,
-   "last3f": null,
-   "popularity": null
+   "last3f": 41.6,
+   "popularity": 7
   }
  ]
 }

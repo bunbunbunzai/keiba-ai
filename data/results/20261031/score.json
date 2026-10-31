@@ -1,12 +1,12 @@
 {
  "date": "20261031",
- "updated": "2026-10-31 18:41",
+ "updated": "2026-10-31 19:04",
  "races_total": 60,
- "races_scored": 46,
- "stake": 30300,
- "return": 26150,
- "roi": 86.3,
- "hit_races": 21,
+ "races_scored": 49,
+ "stake": 32400,
+ "return": 26970,
+ "roi": 83.2,
+ "hit_races": 23,
  "honmei_win": 12,
  "honmei_top3": 26,
  "races": [
@@ -159,7 +159,7 @@
    "return": 0,
    "roi": 0.0,
    "hits": [],
-   "voided": true
+   "voided": false
   },
   {
    "race_id": "202610310304150410",
@@ -341,10 +341,13 @@
     null
    ],
    "stake": 600,
-   "return": 0,
-   "roi": 0.0,
-   "hits": [],
-   "voided": true
+   "return": 400,
+   "roi": 66.7,
+   "hits": [
+    "馬連 2-10 260円",
+    "ワイド 2-10 140円"
+   ],
+   "voided": false
   },
   {
    "race_id": "202610313129090509",
@@ -533,17 +536,19 @@
    "race_id": "202610313230120408",
    "confidence": "C",
    "honmei": 9,
-   "honmei_finish": null,
+   "honmei_finish": "-",
    "top3": [
-    null,
-    null,
-    null
+    3,
+    5,
+    6
    ],
    "stake": 800,
-   "return": 0,
-   "roi": 0.0,
-   "hits": [],
-   "voided": true
+   "return": 420,
+   "roi": 52.5,
+   "hits": [
+    "馬連 3-5 420円"
+   ],
+   "voided": false
   },
   {
    "race_id": "202610313230120409",
