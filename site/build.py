@@ -577,7 +577,7 @@ def day_list(date: str, preds: list[dict]) -> str:
     venues = sorted({venue_of(p) for p in preds})
     today = date == TODAY
     return (picks_html(date, preds, today) + scoreboard(date, preds) + filters(venues)
-            + (f"<p class='jump'><a href='#next' class='to-next'>次の発走へ ↓</a><button class='toggle-gone'>確定済みを表示</button></p>" if today else "")
+            + (f"<p class='jump'><a href='#next' class='to-next'>次の発走へ ↓</a><button class='toggle-gone'>発走済みを表示</button></p>" if today else "")
             + "<ul class='races'>" + "".join(race_item(date, p) for p in preds) + "</ul>")
 
 
@@ -806,7 +806,7 @@ a{color:var(--acc);text-decoration:none}.wrap{max-width:960px;margin:0 auto;padd
 .share{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}.share a,.share button{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:16px;padding:4px 14px;font:inherit;font-size:13px;cursor:pointer}
 .vs select{font:inherit;padding:4px;border-radius:6px;border:1px solid var(--line);background:var(--card);color:var(--fg)}.vs .r{font-weight:700;margin-top:8px}
 .logo{font-weight:700;color:var(--fg);display:flex;align-items:center;gap:10px;line-height:1.3}.logo span{display:flex;flex-direction:column}.logo img{border-radius:8px}.logo small{font-weight:400;font-size:12px;color:var(--mut)}
-nav{display:flex;gap:16px;font-size:14px}
+nav{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px}nav a{white-space:nowrap}
 h1{font-size:24px;margin:20px 0 4px}h2{font-size:18px;margin:0 0 8px}h3{font-size:15px;margin:16px 0 6px}
 .meta,.crumb{color:var(--mut);font-size:13px;margin:0 0 10px}.crumb{margin-top:12px}
 .answer{background:var(--card);border-left:4px solid var(--acc);padding:10px 14px;margin:12px 0;border-radius:4px}
@@ -823,7 +823,7 @@ h1{font-size:24px;margin:20px 0 4px}h2{font-size:18px;margin:0 0 8px}h3{font-siz
 table{border-collapse:collapse;width:100%;font-size:14px}th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
 .scroll{overflow-x:auto}.horses th,.horses td:not(.cmt){white-space:nowrap}.horses .cmt{min-width:260px}.mark{font-weight:700;color:var(--acc)}tr.mk td{background:rgba(31,111,74,.06)}
 .bets{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0}.bets li{border:1px solid var(--line);border-radius:6px;padding:2px 8px;font-size:14px}.bets li.won{background:var(--won);border-color:var(--hit);color:var(--hit);font-weight:700}
-.picks li a{flex-wrap:wrap}.picks .meta{margin:0;flex-basis:100%}.jump{display:flex;gap:12px;align-items:center;font-size:13px;margin:8px 0}.jump button{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:14px;padding:3px 12px;font:inherit;font-size:13px;cursor:pointer}
+.picks li a{flex-wrap:wrap;row-gap:4px}.picks .rno{flex-basis:100%;font-size:15px}.picks .meta{margin:0;flex-basis:100%}.jump{display:flex;gap:12px;align-items:center;font-size:13px;margin:8px 0}.jump button{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:14px;padding:3px 12px;font:inherit;font-size:13px;cursor:pointer}
 .races.fold li.gone:not(.keep){display:none}.races.fold li.gone.keep{opacity:.9}
 .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:16px 0}.kpis div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px}
 .kpis b{display:block;font-size:24px}.kpis span{color:var(--mut);font-size:13px}
@@ -865,8 +865,8 @@ document.querySelectorAll('.races li[data-post]').forEach(function(li){var p=li.
  if(p<=s){li.classList.add('gone');if(!li.querySelector('.res')&&li.dataset.conf!=='見送り'){var w=document.createElement('span');w.className='res wait';w.textContent='結果待ち';li.querySelector('a').appendChild(w);}}else if(!first){first=li;}});
 if(first&&document.body.contains(first)&&document.querySelector('.today')){first.classList.add('next');first.id='next';}
 var tl=document.querySelector('.today ul.races:not(.picks ul)'),tb=document.querySelector('.toggle-gone'),tn=document.querySelector('.to-next');
-if(tl&&tb){var gone=tl.querySelectorAll('li.gone');if(gone.length>3&&first){gone.forEach(function(li,i){if(i>=gone.length-2)li.classList.add('keep')});tl.classList.add('fold');tb.textContent='確定済み'+gone.length+'レースを表示';
- tb.addEventListener('click',function(){var f=tl.classList.toggle('fold');tb.textContent=f?'確定済み'+gone.length+'レースを表示':'確定済みを隠す';ga('toggle_gone',{open:!f});});}else{tb.style.display='none';}}
+if(tl&&tb){var gone=tl.querySelectorAll('li.gone');if(gone.length>3&&first){gone.forEach(function(li,i){if(i>=gone.length-2)li.classList.add('keep')});tl.classList.add('fold');tb.textContent='発走済み'+gone.length+'レースを表示';
+ tb.addEventListener('click',function(){var f=tl.classList.toggle('fold');tb.textContent=f?'発走済み'+gone.length+'レースを表示':'発走済みを隠す';ga('toggle_gone',{open:!f});});}else{tb.style.display='none';}}
 if(tn&&!first){tn.style.display='none';}
 document.querySelectorAll('.vs').forEach(function(v){
  var key=v.dataset.key,fin={},pick=null;try{fin=JSON.parse(v.dataset.fin||'{}')}catch(e){}
