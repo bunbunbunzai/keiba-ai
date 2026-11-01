@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261101",
  "race_id": "202611010304150501",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,116 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 7,
+   "name": "ミライニツヅケ",
+   "time": "2:15.3",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 6,
+   "name": "コトブキクィーン",
+   "time": "2:17.1",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 9,
+   "name": "ヒメトラマリア",
+   "time": "2:22.9",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 1,
+   "number": 1,
+   "name": "アアモンドハスキー",
+   "time": "2:24.2",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 5,
+   "name": "イノスケ",
+   "time": "2:26.1",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 3,
+   "number": 3,
+   "name": "アラキオー",
+   "time": "2:26.5",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 8,
+   "name": "アオノメビウス",
+   "time": "2:26.7",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 4,
+   "number": 4,
+   "name": "アショロノチカラ",
+   "time": "2:34.8",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "スーパーハリアー",
+   "time": "2:48.3",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 8,
+   "number": 10,
+   "name": "クリスタルプライド",
+   "time": "2:50.9",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
