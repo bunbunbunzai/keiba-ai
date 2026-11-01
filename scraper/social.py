@@ -10,7 +10,9 @@
 1. publish：画像が公開URLで見られる「ready」の投稿を X・Instagram に出す（鍵が無ければ draft のまま）
 2. prepare：新しく条件を満たした投稿の画像と文面を social/<日付>/ に作る（→ commit・push・サイト再公開 → 次の回で publish）
 
-設定 social/config.json：{"x": true, "instagram": true, "x_url": "none" | "graded" | "all"}
+設定 social/config.json：{"x": true, "instagram": true, "x_url": "none" | "graded" | "key" | "all"}
+  x_url: X の本文にサイトのURLを入れる投稿の範囲。none=入れない、graded=重賞のみ、key=重賞・勝負レース・全成績、all=全部
+  （X API の従量課金はURL付き投稿が約0.20ドル、URL無しが約0.015ドルと差が大きいため範囲を選べる）
 鍵（GitHub Secrets → 環境変数）：X_API_KEY X_API_SECRET X_ACCESS_TOKEN X_ACCESS_SECRET / IG_USER_ID IG_ACCESS_TOKEN
 
 使い方: python scraper/social.py --date 20261101 [--prepare-only] [--dry-run]
@@ -271,9 +273,13 @@ def texts(date: str, c: dict, cfg: dict) -> dict:
                 tags = [f"#{rt}"] + tags
         url = race_url(date, p)
     mode = cfg.get("x_url", "none")
-    x_url = url if mode == "all" or (mode == "graded" and kind.startswith("grade")) else None
+    with_url = (mode == "all" or (mode == "graded" and kind.startswith("grade"))
+                or (mode == "key" and (kind.startswith("grade") or kind in ("picks", "summary"))))
+    x_url = url if with_url else None
     x = fit_x(lines, tags, x_url)
-    ig = "\n".join(lines) + "\n\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n" + " ".join(tags + ["#競馬", "#競馬全頭ログ"])
+    ig_lbl = "この日の全レースの予想と成績" if kind in ("summary", "picks") else "このレースの全頭評価と買い目"
+    ig = ("\n".join(lines) + f"\n\n{ig_lbl} → {url.replace('https://', '')}\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n"
+          + " ".join(tags + ["#競馬", "#競馬全頭ログ"]))
     return {"x": x, "instagram": ig, "url": url}
 
 
