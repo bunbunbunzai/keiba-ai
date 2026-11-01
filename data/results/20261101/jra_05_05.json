@@ -1,0 +1,161 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 3,
+   "name": "ロイヤルヴェイズ",
+   "time": "2:02.3",
+   "margin": "",
+   "corners": "2-3-3",
+   "last3f": 34.4,
+   "popularity": 4
+  },
+  {
+   "finish": "2",
+   "number": 6,
+   "name": "パルパデオ",
+   "time": "2:02.3",
+   "margin": "クビ",
+   "corners": "5-7-7",
+   "last3f": 33.9,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "number": 7,
+   "name": "キャナルタウン",
+   "time": "2:02.8",
+   "margin": "３",
+   "corners": "5-5-5",
+   "last3f": 34.6,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "number": 1,
+   "name": "ショウナンサザン",
+   "time": "2:02.8",
+   "margin": "アタマ",
+   "corners": "7-6-5",
+   "last3f": 34.6,
+   "popularity": 7
+  },
+  {
+   "finish": "5",
+   "number": 2,
+   "name": "オルトゥス",
+   "time": "2:02.8",
+   "margin": "アタマ",
+   "corners": "2-2-2",
+   "last3f": 35.1,
+   "popularity": 1
+  },
+  {
+   "finish": "6",
+   "number": 8,
+   "name": "アイアムスグレモノ",
+   "time": "2:03.7",
+   "margin": "５",
+   "corners": "4-3-3",
+   "last3f": 35.8,
+   "popularity": 6
+  },
+  {
+   "finish": "7",
+   "number": 5,
+   "name": "アドマイヤミラ",
+   "time": "2:04.4",
+   "margin": "４",
+   "corners": "1-1-1",
+   "last3f": 37.0,
+   "popularity": 5
+  },
+  {
+   "finish": "8",
+   "number": 4,
+   "name": "ベルウッドイタル",
+   "time": "2:04.5",
+   "margin": "１",
+   "corners": "8-8-8",
+   "last3f": 35.7,
+   "popularity": 8
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "3",
+    "yen": 800,
+    "pop": 4
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "3",
+    "yen": 210,
+    "pop": 4
+   },
+   {
+    "combo": "6",
+    "yen": 130,
+    "pop": 2
+   },
+   {
+    "combo": "7",
+    "yen": 170,
+    "pop": 3
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-6",
+    "yen": 400,
+    "pop": 6
+   },
+   {
+    "combo": "3-7",
+    "yen": 390,
+    "pop": 5
+   },
+   {
+    "combo": "6-7",
+    "yen": 280,
+    "pop": 3
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-6",
+    "yen": 1130,
+    "pop": 5
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "3-6",
+    "yen": 2710,
+    "pop": 14
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-6-7",
+    "yen": 880,
+    "pop": 4
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "3-6-7",
+    "yen": 7620,
+    "pop": 34
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261101",
+ "venue_code": "05",
+ "race_no": 5,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202604110520261101/E4",
+ "title": "レース結果 JRA"
+}
