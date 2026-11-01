@@ -344,8 +344,10 @@ def post_x(text: str, image: Path) -> str:
 def post_ig(caption: str, image_url: str) -> str:
     import requests
 
-    base = "https://graph.instagram.com/v23.0"
-    uid, tok = os.environ["IG_USER_ID"], os.environ["IG_ACCESS_TOKEN"]
+    uid, tok = os.environ["IG_USER_ID"].strip(), os.environ["IG_ACCESS_TOKEN"].strip()
+    # Instagramログインのトークン（IGで始まる）は graph.instagram.com、
+    # Facebook／統合ログインのトークン（EAAで始まる）は graph.facebook.com を使う
+    base = "https://graph.instagram.com/v23.0" if tok.startswith("IG") else "https://graph.facebook.com/v23.0"
     r = requests.post(f"{base}/{uid}/media", timeout=60, data={"image_url": image_url, "caption": caption, "access_token": tok})
     r.raise_for_status()
     cid = r.json()["id"]
