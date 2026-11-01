@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261101",
  "race_id": "202611011006100102",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 9,
+   "name": "メインテーマ",
+   "time": "1:00.0",
+   "margin": "",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 3,
+   "number": 3,
+   "name": "キタスピエル",
+   "time": "1:00.9",
+   "margin": "６",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 7,
+   "name": "ゴールドサイカ",
+   "time": "1:01.3",
+   "margin": "２ １／２",
+   "pos4": 2,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 1,
+   "number": 1,
+   "name": "ファビュラスベガス",
+   "time": "1:01.5",
+   "margin": "３／４",
+   "pos4": 4,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 12,
+   "name": "サンアイディール",
+   "time": "1:01.7",
+   "margin": "１ １／２",
+   "pos4": 11,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "ウェルキン",
+   "time": "1:01.9",
+   "margin": "３／４",
+   "pos4": 9,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 5,
+   "name": "コンバットベラ",
+   "time": "1:02.0",
+   "margin": "３／４",
+   "pos4": 7,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 11,
+   "name": "イヌボウノシオカゼ",
+   "time": "1:02.1",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 6,
+   "number": 8,
+   "name": "ターコイズテソーロ",
+   "time": "1:02.3",
+   "margin": "１",
+   "pos4": 8,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 4,
+   "number": 4,
+   "name": "イゲルド",
+   "time": "1:03.3",
+   "margin": "６",
+   "pos4": 6,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 5,
+   "number": 6,
+   "name": "ポンドレイディ",
+   "time": "1:03.4",
+   "margin": "１／２",
+   "pos4": 10,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 7,
+   "number": 10,
+   "name": "ユウアイ",
+   "time": "1:03.8",
+   "margin": "２ １／２",
+   "pos4": 12,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
