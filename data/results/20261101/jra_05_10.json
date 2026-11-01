@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 12,
+   "name": "クインズデネブ",
+   "time": "1:17.3",
+   "margin": "",
+   "corners": "8-8",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "2",
+   "number": 5,
+   "name": "フェンダー",
+   "time": "1:17.4",
+   "margin": "１／２",
+   "corners": "5-5",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "3",
+   "number": 13,
+   "name": "イノセントキャット",
+   "time": "1:17.4",
+   "margin": "ハナ",
+   "corners": "11-11",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "number": 10,
+   "name": "メイショウツヨキ",
+   "time": "1:17.4",
+   "margin": "アタマ",
+   "corners": "1-1",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "number": 9,
+   "name": "プルメリアリノ",
+   "time": "1:17.6",
+   "margin": "１",
+   "corners": "3-3",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "6",
+   "number": 16,
+   "name": "ナッカーフェイス",
+   "time": "1:17.6",
+   "margin": "ハナ",
+   "corners": "10-9",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "7",
+   "number": 14,
+   "name": "レイズカイザー",
+   "time": "1:17.6",
+   "margin": "クビ",
+   "corners": "7-7",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "8",
+   "number": 2,
+   "name": "タマモティーカップ",
+   "time": "1:18.2",
+   "margin": "３ 1/2",
+   "corners": "6-6",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "9",
+   "number": 3,
+   "name": "ウィステリアリヴァ",
+   "time": "1:18.3",
+   "margin": "クビ",
+   "corners": "14-12",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "10",
+   "number": 8,
+   "name": "スプランドゥール",
+   "time": "1:18.7",
+   "margin": "２ 1/2",
+   "corners": "11-12",
+   "last3f": null,
+   "popularity": 16
+  },
+  {
+   "finish": "11",
+   "number": 7,
+   "name": "オカメノコイ",
+   "time": "1:18.9",
+   "margin": "１ 1/2",
+   "corners": "13-12",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "12",
+   "number": 1,
+   "name": "アイファースキャン",
+   "time": "1:19.0",
+   "margin": "１／２",
+   "corners": "14-12",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "13",
+   "number": 6,
+   "name": "トーアジョウトウ",
+   "time": "1:19.1",
+   "margin": "クビ",
+   "corners": "4-4",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "14",
+   "number": 11,
+   "name": "コパノヴィンセント",
+   "time": "1:19.1",
+   "margin": "クビ",
+   "corners": "8-10",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "15",
+   "number": 4,
+   "name": "レッドラパルマ",
+   "time": "1:19.2",
+   "margin": "１／２",
+   "corners": "2-2",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "16",
+   "number": 15,
+   "name": "アイアムユウシュン",
+   "time": "1:19.7",
+   "margin": "３",
+   "corners": "16-16",
+   "last3f": null,
+   "popularity": 14
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "12",
+    "yen": 1730,
+    "pop": 7
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "12",
+    "yen": 320,
+    "pop": 5
+   },
+   {
+    "combo": "5",
+    "yen": 630,
+    "pop": 9
+   },
+   {
+    "combo": "13",
+    "yen": 230,
+    "pop": 2
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-6",
+    "yen": 5360,
+    "pop": 19
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "5-12",
+    "yen": 2550,
+    "pop": 30
+   },
+   {
+    "combo": "12-13",
+    "yen": 1070,
+    "pop": 11
+   },
+   {
+    "combo": "5-13",
+    "yen": 1990,
+    "pop": 26
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "5-12",
+    "yen": 9920,
+    "pop": 31
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "12-5",
+    "yen": 21440,
+    "pop": 60
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "5-12-13",
+    "yen": 15490,
+    "pop": 45
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "12-5-13",
+    "yen": 139360,
+    "pop": 364
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261101",
+ "venue_code": "05",
+ "race_no": 10,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202604111020261101/AD",
+ "title": "レース結果 JRA"
+}

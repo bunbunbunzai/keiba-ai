@@ -1,14 +1,14 @@
 {
  "date": "20261101",
- "updated": "2026-11-01 15:07",
+ "updated": "2026-11-01 15:15",
  "races_total": 72,
- "races_scored": 28,
- "stake": 16700,
+ "races_scored": 29,
+ "stake": 17700,
  "return": 12970,
- "roi": 77.7,
+ "roi": 73.3,
  "hit_races": 11,
  "honmei_win": 9,
- "honmei_top3": 15,
+ "honmei_top3": 16,
  "races": [
   {
    "race_id": "202611010304150501",
@@ -400,9 +400,9 @@
    "honmei": null,
    "honmei_finish": null,
    "top3": [
-    null,
-    null,
-    null
+    6,
+    7,
+    5
    ],
    "stake": 0,
    "return": 0,
@@ -1120,7 +1120,19 @@
   },
   {
    "race_id": "jra_20261101_東京_10",
-   "status": "結果未取得"
+   "confidence": "C",
+   "honmei": 13,
+   "honmei_finish": "3",
+   "top3": [
+    12,
+    5,
+    13
+   ],
+   "stake": 1000,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": false
   },
   {
    "race_id": "jra_20261101_東京_11",
