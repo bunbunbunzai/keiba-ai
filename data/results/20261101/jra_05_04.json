@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 13,
+   "name": "イデアブチャラティ",
+   "time": "1:36.4",
+   "margin": "",
+   "corners": "10-10",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "2",
+   "number": 1,
+   "name": "アドマイヤキングス",
+   "time": "1:36.4",
+   "margin": "クビ",
+   "corners": "3-3",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "number": 7,
+   "name": "ブラスオルケスター",
+   "time": "1:36.4",
+   "margin": "同着",
+   "corners": "6-6",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "number": 10,
+   "name": "コールセレスト",
+   "time": "1:36.5",
+   "margin": "３／４",
+   "corners": "4-3",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "5",
+   "number": 8,
+   "name": "エンケリ",
+   "time": "1:36.9",
+   "margin": "２ 1/2",
+   "corners": "8-8",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "6",
+   "number": 12,
+   "name": "ニシノカサブランカ",
+   "time": "1:37.2",
+   "margin": "２",
+   "corners": "1-1",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "7",
+   "number": 3,
+   "name": "ファイナルチューブ",
+   "time": "1:37.3",
+   "margin": "クビ",
+   "corners": "6-6",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "8",
+   "number": 6,
+   "name": "サウザンボム",
+   "time": "1:37.5",
+   "margin": "１ 1/2",
+   "corners": "4-5",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "9",
+   "number": 11,
+   "name": "キョウエイタウン",
+   "time": "1:37.9",
+   "margin": "２ 1/2",
+   "corners": "8-8",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "10",
+   "number": 4,
+   "name": "ネオマイスター",
+   "time": "1:38.3",
+   "margin": "２ 1/2",
+   "corners": "11-10",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "11",
+   "number": 2,
+   "name": "レッドカロン",
+   "time": "1:38.4",
+   "margin": "１／２",
+   "corners": "2-2",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "12",
+   "number": 9,
+   "name": "フォルミナンテ",
+   "time": "1:38.4",
+   "margin": "クビ",
+   "corners": "11-12",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "13",
+   "number": 14,
+   "name": "クライムザツリー",
+   "time": "1:40.4",
+   "margin": "大差",
+   "corners": "13-13",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "取消",
+   "number": 5,
+   "name": "サルサベガ",
+   "time": "",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": null
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "13",
+    "yen": 1930,
+    "pop": 5
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "13",
+    "yen": 330,
+    "pop": 4
+   },
+   {
+    "combo": "1",
+    "yen": 170,
+    "pop": 2
+   },
+   {
+    "combo": "7",
+    "yen": 200,
+    "pop": 3
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-8",
+    "yen": 1160,
+    "pop": 8
+   },
+   {
+    "combo": "5-8",
+    "yen": 1800,
+    "pop": 12
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-13",
+    "yen": 700,
+    "pop": 8
+   },
+   {
+    "combo": "7-13",
+    "yen": 870,
+    "pop": 11
+   },
+   {
+    "combo": "1-7",
+    "yen": 300,
+    "pop": 3
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-13",
+    "yen": 1300,
+    "pop": 8
+   },
+   {
+    "combo": "7-13",
+    "yen": 1850,
+    "pop": 11
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "13-1",
+    "yen": 3630,
+    "pop": 20
+   },
+   {
+    "combo": "13-7",
+    "yen": 5490,
+    "pop": 27
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-7-13",
+    "yen": 3550,
+    "pop": 11
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "13-1-7",
+    "yen": 18880,
+    "pop": 101
+   },
+   {
+    "combo": "13-7-1",
+    "yen": 23400,
+    "pop": 118
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261101",
+ "venue_code": "05",
+ "race_no": 4,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202604110420261101/2F",
+ "title": "レース結果 JRA"
+}
