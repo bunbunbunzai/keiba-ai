@@ -452,6 +452,79 @@ def redirect_page(to: str) -> str:
 
 
 # ---------------- 一覧 ----------------
+GRADE_CLASS = {"G1": "g1", "G2": "g2", "G3": "g3", "J・G1": "g1", "J・G2": "g2", "J・G3": "g3", "L": "gl"}
+
+
+def grade_badge(p: dict) -> str:
+    g = extra.grade_of(p["_race"], p.get("race_name") or p["_race"].get("race_name") or "")
+    if not g:
+        return ""
+    cls = GRADE_CLASS.get(g, "gj")
+    return f"<span class='gr {cls}'>{esc(g)}</span>"
+
+
+def race_short(p: dict, n: int = 18) -> str:
+    """一覧用の短いレース名（重賞は正式名、それ以外は条件名を切り詰め）。"""
+    name = p.get("race_name") or p["_race"].get("race_name") or p["_race"].get("title_text") or ""
+    name = " ".join(extra.nfkc(name).split())
+    g = extra.grade_of(p["_race"], name)
+    if g:
+        name = extra.clean_name(name)
+    return name[:n] + ("…" if len(name) > n else "")
+
+
+def race_cond(p: dict) -> str:
+    r = p["_race"]
+    return " ".join(x for x in (f"{r.get('surface') or ''}{r.get('distance')}m" if r.get("distance") else "",
+                                f"{r.get('field')}頭" if r.get("field") else "") if x)
+
+
+ALL_DATES: list[str] = []
+
+
+def date_tabs(date: str) -> str:
+    """前日・当日・翌日の切り替え（予想がある日だけ）。"""
+    ds = sorted(ALL_DATES)
+    if date not in ds:
+        return ""
+    i = ds.index(date)
+    items = []
+    for d in ds[max(0, i - 2): i + 2]:
+        href = "/" if d == TODAY else day_path(d)
+        lbl = f"{int(d[4:6])}/{int(d[6:8])}({'月火水木金土日'[datetime(int(d[:4]), int(d[4:6]), int(d[6:8])).weekday()]})"
+        items.append(f"<a href='{href}' class='{'on' if d == date else ''}'>{esc(lbl)}{'<small>今日</small>' if d == TODAY else ''}</a>")
+    return f"<nav class='dtabs'>{''.join(items)}<a href='/#past' class='more'>過去の日付</a></nav>"
+
+
+def hero(date: str, preds: list[dict]) -> tuple[str, str | None]:
+    """その日の目玉レース：発走前の重賞があればそれ、無ければ勝負レースの1位。"""
+    cand = [p for p in preds if p.get("confidence") != "見送り" and extra.grade_of(p["_race"], p.get("race_name") or p["_race"].get("race_name") or "")]
+    cand = [p for p in cand if not scored(p)] or cand
+    pk = picks(preds, 1)
+    p = (sorted(cand, key=lambda q: q["_race"].get("post_time") or "99")[0] if cand else (pk[0] if pk else None))
+    if not p:
+        return "", None
+    hon = p["marks"].get("◎")
+    if hon is None:
+        return "", None
+    r = p["_race"]
+    sc = scored(p)
+    wp, od, val = honmei_value(p)
+    marks = "".join(f"<span><b>{m}</b>{p['marks'][m]} {esc(horse_name(p, p['marks'][m]))}</span>" for m in ("◎", "〇", "▲") if p["marks"].get(m) is not None)
+    if sc and sc["stake"]:
+        top = "-".join(str(x) for x in sc.get("top3", []) if x is not None)
+        res = (f"<p class='hres {'hit' if sc['return'] >= sc['stake'] else 'tg' if sc['return'] else 'miss'}'>結果 {esc(top)}　"
+               f"{'的中' if sc['return'] else '不的中'}　回収率{roi_txt(sc['stake'], sc['return'])}</p>")
+    else:
+        res = f"<p class='hres'>{esc(r.get('post_time') or '')}発走" + (f"　想定勝率{wp:.0f}%" if wp is not None else "") + (f"　単勝{od:.1f}倍" if od else "") + "</p>"
+    img = race_og(date, p)
+    lbl = "今日の重賞" if (extra.grade_of(r, p.get("race_name") or r.get("race_name") or "") and date == TODAY) else "注目レース" if extra.grade_of(r, p.get("race_name") or r.get("race_name") or "") else "今日の勝負レース" if date == TODAY else "この日の勝負レース"
+    return (f"<section class='hero'><a href='{race_path(date, p)}'><img src='{img}' alt='' width='600' height='315' loading='eager'></a>"
+            f"<div class='hbody'><p class='hlabel'>{lbl}{grade_badge(p)}</p>"
+            f"<h2><a href='{race_path(date, p)}'>{esc(extra.nfkc(race_label(p)))}</a></h2><p class='meta'>{esc(race_cond(p))}　自信度 <span class='conf c{esc(p.get('confidence'))}'>{esc(p.get('confidence'))}</span></p>"
+            f"<p class='hmarks'>{marks}</p>{res}</div></section>"), p["race_id"]
+
+
 def race_item(date: str, p: dict) -> str:
     sc = scored(p)
     badge = ""
@@ -459,15 +532,17 @@ def race_item(date: str, p: dict) -> str:
         if not sc["return"]:
             badge = f"<span class='res miss'>不的中 −{sc['stake']:,}円</span>"
         elif sc["return"] < sc["stake"]:
-            badge = f"<span class='res tg'>的中（トリガミ）払戻{sc['return']:,}円・回収率{roi_txt(sc['stake'], sc['return'])}</span>"
+            badge = f"<span class='res tg'>的中 {sc['return'] - sc['stake']:+,}円（トリガミ）</span>"
         else:
-            badge = f"<span class='res hit'>的中 払戻{sc['return']:,}円・回収率{roi_txt(sc['stake'], sc['return'])}</span>"
+            badge = f"<span class='res hit'>的中 {sc['return'] - sc['stake']:+,}円・{roi_txt(sc['stake'], sc['return'])}</span>"
     hon = p.get("marks", {}).get("◎")
     hon_txt = "見送り" if p.get("confidence") == "見送り" else f"◎{hon} {horse_name(p, hon)}"
     pt = p["_race"].get("post_time") or ""
     return (f"<li data-conf='{esc(p.get('confidence'))}' data-venue='{esc(venue_of(p))}' data-post='{date}{pt.replace(':', '')}'>"
-            f"<a href='{race_path(date, p)}'><span class='rt'>{esc(pt)}</span>"
-            f"<span class='rno'>{esc(venue_of(p))}{race_no(p)}R</span><span class='hon'>{esc(hon_txt)}</span>"
+            f"<a href='{race_path(date, p)}'><span class='rb'>{race_no(p)}R</span>"
+            f"<span class='rinfo'><span class='rname'>{esc(VENUE_NAME.get(venue_of(p), venue_of(p)))} {esc(race_short(p))}{grade_badge(p)}</span>"
+            f"<span class='rsub'>{esc(pt)}{'発走' if pt else ''} {esc(race_cond(p))}</span></span>"
+            f"<span class='hon'>{esc(hon_txt)}</span>"
             f"<span class='conf c{esc(p.get('confidence'))}'>{esc(p.get('confidence'))}</span>{badge}</a></li>")
 
 
@@ -478,7 +553,7 @@ def day_stats(preds: list[dict]) -> tuple[int, int]:
 
 def filters(venues: list[str]) -> str:
     vb = "".join(f"<button data-venue='{esc(v)}'>{esc(VENUE_NAME.get(v, v))}</button>" for v in venues)
-    return (f"<div class='filters' data-kind='venue'><button class='on' data-venue='all'>全場</button>{vb}</div>"
+    return (f"<div class='filters vtabs' data-kind='venue'><button class='on' data-venue='all'>全場</button>{vb}</div>"
             "<div class='filters' data-kind='conf'><button class='on' data-conf='all'>全自信度</button><button data-conf='A'>A</button>"
             "<button data-conf='B'>B</button><button data-conf='C'>C</button><button data-conf='見送り'>見送り</button></div>")
 
@@ -552,8 +627,8 @@ def picks(preds: list[dict], n: int = 3) -> list[dict]:
     return [p for _, p in cand[:n]]
 
 
-def picks_html(date: str, preds: list[dict], today: bool) -> str:
-    ps = picks(preds)
+def picks_html(date: str, preds: list[dict], today: bool, exclude: str | None = None) -> str:
+    ps = [p for p in picks(preds, 4) if p['race_id'] != exclude][:3]
     if len(ps) < 2:
         return ""
     items = []
@@ -568,19 +643,20 @@ def picks_html(date: str, preds: list[dict], today: bool) -> str:
             res = f"<span class='res wait'>{esc(p['_race'].get('post_time') or '')}発走</span>"
         meta = "・".join(x for x in (f"想定勝率{wp:.0f}%" if wp is not None else "", f"単勝{od:.1f}倍" if od else "",
                                      f"期待値{val:.2f}" if val is not None else "") if x)
-        items.append(f"<li><a href='{race_path(date, p)}'><span class='rno'>{esc(race_label(p))}</span>"
+        items.append(f"<li><a href='{race_path(date, p)}'><span class='rno'>{esc(extra.nfkc(race_label(p)))}</span>"
                      f"<span class='hon'>◎{hon} {esc(horse_name(p, hon))}</span><span class='conf c{esc(p.get('confidence'))}'>{esc(p.get('confidence'))}</span>"
                      f"{res}<span class='meta'>{esc(meta)}</span></a></li>")
-    return (f"<section class='card picks'><h2>{'今日' if today else 'この日'}の勝負レース</h2><ul class='races'>{''.join(items)}</ul>"
+    return (f"<section class='card picks'><h2>{'今日' if today else 'この日'}の勝負レース{'（ほか）' if exclude else ''}</h2><ul class='races'>{''.join(items)}</ul>"
             f"<p class='meta'>的中しやすさの順に3レース（自信度・◎の人気・中央・重賞・想定勝率で加点）。回収率が高い順ではない。買い方ごとの回収率は<a href='/strategy/'>買い方別</a>へ。</p></section>")
 
 
 def day_list(date: str, preds: list[dict]) -> str:
     venues = sorted({venue_of(p) for p in preds})
     today = date == TODAY
-    return (picks_html(date, preds, today) + scoreboard(date, preds) + filters(venues)
+    h, hid = hero(date, preds)
+    return (date_tabs(date) + h + scoreboard(date, preds) + picks_html(date, preds, today, hid) + filters(venues)
             + (f"<p class='jump'><a href='#next' class='to-next'>次の発走へ ↓</a><button class='toggle-gone'>発走済みを表示</button></p>" if today else "")
-            + "<ul class='races'>" + "".join(race_item(date, p) for p in preds) + "</ul>")
+            + "<ul class='races rlist'>" + "".join(race_item(date, p) for p in preds) + "</ul>")
 
 
 # ---------------- 成績 ----------------
@@ -874,7 +950,30 @@ table{border-collapse:collapse;width:100%;font-size:14px;background:var(--panel)
 .note{border:1px dashed var(--line);padding:8px 12px;font-size:14px;color:var(--mut)}
 .draft{background:#fff4d6;color:#6b4e00;padding:6px 10px;font-size:13px;margin-top:12px}
 .cols{list-style:none;padding:0;margin:0;background:var(--panel);border-top:2px solid var(--rule);border-bottom:1px solid var(--line)}.cols li+li{border-top:1px solid var(--line)}.cols a{display:flex;flex-direction:column;gap:2px;padding:10px 12px;color:var(--fg)}.cols a:hover{text-decoration:none;background:var(--acc-soft)}.cols span{color:var(--mut);font-size:13px}
-@media (prefers-reduced-motion:no-preference){nav a,.races a,.days a{transition:background-color .15s}}"""
+@media (prefers-reduced-motion:no-preference){nav a,.races a,.days a{transition:background-color .15s}}
+/* 日付タブ・競馬場タブ */
+.dtabs{display:flex;gap:0;margin:14px 0 10px;border-bottom:2px solid var(--rule);overflow-x:auto;scrollbar-width:none}.dtabs::-webkit-scrollbar{display:none}
+.dtabs a{white-space:nowrap;padding:7px 14px;color:var(--fg);border:1px solid var(--line);border-bottom:0;background:var(--panel);margin-right:-1px;font-size:14px;line-height:1.3;display:flex;flex-direction:column;align-items:center}.dtabs a small{font-size:10px;color:var(--mut)}
+.dtabs a.on{background:var(--rule);color:var(--bg);border-color:var(--rule)}.dtabs a.on small{color:var(--bg)}.dtabs a.more{margin-left:auto;border:0;background:none;color:var(--acc);font-size:13px;justify-content:center}.dtabs a:hover{text-decoration:none}
+.filters.vtabs{gap:0;margin:16px 0 0;border-bottom:1px solid var(--line)}.filters.vtabs button{border:0;border-bottom:3px solid transparent;margin-bottom:-1px;background:none;padding:6px 12px;font-size:14px}.filters.vtabs button.on{background:none;color:var(--acc);border-bottom-color:var(--acc);font-weight:700}
+.filters[data-kind=conf]{margin:8px 0 4px}.filters[data-kind=conf] button{font-size:12px;padding:2px 10px}
+/* 目玉レース */
+.hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:0 20px;align-items:center;background:var(--panel);border-top:3px solid var(--rule);border-bottom:1px solid var(--line);margin:0 0 14px;padding:14px}
+.hero img{width:100%;height:auto;display:block;border:1px solid var(--line)}.hero h2{border:0;padding:0;margin:2px 0 4px;font-size:22px}.hero h2 a{color:var(--fg)}.hero .meta{margin:0 0 8px}
+.hlabel{margin:0;font-size:13px;color:var(--mut)}.hmarks{display:flex;flex-wrap:wrap;gap:4px 18px;margin:4px 0;font-weight:700}.hmarks b{color:var(--acc);font-size:20px;margin-right:4px;font-family:"Shippori Mincho B1",serif}
+.hres{margin:6px 0 0;font-weight:700;font-size:15px}.hres.miss{color:var(--miss)}
+@media (max-width:720px){.hero{grid-template-columns:1fr;gap:10px;padding:12px}.hero h2{font-size:20px}}
+/* レース行 */
+.rlist a{display:grid;grid-template-columns:52px minmax(0,1.4fr) minmax(0,1fr) 30px auto;gap:2px 10px;align-items:center;padding:8px 10px 8px 8px}
+.rb{display:inline-block;background:var(--rule);color:var(--bg);font-weight:700;font-size:13px;text-align:center;padding:3px 0;border-radius:2px;line-height:1.2;font-family:"Shippori Mincho B1",serif}
+.rinfo{display:flex;flex-direction:column;min-width:0}.rname{font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.rsub{color:var(--mut);font-size:12px;white-space:nowrap}
+.rlist .hon{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.rlist .res{text-align:right;white-space:nowrap}
+.rlist li.gone .rb{background:var(--mut)}.rlist li.next .rb{background:var(--acc)}.rlist li.next .rsub::after{content:"　次に発走";color:var(--acc);font-weight:700}
+.gr{display:inline-block;margin-left:6px;font-size:11px;font-weight:700;padding:0 6px;border-radius:2px;color:#fff;line-height:18px;vertical-align:middle;font-family:"BIZ UDPGothic",sans-serif}
+.g1{background:#1b4fd8}.g2{background:#d0342c}.g3{background:#2b8a3e}.gj{background:#6b3fa0}.gl{background:#555}
+@media (max-width:720px){.rlist a{grid-template-columns:44px minmax(0,1fr) 28px;grid-template-areas:"rb info conf" "rb hon hon" "rb res res"}.rlist .rb{grid-area:rb;align-self:start}.rlist .rinfo{grid-area:info}.rlist .conf{grid-area:conf}.rlist .hon{grid-area:hon;white-space:normal}.rlist .res{grid-area:res;text-align:left}}
+h1 small{display:block;font-size:14px;color:var(--mut);font-family:"BIZ UDPGothic",sans-serif;font-weight:400;margin-top:2px}
+"""
 
 JS = """(function(){
 function ga(n,p){try{if(window.gtag)gtag('event',n,p||{})}catch(e){}}
@@ -940,9 +1039,10 @@ def build() -> None:
                   ["中央競馬・地方競馬の全レースを毎日予想", "外れも含めた全成績を公開"])
     now = datetime.now(JST)
     today = now.strftime("%Y%m%d")
-    global TODAY
+    global TODAY, ALL_DATES
     TODAY = today
     dates = all_dates()
+    ALL_DATES = list(dates)
     lastmod: dict[str, str] = {}
     venue_of_race: dict[str, str] = {}
     day_rows = []
@@ -974,15 +1074,14 @@ def build() -> None:
     main_d = today if today in by_date else (dates[0] if dates else None)
     if main_d:
         head = "今日の予想" if main_d == today else f"{fmt_date(main_d)}の予想"
-        top_list = f"<section class='today'><h2>{fmt_date(main_d)}</h2>{day_list(main_d, by_date[main_d])}</section>"
+        top_list = f"<section class='today'>{day_list(main_d, by_date[main_d])}</section>"
     else:
         head, top_list = "今日の予想", "<p>予想はまだありません。</p>"
     past = "".join(f"<li><a href='{day_path(d)}'><span>{fmt_date(d)}（{n}レース）</span><span>回収率 {roi}</span></a></li>"
                    for d, n, roi in day_rows if d != main_d)
-    body = (f"<h1>{head}</h1>"
-            f"<p class='answer'>AIが日本の競馬（JRA・地方）の全レースを毎日予想し、外れも含めた成績を公開している。累計回収率は{t['roi']}（{t['n']}レース、◎複勝率{t['top3']}）。<a href='/results/'>成績の詳細</a></p>"
-            f"<p class='meta'>最終更新 {now.strftime('%Y-%m-%d %H:%M')}</p>"
-            + top_list + (f"<section><h2>過去の予想</h2><ul class='days'>{past}</ul></section>" if past else ""))
+    body = (f"<h1>{head}<small>{fmt_date(main_d) if main_d else ''}</small></h1>"
+            f"<p class='answer'>AIが日本の競馬（JRA・地方）の全レースを毎日予想し、外れも含めた成績を公開している。累計回収率は{t['roi']}（{t['n']}レース、◎複勝率{t['top3']}）。<a href='/results/'>成績の詳細</a>　<span class='meta'>最終更新 {now.strftime('%m/%d %H:%M')}</span></p>"
+            + top_list + (f"<section id='past'><h2>過去の予想</h2><ul class='days'>{past}</ul></section>" if past else ""))
     write("/", page(f"{SITE_NAME}｜今日の競馬AI予想（JRA・地方 全レース）と回収率", body, "/",
                     desc=f"AIが中央競馬・地方競馬の全レースを毎日予想。今日の予想と、外れも含めた全成績（累計回収率{t['roi']}）を公開。"))
     write("/results/", results_page(led, venue_of_race))
