@@ -403,7 +403,8 @@ def post_ig(caption: str, image_url: str) -> str:
     # Facebook／統合ログインのトークン（EAAで始まる）は graph.facebook.com を使う
     base = "https://graph.instagram.com/v23.0" if tok.startswith("IG") else "https://graph.facebook.com/v23.0"
     r = requests.post(f"{base}/{uid}/media", timeout=60, data={"image_url": image_url, "caption": caption, "access_token": tok})
-    r.raise_for_status()
+    if not r.ok:  # Instagram側の理由をそのまま残す（トークンは含まれない）
+        raise RuntimeError(f"media {r.status_code}: {str((r.json() if r.content else {}).get('error', r.text))[:400]}")
     cid = r.json()["id"]
     for _ in range(10):  # 取り込み完了を待つ
         s = requests.get(f"{base}/{cid}", timeout=30, params={"fields": "status_code", "access_token": tok}).json()
@@ -413,7 +414,8 @@ def post_ig(caption: str, image_url: str) -> str:
             raise RuntimeError(f"instagram container error: {s}")
         time.sleep(6)
     r = requests.post(f"{base}/{uid}/media_publish", timeout=60, data={"creation_id": cid, "access_token": tok})
-    r.raise_for_status()
+    if not r.ok:
+        raise RuntimeError(f"publish {r.status_code}: {str((r.json() if r.content else {}).get('error', r.text))[:400]}")
     return r.json()["id"]
 
 
