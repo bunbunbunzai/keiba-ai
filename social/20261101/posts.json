@@ -9,11 +9,13 @@
    "url": "https://www.ai-keiba-log.com/2026/11/01/kyoto/04r/",
    "created": "2026-11-01 12:16",
    "x": "posted",
-   "instagram": "draft",
+   "instagram": "posted",
    "x_id": "2116731664336371793",
    "x_at": "2026-11-01 12:18",
    "instagram_error": "media 400: {'message': 'Only photo or video can be accepted as media type.', 'type': 'OAuthException', 'code': 9004, 'error_subcode': 2207052, 'is_transient': False, 'error_user_title': 'メディアをダウンロードできませんでした。メディアURIが要件を満たしていません。', 'error_user_msg': '次のURIからメディアを取得できませんでした: https://www.ai-keiba-log.co",
-   "instagram_tries": 0
+   "instagram_tries": 0,
+   "instagram_id": "18119052847784804",
+   "instagram_at": "2026-11-01 12:41"
   },
   "hit-jra_20261101_東京_02": {
    "kind": "hit",
@@ -23,9 +25,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/01/tokyo/02r/",
    "created": "2026-11-01 12:16",
    "x": "posted",
-   "instagram": "draft",
+   "instagram": "posted",
    "x_id": "2116731667960262682",
-   "x_at": "2026-11-01 12:18"
+   "x_at": "2026-11-01 12:18",
+   "instagram_id": "18154396339546353",
+   "instagram_at": "2026-11-01 12:42"
   },
   "hit-jra_20261101_東京_03": {
    "kind": "hit",
@@ -35,9 +39,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/01/tokyo/03r/",
    "created": "2026-11-01 12:16",
    "x": "posted",
-   "instagram": "draft",
+   "instagram": "posted",
    "x_id": "2116731671697322233",
-   "x_at": "2026-11-01 12:18"
+   "x_at": "2026-11-01 12:18",
+   "instagram_id": "18006029460005971",
+   "instagram_at": "2026-11-01 12:42"
   }
  }
 }
