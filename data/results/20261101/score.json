@@ -1,8 +1,8 @@
 {
  "date": "20261101",
- "updated": "2026-11-01 11:59",
+ "updated": "2026-11-01 12:14",
  "races_total": 14,
- "races_scored": 9,
+ "races_scored": 10,
  "stake": 6700,
  "return": 5680,
  "roi": 84.8,
@@ -16,9 +16,9 @@
    "honmei": null,
    "honmei_finish": null,
    "top3": [
-    null,
-    null,
-    null
+    1,
+    5,
+    3
    ],
    "stake": 0,
    "return": 0,
@@ -116,7 +116,19 @@
   },
   {
    "race_id": "jra_20261101_京都_05",
-   "status": "結果未取得"
+   "confidence": "見送り",
+   "honmei": 10,
+   "honmei_finish": null,
+   "top3": [
+    17,
+    2,
+    12
+   ],
+   "stake": 0,
+   "return": 0,
+   "roi": null,
+   "hits": [],
+   "voided": false
   },
   {
    "race_id": "jra_20261101_京都_06",

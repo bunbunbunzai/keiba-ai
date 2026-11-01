@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 17,
+   "name": "ラスゲアード",
+   "time": "1:35.4",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 2,
+   "name": "サンオブシディアン",
+   "time": "",
+   "margin": "２ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "3",
+   "number": 12,
+   "name": "ポジティブレンサ",
+   "time": "",
+   "margin": "４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "number": 15,
+   "name": "コカボムタワー",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "5",
+   "number": 14,
+   "name": "エスヴェドラ",
+   "time": "",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "17",
+    "yen": 270,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "17",
+    "yen": 150,
+    "pop": 2
+   },
+   {
+    "combo": "2",
+    "yen": 300,
+    "pop": 5
+   },
+   {
+    "combo": "12",
+    "yen": 210,
+    "pop": 3
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-8",
+    "yen": 1620,
+    "pop": 7
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-17",
+    "yen": 870,
+    "pop": 10
+   },
+   {
+    "combo": "12-17",
+    "yen": 530,
+    "pop": 4
+   },
+   {
+    "combo": "2-12",
+    "yen": 1400,
+    "pop": 15
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-17",
+    "yen": 2210,
+    "pop": 9
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "17-2",
+    "yen": 3460,
+    "pop": 11
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-12-17",
+    "yen": 4550,
+    "pop": 11
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "17-2-12",
+    "yen": 20040,
+    "pop": 43
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261101",
+ "venue_code": "08",
+ "race_no": 5,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202604110520261101/C2",
+ "title": "レース結果 JRA"
+}
