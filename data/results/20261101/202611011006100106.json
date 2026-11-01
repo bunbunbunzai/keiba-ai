@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261101",
  "race_id": "202611011006100106",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -77,7 +77,7 @@
    "name": "ブラックアピス",
    "time": "1:13.3",
    "margin": "",
-   "pos4": null,
+   "pos4": 3,
    "last3f": null,
    "popularity": null
   },
@@ -88,7 +88,7 @@
    "name": "ロールスワン",
    "time": "1:13.4",
    "margin": "３／４",
-   "pos4": null,
+   "pos4": 5,
    "last3f": null,
    "popularity": null
   },
@@ -99,7 +99,7 @@
    "name": "ミノホタテ",
    "time": "1:14.1",
    "margin": "４",
-   "pos4": null,
+   "pos4": 2,
    "last3f": null,
    "popularity": null
   },
@@ -110,7 +110,7 @@
    "name": "ルビーサンセット",
    "time": "1:14.1",
    "margin": "アタマ",
-   "pos4": null,
+   "pos4": 1,
    "last3f": null,
    "popularity": null
   },
@@ -121,7 +121,7 @@
    "name": "マムティタイム",
    "time": "1:14.4",
    "margin": "２",
-   "pos4": null,
+   "pos4": 9,
    "last3f": null,
    "popularity": null
   },
@@ -132,7 +132,7 @@
    "name": "マトリカリア",
    "time": "1:14.5",
    "margin": "１／２",
-   "pos4": null,
+   "pos4": 8,
    "last3f": null,
    "popularity": null
   },
@@ -143,7 +143,7 @@
    "name": "ミッキーハッスル",
    "time": "1:14.7",
    "margin": "１",
-   "pos4": null,
+   "pos4": 9,
    "last3f": null,
    "popularity": null
   },
@@ -154,7 +154,7 @@
    "name": "キタノモテック",
    "time": "1:15.0",
    "margin": "１ ３／４",
-   "pos4": null,
+   "pos4": 6,
    "last3f": null,
    "popularity": null
   },
@@ -165,7 +165,7 @@
    "name": "リトルエンジェル",
    "time": "1:15.2",
    "margin": "１ １／４",
-   "pos4": null,
+   "pos4": 3,
    "last3f": null,
    "popularity": null
   },
@@ -176,7 +176,7 @@
    "name": "ユニークカラー",
    "time": "1:15.4",
    "margin": "１ １／４",
-   "pos4": null,
+   "pos4": 12,
    "last3f": null,
    "popularity": null
   },
@@ -187,7 +187,7 @@
    "name": "キタノボニータ",
    "time": "1:15.9",
    "margin": "３",
-   "pos4": null,
+   "pos4": 6,
    "last3f": null,
    "popularity": null
   },
@@ -198,7 +198,7 @@
    "name": "ハラマキ",
    "time": "1:16.1",
    "margin": "１ １／４",
-   "pos4": null,
+   "pos4": 11,
    "last3f": null,
    "popularity": null
   }

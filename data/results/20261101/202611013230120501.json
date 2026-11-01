@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261101",
  "race_id": "202611013230120501",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -71,7 +71,7 @@
    "name": "クリアマインド",
    "time": "1:27.1",
    "margin": "",
-   "pos4": null,
+   "pos4": 1,
    "last3f": null,
    "popularity": null
   },
@@ -82,7 +82,7 @@
    "name": "プレアウィン",
    "time": "1:28.9",
    "margin": "９",
-   "pos4": null,
+   "pos4": 4,
    "last3f": null,
    "popularity": null
   },
@@ -93,7 +93,7 @@
    "name": "セイウンコハルタ",
    "time": "1:28.9",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 2,
    "last3f": null,
    "popularity": null
   },
@@ -104,7 +104,7 @@
    "name": "カシノカゲマル",
    "time": "1:29.8",
    "margin": "５",
-   "pos4": null,
+   "pos4": 3,
    "last3f": null,
    "popularity": null
   },
@@ -115,7 +115,7 @@
    "name": "ウルトラマックス",
    "time": "1:30.4",
    "margin": "３",
-   "pos4": null,
+   "pos4": 5,
    "last3f": null,
    "popularity": null
   },
@@ -126,7 +126,7 @@
    "name": "キセキノキセキ",
    "time": "1:31.7",
    "margin": "７",
-   "pos4": null,
+   "pos4": 7,
    "last3f": null,
    "popularity": null
   },
@@ -137,7 +137,7 @@
    "name": "アルレルト",
    "time": "1:32.0",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 6,
    "last3f": null,
    "popularity": null
   },
@@ -148,7 +148,7 @@
    "name": "ムーンパスフラワー",
    "time": "1:35.0",
    "margin": "大差",
-   "pos4": null,
+   "pos4": 8,
    "last3f": null,
    "popularity": null
   }
