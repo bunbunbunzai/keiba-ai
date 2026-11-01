@@ -1,0 +1,238 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 12,
+   "name": "インテルメディオ",
+   "time": "1:37.0",
+   "margin": "",
+   "corners": "2-2",
+   "last3f": 36.5,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "number": 13,
+   "name": "コッレヴェッキオ",
+   "time": "1:38.1",
+   "margin": "７",
+   "corners": "3-3",
+   "last3f": 37.3,
+   "popularity": 5
+  },
+  {
+   "finish": "3",
+   "number": 4,
+   "name": "エドワードバローズ",
+   "time": "1:38.1",
+   "margin": "ハナ",
+   "corners": "6-5",
+   "last3f": 36.8,
+   "popularity": 1
+  },
+  {
+   "finish": "4",
+   "number": 1,
+   "name": "シンギュラリティ",
+   "time": "1:38.1",
+   "margin": "ハナ",
+   "corners": "11-11",
+   "last3f": 35.8,
+   "popularity": 7
+  },
+  {
+   "finish": "5",
+   "number": 6,
+   "name": "コスモシェルベット",
+   "time": "1:38.1",
+   "margin": "クビ",
+   "corners": "1-1",
+   "last3f": 37.8,
+   "popularity": 8
+  },
+  {
+   "finish": "6",
+   "number": 5,
+   "name": "カルネヴァーレ",
+   "time": "1:38.5",
+   "margin": "２ 1/2",
+   "corners": "10-10",
+   "last3f": 36.5,
+   "popularity": 4
+  },
+  {
+   "finish": "7",
+   "number": 3,
+   "name": "キングクレオール",
+   "time": "1:38.7",
+   "margin": "１ 1/2",
+   "corners": "7-7",
+   "last3f": 37.1,
+   "popularity": 3
+  },
+  {
+   "finish": "8",
+   "number": 10,
+   "name": "アルプスオジョー",
+   "time": "1:38.8",
+   "margin": "クビ",
+   "corners": "12-12",
+   "last3f": 36.3,
+   "popularity": 9
+  },
+  {
+   "finish": "9",
+   "number": 7,
+   "name": "タイセツナヒ",
+   "time": "1:38.9",
+   "margin": "３／４",
+   "corners": "13-13",
+   "last3f": 36.1,
+   "popularity": 6
+  },
+  {
+   "finish": "10",
+   "number": 2,
+   "name": "ペイトー",
+   "time": "1:38.9",
+   "margin": "クビ",
+   "corners": "9-9",
+   "last3f": 37.0,
+   "popularity": 13
+  },
+  {
+   "finish": "11",
+   "number": 15,
+   "name": "ベイビールビオ",
+   "time": "1:39.4",
+   "margin": "３",
+   "corners": "13-14",
+   "last3f": 36.4,
+   "popularity": 14
+  },
+  {
+   "finish": "12",
+   "number": 14,
+   "name": "ライフイズ",
+   "time": "1:39.6",
+   "margin": "１ 1/4",
+   "corners": "7-7",
+   "last3f": 38.0,
+   "popularity": 11
+  },
+  {
+   "finish": "13",
+   "number": 9,
+   "name": "レイズトワイライト",
+   "time": "1:39.8",
+   "margin": "１ 1/4",
+   "corners": "5-5",
+   "last3f": 38.6,
+   "popularity": 10
+  },
+  {
+   "finish": "14",
+   "number": 8,
+   "name": "ポタリング",
+   "time": "1:40.0",
+   "margin": "１ 1/2",
+   "corners": "3-3",
+   "last3f": 39.2,
+   "popularity": 12
+  },
+  {
+   "finish": "取消",
+   "number": 11,
+   "name": "アンシュウマト",
+   "time": "",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": null
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "12",
+    "yen": 320,
+    "pop": 2
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "12",
+    "yen": 170,
+    "pop": 2
+   },
+   {
+    "combo": "13",
+    "yen": 300,
+    "pop": 6
+   },
+   {
+    "combo": "4",
+    "yen": 110,
+    "pop": 1
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "7-7",
+    "yen": 3100,
+    "pop": 10
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "12-13",
+    "yen": 920,
+    "pop": 12
+   },
+   {
+    "combo": "4-12",
+    "yen": 320,
+    "pop": 1
+   },
+   {
+    "combo": "4-13",
+    "yen": 590,
+    "pop": 4
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "12-13",
+    "yen": 3040,
+    "pop": 11
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "12-13",
+    "yen": 4240,
+    "pop": 14
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-12-13",
+    "yen": 2200,
+    "pop": 4
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "12-13-4",
+    "yen": 13950,
+    "pop": 37
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261101",
+ "venue_code": "05",
+ "race_no": 7,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202604110720261101/4E",
+ "title": "レース結果 JRA"
+}
