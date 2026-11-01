@@ -29,6 +29,9 @@ OUT = ROOT / "_site"
 SITE_NAME = "競馬全頭ログ"
 X_URL = "https://x.com/zentou_log"
 IG_URL = "https://www.instagram.com/zentou_log/"
+GA_ID = "G-MFLTSL1RVP"
+GA_TAG = (f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>'
+          f"<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','{GA_ID}');</script>")
 SITE_SUB = "AIが全レース・全頭を診断　外れも含めた成績を公開"
 DOMAIN = "www.ai-keiba-log.com"
 BASE_URL = f"https://{DOMAIN}"
@@ -120,6 +123,7 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False
     d = desc or "AIが日本の競馬（JRA・地方）の全レースを毎日予想し、外れも含めた全予想の回収率を公開しています。"
     return f"""<!doctype html>
 <html lang="ja"><head><meta charset="utf-8">
+{GA_TAG}
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(d)}">
@@ -716,9 +720,10 @@ OPERATOR = f"""<h1>運営者情報</h1>
 
 PRIVACY = f"""<h1>プライバシーポリシー</h1>
 <section class="card"><h2>個人情報の取り扱い</h2><p>本サイトは、閲覧者の氏名やメールアドレスなどの個人情報を収集していません。お問い合わせの際にご提供いただいた情報は、回答のためにのみ使用します。</p></section>
-<section class="card"><h2>アクセス解析・広告について</h2><p>本サイトでは、利用状況の把握のためにアクセス解析ツールを、また今後、広告配信やアフィリエイトプログラムを利用する場合があります。これらのサービスはCookie等を使用して閲覧情報を収集することがありますが、個人を特定する情報は含まれません。Cookieはブラウザの設定で無効にできます。</p></section>
+<section class="card"><h2>アクセス解析について</h2><p>本サイトでは、Google LLCのアクセス解析ツール「Googleアナリティクス」を利用しています。Googleアナリティクスはデータ収集のためにCookieを使用し、閲覧したページや滞在時間、おおよその地域、使用端末などの情報を収集します。これらの情報は匿名で収集されており、個人を特定するものではありません。データの取り扱いについては<a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener">Googleのサービスを使用するサイトやアプリから収集した情報のGoogleによる使用</a>をご覧ください。収集を望まない場合は、ブラウザの設定でCookieを無効にするか、<a href="https://tools.google.com/dlpage/gaoptout?hl=ja" target="_blank" rel="noopener">Googleアナリティクス オプトアウト アドオン</a>をご利用ください。</p></section>
+<section class="card"><h2>広告について</h2><p>本サイトでは今後、広告配信やアフィリエイトプログラムを利用する場合があります。これらのサービスはCookie等を使用して閲覧情報を収集することがありますが、個人を特定する情報は含まれません。Cookieはブラウザの設定で無効にできます。</p></section>
 <section class="card"><h2>広告の表記</h2><p>本サイトに掲載する広告・アフィリエイトリンクには、その旨を明記します。</p></section>
-<section class="card"><h2>改定</h2><p>本ポリシーは必要に応じて改定することがあります。制定日：2026年10月27日</p></section>"""
+<section class="card"><h2>改定</h2><p>本ポリシーは必要に応じて改定することがあります。制定日：2026年10月27日／改定日：2026年11月1日（Googleアナリティクスの利用を追記）</p></section>"""
 
 CSS = """:root{--bg:#f6f5f1;--fg:#1d1d1b;--mut:#6b6a63;--card:#fff;--line:#e3e1d9;--acc:#1f6f4a;--hit:#c0392b;--miss:#8a8a85;--won:#fdecea}
 @media (prefers-color-scheme:dark){:root{--bg:#141413;--fg:#ecebe6;--mut:#a3a29b;--card:#1e1e1c;--line:#33322e;--acc:#5fbf8c;--hit:#ff7a6b;--miss:#8a8a85;--won:#3a2422}}
@@ -771,6 +776,11 @@ table{border-collapse:collapse;width:100%;font-size:14px}th,td{border-bottom:1px
 .cols{list-style:none;padding:0;display:grid;gap:8px}.cols a{display:flex;flex-direction:column;gap:2px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 14px;color:var(--fg)}.cols span{color:var(--mut);font-size:13px}"""
 
 JS = """(function(){
+function ga(n,p){try{if(window.gtag)gtag('event',n,p||{})}catch(e){}}
+document.addEventListener('click',function(e){var a=e.target.closest('a');if(!a)return;var h=a.href||'';
+ if(a.closest('.share')){ga('share',{method:/line/.test(h)?'line':'x',page:location.pathname});return;}
+ if(/x\\.com\\/zentou_log|instagram\\.com\\/zentou_log/.test(h)){ga('sns_follow',{network:/instagram/.test(h)?'instagram':'x'});return;}
+ if(a.dataset.aff){ga('affiliate_click',{program:a.dataset.aff,page:location.pathname});}});
 var st={venue:'all',conf:'all'};
 function apply(){document.querySelectorAll('.races li').forEach(function(li){
  var ok=(st.venue==='all'||li.dataset.venue===st.venue)&&(st.conf==='all'||li.dataset.conf===st.conf);li.style.display=ok?'':'none';});}
@@ -794,7 +804,7 @@ document.querySelectorAll('.vs').forEach(function(v){
   var t=v.dataset.label+'で競馬全頭ログのAIと勝負：'+res+'（私の◎'+pick+'番'+me+'着／AIの◎'+(ai||'-')+'着）';
   var a2=document.createElement('a');a2.href='https://twitter.com/intent/tweet?text='+encodeURIComponent(t)+'&url='+encodeURIComponent(v.dataset.url)+'&hashtags='+encodeURIComponent('競馬全頭ログ');a2.target='_blank';a2.rel='noopener';a2.textContent='結果をXでシェア';
   var d=document.createElement('div');d.className='share';d.appendChild(a2);v.appendChild(d);}
- if(btn)btn.addEventListener('click',function(){if(!sel.value||v.dataset.post<=s)return;pick=sel.value;try{localStorage.setItem(key,pick)}catch(e){}show();});
+ if(btn)btn.addEventListener('click',function(){if(!sel.value||v.dataset.post<=s)return;pick=sel.value;try{localStorage.setItem(key,pick)}catch(e){}ga('vs_pick',{race:v.dataset.label});show();});
  show();});
 })();"""
 
