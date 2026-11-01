@@ -821,7 +821,7 @@ h1{font-size:24px;margin:20px 0 4px}h2{font-size:18px;margin:0 0 8px}h3{font-siz
 .conf{display:inline-block;min-width:28px;text-align:center;border-radius:4px;font-size:12px;font-weight:700;padding:0 6px;border:1px solid var(--line)}
 .cA{background:#1f6f4a;color:#fff}.cB{background:#3f8f6a;color:#fff}.cC{background:#c9c6b8;color:#1d1d1b}
 table{border-collapse:collapse;width:100%;font-size:14px}th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
-.scroll{overflow-x:auto}.horses th,.horses td:not(.cmt){white-space:nowrap}.horses .cmt{min-width:260px}.mark{font-weight:700;color:var(--acc)}tr.mk td{background:rgba(31,111,74,.06)}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}.scroll table{white-space:nowrap}.scroll td:first-child{white-space:normal;min-width:9em}.horses th,.horses td:not(.cmt){white-space:nowrap}.horses .cmt{min-width:260px}.mark{font-weight:700;color:var(--acc)}tr.mk td{background:rgba(31,111,74,.06)}
 .bets{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0}.bets li{border:1px solid var(--line);border-radius:6px;padding:2px 8px;font-size:14px}.bets li.won{background:var(--won);border-color:var(--hit);color:var(--hit);font-weight:700}
 .picks li a{flex-wrap:wrap;row-gap:4px}.picks .rno{flex-basis:100%;font-size:15px}.picks .meta{margin:0;flex-basis:100%}.jump{display:flex;gap:12px;align-items:center;font-size:13px;margin:8px 0}.jump button{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:14px;padding:3px 12px;font:inherit;font-size:13px;cursor:pointer}
 .races.fold li.gone:not(.keep){display:none}.races.fold li.gone.keep{opacity:.9}
