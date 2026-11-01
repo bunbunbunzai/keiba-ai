@@ -2,7 +2,172 @@
  "source": "rakuten",
  "date": "20261101",
  "race_id": "202611011006100112",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "9",
+    "yen": 300
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "9-1",
+    "yen": 520
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "9",
+    "yen": 110
+   },
+   {
+    "combo": "1",
+    "yen": 100
+   },
+   {
+    "combo": "7",
+    "yen": 120
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-9",
+    "yen": 140
+   },
+   {
+    "combo": "7-9",
+    "yen": 310
+   },
+   {
+    "combo": "1-7",
+    "yen": 280
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-8",
+    "yen": 250
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-7-9",
+    "yen": 540
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "9-1-7",
+    "yen": 2000
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-9",
+    "yen": 240
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 9,
+   "name": "サザングルーヴ",
+   "time": "1:24.9",
+   "margin": "",
+   "pos4": 2,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 1,
+   "number": 1,
+   "name": "ラビリンスティアラ",
+   "time": "1:25.2",
+   "margin": "１ １／２",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 7,
+   "name": "ハイラブクイーン",
+   "time": "1:25.6",
+   "margin": "２ １／２",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 6,
+   "name": "ロゼットリボン",
+   "time": "1:25.9",
+   "margin": "２",
+   "pos4": 4,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 8,
+   "name": "タカマキナイン",
+   "time": "1:27.3",
+   "margin": "９",
+   "pos4": 5,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 3,
+   "number": 3,
+   "name": "ユウユウジュレップ",
+   "time": "1:27.7",
+   "margin": "２ １／２",
+   "pos4": 7,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 4,
+   "name": "エマーブル",
+   "time": "1:28.0",
+   "margin": "１ ３／４",
+   "pos4": 6,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 2,
+   "number": 2,
+   "name": "エイシズハイ",
+   "time": "1:29.6",
+   "margin": "１０",
+   "pos4": 9,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 5,
+   "name": "ササキンライラック",
+   "time": "1:30.1",
+   "margin": "３",
+   "pos4": 7,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
