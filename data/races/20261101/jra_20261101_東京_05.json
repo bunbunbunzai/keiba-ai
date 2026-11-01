@@ -6,6 +6,7 @@
  "venue": "東京",
  "post_time": "12:20",
  "title_text": "メイクデビュー東京 2歳 新馬 （混合）［指定］ 馬齢",
+ "race_name": "メイクデビュー東京",
  "distance": 2000,
  "surface": "芝",
  "course_text": "コース： 2,000 メートル （芝・左）",
@@ -21,7 +22,7 @@
    "weight": 56.0,
    "jockey": "津村 明秀",
    "trainer": "奥村 武",
-   "odds": null,
+   "odds": 17.3,
    "profile": {
     "父": "コントレイル",
     "性別": "牡",
@@ -46,7 +47,7 @@
    "weight": 56.0,
    "jockey": "川田 将雅",
    "trainer": "須貝 尚介",
-   "odds": null,
+   "odds": 4.3,
    "profile": {
     "父": "エタリオウ",
     "性別": "牡",
@@ -71,7 +72,7 @@
    "weight": 56.0,
    "jockey": "A.プーシャン",
    "trainer": "尾関 知人",
-   "odds": null,
+   "odds": 7.1,
    "profile": {
     "父": "グローリーヴェイズ",
     "性別": "牡",
@@ -96,7 +97,7 @@
    "weight": 56.0,
    "jockey": "横山 琉人",
    "trainer": "辻 哲英",
-   "odds": null,
+   "odds": 53.8,
    "profile": {
     "父": "ルーラーシップ",
     "性別": "牡",
@@ -121,7 +122,7 @@
    "weight": 55.0,
    "jockey": "岩田 望来",
    "trainer": "加藤 征弘",
-   "odds": null,
+   "odds": 9.4,
    "profile": {
     "父": "アドマイヤマーズ",
     "性別": "牝",
@@ -146,7 +147,7 @@
    "weight": 55.0,
    "jockey": "C.ルメール",
    "trainer": "木村 哲也",
-   "odds": null,
+   "odds": 2.2,
    "profile": {
     "父": "キタサンブラック",
     "性別": "牝",
@@ -171,7 +172,7 @@
    "weight": 56.0,
    "jockey": "C.デムーロ",
    "trainer": "四位 洋文",
-   "odds": null,
+   "odds": 6.4,
    "profile": {
     "父": "ミスターメロディ",
     "性別": "牡",
@@ -196,7 +197,7 @@
    "weight": 56.0,
    "jockey": "丹内 祐次",
    "trainer": "奥平 雅士",
-   "odds": null,
+   "odds": 9.2,
    "profile": {
     "父": "キタサンブラック",
     "性別": "牡",
@@ -213,7 +214,5 @@
  ],
  "field": 8,
  "race_id": "jra_20261101_東京_05",
- "source": "jra",
- "grade": null,
- "race_name": "メイクデビュー東京"
+ "source": "jra"
 }

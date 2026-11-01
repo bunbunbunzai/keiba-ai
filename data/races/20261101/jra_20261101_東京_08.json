@@ -6,6 +6,7 @@
  "venue": "東京",
  "post_time": "13:50",
  "title_text": "本栖湖特別 3歳以上 2勝クラス （混合）（特指） 定量",
+ "race_name": "本栖湖特別",
  "distance": 2400,
  "surface": "芝",
  "course_text": "コース： 2,400 メートル （芝・左）",
@@ -21,7 +22,7 @@
    "weight": 58.0,
    "jockey": "C.ルメール",
    "trainer": "鹿戸 雄一",
-   "odds": null,
+   "odds": 9.3,
    "profile": {
     "父": "レイデオロ",
     "性別": "せん",
@@ -152,7 +153,7 @@
    "weight": 55.0,
    "jockey": "田辺 裕信",
    "trainer": "加藤 士津八",
-   "odds": null,
+   "odds": 3.2,
    "profile": {
     "父": "キズナ",
     "性別": "牡",
@@ -283,7 +284,7 @@
    "weight": 58.0,
    "jockey": "岩田 康誠",
    "trainer": "藤岡 健一",
-   "odds": null,
+   "odds": 46.0,
    "profile": {
     "父": "ブリックスアンドモルタル",
     "性別": "せん",
@@ -414,7 +415,7 @@
    "weight": 55.0,
    "jockey": "浜中 俊",
    "trainer": "堀 宣行",
-   "odds": null,
+   "odds": 2.9,
    "profile": {
     "父": "エピファネイア",
     "性別": "牡",
@@ -524,7 +525,7 @@
    "weight": 55.0,
    "jockey": "武藤 雅",
    "trainer": "武藤 善則",
-   "odds": null,
+   "odds": 34.3,
    "profile": {
     "父": "レイデオロ",
     "性別": "牡",
@@ -655,7 +656,7 @@
    "weight": 55.0,
    "jockey": "原 優介",
    "trainer": "矢野 英一",
-   "odds": null,
+   "odds": 4.9,
    "profile": {
     "父": "レイデオロ",
     "性別": "牡",
@@ -786,7 +787,7 @@
    "weight": 55.0,
    "jockey": "C.デムーロ",
    "trainer": "杉山 佳明",
-   "odds": null,
+   "odds": 4.4,
    "profile": {
     "父": "ドレフォン",
     "性別": "牡",
@@ -917,7 +918,7 @@
    "weight": 58.0,
    "jockey": "大野 拓弥",
    "trainer": "的場 均",
-   "odds": null,
+   "odds": 88.9,
    "profile": {
     "父": "ダノンシャンティ",
     "性別": "せん",
@@ -1040,7 +1041,5 @@
  ],
  "field": 8,
  "race_id": "jra_20261101_東京_08",
- "source": "jra",
- "grade": null,
- "race_name": "本栖湖特別"
+ "source": "jra"
 }

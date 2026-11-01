@@ -6,6 +6,7 @@
  "venue": "東京",
  "post_time": "14:25",
  "title_text": "紅葉ステークス 3歳以上 3勝クラス （混合）（特指） 定量",
+ "race_name": "紅葉ステークス",
  "distance": 1600,
  "surface": "芝",
  "course_text": "コース： 1,600 メートル （芝・左）",
@@ -21,7 +22,7 @@
    "weight": 58.0,
    "jockey": "横山 典弘",
    "trainer": "菊沢 隆徳",
-   "odds": null,
+   "odds": 3.5,
    "profile": {
     "父": "エピファネイア",
     "性別": "牡",
@@ -152,7 +153,7 @@
    "weight": 58.0,
    "jockey": "横山 武史",
    "trainer": "野中 賢二",
-   "odds": null,
+   "odds": 17.6,
    "profile": {
     "父": "モーリス",
     "性別": "牡",
@@ -283,7 +284,7 @@
    "weight": 56.0,
    "jockey": "荻野 極",
    "trainer": "鹿戸 雄一",
-   "odds": null,
+   "odds": 15.4,
    "profile": {
     "父": "ブリックスアンドモルタル",
     "性別": "牝",
@@ -414,7 +415,7 @@
    "weight": 56.0,
    "jockey": "岩田 望来",
    "trainer": "手塚 貴久",
-   "odds": null,
+   "odds": 7.9,
    "profile": {
     "父": "ロードカナロア",
     "性別": "牡",
@@ -541,7 +542,7 @@
    "weight": 58.0,
    "jockey": "津村 明秀",
    "trainer": "嘉藤 貴行",
-   "odds": null,
+   "odds": 54.5,
    "profile": {
     "父": "ダノンバラード",
     "性別": "牡",
@@ -672,7 +673,7 @@
    "weight": 56.0,
    "jockey": "戸崎 圭太",
    "trainer": "須貝 尚介",
-   "odds": null,
+   "odds": 14.2,
    "profile": {
     "父": "ブリックスアンドモルタル",
     "性別": "牝",
@@ -803,7 +804,7 @@
    "weight": 56.0,
    "jockey": "C.デムーロ",
    "trainer": "藤岡 健一",
-   "odds": null,
+   "odds": 5.2,
    "profile": {
     "父": "モーリス",
     "性別": "牡",
@@ -934,7 +935,7 @@
    "weight": 58.0,
    "jockey": "石橋 脩",
    "trainer": "清水 久詞",
-   "odds": null,
+   "odds": 47.9,
    "profile": {
     "父": "キズナ",
     "性別": "牡",
@@ -1065,7 +1066,7 @@
    "weight": 58.0,
    "jockey": "A.プーシャン",
    "trainer": "加藤 征弘",
-   "odds": null,
+   "odds": 11.2,
    "profile": {
     "父": "サートゥルナーリア",
     "性別": "牡",
@@ -1196,7 +1197,7 @@
    "weight": 56.0,
    "jockey": "杉原 誠人",
    "trainer": "清水 英克",
-   "odds": null,
+   "odds": 10.8,
    "profile": {
     "父": "モズアスコット",
     "性別": "牡",
@@ -1327,7 +1328,7 @@
    "weight": 58.0,
    "jockey": "小林 美駒",
    "trainer": "鈴木 伸尋",
-   "odds": null,
+   "odds": 16.3,
    "profile": {
     "父": "ビッグアーサー",
     "性別": "牡",
@@ -1458,7 +1459,7 @@
    "weight": 58.0,
    "jockey": "原 優介",
    "trainer": "青木 孝文",
-   "odds": null,
+   "odds": 95.5,
    "profile": {
     "父": "マクフィ",
     "性別": "牡",
@@ -1589,7 +1590,7 @@
    "weight": 56.0,
    "jockey": "丹内 祐次",
    "trainer": "田中 剛",
-   "odds": null,
+   "odds": 16.1,
    "profile": {
     "父": "ナダル",
     "性別": "牡",
@@ -1720,7 +1721,7 @@
    "weight": 58.0,
    "jockey": "田辺 裕信",
    "trainer": "上原 博之",
-   "odds": null,
+   "odds": 9.6,
    "profile": {
     "父": "エピファネイア",
     "性別": "牡",
@@ -1843,7 +1844,5 @@
  ],
  "field": 14,
  "race_id": "jra_20261101_東京_09",
- "source": "jra",
- "grade": null,
- "race_name": "紅葉ステークス"
+ "source": "jra"
 }

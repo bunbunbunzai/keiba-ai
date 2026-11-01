@@ -6,6 +6,8 @@
  "venue": "京都",
  "post_time": "15:20",
  "title_text": "まほろばステークス 3歳以上 オープン （国際）（特指） ハンデ",
+ "grade": "リステッド",
+ "race_name": "まほろばステークス",
  "distance": 1600,
  "surface": "芝",
  "course_text": "コース： 1,600 メートル （芝・右 外）",
@@ -21,7 +23,7 @@
    "weight": 56.0,
    "jockey": "池添 謙一",
    "trainer": "上村 洋行",
-   "odds": null,
+   "odds": 11.4,
    "profile": {
     "父": "モーリス",
     "性別": "牡",
@@ -152,7 +154,7 @@
    "weight": 55.0,
    "jockey": "吉田 豊",
    "trainer": "戸田 博文",
-   "odds": null,
+   "odds": 21.6,
    "profile": {
     "父": "ヤマカツエース",
     "性別": "牡",
@@ -283,7 +285,7 @@
    "weight": 58.0,
    "jockey": "鮫島 克駿",
    "trainer": "須貝 尚介",
-   "odds": null,
+   "odds": 7.2,
    "profile": {
     "父": "リオンディーズ",
     "性別": "牡",
@@ -414,7 +416,7 @@
    "weight": 53.0,
    "jockey": "田山 旺佑",
    "trainer": "田島 俊明",
-   "odds": null,
+   "odds": 8.1,
    "profile": {
     "父": "シスキン",
     "性別": "牝",
@@ -545,7 +547,7 @@
    "weight": 54.0,
    "jockey": "北村 友一",
    "trainer": "松下 武士",
-   "odds": null,
+   "odds": 12.2,
    "profile": {
     "父": "サトノダイヤモンド",
     "性別": "牝",
@@ -676,7 +678,7 @@
    "weight": 54.0,
    "jockey": "藤懸 貴志",
    "trainer": "千田 輝彦",
-   "odds": null,
+   "odds": 58.7,
    "profile": {
     "父": "ワールドエース",
     "性別": "牡",
@@ -807,7 +809,7 @@
    "weight": 55.0,
    "jockey": "田口 貫太",
    "trainer": "松下 武士",
-   "odds": null,
+   "odds": 4.6,
    "profile": {
     "父": "ダノンプレミアム",
     "性別": "牡",
@@ -938,7 +940,7 @@
    "weight": 55.0,
    "jockey": "武 豊",
    "trainer": "大久保 龍志",
-   "odds": null,
+   "odds": 4.9,
    "profile": {
     "父": "ロードカナロア",
     "性別": "牡",
@@ -1069,7 +1071,7 @@
    "weight": 52.0,
    "jockey": "富田 暁",
    "trainer": "笹田 和秀",
-   "odds": null,
+   "odds": 44.6,
    "profile": {
     "父": "ミッキーアイル",
     "性別": "牝",
@@ -1200,7 +1202,7 @@
    "weight": 56.0,
    "jockey": "菱田 裕二",
    "trainer": "秋本 大介",
-   "odds": null,
+   "odds": 32.4,
    "profile": {
     "父": "スピルバーグ",
     "性別": "牡",
@@ -1331,7 +1333,7 @@
    "weight": 54.0,
    "jockey": "小沢 大仁",
    "trainer": "池添 学",
-   "odds": null,
+   "odds": 59.5,
    "profile": {
     "父": "モーリス",
     "性別": "せん",
@@ -1462,7 +1464,7 @@
    "weight": 55.0,
    "jockey": "酒井 学",
    "trainer": "武市 康男",
-   "odds": null,
+   "odds": 6.1,
    "profile": {
     "父": "グレーターロンドン",
     "性別": "牡",
@@ -1593,7 +1595,7 @@
    "weight": 55.0,
    "jockey": "吉村 誠之助",
    "trainer": "高野 友和",
-   "odds": null,
+   "odds": 9.1,
    "profile": {
     "父": "ディープインパクト",
     "性別": "牡",
@@ -1716,7 +1718,5 @@
  ],
  "field": 13,
  "race_id": "jra_20261101_京都_11",
- "source": "jra",
- "grade": "リステッド",
- "race_name": "まほろばステークス"
+ "source": "jra"
 }

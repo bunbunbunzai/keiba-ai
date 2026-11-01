@@ -6,6 +6,7 @@
  "venue": "京都",
  "post_time": "16:05",
  "title_text": "3歳以上2勝クラス 3歳以上 2勝クラス （混合）（特指） 定量",
+ "race_name": "3歳以上2勝クラス",
  "distance": 1400,
  "surface": "芝",
  "course_text": "コース： 1,400 メートル （芝・右 外）",
@@ -21,7 +22,7 @@
    "weight": 52.0,
    "jockey": "◇ 永島 まなみ",
    "trainer": "高橋 康之",
-   "odds": null,
+   "odds": 5.8,
    "profile": {
     "父": "サトノクラウン",
     "性別": "牝",
@@ -152,7 +153,7 @@
    "weight": 55.0,
    "jockey": "☆ 田山 旺佑",
    "trainer": "杉山 晴紀",
-   "odds": null,
+   "odds": 6.6,
    "profile": {
     "父": "サートゥルナーリア",
     "性別": "牝",
@@ -283,7 +284,7 @@
    "weight": 58.0,
    "jockey": "高杉 吏麒",
    "trainer": "吉田 直弘",
-   "odds": null,
+   "odds": 8.7,
    "profile": {
     "父": "ディスクリートキャット",
     "性別": "せん",
@@ -414,7 +415,7 @@
    "weight": 58.0,
    "jockey": "小崎 綾也",
    "trainer": "中尾 秀正",
-   "odds": null,
+   "odds": 14.0,
    "profile": {
     "父": "エイシンヒカリ",
     "性別": "牡",
@@ -545,7 +546,7 @@
    "weight": 58.0,
    "jockey": "角田 大和",
    "trainer": "石橋 守",
-   "odds": null,
+   "odds": 10.2,
    "profile": {
     "父": "シルバーステート",
     "性別": "牡",
@@ -676,7 +677,7 @@
    "weight": 56.0,
    "jockey": "酒井 学",
    "trainer": "吉岡 辰弥",
-   "odds": null,
+   "odds": 4.2,
    "profile": {
     "父": "Caravaggio",
     "性別": "牡",
@@ -806,7 +807,7 @@
    "weight": 56.0,
    "jockey": "藤懸 貴志",
    "trainer": "斉藤 崇史",
-   "odds": null,
+   "odds": 10.7,
    "profile": {
     "父": "ロゴタイプ",
     "性別": "牝",
@@ -937,7 +938,7 @@
    "weight": 53.0,
    "jockey": "▲ 和田 陽希",
    "trainer": "大根田 裕之",
-   "odds": null,
+   "odds": 36.7,
    "profile": {
     "父": "ストロングリターン",
     "性別": "牝",
@@ -1068,7 +1069,7 @@
    "weight": 56.0,
    "jockey": "渡辺 竜也",
    "trainer": "笹野 博司",
-   "odds": null,
+   "odds": 95.9,
    "profile": {
     "父": "ベストウォーリア",
     "性別": "牡",
@@ -1183,7 +1184,7 @@
    "weight": 54.0,
    "jockey": "吉村 誠之助",
    "trainer": "大久保 龍志",
-   "odds": null,
+   "odds": 6.4,
    "profile": {
     "父": "キタサンブラック",
     "性別": "牝",
@@ -1314,7 +1315,7 @@
    "weight": 58.0,
    "jockey": "鮫島 克駿",
    "trainer": "茶木 太樹",
-   "odds": null,
+   "odds": 23.9,
    "profile": {
     "父": "オルフェーヴル",
     "性別": "牡",
@@ -1445,7 +1446,7 @@
    "weight": 56.0,
    "jockey": "菊沢 一樹",
    "trainer": "伊藤 伸一",
-   "odds": null,
+   "odds": 44.7,
    "profile": {
     "父": "ホッコータルマエ",
     "性別": "牝",
@@ -1576,7 +1577,7 @@
    "weight": 54.0,
    "jockey": "◇ 今村 聖奈",
    "trainer": "寺島 良",
-   "odds": null,
+   "odds": 17.0,
    "profile": {
     "父": "リオンディーズ",
     "性別": "牝",
@@ -1699,7 +1700,5 @@
  ],
  "field": 13,
  "race_id": "jra_20261101_京都_12",
- "source": "jra",
- "grade": null,
- "race_name": "3歳以上2勝クラス"
+ "source": "jra"
 }

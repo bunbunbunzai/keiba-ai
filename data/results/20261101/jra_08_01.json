@@ -1,0 +1,198 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 6,
+   "name": "ルージュミスティカ",
+   "time": "1:25.7",
+   "margin": "",
+   "corners": "5-3",
+   "last3f": 37.6,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 10,
+   "name": "アヴレディール",
+   "time": "1:25.9",
+   "margin": "１ 1/2",
+   "corners": "2-2",
+   "last3f": 38.2,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "number": 2,
+   "name": "ラッキーハナコ",
+   "time": "1:26.2",
+   "margin": "２",
+   "corners": "6-5",
+   "last3f": 37.9,
+   "popularity": 4
+  },
+  {
+   "finish": "4",
+   "number": 11,
+   "name": "ホットハニーラグ",
+   "time": "1:26.7",
+   "margin": "３",
+   "corners": "8-8",
+   "last3f": 38.2,
+   "popularity": 8
+  },
+  {
+   "finish": "5",
+   "number": 1,
+   "name": "ウメヒナタ",
+   "time": "1:26.9",
+   "margin": "１ 1/4",
+   "corners": "6-5",
+   "last3f": 38.7,
+   "popularity": 7
+  },
+  {
+   "finish": "6",
+   "number": 7,
+   "name": "オンアロール",
+   "time": "1:27.1",
+   "margin": "３／４",
+   "corners": "3-4",
+   "last3f": 39.2,
+   "popularity": 6
+  },
+  {
+   "finish": "7",
+   "number": 5,
+   "name": "バッテリー",
+   "time": "1:27.1",
+   "margin": "アタマ",
+   "corners": "8-8",
+   "last3f": 38.6,
+   "popularity": 11
+  },
+  {
+   "finish": "8",
+   "number": 4,
+   "name": "エールヴェヌス",
+   "time": "1:27.3",
+   "margin": "１ 1/4",
+   "corners": "11-11",
+   "last3f": 37.7,
+   "popularity": 10
+  },
+  {
+   "finish": "9",
+   "number": 8,
+   "name": "ジョワイエトワール",
+   "time": "1:27.8",
+   "margin": "３",
+   "corners": "1-1",
+   "last3f": 40.2,
+   "popularity": 3
+  },
+  {
+   "finish": "10",
+   "number": 3,
+   "name": "ダヌラーサナ",
+   "time": "1:28.2",
+   "margin": "２ 1/2",
+   "corners": "8-10",
+   "last3f": 39.7,
+   "popularity": 5
+  },
+  {
+   "finish": "11",
+   "number": 9,
+   "name": "スマートサロン",
+   "time": "1:29.3",
+   "margin": "７",
+   "corners": "3-5",
+   "last3f": 41.3,
+   "popularity": 9
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "6",
+    "yen": 280,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "6",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "10",
+    "yen": 120,
+    "pop": 2
+   },
+   {
+    "combo": "2",
+    "yen": 190,
+    "pop": 4
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "6-8",
+    "yen": 300,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "6-10",
+    "yen": 200,
+    "pop": 1
+   },
+   {
+    "combo": "2-6",
+    "yen": 340,
+    "pop": 4
+   },
+   {
+    "combo": "2-10",
+    "yen": 420,
+    "pop": 5
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "6-10",
+    "yen": 400,
+    "pop": 1
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "6-10",
+    "yen": 790,
+    "pop": 2
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-6-10",
+    "yen": 820,
+    "pop": 2
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "6-10-2",
+    "yen": 2790,
+    "pop": 4
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261101",
+ "venue_code": "08",
+ "race_no": 1,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202604110120261101/EE",
+ "title": "レース結果 JRA"
+}

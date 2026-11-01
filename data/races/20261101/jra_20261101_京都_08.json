@@ -6,6 +6,7 @@
  "venue": "京都",
  "post_time": "13:35",
  "title_text": "3歳以上1勝クラス 3歳以上 1勝クラス （混合）［指定］ 定量",
+ "race_name": "3歳以上1勝クラス",
  "distance": 2200,
  "surface": "芝",
  "course_text": "コース： 2,200 メートル （芝・右 外）",
@@ -21,7 +22,7 @@
    "weight": 58.0,
    "jockey": "小沢 大仁",
    "trainer": "橋口 慎介",
-   "odds": null,
+   "odds": 22.6,
    "profile": {
     "父": "サートゥルナーリア",
     "性別": "牡",
@@ -152,7 +153,7 @@
    "weight": 55.0,
    "jockey": "鮫島 克駿",
    "trainer": "安田 翔伍",
-   "odds": null,
+   "odds": 12.9,
    "profile": {
     "父": "コントレイル",
     "性別": "牡",
@@ -283,7 +284,7 @@
    "weight": 55.0,
    "jockey": "斎藤 新",
    "trainer": "小椋 研介",
-   "odds": null,
+   "odds": 14.4,
    "profile": {
     "父": "エピファネイア",
     "性別": "牡",
@@ -414,7 +415,7 @@
    "weight": 55.0,
    "jockey": "田口 貫太",
    "trainer": "緒方 努",
-   "odds": null,
+   "odds": 7.3,
    "profile": {
     "父": "ロジャーバローズ",
     "性別": "牡",
@@ -545,7 +546,7 @@
    "weight": 57.0,
    "jockey": "☆ 田山 旺佑",
    "trainer": "北出 成人",
-   "odds": null,
+   "odds": 13.2,
    "profile": {
     "父": "トランセンド",
     "性別": "牡",
@@ -660,7 +661,7 @@
    "weight": 58.0,
    "jockey": "菱田 裕二",
    "trainer": "柴田 卓",
-   "odds": null,
+   "odds": 58.1,
    "profile": {
     "父": "サトノクラウン",
     "性別": "牡",
@@ -791,7 +792,7 @@
    "weight": 55.0,
    "jockey": "酒井 学",
    "trainer": "高橋 康之",
-   "odds": null,
+   "odds": 29.9,
    "profile": {
     "父": "サトノジェネシス",
     "性別": "牡",
@@ -922,7 +923,7 @@
    "weight": 55.0,
    "jockey": "菊沢 一樹",
    "trainer": "吉田 直弘",
-   "odds": null,
+   "odds": 12.9,
    "profile": {
     "父": "ゴールドシップ",
     "性別": "牡",
@@ -1053,7 +1054,7 @@
    "weight": 55.0,
    "jockey": "西村 淳也",
    "trainer": "中内田 充正",
-   "odds": null,
+   "odds": 9.6,
    "profile": {
     "父": "コントレイル",
     "性別": "牡",
@@ -1184,7 +1185,7 @@
    "weight": 55.0,
    "jockey": "西塚 洸二",
    "trainer": "友道 康夫",
-   "odds": null,
+   "odds": 2.3,
    "profile": {
     "父": "エピファネイア",
     "性別": "せん",
@@ -1252,7 +1253,7 @@
    "weight": 56.0,
    "jockey": "吉村 誠之助",
    "trainer": "柴田 卓",
-   "odds": null,
+   "odds": 47.9,
    "profile": {
     "父": "キズナ",
     "性別": "牝",
@@ -1383,7 +1384,7 @@
    "weight": 58.0,
    "jockey": "城戸 義政",
    "trainer": "荒川 義之",
-   "odds": null,
+   "odds": 124.3,
    "profile": {
     "父": "オルフェーヴル",
     "性別": "牡",
@@ -1514,7 +1515,7 @@
    "weight": 53.0,
    "jockey": "◇ 今村 聖奈",
    "trainer": "寺島 良",
-   "odds": null,
+   "odds": 10.8,
    "profile": {
     "父": "ゴールドアクター",
     "性別": "牡",
@@ -1645,7 +1646,7 @@
    "weight": 55.0,
    "jockey": "北村 友一",
    "trainer": "上村 洋行",
-   "odds": null,
+   "odds": 13.2,
    "profile": {
     "父": "レイデオロ",
     "性別": "牡",
@@ -1768,7 +1769,5 @@
  ],
  "field": 14,
  "race_id": "jra_20261101_京都_08",
- "source": "jra",
- "grade": null,
- "race_name": "3歳以上1勝クラス"
+ "source": "jra"
 }

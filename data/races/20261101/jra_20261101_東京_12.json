@@ -6,6 +6,7 @@
  "venue": "東京",
  "post_time": "16:25",
  "title_text": "清里特別 3歳以上 2勝クラス （混合）［指定］ ハンデ",
+ "race_name": "清里特別",
  "distance": 1600,
  "surface": "ダ",
  "course_text": "コース： 1,600 メートル （ダート・左）",
@@ -21,7 +22,7 @@
    "weight": 54.0,
    "jockey": "原 優介",
    "trainer": "矢野 英一",
-   "odds": null,
+   "odds": 21.3,
    "profile": {
     "父": "ゴールドドリーム",
     "性別": "牡",
@@ -152,7 +153,7 @@
    "weight": 52.0,
    "jockey": "石田 拓郎",
    "trainer": "尾形 和幸",
-   "odds": null,
+   "odds": 10.7,
    "profile": {
     "父": "ルヴァンスレーヴ",
     "性別": "牝",
@@ -283,7 +284,7 @@
    "weight": 56.0,
    "jockey": "三浦 皇成",
    "trainer": "高木 登",
-   "odds": null,
+   "odds": 9.0,
    "profile": {
     "父": "カレンブラックヒル",
     "性別": "牡",
@@ -414,7 +415,7 @@
    "weight": 52.0,
    "jockey": "佐々木 大輔",
    "trainer": "西園 翔太",
-   "odds": null,
+   "odds": 16.0,
    "profile": {
     "父": "リアルインパクト",
     "性別": "牝",
@@ -545,7 +546,7 @@
    "weight": 52.0,
    "jockey": "古川 吉洋",
    "trainer": "橋田 宜長",
-   "odds": null,
+   "odds": 42.3,
    "profile": {
     "父": "ドレフォン",
     "性別": "牝",
@@ -676,7 +677,7 @@
    "weight": 51.0,
    "jockey": "江田 照男",
    "trainer": "村田 一誠",
-   "odds": null,
+   "odds": 29.6,
    "profile": {
     "父": "シャンハイボビー",
     "性別": "牝",
@@ -807,7 +808,7 @@
    "weight": 53.0,
    "jockey": "松岡 正海",
    "trainer": "蛯名 利弘",
-   "odds": null,
+   "odds": 45.9,
    "profile": {
     "父": "バトルプラン",
     "性別": "牡",
@@ -934,7 +935,7 @@
    "weight": 57.0,
    "jockey": "C.ルメール",
    "trainer": "池江 泰寿",
-   "odds": null,
+   "odds": 3.2,
    "profile": {
     "父": "キズナ",
     "性別": "牡",
@@ -1065,7 +1066,7 @@
    "weight": 54.0,
    "jockey": "松若 風馬",
    "trainer": "牧田 和弥",
-   "odds": null,
+   "odds": 12.9,
    "profile": {
     "父": "モーニン",
     "性別": "牡",
@@ -1196,7 +1197,7 @@
    "weight": 54.0,
    "jockey": "菅原 明良",
    "trainer": "小島 茂之",
-   "odds": null,
+   "odds": 14.0,
    "profile": {
     "父": "サンダースノー",
     "性別": "牡",
@@ -1327,7 +1328,7 @@
    "weight": 53.0,
    "jockey": "原田 和真",
    "trainer": "萱野 浩二",
-   "odds": null,
+   "odds": 56.1,
    "profile": {
     "父": "ルヴァンスレーヴ",
     "性別": "牡",
@@ -1458,7 +1459,7 @@
    "weight": 52.0,
    "jockey": "石川 裕紀人",
    "trainer": "小崎 憲",
-   "odds": null,
+   "odds": 40.0,
    "profile": {
     "父": "ルヴァンスレーヴ",
     "性別": "牝",
@@ -1589,7 +1590,7 @@
    "weight": 55.0,
    "jockey": "川田 将雅",
    "trainer": "森 秀行",
-   "odds": null,
+   "odds": 4.3,
    "profile": {
     "父": "Good Magic",
     "性別": "牡",
@@ -1711,7 +1712,7 @@
    "weight": 53.0,
    "jockey": "丹内 祐次",
    "trainer": "伊藤 圭三",
-   "odds": null,
+   "odds": 7.8,
    "profile": {
     "父": "ナダル",
     "性別": "牝",
@@ -1834,7 +1835,5 @@
  ],
  "field": 14,
  "race_id": "jra_20261101_東京_12",
- "source": "jra",
- "grade": null,
- "race_name": "清里特別"
+ "source": "jra"
 }

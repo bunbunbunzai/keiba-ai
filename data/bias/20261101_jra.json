@@ -1,5 +1,17 @@
 {
  "date": "20261101",
- "updated": "2026-11-01 02:46",
- "bias": {}
+ "updated": "2026-11-01 10:10",
+ "bias": {
+  "京都ダ": {
+   "judgement": "先行有利・外",
+   "confidence": "弱",
+   "races": [
+    1
+   ],
+   "front_share": 1.0,
+   "inner_share": 0.0,
+   "outer_share": 0.5,
+   "horses": 2
+  }
+ }
 }

@@ -6,6 +6,7 @@
  "venue": "京都",
  "post_time": "11:15",
  "title_text": "障害3歳以上未勝利 障害3歳以上 未勝利 定量",
+ "race_name": "障害3歳以上未勝利",
  "distance": 2910,
  "surface": "芝",
  "course_text": "コース： 2,910 メートル （芝→ダート）",
@@ -21,7 +22,7 @@
    "weight": 60.0,
    "jockey": "五十嵐 雄祐",
    "trainer": "田島 俊明",
-   "odds": null,
+   "odds": 15.0,
    "profile": {
     "父": "リアルインパクト",
     "性別": "牡",
@@ -152,7 +153,7 @@
    "weight": 60.0,
    "jockey": "黒岩 悠",
    "trainer": "平田 修",
-   "odds": null,
+   "odds": 63.6,
    "profile": {
     "父": "マジェスティックウォリアー",
     "性別": "牡",
@@ -283,7 +284,7 @@
    "weight": 60.0,
    "jockey": "小牧 加矢太",
    "trainer": "中内田 充正",
-   "odds": null,
+   "odds": 10.0,
    "profile": {
     "父": "キズナ",
     "性別": "せん",
@@ -414,7 +415,7 @@
    "weight": 60.0,
    "jockey": "小坂 忠士",
    "trainer": "本田 優",
-   "odds": null,
+   "odds": 9.4,
    "profile": {
     "父": "レインボーライン",
     "性別": "牡",
@@ -545,7 +546,7 @@
    "weight": 60.0,
    "jockey": "中村 将之",
    "trainer": "秋山 真一郎",
-   "odds": null,
+   "odds": 4.3,
    "profile": {
     "父": "モーリス",
     "性別": "牡",
@@ -676,7 +677,7 @@
    "weight": 60.0,
    "jockey": "草野 太郎",
    "trainer": "畠山 吉宏",
-   "odds": null,
+   "odds": 58.9,
    "profile": {
     "父": "ロードカナロア",
     "性別": "牡",
@@ -803,7 +804,7 @@
    "weight": 58.0,
    "jockey": "大江原 圭",
    "trainer": "粕谷 昌央",
-   "odds": null,
+   "odds": 38.4,
    "profile": {
     "父": "エピファネイア",
     "性別": "牝",
@@ -934,7 +935,7 @@
    "weight": 58.0,
    "jockey": "上野 翔",
    "trainer": "辻 哲英",
-   "odds": null,
+   "odds": 39.5,
    "profile": {
     "父": "サングレーザー",
     "性別": "牡",
@@ -1023,7 +1024,7 @@
    "weight": 60.0,
    "jockey": "小野寺 祐太",
    "trainer": "井上 智史",
-   "odds": null,
+   "odds": 8.6,
    "profile": {
     "父": "ドレフォン",
     "性別": "牡",
@@ -1154,7 +1155,7 @@
    "weight": 57.0,
    "jockey": "▲ 水沼 元輝",
    "trainer": "天間 昭一",
-   "odds": null,
+   "odds": 63.4,
    "profile": {
     "父": "メイショウボーラー",
     "性別": "牡",
@@ -1285,7 +1286,7 @@
    "weight": 60.0,
    "jockey": "難波 剛健",
    "trainer": "中村 直也",
-   "odds": null,
+   "odds": 14.7,
    "profile": {
     "父": "ルーラーシップ",
     "性別": "牡",
@@ -1416,7 +1417,7 @@
    "weight": 58.0,
    "jockey": "△ 坂口 智康",
    "trainer": "古賀 大生",
-   "odds": null,
+   "odds": 5.5,
    "profile": {
     "父": "ハーツクライ",
     "性別": "せん",
@@ -1547,7 +1548,7 @@
    "weight": 60.0,
    "jockey": "森 一馬",
    "trainer": "昆 貢",
-   "odds": null,
+   "odds": 3.5,
    "profile": {
     "父": "ノヴェリスト",
     "性別": "せん",
@@ -1670,7 +1671,5 @@
  ],
  "field": 13,
  "race_id": "jra_20261101_京都_04",
- "source": "jra",
- "grade": null,
- "race_name": "障害3歳以上未勝利"
+ "source": "jra"
 }

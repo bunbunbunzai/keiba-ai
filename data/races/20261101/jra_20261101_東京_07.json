@@ -6,6 +6,7 @@
  "venue": "東京",
  "post_time": "13:20",
  "title_text": "3歳以上1勝クラス 3歳以上 1勝クラス [指定] 定量",
+ "race_name": "3歳以上1勝クラス",
  "distance": 1600,
  "surface": "ダ",
  "course_text": "コース： 1,600 メートル （ダート・左）",
@@ -21,7 +22,7 @@
    "weight": 56.0,
    "jockey": "丹内 祐次",
    "trainer": "西田 雄一郎",
-   "odds": null,
+   "odds": 23.7,
    "profile": {
     "父": "シャンハイボビー",
     "性別": "牡",
@@ -110,7 +111,7 @@
    "weight": 54.0,
    "jockey": "丸田 恭介",
    "trainer": "武市 康男",
-   "odds": null,
+   "odds": 62.0,
    "profile": {
     "父": "オーヴァルエース",
     "性別": "牝",
@@ -241,7 +242,7 @@
    "weight": 56.0,
    "jockey": "◇ 小林 美駒",
    "trainer": "和田 雄二",
-   "odds": null,
+   "odds": 6.6,
    "profile": {
     "父": "マジェスティックウォリアー",
     "性別": "牡",
@@ -372,7 +373,7 @@
    "weight": 58.0,
    "jockey": "岩田 康誠",
    "trainer": "奥村 武",
-   "odds": null,
+   "odds": 3.4,
    "profile": {
     "父": "ナダル",
     "性別": "牡",
@@ -503,7 +504,7 @@
    "weight": 53.0,
    "jockey": "▲ 佐藤 翔馬",
    "trainer": "菊沢 隆徳",
-   "odds": null,
+   "odds": 17.4,
    "profile": {
     "父": "ダノンレジェンド",
     "性別": "牝",
@@ -634,7 +635,7 @@
    "weight": 58.0,
    "jockey": "武藤 雅",
    "trainer": "水野 貴広",
-   "odds": null,
+   "odds": 33.5,
    "profile": {
     "父": "マインドユアビスケッツ",
     "性別": "牡",
@@ -765,7 +766,7 @@
    "weight": 56.0,
    "jockey": "原 優介",
    "trainer": "杉浦 宏昭",
-   "odds": null,
+   "odds": 13.7,
    "profile": {
     "父": "ホッコータルマエ",
     "性別": "牡",
@@ -896,7 +897,7 @@
    "weight": 56.0,
    "jockey": "△ 石田 拓郎",
    "trainer": "武藤 善則",
-   "odds": null,
+   "odds": 33.2,
    "profile": {
     "父": "ノーブルミッション",
     "性別": "せん",
@@ -1023,7 +1024,7 @@
    "weight": 58.0,
    "jockey": "佐々木 大輔",
    "trainer": "高柳 瑞樹",
-   "odds": null,
+   "odds": 19.0,
    "profile": {
     "父": "サトノダイヤモンド",
     "性別": "牡",
@@ -1154,7 +1155,7 @@
    "weight": 56.0,
    "jockey": "横山 琉人",
    "trainer": "手塚 貴徳",
-   "odds": null,
+   "odds": 30.3,
    "profile": {
     "父": "パイロ",
     "性別": "牝",
@@ -1285,7 +1286,7 @@
    "weight": 56.0,
    "jockey": "三浦 皇成",
    "trainer": "中川 公成",
-   "odds": null,
+   "odds": 4.7,
    "profile": {
     "父": "マクフィ",
     "性別": "牡",
@@ -1416,7 +1417,7 @@
    "weight": 58.0,
    "jockey": "A.プーシャン",
    "trainer": "浅利 英明",
-   "odds": null,
+   "odds": 6.2,
    "profile": {
     "父": "ドレフォン",
     "性別": "せん",
@@ -1547,7 +1548,7 @@
    "weight": 58.0,
    "jockey": "内田 博幸",
    "trainer": "高橋 文雅",
-   "odds": null,
+   "odds": 12.8,
    "profile": {
     "父": "モーリス",
     "性別": "せん",
@@ -1678,7 +1679,7 @@
    "weight": 54.0,
    "jockey": "黛 弘人",
    "trainer": "鈴木 慎太郎",
-   "odds": null,
+   "odds": 48.6,
    "profile": {
     "父": "ガルボ",
     "性別": "牝",
@@ -1809,7 +1810,7 @@
    "weight": 58.0,
    "jockey": "杉原 誠人",
    "trainer": "石栗 龍彦",
-   "odds": null,
+   "odds": 101.4,
    "profile": {
     "父": "ビッグアーサー",
     "性別": "牡",
@@ -1932,7 +1933,5 @@
  ],
  "field": 15,
  "race_id": "jra_20261101_東京_07",
- "source": "jra",
- "grade": null,
- "race_name": "3歳以上1勝クラス"
+ "source": "jra"
 }

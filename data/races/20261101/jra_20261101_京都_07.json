@@ -6,6 +6,7 @@
  "venue": "京都",
  "post_time": "13:05",
  "title_text": "3歳以上1勝クラス 3歳以上 1勝クラス （混合）［指定］ 定量",
+ "race_name": "3歳以上1勝クラス",
  "distance": 1400,
  "surface": "ダ",
  "course_text": "コース： 1,400 メートル （ダート・右）",
@@ -21,7 +22,7 @@
    "weight": 56.0,
    "jockey": "松本 大輝",
    "trainer": "昆 貢",
-   "odds": null,
+   "odds": 18.3,
    "profile": {
     "父": "サートゥルナーリア",
     "性別": "牡",
@@ -152,7 +153,7 @@
    "weight": 58.0,
    "jockey": "酒井 学",
    "trainer": "高橋 康之",
-   "odds": null,
+   "odds": 48.6,
    "profile": {
     "父": "モーニン",
     "性別": "牡",
@@ -283,7 +284,7 @@
    "weight": 54.0,
    "jockey": "菱田 裕二",
    "trainer": "橋口 慎介",
-   "odds": null,
+   "odds": 85.1,
    "profile": {
     "父": "クリソベリル",
     "性別": "牝",
@@ -414,7 +415,7 @@
    "weight": 54.0,
    "jockey": "国分 恭介",
    "trainer": "宮地 貴稔",
-   "odds": null,
+   "odds": 26.8,
    "profile": {
     "父": "ニューイヤーズデイ",
     "性別": "牝",
@@ -545,7 +546,7 @@
    "weight": 56.0,
    "jockey": "渡辺 竜也",
    "trainer": "森 秀行",
-   "odds": null,
+   "odds": 10.9,
    "profile": {
     "父": "Beau Liam",
     "性別": "牡",
@@ -675,7 +676,7 @@
    "weight": 53.0,
    "jockey": "☆ 田山 旺佑",
    "trainer": "佐藤 悠太",
-   "odds": null,
+   "odds": 10.7,
    "profile": {
     "父": "ナダル",
     "性別": "牝",
@@ -806,7 +807,7 @@
    "weight": 56.0,
    "jockey": "小沢 大仁",
    "trainer": "田中 克典",
-   "odds": null,
+   "odds": 7.6,
    "profile": {
     "父": "モズアスコット",
     "性別": "牡",
@@ -937,7 +938,7 @@
    "weight": 54.0,
    "jockey": "◇ 今村 聖奈",
    "trainer": "松永 幹夫",
-   "odds": null,
+   "odds": 15.1,
    "profile": {
     "父": "エピファネイア",
     "性別": "牝",
@@ -1068,7 +1069,7 @@
    "weight": 56.0,
    "jockey": "高杉 吏麒",
    "trainer": "中尾 秀正",
-   "odds": null,
+   "odds": 31.6,
    "profile": {
     "父": "カレンブラックヒル",
     "性別": "牝",
@@ -1199,7 +1200,7 @@
    "weight": 58.0,
    "jockey": "藤懸 貴志",
    "trainer": "平田 修",
-   "odds": null,
+   "odds": 55.3,
    "profile": {
     "父": "ディスクリートキャット",
     "性別": "牡",
@@ -1330,7 +1331,7 @@
    "weight": 56.0,
    "jockey": "田口 貫太",
    "trainer": "大根田 裕之",
-   "odds": null,
+   "odds": 6.6,
    "profile": {
     "父": "ミスチヴィアスアレックス",
     "性別": "牡",
@@ -1461,7 +1462,7 @@
    "weight": 58.0,
    "jockey": "鮫島 克駿",
    "trainer": "岡田 稲男",
-   "odds": null,
+   "odds": 18.6,
    "profile": {
     "父": "カリフォルニアクローム",
     "性別": "牡",
@@ -1592,7 +1593,7 @@
    "weight": 56.0,
    "jockey": "中井 裕二",
    "trainer": "笹田 和秀",
-   "odds": null,
+   "odds": 15.0,
    "profile": {
     "父": "モズアスコット",
     "性別": "牝",
@@ -1723,7 +1724,7 @@
    "weight": 54.0,
    "jockey": "太宰 啓介",
    "trainer": "小林 真也",
-   "odds": null,
+   "odds": 20.8,
    "profile": {
     "父": "ミスチヴィアスアレックス",
     "性別": "牝",
@@ -1854,7 +1855,7 @@
    "weight": 56.0,
    "jockey": "吉村 誠之助",
    "trainer": "今野 貞一",
-   "odds": null,
+   "odds": 5.1,
    "profile": {
     "父": "ヘンリーバローズ",
     "性別": "牡",
@@ -1985,7 +1986,7 @@
    "weight": 58.0,
    "jockey": "西村 淳也",
    "trainer": "東田 明士",
-   "odds": null,
+   "odds": 5.4,
    "profile": {
     "父": "ハーツクライ",
     "性別": "牡",
@@ -2108,7 +2109,5 @@
  ],
  "field": 16,
  "race_id": "jra_20261101_京都_07",
- "source": "jra",
- "grade": null,
- "race_name": "3歳以上1勝クラス"
+ "source": "jra"
 }

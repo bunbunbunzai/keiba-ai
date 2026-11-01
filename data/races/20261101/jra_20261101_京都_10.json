@@ -6,6 +6,7 @@
  "venue": "京都",
  "post_time": "14:45",
  "title_text": "古都ステークス 3歳以上 3勝クラス （混合）［指定］ ハンデ",
+ "race_name": "古都ステークス",
  "distance": 3000,
  "surface": "芝",
  "course_text": "コース： 3,000 メートル （芝・右 外）",
@@ -21,7 +22,7 @@
    "weight": 56.0,
    "jockey": "酒井 学",
    "trainer": "北出 成人",
-   "odds": null,
+   "odds": 4.6,
    "profile": {
     "父": "キズナ",
     "性別": "せん",
@@ -152,7 +153,7 @@
    "weight": 54.0,
    "jockey": "古川 奈穂",
    "trainer": "矢作 芳人",
-   "odds": null,
+   "odds": 7.7,
    "profile": {
     "父": "ルーラーシップ",
     "性別": "牡",
@@ -283,7 +284,7 @@
    "weight": 55.0,
    "jockey": "池添 謙一",
    "trainer": "林 徹",
-   "odds": null,
+   "odds": 9.2,
    "profile": {
     "父": "アドマイヤマーズ",
     "性別": "牡",
@@ -414,7 +415,7 @@
    "weight": 55.0,
    "jockey": "鮫島 克駿",
    "trainer": "伊坂 重信",
-   "odds": null,
+   "odds": 6.2,
    "profile": {
     "父": "ニューイヤーズデイ",
     "性別": "牡",
@@ -545,7 +546,7 @@
    "weight": 56.0,
    "jockey": "菊沢 一樹",
    "trainer": "岩戸 孝樹",
-   "odds": null,
+   "odds": 4.9,
    "profile": {
     "父": "アメリカンペイトリオット",
     "性別": "牡",
@@ -676,7 +677,7 @@
    "weight": 53.0,
    "jockey": "藤懸 貴志",
    "trainer": "奥平 雅士",
-   "odds": null,
+   "odds": 25.5,
    "profile": {
     "父": "ミッキーグローリー",
     "性別": "牝",
@@ -807,7 +808,7 @@
    "weight": 51.0,
    "jockey": "田山 旺佑",
    "trainer": "小栗 実",
-   "odds": null,
+   "odds": 6.3,
    "profile": {
     "父": "エピファネイア",
     "性別": "牡",
@@ -938,7 +939,7 @@
    "weight": 54.0,
    "jockey": "西塚 洸二",
    "trainer": "池添 学",
-   "odds": null,
+   "odds": 10.7,
    "profile": {
     "父": "ドゥラメンテ",
     "性別": "せん",
@@ -1069,7 +1070,7 @@
    "weight": 54.0,
    "jockey": "田口 貫太",
    "trainer": "青木 孝文",
-   "odds": null,
+   "odds": 6.7,
    "profile": {
     "父": "ミッキーロケット",
     "性別": "牝",
@@ -1192,7 +1193,5 @@
  ],
  "field": 9,
  "race_id": "jra_20261101_京都_10",
- "source": "jra",
- "grade": null,
- "race_name": "古都ステークス"
+ "source": "jra"
 }
