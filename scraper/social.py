@@ -297,6 +297,14 @@ def save_state(date: str, st: dict) -> None:
     state_path(date).write_text(json.dumps(st, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
+def ascii_name(pid: str) -> str:
+    """画像ファイル名は英数字だけにする（URLに日本語があるとInstagramが画像を取得できない）。"""
+    from build import VENUE_SLUG
+    for k, v in sorted(VENUE_SLUG.items(), key=lambda kv: -len(kv[0])):
+        pid = pid.replace(k, v)
+    return re.sub(r"[^0-9A-Za-z_-]", "_", pid)
+
+
 def prepare(date: str, cfg: dict) -> int:
     import social_img
 
@@ -305,10 +313,10 @@ def prepare(date: str, cfg: dict) -> int:
     for c in candidates(date):
         if c["id"] in st["posts"]:
             continue
-        img = SOCIAL / date / f"{c['id']}.jpg"
+        img = SOCIAL / date / f"{ascii_name(c['id'])}.jpg"
         social_img.render(img, card(date, c))
         t = texts(date, c, cfg)
-        st["posts"][c["id"]] = {"kind": c["kind"], "image": f"/social/{date}/{c['id']}.jpg", "x_text": t["x"],
+        st["posts"][c["id"]] = {"kind": c["kind"], "image": f"/social/{date}/{ascii_name(c['id'])}.jpg", "x_text": t["x"],
                                 "ig_caption": t["instagram"], "url": t["url"], "created": now().strftime("%Y-%m-%d %H:%M"),
                                 "x": "pending" if cfg.get("x", True) else "off",
                                 "instagram": "pending" if cfg.get("instagram", True) else "off"}
@@ -451,7 +459,7 @@ def publish(date: str, dry: bool = False, only: str = "") -> int:
                 e[k] = "draft"
                 continue
             try:
-                e[f"{k}_id"] = post_x(e["x_text"], SOCIAL / date / f"{pid}.jpg") if k == "x" else post_ig(e["ig_caption"], img_url)
+                e[f"{k}_id"] = post_x(e["x_text"], ROOT / e["image"].lstrip("/")) if k == "x" else post_ig(e["ig_caption"], img_url)
                 e[k] = "posted"
                 e[f"{k}_at"] = now().strftime("%Y-%m-%d %H:%M")
                 n += 1
