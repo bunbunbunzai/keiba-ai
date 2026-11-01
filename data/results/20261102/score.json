@@ -1,0 +1,142 @@
+{
+ "date": "20261102",
+ "updated": "2026-11-02 04:20",
+ "races_total": 8,
+ "races_scored": 0,
+ "stake": 0,
+ "return": 0,
+ "roi": null,
+ "hit_races": 0,
+ "honmei_win": 0,
+ "honmei_top3": 0,
+ "races": [
+  {
+   "race_id": "202611021006100201",
+   "confidence": "C",
+   "honmei": 6,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 400,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611021006100202",
+   "confidence": "B",
+   "honmei": 7,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 600,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611021006100203",
+   "confidence": "B",
+   "honmei": 6,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 600,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611022320120401",
+   "confidence": "B",
+   "honmei": 8,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 600,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611022320120402",
+   "confidence": "A",
+   "honmei": 4,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 900,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611022320120403",
+   "confidence": "B",
+   "honmei": 4,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 600,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611022320120404",
+   "confidence": "C",
+   "honmei": 7,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 400,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611022320120405",
+   "confidence": "C",
+   "honmei": 9,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 400,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  }
+ ]
+}
