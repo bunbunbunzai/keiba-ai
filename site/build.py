@@ -26,7 +26,7 @@ import og
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "_site"
-SITE_NAME = "競馬カルテ"
+SITE_NAME = "全頭ログ"
 SITE_SUB = "AIが全レース・全頭を診断　外れも含めた成績を公開"
 DOMAIN = "www.ai-keiba-log.com"
 BASE_URL = f"https://{DOMAIN}"
@@ -787,8 +787,8 @@ document.querySelectorAll('.vs').forEach(function(v){
   if(!me){r.textContent='あなたの◎は'+pick+'番。結果が出たら勝敗を表示します。';return;}
   var a=parseInt(me)||99,b=parseInt(ai)||99,res=a<b?'あなたの勝ち！':a>b?'AIの勝ち':'引き分け';
   r.textContent='あなたの◎'+pick+'番は'+me+'着、AIの◎'+v.dataset.ai+'番は'+(ai||'-')+'着 → '+res;
-  var t=v.dataset.label+'で競馬カルテのAIと勝負：'+res+'（私の◎'+pick+'番'+me+'着／AIの◎'+(ai||'-')+'着）';
-  var a2=document.createElement('a');a2.href='https://twitter.com/intent/tweet?text='+encodeURIComponent(t)+'&url='+encodeURIComponent(v.dataset.url)+'&hashtags='+encodeURIComponent('競馬カルテ');a2.target='_blank';a2.rel='noopener';a2.textContent='結果をXでシェア';
+  var t=v.dataset.label+'で全頭ログのAIと勝負：'+res+'（私の◎'+pick+'番'+me+'着／AIの◎'+(ai||'-')+'着）';
+  var a2=document.createElement('a');a2.href='https://twitter.com/intent/tweet?text='+encodeURIComponent(t)+'&url='+encodeURIComponent(v.dataset.url)+'&hashtags='+encodeURIComponent('全頭ログ');a2.target='_blank';a2.rel='noopener';a2.textContent='結果をXでシェア';
   var d=document.createElement('div');d.className='share';d.appendChild(a2);v.appendChild(d);}
  if(btn)btn.addEventListener('click',function(){if(!sel.value||v.dataset.post<=s)return;pick=sel.value;try{localStorage.setItem(key,pick)}catch(e){}show();});
  show();});
@@ -864,7 +864,7 @@ def build() -> None:
     import sys as _sys
     lastmod.update(extra.build_pages(_sys.modules[__name__], by_date, today))
     write("/about/", page(f"予想の方法とよくある質問 | {SITE_NAME}", ABOUT, "/about/", head_extra=jsonld(FAQ_LD),
-                          desc="競馬カルテの予想の作り方（評価の5軸・印・自信度・買い目）と、回収率の計算方法。"))
+                          desc="全頭ログの予想の作り方（評価の5軸・印・自信度・買い目）と、回収率の計算方法。"))
     write("/operator/", page(f"運営者情報 | {SITE_NAME}", OPERATOR, "/operator/"))
     write("/privacy/", page(f"プライバシーポリシー | {SITE_NAME}", PRIVACY, "/privacy/"))
     today_iso = now.strftime("%Y-%m-%d")

@@ -57,8 +57,8 @@ def fit(d: ImageDraw.ImageDraw, text: str, size: int, maxw: int, bold=True):
 
 
 def header(d: ImageDraw.ImageDraw, sub: str) -> None:
-    d.text((76, 66), "競馬カルテ", font=font(30), fill=GREEN)
-    d.text((76 + d.textlength("競馬カルテ", font=font(30)) + 18, 72), sub, font=font(24, False), fill=MUT)
+    d.text((76, 66), "全頭ログ", font=font(30), fill=GREEN)
+    d.text((76 + d.textlength("全頭ログ", font=font(30)) + 18, 72), sub, font=font(24, False), fill=MUT)
 
 
 def race_image(out: Path, date_txt: str, label: str, meta: str, marks: list[tuple[str, str, str]],
@@ -101,7 +101,7 @@ def site_image(out: Path, title: str, lines: list[str]) -> None:
         lg = Image.open(logo).convert("RGBA").resize((92, 92), Image.LANCZOS)
         im.paste(lg, (72, 62), lg)
         x = 180
-    d.text((x, 70), "競馬カルテ", font=font(64), fill=GREEN)
+    d.text((x, 70), "全頭ログ", font=font(64), fill=GREEN)
     d.text((80, 160), title, font=fit(d, title, 38, 640), fill=INK)
     y = 240
     for ln in lines:
