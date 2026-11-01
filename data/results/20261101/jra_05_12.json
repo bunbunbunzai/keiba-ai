@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 8,
+   "name": "スマートスピア",
+   "time": "1:36.5",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 13,
+   "name": "サマーマッドネス",
+   "time": "",
+   "margin": "１ 3/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "number": 9,
+   "name": "キングツェッペリン",
+   "time": "",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "4",
+   "number": 12,
+   "name": "レディゴディヴァ",
+   "time": "",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "5",
+   "number": 14,
+   "name": "タマモカンパネラ",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "8",
+    "yen": 250,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "8",
+    "yen": 120,
+    "pop": 1
+   },
+   {
+    "combo": "13",
+    "yen": 150,
+    "pop": 2
+   },
+   {
+    "combo": "9",
+    "yen": 350,
+    "pop": 7
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-8",
+    "yen": 310,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "8-13",
+    "yen": 240,
+    "pop": 1
+   },
+   {
+    "combo": "8-9",
+    "yen": 760,
+    "pop": 9
+   },
+   {
+    "combo": "9-13",
+    "yen": 1060,
+    "pop": 15
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "8-13",
+    "yen": 430,
+    "pop": 1
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "8-13",
+    "yen": 690,
+    "pop": 1
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "8-9-13",
+    "yen": 2790,
+    "pop": 8
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "8-13-9",
+    "yen": 8120,
+    "pop": 15
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261101",
+ "venue_code": "05",
+ "race_no": 12,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202604111220261101/17",
+ "title": "レース結果 JRA"
+}
