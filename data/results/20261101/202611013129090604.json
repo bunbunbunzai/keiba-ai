@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261101",
  "race_id": "202611013129090604",
- "tries": 2,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,127 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 10,
+   "name": "ゼントユウイ",
+   "time": "1:47.6",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 9,
+   "name": "エクストラノート",
+   "time": "1:48.3",
+   "margin": "３",
+   "pos4": 4,
+   "last3f": 40.1,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "ビッグショータイム",
+   "time": "1:48.4",
+   "margin": "１／２",
+   "pos4": 3,
+   "last3f": 40.5,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 5,
+   "name": "リライトヒストリー",
+   "time": "1:49.0",
+   "margin": "３",
+   "pos4": 5,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 11,
+   "name": "カノンウッドテール",
+   "time": "1:49.1",
+   "margin": "１／２",
+   "pos4": 8,
+   "last3f": 39.5,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 7,
+   "name": "ハンドレインジ",
+   "time": "1:49.2",
+   "margin": "３／４",
+   "pos4": 5,
+   "last3f": 40.8,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 2,
+   "number": 2,
+   "name": "グリントリッター",
+   "time": "1:49.8",
+   "margin": "３",
+   "pos4": 5,
+   "last3f": 41.1,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 4,
+   "number": 4,
+   "name": "シティオブロンドン",
+   "time": "1:49.9",
+   "margin": "１／２",
+   "pos4": 2,
+   "last3f": 42.3,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 8,
+   "name": "マロカオブジャガー",
+   "time": "1:50.1",
+   "margin": "１",
+   "pos4": 8,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 1,
+   "number": 1,
+   "name": "オケイン",
+   "time": "1:51.2",
+   "margin": "５",
+   "pos4": 11,
+   "last3f": 42.8,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 6,
+   "number": 6,
+   "name": "フリントロック",
+   "time": "1:52.0",
+   "margin": "４",
+   "pos4": 8,
+   "last3f": 43.4,
+   "popularity": null
+  }
+ ]
 }
