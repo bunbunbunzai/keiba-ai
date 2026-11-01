@@ -341,10 +341,45 @@ def post_x(text: str, image: Path) -> str:
     return r.json()["data"]["id"]
 
 
+def ig_accounts(tok: str) -> list[dict]:
+    """トークンから投稿できるInstagramアカウント（id・ユーザー名）を調べる。IDは秘密情報ではない。"""
+    import requests
+
+    out = []
+    if tok.startswith("IG"):
+        r = requests.get("https://graph.instagram.com/v23.0/me", timeout=30, params={"fields": "user_id,username", "access_token": tok})
+        if r.ok:
+            j = r.json()
+            out.append({"id": str(j.get("user_id") or j.get("id")), "username": j.get("username")})
+        return out
+    base = "https://graph.facebook.com/v23.0"
+    r = requests.get(f"{base}/me/accounts", timeout=30, params={"fields": "instagram_business_account{id,username}", "access_token": tok})
+    if r.ok:
+        for pg in r.json().get("data", []):
+            a = pg.get("instagram_business_account")
+            if a:
+                out.append({"id": str(a["id"]), "username": a.get("username")})
+    if not out:  # システムユーザートークンなど：割り当てられたIGアカウントを直接たどる
+        r = requests.get(f"{base}/me", timeout=30, params={"fields": "id,name", "access_token": tok})
+        print("ig me:", r.status_code, r.text[:200] if not r.ok else "")
+    return out
+
+
+def ig_user_id(tok: str) -> str:
+    uid = os.environ.get("IG_USER_ID", "").strip()
+    if uid.isdigit() and len(uid) >= 10:
+        return uid
+    accs = ig_accounts(tok)
+    if accs:
+        return accs[0]["id"]
+    return uid
+
+
 def post_ig(caption: str, image_url: str) -> str:
     import requests
 
-    uid, tok = os.environ["IG_USER_ID"].strip(), os.environ["IG_ACCESS_TOKEN"].strip()
+    tok = os.environ["IG_ACCESS_TOKEN"].strip()
+    uid = ig_user_id(tok)
     # Instagramログインのトークン（IGで始まる）は graph.instagram.com、
     # Facebook／統合ログインのトークン（EAAで始まる）は graph.facebook.com を使う
     base = "https://graph.instagram.com/v23.0" if tok.startswith("IG") else "https://graph.facebook.com/v23.0"
@@ -420,6 +455,14 @@ if __name__ == "__main__":
     posted = 0 if a.prepare_only else publish(a.date, a.dry_run, a.only)
     made = 0 if a.only else prepare(a.date, cfg)
     status = {"x_keys": has_x(), "ig_keys": has_ig()}  # 鍵の有無だけ（中身は書かない）
+    if has_ig():
+        try:
+            tok = os.environ["IG_ACCESS_TOKEN"].strip()
+            status["ig_token_type"] = "instagram" if tok.startswith("IG") else "facebook"
+            status["ig_id_ok"] = os.environ.get("IG_USER_ID", "").strip().isdigit() and len(os.environ.get("IG_USER_ID", "").strip()) >= 10
+            status["ig_accounts"] = ig_accounts(tok)
+        except Exception as ex:  # noqa: BLE001
+            status["ig_check_error"] = str(ex)[:200]
     sp = SOCIAL / "status.json"
     if load(sp, {}) != status:
         sp.write_text(json.dumps(status), encoding="utf-8")
