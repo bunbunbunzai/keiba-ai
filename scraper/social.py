@@ -359,10 +359,27 @@ def ig_accounts(tok: str) -> list[dict]:
             a = pg.get("instagram_business_account")
             if a:
                 out.append({"id": str(a["id"]), "username": a.get("username")})
-    if not out:  # システムユーザートークンなど：割り当てられたIGアカウントを直接たどる
-        r = requests.get(f"{base}/me", timeout=30, params={"fields": "id,name", "access_token": tok})
-        print("ig me:", r.status_code, r.text[:200] if not r.ok else "")
+    if not out:  # システムユーザートークン：ビジネスポートフォリオ経由でIGアカウントをたどる
+        PROBE.clear()
+        bids = set(filter(None, [os.environ.get("META_BUSINESS_ID", "").strip()]))
+        r = requests.get(f"{base}/me/businesses", timeout=30, params={"fields": "id,name", "access_token": tok})
+        PROBE.append(f"me/businesses {r.status_code}")
+        if r.ok:
+            bids |= {b["id"] for b in r.json().get("data", [])}
+        for b in sorted(bids):
+            for ep in ("owned_instagram_accounts", "instagram_business_accounts", "instagram_accounts"):
+                r = requests.get(f"{base}/{b}/{ep}", timeout=30, params={"fields": "id,username", "access_token": tok})
+                PROBE.append(f"{ep} {r.status_code}" + ("" if r.ok else " " + str((r.json().get("error") or {}).get("message", ""))[:80]))
+                if r.ok:
+                    for x in r.json().get("data", []):
+                        if x.get("id") and {"id": str(x["id"]), "username": x.get("username")} not in out:
+                            out.append({"id": str(x["id"]), "username": x.get("username")})
+            if out:
+                break
     return out
+
+
+PROBE: list[str] = []
 
 
 def ig_user_id(tok: str) -> str:
@@ -461,6 +478,8 @@ if __name__ == "__main__":
             status["ig_token_type"] = "instagram" if tok.startswith("IG") else "facebook"
             status["ig_id_ok"] = os.environ.get("IG_USER_ID", "").strip().isdigit() and len(os.environ.get("IG_USER_ID", "").strip()) >= 10
             status["ig_accounts"] = ig_accounts(tok)
+            if PROBE:
+                status["ig_probe"] = PROBE[:]
         except Exception as ex:  # noqa: BLE001
             status["ig_check_error"] = str(ex)[:200]
     sp = SOCIAL / "status.json"
