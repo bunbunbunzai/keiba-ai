@@ -155,6 +155,12 @@ def candidates(date: str) -> list[dict]:
                 out.append({"id": f"res-{p['race_id']}", "kind": "grade_res", "p": p})
         elif sc and sc["stake"] and sc["return"] >= sc["stake"]:
             out.append({"id": f"hit-{p['race_id']}", "kind": "hit", "p": p})
+    # 朝の「今日の勝負レース」：7:30〜11:30に1回（前日夜の予想と重賞から選ぶ。昼の予想が増えても再投稿はしない）
+    if t.strftime("%Y%m%d") == date and "07:30" <= t.strftime("%H:%M") <= "11:30":
+        from build import picks
+        ps = [p for p in picks(rs) if not p["_score"]]
+        if len(ps) >= 2:
+            out.append({"id": f"picks-{date}", "kind": "picks", "ps": ps})
     bet = [p for p in rs if p.get("confidence") != "見送り"]
     done = [p for p in bet if p["_score"]]
     if bet and done and (len(done) == len(bet) or t.strftime("%Y%m%d") > date or t.strftime("%H:%M") >= "21:40"):
@@ -221,6 +227,18 @@ def texts(date: str, c: dict, cfg: dict) -> dict:
         local = any(not str(p["race_id"]).startswith("jra_") for p in rs)
         tags = ["#競馬予想"] + (["#中央競馬"] if jra else []) + (["#地方競馬"] if local else []) + ["#AI予想", "#回収率"]
         url = BASE_URL + f"/{date[:4]}/{date[4:6]}/{date[6:8]}/"
+    elif kind == "picks":
+        from build import honmei_value
+        lines = [f"【{fmt_md(date)} 今日の勝負レース】"]
+        for p in c["ps"]:
+            hon = p["marks"]["◎"]
+            wp, od, val = honmei_value(p)
+            pt = p["_race"].get("post_time") or ""
+            ex = f"（勝率{wp:.0f}%×単勝{od:.1f}倍）" if wp is not None and od else ""
+            lines.append(f"{pt} {venue(p)}{rno(p)}R ◎{hon}{horse(p, hon)}{ex}")
+        lines.append("的中しやすい順（自信度・◎の人気・中央を優先）。全レースの印・買い目はサイトで")
+        tags = ["#競馬予想", "#AI予想", "#今日の勝負レース"]
+        url = BASE_URL + f"/{date[:4]}/{date[4:6]}/{date[6:8]}/"
     else:
         p, sc = c["p"], c["p"]["_score"]
         g = c["p"]["_grade"]
@@ -278,6 +296,16 @@ def card(date: str, c: dict) -> dict:
         return {"kind": kind, "label": "本日の全成績", "date": md, "head": f"{len(done)}レース 的中{hit}（プラス{plus}）",
                 "sub": "外れも含む全予想・各点100円で集計", "rows": rows, "big": f"{100 * rt / st:.1f}%" if st else "―",
                 "big_label": "当日回収率", "foot": f"収支{rt - st:+,}円　累計回収率{ledger_roi()}"}
+    if kind == "picks":
+        from build import honmei_value
+        lines, rows = [], []
+        for p in c["ps"]:
+            hon = p["marks"]["◎"]
+            wp, od, val = honmei_value(p)
+            lines.append(("◎", f"{venue(p)}{rno(p)}R {hon} {horse(p, hon)}"))
+            rows.append(f"{p['_race'].get('post_time') or ''}発走　自信度{p.get('confidence')}" + (f"　想定勝率{wp:.0f}%・単勝{od:.1f}倍" if wp is not None and od else ""))
+        return {"kind": "grade_pre", "label": "今日の勝負レース", "date": md, "head": f"AIの◎ 的中しやすい{len(lines)}レース",
+                "sub": "自信度・◎の人気・中央を優先（朝のオッズ）", "lines": lines, "rows": rows}
     p = c["p"]
     sc, g = p["_score"], p["_grade"]
     m = p.get("marks", {})
