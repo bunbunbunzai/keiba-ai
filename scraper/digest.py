@@ -14,6 +14,10 @@ from pathlib import Path
 
 from common import DATA_DIR
 
+import sys as _sys
+_sys.path.insert(0, str(DATA_DIR.parent / "site"))
+from extra import grade_of  # noqa: E402
+
 ROOT = DATA_DIR.parent
 
 
@@ -104,5 +108,6 @@ if __name__ == "__main__":
             if r["race_id"] in done or (r.get("post_time") or "99:99") < a.after:
                 continue
             odds = sum(1 for h in r.get("horses", []) if h.get("odds") is not None)
-            print(f"{r.get('post_time')} {r['race_id']} {r.get('venue')}{r.get('race_no')}R "
+            g = grade_of(r)
+            print(f"{r.get('post_time')} {r['race_id']} {r.get('venue')}{r.get('race_no')}R " + (f"【重賞:{g}】" if g else "") +
                   f"{r.get('surface') or ''}{r.get('distance') or ''} {r.get('field')}頭 オッズ{odds}/{r.get('field')}")

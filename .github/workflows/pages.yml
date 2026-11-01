@@ -38,3 +38,7 @@ jobs:
           path: _site
       - id: d
         uses: actions/deploy-pages@v4
+      - name: 検索エンジンに更新を通知（IndexNow）
+        if: success()
+        continue-on-error: true
+        run: python site/indexnow.py

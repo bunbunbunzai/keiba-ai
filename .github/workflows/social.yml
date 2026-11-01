@@ -47,10 +47,14 @@ jobs:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           META_BUSINESS_ID: "1775467983753893"
         run: |
-          D="${{ inputs.date }}"; [ -z "$D" ] && D=$(TZ=Asia/Tokyo date +%Y%m%d)
-          O="${{ inputs.only }}"
-          OUT=$(python scraper/social.py --date "$D" ${O:+--only "$O"} | tail -1); echo "$OUT"
-          echo "prepared=$(echo "$OUT" | python -c 'import sys,json;print(json.load(sys.stdin)["prepared"])')" >> "$GITHUB_OUTPUT"
+          D="${{ inputs.date }}"; O="${{ inputs.only }}"
+          if [ -n "$D" ]; then DATES="$D"; else DATES="$(TZ=Asia/Tokyo date +%Y%m%d) $(TZ=Asia/Tokyo date -d tomorrow +%Y%m%d)"; fi
+          P=0
+          for X in $DATES; do  # 明日の分は前日夜の重賞予想だけが対象になる
+            OUT=$(python scraper/social.py --date "$X" ${O:+--only "$O"} | tail -1); echo "$X $OUT"
+            P=$((P + $(echo "$OUT" | python -c 'import sys,json;print(json.load(sys.stdin)["prepared"])')))
+          done
+          echo "prepared=$P" >> "$GITHUB_OUTPUT"
       - name: 保存
         run: |
           git config user.name "keiba-ai-bot"

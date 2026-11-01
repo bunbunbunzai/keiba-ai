@@ -21,6 +21,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import column
+import extra
 import og
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -131,8 +132,8 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False
 {head_extra}
 </head><body>
 <header class="top"><div class="wrap">
-<a class="logo" href="/">{'<img src="/assets/logo-mark-96.png" alt="" width="40" height="40">' if LOGO else ''}<span>{SITE_NAME}<small>{SITE_SUB}</small></span></a>
-<nav><a href="/">今日の予想</a><a href="/results/">成績</a><a href="/venue/">競馬場</a>{'<a href="/column/">コラム</a>' if HAS_COLUMN else ''}<a href="/about/">予想の方法</a></nav>
+<a class="logo" href="/">{'<img src="/assets/logo-mark-96.png" alt="" width="40" height="40">' if LOGO else ''}<span>{SITE_NAME}<small>{SITE_SUB}</small></span></a>{HEADER_ROI}
+<nav><a href="/">今日の予想</a><a href="/graded/">重賞</a><a href="/results/">成績</a><a href="/venue/">競馬場</a>{'<a href="/column/">コラム</a>' if HAS_COLUMN else ''}<a href="/about/">予想の方法</a></nav>
 </div></header>
 <main class="wrap">{body}</main>
 <footer class="wrap foot">
@@ -147,6 +148,7 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False
 FAVICON = ('<link rel="icon" href="/assets/favicon.png" type="image/png"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">'
            if (ASSETS / "favicon.png").exists() else "")
 LOGO = (ASSETS / "logo-mark.png").exists()
+HEADER_ROI = ""  # build() の最初に設定（今月の回収率。外れも含む）
 HAS_COLUMN = any(not c["draft"] for c in column.columns())
 
 
@@ -318,6 +320,32 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
                     f"このレースの回収率{roi_txt(sc['stake'], sc['return'])}（収支{sc['return'] - sc['stake']:+,}円）</p>"
                     + "".join(f"<p>{esc(x)}</p>" for x in sc.get("hits", []))
                     + (f"<p class='meta'>{esc(SCORE_UPDATED.get(date))}集計</p>" if SCORE_UPDATED.get(date) else "") + "</section>")
+    gname0 = p.get("race_name") or r.get("race_name") or r.get("title_text") or ""
+    g0 = extra.grade_of(r, gname0)
+    graded_link = ""
+    if g0:
+        gslug = extra.graded_slug(gname0, VENUE_SLUG.get(venue_of(p), "venue"))
+        graded_link = (f"<p class='meta'>{esc(extra.clean_name(gname0))}の過去のAI予想と結果は"
+                       f"<a href='/graded/{gslug}/'>{esc(extra.clean_name(gname0))} AI予想まとめ</a>へ。</p>")
+    # シェア
+    from urllib.parse import quote
+    share_text = answer_sentence(date, p)
+    tags = "競馬予想,AI予想" + (f",{extra.clean_name(gname0).replace('(', '').replace(')', '')}" if g0 else "")
+    url = BASE_URL + race_path(date, p)
+    share_html = (f"<div class='share'><a href='https://twitter.com/intent/tweet?text={quote(share_text[:110])}&url={quote(url)}&hashtags={quote(tags)}' target='_blank' rel='noopener'>Xでシェア</a>"
+                  f"<a href='https://social-plugins.line.me/lineit/share?url={quote(url)}' target='_blank' rel='noopener'>LINEで送る</a></div>")
+    # AI vs あなた（発走前だけ選べる。結果が出たら勝敗を表示）
+    vs_html = ""
+    hon = p.get("marks", {}).get("◎")
+    if p.get("confidence") != "見送り" and horses:
+        fin_map = {str(x.get("number")): str(x.get("finish")) for x in (p.get("_result") or {}).get("rows", []) or [] if x.get("number") is not None}
+        opts = "".join(f"<option value='{n}'>{n} {esc(h.get('name'))}</option>" for n, h in sorted(horses.items(), key=lambda kv: (kv[0] is None, kv[0])) if n is not None)
+        post = f"{date}{(r.get('post_time') or '23:59').replace(':', '')}"
+        vs_html = (f"<section class='card vs' data-key='vs:{date}:{race_path(date, p)}' data-post='{post}' data-ai='{esc(hon)}' "
+                   f"data-fin='{esc(json.dumps(fin_map))}' data-url='{esc(url)}' data-label='{esc(race_label(p))}'>"
+                   f"<h2>AI vs あなた</h2><p class='meta'>あなたの◎を1頭選んで、AIの◎（{esc(hon)}番）と勝負。発走前まで選べる（この端末だけに保存）。</p>"
+                   f"<div class='pick'><select><option value=''>馬を選ぶ</option>{opts}</select> <button type='button' class='go'>この馬に決める</button></div>"
+                   f"<p class='r'></p></section>")
     bias_html = ""
     bz = bias_for(date, p)
     if bz:
@@ -365,10 +393,18 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
 <ul class="hl"><li class="hr hd"><span class="c-no">馬番</span><span class="c-mk">印</span><span class="c-nm">馬名・騎手</span><span class="c-od">単勝</span><span class="c-sc">評価点</span><span class="c-vl">妙味</span><span class="c-fn">着順</span><span class="c-cm">短評</span></li>{''.join(rows)}</ul>
 <p class="meta">評価点は45点満点。妙味は「AIの想定勝率×単勝オッズ」で、1.2以上を妙味あり、0.8未満を過剰人気としている（オッズは取得時点のもの）。</p></section>
 {f'<section class="card"><h2>更新履歴</h2><ul>{updates}</ul></section>' if updates else ''}
+{graded_link}
+{vs_html}
+{share_html}
 {nav}
 """
     hon = p.get("marks", {}).get("◎")
     title = f"{race_label(p)} 予想【{md(date)}】AI全頭評価・買い目と結果 | {SITE_NAME}"
+    gname = p.get("race_name") or r.get("race_name") or r.get("title_text") or ""
+    g = extra.grade_of(r, gname)
+    if g:
+        cn = extra.clean_name(gname)
+        title = f"【AI予想】{cn}{date[:4]}（{g}） 全頭診断と買い目｜{SITE_NAME}"
     desc = answer_sentence(date, p) + " 全頭の評価点・短評と買い目を掲載。"
     return page(title, body, path, desc=desc, noindex=p.get("confidence") == "見送り", head_extra="".join(jsonld(x) for x in ld),
                 og_image=race_og(date, p))
@@ -520,6 +556,11 @@ def results_page(rows: list[dict], venue_of_race: dict) -> str:
                 f"<tbody>{body}</tbody></table>")
 
     daily = {fmt_date(d): totals(by_day[d]) for d in sorted(by_day, reverse=True)}
+    by_month = defaultdict(list)
+    for r in rows:
+        by_month[r["date"][:6]].append(r)
+    monthly = {f"{m[:4]}年{int(m[4:6])}月": totals(v) for m, v in sorted(by_month.items(), reverse=True)}
+    month_sentence = "　".join(f"{k}は{v['n']}レースで回収率{v['roi']}、◎勝率{v['win']}。" for k, v in list(monthly.items())[:3])
     conf = defaultdict(list)
     ven = defaultdict(list)
     for r in rows:
@@ -533,8 +574,10 @@ def results_page(rows: list[dict], venue_of_race: dict) -> str:
 <section class="card"><h2>累計回収率の推移</h2>{svg_line(cum, labels=[md(d) for d in days]) or '<p>2日分以上たまると表示します。</p>'}</section>
 <section class="card"><h2>自信度別</h2><div class="scroll">{table({k: totals(v) for k, v in sorted(conf.items())}, '自信度')}</div></section>
 <section class="card"><h2>場別</h2><div class="scroll">{table({venue_link(k): totals(v) for k, v in sorted(ven.items(), key=lambda kv: -len(kv[1]))}, '場', raw=True)}</div></section>
+<section class="card"><h2>月別</h2><p>{month_sentence}</p><div class="scroll">{table(monthly, '月')}</div></section>
 <section class="card"><h2>券種別</h2>{column.stats(STATS_FROM)[1]["table_bets"]}</section>
 <section class="card"><h2>日別</h2><div class="scroll">{table(daily, '日付')}</div></section>
+<p class="meta">コースごとの成績と傾向は<a href="/course/">コース別</a>、騎手ごとは<a href="/jockey/">騎手別</a>、重賞は<a href="/graded/">重賞一覧</a>へ。</p>
 <p class="meta">集計対象は自動運用を始めた2026年10月26日以降で、見送り（買い目なし）は除いている。全予想の記録（CSV）は<a href="{REPO}/blob/main/results_ledger.csv">GitHub</a>で公開している。</p>"""
     ld = {"@context": "https://schema.org", "@type": "Dataset", "name": f"{SITE_NAME} AI競馬予想 全成績",
           "description": "日本の競馬（JRA・地方）全レースのAI予想と結果・回収率の記録（各点100円の均等買い）",
@@ -678,6 +721,9 @@ CSS = """:root{--bg:#f6f5f1;--fg:#1d1d1b;--mut:#6b6a63;--card:#fff;--line:#e3e1d
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 "Hiragino Sans","Noto Sans JP",system-ui,sans-serif}
 a{color:var(--acc);text-decoration:none}.wrap{max-width:960px;margin:0 auto;padding:0 16px}
 .top{background:var(--card);border-bottom:1px solid var(--line)}.top .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;justify-content:space-between;padding:12px 16px}
+.roi-badge{font-size:12px;color:var(--mut);border:1px solid var(--line);border-radius:14px;padding:2px 10px;white-space:nowrap}.roi-badge b{color:var(--acc)}
+.share{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}.share a,.share button{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:16px;padding:4px 14px;font:inherit;font-size:13px;cursor:pointer}
+.vs select{font:inherit;padding:4px;border-radius:6px;border:1px solid var(--line);background:var(--card);color:var(--fg)}.vs .r{font-weight:700;margin-top:8px}
 .logo{font-weight:700;color:var(--fg);display:flex;align-items:center;gap:10px;line-height:1.3}.logo span{display:flex;flex-direction:column}.logo img{border-radius:8px}.logo small{font-weight:400;font-size:12px;color:var(--mut)}
 nav{display:flex;gap:16px;font-size:14px}
 h1{font-size:24px;margin:20px 0 4px}h2{font-size:18px;margin:0 0 8px}h3{font-size:15px;margin:16px 0 6px}
@@ -730,6 +776,22 @@ var now=new Date(Date.now()+9*3600e3),s=now.toISOString().replace(/[-:T]/g,'').s
 document.querySelectorAll('.races li[data-post]').forEach(function(li){var p=li.dataset.post;if(p.length<12)return;
  if(p<=s){li.classList.add('gone');if(!li.querySelector('.res')&&li.dataset.conf!=='見送り'){var w=document.createElement('span');w.className='res wait';w.textContent='結果待ち';li.querySelector('a').appendChild(w);}}else if(!first){first=li;}});
 if(first&&document.body.contains(first)&&document.querySelector('.today')){first.classList.add('next');}
+document.querySelectorAll('.vs').forEach(function(v){
+ var key=v.dataset.key,fin={},pick=null;try{fin=JSON.parse(v.dataset.fin||'{}')}catch(e){}
+ try{pick=localStorage.getItem(key)}catch(e){}
+ var started=v.dataset.post<=s,r=v.querySelector('.r'),sel=v.querySelector('select'),btn=v.querySelector('.go');
+ function show(){
+  if(!pick){if(started){v.querySelector('.pick').style.display='none';r.textContent='発走済みのため選べません。';}return;}
+  v.querySelector('.pick').style.display='none';
+  var me=fin[pick],ai=fin[v.dataset.ai];
+  if(!me){r.textContent='あなたの◎は'+pick+'番。結果が出たら勝敗を表示します。';return;}
+  var a=parseInt(me)||99,b=parseInt(ai)||99,res=a<b?'あなたの勝ち！':a>b?'AIの勝ち':'引き分け';
+  r.textContent='あなたの◎'+pick+'番は'+me+'着、AIの◎'+v.dataset.ai+'番は'+(ai||'-')+'着 → '+res;
+  var t=v.dataset.label+'で競馬カルテのAIと勝負：'+res+'（私の◎'+pick+'番'+me+'着／AIの◎'+(ai||'-')+'着）';
+  var a2=document.createElement('a');a2.href='https://twitter.com/intent/tweet?text='+encodeURIComponent(t)+'&url='+encodeURIComponent(v.dataset.url)+'&hashtags='+encodeURIComponent('競馬カルテ');a2.target='_blank';a2.rel='noopener';a2.textContent='結果をXでシェア';
+  var d=document.createElement('div');d.className='share';d.appendChild(a2);v.appendChild(d);}
+ if(btn)btn.addEventListener('click',function(){if(!sel.value||v.dataset.post<=s)return;pick=sel.value;try{localStorage.setItem(key,pick)}catch(e){}show();});
+ show();});
 })();"""
 
 
@@ -740,6 +802,14 @@ def build() -> None:
     (OUT / "style.css").write_text(CSS, encoding="utf-8")
     (OUT / "app.js").write_text(JS, encoding="utf-8")
     (OUT / ".nojekyll").write_text("", encoding="utf-8")
+    global HEADER_ROI
+    led0 = ledger()
+    mon = datetime.now(JST).strftime("%Y%m")
+    mrows = [r for r in led0 if r["date"].startswith(mon)] or [r for r in led0 if r["date"][:6] == max((x["date"][:6] for x in led0), default="")]
+    if mrows:
+        st0, rt0 = sum(int(r["stake"]) for r in mrows), sum(int(r["return"]) for r in mrows)
+        HEADER_ROI = (f"<a class='roi-badge' href='/results/'>{int(mrows[0]['date'][4:6])}月の回収率 <b>{roi_txt(st0, rt0)}</b>"
+                      f"（{len(mrows)}R・外れ含む）</a>")
     if ASSETS.exists():
         shutil.copytree(ASSETS, OUT / "assets", ignore=shutil.ignore_patterns("og-base.png", "src"))
     og.site_image(OUT / "og" / "default.jpg", "全レースAI予想と回収率の記録",
@@ -791,6 +861,8 @@ def build() -> None:
                     desc=f"AIが中央競馬・地方競馬の全レースを毎日予想。今日の予想と、外れも含めた全成績（累計回収率{t['roi']}）を公開。"))
     write("/results/", results_page(led, venue_of_race))
     lastmod.update(venue_pages(by_date, led, venue_of_race))
+    import sys as _sys
+    lastmod.update(extra.build_pages(_sys.modules[__name__], by_date, today))
     write("/about/", page(f"予想の方法とよくある質問 | {SITE_NAME}", ABOUT, "/about/", head_extra=jsonld(FAQ_LD),
                           desc="競馬カルテの予想の作り方（評価の5軸・印・自信度・買い目）と、回収率の計算方法。"))
     write("/operator/", page(f"運営者情報 | {SITE_NAME}", OPERATOR, "/operator/"))
@@ -814,6 +886,9 @@ def build() -> None:
         '<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel>'
         f"<title>{SITE_NAME}</title><link>{BASE_URL}/</link><description>{SITE_SUB}</description><language>ja</language>"
         + "".join(items) + "</channel></rss>\n", encoding="utf-8")
+    k = Path(__file__).resolve().parent / "indexnow_key.txt"
+    if k.exists():
+        (OUT / f"{k.read_text().strip()}.txt").write_text(k.read_text().strip(), encoding="utf-8")
     (OUT / "CNAME").write_text(DOMAIN + "\n", encoding="utf-8")
     (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {BASE_URL}/sitemap.xml\n", encoding="utf-8")
     (OUT / "llms.txt").write_text(

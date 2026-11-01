@@ -148,6 +148,9 @@ def candidates(date: str) -> list[dict]:
             pd = post_dt(date, p)
             if pd and timedelta(minutes=10) <= pd - t <= timedelta(minutes=120) and not sc:
                 out.append({"id": f"pre-{p['race_id']}", "kind": "grade_pre", "p": p})
+            # 前日夜（19時以降）に、翌日の重賞の予想を1回だけ（検索・SNSの需要が前日から高まるため）
+            if pd and pd.date() - t.date() == timedelta(days=1) and t.hour >= 19 and not sc:
+                out.append({"id": f"eve-{p['race_id']}", "kind": "grade_pre", "p": p, "eve": True})
             if sc and sc["stake"]:
                 out.append({"id": f"res-{p['race_id']}", "kind": "grade_res", "p": p})
         elif sc and sc["stake"] and sc["return"] >= sc["stake"]:
@@ -173,7 +176,9 @@ def fit_x(lines: list[str], tags: list[str], url: str | None) -> str:
         t = "\n".join(body + ([" ".join(tags)] if tags else []) + tail)
         if x_len(t) <= 280:
             return t
-        if tags:
+        if len(body) > 3:  # まず本文の補足（短評など）を削り、ハッシュタグは残す
+            body = body[:-1]
+        elif tags:
             tags = tags[:-1]
         elif len(body) > 1:
             body = body[:-1]
@@ -220,7 +225,13 @@ def texts(date: str, c: dict, cfg: dict) -> dict:
         p, sc = c["p"], c["p"]["_score"]
         g = c["p"]["_grade"]
         head = f"{venue(p)}{rno(p)}R {rname(p)}" + (f"（{g}）" if g and g not in rname(p) else "")
-        if kind == "grade_pre":
+        if kind == "grade_pre" and c.get("eve"):
+            pt = p["_race"].get("post_time") or ""
+            lines = [f"【明日の重賞AI予想】{head}", f"{fmt_md(date)} {pt}発走（前日版・当日オッズで最終更新）", marks_line(p), f"自信度{p.get('confidence')}"]
+            summ = nfkc(p.get("summary") or "")
+            if summ:
+                lines.append(summ[:60] + ("…" if len(summ) > 60 else ""))
+        elif kind == "grade_pre":
             pt = p["_race"].get("post_time") or ""
             lines = [f"【重賞AI予想】{head}", f"{fmt_md(date)} {pt}発走", marks_line(p), f"自信度{p.get('confidence')}"]
             summ = nfkc(p.get("summary") or "")
@@ -236,6 +247,10 @@ def texts(date: str, c: dict, cfg: dict) -> dict:
                 top = "-".join(str(x) for x in (sc.get("top3") or []) if x is not None)
                 lines.append(f"結果{top}　不的中（投資{sc['stake']:,}円）")
         tags = ["#競馬予想", f"#{venue(p)}競馬", "#AI予想"] + (["#重賞"] if g else ["#的中"])
+        if g:  # レース名のハッシュタグ（#天皇賞秋 など。検索から見られる）
+            rt = re.sub(r"[()（）・\s'’]", "", rname(p))
+            if rt:
+                tags = [f"#{rt}"] + tags
         url = race_url(date, p)
     mode = cfg.get("x_url", "none")
     x_url = url if mode == "all" or (mode == "graded" and kind.startswith("grade")) else None
@@ -273,7 +288,7 @@ def card(date: str, c: dict) -> dict:
                                 f"{r.get('surface') or ''}{r.get('distance')}m" if r.get("distance") else "",
                                 f"{r.get('field')}頭" if r.get("field") else "", f"自信度{p.get('confidence')}"] if x)
     if kind == "grade_pre":
-        return {"kind": kind, "label": "重賞AI予想", "date": md, "head": head, "sub": sub, "lines": lines,
+        return {"kind": kind, "label": "明日の重賞AI予想" if c.get("eve") else "重賞AI予想", "date": md, "head": head, "sub": sub, "lines": lines,
                 "rows": [f"買い目 {len(p.get('bets', []))}点（各100円）"]}
     win = sc["return"] > 0
     top = "-".join(str(x) for x in (sc.get("top3") or []) if x is not None)
@@ -293,6 +308,8 @@ def load_state(date: str) -> dict:
 
 
 def save_state(date: str, st: dict) -> None:
+    if not st.get("posts") and not state_path(date).exists():
+        return  # 投稿が無い日はファイルを作らない
     state_path(date).parent.mkdir(parents=True, exist_ok=True)
     state_path(date).write_text(json.dumps(st, ensure_ascii=False, indent=1), encoding="utf-8")
 
