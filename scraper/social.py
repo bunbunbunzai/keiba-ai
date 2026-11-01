@@ -383,7 +383,9 @@ PROBE: list[str] = []
 
 
 def ig_user_id(tok: str) -> str:
-    uid = os.environ.get("IG_USER_ID", "").strip()
+    uid = str((load(SOCIAL / "config.json", {}) or {}).get("ig_user_id") or "").strip()  # IDは秘密ではないので設定ファイルを優先
+    if not (uid.isdigit() and len(uid) >= 10):
+        uid = os.environ.get("IG_USER_ID", "").strip()
     if uid.isdigit() and len(uid) >= 10:
         return uid
     accs = ig_accounts(tok)
