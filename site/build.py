@@ -121,6 +121,14 @@ OG_DAYS = 30  # レースごとの共有画像を作る期間（古いレース�
 ASSETS = Path(__file__).resolve().parent / "assets"
 
 
+def banner(slug: str, alt: str = "") -> str:
+    """ページ見出し用の挿絵（site/assets/ban-<slug>.jpg があるときだけ）。"""
+    f = ASSETS / f"ban-{slug}.jpg"
+    if not f.exists():
+        return ""
+    return f"<div class='banner'><img src='/assets/ban-{slug}.jpg' alt='{esc(alt)}' width='1600' height='580' loading='lazy'></div>"
+
+
 def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False, head_extra: str = "",
          og_image: str = "/og/default.jpg") -> str:
     d = desc or "AIが日本の競馬（JRA・地方）の全レースを毎日予想し、外れも含めた全予想の回収率を公開しています。"
@@ -480,6 +488,7 @@ def race_cond(p: dict) -> str:
 
 
 ALL_DATES: list[str] = []
+VENUE_PIC = {"東京": "turf", "京都": "turf", "中山": "turf", "阪神": "turf", "新潟": "turf", "福島": "turf", "中京": "turf", "小倉": "turf", "札幌": "turf", "函館": "turf", "帯広": "banei"}
 
 
 def date_tabs(date: str) -> str:
@@ -563,7 +572,7 @@ def scoreboard(date: str, preds: list[dict]) -> str:
     bet = [p for p in preds if p.get("confidence") != "見送り"]
     done = [scored(p) for p in bet if scored(p)]
     if not done:
-        return f"<section class='card live'><h2>当日の成績</h2><p>確定 0／{len(bet)}レース。最初のレースが確定すると、ここに的中と回収率が出る。</p></section>"
+        return (f"<section class='card live'><h2>当日の成績</h2>{banner('morning')}<p>確定 0／{len(bet)}レース。最初のレースが確定すると、ここに的中と回収率が出る。</p></section>")
     st, rt = sum(s["stake"] for s in done), sum(s["return"] for s in done)
     hit = sum(1 for s in done if s["return"] > 0)
     win = sum(1 for s in done if str(s.get("honmei_finish")) == "1")
@@ -722,7 +731,7 @@ def results_page(rows: list[dict], venue_of_race: dict) -> str:
         conf[r["confidence"] or "-"].append(r)
         ven[venue_of_race.get(r["race_id"], "-")].append(r)
     venue_link = lambda k: f"<a href='{venue_path(k)}'>{esc(VENUE_NAME.get(k, k))}</a>" if k in VENUE_SLUG else esc(k)
-    body = f"""<h1>成績</h1>
+    body = f"""<h1>成績</h1>{banner("results")}
 <p class="answer">{SITE_NAME}のAI予想の成績は、{asof}時点で{t['n']}レース・累計回収率{t['roi']}（◎勝率{t['win']}、◎複勝率{t['top3']}）。外れも含めた全予想を、買い目各点100円の均等買いとして集計している。</p>
 <div class="kpis"><div><b>{t['n']}</b><span>集計レース</span></div><div><b>{t['roi']}</b><span>累計回収率</span></div>
 <div><b>{t['win']}</b><span>◎勝率</span></div><div><b>{t['top3']}</b><span>◎複勝率</span></div></div>
@@ -782,7 +791,7 @@ def venue_pages(by_date: dict, led: list[dict], venue_of_race: dict) -> dict[str
         lead = (f"{name}競馬のAI予想は、{fmt_date(dates[-1])}から{len(items)}レースを公開している。" +
                 (f"成績は{t['n']}レース・回収率{t['roi']}、◎勝率{t['win']}・◎複勝率{t['top3']}（各点100円の均等買い、外れも含む）。" if t["n"] else "成績はレースの確定後に集計する。"))
         body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/venue/'>競馬場</a> › {esc(name)}</p>"
-                f"<h1>{esc(name)}競馬のAI予想と成績</h1><p class='answer'>{esc(lead)}</p>"
+                f"<h1>{esc(name)}競馬のAI予想と成績</h1>{banner(VENUE_PIC.get(v, 'dirt'))}<p class='answer'>{esc(lead)}</p>"
                 f"<div class='kpis'><div><b>{t['n']}</b><span>集計レース</span></div><div><b>{t['roi']}</b><span>回収率</span></div>"
                 f"<div><b>{t['hit']}</b><span>的中率</span></div><div><b>{t['top3']}</b><span>◎複勝率</span></div></div>"
                 f"<section class='card'><h2>最近の予想</h2>{''.join(recent)}</section>{bias_html}"
@@ -798,7 +807,7 @@ def venue_pages(by_date: dict, led: list[dict], venue_of_race: dict) -> dict[str
     lis = "".join(f"<li><a href='/venue/{slug}/'><span>{esc(VENUE_NAME.get(venue_of(items[0][1]), venue_of(items[0][1])))}</span>"
                   f"<span>{len(items)}レース</span></a></li>" for slug, items in sorted(groups.items(), key=lambda kv: -len(kv[1])))
     write("/venue/", page(f"競馬場別のAI予想と成績 | {SITE_NAME}",
-                          f"<p class='crumb'><a href='/'>トップ</a> › 競馬場</p><h1>競馬場別のAI予想と成績</h1>"
+                          f"<p class='crumb'><a href='/'>トップ</a> › 競馬場</p><h1>競馬場別のAI予想と成績</h1>{banner('venue')}"
                           f"<p class='answer'>中央・地方の各競馬場ごとに、AI予想・回収率・当日バイアスの履歴をまとめている。</p><ul class='days'>{lis}</ul>",
                           "/venue/", desc="競馬場ごとのAI予想・回収率・トラックバイアスの履歴。"))
     out["/venue/"] = max(out.values()) if out else None
@@ -827,7 +836,7 @@ def social_page() -> None:
 
 
 # ---------------- 固定ページ ----------------
-ABOUT = f"""<h1>予想の方法</h1>
+ABOUT = f"""<h1>予想の方法</h1>{banner("about")}
 <p class="answer">{SITE_NAME}は、AI（Anthropic社のClaude）が日本の中央競馬（JRA）と地方競馬の全レースを毎日予想し、外れも含めた全予想の回収率を公開するサイトである。</p>
 <section class="card"><h2>更新のタイミング</h2><ul>
 <li>前日夜：翌日の出馬表と各馬の近5走をもとに、午前に発走するレースを予想</li>
@@ -973,6 +982,8 @@ table{border-collapse:collapse;width:100%;font-size:14px;background:var(--panel)
 .g1{background:#1b4fd8}.g2{background:#d0342c}.g3{background:#2b8a3e}.gj{background:#6b3fa0}.gl{background:#555}
 @media (max-width:720px){.rlist a{grid-template-columns:44px minmax(0,1fr) 28px;grid-template-areas:"rb info conf" "rb hon hon" "rb res res"}.rlist .rb{grid-area:rb;align-self:start}.rlist .rinfo{grid-area:info}.rlist .conf{grid-area:conf}.rlist .hon{grid-area:hon;white-space:normal}.rlist .res{grid-area:res;text-align:left}}
 h1 small{display:block;font-size:14px;color:var(--mut);font-family:"BIZ UDPGothic",sans-serif;font-weight:400;margin-top:2px}
+
+.banner{margin:6px 0 14px}.banner img{width:100%;height:auto;aspect-ratio:16/5;object-fit:cover;object-position:right center;display:block;border:1px solid var(--line)}@media (max-width:720px){.banner img{aspect-ratio:16/8}}.live .banner{margin:4px 0 10px}.venue-pic{float:right;width:min(42%,360px);margin:0 0 10px 16px}.venue-pic img{width:100%;height:auto;display:block;border:1px solid var(--line)}@media (max-width:720px){.venue-pic{float:none;width:100%;margin:0 0 10px}}
 """
 
 JS = """(function(){
@@ -1090,7 +1101,7 @@ def build() -> None:
     s_body, s_rank = strategy.render(sg, esc, roi_txt, f"{int(STATS_FROM[4:6])}月{int(STATS_FROM[6:8])}日", fmt_date(max(by_date)) if by_date else "")
     s_best = f"回収率が最も高い買い方は「{s_rank[0][0]}」の{s_rank[0][1]:.1f}%（{s_rank[0][2]}レース）。" if s_rank else ""
     write("/strategy/", page(f"買い方別の回収率：◎単勝だけ・自信度別・期待値別で比べる | {SITE_NAME}",
-                             f"<p class='crumb'><a href='/'>トップ</a> › <a href='/results/'>成績</a> › 買い方別</p><h1>買い方別の回収率</h1>" + s_body
+                             f"<p class='crumb'><a href='/'>トップ</a> › <a href='/results/'>成績</a> › 買い方別</p><h1>買い方別の回収率</h1>{banner('strategy')}" + s_body
                              + "<p class='meta'>全体の成績は<a href='/results/'>成績ページ</a>、券種の説明は<a href='/column/baken-shurui/'>コラム</a>へ。</p>",
                              "/strategy/", desc=f"同じAI予想でも買い方で回収率はどう変わるか。◎の単勝だけ、自信度別、期待値別、人気別、券種別の回収率を全レースの実データで比較。{s_best}"))
     lastmod.update(venue_pages(by_date, led, venue_of_race))

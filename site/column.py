@@ -275,7 +275,7 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
     items = "".join(f"<li><a href='/column/{c['slug']}/'><b>{esc(subst(c.get('title', ''), v))}</b>"
                     f"<span>{esc(subst(c.get('description', ''), v))}</span></a></li>" for c in pub)
     write("/column/", page(f"競馬初心者向けコラム | {site_name}",
-                           "<p class='crumb'><a href='/'>トップ</a> › コラム</p><h1>競馬初心者向けコラム</h1>"
+                           "<p class='crumb'><a href='/'>トップ</a> › コラム</p><h1>競馬初心者向けコラム</h1>" + __import__("build").banner("column") +
                            "<p class='answer'>馬券の種類や回収率の考え方などを、このサイトの全レースの記録（実データ）を使って解説する。数字は記録が増えるたびに自動で更新される。</p>"
                            + (f"<ul class='cols'>{items}</ul>" if items else "<p>準備中。</p>"),
                            "/column/", desc="競馬初心者向けに、馬券の種類・回収率・人気と勝率・トラックバイアスを、AI予想の全レースの実データで解説するコラム。",

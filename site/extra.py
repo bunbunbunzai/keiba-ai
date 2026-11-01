@@ -135,7 +135,7 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
             f"<span class='rno'>{esc(B.venue_of(r[1]))}{B.race_no(r[1])}R</span><span class='hon'>{esc(r[2])}（{esc(r[3])}）"
             f"　◎{esc(r[1].get('marks', {}).get('◎'))} {esc(B.horse_name(r[1], r[1].get('marks', {}).get('◎')))}</span></a></li>"
             for r in rows) + "</ul>"
-    body = ("<p class='crumb'><a href='/'>トップ</a> › 重賞</p><h1>今週の重賞 AI予想一覧</h1>"
+    body = ("<p class='crumb'><a href='/'>トップ</a> › 重賞</p><h1>今週の重賞 AI予想一覧</h1>" + B.banner("graded") +
             "<p class='answer'>中央（GⅠ〜GⅢ）と地方（Jpn・S格付け）の重賞のAI予想をまとめている。各レースの固定ページでは、年ごとの予想と結果を記録している。</p>"
             + (f"<section class='card'><h2>これからの重賞</h2>{glist(upcoming)}</section>" if upcoming else "")
             + (f"<section class='card'><h2>最近の重賞</h2>{glist(past)}</section>" if past else "<p>まだありません。</p>"))

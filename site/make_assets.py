@@ -41,6 +41,13 @@ def main() -> None:
         im = im.resize((round(im.width * r), round(im.height * r)), Image.LANCZOS)
         x, y = (im.width - 1200) // 2, (im.height - 630) // 2
         im.crop((x, y, x + 1200, y + 630)).save(OUT / "og-base.png", optimize=True)
+    for f in SRC.glob("ban-*.png"):  # ページ見出しの挿絵（1600px幅、11:4に切り出し）
+        im = Image.open(f).convert("RGB")
+        im = im.resize((1600, round(im.height * 1600 / im.width)), Image.LANCZOS)
+        if im.height > 580:
+            y = (im.height - 580) // 2
+            im = im.crop((0, y, 1600, y + 580))
+        im.save(OUT / f"{f.stem}.jpg", "JPEG", quality=80, optimize=True, progressive=True)
     for f in SRC.glob("col-*.png"):
         im = Image.open(f).convert("RGB")
         im = im.resize((1200, round(im.height * 1200 / im.width)), Image.LANCZOS)
