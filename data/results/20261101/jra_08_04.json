@@ -1,0 +1,218 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 4,
+   "name": "ヴェストラン",
+   "time": "3:19.3",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "2",
+   "number": 13,
+   "name": "アウスヴァール",
+   "time": "3:19.8",
+   "margin": "３",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "number": 5,
+   "name": "テイエムリステット",
+   "time": "3:20.2",
+   "margin": "２ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "number": 11,
+   "name": "ジェロニモス",
+   "time": "3:20.4",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "5",
+   "number": 3,
+   "name": "ラトラース",
+   "time": "3:20.5",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "6",
+   "number": 9,
+   "name": "シークレットキー",
+   "time": "3:21.2",
+   "margin": "４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "number": 1,
+   "name": "グランドカリナン",
+   "time": "3:21.4",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "8",
+   "number": 12,
+   "name": "モスクロッサー",
+   "time": "3:22.0",
+   "margin": "３ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "9",
+   "number": 10,
+   "name": "スティルシャイニン",
+   "time": "3:23.1",
+   "margin": "７",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "10",
+   "number": 7,
+   "name": "ジュリアスローズ",
+   "time": "3:23.8",
+   "margin": "４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "11",
+   "number": 2,
+   "name": "アンノウンウォリア",
+   "time": "3:23.9",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "12",
+   "number": 6,
+   "name": "ヴィクトリーロード",
+   "time": "3:33.4",
+   "margin": "大差",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "中止",
+   "number": 8,
+   "name": "シークレットシティ",
+   "time": "",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "4",
+    "yen": 940,
+    "pop": 4
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "4",
+    "yen": 190,
+    "pop": 5
+   },
+   {
+    "combo": "13",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "5",
+    "yen": 140,
+    "pop": 2
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-8",
+    "yen": 290,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-13",
+    "yen": 400,
+    "pop": 4
+   },
+   {
+    "combo": "4-5",
+    "yen": 540,
+    "pop": 6
+   },
+   {
+    "combo": "5-13",
+    "yen": 250,
+    "pop": 2
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-13",
+    "yen": 1140,
+    "pop": 4
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "4-13",
+    "yen": 2880,
+    "pop": 10
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-5-13",
+    "yen": 1520,
+    "pop": 5
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "4-13-5",
+    "yen": 15040,
+    "pop": 48
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261101",
+ "venue_code": "08",
+ "race_no": 4,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202604110420261101/0D",
+ "title": "レース結果 JRA"
+}
