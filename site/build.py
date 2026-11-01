@@ -35,7 +35,7 @@ IG_URL = "https://www.instagram.com/zentou_log/"
 GA_ID = "G-MFLTSL1RVP"
 GA_TAG = (f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>'
           f"<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','{GA_ID}');</script>")
-SITE_SUB = "AIが全レース・全頭を診断　外れも含めた成績を公開"
+SITE_SUB = "中央・地方の全レースを毎日予想。外れも含めて、全部記録する。"
 DOMAIN = "www.ai-keiba-log.com"
 BASE_URL = f"https://{DOMAIN}"
 REPO = "https://github.com/bunbunbunzai/keiba-ai"
@@ -137,11 +137,13 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False
 <meta property="og:image" content="{BASE_URL}{og_image}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{BASE_URL}{og_image}">
 {FAVICON}<link rel="alternate" type="application/rss+xml" title="{SITE_NAME}" href="/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Shippori+Mincho+B1:wght@700;800&display=swap">
 <link rel="stylesheet" href="/style.css?v={ASSET_V}">
 {head_extra}
 </head><body>
 <header class="top"><div class="wrap">
-<a class="logo" href="/">{'<img src="/assets/logo-mark-96.png" alt="" width="40" height="40">' if LOGO else ''}<span>{SITE_NAME}<small>{SITE_SUB}</small></span></a>{HEADER_ROI}
+<div class="bar"><a class="logo" href="/">{'<img src="/assets/logo-mark-96.png" alt="" width="44" height="44">' if LOGO else ''}<span><b>{SITE_NAME}</b><small>{SITE_SUB}</small></span></a>{HEADER_ROI}</div>
 <nav><a href="/">今日の予想</a><a href="/graded/">重賞</a><a href="/results/">成績</a><a href="/strategy/">買い方別</a><a href="/venue/">競馬場</a>{'<a href="/column/">コラム</a>' if HAS_COLUMN else ''}<a href="/about/">予想の方法</a></nav>
 </div></header>
 <main class="wrap">{body}</main>
@@ -396,7 +398,7 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
 <p class="answer">{esc(answer_sentence(date, p))}</p>
 <section class="card"><div class="marks">{marks_html}</div>{f"<p class='subs'>{esc(subs)}</p>" if subs else ''}
 <p>自信度 <span class="conf c{esc(p.get('confidence'))}">{esc(p.get('confidence'))}</span></p>
-<h2>結論</h2><p class="big">{esc(p.get('summary'))}</p>
+<h2>結論</h2><p class="sum">{esc(p.get('summary'))}</p>
 <h3>買い目（各100円・計{len(p.get('bets', []))}点）</h3><ul class="bets">{bets or '<li>買い目なし</li>'}</ul></section>
 {res_html}
 <section class="card"><h2>展開予想</h2><p>{esc(p.get('pace'))}</p></section>
@@ -568,7 +570,7 @@ def picks_html(date: str, preds: list[dict], today: bool) -> str:
                                      f"期待値{val:.2f}" if val is not None else "") if x)
         items.append(f"<li><a href='{race_path(date, p)}'><span class='rno'>{esc(race_label(p))}</span>"
                      f"<span class='hon'>◎{hon} {esc(horse_name(p, hon))}</span><span class='conf c{esc(p.get('confidence'))}'>{esc(p.get('confidence'))}</span>"
-                     f"<span class='meta'>{esc(meta)}</span>{res}</a></li>")
+                     f"{res}<span class='meta'>{esc(meta)}</span></a></li>")
     return (f"<section class='card picks'><h2>{'今日' if today else 'この日'}の勝負レース</h2><ul class='races'>{''.join(items)}</ul>"
             f"<p class='meta'>的中しやすさの順に3レース（自信度・◎の人気・中央・重賞・想定勝率で加点）。回収率が高い順ではない。買い方ごとの回収率は<a href='/strategy/'>買い方別</a>へ。</p></section>")
 
@@ -797,57 +799,82 @@ PRIVACY = f"""<h1>プライバシーポリシー</h1>
 <section class="card"><h2>広告の表記</h2><p>本サイトに掲載する広告・アフィリエイトリンクには、その旨を明記します。</p></section>
 <section class="card"><h2>改定</h2><p>本ポリシーは必要に応じて改定することがあります。制定日：2026年10月27日／改定日：2026年11月1日（Googleアナリティクスの利用を追記）</p></section>"""
 
-CSS = """:root{--bg:#f6f5f1;--fg:#1d1d1b;--mut:#6b6a63;--card:#fff;--line:#e3e1d9;--acc:#1f6f4a;--hit:#c0392b;--miss:#8a8a85;--won:#fdecea}
-@media (prefers-color-scheme:dark){:root{--bg:#141413;--fg:#ecebe6;--mut:#a3a29b;--card:#1e1e1c;--line:#33322e;--acc:#5fbf8c;--hit:#ff7a6b;--miss:#8a8a85;--won:#3a2422}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 "Hiragino Sans","Noto Sans JP",system-ui,sans-serif}
-a{color:var(--acc);text-decoration:none}.wrap{max-width:960px;margin:0 auto;padding:0 16px}
-.top{background:var(--card);border-bottom:1px solid var(--line)}.top .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;justify-content:space-between;padding:12px 16px}
-.roi-badge{font-size:12px;color:var(--mut);border:1px solid var(--line);border-radius:14px;padding:2px 10px;white-space:nowrap}.roi-badge b{color:var(--acc)}
-.share{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}.share a,.share button{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:16px;padding:4px 14px;font:inherit;font-size:13px;cursor:pointer}
-.vs select{font:inherit;padding:4px;border-radius:6px;border:1px solid var(--line);background:var(--card);color:var(--fg)}.vs .r{font-weight:700;margin-top:8px}
-.logo{font-weight:700;color:var(--fg);display:flex;align-items:center;gap:10px;line-height:1.3}.logo span{display:flex;flex-direction:column}.logo img{border-radius:8px}.logo small{font-weight:400;font-size:12px;color:var(--mut)}
-nav{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px}nav a{white-space:nowrap}
-h1{font-size:24px;margin:20px 0 4px}h2{font-size:18px;margin:0 0 8px}h3{font-size:15px;margin:16px 0 6px}
-.meta,.crumb{color:var(--mut);font-size:13px;margin:0 0 10px}.crumb{margin-top:12px}
-.answer{background:var(--card);border-left:4px solid var(--acc);padding:10px 14px;margin:12px 0;border-radius:4px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;margin:16px 0}
-.big{font-size:17px;font-weight:600}.miss{color:var(--miss)}.hit{color:var(--hit);font-weight:700}
-.marks{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px;margin-bottom:8px}.marks .m{display:flex;gap:10px;align-items:center;border:1px solid var(--line);border-radius:8px;padding:8px 12px}
-.marks b{font-size:22px;color:var(--acc)}.marks span{font-weight:600}.subs{color:var(--mut);margin:4px 0 8px}
-.races{list-style:none;padding:0;margin:0;display:grid;gap:6px}.races a{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 12px;color:var(--fg)}
-.races li.next a{border:2px solid var(--acc)}.races li.next .rt::after{content:" 次に発走";color:var(--acc);font-weight:700}
-.races li.gone a{opacity:.85}.res{font-size:13px}.tg{color:#b7791f;font-weight:700}.res.wait{color:var(--mut)}.live .kpis{margin:8px 0}
-.rno{font-weight:700;min-width:84px}.rt{color:var(--mut);font-size:13px;min-width:44px}.hon{flex:1;min-width:150px}
-.conf{display:inline-block;min-width:28px;text-align:center;border-radius:4px;font-size:12px;font-weight:700;padding:0 6px;border:1px solid var(--line)}
-.cA{background:#1f6f4a;color:#fff}.cB{background:#3f8f6a;color:#fff}.cC{background:#c9c6b8;color:#1d1d1b}
-table{border-collapse:collapse;width:100%;font-size:14px}th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
-.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}.scroll table{white-space:nowrap}.scroll td:first-child{white-space:normal;min-width:9em}.horses th,.horses td:not(.cmt){white-space:nowrap}.horses .cmt{min-width:260px}.mark{font-weight:700;color:var(--acc)}tr.mk td{background:rgba(31,111,74,.06)}
-.bets{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0}.bets li{border:1px solid var(--line);border-radius:6px;padding:2px 8px;font-size:14px}.bets li.won{background:var(--won);border-color:var(--hit);color:var(--hit);font-weight:700}
-.picks li a{flex-wrap:wrap;row-gap:4px}.picks .rno{flex-basis:100%;font-size:15px}.picks .meta{margin:0;flex-basis:100%}.jump{display:flex;gap:12px;align-items:center;font-size:13px;margin:8px 0}.jump button{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:14px;padding:3px 12px;font:inherit;font-size:13px;cursor:pointer}
+CSS = """:root{--bg:#f2f3f0;--panel:#fff;--fg:#17201b;--mut:#5f6761;--line:#d9dcd6;--rule:#17201b;--acc:#146b45;--acc-soft:#e3efe8;--hit:#c0122d;--hit-soft:#fbe9ec;--tg:#8a6100;--miss:#7a807b;--card:var(--panel);--won:var(--hit-soft)}
+@media (prefers-color-scheme:dark){:root{--bg:#141614;--panel:#1c1f1c;--fg:#ecefe9;--mut:#a4aba5;--line:#343934;--rule:#ecefe9;--acc:#6cc497;--acc-soft:#1f2e26;--hit:#ff7b8c;--hit-soft:#3a2126;--tg:#d9a93a;--miss:#8b918c}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 "BIZ UDPGothic","Hiragino Sans","Noto Sans JP",system-ui,sans-serif;font-variant-numeric:tabular-nums}
+a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.wrap{max-width:960px;margin:0 auto;padding:0 16px}
+h1,h2,h3,.kpis b,.marks b,.sum{font-family:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif;font-weight:800;letter-spacing:.01em}
+h1{font-size:28px;line-height:1.35;margin:22px 0 6px}h2{font-size:19px;line-height:1.4;margin:22px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--rule)}h3{font-size:16px;margin:18px 0 6px}
+p{margin:8px 0}
+/* ヘッダー：帳面の表紙 */
+.top{background:var(--panel);border-bottom:3px solid var(--rule)}.top .wrap{padding:0 16px}
+.bar{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;padding:12px 0 8px}.bar .logo{flex:1 1 240px}.roi-badge{margin-left:auto}
+.logo{display:flex;align-items:center;gap:12px;color:var(--fg);line-height:1.25}.logo:hover{text-decoration:none}.logo img{display:block}
+.logo span{display:flex;flex-direction:column}.logo b{font-family:"Shippori Mincho B1",serif;font-weight:800;font-size:22px;letter-spacing:.04em}.logo small{font-size:12px;color:var(--mut);margin-top:2px}
+.roi-badge{font-size:13px;color:var(--mut);white-space:nowrap;border-left:1px solid var(--line);padding-left:12px}.roi-badge b{color:var(--fg);font-size:18px;font-family:"Shippori Mincho B1",serif;margin-left:2px}.roi-badge:hover{text-decoration:none}
+nav{display:flex;gap:0 2px;font-size:14px;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:0 12px}nav::-webkit-scrollbar{display:none}
+nav a{white-space:nowrap;color:var(--fg);padding:8px 10px 9px;border-bottom:3px solid transparent;margin-bottom:-3px}nav a:hover{text-decoration:none;color:var(--acc)}nav a.on{border-bottom-color:var(--acc);color:var(--acc);font-weight:700}
+/* 本文 */
+main{padding-bottom:24px}
+.meta,.crumb{color:var(--mut);font-size:13px;margin:0 0 10px}.crumb{margin-top:14px}
+.answer{font-size:17px;line-height:1.8;margin:10px 0 18px;padding:0}
+.card{background:none;border:0;padding:0;margin:30px 0}.card>h2:first-child{margin-top:0}.today>h2{font-size:24px;border:0;padding:0;margin:18px 0 0}
+.big{font-size:17px;font-weight:700}.sum{font-size:18px;line-height:1.8;font-weight:700;margin:6px 0 14px}.miss{color:var(--miss)}.hit{color:var(--hit);font-weight:700}.tg{color:var(--tg);font-weight:700}
+/* 印 */
+.marks{display:flex;flex-wrap:wrap;gap:6px 28px;margin:4px 0 6px}.marks .m{display:flex;align-items:baseline;gap:8px;padding:2px 0}
+.marks b{font-size:28px;color:var(--acc);line-height:1}.marks span{font-weight:700;font-size:18px}.marks .m:first-child span{font-size:20px}.subs{color:var(--mut);margin:0 0 8px}
+.conf{display:inline-block;min-width:26px;text-align:center;border-radius:2px;font-size:12px;font-weight:700;padding:0 6px;border:1px solid var(--line);line-height:20px;vertical-align:middle}
+.cA{background:var(--acc);color:#fff;border-color:var(--acc)}.cB{color:var(--acc);border-color:var(--acc)}.cC{color:var(--mut)}.c見送り{color:var(--mut);border-style:dashed}
+.bets{display:flex;flex-wrap:wrap;gap:6px 8px;list-style:none;padding:0;margin:6px 0}.bets li{border:1px solid var(--line);background:var(--panel);border-radius:2px;padding:2px 9px;font-size:14px}.bets li.won{background:var(--hit-soft);border-color:var(--hit);color:var(--hit);font-weight:700}
+/* 一覧：出馬表のような罫線の行 */
+.races{list-style:none;padding:0;margin:0;background:var(--panel);border-top:2px solid var(--rule);border-bottom:1px solid var(--line)}
+.races li+li{border-top:1px solid var(--line)}
+.races a{display:flex;flex-wrap:wrap;gap:2px 12px;align-items:center;padding:9px 10px;color:var(--fg);border-left:4px solid transparent}.races a:hover{text-decoration:none;background:var(--acc-soft)}
+.races li.next a{border-left-color:var(--acc);background:var(--acc-soft)}.races li.next .rt::after{content:" 次"; color:var(--acc);font-weight:700}
+.races li.gone a{color:var(--mut)}.races li.gone .rno,.races li.gone .hon{color:var(--fg)}
+.rno{font-weight:700;min-width:78px}.rt{color:var(--mut);font-size:13px;min-width:44px}.hon{flex:1;min-width:150px}
+.res{font-size:13px}.res.wait{color:var(--mut)}.live .kpis{margin:8px 0}
 .races.fold li.gone:not(.keep){display:none}.races.fold li.gone.keep{opacity:.9}
-.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:16px 0}.kpis div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px}
-.kpis b{display:block;font-size:24px}.kpis span{color:var(--mut);font-size:13px}
+.picks .races a{flex-wrap:wrap;row-gap:2px;padding:10px}.picks .rno{flex-basis:100%;font-size:16px;min-width:0}.picks .meta{margin:0;flex-basis:100%}.picks .res{margin-left:auto}
+.jump{display:flex;gap:12px;align-items:center;font-size:13px;margin:10px 0 6px}
+.jump button,.filters button,.share a,.share button,.vs .go{border:1px solid var(--line);background:var(--panel);color:var(--fg);border-radius:2px;padding:3px 12px;font:inherit;font-size:13px;cursor:pointer}
+.filters{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 6px}.filters button.on{background:var(--rule);color:var(--bg);border-color:var(--rule)}
+.share{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.vs select{font:inherit;padding:4px;border-radius:2px;border:1px solid var(--line);background:var(--panel);color:var(--fg)}.vs .r{font-weight:700;margin-top:8px}
+/* 数字の帯 */
+.kpis{display:flex;flex-wrap:wrap;margin:14px 0;background:var(--panel);border-top:2px solid var(--rule);border-bottom:1px solid var(--line)}
+.kpis div{flex:1 1 140px;padding:10px 14px 8px;border-right:1px solid var(--line)}.kpis div:last-child{border-right:0}
+.kpis b{display:block;font-size:26px;line-height:1.2}.kpis span{color:var(--mut);font-size:12px;display:block;margin-top:2px}
+/* 表 */
+table{border-collapse:collapse;width:100%;font-size:14px;background:var(--panel)}th{border-bottom:2px solid var(--rule);font-weight:700;font-size:13px}th,td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}.scroll table{white-space:nowrap}.scroll td:first-child{white-space:normal;min-width:9em}
+.horses th,.horses td:not(.cmt){white-space:nowrap}.horses .cmt{min-width:260px}.mark{font-weight:700;color:var(--acc)}tr.mk td{background:var(--acc-soft)}
 .chart{width:100%;height:auto}.chart .ln{fill:none;stroke:var(--acc);stroke-width:2.5}.chart .base{stroke:var(--mut);stroke-dasharray:4 4}.chart .pt{fill:var(--acc)}.chart .lbl{fill:var(--mut);font-size:12px}.chart .end{text-anchor:end;fill:var(--fg)}.chart .mid{text-anchor:middle}
-.filters{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.filters button{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:16px;padding:3px 12px;font:inherit;font-size:13px;cursor:pointer}.filters button.on{background:var(--acc);color:#fff;border-color:var(--acc)}
-.days{list-style:none;padding:0;display:grid;gap:6px}.days a{display:flex;justify-content:space-between;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 12px;color:var(--fg)}
-.pn{display:flex;justify-content:space-between;gap:12px;margin:20px 0;font-size:14px}
-.foot{color:var(--mut);font-size:12px;padding:24px 16px 40px}
-.sp{display:grid;grid-template-columns:270px 1fr;gap:16px}.sp img{width:100%;height:auto;border-radius:8px}.sp pre{white-space:pre-wrap;font:inherit;font-size:13px;background:var(--bg);padding:8px;border-radius:6px}
+.days{list-style:none;padding:0;margin:0;background:var(--panel);border-top:2px solid var(--rule);border-bottom:1px solid var(--line)}.days li+li{border-top:1px solid var(--line)}
+.days a{display:flex;justify-content:space-between;gap:12px;padding:9px 10px;color:var(--fg)}.days a:hover{text-decoration:none;background:var(--acc-soft)}.days a span:last-child{color:var(--mut);white-space:nowrap}
+.pn{display:flex;justify-content:space-between;gap:12px;margin:24px 0;font-size:14px}
+.foot{color:var(--mut);font-size:12px;padding:20px 16px 44px;border-top:3px solid var(--rule);max-width:960px}.foot .sns a,.foot .sitemap-links a{color:var(--fg)}
+.sp{display:grid;grid-template-columns:270px 1fr;gap:16px}.sp img{width:100%;height:auto}.sp pre{white-space:pre-wrap;font:inherit;font-size:13px;background:var(--panel);padding:8px;border:1px solid var(--line)}
 @media (max-width:720px){.sp{grid-template-columns:1fr}}
-.hl{list-style:none;padding:0;margin:0}.hr{display:grid;grid-template-columns:48px 28px minmax(150px,1.4fr) 70px 64px 76px 48px 2.2fr;gap:4px 10px;align-items:start;padding:8px 6px;border-bottom:1px solid var(--line);font-size:14px}
-.hr small{display:block;color:var(--mut);font-size:12px;font-weight:400}.hr.hd{font-size:12px;color:var(--mut);font-weight:700;border-bottom:2px solid var(--line)}
-.hr.mk{background:rgba(31,111,74,.06)}.hr.top .c-fn{color:var(--hit);font-weight:700}.c-cm{color:var(--fg);font-size:13px;line-height:1.6}
-.fr{display:inline-block;min-width:28px;text-align:center;border-radius:4px;border:1px solid var(--line);padding:1px 4px}
+/* 全頭評価：馬柱 */
+.hl{list-style:none;padding:0;margin:0;background:var(--panel);border-top:2px solid var(--rule)}.hr{display:grid;grid-template-columns:48px 28px minmax(150px,1.4fr) 70px 64px 76px 48px 2.2fr;gap:4px 10px;align-items:start;padding:8px 6px;border-bottom:1px solid var(--line);font-size:14px}
+.hr small{display:block;color:var(--mut);font-size:12px;font-weight:400}.hr.hd{font-size:12px;color:var(--mut);font-weight:700;border-bottom:2px solid var(--rule)}
+.hr.mk{background:var(--acc-soft)}.hr.top .c-fn{color:var(--hit);font-weight:700}.c-cm{color:var(--fg);font-size:13px;line-height:1.6}.c-mk{font-size:18px;color:var(--acc);font-weight:700;line-height:1}
+.fr{display:inline-block;min-width:28px;text-align:center;border-radius:2px;border:1px solid var(--line);padding:1px 4px;font-weight:700}
 .f1{background:#fff;color:#111}.f2{background:#222;color:#fff}.f3{background:#d33;color:#fff}.f4{background:#2a5bd7;color:#fff}.f5{background:#f2c200;color:#111}.f6{background:#1f8f4a;color:#fff}.f7{background:#f08a24;color:#111}.f8{background:#f4a6c6;color:#111}
-.tag{display:inline-block;margin-left:4px;font-size:11px;border-radius:4px;padding:0 4px}.tag.good{background:var(--acc);color:#fff}.tag.bad{background:var(--line);color:var(--fg)}
+.tag{display:inline-block;margin-left:4px;font-size:11px;border-radius:2px;padding:0 4px}.tag.good{background:var(--acc);color:#fff}.tag.bad{background:var(--line);color:var(--fg)}
 .bias .conf{margin-left:8px;vertical-align:middle}
-@media (max-width:720px){.hr.hd{display:none}.hr{grid-template-columns:40px 22px 1fr 1fr 1fr;grid-template-areas:"no mk nm nm fn" "no mk od sc vl" "cm cm cm cm cm";padding:10px 4px;gap:4px 8px}
-.c-no{grid-area:no}.c-mk{grid-area:mk;font-size:18px}.c-nm{grid-area:nm}.c-fn{grid-area:fn;text-align:right}.c-od{grid-area:od}.c-sc{grid-area:sc}.c-vl{grid-area:vl;text-align:right}.c-cm{grid-area:cm}
-.c-od::before{content:"単勝";display:block;color:var(--mut);font-size:11px}.c-sc::before{content:"評価点";display:block;color:var(--mut);font-size:11px}.c-vl::before{content:"妙味";display:block;color:var(--mut);font-size:11px}}
-.col{line-height:1.85}.col .hero{width:100%;height:auto;border-radius:10px;margin:8px 0}.col h2{margin:28px 0 8px;padding-bottom:4px;border-bottom:2px solid var(--line)}.col table{margin:8px 0}
-.note{background:var(--card);border:1px dashed var(--line);border-radius:8px;padding:8px 12px;font-size:14px;color:var(--mut)}
-.draft{background:#fff4d6;color:#6b4e00;border-radius:6px;padding:6px 10px;font-size:13px;margin-top:12px}
-.cols{list-style:none;padding:0;display:grid;gap:8px}.cols a{display:flex;flex-direction:column;gap:2px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 14px;color:var(--fg)}.cols span{color:var(--mut);font-size:13px}"""
+@media (max-width:720px){h1{font-size:24px}.roi-badge{border:0;padding:0;font-size:12px;flex-basis:100%;margin:0}.roi-badge b{font-size:16px}.logo b{font-size:20px}.logo small{font-size:11px}.hr.hd{display:none}.hr{grid-template-columns:40px 22px 1fr 1fr 1fr;grid-template-areas:"no mk nm nm fn" "no mk od sc vl" "cm cm cm cm cm";padding:10px 4px;gap:4px 8px}
+.c-no{grid-area:no}.c-mk{grid-area:mk}.c-nm{grid-area:nm}.c-fn{grid-area:fn;text-align:right}.c-od{grid-area:od}.c-sc{grid-area:sc}.c-vl{grid-area:vl;text-align:right}.c-cm{grid-area:cm}
+.c-od::before{content:"単勝";display:block;color:var(--mut);font-size:11px}.c-sc::before{content:"評価点";display:block;color:var(--mut);font-size:11px}.c-vl::before{content:"妙味";display:block;color:var(--mut);font-size:11px}
+.kpis div{flex-basis:46%}.kpis div:nth-child(2n){border-right:0}.kpis div{border-bottom:1px solid var(--line)}}
+/* コラム */
+.col{line-height:1.9;max-width:720px}.col .hero{width:100%;height:auto;margin:8px 0}.col h2{margin:32px 0 10px}.col table{margin:8px 0}
+.note{border:1px dashed var(--line);padding:8px 12px;font-size:14px;color:var(--mut)}
+.draft{background:#fff4d6;color:#6b4e00;padding:6px 10px;font-size:13px;margin-top:12px}
+.cols{list-style:none;padding:0;margin:0;background:var(--panel);border-top:2px solid var(--rule);border-bottom:1px solid var(--line)}.cols li+li{border-top:1px solid var(--line)}.cols a{display:flex;flex-direction:column;gap:2px;padding:10px 12px;color:var(--fg)}.cols a:hover{text-decoration:none;background:var(--acc-soft)}.cols span{color:var(--mut);font-size:13px}
+@media (prefers-reduced-motion:no-preference){nav a,.races a,.days a{transition:background-color .15s}}"""
 
 JS = """(function(){
 function ga(n,p){try{if(window.gtag)gtag('event',n,p||{})}catch(e){}}
@@ -855,6 +882,7 @@ document.addEventListener('click',function(e){var a=e.target.closest('a');if(!a)
  if(a.closest('.share')){ga('share',{method:/line/.test(h)?'line':'x',page:location.pathname});return;}
  if(/x\\.com\\/zentou_log|instagram\\.com\\/zentou_log/.test(h)){ga('sns_follow',{network:/instagram/.test(h)?'instagram':'x'});return;}
  if(a.dataset.aff){ga('affiliate_click',{program:a.dataset.aff,page:location.pathname});}});
+(function(){var p=location.pathname,best=null;document.querySelectorAll('header nav a').forEach(function(a){var h=a.getAttribute('href');if(h==='/'?(p==='/'||/^[/]\\d{4}[/]/.test(p)):p.indexOf(h)===0){if(!best||h.length>best.getAttribute('href').length)best=a;}});if(best)best.classList.add('on');})();
 var st={venue:'all',conf:'all'};
 function apply(){document.querySelectorAll('.races li').forEach(function(li){
  var ok=(st.venue==='all'||li.dataset.venue===st.venue)&&(st.conf==='all'||li.dataset.conf===st.conf);li.style.display=ok?'':'none';});}
@@ -945,10 +973,10 @@ def build() -> None:
     t = totals(led)
     main_d = today if today in by_date else (dates[0] if dates else None)
     if main_d:
-        head = "今日の全レースAI予想" if main_d == today else f"{fmt_date(main_d)}の全レースAI予想"
+        head = "今日の予想" if main_d == today else f"{fmt_date(main_d)}の予想"
         top_list = f"<section class='today'><h2>{fmt_date(main_d)}</h2>{day_list(main_d, by_date[main_d])}</section>"
     else:
-        head, top_list = "今日の全レースAI予想", "<p>予想はまだありません。</p>"
+        head, top_list = "今日の予想", "<p>予想はまだありません。</p>"
     past = "".join(f"<li><a href='{day_path(d)}'><span>{fmt_date(d)}（{n}レース）</span><span>回収率 {roi}</span></a></li>"
                    for d, n, roi in day_rows if d != main_d)
     body = (f"<h1>{head}</h1>"
