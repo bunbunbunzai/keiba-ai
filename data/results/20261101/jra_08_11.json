@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 7,
+   "name": "レザベーション",
+   "time": "1:33.5",
+   "margin": "",
+   "corners": "5-4",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 8,
+   "name": "スマートワイス",
+   "time": "",
+   "margin": "１ 1/4",
+   "corners": "1-1",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "number": 12,
+   "name": "キョウエイブリッサ",
+   "time": "",
+   "margin": "３／４",
+   "corners": "7-7",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "number": 1,
+   "name": "ガロンヌ",
+   "time": "",
+   "margin": "ハナ",
+   "corners": "10-10",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "5",
+   "number": 5,
+   "name": "ビップデイジー",
+   "time": "",
+   "margin": "クビ",
+   "corners": "5-4",
+   "last3f": null,
+   "popularity": 7
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "7",
+    "yen": 300,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "7",
+    "yen": 140,
+    "pop": 1
+   },
+   {
+    "combo": "8",
+    "yen": 170,
+    "pop": 2
+   },
+   {
+    "combo": "12",
+    "yen": 180,
+    "pop": 3
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-6",
+    "yen": 880,
+    "pop": 3
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "7-8",
+    "yen": 480,
+    "pop": 1
+   },
+   {
+    "combo": "7-12",
+    "yen": 480,
+    "pop": 2
+   },
+   {
+    "combo": "8-12",
+    "yen": 870,
+    "pop": 12
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "7-8",
+    "yen": 1060,
+    "pop": 1
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "7-8",
+    "yen": 1810,
+    "pop": 1
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "7-8-12",
+    "yen": 2710,
+    "pop": 3
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "7-8-12",
+    "yen": 10170,
+    "pop": 5
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261101",
+ "venue_code": "08",
+ "race_no": 11,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202604111120261101/40",
+ "title": "レース結果 JRA"
+}

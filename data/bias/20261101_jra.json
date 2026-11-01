@@ -1,6 +1,6 @@
 {
  "date": "20261101",
- "updated": "2026-11-01 15:25",
+ "updated": "2026-11-01 15:32",
  "bias": {
   "東京芝": {
    "judgement": "フラット",
@@ -49,18 +49,19 @@
   },
   "京都芝": {
    "judgement": "先行有利",
-   "confidence": "中",
+   "confidence": "強",
    "races": [
     3,
     4,
     5,
     8,
-    10
+    10,
+    11
    ],
    "front_share": 1.0,
    "inner_share": 0.0,
    "outer_share": 0.0,
-   "horses": 2
+   "horses": 4
   }
  }
 }
