@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 11,
+   "name": "ブロンテス",
+   "time": "1:23.7",
+   "margin": "",
+   "corners": "5-4",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 7,
+   "name": "モズジェネラル",
+   "time": "",
+   "margin": "１ 1/4",
+   "corners": "2-2",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "3",
+   "number": 15,
+   "name": "バトルアックス",
+   "time": "",
+   "margin": "１／２",
+   "corners": "3-2",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "number": 13,
+   "name": "デュアルロール",
+   "time": "",
+   "margin": "１／２",
+   "corners": "8-8",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "5",
+   "number": 16,
+   "name": "ダノンクロム",
+   "time": "",
+   "margin": "クビ",
+   "corners": "1-1",
+   "last3f": null,
+   "popularity": 3
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "11",
+    "yen": 360,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "11",
+    "yen": 140,
+    "pop": 1
+   },
+   {
+    "combo": "7",
+    "yen": 210,
+    "pop": 4
+   },
+   {
+    "combo": "15",
+    "yen": 190,
+    "pop": 3
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-6",
+    "yen": 1580,
+    "pop": 7
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "7-11",
+    "yen": 500,
+    "pop": 3
+   },
+   {
+    "combo": "11-15",
+    "yen": 300,
+    "pop": 1
+   },
+   {
+    "combo": "7-15",
+    "yen": 860,
+    "pop": 8
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "7-11",
+    "yen": 1580,
+    "pop": 4
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "11-7",
+    "yen": 2470,
+    "pop": 3
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "7-11-15",
+    "yen": 1850,
+    "pop": 1
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "11-7-15",
+    "yen": 11460,
+    "pop": 12
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261101",
+ "venue_code": "08",
+ "race_no": 7,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202604110720261101/2C",
+ "title": "レース結果 JRA"
+}
