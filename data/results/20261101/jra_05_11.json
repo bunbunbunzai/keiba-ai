@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 17,
+   "name": "ダノンデサイル",
+   "time": "1:56.7",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "2",
+   "number": 10,
+   "name": "ネブラディスク",
+   "time": "",
+   "margin": "２ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "3",
+   "number": 3,
+   "name": "レガレイラ",
+   "time": "",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "number": 14,
+   "name": "タガノデュード",
+   "time": "",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "5",
+   "number": 1,
+   "name": "クロワデュノール",
+   "time": "",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "17",
+    "yen": 1080,
+    "pop": 4
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "17",
+    "yen": 320,
+    "pop": 3
+   },
+   {
+    "combo": "10",
+    "yen": 880,
+    "pop": 8
+   },
+   {
+    "combo": "3",
+    "yen": 370,
+    "pop": 4
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-8",
+    "yen": 5990,
+    "pop": 18
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "10-17",
+    "yen": 3330,
+    "pop": 23
+   },
+   {
+    "combo": "3-17",
+    "yen": 1290,
+    "pop": 10
+   },
+   {
+    "combo": "3-10",
+    "yen": 5060,
+    "pop": 36
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "10-17",
+    "yen": 12970,
+    "pop": 24
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "17-10",
+    "yen": 25490,
+    "pop": 46
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-10-17",
+    "yen": 42010,
+    "pop": 84
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "17-10-3",
+    "yen": 297820,
+    "pop": 455
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261101",
+ "venue_code": "05",
+ "race_no": 11,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202604111120261101/62",
+ "title": "レース結果 JRA"
+}
