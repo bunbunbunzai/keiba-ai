@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261101",
  "race_id": "202611013230120512",
- "tries": 4,
+ "tries": 5,
  "payouts": {
   "単勝": [
    {
@@ -77,7 +77,7 @@
    "name": "ヤヌステソーロ",
    "time": "1:29.5",
    "margin": "",
-   "pos4": null,
+   "pos4": 1,
    "last3f": 38.5,
    "popularity": null
   },
@@ -88,7 +88,7 @@
    "name": "スーパービジー",
    "time": "1:30.3",
    "margin": "４",
-   "pos4": null,
+   "pos4": 2,
    "last3f": 39.0,
    "popularity": null
   },
@@ -99,7 +99,7 @@
    "name": "アマイクチヅケ",
    "time": "1:31.2",
    "margin": "５",
-   "pos4": null,
+   "pos4": 3,
    "last3f": 39.6,
    "popularity": null
   },
@@ -110,7 +110,7 @@
    "name": "アサガクル",
    "time": "1:31.4",
    "margin": "１ １／４",
-   "pos4": null,
+   "pos4": 4,
    "last3f": 39.6,
    "popularity": null
   },
@@ -121,7 +121,7 @@
    "name": "ニシノヒンメル",
    "time": "1:32.6",
    "margin": "６",
-   "pos4": null,
+   "pos4": 7,
    "last3f": 40.0,
    "popularity": null
   },
@@ -132,7 +132,7 @@
    "name": "ディスタービア",
    "time": "1:32.7",
    "margin": "３／４",
-   "pos4": null,
+   "pos4": 11,
    "last3f": 39.5,
    "popularity": null
   },
@@ -143,7 +143,7 @@
    "name": "エイヨーニニギ",
    "time": "1:32.9",
    "margin": "１",
-   "pos4": null,
+   "pos4": 4,
    "last3f": 42.2,
    "popularity": null
   },
@@ -154,7 +154,7 @@
    "name": "スマートピリカ",
    "time": "1:32.9",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 6,
    "last3f": 41.4,
    "popularity": null
   },
@@ -165,7 +165,7 @@
    "name": "ムーヴザクラウド",
    "time": "1:33.1",
    "margin": "３／４",
-   "pos4": null,
+   "pos4": 7,
    "last3f": 41.3,
    "popularity": null
   },
@@ -176,7 +176,7 @@
    "name": "スターティアラ",
    "time": "1:33.2",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 10,
    "last3f": 40.5,
    "popularity": null
   },
@@ -187,7 +187,7 @@
    "name": "ペレストリーナ",
    "time": "1:33.2",
    "margin": "ハナ",
-   "pos4": null,
+   "pos4": 7,
    "last3f": 41.7,
    "popularity": null
   },
@@ -198,7 +198,7 @@
    "name": "サンライズプロミス",
    "time": "1:34.1",
    "margin": "５",
-   "pos4": null,
+   "pos4": 13,
    "last3f": 41.0,
    "popularity": null
   },
@@ -209,7 +209,7 @@
    "name": "ウインダンスタイム",
    "time": "1:34.3",
    "margin": "１ １／４",
-   "pos4": null,
+   "pos4": 14,
    "last3f": 39.9,
    "popularity": null
   },
@@ -220,7 +220,7 @@
    "name": "ピースフルゴールド",
    "time": "1:35.0",
    "margin": "４",
-   "pos4": null,
+   "pos4": 12,
    "last3f": 42.7,
    "popularity": null
   }
