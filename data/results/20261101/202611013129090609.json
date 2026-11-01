@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261101",
  "race_id": "202611013129090609",
- "tries": 2,
+ "tries": 5,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 5,
+   "name": "ヴィアダクト",
+   "time": "1:24.0",
+   "margin": "",
+   "pos4": 2,
+   "last3f": 38.7,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 1,
+   "number": 1,
+   "name": "リワードインペリオ",
+   "time": "1:24.5",
+   "margin": "２ １／２",
+   "pos4": 1,
+   "last3f": 39.5,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 7,
+   "name": "ジャガーノート",
+   "time": "1:24.6",
+   "margin": "１／２",
+   "pos4": 3,
+   "last3f": 38.7,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 4,
+   "name": "ノイヤー",
+   "time": "1:25.0",
+   "margin": "２",
+   "pos4": 7,
+   "last3f": 38.9,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 3,
+   "number": 3,
+   "name": "モーニングヘイズ",
+   "time": "1:25.0",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": 39.4,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 12,
+   "name": "ライゾマティクス",
+   "time": "1:25.3",
+   "margin": "１ １／２",
+   "pos4": 8,
+   "last3f": 39.3,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 8,
+   "name": "ゼンノソブリン",
+   "time": "1:25.4",
+   "margin": "１／２",
+   "pos4": 9,
+   "last3f": 38.8,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 9,
+   "name": "イルヴェント",
+   "time": "1:25.7",
+   "margin": "１ １／２",
+   "pos4": 6,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 11,
+   "name": "キャッツライズ",
+   "time": "1:25.7",
+   "margin": "アタマ",
+   "pos4": 3,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 10,
+   "name": "ペプチドヒナタ",
+   "time": "1:25.9",
+   "margin": "１",
+   "pos4": 10,
+   "last3f": 39.2,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 5,
+   "number": 6,
+   "name": "ラインメッセージ",
+   "time": "1:26.0",
+   "margin": "クビ",
+   "pos4": 11,
+   "last3f": 38.9,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 2,
+   "number": 2,
+   "name": "コールブランド",
+   "time": "1:28.4",
+   "margin": "大差",
+   "pos4": 12,
+   "last3f": 42.7,
+   "popularity": null
+  }
+ ]
 }
