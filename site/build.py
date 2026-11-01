@@ -137,7 +137,7 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False
 <meta property="og:image" content="{BASE_URL}{og_image}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{BASE_URL}{og_image}">
 {FAVICON}<link rel="alternate" type="application/rss+xml" title="{SITE_NAME}" href="/feed.xml">
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/style.css?v={ASSET_V}">
 {head_extra}
 </head><body>
 <header class="top"><div class="wrap">
@@ -152,7 +152,7 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False
 <p class="sitemap-links"><a href="/graded/">重賞</a>　<a href="/review/">重賞回顧</a>　<a href="/strategy/">買い方別の回収率</a>　<a href="/course/">コース別</a>　<a href="/jockey/">騎手別</a>　<a href="/horse/">馬別</a>　<a href="/column/">コラム</a></p>
 <p><a href="/operator/">運営者情報</a>　<a href="/privacy/">プライバシーポリシー</a>　<a href="{REPO}/issues">お問い合わせ</a></p>
 </footer>
-<script src="/app.js"></script>
+<script src="/app.js?v={ASSET_V}"></script>
 </body></html>"""
 
 
@@ -885,6 +885,10 @@ document.querySelectorAll('.vs').forEach(function(v){
  if(btn)btn.addEventListener('click',function(){if(!sel.value||v.dataset.post<=s)return;pick=sel.value;try{localStorage.setItem(key,pick)}catch(e){}ga('vs_pick',{race:v.dataset.label});show();});
  show();});
 })();"""
+
+
+import hashlib as _hashlib
+ASSET_V = _hashlib.md5((CSS + JS).encode("utf-8")).hexdigest()[:8]
 
 
 def build() -> None:
