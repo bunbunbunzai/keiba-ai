@@ -1,8 +1,8 @@
 {
  "date": "20261101",
- "updated": "2026-11-01 11:44",
+ "updated": "2026-11-01 11:59",
  "races_total": 14,
- "races_scored": 8,
+ "races_scored": 9,
  "stake": 6700,
  "return": 5680,
  "roi": 84.8,
@@ -24,7 +24,7 @@
    "return": 0,
    "roi": null,
    "hits": [],
-   "voided": true
+   "voided": false
   },
   {
    "race_id": "202611011006100102",
