@@ -1,0 +1,228 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 1,
+   "name": "ミッキーソルジャー",
+   "time": "1:32.5",
+   "margin": "",
+   "corners": "4-3",
+   "last3f": 33.9,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 14,
+   "name": "ウフドゥウフ",
+   "time": "1:32.7",
+   "margin": "１ 1/2",
+   "corners": "11-10",
+   "last3f": 33.7,
+   "popularity": 4
+  },
+  {
+   "finish": "3",
+   "number": 6,
+   "name": "テラメリタ",
+   "time": "1:32.8",
+   "margin": "３／４",
+   "corners": "11-12",
+   "last3f": 33.6,
+   "popularity": 7
+  },
+  {
+   "finish": "4",
+   "number": 4,
+   "name": "マクリール",
+   "time": "1:32.8",
+   "margin": "アタマ",
+   "corners": "8-7",
+   "last3f": 34.0,
+   "popularity": 6
+  },
+  {
+   "finish": "5",
+   "number": 3,
+   "name": "コムユンプリュム",
+   "time": "1:32.9",
+   "margin": "アタマ",
+   "corners": "1-1",
+   "last3f": 34.6,
+   "popularity": 10
+  },
+  {
+   "finish": "6",
+   "number": 10,
+   "name": "ガリレア",
+   "time": "1:33.0",
+   "margin": "１／２",
+   "corners": "5-3",
+   "last3f": 34.5,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "number": 2,
+   "name": "マテンロウブラボー",
+   "time": "1:33.0",
+   "margin": "クビ",
+   "corners": "11-10",
+   "last3f": 34.0,
+   "popularity": 8
+  },
+  {
+   "finish": "8",
+   "number": 9,
+   "name": "エルマーゴ",
+   "time": "1:33.3",
+   "margin": "１ 3/4",
+   "corners": "8-7",
+   "last3f": 34.5,
+   "popularity": 3
+  },
+  {
+   "finish": "9",
+   "number": 11,
+   "name": "サトミノキラリ",
+   "time": "1:33.3",
+   "margin": "ハナ",
+   "corners": "7-6",
+   "last3f": 34.6,
+   "popularity": 11
+  },
+  {
+   "finish": "10",
+   "number": 12,
+   "name": "ブランデーロック",
+   "time": "1:33.3",
+   "margin": "クビ",
+   "corners": "14-14",
+   "last3f": 33.9,
+   "popularity": 14
+  },
+  {
+   "finish": "11",
+   "number": 13,
+   "name": "アルデトップガン",
+   "time": "1:33.5",
+   "margin": "１ 1/4",
+   "corners": "3-3",
+   "last3f": 34.9,
+   "popularity": 9
+  },
+  {
+   "finish": "12",
+   "number": 7,
+   "name": "エルハーベン",
+   "time": "1:33.5",
+   "margin": "ハナ",
+   "corners": "2-2",
+   "last3f": 35.2,
+   "popularity": 2
+  },
+  {
+   "finish": "13",
+   "number": 5,
+   "name": "コスモアンソロジー",
+   "time": "1:33.6",
+   "margin": "３／４",
+   "corners": "5-7",
+   "last3f": 34.8,
+   "popularity": 12
+  },
+  {
+   "finish": "14",
+   "number": 8,
+   "name": "ショウナンアレクサ",
+   "time": "1:56.8",
+   "margin": "大差",
+   "corners": "8-12",
+   "last3f": 57.7,
+   "popularity": 13
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "1",
+    "yen": 260,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "1",
+    "yen": 130,
+    "pop": 1
+   },
+   {
+    "combo": "14",
+    "yen": 230,
+    "pop": 4
+   },
+   {
+    "combo": "6",
+    "yen": 290,
+    "pop": 6
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-8",
+    "yen": 730,
+    "pop": 3
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-14",
+    "yen": 500,
+    "pop": 3
+   },
+   {
+    "combo": "1-6",
+    "yen": 560,
+    "pop": 4
+   },
+   {
+    "combo": "6-14",
+    "yen": 1420,
+    "pop": 18
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-14",
+    "yen": 1070,
+    "pop": 3
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "1-14",
+    "yen": 1620,
+    "pop": 3
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-6-14",
+    "yen": 3580,
+    "pop": 8
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "1-14-6",
+    "yen": 13030,
+    "pop": 23
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261101",
+ "venue_code": "05",
+ "race_no": 9,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202604110920261101/B8",
+ "title": "レース結果 JRA"
+}
