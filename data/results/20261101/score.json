@@ -1,11 +1,11 @@
 {
  "date": "20261101",
- "updated": "2026-11-01 16:57",
+ "updated": "2026-11-01 17:07",
  "races_total": 72,
- "races_scored": 46,
- "stake": 30200,
+ "races_scored": 47,
+ "stake": 31000,
  "return": 16240,
- "roi": 53.8,
+ "roi": 52.4,
  "hit_races": 18,
  "honmei_win": 14,
  "honmei_top3": 26,
@@ -157,7 +157,7 @@
   {
    "race_id": "202611010304150510",
    "confidence": "C",
-   "honmei": 1,
+   "honmei": 6,
    "honmei_finish": null,
    "top3": [
     null,
@@ -390,7 +390,7 @@
     null,
     null
    ],
-   "stake": 800,
+   "stake": 700,
    "return": 0,
    "roi": 0.0,
    "hits": [],
@@ -483,14 +483,14 @@
   {
    "race_id": "202611013129090606",
    "confidence": "B",
-   "honmei": 7,
+   "honmei": 10,
    "honmei_finish": null,
    "top3": [
     null,
     null,
     null
    ],
-   "stake": 700,
+   "stake": 800,
    "return": 0,
    "roi": 0.0,
    "hits": [],
@@ -515,7 +515,7 @@
   {
    "race_id": "202611013129090608",
    "confidence": "C",
-   "honmei": 1,
+   "honmei": 5,
    "honmei_finish": null,
    "top3": [
     null,
@@ -547,7 +547,7 @@
   {
    "race_id": "202611013129090610",
    "confidence": "C",
-   "honmei": 9,
+   "honmei": 1,
    "honmei_finish": null,
    "top3": [
     null,
@@ -563,7 +563,7 @@
   {
    "race_id": "202611013129090611",
    "confidence": "C",
-   "honmei": 3,
+   "honmei": 6,
    "honmei_finish": null,
    "top3": [
     null,
@@ -579,7 +579,7 @@
   {
    "race_id": "202611013129090612",
    "confidence": "C",
-   "honmei": 2,
+   "honmei": 9,
    "honmei_finish": null,
    "top3": [
     null,
@@ -666,17 +666,17 @@
    "race_id": "202611013230120505",
    "confidence": "B",
    "honmei": 2,
-   "honmei_finish": null,
+   "honmei_finish": "6",
    "top3": [
-    null,
-    null,
-    null
+    9,
+    10,
+    7
    ],
    "stake": 800,
    "return": 0,
    "roi": 0.0,
    "hits": [],
-   "voided": true
+   "voided": false
   },
   {
    "race_id": "202611013230120506",
@@ -777,7 +777,7 @@
   {
    "race_id": "202611013230120512",
    "confidence": "B",
-   "honmei": 7,
+   "honmei": 10,
    "honmei_finish": null,
    "top3": [
     null,
