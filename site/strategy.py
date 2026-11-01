@@ -85,12 +85,39 @@ def collect(preds_by_date: dict[str, list[dict]], stats_from: str) -> dict[str, 
             if tai is not None:
                 add("hon", "◎-〇のワイド1点", 100, _pay(res, "ワイド", _norm(hon, tai)))
                 add("hon", "◎-〇の馬連1点", 100, _pay(res, "馬連", _norm(hon, tai)))
+            # 型の買い目（2026-11-02からの標準）：◎の単複（人気で切替）＋3連複 ◎→〇▲→印全部
+            pop0 = next((h.get("popularity") for h in p["_race"].get("horses", []) or [] if h.get("number") == hon), None)
+            od0 = next((h.get("odds") for h in p["_race"].get("horses", []) or [] if h.get("number") == hon), None)
+            try:
+                od0 = float(od0) if od0 else None
+            except (TypeError, ValueError):
+                od0 = None
+            if (pop0 and pop0 <= 2) or (od0 and od0 < 4.0) or (not pop0 and not od0):
+                tanpuku = ("複勝", _pay(res, "複勝", str(hon)))
+            elif (pop0 and pop0 <= 5) or (od0 and od0 < 10.0):
+                tanpuku = ("単勝", _pay(res, "単勝", str(hon)))
+            else:
+                tanpuku = None
+            def _lst(k):
+                v = m.get(k)
+                return [int(x) for x in (v if isinstance(v, list) else [v] if v is not None else []) if x is not None and int(x) != int(hon)]
+            top = _lst("〇") + _lst("▲")
+            marks = top + _lst("△") + _lst("☆")
+            fo = {tuple(sorted((int(hon), a, b))) for a in top for b in marks if b != a}
+            fo_ret = sum(_pay(res, "3連複", "-".join(map(str, c))) for c in fo)
+            if fo:
+                add("tmpl", "3連複 ◎→〇▲→印全部（フォーメーション）", 100 * len(fo), fo_ret)
+                add("tmpl", "型：◎の単複（人気で切替）＋3連複フォーメーション", 100 * len(fo) + (100 if tanpuku else 0), fo_ret + (tanpuku[1] if tanpuku else 0))
+                add("tmpl", "複勝◎＋3連複フォーメーション", 100 * len(fo) + 100, fo_ret + _pay(res, "複勝", str(hon)))
+            if tanpuku:
+                add("tmpl", f"◎の単複（人気で切替）のみ", 100, tanpuku[1])
             # ◎の人気
             pop = next((h.get("popularity") for h in p["_race"].get("horses", []) or [] if h.get("number") == hon), None)
             if pop:
                 band = "◎が1番人気" if pop == 1 else "◎が2〜3番人気" if pop <= 3 else "◎が4〜6番人気" if pop <= 6 else "◎が7番人気以下"
                 add("pop", band, sc["stake"], sc["return"])
                 add("pop_win", band + "（単勝1点）", 100, _pay(res, "単勝", str(hon)))
+                add("pop_place", band + "（複勝1点）", 100, _pay(res, "複勝", str(hon)))
             # ◎の期待値
             wp = next((h.get("win_pct") for h in p.get("horses", []) if h.get("number") == hon), None)
             od = next((h.get("odds") for h in p["_race"].get("horses", []) or [] if h.get("number") == hon), None)
@@ -107,6 +134,7 @@ def collect(preds_by_date: dict[str, list[dict]], stats_from: str) -> dict[str, 
 
 GROUPS = [
     ("base", "基準：サイトの買い目", "各レースの買い目をすべて各点100円で買った場合（成績ページと同じ）。"),
+    ("tmpl", "型の買い目（11/2からの標準）", "◎の単複1点（1〜2番人気は複勝、3〜5番人気は単勝、6番人気以下は買わない）と、3連複フォーメーション（1頭目◎、2頭目〇▲、3頭目は印全部）。11/2以降はサイトの買い目がこの型になる。"),
     ("hon", "◎・〇だけを買う", "印の上位だけを1点ずつ買った場合。買い目を減らすと的中は減るが、投資も減る。"),
     ("bet", "券種をしぼる", "サイトの買い目のうち、その券種だけを買った場合。"),
     ("conf", "自信度でしぼる", "自信度が高いレースだけを買った場合。"),
@@ -114,6 +142,7 @@ GROUPS = [
     ("val_win", "◎の期待値でしぼる（単勝1点）", "同じ区分で、◎の単勝だけを100円買った場合。"),
     ("pop", "◎の人気でしぼる", "予想時点の単勝人気。サイトの買い目で集計。"),
     ("pop_win", "◎の人気でしぼる（単勝1点）", "同じ区分で、◎の単勝だけを100円買った場合。"),
+    ("pop_place", "◎の人気でしぼる（複勝1点）", "同じ区分で、◎の複勝だけを100円買った場合。単勝と見比べると、人気ごとにどちらが向くかが分かる。"),
     ("src", "中央と地方", "JRAと地方競馬を分けた場合。"),
 ]
 
@@ -126,9 +155,9 @@ def _order(group: str, keys: list[str]) -> list[str]:
         "hon": ["◎の単勝だけ（1点）", "◎の複勝だけ（1点）", "◎-〇のワイド1点", "◎-〇の馬連1点"],
         "bet": ["単勝だけ", "複勝だけ", "ワイドだけ", "馬連だけ", "馬単だけ", "3連複だけ", "3連単だけ"],
     }
-    base = fixed.get(group.replace("_win", ""), [])
-    if group.endswith("_win"):
-        base = [b + ("（単勝1点）" if group == "pop_win" else "（◎単勝1点）") for b in base]
+    base = fixed.get(group.replace("_win", "").replace("_place", ""), [])
+    if group.endswith("_win") or group.endswith("_place"):
+        base = [b + ("（単勝1点）" if group == "pop_win" else "（複勝1点）" if group == "pop_place" else "（◎単勝1点）") for b in base]
     return [k for k in base if k in keys] + sorted(k for k in keys if k not in base)
 
 
