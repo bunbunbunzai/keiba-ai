@@ -26,7 +26,9 @@ import og
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "_site"
-SITE_NAME = "全頭ログ"
+SITE_NAME = "競馬全頭ログ"
+X_URL = "https://x.com/zentou_log"
+IG_URL = "https://www.instagram.com/zentou_log/"
 SITE_SUB = "AIが全レース・全頭を診断　外れも含めた成績を公開"
 DOMAIN = "www.ai-keiba-log.com"
 BASE_URL = f"https://{DOMAIN}"
@@ -139,6 +141,7 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False
 <footer class="wrap foot">
 <p>本サイトの予想は情報提供を目的としたもので、的中や利益を保証するものではありません。馬券の購入はご自身の判断と責任で行ってください。20歳未満の方は馬券を購入できません。</p>
 <p>レース情報は主催者の発表が正です。成績は全予想を各点100円の均等買いとして集計しています。</p>
+<p class="sns">最新の予想と的中速報は <a href="{X_URL}" target="_blank" rel="noopener me">X（@zentou_log）</a>・<a href="{IG_URL}" target="_blank" rel="noopener me">Instagram</a> でも配信中</p>
 <p><a href="/operator/">運営者情報</a>　<a href="/privacy/">プライバシーポリシー</a>　<a href="{REPO}/issues">お問い合わせ</a></p>
 </footer>
 <script src="/app.js"></script>
@@ -706,6 +709,7 @@ OPERATOR = f"""<h1>運営者情報</h1>
 <tr><th>運営</th><td>{SITE_NAME} 運営者（個人）</td></tr>
 <tr><th>内容</th><td>AIによる競馬予想と、その成績（回収率）の記録・公開</td></tr>
 <tr><th>予想の作成</th><td>AI（Anthropic社のClaude）が公開データをもとに作成。作成手順とプログラムは<a href="{REPO}">GitHub</a>で公開</td></tr>
+<tr><th>SNS</th><td><a href="{X_URL}">X（@zentou_log）</a>・<a href="{IG_URL}">Instagram（@zentou_log）</a></td></tr>
 <tr><th>お問い合わせ</th><td><a href="{REPO}/issues">GitHubのIssues</a>からご連絡ください</td></tr>
 </table></section>
 <section class="card"><h2>免責事項</h2><p>本サイトの予想・情報は正確性や完全性を保証するものではありません。本サイトの情報を利用して生じた損害について、運営者は責任を負いません。馬券の購入はご自身の判断と責任で行ってください。</p></section>"""
@@ -787,8 +791,8 @@ document.querySelectorAll('.vs').forEach(function(v){
   if(!me){r.textContent='あなたの◎は'+pick+'番。結果が出たら勝敗を表示します。';return;}
   var a=parseInt(me)||99,b=parseInt(ai)||99,res=a<b?'あなたの勝ち！':a>b?'AIの勝ち':'引き分け';
   r.textContent='あなたの◎'+pick+'番は'+me+'着、AIの◎'+v.dataset.ai+'番は'+(ai||'-')+'着 → '+res;
-  var t=v.dataset.label+'で全頭ログのAIと勝負：'+res+'（私の◎'+pick+'番'+me+'着／AIの◎'+(ai||'-')+'着）';
-  var a2=document.createElement('a');a2.href='https://twitter.com/intent/tweet?text='+encodeURIComponent(t)+'&url='+encodeURIComponent(v.dataset.url)+'&hashtags='+encodeURIComponent('全頭ログ');a2.target='_blank';a2.rel='noopener';a2.textContent='結果をXでシェア';
+  var t=v.dataset.label+'で競馬全頭ログのAIと勝負：'+res+'（私の◎'+pick+'番'+me+'着／AIの◎'+(ai||'-')+'着）';
+  var a2=document.createElement('a');a2.href='https://twitter.com/intent/tweet?text='+encodeURIComponent(t)+'&url='+encodeURIComponent(v.dataset.url)+'&hashtags='+encodeURIComponent('競馬全頭ログ');a2.target='_blank';a2.rel='noopener';a2.textContent='結果をXでシェア';
   var d=document.createElement('div');d.className='share';d.appendChild(a2);v.appendChild(d);}
  if(btn)btn.addEventListener('click',function(){if(!sel.value||v.dataset.post<=s)return;pick=sel.value;try{localStorage.setItem(key,pick)}catch(e){}show();});
  show();});
@@ -864,7 +868,7 @@ def build() -> None:
     import sys as _sys
     lastmod.update(extra.build_pages(_sys.modules[__name__], by_date, today))
     write("/about/", page(f"予想の方法とよくある質問 | {SITE_NAME}", ABOUT, "/about/", head_extra=jsonld(FAQ_LD),
-                          desc="全頭ログの予想の作り方（評価の5軸・印・自信度・買い目）と、回収率の計算方法。"))
+                          desc="競馬全頭ログの予想の作り方（評価の5軸・印・自信度・買い目）と、回収率の計算方法。"))
     write("/operator/", page(f"運営者情報 | {SITE_NAME}", OPERATOR, "/operator/"))
     write("/privacy/", page(f"プライバシーポリシー | {SITE_NAME}", PRIVACY, "/privacy/"))
     today_iso = now.strftime("%Y-%m-%d")

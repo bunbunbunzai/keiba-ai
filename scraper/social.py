@@ -255,7 +255,7 @@ def texts(date: str, c: dict, cfg: dict) -> dict:
     mode = cfg.get("x_url", "none")
     x_url = url if mode == "all" or (mode == "graded" and kind.startswith("grade")) else None
     x = fit_x(lines, tags, x_url)
-    ig = "\n".join(lines) + "\n\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n" + " ".join(tags + ["#競馬", "#全頭ログ"])
+    ig = "\n".join(lines) + "\n\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n" + " ".join(tags + ["#競馬", "#競馬全頭ログ"])
     return {"x": x, "instagram": ig, "url": url}
 
 

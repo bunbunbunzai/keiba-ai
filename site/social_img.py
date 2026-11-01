@@ -60,7 +60,7 @@ def render(out: Path, card: dict) -> None:
         im.alpha_composite(lg, (64, 56))
         x0 = 160
     d.rounded_rectangle((x0 - 8, 56, x0 + 330, 128), radius=14, fill=(255, 255, 255, 230))
-    d.text((x0 + 8, 92), "全頭ログ", font=og.font(44), fill=og.GREEN, anchor="lm")
+    d.text((x0 + 8, 92), "競馬全頭ログ", font=og.font(44), fill=og.GREEN, anchor="lm")
     # ラベル
     label = card.get("label", "")
     f = og.font(64)
