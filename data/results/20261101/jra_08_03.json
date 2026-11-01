@@ -1,0 +1,208 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 8,
+   "name": "エトワールハマー",
+   "time": "2:01.3",
+   "margin": "",
+   "corners": "6-6-4-3",
+   "last3f": 34.1,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 5,
+   "name": "ペプチドデバイス",
+   "time": "2:01.6",
+   "margin": "１ 1/2",
+   "corners": "1-1-1-1",
+   "last3f": 34.9,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "number": 7,
+   "name": "エコロリンド",
+   "time": "2:01.8",
+   "margin": "１ 1/2",
+   "corners": "7-9-7-6",
+   "last3f": 34.4,
+   "popularity": 6
+  },
+  {
+   "finish": "4",
+   "number": 9,
+   "name": "ベニールラヴニール",
+   "time": "2:02.2",
+   "margin": "２",
+   "corners": "2-2-2-2",
+   "last3f": 35.4,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "number": 6,
+   "name": "アルバドラータ",
+   "time": "2:02.3",
+   "margin": "１",
+   "corners": "4-4-4-3",
+   "last3f": 35.2,
+   "popularity": 7
+  },
+  {
+   "finish": "6",
+   "number": 3,
+   "name": "エールヴォル",
+   "time": "2:02.4",
+   "margin": "１／２",
+   "corners": "5-5-6-6",
+   "last3f": 35.1,
+   "popularity": 3
+  },
+  {
+   "finish": "7",
+   "number": 1,
+   "name": "シヴィリティ",
+   "time": "2:02.8",
+   "margin": "２ 1/2",
+   "corners": "7-6-7-8",
+   "last3f": 35.3,
+   "popularity": 8
+  },
+  {
+   "finish": "8",
+   "number": 10,
+   "name": "ウィモウェ",
+   "time": "2:02.8",
+   "margin": "ハナ",
+   "corners": "11-11-10-8",
+   "last3f": 34.9,
+   "popularity": 5
+  },
+  {
+   "finish": "9",
+   "number": 2,
+   "name": "スナークルーベンス",
+   "time": "2:03.2",
+   "margin": "２",
+   "corners": "10-9-10-11",
+   "last3f": 35.4,
+   "popularity": 12
+  },
+  {
+   "finish": "10",
+   "number": 11,
+   "name": "ゴールデンステーラ",
+   "time": "2:03.4",
+   "margin": "１ 1/4",
+   "corners": "12-12-12-12",
+   "last3f": 35.3,
+   "popularity": 11
+  },
+  {
+   "finish": "11",
+   "number": 4,
+   "name": "カフジポポー",
+   "time": "2:03.6",
+   "margin": "１ 1/4",
+   "corners": "7-8-7-8",
+   "last3f": 36.0,
+   "popularity": 10
+  },
+  {
+   "finish": "12",
+   "number": 12,
+   "name": "ロードフェルム",
+   "time": "2:04.9",
+   "margin": "８",
+   "corners": "2-2-2-5",
+   "last3f": 37.9,
+   "popularity": 9
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "8",
+    "yen": 170,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "8",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "5",
+    "yen": 110,
+    "pop": 2
+   },
+   {
+    "combo": "7",
+    "yen": 260,
+    "pop": 6
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-6",
+    "yen": 220,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "5-8",
+    "yen": 150,
+    "pop": 1
+   },
+   {
+    "combo": "7-8",
+    "yen": 360,
+    "pop": 4
+   },
+   {
+    "combo": "5-7",
+    "yen": 680,
+    "pop": 10
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "5-8",
+    "yen": 260,
+    "pop": 1
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "8-5",
+    "yen": 390,
+    "pop": 1
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "5-7-8",
+    "yen": 1060,
+    "pop": 4
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "8-5-7",
+    "yen": 2180,
+    "pop": 3
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261101",
+ "venue_code": "08",
+ "race_no": 3,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202604110320261101/58",
+ "title": "レース結果 JRA"
+}

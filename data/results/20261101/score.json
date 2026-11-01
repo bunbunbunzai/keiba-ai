@@ -1,14 +1,14 @@
 {
  "date": "20261101",
- "updated": "2026-11-01 11:04",
+ "updated": "2026-11-01 11:09",
  "races_total": 14,
- "races_scored": 4,
- "stake": 3900,
- "return": 2730,
- "roi": 70.0,
- "hit_races": 3,
- "honmei_win": 2,
- "honmei_top3": 3,
+ "races_scored": 6,
+ "stake": 5700,
+ "return": 4540,
+ "roi": 79.6,
+ "hit_races": 5,
+ "honmei_win": 4,
+ "honmei_top3": 5,
  "races": [
   {
    "race_id": "202611011006100101",
@@ -79,7 +79,22 @@
   },
   {
    "race_id": "jra_20261101_京都_03",
-   "status": "結果未取得"
+   "confidence": "B",
+   "honmei": 8,
+   "honmei_finish": "1",
+   "top3": [
+    8,
+    5,
+    7
+   ],
+   "stake": 1000,
+   "return": 410,
+   "roi": 41.0,
+   "hits": [
+    "馬連 5-8 260円",
+    "ワイド 5-8 150円"
+   ],
+   "voided": false
   },
   {
    "race_id": "jra_20261101_京都_04",
@@ -131,7 +146,23 @@
   },
   {
    "race_id": "jra_20261101_東京_03",
-   "status": "結果未取得"
+   "confidence": "B",
+   "honmei": 9,
+   "honmei_finish": "1",
+   "top3": [
+    9,
+    4,
+    5
+   ],
+   "stake": 800,
+   "return": 1400,
+   "roi": 175.0,
+   "hits": [
+    "馬連 4-9 510円",
+    "馬単 9-4 710円",
+    "3連複 4-5-9 180円"
+   ],
+   "voided": false
   },
   {
    "race_id": "jra_20261101_東京_04",
