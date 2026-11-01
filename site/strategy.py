@@ -8,6 +8,7 @@
 from __future__ import annotations
 
 from collections import defaultdict
+from itertools import combinations
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -25,19 +26,27 @@ def _norm(a, b) -> str:
 
 
 class Bucket:
-    __slots__ = ("n", "stake", "ret", "hit")
+    __slots__ = ("n", "stake", "ret", "hit", "rows")
 
     def __init__(self):
         self.n = self.stake = self.ret = self.hit = 0
+        self.rows: list[tuple[int, int]] = []  # (stake, ret) レースごと。除外検証用
 
     def add(self, stake: int, ret: int):
         self.n += 1
         self.stake += stake
         self.ret += ret
         self.hit += 1 if ret > 0 else 0
+        self.rows.append((stake, ret))
 
     def roi(self) -> float | None:
         return 100 * self.ret / self.stake if self.stake else None
+
+    def roi_ex_top(self, k: int = 3) -> float | None:
+        """払戻の大きい上位k件を除いた回収率。数字が大当たり数件に支えられていないかの確認用。"""
+        rest = sorted(self.rows, key=lambda x: -x[1])[k:]
+        s = sum(x[0] for x in rest)
+        return 100 * sum(x[1] for x in rest) / s if s else None
 
 
 def collect(preds_by_date: dict[str, list[dict]], stats_from: str) -> dict[str, dict[str, Bucket]]:
@@ -111,6 +120,13 @@ def collect(preds_by_date: dict[str, list[dict]], stats_from: str) -> dict[str, 
                 add("tmpl", "複勝◎＋3連複フォーメーション", 100 * len(fo) + 100, fo_ret + _pay(res, "複勝", str(hon)))
             if tanpuku:
                 add("tmpl", f"◎の単複（人気で切替）のみ", 100, tanpuku[1])
+            # 型の比較用（11/2の週次見直しで候補に残した買い方）：◎から印全部へ流す
+            if marks:
+                add("tmpl", "ワイド ◎→印全部", 100 * len(marks), sum(_pay(res, "ワイド", _norm(hon, x)) for x in marks))
+                add("tmpl", "馬連 ◎→印全部", 100 * len(marks), sum(_pay(res, "馬連", _norm(hon, x)) for x in marks))
+            if len(marks) >= 2:
+                ng = {tuple(sorted((int(hon), a, b))) for a, b in combinations(marks, 2)}
+                add("tmpl", "3連複 ◎→印全部（2頭流し）", 100 * len(ng), sum(_pay(res, "3連複", "-".join(map(str, c))) for c in ng))
             # ◎の人気
             pop = next((h.get("popularity") for h in p["_race"].get("horses", []) or [] if h.get("number") == hon), None)
             if pop:
@@ -134,7 +150,7 @@ def collect(preds_by_date: dict[str, list[dict]], stats_from: str) -> dict[str, 
 
 GROUPS = [
     ("base", "基準：サイトの買い目", "各レースの買い目をすべて各点100円で買った場合（成績ページと同じ）。"),
-    ("tmpl", "型の買い目（11/2からの標準）", "◎の単複1点（1〜2番人気は複勝、3〜5番人気は単勝、6番人気以下は買わない）と、3連複フォーメーション（1頭目◎、2頭目〇▲、3頭目は印全部）。11/2以降はサイトの買い目がこの型になる。"),
+    ("tmpl", "型の買い目（11/2からの標準）", "◎の単複1点（1〜2番人気は複勝、3〜5番人気は単勝、6番人気以下は買わない）と、3連複フォーメーション（1頭目◎、2頭目〇▲、3頭目は印全部）。11/2以降はサイトの買い目がこの型になる。比較用に、同じ印から◎を軸に印全部へ流すワイド・馬連・3連複（2頭流し）も載せる。"),
     ("hon", "◎・〇だけを買う", "印の上位だけを1点ずつ買った場合。買い目を減らすと的中は減るが、投資も減る。"),
     ("bet", "券種をしぼる", "サイトの買い目のうち、その券種だけを買った場合。"),
     ("conf", "自信度でしぼる", "自信度が高いレースだけを買った場合。"),
@@ -152,6 +168,8 @@ def _order(group: str, keys: list[str]) -> list[str]:
         "conf": ["自信度Aのレースだけ", "自信度Bのレースだけ", "自信度Cのレースだけ"],
         "val": ["期待値1.5以上", "期待値1.0〜1.5", "期待値0.7〜1.0", "期待値0.7未満"],
         "pop": ["◎が1番人気", "◎が2〜3番人気", "◎が4〜6番人気", "◎が7番人気以下"],
+        "tmpl": ["型：◎の単複（人気で切替）＋3連複フォーメーション", "◎の単複（人気で切替）のみ", "3連複 ◎→〇▲→印全部（フォーメーション）",
+                 "複勝◎＋3連複フォーメーション", "3連複 ◎→印全部（2頭流し）", "ワイド ◎→印全部", "馬連 ◎→印全部"],
         "hon": ["◎の単勝だけ（1点）", "◎の複勝だけ（1点）", "◎-〇のワイド1点", "◎-〇の馬連1点"],
         "bet": ["単勝だけ", "複勝だけ", "ワイドだけ", "馬連だけ", "馬単だけ", "3連複だけ", "3連単だけ"],
     }
@@ -175,12 +193,14 @@ def render(g: dict[str, dict[str, Bucket]], esc, roi_txt, since: str, asof: str)
             b = bs[k]
             r = b.roi()
             cls = "hit" if r is not None and r >= 100 else "tg" if r is not None and r >= 85 else ""
+            ex = b.roi_ex_top(3)
+            ex_txt = f"{ex:.1f}%" if ex is not None and b.n > 3 else "-"
             rows.append(f"<tr><td>{esc(k)}</td><td>{b.n:,}</td><td>{b.hit:,}（{100 * b.hit / b.n:.0f}%）</td>"
-                        f"<td>{b.stake:,}円</td><td>{b.ret:,}円</td><td class='{cls}'><b>{roi_txt(b.stake, b.ret)}</b></td><td>{b.ret - b.stake:+,}円</td></tr>")
+                        f"<td>{b.stake:,}円</td><td>{b.ret:,}円</td><td class='{cls}'><b>{roi_txt(b.stake, b.ret)}</b></td><td>{b.ret - b.stake:+,}円</td><td>{ex_txt}</td></tr>")
             if key != "base" and b.n >= 20 and r is not None:
                 ranking.append((k, r, b.n))
         sections.append(f"<section class='card'><h2>{esc(title)}</h2><p class='meta'>{esc(note)}</p><div class='scroll'><table>"
-                        "<thead><tr><th>買い方</th><th>レース</th><th>的中</th><th>投資</th><th>払戻</th><th>回収率</th><th>収支</th></tr></thead>"
+                        "<thead><tr><th>買い方</th><th>レース</th><th>的中</th><th>投資</th><th>払戻</th><th>回収率</th><th>収支</th><th>上位3件除外</th></tr></thead>"
                         f"<tbody>{''.join(rows)}</tbody></table></div></section>")
     ranking.sort(key=lambda x: -x[1])
     intro = ""
@@ -188,5 +208,6 @@ def render(g: dict[str, dict[str, Bucket]], esc, roi_txt, since: str, asof: str)
         intro = (f"<p class='answer'>{since}〜{asof}の{base.n:,}レースで、サイトの買い目をすべて買った場合の回収率は{roi_txt(base.stake, base.ret)}。"
                  + (f"同じ予想でも買い方を変えると、回収率が最も高かったのは「{esc(ranking[0][0])}」の{ranking[0][1]:.1f}%（{ranking[0][2]}レース）だった。" if ranking else "") + "</p>")
     note = ("<p class='meta'>すべて各点100円の均等買い。見送り・返還は除く。レース数が少ない区分（目安50レース未満）は偶然の影響が大きく、"
-            "高配当が1回出るだけで数字が大きく動く。「過去にこう買えば勝てた」は、これから勝てることを意味しない。</p>")
+            "高配当が1回出るだけで数字が大きく動く。「上位3件除外」は払戻の大きいレース3つを除いた回収率で、数字が大当たり数件に支えられていないかを見る。"
+            "「過去にこう買えば勝てた」は、これから勝てることを意味しない。</p>")
     return intro + note + "".join(sections), ranking
