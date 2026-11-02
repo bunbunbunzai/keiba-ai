@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261102",
  "race_id": "202611021914080108",
- "tries": 2,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 4,
+   "name": "レーザーベルン",
+   "time": "1:37.0",
+   "margin": "",
+   "pos4": 4,
+   "last3f": 38.7,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 7,
+   "name": "タイセイゼスティ",
+   "time": "1:37.0",
+   "margin": "アタマ",
+   "pos4": 1,
+   "last3f": 39.2,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 12,
+   "name": "ナイトセーリング",
+   "time": "1:37.6",
+   "margin": "３",
+   "pos4": 1,
+   "last3f": 39.5,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 6,
+   "name": "シンキングファーザ",
+   "time": "1:38.4",
+   "margin": "４",
+   "pos4": 1,
+   "last3f": 40.7,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 11,
+   "name": "タイセイグローバル",
+   "time": "1:38.4",
+   "margin": "ハナ",
+   "pos4": 7,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 9,
+   "name": "シェナスーパー",
+   "time": "1:38.4",
+   "margin": "ハナ",
+   "pos4": 5,
+   "last3f": 39.9,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 8,
+   "name": "ジュンピリカ",
+   "time": "1:39.1",
+   "margin": "３",
+   "pos4": 5,
+   "last3f": 41.1,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 10,
+   "name": "アルファマドンナ",
+   "time": "1:39.3",
+   "margin": "１",
+   "pos4": 11,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "エガリテアリエル",
+   "time": "1:39.4",
+   "margin": "１／２",
+   "pos4": 10,
+   "last3f": 40.3,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 3,
+   "number": 3,
+   "name": "イントゥザウインド",
+   "time": "1:39.9",
+   "margin": "２ １／２",
+   "pos4": 8,
+   "last3f": 41.2,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 5,
+   "number": 5,
+   "name": "アズベリー",
+   "time": "1:40.0",
+   "margin": "クビ",
+   "pos4": 12,
+   "last3f": 40.7,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 1,
+   "number": 1,
+   "name": "ディープオーキッド",
+   "time": "1:40.0",
+   "margin": "アタマ",
+   "pos4": 8,
+   "last3f": 41.1,
+   "popularity": null
+  }
+ ]
 }
