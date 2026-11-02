@@ -81,6 +81,13 @@ def render(out: Path, card: dict) -> None:
         d.text((96, y), m, font=og.font(52), fill=og.GREEN)
         d.text((170, y + 4), txt, font=og.fit(d, txt, 48, W - 280), fill=og.INK)
         y += 64
+    if card.get("list"):  # 多行の一覧（的中レース一覧など）
+        y += 6
+        for row in card["list"][:11]:
+            if y + 50 > H - 150 - 30:
+                break
+            d.text((100, y), row, font=og.fit(d, row, 34, W - 200, False), fill=og.INK)
+            y += 50
     big_top = H - 150 - 262  # 大きな数字の区画（パネル下端から300px）
     if card.get("rows"):
         y += 12

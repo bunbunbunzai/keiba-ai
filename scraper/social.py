@@ -356,6 +356,62 @@ def ascii_name(pid: str) -> str:
     return re.sub(r"[^0-9A-Za-z_-]", "_", pid)
 
 
+def thread_texts(date: str, c: dict) -> list[str]:
+    """重賞予想のXスレッド（返信）用：評価点上位の要点を2〜3ツイートに。"""
+    if c["kind"] != "grade_pre":
+        return []
+    p = c["p"]
+    hs = sorted([h for h in p.get("horses", []) if h.get("score") is not None], key=lambda h: -h["score"])[:6]
+    mm = {}
+    for k, v in p.get("marks", {}).items():
+        for n in (v if isinstance(v, list) else [v]):
+            if n is not None:
+                mm[n] = k
+    out, cur = [], f"【全頭評価の要点】{venue(p)}{rno(p)}R {rname(p)}（1/N）"
+    for h in hs:
+        line = f"\n{mm.get(h.get('number'), '')}{h.get('number')} {horse(p, h.get('number'))}　{h['score']}点" + (f"・勝率{h['win_pct']}%" if h.get("win_pct") is not None else "")
+        cm = nfkc(h.get("comment") or "")
+        if cm:
+            line += f"\n{cm[:70]}{'…' if len(cm) > 70 else ''}"
+        if x_len(cur + line) > 270:
+            out.append(cur)
+            cur = line.lstrip("\n")
+        else:
+            cur += line
+    if cur:
+        out.append(cur)
+    out = out[:2]
+    pace = nfkc(p.get("pace") or "")
+    if pace:
+        out.append(f"【展開】{pace[:130]}{'…' if len(pace) > 130 else ''}\n※予想は情報提供です。馬券は20歳から。")
+    out = out[:3]
+    return [t.replace("（1/N）", f"（{i + 1}/{len(out)}）") if i == 0 else t for i, t in enumerate(out)]
+
+
+def extra_cards(date: str, c: dict) -> list[dict]:
+    """カルーセル用の2枚目以降（全成績の投稿だけ）：的中レース一覧と、明日の重賞。"""
+    if c["kind"] != "summary":
+        return []
+    md = f"{int(date[:4])}.{int(date[4:6])}.{int(date[6:8])}"
+    out = []
+    hits = [p for p in c["rs"] if p["_score"] and p["_score"]["return"] > 0]
+    hits.sort(key=lambda p: -(p["_score"]["return"] - p["_score"]["stake"]))
+    if hits:
+        rows = [f"{venue(p)}{rno(p)}R　払戻{p['_score']['return']:,}円（{100 * p['_score']['return'] / p['_score']['stake']:.0f}%）" for p in hits[:11]]
+        out.append({"kind": "hit", "label": "的中レース", "date": md, "head": f"的中{len(hits)}レース（払戻額順）",
+                    "sub": "各点100円・外れも含めた全成績はサイトで", "list": rows})
+    nd = (datetime.strptime(date, "%Y%m%d") + timedelta(days=1)).strftime("%Y%m%d")
+    try:
+        nxt = [p for p in races_of(nd) if p["_grade"] and p.get("confidence") != "見送り"]
+    except Exception:  # noqa: BLE001
+        nxt = []
+    if nxt:
+        p = sorted(nxt, key=lambda q: q["_race"].get("post_time") or "99")[0]
+        cd = card(nd, {"kind": "grade_pre", "p": p, "eve": True})
+        out.append(cd)
+    return out
+
+
 def prepare(date: str, cfg: dict) -> int:
     import social_img
 
@@ -366,8 +422,13 @@ def prepare(date: str, cfg: dict) -> int:
             continue
         img = SOCIAL / date / f"{ascii_name(c['id'])}.jpg"
         social_img.render(img, card(date, c))
+        images = [f"/social/{date}/{ascii_name(c['id'])}.jpg"]
+        for i, cd in enumerate(extra_cards(date, c), start=2):
+            f2 = SOCIAL / date / f"{ascii_name(c['id'])}-{i}.jpg"
+            social_img.render(f2, cd)
+            images.append(f"/social/{date}/{f2.name}")
         t = texts(date, c, cfg)
-        st["posts"][c["id"]] = {"kind": c["kind"], "image": f"/social/{date}/{ascii_name(c['id'])}.jpg", "x_text": t["x"],
+        st["posts"][c["id"]] = {"kind": c["kind"], "image": images[0], "images": images, "x_text": t["x"], "x_thread": thread_texts(date, c),
                                 "ig_caption": t["instagram"], "url": t["url"], "created": now().strftime("%Y-%m-%d %H:%M"),
                                 "x": "pending" if cfg.get("x", True) else "off",
                                 "instagram": "pending" if cfg.get("instagram", True) else "off"}
@@ -385,17 +446,31 @@ def has_ig() -> bool:
     return all(os.environ.get(k) for k in ("IG_USER_ID", "IG_ACCESS_TOKEN"))
 
 
-def post_x(text: str, image: Path) -> str:
-    import requests
+def _x_auth():
     from requests_oauthlib import OAuth1
+    return OAuth1(os.environ["X_API_KEY"], os.environ["X_API_SECRET"], os.environ["X_ACCESS_TOKEN"], os.environ["X_ACCESS_SECRET"])
 
-    auth = OAuth1(os.environ["X_API_KEY"], os.environ["X_API_SECRET"], os.environ["X_ACCESS_TOKEN"], os.environ["X_ACCESS_SECRET"])
-    with image.open("rb") as f:
-        r = requests.post("https://api.x.com/2/media/upload", auth=auth, timeout=60,
-                          files={"media": (image.name, f, "image/jpeg")}, data={"media_category": "tweet_image"})
+
+def post_x(text: str, image: Path, more: list[Path] | None = None) -> str:
+    import requests
+
+    auth = _x_auth()
+    mids = []
+    for im in [image] + list(more or [])[:3]:
+        with im.open("rb") as f:
+            r = requests.post("https://api.x.com/2/media/upload", auth=auth, timeout=60,
+                              files={"media": (im.name, f, "image/jpeg")}, data={"media_category": "tweet_image"})
+        r.raise_for_status()
+        mids.append((r.json().get("data") or {}).get("id") or r.json().get("media_id_string"))
+    r = requests.post("https://api.x.com/2/tweets", auth=auth, timeout=60, json={"text": text, "media": {"media_ids": mids}})
     r.raise_for_status()
-    mid = (r.json().get("data") or {}).get("id") or r.json().get("media_id_string")
-    r = requests.post("https://api.x.com/2/tweets", auth=auth, timeout=60, json={"text": text, "media": {"media_ids": [mid]}})
+    return r.json()["data"]["id"]
+
+
+def post_x_reply(text: str, reply_to: str) -> str:
+    import requests
+
+    r = requests.post("https://api.x.com/2/tweets", auth=_x_auth(), timeout=60, json={"text": text, "reply": {"in_reply_to_tweet_id": reply_to}})
     r.raise_for_status()
     return r.json()["data"]["id"]
 
@@ -453,7 +528,18 @@ def ig_user_id(tok: str) -> str:
     return uid
 
 
-def post_ig(caption: str, image_url: str) -> str:
+def _ig_wait(base: str, cid: str, tok: str) -> None:
+    import requests
+    for _ in range(10):  # 取り込み完了を待つ
+        s = requests.get(f"{base}/{cid}", timeout=30, params={"fields": "status_code", "access_token": tok}).json()
+        if s.get("status_code") in ("FINISHED", None):
+            return
+        if s.get("status_code") == "ERROR":
+            raise RuntimeError(f"instagram container error: {s}")
+        time.sleep(6)
+
+
+def post_ig(caption: str, image_url: str, more: list[str] | None = None) -> str:
     import requests
 
     tok = os.environ["IG_ACCESS_TOKEN"].strip()
@@ -461,17 +547,26 @@ def post_ig(caption: str, image_url: str) -> str:
     # Instagramログインのトークン（IGで始まる）は graph.instagram.com、
     # Facebook／統合ログインのトークン（EAAで始まる）は graph.facebook.com を使う
     base = "https://graph.instagram.com/v23.0" if tok.startswith("IG") else "https://graph.facebook.com/v23.0"
-    r = requests.post(f"{base}/{uid}/media", timeout=60, data={"image_url": image_url, "caption": caption, "access_token": tok})
-    if not r.ok:  # Instagram側の理由をそのまま残す（トークンは含まれない）
-        raise RuntimeError(f"media {r.status_code}: {str((r.json() if r.content else {}).get('error', r.text))[:400]}")
-    cid = r.json()["id"]
-    for _ in range(10):  # 取り込み完了を待つ
-        s = requests.get(f"{base}/{cid}", timeout=30, params={"fields": "status_code", "access_token": tok}).json()
-        if s.get("status_code") in ("FINISHED", None):
-            break
-        if s.get("status_code") == "ERROR":
-            raise RuntimeError(f"instagram container error: {s}")
-        time.sleep(6)
+    urls = [image_url] + list(more or [])
+    if len(urls) >= 2:  # カルーセル（複数枚）
+        kids = []
+        for u in urls[:10]:
+            r = requests.post(f"{base}/{uid}/media", timeout=60, data={"image_url": u, "is_carousel_item": "true", "access_token": tok})
+            if not r.ok:
+                raise RuntimeError(f"item {r.status_code}: {str((r.json() if r.content else {}).get('error', r.text))[:400]}")
+            kids.append(r.json()["id"])
+        for k in kids:
+            _ig_wait(base, k, tok)
+        r = requests.post(f"{base}/{uid}/media", timeout=60, data={"media_type": "CAROUSEL", "children": ",".join(kids), "caption": caption, "access_token": tok})
+        if not r.ok:
+            raise RuntimeError(f"carousel {r.status_code}: {str((r.json() if r.content else {}).get('error', r.text))[:400]}")
+        cid = r.json()["id"]
+    else:
+        r = requests.post(f"{base}/{uid}/media", timeout=60, data={"image_url": image_url, "caption": caption, "access_token": tok})
+        if not r.ok:  # Instagram側の理由をそのまま残す（トークンは含まれない）
+            raise RuntimeError(f"media {r.status_code}: {str((r.json() if r.content else {}).get('error', r.text))[:400]}")
+        cid = r.json()["id"]
+    _ig_wait(base, cid, tok)
     r = requests.post(f"{base}/{uid}/media_publish", timeout=60, data={"creation_id": cid, "access_token": tok})
     if not r.ok:
         raise RuntimeError(f"publish {r.status_code}: {str((r.json() if r.content else {}).get('error', r.text))[:400]}")
@@ -502,7 +597,8 @@ def publish(date: str, dry: bool = False, only: str = "") -> int:
             age = timedelta(0)
         if age > timedelta(hours=6):
             continue  # 古い下書きは出さない（鍵を設定した直後に過去分がまとめて出ないように）
-        if not dry and not live(img_url):
+        imgs = e.get("images") or [e["image"]]
+        if not dry and not all(live(BASE_URL + u) for u in imgs):
             continue  # まだサイトに出ていない（次の公開後に出す）
         for k in todo:
             ok = has_x() if k == "x" else has_ig()
@@ -510,10 +606,23 @@ def publish(date: str, dry: bool = False, only: str = "") -> int:
                 e[k] = "draft"
                 continue
             try:
-                e[f"{k}_id"] = post_x(e["x_text"], ROOT / e["image"].lstrip("/")) if k == "x" else post_ig(e["ig_caption"], img_url)
+                if k == "x":
+                    e["x_id"] = post_x(e["x_text"], ROOT / imgs[0].lstrip("/"), [ROOT / u.lstrip("/") for u in imgs[1:]])
+                else:
+                    e["instagram_id"] = post_ig(e["ig_caption"], BASE_URL + imgs[0], [BASE_URL + u for u in imgs[1:]])
                 e[k] = "posted"
                 e[f"{k}_at"] = now().strftime("%Y-%m-%d %H:%M")
                 n += 1
+                if k == "x" and e.get("x_thread") and not e.get("x_thread_ids"):
+                    ids, prev = [], e["x_id"]
+                    for t_ in e["x_thread"]:
+                        try:
+                            prev = post_x_reply(t_, prev)
+                            ids.append(prev)
+                        except Exception as ex2:  # noqa: BLE001
+                            e["x_thread_error"] = str(ex2)[:200]
+                            break
+                    e["x_thread_ids"] = ids
             except Exception as ex:  # noqa: BLE001
                 e[f"{k}_error"] = str(ex)[:300]
                 e[f"{k}_tries"] = e.get(f"{k}_tries", 0) + 1
