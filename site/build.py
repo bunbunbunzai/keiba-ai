@@ -33,6 +33,8 @@ SITE_NAME = "競馬全頭ログ"
 X_URL = "https://x.com/zentou_log"
 IG_URL = "https://www.instagram.com/zentou_log/"
 GA_ID = "G-MFLTSL1RVP"
+ADSENSE_PUB = "ca-pub-2715397557499691"
+ADSENSE_TAG = f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADSENSE_PUB}" crossorigin="anonymous"></script>'
 GA_TAG = (f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>'
           f"<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','{GA_ID}');</script>")
 SITE_SUB = "中央・地方の全レースを毎日予想。外れも含めて、全部記録する。"
@@ -135,6 +137,7 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False
     return f"""<!doctype html>
 <html lang="ja"><head><meta charset="utf-8">
 {GA_TAG}
+{ADSENSE_TAG}
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(d)}">
@@ -1034,6 +1037,7 @@ def build() -> None:
         shutil.rmtree(OUT)
     OUT.mkdir()
     (OUT / "style.css").write_text(CSS, encoding="utf-8")
+    (OUT / "ads.txt").write_text(f"google.com, {ADSENSE_PUB.replace('ca-', '')}, DIRECT, f08c47fec0942fa0\n", encoding="utf-8")
     (OUT / "app.js").write_text(JS, encoding="utf-8")
     (OUT / ".nojekyll").write_text("", encoding="utf-8")
     global HEADER_ROI
