@@ -32,6 +32,7 @@ OUT = ROOT / "_site"
 SITE_NAME = "競馬全頭ログ"
 X_URL = "https://x.com/zentou_log"
 IG_URL = "https://www.instagram.com/zentou_log/"
+OFUSE_URL = "https://ofuse.me/zentou_log"
 GA_ID = "G-MFLTSL1RVP"
 ADSENSE_PUB = "ca-pub-2715397557499691"
 ADSENSE_TAG = f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADSENSE_PUB}" crossorigin="anonymous"></script>'
@@ -161,6 +162,7 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False
 <footer class="wrap foot">
 <p>本サイトの予想は情報提供を目的としたもので、的中や利益を保証するものではありません。馬券の購入はご自身の判断と責任で行ってください。20歳未満の方は馬券を購入できません。</p>
 <p>レース情報は主催者の発表が正です。成績は全予想を各点100円の均等買いとして集計しています。</p>
+<p class="support">このサイトは個人が運営しています。サーバー代やX投稿のAPI代の支援は <a href="{OFUSE_URL}" target="_blank" rel="noopener">OFUSE（投げ銭・ファンレター）</a> から。支援の有無で予想の内容や公開範囲は変わりません。</p>
 <p class="sns">最新の予想と的中速報は <a href="{X_URL}" target="_blank" rel="noopener me">X（@zentou_log）</a>・<a href="{IG_URL}" target="_blank" rel="noopener me">Instagram</a> でも配信中</p>
 <p class="sitemap-links"><a href="/graded/">重賞</a>　<a href="/review/">重賞回顧</a>　<a href="/strategy/">買い方別の回収率</a>　<a href="/course/">コース別</a>　<a href="/jockey/">騎手別</a>　<a href="/horse/">馬別</a>　<a href="/column/">コラム</a></p>
 <p><a href="/operator/">運営者情報</a>　<a href="/privacy/">プライバシーポリシー</a>　<a href="{REPO}/issues">お問い合わせ</a></p>
@@ -852,6 +854,7 @@ ABOUT = f"""<h1>予想の方法</h1>{banner("about")}
 <li>状態・ローテ（×1）：間隔、休み明け、馬体重</li>
 <li>人的・その他（×1）：騎手、厩舎、斤量、血統</li></ul></section>
 <section class="card"><h2>印・自信度・買い目</h2><p>評価点の上位に想定勝率を付け、「想定勝率×単勝オッズ」が1.2以上を妙味あり、0.8未満を過剰人気とする。印は◎（本命）〇（対抗）▲（単穴）△（連下）☆（穴）。自信度はA・B・C・見送りの4段階。2026年11月1日からは◎の想定勝率で決めている（A：40%以上、B：30〜39%、C：30%未満）。近走データが不足するレースは見送りとする。買い目は2026年11月2日から型で固定している：◎の単複1点（1〜2番人気は複勝、3〜5番人気は単勝、6番人気以下は買わない）と、3連複フォーメーション（◎→〇▲→印全部）。馬連・馬単・3連単・ワイドは使わない。</p></section>
+<section class="card support-box"><h2>運営を支援する</h2><p>予想・集計・SNS投稿はすべて自動で動いていますが、サーバー代やX投稿のAPI代は個人で負担しています。応援してもよいと思ったら、<a href="{OFUSE_URL}" target="_blank" rel="noopener">OFUSE（オフセ）</a>からファンレターと一緒に支援できます（コンビニ・PayPay・クレジットカード対応）。支援の有無で予想の内容や公開範囲は変わりません。</p><p><a class="btn" href="{OFUSE_URL}" target="_blank" rel="noopener">OFUSEで応援する</a></p></section>
 <section class="card"><h2>よくある質問</h2>
 <h3>回収率はどう計算していますか</h3><p>全予想の買い目を各点100円で買ったものとして、払戻の合計÷投資の合計で計算しています。外れたレースも除外しません。</p>
 <h3>どのレースを予想していますか</h3><p>JRAと地方競馬の、その日に開催される全レースです。データが不足するレースは「見送り」として記録します。</p>
@@ -876,6 +879,7 @@ OPERATOR = f"""<h1>運営者情報</h1>
 <tr><th>内容</th><td>AIによる競馬予想と、その成績（回収率）の記録・公開</td></tr>
 <tr><th>予想の作成</th><td>AI（Anthropic社のClaude）が公開データをもとに作成。作成手順とプログラムは<a href="{REPO}">GitHub</a>で公開</td></tr>
 <tr><th>SNS</th><td><a href="{X_URL}">X（@zentou_log）</a>・<a href="{IG_URL}">Instagram（@zentou_log）</a></td></tr>
+<tr><th>運営の支援</th><td><a href="{OFUSE_URL}">OFUSE（ofuse.me/zentou_log）</a></td></tr>
 <tr><th>お問い合わせ</th><td><a href="{REPO}/issues">GitHubのIssues</a>からご連絡ください</td></tr>
 </table></section>
 <section class="card"><h2>免責事項</h2><p>本サイトの予想・情報は正確性や完全性を保証するものではありません。本サイトの情報を利用して生じた損害について、運営者は責任を負いません。馬券の購入はご自身の判断と責任で行ってください。</p></section>"""
@@ -987,6 +991,8 @@ table{border-collapse:collapse;width:100%;font-size:14px;background:var(--panel)
 h1 small{display:block;font-size:14px;color:var(--mut);font-family:"BIZ UDPGothic",sans-serif;font-weight:400;margin-top:2px}
 
 .banner{margin:6px 0 14px}.banner img{width:100%;height:auto;aspect-ratio:16/5;object-fit:cover;object-position:right center;display:block;border:1px solid var(--line)}@media (max-width:720px){.banner img{aspect-ratio:16/8}}.live .banner{margin:4px 0 10px}.venue-pic{float:right;width:min(42%,360px);margin:0 0 10px 16px}.venue-pic img{width:100%;height:auto;display:block;border:1px solid var(--line)}@media (max-width:720px){.venue-pic{float:none;width:100%;margin:0 0 10px}}
+
+.support{margin-top:10px}.btn{display:inline-block;background:var(--acc);color:#fff;padding:7px 16px;border-radius:2px;font-weight:700}.btn:hover{text-decoration:none;opacity:.9}
 """
 
 JS = """(function(){
