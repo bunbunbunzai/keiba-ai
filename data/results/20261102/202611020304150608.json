@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261102",
  "race_id": "202611020304150608",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,116 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 9,
+   "name": "ドウナンリュウホオ",
+   "time": "1:43.8",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 2,
+   "number": 2,
+   "name": "キタデテンセイ",
+   "time": "1:48.8",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 10,
+   "name": "クリスタルソウル",
+   "time": "1:53.3",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 5,
+   "name": "カイウンセンショウ",
+   "time": "1:55.0",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 7,
+   "name": "エイコウキング",
+   "time": "1:56.0",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 1,
+   "number": 1,
+   "name": "ホクセイワッショイ",
+   "time": "1:58.0",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 3,
+   "name": "インテグラル",
+   "time": "2:01.5",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 8,
+   "name": "キンカザン",
+   "time": "2:04.9",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 6,
+   "number": 6,
+   "name": "ツカサエンゼル",
+   "time": "2:12.9",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 4,
+   "number": 4,
+   "name": "ミレン",
+   "time": "2:40.4",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
