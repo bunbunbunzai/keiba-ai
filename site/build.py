@@ -181,18 +181,21 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False
 <link rel="stylesheet" href="/style.css?v={ASSET_V}">
 {head_extra}
 </head><body data-built="{BUILT_ISO}">
+<a class="skip" href="#main">本文へ</a>
 <header class="top"><div class="wrap">
 <div class="bar"><a class="logo" href="/">{'<img src="/assets/logo-mark-96.png" alt="" width="44" height="44">' if LOGO else ''}<span><b>{SITE_NAME}</b><small>{SITE_SUB}</small></span></a>{HEADER_ROI}</div>
 <form class="srch" action="/search/" role="search"><input type="search" name="q" placeholder="馬名・レース名で検索" aria-label="サイト内検索" autocomplete="off"><div class="sres" hidden></div></form>
 <nav><a href="/">今日の予想</a><a href="/graded/">重賞</a><a href="/results/">成績</a><a href="/strategy/">買い方別</a><a href="/venue/">競馬場</a>{'<a href="/column/">コラム</a>' if HAS_COLUMN else ''}<a href="/about/">予想の方法</a></nav>
 </div></header>
-<main class="wrap">{body}</main>
+<main class="wrap" id="main">{body}</main>
+<a class="totop" href="#main" hidden aria-label="ページの先頭へ">↑</a>
 <footer class="wrap foot">
 <p>本サイトの予想は情報提供を目的としたもので、的中や利益を保証するものではありません。馬券の購入はご自身の判断と責任で行ってください。20歳未満の方は馬券を購入できません。</p>
 <p>レース情報は主催者の発表が正です。成績は全予想を各点100円の均等買いとして集計しています。</p>
 <p class="support">このサイトは個人が運営しています。サーバー代やX投稿のAPI代の支援は <a href="{OFUSE_URL}" target="_blank" rel="noopener">OFUSE（投げ銭・ファンレター）</a> から。支援の有無で予想の内容や公開範囲は変わりません。</p>
 <p class="sns">最新の予想と的中速報は <a href="{X_URL}" target="_blank" rel="noopener me">X（@zentou_log）</a>・<a href="{IG_URL}" target="_blank" rel="noopener me">Instagram</a> でも配信中</p>
 <p class="sitemap-links"><a href="/graded/">重賞</a>　<a href="/review/">重賞回顧</a>　<a href="/monthly/">月次レポート</a>　<a href="/strategy/">買い方別の回収率</a>　<a href="/course/">コース別</a>　<a href="/jockey/">騎手別</a>　<a href="/horse/">馬別</a>　<a href="/column/">コラム</a>　<a href="/glossary/">用語集</a>　<a href="/limits/">AI予想の限界</a>　<a href="/changelog/">更新履歴</a></p>
+<p class="prefs"><button type="button" class="theme" data-mode="auto">表示：自動</button></p>
 <p><a href="/operator/">運営者情報</a>　<a href="/privacy/">プライバシーポリシー</a>　<a href="/contact/">お問い合わせ</a></p>
 </footer>
 <script src="/app.js?v={ASSET_V}"></script>
@@ -525,6 +528,7 @@ ALL_DATES: list[str] = []
 LINK_HORSES: set = set()
 LINK_JOCKEYS: set = set()
 LINK_COURSES: set = set()
+FEED_EXTRA: list = []
 VENUE_PIC = {"東京": "turf", "京都": "turf", "中山": "turf", "阪神": "turf", "新潟": "turf", "福島": "turf", "中京": "turf", "小倉": "turf", "札幌": "turf", "函館": "turf", "帯広": "banei"}
 
 
@@ -747,7 +751,12 @@ def day_list(date: str, preds: list[dict]) -> str:
     tmr = (f"<p class='notice'><a href='{day_path(tomorrow)}'>明日（{fmt_date(tomorrow)}）の予想を公開しました →</a></p>"
            if today and tomorrow in ALL_DATES else "")
     stale = "<p class='notice stale' hidden>このページの最終更新から時間がたっています。結果の反映が遅れている可能性があります。</p>" if today else ""
-    return (stale + tmr + date_tabs(date) + h + scoreboard(date, preds) + picks_html(date, preds, today, hid) + filters(venues)
+    gl = [p for p in preds if extra.grade_of(p["_race"], p.get("race_name") or p["_race"].get("race_name") or "")]
+    glist = ""
+    if len(gl) >= 2:
+        glist = ("<section class='card'><h2>{}の重賞</h2><ul class='races rlist'>".format("今日" if today else "この日")
+                 + "".join(race_item(date, p) for p in sorted(gl, key=lambda q: q["_race"].get("post_time") or "")) + "</ul></section>")
+    return (stale + tmr + date_tabs(date) + h + scoreboard(date, preds) + glist + picks_html(date, preds, today, hid) + filters(venues)
             + (f"<p class='jump'><a href='#next' class='to-next'>次の発走へ ↓</a><button class='toggle-gone'>発走済みを表示</button></p>" if today else "")
             + "<ul class='races rlist'>" + "".join(race_item(date, p) for p in preds) + "</ul>")
 
@@ -827,12 +836,12 @@ def results_page(rows: list[dict], venue_of_race: dict) -> str:
 <section class="card"><h2>券種別</h2>{column.stats(STATS_FROM)[1]["table_bets"]}</section>
 <section class="card"><h2>日別</h2><div class="scroll">{table(daily, '日付')}</div></section>
 <p class="meta">買い方を変えた場合の回収率は<a href="/strategy/">買い方別</a>、コースごとの成績と傾向は<a href="/course/">コース別</a>、騎手ごとは<a href="/jockey/">騎手別</a>、重賞は<a href="/graded/">重賞一覧</a>へ。</p>
-<p class="meta">集計対象は自動運用を始めた2026年10月26日以降で、見送り（買い目なし）は除いている。全予想の記録（CSV）は<a href="{REPO}/blob/main/results_ledger.csv">GitHub</a>で公開している。</p>"""
+<p class="meta">集計対象は自動運用を始めた2026年10月26日以降で、見送り（買い目なし）は除いている。全予想の記録（CSV）は<a href="/data/results_ledger.csv" download>ダウンロード</a>でき、<a href="{REPO}/blob/main/results_ledger.csv">GitHub</a>でも公開している。</p>"""
     ld = {"@context": "https://schema.org", "@type": "Dataset", "name": f"{SITE_NAME} AI競馬予想 全成績",
           "description": "日本の競馬（JRA・地方）全レースのAI予想と結果・回収率の記録（各点100円の均等買い）",
           "url": BASE_URL + "/results/", "license": "https://creativecommons.org/licenses/by/4.0/",
           "distribution": [{"@type": "DataDownload", "encodingFormat": "text/csv",
-                            "contentUrl": f"{REPO}/blob/main/results_ledger.csv"}]}
+                            "contentUrl": BASE_URL + "/data/results_ledger.csv"}]}
     return page(f"AI競馬予想の成績・回収率（{t['n']}レース累計{t['roi']}） | {SITE_NAME}", body, "/results/",
                 desc=f"AI競馬予想の全成績。{asof}時点で{t['n']}レース、累計回収率{t['roi']}、◎勝率{t['win']}。自信度別・場別・日別の回収率。",
                 head_extra=jsonld(ld))
@@ -1047,7 +1056,7 @@ PRIVACY = f"""<h1>プライバシーポリシー</h1>
 <section class="card"><h2>改定</h2><p>本ポリシーは必要に応じて改定することがあります。制定日：2026年10月27日／改定日：2026年11月1日（Googleアナリティクスの利用を追記）</p></section>"""
 
 CSS = """:root{--bg:#f2f3f0;--panel:#fff;--fg:#17201b;--mut:#5f6761;--line:#d9dcd6;--rule:#17201b;--acc:#146b45;--acc-soft:#e3efe8;--hit:#c0122d;--hit-soft:#fbe9ec;--tg:#8a6100;--miss:#7a807b;--card:var(--panel);--won:var(--hit-soft)}
-@media (prefers-color-scheme:dark){:root{--bg:#141614;--panel:#1c1f1c;--fg:#ecefe9;--mut:#a4aba5;--line:#343934;--rule:#ecefe9;--acc:#6cc497;--acc-soft:#1f2e26;--hit:#ff7b8c;--hit-soft:#3a2126;--tg:#d9a93a;--miss:#8b918c}}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#141614;--panel:#1c1f1c;--fg:#ecefe9;--mut:#a4aba5;--line:#343934;--rule:#ecefe9;--acc:#6cc497;--acc-soft:#1f2e26;--hit:#ff7b8c;--hit-soft:#3a2126;--tg:#d9a93a;--miss:#8b918c}}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 "BIZ UDPGothic","Hiragino Sans","Noto Sans JP",system-ui,sans-serif;font-variant-numeric:tabular-nums}
 a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
@@ -1156,6 +1165,14 @@ h1 small{display:block;font-size:14px;color:var(--mut);font-family:"BIZ UDPGothi
 .term{color:inherit;border-bottom:1px dotted var(--acc);text-decoration:none}.term:hover{color:var(--acc);text-decoration:none}.plain{background:var(--panel);border:1px solid var(--line);padding:8px 12px;margin:0 0 10px;font-size:15px}.gloss dt{font-weight:700;margin-top:14px;font-family:"Shippori Mincho B1",serif;font-size:17px}.gloss dd{margin:2px 0 0;padding-left:0}.log{padding-left:1.2em}.log li{margin:6px 0}
 
 .srch{position:relative;margin:0 0 6px}.srch input{width:100%;max-width:360px;font:inherit;font-size:14px;padding:6px 10px;border:1px solid var(--line);border-radius:2px;background:var(--panel);color:var(--fg)}.sres{position:absolute;z-index:20;left:0;top:100%;width:100%;max-width:360px;background:var(--panel);border:1px solid var(--line);box-shadow:0 6px 18px rgba(0,0,0,.08)}.sres a{display:flex;flex-direction:column;padding:6px 10px;color:var(--fg);border-bottom:1px solid var(--line)}.sres a:hover{background:var(--acc-soft);text-decoration:none}.sres small{color:var(--mut);font-size:12px}.sres p{padding:6px 10px}#sr a{display:flex;justify-content:space-between;gap:12px;padding:8px 10px;border-bottom:1px solid var(--line);color:var(--fg)}#sr{background:var(--panel);border-top:2px solid var(--rule)}
+
+:root[data-theme=dark]{--bg:#141614;--panel:#1c1f1c;--fg:#ecefe9;--mut:#a4aba5;--line:#343934;--rule:#ecefe9;--acc:#6cc497;--acc-soft:#1f2e26;--hit:#ff7b8c;--hit-soft:#3a2126;--tg:#d9a93a;--miss:#8b918c}
+:root[data-theme=light]{--bg:#f2f3f0;--panel:#fff;--fg:#17201b;--mut:#5f6761;--line:#d9dcd6;--rule:#17201b;--acc:#146b45;--acc-soft:#e3efe8;--hit:#c0122d;--hit-soft:#fbe9ec;--tg:#8a6100;--miss:#7a807b}
+.skip{position:absolute;left:-999px;top:8px;background:var(--rule);color:var(--bg);padding:6px 12px;z-index:50}.skip:focus{left:8px}
+.totop{position:fixed;right:14px;bottom:18px;width:40px;height:40px;border-radius:50%;background:var(--rule);color:var(--bg);display:flex;align-items:center;justify-content:center;font-size:18px;box-shadow:0 2px 8px rgba(0,0,0,.2);z-index:30}.totop:hover{text-decoration:none}
+.prefs .theme{border:1px solid var(--line);background:var(--panel);color:var(--fg);border-radius:2px;padding:2px 10px;font:inherit;font-size:12px;cursor:pointer}
+th.sortable{cursor:pointer;user-select:none}th.sortable:hover{color:var(--acc)}th[data-dir=asc]::after{content:" ▲";font-size:10px}th[data-dir=desc]::after{content:" ▼";font-size:10px}
+.cd{color:var(--acc);font-weight:700}
 """
 
 JS = """(function(){
@@ -1181,11 +1198,21 @@ document.addEventListener('click',function(e){var a=e.target.closest('a');if(!a)
   picks.sort(function(a,b){return a.d<b.d?1:-1}).forEach(function(p){var r=(data[p.d]||{})[p.path];if(!r||!r.fin||!Object.keys(r.fin).length){pend++;rows.push([p,null]);return;}var me=parseInt(r.fin[p.pick])||99,ai=parseInt(r.fin[String(r.ai)])||99;var res=me<ai?'win':me>ai?'lose':'draw';if(res==='win')win++;else if(res==='lose')lose++;else draw++;rows.push([p,{me:r.fin[p.pick]||'-',ai:r.fin[String(r.ai)]||'-',aiNo:r.ai,res:res,label:r.label}]);});
   var html="<div class='kpis'><div><b>"+win+"勝"+lose+"敗"+(draw?draw+"分":"")+"</b><span>あなた vs AI</span></div><div><b>"+(win+lose?Math.round(100*win/(win+lose)):0)+"%</b><span>あなたの勝率</span></div><div><b>"+pend+"</b><span>結果待ち</span></div></div>";
   html+="<ul class='days'>"+rows.map(function(x){var p=x[0],r=x[1];var lab=r?r.label:p.path;var t=r?("あなた◎"+p.pick+"番 "+r.me+"着／AI◎"+r.aiNo+"番 "+r.ai+"着 → "+(r.res==='win'?'あなたの勝ち':r.res==='lose'?'AIの勝ち':'引き分け')):("あなた◎"+p.pick+"番　結果待ち");return "<li><a href='"+p.path+"'><span>"+p.d.slice(4,6).replace(/^0/,'')+"/"+p.d.slice(6).replace(/^0/,'')+" "+lab+"</span><span>"+t+"</span></a></li>"}).join('')+"</ul>";el.innerHTML=html;});})();
-var st={venue:'all',conf:'all'};
+var st={venue:'all',conf:'all'};try{var sv=JSON.parse(localStorage.getItem('filters')||'{}');if(sv.venue&&document.querySelector(".filters button[data-venue='"+sv.venue+"']"))st.venue=sv.venue;if(sv.conf)st.conf=sv.conf;}catch(e){}
+document.querySelectorAll('.filters').forEach(function(f){var k=f.dataset.kind;f.querySelectorAll('button').forEach(function(b){b.classList.toggle('on',b.dataset[k]===st[k])});});if(st.venue!=='all'||st.conf!=='all')setTimeout(function(){apply()},0);
+(function(){var b=document.querySelector('.totop');if(!b)return;window.addEventListener('scroll',function(){b.hidden=window.scrollY<800},{passive:true});})();
+(function(){var btn=document.querySelector('.theme');if(!btn)return;var modes=['auto','light','dark'],lbl={auto:'表示：自動',light:'表示：ライト',dark:'表示：ダーク'};var m='auto';try{m=localStorage.getItem('theme')||'auto'}catch(e){}
+ function apply(){if(m==='auto')document.documentElement.removeAttribute('data-theme');else document.documentElement.setAttribute('data-theme',m);btn.textContent=lbl[m];btn.dataset.mode=m;}
+ apply();btn.addEventListener('click',function(){m=modes[(modes.indexOf(m)+1)%3];try{localStorage.setItem('theme',m)}catch(e){}apply();});})();
+(function(){document.querySelectorAll('table').forEach(function(t){var ths=t.querySelectorAll('thead th');if(ths.length<2||t.querySelectorAll('tbody tr').length<3)return;ths.forEach(function(th,i){th.classList.add('sortable');th.addEventListener('click',function(){var tb=t.querySelector('tbody'),rows=[].slice.call(tb.rows),asc=th.dataset.dir!=='asc';
+  rows.sort(function(a,b){var x=(a.cells[i]||{}).textContent||'',y=(b.cells[i]||{}).textContent||'';var nx=parseFloat(x.replace(/[^0-9.+-]/g,'')),ny=parseFloat(y.replace(/[^0-9.+-]/g,''));if(!isNaN(nx)&&!isNaN(ny))return asc?nx-ny:ny-nx;return asc?x.localeCompare(y,'ja'):y.localeCompare(x,'ja');});
+  rows.forEach(function(r){tb.appendChild(r)});ths.forEach(function(h){delete h.dataset.dir});th.dataset.dir=asc?'asc':'desc';});});});})();
+(function(){var li=document.querySelector('.races li.next');if(!li)return;var p=li.dataset.post;if(!p||p.length<12)return;var t=new Date(p.slice(0,4)+'-'+p.slice(4,6)+'-'+p.slice(6,8)+'T'+p.slice(8,10)+':'+p.slice(10,12)+':00+09:00').getTime();var el=li.querySelector('.rsub');if(!el)return;var sp=document.createElement('span');sp.className='cd';el.appendChild(sp);
+ function tick(){var m=Math.round((t-Date.now())/60000);sp.textContent=m>0?'　あと'+(m>=60?Math.floor(m/60)+'時間'+(m%60)+'分':m+'分'):'';}tick();setInterval(tick,30000);})();
 function apply(){document.querySelectorAll('.races li').forEach(function(li){
  var ok=(st.venue==='all'||li.dataset.venue===st.venue)&&(st.conf==='all'||li.dataset.conf===st.conf);li.style.display=ok?'':'none';});}
 document.querySelectorAll('.filters').forEach(function(f){f.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;
- f.querySelectorAll('button').forEach(function(x){x.classList.toggle('on',x===b)});var k=f.dataset.kind;st[k]=b.dataset[k];apply();});});
+ f.querySelectorAll('button').forEach(function(x){x.classList.toggle('on',x===b)});var k=f.dataset.kind;st[k]=b.dataset[k];try{localStorage.setItem('filters',JSON.stringify(st))}catch(e){}apply();});});
 var now=new Date(Date.now()+9*3600e3),s=now.toISOString().replace(/[-:T]/g,'').slice(0,12),first=null;
 (function(){var b=document.body.dataset.built;if(!b)return;var age=(Date.now()-Date.parse(b))/36e5;var st=document.querySelector('.notice.stale');if(st&&age>6)st.hidden=false;
  if(document.querySelector('.today')&&document.querySelector('.races li[data-post]')){var pend=[].some.call(document.querySelectorAll('.races li[data-post]'),function(li){return !li.querySelector('.res.hit,.res.miss,.res.tg')&&li.dataset.conf!=='見送り'});
@@ -1292,11 +1319,18 @@ def build() -> None:
                 lastmod[path] = f"{d[:4]}-{d[4:6]}-{d[6:8]}"
         st, rt = day_stats(ps)
         day_rows.append((d, len(ps), roi_txt(st, rt)))
+        dog = "/og/default.jpg"
+        if d >= (datetime.now(JST) - timedelta(days=OG_DAYS)).strftime("%Y%m%d"):
+            dog = f"/og/{d}/day.jpg"
+            _done = [scored(p) for p in ps if scored(p) and scored(p)["stake"]]
+            og.site_image(OUT / dog.lstrip("/"), f"{fmt_date(d)}の予想　{len({venue_of(p) for p in ps})}場・{len(ps)}レース",
+                          [f"確定{len(_done)}レース　的中{sum(1 for x in _done if x['return'] > 0)}　回収率{roi_txt(st, rt)}" if _done else "全レースの印・買い目を公開中",
+                           "外れも含めた全成績を公開"])
         write(day_path(d), page(f"{fmt_date(d)}の競馬AI予想 全{len(ps)}レース | {SITE_NAME}",
                                 f"<p class='crumb'><a href='/'>トップ</a> › {fmt_date(d)}</p><h1>{fmt_date(d)}のAI予想</h1>"
                                 f"<p class='answer'>{fmt_date(d)}は{len({venue_of(p) for p in ps})}場・{len(ps)}レースを予想。当日回収率は{roi_txt(st, rt)}。</p>"
                                 + day_list(d, ps), day_path(d),
-                                desc=f"{fmt_date(d)}の競馬（JRA・地方）全{len(ps)}レースのAI予想と結果。当日回収率{roi_txt(st, rt)}。"))
+                                desc=f"{fmt_date(d)}の競馬（JRA・地方）全{len(ps)}レースのAI予想と結果。当日回収率{roi_txt(st, rt)}。", og_image=dog))
         lastmod[day_path(d)] = f"{d[:4]}-{d[4:6]}-{d[6:8]}"
     # トップ：今日（無ければ最新日）を中心に
     led = ledger()
@@ -1318,7 +1352,8 @@ def build() -> None:
                 "potentialAction": {"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": BASE_URL + "/search/?q={search_term_string}"}, "query-input": "required name=search_term_string"}}]
     write("/", page(f"{SITE_NAME}｜今日の競馬AI予想（JRA・地方 全レース）と回収率", body, "/",
                     desc=f"AIが中央競馬・地方競馬の全レースを毎日予想。今日の予想と、外れも含めた全成績（累計回収率{t['roi']}）を公開。",
-                    head_extra="".join(jsonld(x) for x in site_ld)))
+                    head_extra="".join(jsonld(x) for x in site_ld),
+                    og_image=f"/og/{main_d}/day.jpg" if main_d and (OUT / "og" / main_d / "day.jpg").exists() else "/og/default.jpg"))
     write("/results/", results_page(led, venue_of_race))
     # 戦略別回収率
     sg = strategy.collect(by_date, STATS_FROM)
@@ -1334,6 +1369,8 @@ def build() -> None:
     lastmod.update(review.build_pages(_sys.modules[__name__], by_date, today))
     lastmod.update(horses.build_pages(_sys.modules[__name__], by_date, today))
     lastmod.update(monthly.build_pages(_sys.modules[__name__], by_date, led, venue_of_race, today))
+    FEED_EXTRA[:] = [(k, "重賞回顧 " + k.split("/")[2]) for k in lastmod if k.startswith("/review/2")][:3] + \
+                    [(k, "月次レポート " + k.split("/")[2]) for k in lastmod if k.startswith("/monthly/2")][:2]
     # 検索索引（馬名・レース名・重賞名 → ページ）。小さく保つため、馬は最新1件のレースページへ
     idx: dict[str, list] = {}
     for d in sorted(by_date):  # 古い順に回して最新で上書き
@@ -1395,8 +1432,8 @@ def build() -> None:
         (OUT / old).write_text(redirect_page(new), encoding="utf-8")
     social_page()
     write("/404.html", page(f"ページが見つかりません | {SITE_NAME}",
-                            "<h1>ページが見つかりません</h1><p class='answer'>URLが変わったか、削除された可能性がある。</p>"
-                            "<ul><li><a href='/'>今日の予想</a></li><li><a href='/results/'>成績</a></li><li><a href='/venue/'>競馬場別</a></li></ul>",
+                            "<h1>ページが見つかりません</h1><p class='answer'>URLが変わったか、削除された可能性がある。上の検索欄で馬名やレース名から探せる。</p>"
+                            "<ul><li><a href='/'>今日の予想</a></li><li><a href='/graded/'>重賞</a></li><li><a href='/results/'>成績</a></li><li><a href='/venue/'>競馬場別</a></li><li><a href='/column/'>コラム</a></li></ul>",
                             "/404.html", noindex=True))
     items = []
     for d, n, roi in day_rows[:30]:
@@ -1404,6 +1441,9 @@ def build() -> None:
                      f"<link>{BASE_URL}{day_path(d)}</link><guid>{BASE_URL}{day_path(d)}</guid>"
                      f"<pubDate>{datetime.strptime(d, '%Y%m%d').replace(tzinfo=JST, hour=9).strftime('%a, %d %b %Y %H:%M:%S %z')}</pubDate>"
                      f"<description>{esc(fmt_date(d))}の中央・地方全{n}レースのAI予想と結果。当日回収率{esc(roi)}。</description></item>")
+    for path_, title_ in [(x, y) for x, y in FEED_EXTRA][:10]:
+        items.append(f"<item><title>{esc(title_)}</title><link>{BASE_URL}{path_}</link><guid>{BASE_URL}{path_}</guid>"
+                     f"<pubDate>{now.strftime('%a, %d %b %Y %H:%M:%S %z')}</pubDate><description>{esc(title_)}</description></item>")
     (OUT / "feed.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel>'
         f"<title>{SITE_NAME}</title><link>{BASE_URL}/</link><description>{SITE_SUB}</description><language>ja</language>"
@@ -1411,6 +1451,9 @@ def build() -> None:
     k = Path(__file__).resolve().parent / "indexnow_key.txt"
     if k.exists():
         (OUT / f"{k.read_text().strip()}.txt").write_text(k.read_text().strip(), encoding="utf-8")
+    (OUT / "data").mkdir(exist_ok=True)
+    if (ROOT / "results_ledger.csv").exists():
+        shutil.copy(ROOT / "results_ledger.csv", OUT / "data" / "results_ledger.csv")
     (OUT / "CNAME").write_text(DOMAIN + "\n", encoding="utf-8")
     (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {BASE_URL}/sitemap.xml\n", encoding="utf-8")
     (OUT / "llms.txt").write_text(
