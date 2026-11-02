@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261102",
  "race_id": "202611021006100205",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,116 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 2,
+   "number": 2,
+   "name": "マッシブショット",
+   "time": "1:11.6",
+   "margin": "",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 4,
+   "number": 4,
+   "name": "アドマイヤパープル",
+   "time": "1:12.7",
+   "margin": "７",
+   "pos4": 2,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "ヤマニンバルトロ",
+   "time": "1:13.2",
+   "margin": "３",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 10,
+   "name": "エネルゲイア",
+   "time": "1:13.7",
+   "margin": "３",
+   "pos4": 4,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 7,
+   "name": "ファンタズマ",
+   "time": "1:13.8",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 1,
+   "number": 1,
+   "name": "グレイスルーラー",
+   "time": "1:13.9",
+   "margin": "３／４",
+   "pos4": 7,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 6,
+   "name": "サーティファイド",
+   "time": "1:14.1",
+   "margin": "１ １／４",
+   "pos4": 8,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 9,
+   "name": "ミスメリッサ",
+   "time": "1:14.1",
+   "margin": "ハナ",
+   "pos4": 6,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 8,
+   "name": "フィルモアテソーロ",
+   "time": "1:14.8",
+   "margin": "４",
+   "pos4": 9,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 5,
+   "name": "マローディープ",
+   "time": "1:15.8",
+   "margin": "６",
+   "pos4": 10,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
