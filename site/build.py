@@ -33,6 +33,7 @@ SITE_NAME = "競馬全頭ログ"
 X_URL = "https://x.com/zentou_log"
 IG_URL = "https://www.instagram.com/zentou_log/"
 OFUSE_URL = "https://ofuse.me/zentou_log"
+CONTACT_MAIL = "keibalog.kouho@gmail.com"
 GA_ID = "G-MFLTSL1RVP"
 ADSENSE_PUB = "ca-pub-2715397557499691"
 ADSENSE_TAG = f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADSENSE_PUB}" crossorigin="anonymous"></script>'
@@ -165,7 +166,7 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False
 <p class="support">このサイトは個人が運営しています。サーバー代やX投稿のAPI代の支援は <a href="{OFUSE_URL}" target="_blank" rel="noopener">OFUSE（投げ銭・ファンレター）</a> から。支援の有無で予想の内容や公開範囲は変わりません。</p>
 <p class="sns">最新の予想と的中速報は <a href="{X_URL}" target="_blank" rel="noopener me">X（@zentou_log）</a>・<a href="{IG_URL}" target="_blank" rel="noopener me">Instagram</a> でも配信中</p>
 <p class="sitemap-links"><a href="/graded/">重賞</a>　<a href="/review/">重賞回顧</a>　<a href="/strategy/">買い方別の回収率</a>　<a href="/course/">コース別</a>　<a href="/jockey/">騎手別</a>　<a href="/horse/">馬別</a>　<a href="/column/">コラム</a></p>
-<p><a href="/operator/">運営者情報</a>　<a href="/privacy/">プライバシーポリシー</a>　<a href="{REPO}/issues">お問い合わせ</a></p>
+<p><a href="/operator/">運営者情報</a>　<a href="/privacy/">プライバシーポリシー</a>　<a href="/contact/">お問い合わせ</a></p>
 </footer>
 <script src="/app.js?v={ASSET_V}"></script>
 </body></html>"""
@@ -871,6 +872,29 @@ FAQ_LD = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
     {"@type": "Question", "name": "予想は後から変わりますか",
      "acceptedAnswer": {"@type": "Answer", "text": "当日昼にオッズや馬場の傾向を見て前日の予想を見直すことがあり、変更理由を更新履歴に残します。発走後の変更はしません。"}}]}
 
+CONTACT = f"""<h1>お問い合わせ</h1>
+<p class="answer">予想の内容についてのご意見、データの誤り、サイトの不具合、広告掲載や取材のご相談などは、このフォームからお送りください。通常2〜3日以内に返信します。</p>
+<form class="contact" action="https://formsubmit.co/{CONTACT_MAIL}" method="POST">
+<input type="hidden" name="_subject" value="【競馬全頭ログ】お問い合わせ">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="true">
+<input type="hidden" name="_next" value="{BASE_URL}/contact/thanks/">
+<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+<label>お名前（ニックネーム可）<input type="text" name="name" required maxlength="60"></label>
+<label>メールアドレス<input type="email" name="email" required></label>
+<label>種類<select name="kind">
+<option>予想・データについて</option><option>サイトの不具合</option><option>広告掲載・取材</option><option>その他</option></select></label>
+<label>対象のページ（任意）<input type="url" name="page" placeholder="https://www.ai-keiba-log.com/..."></label>
+<label>内容<textarea name="message" rows="7" required maxlength="3000"></textarea></label>
+<p class="meta">送信いただいた内容は、回答のためにのみ使用します。<a href="/privacy/">プライバシーポリシー</a></p>
+<button type="submit" class="btn">送信する</button>
+</form>
+<p class="meta">フォームが使えない場合は、メールで {CONTACT_MAIL} へお送りください。</p>"""
+
+THANKS = f"""<h1>送信しました</h1>
+<p class="answer">お問い合わせを受け付けました。通常2〜3日以内に、ご記入のメールアドレスへ返信します。</p>
+<p><a href="/">トップへ戻る</a></p>"""
+
 OPERATOR = f"""<h1>運営者情報</h1>
 <section class="card"><table>
 <tr><th>サイト名</th><td>{SITE_NAME}（{SITE_SUB}）</td></tr>
@@ -880,7 +904,7 @@ OPERATOR = f"""<h1>運営者情報</h1>
 <tr><th>予想の作成</th><td>AI（Anthropic社のClaude）が公開データをもとに作成。作成手順とプログラムは<a href="{REPO}">GitHub</a>で公開</td></tr>
 <tr><th>SNS</th><td><a href="{X_URL}">X（@zentou_log）</a>・<a href="{IG_URL}">Instagram（@zentou_log）</a></td></tr>
 <tr><th>運営の支援</th><td><a href="{OFUSE_URL}">OFUSE（ofuse.me/zentou_log）</a></td></tr>
-<tr><th>お問い合わせ</th><td><a href="{REPO}/issues">GitHubのIssues</a>からご連絡ください</td></tr>
+<tr><th>お問い合わせ</th><td><a href="/contact/">お問い合わせフォーム</a>、またはメール {CONTACT_MAIL}</td></tr>
 </table></section>
 <section class="card"><h2>免責事項</h2><p>本サイトの予想・情報は正確性や完全性を保証するものではありません。本サイトの情報を利用して生じた損害について、運営者は責任を負いません。馬券の購入はご自身の判断と責任で行ってください。</p></section>"""
 
@@ -993,6 +1017,8 @@ h1 small{display:block;font-size:14px;color:var(--mut);font-family:"BIZ UDPGothi
 .banner{margin:6px 0 14px}.banner img{width:100%;height:auto;aspect-ratio:16/5;object-fit:cover;object-position:right center;display:block;border:1px solid var(--line)}@media (max-width:720px){.banner img{aspect-ratio:16/8}}.live .banner{margin:4px 0 10px}.venue-pic{float:right;width:min(42%,360px);margin:0 0 10px 16px}.venue-pic img{width:100%;height:auto;display:block;border:1px solid var(--line)}@media (max-width:720px){.venue-pic{float:none;width:100%;margin:0 0 10px}}
 
 .support{margin-top:10px}.btn{display:inline-block;background:var(--acc);color:#fff;padding:7px 16px;border-radius:2px;font-weight:700}.btn:hover{text-decoration:none;opacity:.9}
+
+.contact{max-width:560px;display:grid;gap:12px}.contact label{display:grid;gap:4px;font-size:14px;font-weight:700}.contact input,.contact select,.contact textarea{font:inherit;font-weight:400;padding:8px 10px;border:1px solid var(--line);border-radius:2px;background:var(--panel);color:var(--fg);width:100%}.contact textarea{resize:vertical}.contact .btn{border:0;font:inherit;font-weight:700;cursor:pointer;justify-self:start}
 """
 
 JS = """(function(){
@@ -1119,6 +1145,9 @@ def build() -> None:
     lastmod.update(extra.build_pages(_sys.modules[__name__], by_date, today))
     lastmod.update(review.build_pages(_sys.modules[__name__], by_date, today))
     lastmod.update(horses.build_pages(_sys.modules[__name__], by_date, today))
+    write("/contact/", page(f"お問い合わせ | {SITE_NAME}", f"<p class='crumb'><a href='/'>トップ</a> › お問い合わせ</p>" + CONTACT, "/contact/",
+                            desc="競馬全頭ログへのお問い合わせフォーム。予想やデータについてのご意見、不具合の報告、広告掲載・取材のご相談。"))
+    write("/contact/thanks/", page(f"送信しました | {SITE_NAME}", THANKS, "/contact/thanks/", noindex=True))
     write("/about/", page(f"予想の方法とよくある質問 | {SITE_NAME}", ABOUT, "/about/", head_extra=jsonld(FAQ_LD),
                           desc="競馬全頭ログの予想の作り方（評価の5軸・印・自信度・買い目）と、回収率の計算方法。"))
     write("/operator/", page(f"運営者情報 | {SITE_NAME}", OPERATOR, "/operator/"))
@@ -1151,7 +1180,7 @@ def build() -> None:
         f"# {SITE_NAME}\n\n> AI（Claude）が日本の競馬（JRA・地方）の全レースを毎日予想し、外れも含めた全予想の回収率を公開するサイト。\n\n"
         f"- [今日の予想]({BASE_URL}/)\n- [成績・回収率]({BASE_URL}/results/)：累計{t['n']}レース・回収率{t['roi']}\n"
         f"- [買い方別の回収率]({BASE_URL}/strategy/)\n- [重賞回顧]({BASE_URL}/review/)\n- [馬別のAI評価履歴]({BASE_URL}/horse/)\n- [予想の方法]({BASE_URL}/about/)\n" + (f"- [初心者向けコラム]({BASE_URL}/column/)：馬券の種類・回収率・人気と勝率などを実データで解説\n" if HAS_COLUMN else "") + f"- [全予想の記録CSV]({REPO}/blob/main/results_ledger.csv)\n", encoding="utf-8")
-    fixed = {"/": today_iso, "/results/": today_iso, "/strategy/": today_iso, "/about/": None, "/operator/": None, "/privacy/": None}
+    fixed = {"/": today_iso, "/results/": today_iso, "/strategy/": today_iso, "/about/": None, "/contact/": None, "/operator/": None, "/privacy/": None}
     sm = "".join(f"<url><loc>{BASE_URL}{u}</loc>{f'<lastmod>{m}</lastmod>' if m else ''}</url>"
                  for u, m in list(fixed.items()) + sorted(lastmod.items(), reverse=True))
     (OUT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + sm + "</urlset>\n", encoding="utf-8")
