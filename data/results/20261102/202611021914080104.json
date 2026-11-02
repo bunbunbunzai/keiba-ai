@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261102",
  "race_id": "202611021914080104",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,105 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 4,
+   "name": "クリノセノーテ",
+   "time": "1:14.9",
+   "margin": "",
+   "pos4": 4,
+   "last3f": 37.9,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 7,
+   "name": "ラストショット",
+   "time": "1:15.4",
+   "margin": "２ １／２",
+   "pos4": 1,
+   "last3f": 38.6,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 1,
+   "number": 1,
+   "name": "エッグスクランブル",
+   "time": "1:15.5",
+   "margin": "１／２",
+   "pos4": 9,
+   "last3f": 37.2,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 3,
+   "name": "セキテイジュウオー",
+   "time": "1:15.8",
+   "margin": "１ １／２",
+   "pos4": 1,
+   "last3f": 39.2,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 5,
+   "name": "ドジッコ",
+   "time": "1:16.1",
+   "margin": "１ １／２",
+   "pos4": 6,
+   "last3f": 38.5,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 9,
+   "name": "シャイニーライフ",
+   "time": "1:16.5",
+   "margin": "２",
+   "pos4": 8,
+   "last3f": 38.8,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 8,
+   "name": "エターナルフィズ",
+   "time": "1:17.0",
+   "margin": "２ １／２",
+   "pos4": 7,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 6,
+   "number": 6,
+   "name": "ハクアイゴブレイ",
+   "time": "1:17.1",
+   "margin": "３／４",
+   "pos4": 1,
+   "last3f": 40.5,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "バルカロール",
+   "time": "1:19.2",
+   "margin": "大差",
+   "pos4": 4,
+   "last3f": 42.6,
+   "popularity": null
+  }
+ ]
 }
