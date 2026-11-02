@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261102",
  "race_id": "202611021914080110",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 6,
+   "name": "ショコラブレッド",
+   "time": "1:15.1",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 38.9,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "エイシンダズル",
+   "time": "1:15.2",
+   "margin": "３／４",
+   "pos4": 6,
+   "last3f": 37.6,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "ゼンカイパイロ",
+   "time": "1:15.3",
+   "margin": "３／４",
+   "pos4": 9,
+   "last3f": 37.5,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 7,
+   "name": "フラワーフローラ",
+   "time": "1:16.2",
+   "margin": "４",
+   "pos4": 3,
+   "last3f": 39.4,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 12,
+   "name": "ザーシッダレイ",
+   "time": "1:16.3",
+   "margin": "３／４",
+   "pos4": 3,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 1,
+   "number": 1,
+   "name": "ラタランテラ",
+   "time": "1:16.3",
+   "margin": "クビ",
+   "pos4": 2,
+   "last3f": 39.9,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 4,
+   "name": "セレナエフォール",
+   "time": "1:16.5",
+   "margin": "１",
+   "pos4": 9,
+   "last3f": 39.0,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 9,
+   "name": "プレストエンペラー",
+   "time": "1:16.6",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": 39.5,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 10,
+   "name": "アーバンヒーロー",
+   "time": "1:17.5",
+   "margin": "４",
+   "pos4": 7,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 2,
+   "number": 2,
+   "name": "アルマヴィーヴァ",
+   "time": "1:17.9",
+   "margin": "２",
+   "pos4": 7,
+   "last3f": 41.0,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 8,
+   "number": 11,
+   "name": "クラジャンク",
+   "time": "1:21.5",
+   "margin": "大差",
+   "pos4": 11,
+   "last3f": 42.9,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 6,
+   "number": 8,
+   "name": "トラペジウム",
+   "time": "-",
+   "margin": "除外",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
