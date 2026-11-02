@@ -1,12 +1,12 @@
 {
  "date": "20261102",
- "updated": "2026-11-02 16:54",
+ "updated": "2026-11-02 17:00",
  "races_total": 48,
- "races_scored": 30,
- "stake": 18100,
- "return": 9770,
- "roi": 54.0,
- "hit_races": 19,
+ "races_scored": 31,
+ "stake": 18700,
+ "return": 11020,
+ "roi": 58.9,
+ "hit_races": 20,
  "honmei_win": 10,
  "honmei_top3": 20,
  "races": [
@@ -87,11 +87,11 @@
    "race_id": "202611020304150605",
    "confidence": "B",
    "honmei": 3,
-   "honmei_finish": null,
+   "honmei_finish": "5",
    "top3": [
-    null,
-    null,
-    null
+    10,
+    5,
+    1
    ],
    "stake": 400,
    "return": 0,
@@ -386,7 +386,7 @@
   {
    "race_id": "202611021006100211",
    "confidence": "C",
-   "honmei": 3,
+   "honmei": 10,
    "honmei_finish": null,
    "top3": [
     null,
@@ -409,7 +409,7 @@
     null,
     null
    ],
-   "stake": 600,
+   "stake": 800,
    "return": 0,
    "roi": 0.0,
    "hits": [],
@@ -498,15 +498,18 @@
     null
    ],
    "stake": 600,
-   "return": 0,
-   "roi": 0.0,
-   "hits": [],
-   "voided": true
+   "return": 1250,
+   "roi": 208.3,
+   "hits": [
+    "複勝 1 120円",
+    "3連複 1-4-6 1130円"
+   ],
+   "voided": false
   },
   {
    "race_id": "202611021914080106",
-   "confidence": "B",
-   "honmei": 6,
+   "confidence": "C",
+   "honmei": 11,
    "honmei_finish": null,
    "top3": [
     null,
@@ -521,7 +524,7 @@
   },
   {
    "race_id": "202611021914080107",
-   "confidence": "B",
+   "confidence": "A",
    "honmei": 8,
    "honmei_finish": null,
    "top3": [
@@ -569,7 +572,7 @@
   },
   {
    "race_id": "202611021914080110",
-   "confidence": "C",
+   "confidence": "B",
    "honmei": 8,
    "honmei_finish": null,
    "top3": [
@@ -585,8 +588,8 @@
   },
   {
    "race_id": "202611021914080111",
-   "confidence": "A",
-   "honmei": 10,
+   "confidence": "C",
+   "honmei": 9,
    "honmei_finish": null,
    "top3": [
     null,
@@ -601,7 +604,7 @@
   },
   {
    "race_id": "202611021914080112",
-   "confidence": "C",
+   "confidence": "B",
    "honmei": 4,
    "honmei_finish": null,
    "top3": [
