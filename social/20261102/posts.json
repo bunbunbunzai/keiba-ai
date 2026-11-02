@@ -93,11 +93,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/02/kasamatsu/12r/",
    "created": "2026-11-02 16:49",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2117185108163584296",
    "x_at": "2026-11-02 18:20",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AeMRPnA9HrEj63DT6oEH2Qz'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AI2d-GSiux1ZWUpuTkvY6fQ'}",
+   "instagram_tries": 3
   },
   "hit-202611020304150607": {
    "kind": "hit",
@@ -110,8 +110,8 @@
    "instagram": "pending",
    "x_id": "2117222387280220217",
    "x_at": "2026-11-02 20:48",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'At5cRnJHdZTQ_EEFo7LHH-B'}",
-   "instagram_tries": 1
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A60TRLqD5-cTLdhsH28uUwT'}",
+   "instagram_tries": 2
   },
   "hit-202611021006100210": {
    "kind": "hit",
@@ -124,8 +124,8 @@
    "instagram": "pending",
    "x_id": "2117222391503786376",
    "x_at": "2026-11-02 20:48",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A0dYSHwWjBO0U1EzJWi3XXd'}",
-   "instagram_tries": 1
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AODSovK3iZDe2h0_CFcmdgv'}",
+   "instagram_tries": 2
   },
   "hit-202611021914080105": {
    "kind": "hit",
@@ -138,8 +138,8 @@
    "instagram": "pending",
    "x_id": "2117222395421315332",
    "x_at": "2026-11-02 20:48",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AJxyglv60TpSpWm5v0cNhB7'}",
-   "instagram_tries": 1
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AGtTYWh2nbKDAwczjl3FIhw'}",
+   "instagram_tries": 2
   },
   "hit-202611021914080107": {
    "kind": "hit",
@@ -152,8 +152,18 @@
    "instagram": "pending",
    "x_id": "2117222399418478825",
    "x_at": "2026-11-02 20:48",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AJgiN12t5P2thntw_H74-PW'}",
-   "instagram_tries": 1
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AGMPhQOlhD_ZQDCoEstMBom'}",
+   "instagram_tries": 2
+  },
+  "sum-20261102": {
+   "kind": "summary",
+   "image": "/social/20261102/sum-20261102.jpg",
+   "x_text": "【11/2 AI予想の全成績】\n帯広・盛岡・笠松・船橋の48レース\n的中25（うちプラス9）／当日回収率50.1%\n収支-14,720円（各点100円・外れも含む）\n最高：笠松8R 払戻2,160円\n累計回収率67.9%\n#競馬予想 #地方競馬 #AI予想 #回収率",
+   "ig_caption": "【11/2 AI予想の全成績】\n帯広・盛岡・笠松・船橋の48レース\n的中25（うちプラス9）／当日回収率50.1%\n収支-14,720円（各点100円・外れも含む）\n最高：笠松8R 払戻2,160円\n累計回収率67.9%\n\nこの日の全レースの予想と成績 → www.ai-keiba-log.com/2026/11/02/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#競馬予想 #地方競馬 #AI予想 #回収率 #競馬 #競馬全頭ログ",
+   "url": "https://www.ai-keiba-log.com/2026/11/02/",
+   "created": "2026-11-02 21:13",
+   "x": "pending",
+   "instagram": "pending"
   }
  }
 }
