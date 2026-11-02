@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261102",
  "race_id": "202611022320120402",
- "tries": 2,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,116 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 4,
+   "name": "サンモリッツ",
+   "time": "1:31.2",
+   "margin": "",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "ケファロニア",
+   "time": "1:31.6",
+   "margin": "２",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 9,
+   "name": "キタノエンブラ",
+   "time": "1:32.5",
+   "margin": "４",
+   "pos4": 5,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 10,
+   "name": "シュガームーン",
+   "time": "1:33.0",
+   "margin": "２ １／２",
+   "pos4": 5,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 6,
+   "name": "リアルスティンガー",
+   "time": "1:33.3",
+   "margin": "１ １／２",
+   "pos4": 9,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 3,
+   "number": 3,
+   "name": "ルクリリ",
+   "time": "1:33.4",
+   "margin": "１／２",
+   "pos4": 8,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 7,
+   "name": "カムバックトゥミー",
+   "time": "1:33.6",
+   "margin": "１",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "サンマルオブウォー",
+   "time": "1:34.1",
+   "margin": "２ １／２",
+   "pos4": 10,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "エイシンリーディン",
+   "time": "1:34.3",
+   "margin": "３／４",
+   "pos4": 2,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 8,
+   "name": "メアナニヒキナ",
+   "time": "1:35.0",
+   "margin": "３",
+   "pos4": 5,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
