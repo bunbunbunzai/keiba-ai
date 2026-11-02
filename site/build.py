@@ -26,6 +26,7 @@ import og
 import strategy
 import review
 import horses
+import monthly
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "_site"
@@ -173,6 +174,7 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False
 <meta property="og:url" content="{BASE_URL}{path}"><meta property="og:type" content="website"><meta property="og:site_name" content="{SITE_NAME}">
 <meta property="og:image" content="{BASE_URL}{og_image}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{BASE_URL}{og_image}">
+<meta name="theme-color" content="#146b45"><link rel="manifest" href="/manifest.webmanifest">
 {FAVICON}<link rel="alternate" type="application/rss+xml" title="{SITE_NAME}" href="/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Shippori+Mincho+B1:wght@700;800&display=swap">
@@ -190,7 +192,7 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False
 <p>レース情報は主催者の発表が正です。成績は全予想を各点100円の均等買いとして集計しています。</p>
 <p class="support">このサイトは個人が運営しています。サーバー代やX投稿のAPI代の支援は <a href="{OFUSE_URL}" target="_blank" rel="noopener">OFUSE（投げ銭・ファンレター）</a> から。支援の有無で予想の内容や公開範囲は変わりません。</p>
 <p class="sns">最新の予想と的中速報は <a href="{X_URL}" target="_blank" rel="noopener me">X（@zentou_log）</a>・<a href="{IG_URL}" target="_blank" rel="noopener me">Instagram</a> でも配信中</p>
-<p class="sitemap-links"><a href="/graded/">重賞</a>　<a href="/review/">重賞回顧</a>　<a href="/strategy/">買い方別の回収率</a>　<a href="/course/">コース別</a>　<a href="/jockey/">騎手別</a>　<a href="/horse/">馬別</a>　<a href="/column/">コラム</a>　<a href="/glossary/">用語集</a>　<a href="/limits/">AI予想の限界</a>　<a href="/changelog/">更新履歴</a></p>
+<p class="sitemap-links"><a href="/graded/">重賞</a>　<a href="/review/">重賞回顧</a>　<a href="/monthly/">月次レポート</a>　<a href="/strategy/">買い方別の回収率</a>　<a href="/course/">コース別</a>　<a href="/jockey/">騎手別</a>　<a href="/horse/">馬別</a>　<a href="/column/">コラム</a>　<a href="/glossary/">用語集</a>　<a href="/limits/">AI予想の限界</a>　<a href="/changelog/">更新履歴</a></p>
 <p><a href="/operator/">運営者情報</a>　<a href="/privacy/">プライバシーポリシー</a>　<a href="/contact/">お問い合わせ</a></p>
 </footer>
 <script src="/app.js?v={ASSET_V}"></script>
@@ -346,7 +348,7 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
             f"<li class='hr{' mk' if num in mk else ''}{' top' if str(fin) in ('1', '2', '3') else ''}'>"
             f"<span class='c-no'><b class='fr f{esc(h.get('frame') or fr.get('frame') or frame_of(num, len(horses) or len(evals)))}'>{esc(num)}</b></span>"
             f"<span class='c-mk mark'>{esc(mk.get(num, ''))}</span>"
-            f"<span class='c-nm'><b>{esc(h.get('name') or e.get('name'))}</b><small>{esc(h.get('jockey'))}{' ・' + esc(h.get('sex_age')) if h.get('sex_age') else ''}</small></span>"
+            f"<span class='c-nm'><b>{link_horse(h.get('name') or e.get('name'))}</b><small>{link_jockey(h.get('jockey'))}{' ・' + esc(h.get('sex_age')) if h.get('sex_age') else ''}</small></span>"
             f"<span class='c-od'>{esc(odds) if odds else '-'}<small>{f'{esc(pop)}人気' if pop else ''}</small></span>"
             f"<span class='c-sc'>{esc(e.get('score')) if e.get('score') is not None else '-'}<small>{f'勝率{esc(wp)}%' if wp else ''}</small></span>"
             f"<span class='c-vl'>{val or '-'}{tag}</span>"
@@ -434,7 +436,7 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
     ]
     body = f"""
 <p class="crumb"><a href="/">トップ</a> › <a href="{day_path(date)}">{fmt_date(date)}</a> › <a href="{venue_path(venue)}">{esc(VENUE_NAME.get(venue, venue))}</a> › {race_no(p)}R</p>
-<h1>{esc(race_label(p))} 予想</h1><p class="meta">{esc(meta)}</p>
+<h1>{esc(race_label(p))} 予想</h1><p class="meta">{esc(meta)}{course_link(p)}</p>
 <p class="answer">{esc(answer_sentence(date, p))}</p>
 <section class="card"><div class="marks">{marks_html}</div>{f"<p class='subs'>{esc(subs)}</p>" if subs else ''}
 <p>{term("confidence", "自信度")} <span class="conf c{esc(p.get('confidence'))}">{esc(p.get('confidence'))}</span></p>
@@ -520,6 +522,9 @@ def race_cond(p: dict) -> str:
 
 
 ALL_DATES: list[str] = []
+LINK_HORSES: set = set()
+LINK_JOCKEYS: set = set()
+LINK_COURSES: set = set()
 VENUE_PIC = {"東京": "turf", "京都": "turf", "中山": "turf", "阪神": "turf", "新潟": "turf", "福島": "turf", "中京": "turf", "小倉": "turf", "札幌": "turf", "函館": "turf", "帯広": "banei"}
 
 
@@ -564,6 +569,27 @@ def hero(date: str, preds: list[dict]) -> tuple[str, str | None]:
             f"<div class='hbody'><p class='hlabel'>{lbl}{grade_badge(p)}</p>"
             f"<h2><a href='{race_path(date, p)}'>{esc(extra.nfkc(race_label(p)))}</a></h2><p class='meta'>{esc(race_cond(p))}　自信度 <span class='conf c{esc(p.get('confidence'))}'>{esc(p.get('confidence'))}</span></p>"
             f"<p class='hmarks'>{marks}</p>{res}</div></section>"), p["race_id"]
+
+
+def link_horse(name) -> str:
+    nm = extra.nfkc(name or "").replace(" ", "")
+    return f"<a href='/horse/{extra.short_id(nm)}/'>{esc(name)}</a>" if nm in LINK_HORSES else esc(name)
+
+
+def link_jockey(name) -> str:
+    nm = extra.nfkc(name or "").replace(" ", "")
+    return f"<a href='/jockey/{extra.short_id(nm)}/'>{esc(name)}</a>" if nm in LINK_JOCKEYS else esc(name)
+
+
+def course_link(p: dict) -> str:
+    r = p["_race"]
+    if not r.get("distance"):
+        return ""
+    surf = "turf" if r.get("surface") == "芝" else "jump" if r.get("surface") == "障" else "dirt"
+    key = f"{VENUE_SLUG.get(venue_of(p), 'venue')}-{surf}-{int(r['distance'])}"
+    if key not in LINK_COURSES:
+        return ""
+    return f"　<a href='/course/{key}/'>このコースの傾向</a>"
 
 
 def plain_line(p: dict) -> str:
@@ -742,7 +768,8 @@ def svg_line(points: list[float], w=640, h=180, labels: list[str] | None = None)
                   for i in range(0, len(points), step)) if labels else ""
     dots = "".join(f"<circle cx='{x:.1f}' cy='{y:.1f}' r='2.5' class='pt'/>" for x, y in zip(xs, ys)) if len(points) <= 40 else ""
     path = " ".join(f"{'M' if i == 0 else 'L'}{x:.1f},{y:.1f}" for i, (x, y) in enumerate(zip(xs, ys)))
-    return (f"<svg viewBox='0 0 {w} {h}' class='chart' role='img' aria-label='累計回収率の推移'>"
+    desc_ = f"累計回収率の推移。最初{points[0]:.1f}%から最新{points[-1]:.1f}%。最高{max(points):.1f}%、最低{min(points):.1f}%。点線は100%。"
+    return (f"<svg viewBox='0 0 {w} {h}' class='chart' role='img' aria-label='{esc(desc_)}'><title>{esc(desc_)}</title>"
             f"<line x1='30' x2='{w - 10}' y1='{y100:.1f}' y2='{y100:.1f}' class='base'/>"
             f"<text x='2' y='{y100 + 4:.1f}' class='lbl'>100%</text>"
             f"<path d='{path}' class='ln'/>{dots}{lab}<circle cx='{xs[-1]:.1f}' cy='{ys[-1]:.1f}' r='4' class='pt'/>"
@@ -1198,6 +1225,10 @@ def build() -> None:
         shutil.rmtree(OUT)
     OUT.mkdir()
     (OUT / "style.css").write_text(CSS, encoding="utf-8")
+    (OUT / "manifest.webmanifest").write_text(json.dumps({
+        "name": SITE_NAME, "short_name": SITE_NAME, "start_url": "/", "display": "standalone", "background_color": "#f2f3f0", "theme_color": "#146b45", "lang": "ja",
+        "icons": [{"src": "/assets/logo-mark.png", "sizes": "512x512", "type": "image/png"}, {"src": "/assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png"}]},
+        ensure_ascii=False), encoding="utf-8")
     (OUT / "ads.txt").write_text(f"google.com, {ADSENSE_PUB.replace('ca-', '')}, DIRECT, f08c47fec0942fa0\n", encoding="utf-8")
     (OUT / "app.js").write_text(JS, encoding="utf-8")
     (OUT / ".nojekyll").write_text("", encoding="utf-8")
@@ -1225,8 +1256,30 @@ def build() -> None:
     day_rows = []
     by_date = {}
     for d in dates:
-        ps = predictions(d)
-        by_date[d] = ps
+        by_date[d] = predictions(d)
+    # 内部リンク用：馬別・騎手別・コース別ページが作られる対象を先に数える
+    _hc, _jc, _cc = defaultdict(int), defaultdict(int), defaultdict(int)
+    for d, ps in by_date.items():
+        for p in ps:
+            for e in p.get("horses", []):
+                nm = extra.nfkc(e.get("name") or "").replace(" ", "")
+                if nm:
+                    _hc[nm] += 1
+            if d >= STATS_FROM:
+                sc_ = scored(p)
+                hon_ = p.get("marks", {}).get("◎")
+                hh_ = next((x for x in p["_race"].get("horses", []) if x.get("number") == hon_), None) if sc_ and hon_ is not None else None
+                if hh_ and hh_.get("jockey"):
+                    _jc[extra.nfkc(hh_["jockey"]).replace(" ", "")] += 1
+                r_ = p["_race"]
+                if sc_ and sc_["stake"] and r_.get("distance"):
+                    surf = "turf" if r_.get("surface") == "芝" else "jump" if r_.get("surface") == "障" else "dirt"
+                    _cc[f"{VENUE_SLUG.get(venue_of(p), 'venue')}-{surf}-{int(r_['distance'])}"] += 1
+    LINK_HORSES.clear(); LINK_HORSES.update(k for k, n in _hc.items() if n >= 2)
+    LINK_JOCKEYS.clear(); LINK_JOCKEYS.update(k for k, n in _jc.items() if n >= 5)
+    LINK_COURSES.clear(); LINK_COURSES.update(k for k, n in _cc.items() if n >= 5)
+    for d in dates:
+        ps = by_date[d]
         for i, p in enumerate(ps):
             venue_of_race[p["race_id"]] = venue_of(p)
             same = [q for q in ps if venue_of(q) == venue_of(p)]
@@ -1259,8 +1312,13 @@ def build() -> None:
     body = (f"<h1>{head}<small>{fmt_date(main_d) if main_d else ''}</small></h1>"
             f"<p class='answer'>AIが日本の競馬（JRA・地方）の全レースを毎日予想し、外れも含めた成績を公開している。累計回収率は{t['roi']}（{t['n']}レース、◎複勝率{t['top3']}）。<a href='/results/'>成績の詳細</a>　<span class='meta'>最終更新 {now.strftime('%m/%d %H:%M')}</span></p>"
             + top_list + (f"<section id='past'><h2>過去の予想</h2><ul class='days'>{past}</ul></section>" if past else ""))
+    site_ld = [{"@context": "https://schema.org", "@type": "Organization", "name": SITE_NAME, "url": BASE_URL + "/", "logo": BASE_URL + "/assets/logo-mark.png",
+                "sameAs": [X_URL, IG_URL], "contactPoint": {"@type": "ContactPoint", "contactType": "customer support", "url": BASE_URL + "/contact/"}},
+               {"@context": "https://schema.org", "@type": "WebSite", "name": SITE_NAME, "url": BASE_URL + "/",
+                "potentialAction": {"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": BASE_URL + "/search/?q={search_term_string}"}, "query-input": "required name=search_term_string"}}]
     write("/", page(f"{SITE_NAME}｜今日の競馬AI予想（JRA・地方 全レース）と回収率", body, "/",
-                    desc=f"AIが中央競馬・地方競馬の全レースを毎日予想。今日の予想と、外れも含めた全成績（累計回収率{t['roi']}）を公開。"))
+                    desc=f"AIが中央競馬・地方競馬の全レースを毎日予想。今日の予想と、外れも含めた全成績（累計回収率{t['roi']}）を公開。",
+                    head_extra="".join(jsonld(x) for x in site_ld)))
     write("/results/", results_page(led, venue_of_race))
     # 戦略別回収率
     sg = strategy.collect(by_date, STATS_FROM)
@@ -1275,6 +1333,7 @@ def build() -> None:
     lastmod.update(extra.build_pages(_sys.modules[__name__], by_date, today))
     lastmod.update(review.build_pages(_sys.modules[__name__], by_date, today))
     lastmod.update(horses.build_pages(_sys.modules[__name__], by_date, today))
+    lastmod.update(monthly.build_pages(_sys.modules[__name__], by_date, led, venue_of_race, today))
     # 検索索引（馬名・レース名・重賞名 → ページ）。小さく保つため、馬は最新1件のレースページへ
     idx: dict[str, list] = {}
     for d in sorted(by_date):  # 古い順に回して最新で上書き
