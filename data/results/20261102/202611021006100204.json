@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261102",
  "race_id": "202611021006100204",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -77,7 +77,7 @@
    "name": "ブルークレスト",
    "time": "1:14.0",
    "margin": "",
-   "pos4": null,
+   "pos4": 1,
    "last3f": null,
    "popularity": null
   },
@@ -88,7 +88,7 @@
    "name": "トモエナゲ",
    "time": "1:14.1",
    "margin": "３／４",
-   "pos4": null,
+   "pos4": 3,
    "last3f": null,
    "popularity": null
   },
@@ -99,7 +99,7 @@
    "name": "ラブマニック",
    "time": "1:14.4",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 2,
    "last3f": null,
    "popularity": null
   },
@@ -110,7 +110,7 @@
    "name": "ラスダシャン",
    "time": "1:14.5",
    "margin": "１／２",
-   "pos4": null,
+   "pos4": 4,
    "last3f": null,
    "popularity": null
   },
@@ -121,7 +121,7 @@
    "name": "ミヤビノオウザ",
    "time": "1:14.7",
    "margin": "１ １／４",
-   "pos4": null,
+   "pos4": 5,
    "last3f": null,
    "popularity": null
   },
@@ -132,7 +132,7 @@
    "name": "サトノメドーサ",
    "time": "1:14.8",
    "margin": "１／２",
-   "pos4": null,
+   "pos4": 6,
    "last3f": null,
    "popularity": null
   },
@@ -143,7 +143,7 @@
    "name": "ディーファンクス",
    "time": "1:14.9",
    "margin": "３／４",
-   "pos4": null,
+   "pos4": 7,
    "last3f": null,
    "popularity": null
   },
@@ -154,7 +154,7 @@
    "name": "ジーティーウブラブ",
    "time": "1:16.0",
    "margin": "７",
-   "pos4": null,
+   "pos4": 8,
    "last3f": null,
    "popularity": null
   },
