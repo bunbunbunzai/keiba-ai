@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261102",
  "race_id": "202611021914080112",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -77,9 +77,9 @@
    "name": "フェニーチェドーロ",
    "time": "1:36.4",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 2,
+   "last3f": 38.9,
+   "popularity": 1
   },
   {
    "finish": "2",
@@ -88,9 +88,9 @@
    "name": "ポップザットバディ",
    "time": "1:37.5",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 3,
+   "last3f": 39.5,
+   "popularity": 3
   },
   {
    "finish": "3",
@@ -99,9 +99,9 @@
    "name": "デルマウチガケ",
    "time": "1:37.7",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 4,
+   "last3f": 39.5,
+   "popularity": 6
   },
   {
    "finish": "4",
@@ -110,9 +110,9 @@
    "name": "ファイアーワルツ",
    "time": "1:37.9",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 1,
+   "last3f": 40.8,
+   "popularity": 4
   },
   {
    "finish": "5",
@@ -121,9 +121,9 @@
    "name": "ピリナマアナ",
    "time": "1:38.2",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 6,
+   "last3f": 39.6,
+   "popularity": 5
   },
   {
    "finish": "6",
@@ -132,9 +132,9 @@
    "name": "ラグーンリバティ",
    "time": "1:39.0",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 5,
+   "last3f": 41.0,
+   "popularity": 8
   },
   {
    "finish": "7",
@@ -143,9 +143,9 @@
    "name": "ラウレア",
    "time": "1:39.4",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 9,
+   "last3f": 40.4,
+   "popularity": 7
   },
   {
    "finish": "8",
@@ -154,9 +154,9 @@
    "name": "ゴールドパートナー",
    "time": "1:39.4",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 6,
+   "last3f": 41.0,
+   "popularity": 2
   },
   {
    "finish": "9",
@@ -165,9 +165,9 @@
    "name": "オランジー",
    "time": "1:40.0",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 8,
+   "last3f": 41.2,
+   "popularity": 9
   },
   {
    "finish": "10",
@@ -176,9 +176,9 @@
    "name": "マットーネロッソ",
    "time": "1:41.0",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 11,
+   "last3f": 41.4,
+   "popularity": 11
   },
   {
    "finish": "11",
@@ -187,9 +187,9 @@
    "name": "ハブル",
    "time": "1:44.2",
    "margin": "大差",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 9,
+   "last3f": 46.6,
+   "popularity": 10
   }
  ]
 }
