@@ -1,0 +1,21 @@
+name = "keiba-ask"
+main = "src/index.js"
+compatibility_date = "2025-10-01"
+
+# 回数制限のカウンタ（Durable Object・SQLite）。KVより書き込み上限が緩い
+[[durable_objects.bindings]]
+name = "LIMITS"
+class_name = "Limits"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Limits"]
+
+[vars]
+SITE_ORIGIN = "https://www.ai-keiba-log.com"
+MODEL = "claude-haiku-5-5"
+# 制限（1日あたり）。費用の上限はこれで決まる：1回あたり約0.3〜1円
+LIMIT_IP_DAY = "30"
+LIMIT_IP_MIN = "5"
+LIMIT_SITE_DAY = "600"
+MAX_Q_CHARS = "200"

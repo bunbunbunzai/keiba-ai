@@ -1,0 +1,28 @@
+name: worker (「AIに質問」のCloudflare Workersを配備)
+
+# worker/ 配下が変わったとき、または手動で起動。
+# 必要なSecrets：CLOUDFLARE_API_TOKEN（Workers編集権限）、CLOUDFLARE_ACCOUNT_ID、ANTHROPIC_API_KEY
+on:
+  push:
+    branches: [main]
+    paths: ["worker/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: worker
+          command: deploy
+          secrets: |
+            ANTHROPIC_API_KEY
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}

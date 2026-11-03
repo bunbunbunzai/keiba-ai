@@ -51,6 +51,7 @@ AFF_RAKUTEN = "https://ad2.trafficgate.net/t/r/{id}/1958/319633_399587"
 AFF_RAKUTEN_IMG = "https://srv2.trafficgate.net/t/b/{id}/1958/319633_399587"
 
 
+ASK_URL = __import__("os").environ.get("ASK_URL", "").rstrip("/")  # 「AIに質問」の Workers のURL（空なら機能を出さない）
 AFF_SAIKYO_URL = "https://px.a8.net/svt/ejp?a8mat=4BE9CR+9T22IA+47AY+601S1"
 AFF_SAIKYO_IMG = "https://www20.a8.net/svt/bgt?aid=261005787593&wid=001&eno=01&mid=s00000019609001008000&mc=1"
 AFF_SAIKYO_PX = "https://www10.a8.net/0.gif?a8mat=4BE9CR+9T22IA+47AY+601S1"
@@ -351,6 +352,26 @@ def answer_sentence(date: str, p: dict) -> str:
     return s + (rt + "。" if rt else "")
 
 
+def ask_context(date: str, p: dict) -> str:
+    """「AIに質問」に渡すレース情報：出馬表と近走（digest と同じ形）＋AIの予想。"""
+    import sys as _s
+    sp = str(ROOT / "scraper")
+    if sp not in _s.path:
+        _s.path.insert(0, sp)
+    try:
+        import digest as _dg
+        base = _dg.detail(p["_race"], date)
+    except Exception:  # noqa: BLE001
+        base = ""
+    mk = p.get("marks", {})
+    marks = "、".join(f"{m}{mk[m]}{horse_name(p, mk[m])}" for m in ("◎", "〇", "▲") if mk.get(m) is not None)
+    sub = "、".join(f"{m}{'・'.join(str(x) for x in (v if isinstance(v, list) else [v]))}" for m, v in ((k, mk.get(k)) for k in ("△", "☆")) if v)
+    ev = "\n".join(f"{e.get('number')} {e.get('name')}：評価点{e.get('score')}" + (f" 想定勝率{e.get('win_pct')}%" if e.get("win_pct") is not None else "") + f" {e.get('comment') or ''}" for e in p.get("horses", []))
+    bets = "、".join(f"{b['type']} {b['combo']}" for b in p.get("bets", []))
+    ctx = (f"{base}\n\n【AIの予想】印：{marks}" + (f"、{sub}" if sub else "") + f"。自信度{p.get('confidence')}\n要約：{p.get('summary')}\n展開予想：{p.get('pace')}\n買い目（各100円）：{bets}\n全頭の評価：\n{ev}")
+    return ctx[:12000]
+
+
 # ---------------- レースページ ----------------
 def race_page(date: str, p: dict, prev_next: tuple) -> str:
     r = p["_race"]
@@ -450,6 +471,22 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
                      f"先行{int(b['front_share'] * 100)}%・内枠{int(b['inner_share'] * 100)}%・外枠{int(b['outer_share'] * 100)}%"
                      f"（{esc(b['updated'])}時点の最新判定。予想に使った時点の判定は更新履歴を参照）。"
                      + ("<a href='/column/track-bias/'>トラックバイアスとは</a>" if HAS_COLUMN else "") + "</p></section>")
+    ask_html = ""
+    if ASK_URL and p.get("confidence") != "見送り" and date >= TODAY and horses:
+        post_ = f"{date}{(r.get('post_time') or '23:59').replace(':', '')}"
+        try:
+            post_dt = datetime.strptime(post_, "%Y%m%d%H%M").replace(tzinfo=JST) - timedelta(minutes=20)
+            post_key = post_dt.strftime("%Y%m%d%H%M")
+        except ValueError:
+            post_key = post_
+        ctx = ask_context(date, p)
+        (OUT / "askdata" / date).mkdir(parents=True, exist_ok=True)
+        (OUT / "askdata" / date / f"{VENUE_SLUG.get(venue_of(p), 'venue')}-{race_no(p):02d}.json").write_text(
+            json.dumps({"label": race_label(p), "post": post_key, "context": ctx}, ensure_ascii=False), encoding="utf-8")
+        ask_html = (f"<section class='card ask' data-page='{race_path(date, p)}' data-post='{post_key}' data-url='{ASK_URL}'>"
+                    f"<h2>AIに質問</h2><p class='meta'>このレースの出馬表・近走・AIの評価をもとに、短く答える（発走20分前まで。1人1日30回、全体で1日600回まで）。例：「◎を軽視した理由は」「逃げ馬は何頭いる」「〇と▲の差は」</p>"
+                    f"<div class='pick'><input type='text' maxlength='200' placeholder='このレースについて質問' aria-label='質問'> <button type='button' class='go'>聞く</button></div>"
+                    f"<div class='alog'></div><p class='meta'>答えはAIの見立てで、的中を保証しない。質問の内容は回答のためだけに使い、保存しない。</p></section>")
     updates = "".join(f"<li><b>{esc(u.get('at'))}</b> {esc(u.get('text'))}</li>" for u in p.get("updates", []))
     meta = "・".join(x for x in [
         fmt_date(date),
@@ -488,6 +525,7 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
 <p class="meta">{term("score", "評価点")}は45点満点。{term("value", "妙味")}は「AIの{term("winpct", "想定勝率")}×単勝オッズ」で、1.2以上を妙味あり、0.8未満を過剰人気としている（オッズは取得時点のもの）。用語は<a href="/glossary/">用語集</a>へ。</p></section>
 {f'<section class="card"><h2>更新履歴</h2><ul>{updates}</ul></section>' if updates else ''}
 {graded_link}
+{ask_html}
 {vs_html}
 {share_html}
 {nav}
@@ -1092,7 +1130,8 @@ PRIVACY = f"""<h1>プライバシーポリシー</h1>
 <section class="card"><h2>広告の表記</h2><p>本サイトに掲載する広告・アフィリエイトリンクには、その旨を明記します。</p></section>
 <section class="card"><h2>改定</h2><p>本ポリシーは必要に応じて改定することがあります。制定日：2026年10月27日／改定日：2026年11月1日（Googleアナリティクスの利用を追記）</p></section>"""
 
-CSS = """.kaiko{border-left:3px solid var(--acc);padding:6px 10px;background:var(--acc-soft);line-height:1.7}
+CSS = """.ask .alog{margin-top:10px}.ask .qa{border-top:1px solid var(--line);padding:8px 0}.ask .qa .q{color:var(--mut);font-size:13px}.ask .qa .a{margin:4px 0 0;line-height:1.7}.ask input{flex:1;min-width:0}.ask .pick{display:flex;gap:8px}.ask .err{color:var(--hit);font-size:13px}
+.kaiko{border-left:3px solid var(--acc);padding:6px 10px;background:var(--acc-soft);line-height:1.7}
 .aff{font-size:13px;color:var(--mut);margin:10px 0 0;padding:8px 10px;border:1px dashed var(--line);background:var(--bg)}.aff a{color:var(--acc);font-weight:700}.pr{display:inline-block;font-size:10px;border:1px solid var(--mut);border-radius:2px;padding:0 4px;margin-right:6px;vertical-align:middle;color:var(--mut)}
 .affbox{margin:24px 0}.affbox p{margin:0 0 8px;font-size:14px;color:var(--fg)}.affbox img{max-width:100%;height:auto;display:block}
 :root{--bg:#f2f3f0;--panel:#fff;--fg:#17201b;--mut:#5f6761;--line:#d9dcd6;--rule:#17201b;--acc:#146b45;--acc-soft:#e3efe8;--hit:#c0122d;--hit-soft:#fbe9ec;--tg:#8a6100;--miss:#7a807b;--card:var(--panel);--won:var(--hit-soft)}
@@ -1215,7 +1254,15 @@ th.sortable{cursor:pointer;user-select:none}th.sortable:hover{color:var(--acc)}t
 .cd{color:var(--acc);font-weight:700}
 """
 
-JS = """(function(){
+JS = """(function(){var s=document.querySelector('.ask');if(!s)return;var inp=s.querySelector('input'),btn=s.querySelector('.go'),log=s.querySelector('.alog'),busy=false;
+function key(){var d=new Date();return 'askn:'+d.getFullYear()+d.getMonth()+d.getDate();}
+function add(cls,t){var d=document.createElement('div');d.className='qa';var q=document.createElement('p');q.className=cls;q.textContent=t;d.appendChild(q);log.appendChild(d);return d;}
+function go(){var q=(inp.value||'').trim();if(!q||busy)return;var n=0;try{n=parseInt(localStorage.getItem(key())||'0',10);}catch(e){}
+if(n>=30){add('err','本日の質問回数の上限に達した。');return;}busy=true;btn.disabled=true;var box=add('q','Q. '+q);var a=document.createElement('p');a.className='a';a.textContent='考え中…';box.appendChild(a);inp.value='';
+fetch(s.dataset.url+'/ask',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({page:s.dataset.page,q:q})}).then(function(r){return r.json().then(function(j){return [r.status,j];});}).then(function(x){var j=x[1];if(j.answer){a.textContent=j.answer;try{localStorage.setItem(key(),String(n+1));}catch(e){}if(window.gtag)gtag('event','ask',{page:location.pathname});}else{a.className='err';a.textContent=j.error||'答えを作れなかった。';}}).catch(function(){a.className='err';a.textContent='通信に失敗した。';}).then(function(){busy=false;btn.disabled=false;});}
+btn.addEventListener('click',go);inp.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();go();}});
+var post=s.dataset.post,now=new Date(Date.now()+9*3600*1000),k=now.toISOString().slice(0,10).replace(/-/g,'')+now.toISOString().slice(11,16).replace(':','');if(post&&k>=post){inp.disabled=true;btn.disabled=true;inp.placeholder='発走が近いため質問は締め切った';}})();
+(function(){
 function ga(n,p){try{if(window.gtag)gtag('event',n,p||{})}catch(e){}}
 document.addEventListener('click',function(e){var a=e.target.closest('a');if(!a)return;var h=a.href||'';
  if(a.closest('.share')){ga('share',{method:/line/.test(h)?'line':'x',page:location.pathname});return;}

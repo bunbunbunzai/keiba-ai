@@ -33,6 +33,8 @@ jobs:
           python-version: "3.12"
       - run: pip install pillow requests
       - run: python site/build.py
+        env:
+          ASK_URL: ${{ vars.ASK_URL }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
