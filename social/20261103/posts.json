@@ -299,11 +299,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/03/monbetsu/09r/",
    "created": "2026-11-03 16:07",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2117520931669291024",
    "x_at": "2026-11-03 16:35",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A6_yTs4TCIdc8vhYIl4kMQI'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A2fe7VLURmscqrtCopNKLKX'}",
+   "instagram_tries": 3
   }
  }
 }
