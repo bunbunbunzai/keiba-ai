@@ -54,15 +54,18 @@ AFF_RAKUTEN_IMG = "https://srv2.trafficgate.net/t/b/{id}/1958/319633_399587"
 AFF_SAIKYO_URL = "https://px.a8.net/svt/ejp?a8mat=4BE9CR+9T22IA+47AY+601S1"
 AFF_SAIKYO_IMG = "https://www20.a8.net/svt/bgt?aid=261005787593&wid=001&eno=01&mid=s00000019609001008000&mc=1"
 AFF_SAIKYO_PX = "https://www10.a8.net/0.gif?a8mat=4BE9CR+9T22IA+47AY+601S1"
+AFF_SAIKYO_TXT_URL = "https://px.a8.net/svt/ejp?a8mat=4BE9CR+9T22IA+47AY+61Z82"
+AFF_SAIKYO_TXT_PX = "https://www14.a8.net/0.gif?a8mat=4BE9CR+9T22IA+47AY+61Z82"
 
 
 def aff_saikyo() -> str:
     """競馬最強の法則WEB（A8）：コラム末尾用。人間の予想家と比べたい人向けの文脈で置く。"""
     return (f"<div class='aff affbox saikyo'><span class='pr'>PR</span><p>AIの予想と人間の予想家の見解を比べたい人には、競馬雑誌「競馬最強の法則」の予想情報サイト"
-            f"<a href='{AFF_SAIKYO_URL}' target='_blank' rel='nofollow sponsored noopener' data-aff='saikyo-web'>競馬最強の法則WEB</a>（無料会員登録あり）がある。"
+            f"<a href='{AFF_SAIKYO_TXT_URL}' target='_blank' rel='nofollow sponsored noopener' data-aff='saikyo-web'>競馬最強の法則WEB</a>（無料会員登録あり）がある。"
             f"AI予想を読むときの比較材料として使ってほしい。</p>"
             f"<a href='{AFF_SAIKYO_URL}' target='_blank' rel='nofollow sponsored noopener' data-aff='saikyo-web-banner'><img src='{AFF_SAIKYO_IMG}' alt='競馬最強の法則WEB' width='300' height='250' loading='lazy'></a>"
-            f"<img src='{AFF_SAIKYO_PX}' alt='' width='1' height='1' style='position:absolute;width:1px;height:1px'></div>")
+            f"<img src='{AFF_SAIKYO_PX}' alt='' width='1' height='1' style='position:absolute;width:1px;height:1px'>"
+            f"<img src='{AFF_SAIKYO_TXT_PX}' alt='' width='1' height='1' style='position:absolute;width:1px;height:1px'></div>")
 
 
 def aff_rakuten(kind: str = "race") -> str:
