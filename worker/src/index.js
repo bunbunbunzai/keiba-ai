@@ -34,9 +34,19 @@ export class Limits {
     this.sql.exec("CREATE TABLE IF NOT EXISTS c (k TEXT PRIMARY KEY, n INTEGER NOT NULL, exp INTEGER NOT NULL)");
   }
   async fetch(req) {
-    const { checks } = await req.json(); // [{k, limit, ttl}]
+    const body = await req.json(); // {checks:[{k, limit, ttl}]} または {peek:k} または {add:{k, n, ttl}}
     const now = Math.floor(Date.now() / 1000);
     this.sql.exec("DELETE FROM c WHERE exp < ?", now);
+    if (body.peek) {
+      const row = this.sql.exec("SELECT n FROM c WHERE k = ?", body.peek).toArray()[0];
+      return new Response(JSON.stringify({ n: row ? row.n : 0 }), { headers: JSON_HEADERS });
+    }
+    if (body.add) {
+      const a = body.add;
+      this.sql.exec("INSERT INTO c (k, n, exp) VALUES (?, ?, ?) ON CONFLICT(k) DO UPDATE SET n = n + ?", a.k, a.n, now + a.ttl, a.n);
+      return new Response(JSON.stringify({ ok: true }), { headers: JSON_HEADERS });
+    }
+    const { checks } = body;
     for (const c of checks) {
       const row = this.sql.exec("SELECT n FROM c WHERE k = ?", c.k).toArray()[0];
       if (row && row.n >= c.limit) return new Response(JSON.stringify({ ok: false, k: c.k }), { headers: JSON_HEADERS });
@@ -49,29 +59,48 @@ export class Limits {
 }
 
 const SYSTEM = `あなたは「競馬全頭ログ」（AIが中央・地方の全レースを予想し、外れも含めた成績を公開するサイト）の公式キャラクター「全頭くん」。レースページで読者の質問に答える。
-根拠にしてよいのは、与えられた【レース情報】（出馬表・各馬の近走・AIの予想と短評）と【このサイトのAI予想の過去の記録】、それに馬券の種類やルールなど競馬の一般的な知識だけ。
+根拠にしてよいのは、与えられた【レース情報】（出馬表・各馬の近走・AIの予想と短評）、【過去の公式レース結果】、【このサイトの過去の記録】、それに馬券の種類やルールなど競馬の一般的な知識。
+使い分け：コースの傾向・人気・配当など「競馬そのもの」の質問は、レース数の多い【過去の公式レース結果】を主な根拠にする。AIの印（◎〇▲△）がどれくらい来るかなど「このサイトの予想」の質問は【このサイトの過去の記録】を使う。両方あるときは、どちらの数字かが分かるように書く。
 日本語のです・ます調で、やさしく4文以内（250字以内）で答える。絵文字なし。競馬を始めたばかりの人にも分かる言葉を使い、「想定勝率×単勝」「妙味」「過剰人気」などサイト内の用語は「人気の割に勝ち目がある」「人気ほどの勝ち目はない」のように言い換える。
 【過去の記録】の見出しの意味：［A］その着順の馬が何の印だったか（レース単位の割合）、［B］その印の馬1頭あたりの着順の割合、［C］券種ごとの払戻（中央値・平均・最高・1万円以上の割合）、［D］1番人気の成績、［E］勝ち馬の位置取りと枠、［F］このサイトの買い目の的中率と回収率。［A］と［B］は意味が違うので混ぜて比べない。全体・競馬場・コースの数字があるときは、レース数の多いものを中心にし、少ないものは「参考程度」と添える。
 買い方の相談（例：「3連単で△を2着まで入れるべき？」「3連単の配当はどれくらい？」「このコースは前に行く馬が有利？」）には、これらの数字を示して、どちらの考え方にどんな根拠があるかを答える。フォーメーションや流しの点数は計算して示してよい。ただし「買うべき」とは言わず、決めるのは読者だと分かる言い方にする。
 情報に無いことは「このレースのデータには載っていません」と答え、推測で数字や事実を作らない。
 馬券の購入を勧めない、的中や利益を約束しない。競馬と無関係の質問には「このレースについての質問にお答えしています」とだけ返す。`;
 
-async function askClaude(env, context, q) {
+async function askClaude(env, context, q, allowSearch) {
   const body = {
     model: env.MODEL || "claude-haiku-5-5",
     max_tokens: 1500,
-    system: SYSTEM,
+    system: SYSTEM + (allowSearch ? SEARCH_NOTE : NO_SEARCH_NOTE),
     messages: [{ role: "user", content: `【レース情報】\n${context}\n\n【質問】${q}` }],
   };
+  if (allowSearch) {
+    body.tools = [{ type: "web_search_20250305", name: "web_search", max_uses: 1,
+      user_location: { type: "approximate", country: "JP", timezone: "Asia/Tokyo" } }];
+  }
   const r = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
     headers: { "x-api-key": env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
     body: JSON.stringify(body),
   });
-  if (!r.ok) throw new Error(`api ${r.status}`);
+  if (!r.ok) throw new Error(`api ${r.status} ${(await r.text()).slice(0, 200)}`);
   const j = await r.json();
-  return (j.content || []).filter((c) => c.type === "text").map((c) => c.text).join("").trim();
+  const texts = (j.content || []).filter((c) => c.type === "text");
+  const seen = new Set();
+  const sources = [];
+  for (const t of texts) {
+    for (const c of t.citations || []) {
+      if (c.url && !seen.has(c.url) && sources.length < 3) { seen.add(c.url); sources.push({ url: c.url, title: (c.title || c.url).slice(0, 80) }); }
+    }
+  }
+  const searches = (j.usage && j.usage.server_tool_use && j.usage.server_tool_use.web_search_requests) || 0;
+  return { text: texts.map((c) => c.text).join("").trim(), sources, searches };
 }
+
+const SEARCH_NOTE = `
+サイトのデータで答えられない一般的な情報（馬の血統や経歴、重賞の過去の傾向、騎手や馬の最近のニュースなど）が必要なときだけ、web_search を1回まで使ってよい。サイトのデータで答えられる数字は、サイトのデータを優先する。Webで調べたことは「〇〇によると」と出どころが分かるように書き、記事の文章を長く写さない。公式（JRA・地方競馬の主催者）や大手の報道を優先する。`;
+const NO_SEARCH_NOTE = `
+（今日はWeb検索の上限に達しているので、Webで調べる必要がある質問には「今日はこれ以上Webで調べられません。また明日どうぞ」と答える。）`;
 
 export default {
   async fetch(req, env) {
@@ -120,9 +149,14 @@ export default {
       return reply(env, req, 429, { error: msg });
     }
     try {
-      const answer = await askClaude(env, data.context, q);
-      return reply(env, req, 200, { answer: answer || "うまく答えられませんでした。聞き方を変えて、もう一度どうぞ。" });
+      const sk = `search:${day}`;
+      const used = await (await lim.fetch("https://limits/", { method: "POST", body: JSON.stringify({ peek: sk }) })).json();
+      const allowSearch = used.n < parseInt(env.LIMIT_SEARCH_DAY || "20", 10);
+      const ans = await askClaude(env, data.context, q, allowSearch);
+      if (ans.searches) await lim.fetch("https://limits/", { method: "POST", body: JSON.stringify({ add: { k: sk, n: ans.searches, ttl: 86400 } }) });
+      return reply(env, req, 200, { answer: ans.text || "うまく答えられませんでした。聞き方を変えて、もう一度どうぞ。", sources: ans.sources });
     } catch (e) {
+      console.log("ask failed", String(e));
       return reply(env, req, 502, { error: "いまは答えられません。少し待ってから、もう一度どうぞ。" });
     }
   },

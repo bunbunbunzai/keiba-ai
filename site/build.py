@@ -460,6 +460,76 @@ def mark_stats_text(key: str, label: str, full: bool = True) -> str:
     return "\n".join(lines)
 
 
+HIST_STATS: dict = {}  # 過去の公式レース結果（data/history）の集計。AIの予想とは無関係
+
+
+def build_hist_stats() -> dict:
+    acc: dict = {}
+    for src, area in (("jra", "中央"), ("local", "地方")):
+        for f in sorted((ROOT / "data" / "history" / src).glob("*/*.jsonl")):
+            for line in f.read_text(encoding="utf-8").splitlines():
+                try:
+                    r = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+                rows = [x for x in r.get("rows") or [] if str(x[0]).isdigit()]
+                if len(rows) < 3:
+                    continue
+                rows.sort(key=lambda x: int(x[0]))
+                win = rows[0]
+                n = r.get("n") or len(rows)
+                course = f"{r['v']}{r.get('s') or ''}{r['m']}m" if r.get("m") else ""
+                tan = (r.get("pay") or {}).get("単勝") or []
+                for key in {area, r["v"], course} - {""}:
+                    a = acc.setdefault(key, {"races": 0, "first": r["d"], "last": r["d"], "pay": {t: [] for t in BET_TYPES},
+                                             "pop_n": 0, "pop1_win": 0, "pop1_top3": 0, "winpop": [0, 0, 0],
+                                             "odds_n": 0, "odds": [0, 0, 0], "w_n": 0, "w_front": 0, "w_inner": 0})
+                    a["races"] += 1
+                    a["first"], a["last"] = min(a["first"], r["d"]), max(a["last"], r["d"])
+                    for t in BET_TYPES:
+                        a["pay"][t] += [int(y) for _, y in (r.get("pay") or {}).get(t, []) if y]
+                    pops = [x[4] for x in rows]
+                    if all(isinstance(x, int) for x in pops[:3]) and 1 in [x[4] for x in rows if isinstance(x[4], int)]:
+                        a["pop_n"] += 1
+                        a["pop1_win"] += win[4] == 1
+                        a["pop1_top3"] += 1 in pops[:3]
+                        a["winpop"][0 if win[4] <= 1 else 1 if win[4] <= 3 else 2] += 1
+                    if tan:
+                        o = int(tan[0][1]) / 100
+                        a["odds_n"] += 1
+                        a["odds"][0 if o < 3 else 1 if o < 10 else 2] += 1
+                    if win[3]:
+                        a["w_n"] += 1
+                        a["w_front"] += int(win[3]) <= 3
+                        a["w_inner"] += isinstance(win[1], int) and win[1] <= max(1, n // 3)
+    return acc
+
+
+def hist_stats_text(key: str, label: str) -> str:
+    a = HIST_STATS.get(key)
+    if not a or a["races"] < 30:
+        return ""
+    pct = lambda x, n: f"{100 * x / n:.0f}%" if n else "-"
+    fd = lambda d: f"{d[:4]}/{int(d[4:6])}/{int(d[6:])}"
+    lines = [f"■{label}：{fd(a['first'])}〜{fd(a['last'])}の{a['races']:,}レース"]
+    pay = []
+    for t in BET_TYPES:
+        v = sorted(a["pay"][t])
+        if len(v) >= 30:
+            pay.append(f"{t} 中央値{v[len(v) // 2]:,}円・平均{sum(v) // len(v):,}円・1万円以上{pct(sum(x >= 10000 for x in v), len(v))}")
+    if pay:
+        lines.append("  払戻（100円あたり）：" + "／".join(pay))
+    if a["pop_n"] >= 30:
+        w = a["winpop"]
+        lines.append(f"  1番人気の勝率{pct(a['pop1_win'], a['pop_n'])}・3着以内{pct(a['pop1_top3'], a['pop_n'])}。勝ち馬の人気：1番人気{pct(w[0], a['pop_n'])}・2〜3番人気{pct(w[1], a['pop_n'])}・4番人気以下{pct(w[2], a['pop_n'])}")
+    if a["odds_n"] >= 30:
+        o = a["odds"]
+        lines.append(f"  勝ち馬の単勝オッズ：3倍未満{pct(o[0], a['odds_n'])}・3〜9.9倍{pct(o[1], a['odds_n'])}・10倍以上{pct(o[2], a['odds_n'])}")
+    if a["w_n"] >= 30:
+        lines.append(f"  勝ち馬のうち4コーナー3番手以内{pct(a['w_front'], a['w_n'])}、内枠（馬番が頭数の1/3以内）{pct(a['w_inner'], a['w_n'])}")
+    return "\n".join(lines)
+
+
 def ask_context(date: str, p: dict) -> str:
     """「AIに質問」に渡すレース情報：出馬表と近走（digest と同じ形）＋AIの予想。"""
     import sys as _s
@@ -480,10 +550,16 @@ def ask_context(date: str, p: dict) -> str:
     ck = course_key(p)
     hist = "\n\n".join(x for x in (mark_stats_text("全体", "全レース"), mark_stats_text(venue_of(p), f"{venue_of(p)}のレース"),
                                     mark_stats_text(ck, f"このコース（{ck}）のレース", full=False) if ck else "") if x)
+    area = "中央" if str(p.get("race_id", "")).startswith("jra") or p.get("source") == "jra" or venue_of(p) in ("札幌", "函館", "福島", "新潟", "東京", "中山", "中京", "京都", "阪神", "小倉") else "地方"
+    big = "\n".join(x for x in (hist_stats_text(area, f"{area}競馬の全レース"), hist_stats_text(venue_of(p), f"{venue_of(p)}の全レース"),
+                                  hist_stats_text(ck, f"このコース（{ck}）の全レース") if ck else "") if x)
+    if big:
+        big = "\n\n【過去の公式レース結果（AIの予想とは無関係。主催者が公開した結果から集計。数が多いので傾向の根拠に向く）】\n" + big
     if hist:
         hist = ("\n\n【このサイトの過去の記録（印ごとの着順・配当・人気・脚質・このサイトの成績）】\n" + hist
                 + "\n（このサイトの買い目は◎の単勝か複勝と3連複フォーメーション（◎→〇▲→印全部）で、3連単・馬単は買っていない）")
-    return ctx[:12000 - len(hist)] + hist
+    hist = big + hist
+    return ctx[:14000 - len(hist)] + hist
 
 
 # ---------------- レースページ ----------------
@@ -602,7 +678,7 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
                     f"<section id='askpop' class='card ask askpop' role='dialog' aria-label='全頭くんに質問' data-page='{race_path(date, p)}' data-post='{post_key}' data-url='{ASK_URL}'{" data-zk='1'" if HAS_ZK else ''}>"
                     f"<h2 class='zkh'>{zk('normal', 48)}<span>全頭くんに質問<small>{esc(race_label(p))}について答えます</small></span><button type='button' class='zkclose' aria-label='閉じる'>×</button></h2><p class='meta'>出走馬の近走やAIの評価、これまでの予想の記録をもとに、短く答えます。たとえば「◎を選んだ理由は？」「3連単で△を2着まで入れるべき？」「このコースの3連単の配当はどれくらい？」。質問できるのは発走20分前まで、1日30回までです（混み合う日は早めに受付を終えることがあります）。</p>"
                     f"<div class='pick'><input type='text' maxlength='200' placeholder='このレースについて質問' aria-label='質問'> <button type='button' class='go'>聞く</button></div>"
-                    f"<div class='alog'></div><p class='meta'>答えはAIの見立てで、的中を保証するものではありません。質問の内容は回答にだけ使い、保存しません。</p></section>")
+                    f"<div class='alog'></div><p class='meta'>答えはAIの見立てで、的中を保証するものではありません。サイトの記録に無いことはWebで調べて答えることがあり、そのときは出典を表示します。質問の内容は回答にだけ使い、保存しません。</p></section>")
     updates = "".join(f"<li><b>{esc(u.get('at'))}</b> {esc(u.get('text'))}</li>" for u in p.get("updates", []))
     meta = "・".join(x for x in [
         fmt_date(date),
@@ -1246,7 +1322,7 @@ CSS = """.ask .alog{margin-top:10px}.ask .qa{border-top:1px solid var(--line);pa
 .zkh{display:flex;align-items:center;gap:10px}.zkh small{display:block;font-size:12px;font-weight:400;color:var(--mut)}
 .ask .qa .q{text-align:right}.ask .bub{display:flex;gap:8px;align-items:flex-start;margin-top:6px}.ask .bub .a,.ask .bub .err{position:relative;margin:0;background:var(--acc-soft);border-radius:12px;padding:8px 12px}
 .ask .bub .a:before,.ask .bub .err:before{content:'';position:absolute;left:-6px;top:14px;border:6px solid transparent;border-left:0;border-right-color:var(--acc-soft)}
-.zkfoot{display:flex;gap:12px;align-items:center}.zkfoot p{margin:0}
+.zkfoot{display:flex;gap:12px;align-items:center}.zkfoot p{margin:0}.ask .src{margin:4px 0 0 48px;font-size:12px;color:var(--mut)}.ask .src a{color:var(--mut)}
 .card.zkteaser{display:flex;gap:12px;align-items:center;border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--panel)}.zkteaser p{margin:0;flex:1}
 .zkopen,.ask .go{background:var(--acc);color:#fff;border:0;border-radius:8px;padding:8px 14px;font-weight:700;cursor:pointer}
 .zkfab{position:fixed;right:16px;bottom:16px;z-index:60;width:68px;height:68px;border-radius:50%;border:3px solid var(--acc);background:#fff;padding:2px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.22)}
@@ -1385,7 +1461,7 @@ function key(){var d=new Date();return 'askn:'+d.getFullYear()+d.getMonth()+d.ge
 function add(cls,t){var d=document.createElement('div');d.className='qa';var q=document.createElement('p');q.className=cls;q.textContent=t;d.appendChild(q);log.appendChild(d);return d;}
 function go(){var q=(inp.value||'').trim();if(!q||busy)return;var n=0;try{n=parseInt(localStorage.getItem(key())||'0',10);}catch(e){}
 if(n>=30){add('err','今日の質問は30回までです。また明日どうぞ。');return;}busy=true;btn.disabled=true;var box=add('q',q);var bub=document.createElement('div');bub.className='bub';var im=null;if(s.dataset.zk){im=document.createElement('img');im.className='zk';im.width=40;im.height=40;im.alt='全頭くん';im.src='/assets/zk-think.png';bub.appendChild(im);}var a=document.createElement('p');a.className='a';a.textContent='考え中…';bub.appendChild(a);box.appendChild(bub);function face(f){if(im)im.src='/assets/zk-'+f+'.png';}inp.value='';
-fetch(s.dataset.url+'/ask',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({page:s.dataset.page,q:q})}).then(function(r){return r.json().then(function(j){return [r.status,j];});}).then(function(x){var j=x[1];if(j.answer){a.textContent=j.answer;face('normal');try{localStorage.setItem(key(),String(n+1));}catch(e){}if(window.gtag)gtag('event','ask',{page:location.pathname});}else{a.className='err';a.textContent=j.error||'うまく答えられませんでした。聞き方を変えてもう一度どうぞ。';face('sorry');}}).catch(function(){a.className='err';a.textContent='つながりませんでした。通信状態を確認して、もう一度どうぞ。';face('sorry');}).then(function(){busy=false;btn.disabled=false;});}
+fetch(s.dataset.url+'/ask',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({page:s.dataset.page,q:q})}).then(function(r){return r.json().then(function(j){return [r.status,j];});}).then(function(x){var j=x[1];if(j.answer){a.textContent=j.answer;face('normal');if(j.sources&&j.sources.length){var sp=document.createElement('p');sp.className='src';sp.appendChild(document.createTextNode('出典：'));j.sources.forEach(function(x,i){if(!/^https?:/.test(x.url))return;var l=document.createElement('a');l.href=x.url;l.target='_blank';l.rel='noopener nofollow';l.textContent=x.title||x.url;if(i)sp.appendChild(document.createTextNode('、'));sp.appendChild(l);});box.appendChild(sp);}try{localStorage.setItem(key(),String(n+1));}catch(e){}if(window.gtag)gtag('event','ask',{page:location.pathname});}else{a.className='err';a.textContent=j.error||'うまく答えられませんでした。聞き方を変えてもう一度どうぞ。';face('sorry');}}).catch(function(){a.className='err';a.textContent='つながりませんでした。通信状態を確認して、もう一度どうぞ。';face('sorry');}).then(function(){busy=false;btn.disabled=false;});}
 var fab=document.querySelector('.zkfab');function open(v){s.classList.toggle('open',v);if(fab){fab.setAttribute('aria-expanded',v?'true':'false');fab.classList.add('seen');}try{sessionStorage.setItem('zkseen','1');}catch(e){}if(v&&!inp.disabled)setTimeout(function(){inp.focus();},50);if(v&&window.gtag)gtag('event','ask_open',{page:location.pathname});}
 try{if(sessionStorage.getItem('zkseen')&&fab)fab.classList.add('seen');}catch(e){}
 if(fab)fab.addEventListener('click',function(){open(!s.classList.contains('open'));});
@@ -1505,6 +1581,8 @@ def build() -> None:
         by_date[d] = predictions(d)
     global MARK_STATS
     MARK_STATS = build_mark_stats(by_date)
+    global HIST_STATS
+    HIST_STATS = build_hist_stats()
     # 内部リンク用：馬別・騎手別・コース別ページが作られる対象を先に数える
     _hc, _jc, _cc = defaultdict(int), defaultdict(int), defaultdict(int)
     for d, ps in by_date.items():
