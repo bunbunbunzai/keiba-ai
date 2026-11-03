@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261103",
  "race_id": "202611033601150407",
- "tries": 2,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 6,
+   "name": "スティールアンバー",
+   "time": "1:02.1",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 38.1,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 1,
+   "number": 1,
+   "name": "マリノステアハート",
+   "time": "1:02.3",
+   "margin": "１",
+   "pos4": 2,
+   "last3f": 37.9,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "ヨンプク",
+   "time": "1:02.3",
+   "margin": "クビ",
+   "pos4": 4,
+   "last3f": 37.3,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 8,
+   "name": "ジェイソンバローズ",
+   "time": "1:02.3",
+   "margin": "ハナ",
+   "pos4": 6,
+   "last3f": 37.1,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 7,
+   "name": "ビッグバンドビート",
+   "time": "1:02.8",
+   "margin": "２ １／２",
+   "pos4": 8,
+   "last3f": 37.6,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 11,
+   "name": "ミッションアイズ",
+   "time": "1:03.0",
+   "margin": "１",
+   "pos4": 11,
+   "last3f": 36.4,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 9,
+   "name": "ニチヤヲツイデ",
+   "time": "1:03.3",
+   "margin": "１ １／２",
+   "pos4": 4,
+   "last3f": 38.5,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 2,
+   "number": 2,
+   "name": "ミソラ",
+   "time": "1:03.3",
+   "margin": "アタマ",
+   "pos4": 2,
+   "last3f": 38.9,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 10,
+   "name": "ニシノランペイジ",
+   "time": "1:03.5",
+   "margin": "１",
+   "pos4": 6,
+   "last3f": 38.4,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 8,
+   "number": 12,
+   "name": "アドミリング",
+   "time": "1:03.5",
+   "margin": "ハナ",
+   "pos4": 11,
+   "last3f": 37.3,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 5,
+   "number": 5,
+   "name": "チャンピオンホース",
+   "time": "1:03.6",
+   "margin": "１／２",
+   "pos4": 9,
+   "last3f": 37.4,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 3,
+   "number": 3,
+   "name": "ユナホークパワー",
+   "time": "1:03.7",
+   "margin": "クビ",
+   "pos4": 9,
+   "last3f": 37.5,
+   "popularity": null
+  }
+ ]
 }
