@@ -263,11 +263,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/03/kanazawa/07r/",
    "created": "2026-11-03 15:17",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2117502031237632273",
    "x_at": "2026-11-03 15:20",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AJnD08Gj_s8Fq-RR48KBgjt'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AORm3-KqlOS5k11J5WbBSvk'}",
+   "instagram_tries": 3
   },
   "res-202611032218130408": {
    "kind": "grade_res",
@@ -280,6 +280,24 @@
    "ig_caption": "【結果】金沢8R JBCスプリント（Jpn1）\n◎12マテンロウコマンド　〇11メイショウハチロー　▲10ウィルソンテソーロ\n結果　不的中（投資800円）\n\nこのレースの全頭評価と買い目 → www.ai-keiba-log.com/2026/11/03/kanazawa/08r/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#JBCスプリント #競馬予想 #金沢競馬 #AI予想 #重賞 #競馬 #競馬全頭ログ",
    "url": "https://www.ai-keiba-log.com/2026/11/03/kanazawa/08r/",
    "created": "2026-11-03 15:52",
+   "x": "posted",
+   "instagram": "pending",
+   "x_id": "2117514106001584481",
+   "x_at": "2026-11-03 16:07",
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AkOIxW2ISWzx6xR7tVgZgTv'}",
+   "instagram_tries": 1
+  },
+  "res-202611033601150409": {
+   "kind": "grade_res",
+   "image": "/social/20261103/res-202611033601150409.jpg",
+   "images": [
+    "/social/20261103/res-202611033601150409.jpg"
+   ],
+   "x_text": "【的中】門別9R JB（Jpn3）\n◎1オーリエイト　〇11タルマエドン　▲8アンサラー\n複勝 1　120円\n投資600円→払戻120円（回収率20.0%）\n#JB #競馬予想 #門別競馬 #AI予想 #重賞",
+   "x_thread": [],
+   "ig_caption": "【的中】門別9R JB（Jpn3）\n◎1オーリエイト　〇11タルマエドン　▲8アンサラー\n複勝 1　120円\n投資600円→払戻120円（回収率20.0%）\n\nこのレースの全頭評価と買い目 → www.ai-keiba-log.com/2026/11/03/monbetsu/09r/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#JB #競馬予想 #門別競馬 #AI予想 #重賞 #競馬 #競馬全頭ログ",
+   "url": "https://www.ai-keiba-log.com/2026/11/03/monbetsu/09r/",
+   "created": "2026-11-03 16:07",
    "x": "pending",
    "instagram": "pending"
   }
