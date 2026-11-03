@@ -145,6 +145,61 @@ def stats(stats_from: str) -> tuple[dict, dict]:
     tables["table_bias"] = ("<div class='scroll'><table><thead><tr><th>判定</th><th>件数</th><th>割合</th></tr></thead>"
                             f"<tbody>{rows}</tbody></table></div>"
                             f"<p class='meta'>{v['since']}〜{v['asof']}、場×芝ダートごとの当日判定{nb}件（判定の方法は本文）。</p>")
+    # 買い方別（strategy.py と同じ集計）：{{st:グループ:区分:roi}} / :n / :hit / :diff で本文から参照できる
+    try:
+        import build as _b
+        import strategy as _s
+        by_date = {d: _b.predictions(d) for d in dates}
+        g = _s.collect(by_date, stats_from)
+        for grp, bs in g.items():
+            rows = []
+            for k in _s._order(grp, list(bs)):
+                b = bs[k]
+                v[f"st:{grp}:{k}:roi"] = pct(b.ret, b.stake)
+                v[f"st:{grp}:{k}:n"] = f"{b.n:,}"
+                v[f"st:{grp}:{k}:hit"] = pct(b.hit, b.n)
+                v[f"st:{grp}:{k}:diff"] = f"{b.ret - b.stake:+,}円"
+                rows.append(f"<tr><td>{esc(k)}</td><td>{b.n:,}</td><td>{pct(b.hit, b.n)}</td><td>{pct(b.ret, b.stake)}</td><td>{b.ret - b.stake:+,}円</td></tr>")
+            tables[f"table_st_{grp}"] = ("<div class='scroll'><table><thead><tr><th>買い方・区分</th><th>レース</th><th>的中率</th><th>回収率</th><th>収支</th></tr></thead>"
+                                        f"<tbody>{''.join(rows)}</tbody></table></div><p class='meta'>{v['since']}〜{v['asof']}、各点100円の均等買い、見送りは除く。</p>")
+        # 較正：◎の想定勝率の帯ごとに、実際に◎が勝った割合・3着内の割合
+        cal = defaultdict(lambda: [0, 0, 0])
+        conf_c = defaultdict(lambda: [0, 0, 0])
+        for d, ps in by_date.items():
+            for p in ps:
+                sc = p.get("_score")
+                if not sc or "stake" not in sc or sc.get("voided") or not sc["stake"]:
+                    continue
+                hon = p.get("marks", {}).get("◎")
+                wp = next((h.get("win_pct") for h in p.get("horses", []) if h.get("number") == hon), None)
+                fin = str(sc.get("honmei_finish"))
+                c = p.get("confidence") or "-"
+                conf_c[c][0] += 1; conf_c[c][1] += fin == "1"; conf_c[c][2] += fin in ("1", "2", "3")
+                try:
+                    wp = float(wp)
+                except (TypeError, ValueError):
+                    continue
+                band = "40%以上" if wp >= 40 else "30〜39%" if wp >= 30 else "20〜29%" if wp >= 20 else "20%未満"
+                cal[band][0] += 1; cal[band][1] += fin == "1"; cal[band][2] += fin in ("1", "2", "3")
+        rows = []
+        for band in ("40%以上", "30〜39%", "20〜29%", "20%未満"):
+            n, w, t = cal.get(band, [0, 0, 0])
+            key = band.replace("%", "").replace("〜", "_").replace("以上", "up").replace("未満", "dn")
+            v[f"cal_{key}_n"], v[f"cal_{key}_win"], v[f"cal_{key}_top3"] = f"{n:,}", pct(w, n), pct(t, n)
+            if n:
+                rows.append(f"<tr><td>{band}</td><td>{n:,}</td><td>{pct(w, n)}</td><td>{pct(t, n)}</td></tr>")
+        tables["table_calibration"] = ("<div class='scroll'><table><thead><tr><th>AIの想定勝率（◎）</th><th>レース</th><th>実際の◎勝率</th><th>◎3着内率</th></tr></thead>"
+                                       f"<tbody>{''.join(rows)}</tbody></table></div><p class='meta'>{v['since']}〜{v['asof']}。想定勝率はAIが予想時に付けた数字、実際の勝率は確定結果。</p>")
+        rows = []
+        for c in ("A", "B", "C"):
+            n, w, t = conf_c.get(c, [0, 0, 0])
+            v[f"conf_{c}_n"], v[f"conf_{c}_win"], v[f"conf_{c}_top3"] = f"{n:,}", pct(w, n), pct(t, n)
+            if n:
+                rows.append(f"<tr><td>自信度{c}</td><td>{n:,}</td><td>{pct(w, n)}</td><td>{pct(t, n)}</td><td>{v.get(f'st:conf:自信度{c}のレースだけ:hit', '―')}</td><td>{v.get(f'st:conf:自信度{c}のレースだけ:roi', '―')}</td></tr>")
+        tables["table_confidence"] = ("<div class='scroll'><table><thead><tr><th>自信度</th><th>レース</th><th>◎勝率</th><th>◎3着内率</th><th>的中率</th><th>回収率</th></tr></thead>"
+                                      f"<tbody>{''.join(rows)}</tbody></table></div><p class='meta'>{v['since']}〜{v['asof']}、見送りは除く。</p>")
+    except Exception as e:  # noqa: BLE001
+        print("column stats (strategy) error:", e)
     return v, tables
 
 
@@ -224,7 +279,7 @@ def parse(f: Path) -> dict:
 
 
 def subst(s: str, v: dict) -> str:
-    return re.sub(r"\{\{(\w+)\}\}", lambda m: v.get(m.group(1), m.group(0)), s)
+    return re.sub(r"\{\{([^{}\n]+?)\}\}", lambda m: v.get(m.group(1).strip(), m.group(0)), s)
 
 
 def columns() -> list[dict]:
