@@ -105,7 +105,7 @@
    "url": "https://www.ai-keiba-log.com/2026/11/03/kanazawa/07r/",
    "created": "2026-11-03 14:03",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2117489671966019989",
    "x_at": "2026-11-03 14:30",
    "x_thread_error": "403 Client Error: Forbidden for url: https://api.x.com/2/tweets",
@@ -113,8 +113,8 @@
     "2117489674050511075",
     "2117489675669483662"
    ],
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A1Vxhw9i4ICVmF-wR3PiLNl'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AnrkqUaOrUxWAFgXAqCSaYC'}",
+   "instagram_tries": 3
   },
   "pre-202611032218130408": {
    "kind": "grade_pre",
@@ -132,7 +132,7 @@
    "url": "https://www.ai-keiba-log.com/2026/11/03/kanazawa/08r/",
    "created": "2026-11-03 14:03",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2117489681994490244",
    "x_at": "2026-11-03 14:30",
    "x_thread_error": "403 Client Error: Forbidden for url: https://api.x.com/2/tweets",
@@ -140,8 +140,8 @@
     "2117489683949121846",
     "2117489685404483597"
    ],
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AeHqIhqpT6glvoQR2ITps9W'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AEU8TM_FnP6_vale42s7IIo'}",
+   "instagram_tries": 3
   },
   "hit-202611033601150404": {
    "kind": "hit",
@@ -155,11 +155,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/03/monbetsu/04r/",
    "created": "2026-11-03 14:03",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2117489690924216514",
    "x_at": "2026-11-03 14:30",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AKZDygUbHnlyYf0Kthl37H6'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A78a9Q5DEDr5JPLcZEmA3Ky'}",
+   "instagram_tries": 3
   },
   "hit-202611033601150406": {
    "kind": "hit",
@@ -173,11 +173,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/03/monbetsu/06r/",
    "created": "2026-11-03 14:03",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2117489695445651659",
    "x_at": "2026-11-03 14:30",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AAYghlLTX2KZNGE-VWlrS_a'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A-tpIouxqJrPZ5v-wkowY5f'}",
+   "instagram_tries": 3
   },
   "pre-202611033601150409": {
    "kind": "grade_pre",
@@ -195,7 +195,7 @@
    "url": "https://www.ai-keiba-log.com/2026/11/03/monbetsu/09r/",
    "created": "2026-11-03 14:03",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2117489700059423043",
    "x_at": "2026-11-03 14:31",
    "x_thread_error": "403 Client Error: Forbidden for url: https://api.x.com/2/tweets",
@@ -203,8 +203,8 @@
     "2117489701913346077",
     "2117489703469322279"
    ],
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'ALTGYZ8Xtrt_EUDV2kUB9Hp'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A8lPNR7htG08SzmlNcF6oQR'}",
+   "instagram_tries": 3
   },
   "pre-202611032218130409": {
    "kind": "grade_pre",
@@ -230,8 +230,8 @@
     "2117491452494184484",
     "2117491453668594045"
    ],
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AY11Cu6-y3DY-G07fXLPfb_'}",
-   "instagram_tries": 1
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'Ad6pIF8zMbSeA6feIrn1v2V'}",
+   "instagram_tries": 2
   },
   "hit-202611033601150407": {
    "kind": "hit",
@@ -248,8 +248,22 @@
    "instagram": "pending",
    "x_id": "2117491457023951066",
    "x_at": "2026-11-03 14:37",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'ARsrn5aA7U-uJAxoVPeIXaD'}",
-   "instagram_tries": 1
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'Amu_DnKi3aWnSPPUXvGdE8i'}",
+   "instagram_tries": 2
+  },
+  "res-202611032218130407": {
+   "kind": "grade_res",
+   "image": "/social/20261103/res-202611032218130407.jpg",
+   "images": [
+    "/social/20261103/res-202611032218130407.jpg"
+   ],
+   "x_text": "【的中】金沢7R JBCレディスクラシック（Jpn1）\n◎5メモリアカフェ　〇12タガノミスト　▲11テンカジョウ\n複勝 5　110円\n投資800円→払戻110円（回収率13.8%）\n#JBCレディスクラシック #競馬予想 #金沢競馬 #AI予想 #重賞",
+   "x_thread": [],
+   "ig_caption": "【的中】金沢7R JBCレディスクラシック（Jpn1）\n◎5メモリアカフェ　〇12タガノミスト　▲11テンカジョウ\n複勝 5　110円\n投資800円→払戻110円（回収率13.8%）\n\nこのレースの全頭評価と買い目 → www.ai-keiba-log.com/2026/11/03/kanazawa/07r/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#JBCレディスクラシック #競馬予想 #金沢競馬 #AI予想 #重賞 #競馬 #競馬全頭ログ",
+   "url": "https://www.ai-keiba-log.com/2026/11/03/kanazawa/07r/",
+   "created": "2026-11-03 15:17",
+   "x": "pending",
+   "instagram": "pending"
   }
  }
 }
