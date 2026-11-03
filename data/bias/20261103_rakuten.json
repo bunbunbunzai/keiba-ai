@@ -1,18 +1,19 @@
 {
  "date": "20261103",
- "updated": "2026-11-03 13:29",
+ "updated": "2026-11-03 13:40",
  "bias": {
   "船橋ダ": {
    "judgement": "先行有利・外",
-   "confidence": "弱",
+   "confidence": "中",
    "races": [
     1,
-    2
+    2,
+    3
    ],
-   "front_share": 0.75,
-   "inner_share": 0.0,
-   "outer_share": 0.75,
-   "horses": 4
+   "front_share": 0.83,
+   "inner_share": 0.17,
+   "outer_share": 0.67,
+   "horses": 6
   },
   "金沢ダ": {
    "judgement": "先行有利",
