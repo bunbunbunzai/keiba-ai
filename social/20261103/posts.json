@@ -317,11 +317,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/03/funabashi/05r/",
    "created": "2026-11-03 18:34",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2117551970609426823",
    "x_at": "2026-11-03 18:38",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A6RPBE8SGJrPhDjWWc5zNTm'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A16exGBiRmImZJvM9PF-Ooe'}",
+   "instagram_tries": 3
   },
   "pre-202611031914080211": {
    "kind": "grade_pre",
@@ -339,7 +339,7 @@
    "url": "https://www.ai-keiba-log.com/2026/11/03/funabashi/11r/",
    "created": "2026-11-03 18:34",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2117551974644318670",
    "x_at": "2026-11-03 18:38",
    "x_thread_error": "403 Client Error: Forbidden for url: https://api.x.com/2/tweets",
@@ -347,8 +347,8 @@
     "2117551976087179593",
     "2117551977328676985"
    ],
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AfD1sBlIkQ13vwoP-gM1UMJ'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AlIc4eIEnDok_0eSLfemcB3'}",
+   "instagram_tries": 3
   },
   "res-202611032218130409": {
    "kind": "grade_res",
@@ -362,11 +362,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/03/kanazawa/09r/",
    "created": "2026-11-03 18:34",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2117551981288096039",
    "x_at": "2026-11-03 18:38",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AUsAD-sRkcZL4gbJzPfI9VS'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AwYkii4ppm2eAoNVHeYH3kM'}",
+   "instagram_tries": 3
   },
   "hit-202611031914080208": {
    "kind": "hit",
@@ -379,8 +379,12 @@
    "ig_caption": "【的中】船橋8R 馬い!お米は魚沼でんべい記念\n◎2アトラクトラン　〇3イニシエート　▲7タイセイガナール\n複勝 2　110円\n3連複 2-7-12　3,570円\n投資600円→払戻3,680円（回収率613.3%）\n\nこのレースの全頭評価と買い目 → www.ai-keiba-log.com/2026/11/03/funabashi/08r/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#競馬予想 #船橋競馬 #AI予想 #的中 #競馬 #競馬全頭ログ",
    "url": "https://www.ai-keiba-log.com/2026/11/03/funabashi/08r/",
    "created": "2026-11-03 20:46",
-   "x": "pending",
-   "instagram": "pending"
+   "x": "posted",
+   "instagram": "pending",
+   "x_id": "2117598747932704825",
+   "x_at": "2026-11-03 21:44",
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A4EOiypowTBdIimTzax3AyN'}",
+   "instagram_tries": 1
   },
   "hit-202611031914080210": {
    "kind": "hit",
@@ -393,8 +397,12 @@
    "ig_caption": "【的中】船橋10R 文化の日特別\n◎12ブライトビギニング　〇4ダイジェスト　▲7ハセノガイセン\n複勝 12　110円\n3連複 2-4-12　1,140円\n投資600円→払戻1,250円（回収率208.3%）\n\nこのレースの全頭評価と買い目 → www.ai-keiba-log.com/2026/11/03/funabashi/10r/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#競馬予想 #船橋競馬 #AI予想 #的中 #競馬 #競馬全頭ログ",
    "url": "https://www.ai-keiba-log.com/2026/11/03/funabashi/10r/",
    "created": "2026-11-03 20:46",
-   "x": "pending",
-   "instagram": "pending"
+   "x": "posted",
+   "instagram": "pending",
+   "x_id": "2117598753339109690",
+   "x_at": "2026-11-03 21:44",
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AXuRqjf9Zh_nN_XnSLsdBzr'}",
+   "instagram_tries": 1
   },
   "res-202611031914080211": {
    "kind": "grade_res",
@@ -407,6 +415,26 @@
    "ig_caption": "【結果】船橋11R ハートビートカップ(準重賞)\n◎1リッキーズラック　〇13マロンソレイユ　▲3アイリーズ\n結果　不的中（投資800円）\n\nこのレースの全頭評価と買い目 → www.ai-keiba-log.com/2026/11/03/funabashi/11r/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#ハートビートカップ準重賞 #競馬予想 #船橋競馬 #AI予想 #重賞 #競馬 #競馬全頭ログ",
    "url": "https://www.ai-keiba-log.com/2026/11/03/funabashi/11r/",
    "created": "2026-11-03 20:46",
+   "x": "posted",
+   "instagram": "pending",
+   "x_id": "2117598757910974914",
+   "x_at": "2026-11-03 21:44",
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'ArwJtg7-9wsYNe-RtyvS-SQ'}",
+   "instagram_tries": 1
+  },
+  "sum-20261103": {
+   "kind": "summary",
+   "image": "/social/20261103/sum-20261103.jpg",
+   "images": [
+    "/social/20261103/sum-20261103.jpg",
+    "/social/20261103/sum-20261103-2.jpg",
+    "/social/20261103/sum-20261103-3.jpg"
+   ],
+   "x_text": "【11/3 AI予想の全成績】\n船橋・金沢・門別の36レース\n的中21（うちプラス7）／当日回収率60.9%\n収支-9,770円（各点100円・外れも含む）\n最高：船橋8R 払戻3,680円\n累計回収率67.3%\n#競馬予想 #地方競馬 #AI予想 #回収率",
+   "x_thread": [],
+   "ig_caption": "【11/3 AI予想の全成績】\n船橋・金沢・門別の36レース\n的中21（うちプラス7）／当日回収率60.9%\n収支-9,770円（各点100円・外れも含む）\n最高：船橋8R 払戻3,680円\n累計回収率67.3%\n\nこの日の全レースの予想と成績 → www.ai-keiba-log.com/2026/11/03/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#競馬予想 #地方競馬 #AI予想 #回収率 #競馬 #競馬全頭ログ",
+   "url": "https://www.ai-keiba-log.com/2026/11/03/",
+   "created": "2026-11-03 21:44",
    "x": "pending",
    "instagram": "pending"
   }
