@@ -46,6 +46,20 @@ BASE_URL = f"https://{DOMAIN}"
 REPO = "https://github.com/bunbunbunzai/keiba-ai"
 JST = timezone(timedelta(hours=9))
 MARKS = ["◎", "〇", "▲", "△", "☆"]
+# アフィリエイト（TGアフィリエイト・楽天競馬）。リンクIDはTG管理画面で発行したもの
+AFF_RAKUTEN = "https://ad2.trafficgate.net/t/r/{id}/1958/319633_399587"
+AFF_RAKUTEN_IMG = "https://srv2.trafficgate.net/t/b/{id}/1958/319633_399587"
+
+
+def aff_rakuten(kind: str = "race") -> str:
+    """楽天競馬への導線。race：買い目の下の1行、venue：場ページ、column：コラム末尾（バナー）。"""
+    a = f"<a href='{AFF_RAKUTEN.format(id=14)}' target='_blank' rel='nofollow sponsored noopener' data-aff='rakuten-keiba'>楽天競馬</a>"
+    if kind == "race":
+        return f"<p class='aff'><span class='pr'>PR</span>この買い目は{a}で買える。地方競馬全場に対応、登録無料、馬券購入で楽天ポイントが貯まる。</p>"
+    if kind == "venue":
+        return f"<p class='aff'><span class='pr'>PR</span>この場の馬券は{a}（地方競馬全場・登録無料）でネット購入できる。</p>"
+    return (f"<div class='aff affbox'><span class='pr'>PR</span><p>地方競馬の馬券をネットで買うなら{a}。全15場（ばんえい含む）に対応し、登録無料。楽天銀行なら入出金が即時で、購入額に応じて楽天ポイントが貯まる。</p>"
+            f"<a href='{AFF_RAKUTEN.format(id=70)}' target='_blank' rel='nofollow sponsored noopener' data-aff='rakuten-keiba-banner'><img src='{AFF_RAKUTEN_IMG.format(id=70)}' alt='楽天競馬' width='728' height='90' loading='lazy'></a></div>")
 STATS_FROM = "20261026"  # 自動運用を始めた日。これより前（試運転）は成績に含めない
 VENUE_SLUG = {
     "札幌": "sapporo", "函館": "hakodate", "福島": "fukushima", "新潟": "niigata", "東京": "tokyo",
@@ -444,7 +458,7 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
 <section class="card"><div class="marks">{marks_html}</div>{f"<p class='subs'>{esc(subs)}</p>" if subs else ''}
 <p>{term("confidence", "自信度")} <span class="conf c{esc(p.get('confidence'))}">{esc(p.get('confidence'))}</span></p>
 <h2>結論</h2>{plain_line(p)}<p class="sum">{esc(p.get('summary'))}</p>
-<h3>買い目（各100円・計{len(p.get('bets', []))}点）</h3><ul class="bets">{bets or '<li>買い目なし</li>'}</ul></section>
+<h3>買い目（各100円・計{len(p.get('bets', []))}点）</h3><ul class="bets">{bets or '<li>買い目なし</li>'}</ul>{aff_rakuten('race') if not str(p['race_id']).startswith('jra_') and p.get('confidence') != '見送り' else ''}</section>
 {res_html}
 <section class="card"><h2>{term("pace", "展開予想")}</h2><p>{esc(p.get('pace'))}</p></section>
 {bias_html}
@@ -888,7 +902,8 @@ def venue_pages(by_date: dict, led: list[dict], venue_of_race: dict) -> dict[str
                 f"<h1>{esc(name)}競馬のAI予想と成績</h1>{banner(VENUE_PIC.get(v, 'dirt'))}<p class='answer'>{esc(lead)}</p>"
                 f"<div class='kpis'><div><b>{t['n']}</b><span>集計レース</span></div><div><b>{t['roi']}</b><span>回収率</span></div>"
                 f"<div><b>{t['hit']}</b><span>的中率</span></div><div><b>{t['top3']}</b><span>◎複勝率</span></div></div>"
-                f"<section class='card'><h2>最近の予想</h2>{''.join(recent)}</section>{bias_html}"
+                + (aff_rakuten('venue') if slug not in ("sapporo", "hakodate", "fukushima", "niigata", "tokyo", "nakayama", "chukyo", "kyoto", "hanshin", "kokura") else "")
+                + f"<section class='card'><h2>最近の予想</h2>{''.join(recent)}</section>{bias_html}"
                 + (f"<section class='card'><h2>過去の開催日</h2><ul class='days'>{days_html}</ul></section>" if days_html else ""))
         ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": SITE_NAME, "item": BASE_URL + "/"},
@@ -1056,7 +1071,9 @@ PRIVACY = f"""<h1>プライバシーポリシー</h1>
 <section class="card"><h2>広告の表記</h2><p>本サイトに掲載する広告・アフィリエイトリンクには、その旨を明記します。</p></section>
 <section class="card"><h2>改定</h2><p>本ポリシーは必要に応じて改定することがあります。制定日：2026年10月27日／改定日：2026年11月1日（Googleアナリティクスの利用を追記）</p></section>"""
 
-CSS = """:root{--bg:#f2f3f0;--panel:#fff;--fg:#17201b;--mut:#5f6761;--line:#d9dcd6;--rule:#17201b;--acc:#146b45;--acc-soft:#e3efe8;--hit:#c0122d;--hit-soft:#fbe9ec;--tg:#8a6100;--miss:#7a807b;--card:var(--panel);--won:var(--hit-soft)}
+CSS = """.aff{font-size:13px;color:var(--mut);margin:10px 0 0;padding:8px 10px;border:1px dashed var(--line);background:var(--bg)}.aff a{color:var(--acc);font-weight:700}.pr{display:inline-block;font-size:10px;border:1px solid var(--mut);border-radius:2px;padding:0 4px;margin-right:6px;vertical-align:middle;color:var(--mut)}
+.affbox{margin:24px 0}.affbox p{margin:0 0 8px;font-size:14px;color:var(--fg)}.affbox img{max-width:100%;height:auto;display:block}
+:root{--bg:#f2f3f0;--panel:#fff;--fg:#17201b;--mut:#5f6761;--line:#d9dcd6;--rule:#17201b;--acc:#146b45;--acc-soft:#e3efe8;--hit:#c0122d;--hit-soft:#fbe9ec;--tg:#8a6100;--miss:#7a807b;--card:var(--panel);--won:var(--hit-soft)}
 @media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#141614;--panel:#1c1f1c;--fg:#ecefe9;--mut:#a4aba5;--line:#343934;--rule:#ecefe9;--acc:#6cc497;--acc-soft:#1f2e26;--hit:#ff7b8c;--hit-soft:#3a2126;--tg:#d9a93a;--miss:#8b918c}}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 "BIZ UDPGothic","Hiragino Sans","Noto Sans JP",system-ui,sans-serif;font-variant-numeric:tabular-nums}

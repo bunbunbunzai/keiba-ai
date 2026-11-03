@@ -322,7 +322,7 @@ def render(text: str, tables: dict) -> str:
 
     for line in text.splitlines():
         s = line.rstrip()
-        m = re.fullmatch(r"\{\{(table_\w+)\}\}", s.strip())
+        m = re.fullmatch(r"\{\{(table_\w+|aff_\w+)\}\}", s.strip())
         if m:
             flush()
             out.append(tables.get(m.group(1), ""))
@@ -384,6 +384,10 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
     if not cols:
         return {}
     v, tables = stats(stats_from)
+    try:
+        tables["aff_rakuten"] = __import__("build").aff_rakuten("column")
+    except Exception:  # noqa: BLE001
+        tables["aff_rakuten"] = ""
     pub = [c for c in cols if not c["draft"]]
     lastmod = {}
     for c in cols:
