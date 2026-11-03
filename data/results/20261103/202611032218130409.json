@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261103",
  "race_id": "202611032218130409",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "アウトレンジ",
    "time": "2:11.3",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 37.5,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ホウオウルーレット",
    "time": "2:12.2",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 37.4,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "セラフィックコール",
    "time": "2:12.4",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 38.2,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "ワンダーディーン",
    "time": "2:13.1",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 39.3,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "サントノーレ",
    "time": "2:13.3",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 39.9,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ダンテバローズ",
    "time": "2:13.5",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 39.2,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "オディロン",
    "time": "2:13.5",
    "margin": "ハナ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 39.1,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ユメノホノオ",
    "time": "2:14.3",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 39.3,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "カゼノランナー",
    "time": "2:15.7",
    "margin": "７",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 42.1,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "ストレングス",
    "time": "2:18.3",
    "margin": "大差",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 10,
+   "last3f": 44.6,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "マンガン",
    "time": "2:18.5",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 41.1,
    "popularity": null
   },
   {
@@ -198,8 +198,8 @@
    "name": "ゴールドギア",
    "time": "2:18.9",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 41.4,
    "popularity": null
   }
  ]

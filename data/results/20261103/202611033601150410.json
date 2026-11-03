@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261103",
  "race_id": "202611033601150410",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -77,7 +77,7 @@
    "name": "アペリティーヴォ",
    "time": "1:13.9",
    "margin": "",
-   "pos4": null,
+   "pos4": 2,
    "last3f": 37.7,
    "popularity": null
   },
@@ -88,7 +88,7 @@
    "name": "ダバイクリスタル",
    "time": "1:14.3",
    "margin": "２",
-   "pos4": null,
+   "pos4": 2,
    "last3f": 38.5,
    "popularity": null
   },
@@ -99,7 +99,7 @@
    "name": "マッドシークレット",
    "time": "1:14.3",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 5,
    "last3f": 37.9,
    "popularity": null
   },
@@ -110,7 +110,7 @@
    "name": "デルピエロ",
    "time": "1:14.6",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 10,
    "last3f": 37.4,
    "popularity": null
   },
@@ -121,7 +121,7 @@
    "name": "ロングテールテット",
    "time": "1:14.9",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 5,
    "last3f": 37.9,
    "popularity": null
   },
@@ -132,7 +132,7 @@
    "name": "スカイビュー",
    "time": "1:15.2",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 10,
    "last3f": 37.7,
    "popularity": null
   },
@@ -143,7 +143,7 @@
    "name": "ピンクゴールド",
    "time": "1:15.7",
    "margin": "２ １／２",
-   "pos4": null,
+   "pos4": 5,
    "last3f": 39.9,
    "popularity": null
   },
@@ -154,7 +154,7 @@
    "name": "ソブリナフォルテ",
    "time": "1:16.0",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 13,
    "last3f": 38.3,
    "popularity": null
   },
@@ -165,7 +165,7 @@
    "name": "スダレ",
    "time": "1:16.1",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 8,
    "last3f": 39.7,
    "popularity": null
   },
@@ -176,7 +176,7 @@
    "name": "トラデスカンティア",
    "time": "1:16.1",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 10,
    "last3f": 40.5,
    "popularity": null
   },
@@ -187,7 +187,7 @@
    "name": "エレシュトゥ",
    "time": "1:17.3",
    "margin": "６",
-   "pos4": null,
+   "pos4": 1,
    "last3f": 42.4,
    "popularity": null
   },
@@ -198,7 +198,7 @@
    "name": "ミヤビダイヤ",
    "time": "1:18.0",
    "margin": "３",
-   "pos4": null,
+   "pos4": 8,
    "last3f": 42.2,
    "popularity": null
   },
@@ -209,7 +209,7 @@
    "name": "ハカタヴァンクール",
    "time": "1:19.2",
    "margin": "６",
-   "pos4": null,
+   "pos4": 2,
    "last3f": 44.2,
    "popularity": null
   }
