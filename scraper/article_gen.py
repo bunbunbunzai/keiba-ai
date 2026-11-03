@@ -253,6 +253,9 @@ def run(date: str, results: bool) -> int:
         return 0
     n = 0
     for pred, race, slug, cn, g in targets(date):
+        if ai.too_many_failures():
+            print("APIの失敗が続くので打ち切り", flush=True)
+            break
         if results:
             n += add_result(date, pred, race, slug, cn, g)
         else:

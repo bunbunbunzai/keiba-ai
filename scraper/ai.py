@@ -39,12 +39,17 @@ def ask(kind: str, system: str, user: str, max_tokens: int = 400, temperature: f
             "messages": [{"role": "user", "content": user}]}
     for attempt in range(3):
         try:
-            r = requests.post(API, json=body, timeout=120,
+            r = requests.post(API, json=body, timeout=90,
                               headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"})
             if r.status_code in (429, 500, 502, 503, 529):
+                print(f"api {r.status_code} (retry {attempt + 1}):", r.text[:200], flush=True)
                 time.sleep(10 * (attempt + 1))
                 continue
-            r.raise_for_status()
+            if r.status_code >= 400:
+                print(f"api {r.status_code}:", r.text[:300], flush=True)
+                FAILS[0] += 1
+                return None
+            FAILS[0] = 0
             j = r.json()
             text = "".join(c.get("text", "") for c in j.get("content", []) if c.get("type") == "text").strip()
             u = j.get("usage", {})
@@ -52,9 +57,17 @@ def ask(kind: str, system: str, user: str, max_tokens: int = 400, temperature: f
                   "in": u.get("input_tokens"), "out": u.get("output_tokens")})
             return text
         except requests.RequestException as e:  # noqa: PERF203
-            print("api error:", e)
-            time.sleep(10 * (attempt + 1))
+            print("api error:", e, flush=True)
+            time.sleep(5 * (attempt + 1))
+    FAILS[0] += 1
     return None
+
+
+FAILS = [0]  # 連続失敗の回数。3回続いたら呼び出し側は打ち切る
+
+
+def too_many_failures() -> bool:
+    return FAILS[0] >= 3
 
 
 def _log(rec: dict) -> None:

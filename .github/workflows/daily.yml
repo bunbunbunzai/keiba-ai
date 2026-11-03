@@ -167,8 +167,8 @@ jobs:
         run: |
           cd scraper
           case "$PHASE" in
-            noon|mid) python article_gen.py --date "$D"; python review_gen.py --date "$D" ;;
-            night)    python review_gen.py --date "$D"; python article_gen.py --date "$D" --results; python article_gen.py --date "$(TZ=Asia/Tokyo date -d "$D +1 day" +%Y%m%d)" ;;
+            noon|mid) python -u article_gen.py --date "$D"; python -u review_gen.py --date "$D" ;;
+            night)    python -u review_gen.py --date "$D"; python -u article_gen.py --date "$D" --results; python -u article_gen.py --date "$(TZ=Asia/Tokyo date -d "$D +1 day" +%Y%m%d)" ;;
           esac
         continue-on-error: true
       - name: 保存

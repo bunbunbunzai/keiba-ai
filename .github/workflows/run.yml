@@ -35,7 +35,7 @@ jobs:
         run: |
           case "$SCRIPT" in jra_cards|rakuten|parse_rakuten|jra|results|score|results_and_score|review_gen|article_gen) ;; *) echo "unknown script"; exit 1;; esac
           cd scraper
-          if [ "$SCRIPT" = results_and_score ]; then python results.py $ARGS; python score.py $(echo $ARGS | grep -o -- "--date [0-9]*"); else python "$SCRIPT.py" $ARGS; fi
+          if [ "$SCRIPT" = results_and_score ]; then python results.py $ARGS; python score.py $(echo $ARGS | grep -o -- "--date [0-9]*"); else python -u "$SCRIPT.py" $ARGS; fi
         continue-on-error: true
       - name: 保存
         run: |

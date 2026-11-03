@@ -91,6 +91,9 @@ def run(date: str, limit: int | None = None) -> int:
         race = json.loads((DATA_DIR / "races" / date / f"{rid}.json").read_text(encoding="utf-8")) if (DATA_DIR / "races" / date / f"{rid}.json").exists() else {}
         text = ai.ask("review", SYSTEM, prompt_for(pred, race, res, sc), max_tokens=200)
         if not text:
+            if ai.too_many_failures():
+                print("APIの失敗が続くので打ち切り", flush=True)
+                break
             continue
         save_json(f"reviews/{date}/{rid}.json", {"text": text.strip(), "model": ai.MODELS["review"], "at": datetime.now(JST).strftime("%Y-%m-%d %H:%M")})
         n += 1
