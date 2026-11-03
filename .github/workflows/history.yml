@@ -1,0 +1,57 @@
+name: history (過去のレース結果をさかのぼって集める)
+
+# JRA：6時間ごとに最大5時間（5秒に1ページ）。3年分が集まれば以後はすぐ終わる。
+# 地方：楽天競馬の Crawl-delay 60 を守り、日々の取得と重ならない深夜〜朝（0:30〜9:20 JST）だけ動かす。
+on:
+  schedule:
+    - cron: "17 */6 * * *"   # JRA
+    - cron: "31 15 * * *"    # 地方（JST 0:31）
+  workflow_dispatch:
+    inputs:
+      src:
+        description: "jra / local"
+        required: true
+        default: jra
+      since:
+        description: "さかのぼる最も古い年月（YYYY-MM）"
+        required: false
+        default: ""
+      minutes:
+        description: "最大実行時間（分）"
+        required: false
+        default: "300"
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 545
+    concurrency:
+      group: history-${{ inputs.src || (github.event.schedule == '31 15 * * *' && 'local' || 'jra') }}
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: 取得
+        env:
+          SRC: ${{ inputs.src || (github.event.schedule == '31 15 * * *' && 'local' || 'jra') }}
+          SINCE: ${{ inputs.since }}
+          MINUTES: ${{ inputs.minutes }}
+        run: |
+          cd scraper
+          if [ "$SRC" = local ]; then since=${SINCE:-2025-11}; min=${MINUTES:-520}; else since=${SINCE:-2023-11}; min=${MINUTES:-300}; fi
+          python -u history.py --src "$SRC" --since "$since" --max-minutes "$min"
+        continue-on-error: true
+      - name: 保存
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/history
+          git diff --cached --quiet && exit 0
+          git commit -m "過去のレース結果を追加（${{ inputs.src || 'scheduled' }}）"
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep 20; done
