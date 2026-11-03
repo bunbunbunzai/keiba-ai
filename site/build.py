@@ -360,11 +360,19 @@ def answer_sentence(date: str, p: dict) -> str:
     return s + (rt + "。" if rt else "")
 
 
-MARK_STATS: dict = {}  # 「全頭くんに質問」用：印ごとの着順の記録（全体と場ごと）
+MARK_STATS: dict = {}  # 「全頭くんに質問」用：過去の記録（全体・場・コースごと）
+BET_TYPES = ("単勝", "複勝", "馬連", "ワイド", "馬単", "3連複", "3連単")
+
+
+def course_key(p: dict) -> str:
+    r = p.get("_race") or {}
+    if not r.get("distance"):
+        return ""
+    return f"{venue_of(p)}{r.get('surface') or ''}{r.get('distance')}m"
 
 
 def build_mark_stats(by_date: dict) -> dict:
-    """結果が出た全レースで、1〜3着に来た馬の印の内訳と、印ごと（1頭あたり）の着順の割合を数える。"""
+    """結果が出た全レースから、全頭くんが質問に答えるための記録を数える（全体・場・コースごと）。"""
     labels = list(MARKS) + ["無印"]
     acc: dict = {}
     for d, preds in by_date.items():
@@ -376,10 +384,20 @@ def build_mark_stats(by_date: dict) -> dict:
             if len(top) < 3 or sc.get("voided") or not p.get("marks"):
                 continue
             mk = mark_map(p)
-            nums = {h.get("number") for h in p["_race"].get("horses", []) or []} or set(mk)
-            for key in ("全体", venue_of(p)):
+            horses = p["_race"].get("horses", []) or []
+            nums = {h.get("number") for h in horses} or set(mk)
+            field = len(nums)
+            odds = sorted((h.get("odds"), h.get("number")) for h in horses if h.get("odds"))
+            fav = odds[0][1] if odds and len(odds) == field else None
+            rows = {x.get("number"): x for x in (p.get("_result") or {}).get("rows", []) or []}
+            w = rows.get(top[0]) or {}
+            pays = (p.get("_result") or {}).get("payouts") or {}
+            for key in {"全体", venue_of(p), course_key(p)} - {""}:
                 a = acc.setdefault(key, {"races": 0, "pos": {k: {m: 0 for m in labels} for k in (1, 2, 3)},
-                                         "horses": {m: 0 for m in labels}, "fin": {m: {1: 0, 2: 0, 3: 0} for m in labels}})
+                                         "horses": {m: 0 for m in labels}, "fin": {m: {1: 0, 2: 0, 3: 0} for m in labels},
+                                         "pay": {t: [] for t in BET_TYPES}, "top2m": 0, "top3m": 0,
+                                         "fav_n": 0, "fav_win": 0, "fav_top3": 0, "w_n": 0, "w_front": 0, "w_inner": 0,
+                                         "stake": 0, "ret": 0, "bet_n": 0, "hit": 0})
                 a["races"] += 1
                 for n in nums:
                     a["horses"][mk.get(n, "無印")] += 1
@@ -387,25 +405,58 @@ def build_mark_stats(by_date: dict) -> dict:
                     m = mk.get(n, "無印")
                     a["pos"][i][m] += 1
                     a["fin"][m][i] += 1
+                a["top2m"] += all(n in mk for n in top[:2])
+                a["top3m"] += all(n in mk for n in top[:3])
+                for t in BET_TYPES:
+                    a["pay"][t] += [int(x["yen"]) for x in pays.get(t, []) if x.get("yen")]
+                if fav is not None:
+                    a["fav_n"] += 1
+                    a["fav_win"] += fav == top[0]
+                    a["fav_top3"] += fav in top[:3]
+                if w.get("pos4") and field:
+                    a["w_n"] += 1
+                    a["w_front"] += int(w["pos4"]) <= 3
+                    a["w_inner"] += int(top[0]) <= max(1, field // 3)
+                if sc.get("stake"):
+                    a["stake"] += sc["stake"]
+                    a["ret"] += sc.get("return") or 0
+                    a["bet_n"] += 1
+                    a["hit"] += (sc.get("return") or 0) > 0
     return acc
 
 
-def mark_stats_text(key: str, label: str) -> str:
+def mark_stats_text(key: str, label: str, full: bool = True) -> str:
     a = MARK_STATS.get(key)
-    if not a or a["races"] < 20:
+    if not a or a["races"] < 10:
         return ""
     labels = list(MARKS) + ["無印"]
     pct = lambda x, n: f"{100 * x / n:.0f}%" if n else "-"
-    lines = [f"{label}（{fmt_date(STATS_FROM)}以降・結果が出た{a['races']}レース）"]
-    lines.append("［A］レースごとに見た、各着順の馬に付いていた印の割合（例：2着の行の△は「2着馬が△だったレースの割合」。各行の合計は100%）")
+    few = "（レース数が少ないので参考程度）" if a["races"] < 50 else ""
+    lines = [f"■{label}：{fmt_date(STATS_FROM)}以降・結果が出た{a['races']}レース{few}"]
+    lines.append("［A］各着順の馬に付いていた印（レース単位。例：2着の行の△は「2着馬が△だったレースの割合」。各行の合計100%）")
     for i in (1, 2, 3):
         lines.append(f"  {i}着馬の印：" + "・".join(f"{m}{pct(a['pos'][i][m], a['races'])}" for m in labels))
-    lines.append("［B］印ごとに見た、その印の馬1頭あたりの着順の割合（△や無印は1レースに複数頭いるので、［A］より小さくなる）")
-    for m in labels:
-        h = a["horses"][m]
-        if h:
-            f = a["fin"][m]
-            lines.append(f"  {m}の馬（延べ{h}頭）：1着{pct(f[1], h)}・2着{pct(f[2], h)}・3着{pct(f[3], h)}・3着以内{pct(f[1] + f[2] + f[3], h)}")
+    lines.append(f"  1・2着がどちらも印のある馬だったレース{pct(a['top2m'], a['races'])}、1〜3着が全部印のある馬だったレース{pct(a['top3m'], a['races'])}")
+    if full:
+        lines.append("［B］その印の馬1頭あたりの着順の割合（△や無印は1レースに複数頭いるので［A］より小さくなる）")
+        for m in labels:
+            h = a["horses"][m]
+            if h:
+                f = a["fin"][m]
+                lines.append(f"  {m}（延べ{h}頭）：1着{pct(f[1], h)}・2着{pct(f[2], h)}・3着{pct(f[3], h)}・3着以内{pct(f[1] + f[2] + f[3], h)}")
+    pay = []
+    for t in BET_TYPES:
+        v = sorted(a["pay"][t])
+        if len(v) >= 5:
+            pay.append(f"{t} 中央値{v[len(v) // 2]:,}円・平均{sum(v) // len(v):,}円・最高{v[-1]:,}円・1万円以上{pct(sum(x >= 10000 for x in v), len(v))}")
+    if pay:
+        lines.append("［C］100円あたりの払戻（的中した組み合わせの配当。複勝・ワイドは3つ分）：" + "／".join(pay))
+    if a["fav_n"] >= 10:
+        lines.append(f"［D］1番人気（予想時点のオッズ）の勝率{pct(a['fav_win'], a['fav_n'])}・3着以内{pct(a['fav_top3'], a['fav_n'])}（{a['fav_n']}レース）")
+    if a["w_n"] >= 10:
+        lines.append(f"［E］勝ち馬のうち4コーナー3番手以内{pct(a['w_front'], a['w_n'])}、内枠（馬番が頭数の1/3以内）{pct(a['w_inner'], a['w_n'])}（{a['w_n']}レース）")
+    if a["bet_n"]:
+        lines.append(f"［F］このサイトの買い目の成績：的中率{pct(a['hit'], a['bet_n'])}・回収率{pct(a['ret'], a['stake'])}（{a['bet_n']}レース、1点100円）")
     return "\n".join(lines)
 
 
@@ -426,9 +477,11 @@ def ask_context(date: str, p: dict) -> str:
     ev = "\n".join(f"{e.get('number')} {e.get('name')}：評価点{e.get('score')}" + (f" 想定勝率{e.get('win_pct')}%" if e.get("win_pct") is not None else "") + f" {e.get('comment') or ''}" for e in p.get("horses", []))
     bets = "、".join(f"{b['type']} {b['combo']}" for b in p.get("bets", []))
     ctx = (f"{base}\n\n【AIの予想】印：{marks}" + (f"、{sub}" if sub else "") + f"。自信度{p.get('confidence')}\n要約：{p.get('summary')}\n展開予想：{p.get('pace')}\n買い目（各100円）：{bets}\n全頭の評価：\n{ev}")
-    hist = "\n\n".join(x for x in (mark_stats_text("全体", "全レース"), mark_stats_text(venue_of(p), f"{venue_of(p)}のレース")) if x)
+    ck = course_key(p)
+    hist = "\n\n".join(x for x in (mark_stats_text("全体", "全レース"), mark_stats_text(venue_of(p), f"{venue_of(p)}のレース"),
+                                    mark_stats_text(ck, f"このコース（{ck}）のレース", full=False) if ck else "") if x)
     if hist:
-        hist = ("\n\n【このサイトのAI予想の過去の記録：印ごとの着順】\n" + hist
+        hist = ("\n\n【このサイトの過去の記録（印ごとの着順・配当・人気・脚質・このサイトの成績）】\n" + hist
                 + "\n（このサイトの買い目は◎の単勝か複勝と3連複フォーメーション（◎→〇▲→印全部）で、3連単・馬単は買っていない）")
     return ctx[:12000 - len(hist)] + hist
 
@@ -547,7 +600,7 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
         ask_html = (f"<section class='card zkteaser'>{zk('normal', 48)}<p>このレースのことを<b>全頭くん</b>に聞ける。<br><span class='meta'>画面右下のボタンからも開けます</span></p><button type='button' class='zkopen'>質問する</button></section>"
                     f"<button type='button' class='zkfab' aria-label='全頭くんに質問' aria-expanded='false' aria-controls='askpop'>{zk('normal', 56) or '?'}<span class='zktip'>質問できるよ</span></button>"
                     f"<section id='askpop' class='card ask askpop' role='dialog' aria-label='全頭くんに質問' data-page='{race_path(date, p)}' data-post='{post_key}' data-url='{ASK_URL}'{" data-zk='1'" if HAS_ZK else ''}>"
-                    f"<h2 class='zkh'>{zk('normal', 48)}<span>全頭くんに質問<small>{esc(race_label(p))}について答えます</small></span><button type='button' class='zkclose' aria-label='閉じる'>×</button></h2><p class='meta'>出走馬の近走やAIの評価、これまでの予想の記録をもとに、短く答えます。たとえば「◎を選んだ理由は？」「逃げそうな馬は？」「3連単で△を2着まで入れるべき？」。質問できるのは発走20分前まで、1日30回までです（混み合う日は早めに受付を終えることがあります）。</p>"
+                    f"<h2 class='zkh'>{zk('normal', 48)}<span>全頭くんに質問<small>{esc(race_label(p))}について答えます</small></span><button type='button' class='zkclose' aria-label='閉じる'>×</button></h2><p class='meta'>出走馬の近走やAIの評価、これまでの予想の記録をもとに、短く答えます。たとえば「◎を選んだ理由は？」「3連単で△を2着まで入れるべき？」「このコースの3連単の配当はどれくらい？」。質問できるのは発走20分前まで、1日30回までです（混み合う日は早めに受付を終えることがあります）。</p>"
                     f"<div class='pick'><input type='text' maxlength='200' placeholder='このレースについて質問' aria-label='質問'> <button type='button' class='go'>聞く</button></div>"
                     f"<div class='alog'></div><p class='meta'>答えはAIの見立てで、的中を保証するものではありません。質問の内容は回答にだけ使い、保存しません。</p></section>")
     updates = "".join(f"<li><b>{esc(u.get('at'))}</b> {esc(u.get('text'))}</li>" for u in p.get("updates", []))
