@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261103",
  "race_id": "202611033601150402",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -63,5 +63,94 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 5,
+   "name": "トシデンセツ",
+   "time": "1:16.9",
+   "margin": "",
+   "pos4": 3,
+   "last3f": 39.0,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 4,
+   "number": 4,
+   "name": "リコークックー",
+   "time": "1:17.0",
+   "margin": "１／２",
+   "pos4": 5,
+   "last3f": 38.9,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 7,
+   "name": "ミスタービードル",
+   "time": "1:17.3",
+   "margin": "１ １／２",
+   "pos4": 2,
+   "last3f": 39.8,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 1,
+   "number": 1,
+   "name": "アカレンガ",
+   "time": "1:17.4",
+   "margin": "クビ",
+   "pos4": 7,
+   "last3f": 38.7,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 2,
+   "number": 2,
+   "name": "クリシュナラブリー",
+   "time": "1:17.6",
+   "margin": "１",
+   "pos4": 5,
+   "last3f": 39.5,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 3,
+   "number": 3,
+   "name": "ブラックレイシ",
+   "time": "1:17.8",
+   "margin": "１",
+   "pos4": 1,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 6,
+   "name": "スルーザレイン",
+   "time": "1:18.1",
+   "margin": "１ １／２",
+   "pos4": 7,
+   "last3f": 39.4,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 8,
+   "name": "メンズタマ",
+   "time": "1:19.8",
+   "margin": "８",
+   "pos4": 3,
+   "last3f": 42.1,
+   "popularity": null
+  }
+ ]
 }
