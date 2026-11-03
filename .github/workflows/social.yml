@@ -15,6 +15,10 @@ on:
       only:
         description: "この投稿IDだけ出す（手動テスト用）"
         required: false
+      chained:
+        description: "内部用：再公開後の連鎖起動なら 1（さらに連鎖しない）"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -66,4 +70,15 @@ jobs:
         if: steps.s.outputs.prepared != '0'
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run pages.yml -R "${{ github.repository }}"
+          R: ${{ github.repository }}
+        # GITHUB_TOKEN で起動した pages の完了は workflow_run を発火しない（GitHub の仕様）ので、
+        # 「次の回」が自然には来ない。pages の完了を待ってから自分を手動起動する（chained=1 で連鎖は1回まで）。
+        run: |
+          gh workflow run pages.yml -R "$R"
+          sleep 20
+          ID=$(gh run list -R "$R" --workflow pages.yml --event workflow_dispatch --limit 1 --json databaseId -q '.[0].databaseId')
+          [ -n "$ID" ] && gh run watch "$ID" -R "$R" --exit-status || echo "pages run not found or failed"
+          D="${{ inputs.date }}"
+          if [ "${{ inputs.chained }}" != "1" ]; then
+            gh workflow run social.yml -R "$R" -f chained=1 ${D:+-f date=$D}
+          fi

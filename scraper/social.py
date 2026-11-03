@@ -383,7 +383,15 @@ def thread_texts(date: str, c: dict) -> list[str]:
     out = out[:2]
     pace = nfkc(p.get("pace") or "")
     if pace:
-        out.append(f"【展開】{pace[:130]}{'…' if len(pace) > 130 else ''}\n※予想は情報提供です。馬券は20歳から。")
+        # X の文字数（全角=2）で 280 以内に収める。文字数の pace[:130] だと全角で約300になり 403 で弾かれる
+        head, foot = "【展開】", "\n※予想は情報提供です。馬券は20歳から。"
+        budget = 280 - x_len(head + foot)
+        body = pace
+        if x_len(body) > budget:
+            while body and x_len(body + "…") > budget:
+                body = body[:-1]
+            body += "…"
+        out.append(f"{head}{body}{foot}")
     out = out[:3]
     return [t.replace("（1/N）", f"（{i + 1}/{len(out)}）") if i == 0 else t for i, t in enumerate(out)]
 
