@@ -1,0 +1,19 @@
+name = "keiba-league"
+main = "src/index.js"
+compatibility_date = "2025-10-01"
+
+# 「全頭くんに質問」（keiba-ask）とは別の Worker・別の DB
+[[durable_objects.bindings]]
+name = "LEAGUE"
+class_name = "LeagueDO"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["LeagueDO"]
+
+[vars]
+SITE_ORIGIN = "https://www.ai-keiba-log.com"
+# 一般公開と賞品の大元のスイッチ。データ利用条件と大会規約を確認するまで "0"
+LEAGUE_PUBLIC = "0"
+PRIZES_ALLOWED = "0"
+# 秘密の値（wrangler secret で登録。ここには書かない）：ADMIN_TOKEN、PREVIEW_CODE
