@@ -137,7 +137,7 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
             f"　◎{esc(r[1].get('marks', {}).get('◎'))} {esc(B.horse_name(r[1], r[1].get('marks', {}).get('◎')))}</span></a></li>"
             for r in rows) + "</ul>"
     body = ("<p class='crumb'><a href='/'>トップ</a> › 重賞</p><h1>今週の重賞 AI予想一覧</h1>" + B.banner("graded") +
-            "<p class='answer'>中央（GⅠ〜GⅢ）と地方（Jpn・S格付け）の重賞のAI予想をまとめている。各レースの固定ページでは、年ごとの予想と結果を記録している。</p>"
+            "<p class='answer'>中央（GⅠ〜GⅢ）と地方（Jpn・S格付け）の重賞のAI予想をまとめている。レース名をクリックすると、そのレースの毎年の予想と結果をまとめたページが開く。</p>"
             + (f"<section class='card'><h2>これからの重賞</h2>{glist(upcoming)}</section>" if upcoming else "")
             + (f"<section class='card'><h2>最近の重賞</h2>{glist(past)}</section>" if past else "<p>まだありません。</p>"))
     write("/graded/", page(f"今週の重賞 AI予想一覧（中央・地方）｜{B.SITE_NAME}", body, "/graded/",
@@ -183,10 +183,10 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
         lis = "".join(B.race_item(d, p) for d, p in recent)
         body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/course/'>コース別</a> › {esc(name)}</p>"
                 f"<h1>{esc(name)}のAI予想成績と傾向</h1><p class='answer'>{esc(lead)}</p>"
-                f"<div class='kpis'><div><b>{len(done)}</b><span>集計レース</span></div><div><b>{B.roi_txt(st, rt)}</b><span>回収率</span></div>"
+                f"<div class='kpis'><div><b>{len(done)}</b><span>予想したレース</span></div><div><b>{B.roi_txt(st, rt)}</b><span>回収率</span></div>"
                 f"<div><b>{pct(win, len(done))}</b><span>◎勝率</span></div><div><b>{pct(front, n)}</b><span>勝ち馬の先行率</span></div></div>"
                 f"<section class='card'><h2>最近のレース</h2><ul class='races'>{lis}</ul></section>"
-                f"<p class='meta'>{esc(B.fmt_date(B.STATS_FROM))}以降、見送りを除く。各点100円の均等買いで集計。<a href='{B.venue_path(v)}'>{esc(vn)}競馬の予想一覧</a></p>")
+                f"<p class='meta'>{esc(B.fmt_date(B.STATS_FROM))}以降のレース（「見送り」は除く）。買い目を1点100円ずつ買ったとして計算。<a href='{B.venue_path(v)}'>{esc(vn)}競馬の予想一覧</a></p>")
         write(path, page(f"{name} AI予想の成績と傾向（回収率・先行率）｜{B.SITE_NAME}", body, path, desc=lead[:120]))
         lastmod[path] = iso(max(d for d, _ in items))
         clist.append((vn, surf, dist, path, len(done), B.roi_txt(st, rt)))

@@ -253,7 +253,7 @@ def stats(stats_from: str) -> tuple[dict, dict]:
                 v[f"st:{grp}:{k}:diff"] = f"{b.ret - b.stake:+,}円"
                 rows.append(f"<tr><td>{esc(k)}</td><td>{b.n:,}</td><td>{pct(b.hit, b.n)}</td><td>{pct(b.ret, b.stake)}</td><td>{b.ret - b.stake:+,}円</td></tr>")
             tables[f"table_st_{grp}"] = ("<div class='scroll'><table><thead><tr><th>買い方・区分</th><th>レース</th><th>的中率</th><th>回収率</th><th>収支</th></tr></thead>"
-                                        f"<tbody>{''.join(rows)}</tbody></table></div><p class='meta'>{v['since']}〜{v['asof']}、各点100円の均等買い、見送りは除く。</p>")
+                                        f"<tbody>{''.join(rows)}</tbody></table></div><p class='meta'>{v['since']}〜{v['asof']}。買い目を1点100円ずつ買った計算で、「見送り」のレースは除く。</p>")
         # 較正：◎の想定勝率の帯ごとに、実際に◎が勝った割合・3着内の割合
         cal = defaultdict(lambda: [0, 0, 0])
         conf_c = defaultdict(lambda: [0, 0, 0])

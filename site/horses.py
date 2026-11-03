@@ -49,14 +49,14 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
         prof = "・".join(x for x in (latest.get("sex_age") or "", f"父{latest['sire']}" if latest.get("sire") else "") if x)
         venues = sorted({B.VENUE_NAME.get(B.venue_of(x["p"]), B.venue_of(x["p"])) for x in items})
         lead = (f"{name}{'（' + prof + '）' if prof else ''}は、このサイトのAI予想で{len(items)}回評価され、◎は{n_hon}回。"
-                + (f"確定した{len(runs)}走で1着{wins}回・3着以内{top3}回（3着内率{pct(top3, len(runs))}）。" if runs else "")
+                + (f"結果が出ている{len(runs)}走で1着{wins}回・3着以内{top3}回（3着内率{pct(top3, len(runs))}）。" if runs else "")
                 + f"主な出走場：{'・'.join(venues[:4])}。")
         rows = []
         for x in items:
             p = x["p"]
             wp = f"{x['win_pct']}%" if x["win_pct"] is not None else "-"
             od = f"{x['odds']}倍" if x.get("odds") else "-"
-            fin = x["finish"] + "着" if x["finish"].isdigit() else (x["finish"] or "未確定")
+            fin = x["finish"] + "着" if x["finish"].isdigit() else (x["finish"] or "結果待ち")
             rows.append(f"<tr><td><a href='{B.race_path(x['d'], p)}'>{esc(B.md(x['d']))} {esc(B.race_label(p))}</a></td>"
                         f"<td>{esc(x['mark'] or '無印')}</td><td>{esc(x['score'] if x['score'] is not None else '-')}</td><td>{esc(wp)}</td>"
                         f"<td>{esc(od)}</td><td>{esc(fin)}</td><td>{esc(x['jockey'] or '')}</td></tr>")

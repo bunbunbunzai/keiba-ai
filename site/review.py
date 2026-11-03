@@ -56,7 +56,7 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
                 top = "-".join(str(x) for x in sc.get("top3", []) if x is not None)
                 hf = sc.get("honmei_finish") or "-"
                 res = (f"<p class='big {'hit' if sc['return'] >= sc['stake'] else 'tg' if sc['return'] else 'miss'}'>"
-                       f"結果 {esc(top)}　◎は{esc(hf)}着　{'的中' if sc['return'] else '不的中'}　投資{sc['stake']:,}円→払戻{sc['return']:,}円（回収率{B.roi_txt(sc['stake'], sc['return'])}）</p>")
+                       f"結果 {esc(top)}　◎は{esc(hf)}着　{'的中' if sc['return'] else '不的中'}　購入{sc['stake']:,}円→払戻{sc['return']:,}円（回収率{B.roi_txt(sc['stake'], sc['return'])}）</p>")
                 # 勝ち馬にどの印を打っていたか
                 mm = B.mark_map(p)
                 w = sc.get("top3", [None])[0]
@@ -71,7 +71,7 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
                          f"<p>{summ}{'…' if len(p.get('summary') or '') > 160 else ''}</p>" + (f"<p class='meta'>{look}</p>" if look else "") + "</section>")
         cur = k == this_week
         h1 = f"{'今週' if cur else label}の重賞回顧：AI予想の結果と回収率"
-        lead = (f"{label}の重賞{len(done)}レースで、AI予想は的中{hit}レース、◎の1着{win}回・3着以内{top3}回、回収率{B.roi_txt(st, rt)}（投資{st:,}円→払戻{rt:,}円）。"
+        lead = (f"{label}の重賞{len(done)}レースで、AI予想は的中{hit}レース、◎の1着{win}回・3着以内{top3}回、回収率{B.roi_txt(st, rt)}（購入{st:,}円→払戻{rt:,}円）。"
                 + ("今週はまだ確定していない重賞がある。" if cur and len(done) < len(items) else ""))
         path = f"/review/{k}/"
         body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/review/'>重賞回顧</a> › {esc(label)}</p><h1>{esc(h1)}</h1>"
@@ -79,7 +79,7 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
                 f"<div class='kpis'><div><b>{len(done)}</b><span>確定した重賞</span></div><div><b>{hit}</b><span>的中レース</span></div>"
                 f"<div><b>{win}・{top3}</b><span>◎の1着・3着内</span></div><div><b>{B.roi_txt(st, rt)}</b><span>回収率</span></div></div>"
                 + "".join(cards)
-                + "<p class='meta'>各点100円の均等買い。重賞以外も含めた全成績は<a href='/results/'>成績ページ</a>、各重賞の過去の予想は<a href='/graded/'>重賞一覧</a>へ。</p>")
+                + "<p class='meta'>買い目を1点100円ずつ買った計算。重賞以外も含めた全成績は<a href='/results/'>成績ページ</a>、各重賞の過去の予想は<a href='/graded/'>重賞一覧</a>へ。</p>")
         ld = {"@context": "https://schema.org", "@type": "Article", "headline": h1, "datePublished": f"{b.isoformat()}",
               "dateModified": f"{max(d for d, *_ in items)[:4]}-{max(d for d, *_ in items)[4:6]}-{max(d for d, *_ in items)[6:8]}",
               "author": {"@type": "Organization", "name": B.SITE_NAME}, "mainEntityOfPage": B.BASE_URL + path}

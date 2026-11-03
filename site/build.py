@@ -170,13 +170,13 @@ GLOSSARY = [
     ("mark", "印（◎〇▲△☆）", "予想の評価順。◎は本命（1着候補の筆頭）、〇は対抗、▲は単穴（展開次第で勝てる馬）、△は連下（2〜3着候補）、☆は穴（人気薄で一発がある馬）。"),
     ("score", "評価点", "能力・条件適性・展開利・状態・人的要素の5軸を1〜5点で採点し、重みを付けて合計した45点満点の点数。印はこの点数と人気を見て決める。"),
     ("winpct", "想定勝率", "AIがその馬が勝つと見積もった確率（%）。評価点の上位6頭程度に付け、合計は100%以内。自信度はこの数字で決まる。"),
-    ("value", "妙味・期待値", "想定勝率×単勝オッズ。1.2以上なら「オッズがAIの見立てより高い（妙味あり）」、0.8未満なら「過剰人気」。買い目の選定より、◎の候補を絞るときに使う。"),
-    ("confidence", "自信度", "◎の想定勝率による区分。A＝40%以上、B＝30〜39%、C＝30%未満。「見送り」は近走データが足りないレースで、買い目を出さない。"),
+    ("value", "妙味・期待値", "想定勝率×単勝オッズ。1.2以上なら「AIの見立てより配当が高い＝狙い目（妙味あり）」、0.8未満なら「人気ほど勝ち目がない＝過剰人気」。"),
+    ("confidence", "自信度", "◎の想定勝率による区分。A＝40%以上、B＝30〜39%、C＝30%未満。「見送り」は判断材料（近走のデータ）が足りないレースで、買い目を出さない。"),
     ("pace", "展開利", "逃げ・先行・差し・追い込みの脚質と、想定ペース・枠順・当日の馬場傾向の組み合わせで、その馬に有利かどうかの見立て。"),
-    ("bias", "トラックバイアス", "その日の馬場で、先行馬が残りやすいか、内枠が有利かなどの偏り。当日の午前の確定結果から判定し、午後の予想に反映する。"),
-    ("roi", "回収率", "払戻金の合計÷購入金額の合計×100（%）。100%を超えれば勝ち。このサイトは外れたレースも除外せず、各点100円の均等買いで集計する。"),
+    ("bias", "トラックバイアス", "その日の馬場で、先行馬が残りやすいか、内枠が有利かなどの偏り。その日の午前のレース結果から見極め、午後の予想に使う。"),
+    ("roi", "回収率", "払戻金の合計÷購入金額の合計×100（%）。100%を超えれば勝ち。このサイトでは、外れたレースも含めて、すべての買い目を1点100円ずつ買ったとして計算している。"),
     ("torigami", "トリガミ", "馬券は当たったが、払戻が買った金額を下回ること。「的中」でも収支はマイナス。"),
-    ("formation", "3連複フォーメーション", "1頭目◎、2頭目〇▲、3頭目は印全部、という組み合わせの3連複。このサイトの標準の買い目（2026年11月2日から）。"),
+    ("formation", "3連複フォーメーション", "1頭目◎、2頭目〇▲、3頭目は印全部、という組み合わせの3連複。このサイトの基本の買い目（2026年11月2日から）。"),
     ("tanpuku", "単複の切り替え", "◎の単勝か複勝かを人気で決める方式。1〜2番人気は複勝、3〜5番人気は単勝、6番人気以下は買わない。"),
 ]
 GLOSSARY_ID = {k: t for k, t, _ in GLOSSARY}
@@ -231,7 +231,7 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False
 <a class="totop" href="#main" hidden aria-label="ページの先頭へ">↑</a>
 <footer class="wrap foot">
 <p>本サイトの予想は情報提供を目的としたもので、的中や利益を保証するものではありません。馬券の購入はご自身の判断と責任で行ってください。20歳未満の方は馬券を購入できません。</p>
-<p>レース情報は主催者の発表が正です。成績は全予想を各点100円の均等買いとして集計しています。</p>
+<p>出走表や結果など正式な情報は、各主催者の発表をご確認ください。成績は、すべての買い目を1点100円ずつ買ったとして計算しています。</p>
 <p class="support">このサイトは個人が運営しています。サーバー代やX投稿のAPI代の支援は <a href="{OFUSE_URL}" target="_blank" rel="noopener">OFUSE（投げ銭・ファンレター）</a> から。支援の有無で予想の内容や公開範囲は変わりません。</p>
 <p class="sns">最新の予想と的中速報は <a href="{X_URL}" target="_blank" rel="noopener me">X（@zentou_log）</a>・<a href="{IG_URL}" target="_blank" rel="noopener me">Instagram</a> でも配信中</p>
 <p class="sitemap-links"><a href="/graded/">重賞</a>　<a href="/review/">重賞回顧</a>　<a href="/monthly/">月次レポート</a>　<a href="/strategy/">買い方別の回収率</a>　<a href="/course/">コース別</a>　<a href="/jockey/">騎手別</a>　<a href="/horse/">馬別</a>　<a href="/column/">コラム</a>　<a href="/glossary/">用語集</a>　<a href="/limits/">AI予想の限界</a>　<a href="/changelog/">更新履歴</a></p>
@@ -344,7 +344,7 @@ def result_text(p: dict) -> str:
     if not sc or "stake" not in sc:
         return ""
     if sc.get("voided"):
-        return "結果は未確定または返還"
+        return "結果待ち、または返還"
     top = "-".join(str(x) for x in sc.get("top3", []) if x is not None)
     return f"結果は{top}で{'的中（払戻' + format(sc['return'], ',') + '円）' if sc['return'] else '不的中'}"
 
@@ -435,11 +435,11 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
         tg = 0 < sc["return"] < sc["stake"]
         res_html = (f"<section class='card'><h2>結果</h2><p>1〜3着：{esc(' - '.join(str(x) for x in top3))}"
                     f"／◎は{esc(sc.get('honmei_finish') or '-')}着</p>"
-                    f"<p class='big {'tg' if tg else 'hit' if hit else 'miss'}'>{'的中（トリガミ：払戻が投資を下回る）' if tg else '的中' if hit else '不的中'}　投資{sc['stake']:,}円・払戻{sc['return']:,}円・"
+                    f"<p class='big {'tg' if tg else 'hit' if hit else 'miss'}'>{'的中（トリガミ：払戻が購入額を下回る）' if tg else '的中' if hit else '不的中'}　購入{sc['stake']:,}円・払戻{sc['return']:,}円・"
                     f"このレースの回収率{roi_txt(sc['stake'], sc['return'])}（収支{sc['return'] - sc['stake']:+,}円）</p>"
                     + "".join(f"<p>{esc(x)}</p>" for x in sc.get("hits", []))
                     + (f"<h3>回顧</h3><div class='kaiko'>{zk('joy' if hit and not tg else 'sorry', 48)}<p><b>全頭くん</b>{esc(rv['text'])}</p></div>" if (rv := load_json(ROOT / "data" / "reviews" / date / f"{p['race_id']}.json")) and rv.get("text") else "")
-                    + (f"<p class='meta'>{esc(SCORE_UPDATED.get(date))}集計</p>" if SCORE_UPDATED.get(date) else "") + "</section>")
+                    + (f"<p class='meta'>{esc(SCORE_UPDATED.get(date))}時点の結果</p>" if SCORE_UPDATED.get(date) else "") + "</section>")
     gname0 = p.get("race_name") or r.get("race_name") or r.get("title_text") or ""
     g0 = extra.grade_of(r, gname0)
     graded_link = ""
@@ -466,7 +466,7 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
         post = f"{date}{(r.get('post_time') or '23:59').replace(':', '')}"
         vs_html = (f"<section class='card vs' data-key='vs:{date}:{race_path(date, p)}' data-post='{post}' data-ai='{esc(hon)}' "
                    f"data-fin='{esc(json.dumps(fin_map))}' data-url='{esc(url)}' data-label='{esc(race_label(p))}'>"
-                   f"<h2>AI vs あなた</h2><p class='meta'>あなたの◎を1頭選んで、AIの◎（{esc(hon)}番）と勝負。発走前まで選べる（この端末だけに保存）。</p>"
+                   f"<h2>AI vs あなた</h2><p class='meta'>あなたの◎を1頭選んで、AIの◎（{esc(hon)}番）と勝負。発走前まで選べる（選んだ馬は、いまお使いのブラウザにだけ保存されます）。</p>"
                    f"<div class='pick'><select><option value=''>馬を選ぶ</option>{opts}</select> <button type='button' class='go'>この馬に決める</button></div>"
                    f"<p class='r'></p><p class='meta'><a href='/me/'>あなたの成績（累計）を見る</a></p></section>")
     bias_html = ""
@@ -474,10 +474,10 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
     if bz:
         key, b = bz
         bias_html = (f"<section class='card bias'><h2>当日の{term('bias', 'トラックバイアス')}</h2><p class='big'>{esc(key)}：{esc(b['judgement'])}"
-                     f"<span class='conf'>確度{esc(b['confidence'])}</span></p>"
-                     f"<p class='meta'>{esc(len(b.get('races', [])))}レース（{esc(','.join(map(str, b.get('races', []))))}R）の1・2着馬から判定。"
-                     f"先行{int(b['front_share'] * 100)}%・内枠{int(b['inner_share'] * 100)}%・外枠{int(b['outer_share'] * 100)}%"
-                     f"（{esc(b['updated'])}時点の最新判定。予想に使った時点の判定は更新履歴を参照）。"
+                     f"<span class='conf'>傾向の強さ：{esc(b['confidence'])}</span></p>"
+                     f"<p class='meta'>この日ここまでの{esc(len(b.get('races', [])))}レースで1・2着に来た馬のうち、"
+                     f"先行していた馬が{int(b['front_share'] * 100)}%、内枠の馬が{int(b['inner_share'] * 100)}%、外枠の馬が{int(b['outer_share'] * 100)}%"
+                     f"（{esc(b['updated'])}時点。予想を出したときの判定はこのページの更新履歴にある）。"
                      + ("<a href='/column/track-bias/'>トラックバイアスとは</a>" if HAS_COLUMN else "") + "</p></section>")
     ask_html = ""
     if ASK_URL and p.get("confidence") != "見送り" and date >= TODAY and horses:
@@ -491,12 +491,12 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
         (OUT / "askdata" / date).mkdir(parents=True, exist_ok=True)
         (OUT / "askdata" / date / f"{VENUE_SLUG.get(venue_of(p), 'venue')}-{race_no(p):02d}.json").write_text(
             json.dumps({"label": race_label(p), "post": post_key, "context": ctx}, ensure_ascii=False), encoding="utf-8")
-        ask_html = (f"<section class='card zkteaser'>{zk('normal', 48)}<p>このレースのことを<b>全頭くん</b>に聞ける。<br><span class='meta'>右下のボタンからいつでも開ける</span></p><button type='button' class='zkopen'>質問する</button></section>"
+        ask_html = (f"<section class='card zkteaser'>{zk('normal', 48)}<p>このレースのことを<b>全頭くん</b>に聞ける。<br><span class='meta'>画面右下のボタンからも開けます</span></p><button type='button' class='zkopen'>質問する</button></section>"
                     f"<button type='button' class='zkfab' aria-label='全頭くんに質問' aria-expanded='false' aria-controls='askpop'>{zk('normal', 56) or '?'}<span class='zktip'>質問できるよ</span></button>"
                     f"<section id='askpop' class='card ask askpop' role='dialog' aria-label='全頭くんに質問' data-page='{race_path(date, p)}' data-post='{post_key}' data-url='{ASK_URL}'{" data-zk='1'" if HAS_ZK else ''}>"
-                    f"<h2 class='zkh'>{zk('normal', 48)}<span>全頭くんに質問<small>{esc(race_label(p))}のデータだけで答える</small></span><button type='button' class='zkclose' aria-label='閉じる'>×</button></h2><p class='meta'>このレースの出馬表・近走・AIの評価をもとに、短く答える（発走20分前まで。1人1日30回、全体で1日600回まで）。例：「◎を軽視した理由は」「逃げ馬は何頭いる」「〇と▲の差は」</p>"
+                    f"<h2 class='zkh'>{zk('normal', 48)}<span>全頭くんに質問<small>{esc(race_label(p))}について答えます</small></span><button type='button' class='zkclose' aria-label='閉じる'>×</button></h2><p class='meta'>出走馬の近走やAIの評価をもとに、短く答えます。たとえば「◎を選んだ理由は？」「逃げそうな馬は？」「〇と▲の差は？」。質問できるのは発走20分前まで、1日30回までです（混み合う日は早めに受付を終えることがあります）。</p>"
                     f"<div class='pick'><input type='text' maxlength='200' placeholder='このレースについて質問' aria-label='質問'> <button type='button' class='go'>聞く</button></div>"
-                    f"<div class='alog'></div><p class='meta'>答えはAIの見立てで、的中を保証しない。質問の内容は回答のためだけに使い、保存しない。</p></section>")
+                    f"<div class='alog'></div><p class='meta'>答えはAIの見立てで、的中を保証するものではありません。質問の内容は回答にだけ使い、保存しません。</p></section>")
     updates = "".join(f"<li><b>{esc(u.get('at'))}</b> {esc(u.get('text'))}</li>" for u in p.get("updates", []))
     meta = "・".join(x for x in [
         fmt_date(date),
@@ -532,7 +532,7 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
 {bias_html}
 <section class="card"><h2>全頭評価</h2>
 <ul class="hl"><li class="hr hd"><span class="c-no">馬番</span><span class="c-mk">印</span><span class="c-nm">馬名・騎手</span><span class="c-od">単勝</span><span class="c-sc">評価点</span><span class="c-vl">妙味</span><span class="c-fn">着順</span><span class="c-cm">短評</span></li>{''.join(rows)}</ul>
-<p class="meta">{term("score", "評価点")}は45点満点。{term("value", "妙味")}は「AIの{term("winpct", "想定勝率")}×単勝オッズ」で、1.2以上を妙味あり、0.8未満を過剰人気としている（オッズは取得時点のもの）。用語は<a href="/glossary/">用語集</a>へ。</p></section>
+<p class="meta">{term("score", "評価点")}は45点満点。{term("value", "妙味")}は「AIの{term("winpct", "想定勝率")}×単勝オッズ」。1.2以上なら配当の割に勝ち目がある狙い目、0.8未満なら人気しすぎ（過剰人気）という目安（オッズは予想を出した時点のもの）。用語は<a href="/glossary/">用語集</a>へ。</p></section>
 {f'<section class="card"><h2>更新履歴</h2><ul>{updates}</ul></section>' if updates else ''}
 {graded_link}
 {ask_html}
@@ -739,7 +739,7 @@ def scoreboard(date: str, preds: list[dict]) -> str:
     bet = [p for p in preds if p.get("confidence") != "見送り"]
     done = [scored(p) for p in bet if scored(p)]
     if not done:
-        return (f"<section class='card live'><h2>当日の成績</h2>{banner('morning')}<p>確定 0／{len(bet)}レース。最初のレースが確定すると、ここに的中と回収率が出る。</p></section>")
+        return (f"<section class='card live'><h2>当日の成績</h2>{banner('morning')}<p>結果が出たレース 0／{len(bet)}。最初のレースの結果が出ると、ここに的中数と回収率が表示される。</p></section>")
     st, rt = sum(s["stake"] for s in done), sum(s["return"] for s in done)
     hit = sum(1 for s in done if s["return"] > 0)
     win = sum(1 for s in done if str(s.get("honmei_finish")) == "1")
@@ -753,14 +753,14 @@ def scoreboard(date: str, preds: list[dict]) -> str:
                     f"<td>{sum(1 for s in vd if s['return'] > 0)}</td><td>{roi_txt(vs, vr)}</td><td>{vr - vs:+,}円</td></tr>")
     upd = SCORE_UPDATED.get(date)
     return (f"<section class='card live'><h2>当日の成績{f'（{esc(upd)}時点）' if upd else ''}</h2>"
-            f"<div class='kpis'><div><b>{len(done)}／{len(bet)}</b><span>確定レース</span></div>"
+            f"<div class='kpis'><div><b>{len(done)}／{len(bet)}</b><span>結果が出たレース</span></div>"
             f"<div><b>{hit}</b><span>的中レース（{100 * hit / len(done):.0f}%）・うちプラス{sum(1 for s in done if s['return'] > s['stake'])}</span></div>"
             f"<div><b>{roi_txt(st, rt)}</b><span>当日回収率</span></div>"
-            f"<div><b>{rt - st:+,}円</b><span>収支（投資{st:,}円）</span></div>"
+            f"<div><b>{rt - st:+,}円</b><span>収支（購入{st:,}円）</span></div>"
             f"<div><b>{win}・{top3}</b><span>◎の1着・3着内</span></div></div>"
-            f"<div class='scroll'><table><thead><tr><th>場</th><th>確定</th><th>的中</th><th>回収率</th><th>収支</th></tr></thead>"
+            f"<div class='scroll'><table><thead><tr><th>場</th><th>終了</th><th>的中</th><th>回収率</th><th>収支</th></tr></thead>"
             f"<tbody>{''.join(rows)}</tbody></table></div>"
-            f"<p class='meta'>レースが確定するたびに自動で更新（数分おき）。各点100円の均等買い、見送りは除く。</p></section>")
+            f"<p class='meta'>レースの結果が出るたびに自動で更新（数分おき）。買い目を1点100円ずつ買った計算で、買い目を出さなかった「見送り」のレースは含まない。</p></section>")
 
 
 CONF_RANK = {"A": 3, "B": 2, "C": 1}
@@ -822,8 +822,8 @@ def picks_html(date: str, preds: list[dict], today: bool, exclude: str | None = 
         items.append(f"<li><a href='{race_path(date, p)}'><span class='rno'>{esc(extra.nfkc(race_label(p)))}</span>"
                      f"<span class='hon'>◎{hon} {esc(horse_name(p, hon))}</span><span class='conf c{esc(p.get('confidence'))}'>{esc(p.get('confidence'))}</span>"
                      f"{res}<span class='meta'>{esc(meta)}</span></a></li>")
-    return (f"<section class='card picks'><h2>{'今日' if today else 'この日'}の勝負レース{'（ほか）' if exclude else ''}</h2><ul class='races'>{''.join(items)}</ul>"
-            f"<p class='meta'>的中しやすさの順に3レース（自信度・◎の人気・中央・重賞・想定勝率で加点）。回収率が高い順ではない。買い方ごとの回収率は<a href='/strategy/'>買い方別</a>へ。</p></section>")
+    return (f"<section class='card picks'><h2>{'今日' if today else 'この日'}の{'ほかの' if exclude else ''}勝負レース</h2><ul class='races'>{''.join(items)}</ul>"
+            f"<p class='meta'>AIが「当てやすい」と見た3レース。自信度や◎の人気などから選んでいる（配当が高い順ではない）。買い方ごとの回収率は<a href='/strategy/'>買い方別</a>へ。</p></section>")
 
 
 def day_list(date: str, preds: list[dict]) -> str:
@@ -893,7 +893,7 @@ def results_page(rows: list[dict], venue_of_race: dict) -> str:
     def table(groups: dict, label: str, raw: bool = False) -> str:
         body = "".join(f"<tr><td>{k if raw else esc(k)}</td><td>{v['n']}</td><td>{v['roi']}</td><td>{v['hit']}</td><td>{v['win']}</td><td>{v['top3']}</td></tr>"
                        for k, v in groups.items())
-        return (f"<table><thead><tr><th>{label}</th><th>レース</th><th>回収率</th><th>的中率</th><th>◎勝率</th><th>◎複勝率</th></tr></thead>"
+        return (f"<table><thead><tr><th>{label}</th><th>レース</th><th>回収率</th><th>的中率</th><th>◎の勝率</th><th>◎の3着内率</th></tr></thead>"
                 f"<tbody>{body}</tbody></table>")
 
     daily = {fmt_date(d): totals(by_day[d]) for d in sorted(by_day, reverse=True)}
@@ -909,9 +909,9 @@ def results_page(rows: list[dict], venue_of_race: dict) -> str:
         ven[venue_of_race.get(r["race_id"], "-")].append(r)
     venue_link = lambda k: f"<a href='{venue_path(k)}'>{esc(VENUE_NAME.get(k, k))}</a>" if k in VENUE_SLUG else esc(k)
     body = f"""<h1>成績</h1>{banner("results")}
-<p class="answer">{SITE_NAME}のAI予想の成績は、{asof}時点で{t['n']}レース・累計回収率{t['roi']}（◎勝率{t['win']}、◎複勝率{t['top3']}）。外れも含めた全予想を、買い目各点100円の均等買いとして集計している。</p>
-<div class="kpis"><div><b>{t['n']}</b><span>集計レース</span></div><div><b>{t['roi']}</b><span>累計回収率</span></div>
-<div><b>{t['win']}</b><span>◎勝率</span></div><div><b>{t['top3']}</b><span>◎複勝率</span></div></div>
+<p class="answer">{SITE_NAME}のAI予想の成績は、{asof}時点で{t['n']}レース・累計回収率{t['roi']}（◎が1着になった割合{t['win']}、3着以内に入った割合{t['top3']}）。外れも含めたすべての予想を、買い目を1点100円ずつ買ったとして計算している。</p>
+<div class="kpis"><div><b>{t['n']}</b><span>予想したレース</span></div><div><b>{t['roi']}</b><span>累計回収率</span></div>
+<div><b>{t['win']}</b><span>◎の勝率</span></div><div><b>{t['top3']}</b><span>◎の3着内率</span></div></div>
 <section class="card"><h2>累計回収率の推移</h2>{svg_line(cum, labels=[md(d) for d in days]) or '<p>2日分以上たまると表示します。</p>'}</section>
 <section class="card"><h2>自信度別</h2><div class="scroll">{table({k: totals(v) for k, v in sorted(conf.items())}, '自信度')}</div></section>
 <section class="card"><h2>場別</h2><div class="scroll">{table({venue_link(k): totals(v) for k, v in sorted(ven.items(), key=lambda kv: -len(kv[1]))}, '場', raw=True)}</div></section>
@@ -919,9 +919,9 @@ def results_page(rows: list[dict], venue_of_race: dict) -> str:
 <section class="card"><h2>券種別</h2>{column.stats(STATS_FROM)[1]["table_bets"]}</section>
 <section class="card"><h2>日別</h2><div class="scroll">{table(daily, '日付')}</div></section>
 <p class="meta">買い方を変えた場合の回収率は<a href="/strategy/">買い方別</a>、コースごとの成績と傾向は<a href="/course/">コース別</a>、騎手ごとは<a href="/jockey/">騎手別</a>、重賞は<a href="/graded/">重賞一覧</a>へ。</p>
-<p class="meta">集計対象は自動運用を始めた2026年10月26日以降で、見送り（買い目なし）は除いている。全予想の記録（CSV）は<a href="/data/results_ledger.csv" download>ダウンロード</a>でき、<a href="{REPO}/blob/main/results_ledger.csv">GitHub</a>でも公開している。</p>"""
+<p class="meta">毎日の自動予想を始めた2026年10月26日以降のレースが対象。買い目を出さなかった「見送り」のレースは含まない。全予想の記録（CSV）は<a href="/data/results_ledger.csv" download>ダウンロード</a>でき、<a href="{REPO}/blob/main/results_ledger.csv">GitHub</a>でも公開している。</p>"""
     ld = {"@context": "https://schema.org", "@type": "Dataset", "name": f"{SITE_NAME} AI競馬予想 全成績",
-          "description": "日本の競馬（JRA・地方）全レースのAI予想と結果・回収率の記録（各点100円の均等買い）",
+          "description": "日本の競馬（JRA・地方）全レースのAI予想と結果・回収率の記録（買い目を1点100円ずつ買った計算）",
           "url": BASE_URL + "/results/", "license": "https://creativecommons.org/licenses/by/4.0/",
           "distribution": [{"@type": "DataDownload", "encodingFormat": "text/csv",
                             "contentUrl": BASE_URL + "/data/results_ledger.csv"}]}
@@ -955,9 +955,9 @@ def venue_pages(by_date: dict, led: list[dict], venue_of_race: dict) -> dict[str
                     if key.startswith(v):
                         brows.append(f"<tr><td><a href='{day_path(d)}'>{fmt_date(d)}</a></td><td>{esc(key)}</td><td>{esc(b['judgement'])}</td>"
                                      f"<td>{esc(b['confidence'])}</td><td>{int(b['front_share'] * 100)}%</td><td>{len(b.get('races', []))}</td></tr>")
-        bias_html = ("<section class='card'><h2>当日バイアスの履歴</h2><div class='scroll'><table><thead><tr><th>日付</th><th>コース</th><th>判定</th><th>確度</th>"
+        bias_html = ("<section class='card'><h2>当日バイアスの履歴</h2><div class='scroll'><table><thead><tr><th>日付</th><th>コース</th><th>傾向</th><th>強さ</th>"
                      "<th>連対馬の先行率</th><th>参照R</th></tr></thead><tbody>" + "".join(brows) + "</tbody></table></div>"
-                     "<p class='meta'>その日に確定したレースの1・2着馬の4コーナー位置と馬番から判定（最終判定）。</p></section>") if brows else ""
+                     "<p class='meta'>その日のレースで1・2着に来た馬の、4コーナーでの位置と馬番から見極めている（その日の最終的な判定）。</p></section>") if brows else ""
         recent = []
         for d in dates[:3]:
             lis = "".join(race_item(d, p) for dd, p in sorted(items, key=lambda x: x[1]["_race"].get("post_time") or "") if dd == d)
@@ -966,11 +966,11 @@ def venue_pages(by_date: dict, led: list[dict], venue_of_race: dict) -> dict[str
                             for d in dates[3:30])
         path = f"/venue/{slug}/"
         lead = (f"{name}競馬のAI予想は、{fmt_date(dates[-1])}から{len(items)}レースを公開している。" +
-                (f"成績は{t['n']}レース・回収率{t['roi']}、◎勝率{t['win']}・◎複勝率{t['top3']}（各点100円の均等買い、外れも含む）。" if t["n"] else "成績はレースの確定後に集計する。"))
+                (f"成績は{t['n']}レース・回収率{t['roi']}、◎の勝率{t['win']}・3着内率{t['top3']}（買い目を1点100円ずつ買った計算、外れも含む）。" if t["n"] else "成績はレースの結果が出たあとに表示される。"))
         body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/venue/'>競馬場</a> › {esc(name)}</p>"
                 f"<h1>{esc(name)}競馬のAI予想と成績</h1>{banner(VENUE_PIC.get(v, 'dirt'))}<p class='answer'>{esc(lead)}</p>"
-                f"<div class='kpis'><div><b>{t['n']}</b><span>集計レース</span></div><div><b>{t['roi']}</b><span>回収率</span></div>"
-                f"<div><b>{t['hit']}</b><span>的中率</span></div><div><b>{t['top3']}</b><span>◎複勝率</span></div></div>"
+                f"<div class='kpis'><div><b>{t['n']}</b><span>予想したレース</span></div><div><b>{t['roi']}</b><span>回収率</span></div>"
+                f"<div><b>{t['hit']}</b><span>的中率</span></div><div><b>{t['top3']}</b><span>◎の3着内率</span></div></div>"
                 + (aff_rakuten('venue') if slug not in ("sapporo", "hakodate", "fukushima", "niigata", "tokyo", "nakayama", "chukyo", "kyoto", "hanshin", "kokura") else "")
                 + f"<section class='card'><h2>最近の予想</h2>{''.join(recent)}</section>{bias_html}"
                 + (f"<section class='card'><h2>過去の開催日</h2><ul class='days'>{days_html}</ul></section>" if days_html else ""))
@@ -1019,29 +1019,29 @@ ABOUT = f"""<h1>予想の方法</h1>{banner("about")}
 <section class="card"><h2>更新のタイミング</h2><ul>
 <li>前日夜：翌日の出馬表と各馬の近5走をもとに、午前に発走するレースを予想</li>
 <li>当日昼：当日のオッズ・馬体重と、午前の結果から判定した馬場の傾向をもとに、午後のレースを予想（前日の予想も見直す）</li>
-<li>各レースの確定後（数分おき）：結果と払戻を取り込み、的中と回収率を更新。全レース終了後に1日分を確定</li></ul></section>
+<li>レースの結果が出たら（数分ごとに確認）：的中と回収率を更新。その日の全レースが終わったら1日分の成績を確定</li></ul></section>
 <section class="card"><h2>評価の5軸（45点満点）</h2><ul>
 <li>能力（×3）：直近5走のレースレベル、着差、時計。不利のあった走は内容で補正</li>
 <li>条件適性（×2）：距離、コース、馬場状態、回り</li>
 <li>展開利（×2）：想定ペースと脚質、枠順、当日の馬場の傾向</li>
 <li>状態・ローテ（×1）：間隔、休み明け、馬体重</li>
 <li>人的・その他（×1）：騎手、厩舎、斤量、血統</li></ul></section>
-<section class="card"><h2>印・自信度・買い目</h2><p>評価点の上位に想定勝率を付け、「想定勝率×単勝オッズ」が1.2以上を妙味あり、0.8未満を過剰人気とする。印は◎（本命）〇（対抗）▲（単穴）△（連下）☆（穴）。自信度はA・B・C・見送りの4段階。2026年11月1日からは◎の想定勝率で決めている（A：40%以上、B：30〜39%、C：30%未満）。近走データが不足するレースは見送りとする。買い目は2026年11月2日から型で固定している：◎の単複1点（1〜2番人気は複勝、3〜5番人気は単勝、6番人気以下は買わない）と、3連複フォーメーション（◎→〇▲→印全部）。馬連・馬単・3連単・ワイドは使わない。</p></section>
+<section class="card"><h2>印・自信度・買い目</h2><p>評価点の上位の馬には「勝つ確率の見積もり（想定勝率）」を付け、それに単勝オッズを掛けた値が1.2以上なら狙い目（妙味あり）、0.8未満なら人気しすぎ（過剰人気）と見る。印は◎（本命）〇（対抗）▲（単穴）△（連下）☆（穴）。自信度はA・B・C・見送りの4段階。2026年11月1日からは◎の想定勝率で決めている（A：40%以上、B：30〜39%、C：30%未満）。判断材料が足りないレースは「見送り」にして買い目を出さない。買い目は2026年11月2日から、次の決まった組み方にしている：◎の単複1点（1〜2番人気は複勝、3〜5番人気は単勝、6番人気以下は買わない）と、3連複フォーメーション（◎→〇▲→印全部）。馬連・馬単・3連単・ワイドは使わない。</p></section>
 <section class="card"><h2>当たらないこともある</h2><p>回収率は100%を下回っている。どこが弱いか、数字をどう見るかは<a href="/limits/">AI予想の限界と注意点</a>に正直に書いている。</p></section>
-<section class="card support-box"><h2>運営を支援する</h2><p>予想・集計・SNS投稿はすべて自動で動いていますが、サーバー代やX投稿のAPI代は個人で負担しています。応援してもよいと思ったら、<a href="{OFUSE_URL}" target="_blank" rel="noopener">OFUSE（オフセ）</a>からファンレターと一緒に支援できます（コンビニ・PayPay・クレジットカード対応）。支援の有無で予想の内容や公開範囲は変わりません。</p><p><a class="btn" href="{OFUSE_URL}" target="_blank" rel="noopener">OFUSEで応援する</a></p></section>
+<section class="card support-box"><h2>運営を支援する</h2><p>予想・集計・SNS投稿はすべて自動で動いていますが、サーバー代などの運営費は個人で負担しています。応援してもよいと思ったら、<a href="{OFUSE_URL}" target="_blank" rel="noopener">OFUSE（オフセ）</a>からファンレターと一緒に支援できます（コンビニ・PayPay・クレジットカード対応）。支援の有無で予想の内容や公開範囲は変わりません。</p><p><a class="btn" href="{OFUSE_URL}" target="_blank" rel="noopener">OFUSEで応援する</a></p></section>
 <section class="card"><h2>よくある質問</h2>
-<h3>回収率はどう計算していますか</h3><p>全予想の買い目を各点100円で買ったものとして、払戻の合計÷投資の合計で計算しています。外れたレースも除外しません。</p>
+<h3>回収率はどう計算していますか</h3><p>すべての買い目を1点100円ずつ買ったとして、「払戻の合計÷購入額の合計」で計算しています。外れたレースも除外しません。</p>
 <h3>どのレースを予想していますか</h3><p>JRAと地方競馬の、その日に開催される全レースです。データが不足するレースは「見送り」として記録します。</p>
-<h3>予想のルールは変わりますか</h3><p>成績をもとに見直すことがある。変更は<a href="{REPO}/blob/main/PREDICT.md">GitHubのPREDICT.md</a>に日付と理由を残し、<a href="/strategy/">買い方別の回収率</a>で効果を確認できるようにしている。</p><h3>予想は後から変わりますか</h3><p>当日昼に、オッズや馬場の傾向を見て前日の予想を見直すことがあります。その場合は各レースページの「更新履歴」に変更理由を残します。発走後の変更はしません。</p></section>
-<section class="card"><h2>データについて</h2><p>出馬表・オッズ・結果は主催者等の公開情報をもとにしている。正式な情報は必ず主催者の発表で確認してほしい。</p></section>"""
+<h3>予想のルールは変わりますか</h3><p>成績をもとに、毎週見直しています。変えたときは<a href="/changelog/">更新履歴</a>に日付と理由を書き、<a href="/strategy/">買い方別の回収率</a>で効果を確かめられるようにしています。</p><h3>予想は後から変わりますか</h3><p>当日昼に、オッズや馬場の傾向を見て前日の予想を見直すことがあります。その場合は各レースページの「更新履歴」に変更理由を残します。発走後の変更はしません。</p></section>
+<section class="card"><h2>データについて</h2><p>出走表・オッズ・結果は、主催者などが公開している情報をもとにしています。正式な情報は、必ず主催者の発表でご確認ください。</p></section>"""
 
 FAQ_LD = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
     {"@type": "Question", "name": "回収率はどう計算していますか",
-     "acceptedAnswer": {"@type": "Answer", "text": "全予想の買い目を各点100円で買ったものとして、払戻の合計÷投資の合計で計算しています。外れたレースも除外しません。"}},
+     "acceptedAnswer": {"@type": "Answer", "text": "すべての買い目を1点100円ずつ買ったとして、「払戻の合計÷購入額の合計」で計算しています。外れたレースも除外しません。"}},
     {"@type": "Question", "name": "どのレースを予想していますか",
      "acceptedAnswer": {"@type": "Answer", "text": "JRAと地方競馬の、その日に開催される全レースです。データが不足するレースは見送りとして記録します。"}},
     {"@type": "Question", "name": "予想のルールは変わりますか",
-     "acceptedAnswer": {"@type": "Answer", "text": "成績をもとに見直すことがあります。変更はGitHubのPREDICT.mdに日付と理由を残し、買い方別の回収率ページで効果を確認できるようにしています。"}},
+     "acceptedAnswer": {"@type": "Answer", "text": "成績をもとに、毎週見直しています。変えたときは更新履歴に日付と理由を書き、買い方別の回収率ページで効果を確かめられるようにしています。"}},
     {"@type": "Question", "name": "予想は後から変わりますか",
      "acceptedAnswer": {"@type": "Answer", "text": "当日昼にオッズや馬場の傾向を見て前日の予想を見直すことがあり、変更理由を更新履歴に残します。発走後の変更はしません。"}}]}
 
@@ -1084,38 +1084,31 @@ def limits_page(t: dict, worst_venue: tuple[str, str] | None) -> str:
 <section class='card'><h2>当たっている部分と、当たっていない部分</h2>
 <p>◎の馬は{esc(t['top3'])}の確率で3着以内に入り、◎の複勝だけなら回収率は80%前後になる。つまり「本命の選び方」は大きくは外していない。一方で、相手の選び方と買い目の組み方で取りこぼしが多く、全体の回収率を下げている。{wv}人気薄を強く評価しすぎる傾向（AIの見立てがオッズより強気なレースほど回収率が低い）もある。詳しくは<a href='/strategy/'>買い方別の回収率</a>で毎日更新している。</p></section>
 <section class='card'><h2>AIが苦手なこと</h2>
-<ul><li>通過順や脚質のデータが取れないレース（ばんえい競馬など）。</li><li>転入初戦や休み明けなど、近走データが足りない馬。これらは「見送り」にしている。</li><li>当日の馬場の急変、出遅れ、不利などの偶然。予想は発走20分前以降は変えない。</li><li>オッズが締め切り直前に大きく動くレース。予想に使うオッズは取得時点のもので、最終オッズとは違う。</li></ul></section>
+<ul><li>通過順や脚質のデータが取れないレース（ばんえい競馬など）。</li><li>転入初戦や休み明けなど、近走データが足りない馬。これらは「見送り」にしている。</li><li>当日の馬場の急変、出遅れ、不利などの偶然。予想は発走20分前以降は変えない。</li><li>オッズが締め切り直前に大きく動くレース。予想に使うのは予想を出した時点のオッズで、最終オッズとは違う。</li></ul></section>
 <section class='card'><h2>この数字の見方</h2>
-<ul><li>回収率は、外れたレースも除外せず、各点100円の均等買いで集計している。都合のいい期間だけを切り取っていない。</li><li>レース数が少ない区分（目安50レース未満）の回収率は、高配当1回で大きく動く。</li><li>予想のルールは成績を見て変えることがある。変更は<a href='/changelog/'>更新履歴</a>に残す。</li></ul></section>
+<ul><li>回収率は、外れたレースも除外せず、すべての買い目を1点100円ずつ買ったとして計算している。都合のいい期間だけを切り取っていない。</li><li>レース数が少ない（目安50レース未満）数字は、高配当が1回出ただけで大きく動くので、参考程度に。</li><li>予想のルールは成績を見て変えることがある。変更は<a href='/changelog/'>更新履歴</a>に残す。</li></ul></section>
 <section class='card'><h2>お願い</h2><p>予想は情報提供であり、的中や利益を保証しない。馬券はご自身の判断と責任で、無理のない金額で。20歳未満の方は馬券を購入できない。</p></section>"""
     return page(f"AI予想の限界と注意点 | {SITE_NAME}", body, "/limits/",
                 desc=f"競馬全頭ログのAI予想が当たっていない部分、苦手なレース、数字の見方。累計回収率{t['roi']}（{t['n']}レース）の時点での正直な説明。")
 
 
 SITE_CHANGES = [
-    ("2026-10-26", "自動運用を開始。全レースの予想・結果・回収率の公開を始めた。"),
+    ("2026-10-26", "毎日の自動予想を開始。全レースの予想・結果・回収率の公開を始めた。"),
     ("2026-10-30", "レースごとの的中・回収率を、確定のたびに更新するようにした。初心者向けコラムの準備。"),
     ("2026-11-01", "サイト名を「競馬全頭ログ」に変更。XとInstagramへの自動投稿（的中・重賞・毎晩の全成績）を開始。コラム4本を公開。買い方別の回収率、週次の重賞回顧、馬別ページを追加。"),
-    ("2026-11-02", "買い目を型で固定（◎の単複を人気で切り替え＋3連複フォーメーション）。デザインを刷新。挿絵を追加。お問い合わせフォームと支援（OFUSE）の導線を設置。"),
-    ("2026-11-04", "公式キャラクター「全頭くん」が登場。レースページ右下のボタンから開く「全頭くんに質問」で答え、結果欄の回顧では的中・不的中で表情が変わる。"),
+    ("2026-11-02", "買い目の組み方を1つに決めた（◎の単勝か複勝を人気で切り替え＋3連複フォーメーション）。デザインを刷新。挿絵を追加。お問い合わせフォームと支援（OFUSE）の導線を設置。"),
+    ("2026-11-04", "公式キャラクター「全頭くん」が登場。レースページ右下のボタンから、そのレースについて全頭くんに質問できるようにした。結果欄の振り返りも全頭くんが担当。サイト全体の言葉づかいを、初めての人にも分かる表現に見直した。"),
     ("2026-11-03", "コラムを21本追加（AI予想は当たるのか、3連複フォーメーション、単勝と複勝、期待値買い、自信度、中央と地方、2番人気の本命、予想ページの見方、ばんえい競馬、脚質別・枠順別・オッズ別・頭数別・馬体重別・間隔別の勝率、点数計算早見表、ChatGPTでの予想、地方競馬のネット投票、馬連・馬単・ワイド、トリガミ、当たらない理由）。数字はすべて実データから自動更新。"),
 ]
 
 
 def changelog_page() -> str:
-    rules = []
-    try:
-        txt = (ROOT / "PREDICT.md").read_text(encoding="utf-8")
-        sec = txt.split("## 成績からの調整履歴", 1)[1]
-        for line in sec.splitlines():
-            if line.startswith("- "):
-                rules.append(line[2:].strip())
-    except Exception:
-        pass
-    r_html = "".join(f"<li>{esc(x)}</li>" for x in rules)
+    # 読者向けの言葉で書いた予想ルールの変更（技術的な記録は PREDICT.md の「成績からの調整履歴」）
+    rules = load_json(ROOT / "data" / "rule_changes.json") or []
+    r_html = "".join(f"<li><b>{esc(x.get('date'))}</b>　{esc(x.get('text'))}</li>" for x in sorted(rules, key=lambda x: x.get("date", ""), reverse=True))
     s_html = "".join(f"<li><b>{esc(d)}</b>　{esc(x)}</li>" for d, x in sorted(SITE_CHANGES, reverse=True))
     body = (f"<p class='crumb'><a href='/'>トップ</a> › 更新履歴</p><h1>更新履歴</h1>"
-            f"<p class='answer'>予想ルールの変更と、サイトの機能の変更を日付つきで記録している。予想ルールの変更は成績の分析にもとづき、毎週月曜に見直している。</p>"
+            f"<p class='answer'>予想のルールとサイトの機能を変えたときの記録。予想のルールは毎週月曜に成績を見直し、変えたときはその理由もここに書いている。</p>"
             f"<section class='card'><h2>予想ルールの変更</h2><ul class='log'>{r_html or '<li>まだありません。</li>'}</ul></section>"
             f"<section class='card'><h2>サイトの変更</h2><ul class='log'>{s_html}</ul></section>")
     return page(f"更新履歴 | {SITE_NAME}", body, "/changelog/", desc="競馬全頭ログの予想ルールとサイト機能の変更履歴。")
@@ -1285,8 +1278,8 @@ JS = """(function(){var s=document.querySelector('.ask');if(!s)return;var inp=s.
 function key(){var d=new Date();return 'askn:'+d.getFullYear()+d.getMonth()+d.getDate();}
 function add(cls,t){var d=document.createElement('div');d.className='qa';var q=document.createElement('p');q.className=cls;q.textContent=t;d.appendChild(q);log.appendChild(d);return d;}
 function go(){var q=(inp.value||'').trim();if(!q||busy)return;var n=0;try{n=parseInt(localStorage.getItem(key())||'0',10);}catch(e){}
-if(n>=30){add('err','本日の質問回数の上限に達した。');return;}busy=true;btn.disabled=true;var box=add('q',q);var bub=document.createElement('div');bub.className='bub';var im=null;if(s.dataset.zk){im=document.createElement('img');im.className='zk';im.width=40;im.height=40;im.alt='全頭くん';im.src='/assets/zk-think.png';bub.appendChild(im);}var a=document.createElement('p');a.className='a';a.textContent='考え中…';bub.appendChild(a);box.appendChild(bub);function face(f){if(im)im.src='/assets/zk-'+f+'.png';}inp.value='';
-fetch(s.dataset.url+'/ask',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({page:s.dataset.page,q:q})}).then(function(r){return r.json().then(function(j){return [r.status,j];});}).then(function(x){var j=x[1];if(j.answer){a.textContent=j.answer;face('normal');try{localStorage.setItem(key(),String(n+1));}catch(e){}if(window.gtag)gtag('event','ask',{page:location.pathname});}else{a.className='err';a.textContent=j.error||'答えを作れなかった。';face('sorry');}}).catch(function(){a.className='err';a.textContent='通信に失敗した。';face('sorry');}).then(function(){busy=false;btn.disabled=false;});}
+if(n>=30){add('err','今日の質問は30回までです。また明日どうぞ。');return;}busy=true;btn.disabled=true;var box=add('q',q);var bub=document.createElement('div');bub.className='bub';var im=null;if(s.dataset.zk){im=document.createElement('img');im.className='zk';im.width=40;im.height=40;im.alt='全頭くん';im.src='/assets/zk-think.png';bub.appendChild(im);}var a=document.createElement('p');a.className='a';a.textContent='考え中…';bub.appendChild(a);box.appendChild(bub);function face(f){if(im)im.src='/assets/zk-'+f+'.png';}inp.value='';
+fetch(s.dataset.url+'/ask',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({page:s.dataset.page,q:q})}).then(function(r){return r.json().then(function(j){return [r.status,j];});}).then(function(x){var j=x[1];if(j.answer){a.textContent=j.answer;face('normal');try{localStorage.setItem(key(),String(n+1));}catch(e){}if(window.gtag)gtag('event','ask',{page:location.pathname});}else{a.className='err';a.textContent=j.error||'うまく答えられませんでした。聞き方を変えてもう一度どうぞ。';face('sorry');}}).catch(function(){a.className='err';a.textContent='つながりませんでした。通信状態を確認して、もう一度どうぞ。';face('sorry');}).then(function(){busy=false;btn.disabled=false;});}
 var fab=document.querySelector('.zkfab');function open(v){s.classList.toggle('open',v);if(fab){fab.setAttribute('aria-expanded',v?'true':'false');fab.classList.add('seen');}try{sessionStorage.setItem('zkseen','1');}catch(e){}if(v&&!inp.disabled)setTimeout(function(){inp.focus();},50);if(v&&window.gtag)gtag('event','ask_open',{page:location.pathname});}
 try{if(sessionStorage.getItem('zkseen')&&fab)fab.classList.add('seen');}catch(e){}
 if(fab)fab.addEventListener('click',function(){open(!s.classList.contains('open'));});
@@ -1294,7 +1287,7 @@ document.querySelectorAll('.zkopen').forEach(function(b){b.addEventListener('cli
 var cl=s.querySelector('.zkclose');if(cl)cl.addEventListener('click',function(){open(false);if(fab)fab.focus();});
 document.addEventListener('keydown',function(e){if(e.key==='Escape'&&s.classList.contains('open')){open(false);if(fab)fab.focus();}});
 btn.addEventListener('click',go);inp.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();go();}});
-var post=s.dataset.post,now=new Date(Date.now()+9*3600*1000),k=now.toISOString().slice(0,10).replace(/-/g,'')+now.toISOString().slice(11,16).replace(':','');if(post&&k>=post){inp.disabled=true;btn.disabled=true;inp.placeholder='発走が近いため質問は締め切った';}})();
+var post=s.dataset.post,now=new Date(Date.now()+9*3600*1000),k=now.toISOString().slice(0,10).replace(/-/g,'')+now.toISOString().slice(11,16).replace(':','');if(post&&k>=post){inp.disabled=true;btn.disabled=true;inp.placeholder='発走20分前を過ぎたので、質問の受付は終わりました';}})();
 (function(){
 function ga(n,p){try{if(window.gtag)gtag('event',n,p||{})}catch(e){}}
 document.addEventListener('click',function(e){var a=e.target.closest('a');if(!a)return;var h=a.href||'';
@@ -1386,7 +1379,7 @@ def build() -> None:
     if mrows:
         st0, rt0 = sum(int(r["stake"]) for r in mrows), sum(int(r["return"]) for r in mrows)
         HEADER_ROI = (f"<a class='roi-badge' href='/results/'>{int(mrows[0]['date'][4:6])}月の回収率 <b>{roi_txt(st0, rt0)}</b>"
-                      f"（{len(mrows)}R・外れ含む）</a>")
+                      f"（{len(mrows)}レース・外れも含む）</a>")
     if ASSETS.exists():
         shutil.copytree(ASSETS, OUT / "assets", ignore=shutil.ignore_patterns("og-base.png", "src"))
     og.site_image(OUT / "og" / "default.jpg", "全レースAI予想と回収率の記録",
@@ -1464,7 +1457,7 @@ def build() -> None:
     past = "".join(f"<li><a href='{day_path(d)}'><span>{fmt_date(d)}（{n}レース）</span><span>回収率 {roi}</span></a></li>"
                    for d, n, roi in day_rows if d != main_d)
     body = (f"<h1>{head}<small>{fmt_date(main_d) if main_d else ''}</small></h1>"
-            f"<p class='answer'>AIが日本の競馬（JRA・地方）の全レースを毎日予想し、外れも含めた成績を公開している。累計回収率は{t['roi']}（{t['n']}レース、◎複勝率{t['top3']}）。<a href='/results/'>成績の詳細</a>　<span class='meta'>最終更新 {now.strftime('%m/%d %H:%M')}</span></p>"
+            f"<p class='answer'>AIが日本の競馬（JRA・地方）の全レースを毎日予想し、外れも含めた成績を公開している。累計回収率は{t['roi']}（{t['n']}レース。◎が3着以内に入った割合は{t['top3']}）。<a href='/results/'>成績の詳細</a>　<span class='meta'>最終更新 {now.strftime('%m/%d %H:%M')}</span></p>"
             + top_list + (f"<section id='past'><h2>過去の予想</h2><ul class='days'>{past}</ul></section>" if past else ""))
     site_ld = [{"@context": "https://schema.org", "@type": "Organization", "name": SITE_NAME, "url": BASE_URL + "/", "logo": BASE_URL + "/assets/logo-mark.png",
                 "sameAs": [X_URL, IG_URL], "contactPoint": {"@type": "ContactPoint", "contactType": "customer support", "url": BASE_URL + "/contact/"}},
@@ -1527,9 +1520,9 @@ def build() -> None:
     write("/search/", page(f"検索 | {SITE_NAME}", "<p class='crumb'><a href='/'>トップ</a> › 検索</p><h1>検索</h1><p class='meta'>馬名・レース名・競馬場名で探せる。</p><div id='sr'></div>", "/search/", noindex=True))
     write("/me/", page(f"あなたの成績（AI vs あなた） | {SITE_NAME}",
                        "<p class='crumb'><a href='/'>トップ</a> › あなたの成績</p><h1>あなたの成績</h1>"
-                       "<p class='answer'>各レースページの「AI vs あなた」で選んだ◎の成績。この端末のブラウザにだけ保存され、サーバーには送られない。</p>"
+                       "<p class='answer'>各レースページの「AI vs あなた」で選んだ◎の成績。記録は、いまお使いのブラウザにだけ保存され、外部には送られない。</p>"
                        "<div id='me'><p class='meta'>読み込み中…</p></div>"
-                       "<p class='meta'>勝敗は「あなたの◎の着順」と「AIの◎の着順」を比べて決める。同着は引き分け。結果が未確定のレースは数えない。</p>", "/me/", noindex=True))
+                       "<p class='meta'>勝敗は「あなたの◎の着順」と「AIの◎の着順」を比べて決める。同着は引き分け。結果がまだ出ていないレースは数えない。</p>", "/me/", noindex=True))
     write("/glossary/", glossary_page())
     _vb = defaultdict(lambda: [0, 0, 0])
     for r in led:

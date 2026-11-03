@@ -63,7 +63,7 @@ def build_pages(B, by_date: dict, led: list[dict], venue_of_race: dict, today: s
         y, m = int(ym[:4]), int(ym[4:])
         cur = ym == today[:6]
         label = f"{y}年{m}月"
-        lead = (f"{label}は{t['n']}レースを予想し、回収率{t['roi']}（投資{st:,}円→払戻{rt:,}円）、的中率{t['hit']}、◎の勝率{t['win']}・3着内率{t['top3']}だった。"
+        lead = (f"{label}は{t['n']}レースを予想し、回収率{t['roi']}（購入{st:,}円→払戻{rt:,}円）、的中率{t['hit']}、◎の勝率{t['win']}・3着内率{t['top3']}だった。"
                 + (f"買い方別では「{best[0][0]}」が{best[0][1]:.1f}%（{best[0][2]}レース）で最も高く、" if best else "")
                 + (f"場別では{venues[0][0]}が{B.roi_txt(venues[0][1][0], venues[0][1][1])}で最も良く、{venues[-1][0]}が{B.roi_txt(venues[-1][1][0], venues[-1][1][1])}で最も悪かった。" if len(venues) >= 2 else "")
                 + ("月の途中の集計で、毎日更新される。" if cur else ""))
@@ -74,7 +74,7 @@ def build_pages(B, by_date: dict, led: list[dict], venue_of_race: dict, today: s
         if top and top_p:
             d, p = top_p
             top_html = (f"<section class='card'><h2>月内の最高払戻</h2><p><a href='{B.race_path(d, p)}'>{esc(B.fmt_date(d))} {esc(B.race_label(p))}</a>："
-                        f"投資{int(top['stake']):,}円→払戻{int(top['return']):,}円（回収率{B.roi_txt(int(top['stake']), int(top['return']))}）</p></section>")
+                        f"購入{int(top['stake']):,}円→払戻{int(top['return']):,}円（回収率{B.roi_txt(int(top['stake']), int(top['return']))}）</p></section>")
         path = f"/monthly/{y}-{m:02d}/"
         body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/monthly/'>月次レポート</a> › {esc(label)}</p>"
                 f"<h1>{esc(label)}の成績レポート{'（集計中）' if cur else ''}</h1><p class='answer'>{esc(lead)}</p>"
@@ -84,7 +84,7 @@ def build_pages(B, by_date: dict, led: list[dict], venue_of_race: dict, today: s
                 + (f"<section class='card'><h2>買い方別（この月）</h2><div class='scroll'><table><thead><tr><th>買い方</th><th>レース</th><th>回収率</th></tr></thead><tbody>{brows}</tbody></table></div><p class='meta'>20レース以上の区分のみ。買い方の意味は<a href='/strategy/'>買い方別の回収率</a>へ。</p></section>" if brows else "")
                 + f"<section class='card'><h2>自信度別</h2><div class='scroll'><table><thead><tr><th>自信度</th><th>レース</th><th>回収率</th></tr></thead><tbody>{crows}</tbody></table></div></section>"
                 + top_html
-                + "<p class='meta'>各点100円の均等買い、外れも含む。見送り・返還は除く。</p>")
+                + "<p class='meta'>買い目を1点100円ずつ買った計算で、外れも含む。買い目を出さなかった「見送り」と返還になったレースは含まない。</p>")
         ld = {"@context": "https://schema.org", "@type": "Article", "headline": f"{label}の成績レポート", "author": {"@type": "Organization", "name": B.SITE_NAME},
               "datePublished": f"{y}-{m:02d}-01", "dateModified": f"{today[:4]}-{today[4:6]}-{today[6:8]}" if cur else f"{y}-{m:02d}-{max(db)[6:8]}", "mainEntityOfPage": B.BASE_URL + path}
         write(path, page(f"{label}の成績レポート：回収率{t['roi']}・{t['n']}レース | {B.SITE_NAME}", body, path, desc=lead[:120], head_extra=jsonld(ld)))

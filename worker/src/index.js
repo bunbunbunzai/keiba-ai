@@ -48,10 +48,11 @@ export class Limits {
   }
 }
 
-const SYSTEM = `あなたは「競馬全頭ログ」（AIが中央・地方の全レースを予想して外れも含めた成績を公開するサイト）のレースページに付いている質問窓口。
-読者の質問に、与えられたレース情報（出馬表・各馬の近走・AIの予想と短評）だけを根拠に、日本語で3文以内（200字以内）で答える。
-だ・である調、絵文字なし。情報に無いことは「このレースのデータには無い」と答え、推測で数字や事実を作らない。
-馬券の購入を勧めない、的中や利益を約束しない。レースと無関係の質問には「このレースについての質問に答える窓口である」とだけ返す。`;
+const SYSTEM = `あなたは「競馬全頭ログ」（AIが中央・地方の全レースを予想し、外れも含めた成績を公開するサイト）の公式キャラクター「全頭くん」。レースページで読者の質問に答える。
+与えられたレース情報（出馬表・各馬の近走・AIの予想と短評）だけを根拠に、日本語のです・ます調で、やさしく3文以内（200字以内）で答える。絵文字なし。
+競馬を始めたばかりの人にも分かる言葉を使う。「想定勝率×単勝」「妙味」「過剰人気」などサイト内の用語は、そのまま使わず「人気の割に勝ち目がある」「人気ほどの勝ち目はない」のように言い換える。
+情報に無いことは「このレースのデータには載っていません」と答え、推測で数字や事実を作らない。
+馬券の購入を勧めない、的中や利益を約束しない。レースと無関係の質問には「このレースについての質問にお答えしています」とだけ返す。`;
 
 async function askClaude(env, context, q) {
   const body = {
@@ -75,15 +76,15 @@ export default {
     if (req.method === "OPTIONS") return new Response(null, { status: 204, headers: cors(env, req) });
     const url = new URL(req.url);
     if (req.method !== "POST" || url.pathname !== "/ask") return reply(env, req, 404, { error: "not found" });
-    if (!env.ANTHROPIC_API_KEY) return reply(env, req, 503, { error: "この機能は準備中である。" });
+    if (!env.ANTHROPIC_API_KEY) return reply(env, req, 503, { error: "この機能は準備中です。" });
     let body;
-    try { body = await req.json(); } catch { return reply(env, req, 400, { error: "形式が不正。" }); }
+    try { body = await req.json(); } catch { return reply(env, req, 400, { error: "うまく受け取れませんでした。ページを再読み込みしてから、もう一度どうぞ。" }); }
     const page = String(body.page || "");
     const q = String(body.q || "").trim();
     const m = page.match(/^\/(\d{4})\/(\d{2})\/(\d{2})\/([a-z]+)\/(\d{2})r\/$/);
-    if (!m) return reply(env, req, 400, { error: "レースページからだけ質問できる。" });
+    if (!m) return reply(env, req, 400, { error: "質問はレースのページから送ってください。" });
     const maxQ = parseInt(env.MAX_Q_CHARS || "200", 10);
-    if (!q || q.length > maxQ) return reply(env, req, 400, { error: `質問は1〜${maxQ}字で。` });
+    if (!q || q.length > maxQ) return reply(env, req, 400, { error: `質問は${maxQ}字以内で入力してください。` });
     const date = m[1] + m[2] + m[3];
     const key = `${m[4]}-${m[5]}`;
     // レース情報（サイトが公開している静的JSON）。10分キャッシュ
@@ -94,12 +95,12 @@ export default {
       res = await fetch(dataUrl, { cf: { cacheTtl: 600 } });
       if (res.ok) await cache.put(dataUrl, new Response(await res.clone().text(), { headers: { "content-type": "application/json", "cache-control": "max-age=600" } }));
     }
-    if (!res.ok) return reply(env, req, 404, { error: "このレースの情報が無い（古いレースか、まだ予想が無い）。" });
+    if (!res.ok) return reply(env, req, 404, { error: "このレースは、まだ予想が出ていないか、終わったレースのため質問できません。" });
     const data = await res.json();
     // 発走20分前を過ぎたら受け付けない（後出し防止と費用の節約）
     const now = jstNow();
     const nowKey = ymd(now) + now.toISOString().slice(11, 16).replace(":", "");
-    if (data.post && nowKey >= String(data.post)) return reply(env, req, 410, { error: "発走が近い（または終了した）レースには答えない。結果とAIの回顧はページの結果欄に出る。" });
+    if (data.post && nowKey >= String(data.post)) return reply(env, req, 410, { error: "発走20分前を過ぎたので、このレースの質問は受け付けていません。結果が出たら、ページの結果欄で全頭くんの振り返りが読めます。" });
     // 回数制限
     const ip = req.headers.get("CF-Connecting-IP") || "0";
     const day = ymd(now);
@@ -113,14 +114,14 @@ export default {
     ] }) });
     const cj = await chk.json();
     if (!cj.ok) {
-      const msg = cj.k.startsWith("site:") ? "本日の質問の上限に達した。明日また。" : cj.k.startsWith("ipm:") ? "少し間をあけて。" : "本日の質問回数の上限（1人30回）に達した。";
+      const msg = cj.k.startsWith("site:") ? "今日は質問が多く、受付を終了しました。また明日どうぞ。" : cj.k.startsWith("ipm:") ? "続けての質問が多いようです。1分ほど待ってからどうぞ。" : "今日の質問は30回までです。また明日どうぞ。";
       return reply(env, req, 429, { error: msg });
     }
     try {
       const answer = await askClaude(env, data.context, q);
-      return reply(env, req, 200, { answer: answer || "答えを作れなかった。" });
+      return reply(env, req, 200, { answer: answer || "うまく答えられませんでした。聞き方を変えて、もう一度どうぞ。" });
     } catch (e) {
-      return reply(env, req, 502, { error: "いま答えを作れない。少し待ってからもう一度。" });
+      return reply(env, req, 502, { error: "いまは答えられません。少し待ってから、もう一度どうぞ。" });
     }
   },
 };
