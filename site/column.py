@@ -386,8 +386,9 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
     v, tables = stats(stats_from)
     try:
         tables["aff_rakuten"] = __import__("build").aff_rakuten("column")
+        tables["aff_saikyo"] = __import__("build").aff_saikyo()
     except Exception:  # noqa: BLE001
-        tables["aff_rakuten"] = ""
+        tables["aff_rakuten"] = tables["aff_saikyo"] = ""
     pub = [c for c in cols if not c["draft"]]
     lastmod = {}
     for c in cols:
