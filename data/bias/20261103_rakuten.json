@@ -1,5 +1,17 @@
 {
  "date": "20261103",
- "updated": "2026-11-03 10:46",
- "bias": {}
+ "updated": "2026-11-03 10:58",
+ "bias": {
+  "門別ダ": {
+   "judgement": "フラット",
+   "confidence": "弱",
+   "races": [
+    1
+   ],
+   "front_share": 0.5,
+   "inner_share": 0.5,
+   "outer_share": 0.5,
+   "horses": 2
+  }
+ }
 }
