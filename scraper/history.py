@@ -86,7 +86,7 @@ def jra_months(sess: PoliteSession, months: list[str], deadline: float, until: s
                         print("skip", cn, e, flush=True)
                         continue
                     res = parse_result(html)
-                    cm = re.search(r"コース：([\d,]+)メートル（(芝|ダート|障害)", BeautifulSoup(html, "html.parser").get_text(" "))
+                    cm = re.search(r"コース\s*[：:]\s*([\d,]+)\s*メートル\s*[（(]\s*(芝|ダート|障害)", re.sub(r"\s+", " ", BeautifulSoup(html, "html.parser").get_text(" ")))
                     rows = [[r.get("finish"), r.get("number"), None, _pos4(r.get("corners")), r.get("popularity")]
                             for r in res.get("rows", [])]
                     if not rows:
