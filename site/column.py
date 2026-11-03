@@ -396,8 +396,13 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
         title, lead = subst(c.get("title", ""), v), subst(c.get("lead", ""), v)
         desc = subst(c.get("description", ""), v)
         body_html = render(subst(c["body"], v), tables)
-        related = "".join(f"<li><a href='/column/{o['slug']}/'>{esc(subst(o.get('title', ''), v))}</a></li>"
-                          for o in pub if o is not c)
+        auto_c = c.get("auto") == "true"
+        rel_src = [o for o in pub if o is not c and (o.get("auto") != "true" or (auto_c and o.get("auto") == "true"))]
+        if auto_c:
+            rel_src = [o for o in pub if o is not c and o.get("auto") == "true"][:5] + [o for o in pub if o.get("auto") != "true"][:6]
+        else:
+            rel_src = [o for o in pub if o is not c and o.get("auto") != "true"] + [o for o in pub if o.get("auto") == "true"][:3]
+        related = "".join(f"<li><a href='/column/{o['slug']}/'>{esc(subst(o.get('title', ''), v))}</a></li>" for o in rel_src)
         ld = {"@context": "https://schema.org", "@type": "Article", "headline": title, "description": desc,
               "datePublished": c.get("date"), "dateModified": today_iso, "inLanguage": "ja",
               "author": {"@type": "Organization", "name": site_name, "url": base_url + "/operator/"},
@@ -424,12 +429,19 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
                          head_extra=jsonld(ld) + jsonld(crumb), og_image=og_img))
         if not c["draft"]:
             lastmod[path] = today_iso
-    items = "".join(f"<li><a href='/column/{c['slug']}/'><b>{esc(subst(c.get('title', ''), v))}</b>"
-                    f"<span>{esc(subst(c.get('description', ''), v))}</span></a></li>" for c in pub)
+    def _li(c):
+        return (f"<li><a href='/column/{c['slug']}/'><b>{esc(subst(c.get('title', ''), v))}</b>"
+                f"<span>{esc(subst(c.get('description', ''), v))}</span></a></li>")
+    items = "".join(_li(c) for c in pub if c.get("auto") != "true")
+    autos = sorted((c for c in pub if c.get("auto") == "true"), key=lambda c: c.get("date", ""), reverse=True)
+    auto_items = "".join(_li(c) for c in autos[:40])
+    if auto_items:
+        auto_items = ("<h2>重賞の全頭診断（レースごと）</h2><p class='meta'>重賞ごとに、AIの印・評価点・想定勝率・買い目と、確定後の結果・回顧を1本の記事にしている。レース当日の昼までに公開。</p>"
+                      f"<ul class='cols'>{auto_items}</ul>" + ("<p class='meta'>直近40本を表示。</p>" if len(autos) > 40 else ""))
     write("/column/", page(f"競馬初心者向けコラム | {site_name}",
                            "<p class='crumb'><a href='/'>トップ</a> › コラム</p><h1>競馬初心者向けコラム</h1>" + __import__("build").banner("column") +
                            "<p class='answer'>馬券の種類や回収率の考え方などを、このサイトの全レースの記録（実データ）を使って解説する。数字は記録が増えるたびに自動で更新される。</p>"
-                           + (f"<ul class='cols'>{items}</ul>" if items else "<p>準備中。</p>"),
+                           + (f"<h2>初心者向け・データ分析</h2><ul class='cols'>{items}</ul>" if items else "<p>準備中。</p>") + auto_items,
                            "/column/", desc="競馬初心者向けに、馬券の種類・回収率・人気と勝率・トラックバイアスを、AI予想の全レースの実データで解説するコラム。",
                            noindex=not pub))
     if pub:

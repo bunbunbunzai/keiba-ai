@@ -81,6 +81,9 @@ def flush(date: str, before: int) -> int:
         sh("python", "scraper/score.py", "--date", date)
         for src in ("jra", "rakuten"):
             sh("python", "scraper/bias.py", "--date", date, "--source", src)
+        if os.environ.get("ANTHROPIC_API_KEY"):
+            r = sh("python", "scraper/review_gen.py", "--date", date)
+            print((r.stdout or "").strip()[-80:], (r.stderr or "").strip()[-200:])
         push(date, after)
     return after
 

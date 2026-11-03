@@ -409,6 +409,7 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
                     f"<p class='big {'tg' if tg else 'hit' if hit else 'miss'}'>{'的中（トリガミ：払戻が投資を下回る）' if tg else '的中' if hit else '不的中'}　投資{sc['stake']:,}円・払戻{sc['return']:,}円・"
                     f"このレースの回収率{roi_txt(sc['stake'], sc['return'])}（収支{sc['return'] - sc['stake']:+,}円）</p>"
                     + "".join(f"<p>{esc(x)}</p>" for x in sc.get("hits", []))
+                    + (f"<h3>回顧</h3><p class='kaiko'>{esc(rv['text'])}</p>" if (rv := load_json(ROOT / "data" / "reviews" / date / f"{p['race_id']}.json")) and rv.get("text") else "")
                     + (f"<p class='meta'>{esc(SCORE_UPDATED.get(date))}集計</p>" if SCORE_UPDATED.get(date) else "") + "</section>")
     gname0 = p.get("race_name") or r.get("race_name") or r.get("title_text") or ""
     g0 = extra.grade_of(r, gname0)
@@ -417,6 +418,9 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
         gslug = extra.graded_slug(gname0, VENUE_SLUG.get(venue_of(p), "venue"))
         graded_link = (f"<p class='meta'>{esc(extra.clean_name(gname0))}の過去のAI予想と結果は"
                        f"<a href='/graded/{gslug}/'>{esc(extra.clean_name(gname0))} AI予想まとめ</a>へ。</p>")
+        if (ROOT / "columns" / f"{gslug}-{date[:4]}.md").exists():
+            graded_link = (f"<p class='notice'><a href='/column/{gslug}-{date[:4]}/'>{esc(extra.clean_name(gname0))}{date[:4]} の全頭診断記事（根拠・展開・人気との比較・結果の回顧）を読む →</a></p>"
+                           + graded_link)
     # シェア
     from urllib.parse import quote
     share_text = answer_sentence(date, p)
@@ -1088,7 +1092,8 @@ PRIVACY = f"""<h1>プライバシーポリシー</h1>
 <section class="card"><h2>広告の表記</h2><p>本サイトに掲載する広告・アフィリエイトリンクには、その旨を明記します。</p></section>
 <section class="card"><h2>改定</h2><p>本ポリシーは必要に応じて改定することがあります。制定日：2026年10月27日／改定日：2026年11月1日（Googleアナリティクスの利用を追記）</p></section>"""
 
-CSS = """.aff{font-size:13px;color:var(--mut);margin:10px 0 0;padding:8px 10px;border:1px dashed var(--line);background:var(--bg)}.aff a{color:var(--acc);font-weight:700}.pr{display:inline-block;font-size:10px;border:1px solid var(--mut);border-radius:2px;padding:0 4px;margin-right:6px;vertical-align:middle;color:var(--mut)}
+CSS = """.kaiko{border-left:3px solid var(--acc);padding:6px 10px;background:var(--acc-soft);line-height:1.7}
+.aff{font-size:13px;color:var(--mut);margin:10px 0 0;padding:8px 10px;border:1px dashed var(--line);background:var(--bg)}.aff a{color:var(--acc);font-weight:700}.pr{display:inline-block;font-size:10px;border:1px solid var(--mut);border-radius:2px;padding:0 4px;margin-right:6px;vertical-align:middle;color:var(--mut)}
 .affbox{margin:24px 0}.affbox p{margin:0 0 8px;font-size:14px;color:var(--fg)}.affbox img{max-width:100%;height:auto;display:block}
 :root{--bg:#f2f3f0;--panel:#fff;--fg:#17201b;--mut:#5f6761;--line:#d9dcd6;--rule:#17201b;--acc:#146b45;--acc-soft:#e3efe8;--hit:#c0122d;--hit-soft:#fbe9ec;--tg:#8a6100;--miss:#7a807b;--card:var(--panel);--won:var(--hit-soft)}
 @media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#141614;--panel:#1c1f1c;--fg:#ecefe9;--mut:#a4aba5;--line:#343934;--rule:#ecefe9;--acc:#6cc497;--acc-soft:#1f2e26;--hit:#ff7b8c;--hit-soft:#3a2126;--tg:#d9a93a;--miss:#8b918c}}

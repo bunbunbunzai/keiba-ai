@@ -146,6 +146,39 @@ jobs:
           git commit -m "score ${{ needs.plan.outputs.date }}" || exit 0
           for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
 
+  ai:
+    # AIによる自動生成：回顧（確定レース）と重賞の全頭診断記事。鍵が無ければ何もしない
+    needs: [plan, fetch, score]
+    if: ${{ !cancelled() && needs.plan.outputs.phase != 'eve' && (needs.score.result == 'success' || needs.score.result == 'skipped') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: 生成
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PHASE: ${{ needs.plan.outputs.phase }}
+          D: ${{ needs.plan.outputs.date }}
+        run: |
+          cd scraper
+          case "$PHASE" in
+            noon|mid) python article_gen.py --date "$D"; python review_gen.py --date "$D" ;;
+            night)    python review_gen.py --date "$D"; python article_gen.py --date "$D" --results; python article_gen.py --date "$(TZ=Asia/Tokyo date -d "$D +1 day" +%Y%m%d)" ;;
+          esac
+        continue-on-error: true
+      - name: 保存
+        run: |
+          git config user.name "keiba-ai-bot"
+          git config user.email "keiba-ai-bot@users.noreply.github.com"
+          git add -A data/reviews data/ai_usage.jsonl columns
+          git commit -m "ai ${{ needs.plan.outputs.phase }} ${{ needs.plan.outputs.date }}" || exit 0
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
+
   live:
     # 昼・午後の取得が終わったら、レースごとの即時集計（live.yml）を起動する
     needs: [plan, fetch]

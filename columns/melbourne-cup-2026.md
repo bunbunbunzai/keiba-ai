@@ -5,6 +5,7 @@ lead: AIの◎は20番ポイント・オブ・ロー。4歳53kgの軽ハンデ�
 date: 2026-11-03
 draft: false
 order: 0
+auto: true
 ---
 ## レースの基本情報
 

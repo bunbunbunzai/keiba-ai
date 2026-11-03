@@ -36,6 +36,7 @@ jobs:
       - name: ライブ集計
         env:
           GH_TOKEN: ${{ github.token }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           D="${{ inputs.date }}"; [ -z "$D" ] && D=$(TZ=Asia/Tokyo date +%Y%m%d)
           U="${{ inputs.until }}"; [ -z "$U" ] && U=21:25
