@@ -35,7 +35,7 @@ def ask(kind: str, system: str, user: str, max_tokens: int = 400, temperature: f
     if not key:
         return None
     model = MODELS[kind]
-    body = {"model": model, "max_tokens": max_tokens, "temperature": temperature, "system": system,
+    body = {"model": model, "max_tokens": max_tokens, "system": system,  # temperature はこの世代のモデルでは指定不可
             "messages": [{"role": "user", "content": user}]}
     for attempt in range(3):
         try:
