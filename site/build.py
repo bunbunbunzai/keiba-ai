@@ -13,6 +13,7 @@ URL 構成
 from __future__ import annotations
 
 import csv
+import os
 import html
 import json
 import shutil
@@ -21,6 +22,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import column
+import league
 import extra
 import og
 import strategy
@@ -52,6 +54,7 @@ AFF_RAKUTEN_IMG = "https://srv2.trafficgate.net/t/b/{id}/1958/319633_399587"
 
 
 ASK_URL = __import__("os").environ.get("ASK_URL", "").rstrip("/")  # 「AIに質問」の Workers のURL（空なら機能を出さない）
+LEAGUE_URL = os.environ.get("LEAGUE_URL", "").rstrip("/")  # オーナーズリーグのAPI。空ならページを作らない
 AFF_SAIKYO_URL = "https://px.a8.net/svt/ejp?a8mat=4BE9CR+9T22IA+47AY+601S1"
 AFF_SAIKYO_IMG = "https://www20.a8.net/svt/bgt?aid=261005787593&wid=001&eno=01&mid=s00000019609001008000&mc=1"
 AFF_SAIKYO_PX = "https://www10.a8.net/0.gif?a8mat=4BE9CR+9T22IA+47AY+601S1"
@@ -1727,6 +1730,8 @@ def build() -> None:
     write("/privacy/", page(f"プライバシーポリシー | {SITE_NAME}", PRIVACY, "/privacy/"))
     today_iso = now.strftime("%Y-%m-%d")
     lastmod.update(column.build(write, page, jsonld, BASE_URL, SITE_NAME, STATS_FROM, today_iso))
+    if LEAGUE_URL:  # オーナーズリーグ（一般公開までは noindex・ナビに載せない）
+        league.build(write, page, OUT, LEAGUE_URL, SITE_NAME)
     for old, new in (("results.html", "/results/"), ("about.html", "/about/")):
         (OUT / old).write_text(redirect_page(new), encoding="utf-8")
     social_page()
@@ -1754,7 +1759,8 @@ def build() -> None:
     if (ROOT / "results_ledger.csv").exists():
         shutil.copy(ROOT / "results_ledger.csv", OUT / "data" / "results_ledger.csv")
     (OUT / "CNAME").write_text(DOMAIN + "\n", encoding="utf-8")
-    (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {BASE_URL}/sitemap.xml\n", encoding="utf-8")
+    (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n" + ("Disallow: /league/\n" if LEAGUE_URL and os.environ.get("LEAGUE_PUBLIC") != "1" else "")
+                                    + f"Sitemap: {BASE_URL}/sitemap.xml\n", encoding="utf-8")
     (OUT / "llms.txt").write_text(
         f"# {SITE_NAME}\n\n> AI（Claude）が日本の競馬（JRA・地方）の全レースを毎日予想し、外れも含めた全予想の回収率を公開するサイト。\n\n"
         f"- [今日の予想]({BASE_URL}/)\n- [成績・回収率]({BASE_URL}/results/)：累計{t['n']}レース・回収率{t['roi']}\n"

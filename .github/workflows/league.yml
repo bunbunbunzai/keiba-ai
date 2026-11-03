@@ -1,0 +1,54 @@
+name: league (オーナーズリーグ：テストと Workers への配備)
+
+# push：league/ が変わったらテストだけ。
+# 手動実行（deploy=yes）：テストが通ったら keiba-league の Worker を配備する（「全頭くんに質問」の keiba-ask とは別物）。
+# 必要な Secrets：CLOUDFLARE_API_TOKEN、CLOUDFLARE_ACCOUNT_ID（既存）、LEAGUE_ADMIN_TOKEN、LEAGUE_PREVIEW_CODE（新規）
+on:
+  push:
+    paths: ["league/**", "site/league.py", ".github/workflows/league.yml"]
+  workflow_dispatch:
+    inputs:
+      deploy:
+        description: "yes で Workers に配備する"
+        required: false
+        default: "no"
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: ルールのテスト
+        run: cd league && node --no-warnings --test test/*.test.mjs
+      - name: HTTP の通しテスト（ローカルの Workers）
+        run: |
+          cd league
+          npm install --no-audit --no-fund -D wrangler@4
+          printf 'ADMIN_TOKEN=test-admin-token\nPREVIEW_CODE=preview-123\n' > .dev.vars
+          npx wrangler dev --local --port 8787 --ip 127.0.0.1 > wrangler.log 2>&1 &
+          for i in $(seq 1 60); do curl -s http://127.0.0.1:8787/api/round >/dev/null && break; sleep 1; done
+          node test/api.e2e.mjs http://127.0.0.1:8787
+  deploy:
+    needs: test
+    if: github.event_name == 'workflow_dispatch' && inputs.deploy == 'yes'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: league
+          command: deploy
+          secrets: |
+            ADMIN_TOKEN
+            PREVIEW_CODE
+        env:
+          ADMIN_TOKEN: ${{ secrets.LEAGUE_ADMIN_TOKEN }}
+          PREVIEW_CODE: ${{ secrets.LEAGUE_PREVIEW_CODE }}

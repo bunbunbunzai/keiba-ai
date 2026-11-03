@@ -120,7 +120,9 @@ export default {
     }
     let args = {};
     if (req.method === "POST") {
-      try { args = await req.json(); } catch { return reply(400, { ok: false, error: "形式が正しくありません。" }); }
+      const raw = await req.text();
+      try { args = raw.trim() ? JSON.parse(raw) : {}; } catch { return reply(400, { ok: false, error: "形式が正しくありません。" }); }
+      if (!args || typeof args !== "object" || Array.isArray(args)) return reply(400, { ok: false, error: "形式が正しくありません。" });
     } else {
       args = Object.fromEntries(url.searchParams);
     }
