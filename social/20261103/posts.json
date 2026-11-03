@@ -281,11 +281,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/03/kanazawa/08r/",
    "created": "2026-11-03 15:52",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2117514106001584481",
    "x_at": "2026-11-03 16:07",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'ADK9Fi4nT8-XfnI_uymsyI4'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AeL7hjVj6-iH5hiQJKKWfmY'}",
+   "instagram_tries": 3
   },
   "res-202611033601150409": {
    "kind": "grade_res",
@@ -302,8 +302,8 @@
    "instagram": "pending",
    "x_id": "2117520931669291024",
    "x_at": "2026-11-03 16:35",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A-Nl-0Sgp1w-2o_zZ9iSO64'}",
-   "instagram_tries": 1
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A6_yTs4TCIdc8vhYIl4kMQI'}",
+   "instagram_tries": 2
   }
  }
 }
