@@ -55,6 +55,7 @@ def clean_name(name: str) -> str:
     n = GRADE_RE.sub("", n)
     n = re.split(r"\s+(?:\d歳|[23]上|オープン|サラ|混合|一般|選抜)", n)[0]
     n = re.sub(r"競走$", "", n).strip()
+    n = re.sub(r"\s*重賞\s*\d*$", "", n).strip()  # 地方の「楠賞 重賞1」のような表記
     return n
 
 
