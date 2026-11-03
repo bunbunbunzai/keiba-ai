@@ -52,6 +52,8 @@ def ask(kind: str, system: str, user: str, max_tokens: int = 400, temperature: f
             FAILS[0] = 0
             j = r.json()
             text = "".join(c.get("text", "") for c in j.get("content", []) if c.get("type") == "text").strip()
+            if not text:
+                print("api empty text:", json.dumps(j, ensure_ascii=False)[:600], flush=True)
             u = j.get("usage", {})
             _log({"at": datetime.now(JST).strftime("%Y-%m-%d %H:%M"), "kind": kind, "model": model,
                   "in": u.get("input_tokens"), "out": u.get("output_tokens")})
