@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261103",
  "race_id": "202611031914080210",
- "tries": 2,
+ "tries": 5,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,160 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 3,
+   "number": 4,
+   "name": "ダイジェスト",
+   "time": "1:43.2",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 38.5,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 2,
+   "number": 2,
+   "name": "プレヴナンス",
+   "time": "1:44.2",
+   "margin": "５",
+   "pos4": 9,
+   "last3f": 38.1,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 12,
+   "name": "ブライトビギニング",
+   "time": "1:44.2",
+   "margin": "アタマ",
+   "pos4": 2,
+   "last3f": 39.2,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 7,
+   "name": "ハセノガイセン",
+   "time": "1:44.2",
+   "margin": "ハナ",
+   "pos4": 3,
+   "last3f": 38.8,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 9,
+   "name": "マシュー",
+   "time": "1:45.2",
+   "margin": "５",
+   "pos4": 3,
+   "last3f": 40.3,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 11,
+   "name": "サラサグッドワーク",
+   "time": "1:45.2",
+   "margin": "アタマ",
+   "pos4": 6,
+   "last3f": 39.8,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 6,
+   "name": "ブレイヴアウト",
+   "time": "1:45.5",
+   "margin": "１ １／２",
+   "pos4": 11,
+   "last3f": 39.4,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 14,
+   "name": "ルーラーオブダート",
+   "time": "1:45.6",
+   "margin": "クビ",
+   "pos4": 6,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 4,
+   "number": 5,
+   "name": "ジョセフィーナ",
+   "time": "1:45.7",
+   "margin": "１／２",
+   "pos4": 10,
+   "last3f": 39.9,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 1,
+   "number": 1,
+   "name": "ルナフォルトゥーナ",
+   "time": "1:45.8",
+   "margin": "１／２",
+   "pos4": 3,
+   "last3f": 40.6,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 6,
+   "number": 10,
+   "name": "クレフェノー",
+   "time": "1:46.0",
+   "margin": "１",
+   "pos4": 6,
+   "last3f": 40.6,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 3,
+   "number": 3,
+   "name": "アナザーメイト",
+   "time": "1:46.1",
+   "margin": "１／２",
+   "pos4": 12,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "13",
+   "frame": 8,
+   "number": 13,
+   "name": "ガーベランクイーン",
+   "time": "1:46.3",
+   "margin": "３／４",
+   "pos4": 12,
+   "last3f": 40.0,
+   "popularity": null
+  },
+  {
+   "finish": "14",
+   "frame": 5,
+   "number": 8,
+   "name": "ランドプラネット",
+   "time": "1:48.8",
+   "margin": "大差",
+   "pos4": 14,
+   "last3f": 42.8,
+   "popularity": null
+  }
+ ]
 }
