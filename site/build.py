@@ -491,8 +491,10 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
         (OUT / "askdata" / date).mkdir(parents=True, exist_ok=True)
         (OUT / "askdata" / date / f"{VENUE_SLUG.get(venue_of(p), 'venue')}-{race_no(p):02d}.json").write_text(
             json.dumps({"label": race_label(p), "post": post_key, "context": ctx}, ensure_ascii=False), encoding="utf-8")
-        ask_html = (f"<section class='card ask' data-page='{race_path(date, p)}' data-post='{post_key}' data-url='{ASK_URL}'{" data-zk='1'" if HAS_ZK else ''}>"
-                    f"<h2 class='zkh'>{zk('normal', 56)}<span>全頭くんに質問<small>AIの案内役。このレースのデータだけで答える</small></span></h2><p class='meta'>このレースの出馬表・近走・AIの評価をもとに、短く答える（発走20分前まで。1人1日30回、全体で1日600回まで）。例：「◎を軽視した理由は」「逃げ馬は何頭いる」「〇と▲の差は」</p>"
+        ask_html = (f"<section class='card zkteaser'>{zk('normal', 48)}<p>このレースのことを<b>全頭くん</b>に聞ける。<br><span class='meta'>右下のボタンからいつでも開ける</span></p><button type='button' class='zkopen'>質問する</button></section>"
+                    f"<button type='button' class='zkfab' aria-label='全頭くんに質問' aria-expanded='false' aria-controls='askpop'>{zk('normal', 56) or '?'}<span class='zktip'>質問できるよ</span></button>"
+                    f"<section id='askpop' class='card ask askpop' role='dialog' aria-label='全頭くんに質問' data-page='{race_path(date, p)}' data-post='{post_key}' data-url='{ASK_URL}'{" data-zk='1'" if HAS_ZK else ''}>"
+                    f"<h2 class='zkh'>{zk('normal', 48)}<span>全頭くんに質問<small>{esc(race_label(p))}のデータだけで答える</small></span><button type='button' class='zkclose' aria-label='閉じる'>×</button></h2><p class='meta'>このレースの出馬表・近走・AIの評価をもとに、短く答える（発走20分前まで。1人1日30回、全体で1日600回まで）。例：「◎を軽視した理由は」「逃げ馬は何頭いる」「〇と▲の差は」</p>"
                     f"<div class='pick'><input type='text' maxlength='200' placeholder='このレースについて質問' aria-label='質問'> <button type='button' class='go'>聞く</button></div>"
                     f"<div class='alog'></div><p class='meta'>答えはAIの見立てで、的中を保証しない。質問の内容は回答のためだけに使い、保存しない。</p></section>")
     updates = "".join(f"<li><b>{esc(u.get('at'))}</b> {esc(u.get('text'))}</li>" for u in p.get("updates", []))
@@ -1095,7 +1097,7 @@ SITE_CHANGES = [
     ("2026-10-30", "レースごとの的中・回収率を、確定のたびに更新するようにした。初心者向けコラムの準備。"),
     ("2026-11-01", "サイト名を「競馬全頭ログ」に変更。XとInstagramへの自動投稿（的中・重賞・毎晩の全成績）を開始。コラム4本を公開。買い方別の回収率、週次の重賞回顧、馬別ページを追加。"),
     ("2026-11-02", "買い目を型で固定（◎の単複を人気で切り替え＋3連複フォーメーション）。デザインを刷新。挿絵を追加。お問い合わせフォームと支援（OFUSE）の導線を設置。"),
-    ("2026-11-04", "公式キャラクター「全頭くん」が登場。レースページの「全頭くんに質問」で答え、結果欄の回顧では的中・不的中で表情が変わる。"),
+    ("2026-11-04", "公式キャラクター「全頭くん」が登場。レースページ右下のボタンから開く「全頭くんに質問」で答え、結果欄の回顧では的中・不的中で表情が変わる。"),
     ("2026-11-03", "コラムを21本追加（AI予想は当たるのか、3連複フォーメーション、単勝と複勝、期待値買い、自信度、中央と地方、2番人気の本命、予想ページの見方、ばんえい競馬、脚質別・枠順別・オッズ別・頭数別・馬体重別・間隔別の勝率、点数計算早見表、ChatGPTでの予想、地方競馬のネット投票、馬連・馬単・ワイド、トリガミ、当たらない理由）。数字はすべて実データから自動更新。"),
 ]
 
@@ -1146,6 +1148,17 @@ CSS = """.ask .alog{margin-top:10px}.ask .qa{border-top:1px solid var(--line);pa
 .ask .qa .q{text-align:right}.ask .bub{display:flex;gap:8px;align-items:flex-start;margin-top:6px}.ask .bub .a,.ask .bub .err{position:relative;margin:0;background:var(--acc-soft);border-radius:12px;padding:8px 12px}
 .ask .bub .a:before,.ask .bub .err:before{content:'';position:absolute;left:-6px;top:14px;border:6px solid transparent;border-left:0;border-right-color:var(--acc-soft)}
 .zkfoot{display:flex;gap:12px;align-items:center}.zkfoot p{margin:0}
+.card.zkteaser{display:flex;gap:12px;align-items:center;border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--panel)}.zkteaser p{margin:0;flex:1}
+.zkopen,.ask .go{background:var(--acc);color:#fff;border:0;border-radius:8px;padding:8px 14px;font-weight:700;cursor:pointer}
+.zkfab{position:fixed;right:16px;bottom:16px;z-index:60;width:68px;height:68px;border-radius:50%;border:3px solid var(--acc);background:#fff;padding:2px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.22)}
+.zkfab img{width:100%;height:100%}body:has(.zkfab) .totop{right:30px;bottom:96px}body:has(.askpop.open) .totop{display:none}.zkfab[aria-expanded=true]{transform:scale(.9)}
+.zktip{position:absolute;right:76px;bottom:18px;white-space:nowrap;background:var(--panel);color:var(--fg);border:1px solid var(--line);border-radius:10px;padding:4px 10px;font-size:13px;font-weight:700;box-shadow:0 2px 6px rgba(0,0,0,.12)}
+.zkfab[aria-expanded=true] .zktip,.zkfab.seen .zktip{display:none}
+.card.askpop{display:none;position:fixed;right:16px;bottom:96px;z-index:61;width:380px;max-width:calc(100vw - 32px);max-height:min(72vh,600px);overflow:auto;margin:0;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:12px 16px 14px;box-shadow:0 12px 32px rgba(0,0,0,.25)}
+.card.askpop.open{display:block}.card.askpop .zkh{position:sticky;top:-12px;background:var(--panel);margin:-12px -16px 8px;padding:12px 16px 8px;font-size:17px;border-bottom:1px solid var(--line)}
+.zkclose{margin-left:auto;align-self:flex-start;background:none;border:0;font-size:24px;line-height:1;color:var(--mut);cursor:pointer;padding:0 4px}
+@media (max-width:520px){.card.askpop{left:8px;right:8px;width:auto;max-width:none;bottom:92px;max-height:68vh}}
+@media (prefers-reduced-motion:no-preference){.askpop.open{animation:zkup .18s ease-out}@keyframes zkup{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}}
 .aff{font-size:13px;color:var(--mut);margin:10px 0 0;padding:8px 10px;border:1px dashed var(--line);background:var(--bg)}.aff a{color:var(--acc);font-weight:700}.pr{display:inline-block;font-size:10px;border:1px solid var(--mut);border-radius:2px;padding:0 4px;margin-right:6px;vertical-align:middle;color:var(--mut)}
 .affbox{margin:24px 0}.affbox p{margin:0 0 8px;font-size:14px;color:var(--fg)}.affbox img{max-width:100%;height:auto;display:block}
 :root{--bg:#f2f3f0;--panel:#fff;--fg:#17201b;--mut:#5f6761;--line:#d9dcd6;--rule:#17201b;--acc:#146b45;--acc-soft:#e3efe8;--hit:#c0122d;--hit-soft:#fbe9ec;--tg:#8a6100;--miss:#7a807b;--card:var(--panel);--won:var(--hit-soft)}
@@ -1274,6 +1287,12 @@ function add(cls,t){var d=document.createElement('div');d.className='qa';var q=d
 function go(){var q=(inp.value||'').trim();if(!q||busy)return;var n=0;try{n=parseInt(localStorage.getItem(key())||'0',10);}catch(e){}
 if(n>=30){add('err','本日の質問回数の上限に達した。');return;}busy=true;btn.disabled=true;var box=add('q',q);var bub=document.createElement('div');bub.className='bub';var im=null;if(s.dataset.zk){im=document.createElement('img');im.className='zk';im.width=40;im.height=40;im.alt='全頭くん';im.src='/assets/zk-think.png';bub.appendChild(im);}var a=document.createElement('p');a.className='a';a.textContent='考え中…';bub.appendChild(a);box.appendChild(bub);function face(f){if(im)im.src='/assets/zk-'+f+'.png';}inp.value='';
 fetch(s.dataset.url+'/ask',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({page:s.dataset.page,q:q})}).then(function(r){return r.json().then(function(j){return [r.status,j];});}).then(function(x){var j=x[1];if(j.answer){a.textContent=j.answer;face('normal');try{localStorage.setItem(key(),String(n+1));}catch(e){}if(window.gtag)gtag('event','ask',{page:location.pathname});}else{a.className='err';a.textContent=j.error||'答えを作れなかった。';face('sorry');}}).catch(function(){a.className='err';a.textContent='通信に失敗した。';face('sorry');}).then(function(){busy=false;btn.disabled=false;});}
+var fab=document.querySelector('.zkfab');function open(v){s.classList.toggle('open',v);if(fab){fab.setAttribute('aria-expanded',v?'true':'false');fab.classList.add('seen');}try{sessionStorage.setItem('zkseen','1');}catch(e){}if(v&&!inp.disabled)setTimeout(function(){inp.focus();},50);if(v&&window.gtag)gtag('event','ask_open',{page:location.pathname});}
+try{if(sessionStorage.getItem('zkseen')&&fab)fab.classList.add('seen');}catch(e){}
+if(fab)fab.addEventListener('click',function(){open(!s.classList.contains('open'));});
+document.querySelectorAll('.zkopen').forEach(function(b){b.addEventListener('click',function(){open(true);});});
+var cl=s.querySelector('.zkclose');if(cl)cl.addEventListener('click',function(){open(false);if(fab)fab.focus();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&s.classList.contains('open')){open(false);if(fab)fab.focus();}});
 btn.addEventListener('click',go);inp.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();go();}});
 var post=s.dataset.post,now=new Date(Date.now()+9*3600*1000),k=now.toISOString().slice(0,10).replace(/-/g,'')+now.toISOString().slice(11,16).replace(':','');if(post&&k>=post){inp.disabled=true;btn.disabled=true;inp.placeholder='発走が近いため質問は締め切った';}})();
 (function(){
