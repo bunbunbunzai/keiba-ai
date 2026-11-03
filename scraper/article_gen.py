@@ -158,7 +158,7 @@ def make(date: str, pred: dict, race: dict, slug: str, name: str, grade: str) ->
             f"要約：{pred.get('summary')}\n展開：{pred.get('pace')}\n"
             f"全頭の評価：{json.dumps([{k: e.get(k) for k in ('number', 'name', 'score', 'win_pct', 'comment')} for e in pred.get('horses', [])], ensure_ascii=False)}\n"
             f"買い目：{bets_text(pred)}\n\n上のデータだけをもとに、記事の文章部分をJSONで。")
-    text = ai.ask("article", SYSTEM, user, max_tokens=1800, temperature=0.4)
+    text = ai.ask("article", SYSTEM, user, max_tokens=8000)
     j = _json(text or "")
     if not j:
         print("article: JSON が得られない", slug)
@@ -215,7 +215,7 @@ def add_result(date: str, pred: dict, race: dict, slug: str, name: str, grade: s
             f"買い目：{'、'.join(b['type'] + ' ' + b['combo'] for b in pred.get('bets', []))}\n"
             f"全頭の短評：{json.dumps([{k: e.get(k) for k in ('number', 'name', 'score', 'win_pct', 'comment')} for e in pred.get('horses', [])], ensure_ascii=False)}\n"
             f"【結果】\n{rtable}\n払戻：{pay}\n判定：{outcome}、投資{sc['stake']}円→払戻{sc['return']}円、回収率{roi}、的中した買い目：{'、'.join(sc.get('hits', [])) or 'なし'}\n\n回顧をJSONで。")
-    text = ai.ask("article", SYSTEM_RESULT, user, max_tokens=900, temperature=0.3)
+    text = ai.ask("article", SYSTEM_RESULT, user, max_tokens=5000)
     j = _json(text or "")
     if not j:
         return False

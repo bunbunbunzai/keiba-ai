@@ -89,7 +89,7 @@ def run(date: str, limit: int | None = None) -> int:
         if not res.get("rows"):
             continue
         race = json.loads((DATA_DIR / "races" / date / f"{rid}.json").read_text(encoding="utf-8")) if (DATA_DIR / "races" / date / f"{rid}.json").exists() else {}
-        text = ai.ask("review", SYSTEM, prompt_for(pred, race, res, sc), max_tokens=200)
+        text = ai.ask("review", SYSTEM, prompt_for(pred, race, res, sc), max_tokens=2000)
         if not text:
             if ai.too_many_failures():
                 print("APIの失敗が続くので打ち切り", flush=True)

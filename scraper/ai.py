@@ -29,7 +29,8 @@ def enabled() -> bool:
     return bool(os.environ.get("ANTHROPIC_API_KEY"))
 
 
-def ask(kind: str, system: str, user: str, max_tokens: int = 400, temperature: float = 0.3) -> str | None:
+def ask(kind: str, system: str, user: str, max_tokens: int = 2000, temperature: float = 0.3) -> str | None:
+    """max_tokens はモデル内部の思考分も含むので、出力の見込みより大きめに取る。"""
     """1往復。失敗は最大3回まで間隔を空けて再試行し、だめなら None。"""
     key = os.environ.get("ANTHROPIC_API_KEY")
     if not key:
@@ -53,7 +54,7 @@ def ask(kind: str, system: str, user: str, max_tokens: int = 400, temperature: f
             j = r.json()
             text = "".join(c.get("text", "") for c in j.get("content", []) if c.get("type") == "text").strip()
             if not text:
-                print("api empty text:", json.dumps(j, ensure_ascii=False)[:600], flush=True)
+                print("api empty text: stop_reason=", j.get("stop_reason"), "usage=", j.get("usage"), flush=True)
             u = j.get("usage", {})
             _log({"at": datetime.now(JST).strftime("%Y-%m-%d %H:%M"), "kind": kind, "model": model,
                   "in": u.get("input_tokens"), "out": u.get("output_tokens")})
