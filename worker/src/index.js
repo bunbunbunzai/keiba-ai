@@ -89,13 +89,13 @@ export default {
     if (!q || q.length > maxQ) return reply(env, req, 400, { error: `質問は${maxQ}字以内で入力してください。` });
     const date = m[1] + m[2] + m[3];
     const key = `${m[4]}-${m[5]}`;
-    // レース情報（サイトが公開している静的JSON）。10分キャッシュ
-    const dataUrl = `${env.SITE_ORIGIN}/askdata/${date}/${key}.json`;
+    // レース情報（サイトが公開している静的JSON）。5分キャッシュ（DATA_VER を変えると即座に入れ替わる）
+    const dataUrl = `${env.SITE_ORIGIN}/askdata/${date}/${key}.json?v=${env.DATA_VER || "1"}`;
     const cache = caches.default;
     let res = await cache.match(dataUrl);
     if (!res) {
-      res = await fetch(dataUrl, { cf: { cacheTtl: 600 } });
-      if (res.ok) await cache.put(dataUrl, new Response(await res.clone().text(), { headers: { "content-type": "application/json", "cache-control": "max-age=600" } }));
+      res = await fetch(dataUrl, { cf: { cacheTtl: 300 } });
+      if (res.ok) await cache.put(dataUrl, new Response(await res.clone().text(), { headers: { "content-type": "application/json", "cache-control": "max-age=300" } }));
     }
     if (!res.ok) return reply(env, req, 404, { error: "このレースは、まだ予想が出ていないか、終わったレースのため質問できません。" });
     const data = await res.json();

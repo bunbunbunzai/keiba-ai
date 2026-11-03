@@ -19,3 +19,5 @@ LIMIT_IP_DAY = "30"
 LIMIT_IP_MIN = "5"
 LIMIT_SITE_DAY = "600"
 MAX_Q_CHARS = "200"
+# 質問に渡すデータの形を変えたら上げる（Workers側のキャッシュを捨てる）
+DATA_VER = "2"
