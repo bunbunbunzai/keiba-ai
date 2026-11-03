@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261103",
  "race_id": "202611031914080212",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,160 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 12,
+   "name": "ピースウォリアー",
+   "time": "1:44.4",
+   "margin": "",
+   "pos4": 4,
+   "last3f": 39.0,
+   "popularity": 7
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 10,
+   "name": "ツインドライヴ",
+   "time": "1:44.4",
+   "margin": "ハナ",
+   "pos4": 1,
+   "last3f": 40.3,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 6,
+   "name": "ユメデアエタラ",
+   "time": "1:44.5",
+   "margin": "クビ",
+   "pos4": 4,
+   "last3f": 39.2,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 11,
+   "name": "ベルルート",
+   "time": "1:45.4",
+   "margin": "４",
+   "pos4": 13,
+   "last3f": 38.1,
+   "popularity": 8
+  },
+  {
+   "finish": "5",
+   "frame": 3,
+   "number": 4,
+   "name": "シュヴァルツナーガ",
+   "time": "1:45.4",
+   "margin": "アタマ",
+   "pos4": 10,
+   "last3f": 39.1,
+   "popularity": 4
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 9,
+   "name": "レオソルジャー",
+   "time": "1:45.5",
+   "margin": "１／２",
+   "pos4": 10,
+   "last3f": 39.4,
+   "popularity": 9
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 14,
+   "name": "オスマンサス",
+   "time": "1:45.6",
+   "margin": "１／２",
+   "pos4": 6,
+   "last3f": 40.0,
+   "popularity": 5
+  },
+  {
+   "finish": "8",
+   "frame": 5,
+   "number": 7,
+   "name": "ビップライアン",
+   "time": "1:45.8",
+   "margin": "１",
+   "pos4": 8,
+   "last3f": 39.9,
+   "popularity": 3
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 13,
+   "name": "セイウンスイート",
+   "time": "1:46.6",
+   "margin": "４",
+   "pos4": 3,
+   "last3f": 42.6,
+   "popularity": 14
+  },
+  {
+   "finish": "10",
+   "frame": 3,
+   "number": 3,
+   "name": "タイムトゥキル",
+   "time": "1:47.0",
+   "margin": "２",
+   "pos4": 8,
+   "last3f": 41.2,
+   "popularity": 11
+  },
+  {
+   "finish": "11",
+   "frame": 5,
+   "number": 8,
+   "name": "アプレイザー",
+   "time": "1:47.1",
+   "margin": "３／４",
+   "pos4": 2,
+   "last3f": 43.3,
+   "popularity": 6
+  },
+  {
+   "finish": "12",
+   "frame": 4,
+   "number": 5,
+   "name": "ラブリーモンスター",
+   "time": "1:48.0",
+   "margin": "４",
+   "pos4": 14,
+   "last3f": 41.1,
+   "popularity": 13
+  },
+  {
+   "finish": "13",
+   "frame": 1,
+   "number": 1,
+   "name": "ジャガンナート",
+   "time": "1:48.6",
+   "margin": "３",
+   "pos4": 12,
+   "last3f": 42.7,
+   "popularity": 10
+  },
+  {
+   "finish": "14",
+   "frame": 2,
+   "number": 2,
+   "name": "トリケトラ",
+   "time": "1:48.6",
+   "margin": "ハナ",
+   "pos4": 7,
+   "last3f": 43.3,
+   "popularity": 12
+  }
+ ]
 }
