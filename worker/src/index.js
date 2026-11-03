@@ -70,7 +70,7 @@ const SYSTEM = `あなたは「競馬全頭ログ」（AIが中央・地方の�
 async function askClaude(env, context, q, allowSearch) {
   const body = {
     model: env.MODEL || "claude-haiku-5-5",
-    max_tokens: 1500,
+    max_tokens: 4000,
     system: SYSTEM + (allowSearch ? SEARCH_NOTE : NO_SEARCH_NOTE),
     messages: [{ role: "user", content: `【レース情報】\n${context}\n\n【質問】${q}` }],
   };
@@ -78,14 +78,21 @@ async function askClaude(env, context, q, allowSearch) {
     body.tools = [{ type: "web_search_20250305", name: "web_search", max_uses: 1,
       user_location: { type: "approximate", country: "JP", timezone: "Asia/Tokyo" } }];
   }
-  const r = await fetch("https://api.anthropic.com/v1/messages", {
-    method: "POST",
-    headers: { "x-api-key": env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
-    body: JSON.stringify(body),
-  });
-  if (!r.ok) throw new Error(`api ${r.status} ${(await r.text()).slice(0, 200)}`);
-  const j = await r.json();
-  const texts = (j.content || []).filter((c) => c.type === "text");
+  let j, content = [], searches = 0;
+  for (let turn = 0; turn < 3; turn++) {  // サーバー側ツール（Web検索）は pause_turn で途中返しになることがある
+    const r = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: { "x-api-key": env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
+      body: JSON.stringify(body),
+    });
+    if (!r.ok) throw new Error(`api ${r.status} ${(await r.text()).slice(0, 200)}`);
+    j = await r.json();
+    content = content.concat(j.content || []);
+    searches += (j.usage && j.usage.server_tool_use && j.usage.server_tool_use.web_search_requests) || 0;
+    if (j.stop_reason !== "pause_turn") break;
+    body.messages = body.messages.concat([{ role: "assistant", content: j.content }]);
+  }
+  const texts = content.filter((c) => c.type === "text");
   const seen = new Set();
   const sources = [];
   for (const t of texts) {
@@ -93,8 +100,9 @@ async function askClaude(env, context, q, allowSearch) {
       if (c.url && !seen.has(c.url) && sources.length < 3) { seen.add(c.url); sources.push({ url: c.url, title: (c.title || c.url).slice(0, 80) }); }
     }
   }
-  const searches = (j.usage && j.usage.server_tool_use && j.usage.server_tool_use.web_search_requests) || 0;
-  return { text: texts.map((c) => c.text).join("").trim(), sources, searches };
+  const text = texts.map((c) => c.text).join("").trim();
+  if (!text) console.log("empty answer", j.stop_reason, JSON.stringify(j.usage), content.map((c) => c.type).join(","));
+  return { text, sources, searches, stop: j.stop_reason, types: content.map((c) => c.type).join(",") };
 }
 
 const SEARCH_NOTE = `
@@ -154,7 +162,8 @@ export default {
       const allowSearch = used.n < parseInt(env.LIMIT_SEARCH_DAY || "20", 10);
       const ans = await askClaude(env, data.context, q, allowSearch);
       if (ans.searches) await lim.fetch("https://limits/", { method: "POST", body: JSON.stringify({ add: { k: sk, n: ans.searches, ttl: 86400 } }) });
-      return reply(env, req, 200, { answer: ans.text || "うまく答えられませんでした。聞き方を変えて、もう一度どうぞ。", sources: ans.sources });
+      return reply(env, req, 200, { answer: ans.text || "うまく答えられませんでした。聞き方を変えて、もう一度どうぞ。", sources: ans.sources,
+        ...(ans.text ? {} : { debug: `${ans.stop}|${ans.types}` }) });
     } catch (e) {
       console.log("ask failed", String(e));
       return reply(env, req, 502, { error: "いまは答えられません。少し待ってから、もう一度どうぞ。" });
