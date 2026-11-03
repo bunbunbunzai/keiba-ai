@@ -222,7 +222,7 @@
    "url": "https://www.ai-keiba-log.com/2026/11/03/kanazawa/09r/",
    "created": "2026-11-03 14:31",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2117491450816438365",
    "x_at": "2026-11-03 14:37",
    "x_thread_error": "403 Client Error: Forbidden for url: https://api.x.com/2/tweets",
@@ -230,8 +230,8 @@
     "2117491452494184484",
     "2117491453668594045"
    ],
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'Ad6pIF8zMbSeA6feIrn1v2V'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'ArZ71lGWm7UqYEaa7bJQr-n'}",
+   "instagram_tries": 3
   },
   "hit-202611033601150407": {
    "kind": "hit",
@@ -245,11 +245,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/03/monbetsu/07r/",
    "created": "2026-11-03 14:31",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2117491457023951066",
    "x_at": "2026-11-03 14:37",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'Amu_DnKi3aWnSPPUXvGdE8i'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AhnUCdH_vzwm3nuZsrsik8n'}",
+   "instagram_tries": 3
   },
   "res-202611032218130407": {
    "kind": "grade_res",
@@ -262,8 +262,12 @@
    "ig_caption": "【的中】金沢7R JBCレディスクラシック（Jpn1）\n◎5メモリアカフェ　〇12タガノミスト　▲11テンカジョウ\n複勝 5　110円\n投資800円→払戻110円（回収率13.8%）\n\nこのレースの全頭評価と買い目 → www.ai-keiba-log.com/2026/11/03/kanazawa/07r/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#JBCレディスクラシック #競馬予想 #金沢競馬 #AI予想 #重賞 #競馬 #競馬全頭ログ",
    "url": "https://www.ai-keiba-log.com/2026/11/03/kanazawa/07r/",
    "created": "2026-11-03 15:17",
-   "x": "pending",
-   "instagram": "pending"
+   "x": "posted",
+   "instagram": "pending",
+   "x_id": "2117502031237632273",
+   "x_at": "2026-11-03 15:20",
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A9E8SQZMlwvTDand3uAaTDQ'}",
+   "instagram_tries": 1
   }
  }
 }
