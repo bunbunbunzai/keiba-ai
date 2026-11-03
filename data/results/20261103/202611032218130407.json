@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261103",
  "race_id": "202611032218130407",
- "tries": 6,
+ "tries": 8,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "アンズアメ",
    "time": "1:32.7",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 36.5,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "メモリアカフェ",
    "time": "1:33.0",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 36.6,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "タガノミスト",
    "time": "1:33.0",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 36.8,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "テンカジョウ",
    "time": "1:33.2",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 36.8,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "プロミストジーン",
    "time": "1:33.8",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 37.3,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ケテンドリーム",
    "time": "1:34.0",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 37.1,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "タマモフリージア",
    "time": "1:34.2",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 37.7,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "スカンジナビア",
    "time": "1:34.6",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 38.5,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "ローリエフレイバー",
    "time": "1:35.6",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 10,
+   "last3f": 38.5,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "アンジュルナ",
    "time": "1:36.1",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 40.0,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "チャチャハツゴウ",
    "time": "1:38.1",
    "margin": "大差",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 41.0,
    "popularity": null
   },
   {
