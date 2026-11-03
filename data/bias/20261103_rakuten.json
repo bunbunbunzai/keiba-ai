@@ -1,12 +1,13 @@
 {
  "date": "20261103",
- "updated": "2026-11-03 11:38",
+ "updated": "2026-11-03 11:54",
  "bias": {
   "金沢ダ": {
    "judgement": "先行有利",
    "confidence": "弱",
    "races": [
-    1
+    1,
+    2
    ],
    "front_share": 1.0,
    "inner_share": 0.5,
