@@ -113,8 +113,8 @@
     "2117489674050511075",
     "2117489675669483662"
    ],
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AK6jQtRxJHvABApYYg0Pi8d'}",
-   "instagram_tries": 1
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A1Vxhw9i4ICVmF-wR3PiLNl'}",
+   "instagram_tries": 2
   },
   "pre-202611032218130408": {
    "kind": "grade_pre",
@@ -140,8 +140,8 @@
     "2117489683949121846",
     "2117489685404483597"
    ],
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A5tOFDAP5-fdHT8odQp6CFV'}",
-   "instagram_tries": 1
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AeHqIhqpT6glvoQR2ITps9W'}",
+   "instagram_tries": 2
   },
   "hit-202611033601150404": {
    "kind": "hit",
@@ -158,8 +158,8 @@
    "instagram": "pending",
    "x_id": "2117489690924216514",
    "x_at": "2026-11-03 14:30",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AFOOT8L_9ret0_c4Mho6eKn'}",
-   "instagram_tries": 1
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AKZDygUbHnlyYf0Kthl37H6'}",
+   "instagram_tries": 2
   },
   "hit-202611033601150406": {
    "kind": "hit",
@@ -176,8 +176,8 @@
    "instagram": "pending",
    "x_id": "2117489695445651659",
    "x_at": "2026-11-03 14:30",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'Azsf2qKGAKYqai1EfKB_US0'}",
-   "instagram_tries": 1
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AAYghlLTX2KZNGE-VWlrS_a'}",
+   "instagram_tries": 2
   },
   "pre-202611033601150409": {
    "kind": "grade_pre",
@@ -203,8 +203,8 @@
     "2117489701913346077",
     "2117489703469322279"
    ],
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'ASJaShvf59JjmxSDffvZ2iA'}",
-   "instagram_tries": 1
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'ALTGYZ8Xtrt_EUDV2kUB9Hp'}",
+   "instagram_tries": 2
   },
   "pre-202611032218130409": {
    "kind": "grade_pre",
@@ -221,8 +221,17 @@
    "ig_caption": "【重賞AI予想】金沢9R JBCクラシック（Jpn1）\n11/3 16:25発走\n◎2アウトレンジ　〇11ワンダーディーン　▲10ホウオウルーレット\n自信度B\n帝王賞2着、白山大賞典3着(59kg)、名古屋グランプリ1着と2000m級のダートグレードで崩れていないアウトレンジを◎…\n\nこのレースの全頭評価と買い目 → www.ai-keiba-log.com/2026/11/03/kanazawa/09r/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#JBCクラシック #競馬予想 #金沢競馬 #AI予想 #重賞 #競馬 #競馬全頭ログ",
    "url": "https://www.ai-keiba-log.com/2026/11/03/kanazawa/09r/",
    "created": "2026-11-03 14:31",
-   "x": "pending",
-   "instagram": "pending"
+   "x": "posted",
+   "instagram": "pending",
+   "x_id": "2117491450816438365",
+   "x_at": "2026-11-03 14:37",
+   "x_thread_error": "403 Client Error: Forbidden for url: https://api.x.com/2/tweets",
+   "x_thread_ids": [
+    "2117491452494184484",
+    "2117491453668594045"
+   ],
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AY11Cu6-y3DY-G07fXLPfb_'}",
+   "instagram_tries": 1
   },
   "hit-202611033601150407": {
    "kind": "hit",
@@ -235,8 +244,12 @@
    "ig_caption": "【的中】門別7R 積み重ねた日々を解き放て。特別\n◎1マリノステアハート　〇9ニチヤヲツイデ　▲6スティールアンバー\n複勝 1　130円\n3連複 1-4-6　1,510円\n投資600円→払戻1,640円（回収率273.3%）\n\nこのレースの全頭評価と買い目 → www.ai-keiba-log.com/2026/11/03/monbetsu/07r/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#競馬予想 #門別競馬 #AI予想 #的中 #競馬 #競馬全頭ログ",
    "url": "https://www.ai-keiba-log.com/2026/11/03/monbetsu/07r/",
    "created": "2026-11-03 14:31",
-   "x": "pending",
-   "instagram": "pending"
+   "x": "posted",
+   "instagram": "pending",
+   "x_id": "2117491457023951066",
+   "x_at": "2026-11-03 14:37",
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'ARsrn5aA7U-uJAxoVPeIXaD'}",
+   "instagram_tries": 1
   }
  }
 }
