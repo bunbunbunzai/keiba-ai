@@ -145,6 +145,98 @@ def stats(stats_from: str) -> tuple[dict, dict]:
     tables["table_bias"] = ("<div class='scroll'><table><thead><tr><th>判定</th><th>件数</th><th>割合</th></tr></thead>"
                             f"<tbody>{rows}</tbody></table></div>"
                             f"<p class='meta'>{v['since']}〜{v['asof']}、場×芝ダートごとの当日判定{nb}件（判定の方法は本文）。</p>")
+    # 全レースの確定結果から：単勝オッズ帯別・4角位置別・枠別・頭数別（1番人気）・馬体重増減別・間隔別
+    def band_odds(o):
+        return "1.9倍以下" if o < 2 else "2.0〜3.9倍" if o < 4 else "4.0〜9.9倍" if o < 10 else "10〜19.9倍" if o < 20 else "20〜49.9倍" if o < 50 else "50倍以上"
+    ob = defaultdict(lambda: [0, 0, 0, 0]); p4 = defaultdict(lambda: [0, 0, 0]); fr = defaultdict(lambda: [0, 0, 0])
+    fs = defaultdict(lambda: [0, 0, 0]); bw = defaultdict(lambda: [0, 0, 0]); gap = defaultdict(lambda: [0, 0, 0])
+    n_all = 0
+    from datetime import date as _date
+    for d in dates:
+        key2race = {}
+        for pf in (ROOT / "predictions" / d).glob("*.json"):
+            pp = load(pf) or {}
+            if pp.get("race_id"):
+                key2race[pp.get("results_key") or pp["race_id"]] = pp["race_id"]
+        for f in (ROOT / "data" / "results" / d).glob("*.json"):
+            if f.name == "score.json":
+                continue
+            r = load(f) or {}
+            rows_ = r.get("rows") or []
+            if not rows_ or not r.get("payouts"):
+                continue
+            race = load(ROOT / "data" / "races" / d / f"{key2race.get(f.stem, f.stem)}.json") or {}
+            hs = {h.get("number"): h for h in race.get("horses", []) or []}
+            if not hs:
+                continue
+            n_all += 1
+            win = {str(p["combo"]): p["yen"] for p in r["payouts"].get("単勝", [])}
+            nf = len(rows_)
+            # 人気はオッズの順位から（JRAの出馬表は人気が無い）
+            ranked = sorted((hh for hh in hs.values() if hh.get("odds") and float(hh["odds"]) > 0), key=lambda hh: float(hh["odds"]))
+            fav_no = ranked[0].get("number") if ranked else None
+            fb = "8頭以下" if nf <= 8 else "9〜12頭" if nf <= 12 else "13〜15頭" if nf <= 15 else "16頭以上"
+            for x in rows_:
+                fin = str(x.get("finish")); w = fin == "1"; t = fin in ("1", "2", "3")
+                h = hs.get(x.get("number"), {})
+                if x.get("number") == fav_no or (fav_no is None and (x.get("popularity") == 1 or h.get("popularity") == 1)):
+                    fs[fb][0] += 1; fs[fb][1] += w; fs[fb][2] += t
+                try:
+                    o = float(h.get("odds"))
+                    if o <= 0:
+                        raise ValueError
+                    b = band_odds(o)
+                    ob[b][0] += 1; ob[b][1] += w; ob[b][2] += t; ob[b][3] += win.get(str(x.get("number")), 0) if w else 0
+                except (TypeError, ValueError):
+                    pass
+                q = x.get("pos4")
+                if q:
+                    pb = "先頭（4角1番手）" if q == 1 else "2〜3番手" if q <= 3 else "4〜6番手" if q <= 6 else "7番手以降"
+                    p4[pb][0] += 1; p4[pb][1] += w; p4[pb][2] += t
+                fr_ = x.get("frame") or h.get("frame")
+                if fr_ and nf >= 10:
+                    frb = "1〜2枠" if fr_ <= 2 else "3〜4枠" if fr_ <= 4 else "5〜6枠" if fr_ <= 6 else "7〜8枠"
+                    fr[frb][0] += 1; fr[frb][1] += w; fr[frb][2] += t
+                m = re.fullmatch(r"\(?([+-]?\d+)\)?", str(h.get("body_weight_change") or "").replace(" ", ""))
+                if m:
+                    c = int(m.group(1))
+                    cb = "−10kg以下" if c <= -10 else "−9〜−4kg" if c <= -4 else "−3〜+3kg" if c <= 3 else "+4〜+9kg" if c <= 9 else "+10kg以上"
+                    bw[cb][0] += 1; bw[cb][1] += w; bw[cb][2] += t
+                past = h.get("past") or []
+                if past and past[0].get("date"):
+                    try:
+                        pd = str(past[0]["date"]).replace("/", "-")
+                        y, mo, da = [int(z) for z in re.findall(r"\d+", pd)[:3]]
+                        wk = (_date(int(d[:4]), int(d[4:6]), int(d[6:8])) - _date(y, mo, da)).days // 7
+                        gb = "連闘〜2週" if wk <= 2 else "3〜4週" if wk <= 4 else "5〜8週" if wk <= 8 else "9〜16週" if wk <= 16 else "17週以上（4ヶ月超）"
+                        gap[gb][0] += 1; gap[gb][1] += w; gap[gb][2] += t
+                    except Exception:  # noqa: BLE001
+                        pass
+    v["all_races"] = f"{n_all:,}"
+
+    def tbl(dic, order, label, note, roi=False):
+        rows = []
+        for k in order:
+            x = dic.get(k)
+            if not x or not x[0]:
+                continue
+            rows.append(f"<tr><td>{k}</td><td>{x[0]:,}</td><td>{pct(x[1], x[0])}</td><td>{pct(x[2], x[0])}</td>" + (f"<td>{pct(x[3], x[0] * 100)}</td>" if roi else "") + "</tr>")
+        return (f"<div class='scroll'><table><thead><tr><th>{label}</th><th>頭数</th><th>勝率</th><th>3着内率</th>{'<th>単勝回収率</th>' if roi else ''}</tr></thead>"
+                f"<tbody>{''.join(rows)}</tbody></table></div><p class='meta'>{v['since']}〜{v['asof']}の確定結果{n_all:,}レース。{note}</p>")
+    tables["table_odds_band"] = tbl(ob, ["1.9倍以下", "2.0〜3.9倍", "4.0〜9.9倍", "10〜19.9倍", "20〜49.9倍", "50倍以上"], "単勝オッズ（予想時点）", "単勝回収率は、その帯の馬の単勝を毎回100円買った場合。オッズは予想時点のもので最終オッズとは異なる。", roi=True)
+    tables["table_pos4"] = tbl(p4, ["先頭（4角1番手）", "2〜3番手", "4〜6番手", "7番手以降"], "4コーナーの位置", "通過順の記録があるレースのみ（ばんえいを除く）。")
+    tables["table_frame"] = tbl(fr, ["1〜2枠", "3〜4枠", "5〜6枠", "7〜8枠"], "枠", "10頭以上のレースのみ。外枠ほど頭数が多いため、頭数の列も見ること。")
+    tables["table_field_fav"] = tbl(fs, ["8頭以下", "9〜12頭", "13〜15頭", "16頭以上"], "頭数（1番人気の成績）", "各レースの1番人気の馬だけを集計。")
+    tables["table_bodyweight"] = tbl(bw, ["−10kg以下", "−9〜−4kg", "−3〜+3kg", "+4〜+9kg", "+10kg以上"], "馬体重の増減", "前走からの増減が記録されている馬のみ（中央が中心）。")
+    tables["table_gap"] = tbl(gap, ["連闘〜2週", "3〜4週", "5〜8週", "9〜16週", "17週以上（4ヶ月超）"], "前走からの間隔", "前走の日付が記録されている馬のみ。")
+    for dic, name, order in ((ob, "odds", ["1.9倍以下", "2.0〜3.9倍", "4.0〜9.9倍", "10〜19.9倍", "20〜49.9倍", "50倍以上"]), (p4, "pos4", ["先頭（4角1番手）", "2〜3番手", "4〜6番手", "7番手以降"]),
+                            (fr, "frame", ["1〜2枠", "3〜4枠", "5〜6枠", "7〜8枠"]), (fs, "fieldfav", ["8頭以下", "9〜12頭", "13〜15頭", "16頭以上"]),
+                            (bw, "bw", ["−10kg以下", "−9〜−4kg", "−3〜+3kg", "+4〜+9kg", "+10kg以上"]), (gap, "gap", ["連闘〜2週", "3〜4週", "5〜8週", "9〜16週", "17週以上（4ヶ月超）"])):
+        for i, k in enumerate(order, start=1):
+            x = dic.get(k, [0, 0, 0, 0])
+            v[f"{name}{i}_n"], v[f"{name}{i}_win"], v[f"{name}{i}_top3"] = f"{x[0]:,}", pct(x[1], x[0]), pct(x[2], x[0])
+            if len(x) > 3:
+                v[f"{name}{i}_roi"] = pct(x[3], x[0] * 100)
     # 買い方別（strategy.py と同じ集計）：{{st:グループ:区分:roi}} / :n / :hit / :diff で本文から参照できる
     try:
         import build as _b
