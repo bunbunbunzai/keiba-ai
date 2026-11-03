@@ -17,7 +17,7 @@
    "url": "https://www.ai-keiba-log.com/2026/11/04/funabashi/11r/",
    "created": "2026-11-03 20:46",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2117598773094355265",
    "x_at": "2026-11-03 21:44",
    "x_thread_error": "403 Client Error: Forbidden for url: https://api.x.com/2/tweets",
@@ -25,8 +25,8 @@
     "2117598775191441757",
     "2117598776504328446"
    ],
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AU6wbflBTKenZgRE3WjtNbX'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AQOviMY1bkrC1ugapZXFFFM'}",
+   "instagram_tries": 3
   },
   "eve-202611042726170411": {
    "kind": "grade_pre",
@@ -44,7 +44,7 @@
    "url": "https://www.ai-keiba-log.com/2026/11/04/sonoda/11r/",
    "created": "2026-11-03 20:46",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2117598782573494529",
    "x_at": "2026-11-03 21:44",
    "x_thread_error": "403 Client Error: Forbidden for url: https://api.x.com/2/tweets",
@@ -52,8 +52,8 @@
     "2117598784230166705",
     "2117598786570559984"
    ],
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AuyDimFrGD3incXsnMIZUkE'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'APfJy4vA-6JSslDndeC4ZJy'}",
+   "instagram_tries": 3
   }
  }
 }

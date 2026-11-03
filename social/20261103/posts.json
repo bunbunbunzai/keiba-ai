@@ -380,11 +380,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/03/funabashi/08r/",
    "created": "2026-11-03 20:46",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2117598747932704825",
    "x_at": "2026-11-03 21:44",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A8aJn2suZdCL5l3Tn63MjpV'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A9j6_7gUptJHca6A3F3d-yC'}",
+   "instagram_tries": 3
   },
   "hit-202611031914080210": {
    "kind": "hit",
@@ -398,11 +398,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/03/funabashi/10r/",
    "created": "2026-11-03 20:46",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2117598753339109690",
    "x_at": "2026-11-03 21:44",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AgwNv0OhZ0zsBsQYeWMlsZU'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AcfIUErWeyUb7oRN9qaVLqE'}",
+   "instagram_tries": 3
   },
   "res-202611031914080211": {
    "kind": "grade_res",
@@ -416,11 +416,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/03/funabashi/11r/",
    "created": "2026-11-03 20:46",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2117598757910974914",
    "x_at": "2026-11-03 21:44",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A1Pm84yVlMiQaWNVxPRt8xi'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AlZRcKmteiBIlnU83gIQjAm'}",
+   "instagram_tries": 3
   },
   "sum-20261103": {
    "kind": "summary",
@@ -436,11 +436,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/03/",
    "created": "2026-11-03 21:44",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2117624813334200764",
    "x_at": "2026-11-03 23:27",
-   "instagram_error": "item 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AFoumcphJTCJZPLGzPid31K'}",
-   "instagram_tries": 2
+   "instagram_error": "item 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AAQPvx33v-uUQmsOIMKku42'}",
+   "instagram_tries": 3
   }
  }
 }
