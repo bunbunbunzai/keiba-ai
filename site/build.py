@@ -360,6 +360,53 @@ def answer_sentence(date: str, p: dict) -> str:
     return s + (rt + "。" if rt else "")
 
 
+MARK_STATS: dict = {}  # 「全頭くんに質問」用：印ごとの着順の記録（全体と場ごと）
+
+
+def build_mark_stats(by_date: dict) -> dict:
+    """結果が出た全レースで、1〜3着に来た馬の印の内訳と、印ごと（1頭あたり）の着順の割合を数える。"""
+    labels = list(MARKS) + ["無印"]
+    acc: dict = {}
+    for d, preds in by_date.items():
+        if d < STATS_FROM:
+            continue
+        for p in preds:
+            sc = p.get("_score") or {}
+            top = [x for x in (sc.get("top3") or []) if x is not None]
+            if len(top) < 3 or sc.get("voided") or not p.get("marks"):
+                continue
+            mk = mark_map(p)
+            nums = {h.get("number") for h in p["_race"].get("horses", []) or []} or set(mk)
+            for key in ("全体", venue_of(p)):
+                a = acc.setdefault(key, {"races": 0, "pos": {k: {m: 0 for m in labels} for k in (1, 2, 3)},
+                                         "horses": {m: 0 for m in labels}, "fin": {m: {1: 0, 2: 0, 3: 0} for m in labels}})
+                a["races"] += 1
+                for n in nums:
+                    a["horses"][mk.get(n, "無印")] += 1
+                for i, n in enumerate(top[:3], 1):
+                    m = mk.get(n, "無印")
+                    a["pos"][i][m] += 1
+                    a["fin"][m][i] += 1
+    return acc
+
+
+def mark_stats_text(key: str, label: str) -> str:
+    a = MARK_STATS.get(key)
+    if not a or a["races"] < 20:
+        return ""
+    labels = list(MARKS) + ["無印"]
+    pct = lambda x, n: f"{100 * x / n:.0f}%" if n else "-"
+    lines = [f"{label}（{fmt_date(STATS_FROM)}以降・結果が出た{a['races']}レース）"]
+    for i in (1, 2, 3):
+        lines.append(f"{i}着に来た馬の印：" + "・".join(f"{m}{pct(a['pos'][i][m], a['races'])}" for m in labels))
+    for m in labels:
+        h = a["horses"][m]
+        if h:
+            f = a["fin"][m]
+            lines.append(f"{m}の馬（延べ{h}頭）：1着{pct(f[1], h)}・2着{pct(f[2], h)}・3着{pct(f[3], h)}・3着以内{pct(f[1] + f[2] + f[3], h)}")
+    return "\n".join(lines)
+
+
 def ask_context(date: str, p: dict) -> str:
     """「AIに質問」に渡すレース情報：出馬表と近走（digest と同じ形）＋AIの予想。"""
     import sys as _s
@@ -377,7 +424,11 @@ def ask_context(date: str, p: dict) -> str:
     ev = "\n".join(f"{e.get('number')} {e.get('name')}：評価点{e.get('score')}" + (f" 想定勝率{e.get('win_pct')}%" if e.get("win_pct") is not None else "") + f" {e.get('comment') or ''}" for e in p.get("horses", []))
     bets = "、".join(f"{b['type']} {b['combo']}" for b in p.get("bets", []))
     ctx = (f"{base}\n\n【AIの予想】印：{marks}" + (f"、{sub}" if sub else "") + f"。自信度{p.get('confidence')}\n要約：{p.get('summary')}\n展開予想：{p.get('pace')}\n買い目（各100円）：{bets}\n全頭の評価：\n{ev}")
-    return ctx[:12000]
+    hist = "\n\n".join(x for x in (mark_stats_text("全体", "全レース"), mark_stats_text(venue_of(p), f"{venue_of(p)}のレース")) if x)
+    if hist:
+        hist = ("\n\n【このサイトのAI予想の過去の記録：印ごとの着順】\n" + hist
+                + "\n（このサイトの買い目は◎の単勝か複勝と3連複フォーメーション（◎→〇▲→印全部）で、3連単・馬単は買っていない）")
+    return ctx[:12000 - len(hist)] + hist
 
 
 # ---------------- レースページ ----------------
@@ -494,7 +545,7 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
         ask_html = (f"<section class='card zkteaser'>{zk('normal', 48)}<p>このレースのことを<b>全頭くん</b>に聞ける。<br><span class='meta'>画面右下のボタンからも開けます</span></p><button type='button' class='zkopen'>質問する</button></section>"
                     f"<button type='button' class='zkfab' aria-label='全頭くんに質問' aria-expanded='false' aria-controls='askpop'>{zk('normal', 56) or '?'}<span class='zktip'>質問できるよ</span></button>"
                     f"<section id='askpop' class='card ask askpop' role='dialog' aria-label='全頭くんに質問' data-page='{race_path(date, p)}' data-post='{post_key}' data-url='{ASK_URL}'{" data-zk='1'" if HAS_ZK else ''}>"
-                    f"<h2 class='zkh'>{zk('normal', 48)}<span>全頭くんに質問<small>{esc(race_label(p))}について答えます</small></span><button type='button' class='zkclose' aria-label='閉じる'>×</button></h2><p class='meta'>出走馬の近走やAIの評価をもとに、短く答えます。たとえば「◎を選んだ理由は？」「逃げそうな馬は？」「〇と▲の差は？」。質問できるのは発走20分前まで、1日30回までです（混み合う日は早めに受付を終えることがあります）。</p>"
+                    f"<h2 class='zkh'>{zk('normal', 48)}<span>全頭くんに質問<small>{esc(race_label(p))}について答えます</small></span><button type='button' class='zkclose' aria-label='閉じる'>×</button></h2><p class='meta'>出走馬の近走やAIの評価、これまでの予想の記録をもとに、短く答えます。たとえば「◎を選んだ理由は？」「逃げそうな馬は？」「3連単で△を2着まで入れるべき？」。質問できるのは発走20分前まで、1日30回までです（混み合う日は早めに受付を終えることがあります）。</p>"
                     f"<div class='pick'><input type='text' maxlength='200' placeholder='このレースについて質問' aria-label='質問'> <button type='button' class='go'>聞く</button></div>"
                     f"<div class='alog'></div><p class='meta'>答えはAIの見立てで、的中を保証するものではありません。質問の内容は回答にだけ使い、保存しません。</p></section>")
     updates = "".join(f"<li><b>{esc(u.get('at'))}</b> {esc(u.get('text'))}</li>" for u in p.get("updates", []))
@@ -1397,6 +1448,8 @@ def build() -> None:
     by_date = {}
     for d in dates:
         by_date[d] = predictions(d)
+    global MARK_STATS
+    MARK_STATS = build_mark_stats(by_date)
     # 内部リンク用：馬別・騎手別・コース別ページが作られる対象を先に数える
     _hc, _jc, _cc = defaultdict(int), defaultdict(int), defaultdict(int)
     for d, ps in by_date.items():
