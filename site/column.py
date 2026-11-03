@@ -415,9 +415,12 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
                  + f"<p class='crumb'><a href='/'>トップ</a> › <a href='/column/'>コラム</a></p><article class='col'>"
                  f"<h1>{esc(title)}</h1><p class='meta'>公開 {esc(c.get('date'))}・データは{esc(v['asof'])}までの記録で自動更新</p>"
                  + (f"<p class='answer'>{inline(lead)}</p>" if lead else "") + body_html + "</article>"
-                 "<section class='card'><h2>このサイトについて</h2><p>AIが中央・地方の全レースを毎日予想し、外れも含めた全成績を公開している。"
+                 "<section class='card'><h2>このサイトについて</h2>"
+                 + ("<div class='zkfoot'><img class='zk' src='/assets/zk-normal.png' alt='全頭くん' width='64' height='64' loading='lazy'><p>" if (ROOT / "site" / "assets" / "zk-normal.png").exists() else "<p>")
+                 + "AIが中央・地方の全レースを毎日予想し、外れも含めた全成績を公開している。案内役は公式キャラの全頭くん。"
                  "<a href='/'>今日の予想</a>・<a href='/results/'>成績</a>・<a href='/about/'>予想の方法</a></p>"
-                 "<p class='meta'>馬券の購入は20歳から。予想は的中や利益を保証するものではない。</p></section>"
+                 + ("</div>" if (ROOT / "site" / "assets" / "zk-normal.png").exists() else "")
+                 + "<p class='meta'>馬券の購入は20歳から。予想は的中や利益を保証するものではない。</p></section>"
                  + (f"<section class='card'><h2>ほかのコラム</h2><ul>{related}</ul></section>" if related else ""))
         img = ROOT / "site" / "assets" / f"col-{c['slug']}.jpg"
         og_img = f"/assets/col-{c['slug']}.jpg" if img.exists() else "/og/default.jpg"
