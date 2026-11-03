@@ -397,13 +397,15 @@ def mark_stats_text(key: str, label: str) -> str:
     labels = list(MARKS) + ["無印"]
     pct = lambda x, n: f"{100 * x / n:.0f}%" if n else "-"
     lines = [f"{label}（{fmt_date(STATS_FROM)}以降・結果が出た{a['races']}レース）"]
+    lines.append("［A］レースごとに見た、各着順の馬に付いていた印の割合（例：2着の行の△は「2着馬が△だったレースの割合」。各行の合計は100%）")
     for i in (1, 2, 3):
-        lines.append(f"{i}着に来た馬の印：" + "・".join(f"{m}{pct(a['pos'][i][m], a['races'])}" for m in labels))
+        lines.append(f"  {i}着馬の印：" + "・".join(f"{m}{pct(a['pos'][i][m], a['races'])}" for m in labels))
+    lines.append("［B］印ごとに見た、その印の馬1頭あたりの着順の割合（△や無印は1レースに複数頭いるので、［A］より小さくなる）")
     for m in labels:
         h = a["horses"][m]
         if h:
             f = a["fin"][m]
-            lines.append(f"{m}の馬（延べ{h}頭）：1着{pct(f[1], h)}・2着{pct(f[2], h)}・3着{pct(f[3], h)}・3着以内{pct(f[1] + f[2] + f[3], h)}")
+            lines.append(f"  {m}の馬（延べ{h}頭）：1着{pct(f[1], h)}・2着{pct(f[2], h)}・3着{pct(f[3], h)}・3着以内{pct(f[1] + f[2] + f[3], h)}")
     return "\n".join(lines)
 
 
