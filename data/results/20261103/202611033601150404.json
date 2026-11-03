@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261103",
  "race_id": "202611033601150404",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,116 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 1,
+   "number": 1,
+   "name": "サンタカリス",
+   "time": "1:03.1",
+   "margin": "",
+   "pos4": 3,
+   "last3f": 37.7,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 8,
+   "name": "チョゴリザ",
+   "time": "1:03.6",
+   "margin": "２ １／２",
+   "pos4": 8,
+   "last3f": 37.1,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 10,
+   "name": "フレアリングバロン",
+   "time": "1:03.7",
+   "margin": "クビ",
+   "pos4": 1,
+   "last3f": 38.6,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "ザフォロワーズ",
+   "time": "1:03.8",
+   "margin": "３／４",
+   "pos4": 1,
+   "last3f": 38.8,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 6,
+   "name": "オオイシサクラ",
+   "time": "1:04.1",
+   "margin": "１ １／２",
+   "pos4": 9,
+   "last3f": 37.6,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 3,
+   "number": 3,
+   "name": "ゴールデンアイル",
+   "time": "1:04.3",
+   "margin": "１",
+   "pos4": 3,
+   "last3f": 38.9,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 4,
+   "name": "ピンクサウスポー",
+   "time": "1:04.6",
+   "margin": "１ １／２",
+   "pos4": 6,
+   "last3f": 39.2,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 7,
+   "name": "マジカルウィーク",
+   "time": "1:04.7",
+   "margin": "３／４",
+   "pos4": 6,
+   "last3f": 38.8,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 9,
+   "name": "エンゲル",
+   "time": "1:05.9",
+   "margin": "６",
+   "pos4": 3,
+   "last3f": 40.8,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 5,
+   "name": "アーススカーレット",
+   "time": "1:06.6",
+   "margin": "３",
+   "pos4": 10,
+   "last3f": 38.5,
+   "popularity": null
+  }
+ ]
 }

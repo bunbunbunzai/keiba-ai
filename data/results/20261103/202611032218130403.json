@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261103",
  "race_id": "202611032218130403",
- "tries": 6,
+ "tries": 7,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "ミラコロヴァーグ",
    "time": "1:31.5",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 39.1,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "タマハガネ",
    "time": "1:31.6",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 38.8,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ハガネ",
    "time": "1:32.2",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 38.9,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "ラブラブセイナ",
    "time": "1:32.3",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 39.2,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "トップタルマエ",
    "time": "1:33.0",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 12,
+   "last3f": 39.0,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ビックゲート",
    "time": "1:33.0",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 10,
+   "last3f": 39.2,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "シェルターベルト",
    "time": "1:33.3",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 39.9,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ブルーメリー",
    "time": "1:33.5",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 40.9,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "カクシン",
    "time": "1:33.7",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 40.0,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "マークオブゾロ",
    "time": "1:34.0",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 10,
+   "last3f": 40.4,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "ランスオブビーナス",
    "time": "1:34.0",
    "margin": "ハナ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 41.1,
    "popularity": null
   },
   {
@@ -198,8 +198,8 @@
    "name": "ヴィントシュティレ",
    "time": "1:35.1",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 41.7,
    "popularity": null
   }
  ]
