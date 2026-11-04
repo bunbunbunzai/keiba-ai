@@ -2,7 +2,205 @@
  "source": "rakuten",
  "date": "20261104",
  "race_id": "202611043601150506",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "2",
+    "yen": 160
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "2-4",
+    "yen": 12100
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "2",
+    "yen": 160
+   },
+   {
+    "combo": "4",
+    "yen": 1090
+   },
+   {
+    "combo": "1",
+    "yen": 190
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-4",
+    "yen": 2970
+   },
+   {
+    "combo": "1-2",
+    "yen": 260
+   },
+   {
+    "combo": "1-4",
+    "yen": 3400
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-4",
+    "yen": 11210
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-2-4",
+    "yen": 7500
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "2-4-1",
+    "yen": 60940
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-4",
+    "yen": 7560
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 2,
+   "number": 2,
+   "name": "ラップドアップ",
+   "time": "1:03.0",
+   "margin": "",
+   "pos4": null,
+   "last3f": 38.7,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 4,
+   "number": 4,
+   "name": "ダムドローズ",
+   "time": "1:04.7",
+   "margin": "８",
+   "pos4": null,
+   "last3f": 38.6,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 1,
+   "number": 1,
+   "name": "エリオラ",
+   "time": "1:04.8",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": 37.8,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 10,
+   "name": "タイムエッジ",
+   "time": "1:05.2",
+   "margin": "２",
+   "pos4": null,
+   "last3f": 40.7,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 11,
+   "name": "ハイシエラ",
+   "time": "1:05.3",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": 40.1,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 12,
+   "name": "ガンバリナサイト",
+   "time": "1:05.4",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": 40.1,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 8,
+   "name": "レディタマ",
+   "time": "1:05.8",
+   "margin": "２",
+   "pos4": null,
+   "last3f": 40.8,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 9,
+   "name": "エスペランサヘーザ",
+   "time": "1:05.8",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": 40.6,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 6,
+   "name": "ブラビット",
+   "time": "1:05.9",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": 40.1,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 6,
+   "number": 7,
+   "name": "シレテヴェンティ",
+   "time": "1:06.0",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": 39.1,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 3,
+   "number": 3,
+   "name": "ステイヘント",
+   "time": "1:06.0",
+   "margin": "ハナ",
+   "pos4": null,
+   "last3f": 40.5,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 5,
+   "number": 5,
+   "name": "ケリーグランメイ",
+   "time": "1:06.8",
+   "margin": "４",
+   "pos4": null,
+   "last3f": 39.9,
+   "popularity": null
+  }
+ ]
 }
