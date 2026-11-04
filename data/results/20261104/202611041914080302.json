@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261104",
  "race_id": "202611041914080302",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 9,
+   "name": "エスケイキャット",
+   "time": "1:15.9",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 12,
+   "name": "ヘマソラール",
+   "time": "1:16.3",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 6,
+   "name": "ホウオウハナビ",
+   "time": "1:16.6",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 7,
+   "name": "マジカルレインボー",
+   "time": "1:17.1",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 8,
+   "name": "マルゼンスキーツー",
+   "time": "1:17.3",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 5,
+   "name": "ワールドクライシス",
+   "time": "1:17.5",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 11,
+   "name": "ミクロスギガース",
+   "time": "1:17.5",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 2,
+   "number": 2,
+   "name": "デコピン",
+   "time": "1:17.8",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 3,
+   "number": 3,
+   "name": "ラヴィエベル",
+   "time": "1:19.1",
+   "margin": "６",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 4,
+   "number": 4,
+   "name": "フレイムキャット",
+   "time": "1:19.2",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 7,
+   "number": 10,
+   "name": "ニシノウール",
+   "time": "1:19.9",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 1,
+   "number": 1,
+   "name": "レディオインザラフ",
+   "time": "1:20.7",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
