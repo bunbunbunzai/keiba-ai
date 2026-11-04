@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261104",
  "race_id": "202611041914080302",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -77,7 +77,7 @@
    "name": "エスケイキャット",
    "time": "1:15.9",
    "margin": "",
-   "pos4": null,
+   "pos4": 1,
    "last3f": null,
    "popularity": null
   },
@@ -88,7 +88,7 @@
    "name": "ヘマソラール",
    "time": "1:16.3",
    "margin": "２",
-   "pos4": null,
+   "pos4": 5,
    "last3f": null,
    "popularity": null
   },
@@ -99,7 +99,7 @@
    "name": "ホウオウハナビ",
    "time": "1:16.6",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 8,
    "last3f": null,
    "popularity": null
   },
@@ -110,7 +110,7 @@
    "name": "マジカルレインボー",
    "time": "1:17.1",
    "margin": "２ １／２",
-   "pos4": null,
+   "pos4": 8,
    "last3f": null,
    "popularity": null
   },
@@ -121,7 +121,7 @@
    "name": "マルゼンスキーツー",
    "time": "1:17.3",
    "margin": "３／４",
-   "pos4": null,
+   "pos4": 7,
    "last3f": null,
    "popularity": null
   },
@@ -132,7 +132,7 @@
    "name": "ワールドクライシス",
    "time": "1:17.5",
    "margin": "１",
-   "pos4": null,
+   "pos4": 5,
    "last3f": null,
    "popularity": null
   },
@@ -143,7 +143,7 @@
    "name": "ミクロスギガース",
    "time": "1:17.5",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 3,
    "last3f": null,
    "popularity": null
   },
@@ -154,7 +154,7 @@
    "name": "デコピン",
    "time": "1:17.8",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 1,
    "last3f": null,
    "popularity": null
   },
@@ -165,7 +165,7 @@
    "name": "ラヴィエベル",
    "time": "1:19.1",
    "margin": "６",
-   "pos4": null,
+   "pos4": 11,
    "last3f": null,
    "popularity": null
   },
@@ -176,7 +176,7 @@
    "name": "フレイムキャット",
    "time": "1:19.2",
    "margin": "１／２",
-   "pos4": null,
+   "pos4": 10,
    "last3f": null,
    "popularity": null
   },
@@ -187,7 +187,7 @@
    "name": "ニシノウール",
    "time": "1:19.9",
    "margin": "３",
-   "pos4": null,
+   "pos4": 12,
    "last3f": null,
    "popularity": null
   },
@@ -198,7 +198,7 @@
    "name": "レディオインザラフ",
    "time": "1:20.7",
    "margin": "４",
-   "pos4": null,
+   "pos4": 3,
    "last3f": null,
    "popularity": null
   }
