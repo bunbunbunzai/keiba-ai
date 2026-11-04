@@ -159,6 +159,13 @@ ASSETS = Path(__file__).resolve().parent / "assets"
 HAS_ZK = (ASSETS / "zk-normal.png").exists()
 
 
+def zk_art(pose: str, inner: str) -> str:
+    """全頭くんのポーズ違いの絵（assets/zk-<pose>.png）と文章を横に並べる。絵が無ければ文章だけ。"""
+    if (ASSETS / f"zk-{pose}.png").exists():
+        return f"<div class='zkart'><img src='/assets/zk-{pose}.png' alt='全頭くん' width='96' height='96' loading='lazy'>{inner}</div>"
+    return inner
+
+
 def zk(face: str, size: int = 48) -> str:
     """公式キャラ「全頭くん」の顔（normal/think/joy/sorry）。画像が無ければ空。"""
     if not HAS_ZK:
@@ -188,6 +195,38 @@ def term(key: str, label: str | None = None) -> str:
         if k == key:
             return f"<a class='term' href='/glossary/#{k}' title='{esc(d[:70])}'>{esc(label or t)}</a>"
     return esc(label or key)
+
+
+NORTH_VENUES = {"門別", "盛岡", "水沢"}
+OVERSEAS_WORDS = ("メルボルン", "凱旋門", "香港", "ドバイ", "ブリーダーズ", "サウジ", "コックス", "ケンタッキー", "フレミントン")
+
+
+def race_pic(name: str = "", venue: str = "", surface: str = "", distance=0, post_time: str = "", date: str = "") -> str:
+    """重賞の挿絵（assets/<stem>.jpg の stem）を、コース・季節・時間帯から選ぶ。無ければ空文字。"""
+    n, sf = name or "", surface or ""
+    try:
+        dist = int(distance or 0)
+    except (TypeError, ValueError):
+        dist = 0
+    month = int(date[4:6]) if len(date or "") >= 6 and date[4:6].isdigit() else 0
+    if venue == "帯広" or "ばんえい" in n:
+        cands = ["col-banei-yosou"]
+    elif any(w in n + venue for w in OVERSEAS_WORDS):
+        cands = ["g-overseas", "g-turf-autumn"]
+    elif "障害" in n or sf.startswith("障"):
+        cands = ["g-jump"]
+    elif sf == "芝":
+        season = {3: "spring", 4: "spring", 5: "spring", 6: "summer", 7: "summer", 8: "summer",
+                  9: "autumn", 10: "autumn", 11: "autumn"}.get(month, "winter")
+        cands = (["g-sprint"] if 0 < dist <= 1400 else ["g-stayer"] if dist >= 2500 else []) + [f"g-turf-{season}", "g-turf-autumn"]
+    else:
+        night = (post_time or "") >= "17:00"
+        cands = (["g-dirt-night"] if night else []) + (["g-dirt-north"] if venue in NORTH_VENUES else []) \
+            + (["g-dirt-seaside"] if venue == "高知" else []) + ["g-dirt-day", "g-dirt-night"]
+    for c in cands:
+        if (ASSETS / f"{c}.jpg").exists():
+            return c
+    return ""
 
 
 def banner(slug: str, alt: str = "") -> str:
@@ -1227,7 +1266,7 @@ FAQ_LD = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
     {"@type": "Question", "name": "予想は後から変わりますか",
      "acceptedAnswer": {"@type": "Answer", "text": "当日昼にオッズや馬場の傾向を見て前日の予想を見直すことがあり、変更理由を更新履歴に残します。発走後の変更はしません。"}}]}
 
-CONTACT = f"""<h1>お問い合わせ</h1>
+CONTACT = f"""<h1>お問い合わせ</h1>{banner("contact")}
 <p class="answer">予想の内容についてのご意見、データの誤り、サイトの不具合、広告掲載や取材のご相談などは、このフォームからお送りください。通常2〜3日以内に返信します。</p>
 <form class="contact" action="https://formsubmit.co/{CONTACT_MAIL}" method="POST">
 <input type="hidden" name="_subject" value="【競馬全頭ログ】お問い合わせ">
@@ -1247,13 +1286,13 @@ CONTACT = f"""<h1>お問い合わせ</h1>
 <p class="meta">フォームが使えない場合は、メールで {CONTACT_MAIL} へお送りください。</p>"""
 
 THANKS = f"""<h1>送信しました</h1>
-<p class="answer">お問い合わせを受け付けました。通常2〜3日以内に、ご記入のメールアドレスへ返信します。</p>
+{zk_art("bow", '<p class="answer">お問い合わせを受け付けました。通常2〜3日以内に、ご記入のメールアドレスへ返信します。</p>')}
 <p><a href="/">トップへ戻る</a></p>"""
 
 def glossary_page() -> str:
     items = "".join(f"<dt id='{k}'>{esc(t)}</dt><dd>{esc(d)}</dd>" for k, t, d in GLOSSARY)
     return page(f"用語集：印・評価点・妙味・回収率など | {SITE_NAME}",
-                f"<p class='crumb'><a href='/'>トップ</a> › 用語集</p><h1>用語集</h1>"
+                f"<p class='crumb'><a href='/'>トップ</a> › 用語集</p><h1>用語集</h1>" + banner("glossary") +
                 f"<p class='answer'>このサイトで使う言葉の説明。予想ページの用語をタップするとここに飛ぶ。初心者向けの解説は<a href='/column/'>コラム</a>へ。</p>"
                 f"<dl class='gloss'>{items}</dl>", "/glossary/",
                 desc="競馬全頭ログで使う用語（印、評価点、想定勝率、妙味、自信度、展開利、トラックバイアス、回収率、トリガミ、3連複フォーメーション）の説明。")
@@ -1261,7 +1300,7 @@ def glossary_page() -> str:
 
 def limits_page(t: dict, worst_venue: tuple[str, str] | None) -> str:
     wv = f"場別では{esc(worst_venue[0])}が最も悪く（回収率{esc(worst_venue[1])}）、" if worst_venue else ""
-    body = f"""<p class='crumb'><a href='/'>トップ</a> › AI予想の限界と注意点</p><h1>AI予想の限界と注意点</h1>
+    body = f"""<p class='crumb'><a href='/'>トップ</a> › AI予想の限界と注意点</p><h1>AI予想の限界と注意点</h1>{banner('limits')}
 <p class='answer'>このサイトの予想は、現時点で馬券の収支をプラスにできていない。累計回収率は{esc(t['roi'])}（{esc(t['n'])}レース）で、100%を下回っている。読む前に知っておいてほしいことをまとめた。</p>
 <section class='card'><h2>当たっている部分と、当たっていない部分</h2>
 <p>◎の馬は{esc(t['top3'])}の確率で3着以内に入り、◎の複勝だけなら回収率は80%前後になる。つまり「本命の選び方」は大きくは外していない。一方で、相手の選び方と買い目の組み方で取りこぼしが多く、全体の回収率を下げている。{wv}人気薄を強く評価しすぎる傾向（AIの見立てがオッズより強気なレースほど回収率が低い）もある。詳しくは<a href='/strategy/'>買い方別の回収率</a>で毎日更新している。</p></section>
@@ -1289,14 +1328,14 @@ def changelog_page() -> str:
     rules = load_json(ROOT / "data" / "rule_changes.json") or []
     r_html = "".join(f"<li><b>{esc(x.get('date'))}</b>　{esc(x.get('text'))}</li>" for x in sorted(rules, key=lambda x: x.get("date", ""), reverse=True))
     s_html = "".join(f"<li><b>{esc(d)}</b>　{esc(x)}</li>" for d, x in sorted(SITE_CHANGES, reverse=True))
-    body = (f"<p class='crumb'><a href='/'>トップ</a> › 更新履歴</p><h1>更新履歴</h1>"
+    body = (f"<p class='crumb'><a href='/'>トップ</a> › 更新履歴</p><h1>更新履歴</h1>" + banner("changelog") +
             f"<p class='answer'>予想のルールとサイトの機能を変えたときの記録。予想のルールは毎週月曜に成績を見直し、変えたときはその理由もここに書いている。</p>"
             f"<section class='card'><h2>予想ルールの変更</h2><ul class='log'>{r_html or '<li>まだありません。</li>'}</ul></section>"
             f"<section class='card'><h2>サイトの変更</h2><ul class='log'>{s_html}</ul></section>")
     return page(f"更新履歴 | {SITE_NAME}", body, "/changelog/", desc="競馬全頭ログの予想ルールとサイト機能の変更履歴。")
 
 
-OPERATOR = f"""<h1>運営者情報</h1>
+OPERATOR = f"""<h1>運営者情報</h1>{banner("operator")}
 <section class="card"><table>
 <tr><th>サイト名</th><td>{SITE_NAME}（{SITE_SUB}）</td></tr>
 <tr><th>URL</th><td>{BASE_URL}/</td></tr>
@@ -1411,6 +1450,13 @@ table{border-collapse:collapse;width:100%;font-size:14px;background:var(--panel)
 .note{border:1px dashed var(--line);padding:8px 12px;font-size:14px;color:var(--mut)}
 .draft{background:#fff4d6;color:#6b4e00;padding:6px 10px;font-size:13px;margin-top:12px}
 .cols{list-style:none;padding:0;margin:0;background:var(--panel);border-top:2px solid var(--rule);border-bottom:1px solid var(--line)}.cols li+li{border-top:1px solid var(--line)}.cols a{display:flex;flex-direction:column;gap:2px;padding:10px 12px;color:var(--fg)}.cols a:hover{text-decoration:none;background:var(--acc-soft)}.cols span{color:var(--mut);font-size:13px}
+.cols li.wth a{flex-direction:row;align-items:center;gap:12px}
+.cols .th{width:96px;height:64px;object-fit:cover;flex:none;border:1px solid var(--line);background:var(--line)}
+.cols .tx{display:flex;flex-direction:column;gap:2px;color:var(--fg);font-size:inherit;min-width:0}
+.cols .tx span{color:var(--mut);font-size:13px}
+.zkart{display:flex;gap:14px;align-items:center;margin:8px 0 14px}
+.zkart img{width:96px;height:96px;flex:none}
+.zkart p{margin:0}
 @media (prefers-reduced-motion:no-preference){nav a,.races a,.days a{transition:background-color .15s}}
 /* 日付タブ・競馬場タブ */
 .dtabs{display:flex;gap:0;margin:14px 0 10px;border-bottom:2px solid var(--rule);overflow-x:auto;scrollbar-width:none}.dtabs::-webkit-scrollbar{display:none}
@@ -1563,7 +1609,7 @@ def build() -> None:
         HEADER_ROI = (f"<a class='roi-badge' href='/results/'>{int(mrows[0]['date'][4:6])}月の回収率 <b>{roi_txt(st0, rt0)}</b>"
                       f"（{len(mrows)}レース・外れも含む）</a>")
     if ASSETS.exists():
-        shutil.copytree(ASSETS, OUT / "assets", ignore=shutil.ignore_patterns("og-base.png", "src"))
+        shutil.copytree(ASSETS, OUT / "assets", ignore=shutil.ignore_patterns("og-base.png", "src", "sns-*"))
     og.site_image(OUT / "og" / "default.jpg", "全レースAI予想と回収率の記録",
                   ["中央競馬・地方競馬の全レースを毎日予想", "外れも含めた全成績を公開"])
     now = datetime.now(JST)
@@ -1704,9 +1750,9 @@ def build() -> None:
             paths[key] = len(paths)
         ents.append([k, typ, paths[key]])
     (OUT / "search.json").write_text(json.dumps({"r": [list(k) for k in paths], "e": ents}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
-    write("/search/", page(f"検索 | {SITE_NAME}", "<p class='crumb'><a href='/'>トップ</a> › 検索</p><h1>検索</h1><p class='meta'>馬名・レース名・競馬場名で探せる。</p><div id='sr'></div>", "/search/", noindex=True))
+    write("/search/", page(f"検索 | {SITE_NAME}", "<p class='crumb'><a href='/'>トップ</a> › 検索</p><h1>検索</h1>" + banner("search") + "<p class='meta'>馬名・レース名・競馬場名で探せる。</p><div id='sr'></div>", "/search/", noindex=True))
     write("/me/", page(f"あなたの成績（AI vs あなた） | {SITE_NAME}",
-                       "<p class='crumb'><a href='/'>トップ</a> › あなたの成績</p><h1>あなたの成績</h1>"
+                       "<p class='crumb'><a href='/'>トップ</a> › あなたの成績</p><h1>あなたの成績</h1>" + banner("mine") +
                        "<p class='answer'>各レースページの「AI vs あなた」で選んだ◎の成績。記録は、いまお使いのブラウザにだけ保存され、外部には送られない。</p>"
                        "<div id='me'><p class='meta'>読み込み中…</p></div>"
                        "<p class='meta'>勝敗は「あなたの◎の着順」と「AIの◎の着順」を比べて決める。同着は引き分け。結果がまだ出ていないレースは数えない。</p>", "/me/", noindex=True))
@@ -1732,7 +1778,7 @@ def build() -> None:
         (OUT / old).write_text(redirect_page(new), encoding="utf-8")
     social_page()
     write("/404.html", page(f"ページが見つかりません | {SITE_NAME}",
-                            "<h1>ページが見つかりません</h1><p class='answer'>URLが変わったか、削除された可能性がある。上の検索欄で馬名やレース名から探せる。</p>"
+                            "<h1>ページが見つかりません</h1>" + zk_art("lost", "<p class='answer'>URLが変わったか、削除された可能性がある。上の検索欄で馬名やレース名から探せる。</p>") +
                             "<ul><li><a href='/'>今日の予想</a></li><li><a href='/graded/'>重賞</a></li><li><a href='/results/'>成績</a></li><li><a href='/venue/'>競馬場別</a></li><li><a href='/column/'>コラム</a></li></ul>",
                             "/404.html", noindex=True))
     items = []

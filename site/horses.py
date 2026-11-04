@@ -98,7 +98,7 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
     index_rows.sort(key=lambda x: (x[0], x[3]), reverse=True)
     lis = "".join(f"<li><a href='{r[2]}'><span>{esc(r[1])}</span><span>{r[3]}回評価・◎{r[4]}回</span></a></li>" for r in index_rows[:300])
     write("/horse/", page(f"馬別 AI評価の履歴一覧｜{B.SITE_NAME}",
-                          "<p class='crumb'><a href='/'>トップ</a> › 馬別</p><h1>馬別のAI評価履歴</h1>"
+                          "<p class='crumb'><a href='/'>トップ</a> › 馬別</p><h1>馬別のAI評価履歴</h1>" + B.banner("horses") +
                           f"<p class='answer'>このサイトで2回以上評価した馬{len(index_rows):,}頭の、印・想定勝率・着順の履歴。最近出走した順。</p>"
                           f"<ul class='days'>{lis}</ul>" + ("<p class='meta'>300頭まで表示。</p>" if len(index_rows) > 300 else ""),
                           "/horse/", desc="AI予想で2回以上評価した馬の、印・評価点・想定勝率と実際の着順の履歴。", noindex=not index_rows))

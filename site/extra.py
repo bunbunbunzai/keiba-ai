@@ -33,6 +33,14 @@ GRADED_SLUG = {
 }
 
 
+
+def _pic_banner(B, p: dict, d: str) -> str:
+    """重賞ページの見出しの絵（ban-<slug>.jpg の slug）。コース・季節・時間帯で選ぶ。"""
+    r = p.get("_race") or {}
+    pic = B.race_pic(f"{r.get('race_name') or ''} {p.get('race_name') or ''}", B.venue_of(p), r.get("surface") or "",
+                     r.get("distance"), r.get("post_time") or "", d)
+    return "banei" if pic.startswith("col-banei") else pic
+
 def nfkc(s) -> str:
     return unicodedata.normalize("NFKC", s or "")
 
@@ -115,7 +123,7 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
         lead = (f"{name}（{g}・{v}）のAI予想。{int(latest[0][:4])}年は◎{hon}{B.horse_name(latest[1], hon)}"
                 f"（{B.fmt_date(latest[0])}）。全頭の評価点・印・買い目と、確定後の的中・回収率を年ごとに記録している。")
         body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/graded/'>重賞</a> › {esc(name)}</p>"
-                f"<h1>{esc(name)} AI予想（{esc(g)}）</h1><p class='answer'>{esc(lead)}</p>"
+                f"<h1>{esc(name)} AI予想（{esc(g)}）</h1>{B.banner(_pic_banner(B, p0, d0), name)}<p class='answer'>{esc(lead)}</p>"
                 f"<section class='card'><h2>年ごとのAI予想と結果</h2><ul class='days'>{''.join(lis)}</ul></section>"
                 f"<p class='meta'>毎年このページに追加される。最新の予想はレース当日の昼（重賞は前日夜にも）公開。</p>")
         ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
@@ -206,7 +214,7 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
         clist.append((vn, surf, dist, path, (h[1]["races"] if h else 0), B.roi_txt(sum(x["stake"] for x in done), sum(x["return"] for x in done)) if len(done) >= 5 else ""))
     clist.sort()
     write("/course/", page(f"コース別 AI予想の成績と傾向｜{B.SITE_NAME}",
-                           "<p class='crumb'><a href='/'>トップ</a> › コース別</p><h1>コース別のAI予想成績と傾向</h1>"
+                           "<p class='crumb'><a href='/'>トップ</a> › コース別</p><h1>コース別のAI予想成績と傾向</h1>" + B.banner("course") +
                            "<p class='answer'>競馬場・芝ダート・距離ごとに、過去のレース結果から人気・枠・脚質・配当の傾向をまとめ、AIの解説と、このサイトのAI予想の成績を載せている。</p>"
                            "<ul class='days'>" + "".join(f"<li><a href='{c[3]}'><span>{esc(c[0])} {esc(c[1])}{c[2]}m</span><span>{'過去' + str(c[4]) + 'レース' if c[4] else ''}{'・AI予想の回収率' + c[5] if c[5] else ''}</span></a></li>" for c in clist) + "</ul>",
                            "/course/", desc="競馬場・芝ダート・距離ごとのAI予想の回収率と傾向。", noindex=not clist))
@@ -247,7 +255,7 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
         jlist.append((name, path, len(items), pct(win, len(items)), pct(top3, len(items))))
     jlist.sort(key=lambda x: -x[2])
     write("/jockey/", page(f"騎手別 AI予想◎の成績｜{B.SITE_NAME}",
-                           "<p class='crumb'><a href='/'>トップ</a> › 騎手別</p><h1>騎手別：AI予想の◎に乗ったときの成績</h1>"
+                           "<p class='crumb'><a href='/'>トップ</a> › 騎手別</p><h1>騎手別：AI予想の◎に乗ったときの成績</h1>" + B.banner("jockey") +
                            "<p class='answer'>AIが◎（本命）にした馬の騎手ごとに、勝率・3着内率をまとめている（5回以上の騎手のみ）。</p>"
                            "<div class='scroll'><table><thead><tr><th>騎手</th><th>◎騎乗</th><th>勝率</th><th>3着内率</th></tr></thead><tbody>"
                            + "".join(f"<tr><td><a href='{j[1]}'>{esc(j[0])}</a></td><td>{j[2]}</td><td>{j[3]}</td><td>{j[4]}</td></tr>" for j in jlist)

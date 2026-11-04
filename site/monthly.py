@@ -91,7 +91,7 @@ def build_pages(B, by_date: dict, led: list[dict], venue_of_race: dict, today: s
         lastmod[path] = f"{today[:4]}-{today[4:6]}-{today[6:8]}" if cur else f"{y}-{m:02d}-{max(db)[6:8]}"
         index_rows.append(f"<li><a href='{path}'><span>{esc(label)}{'（集計中）' if cur else ''}</span><span>{t['n']}レース・回収率{t['roi']}</span></a></li>")
     write("/monthly/", page(f"月次レポート一覧 | {B.SITE_NAME}",
-                            "<p class='crumb'><a href='/'>トップ</a> › 月次レポート</p><h1>月次レポート</h1>"
+                            "<p class='crumb'><a href='/'>トップ</a> › 月次レポート</p><h1>月次レポート</h1>" + B.banner("monthly") +
                             "<p class='answer'>月ごとの成績を、場別・買い方別・自信度別にまとめた記事。月の途中は毎日更新し、月が変わると確定版として残る。</p>"
                             f"<ul class='days'>{''.join(index_rows)}</ul>", "/monthly/", desc="AI競馬予想の月ごとの成績レポート。", noindex=not index_rows))
     if index_rows:

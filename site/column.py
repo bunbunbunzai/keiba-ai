@@ -370,6 +370,29 @@ def parse(f: Path) -> dict:
     return meta
 
 
+ASSET = ROOT / "site" / "assets"
+
+
+def hero_of(c: dict) -> str:
+    """記事の挿絵（assets/<stem>.jpg の stem）。専用の絵が無い重賞記事は、コース・季節に合う汎用の絵を使う。"""
+    if (ASSET / f"col-{c['slug']}.jpg").exists():
+        return f"col-{c['slug']}"
+    if c.get("auto") != "true":
+        return ""
+    d = c.get("race_date", "") or re.sub(r"\D", "", c.get("date", ""))[:8]
+    r = load(ROOT / "data" / "races" / d / f"{c.get('race_id', '')}.json") or {}
+    text = f"{c.get('title', '')} {c.get('description', '')}"
+    m = re.search(r"(芝|ダ)(\d{3,4})m", text)
+    t = re.search(r"(\d{1,2}:\d{2})発走", text)
+    try:
+        return __import__("build").race_pic(f"{r.get('race_name') or ''} {c.get('title', '')}", r.get("venue") or "",
+                                            r.get("surface") or (m.group(1) if m else ""),
+                                            r.get("distance") or (m.group(2) if m else 0),
+                                            r.get("post_time") or (t.group(1).zfill(5) if t else ""), d)
+    except Exception:  # noqa: BLE001
+        return ""
+
+
 def subst(s: str, v: dict) -> str:
     return re.sub(r"\{\{([^{}\n]+?)\}\}", lambda m: v.get(m.group(1).strip(), m.group(0)), s)
 
@@ -422,19 +445,23 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
                  + ("</div>" if (ROOT / "site" / "assets" / "zk-normal.png").exists() else "")
                  + "<p class='meta'>馬券の購入は20歳から。予想は的中や利益を保証するものではない。</p></section>"
                  + (f"<section class='card'><h2>ほかのコラム</h2><ul>{related}</ul></section>" if related else ""))
-        img = ROOT / "site" / "assets" / f"col-{c['slug']}.jpg"
-        og_img = f"/assets/col-{c['slug']}.jpg" if img.exists() else "/og/default.jpg"
-        if img.exists():
-            html_ = html_.replace("</h1>", "</h1>", 1).replace(
-                "<p class='meta'>公開", f"<img class='hero' src='/assets/col-{c['slug']}.jpg' alt='' width='1200' height='800'><p class='meta'>公開", 1)
+        hero = hero_of(c)
+        c["_hero"] = hero
+        og_img = f"/assets/{hero}.jpg" if hero else "/og/default.jpg"
+        if hero:
+            html_ = html_.replace(
+                "<p class='meta'>公開", f"<img class='hero' src='/assets/{hero}.jpg' alt='' width='1200' height='800'><p class='meta'>公開", 1)
             ld["image"] = base_url + og_img
         write(path, page(f"{title} | {site_name}", html_, path, desc=desc, noindex=c["draft"],
                          head_extra=jsonld(ld) + jsonld(crumb), og_image=og_img))
         if not c["draft"]:
             lastmod[path] = today_iso
     def _li(c):
-        return (f"<li><a href='/column/{c['slug']}/'><b>{esc(subst(c.get('title', ''), v))}</b>"
-                f"<span>{esc(subst(c.get('description', ''), v))}</span></a></li>")
+        h = c.get("_hero") or ""
+        th = (f"<img class='th' src='/assets/{h}-s.jpg' alt='' width='120' height='80' loading='lazy'>"
+              if h and (ASSET / f"{h}-s.jpg").exists() else "")
+        return (f"<li{' class=\'wth\'' if th else ''}><a href='/column/{c['slug']}/'>{th}<span class='tx'><b>{esc(subst(c.get('title', ''), v))}</b>"
+                f"<span>{esc(subst(c.get('description', ''), v))}</span></span></a></li>")
     items = "".join(_li(c) for c in pub if c.get("auto") != "true")
     autos = sorted((c for c in pub if c.get("auto") == "true"), key=lambda c: c.get("date", ""), reverse=True)
     auto_items = "".join(_li(c) for c in autos[:40])

@@ -21,7 +21,7 @@ ACC = {"hit": GOLD, "grade_pre": og.GREEN, "grade_res": og.GREEN, "summary": og.
 
 
 def background(kind: str) -> Image.Image:
-    for name in (f"sns-{kind}.png", "sns-base.png"):
+    for name in (f"sns-{kind}.jpg", f"sns-{kind}.png", "sns-base.jpg", "sns-base.png"):
         f = HERE / "assets" / name
         if f.exists():
             im = Image.open(f).convert("RGB")

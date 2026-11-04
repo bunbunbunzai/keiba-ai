@@ -88,7 +88,7 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
         names = "・".join(n for _, _, n, _ in items[:6]) + ("…" if len(items) > 6 else "")
         index_rows.append(f"<li><a href='{path}'><span>{esc(label)}{'（今週）' if cur else ''}　{esc(names)}</span><span>{len(done)}レース・回収率{B.roi_txt(st, rt)}</span></a></li>")
     write("/review/", page(f"重賞回顧 一覧｜週ごとのAI予想の結果 | {B.SITE_NAME}",
-                           "<p class='crumb'><a href='/'>トップ</a> › 重賞回顧</p><h1>重賞回顧（週ごと）</h1>"
+                           "<p class='crumb'><a href='/'>トップ</a> › 重賞回顧</p><h1>重賞回顧（週ごと）</h1>" + B.banner("review") +
                            "<p class='answer'>毎週の重賞について、AI予想の印・自信度と、確定した結果・回収率を振り返る。日曜の夜に自動で更新。</p>"
                            f"<ul class='days'>{''.join(index_rows)}</ul>", "/review/",
                            desc="毎週の重賞のAI予想と結果・回収率の振り返り。", noindex=not index_rows))
