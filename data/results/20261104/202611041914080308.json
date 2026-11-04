@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261104",
  "race_id": "202611041914080308",
- "tries": 2,
+ "tries": 8,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,160 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 14,
+   "name": "バランスザブックス",
+   "time": "1:44.8",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 40.3,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 9,
+   "name": "ゴールドブリーダー",
+   "time": "1:45.2",
+   "margin": "２",
+   "pos4": 5,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 6,
+   "name": "ドレアンティア",
+   "time": "1:45.2",
+   "margin": "ハナ",
+   "pos4": 1,
+   "last3f": 40.7,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 13,
+   "name": "ジオヴィグラス",
+   "time": "1:45.4",
+   "margin": "１",
+   "pos4": 13,
+   "last3f": 38.7,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 8,
+   "name": "タカミノガコイ",
+   "time": "1:45.6",
+   "margin": "１",
+   "pos4": 8,
+   "last3f": 39.9,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 3,
+   "number": 3,
+   "name": "マッドネスカズ",
+   "time": "1:45.8",
+   "margin": "１",
+   "pos4": 12,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 11,
+   "name": "ビーチガール",
+   "time": "1:46.2",
+   "margin": "２",
+   "pos4": 9,
+   "last3f": 40.3,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 5,
+   "number": 7,
+   "name": "マクアケ",
+   "time": "1:46.3",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": 41.6,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 12,
+   "name": "エルバステラ",
+   "time": "1:46.3",
+   "margin": "アタマ",
+   "pos4": 4,
+   "last3f": 41.8,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 3,
+   "number": 4,
+   "name": "マリフェイス",
+   "time": "1:46.5",
+   "margin": "１",
+   "pos4": 1,
+   "last3f": 42.0,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 1,
+   "number": 1,
+   "name": "メイショウフソウ",
+   "time": "1:46.7",
+   "margin": "１",
+   "pos4": 9,
+   "last3f": 40.8,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 2,
+   "number": 2,
+   "name": "キタノドンカルロ",
+   "time": "1:47.3",
+   "margin": "３",
+   "pos4": 7,
+   "last3f": 42.1,
+   "popularity": null
+  },
+  {
+   "finish": "13",
+   "frame": 6,
+   "number": 10,
+   "name": "マサノカトレア",
+   "time": "1:47.8",
+   "margin": "２ １／２",
+   "pos4": 13,
+   "last3f": 41.1,
+   "popularity": null
+  },
+  {
+   "finish": "14",
+   "frame": 4,
+   "number": 5,
+   "name": "オンクラウドナイン",
+   "time": "1:48.5",
+   "margin": "３",
+   "pos4": 9,
+   "last3f": 43.2,
+   "popularity": null
+  }
+ ]
 }
