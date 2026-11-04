@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261104",
  "race_id": "202611042218130508",
- "tries": 8,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -67,9 +67,9 @@
    "name": "リンネノハナドケイ",
    "time": "1:39.1",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 1,
+   "last3f": 40.5,
+   "popularity": 2
   },
   {
    "finish": "2",
@@ -78,9 +78,9 @@
    "name": "ジーティーエナジー",
    "time": "1:39.3",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 5,
+   "last3f": 39.9,
+   "popularity": 4
   },
   {
    "finish": "3",
@@ -89,9 +89,9 @@
    "name": "リュウノアメリカン",
    "time": "1:39.6",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 1,
+   "last3f": 41.0,
+   "popularity": 1
   },
   {
    "finish": "4",
@@ -100,9 +100,9 @@
    "name": "カネトシエルド",
    "time": "1:39.7",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 4,
+   "last3f": 40.5,
+   "popularity": 3
   },
   {
    "finish": "5",
@@ -111,9 +111,9 @@
    "name": "ルビーオーシャン",
    "time": "1:39.7",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 6,
+   "last3f": 39.7,
+   "popularity": 6
   },
   {
    "finish": "6",
@@ -122,9 +122,9 @@
    "name": "ケーズグロリア",
    "time": "1:40.4",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 1,
+   "last3f": 41.8,
+   "popularity": 5
   }
  ]
 }
