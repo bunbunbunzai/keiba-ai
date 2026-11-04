@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261104",
  "race_id": "202611041914080305",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 8,
+   "name": "ゲンキイッパイ",
+   "time": "1:16.7",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 9,
+   "name": "スマイルシエラ",
+   "time": "1:16.8",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 7,
+   "name": "イーオレイ",
+   "time": "1:17.2",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 3,
+   "name": "マーシャルアン",
+   "time": "1:17.2",
+   "margin": "ハナ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 11,
+   "name": "リバースター",
+   "time": "1:17.3",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 4,
+   "number": 4,
+   "name": "ヴィーケン",
+   "time": "1:17.5",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 12,
+   "name": "スプレンデンテ",
+   "time": "1:17.8",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "ミヤビモルタル",
+   "time": "1:18.1",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 10,
+   "name": "ライヴキティ",
+   "time": "1:18.2",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 6,
+   "name": "ヴェルデヴェント",
+   "time": "1:18.3",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 2,
+   "number": 2,
+   "name": "ミラクルミッキー",
+   "time": "1:18.9",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 5,
+   "number": 5,
+   "name": "スターゲット",
+   "time": "1:19.2",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }

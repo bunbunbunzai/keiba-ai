@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261104",
  "race_id": "202611042218130507",
- "tries": 4,
+ "tries": 5,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,105 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 8,
+   "name": "カガノジュエル",
+   "time": "1:38.3",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "レインボーツリー",
+   "time": "1:39.8",
+   "margin": "７",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 9,
+   "name": "ラブシックブルース",
+   "time": "1:39.9",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 7,
+   "name": "アロンジサンナスビ",
+   "time": "1:40.1",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 2,
+   "number": 2,
+   "name": "ハートサイン",
+   "time": "1:40.1",
+   "margin": "ハナ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 4,
+   "number": 4,
+   "name": "ウエスウィン",
+   "time": "1:40.6",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 6,
+   "name": "サンエイヴェスタ",
+   "time": "1:42.3",
+   "margin": "８",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "ショウガドマンナカ",
+   "time": "1:43.7",
+   "margin": "７",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 3,
+   "number": 3,
+   "name": "ダンストンルーク",
+   "time": "-",
+   "margin": "除外",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
