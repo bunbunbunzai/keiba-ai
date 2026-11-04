@@ -17,7 +17,7 @@
    "url": "https://www.ai-keiba-log.com/2026/11/05/kasamatsu/06r/",
    "created": "2026-11-04 20:47",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2117947125723955356",
    "x_at": "2026-11-04 20:48",
    "x_thread_ids": [
@@ -25,8 +25,8 @@
     "2117947128349651411",
     "2117947129431810077"
    ],
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AJyt-0OqOEW0EYiADFIQPP7'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A-nhYFd75jDGy0ozxjfCoVc'}",
+   "instagram_tries": 3
   },
   "eve-202611052320120512": {
    "kind": "grade_pre",
@@ -44,7 +44,7 @@
    "url": "https://www.ai-keiba-log.com/2026/11/05/kasamatsu/12r/",
    "created": "2026-11-04 20:47",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2117947132615299351",
    "x_at": "2026-11-04 20:48",
    "x_thread_ids": [
@@ -52,8 +52,8 @@
     "2117947135391908107",
     "2117947136876675438"
    ],
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A4E85eIAwTnhaaPWFCouOQf'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'Av0W383Kl-grGrH-Bxa69Tb'}",
+   "instagram_tries": 3
   }
  }
 }
