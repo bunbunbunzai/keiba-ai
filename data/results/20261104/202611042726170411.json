@@ -2,7 +2,205 @@
  "source": "rakuten",
  "date": "20261104",
  "race_id": "202611042726170411",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "4",
+    "yen": 100
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "4-9",
+    "yen": 860
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "4",
+    "yen": 100
+   },
+   {
+    "combo": "9",
+    "yen": 220
+   },
+   {
+    "combo": "7",
+    "yen": 360
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-9",
+    "yen": 350
+   },
+   {
+    "combo": "4-7",
+    "yen": 620
+   },
+   {
+    "combo": "7-9",
+    "yen": 2750
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-7",
+    "yen": 130
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-7-9",
+    "yen": 5080
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "4-9-7",
+    "yen": 8110
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-9",
+    "yen": 860
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 4,
+   "name": "ベストグリーン",
+   "time": "1:28.3",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 37.1,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 9,
+   "name": "アースインハマー",
+   "time": "1:30.1",
+   "margin": "大差",
+   "pos4": 2,
+   "last3f": 38.7,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 7,
+   "name": "パズー",
+   "time": "1:30.3",
+   "margin": "１",
+   "pos4": 3,
+   "last3f": 38.5,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 10,
+   "name": "リーガルタイム",
+   "time": "1:30.3",
+   "margin": "アタマ",
+   "pos4": 3,
+   "last3f": 38.9,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 6,
+   "name": "ゼウスシルエット",
+   "time": "1:30.4",
+   "margin": "１／２",
+   "pos4": 5,
+   "last3f": 38.4,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 3,
+   "number": 3,
+   "name": "ベラジオソニック",
+   "time": "1:31.3",
+   "margin": "５",
+   "pos4": 6,
+   "last3f": 39.4,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 11,
+   "name": "スターアイセーラ",
+   "time": "1:32.0",
+   "margin": "４",
+   "pos4": 9,
+   "last3f": 39.2,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "ココロネ",
+   "time": "1:32.0",
+   "margin": "ハナ",
+   "pos4": 11,
+   "last3f": 39.1,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 5,
+   "name": "オトコノロマン",
+   "time": "1:32.4",
+   "margin": "２ １／２",
+   "pos4": 9,
+   "last3f": 40.6,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 8,
+   "number": 12,
+   "name": "スターオブアダム",
+   "time": "1:33.2",
+   "margin": "５",
+   "pos4": 7,
+   "last3f": 41.6,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 2,
+   "number": 2,
+   "name": "ナムラオットー",
+   "time": "1:33.2",
+   "margin": "アタマ",
+   "pos4": 7,
+   "last3f": 41.6,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 6,
+   "number": 8,
+   "name": "オーサムジェンヌ",
+   "time": "1:35.4",
+   "margin": "大差",
+   "pos4": 12,
+   "last3f": 44.0,
+   "popularity": null
+  }
+ ]
 }

@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261104",
  "race_id": "202611042218130506",
- "tries": 2,
+ "tries": 8,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,105 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 4,
+   "name": "ヤマミアオカゼ",
+   "time": "1:30.0",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "フロアガリノビール",
+   "time": "1:32.3",
+   "margin": "大差",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 7,
+   "name": "フェイマスポッケ",
+   "time": "1:32.4",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 6,
+   "name": "モーモーセオリー",
+   "time": "1:33.6",
+   "margin": "６",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 1,
+   "number": 1,
+   "name": "ハクサントザン",
+   "time": "1:33.8",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 3,
+   "number": 3,
+   "name": "トキユシ",
+   "time": "1:34.0",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 2,
+   "number": 2,
+   "name": "ピカイチ",
+   "time": "1:34.0",
+   "margin": "ハナ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 8,
+   "name": "ミナム",
+   "time": "1:34.2",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 9,
+   "name": "スターワンフジサン",
+   "time": "1:34.8",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
