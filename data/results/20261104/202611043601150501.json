@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261104",
  "race_id": "202611043601150501",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "チュラヒメ",
    "time": "1:09.6",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 37.7,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "コノハナメガミ",
    "time": "1:09.8",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 38.4,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "トワイスソレイユ",
    "time": "1:10.0",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 38.4,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "リコーシュターケン",
    "time": "1:10.3",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 39.0,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "エンテンガビ",
    "time": "1:10.4",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 38.8,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ヴィーナスマインド",
    "time": "1:10.5",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 38.4,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "ナナイロ",
    "time": "1:10.7",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 38.9,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "モーニングスミレ",
    "time": "1:11.7",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 40.3,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "ベストガーデン",
    "time": "1:12.2",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 39.4,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "アカネビヨリ",
    "time": "1:12.5",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 40.0,
    "popularity": null
   }
  ]
