@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261104",
  "race_id": "202611042218130511",
- "tries": 4,
+ "tries": 5,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "ハクサンツキミテイ",
    "time": "1:50.4",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 39.2,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "チョメチョメ",
    "time": "1:50.9",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 39.3,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "アキュートガール",
    "time": "1:51.1",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 39.6,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "バルミーウェザー",
    "time": "1:51.2",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 38.8,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "ロードランヴェルセ",
    "time": "1:51.4",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 39.5,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ドライブアウェイ",
    "time": "1:52.3",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 39.2,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "デルマアートマン",
    "time": "1:52.5",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 39.2,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ウェザーコック",
    "time": "1:53.4",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 41.0,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "マニーヒーロー",
    "time": "1:54.4",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 41.9,
    "popularity": null
   }
  ]

@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261104",
  "race_id": "202611043601150510",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,105 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 3,
+   "number": 3,
+   "name": "レディーココ",
+   "time": "1:01.3",
+   "margin": "",
+   "pos4": 6,
+   "last3f": 36.7,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 2,
+   "number": 2,
+   "name": "ピーヴイビクトリア",
+   "time": "1:01.5",
+   "margin": "１",
+   "pos4": 1,
+   "last3f": 38.2,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 5,
+   "name": "ミサオ",
+   "time": "1:01.5",
+   "margin": "アタマ",
+   "pos4": 6,
+   "last3f": 37.0,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 7,
+   "name": "カンベイ",
+   "time": "1:01.6",
+   "margin": "３／４",
+   "pos4": 1,
+   "last3f": 38.2,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 6,
+   "name": "スマートウェイン",
+   "time": "1:01.8",
+   "margin": "１",
+   "pos4": 5,
+   "last3f": 37.3,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 1,
+   "number": 1,
+   "name": "ココロア",
+   "time": "1:01.9",
+   "margin": "クビ",
+   "pos4": 4,
+   "last3f": 37.8,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 8,
+   "name": "フアカイレヴァ",
+   "time": "1:02.2",
+   "margin": "１ １／２",
+   "pos4": 3,
+   "last3f": 38.7,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 9,
+   "name": "ダークマリー",
+   "time": "1:03.0",
+   "margin": "４",
+   "pos4": 8,
+   "last3f": 37.9,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 4,
+   "number": 4,
+   "name": "グランラック",
+   "time": "1:03.5",
+   "margin": "２ １／２",
+   "pos4": 8,
+   "last3f": 38.1,
+   "popularity": null
+  }
+ ]
 }
