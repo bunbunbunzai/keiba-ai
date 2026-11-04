@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261104",
  "race_id": "202611042218130503",
- "tries": 5,
+ "tries": 6,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "ジージージェット",
    "time": "1:30.5",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 38.7,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "アスマスティーブ",
    "time": "1:32.6",
    "margin": "大差",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 39.6,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "カフジウヴァ",
    "time": "1:32.6",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 38.9,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "ディンキー",
    "time": "1:32.7",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 40.0,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "エーティータキオン",
    "time": "1:33.0",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 39.1,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ミスキャサリン",
    "time": "1:33.9",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 41.2,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "ハイムリヒカイザー",
    "time": "1:35.7",
    "margin": "９",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 41.8,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ウインシャルマン",
    "time": "1:37.0",
    "margin": "６",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 43.1,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "アーバンエア",
    "time": "1:37.8",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 46.0,
    "popularity": null
   },
   {
