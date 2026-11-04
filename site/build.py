@@ -1601,7 +1601,8 @@ def build() -> None:
                 if sc_ and sc_["stake"] and r_.get("distance"):
                     surf = "turf" if r_.get("surface") == "芝" else "jump" if r_.get("surface") == "障" else "dirt"
                     _cc[f"{VENUE_SLUG.get(venue_of(p), 'venue')}-{surf}-{int(r_['distance'])}"] += 1
-    LINK_HORSES.clear(); LINK_HORSES.update(k for k, n in _hc.items() if n >= 2)
+    _noted = {f.stem for f in (ROOT / "data" / "horse_notes").glob("*.json")}
+    LINK_HORSES.clear(); LINK_HORSES.update(k for k, n in _hc.items() if n >= 2 or extra.short_id(k) in _noted)
     LINK_JOCKEYS.clear(); LINK_JOCKEYS.update(k for k, n in _jc.items() if n >= 5)
     LINK_COURSES.clear(); LINK_COURSES.update(k for k, n in _cc.items() if n >= 5)
     for d in dates:

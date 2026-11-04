@@ -1,6 +1,6 @@
 """馬ごとのページ（/horse/<id>/）：このサイトでの評価点・印・想定勝率と、実際の着順の履歴。
 
-2回以上出走した馬だけ作る（1回だけの馬は内容が薄いため）。IDは馬名のハッシュ。
+2回以上評価した馬と、1回でもAIの寸評（data/horse_notes）がある馬について作る。IDは馬名のハッシュ。
 """
 from __future__ import annotations
 
@@ -14,6 +14,19 @@ def _finish(p: dict, num) -> str:
         if row.get("number") == num:
             return str(row.get("finish") or "")
     return ""
+
+
+def _past_html(past: list, esc) -> str:
+    if not past:
+        return ""
+    rows = "".join(
+        f"<tr><td>{esc(r.get('date') or '')}</td><td>{esc(r.get('venue') or '')} {esc(r.get('race_name') or '')}</td>"
+        f"<td>{esc(r.get('surface') or '')}{esc(r.get('distance') or '')}m・{esc(r.get('track') or '')}</td><td>{esc(r.get('field') or '')}頭</td>"
+        f"<td>{esc(r.get('popularity') or '-')}番人気</td><td><b>{esc(r.get('finish') or '-')}着</b></td><td>{esc(r.get('corners') or '-')}</td><td>{esc(r.get('last3f') or '-')}</td></tr>"
+        for r in past[:5])
+    return ("<section class='card'><h2>近走（直近5走）</h2><div class='scroll'><table><thead><tr><th>日付</th><th>レース</th><th>コース</th><th>頭数</th>"
+            f"<th>人気</th><th>着順</th><th>通過</th><th>上がり</th></tr></thead><tbody>{rows}</tbody></table></div>"
+            "<p class='meta'>最後に評価したレースの出馬表に載っていた近走。</p></section>")
 
 
 def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
@@ -33,13 +46,16 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
                 horses[name].append({"d": d, "p": p, "num": num, "mark": mm.get(num, ""), "score": e.get("score"),
                                      "win_pct": e.get("win_pct"), "comment": e.get("comment") or "", "finish": _finish(p, num),
                                      "odds": rh.get("odds"), "pop": rh.get("popularity"), "jockey": rh.get("jockey"),
-                                     "sire": rh.get("sire"), "sex_age": rh.get("sex_age")})
+                                     "sire": rh.get("sire"), "sex_age": rh.get("sex_age"), "past": rh.get("past") or []})
     index_rows = []
+    notes_dir = B.ROOT / "data" / "horse_notes"
     for name, items in horses.items():
-        if len(items) < 2:
-            continue
-        items.sort(key=lambda x: x["d"], reverse=True)
         hid = short_id(name)
+        note = B.load_json(notes_dir / f"{hid}.json") if (notes_dir / f"{hid}.json").exists() else None
+        if len(items) < 2 and not note:
+            continue
+        B.LINK_HORSES.add(name)
+        items.sort(key=lambda x: x["d"], reverse=True)
         path = f"/horse/{hid}/"
         n_hon = sum(1 for x in items if x["mark"] == "◎")
         runs = [x for x in items if x["finish"].isdigit()]
@@ -67,7 +83,10 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
                 f"<div><b>{wins}・{top3}</b><span>1着・3着内（{len(runs)}走）</span></div></div>"
                 f"<section class='card'><h2>出走ごとのAI評価</h2><div class='scroll'><table><thead><tr><th>レース</th><th>印</th><th>評価点</th><th>想定勝率</th><th>単勝</th><th>着順</th><th>騎手</th></tr></thead>"
                 f"<tbody>{''.join(rows)}</tbody></table></div></section>"
-                + (f"<section class='card'><h2>AIの寸評</h2><ul>{comments}</ul></section>" if comments else "")
+                + (f"<section class='card'><h2>AIの見立て</h2><div class='kaiko'>{B.zk('normal', 48)}<p><b>全頭くん</b>{esc(note['text'])}</p></div>"
+                   f"<p class='meta'>近走と、このサイトのAIの評価をもとにAIが書いた寸評（{esc(B.md(note['updated']))}時点）。</p></section>" if note else "")
+                + _past_html(latest.get("past") or [], esc)
+                + (f"<section class='card'><h2>レースごとのAIの短評</h2><ul>{comments}</ul></section>" if comments else "")
                 + "<p class='meta'>評価点はAIが5軸で採点した合計、想定勝率はAIの見立て。単勝は予想時点のオッズ。着順は主催者の発表が正。</p>")
         ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": B.SITE_NAME, "item": B.BASE_URL + "/"},

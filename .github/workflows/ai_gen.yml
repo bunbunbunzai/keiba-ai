@@ -1,0 +1,55 @@
+name: ai_gen (コース解説・馬の寸評をAIで作る)
+
+# 日々のデータ取得とは別の列で動かす（長くかかっても daily を待たせない）。
+# 毎週月曜にも、増えた分だけ作り直す（変化が無いコース・馬は呼ばない）。
+on:
+  schedule:
+    - cron: "43 19 * * 0"   # 月曜 4:43 JST
+  workflow_dispatch:
+    inputs:
+      what:
+        description: "course / horse / both"
+        required: true
+        default: both
+      max_calls:
+        description: "呼び出し回数の上限（それぞれ）"
+        required: false
+        default: "6000"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ai-gen
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: 生成
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          WHAT: ${{ inputs.what || 'both' }}
+          MAX: ${{ inputs.max_calls || '6000' }}
+        run: |
+          cd scraper
+          if [ "$WHAT" != horse ]; then python -u course_gen.py --max-calls "$MAX"; fi
+          if [ "$WHAT" != course ]; then python -u horse_gen.py --max-calls "$MAX" --workers 6; fi
+        continue-on-error: true
+      - name: 保存
+        run: |
+          git config user.name "keiba-ai-bot"
+          git config user.email "keiba-ai-bot@users.noreply.github.com"
+          git add data/course_notes data/horse_notes data/ai_usage.jsonl
+          git diff --cached --quiet && exit 0
+          git commit -m "AIのコース解説・馬の寸評を更新"
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep 20; done
+          curl -s -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/actions/workflows/pages.yml/dispatches -d '{"ref":"main"}' || true

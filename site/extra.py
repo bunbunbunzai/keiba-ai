@@ -155,46 +155,60 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
                 continue
             surf = "芝" if r.get("surface") == "芝" else "障害" if r.get("surface") == "障" else "ダート"
             courses[(B.venue_of(p), surf, int(r["distance"]))].append((d, p))
-    clist = []
+    import course_stats as CS
+    hist = {}
+    for (hv, hs, hm), st in CS.collect(30).items():
+        hist[CS.course_slug(B.VENUE_SLUG.get(hv, "venue"), hs, hm)] = ((hv, CS.SURF_NAME.get(hs, hs), hm), st)
+    site_c = {}
     for (v, surf, dist), items in courses.items():
-        done = [B.scored(p) for _, p in items if B.scored(p) and B.scored(p)["stake"]]
-        if len(done) < 5:  # 5レース未満は作らない
-            continue
         vs = B.VENUE_SLUG.get(v, "venue")
-        slug = f"{vs}-{'turf' if surf == '芝' else 'jump' if surf == '障害' else 'dirt'}-{dist}"
+        site_c[f"{vs}-{'turf' if surf == '芝' else 'jump' if surf == '障害' else 'dirt'}-{dist}"] = ((v, surf, dist), items)
+    notes_dir = B.ROOT / "data" / "course_notes"
+    clist = []
+    for slug in sorted(set(site_c) | set(hist)):
+        (v, surf, dist), items = site_c[slug] if slug in site_c else (hist[slug][0], [])
+        done = [B.scored(p) for _, p in items if B.scored(p) and B.scored(p)["stake"]]
+        h = hist.get(slug)
+        if len(done) < 5 and not h:  # どちらのデータも少ないコースは作らない
+            continue
         path = f"/course/{slug}/"
-        st, rt = sum(s["stake"] for s in done), sum(s["return"] for s in done)
-        win = sum(1 for s in done if str(s.get("honmei_finish")) == "1")
-        top3 = sum(1 for s in done if str(s.get("honmei_finish")) in ("1", "2", "3"))
-        # 勝ち馬の4角位置（先行か）と枠
-        front = inner = n = 0
-        for _, p in items:
-            for row in (p.get("_result") or {}).get("rows") or []:
-                if str(row.get("finish")) == "1" and row.get("pos4") and row.get("number"):
-                    fld = p["_race"].get("field") or 12
-                    n += 1
-                    front += row["pos4"] <= (5 if fld >= 12 else 4)
-                    inner += row["number"] <= max(1, round(fld / 3))
         vn = B.VENUE_NAME.get(v, v)
         name = f"{vn}{surf}{dist}m"
-        lead = (f"{name}のAI予想は{len(done)}レースで回収率{B.roi_txt(st, rt)}、◎の勝率{pct(win, len(done))}・3着内率{pct(top3, len(done))}。"
-                + (f"勝ち馬{n}頭のうち4コーナー先行は{pct(front, n)}、内枠（頭数の1/3以内）は{pct(inner, n)}。" if n else ""))
-        recent = sorted(items, key=lambda x: x[0], reverse=True)[:20]
-        lis = "".join(B.race_item(d, p) for d, p in recent)
+        note = B.load_json(notes_dir / f"{slug}.json") if (notes_dir / f"{slug}.json").exists() else None
+        parts, lead_bits = [], []
+        if h:
+            st = h[1]
+            if note:
+                lead_bits.append(note["lead"])
+                parts.append("<section class='card'><h2>このコースの傾向（AIの解説）</h2><ul>" + "".join(f"<li>{esc(x)}</li>" for x in note["points"]) + "</ul>"
+                             + (f"<p>{esc(note['howto'])}</p>" if note.get("howto") else "")
+                             + f"<p class='meta'>過去の公式レース結果{note['races']}レースの集計をもとに、AIが{esc(note['updated'])}に書いた解説。</p></section>")
+            parts.append(f"<section class='card'><h2>過去のレース結果の集計（{esc(CS.fd(st['first']))}〜{esc(CS.fd(st['last']))}・{st['races']}レース）</h2>"
+                         + CS.tables_html(st, esc)
+                         + "<p class='meta'>主催者が公開したレース結果から集計（AIの予想とは無関係）。人気は確定オッズの順位。馬番の位置はその年の頭数で3つに分けた。</p></section>")
+        if len(done) >= 5:
+            st_, rt = sum(x["stake"] for x in done), sum(x["return"] for x in done)
+            win = sum(1 for x in done if str(x.get("honmei_finish")) == "1")
+            top3 = sum(1 for x in done if str(x.get("honmei_finish")) in ("1", "2", "3"))
+            lead_bits.append(f"このサイトのAI予想は{len(done)}レースで回収率{B.roi_txt(st_, rt)}、◎の勝率{pct(win, len(done))}・3着内率{pct(top3, len(done))}。")
+            recent = sorted(items, key=lambda x: x[0], reverse=True)[:20]
+            parts.append(f"<section class='card'><h2>このサイトのAI予想の成績</h2><div class='kpis'><div><b>{len(done)}</b><span>予想したレース</span></div>"
+                         f"<div><b>{B.roi_txt(st_, rt)}</b><span>回収率</span></div><div><b>{pct(win, len(done))}</b><span>◎の勝率</span></div>"
+                         f"<div><b>{pct(top3, len(done))}</b><span>◎の3着内率</span></div></div>"
+                         f"<ul class='races'>{''.join(B.race_item(d, p) for d, p in recent)}</ul>"
+                         f"<p class='meta'>{esc(B.fmt_date(B.STATS_FROM))}以降のレース（「見送り」は除く）。買い目を1点100円ずつ買ったとして計算。</p></section>")
+        lead = "".join(lead_bits) or f"{name}の過去のレース結果の集計。"
         body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/course/'>コース別</a> › {esc(name)}</p>"
-                f"<h1>{esc(name)}のAI予想成績と傾向</h1><p class='answer'>{esc(lead)}</p>"
-                f"<div class='kpis'><div><b>{len(done)}</b><span>予想したレース</span></div><div><b>{B.roi_txt(st, rt)}</b><span>回収率</span></div>"
-                f"<div><b>{pct(win, len(done))}</b><span>◎勝率</span></div><div><b>{pct(front, n)}</b><span>勝ち馬の先行率</span></div></div>"
-                f"<section class='card'><h2>最近のレース</h2><ul class='races'>{lis}</ul></section>"
-                f"<p class='meta'>{esc(B.fmt_date(B.STATS_FROM))}以降のレース（「見送り」は除く）。買い目を1点100円ずつ買ったとして計算。<a href='{B.venue_path(v)}'>{esc(vn)}競馬の予想一覧</a></p>")
-        write(path, page(f"{name} AI予想の成績と傾向（回収率・先行率）｜{B.SITE_NAME}", body, path, desc=lead[:120]))
-        lastmod[path] = iso(max(d for d, _ in items))
-        clist.append((vn, surf, dist, path, len(done), B.roi_txt(st, rt)))
+                f"<h1>{esc(name)}の傾向（人気・枠・脚質・配当）</h1><p class='answer'>{esc(lead)}</p>" + "".join(parts)
+                + f"<p class='meta'><a href='{B.venue_path(v)}'>{esc(vn)}競馬の予想一覧</a>・<a href='/course/'>ほかのコース</a></p>")
+        write(path, page(f"{name}の傾向｜人気・枠・脚質・配当のデータ｜{B.SITE_NAME}", body, path, desc=lead[:120]))
+        lastmod[path] = iso(max([d for d, _ in items] + ([h[1]["last"]] if h else [])))
+        clist.append((vn, surf, dist, path, (h[1]["races"] if h else 0), B.roi_txt(sum(x["stake"] for x in done), sum(x["return"] for x in done)) if len(done) >= 5 else ""))
     clist.sort()
     write("/course/", page(f"コース別 AI予想の成績と傾向｜{B.SITE_NAME}",
                            "<p class='crumb'><a href='/'>トップ</a> › コース別</p><h1>コース別のAI予想成績と傾向</h1>"
-                           "<p class='answer'>競馬場・芝ダート・距離ごとに、AI予想の回収率と、勝ち馬の先行率・内枠率をまとめている（5レース以上のコースのみ）。</p>"
-                           "<ul class='days'>" + "".join(f"<li><a href='{c[3]}'><span>{esc(c[0])} {esc(c[1])}{c[2]}m</span><span>{c[4]}レース・回収率{c[5]}</span></a></li>" for c in clist) + "</ul>",
+                           "<p class='answer'>競馬場・芝ダート・距離ごとに、過去のレース結果から人気・枠・脚質・配当の傾向をまとめ、AIの解説と、このサイトのAI予想の成績を載せている。</p>"
+                           "<ul class='days'>" + "".join(f"<li><a href='{c[3]}'><span>{esc(c[0])} {esc(c[1])}{c[2]}m</span><span>{'過去' + str(c[4]) + 'レース' if c[4] else ''}{'・AI予想の回収率' + c[5] if c[5] else ''}</span></a></li>" for c in clist) + "</ul>",
                            "/course/", desc="競馬場・芝ダート・距離ごとのAI予想の回収率と傾向。", noindex=not clist))
     if clist:
         lastmod["/course/"] = iso(today)
