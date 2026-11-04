@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261104",
  "race_id": "202611041006100303",
- "tries": 2,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,127 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 6,
+   "name": "フェズカズマ",
+   "time": "1:26.4",
+   "margin": "",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 1,
+   "number": 1,
+   "name": "サンエイキャノン",
+   "time": "1:26.6",
+   "margin": "１ １／４",
+   "pos4": 2,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "カンフーヒーロー",
+   "time": "1:27.0",
+   "margin": "２ １／２",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 8,
+   "name": "グレイスショコラ",
+   "time": "1:27.2",
+   "margin": "１",
+   "pos4": 10,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 11,
+   "name": "ロジマンボ",
+   "time": "1:27.3",
+   "margin": "クビ",
+   "pos4": 6,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 9,
+   "name": "フクノバルトラン",
+   "time": "1:27.4",
+   "margin": "３／４",
+   "pos4": 11,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 7,
+   "name": "ホリーアン",
+   "time": "1:27.6",
+   "margin": "１",
+   "pos4": 5,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 5,
+   "number": 5,
+   "name": "ミクリ",
+   "time": "1:27.6",
+   "margin": "クビ",
+   "pos4": 6,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 3,
+   "number": 3,
+   "name": "クレストライン",
+   "time": "1:27.8",
+   "margin": "１",
+   "pos4": 8,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 2,
+   "number": 2,
+   "name": "ユマハム",
+   "time": "1:28.0",
+   "margin": "１",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 8,
+   "number": 10,
+   "name": "ボグラーモデル",
+   "time": "1:28.5",
+   "margin": "３",
+   "pos4": 9,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
