@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261104",
  "race_id": "202611043601150511",
- "tries": 2,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,105 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 5,
+   "name": "ケイアイブイスリー",
+   "time": "1:50.0",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 8,
+   "name": "ヴァンディヴェール",
+   "time": "1:50.0",
+   "margin": "アタマ",
+   "pos4": 1,
+   "last3f": 39.1,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 9,
+   "name": "リコーテリア",
+   "time": "1:50.5",
+   "margin": "２ １／２",
+   "pos4": 4,
+   "last3f": 39.2,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 7,
+   "name": "アステロイドメア",
+   "time": "1:50.5",
+   "margin": "クビ",
+   "pos4": 4,
+   "last3f": 39.4,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 1,
+   "number": 1,
+   "name": "エイイチ",
+   "time": "1:50.6",
+   "margin": "１／２",
+   "pos4": 7,
+   "last3f": 39.1,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 6,
+   "name": "アドルナティック",
+   "time": "1:51.1",
+   "margin": "２ １／２",
+   "pos4": 7,
+   "last3f": 39.4,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 3,
+   "name": "イイデヒロイン",
+   "time": "1:51.2",
+   "margin": "１／２",
+   "pos4": 4,
+   "last3f": 39.9,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 4,
+   "number": 4,
+   "name": "ゲームアップロード",
+   "time": "1:51.5",
+   "margin": "１ １／２",
+   "pos4": 9,
+   "last3f": 37.6,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "バンカブルスター",
+   "time": "1:52.1",
+   "margin": "３",
+   "pos4": 1,
+   "last3f": 42.2,
+   "popularity": null
+  }
+ ]
 }

@@ -1,6 +1,6 @@
 {
  "date": "20261104",
- "updated": "2026-11-04 19:58",
+ "updated": "2026-11-04 20:18",
  "bias": {
   "盛岡ダ": {
    "judgement": "先行有利",
@@ -100,12 +100,13 @@
     7,
     8,
     9,
-    10
+    10,
+    11
    ],
-   "front_share": 0.8,
-   "inner_share": 0.4,
-   "outer_share": 0.25,
-   "horses": 20
+   "front_share": 0.82,
+   "inner_share": 0.36,
+   "outer_share": 0.27,
+   "horses": 22
   }
  }
 }
