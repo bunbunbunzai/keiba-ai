@@ -19,9 +19,14 @@ from common import DATA_DIR
 
 API = "https://api.anthropic.com/v1/messages"
 JST = timezone(timedelta(hours=9))
+# 期間限定の格上げ（クレジットが余っている期間だけ上位モデルを使う。期限を過ぎると自動で元に戻る）
+BOOST_UNTIL = "2026-11-12"
+_boost = datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d") <= BOOST_UNTIL
 MODELS = {
-    "review": os.environ.get("ANTHROPIC_MODEL_REVIEW", "claude-haiku-5-5"),
-    "article": os.environ.get("ANTHROPIC_MODEL_ARTICLE", "claude-sonnet-5-5"),
+    "review": os.environ.get("ANTHROPIC_MODEL_REVIEW", "claude-sonnet-5-5" if _boost else "claude-haiku-5-5"),
+    "article": os.environ.get("ANTHROPIC_MODEL_ARTICLE", "claude-opus-5-5" if _boost else "claude-sonnet-5-5"),
+    "analysis": os.environ.get("ANTHROPIC_MODEL_ANALYSIS", "claude-opus-5-5"),
+    "bulk": os.environ.get("ANTHROPIC_MODEL_BULK", "claude-haiku-5-5"),  # 馬の寸評など大量に作るもの
 }
 
 

@@ -8,13 +8,17 @@ on:
   workflow_dispatch:
     inputs:
       what:
-        description: "course / horse / both"
+        description: "course / course_force / horse / both / weekly"
         required: true
         default: both
       max_calls:
         description: "呼び出し回数の上限（それぞれ）"
         required: false
         default: "6000"
+      week:
+        description: "weekly のとき対象週の月曜（YYYYMMDD、空なら先週）"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -38,16 +42,22 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           WHAT: ${{ inputs.what || 'both' }}
           MAX: ${{ inputs.max_calls || '6000' }}
+          WEEK: ${{ inputs.week && format('--week {0}', inputs.week) || '' }}
         run: |
           cd scraper
-          if [ "$WHAT" != horse ]; then python -u course_gen.py --max-calls "$MAX"; fi
-          if [ "$WHAT" != course ]; then python -u horse_gen.py --max-calls "$MAX" --workers 6; fi
+          case "$WHAT" in
+            weekly) python -u weekly_gen.py $WEEK ;;
+            course_force) python -u course_gen.py --max-calls "$MAX" --force ;;
+            course) python -u course_gen.py --max-calls "$MAX" ;;
+            horse) python -u horse_gen.py --max-calls "$MAX" --workers 6 ;;
+            *) python -u weekly_gen.py; python -u course_gen.py --max-calls "$MAX"; python -u horse_gen.py --max-calls "$MAX" --workers 6 ;;
+          esac
         continue-on-error: true
       - name: 保存
         run: |
           git config user.name "keiba-ai-bot"
           git config user.email "keiba-ai-bot@users.noreply.github.com"
-          for d in data/course_notes data/horse_notes data/ai_usage.jsonl; do [ -e "$d" ] && git add "$d"; done
+          for d in data/course_notes data/horse_notes data/ai_usage.jsonl columns; do [ -e "$d" ] && git add "$d"; done
           git diff --cached --quiet && exit 0
           git commit -m "AIのコース解説・馬の寸評を更新"
           for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep 20; done

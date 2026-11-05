@@ -23,3 +23,7 @@ MAX_Q_CHARS = "200"
 DATA_VER = "2"
 # 全頭くんがWeb検索を使える回数（サイト全体・1日）。1回あたり数円
 LIMIT_SEARCH_DAY = "20"
+# 期間限定の格上げ（この日まで）
+BOOST_UNTIL = "2026-11-12"
+MODEL_BOOST = "claude-sonnet-5-5"
+LIMIT_SEARCH_DAY_BOOST = "100"

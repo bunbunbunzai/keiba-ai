@@ -100,7 +100,7 @@ def main() -> None:
         name, hid, basis, items = t
         if ai.too_many_failures():
             return False
-        text = ai.ask("review", SYSTEM, material(name, items), max_tokens=1500)
+        text = ai.ask("bulk", SYSTEM, material(name, items), max_tokens=1500)
         if not text:
             return False
         (OUT / f"{hid}.json").write_text(json.dumps({"name": name, "basis": basis, "text": text.strip()[:300],

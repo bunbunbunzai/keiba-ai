@@ -67,9 +67,14 @@ const SYSTEM = `あなたは「競馬全頭ログ」（AIが中央・地方の�
 情報に無いことは「このレースのデータには載っていません」と答え、推測で数字や事実を作らない。
 馬券の購入を勧めない、的中や利益を約束しない。競馬と無関係の質問には「このレースについての質問にお答えしています」とだけ返す。`;
 
+// 期間限定の格上げ（BOOST_UNTIL の日まで。過ぎると自動で通常のモデル・上限に戻る）
+function boosted(env) {
+  return !!env.BOOST_UNTIL && new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10) <= env.BOOST_UNTIL;
+}
+
 async function askClaude(env, context, q, allowSearch) {
   const body = {
-    model: env.MODEL || "claude-haiku-5-5",
+    model: boosted(env) && env.MODEL_BOOST ? env.MODEL_BOOST : (env.MODEL || "claude-haiku-5-5"),
     max_tokens: 4000,
     system: SYSTEM + (allowSearch ? SEARCH_NOTE : NO_SEARCH_NOTE),
     messages: [{ role: "user", content: `【レース情報】\n${context}\n\n【質問】${q}` }],
@@ -159,7 +164,7 @@ export default {
     try {
       const sk = `search:${day}`;
       const used = await (await lim.fetch("https://limits/", { method: "POST", body: JSON.stringify({ peek: sk }) })).json();
-      const allowSearch = used.n < parseInt(env.LIMIT_SEARCH_DAY || "20", 10);
+      const allowSearch = used.n < parseInt((boosted(env) && env.LIMIT_SEARCH_DAY_BOOST) || env.LIMIT_SEARCH_DAY || "20", 10);
       const ans = await askClaude(env, data.context, q, allowSearch);
       if (ans.searches) await lim.fetch("https://limits/", { method: "POST", body: JSON.stringify({ add: { k: sk, n: ans.searches, ttl: 86400 } }) });
       return reply(env, req, 200, { answer: ans.text || "うまく答えられませんでした。聞き方を変えて、もう一度どうぞ。", sources: ans.sources,

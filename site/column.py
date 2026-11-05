@@ -462,7 +462,10 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
               if h and (ASSET / f"{h}-s.jpg").exists() else "")
         return (f"<li{' class=\'wth\'' if th else ''}><a href='/column/{c['slug']}/'>{th}<span class='tx'><b>{esc(subst(c.get('title', ''), v))}</b>"
                 f"<span>{esc(subst(c.get('description', ''), v))}</span></span></a></li>")
-    items = "".join(_li(c) for c in pub if c.get("auto") != "true")
+    items = "".join(_li(c) for c in pub if c.get("auto") != "true" and c.get("series") != "weekly")
+    weeklies = sorted((c for c in pub if c.get("series") == "weekly"), key=lambda c: c.get("date", ""), reverse=True)
+    weekly_items = ("<h2>AI予想の週間振り返り</h2><p class='meta'>毎週、1週間分の全予想と結果をAIが分析し、当たった条件・外れた条件をまとめている。</p>"
+                    f"<ul class='cols'>{''.join(_li(c) for c in weeklies[:12])}</ul>") if weeklies else ""
     autos = sorted((c for c in pub if c.get("auto") == "true"), key=lambda c: c.get("date", ""), reverse=True)
     auto_items = "".join(_li(c) for c in autos[:40])
     if auto_items:
@@ -471,7 +474,7 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
     write("/column/", page(f"競馬初心者向けコラム | {site_name}",
                            "<p class='crumb'><a href='/'>トップ</a> › コラム</p><h1>競馬初心者向けコラム</h1>" + __import__("build").banner("column") +
                            "<p class='answer'>馬券の種類や回収率の考え方などを、このサイトの全レースの記録（実データ）を使って解説する。数字は記録が増えるたびに自動で更新される。</p>"
-                           + (f"<h2>初心者向け・データ分析</h2><ul class='cols'>{items}</ul>" if items else "<p>準備中。</p>") + auto_items,
+                           + weekly_items + (f"<h2>初心者向け・データ分析</h2><ul class='cols'>{items}</ul>" if items else "<p>準備中。</p>") + auto_items,
                            "/column/", desc="競馬初心者向けに、馬券の種類・回収率・人気と勝率・トラックバイアスを、AI予想の全レースの実データで解説するコラム。",
                            noindex=not pub))
     if pub:
