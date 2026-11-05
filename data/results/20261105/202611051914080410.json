@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261105",
  "race_id": "202611051914080410",
- "tries": 2,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,160 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 6,
+   "name": "ヤギリアイビス",
+   "time": "1:43.8",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.8,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 9,
+   "name": "タイセイバンクール",
+   "time": "1:44.1",
+   "margin": "１ １／２",
+   "pos4": 6,
+   "last3f": 39.2,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 13,
+   "name": "カイトキング",
+   "time": "1:44.5",
+   "margin": "２",
+   "pos4": 1,
+   "last3f": 40.3,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 11,
+   "name": "サンリコリス",
+   "time": "1:44.7",
+   "margin": "１",
+   "pos4": 9,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 10,
+   "name": "アイリーズパキラ",
+   "time": "1:44.9",
+   "margin": "１",
+   "pos4": 4,
+   "last3f": 40.3,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 1,
+   "number": 1,
+   "name": "クレシューズ",
+   "time": "1:45.0",
+   "margin": "クビ",
+   "pos4": 13,
+   "last3f": 38.9,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 8,
+   "name": "メランポジューム",
+   "time": "1:45.1",
+   "margin": "クビ",
+   "pos4": 12,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 5,
+   "number": 7,
+   "name": "キングオブカズ",
+   "time": "1:45.4",
+   "margin": "１ １／２",
+   "pos4": 13,
+   "last3f": 39.3,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "リゼルージュセリエ",
+   "time": "1:45.5",
+   "margin": "１／２",
+   "pos4": 3,
+   "last3f": 41.4,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 3,
+   "number": 3,
+   "name": "トールハンマー",
+   "time": "1:45.9",
+   "margin": "２",
+   "pos4": 6,
+   "last3f": 41.3,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 7,
+   "number": 12,
+   "name": "シドニーホバート",
+   "time": "1:45.9",
+   "margin": "クビ",
+   "pos4": 6,
+   "last3f": 41.7,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 4,
+   "number": 5,
+   "name": "ブルーパッション",
+   "time": "1:46.0",
+   "margin": "３／４",
+   "pos4": 9,
+   "last3f": 41.2,
+   "popularity": null
+  },
+  {
+   "finish": "13",
+   "frame": 8,
+   "number": 14,
+   "name": "アルヴァレス",
+   "time": "1:46.3",
+   "margin": "１ １／２",
+   "pos4": 4,
+   "last3f": 41.9,
+   "popularity": null
+  },
+  {
+   "finish": "14",
+   "frame": 3,
+   "number": 4,
+   "name": "プレストムーラン",
+   "time": "1:47.4",
+   "margin": "５",
+   "pos4": 9,
+   "last3f": 42.5,
+   "popularity": null
+  }
+ ]
 }
