@@ -7,7 +7,7 @@
  "race_no": 12,
  "surface": "ダ",
  "distance": 1580,
- "post_time": "16:15",
+ "post_time": "16:25",
  "race_name": "ラブミーチャン記念（ＳＰ１） ２歳 牝馬・オープン",
  "conditions": "サラブレッド系　２歳",
  "horses": [
@@ -25,7 +25,7 @@
    "weight": 55.0,
    "jockey": "塚本征",
    "trainer": "小国博",
-   "body_weight_change": "-",
+   "body_weight_change": "454-4",
    "past": [
     {
      "finish": "2",
@@ -120,13 +120,13 @@
    "sire": "マテラスカイ",
    "dam": "シュエット",
    "damsire": "ブラックタイド",
-   "odds": 4.0,
-   "popularity": 2,
+   "odds": null,
+   "popularity": null,
    "sex_age": "牝2",
    "weight": 55.0,
    "jockey": "東川慎",
    "trainer": "後藤正",
-   "body_weight_change": "-",
+   "body_weight_change": "438+4",
    "past": [
     {
      "finish": "3",
@@ -249,13 +249,13 @@
    "sire": "ウィルテイクチャージ",
    "dam": "ロッツオブラブ",
    "damsire": "ステイゴールド",
-   "odds": 4.9,
-   "popularity": 3,
+   "odds": 1.9,
+   "popularity": 1,
    "sex_age": "牝2",
    "weight": 55.0,
    "jockey": "渡邊竜",
    "trainer": "笹野博",
-   "body_weight_change": "-",
+   "body_weight_change": "407-3",
    "past": [
     {
      "finish": "1",
@@ -379,7 +379,7 @@
    "weight": 55.0,
    "jockey": "藤原幹",
    "trainer": "大橋敬",
-   "body_weight_change": "-",
+   "body_weight_change": "424+6",
    "past": [
     {
      "finish": "4",
@@ -506,13 +506,13 @@
    "sire": "タイセイレジェンド",
    "dam": "サツキユニヴァース",
    "damsire": "ネオユニヴァース",
-   "odds": null,
-   "popularity": null,
+   "odds": 111.8,
+   "popularity": 10,
    "sex_age": "牝2",
    "weight": 55.0,
    "jockey": "加藤聡",
    "trainer": "伊藤強",
-   "body_weight_change": "-",
+   "body_weight_change": "483+1",
    "past": [
     {
      "finish": "10",
@@ -645,7 +645,7 @@
    "weight": 55.0,
    "jockey": "丸野勝",
    "trainer": "田口輝",
-   "body_weight_change": "-",
+   "body_weight_change": "402±0",
    "past": [
     {
      "finish": "2",
@@ -770,7 +770,7 @@
    "weight": 55.0,
    "jockey": "筒井勇",
    "trainer": "田口輝",
-   "body_weight_change": "-",
+   "body_weight_change": "479+1",
    "past": [
     {
      "finish": "2",
@@ -891,7 +891,7 @@
    "weight": 55.0,
    "jockey": "井上瑛",
    "trainer": "目迫大",
-   "body_weight_change": "-",
+   "body_weight_change": "401-4",
    "past": [
     {
      "finish": "取消",
@@ -984,13 +984,13 @@
    "sire": "ディーマジェスティ",
    "dam": "エコパン",
    "damsire": "ツルマルボーイ",
-   "odds": 1.8,
-   "popularity": 1,
+   "odds": 2.4,
+   "popularity": 2,
    "sex_age": "牝2",
    "weight": 55.0,
    "jockey": "吉原寛",
    "trainer": "川島洋",
-   "body_weight_change": "-",
+   "body_weight_change": "484+7",
    "past": [
     {
      "finish": "1",
@@ -1107,7 +1107,7 @@
    "weight": 55.0,
    "jockey": "多田誠",
    "trainer": "工藤真",
-   "body_weight_change": "-",
+   "body_weight_change": "450+1",
    "past": [
     {
      "finish": "1",
