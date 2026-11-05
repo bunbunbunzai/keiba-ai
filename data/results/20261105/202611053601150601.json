@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261105",
  "race_id": "202611053601150601",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,127 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 5,
+   "name": "コイスルキモチ",
+   "time": "1:09.3",
+   "margin": "",
+   "pos4": 2,
+   "last3f": 37.6,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 10,
+   "name": "サンヨウキャプテン",
+   "time": "1:09.8",
+   "margin": "２ １／２",
+   "pos4": 2,
+   "last3f": 38.6,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "ヴァンケール",
+   "time": "1:09.8",
+   "margin": "ハナ",
+   "pos4": 2,
+   "last3f": 38.6,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 9,
+   "name": "ダリサス",
+   "time": "1:10.1",
+   "margin": "１ １／２",
+   "pos4": 1,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 8,
+   "name": "ラヴィアール",
+   "time": "1:10.1",
+   "margin": "ハナ",
+   "pos4": 6,
+   "last3f": 38.6,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 4,
+   "number": 4,
+   "name": "ツムギノワンワン",
+   "time": "1:10.1",
+   "margin": "アタマ",
+   "pos4": 2,
+   "last3f": 39.5,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 6,
+   "name": "カラーウィール",
+   "time": "1:10.2",
+   "margin": "１／２",
+   "pos4": 6,
+   "last3f": 38.8,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 11,
+   "name": "マンハッタンキス",
+   "time": "1:11.2",
+   "margin": "５",
+   "pos4": 10,
+   "last3f": 38.5,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 6,
+   "number": 7,
+   "name": "イナズマレジーナ",
+   "time": "1:11.2",
+   "margin": "クビ",
+   "pos4": 10,
+   "last3f": 38.5,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 2,
+   "number": 2,
+   "name": "ユーデンブルク",
+   "time": "1:12.3",
+   "margin": "５",
+   "pos4": 8,
+   "last3f": 39.8,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 1,
+   "number": 1,
+   "name": "モッツァレラ",
+   "time": "1:13.2",
+   "margin": "４",
+   "pos4": 8,
+   "last3f": 40.7,
+   "popularity": null
+  }
+ ]
 }
