@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261105",
  "race_id": "202611052726170512",
- "tries": 2,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 11,
+   "name": "モズタイシソウシ",
+   "time": "1:20.7",
+   "margin": "",
+   "pos4": 3,
+   "last3f": 39.0,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 6,
+   "name": "ケイアイブラック",
+   "time": "1:21.0",
+   "margin": "１ ３／４",
+   "pos4": 1,
+   "last3f": 40.8,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 10,
+   "name": "モンサンヴェロニカ",
+   "time": "1:21.2",
+   "margin": "３／４",
+   "pos4": 8,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 3,
+   "name": "ヤマトフェイス",
+   "time": "1:21.3",
+   "margin": "１／２",
+   "pos4": 8,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 8,
+   "name": "アイルトン",
+   "time": "1:21.3",
+   "margin": "クビ",
+   "pos4": 6,
+   "last3f": 40.0,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "レゴリス",
+   "time": "1:21.4",
+   "margin": "１／２",
+   "pos4": 6,
+   "last3f": 39.8,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 5,
+   "name": "ステップアイ",
+   "time": "1:21.7",
+   "margin": "１ １／２",
+   "pos4": 8,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 6,
+   "number": 7,
+   "name": "スービーズ",
+   "time": "1:21.9",
+   "margin": "１",
+   "pos4": 3,
+   "last3f": 41.6,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 12,
+   "name": "マジックエミリア",
+   "time": "1:22.1",
+   "margin": "３／４",
+   "pos4": 8,
+   "last3f": 40.0,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 1,
+   "number": 1,
+   "name": "ヨシノアヴァンセ",
+   "time": "1:22.4",
+   "margin": "２",
+   "pos4": 3,
+   "last3f": 41.1,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 7,
+   "number": 9,
+   "name": "トゥモローズウェイ",
+   "time": "1:23.8",
+   "margin": "８",
+   "pos4": 12,
+   "last3f": 41.3,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 4,
+   "number": 4,
+   "name": "ククナジンク",
+   "time": "1:24.6",
+   "margin": "５",
+   "pos4": 1,
+   "last3f": 44.4,
+   "popularity": null
+  }
+ ]
 }
