@@ -301,11 +301,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/05/kasamatsu/12r/",
    "created": "2026-11-05 18:23",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2118273373448950170",
    "x_at": "2026-11-05 18:25",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'ACyvs9AH9uxftlZbdKiiqU_'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AxOGGcr7OIbL5RzNdAApdB6'}",
+   "instagram_tries": 3
   },
   "hit-202611052726170512": {
    "kind": "hit",
@@ -319,11 +319,25 @@
    "url": "https://www.ai-keiba-log.com/2026/11/05/sonoda/12r/",
    "created": "2026-11-05 18:23",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2118273377517424932",
    "x_at": "2026-11-05 18:25",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A3wuYkdXYSmuYUoEHiUZXYP'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AC-XA061fsnWcjWwuyoXjxW'}",
+   "instagram_tries": 3
+  },
+  "hit-202611053601150611": {
+   "kind": "hit",
+   "image": "/social/20261105/hit-202611053601150611.jpg",
+   "images": [
+    "/social/20261105/hit-202611053601150611.jpg"
+   ],
+   "x_text": "【的中】門別11R エゾマツ特別\n◎6リオンダリーナ　〇3ワンダーウーマン　▲5ジャイロ\n単勝 6　340円\n3連複 3-6-7　660円\n投資800円→払戻1,000円（回収率125.0%）\n#競馬予想 #門別競馬 #AI予想 #的中",
+   "x_thread": [],
+   "ig_caption": "【的中】門別11R エゾマツ特別\n◎6リオンダリーナ　〇3ワンダーウーマン　▲5ジャイロ\n単勝 6　340円\n3連複 3-6-7　660円\n投資800円→払戻1,000円（回収率125.0%）\n\nこのレースの全頭評価と買い目 → www.ai-keiba-log.com/2026/11/05/monbetsu/11r/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#競馬予想 #門別競馬 #AI予想 #的中 #競馬 #競馬全頭ログ",
+   "url": "https://www.ai-keiba-log.com/2026/11/05/monbetsu/11r/",
+   "created": "2026-11-05 20:47",
+   "x": "pending",
+   "instagram": "pending"
   }
  }
 }
