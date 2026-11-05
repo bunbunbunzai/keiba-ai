@@ -10,6 +10,25 @@ from collections import defaultdict
 import strategy
 
 
+def _analysis_html(B, ym: str) -> str:
+    """AIによるこの月の分析（data/monthly_notes）。"""
+    n = B.load_json(B.ROOT / "data" / "monthly_notes" / f"{ym}.json")
+    if not n:
+        return ""
+    esc = B.esc
+    out = [f"<section class='card'><h2>この月の分析</h2><p>{esc(n.get('lead', ''))}</p>"]
+    for x in n.get("findings") or []:
+        out.append(f"<h3>{esc(x.get('title', ''))}</h3><p>{esc(x.get('text', ''))}</p>")
+    if n.get("good"):
+        out.append("<h3>よかった予想</h3><ul>" + "".join(f"<li><b>{esc(x.get('race', ''))}</b>：{esc(x.get('text', ''))}</li>" for x in n["good"]) + "</ul>")
+    if n.get("bad"):
+        out.append("<h3>悔しい外れ</h3><ul>" + "".join(f"<li><b>{esc(x.get('race', ''))}</b>：{esc(x.get('text', ''))}</li>" for x in n["bad"]) + "</ul>")
+    if n.get("next"):
+        out.append(f"<h3>次の月に向けて</h3><p>{esc(n['next'])}</p>")
+    out.append(f"<p class='meta'>サイトの全予想の記録（{n.get('races')}レース）をもとにAIが{esc(n.get('updated', ''))}に書いた分析。</p></section>")
+    return "".join(out)
+
+
 def build_pages(B, by_date: dict, led: list[dict], venue_of_race: dict, today: str) -> dict[str, str]:
     esc, write, page, jsonld = B.esc, B.write, B.page, B.jsonld
     lastmod: dict[str, str] = {}
@@ -79,6 +98,7 @@ def build_pages(B, by_date: dict, led: list[dict], venue_of_race: dict, today: s
         body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/monthly/'>月次レポート</a> › {esc(label)}</p>"
                 f"<h1>{esc(label)}の成績レポート{'（集計中）' if cur else ''}</h1>{B.banner('monthly')}<p class='answer'>{esc(lead)}</p>"
                 f"<div class='kpis'><div><b>{t['n']}</b><span>レース</span></div><div><b>{t['roi']}</b><span>回収率</span></div><div><b>{t['hit']}</b><span>的中率</span></div><div><b>{rt - st:+,}円</b><span>収支</span></div></div>"
+                + _analysis_html(B, f"{y}-{m:02d}")
                 + (f"<section class='card'><h2>累計回収率の推移（月内）</h2>{chart}</section>" if chart else "")
                 + f"<section class='card'><h2>場別</h2><div class='scroll'><table><thead><tr><th>場</th><th>レース</th><th>回収率</th><th>収支</th></tr></thead><tbody>{vrows}</tbody></table></div><p class='meta'>5レース以上の場のみ。</p></section>"
                 + (f"<section class='card'><h2>買い方別（この月）</h2><div class='scroll'><table><thead><tr><th>買い方</th><th>レース</th><th>回収率</th></tr></thead><tbody>{brows}</tbody></table></div><p class='meta'>20レース以上の区分のみ。買い方の意味は<a href='/strategy/'>買い方別の回収率</a>へ。</p></section>" if brows else "")

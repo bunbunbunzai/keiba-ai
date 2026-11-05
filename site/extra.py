@@ -12,6 +12,7 @@ import hashlib
 import re
 import unicodedata
 from collections import defaultdict
+from pathlib import Path
 
 GRADE_RE = re.compile(r"\((G|Jpn|JPN|S|SP|M|H|BG|重賞)\s*([1-3ⅠⅡⅢ])\)")
 
@@ -31,6 +32,32 @@ GRADED_SLUG = {
     "全日本2歳優駿": "zen-nihon-2yo-yushun", "東京ダービー": "tokyo-derby", "ジャパンダートクラシック": "japan-dirt-classic",
     "南部杯": "nambu-hai", "マイルチャンピオンシップ南部杯": "nambu-hai",
 }
+try:  # レースガイドの一覧の名前も、同じページに合流させる
+    import sys as _sys
+    _sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scraper"))
+    from race_guides import RACES as _RG
+    for _slug, _name, *_ in _RG:
+        GRADED_SLUG.setdefault(_name, _slug)
+except Exception:  # noqa: BLE001
+    _RG = []
+
+
+def race_guide_html(B, slug: str) -> str:
+    """重賞のレースガイド（data/race_guides、AIがWeb検索で調べて書いたもの）。"""
+    g = B.load_json(B.ROOT / "data" / "race_guides" / f"{slug}.json")
+    if not g:
+        return ""
+    esc = B.esc
+    facts = "".join(f"<tr><th>{esc(x.get('k'))}</th><td>{esc(x.get('v'))}</td></tr>" for x in g.get("facts") or [])
+    secs = "".join(f"<h3>{esc(x.get('h'))}</h3><p>{esc(x.get('text'))}</p>" for x in g.get("sections") or [])
+    src = "".join(f"<li><a href='{esc(x['url'])}' rel='nofollow noopener' target='_blank'>{esc(x['title'])}</a></li>"
+                  for x in g.get("sources") or [] if str(x.get("url", "")).startswith("http"))
+    course = (f"<p>このコースの過去のレース結果の傾向：<a href='/course/{g['course_slug']}/'>{esc(g['venue'])}{'芝' if g['surface'] == '芝' else 'ダート' if g['surface'] == 'ダ' else '障害'}{g['distance']}mの傾向</a></p>"
+              if g.get("course_slug") else "")
+    return (f"<section class='card'><h2>{esc(g['name'])}のレースガイド</h2><p>{esc(g['lead'])}</p>"
+            + (f"<div class='scroll'><table class='facts'><tbody>{facts}</tbody></table></div>" if facts else "") + secs + course
+            + (f"<p class='meta'>出典：</p><ul class='meta'>{src}</ul>" if src else "")
+            + f"<p class='meta'>公開情報と過去のレース結果をもとにAIが{esc(g['updated'])}にまとめたガイド。施行条件は年によって変わることがあるので、正式な情報は主催者の発表を確認してほしい。</p></section>")
 
 
 
@@ -123,7 +150,8 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
         lead = (f"{name}（{g}・{v}）のAI予想。{int(latest[0][:4])}年は◎{hon}{B.horse_name(latest[1], hon)}"
                 f"（{B.fmt_date(latest[0])}）。全頭の評価点・印・買い目と、確定後の的中・回収率を年ごとに記録している。")
         body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/graded/'>重賞</a> › {esc(name)}</p>"
-                f"<h1>{esc(name)} AI予想（{esc(g)}）</h1>{B.banner(_pic_banner(B, p0, d0), name)}<p class='answer'>{esc(lead)}</p>"
+                f"<h1>{esc(name)} AI予想と傾向（{esc(g)}）</h1>{B.banner(_pic_banner(B, p0, d0), name)}<p class='answer'>{esc(lead)}</p>"
+                + race_guide_html(B, slug) +
                 f"<section class='card'><h2>年ごとのAI予想と結果</h2><ul class='days'>{''.join(lis)}</ul></section>"
                 f"<p class='meta'>毎年このページに追加される。最新の予想はレース当日の昼（重賞は前日夜にも）公開。</p>")
         ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
@@ -134,6 +162,24 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
                          desc=lead[:120], head_extra=jsonld(ld)))
         lastmod[path] = iso(items[0][0])
         rows_all.append((latest[0], latest[1], name, g, slug))
+    # 予想がまだ無い重賞も、ガイドがあればページを作る（レース前から検索の受け皿にする）
+    guide_only = []
+    for slug, name, g, venue, *_ in _RG:
+        if slug in graded or not (B.ROOT / "data" / "race_guides" / f"{slug}.json").exists():
+            continue
+        gd = B.load_json(B.ROOT / "data" / "race_guides" / f"{slug}.json") or {}
+        path = f"/graded/{slug}/"
+        body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/graded/'>重賞</a> › {esc(name)}</p>"
+                f"<h1>{esc(name)}の傾向とレースガイド（{esc(g)}）</h1><p class='answer'>{esc(gd.get('lead', ''))}</p>"
+                + race_guide_html(B, slug)
+                + "<p class='meta'>このレースのAI予想（全頭の評価点・印・買い目）は、レースの前日夜または当日昼にこのページに追加される。</p>")
+        ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": B.SITE_NAME, "item": B.BASE_URL + "/"},
+            {"@type": "ListItem", "position": 2, "name": "重賞", "item": B.BASE_URL + "/graded/"},
+            {"@type": "ListItem", "position": 3, "name": name, "item": B.BASE_URL + path}]}
+        write(path, page(f"{name}の傾向・過去の結果とレースガイド｜{B.SITE_NAME}", body, path, desc=gd.get("lead", "")[:120], head_extra=jsonld(ld)))
+        lastmod[path] = gd.get("updated")
+        guide_only.append((slug, name, g, venue))
     rows_all.sort(key=lambda x: (x[0], x[1]["_race"].get("post_time") or ""), reverse=True)
     upcoming = [r for r in rows_all if r[0] >= today]
     past = [r for r in rows_all if r[0] < today][:40]
@@ -147,7 +193,10 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
     body = ("<p class='crumb'><a href='/'>トップ</a> › 重賞</p><h1>今週の重賞 AI予想一覧</h1>" + B.banner("graded") +
             "<p class='answer'>中央（GⅠ〜GⅢ）と地方（Jpn・S格付け）の重賞のAI予想をまとめている。レース名をクリックすると、そのレースの毎年の予想と結果をまとめたページが開く。</p>"
             + (f"<section class='card'><h2>これからの重賞</h2>{glist(upcoming)}</section>" if upcoming else "")
-            + (f"<section class='card'><h2>最近の重賞</h2>{glist(past)}</section>" if past else "<p>まだありません。</p>"))
+            + (f"<section class='card'><h2>最近の重賞</h2>{glist(past)}</section>" if past else "<p>まだありません。</p>")
+            + (("<section class='card'><h2>重賞のレースガイド（傾向・前哨戦・予想のポイント）</h2><ul class='days'>"
+                + "".join(f"<li><a href='/graded/{sl}/'><span>{esc(nm)}</span><span>{esc(gr)}・{esc(vn)}</span></a></li>" for sl, nm, gr, vn in guide_only)
+                + "</ul></section>") if guide_only else ""))
     write("/graded/", page(f"今週の重賞 AI予想一覧（中央・地方）｜{B.SITE_NAME}", body, "/graded/",
                            desc="今週の重賞（GⅠ・GⅡ・GⅢ、地方のJpn・S格付け）のAI予想一覧。全頭診断・印・買い目と過去の結果。"))
     lastmod["/graded/"] = iso(today)

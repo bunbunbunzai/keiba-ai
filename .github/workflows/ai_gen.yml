@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
     inputs:
       what:
-        description: "course / course_force / horse / both / weekly / venue / venue_force / glossary"
+        description: "course / course_force / horse / both / weekly / venue / venue_force / glossary / race_guide / guide / monthly"
         required: true
         default: both
       max_calls:
@@ -16,7 +16,7 @@ on:
         required: false
         default: "6000"
       week:
-        description: "weekly のとき対象週の月曜（YYYYMMDD、空なら先週）"
+        description: "weekly：対象週の月曜（YYYYMMDD）／monthly：対象月（YYYY-MM）。空なら先週・先月"
         required: false
         default: ""
 
@@ -44,6 +44,7 @@ jobs:
           WHAT: ${{ inputs.what || 'both' }}
           MAX: ${{ inputs.max_calls || '6000' }}
           WEEK: ${{ inputs.week && format('--week {0}', inputs.week) || '' }}
+          MONTH: ${{ inputs.week && format('--month {0}', inputs.week) || '' }}
         run: |
           cd scraper
           case "$WHAT" in
@@ -51,6 +52,9 @@ jobs:
             venue) python -u venue_gen.py --max-calls "$MAX" ;;
             venue_force) python -u venue_gen.py --max-calls "$MAX" --force ;;
             glossary) python -u glossary_gen.py --max-calls "$MAX" ;;
+            race_guide) python -u race_guide_gen.py --max-calls "$MAX" ;;
+            guide) python -u guide_gen.py --max-calls "$MAX" ;;
+            monthly) python -u monthly_gen.py $MONTH ;;
             course_force) python -u course_gen.py --max-calls "$MAX" --force ;;
             course) python -u course_gen.py --max-calls "$MAX" ;;
             horse) python -u horse_gen.py --max-calls "$MAX" --workers 6 ;;
@@ -61,7 +65,7 @@ jobs:
         run: |
           git config user.name "keiba-ai-bot"
           git config user.email "keiba-ai-bot@users.noreply.github.com"
-          for d in data/course_notes data/horse_notes data/venue_notes data/glossary data/ai_usage.jsonl columns; do [ -e "$d" ] && git add "$d"; done
+          for d in data/course_notes data/horse_notes data/venue_notes data/glossary data/race_guides data/monthly_notes data/ai_usage.jsonl columns; do [ -e "$d" ] && git add "$d"; done
           git diff --cached --quiet && exit 0
           git commit -m "AIのコース解説・馬の寸評を更新"
           for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep 20; done
