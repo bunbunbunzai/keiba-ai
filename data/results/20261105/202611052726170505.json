@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261105",
  "race_id": "202611052726170505",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 10,
+   "name": "タマモキャロル",
+   "time": "50.8",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 36.6,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 11,
+   "name": "シェナホープ",
+   "time": "51.1",
+   "margin": "２",
+   "pos4": 3,
+   "last3f": 36.4,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 8,
+   "name": "ルクスアンジュ",
+   "time": "51.2",
+   "margin": "３／４",
+   "pos4": 1,
+   "last3f": 37.0,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 12,
+   "name": "メヘラーンガル",
+   "time": "51.3",
+   "margin": "１／２",
+   "pos4": 5,
+   "last3f": 36.9,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 3,
+   "number": 3,
+   "name": "シロズキンチャン",
+   "time": "51.5",
+   "margin": "１ １／４",
+   "pos4": 3,
+   "last3f": 37.2,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 6,
+   "name": "テイケイリノ",
+   "time": "52.0",
+   "margin": "３",
+   "pos4": 7,
+   "last3f": 37.1,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 7,
+   "name": "メイショウコウラン",
+   "time": "52.1",
+   "margin": "１／２",
+   "pos4": 11,
+   "last3f": 36.8,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "エレガントフルール",
+   "time": "52.2",
+   "margin": "クビ",
+   "pos4": 6,
+   "last3f": 37.5,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "ニシノグラシアス",
+   "time": "52.2",
+   "margin": "ハナ",
+   "pos4": 7,
+   "last3f": 37.1,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 5,
+   "name": "カツ",
+   "time": "52.4",
+   "margin": "１",
+   "pos4": 9,
+   "last3f": 37.3,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 7,
+   "number": 9,
+   "name": "シャンディエン",
+   "time": "52.6",
+   "margin": "１ １／４",
+   "pos4": 9,
+   "last3f": 37.7,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 4,
+   "number": 4,
+   "name": "メイショウクモジ",
+   "time": "53.8",
+   "margin": "７",
+   "pos4": 12,
+   "last3f": 37.8,
+   "popularity": null
+  }
+ ]
 }
