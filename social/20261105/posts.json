@@ -337,11 +337,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/05/monbetsu/11r/",
    "created": "2026-11-05 20:47",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2118309534145851494",
    "x_at": "2026-11-05 20:48",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AaPoohZ7soyHYrwLwH4Elvd'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AYWGIg2CYn6LgnUw2piRs2F'}",
+   "instagram_tries": 3
   },
   "sum-20261105": {
    "kind": "summary",
@@ -355,8 +355,12 @@
    "ig_caption": "【11/5 AI予想の全成績】\n園田・笠松・船橋・門別の46レース\n的中30（うちプラス10）／当日回収率53.1%\n収支-15,930円（各点100円・外れも含む）\n最高：園田7R 払戻2,350円\n累計回収率66.0%\n\nこの日の全レースの予想と成績 → www.ai-keiba-log.com/2026/11/05/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#競馬予想 #地方競馬 #AI予想 #回収率 #競馬 #競馬全頭ログ",
    "url": "https://www.ai-keiba-log.com/2026/11/05/",
    "created": "2026-11-05 21:43",
-   "x": "pending",
-   "instagram": "pending"
+   "x": "posted",
+   "instagram": "pending",
+   "x_id": "2118323659613819064",
+   "x_at": "2026-11-05 21:44",
+   "instagram_error": "item 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'Aa5XthgmMr8KaegEpLx3WeY'}",
+   "instagram_tries": 1
   }
  }
 }
