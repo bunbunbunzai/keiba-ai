@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261105",
  "race_id": "202611052320120511",
- "tries": 4,
+ "tries": 7,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,105 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 2,
+   "number": 2,
+   "name": "トゥレイス",
+   "time": "1:27.6",
+   "margin": "",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "ヒャクレツケン",
+   "time": "1:28.5",
+   "margin": "４",
+   "pos4": 2,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 9,
+   "name": "メイプルラブリー",
+   "time": "1:29.0",
+   "margin": "２ １／２",
+   "pos4": 4,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 3,
+   "name": "カタフラクト",
+   "time": "1:29.6",
+   "margin": "３",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 7,
+   "name": "ドールズ",
+   "time": "1:30.0",
+   "margin": "２",
+   "pos4": 4,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 6,
+   "name": "チュウワヘネシー",
+   "time": "1:30.4",
+   "margin": "２",
+   "pos4": 7,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 1,
+   "number": 1,
+   "name": "ケイツーキップ",
+   "time": "1:30.4",
+   "margin": "アタマ",
+   "pos4": 9,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 4,
+   "number": 4,
+   "name": "タイセイバウンス",
+   "time": "1:31.4",
+   "margin": "５",
+   "pos4": 6,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 8,
+   "name": "フィティテラ",
+   "time": "1:31.6",
+   "margin": "１",
+   "pos4": 8,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
