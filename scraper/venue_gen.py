@@ -83,7 +83,7 @@ def main() -> None:
             continue
         t = res["text"]
         try:
-            j = json.loads(t[t.find("{"): t.rfind("}") + 1])
+            j = ai.parse_json(t)
             assert j.get("lead") and j.get("sections")
         except Exception as e:  # noqa: BLE001
             print("JSONを読めない", slug, e, t[:200], flush=True)

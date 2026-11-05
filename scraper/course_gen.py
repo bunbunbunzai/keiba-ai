@@ -69,7 +69,7 @@ def main() -> None:
         if not text:
             continue
         try:
-            j = json.loads(text[text.find("{"): text.rfind("}") + 1])
+            j = ai.parse_json(text)
             assert j.get("lead") and isinstance(j.get("points"), list)
         except Exception as e:  # noqa: BLE001
             print("JSONを読めない", slug, e, text[:200], flush=True)

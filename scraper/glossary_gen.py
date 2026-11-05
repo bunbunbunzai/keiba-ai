@@ -51,7 +51,7 @@ def main() -> None:
         if not text:
             continue
         try:
-            arr = json.loads(text[text.find("["): text.rfind("]") + 1])
+            arr = ai.parse_json(text, "[")
         except Exception as e:  # noqa: BLE001
             print("JSONを読めない", e, text[:200], flush=True)
             continue

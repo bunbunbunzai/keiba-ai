@@ -145,7 +145,7 @@ def main() -> None:
     if not text:
         print("生成できなかった")
         return
-    j = json.loads(text[text.find("{"): text.rfind("}") + 1])
+    j = ai.parse_json(text)
     n, st, rt, h, w = tot["全体"]
     label = f"{int(d0[4:6])}月{int(d0[6:])}日〜{int(d1[4:6])}月{int(d1[6:])}日"
     body = [f"## この週の成績", "", f"{len(rows)}レースを予想し、回収率{100 * rt / st:.1f}%（購入{st:,}円・払戻{rt:,}円）、的中率{100 * h / n:.0f}%、◎の勝率{100 * w / n:.0f}%だった。", "", tables, "",

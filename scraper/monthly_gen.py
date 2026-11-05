@@ -52,7 +52,7 @@ def main() -> None:
     if not text:
         print("生成できなかった")
         return
-    j = json.loads(text[text.find("{"): text.rfind("}") + 1])
+    j = ai.parse_json(text)
     f.parent.mkdir(parents=True, exist_ok=True)
     f.write_text(json.dumps({"ym": ym, "updated": now.strftime("%Y-%m-%d"), "races": len(rows), **j}, ensure_ascii=False, indent=1), encoding="utf-8")
     print("wrote", f.name)

@@ -158,3 +158,12 @@ def ask_with_search(kind: str, system: str, user: str, max_tokens: int = 16000, 
     text = "".join(t.get("text", "") for t in texts).strip()
     text = re.sub(r'[<(]?cite index="[^"]*">', "", text).replace("</cite>", "")  # 本文に紛れた引用タグは消す
     return {"text": text, "sources": sources[:8], "results": results, "searches": searches}
+
+
+def parse_json(text: str, kind: str = "{"):
+    """文章の中から最初のJSON（オブジェクトか配列）を取り出す。後ろに余計な文章や2つ目のJSONがあっても無視する。"""
+    i = text.find(kind)
+    if i < 0:
+        raise ValueError("JSONが見つからない")
+    obj, _ = json.JSONDecoder().raw_decode(text[i:])
+    return obj
