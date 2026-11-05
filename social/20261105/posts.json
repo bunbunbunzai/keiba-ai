@@ -67,11 +67,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/05/kasamatsu/01r/",
    "created": "2026-11-05 11:20",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2118166867034493179",
    "x_at": "2026-11-05 11:21",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AKQ67NtdeMLBiB1k2JXb7Ad'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AgHIRzcMYRZqPsZdfrdOvfN'}",
+   "instagram_tries": 3
   },
   "pre-202611052320120506": {
    "kind": "grade_pre",
@@ -89,7 +89,7 @@
    "url": "https://www.ai-keiba-log.com/2026/11/05/kasamatsu/06r/",
    "created": "2026-11-05 11:20",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2118166870767411670",
    "x_at": "2026-11-05 11:21",
    "x_thread_ids": [
@@ -97,8 +97,8 @@
     "2118166874126954584",
     "2118166875364286636"
    ],
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'Ax7RJxIS2-LjDeLEYD4dxP2'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A6joUJyHiNWtpOLHfl4ei4c'}",
+   "instagram_tries": 3
   },
   "picks-20261105": {
    "kind": "picks",
@@ -112,11 +112,25 @@
    "url": "https://www.ai-keiba-log.com/2026/11/05/",
    "created": "2026-11-05 11:20",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2118166878250045787",
    "x_at": "2026-11-05 11:21",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'ABS8VcIk6iT2UNSvDjbxgjr'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A5IAy6gz9uJaYAGVYhKafYW'}",
+   "instagram_tries": 3
+  },
+  "hit-202611052726170505": {
+   "kind": "hit",
+   "image": "/social/20261105/hit-202611052726170505.jpg",
+   "images": [
+    "/social/20261105/hit-202611052726170505.jpg"
+   ],
+   "x_text": "【的中】園田5R HUK企画☆超短距離スーパースプリントC\n◎10タマモキャロル　〇8ルクスアンジュ　▲1エレガントフルール\n複勝 10　100円\n3連複 8-10-11　1,350円\n投資800円→払戻1,450円（回収率181.2%）\n#競馬予想 #園田競馬 #AI予想 #的中",
+   "x_thread": [],
+   "ig_caption": "【的中】園田5R HUK企画☆超短距離スーパースプリントC\n◎10タマモキャロル　〇8ルクスアンジュ　▲1エレガントフルール\n複勝 10　100円\n3連複 8-10-11　1,350円\n投資800円→払戻1,450円（回収率181.2%）\n\nこのレースの全頭評価と買い目 → www.ai-keiba-log.com/2026/11/05/sonoda/05r/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#競馬予想 #園田競馬 #AI予想 #的中 #競馬 #競馬全頭ログ",
+   "url": "https://www.ai-keiba-log.com/2026/11/05/sonoda/05r/",
+   "created": "2026-11-05 12:51",
+   "x": "pending",
+   "instagram": "pending"
   }
  }
 }
