@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
     inputs:
       what:
-        description: "course / course_force / horse / both / weekly"
+        description: "course / course_force / horse / both / weekly / venue / venue_force / glossary"
         required: true
         default: both
       max_calls:
@@ -48,6 +48,9 @@ jobs:
           cd scraper
           case "$WHAT" in
             weekly) python -u weekly_gen.py $WEEK ;;
+            venue) python -u venue_gen.py --max-calls "$MAX" ;;
+            venue_force) python -u venue_gen.py --max-calls "$MAX" --force ;;
+            glossary) python -u glossary_gen.py --max-calls "$MAX" ;;
             course_force) python -u course_gen.py --max-calls "$MAX" --force ;;
             course) python -u course_gen.py --max-calls "$MAX" ;;
             horse) python -u horse_gen.py --max-calls "$MAX" --workers 6 ;;
@@ -58,7 +61,7 @@ jobs:
         run: |
           git config user.name "keiba-ai-bot"
           git config user.email "keiba-ai-bot@users.noreply.github.com"
-          for d in data/course_notes data/horse_notes data/ai_usage.jsonl columns; do [ -e "$d" ] && git add "$d"; done
+          for d in data/course_notes data/horse_notes data/venue_notes data/glossary data/ai_usage.jsonl columns; do [ -e "$d" ] && git add "$d"; done
           git diff --cached --quiet && exit 0
           git commit -m "AIのコース解説・馬の寸評を更新"
           for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep 20; done

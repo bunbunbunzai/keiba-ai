@@ -1165,6 +1165,20 @@ def results_page(rows: list[dict], venue_of_race: dict) -> str:
 
 
 # ---------------- 競馬場ページ ----------------
+def venue_guide_html(slug: str) -> str:
+    """競馬場ガイド（data/venue_notes、AIがWeb検索で調べて書いたもの）。"""
+    g = load_json(ROOT / "data" / "venue_notes" / f"{slug}.json")
+    if not g:
+        return ""
+    facts = "".join(f"<tr><th>{esc(x.get('k'))}</th><td>{esc(x.get('v'))}</td></tr>" for x in g.get("facts") or [])
+    secs = "".join(f"<h3>{esc(x.get('h'))}</h3><p>{esc(x.get('text'))}</p>" for x in g.get("sections") or [])
+    src = "".join(f"<li><a href='{esc(x['url'])}' rel='nofollow noopener' target='_blank'>{esc(x['title'])}</a></li>" for x in g.get("sources") or [] if str(x.get("url", "")).startswith("http"))
+    return (f"<section class='card'><h2>{esc(g['name'])}競馬場ガイド</h2><p>{esc(g['lead'])}</p>"
+            + (f"<div class='scroll'><table class='facts'><tbody>{facts}</tbody></table></div>" if facts else "") + secs
+            + (f"<p class='meta'>出典：</p><ul class='meta'>{src}</ul>" if src else "")
+            + f"<p class='meta'>過去の公式レース結果の集計と、公開情報をもとにAIが{esc(g['updated'])}にまとめたガイド。正式な情報は主催者の発表を確認してほしい。</p></section>")
+
+
 def venue_pages(by_date: dict, led: list[dict], venue_of_race: dict) -> dict[str, str]:
     """/venue/<slug>/：場ごとの成績・当日バイアスの履歴・最近の予想。{path: lastmod} を返す。"""
     groups = defaultdict(list)  # slug -> [(date, p)]
@@ -1202,10 +1216,11 @@ def venue_pages(by_date: dict, led: list[dict], venue_of_race: dict) -> dict[str
         lead = (f"{name}競馬のAI予想は、{fmt_date(dates[-1])}から{len(items)}レースを公開している。" +
                 (f"成績は{t['n']}レース・回収率{t['roi']}、◎の勝率{t['win']}・3着内率{t['top3']}（買い目を1点100円ずつ買った計算、外れも含む）。" if t["n"] else "成績はレースの結果が出たあとに表示される。"))
         body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/venue/'>競馬場</a> › {esc(name)}</p>"
-                f"<h1>{esc(name)}競馬のAI予想と成績</h1>{banner(venue_pic(v), name + '競馬場')}<p class='answer'>{esc(lead)}</p>"
+                f"<h1>{esc(name)}競馬場ガイドとAI予想の成績</h1>{banner(venue_pic(v), name + '競馬場')}<p class='answer'>{esc(lead)}</p>"
                 f"<div class='kpis'><div><b>{t['n']}</b><span>予想したレース</span></div><div><b>{t['roi']}</b><span>回収率</span></div>"
                 f"<div><b>{t['hit']}</b><span>的中率</span></div><div><b>{t['top3']}</b><span>◎の3着内率</span></div></div>"
                 + (aff_rakuten('venue') if slug not in ("sapporo", "hakodate", "fukushima", "niigata", "tokyo", "nakayama", "chukyo", "kyoto", "hanshin", "kokura") else "")
+                + venue_guide_html(slug)
                 + f"<section class='card'><h2>最近の予想</h2>{''.join(recent)}</section>{bias_html}"
                 + (f"<section class='card'><h2>過去の開催日</h2><ul class='days'>{days_html}</ul></section>" if days_html else ""))
         ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
@@ -1216,8 +1231,22 @@ def venue_pages(by_date: dict, led: list[dict], venue_of_race: dict) -> dict[str
                          desc=f"{name}競馬の全レースAI予想。{lead[:80]}", head_extra=jsonld(ld)))
         out[path] = f"{dates[0][:4]}-{dates[0][4:6]}-{dates[0][6:8]}"
     # 一覧
+    # 予想がまだ無い場（開催時期外など）も、ガイドがあればページを作る
+    guide_only = []
+    for f in sorted((ROOT / "data" / "venue_notes").glob("*.json")):
+        if f.stem in groups:
+            continue
+        g = load_json(f) or {}
+        name, path = g.get("name", f.stem), f"/venue/{f.stem}/"
+        body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/venue/'>競馬場</a> › {esc(name)}</p>"
+                f"<h1>{esc(name)}競馬場ガイド</h1><p class='answer'>{esc(g.get('lead', ''))}</p>" + venue_guide_html(f.stem)
+                + "<p class='meta'>この競馬場のAI予想は、開催が始まるとこのページに載る。</p>")
+        write(path, page(f"{name}競馬場ガイド｜コースの特徴と傾向｜{SITE_NAME}", body, path, desc=g.get("lead", "")[:120]))
+        out[path] = f"{g.get('updated', '')}"
+        guide_only.append((f.stem, name))
     lis = "".join(f"<li><a href='/venue/{slug}/'><span>{esc(VENUE_NAME.get(venue_of(items[0][1]), venue_of(items[0][1])))}</span>"
                   f"<span>{len(items)}レース</span></a></li>" for slug, items in sorted(groups.items(), key=lambda kv: -len(kv[1])))
+    lis += "".join(f"<li><a href='/venue/{slug}/'><span>{esc(name)}</span><span>競馬場ガイド</span></a></li>" for slug, name in guide_only)
     write("/venue/", page(f"競馬場別のAI予想と成績 | {SITE_NAME}",
                           f"<p class='crumb'><a href='/'>トップ</a> › 競馬場</p><h1>競馬場別のAI予想と成績</h1>{banner('venue')}"
                           f"<p class='answer'>中央・地方の各競馬場ごとに、AI予想・回収率・当日バイアスの履歴をまとめている。</p><ul class='days'>{lis}</ul>",
@@ -1302,13 +1331,67 @@ THANKS = f"""<h1>送信しました</h1>
 {zk_art("bow", '<p class="answer">お問い合わせを受け付けました。通常2〜3日以内に、ご記入のメールアドレスへ返信します。</p>')}
 <p><a href="/">トップへ戻る</a></p>"""
 
+GLOSS_COLUMN = {  # 用語 → このサイトの実データのコラム
+    "tansho": "tansho-fukusho", "fukusho": "tansho-fukusho", "umaren": "umaren-umatan-wide", "umatan": "umaren-umatan-wide", "wide": "umaren-umatan-wide",
+    "sanrenpuku": "sanrenpuku-formation", "formation": "sanrenpuku-formation", "box": "baken-tensu-keisan", "nagashi": "baken-tensu-keisan",
+    "ten": "baken-tensu-keisan", "odds": "odds-shoritsu", "ninki": "ninki-shoritsu", "kitaichi": "kitaichi-kai", "kaishuritsu-gen": "kaishuritsu",
+    "nige": "kyakushitsu-shoritsu", "senko": "kyakushitsu-shoritsu", "sashi": "kyakushitsu-shoritsu", "oikomi": "kyakushitsu-shoritsu",
+    "kyakushitsu": "kyakushitsu-shoritsu", "uchiwaku": "wakujun-yuri", "bataiju": "bataiju", "yasumiake": "yasumiake", "rento": "yasumiake",
+    "katai": "areru-race", "banei": "banei-yosou", "jiba": "chuo-chihou", "ai-yoso": "ai-keiba-yosou-ataru", "netto": "chihou-keiba-net",
+    "shirushi-gen": "yosou-page-mikata", "honmei": "nibanninki", "kojoritsu": "baken-shurui", "ukeoi": "kaishuritsu",
+}
+
+
+def glossary_terms() -> list[dict]:
+    out = []
+    for f in sorted((ROOT / "data" / "glossary").glob("*.json")):
+        x = load_json(f)
+        if x and x.get("term"):
+            out.append(x)
+    return out
+
+
 def glossary_page() -> str:
     items = "".join(f"<dt id='{k}'>{esc(t)}</dt><dd>{esc(d)}</dd>" for k, t, d in GLOSSARY)
-    return page(f"用語集：印・評価点・妙味・回収率など | {SITE_NAME}",
-                f"<p class='crumb'><a href='/'>トップ</a> › 用語集</p><h1>用語集</h1>" + banner("glossary") +
-                f"<p class='answer'>このサイトで使う言葉の説明。予想ページの用語をタップするとここに飛ぶ。初心者向けの解説は<a href='/column/'>コラム</a>へ。</p>"
-                f"<dl class='gloss'>{items}</dl>", "/glossary/",
-                desc="競馬全頭ログで使う用語（印、評価点、想定勝率、妙味、自信度、展開利、トラックバイアス、回収率、トリガミ、3連複フォーメーション）の説明。")
+    terms = glossary_terms()
+    cats: dict = {}
+    for x in terms:
+        cats.setdefault(x.get("category", "その他"), []).append(x)
+    gen = "".join(f"<section class='card'><h2>{esc(c)}</h2><ul class='gl-list'>"
+                  + "".join(f"<li><a href='/glossary/{esc(x['slug'])}/'><b>{esc(x['term'])}</b></a><span>{esc(x['short'])}</span></li>" for x in lst)
+                  + "</ul></section>" for c, lst in cats.items())
+    return page(f"競馬用語集：馬券・レース・コース・展開の言葉{f'（{len(terms)}語）' if terms else ''} | {SITE_NAME}",
+                f"<p class='crumb'><a href='/'>トップ</a> › 用語集</p><h1>競馬用語集</h1>" + banner("glossary") +
+                f"<p class='answer'>競馬でよく使う言葉を、始めたばかりの人にも分かるように説明している。予想ページの用語をタップするとここに飛ぶ。</p>"
+                + gen + f"<section class='card'><h2>このサイトの予想で使う言葉</h2><dl class='gloss'>{items}</dl></section>", "/glossary/",
+                desc="競馬用語集。単勝・複勝・3連単などの馬券、重賞・ハンデ戦などのレース、逃げ・差しなどの展開、馬体重・斤量など、競馬の言葉を初心者向けに説明。")
+
+
+def glossary_term_pages() -> dict[str, str]:
+    terms = glossary_terms()
+    by = {x["slug"]: x for x in terms}
+    out = {}
+    for x in terms:
+        path = f"/glossary/{x['slug']}/"
+        rel = "".join(f"<li><a href='/glossary/{r}/'>{esc(by[r]['term'])}</a>：{esc(by[r]['short'])}</li>" for r in x.get("related") or [] if r in by)
+        same = [y for y in terms if y.get("category") == x.get("category") and y["slug"] != x["slug"]][:8]
+        col = GLOSS_COLUMN.get(x["slug"])
+        col_html = (f"<section class='card'><h2>実際のデータで見る</h2><p>このサイトの全レースの記録を使った解説：<a href='/column/{col}/'>コラムを読む</a></p></section>"
+                    if col and (ROOT / "columns" / f"{col}.md").exists() else "")
+        ld = {"@context": "https://schema.org", "@type": "DefinedTerm", "name": x["term"], "description": x["short"],
+              "inDefinedTermSet": {"@type": "DefinedTermSet", "name": f"{SITE_NAME} 競馬用語集", "url": BASE_URL + "/glossary/"}, "url": BASE_URL + path}
+        body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/glossary/'>用語集</a> › {esc(x['term'])}</p>"
+                f"<h1>{esc(x['term'])}<small class='meta'>（{esc(x.get('reading', ''))}）</small>とは</h1><p class='answer'>{esc(x['short'])}</p>"
+                f"<section class='card'><h2>説明</h2><p>{esc(x['body'])}</p>"
+                + (f"<h3>例</h3><p>{esc(x['example'])}</p>" if x.get("example") else "")
+                + (f"<h3>予想やデータを見るときのポイント</h3><p>{esc(x['tip'])}</p>" if x.get("tip") else "") + "</section>"
+                + col_html
+                + (f"<section class='card'><h2>関連する用語</h2><ul>{rel}</ul></section>" if rel else "")
+                + (f"<section class='card'><h2>「{esc(x.get('category', ''))}」のほかの用語</h2><p>" + "　".join(f"<a href='/glossary/{y['slug']}/'>{esc(y['term'])}</a>" for y in same) + "</p></section>" if same else "")
+                + f"<p class='meta'>AIが書いた説明を、{esc(x.get('updated', ''))}時点で掲載。ルールの正式な内容は主催者の発表を確認してほしい。</p>")
+        write(path, page(f"{x['term']}とは｜競馬用語集｜{SITE_NAME}", body, path, desc=f"{x['term']}とは：{x['short']}", head_extra=jsonld(ld)))
+        out[path] = x.get("updated")
+    return out
 
 
 def limits_page(t: dict, worst_venue: tuple[str, str] | None) -> str:
@@ -1374,6 +1457,7 @@ CSS = """.ask .alog{margin-top:10px}.ask .qa{border-top:1px solid var(--line);pa
 .zkh{display:flex;align-items:center;gap:10px}.zkh small{display:block;font-size:12px;font-weight:400;color:var(--mut)}
 .ask .qa .q{text-align:right}.ask .bub{display:flex;gap:8px;align-items:flex-start;margin-top:6px}.ask .bub .a,.ask .bub .err{position:relative;margin:0;background:var(--acc-soft);border-radius:12px;padding:8px 12px}
 .ask .bub .a:before,.ask .bub .err:before{content:'';position:absolute;left:-6px;top:14px;border:6px solid transparent;border-left:0;border-right-color:var(--acc-soft)}
+.gl-list{list-style:none;padding:0}.gl-list li{padding:6px 0;border-bottom:1px solid var(--line)}.gl-list li span{display:block;color:var(--mut);font-size:13px}.facts th{text-align:left;white-space:nowrap;padding-right:12px}
 .zkfoot{display:flex;gap:12px;align-items:center}.zkfoot p{margin:0}.ask .src{margin:4px 0 0 48px;font-size:12px;color:var(--mut)}.ask .src a{color:var(--mut)}
 .card.zkteaser{display:flex;gap:12px;align-items:center;border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--panel)}.zkteaser p{margin:0;flex:1}
 .zkopen,.ask .go{background:var(--acc);color:#fff;border:0;border-radius:8px;padding:8px 14px;font-weight:700;cursor:pointer}
@@ -1770,6 +1854,7 @@ def build() -> None:
                        "<div id='me'><p class='meta'>読み込み中…</p></div>"
                        "<p class='meta'>勝敗は「あなたの◎の着順」と「AIの◎の着順」を比べて決める。同着は引き分け。結果がまだ出ていないレースは数えない。</p>", "/me/", noindex=True))
     write("/glossary/", glossary_page())
+    lastmod.update(glossary_term_pages())
     _vb = defaultdict(lambda: [0, 0, 0])
     for r in led:
         v = venue_of_race.get(r["race_id"], "")

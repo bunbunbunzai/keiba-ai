@@ -107,3 +107,47 @@ def usage_summary(days: int = 31) -> dict:
         k["in"] += r.get("in") or 0
         k["out"] += r.get("out") or 0
     return out
+
+
+def ask_with_search(kind: str, system: str, user: str, max_tokens: int = 16000, max_searches: int = 5) -> dict | None:
+    """Web検索つきで1回答える。{"text", "sources": [{"url","title"}], "searches"} を返す。失敗は None。"""
+    key = os.environ.get("ANTHROPIC_API_KEY")
+    if not key:
+        return None
+    model = MODELS[kind]
+    body = {"model": model, "max_tokens": max_tokens, "system": system,
+            "messages": [{"role": "user", "content": user}],
+            "tools": [{"type": "web_search_20250305", "name": "web_search", "max_uses": max_searches,
+                       "user_location": {"type": "approximate", "country": "JP", "timezone": "Asia/Tokyo"}}]}
+    content, searches, tin, tout = [], 0, 0, 0
+    for turn in range(4):
+        try:
+            r = requests.post(API, json=body, timeout=300,
+                              headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"})
+        except requests.RequestException as e:
+            print("api error:", e, flush=True)
+            FAILS[0] += 1
+            return None
+        if r.status_code >= 400:
+            print(f"api {r.status_code}:", r.text[:300], flush=True)
+            FAILS[0] += 1
+            return None
+        j = r.json()
+        content += j.get("content", [])
+        u = j.get("usage", {})
+        tin += u.get("input_tokens") or 0
+        tout += u.get("output_tokens") or 0
+        searches += (u.get("server_tool_use") or {}).get("web_search_requests") or 0
+        if j.get("stop_reason") != "pause_turn":
+            break
+        body["messages"] = body["messages"] + [{"role": "assistant", "content": j.get("content", [])}]
+    FAILS[0] = 0
+    _log({"at": datetime.now(JST).strftime("%Y-%m-%d %H:%M"), "kind": kind, "model": model, "in": tin, "out": tout, "searches": searches})
+    texts = [c for c in content if c.get("type") == "text"]
+    seen, sources = set(), []
+    for t in texts:
+        for c in t.get("citations") or []:
+            if c.get("url") and c["url"] not in seen:
+                seen.add(c["url"])
+                sources.append({"url": c["url"], "title": (c.get("title") or c["url"])[:100]})
+    return {"text": "".join(t.get("text", "") for t in texts).strip(), "sources": sources[:8], "searches": searches}
