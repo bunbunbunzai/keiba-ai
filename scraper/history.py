@@ -111,7 +111,7 @@ def _pos4(corners) -> int | None:
 
 
 # ---------------- 地方（楽天競馬） ----------------
-def local_days(sess: PoliteSession, days: list[str], deadline: float) -> int:
+def local_days(sess: PoliteSession, days: list[str], deadline: float, night_only: bool = True) -> int:
     from rakuten import BASE, PAGES, RACEID_RE
     from results import parse_rakuten_payouts, parse_rakuten_performance
 
@@ -129,6 +129,10 @@ def local_days(sess: PoliteSession, days: list[str], deadline: float) -> int:
             continue
         # 1日分（数場×十数レース、1ページ60秒）が時間内に終わる見込みが無ければ止める
         if time.monotonic() + 90 * 60 > deadline:
+            break
+        # 楽天競馬への取得は、日々の取得と重ならない深夜〜朝（JST 0:00〜9:00）だけ
+        if night_only and not (0 <= datetime.now(JST).hour < 8):
+            print("夜間の時間帯を過ぎたので止める", flush=True)
             break
         recs = []
         try:
@@ -175,6 +179,7 @@ def main() -> None:
     ap.add_argument("--since", required=True, help="さかのぼる最も古い年月 YYYY-MM")
     ap.add_argument("--until", default="", help="この日より前だけ（YYYYMMDD。既定はサイトの予想開始日 20261026）")
     ap.add_argument("--max-minutes", type=float, default=300)
+    ap.add_argument("--any-time", action="store_true", help="地方：夜間以外でも取得する（手動の試験用）")
     a = ap.parse_args()
     deadline = time.monotonic() + a.max_minutes * 60
     until = a.until or "20261026"
@@ -194,7 +199,7 @@ def main() -> None:
             days.append(d.strftime("%Y%m%d"))
             d -= timedelta(days=1)
         sess = PoliteSession(min_interval=60.0)
-        n = local_days(sess, days, deadline)
+        n = local_days(sess, days, deadline, night_only=not a.any_time)
     print(f"{a.src}: wrote {n} days", flush=True)
 
 

@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
     inputs:
       what:
-        description: "course / course_force / horse / both / weekly / venue / venue_force / glossary / race_guide / guide / monthly"
+        description: "course / course_force / horse / both / weekly / venue / venue_force / glossary / race_guide / guide / monthly / course_layout"
         required: true
         default: both
       max_calls:
@@ -54,6 +54,7 @@ jobs:
             glossary) python -u glossary_gen.py --max-calls "$MAX" ;;
             race_guide) python -u race_guide_gen.py --max-calls "$MAX" ;;
             guide) python -u guide_gen.py --max-calls "$MAX" ;;
+            course_layout) python -u course_layout_gen.py --max-calls "$MAX" ;;
             monthly) python -u monthly_gen.py $MONTH ;;
             course_force) python -u course_gen.py --max-calls "$MAX" --force ;;
             course) python -u course_gen.py --max-calls "$MAX" ;;
@@ -65,7 +66,7 @@ jobs:
         run: |
           git config user.name "keiba-ai-bot"
           git config user.email "keiba-ai-bot@users.noreply.github.com"
-          for d in data/course_notes data/horse_notes data/venue_notes data/glossary data/race_guides data/monthly_notes data/ai_usage.jsonl columns; do [ -e "$d" ] && git add "$d"; done
+          for d in data/course_notes data/horse_notes data/venue_notes data/glossary data/race_guides data/monthly_notes data/course_layout data/ai_usage.jsonl columns; do [ -e "$d" ] && git add "$d"; done
           git diff --cached --quiet && exit 0
           git commit -m "AIのコース解説・馬の寸評を更新"
           for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep 20; done

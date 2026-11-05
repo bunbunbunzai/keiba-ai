@@ -41,7 +41,7 @@ SYSTEM = (
 
 SLUG_V = {"東京": "tokyo", "中山": "nakayama", "京都": "kyoto", "阪神": "hanshin", "中京": "chukyo", "福島": "fukushima", "新潟": "niigata",
           "札幌": "sapporo", "函館": "hakodate", "小倉": "kokura", "大井": "ooi", "船橋": "funabashi", "川崎": "kawasaki", "浦和": "urawa",
-          "盛岡": "morioka", "園田": "sonoda", "名古屋": "nagoya", "帯広": "obihiro"}
+          "盛岡": "morioka", "園田": "sonoda", "名古屋": "nagoya", "帯広": "obihiro", "金沢": "kanazawa", "高知": "kochi", "佐賀": "saga"}
 
 
 def clean(s) -> str:

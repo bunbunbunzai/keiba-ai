@@ -240,6 +240,14 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
                 parts.append("<section class='card'><h2>このコースの傾向（AIの解説）</h2><ul>" + "".join(f"<li>{esc(x)}</li>" for x in note["points"]) + "</ul>"
                              + (f"<p>{esc(note['howto'])}</p>" if note.get("howto") else "")
                              + f"<p class='meta'>過去の公式レース結果{note['races']}レースの集計をもとに、AIが{esc(note['updated'])}に書いた解説。</p></section>")
+            lay = B.load_json(B.ROOT / "data" / "course_layout" / f"{slug}.json")
+            if lay:
+                lf = "".join(f"<tr><th>{esc(x.get('k'))}</th><td>{esc(x.get('v'))}</td></tr>" for x in lay.get("facts") or [])
+                ls_ = "".join(f"<li><a href='{esc(x['url'])}' rel='nofollow noopener' target='_blank'>{esc(x['title'])}</a></li>"
+                              for x in lay.get("sources") or [] if str(x.get("url", "")).startswith("http"))
+                parts.append("<section class='card'><h2>コースの形</h2>" + (f"<div class='scroll'><table class='facts'><tbody>{lf}</tbody></table></div>" if lf else "")
+                             + f"<p>{esc(lay['text'])}</p>" + (f"<p class='meta'>出典：</p><ul class='meta'>{ls_}</ul>" if ls_ else "")
+                             + f"<p class='meta'>公開情報をもとにAIが{esc(lay['updated'])}にまとめたもの。コースは改修で変わることがある。</p></section>")
             parts.append(f"<section class='card'><h2>過去のレース結果の集計（{esc(CS.fd(st['first']))}〜{esc(CS.fd(st['last']))}・{st['races']}レース）</h2>"
                          + CS.tables_html(st, esc)
                          + "<p class='meta'>主催者が公開したレース結果から集計（AIの予想とは無関係）。人気は確定オッズの順位。馬番の位置はその年の頭数で3つに分けた。</p></section>")
