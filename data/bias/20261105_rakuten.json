@@ -1,21 +1,22 @@
 {
  "date": "20261105",
- "updated": "2026-11-05 13:08",
+ "updated": "2026-11-05 13:19",
  "bias": {
   "笠松ダ": {
    "judgement": "先行有利",
-   "confidence": "中",
+   "confidence": "強",
    "races": [
     1,
     2,
     3,
     4,
-    5
+    5,
+    6
    ],
-   "front_share": 1.0,
-   "inner_share": 0.25,
-   "outer_share": 0.5,
-   "horses": 8
+   "front_share": 0.9,
+   "inner_share": 0.3,
+   "outer_share": 0.4,
+   "horses": 10
   },
   "園田ダ": {
    "judgement": "先行有利・外",
