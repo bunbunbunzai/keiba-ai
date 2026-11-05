@@ -1,14 +1,14 @@
 {
  "date": "20261105",
- "updated": "2026-11-05 20:28",
+ "updated": "2026-11-05 20:48",
  "races_total": 48,
- "races_scored": 46,
- "stake": 32400,
+ "races_scored": 47,
+ "stake": 33200,
  "return": 17900,
- "roi": 55.2,
+ "roi": 53.9,
  "hit_races": 29,
- "honmei_win": 12,
- "honmei_top3": 31,
+ "honmei_win": 13,
+ "honmei_top3": 32,
  "races": [
   {
    "race_id": "202611051914080401",
@@ -186,11 +186,11 @@
    "race_id": "202611051914080411",
    "confidence": "C",
    "honmei": 14,
-   "honmei_finish": null,
+   "honmei_finish": "1",
    "top3": [
-    null,
-    null,
-    null
+    14,
+    10,
+    6
    ],
    "stake": 700,
    "return": 0,
@@ -849,7 +849,7 @@
    "return": 0,
    "roi": 0.0,
    "hits": [],
-   "voided": true
+   "voided": false
   }
  ]
 }
