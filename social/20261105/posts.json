@@ -130,11 +130,25 @@
    "url": "https://www.ai-keiba-log.com/2026/11/05/sonoda/05r/",
    "created": "2026-11-05 12:51",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2118189905473884390",
    "x_at": "2026-11-05 12:53",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AKc-oHx4gF4wXF4zywDB7JL'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A2Rtpw5QjRyWQF1LS2nQquG'}",
+   "instagram_tries": 3
+  },
+  "res-202611052320120506": {
+   "kind": "grade_res",
+   "image": "/social/20261105/res-202611052320120506.jpg",
+   "images": [
+    "/social/20261105/res-202611052320120506.jpg"
+   ],
+   "x_text": "【結果】笠松6R 笠松けいば重賞開催日は笠ちゅーぶ!\n◎8アメリータ　〇2モーモーレインボー　▲10アースリーブラ\n結果2-5-6　不的中（投資800円）\n#笠松けいば重賞開催日は笠ちゅーぶ! #競馬予想 #笠松競馬 #AI予想 #重賞",
+   "x_thread": [],
+   "ig_caption": "【結果】笠松6R 笠松けいば重賞開催日は笠ちゅーぶ!\n◎8アメリータ　〇2モーモーレインボー　▲10アースリーブラ\n結果2-5-6　不的中（投資800円）\n\nこのレースの全頭評価と買い目 → www.ai-keiba-log.com/2026/11/05/kasamatsu/06r/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#笠松けいば重賞開催日は笠ちゅーぶ! #競馬予想 #笠松競馬 #AI予想 #重賞 #競馬 #競馬全頭ログ",
+   "url": "https://www.ai-keiba-log.com/2026/11/05/kasamatsu/06r/",
+   "created": "2026-11-05 13:22",
+   "x": "pending",
+   "instagram": "pending"
   }
  }
 }
