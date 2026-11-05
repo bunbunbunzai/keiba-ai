@@ -31,10 +31,15 @@ def font(size: int, bold: bool = True):
     return _cache[k]
 
 
-def canvas() -> Image.Image:
-    if "base" not in _cache:
-        if BASE.exists():
-            im = Image.open(BASE).convert("RGB")
+def canvas(bg: str = "") -> Image.Image:
+    """背景（bg は assets/<bg>.jpg の名前。レースの種類に合う絵。無ければ og-base）に文字用のパネルを重ねる。"""
+    key = f"base:{bg}"
+    if key not in _cache:
+        src = HERE / "assets" / f"{bg}.jpg" if bg else BASE
+        if not src.exists():
+            src = BASE
+        if src.exists():
+            im = Image.open(src).convert("RGB")
             r = max(W / im.width, H / im.height)
             im = im.resize((round(im.width * r), round(im.height * r)), Image.LANCZOS)
             x, y = (im.width - W) // 2, (im.height - H) // 2
@@ -46,8 +51,8 @@ def canvas() -> Image.Image:
         d = ImageDraw.Draw(panel)
         d.rounded_rectangle((36, 36, 760, H - 36), radius=28, fill=CREAM + (238,))
         im = Image.alpha_composite(im.convert("RGBA"), panel).convert("RGB")
-        _cache["base"] = im
-    return _cache["base"].copy()
+        _cache[key] = im
+    return _cache[key].copy()
 
 
 def fit(d: ImageDraw.ImageDraw, text: str, size: int, maxw: int, bold=True):
@@ -62,9 +67,9 @@ def header(d: ImageDraw.ImageDraw, sub: str) -> None:
 
 
 def race_image(out: Path, date_txt: str, label: str, meta: str, marks: list[tuple[str, str, str]],
-               conf: str, result: tuple[str, bool] | None) -> None:
+               conf: str, result: tuple[str, bool] | None, bg: str = "") -> None:
     label = unicodedata.normalize("NFKC", label)
-    im = canvas()
+    im = canvas(bg)
     d = ImageDraw.Draw(im)
     header(d, date_txt)
     d.text((76, 118), label, font=fit(d, label, 58, 650), fill=INK)

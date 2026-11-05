@@ -77,7 +77,7 @@ def build_pages(B, by_date: dict, led: list[dict], venue_of_race: dict, today: s
                         f"購入{int(top['stake']):,}円→払戻{int(top['return']):,}円（回収率{B.roi_txt(int(top['stake']), int(top['return']))}）</p></section>")
         path = f"/monthly/{y}-{m:02d}/"
         body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/monthly/'>月次レポート</a> › {esc(label)}</p>"
-                f"<h1>{esc(label)}の成績レポート{'（集計中）' if cur else ''}</h1><p class='answer'>{esc(lead)}</p>"
+                f"<h1>{esc(label)}の成績レポート{'（集計中）' if cur else ''}</h1>{B.banner('monthly')}<p class='answer'>{esc(lead)}</p>"
                 f"<div class='kpis'><div><b>{t['n']}</b><span>レース</span></div><div><b>{t['roi']}</b><span>回収率</span></div><div><b>{t['hit']}</b><span>的中率</span></div><div><b>{rt - st:+,}円</b><span>収支</span></div></div>"
                 + (f"<section class='card'><h2>累計回収率の推移（月内）</h2>{chart}</section>" if chart else "")
                 + f"<section class='card'><h2>場別</h2><div class='scroll'><table><thead><tr><th>場</th><th>レース</th><th>回収率</th><th>収支</th></tr></thead><tbody>{vrows}</tbody></table></div><p class='meta'>5レース以上の場のみ。</p></section>"

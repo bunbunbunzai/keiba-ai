@@ -74,7 +74,7 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
         lead = (f"{label}の重賞{len(done)}レースで、AI予想は的中{hit}レース、◎の1着{win}回・3着以内{top3}回、回収率{B.roi_txt(st, rt)}（購入{st:,}円→払戻{rt:,}円）。"
                 + ("今週はまだ確定していない重賞がある。" if cur and len(done) < len(items) else ""))
         path = f"/review/{k}/"
-        body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/review/'>重賞回顧</a> › {esc(label)}</p><h1>{esc(h1)}</h1>"
+        body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/review/'>重賞回顧</a> › {esc(label)}</p><h1>{esc(h1)}</h1>{B.banner('review')}"
                 f"<p class='answer'>{esc(lead)}</p>"
                 f"<div class='kpis'><div><b>{len(done)}</b><span>確定した重賞</span></div><div><b>{hit}</b><span>的中レース</span></div>"
                 f"<div><b>{win}・{top3}</b><span>◎の1着・3着内</span></div><div><b>{B.roi_txt(st, rt)}</b><span>回収率</span></div></div>"

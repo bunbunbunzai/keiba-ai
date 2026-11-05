@@ -229,6 +229,18 @@ def race_pic(name: str = "", venue: str = "", surface: str = "", distance=0, pos
     return ""
 
 
+def venue_pic(v: str, surface: str = "", distance=0, date: str = "") -> str:
+    """競馬場の見出し画像の slug。場ごとの絵（ban-v-<場>.jpg）が無ければ芝・ダートの汎用の絵。"""
+    slug = VENUE_SLUG.get(v, "")
+    if slug and (ASSETS / f"ban-v-{slug}.jpg").exists():
+        return f"v-{slug}"
+    if surface:
+        pic = race_pic("", v, surface, distance, "", date)
+        if pic.startswith("g-"):
+            return pic
+    return VENUE_PIC.get(v, "dirt")
+
+
 def banner(slug: str, alt: str = "") -> str:
     """ページ見出し用の挿絵（site/assets/ban-<slug>.jpg があるときだけ）。"""
     f = ASSETS / f"ban-{slug}.jpg"
@@ -790,7 +802,8 @@ def race_og(date: str, p: dict) -> str:
                                 f"{r.get('surface') or ''}{r.get('distance')}m" if r.get("distance") else "",
                                 f"{r.get('field')}頭" if r.get("field") else ""] if x)
     og.race_image(OUT / rel.lstrip("/"), f"{fmt_date(date)} {VENUE_NAME.get(venue_of(p), venue_of(p))}",
-                  f"{race_label(p)} AI予想", meta, marks, p.get("confidence") or "", res)
+                  f"{race_label(p)} AI予想", meta, marks, p.get("confidence") or "", res,
+                  bg=race_pic(race_label(p), venue_of(p), r.get("surface") or "", r.get("distance"), r.get("post_time") or "", date))
     return rel
 
 
@@ -1189,7 +1202,7 @@ def venue_pages(by_date: dict, led: list[dict], venue_of_race: dict) -> dict[str
         lead = (f"{name}競馬のAI予想は、{fmt_date(dates[-1])}から{len(items)}レースを公開している。" +
                 (f"成績は{t['n']}レース・回収率{t['roi']}、◎の勝率{t['win']}・3着内率{t['top3']}（買い目を1点100円ずつ買った計算、外れも含む）。" if t["n"] else "成績はレースの結果が出たあとに表示される。"))
         body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/venue/'>競馬場</a> › {esc(name)}</p>"
-                f"<h1>{esc(name)}競馬のAI予想と成績</h1>{banner(VENUE_PIC.get(v, 'dirt'))}<p class='answer'>{esc(lead)}</p>"
+                f"<h1>{esc(name)}競馬のAI予想と成績</h1>{banner(venue_pic(v), name + '競馬場')}<p class='answer'>{esc(lead)}</p>"
                 f"<div class='kpis'><div><b>{t['n']}</b><span>予想したレース</span></div><div><b>{t['roi']}</b><span>回収率</span></div>"
                 f"<div><b>{t['hit']}</b><span>的中率</span></div><div><b>{t['top3']}</b><span>◎の3着内率</span></div></div>"
                 + (aff_rakuten('venue') if slug not in ("sapporo", "hakodate", "fukushima", "niigata", "tokyo", "nakayama", "chukyo", "kyoto", "hanshin", "kokura") else "")
@@ -1301,7 +1314,7 @@ def glossary_page() -> str:
 def limits_page(t: dict, worst_venue: tuple[str, str] | None) -> str:
     wv = f"場別では{esc(worst_venue[0])}が最も悪く（回収率{esc(worst_venue[1])}）、" if worst_venue else ""
     body = f"""<p class='crumb'><a href='/'>トップ</a> › AI予想の限界と注意点</p><h1>AI予想の限界と注意点</h1>{banner('limits')}
-<p class='answer'>このサイトの予想は、現時点で馬券の収支をプラスにできていない。累計回収率は{esc(t['roi'])}（{esc(t['n'])}レース）で、100%を下回っている。読む前に知っておいてほしいことをまとめた。</p>
+{zk_art('study', f"<p class='answer'>このサイトの予想は、現時点で馬券の収支をプラスにできていない。累計回収率は{esc(t['roi'])}（{esc(t['n'])}レース）で、100%を下回っている。読む前に知っておいてほしいことをまとめた。</p>")}
 <section class='card'><h2>当たっている部分と、当たっていない部分</h2>
 <p>◎の馬は{esc(t['top3'])}の確率で3着以内に入り、◎の複勝だけなら回収率は80%前後になる。つまり「本命の選び方」は大きくは外していない。一方で、相手の選び方と買い目の組み方で取りこぼしが多く、全体の回収率を下げている。{wv}人気薄を強く評価しすぎる傾向（AIの見立てがオッズより強気なレースほど回収率が低い）もある。詳しくは<a href='/strategy/'>買い方別の回収率</a>で毎日更新している。</p></section>
 <section class='card'><h2>AIが苦手なこと</h2>

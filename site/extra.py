@@ -207,7 +207,7 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
                          f"<p class='meta'>{esc(B.fmt_date(B.STATS_FROM))}以降のレース（「見送り」は除く）。買い目を1点100円ずつ買ったとして計算。</p></section>")
         lead = "".join(lead_bits) or f"{name}の過去のレース結果の集計。"
         body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/course/'>コース別</a> › {esc(name)}</p>"
-                f"<h1>{esc(name)}の傾向（人気・枠・脚質・配当）</h1><p class='answer'>{esc(lead)}</p>" + "".join(parts)
+                f"<h1>{esc(name)}の傾向（人気・枠・脚質・配当）</h1>" + B.banner(B.venue_pic(v, surf, dist, today), name) + f"<p class='answer'>{esc(lead)}</p>" + "".join(parts)
                 + f"<p class='meta'><a href='{B.venue_path(v)}'>{esc(vn)}競馬の予想一覧</a>・<a href='/course/'>ほかのコース</a></p>")
         write(path, page(f"{name}の傾向｜人気・枠・脚質・配当のデータ｜{B.SITE_NAME}", body, path, desc=lead[:120]))
         lastmod[path] = iso(max([d for d, _ in items] + ([h[1]["last"]] if h else [])))
@@ -246,7 +246,7 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
                 f"3着以内{top3}回（{pct(top3, len(items))}）。主な騎乗場：{'・'.join(venues[:5])}。")
         lis = "".join(B.race_item(d, p) for d, p, _ in sorted(items, key=lambda x: x[0], reverse=True)[:20])
         body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/jockey/'>騎手別</a> › {esc(name)}</p>"
-                f"<h1>{esc(name)}騎手 × AI予想◎の成績</h1><p class='answer'>{esc(lead)}</p>"
+                f"<h1>{esc(name)}騎手 × AI予想◎の成績</h1>{B.banner('jockey')}<p class='answer'>{esc(lead)}</p>"
                 f"<div class='kpis'><div><b>{len(items)}</b><span>◎の騎乗</span></div><div><b>{pct(win, len(items))}</b><span>勝率</span></div>"
                 f"<div><b>{pct(top3, len(items))}</b><span>3着内率</span></div></div>"
                 f"<section class='card'><h2>◎で騎乗した最近のレース</h2><ul class='races'>{lis}</ul></section>")
