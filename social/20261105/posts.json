@@ -148,11 +148,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/05/kasamatsu/06r/",
    "created": "2026-11-05 13:22",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2118197725590098346",
    "x_at": "2026-11-05 13:24",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A5mELMdNxKzro-PH7rg-Lfm'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AlZTjwePf5s8E2TgIA5mgK5'}",
+   "instagram_tries": 3
   },
   "pre-202611052320120512": {
    "kind": "grade_pre",
@@ -169,8 +169,17 @@
    "ig_caption": "【重賞AI予想】笠松12R ラブミーチャン記念（SP1）\n11/5 16:15発走\n◎3キャトルブランシュ　〇9クリームパン　▲6エムティルージュ\n自信度B\n笠松のネクストスター、ジュニアクラウンと地元の2歳重賞を連勝しているキャトルブランシュを◎とする。3番人気・単勝4.9倍…\n\nこのレースの全頭評価と買い目 → www.ai-keiba-log.com/2026/11/05/kasamatsu/12r/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#ラブミーチャン記念 #競馬予想 #笠松競馬 #AI予想 #重賞 #競馬 #競馬全頭ログ",
    "url": "https://www.ai-keiba-log.com/2026/11/05/kasamatsu/12r/",
    "created": "2026-11-05 14:59",
-   "x": "pending",
-   "instagram": "pending"
+   "x": "posted",
+   "instagram": "pending",
+   "x_id": "2118222006734692616",
+   "x_at": "2026-11-05 15:00",
+   "x_thread_ids": [
+    "2118222008693526903",
+    "2118222010161545685",
+    "2118222011545551144"
+   ],
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AqSSYzR9iNqzVyG9QMDFBNO'}",
+   "instagram_tries": 1
   },
   "hit-202611052726170507": {
    "kind": "hit",
@@ -183,8 +192,12 @@
    "ig_caption": "【的中】園田7R \n◎9ギフトバスケット　〇1フェアリータイザン　▲4スマートビビット\n複勝 9　100円\n3連複 3-4-9　2,250円\n投資600円→払戻2,350円（回収率391.7%）\n\nこのレースの全頭評価と買い目 → www.ai-keiba-log.com/2026/11/05/sonoda/07r/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#競馬予想 #園田競馬 #AI予想 #的中 #競馬 #競馬全頭ログ",
    "url": "https://www.ai-keiba-log.com/2026/11/05/sonoda/07r/",
    "created": "2026-11-05 14:59",
-   "x": "pending",
-   "instagram": "pending"
+   "x": "posted",
+   "instagram": "pending",
+   "x_id": "2118222015651815569",
+   "x_at": "2026-11-05 15:00",
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AFOLdMY3TWMzqHC3PWgKYfW'}",
+   "instagram_tries": 1
   }
  }
 }
