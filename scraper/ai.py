@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import time
 from datetime import datetime, timedelta, timezone
 
@@ -144,10 +145,16 @@ def ask_with_search(kind: str, system: str, user: str, max_tokens: int = 16000, 
     FAILS[0] = 0
     _log({"at": datetime.now(JST).strftime("%Y-%m-%d %H:%M"), "kind": kind, "model": model, "in": tin, "out": tout, "searches": searches})
     texts = [c for c in content if c.get("type") == "text"]
+    results = []
+    for c in content:
+        if c.get("type") == "web_search_tool_result" and isinstance(c.get("content"), list):
+            results += [{"url": x.get("url"), "title": (x.get("title") or "")[:100]} for x in c["content"] if x.get("url")]
     seen, sources = set(), []
     for t in texts:
         for c in t.get("citations") or []:
             if c.get("url") and c["url"] not in seen:
                 seen.add(c["url"])
                 sources.append({"url": c["url"], "title": (c.get("title") or c["url"])[:100]})
-    return {"text": "".join(t.get("text", "") for t in texts).strip(), "sources": sources[:8], "searches": searches}
+    text = "".join(t.get("text", "") for t in texts).strip()
+    text = re.sub(r'[<(]?cite index="[^"]*">', "", text).replace("</cite>", "")  # 本文に紛れた引用タグは消す
+    return {"text": text, "sources": sources[:8], "results": results, "searches": searches}

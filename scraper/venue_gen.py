@@ -33,10 +33,12 @@ SYSTEM = (
     "コースの形状（右回り・左回り、1周の距離、最後の直線の長さ、坂の有無）、ナイター開催の有無、主な重賞、その場ならではの特色は、"
     "web_search で主催者（JRA・地方競馬の各主催者・地方競馬情報サイト）や信頼できる報道を調べて確かめ、確かめられたことだけを書く。"
     "確かめられない数字は書かない。与えられた集計表の数字はそのまま使ってよい（集計表は過去の公式レース結果から作ったもの）。"
+    "調べた記事の文章をそのまま写さず、必ず自分の言葉で短く書き直す（引用符での引用もしない）。本文に引用タグやURLを入れない。"
     "読者は競馬を始めたばかりの人も含む。だ・である調、絵文字なし、誇大表現なし。記事の文章を長く写さない。"
     "出力はJSONのみ（前置き・コードブロック不要）。キー：lead（2〜3文の要約）、"
     "facts（表にする基本情報。[{\"k\": 項目, \"v\": 内容}] を5〜8個。例：所在地、回り、1周の距離（ダート・芝）、最後の直線、坂、ナイター、主な重賞）、"
     "sections（[{\"h\": 見出し, \"text\": 3〜6文}] を4つ：「コースの特徴」「データで見る傾向」「主な重賞と開催の特色」「予想のポイント」）。"
+    "sources（実際に事実の確認に使ったページ。[{\"url\": URL, \"title\": ページ名}] を2〜6個。検索結果に出たURLだけ）。"
     "予想のポイントでは馬券の購入を勧めない。"
 )
 
@@ -86,8 +88,10 @@ def main() -> None:
         except Exception as e:  # noqa: BLE001
             print("JSONを読めない", slug, e, t[:200], flush=True)
             continue
+        seen_urls = {x["url"] for x in res["results"]}
+        srcs = [x for x in (j.get("sources") or []) if isinstance(x, dict) and x.get("url") in seen_urls][:6] or res["sources"]
         f.write_text(json.dumps({"slug": slug, "name": name, "updated": today, "lead": j["lead"], "facts": j.get("facts", [])[:10],
-                                 "sections": j["sections"][:5], "sources": res["sources"], "searches": res["searches"]},
+                                 "sections": j["sections"][:5], "sources": srcs, "searches": res["searches"]},
                                 ensure_ascii=False, indent=1), encoding="utf-8")
         print("ok", slug, "searches", res["searches"], "sources", len(res["sources"]), flush=True)
     print(f"venue_gen: {calls} calls", flush=True)
