@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261105",
  "race_id": "202611051914080402",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 4,
+   "name": "ピノヌイ",
+   "time": "1:19.5",
+   "margin": "",
+   "pos4": 4,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 9,
+   "name": "プリンセスダーク",
+   "time": "1:19.6",
+   "margin": "クビ",
+   "pos4": 1,
+   "last3f": 41.9,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 2,
+   "number": 2,
+   "name": "マッドリボンガール",
+   "time": "1:19.7",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": 40.5,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 11,
+   "name": "シーギリア",
+   "time": "1:19.8",
+   "margin": "３／４",
+   "pos4": 7,
+   "last3f": 39.9,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 7,
+   "name": "ヤサカソレイユ",
+   "time": "1:20.2",
+   "margin": "２",
+   "pos4": 8,
+   "last3f": 39.8,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 8,
+   "name": "ゲットデザイアー",
+   "time": "1:20.3",
+   "margin": "クビ",
+   "pos4": 6,
+   "last3f": 40.8,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 5,
+   "name": "ミリオンヒット",
+   "time": "1:20.9",
+   "margin": "３",
+   "pos4": 8,
+   "last3f": 40.8,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 12,
+   "name": "ブラックムート",
+   "time": "1:20.9",
+   "margin": "ハナ",
+   "pos4": 1,
+   "last3f": 43.1,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 3,
+   "number": 3,
+   "name": "バリクパパン",
+   "time": "1:21.2",
+   "margin": "１ １／２",
+   "pos4": 12,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 1,
+   "number": 1,
+   "name": "ヤマブキ",
+   "time": "1:21.3",
+   "margin": "３／４",
+   "pos4": 10,
+   "last3f": 41.0,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 5,
+   "number": 6,
+   "name": "シャイニングアース",
+   "time": "1:21.4",
+   "margin": "クビ",
+   "pos4": 11,
+   "last3f": 40.6,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 7,
+   "number": 10,
+   "name": "シャコンヌ",
+   "time": "1:21.4",
+   "margin": "アタマ",
+   "pos4": 1,
+   "last3f": 43.7,
+   "popularity": null
+  }
+ ]
 }
