@@ -70,8 +70,8 @@
    "instagram": "pending",
    "x_id": "2118166867034493179",
    "x_at": "2026-11-05 11:21",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'Akf_yz4gm1u8ZTpfGFcdge3'}",
-   "instagram_tries": 1
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AKQ67NtdeMLBiB1k2JXb7Ad'}",
+   "instagram_tries": 2
   },
   "pre-202611052320120506": {
    "kind": "grade_pre",
@@ -97,8 +97,8 @@
     "2118166874126954584",
     "2118166875364286636"
    ],
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AqEXyvDc7FLMV6GE-X4PEQQ'}",
-   "instagram_tries": 1
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'Ax7RJxIS2-LjDeLEYD4dxP2'}",
+   "instagram_tries": 2
   },
   "picks-20261105": {
    "kind": "picks",
@@ -115,8 +115,8 @@
    "instagram": "pending",
    "x_id": "2118166878250045787",
    "x_at": "2026-11-05 11:21",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'ANJLZF4llpaaJFsxzSohi8i'}",
-   "instagram_tries": 1
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'ABS8VcIk6iT2UNSvDjbxgjr'}",
+   "instagram_tries": 2
   }
  }
 }
