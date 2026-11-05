@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261105",
  "race_id": "202611052320120504",
- "tries": 2,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,105 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 7,
+   "name": "リアルケンチャン",
+   "time": "1:43.4",
+   "margin": "",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 2,
+   "number": 2,
+   "name": "ツキノコブネ",
+   "time": "1:44.3",
+   "margin": "４",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 5,
+   "name": "ラブリーボニータ",
+   "time": "1:44.5",
+   "margin": "３／４",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 9,
+   "name": "アリストクラット",
+   "time": "1:46.5",
+   "margin": "大差",
+   "pos4": 4,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 4,
+   "name": "シバノテンテン",
+   "time": "1:46.6",
+   "margin": "クビ",
+   "pos4": 6,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 6,
+   "name": "テルケンレングレー",
+   "time": "1:46.6",
+   "margin": "アタマ",
+   "pos4": 7,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 8,
+   "name": "サブノフクムスメ",
+   "time": "1:46.7",
+   "margin": "１／２",
+   "pos4": 7,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "カサナルキセキ",
+   "time": "1:47.0",
+   "margin": "１ １／２",
+   "pos4": 5,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 3,
+   "number": 3,
+   "name": "マリエンプラッツ",
+   "time": "1:47.9",
+   "margin": "４",
+   "pos4": 9,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
