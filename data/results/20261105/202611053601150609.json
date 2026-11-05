@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261105",
  "race_id": "202611053601150609",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -63,5 +63,94 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 6,
+   "name": "パーフェクトナイト",
+   "time": "1:15.1",
+   "margin": "",
+   "pos4": 4,
+   "last3f": 38.4,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 4,
+   "number": 4,
+   "name": "マインドエンジェル",
+   "time": "1:15.2",
+   "margin": "クビ",
+   "pos4": 2,
+   "last3f": 38.9,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 5,
+   "name": "トラブルメーカー",
+   "time": "1:15.2",
+   "margin": "クビ",
+   "pos4": 7,
+   "last3f": 38.3,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 3,
+   "name": "アンビティオー",
+   "time": "1:15.4",
+   "margin": "１",
+   "pos4": 2,
+   "last3f": 39.2,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 8,
+   "name": "レギュム",
+   "time": "1:15.4",
+   "margin": "ハナ",
+   "pos4": 5,
+   "last3f": 38.5,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 7,
+   "name": "マホウ",
+   "time": "1:15.5",
+   "margin": "１／２",
+   "pos4": 1,
+   "last3f": 39.5,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 2,
+   "number": 2,
+   "name": "ディアスプリンター",
+   "time": "1:16.1",
+   "margin": "３",
+   "pos4": 5,
+   "last3f": 39.2,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "マフイカ",
+   "time": "1:17.2",
+   "margin": "５",
+   "pos4": 8,
+   "last3f": 40.3,
+   "popularity": null
+  }
+ ]
 }
