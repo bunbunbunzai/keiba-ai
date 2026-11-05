@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261105",
  "race_id": "202611052726170511",
- "tries": 2,
+ "tries": 5,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,127 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 9,
+   "name": "ラピドフィオーレ",
+   "time": "1:29.4",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 38.9,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 4,
+   "number": 4,
+   "name": "アストラカ",
+   "time": "1:29.4",
+   "margin": "アタマ",
+   "pos4": 3,
+   "last3f": 39.0,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 2,
+   "number": 2,
+   "name": "フェアリーブルー",
+   "time": "1:29.9",
+   "margin": "３",
+   "pos4": 4,
+   "last3f": 39.2,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 7,
+   "name": "ロードラディウス",
+   "time": "1:30.1",
+   "margin": "３／４",
+   "pos4": 1,
+   "last3f": 39.9,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 1,
+   "number": 1,
+   "name": "リネアグローリア",
+   "time": "1:30.2",
+   "margin": "３／４",
+   "pos4": 6,
+   "last3f": 39.4,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 8,
+   "name": "ドラゴンゴクウ",
+   "time": "1:30.8",
+   "margin": "３ １／２",
+   "pos4": 8,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 11,
+   "name": "ロイガヴェーグル",
+   "time": "1:30.8",
+   "margin": "アタマ",
+   "pos4": 7,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 10,
+   "name": "ダイジョバナイ",
+   "time": "1:31.3",
+   "margin": "３",
+   "pos4": 4,
+   "last3f": 41.0,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 6,
+   "number": 6,
+   "name": "シアージスト",
+   "time": "1:32.7",
+   "margin": "８",
+   "pos4": 9,
+   "last3f": 42.0,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 5,
+   "name": "ナリタシン",
+   "time": "1:33.5",
+   "margin": "５",
+   "pos4": 11,
+   "last3f": 42.8,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 3,
+   "number": 3,
+   "name": "ジェネラーレ",
+   "time": "1:36.7",
+   "margin": "大差",
+   "pos4": 9,
+   "last3f": 46.5,
+   "popularity": null
+  }
+ ]
 }
