@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261105",
  "race_id": "202611053601150610",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,116 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 9,
+   "name": "ケンチャナヨ",
+   "time": "1:01.6",
+   "margin": "",
+   "pos4": 2,
+   "last3f": 37.9,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 8,
+   "name": "ポプリノカオリ",
+   "time": "1:01.8",
+   "margin": "１",
+   "pos4": 1,
+   "last3f": 38.5,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 10,
+   "name": "ミスターキレット",
+   "time": "1:02.0",
+   "margin": "１",
+   "pos4": 5,
+   "last3f": 37.6,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 5,
+   "name": "ライヴユアドリーム",
+   "time": "1:02.6",
+   "margin": "３",
+   "pos4": 7,
+   "last3f": 37.6,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 1,
+   "number": 1,
+   "name": "カナデ",
+   "time": "1:02.7",
+   "margin": "クビ",
+   "pos4": 10,
+   "last3f": 37.3,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 7,
+   "name": "ベストスカイ",
+   "time": "1:02.7",
+   "margin": "クビ",
+   "pos4": 3,
+   "last3f": 38.7,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 3,
+   "name": "ヴィルミーチャン",
+   "time": "1:03.1",
+   "margin": "２",
+   "pos4": 7,
+   "last3f": 37.9,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 2,
+   "number": 2,
+   "name": "アイルドフルール",
+   "time": "1:03.2",
+   "margin": "３／４",
+   "pos4": 3,
+   "last3f": 39.4,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 6,
+   "number": 6,
+   "name": "ハッピーデイ",
+   "time": "1:03.8",
+   "margin": "３",
+   "pos4": 5,
+   "last3f": 39.8,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 4,
+   "number": 4,
+   "name": "ルミナスワン",
+   "time": "1:04.0",
+   "margin": "１",
+   "pos4": 7,
+   "last3f": 39.0,
+   "popularity": null
+  }
+ ]
 }
