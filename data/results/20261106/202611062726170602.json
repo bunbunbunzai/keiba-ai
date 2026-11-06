@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261106",
  "race_id": "202611062726170602",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -59,5 +59,83 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 6,
+   "name": "オキョンピー",
+   "time": "2:08.4",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 40.0,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 3,
+   "number": 3,
+   "name": "ワンダーゾルダート",
+   "time": "2:10.1",
+   "margin": "大差",
+   "pos4": 2,
+   "last3f": 41.6,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 5,
+   "name": "エコロゼット",
+   "time": "2:10.8",
+   "margin": "４",
+   "pos4": 2,
+   "last3f": 42.0,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 4,
+   "name": "バイアブランカ",
+   "time": "2:11.0",
+   "margin": "１",
+   "pos4": 4,
+   "last3f": 42.3,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 7,
+   "name": "チャチャット",
+   "time": "2:13.1",
+   "margin": "大差",
+   "pos4": 5,
+   "last3f": 43.7,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "エイシンニルヴァナ",
+   "time": "2:14.7",
+   "margin": "１０",
+   "pos4": 7,
+   "last3f": 45.3,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 1,
+   "number": 1,
+   "name": "サンライズフリード",
+   "time": "2:15.8",
+   "margin": "７",
+   "pos4": 6,
+   "last3f": 46.9,
+   "popularity": null
+  }
+ ]
 }
