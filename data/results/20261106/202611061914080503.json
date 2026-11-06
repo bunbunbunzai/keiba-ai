@@ -2,7 +2,172 @@
  "source": "rakuten",
  "date": "20261106",
  "race_id": "202611061914080503",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "7",
+    "yen": 140
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "7-6",
+    "yen": 330
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "7",
+    "yen": 110
+   },
+   {
+    "combo": "6",
+    "yen": 150
+   },
+   {
+    "combo": "2",
+    "yen": 580
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "6-7",
+    "yen": 230
+   },
+   {
+    "combo": "2-7",
+    "yen": 810
+   },
+   {
+    "combo": "2-6",
+    "yen": 1730
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "6-7",
+    "yen": 300
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-6-7",
+    "yen": 1680
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "7-6-2",
+    "yen": 4280
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "6-7",
+    "yen": 240
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 7,
+   "name": "ウィルメイクイット",
+   "time": "1:02.5",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 37.4,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 6,
+   "name": "トミフェイス",
+   "time": "1:03.3",
+   "margin": "４",
+   "pos4": 1,
+   "last3f": 38.4,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 2,
+   "number": 2,
+   "name": "コーズグッド",
+   "time": "1:03.7",
+   "margin": "２",
+   "pos4": 4,
+   "last3f": 38.4,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 4,
+   "name": "リュウノカモーイ",
+   "time": "1:05.1",
+   "margin": "７",
+   "pos4": 5,
+   "last3f": 39.4,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 3,
+   "number": 3,
+   "name": "ノーブルクーガー",
+   "time": "1:05.2",
+   "margin": "１／２",
+   "pos4": 7,
+   "last3f": 39.3,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 1,
+   "number": 1,
+   "name": "イシマツ",
+   "time": "1:05.2",
+   "margin": "ハナ",
+   "pos4": 5,
+   "last3f": 39.5,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 5,
+   "name": "ペプチドエリック",
+   "time": "1:05.4",
+   "margin": "１",
+   "pos4": 3,
+   "last3f": 40.1,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 8,
+   "name": "アルファノワール",
+   "time": "1:07.0",
+   "margin": "８",
+   "pos4": 8,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 8,
+   "number": 9,
+   "name": "レイアフォンテン",
+   "time": "-",
+   "margin": "除外",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
