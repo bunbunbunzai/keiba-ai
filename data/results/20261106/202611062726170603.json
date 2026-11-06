@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261106",
  "race_id": "202611062726170603",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "プラチナムディスク",
    "time": "1:33.2",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 39.2,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "クロスボーダー",
    "time": "1:33.5",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 39.6,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ブランチアウト",
    "time": "1:33.7",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 39.9,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "ランスオブラヴ",
    "time": "1:34.2",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 40.1,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "ヤザン",
    "time": "1:34.4",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 40.1,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "グロリアスニケ",
    "time": "1:35.4",
    "margin": "６",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 41.1,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "スマートレイヴ",
    "time": "1:35.8",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 41.9,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "クラージュスター",
    "time": "1:35.8",
    "margin": "ハナ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 41.4,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "マイチバイ",
    "time": "1:36.4",
    "margin": "３ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 41.7,
    "popularity": null
   }
  ]
