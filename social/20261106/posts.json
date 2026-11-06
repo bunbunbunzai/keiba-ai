@@ -121,11 +121,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/06/funabashi/05r/",
    "created": "2026-11-06 18:10",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2118632446396604592",
    "x_at": "2026-11-06 18:11",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A5hVAzGISomrQ0M2wWoc8dk'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A_2rpSXBVKSIdklNulpkY8C'}",
+   "instagram_tries": 3
   },
   "hit-202611061914080510": {
    "kind": "hit",
@@ -138,8 +138,12 @@
    "ig_caption": "【的中】船橋10R サネカズラ特別\n◎11コマサ　〇4ルグランシャリオ　▲10キープカミング\n複勝 11　120円\n3連複 1-10-11　3,710円\n投資800円→払戻3,830円（回収率478.8%）\n\nこのレースの全頭評価と買い目 → www.ai-keiba-log.com/2026/11/06/funabashi/10r/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#競馬予想 #船橋競馬 #AI予想 #的中 #競馬 #競馬全頭ログ",
    "url": "https://www.ai-keiba-log.com/2026/11/06/funabashi/10r/",
    "created": "2026-11-06 21:45",
-   "x": "pending",
-   "instagram": "pending"
+   "x": "posted",
+   "instagram": "pending",
+   "x_id": "2118687200724345020",
+   "x_at": "2026-11-06 21:49",
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AMfyNApchX1DD2nqMIBMj85'}",
+   "instagram_tries": 1
   },
   "sum-20261106": {
    "kind": "summary",
@@ -154,8 +158,12 @@
    "ig_caption": "【11/6 AI予想の全成績】\n園田・帯広・笠松・船橋の44レース\n的中25（うちプラス7）／当日回収率58.3%\n収支-11,510円（各点100円・外れも含む）\n最高：船橋10R 払戻3,830円\n累計回収率65.4%\n\nこの日の全レースの予想と成績 → www.ai-keiba-log.com/2026/11/06/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#競馬予想 #地方競馬 #AI予想 #回収率 #競馬 #競馬全頭ログ",
    "url": "https://www.ai-keiba-log.com/2026/11/06/",
    "created": "2026-11-06 21:45",
-   "x": "pending",
-   "instagram": "pending"
+   "x": "posted",
+   "instagram": "pending",
+   "x_id": "2118687209897230648",
+   "x_at": "2026-11-06 21:49",
+   "instagram_error": "item 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A-_Cx9OyhDEe2gcrKedxf4D'}",
+   "instagram_tries": 1
   }
  }
 }
