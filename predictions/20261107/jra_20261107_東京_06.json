@@ -1,0 +1,30 @@
+{
+  "race_id": "jra_20261107_東京_06",
+  "results_key": "jra_05_06",
+  "venue": "東京", "race_no": 6, "race_name": "メイクデビュー東京",
+  "phase": "前日夜",
+  "summary": "新馬戦で全16頭に近走データがないため見送りとする。参考の◎は父Gun Runnerのダート血統で、C.デムーロ騎手と堀厩舎の組み合わせの4サトノヘラクレスだ。",
+  "confidence": "見送り",
+  "marks": {"◎": 4, "〇": 8, "▲": 5, "△": [1, 12]},
+  "pace": "全頭が初出走で、通過順から脚質は読めない。16頭立てのダ1300mで、序盤の位置取り争いが激しくなる可能性がある。",
+  "bets": [],
+  "horses": [
+    {"number": 1, "name": "ビリーブハーモニー", "score": 30, "win_pct": 9, "comment": "近走データなし。父Nashvilleの米国血統で、横山武史騎手が騎乗する。"},
+    {"number": 2, "name": "ジューンエアロ", "score": 29, "win_pct": 0, "comment": "近走データなし。父ホッコータルマエでダート向きの血統だ。"},
+    {"number": 3, "name": "クレールオーブ", "score": 27, "win_pct": 0, "comment": "近走データなし。評価は平均点とした。"},
+    {"number": 4, "name": "サトノヘラクレス", "score": 31, "win_pct": 14, "comment": "近走データなし。父Gun Runnerのダート血統で、堀厩舎の所属馬にC.デムーロ騎手が騎乗する。"},
+    {"number": 5, "name": "ネバースリープ", "score": 30, "win_pct": 10, "comment": "近走データなし。父モーニンでダート向きの血統、戸崎騎手が騎乗する。"},
+    {"number": 6, "name": "テーオータイガー", "score": 28, "win_pct": 0, "comment": "近走データなし。父American Pharoahの米国血統だ。"},
+    {"number": 7, "name": "シップウダッシュ", "score": 30, "win_pct": 7, "comment": "近走データなし。父ニューイヤーズデイでダート向きの血統、田辺騎手が騎乗する。"},
+    {"number": 8, "name": "ピニドローマ", "score": 31, "win_pct": 13, "comment": "近走データなし。父Pinehurst、母父Smart Strikeの米国血統で、ルメール騎手が騎乗する。"},
+    {"number": 9, "name": "タカシーズ", "score": 26, "win_pct": 0, "comment": "近走データなし。3kg減の53kgで出られる。"},
+    {"number": 10, "name": "グッドミキサー", "score": 28, "win_pct": 0, "comment": "近走データなし。父マテラスカイでダート短距離向きの血統だ。"},
+    {"number": 11, "name": "ラマナス", "score": 28, "win_pct": 0, "comment": "近走データなし。父ルヴァンスレーヴでダート向きの血統だ。"},
+    {"number": 12, "name": "サメーダン", "score": 30, "win_pct": 8, "comment": "近走データなし。父シャンハイボビーの米国血統で、プーシャン騎手が騎乗する。"},
+    {"number": 13, "name": "タマモホッピング", "score": 26, "win_pct": 0, "comment": "近走データなし。父ナダルで、3kg減の52kgで出られる。"},
+    {"number": 14, "name": "ゴルトエスピガ", "score": 25, "win_pct": 0, "comment": "近走データなし。評価は平均点よりやや下とした。"},
+    {"number": 15, "name": "タカラキセキ", "score": 26, "win_pct": 0, "comment": "近走データなし。大外枠からの発走になる。"},
+    {"number": 16, "name": "カガフレイヤ", "score": 28, "win_pct": 0, "comment": "近走データなし。父ホッコータルマエ、母父パイロのダート血統だ。"}
+  ],
+  "updates": [{"at": "11/06 21:00", "text": "前日予想（オッズ発表前のため、評価点と想定勝率で印を決めた）"}]
+}
