@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261106",
  "race_id": "202611062320120610",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,116 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 9,
+   "name": "リュクスレオン",
+   "time": "1:28.4",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 3,
+   "number": 3,
+   "name": "クロッチ",
+   "time": "1:28.4",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 5,
+   "name": "オニマル",
+   "time": "1:29.1",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "シュネルカガ",
+   "time": "1:29.8",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 7,
+   "name": "コスモジョセフ",
+   "time": "1:30.0",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 8,
+   "name": "エイシンヤタガラス",
+   "time": "1:30.0",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 1,
+   "number": 1,
+   "name": "ロンリープラネット",
+   "time": "1:31.3",
+   "margin": "６",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 10,
+   "name": "コパノデーヴィド",
+   "time": "1:32.0",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 6,
+   "number": 6,
+   "name": "スマートテンペスト",
+   "time": "1:32.2",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 4,
+   "number": 4,
+   "name": "シュレディンガー",
+   "time": "-",
+   "margin": "取消",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
