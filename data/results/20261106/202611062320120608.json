@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261106",
  "race_id": "202611062320120608",
- "tries": 3,
+ "tries": 5,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,116 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 4,
+   "name": "アンヘリート",
+   "time": "1:44.2",
+   "margin": "",
+   "pos4": 2,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 2,
+   "number": 2,
+   "name": "ミラヴェリタ",
+   "time": "1:44.3",
+   "margin": "１／２",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "ミズノミヤコ",
+   "time": "1:45.5",
+   "margin": "６",
+   "pos4": 4,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 10,
+   "name": "サートゥルチェア",
+   "time": "1:45.7",
+   "margin": "１",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 7,
+   "name": "ワンショートデイ",
+   "time": "1:45.7",
+   "margin": "アタマ",
+   "pos4": 5,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 9,
+   "name": "ホクセンキングオー",
+   "time": "1:46.3",
+   "margin": "３",
+   "pos4": 6,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 8,
+   "name": "ホウライショウ",
+   "time": "1:46.7",
+   "margin": "２",
+   "pos4": 8,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 6,
+   "number": 6,
+   "name": "オドントグロッサム",
+   "time": "1:47.1",
+   "margin": "２",
+   "pos4": 7,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 1,
+   "number": 1,
+   "name": "ハイパーコール",
+   "time": "1:47.8",
+   "margin": "３",
+   "pos4": 9,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 5,
+   "name": "ヤマミウルフ",
+   "time": "1:50.7",
+   "margin": "大差",
+   "pos4": 10,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
