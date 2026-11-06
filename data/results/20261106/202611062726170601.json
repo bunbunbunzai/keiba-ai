@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261106",
  "race_id": "202611062726170601",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "ヴィオマージュ",
    "time": "1:35.5",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 39.6,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ダットデア",
    "time": "1:36.0",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 39.9,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "イッシン",
    "time": "1:36.0",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 40.4,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "ウィスピースノー",
    "time": "1:36.4",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 40.3,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "ヤクジンミョウオウ",
    "time": "1:36.5",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 40.7,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ハイラブエナン",
    "time": "1:37.1",
    "margin": "３ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 41.3,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "シュライフェ",
    "time": "1:37.2",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 40.1,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "スーパークール",
    "time": "1:37.3",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 41.2,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "ティアラアスール",
    "time": "1:37.5",
    "margin": "１ １／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 41.4,
    "popularity": null
   }
  ]
