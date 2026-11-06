@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261106",
  "race_id": "202611060304160112",
- "tries": 2,
+ "tries": 5,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,105 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 9,
+   "name": "キタノミネ",
+   "time": "1:42.6",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 8,
+   "name": "ツガルフジ",
+   "time": "1:42.9",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 6,
+   "name": "シンエイファイト",
+   "time": "1:45.3",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 7,
+   "name": "サカノテンリュウ",
+   "time": "1:51.5",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "5",
+   "frame": 3,
+   "number": 3,
+   "name": "ホクショウムサシ",
+   "time": "1:55.6",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "6",
+   "frame": 4,
+   "number": 4,
+   "name": "マサタカラ",
+   "time": "1:56.0",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "frame": 2,
+   "number": 2,
+   "name": "ウチュウジン",
+   "time": "1:56.5",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "ショウリノホシ",
+   "time": "1:57.6",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 5,
+   "name": "クリスタルホーク",
+   "time": "2:03.0",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": 4
+  }
+ ]
 }
