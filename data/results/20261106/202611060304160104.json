@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261106",
  "race_id": "202611060304160104",
- "tries": 2,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,116 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 6,
+   "name": "マルホンエルフ",
+   "time": "1:40.3",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "ジェットクイーン",
+   "time": "1:42.0",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "ジェイマット",
+   "time": "1:45.6",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 8,
+   "name": "ツカサブルージェイ",
+   "time": "1:46.1",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 9,
+   "name": "ロイヤルノチカラ",
+   "time": "1:51.6",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 4,
+   "number": 4,
+   "name": "モンスター",
+   "time": "1:52.5",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 2,
+   "number": 2,
+   "name": "スピードシンデレラ",
+   "time": "1:58.9",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 10,
+   "name": "ヴルールノヴァー",
+   "time": "2:04.7",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 7,
+   "name": "ケンハヤチ",
+   "time": "2:12.6",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 1,
+   "number": 1,
+   "name": "ホクショウジェイク",
+   "time": "2:17.2",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
