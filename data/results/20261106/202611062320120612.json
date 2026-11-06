@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261106",
  "race_id": "202611062320120612",
- "tries": 3,
+ "tries": 5,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "クロイゼルング",
    "time": "1:30.1",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 40.8,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ミユキアモーレミオ",
    "time": "1:30.5",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 40.4,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "セブンスリーローズ",
    "time": "1:30.5",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 41.0,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "フレンドキング",
    "time": "1:30.8",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 40.2,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "キョウエイウインド",
    "time": "1:31.3",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 40.0,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "カミガミノウタゲ",
    "time": "1:31.5",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 40.3,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "アイヴカムバック",
    "time": "1:31.8",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 41.2,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ソルエパトリオット",
    "time": "1:32.7",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 43.1,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "エースオブスペーズ",
    "time": "1:33.1",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 41.1,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "キタノアンシェル",
    "time": "1:33.8",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 10,
+   "last3f": 41.8,
    "popularity": null
   }
  ]
