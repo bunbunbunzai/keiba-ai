@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261106",
  "race_id": "202611061914080501",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "ガンスミス",
    "time": "1:17.1",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 38.6,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "エミーズデザイア",
    "time": "1:17.1",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 38.6,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "アメリカンメロディ",
    "time": "1:17.8",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 39.6,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "ブライティアモッサ",
    "time": "1:19.0",
    "margin": "６",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 39.9,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "コパノオマツリ",
    "time": "1:20.3",
    "margin": "６",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 42.0,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "レステプレドゥ",
    "time": "1:20.4",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 40.5,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "ヨルノカガヤキ",
    "time": "1:20.9",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 42.2,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "コアレスランド",
    "time": "1:21.1",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 42.8,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "コアレススピリット",
    "time": "1:23.4",
    "margin": "大差",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 42.1,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "ミヤフィデース",
    "time": "1:23.6",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 10,
+   "last3f": 42.3,
    "popularity": null
   }
  ]
