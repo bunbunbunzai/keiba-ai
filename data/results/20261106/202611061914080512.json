@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261106",
  "race_id": "202611061914080512",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 2,
+   "number": 2,
+   "name": "ハクシンドラゴン",
+   "time": "2:28.5",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 40.8,
+   "popularity": 4
+  },
+  {
+   "finish": "2",
+   "frame": 3,
+   "number": 3,
+   "name": "アマノハバキリ",
+   "time": "2:28.7",
+   "margin": "１",
+   "pos4": 1,
+   "last3f": 41.4,
+   "popularity": 9
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 5,
+   "name": "カーニバルマーチ",
+   "time": "2:28.7",
+   "margin": "アタマ",
+   "pos4": 4,
+   "last3f": 40.4,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 4,
+   "name": "フィフティズ",
+   "time": "2:30.4",
+   "margin": "８",
+   "pos4": 1,
+   "last3f": 42.9,
+   "popularity": 1
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 12,
+   "name": "ゴッドトレジャー",
+   "time": "2:30.6",
+   "margin": "３／４",
+   "pos4": 9,
+   "last3f": 40.5,
+   "popularity": 6
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 8,
+   "name": "イデアユウシン",
+   "time": "2:30.6",
+   "margin": "クビ",
+   "pos4": 6,
+   "last3f": 41.5,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 9,
+   "name": "エーヴベリー",
+   "time": "2:31.1",
+   "margin": "２ １／２",
+   "pos4": 9,
+   "last3f": 41.4,
+   "popularity": 11
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 10,
+   "name": "ラファエラエンゼル",
+   "time": "2:31.2",
+   "margin": "クビ",
+   "pos4": 7,
+   "last3f": 41.7,
+   "popularity": 7
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 11,
+   "name": "ラップランド",
+   "time": "2:31.2",
+   "margin": "クビ",
+   "pos4": 11,
+   "last3f": 40.9,
+   "popularity": 2
+  },
+  {
+   "finish": "10",
+   "frame": 6,
+   "number": 7,
+   "name": "ピノマハナ",
+   "time": "2:32.0",
+   "margin": "４",
+   "pos4": 5,
+   "last3f": 42.9,
+   "popularity": 8
+  },
+  {
+   "finish": "11",
+   "frame": 1,
+   "number": 1,
+   "name": "ニシノアウェイク",
+   "time": "2:33.4",
+   "margin": "７",
+   "pos4": 8,
+   "last3f": 44.3,
+   "popularity": 12
+  },
+  {
+   "finish": "12",
+   "frame": 5,
+   "number": 6,
+   "name": "ロイヤルザップ",
+   "time": "2:35.7",
+   "margin": "大差",
+   "pos4": 11,
+   "last3f": 46.4,
+   "popularity": 10
+  }
+ ]
 }
