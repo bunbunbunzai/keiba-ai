@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261106",
  "race_id": "202611061914080510",
- "tries": 2,
+ "tries": 5,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,160 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 1,
+   "number": 1,
+   "name": "エニーサンダー",
+   "time": "1:45.3",
+   "margin": "",
+   "pos4": 5,
+   "last3f": 41.1,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 11,
+   "name": "コマサ",
+   "time": "1:45.3",
+   "margin": "クビ",
+   "pos4": 1,
+   "last3f": 42.3,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 10,
+   "name": "キープカミング",
+   "time": "1:45.4",
+   "margin": "１／２",
+   "pos4": 7,
+   "last3f": 41.0,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "エイシンゾディアク",
+   "time": "1:45.8",
+   "margin": "２",
+   "pos4": 1,
+   "last3f": 43.0,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 5,
+   "name": "モンバイト",
+   "time": "1:46.0",
+   "margin": "１",
+   "pos4": 5,
+   "last3f": 42.2,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 7,
+   "name": "ジェバーダ",
+   "time": "1:46.4",
+   "margin": "２",
+   "pos4": 4,
+   "last3f": 43.0,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 9,
+   "name": "マッドスピード",
+   "time": "1:47.0",
+   "margin": "３",
+   "pos4": 12,
+   "last3f": 42.2,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 12,
+   "name": "シュガーハイ",
+   "time": "1:47.1",
+   "margin": "クビ",
+   "pos4": 9,
+   "last3f": 42.5,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 3,
+   "number": 3,
+   "name": "ミッドナイトホーク",
+   "time": "1:47.2",
+   "margin": "１／２",
+   "pos4": 9,
+   "last3f": 42.6,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 3,
+   "number": 4,
+   "name": "ルグランシャリオ",
+   "time": "1:47.7",
+   "margin": "２ １／２",
+   "pos4": 3,
+   "last3f": 44.7,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 8,
+   "number": 13,
+   "name": "ビコーズウイキャン",
+   "time": "1:47.7",
+   "margin": "ハナ",
+   "pos4": 11,
+   "last3f": 42.9,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 4,
+   "number": 6,
+   "name": "シューボーイ",
+   "time": "1:48.1",
+   "margin": "２",
+   "pos4": 13,
+   "last3f": 42.7,
+   "popularity": null
+  },
+  {
+   "finish": "13",
+   "frame": 5,
+   "number": 8,
+   "name": "ビリーヴィン",
+   "time": "1:48.3",
+   "margin": "１",
+   "pos4": 8,
+   "last3f": 44.5,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 8,
+   "number": 14,
+   "name": "メイプルハッピー",
+   "time": "-",
+   "margin": "中止",
+   "pos4": 13,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
