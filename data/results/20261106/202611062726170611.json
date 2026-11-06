@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261106",
  "race_id": "202611062726170611",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "マミエミモモタロー",
    "time": "1:31.6",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 38.3,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "アングレ",
    "time": "1:32.0",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 38.4,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ショウナンアトレ",
    "time": "1:32.1",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 38.3,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "ウイングスオール",
    "time": "1:32.3",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 38.9,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "ヘルツアス",
    "time": "1:32.4",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 38.5,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ウィルダスク",
    "time": "1:32.7",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 39.1,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "フェゲフォイア",
    "time": "1:33.0",
    "margin": "１ ３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 38.7,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "グリーンシアター",
    "time": "1:33.4",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 39.2,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "ナムラマイケル",
    "time": "1:33.5",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 39.1,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "メリーセンス",
    "time": "1:34.4",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 10,
+   "last3f": 40.1,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "ワンボイス",
    "time": "1:35.2",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 10,
+   "last3f": 40.7,
    "popularity": null
   },
   {
