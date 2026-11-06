@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261106",
  "race_id": "202611062726170606",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "ラベンサラ",
    "time": "51.2",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 37.2,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "プライムテーラー",
    "time": "51.5",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 37.2,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "モズセンピロ",
    "time": "51.6",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 37.2,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "ファストワーカー",
    "time": "51.8",
    "margin": "１ １／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 37.6,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "トランペシア",
    "time": "52.0",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 37.2,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ラクスガウディ",
    "time": "52.2",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 37.6,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "タマノルーナ",
    "time": "52.4",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 37.8,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "マイネルスピカ",
    "time": "53.0",
    "margin": "３ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 38.2,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "クリノコウテイ",
    "time": "53.2",
    "margin": "１ １／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 38.4,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "マルノミズキ",
    "time": "53.2",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 38.8,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "ヴィンセント",
    "time": "53.5",
    "margin": "１ ３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 38.1,
    "popularity": null
   },
   {
@@ -198,8 +198,8 @@
    "name": "ペイルブルードット",
    "time": "53.8",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 12,
+   "last3f": 38.4,
    "popularity": null
   }
  ]

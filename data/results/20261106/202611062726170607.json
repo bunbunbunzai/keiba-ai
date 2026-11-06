@@ -2,7 +2,140 @@
  "source": "rakuten",
  "date": "20261106",
  "race_id": "202611062726170607",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "7",
+    "yen": 160
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "7-6",
+    "yen": 550
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "7",
+    "yen": 140
+   },
+   {
+    "combo": "6",
+    "yen": 280
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "6-7",
+    "yen": 160
+   },
+   {
+    "combo": "4-7",
+    "yen": 110
+   },
+   {
+    "combo": "4-6",
+    "yen": 220
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-6-7",
+    "yen": 340
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "7-6-4",
+    "yen": 1510
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "6-7",
+    "yen": 520
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 7,
+   "name": "メイショウシマト",
+   "time": "1:19.7",
+   "margin": "",
+   "pos4": 4,
+   "last3f": 38.9,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 6,
+   "name": "オーケン",
+   "time": "1:19.7",
+   "margin": "ハナ",
+   "pos4": 1,
+   "last3f": 39.2,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "ミルトプライム",
+   "time": "1:20.1",
+   "margin": "２ １／２",
+   "pos4": 2,
+   "last3f": 39.4,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 1,
+   "number": 1,
+   "name": "フレッシュラン",
+   "time": "1:21.0",
+   "margin": "５",
+   "pos4": 5,
+   "last3f": 40.1,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 5,
+   "name": "アンコロ",
+   "time": "1:21.0",
+   "margin": "クビ",
+   "pos4": 2,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "タガノマルアフ",
+   "time": "1:22.1",
+   "margin": "７",
+   "pos4": 6,
+   "last3f": 40.7,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 3,
+   "name": "ワールドシリーズ",
+   "time": "1:22.1",
+   "margin": "ハナ",
+   "pos4": 7,
+   "last3f": 40.7,
+   "popularity": null
+  }
+ ]
 }
