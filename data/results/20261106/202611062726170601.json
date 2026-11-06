@@ -2,7 +2,172 @@
  "source": "rakuten",
  "date": "20261106",
  "race_id": "202611062726170601",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "9",
+    "yen": 180
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "9-6",
+    "yen": 5130
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "9",
+    "yen": 110
+   },
+   {
+    "combo": "6",
+    "yen": 480
+   },
+   {
+    "combo": "8",
+    "yen": 190
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "6-9",
+    "yen": 640
+   },
+   {
+    "combo": "8-9",
+    "yen": 430
+   },
+   {
+    "combo": "6-8",
+    "yen": 2580
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "6-8",
+    "yen": 3590
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "6-8-9",
+    "yen": 7030
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "9-6-8",
+    "yen": 29580
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "6-9",
+    "yen": 3530
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 9,
+   "name": "ヴィオマージュ",
+   "time": "1:35.5",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 6,
+   "name": "ダットデア",
+   "time": "1:36.0",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 8,
+   "name": "イッシン",
+   "time": "1:36.0",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 1,
+   "number": 1,
+   "name": "ウィスピースノー",
+   "time": "1:36.4",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 5,
+   "name": "ヤクジンミョウオウ",
+   "time": "1:36.5",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 7,
+   "name": "ハイラブエナン",
+   "time": "1:37.1",
+   "margin": "３ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 4,
+   "name": "シュライフェ",
+   "time": "1:37.2",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 2,
+   "number": 2,
+   "name": "スーパークール",
+   "time": "1:37.3",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 3,
+   "number": 3,
+   "name": "ティアラアスール",
+   "time": "1:37.5",
+   "margin": "１ １／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
