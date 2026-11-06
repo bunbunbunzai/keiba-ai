@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261106",
  "race_id": "202611061914080506",
- "tries": 3,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -78,8 +78,8 @@
    "time": "1:38.2",
    "margin": "",
    "pos4": 1,
-   "last3f": null,
-   "popularity": null
+   "last3f": 39.3,
+   "popularity": 1
   },
   {
    "finish": "2",
@@ -89,8 +89,8 @@
    "time": "1:38.9",
    "margin": "３",
    "pos4": 3,
-   "last3f": null,
-   "popularity": null
+   "last3f": 39.8,
+   "popularity": 4
   },
   {
    "finish": "3",
@@ -100,8 +100,8 @@
    "time": "1:39.1",
    "margin": "１",
    "pos4": 6,
-   "last3f": null,
-   "popularity": null
+   "last3f": 39.4,
+   "popularity": 8
   },
   {
    "finish": "4",
@@ -111,8 +111,8 @@
    "time": "1:39.8",
    "margin": "３",
    "pos4": 1,
-   "last3f": null,
-   "popularity": null
+   "last3f": 41.2,
+   "popularity": 2
   },
   {
    "finish": "5",
@@ -122,8 +122,8 @@
    "time": "1:40.2",
    "margin": "２",
    "pos4": 3,
-   "last3f": null,
-   "popularity": null
+   "last3f": 41.5,
+   "popularity": 3
   },
   {
    "finish": "6",
@@ -133,8 +133,8 @@
    "time": "1:41.0",
    "margin": "４",
    "pos4": 7,
-   "last3f": null,
-   "popularity": null
+   "last3f": 41.7,
+   "popularity": 5
   },
   {
    "finish": "7",
@@ -144,8 +144,8 @@
    "time": "1:41.0",
    "margin": "ハナ",
    "pos4": 8,
-   "last3f": null,
-   "popularity": null
+   "last3f": 41.3,
+   "popularity": 6
   },
   {
    "finish": "8",
@@ -155,8 +155,8 @@
    "time": "1:41.2",
    "margin": "１",
    "pos4": 9,
-   "last3f": null,
-   "popularity": null
+   "last3f": 40.6,
+   "popularity": 11
   },
   {
    "finish": "9",
@@ -166,8 +166,8 @@
    "time": "1:41.4",
    "margin": "１",
    "pos4": 11,
-   "last3f": null,
-   "popularity": null
+   "last3f": 41.2,
+   "popularity": 13
   },
   {
    "finish": "10",
@@ -177,8 +177,8 @@
    "time": "1:41.8",
    "margin": "２",
    "pos4": 9,
-   "last3f": null,
-   "popularity": null
+   "last3f": 41.7,
+   "popularity": 12
   },
   {
    "finish": "11",
@@ -188,8 +188,8 @@
    "time": "1:42.0",
    "margin": "３／４",
    "pos4": 13,
-   "last3f": null,
-   "popularity": null
+   "last3f": 41.4,
+   "popularity": 9
   },
   {
    "finish": "12",
@@ -199,8 +199,8 @@
    "time": "1:42.1",
    "margin": "クビ",
    "pos4": 12,
-   "last3f": null,
-   "popularity": null
+   "last3f": 41.5,
+   "popularity": 10
   },
   {
    "finish": "13",
@@ -210,8 +210,8 @@
    "time": "1:43.2",
    "margin": "５",
    "pos4": 3,
-   "last3f": null,
-   "popularity": null
+   "last3f": 44.7,
+   "popularity": 7
   }
  ]
 }
