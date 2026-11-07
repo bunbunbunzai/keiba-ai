@@ -142,19 +142,19 @@ def build(pred: dict, race: dict, trio: dict | None = None) -> tuple[list[dict],
     tp = tanpuku(hon, od if ready else {})
     if pred.get("confidence") != "A":
         return tp, ""
-    if not ready:
+    real = (trio or {}).get("3連複") or {}
+    if not ready and not real:
         return tp, "3連複はオッズが出てから組む（オッズが出る前は◎の単複だけ）"
-    scratched = {int(h["number"]) for h in race.get("horses") or [] if h.get("number") is not None} - set(od)
+    scratched = ({int(h["number"]) for h in race.get("horses") or [] if h.get("number") is not None} - set(od)) if ready else set()
     cands = formation(pred, scratched)
     if not cands:
         return tp, ""
-    real = (trio or {}).get("3連複") or {}
     odds_of = {}
     for c in cands:
         k = "-".join(map(str, c))
         if real.get(k):
             odds_of[c] = (float(real[k]), "発表")
-        else:
+        elif ready:
             e = est_trio(od, c)
             if e:
                 odds_of[c] = (e, "推定")
