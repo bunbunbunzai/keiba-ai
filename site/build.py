@@ -654,8 +654,14 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
     for x in sc.get("hits", []) or []:
         hits.add(" ".join(x.split()[:2]))
     bets = "".join(
-        f"<li class='{'won' if f'{b['type']} {b['combo']}' in hits else ''}'>{esc(b['type'])} {esc(b['combo'])}</li>"
+        f"<li class='{'won' if f'{b['type']} {b['combo']}' in hits else ''}'>{esc(b['type'])} {esc(b['combo'])}"
+        + (f"<span class='bo'>{b['odds']:.1f}倍{'（推定）' if b.get('odds_src') == '推定' else ''}</span>" if isinstance(b.get("odds"), (int, float)) else "")
+        + "</li>"
         for b in p.get("bets", []))
+    if p.get("bet_note"):
+        bets_note = f"<p class='betnote'>{esc(p['bet_note'])}。" + ("推定は単勝オッズから計算した目安で、実際のオッズとは違う。" if "推定" in p["bet_note"] else "") + "</p>"
+    else:
+        bets_note = ""
     marks_html = "".join(
         f"<div class='m'><b>{m}</b><span>{esc(n)} {esc(horse_name(p, n))}</span></div>"
         for m in ("◎", "〇", "▲") for n in [p.get("marks", {}).get(m)] if n is not None)
@@ -759,7 +765,7 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
 <section class="card"><div class="marks">{marks_html}</div>{f"<p class='subs'>{esc(subs)}</p>" if subs else ''}
 <p>{term("confidence", "自信度")} <span class="conf c{esc(p.get('confidence'))}">{esc(p.get('confidence'))}</span></p>
 <h2>結論</h2>{plain_line(p)}<p class="sum">{esc(p.get('summary'))}</p>
-<h3>買い目（各100円・計{len(p.get('bets', []))}点）</h3><ul class="bets">{bets or '<li>買い目なし</li>'}</ul>{aff_rakuten('race') if not str(p['race_id']).startswith('jra_') and p.get('confidence') != '見送り' else ''}</section>
+<h3>買い目（各100円・計{len(p.get('bets', []))}点）</h3><ul class="bets">{bets or '<li>買い目なし</li>'}</ul>{bets_note}{aff_rakuten('race') if not str(p['race_id']).startswith('jra_') and p.get('confidence') != '見送り' else ''}</section>
 {res_html}
 <section class="card"><h2>{term("pace", "展開予想")}</h2><p>{esc(p.get('pace'))}</p></section>
 {bias_html}
@@ -1291,7 +1297,7 @@ ABOUT = f"""<h1>予想の方法</h1>{banner("about")}
 <li>展開利（×2）：想定ペースと脚質、枠順、当日の馬場の傾向</li>
 <li>状態・ローテ（×1）：間隔、休み明け、馬体重</li>
 <li>人的・その他（×1）：騎手、厩舎、斤量、血統</li></ul></section>
-<section class="card"><h2>印・自信度・買い目</h2><p>評価点の上位の馬には「勝つ確率の見積もり（想定勝率）」を付け、それに単勝オッズを掛けた値が1.2以上なら狙い目（妙味あり）、0.8未満なら人気しすぎ（過剰人気）と見る。印は◎（本命）〇（対抗）▲（単穴）△（連下）☆（穴）。自信度はA・B・C・見送りの4段階。2026年11月1日からは◎の想定勝率で決めている（A：40%以上、B：30〜39%、C：30%未満）。判断材料が足りないレースは「見送り」にして買い目を出さない。買い目は決まった組み方にしている：◎の単複1点（1〜2番人気は複勝、3〜5番人気は単勝、6番人気以下は買わない）と、自信度Aのレースだけ3連複フォーメーション（◎→〇▲→印全部）。自信度B・Cは◎の単複1点だけ（2026年11月7日から。それまでは全レースで3連複も買っていたが、BとCの3連複が回収率を大きく下げていた）。馬連・馬単・3連単・ワイドは使わない。◎を2番人気にするのは、1番人気より評価がはっきり高く、1番人気に具体的な不安があるときだけ。</p></section>
+<section class="card"><h2>印・自信度・買い目</h2><p>評価点の上位の馬には「勝つ確率の見積もり（想定勝率）」を付け、それに単勝オッズを掛けた値が1.2以上なら狙い目（妙味あり）、0.8未満なら人気しすぎ（過剰人気）と見る。印は◎（本命）〇（対抗）▲（単穴）△（連下）☆（穴）。自信度はA・B・C・見送りの4段階。2026年11月1日からは◎の想定勝率で決めている（A：40%以上、B：30〜39%、C：30%未満）。判断材料が足りないレースは「見送り」にして買い目を出さない。買い目は決まった組み方にしている：◎の単複1点（1〜2番人気は複勝、3〜5番人気は単勝、6番人気以下は買わない）と、自信度Aのレースだけ3連複フォーメーション（◎→〇▲→印全部）。自信度B・Cは◎の単複1点だけ（2026年11月7日から。それまでは全レースで3連複も買っていたが、BとCの3連複が回収率を大きく下げていた）。2026年11月8日からは買い目をオッズを見て組んでいる：3連複は、当たっても購入額の合計を下回る組み合わせ（トリガミ）を外し、3連複を買うときは複勝を買わない。オッズは、中央競馬は発走前に取り直す3連複の発表オッズ、地方競馬と発表前は単勝オッズからの推定（過去の配当で較正した目安）を使い、レースページの買い目の横に表示している。馬連・馬単・3連単・ワイドは使わない。◎を2番人気にするのは、1番人気より評価がはっきり高く、1番人気に具体的な不安があるときだけ。</p></section>
 <section class="card"><h2>当たらないこともある</h2><p>回収率は100%を下回っている。どこが弱いか、数字をどう見るかは<a href="/limits/">AI予想の限界と注意点</a>に正直に書いている。</p></section>
 <section class="card support-box"><h2>運営を支援する</h2><p>予想・集計・SNS投稿はすべて自動で動いていますが、サーバー代などの運営費は個人で負担しています。応援してもよいと思ったら、<a href="{OFUSE_URL}" target="_blank" rel="noopener">OFUSE（オフセ）</a>からファンレターと一緒に支援できます（コンビニ・PayPay・クレジットカード対応）。支援の有無で予想の内容や公開範囲は変わりません。</p><p><a class="btn" href="{OFUSE_URL}" target="_blank" rel="noopener">OFUSEで応援する</a></p></section>
 <section class="card"><h2>よくある質問</h2>
@@ -1416,6 +1422,7 @@ SITE_CHANGES = [
     ("2026-10-30", "レースごとの的中・回収率を、確定のたびに更新するようにした。初心者向けコラムの準備。"),
     ("2026-11-01", "サイト名を「競馬全頭ログ」に変更。XとInstagramへの自動投稿（的中・重賞・毎晩の全成績）を開始。コラム4本を公開。買い方別の回収率、週次の重賞回顧、馬別ページを追加。"),
     ("2026-11-02", "買い目の組み方を1つに決めた（◎の単勝か複勝を人気で切り替え＋3連複フォーメーション）。デザインを刷新。挿絵を追加。お問い合わせフォームと支援（OFUSE）の導線を設置。"),
+    ("2026-11-08", "買い目をオッズを見て組むようにした。3連複は当たっても購入額を下回る組み合わせ（トリガミ）を外し、3連複を買うときは複勝を買わない。レースページの買い目の横にオッズを表示。"),
     ("2026-11-07", "574レース分の成績から予想ルールを見直した。3連複は自信度Aのレースだけに絞り、2番人気を本命にする基準を厳しくし、当日朝にオッズで前日予想を見直す回を追加。初めて訪れた人向けに、全頭くんがサイトの見方を案内するポップアップを追加。地方競馬のオッズの読み取りの不具合も直した。"),
     ("2026-11-04", "公式キャラクター「全頭くん」が登場。レースページ右下のボタンから、そのレースについて全頭くんに質問できるようにした。結果欄の振り返りも全頭くんが担当。サイト全体の言葉づかいを、初めての人にも分かる表現に見直した。"),
     ("2026-11-03", "コラムを21本追加（AI予想は当たるのか、3連複フォーメーション、単勝と複勝、期待値買い、自信度、中央と地方、2番人気の本命、予想ページの見方、ばんえい競馬、脚質別・枠順別・オッズ別・頭数別・馬体重別・間隔別の勝率、点数計算早見表、ChatGPTでの予想、地方競馬のネット投票、馬連・馬単・ワイド、トリガミ、当たらない理由）。数字はすべて実データから自動更新。"),
@@ -1601,6 +1608,7 @@ h1 small{display:block;font-size:14px;color:var(--mut);font-family:"BIZ UDPGothi
 .prefs .theme{border:1px solid var(--line);background:var(--panel);color:var(--fg);border-radius:2px;padding:2px 10px;font:inherit;font-size:12px;cursor:pointer}
 th.sortable{cursor:pointer;user-select:none}th.sortable:hover{color:var(--acc)}th[data-dir=asc]::after{content:" ▲";font-size:10px}th[data-dir=desc]::after{content:" ▼";font-size:10px}
 .cd{color:var(--acc);font-weight:700}
+.bets .bo{margin-left:.5em;font-size:12px;color:var(--mut);font-weight:400}.betnote{font-size:13px;color:var(--mut);margin:6px 0 0;line-height:1.6}
 .zkw-bg{position:fixed;inset:0;z-index:80;background:rgba(10,20,14,.45);display:flex;align-items:center;justify-content:center;padding:16px}
 .zkw{position:relative;width:420px;max-width:100%;background:var(--panel);color:var(--fg);border-radius:18px;padding:20px 20px 16px;box-shadow:0 16px 40px rgba(0,0,0,.3);border-top:6px solid var(--acc)}
 .zkw .zkw-in{display:flex;gap:14px;align-items:flex-start}.zkw img{flex:none;width:96px;height:96px}

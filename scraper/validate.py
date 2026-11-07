@@ -48,7 +48,29 @@ def check(pred: dict, race: dict | None) -> list[str]:
             errs.append(f"{t} {c} に出走していない馬番")
         elif len(set(parts)) != len(parts):
             errs.append(f"{t} {c} に同じ番号が重複")
+    types = {b.get("type") for b in bets}
+    if "3連複" in types and pred.get("confidence") != "A":
+        errs.append("3連複は自信度Aのレースだけ")
+    if "3連複" in types and "複勝" in types:
+        errs.append("3連複を買うときは複勝を買わない")
     return errs
+
+
+def check_bets(pred: dict, race: dict | None, date: str) -> list[str]:
+    """買い目が bets.py の組み方（オッズを見てトリガミの組み合わせを外す）と同じか。発走20分前を過ぎたレースは見ない。"""
+    if not race:
+        return []
+    from datetime import datetime, timedelta
+
+    import bets as BT
+
+    post = BT._post_dt(date, race)
+    if post is not None and datetime.now(BT.JST) > post - timedelta(minutes=BT.LOCK_MIN):
+        return []
+    want, _ = BT.build(pred, race, BT.load_trio(date, pred.get("race_id")))
+    if not BT._same(pred.get("bets") or [], want):
+        return [f"買い目が型と違う（python bets.py --date {date} --write で直す）"]
+    return []
 
 
 if __name__ == "__main__":
@@ -66,7 +88,7 @@ if __name__ == "__main__":
             continue
         rf = DATA_DIR / "races" / d / f"{pred.get('race_id')}.json"
         race = json.loads(rf.read_text(encoding="utf-8")) if rf.exists() else None
-        errs = check(pred, race) + ([] if race else ["出馬表データがない（race_id を確認）"])
+        errs = check(pred, race) + ([] if race else ["出馬表データがない（race_id を確認）"]) + check_bets(pred, race, d)
         if errs:
             bad += 1
             print(f"NG {f.name}: " + " / ".join(errs))

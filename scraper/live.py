@@ -60,7 +60,7 @@ def deploy() -> None:
 
 
 def push(date: str, n: int) -> None:
-    sh("git", "add", "-A", "data", "results_ledger.csv")
+    sh("git", "add", "-A", "data", "results_ledger.csv", "predictions")
     if sh("git", "diff", "--cached", "--quiet").returncode == 0:
         return
     sh("git", "commit", "-m", f"live {date} {now():%H:%M} 確定{n}R")
@@ -112,6 +112,67 @@ class Interleaver:
         self.last = time.monotonic()
 
 
+BET_WINDOW = (22, 90)   # 発走の90〜22分前の自信度Aのレースは、オッズを取り直して買い目を組み直す
+ODDS_MAX_AGE = 20       # 発表オッズは20分たったら取り直す
+_card_fetched: dict[str, float] = {}
+
+
+def refresh_bets(date: str) -> bool:
+    """発走が近い自信度Aのレースについて、オッズ（中央は3連複の発表オッズ、地方は単勝オッズ）を取り直し、
+    bets.py で買い目を組み直す。書き換えたら True。"""
+    import bets as BT
+    import combo_odds as CO
+
+    t = now()
+    jra_ids, local_ids, all_ids = [], [], []
+    for f in sorted((ROOT / "predictions" / date).glob("*.json")):
+        try:
+            p = json.loads(f.read_text(encoding="utf-8"))
+        except Exception:  # noqa: BLE001
+            continue
+        if p.get("confidence") != "A":
+            continue
+        rid = p.get("race_id")
+        rf = DATA_DIR / "races" / date / f"{rid}.json"
+        if not rf.exists():
+            continue
+        post = BT._post_dt(date, json.loads(rf.read_text(encoding="utf-8")))
+        if post is None or not (BET_WINDOW[0] < (post - t).total_seconds() / 60 <= BET_WINDOW[1]):
+            continue
+        all_ids.append(rid)
+        if rid.startswith("jra_"):
+            tr = BT.load_trio(date, rid)
+            age = (t - datetime.fromisoformat(tr["fetched_ts"])).total_seconds() / 60 if tr and tr.get("fetched_ts") else 1e9
+            if age > ODDS_MAX_AGE:
+                jra_ids.append(rid)
+        elif time.monotonic() - _card_fetched.get(rid, -1e9) > ODDS_MAX_AGE * 60:
+            local_ids.append(rid)
+    if not all_ids:
+        return False
+    if jra_ids:
+        try:
+            CO.jra(date, jra_ids)
+        except Exception as e:  # noqa: BLE001
+            print("combo_odds error:", e)
+    if local_ids and not daily_running():
+        try:  # 地方は出馬表を取り直して単勝オッズを新しくする（楽天の60秒間隔を守る）
+            import rakuten
+            from common import PoliteSession, save_raw
+
+            sess = PoliteSession(min_interval=61.0)
+            time.sleep(61)
+            for rid in local_ids:
+                html = sess.get(rakuten.BASE + rakuten.PAGES["card"].format(rid=rid)).text
+                save_raw("rakuten_card", date, rid, html)
+                _card_fetched[rid] = time.monotonic()
+            sh("python", "scraper/parse_rakuten.py", "--date", date)
+        except Exception as e:  # noqa: BLE001
+            print("rakuten card error:", e)
+    changed = BT.apply(date, all_ids, write=True)
+    print(f"{now():%H:%M} 買い目の組み直し {len(all_ids)}R（変更 {len(changed)}R）")
+    return True
+
+
 def cycle(date: str) -> None:
     import results
 
@@ -127,7 +188,14 @@ def cycle(date: str) -> None:
             results.rakuten(date, finished_only=True, local=True, after_min=8)
         except Exception as e:  # noqa: BLE001
             print("rakuten error:", e)
-    flush(date, before)
+    touched = False
+    try:
+        touched = refresh_bets(date)
+    except Exception as e:  # noqa: BLE001
+        print("refresh_bets error:", e)
+    after = flush(date, before)
+    if touched and after == before:  # 結果が増えていなくても、買い目を変えたら push する
+        push(date, after)
 
 
 def main() -> None:
