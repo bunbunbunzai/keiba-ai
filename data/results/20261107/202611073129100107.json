@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261107",
  "race_id": "202611073129100107",
- "tries": 4,
+ "tries": 6,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "ヴァルドルチャ",
    "time": "1:47.8",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 40.8,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "クリュメノス",
    "time": "1:48.7",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 40.4,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "クラックミーアップ",
    "time": "1:48.8",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 41.3,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "サンライズジャッジ",
    "time": "1:49.0",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 41.2,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "エメヴィベール",
    "time": "1:50.1",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 41.7,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "グランマイース",
    "time": "1:50.5",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 42.9,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "エンドレスバンカー",
    "time": "1:52.2",
    "margin": "８",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 43.5,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "シェルブールレイン",
    "time": "1:52.9",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 44.6,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "スマイル",
    "time": "1:55.4",
    "margin": "大差",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 46.1,
    "popularity": null
   }
  ]
