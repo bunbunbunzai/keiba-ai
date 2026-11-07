@@ -1,0 +1,198 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 5,
+   "name": "ブリスブリンク",
+   "time": "1:37.2",
+   "margin": "",
+   "corners": "1-1",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 10,
+   "name": "レヴフィリア",
+   "time": "1:38.4",
+   "margin": "７",
+   "corners": "2-2",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "number": 7,
+   "name": "ルージュロマーナ",
+   "time": "1:38.7",
+   "margin": "２",
+   "corners": "7-6",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "number": 9,
+   "name": "チャームドール",
+   "time": "1:38.8",
+   "margin": "１／２",
+   "corners": "3-3",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "number": 8,
+   "name": "アイファーエリース",
+   "time": "1:38.9",
+   "margin": "１／２",
+   "corners": "5-5",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "6",
+   "number": 2,
+   "name": "エンドクレジット",
+   "time": "1:40.2",
+   "margin": "８",
+   "corners": "8-8",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "7",
+   "number": 1,
+   "name": "ヴァルガルデーナ",
+   "time": "1:40.8",
+   "margin": "３ 1/2",
+   "corners": "8-8",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "8",
+   "number": 4,
+   "name": "アリアニコ",
+   "time": "1:40.9",
+   "margin": "３／４",
+   "corners": "3-3",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "9",
+   "number": 11,
+   "name": "パネヴァ",
+   "time": "1:41.1",
+   "margin": "３／４",
+   "corners": "10-10",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "10",
+   "number": 3,
+   "name": "ピトンピンク",
+   "time": "1:41.3",
+   "margin": "１ 1/2",
+   "corners": "11-10",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "11",
+   "number": 6,
+   "name": "ハーモニープルーフ",
+   "time": "1:41.4",
+   "margin": "３／４",
+   "corners": "5-7",
+   "last3f": null,
+   "popularity": 5
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "5",
+    "yen": 130,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "5",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "10",
+    "yen": 120,
+    "pop": 3
+   },
+   {
+    "combo": "7",
+    "yen": 120,
+    "pop": 2
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-8",
+    "yen": 410,
+    "pop": 3
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "5-10",
+    "yen": 180,
+    "pop": 2
+   },
+   {
+    "combo": "5-7",
+    "yen": 170,
+    "pop": 1
+   },
+   {
+    "combo": "7-10",
+    "yen": 310,
+    "pop": 4
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "5-10",
+    "yen": 430,
+    "pop": 2
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "5-10",
+    "yen": 520,
+    "pop": 2
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "5-7-10",
+    "yen": 530,
+    "pop": 1
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "5-10-7",
+    "yen": 1500,
+    "pop": 3
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261107",
+ "venue_code": "05",
+ "race_no": 1,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605010120261107/9F",
+ "title": "レース結果 JRA"
+}

@@ -1,0 +1,238 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 4,
+   "name": "ティエルニート",
+   "time": "1:47.6",
+   "margin": "",
+   "corners": "2-2-2-2",
+   "last3f": 37.9,
+   "popularity": 8
+  },
+  {
+   "finish": "2",
+   "number": 2,
+   "name": "アフィーリア",
+   "time": "1:47.7",
+   "margin": "１／２",
+   "corners": "1-1-1-1",
+   "last3f": 38.1,
+   "popularity": 5
+  },
+  {
+   "finish": "3",
+   "number": 8,
+   "name": "アルフェラッツ",
+   "time": "1:47.8",
+   "margin": "１／２",
+   "corners": "4-4-4-3",
+   "last3f": 37.9,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "number": 7,
+   "name": "フィールザウィル",
+   "time": "1:47.8",
+   "margin": "アタマ",
+   "corners": "3-3-3-3",
+   "last3f": 38.0,
+   "popularity": 1
+  },
+  {
+   "finish": "5",
+   "number": 5,
+   "name": "マルジョレーヌ",
+   "time": "1:48.1",
+   "margin": "１ 3/4",
+   "corners": "4-4-4-3",
+   "last3f": 38.2,
+   "popularity": 10
+  },
+  {
+   "finish": "6",
+   "number": 15,
+   "name": "ヴィシーチェック",
+   "time": "1:48.4",
+   "margin": "１ 3/4",
+   "corners": "10-7-7-7",
+   "last3f": 38.2,
+   "popularity": 4
+  },
+  {
+   "finish": "7",
+   "number": 12,
+   "name": "カフジペピーノ",
+   "time": "1:48.6",
+   "margin": "１ 1/4",
+   "corners": "11-14-12-11",
+   "last3f": 38.0,
+   "popularity": 11
+  },
+  {
+   "finish": "8",
+   "number": 3,
+   "name": "クリコキアナ",
+   "time": "1:48.8",
+   "margin": "１ 1/2",
+   "corners": "7-7-10-9",
+   "last3f": 38.3,
+   "popularity": 3
+  },
+  {
+   "finish": "9",
+   "number": 10,
+   "name": "メネルブ",
+   "time": "1:48.9",
+   "margin": "クビ",
+   "corners": "12-11-14-11",
+   "last3f": 38.1,
+   "popularity": 12
+  },
+  {
+   "finish": "10",
+   "number": 1,
+   "name": "キタノリキュール",
+   "time": "1:48.9",
+   "margin": "クビ",
+   "corners": "7-7-7-7",
+   "last3f": 38.7,
+   "popularity": 9
+  },
+  {
+   "finish": "11",
+   "number": 6,
+   "name": "ヴァンデエス",
+   "time": "1:49.0",
+   "margin": "１／２",
+   "corners": "4-4-4-3",
+   "last3f": 39.1,
+   "popularity": 15
+  },
+  {
+   "finish": "12",
+   "number": 14,
+   "name": "ブーケフォーミー",
+   "time": "1:49.3",
+   "margin": "１ 3/4",
+   "corners": "12-11-9-9",
+   "last3f": 39.0,
+   "popularity": 13
+  },
+  {
+   "finish": "13",
+   "number": 11,
+   "name": "ジェミニディウ",
+   "time": "1:50.2",
+   "margin": "５",
+   "corners": "12-11-12-11",
+   "last3f": 39.6,
+   "popularity": 7
+  },
+  {
+   "finish": "14",
+   "number": 13,
+   "name": "コウユーキミガイテ",
+   "time": "1:50.3",
+   "margin": "１",
+   "corners": "7-10-10-14",
+   "last3f": 39.8,
+   "popularity": 6
+  },
+  {
+   "finish": "15",
+   "number": 9,
+   "name": "コルヴィリア",
+   "time": "1:50.8",
+   "margin": "２ 1/2",
+   "corners": "15-15-15-15",
+   "last3f": 39.6,
+   "popularity": 14
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "4",
+    "yen": 3110,
+    "pop": 8
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "4",
+    "yen": 1980,
+    "pop": 8
+   },
+   {
+    "combo": "2",
+    "yen": 570,
+    "pop": 4
+   },
+   {
+    "combo": "8",
+    "yen": 440,
+    "pop": 2
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-3",
+    "yen": 5130,
+    "pop": 17
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-4",
+    "yen": 3370,
+    "pop": 29
+   },
+   {
+    "combo": "4-8",
+    "yen": 2650,
+    "pop": 26
+   },
+   {
+    "combo": "2-8",
+    "yen": 1100,
+    "pop": 12
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-4",
+    "yen": 16720,
+    "pop": 30
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "4-2",
+    "yen": 44440,
+    "pop": 66
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-4-8",
+    "yen": 27800,
+    "pop": 64
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "4-2-8",
+    "yen": 304300,
+    "pop": 487
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261107",
+ "venue_code": "03",
+ "race_no": 1,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603010120261107/A9",
+ "title": "レース結果 JRA"
+}
