@@ -1,0 +1,188 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 9,
+   "name": "ブルージェイ",
+   "time": "1:21.3",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 2,
+   "name": "フレイコン",
+   "time": "1:21.3",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "number": 5,
+   "name": "グルーヴェンス",
+   "time": "1:21.4",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "4",
+   "number": 8,
+   "name": "ジオパークカツキ",
+   "time": "1:21.5",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "5",
+   "number": 3,
+   "name": "ニシノトラノスケ",
+   "time": "1:21.7",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "6",
+   "number": 7,
+   "name": "シルバーノリダー",
+   "time": "1:21.8",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "7",
+   "number": 4,
+   "name": "ノーセット",
+   "time": "1:22.1",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "8",
+   "number": 10,
+   "name": "ロンドンガーズ",
+   "time": "1:22.2",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "9",
+   "number": 6,
+   "name": "インパルスドライブ",
+   "time": "1:23.7",
+   "margin": "９",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "10",
+   "number": 1,
+   "name": "アテナブレイブ",
+   "time": "1:24.1",
+   "margin": "２ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "9",
+    "yen": 280,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "9",
+    "yen": 130,
+    "pop": 1
+   },
+   {
+    "combo": "2",
+    "yen": 140,
+    "pop": 2
+   },
+   {
+    "combo": "5",
+    "yen": 320,
+    "pop": 7
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-8",
+    "yen": 450,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-9",
+    "yen": 250,
+    "pop": 1
+   },
+   {
+    "combo": "5-9",
+    "yen": 670,
+    "pop": 10
+   },
+   {
+    "combo": "2-5",
+    "yen": 1050,
+    "pop": 17
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-9",
+    "yen": 580,
+    "pop": 1
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "9-2",
+    "yen": 1010,
+    "pop": 1
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-5-9",
+    "yen": 2590,
+    "pop": 10
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "9-2-5",
+    "yen": 8680,
+    "pop": 22
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261107",
+ "venue_code": "05",
+ "race_no": 11,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605011120261107/F1",
+ "title": "レース結果 JRA"
+}
