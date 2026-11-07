@@ -1,0 +1,218 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 1,
+   "name": "エコロヴォルグ",
+   "time": "1:18.7",
+   "margin": "",
+   "corners": "4-3",
+   "last3f": 36.6,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 12,
+   "name": "セイリュウ",
+   "time": "1:20.1",
+   "margin": "９",
+   "corners": "5-5",
+   "last3f": 37.7,
+   "popularity": 7
+  },
+  {
+   "finish": "3",
+   "number": 5,
+   "name": "ハイトラクション",
+   "time": "1:20.2",
+   "margin": "クビ",
+   "corners": "5-5",
+   "last3f": 37.8,
+   "popularity": 4
+  },
+  {
+   "finish": "4",
+   "number": 10,
+   "name": "ベールダウン",
+   "time": "1:20.2",
+   "margin": "クビ",
+   "corners": "1-1",
+   "last3f": 38.6,
+   "popularity": 6
+  },
+  {
+   "finish": "5",
+   "number": 13,
+   "name": "ポッドエステラ",
+   "time": "1:20.4",
+   "margin": "１ 1/4",
+   "corners": "2-2",
+   "last3f": 38.5,
+   "popularity": 2
+  },
+  {
+   "finish": "6",
+   "number": 11,
+   "name": "マオスカイシー",
+   "time": "1:20.6",
+   "margin": "１ 1/4",
+   "corners": "10-10",
+   "last3f": 37.7,
+   "popularity": 8
+  },
+  {
+   "finish": "7",
+   "number": 7,
+   "name": "イキデイナセ",
+   "time": "1:20.6",
+   "margin": "ハナ",
+   "corners": "2-3",
+   "last3f": 38.6,
+   "popularity": 9
+  },
+  {
+   "finish": "8",
+   "number": 3,
+   "name": "イチザサンダー",
+   "time": "1:20.8",
+   "margin": "１",
+   "corners": "12-13",
+   "last3f": 36.8,
+   "popularity": 12
+  },
+  {
+   "finish": "9",
+   "number": 9,
+   "name": "ワイドカリオン",
+   "time": "1:20.9",
+   "margin": "１／２",
+   "corners": "7-7",
+   "last3f": 38.2,
+   "popularity": 5
+  },
+  {
+   "finish": "10",
+   "number": 6,
+   "name": "ユイノジカンカセギ",
+   "time": "1:21.3",
+   "margin": "２ 1/2",
+   "corners": "10-10",
+   "last3f": 38.4,
+   "popularity": 10
+  },
+  {
+   "finish": "11",
+   "number": 8,
+   "name": "モーモーワン",
+   "time": "1:21.7",
+   "margin": "２ 1/2",
+   "corners": "7-7",
+   "last3f": 39.1,
+   "popularity": 11
+  },
+  {
+   "finish": "12",
+   "number": 2,
+   "name": "ワンダリングスター",
+   "time": "1:23.2",
+   "margin": "９",
+   "corners": "12-12",
+   "last3f": 39.7,
+   "popularity": 13
+  },
+  {
+   "finish": "13",
+   "number": 4,
+   "name": "スパーキー",
+   "time": "1:24.5",
+   "margin": "８",
+   "corners": "7-7",
+   "last3f": 41.8,
+   "popularity": 3
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "1",
+    "yen": 120,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "1",
+    "yen": 100,
+    "pop": 1
+   },
+   {
+    "combo": "12",
+    "yen": 420,
+    "pop": 7
+   },
+   {
+    "combo": "5",
+    "yen": 170,
+    "pop": 3
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-8",
+    "yen": 300,
+    "pop": 2
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-12",
+    "yen": 520,
+    "pop": 5
+   },
+   {
+    "combo": "1-5",
+    "yen": 190,
+    "pop": 1
+   },
+   {
+    "combo": "5-12",
+    "yen": 2030,
+    "pop": 19
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-12",
+    "yen": 1680,
+    "pop": 6
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "1-12",
+    "yen": 2060,
+    "pop": 7
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-5-12",
+    "yen": 2620,
+    "pop": 8
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "1-12-5",
+    "yen": 9280,
+    "pop": 30
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261107",
+ "venue_code": "05",
+ "race_no": 2,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605010220261107/54",
+ "title": "レース結果 JRA"
+}

@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 11,
+   "name": "プリンキピッサ",
+   "time": "1:21.7",
+   "margin": "",
+   "corners": "11-9",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "number": 13,
+   "name": "アルジャンレオ",
+   "time": "",
+   "margin": "ハナ",
+   "corners": "6-6",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "3",
+   "number": 14,
+   "name": "ウォーターガルーダ",
+   "time": "",
+   "margin": "１ 1/2",
+   "corners": "11-12",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "number": 10,
+   "name": "リボンロゼッタ",
+   "time": "",
+   "margin": "クビ",
+   "corners": "4-4",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "5",
+   "number": 5,
+   "name": "スイートブルース",
+   "time": "",
+   "margin": "１／２",
+   "corners": "4-4",
+   "last3f": null,
+   "popularity": 6
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "11",
+    "yen": 430,
+    "pop": 2
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "11",
+    "yen": 150,
+    "pop": 2
+   },
+   {
+    "combo": "13",
+    "yen": 280,
+    "pop": 5
+   },
+   {
+    "combo": "14",
+    "yen": 150,
+    "pop": 3
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "6-7",
+    "yen": 1610,
+    "pop": 6
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "11-13",
+    "yen": 650,
+    "pop": 6
+   },
+   {
+    "combo": "11-14",
+    "yen": 420,
+    "pop": 3
+   },
+   {
+    "combo": "13-14",
+    "yen": 1030,
+    "pop": 14
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "11-13",
+    "yen": 1950,
+    "pop": 6
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "11-13",
+    "yen": 3660,
+    "pop": 11
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "11-13-14",
+    "yen": 3030,
+    "pop": 9
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "11-13-14",
+    "yen": 17330,
+    "pop": 46
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261107",
+ "venue_code": "08",
+ "race_no": 2,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605010220261107/32",
+ "title": "レース結果 JRA"
+}

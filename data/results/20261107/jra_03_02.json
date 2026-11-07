@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 9,
+   "name": "ジーフォーリア",
+   "time": "2:02.4",
+   "margin": "",
+   "corners": "8-8-4-1",
+   "last3f": 36.8,
+   "popularity": 4
+  },
+  {
+   "finish": "2",
+   "number": 8,
+   "name": "アモロロプーロ",
+   "time": "2:03.2",
+   "margin": "５",
+   "corners": "15-15-13-7",
+   "last3f": 36.9,
+   "popularity": 10
+  },
+  {
+   "finish": "3",
+   "number": 13,
+   "name": "ラインディアーナ",
+   "time": "2:03.3",
+   "margin": "３／４",
+   "corners": "10-11-8-3",
+   "last3f": 37.4,
+   "popularity": 13
+  },
+  {
+   "finish": "4",
+   "number": 5,
+   "name": "プリズンブレイク",
+   "time": "2:03.5",
+   "margin": "１",
+   "corners": "13-14-13-11",
+   "last3f": 37.2,
+   "popularity": 7
+  },
+  {
+   "finish": "5",
+   "number": 1,
+   "name": "プレシャスタイム",
+   "time": "2:03.6",
+   "margin": "３／４",
+   "corners": "1-1-1-2",
+   "last3f": 38.3,
+   "popularity": 1
+  },
+  {
+   "finish": "6",
+   "number": 7,
+   "name": "サーギュスターヴ",
+   "time": "2:03.7",
+   "margin": "クビ",
+   "corners": "5-6-8-8",
+   "last3f": 37.7,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "number": 2,
+   "name": "ハルカカナタ",
+   "time": "2:04.3",
+   "margin": "４",
+   "corners": "7-8-6-8",
+   "last3f": 38.5,
+   "popularity": 3
+  },
+  {
+   "finish": "8",
+   "number": 6,
+   "name": "コスモコリウス",
+   "time": "2:04.8",
+   "margin": "３",
+   "corners": "3-3-4-3",
+   "last3f": 39.2,
+   "popularity": 9
+  },
+  {
+   "finish": "9",
+   "number": 10,
+   "name": "リバーススイープ",
+   "time": "2:05.0",
+   "margin": "１ 1/4",
+   "corners": "12-11-12-12",
+   "last3f": 38.8,
+   "popularity": 6
+  },
+  {
+   "finish": "10",
+   "number": 12,
+   "name": "ゴルタン",
+   "time": "2:05.0",
+   "margin": "アタマ",
+   "corners": "13-11-8-8",
+   "last3f": 39.0,
+   "popularity": 14
+  },
+  {
+   "finish": "11",
+   "number": 16,
+   "name": "エーテルワーム",
+   "time": "2:05.8",
+   "margin": "５",
+   "corners": "5-3-2-3",
+   "last3f": 40.5,
+   "popularity": 8
+  },
+  {
+   "finish": "12",
+   "number": 14,
+   "name": "インヴィディア",
+   "time": "2:06.0",
+   "margin": "１ 1/4",
+   "corners": "10-6-2-3",
+   "last3f": 40.6,
+   "popularity": 2
+  },
+  {
+   "finish": "13",
+   "number": 4,
+   "name": "アーバンアート",
+   "time": "2:06.7",
+   "margin": "４",
+   "corners": "16-16-16-16",
+   "last3f": 39.7,
+   "popularity": 16
+  },
+  {
+   "finish": "14",
+   "number": 3,
+   "name": "コイゾラ",
+   "time": "2:07.9",
+   "margin": "７",
+   "corners": "8-10-13-14",
+   "last3f": 41.6,
+   "popularity": 15
+  },
+  {
+   "finish": "15",
+   "number": 15,
+   "name": "ジュンアマンドラ",
+   "time": "2:08.1",
+   "margin": "１ 1/2",
+   "corners": "3-3-6-13",
+   "last3f": 42.4,
+   "popularity": 12
+  },
+  {
+   "finish": "16",
+   "number": 11,
+   "name": "アーデルプレミア",
+   "time": "2:10.1",
+   "margin": "大差",
+   "corners": "2-2-8-15",
+   "last3f": 44.1,
+   "popularity": 11
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "9",
+    "yen": 780,
+    "pop": 4
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "9",
+    "yen": 300,
+    "pop": 3
+   },
+   {
+    "combo": "8",
+    "yen": 800,
+    "pop": 10
+   },
+   {
+    "combo": "13",
+    "yen": 1580,
+    "pop": 13
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-5",
+    "yen": 1650,
+    "pop": 9
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "8-9",
+    "yen": 3140,
+    "pop": 43
+   },
+   {
+    "combo": "9-13",
+    "yen": 5650,
+    "pop": 59
+   },
+   {
+    "combo": "8-13",
+    "yen": 19440,
+    "pop": 93
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "8-9",
+    "yen": 10130,
+    "pop": 40
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "9-8",
+    "yen": 16380,
+    "pop": 71
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "8-9-13",
+    "yen": 164550,
+    "pop": 304
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "9-8-13",
+    "yen": 729320,
+    "pop": 1547
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261107",
+ "venue_code": "03",
+ "race_no": 2,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603010220261107/5E",
+ "title": "レース結果 JRA"
+}
