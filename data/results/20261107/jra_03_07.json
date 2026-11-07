@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 9,
+   "name": "フロムレイブン",
+   "time": "1:09.8",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 4,
+   "name": "グレイシエーション",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "3",
+   "number": 10,
+   "name": "キャナルクルーズ",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "4",
+   "number": 3,
+   "name": "セゾンデフィーユ",
+   "time": "",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "5",
+   "number": 1,
+   "name": "プリュノワール",
+   "time": "",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "9",
+    "yen": 270,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "9",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "4",
+    "yen": 210,
+    "pop": 3
+   },
+   {
+    "combo": "10",
+    "yen": 260,
+    "pop": 5
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-5",
+    "yen": 320,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-9",
+    "yen": 450,
+    "pop": 2
+   },
+   {
+    "combo": "9-10",
+    "yen": 500,
+    "pop": 3
+   },
+   {
+    "combo": "4-10",
+    "yen": 1300,
+    "pop": 17
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-9",
+    "yen": 1010,
+    "pop": 2
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "9-4",
+    "yen": 1470,
+    "pop": 2
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-9-10",
+    "yen": 3080,
+    "pop": 6
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "9-4-10",
+    "yen": 8530,
+    "pop": 9
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261107",
+ "venue_code": "03",
+ "race_no": 7,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603010720261107/E7",
+ "title": "レース結果 JRA"
+}

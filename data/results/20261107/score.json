@@ -1,14 +1,14 @@
 {
  "date": "20261107",
- "updated": "2026-11-07 13:04",
+ "updated": "2026-11-07 13:14",
  "races_total": 71,
- "races_scored": 18,
- "stake": 12800,
- "return": 2390,
- "roi": 18.7,
- "hit_races": 7,
- "honmei_win": 8,
- "honmei_top3": 10,
+ "races_scored": 19,
+ "stake": 12900,
+ "return": 2500,
+ "roi": 19.4,
+ "hit_races": 8,
+ "honmei_win": 9,
+ "honmei_top3": 11,
  "races": [
   {
    "race_id": "202611070304160201",
@@ -924,7 +924,21 @@
   },
   {
    "race_id": "jra_20261107_福島_07",
-   "status": "結果未取得"
+   "confidence": "B",
+   "honmei": 9,
+   "honmei_finish": "1",
+   "top3": [
+    9,
+    4,
+    10
+   ],
+   "stake": 100,
+   "return": 110,
+   "roi": 110.0,
+   "hits": [
+    "複勝 9 110円"
+   ],
+   "voided": false
   },
   {
    "race_id": "jra_20261107_福島_08",
