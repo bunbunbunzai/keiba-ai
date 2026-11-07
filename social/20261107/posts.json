@@ -481,11 +481,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/07/obihiro/10r/",
    "created": "2026-11-07 20:48",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2119034559035552021",
    "x_at": "2026-11-07 20:49",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AIBpXUeIvVIKlV9wh-IZRbs'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A17dIX8cZNNkNnnwi1vYqDU'}",
+   "instagram_tries": 3
   },
   "hit-202611073129100110": {
    "kind": "hit",
@@ -499,11 +499,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/07/kochi/10r/",
    "created": "2026-11-07 20:48",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2119034563104014846",
    "x_at": "2026-11-07 20:49",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AYXyXL_WxHfOGI7MXzmEvdV'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AK5Kzb_90WQnZ_F5L7AGaDu'}",
+   "instagram_tries": 3
   },
   "hit-202611073230130107": {
    "kind": "hit",
@@ -517,11 +517,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/07/saga/07r/",
    "created": "2026-11-07 20:48",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2119034567013072960",
    "x_at": "2026-11-07 20:49",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A6NoB-oNZBij3noIs9JwOVi'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A6PN7YTwKPd1YzZU90010V8'}",
+   "instagram_tries": 3
   },
   "sum-20261107": {
    "kind": "summary",
@@ -536,8 +536,12 @@
    "ig_caption": "【11/7 AI予想の全成績】\n京都・佐賀・帯広・東京・福島・高知の66レース\n的中31（うちプラス18）／当日回収率31.2%\n収支-14,320円（各点100円・外れも含む）\n最高：東京4R 払戻1,020円\n累計回収率63.7%\n\nこの日の全レースの予想と成績 → www.ai-keiba-log.com/2026/11/07/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#競馬予想 #中央競馬 #地方競馬 #AI予想 #回収率 #競馬 #競馬全頭ログ",
    "url": "https://www.ai-keiba-log.com/2026/11/07/",
    "created": "2026-11-07 21:44",
-   "x": "pending",
-   "instagram": "pending"
+   "x": "posted",
+   "instagram": "pending",
+   "x_id": "2119048737100050463",
+   "x_at": "2026-11-07 21:46",
+   "instagram_error": "item 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AM2qJkZ7RHmfY4dl8bO1FzT'}",
+   "instagram_tries": 1
   }
  }
 }
