@@ -130,11 +130,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/07/kyoto/07r/",
    "created": "2026-11-07 14:44",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2118942930090033239",
    "x_at": "2026-11-07 14:45",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AK1Sa4uPuVQvCJyNz4BRvze'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AINWVht8dip55J1NNY5IZqz'}",
+   "instagram_tries": 3
   },
   "res-jra_20261107_京都_08": {
    "kind": "grade_res",
@@ -148,11 +148,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/07/kyoto/08r/",
    "created": "2026-11-07 14:44",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2118942934762496003",
    "x_at": "2026-11-07 14:45",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AJeJ6GK4losc3ToRkz0f5ED'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'ApQUA-0cRgIbt74btql46q_'}",
+   "instagram_tries": 3
   },
   "hit-jra_20261107_東京_08": {
    "kind": "hit",
@@ -166,11 +166,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/07/tokyo/08r/",
    "created": "2026-11-07 14:44",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2118942937987821967",
    "x_at": "2026-11-07 14:45",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'APGFxy1MKZ279g3JgE6HaFN'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A2W2UqkCQEiWpFk5kHtD8ce'}",
+   "instagram_tries": 3
   },
   "hit-jra_20261107_東京_09": {
    "kind": "hit",
@@ -184,11 +184,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/07/tokyo/09r/",
    "created": "2026-11-07 14:44",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2118942940957491434",
    "x_at": "2026-11-07 14:45",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AVNd0bAvs00YeNEgAg0Qyby'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AVhkOl86UUq90oE7FAToGnj'}",
+   "instagram_tries": 3
   },
   "pre-jra_20261107_東京_11": {
    "kind": "grade_pre",
@@ -206,7 +206,7 @@
    "url": "https://www.ai-keiba-log.com/2026/11/07/tokyo/11r/",
    "created": "2026-11-07 14:44",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2118942944191226200",
    "x_at": "2026-11-07 14:45",
    "x_thread_ids": [
@@ -214,8 +214,8 @@
     "2118942947135656379",
     "2118942948213576099"
    ],
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AuwKvnMSbv5HIdCQPAUcZR5'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A-yJqYwrfMpLwxWjG07RRYe'}",
+   "instagram_tries": 3
   },
   "hit-jra_20261107_福島_07": {
    "kind": "hit",
@@ -229,11 +229,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/07/fukushima/07r/",
    "created": "2026-11-07 14:44",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2118942950910562498",
    "x_at": "2026-11-07 14:45",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AW43VnrxLOT9QmpjRJp5Tb4'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AKKwaH7LKwLWkr_FbC2krCF'}",
+   "instagram_tries": 3
   },
   "hit-jra_20261107_福島_08": {
    "kind": "hit",
@@ -247,11 +247,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/07/fukushima/08r/",
    "created": "2026-11-07 14:44",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2118942954152657069",
    "x_at": "2026-11-07 14:45",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A1eHV8FBBx9kcSu5AwWWmXY'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'ArUwR4G11eapLXj2qGXvP1s'}",
+   "instagram_tries": 3
   }
  }
 }
