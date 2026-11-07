@@ -132,7 +132,10 @@ def parse_card(html: str, race_id: str) -> dict:
         main = name_td.find("span", class_="mainHorse")
         nl = lines(name_td)
         prof = lines(tr.find("td", class_="profile"))
-        odds_txt = (name_td.find("span", class_="rate") or {}).get_text(strip=True) if name_td.find("span", class_="rate") else ""
+        # オッズは「36.1 （10人気）」のように数字と人気の間に改行・空白が入ることがある（人気上位4頭だけ <span class="hot"> で
+        # 囲まれ、それ以外は空白が残る）。空白を全部消してから読む。以前はこの空白で上位4頭以外のオッズが落ちていた
+        rate = name_td.find("span", class_="rate")
+        odds_txt = re.sub(r"\s+", "", rate.get_text()) if rate else ""
         om = re.match(r"([\d.]+|-)（(\d+|-)人気）", odds_txt)
         h = {
             "frame": _num(frame.get_text() if frame else None, int),
