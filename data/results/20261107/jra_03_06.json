@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 11,
+   "name": "フィエールシャンテ",
+   "time": "2:42.7",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "2",
+   "number": 14,
+   "name": "ボンボンベイビー",
+   "time": "",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "number": 4,
+   "name": "ニホンピロゴルディ",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "4",
+   "number": 2,
+   "name": "マーゴットドライ",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "number": 1,
+   "name": "カドドゥディエ",
+   "time": "",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "11",
+    "yen": 1360,
+    "pop": 7
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "11",
+    "yen": 370,
+    "pop": 6
+   },
+   {
+    "combo": "14",
+    "yen": 230,
+    "pop": 3
+   },
+   {
+    "combo": "4",
+    "yen": 420,
+    "pop": 7
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "6-7",
+    "yen": 1180,
+    "pop": 3
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "11-14",
+    "yen": 1940,
+    "pop": 26
+   },
+   {
+    "combo": "4-11",
+    "yen": 2010,
+    "pop": 28
+   },
+   {
+    "combo": "4-14",
+    "yen": 1300,
+    "pop": 13
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "11-14",
+    "yen": 4500,
+    "pop": 18
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "11-14",
+    "yen": 7400,
+    "pop": 33
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-11-14",
+    "yen": 13480,
+    "pop": 45
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "11-14-4",
+    "yen": 103620,
+    "pop": 402
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261107",
+ "venue_code": "03",
+ "race_no": 6,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603010620261107/32",
+ "title": "レース結果 JRA"
+}
