@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 9,
+   "name": "ダノンハドソン",
+   "time": "2:02.9",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "2",
+   "number": 5,
+   "name": "ゼットエイト",
+   "time": "2:03.2",
+   "margin": "１ 3/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "3",
+   "number": 4,
+   "name": "アッシズオブローズ",
+   "time": "2:03.4",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "4",
+   "number": 16,
+   "name": "ダーコ",
+   "time": "2:03.5",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "5",
+   "number": 2,
+   "name": "マイネルダンク",
+   "time": "2:03.7",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 16
+  },
+  {
+   "finish": "6",
+   "number": 10,
+   "name": "クイーンズレイン",
+   "time": "2:03.7",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "7",
+   "number": 11,
+   "name": "デリシュー",
+   "time": "2:03.7",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "8",
+   "number": 14,
+   "name": "リアルセンター",
+   "time": "2:03.8",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "9",
+   "number": 8,
+   "name": "リリエンフェルト",
+   "time": "2:03.8",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "10",
+   "number": 1,
+   "name": "サクラアドリア",
+   "time": "2:03.9",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "11",
+   "number": 7,
+   "name": "ウインマニフィーク",
+   "time": "2:04.1",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "12",
+   "number": 12,
+   "name": "ディアアズール",
+   "time": "2:04.4",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "13",
+   "number": 6,
+   "name": "ブランドブラン",
+   "time": "2:04.5",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "14",
+   "number": 3,
+   "name": "レダアトミカ",
+   "time": "2:04.6",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "15",
+   "number": 15,
+   "name": "マイネルクオリア",
+   "time": "2:04.7",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "16",
+   "number": 13,
+   "name": "トレベルオール",
+   "time": "2:06.4",
+   "margin": "１０",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "9",
+    "yen": 6330,
+    "pop": 11
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "9",
+    "yen": 1570,
+    "pop": 12
+   },
+   {
+    "combo": "5",
+    "yen": 2700,
+    "pop": 13
+   },
+   {
+    "combo": "4",
+    "yen": 400,
+    "pop": 4
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-5",
+    "yen": 5030,
+    "pop": 19
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "5-9",
+    "yen": 42940,
+    "pop": 110
+   },
+   {
+    "combo": "4-9",
+    "yen": 7490,
+    "pop": 57
+   },
+   {
+    "combo": "4-5",
+    "yen": 18780,
+    "pop": 81
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "5-9",
+    "yen": 131720,
+    "pop": 100
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "9-5",
+    "yen": 288030,
+    "pop": 201
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-5-9",
+    "yen": 466430,
+    "pop": 391
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "9-5-4",
+    "yen": 6649570,
+    "pop": 2931
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261107",
+ "venue_code": "03",
+ "race_no": 9,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603010920261107/51",
+ "title": "レース結果 JRA"
+}
