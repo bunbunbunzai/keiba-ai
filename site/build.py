@@ -1598,6 +1598,19 @@ h1 small{display:block;font-size:14px;color:var(--mut);font-family:"BIZ UDPGothi
 .prefs .theme{border:1px solid var(--line);background:var(--panel);color:var(--fg);border-radius:2px;padding:2px 10px;font:inherit;font-size:12px;cursor:pointer}
 th.sortable{cursor:pointer;user-select:none}th.sortable:hover{color:var(--acc)}th[data-dir=asc]::after{content:" ▲";font-size:10px}th[data-dir=desc]::after{content:" ▼";font-size:10px}
 .cd{color:var(--acc);font-weight:700}
+.zkw-bg{position:fixed;inset:0;z-index:80;background:rgba(10,20,14,.45);display:flex;align-items:center;justify-content:center;padding:16px}
+.zkw{position:relative;width:420px;max-width:100%;background:var(--panel);color:var(--fg);border-radius:18px;padding:20px 20px 16px;box-shadow:0 16px 40px rgba(0,0,0,.3);border-top:6px solid var(--acc)}
+.zkw .zkw-in{display:flex;gap:14px;align-items:flex-start}.zkw img{flex:none;width:96px;height:96px}
+.zkw h2{margin:2px 0 6px;font-size:18px;line-height:1.4}.zkw p{margin:0 0 6px;line-height:1.75;font-size:15px}.zkw ul{margin:4px 0 6px;padding-left:1.2em;line-height:1.7;font-size:14px}
+.zkw .mk{display:inline-block;min-width:1.4em;font-weight:700;color:var(--acc)}
+.zkw-nav{display:flex;align-items:center;gap:8px;margin-top:12px}.zkw-dots{display:flex;gap:6px;flex:1}.zkw-dots i{width:8px;height:8px;border-radius:50%;background:var(--line)}.zkw-dots i.on{background:var(--acc)}
+.zkw button{font:inherit;cursor:pointer;border-radius:8px;padding:8px 14px;font-weight:700}.zkw .pri{background:var(--acc);color:#fff;border:0}.zkw .sec{background:transparent;color:var(--mut);border:1px solid var(--line)}
+.zkw .x{position:absolute;right:8px;top:8px;border:0;background:transparent;color:var(--mut);font-size:20px;line-height:1;padding:6px 8px}
+.zkw .links{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}.zkw .links a{font-size:14px}
+.zkw-start{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.zkw-start .pri{flex:1}
+@media (max-width:560px){.zkw-bg{align-items:flex-end;padding:0}.zkw{border-radius:18px 18px 0 0;width:100%;padding-bottom:calc(16px + env(safe-area-inset-bottom))}.zkw img{width:72px;height:72px}}
+@media (prefers-reduced-motion:no-preference){.zkw{animation:zkwin .28s ease-out}@keyframes zkwin{from{transform:translateY(16px);opacity:0}to{transform:none;opacity:1}}}
+.prefs .zkguide{border:1px solid var(--line);background:var(--panel);color:var(--fg);border-radius:2px;padding:2px 10px;font:inherit;font-size:12px;cursor:pointer;margin-left:6px}
 """
 
 JS = """(function(){var s=document.querySelector('.ask');if(!s)return;var inp=s.querySelector('input'),btn=s.querySelector('.go'),log=s.querySelector('.alog'),busy=false;
@@ -1679,7 +1692,38 @@ document.querySelectorAll('.vs').forEach(function(v){
   var d=document.createElement('div');d.className='share';d.appendChild(a2);v.appendChild(d);}
  if(btn)btn.addEventListener('click',function(){if(!sel.value||v.dataset.post<=s)return;pick=sel.value;try{localStorage.setItem(key,pick)}catch(e){}ga('vs_pick',{race:v.dataset.label});show();});
  show();});
-})();"""
+})();
+(function(){
+var K='zkwelcome',SK=['/privacy/','/contact/','/operator/','/search/'];
+var S=[
+ {f:'bow',h:'このサイトについて',b:'<p>中央競馬（JRA）と地方競馬の<b>全レース</b>を、AIが毎日予想しています。</p><p>当たったレースだけでなく、<b>外れも含めた全部の成績</b>を公開しているのが特長です。</p>'},
+ {f:'point',h:'予想の見方',b:'<p>各レースに印を付けています。</p><ul><li><span class="mk">◎</span>本命：いちばん勝ちそうな馬</li><li><span class="mk">〇</span>対抗　<span class="mk">▲</span>単穴：◎を負かす候補</li><li><span class="mk">△</span>連下　<span class="mk">☆</span>穴：3着までに来そうな馬</li></ul><p><b>自信度A・B・C</b>は◎が勝つ見込みの高さ。Aがいちばん自信ありです。</p>'},
+ {f:'calc',h:'成績の見方',b:'<p>成績は、買い目を<b>1点100円ずつ全部買った</b>として計算しています。</p><p><b>回収率</b>が100%を超えればプラス、下回ればマイナス。今の数字は<a href="/results/">成績</a>ページで毎日更新しています。</p>'},
+ {f:'study',h:'わからないことは聞いてね',b:'<p>レースページの右下にいる僕のボタンから、そのレースについて質問できます（「△は3連単で2着まで入れる？」など）。</p><p>言葉がわからないときは<a href="/glossary/">用語集</a>、競馬自体がはじめてなら<a href="/column/guide-keiba-hajimekata/">競馬の始め方</a>からどうぞ。</p>'},
+ {f:'cheer',h:'さいごに',b:'<p>予想は情報提供で、当たりを約束するものではありません。馬券は<b>20歳から</b>、無理のない金額で楽しんでください。</p><div class="links"><a href="/">今日の予想を見る</a><a href="/about/">予想の方法</a><a href="/limits/">AI予想の限界</a></div>'}
+];
+function ga(n,p){try{if(window.gtag)gtag('event',n,p||{})}catch(e){}}
+function seen(v){try{if(v)localStorage.setItem(K,v);return localStorage.getItem(K);}catch(e){return 'x';}}
+var bg=null,last=null;
+function close(how,step){if(!bg)return;bg.remove();bg=null;document.removeEventListener('keydown',kd,true);seen(how);ga('welcome_'+how,{step:step||0});if(last&&last.focus)last.focus();}
+function kd(e){if(!bg)return;if(e.key==='Escape'){e.preventDefault();close(bg.dataset.step==='0'?'skip':'close',+bg.dataset.step);return;}
+ if(e.key==='Tab'){var f=bg.querySelectorAll('a,button');if(!f.length)return;var a=f[0],z=f[f.length-1];if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus();}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus();}}}
+function img(f){return '<img src="/assets/zk-'+f+'.png" alt="" width="96" height="96">';}
+function render(i){var d=bg.querySelector('.zkw');bg.dataset.step=String(i);
+ if(i===0){d.innerHTML='<button type="button" class="x" aria-label="閉じる">×</button><div class="zkw-in">'+img('normal')+'<div><h2 id="zkw-h">はじめまして、全頭くんです</h2><p>このサイトの見方を、1分で案内しましょうか？</p></div></div><div class="zkw-start"><button type="button" class="pri go">案内してもらう</button><button type="button" class="sec no">自分で見てみる</button></div>';
+  d.querySelector('.go').onclick=function(){ga('welcome_start');render(1);};d.querySelector('.no').onclick=function(){close('skip',0);};d.querySelector('.x').onclick=function(){close('skip',0);};d.querySelector('.go').focus();return;}
+ var x=S[i-1],n=S.length,dots='';for(var k=1;k<=n;k++)dots+='<i class="'+(k===i?'on':'')+'"></i>';
+ d.innerHTML='<button type="button" class="x" aria-label="閉じる">×</button><div class="zkw-in">'+img(x.f)+'<div><h2 id="zkw-h">'+x.h+'</h2>'+x.b+'</div></div><div class="zkw-nav"><div class="zkw-dots" aria-label="'+i+' / '+n+'">'+dots+'</div>'+(i>1?'<button type="button" class="sec back">戻る</button>':'')+'<button type="button" class="pri next">'+(i<n?'次へ':'はじめる')+'</button></div>';
+ d.querySelector('.next').onclick=function(){if(i<n)render(i+1);else close('done',n);};var b=d.querySelector('.back');if(b)b.onclick=function(){render(i-1);};
+ d.querySelector('.x').onclick=function(){close(i<n?'close':'done',i);};d.querySelectorAll('.links a,.zkw-in a').forEach(function(a){a.addEventListener('click',function(){seen('done');ga('welcome_link',{to:a.getAttribute('href'),step:i});});});
+ d.querySelector('.next').focus();}
+function show(i){if(bg)return;last=document.activeElement;bg=document.createElement('div');bg.className='zkw-bg';bg.innerHTML='<div class="zkw" role="dialog" aria-modal="true" aria-labelledby="zkw-h"></div>';
+ bg.addEventListener('click',function(e){if(e.target===bg)close(bg.dataset.step==='0'?'skip':'close',+bg.dataset.step);});document.body.appendChild(bg);document.addEventListener('keydown',kd,true);render(i);}
+var fb=document.querySelector('.prefs');if(fb){var gb=document.createElement('button');gb.type='button';gb.className='zkguide';gb.textContent='全頭くんのサイト案内';gb.onclick=function(){ga('welcome_reopen');show(1);};fb.appendChild(gb);}
+if(seen()||navigator.webdriver||/bot|crawl|spider|lighthouse|headless/i.test(navigator.userAgent)||SK.some(function(p){return location.pathname.indexOf(p)===0;}))return;
+setTimeout(function(){if(document.querySelector('.askpop.open'))return;if(seen())return;show(0);ga('welcome_shown',{page:location.pathname});},1500);
+})();
+"""
 
 
 import hashlib as _hashlib
