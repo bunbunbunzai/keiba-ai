@@ -1,0 +1,238 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 15,
+   "name": "イサギ",
+   "time": "1:42.8",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "2",
+   "number": 12,
+   "name": "キープシャイニング",
+   "time": "1:42.9",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "3",
+   "number": 6,
+   "name": "エイシンマールス",
+   "time": "1:43.2",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "number": 10,
+   "name": "ポンピエ",
+   "time": "1:43.3",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "5",
+   "number": 9,
+   "name": "ベルアズーロ",
+   "time": "1:43.3",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "6",
+   "number": 8,
+   "name": "エコロスパーダ",
+   "time": "1:43.4",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "7",
+   "number": 3,
+   "name": "アーディアイリ",
+   "time": "1:43.6",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "8",
+   "number": 7,
+   "name": "ビンバラ",
+   "time": "1:43.6",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "9",
+   "number": 4,
+   "name": "グレイスフルマーチ",
+   "time": "1:43.8",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "10",
+   "number": 5,
+   "name": "コイオステソーロ",
+   "time": "1:43.9",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "11",
+   "number": 14,
+   "name": "アスクガンバーレ",
+   "time": "1:43.9",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "12",
+   "number": 13,
+   "name": "ブリスフル",
+   "time": "1:44.0",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "13",
+   "number": 1,
+   "name": "ゲレーロアスール",
+   "time": "1:44.0",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "14",
+   "number": 11,
+   "name": "オリジナルアポジー",
+   "time": "1:49.4",
+   "margin": "大差",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "中止",
+   "number": 2,
+   "name": "ヤスケ",
+   "time": "",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 14
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "15",
+    "yen": 14390,
+    "pop": 13
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "15",
+    "yen": 2130,
+    "pop": 13
+   },
+   {
+    "combo": "12",
+    "yen": 510,
+    "pop": 7
+   },
+   {
+    "combo": "6",
+    "yen": 200,
+    "pop": 2
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "7-8",
+    "yen": 5710,
+    "pop": 16
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "12-15",
+    "yen": 13770,
+    "pop": 82
+   },
+   {
+    "combo": "6-15",
+    "yen": 4650,
+    "pop": 42
+   },
+   {
+    "combo": "6-12",
+    "yen": 1450,
+    "pop": 17
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "12-15",
+    "yen": 68880,
+    "pop": 84
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "15-12",
+    "yen": 169400,
+    "pop": 176
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "6-12-15",
+    "yen": 89200,
+    "pop": 179
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "15-12-6",
+    "yen": 1117700,
+    "pop": 1533
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261107",
+ "venue_code": "03",
+ "race_no": 12,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603011220261107/B0",
+ "title": "レース結果 JRA"
+}
