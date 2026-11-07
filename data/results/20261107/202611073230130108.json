@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261107",
  "race_id": "202611073230130108",
- "tries": 2,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,127 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 9,
+   "name": "ワイドヴィンクルム",
+   "time": "1:31.9",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 10,
+   "name": "キトゥンズラスター",
+   "time": "1:33.1",
+   "margin": "６",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 11,
+   "name": "レレリオーナ",
+   "time": "1:34.5",
+   "margin": "７",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 4,
+   "name": "テイエムリチャード",
+   "time": "1:34.8",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 3,
+   "number": 3,
+   "name": "トーアアグネス",
+   "time": "1:34.9",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 8,
+   "name": "ビーチボール",
+   "time": "1:35.1",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 7,
+   "name": "ウインポラリス",
+   "time": "1:35.6",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 2,
+   "number": 2,
+   "name": "パドマーワト",
+   "time": "1:37.4",
+   "margin": "９",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 5,
+   "name": "タマモマリアージュ",
+   "time": "1:38.0",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 6,
+   "number": 6,
+   "name": "アエノホープ",
+   "time": "1:39.7",
+   "margin": "９",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 1,
+   "number": 1,
+   "name": "テムホウサク",
+   "time": "1:45.5",
+   "margin": "大差",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
