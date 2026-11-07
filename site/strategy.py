@@ -201,8 +201,8 @@ def render(g: dict[str, dict[str, Bucket]], esc, roi_txt, since: str, asof: str)
             ex_txt = f"{ex:.1f}%" if ex is not None and b.n > 3 else "-"
             rows.append(f"<tr><td>{esc(k)}</td><td>{b.n:,}</td><td>{b.hit:,}（{100 * b.hit / b.n:.0f}%）</td>"
                         f"<td>{b.stake:,}円</td><td>{b.ret:,}円</td><td class='{cls}'><b>{roi_txt(b.stake, b.ret)}</b></td><td>{b.ret - b.stake:+,}円</td><td>{ex_txt}</td></tr>")
-            if key != "base" and b.n >= 20 and r is not None:
-                ranking.append((k, r, b.n))
+            if key != "base" and b.n >= 100 and r is not None:  # 冒頭で紹介するのは偶然の影響が小さい100レース以上の買い方だけ
+                ranking.append((k, r, b.n, ex))
         sections.append(f"<section class='card'><h2>{esc(title)}</h2><p class='meta'>{esc(note)}</p><div class='scroll'><table>"
                         "<thead><tr><th>買い方</th><th>レース</th><th>的中</th><th>購入額</th><th>払戻</th><th>回収率</th><th>収支</th><th>大当たり3回を除く</th></tr></thead>"
                         f"<tbody>{''.join(rows)}</tbody></table></div></section>")
@@ -210,7 +210,8 @@ def render(g: dict[str, dict[str, Bucket]], esc, roi_txt, since: str, asof: str)
     intro = ""
     if base:
         intro = (f"<p class='answer'>{since}〜{asof}の{base.n:,}レースで、サイトの買い目をすべて買った場合の回収率は{roi_txt(base.stake, base.ret)}。"
-                 + (f"同じ予想でも買い方を変えると、回収率が最も高かったのは「{esc(ranking[0][0])}」の{ranking[0][1]:.1f}%（{ranking[0][2]}レース）だった。" if ranking else "") + "</p>")
+                 + (f"同じ予想でも買い方を変えると、100レース以上ある買い方の中で回収率が最も高かったのは「{esc(ranking[0][0])}」の{ranking[0][1]:.1f}%（{ranking[0][2]:,}レース"
+                    + (f"、大当たり3回を除くと{ranking[0][3]:.1f}%" if ranking[0][3] is not None else "") + "）だった。" if ranking else "") + "</p>")
     note = ("<p class='meta'>どれも買い目を1点100円ずつ買ったとして計算。買い目を出さなかった「見送り」と、返還になったレースは含まない。レース数が少ない区分（目安50レース未満）は偶然の影響が大きく、"
             "高配当が1回出るだけで数字が大きく動く。「大当たり3回を除く」は払戻が大きかった3レースを除いた回収率。数字がたまたまの大当たりに支えられていないかの目安になる。"
             "「過去にこう買えば勝てた」は、これから勝てることを意味しない。</p>")

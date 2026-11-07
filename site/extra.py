@@ -42,6 +42,34 @@ except Exception:  # noqa: BLE001
     _RG = []
 
 
+_COURSE_INPUTS: tuple = ({}, {}, set())
+_COURSE_PAGES: set | None = None  # build_pages の最初に、作るコースページの slug を入れる（無いページへのリンクを出さないため）
+
+
+def _course_inputs(B, by_date: dict):
+    """コースページの材料：サイトの予想（場×芝ダ×距離）と、過去の公式結果の集計（30レース以上）。"""
+    import course_stats as CS
+    courses = defaultdict(list)
+    for d, ps in by_date.items():
+        if d < B.STATS_FROM:
+            continue
+        for p in ps:
+            r = p["_race"]
+            if not r.get("distance"):
+                continue
+            surf = "芝" if r.get("surface") == "芝" else "障害" if r.get("surface") == "障" else "ダート"
+            courses[(B.venue_of(p), surf, int(r["distance"]))].append((d, p))
+    hist = {}
+    for (hv, hs, hm), st in CS.collect(30).items():
+        hist[CS.course_slug(B.VENUE_SLUG.get(hv, "venue"), hs, hm)] = ((hv, CS.SURF_NAME.get(hs, hs), hm), st)
+    site_c = {}
+    for (v, surf, dist), items in courses.items():
+        vs = B.VENUE_SLUG.get(v, "venue")
+        site_c[f"{vs}-{'turf' if surf == '芝' else 'jump' if surf == '障害' else 'dirt'}-{dist}"] = ((v, surf, dist), items)
+    ok = set(hist) | {k for k, (_, items) in site_c.items() if sum(1 for _, p in items if B.scored(p) and B.scored(p)["stake"]) >= 5}
+    return site_c, hist, ok
+
+
 def race_guide_html(B, slug: str) -> str:
     """重賞のレースガイド（data/race_guides、AIがWeb検索で調べて書いたもの）。"""
     g = B.load_json(B.ROOT / "data" / "race_guides" / f"{slug}.json")
@@ -53,7 +81,7 @@ def race_guide_html(B, slug: str) -> str:
     src = "".join(f"<li><a href='{esc(x['url'])}' rel='nofollow noopener' target='_blank'>{esc(x['title'])}</a></li>"
                   for x in g.get("sources") or [] if str(x.get("url", "")).startswith("http"))
     course = (f"<p>このコースの過去のレース結果の傾向：<a href='/course/{g['course_slug']}/'>{esc(g['venue'])}{'芝' if g['surface'] == '芝' else 'ダート' if g['surface'] == 'ダ' else '障害'}{g['distance']}mの傾向</a></p>"
-              if g.get("course_slug") else "")
+              if g.get("course_slug") and (_COURSE_PAGES is None or g["course_slug"] in _COURSE_PAGES) else "")
     return (f"<section class='card'><h2>{esc(g['name'])}のレースガイド</h2><p>{esc(g['lead'])}</p>"
             + (f"<div class='scroll'><table class='facts'><tbody>{facts}</tbody></table></div>" if facts else "") + secs + course
             + (f"<p class='meta'>出典：</p><ul class='meta'>{src}</ul>" if src else "")
@@ -114,6 +142,9 @@ def pct(a, b) -> str:
 
 def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
     """B は build モジュール（page・write・esc などを使う）。{path: lastmod} を返す。"""
+    global _COURSE_PAGES, _COURSE_INPUTS
+    _COURSE_INPUTS = _course_inputs(B, by_date)
+    _COURSE_PAGES = _COURSE_INPUTS[2]
     esc, write, page, jsonld = B.esc, B.write, B.page, B.jsonld
     lastmod: dict[str, str] = {}
     iso = lambda d: f"{d[:4]}-{d[4:6]}-{d[6:8]}"
@@ -202,24 +233,8 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
     lastmod["/graded/"] = iso(today)
 
     # ---------- コース別（場×芝ダ×距離） ----------
-    courses = defaultdict(list)
-    for d, ps in by_date.items():
-        if d < B.STATS_FROM:
-            continue
-        for p in ps:
-            r = p["_race"]
-            if not r.get("distance"):
-                continue
-            surf = "芝" if r.get("surface") == "芝" else "障害" if r.get("surface") == "障" else "ダート"
-            courses[(B.venue_of(p), surf, int(r["distance"]))].append((d, p))
     import course_stats as CS
-    hist = {}
-    for (hv, hs, hm), st in CS.collect(30).items():
-        hist[CS.course_slug(B.VENUE_SLUG.get(hv, "venue"), hs, hm)] = ((hv, CS.SURF_NAME.get(hs, hs), hm), st)
-    site_c = {}
-    for (v, surf, dist), items in courses.items():
-        vs = B.VENUE_SLUG.get(v, "venue")
-        site_c[f"{vs}-{'turf' if surf == '芝' else 'jump' if surf == '障害' else 'dirt'}-{dist}"] = ((v, surf, dist), items)
+    site_c, hist = _COURSE_INPUTS[0], _COURSE_INPUTS[1]
     notes_dir = B.ROOT / "data" / "course_notes"
     clist = []
     for slug in sorted(set(site_c) | set(hist)):
