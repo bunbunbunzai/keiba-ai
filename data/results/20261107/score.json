@@ -1,14 +1,14 @@
 {
  "date": "20261107",
- "updated": "2026-11-07 20:43",
+ "updated": "2026-11-07 20:52",
  "races_total": 71,
- "races_scored": 69,
+ "races_scored": 70,
  "stake": 20800,
  "return": 6480,
  "roi": 31.2,
  "hit_races": 31,
  "honmei_win": 22,
- "honmei_top3": 38,
+ "honmei_top3": 39,
  "races": [
   {
    "race_id": "202611070304160201",
@@ -590,17 +590,17 @@
    "race_id": "202611073230130111",
    "confidence": "B",
    "honmei": 3,
-   "honmei_finish": null,
+   "honmei_finish": "3",
    "top3": [
-    null,
-    null,
-    null
+    12,
+    11,
+    3
    ],
    "stake": 0,
    "return": 0,
    "roi": null,
    "hits": [],
-   "voided": true
+   "voided": false
   },
   {
    "race_id": "jra_20261107_京都_01",
