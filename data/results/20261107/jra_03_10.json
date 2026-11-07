@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 8,
+   "name": "カレンデュラ",
+   "time": "1:10.4",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "2",
+   "number": 13,
+   "name": "ラスティングスノー",
+   "time": "",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 16
+  },
+  {
+   "finish": "3",
+   "number": 16,
+   "name": "アイルドリアン",
+   "time": "",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "4",
+   "number": 6,
+   "name": "ピアストイヤーズ",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "5",
+   "number": 12,
+   "name": "シラヌイ",
+   "time": "",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "8",
+    "yen": 1680,
+    "pop": 11
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "8",
+    "yen": 460,
+    "pop": 8
+   },
+   {
+    "combo": "13",
+    "yen": 2920,
+    "pop": 16
+   },
+   {
+    "combo": "16",
+    "yen": 330,
+    "pop": 4
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-7",
+    "yen": 11590,
+    "pop": 31
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "8-13",
+    "yen": 18390,
+    "pop": 110
+   },
+   {
+    "combo": "8-16",
+    "yen": 2880,
+    "pop": 41
+   },
+   {
+    "combo": "13-16",
+    "yen": 19040,
+    "pop": 112
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "8-13",
+    "yen": 68160,
+    "pop": 109
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "8-13",
+    "yen": 115760,
+    "pop": 211
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "8-13-16",
+    "yen": 242540,
+    "pop": 432
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "8-13-16",
+    "yen": 2482900,
+    "pop": 2956
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261107",
+ "venue_code": "03",
+ "race_no": 10,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603011020261107/46",
+ "title": "レース結果 JRA"
+}
