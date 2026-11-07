@@ -67,11 +67,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/07/",
    "created": "2026-11-07 10:50",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2118884269078790215",
    "x_at": "2026-11-07 10:52",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AQDhXx-aD-0A0gJtVyCBYbr'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AzypUTuaPz_YsokC9rMixex'}",
+   "instagram_tries": 3
   },
   "pre-jra_20261107_京都_08": {
    "kind": "grade_pre",
