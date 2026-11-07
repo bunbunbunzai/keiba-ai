@@ -1464,6 +1464,7 @@ CSS = """.ask .alog{margin-top:10px}.ask .qa{border-top:1px solid var(--line);pa
 .zkfoot{display:flex;gap:12px;align-items:center}.zkfoot p{margin:0}.ask .src{margin:4px 0 0 48px;font-size:12px;color:var(--mut)}.ask .src a{color:var(--mut)}
 .card.zkteaser{display:flex;gap:12px;align-items:center;border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--panel)}.zkteaser p{margin:0;flex:1}
 .zkopen,.ask .go{background:var(--acc);color:#fff;border:0;border-radius:8px;padding:8px 14px;font-weight:700;cursor:pointer}
+.ask .go:disabled{opacity:.4;cursor:not-allowed}.ask input:disabled{cursor:not-allowed}
 .zkfab{position:fixed;right:16px;bottom:16px;z-index:60;width:68px;height:68px;border-radius:50%;border:3px solid var(--acc);background:#fff;padding:2px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.22)}
 .zkfab img{width:100%;height:100%}body:has(.zkfab) .totop{right:30px;bottom:96px}body:has(.askpop.open) .totop{display:none}.zkfab[aria-expanded=true]{transform:scale(.9)}
 .zktip{position:absolute;right:76px;bottom:18px;white-space:nowrap;background:var(--panel);color:var(--fg);border:1px solid var(--line);border-radius:10px;padding:4px 10px;font-size:13px;font-weight:700;box-shadow:0 2px 6px rgba(0,0,0,.12)}
