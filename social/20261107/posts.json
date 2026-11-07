@@ -484,8 +484,8 @@
    "instagram": "pending",
    "x_id": "2119034559035552021",
    "x_at": "2026-11-07 20:49",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'Ae7h32588a8RkkWAtzkT0d7'}",
-   "instagram_tries": 1
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AIBpXUeIvVIKlV9wh-IZRbs'}",
+   "instagram_tries": 2
   },
   "hit-202611073129100110": {
    "kind": "hit",
@@ -502,8 +502,8 @@
    "instagram": "pending",
    "x_id": "2119034563104014846",
    "x_at": "2026-11-07 20:49",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'Agh0VC0XPLthUgzk1mfShdC'}",
-   "instagram_tries": 1
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AYXyXL_WxHfOGI7MXzmEvdV'}",
+   "instagram_tries": 2
   },
   "hit-202611073230130107": {
    "kind": "hit",
@@ -520,8 +520,24 @@
    "instagram": "pending",
    "x_id": "2119034567013072960",
    "x_at": "2026-11-07 20:49",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AGHZo8imHj_9nwDfkuTdawG'}",
-   "instagram_tries": 1
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A6NoB-oNZBij3noIs9JwOVi'}",
+   "instagram_tries": 2
+  },
+  "sum-20261107": {
+   "kind": "summary",
+   "image": "/social/20261107/sum-20261107.jpg",
+   "images": [
+    "/social/20261107/sum-20261107.jpg",
+    "/social/20261107/sum-20261107-2.jpg",
+    "/social/20261107/sum-20261107-3.jpg"
+   ],
+   "x_text": "【11/7 AI予想の全成績】\n京都・佐賀・帯広・東京・福島・高知の66レース\n的中31（うちプラス18）／当日回収率31.2%\n収支-14,320円（各点100円・外れも含む）\n最高：東京4R 払戻1,020円\n累計回収率63.7%\n#競馬予想 #中央競馬 #地方競馬 #AI予想 #回収率",
+   "x_thread": [],
+   "ig_caption": "【11/7 AI予想の全成績】\n京都・佐賀・帯広・東京・福島・高知の66レース\n的中31（うちプラス18）／当日回収率31.2%\n収支-14,320円（各点100円・外れも含む）\n最高：東京4R 払戻1,020円\n累計回収率63.7%\n\nこの日の全レースの予想と成績 → www.ai-keiba-log.com/2026/11/07/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#競馬予想 #中央競馬 #地方競馬 #AI予想 #回収率 #競馬 #競馬全頭ログ",
+   "url": "https://www.ai-keiba-log.com/2026/11/07/",
+   "created": "2026-11-07 21:44",
+   "x": "pending",
+   "instagram": "pending"
   }
  }
 }
