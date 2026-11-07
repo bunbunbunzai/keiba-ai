@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 4,
+   "name": "サトノヘラクレス",
+   "time": "1:17.6",
+   "margin": "",
+   "corners": "1-1",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 1,
+   "name": "ビリーブハーモニー",
+   "time": "1:18.6",
+   "margin": "６",
+   "corners": "4-4",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "number": 5,
+   "name": "ネバースリープ",
+   "time": "1:19.2",
+   "margin": "３ 1/2",
+   "corners": "9-8",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "4",
+   "number": 8,
+   "name": "ピニドローマ",
+   "time": "1:19.2",
+   "margin": "アタマ",
+   "corners": "6-6",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "5",
+   "number": 2,
+   "name": "ジューンエアロ",
+   "time": "1:19.5",
+   "margin": "１ 3/4",
+   "corners": "9-10",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "6",
+   "number": 13,
+   "name": "タマモホッピング",
+   "time": "1:19.5",
+   "margin": "クビ",
+   "corners": "9-11",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "7",
+   "number": 7,
+   "name": "シップウダッシュ",
+   "time": "1:19.8",
+   "margin": "１ 3/4",
+   "corners": "2-2",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "8",
+   "number": 11,
+   "name": "ラマナス",
+   "time": "1:20.2",
+   "margin": "２ 1/2",
+   "corners": "12-12",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "9",
+   "number": 12,
+   "name": "サメーダン",
+   "time": "1:20.6",
+   "margin": "２",
+   "corners": "4-5",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "10",
+   "number": 10,
+   "name": "グッドミキサー",
+   "time": "1:20.6",
+   "margin": "アタマ",
+   "corners": "2-2",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "11",
+   "number": 15,
+   "name": "タカラキセキ",
+   "time": "1:20.9",
+   "margin": "２",
+   "corners": "7-8",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "12",
+   "number": 6,
+   "name": "テーオータイガー",
+   "time": "1:21.1",
+   "margin": "１",
+   "corners": "7-6",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "13",
+   "number": 3,
+   "name": "クレールオーブ",
+   "time": "1:21.6",
+   "margin": "３",
+   "corners": "12-14",
+   "last3f": null,
+   "popularity": 16
+  },
+  {
+   "finish": "14",
+   "number": 9,
+   "name": "タカシーズ",
+   "time": "1:21.8",
+   "margin": "１ 1/2",
+   "corners": "12-12",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "15",
+   "number": 16,
+   "name": "カガフレイヤ",
+   "time": "1:23.6",
+   "margin": "大差",
+   "corners": "15-15",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "16",
+   "number": 14,
+   "name": "ゴルトエスピガ",
+   "time": "1:24.4",
+   "margin": "５",
+   "corners": "15-16",
+   "last3f": null,
+   "popularity": 14
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "4",
+    "yen": 160,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "4",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "1",
+    "yen": 190,
+    "pop": 3
+   },
+   {
+    "combo": "5",
+    "yen": 720,
+    "pop": 10
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-2",
+    "yen": 630,
+    "pop": 3
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-4",
+    "yen": 310,
+    "pop": 2
+   },
+   {
+    "combo": "4-5",
+    "yen": 1270,
+    "pop": 14
+   },
+   {
+    "combo": "1-5",
+    "yen": 3210,
+    "pop": 35
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-4",
+    "yen": 580,
+    "pop": 2
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "4-1",
+    "yen": 680,
+    "pop": 2
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-4-5",
+    "yen": 4880,
+    "pop": 15
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "4-1-5",
+    "yen": 10670,
+    "pop": 25
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261107",
+ "venue_code": "05",
+ "race_no": 6,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605010620261107/28",
+ "title": "レース結果 JRA"
+}
