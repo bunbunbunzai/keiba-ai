@@ -133,8 +133,8 @@
    "instagram": "pending",
    "x_id": "2118942930090033239",
    "x_at": "2026-11-07 14:45",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'code': 200, 'type': 'OAuthException', 'fbtrace_id': 'A27DX-ouENu8ruw_Bgx12_J'}",
-   "instagram_tries": 1
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AK1Sa4uPuVQvCJyNz4BRvze'}",
+   "instagram_tries": 2
   },
   "res-jra_20261107_京都_08": {
    "kind": "grade_res",
@@ -151,8 +151,8 @@
    "instagram": "pending",
    "x_id": "2118942934762496003",
    "x_at": "2026-11-07 14:45",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AXtrhMVcr4e6vUGcJ389_sm'}",
-   "instagram_tries": 1
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AJeJ6GK4losc3ToRkz0f5ED'}",
+   "instagram_tries": 2
   },
   "hit-jra_20261107_東京_08": {
    "kind": "hit",
@@ -169,8 +169,8 @@
    "instagram": "pending",
    "x_id": "2118942937987821967",
    "x_at": "2026-11-07 14:45",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AHhL7_JR8pKQo5l-0sx2MDm'}",
-   "instagram_tries": 1
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'APGFxy1MKZ279g3JgE6HaFN'}",
+   "instagram_tries": 2
   },
   "hit-jra_20261107_東京_09": {
    "kind": "hit",
@@ -187,8 +187,8 @@
    "instagram": "pending",
    "x_id": "2118942940957491434",
    "x_at": "2026-11-07 14:45",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A5vAvAFZdMJt8FInmWpKXuM'}",
-   "instagram_tries": 1
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AVNd0bAvs00YeNEgAg0Qyby'}",
+   "instagram_tries": 2
   },
   "pre-jra_20261107_東京_11": {
    "kind": "grade_pre",
@@ -214,8 +214,8 @@
     "2118942947135656379",
     "2118942948213576099"
    ],
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AtWg3F8oCKW2ZfZUGd_EpzI'}",
-   "instagram_tries": 1
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AuwKvnMSbv5HIdCQPAUcZR5'}",
+   "instagram_tries": 2
   },
   "hit-jra_20261107_福島_07": {
    "kind": "hit",
@@ -232,8 +232,8 @@
    "instagram": "pending",
    "x_id": "2118942950910562498",
    "x_at": "2026-11-07 14:45",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'Acg7K75S_qX0MxRgut0Lz4K'}",
-   "instagram_tries": 1
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AW43VnrxLOT9QmpjRJp5Tb4'}",
+   "instagram_tries": 2
   },
   "hit-jra_20261107_福島_08": {
    "kind": "hit",
@@ -250,8 +250,8 @@
    "instagram": "pending",
    "x_id": "2118942954152657069",
    "x_at": "2026-11-07 14:45",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AbwPOHqLCYROHyfwbilhusz'}",
-   "instagram_tries": 1
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A1eHV8FBBx9kcSu5AwWWmXY'}",
+   "instagram_tries": 2
   }
  }
 }
