@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261107",
  "race_id": "202611073230130111",
- "tries": 2,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "チェストー",
    "time": "1:32.1",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 39.5,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "クボウサマ",
    "time": "1:32.9",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 40.2,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "レディホークダイヤ",
    "time": "1:34.1",
    "margin": "６",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 39.9,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "ナデシコ",
    "time": "1:34.1",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 40.8,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "トルマリンテソーロ",
    "time": "1:34.5",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 41.9,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "マイネルガンナー",
    "time": "1:34.6",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 12,
+   "last3f": 40.3,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "ケイツーコルーニ",
    "time": "1:34.8",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 41.3,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ヴィアツァ",
    "time": "1:35.0",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 40.3,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "リケアカッペリーニ",
    "time": "1:35.3",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 42.7,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "ウイングラフトン",
    "time": "1:35.5",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 41.7,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "クラリスヒメ",
    "time": "1:36.1",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 12,
+   "last3f": 42.3,
    "popularity": null
   },
   {
@@ -198,8 +198,8 @@
    "name": "アリーワーク",
    "time": "1:36.3",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 42.6,
    "popularity": null
   },
   {
@@ -209,8 +209,8 @@
    "name": "バチェラーパーティ",
    "time": "1:36.3",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 12,
+   "last3f": 43.2,
    "popularity": null
   },
   {
@@ -220,8 +220,8 @@
    "name": "アユツリムスメ",
    "time": "1:36.4",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 43.8,
    "popularity": null
   }
  ]
