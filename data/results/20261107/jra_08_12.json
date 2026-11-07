@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 16,
+   "name": "プレスバーン",
+   "time": "1:59.8",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "number": 15,
+   "name": "ダノンブギ",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "3",
+   "number": 8,
+   "name": "マイネルビスマルク",
+   "time": "",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "4",
+   "number": 4,
+   "name": "アトレッタ",
+   "time": "",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "number": 14,
+   "name": "レイワノキセキ",
+   "time": "",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 16
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "16",
+    "yen": 490,
+    "pop": 2
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "16",
+    "yen": 200,
+    "pop": 2
+   },
+   {
+    "combo": "15",
+    "yen": 390,
+    "pop": 7
+   },
+   {
+    "combo": "8",
+    "yen": 2040,
+    "pop": 15
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "8-8",
+    "yen": 2420,
+    "pop": 12
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "15-16",
+    "yen": 1000,
+    "pop": 7
+   },
+   {
+    "combo": "8-16",
+    "yen": 8890,
+    "pop": 74
+   },
+   {
+    "combo": "8-15",
+    "yen": 8860,
+    "pop": 73
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "15-16",
+    "yen": 2330,
+    "pop": 5
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "16-15",
+    "yen": 4470,
+    "pop": 9
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "8-15-16",
+    "yen": 56480,
+    "pop": 162
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "16-15-8",
+    "yen": 184890,
+    "pop": 601
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261107",
+ "venue_code": "08",
+ "race_no": 12,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605011220261107/84",
+ "title": "レース結果 JRA"
+}
