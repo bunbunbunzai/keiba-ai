@@ -1,0 +1,218 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 4,
+   "name": "ノーブルセプター",
+   "time": "1:52.7",
+   "margin": "",
+   "corners": "2-1-1-1",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "2",
+   "number": 7,
+   "name": "オリオンベリル",
+   "time": "1:53.1",
+   "margin": "２",
+   "corners": "10-10-3-3",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "number": 13,
+   "name": "ルクスアルカード",
+   "time": "1:53.4",
+   "margin": "１ 3/4",
+   "corners": "1-2-2-2",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "number": 10,
+   "name": "アポカリプト",
+   "time": "1:53.8",
+   "margin": "２ 1/2",
+   "corners": "7-9-5-5",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "number": 5,
+   "name": "シシソンソン",
+   "time": "1:54.2",
+   "margin": "２ 1/2",
+   "corners": "3-3-5-5",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "6",
+   "number": 1,
+   "name": "ダノンチャンピオン",
+   "time": "1:54.5",
+   "margin": "２",
+   "corners": "13-13-10-7",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "7",
+   "number": 11,
+   "name": "ザキノシュガー",
+   "time": "1:55.3",
+   "margin": "５",
+   "corners": "5-5-4-4",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "8",
+   "number": 2,
+   "name": "アントラヴァースト",
+   "time": "1:56.8",
+   "margin": "９",
+   "corners": "7-7-9-10",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "9",
+   "number": 6,
+   "name": "ジューンファミリエ",
+   "time": "1:56.8",
+   "margin": "ハナ",
+   "corners": "5-5-8-9",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "10",
+   "number": 12,
+   "name": "ヤマトクオーレ",
+   "time": "1:57.0",
+   "margin": "１ 1/4",
+   "corners": "12-12-10-10",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "11",
+   "number": 8,
+   "name": "キタノゲラン",
+   "time": "1:58.4",
+   "margin": "８",
+   "corners": "3-3-7-8",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "12",
+   "number": 9,
+   "name": "メイショウソレイユ",
+   "time": "2:01.7",
+   "margin": "大差",
+   "corners": "7-7-12-12",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "中止",
+   "number": 3,
+   "name": "メイショウラウルス",
+   "time": "",
+   "margin": "",
+   "corners": "11-11-13-13",
+   "last3f": null,
+   "popularity": 9
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "4",
+    "yen": 9190,
+    "pop": 7
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "4",
+    "yen": 480,
+    "pop": 7
+   },
+   {
+    "combo": "7",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "13",
+    "yen": 130,
+    "pop": 2
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-5",
+    "yen": 1440,
+    "pop": 5
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-7",
+    "yen": 1050,
+    "pop": 11
+   },
+   {
+    "combo": "4-13",
+    "yen": 2270,
+    "pop": 19
+   },
+   {
+    "combo": "7-13",
+    "yen": 160,
+    "pop": 1
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-7",
+    "yen": 5090,
+    "pop": 11
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "4-7",
+    "yen": 22630,
+    "pop": 32
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-7-13",
+    "yen": 3650,
+    "pop": 9
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "4-7-13",
+    "yen": 94450,
+    "pop": 155
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261107",
+ "venue_code": "08",
+ "race_no": 3,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605010320261107/E7",
+ "title": "レース結果 JRA"
+}
