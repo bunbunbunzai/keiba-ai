@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 16,
+   "name": "フィサブロス",
+   "time": "2:31.8",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "2",
+   "number": 9,
+   "name": "スノーディーヴァ",
+   "time": "",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "3",
+   "number": 5,
+   "name": "ステイアンビシャス",
+   "time": "",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "4",
+   "number": 13,
+   "name": "アスクドゥチャンプ",
+   "time": "",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "5",
+   "number": 7,
+   "name": "ハイドパーク",
+   "time": "",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "16",
+    "yen": 2140,
+    "pop": 9
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "16",
+    "yen": 820,
+    "pop": 10
+   },
+   {
+    "combo": "9",
+    "yen": 290,
+    "pop": 4
+   },
+   {
+    "combo": "5",
+    "yen": 420,
+    "pop": 6
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-8",
+    "yen": 2940,
+    "pop": 10
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "9-16",
+    "yen": 4310,
+    "pop": 44
+   },
+   {
+    "combo": "5-16",
+    "yen": 5910,
+    "pop": 57
+   },
+   {
+    "combo": "5-9",
+    "yen": 1800,
+    "pop": 17
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "9-16",
+    "yen": 14060,
+    "pop": 42
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "16-9",
+    "yen": 25180,
+    "pop": 79
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "5-9-16",
+    "yen": 59000,
+    "pop": 172
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "16-9-5",
+    "yen": 292510,
+    "pop": 884
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261107",
+ "venue_code": "03",
+ "race_no": 4,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603010420261107/C8",
+ "title": "レース結果 JRA"
+}
