@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 8,
+   "name": "スマイルスルー",
+   "time": "3:37.0",
+   "margin": "",
+   "corners": "1-1-1-1",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "number": 6,
+   "name": "シホノスペランツァ",
+   "time": "",
+   "margin": "８",
+   "corners": "3-3-3-3",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "number": 9,
+   "name": "ディナースタ",
+   "time": "",
+   "margin": "３ 1/2",
+   "corners": "4-4-5-4",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "4",
+   "number": 7,
+   "name": "コンテナワールド",
+   "time": "",
+   "margin": "クビ",
+   "corners": "2-2-2-2",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "number": 4,
+   "name": "メイショウアツイタ",
+   "time": "",
+   "margin": "４",
+   "corners": "5-5-6-6",
+   "last3f": null,
+   "popularity": 6
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "8",
+    "yen": 340,
+    "pop": 2
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "8",
+    "yen": 120,
+    "pop": 2
+   },
+   {
+    "combo": "6",
+    "yen": 140,
+    "pop": 4
+   },
+   {
+    "combo": "9",
+    "yen": 110,
+    "pop": 1
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "6-8",
+    "yen": 340,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "6-8",
+    "yen": 290,
+    "pop": 4
+   },
+   {
+    "combo": "8-9",
+    "yen": 170,
+    "pop": 1
+   },
+   {
+    "combo": "6-9",
+    "yen": 190,
+    "pop": 2
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "6-8",
+    "yen": 980,
+    "pop": 4
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "8-6",
+    "yen": 1660,
+    "pop": 6
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "6-8-9",
+    "yen": 480,
+    "pop": 1
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "8-6-9",
+    "yen": 3440,
+    "pop": 11
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261107",
+ "venue_code": "08",
+ "race_no": 8,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605010820261107/70",
+ "title": "レース結果 JRA"
+}
