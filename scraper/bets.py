@@ -227,7 +227,7 @@ def apply(date: str, race_ids: list[str] | None = None, write: bool = False, for
         if not same and old:
             ups = pred.setdefault("updates", [])
             ups.append({"at": now.strftime("%m/%d %H:%M"), "text": reason or "オッズを見て買い目を組み直した（当たっても購入額を下回る3連複の組み合わせを外す）"})
-        f.write_text(json.dumps(pred, ensure_ascii=False, indent=1), encoding="utf-8")
+        f.write_text(json.dumps(pred, ensure_ascii=False, indent=2), encoding="utf-8")
         if not same:
             changed.append(rid)
     return changed
