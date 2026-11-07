@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261107",
  "race_id": "202611073129100104",
- "tries": 2,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,127 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 3,
+   "number": 3,
+   "name": "アスクドゥラメンテ",
+   "time": "1:24.8",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.5,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 9,
+   "name": "ホークレア",
+   "time": "1:26.7",
+   "margin": "９",
+   "pos4": 7,
+   "last3f": 39.9,
+   "popularity": 4
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 10,
+   "name": "チョットヤバイヨネ",
+   "time": "1:26.9",
+   "margin": "１",
+   "pos4": 6,
+   "last3f": 40.8,
+   "popularity": 6
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 4,
+   "name": "グリエールキック",
+   "time": "1:27.0",
+   "margin": "３／４",
+   "pos4": 2,
+   "last3f": 41.9,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 11,
+   "name": "ソックス",
+   "time": "1:27.2",
+   "margin": "３／４",
+   "pos4": 4,
+   "last3f": 41.2,
+   "popularity": 7
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 6,
+   "name": "ジョウショーブリエ",
+   "time": "1:27.2",
+   "margin": "アタマ",
+   "pos4": 8,
+   "last3f": 40.1,
+   "popularity": 8
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 8,
+   "name": "エンファサイズ",
+   "time": "1:27.2",
+   "margin": "アタマ",
+   "pos4": 3,
+   "last3f": 41.9,
+   "popularity": 3
+  },
+  {
+   "finish": "8",
+   "frame": 6,
+   "number": 7,
+   "name": "デビッドテソーロ",
+   "time": "1:27.7",
+   "margin": "２ １／２",
+   "pos4": 5,
+   "last3f": 42.4,
+   "popularity": 2
+  },
+  {
+   "finish": "9",
+   "frame": 1,
+   "number": 1,
+   "name": "ボールドステート",
+   "time": "1:28.2",
+   "margin": "２ １／２",
+   "pos4": 9,
+   "last3f": 41.0,
+   "popularity": 9
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 5,
+   "name": "サイモンソーラン",
+   "time": "1:28.5",
+   "margin": "１ １／２",
+   "pos4": 9,
+   "last3f": 40.9,
+   "popularity": 10
+  },
+  {
+   "finish": "11",
+   "frame": 2,
+   "number": 2,
+   "name": "エムティパブロ",
+   "time": "1:29.7",
+   "margin": "６",
+   "pos4": 11,
+   "last3f": 42.8,
+   "popularity": 11
+  }
+ ]
 }

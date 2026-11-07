@@ -1,14 +1,14 @@
 {
  "date": "20261107",
- "updated": "2026-11-07 16:50",
+ "updated": "2026-11-07 17:00",
  "races_total": 71,
- "races_scored": 47,
- "stake": 17500,
+ "races_scored": 48,
+ "stake": 17600,
  "return": 4850,
- "roi": 27.7,
+ "roi": 27.6,
  "hit_races": 22,
- "honmei_win": 13,
- "honmei_top3": 25,
+ "honmei_win": 14,
+ "honmei_top3": 26,
  "races": [
   {
    "race_id": "202611070304160201",
@@ -90,7 +90,7 @@
    "return": 0,
    "roi": 0.0,
    "hits": [],
-   "voided": true
+   "voided": false
   },
   {
    "race_id": "202611070304160206",
@@ -126,8 +126,8 @@
   },
   {
    "race_id": "202611070304160208",
-   "confidence": "B",
-   "honmei": 8,
+   "confidence": "C",
+   "honmei": 4,
    "honmei_finish": null,
    "top3": [
     null,
@@ -159,7 +159,7 @@
   {
    "race_id": "202611070304160210",
    "confidence": "C",
-   "honmei": 1,
+   "honmei": 7,
    "honmei_finish": null,
    "top3": [
     null,
@@ -198,9 +198,9 @@
     null,
     null
    ],
-   "stake": 100,
+   "stake": 0,
    "return": 0,
-   "roi": 0.0,
+   "roi": null,
    "hits": [],
    "voided": true
   },
@@ -260,11 +260,11 @@
    "race_id": "202611073129100104",
    "confidence": "A",
    "honmei": 3,
-   "honmei_finish": null,
+   "honmei_finish": "1",
    "top3": [
-    null,
-    null,
-    null
+    3,
+    9,
+    10
    ],
    "stake": 800,
    "return": 100,
@@ -332,9 +332,9 @@
     null,
     null
    ],
-   "stake": 100,
+   "stake": 0,
    "return": 0,
-   "roi": 0.0,
+   "roi": null,
    "hits": [],
    "voided": true
   },
@@ -380,9 +380,9 @@
     null,
     null
    ],
-   "stake": 100,
+   "stake": 0,
    "return": 0,
-   "roi": 0.0,
+   "roi": null,
    "hits": [],
    "voided": true
   },
@@ -396,9 +396,9 @@
     null,
     null
    ],
-   "stake": 100,
+   "stake": 0,
    "return": 0,
-   "roi": 0.0,
+   "roi": null,
    "hits": [],
    "voided": true
   },
@@ -496,9 +496,9 @@
     null,
     null
    ],
-   "stake": 100,
+   "stake": 0,
    "return": 0,
-   "roi": 0.0,
+   "roi": null,
    "hits": [],
    "voided": true
   },
@@ -576,9 +576,9 @@
     null,
     null
    ],
-   "stake": 100,
+   "stake": 0,
    "return": 0,
-   "roi": 0.0,
+   "roi": null,
    "hits": [],
    "voided": true
   },
