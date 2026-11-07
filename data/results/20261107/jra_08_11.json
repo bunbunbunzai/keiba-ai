@@ -1,0 +1,148 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 3,
+   "name": "エコロレーヴ",
+   "time": "1:10.4",
+   "margin": "",
+   "corners": "1-1",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "number": 13,
+   "name": "ファムエレガンテ",
+   "time": "",
+   "margin": "１ 3/4",
+   "corners": "4-5",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "3",
+   "number": 10,
+   "name": "ジョーメッドヴィン",
+   "time": "",
+   "margin": "１ 1/4",
+   "corners": "7-6",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "4",
+   "number": 14,
+   "name": "ルージュラナキラ",
+   "time": "",
+   "margin": "１ 3/4",
+   "corners": "7-6",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "5",
+   "number": 1,
+   "name": "モンドプリューム",
+   "time": "",
+   "margin": "１／２",
+   "corners": "15-14",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "5",
+   "number": 11,
+   "name": "ジョーローリット",
+   "time": "",
+   "margin": "同着",
+   "corners": "3-3",
+   "last3f": null,
+   "popularity": 6
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "3",
+    "yen": 500,
+    "pop": 2
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "3",
+    "yen": 220,
+    "pop": 3
+   },
+   {
+    "combo": "13",
+    "yen": 470,
+    "pop": 6
+   },
+   {
+    "combo": "10",
+    "yen": 710,
+    "pop": 10
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-7",
+    "yen": 1170,
+    "pop": 4
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-13",
+    "yen": 1400,
+    "pop": 11
+   },
+   {
+    "combo": "3-10",
+    "yen": 3200,
+    "pop": 34
+   },
+   {
+    "combo": "10-13",
+    "yen": 4520,
+    "pop": 48
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-13",
+    "yen": 4810,
+    "pop": 17
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "3-13",
+    "yen": 7750,
+    "pop": 25
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-10-13",
+    "yen": 40020,
+    "pop": 118
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "3-13-10",
+    "yen": 182780,
+    "pop": 508
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261107",
+ "venue_code": "08",
+ "race_no": 11,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605011120261107/CF",
+ "title": "レース結果 JRA"
+}
