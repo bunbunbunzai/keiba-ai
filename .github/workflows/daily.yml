@@ -8,6 +8,7 @@ on:
   # 本番は Claude の定期タスクが workflow_dispatch で起動する。
   # 下の schedule は予備：Claude側の起動が失敗した日（使用量上限など）だけ動く。本番が成功済みなら何もしない。
   schedule:
+    - cron: "51 22 * * *"  # 7:51 朝（morn）の予備
     - cron: "47 1 * * *"   # 10:47 昼（noon）の予備
     - cron: "7 7 * * *"    # 16:07 午後（mid）の予備
     - cron: "41 9 * * *"   # 18:41 夕方（eve）の予備
@@ -15,7 +16,7 @@ on:
   workflow_dispatch:
     inputs:
       phase:
-        description: "eve / noon / mid / night"
+        description: "eve / morn / noon / mid / night"
         required: true
       date:
         description: "対象日 YYYYMMDD（空なら自動）"
@@ -42,6 +43,7 @@ jobs:
           if [ -z "$PHASE" ]; then
             case "${{ github.event.schedule }}" in
               "7 8 * * *"|"41 9 * * *") PHASE=eve ;;
+              "51 22 * * *") PHASE=morn ;;
               "13 1 * * *"|"47 1 * * *") PHASE=noon ;;
               "7 7 * * *") PHASE=mid ;;
               *) PHASE=night ;;
@@ -96,6 +98,8 @@ jobs:
           IL=--interleave-results
           case "$PHASE-$SRC" in
             eve-jra)      python jra_cards.py --date "$D" ;;
+            morn-jra)     python jra_cards.py --date "$D" --past 0 ;;
+            morn-rakuten) python rakuten.py --date "$D" --kinds card --after-now && python parse_rakuten.py --date "$D" ;;
             noon-jra)     python jra_cards.py --date "$D" --past 0 && python results.py --date "$D" --source jra; python bias.py --date "$D" --source "$SRC" ;;
             mid-jra)      python jra_cards.py --date "$D" --past 0 && python results.py --date "$D" --source jra; python bias.py --date "$D" --source "$SRC" ;;
             eve-rakuten)  python rakuten.py --date "$D" --kinds card $IL && python parse_rakuten.py --date "$D" ;;
@@ -149,7 +153,7 @@ jobs:
   ai:
     # AIによる自動生成：回顧（確定レース）と重賞の全頭診断記事。鍵が無ければ何もしない
     needs: [plan, fetch, score]
-    if: ${{ !cancelled() && needs.plan.outputs.phase != 'eve' && (needs.score.result == 'success' || needs.score.result == 'skipped') }}
+    if: ${{ !cancelled() && needs.plan.outputs.phase != 'eve' && needs.plan.outputs.phase != 'morn' && (needs.score.result == 'success' || needs.score.result == 'skipped') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
