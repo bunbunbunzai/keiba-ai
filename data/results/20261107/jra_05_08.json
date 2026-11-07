@@ -1,0 +1,188 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 3,
+   "name": "ラディアントスター",
+   "time": "2:00.5",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "number": 7,
+   "name": "アクロフェイズ",
+   "time": "2:00.5",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "number": 5,
+   "name": "リポサンテ",
+   "time": "2:00.5",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "number": 8,
+   "name": "マイネルアレス",
+   "time": "2:00.8",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "5",
+   "number": 10,
+   "name": "ウェイクフィールド",
+   "time": "2:01.0",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "6",
+   "number": 9,
+   "name": "ロングミックス",
+   "time": "2:01.0",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "number": 4,
+   "name": "セイウンパシュート",
+   "time": "2:01.1",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "8",
+   "number": 6,
+   "name": "アッカン",
+   "time": "2:01.1",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "9",
+   "number": 1,
+   "name": "クラッシファイド",
+   "time": "2:01.3",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "10",
+   "number": 2,
+   "name": "サイモンシャリオ",
+   "time": "2:01.4",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "3",
+    "yen": 290,
+    "pop": 2
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "3",
+    "yen": 110,
+    "pop": 2
+   },
+   {
+    "combo": "7",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "5",
+    "yen": 110,
+    "pop": 3
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-7",
+    "yen": 200,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-7",
+    "yen": 130,
+    "pop": 1
+   },
+   {
+    "combo": "3-5",
+    "yen": 260,
+    "pop": 3
+   },
+   {
+    "combo": "5-7",
+    "yen": 180,
+    "pop": 2
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-7",
+    "yen": 230,
+    "pop": 1
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "3-7",
+    "yen": 510,
+    "pop": 2
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-5-7",
+    "yen": 370,
+    "pop": 1
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "3-7-5",
+    "yen": 1580,
+    "pop": 3
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261107",
+ "venue_code": "05",
+ "race_no": 8,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605010820261107/92",
+ "title": "レース結果 JRA"
+}
