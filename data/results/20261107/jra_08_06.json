@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 11,
+   "name": "ヨコハマブルース",
+   "time": "1:55.0",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 8,
+   "name": "スタニスラス",
+   "time": "",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "number": 1,
+   "name": "シニスターカイザー",
+   "time": "",
+   "margin": "７",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "4",
+   "number": 7,
+   "name": "タガノスパーク",
+   "time": "",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "number": 4,
+   "name": "ショウナンバラモン",
+   "time": "",
+   "margin": "４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "11",
+    "yen": 150,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "11",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "8",
+    "yen": 160,
+    "pop": 3
+   },
+   {
+    "combo": "1",
+    "yen": 170,
+    "pop": 4
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "7-8",
+    "yen": 320,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "8-11",
+    "yen": 220,
+    "pop": 2
+   },
+   {
+    "combo": "1-11",
+    "yen": 310,
+    "pop": 3
+   },
+   {
+    "combo": "1-8",
+    "yen": 550,
+    "pop": 7
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "8-11",
+    "yen": 410,
+    "pop": 2
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "11-8",
+    "yen": 580,
+    "pop": 2
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-8-11",
+    "yen": 950,
+    "pop": 3
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "11-8-1",
+    "yen": 2210,
+    "pop": 4
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261107",
+ "venue_code": "08",
+ "race_no": 6,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605010620261107/06",
+ "title": "レース結果 JRA"
+}
