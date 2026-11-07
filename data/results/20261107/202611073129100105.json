@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261107",
  "race_id": "202611073129100105",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -77,7 +77,7 @@
    "name": "クルマトラサン",
    "time": "1:26.7",
    "margin": "",
-   "pos4": null,
+   "pos4": 3,
    "last3f": null,
    "popularity": null
   },
@@ -88,7 +88,7 @@
    "name": "タイキエクセロン",
    "time": "1:26.8",
    "margin": "１／２",
-   "pos4": null,
+   "pos4": 2,
    "last3f": null,
    "popularity": null
   },
@@ -99,7 +99,7 @@
    "name": "エナジーアユ",
    "time": "1:27.0",
    "margin": "３／４",
-   "pos4": null,
+   "pos4": 1,
    "last3f": null,
    "popularity": null
   },
@@ -110,7 +110,7 @@
    "name": "ペイシャプレイ",
    "time": "1:27.0",
    "margin": "ハナ",
-   "pos4": null,
+   "pos4": 9,
    "last3f": null,
    "popularity": null
   },
@@ -121,7 +121,7 @@
    "name": "リゼレインボー",
    "time": "1:27.0",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 8,
    "last3f": null,
    "popularity": null
   },
@@ -132,7 +132,7 @@
    "name": "ローメット",
    "time": "1:27.4",
    "margin": "２",
-   "pos4": null,
+   "pos4": 3,
    "last3f": null,
    "popularity": null
   },
@@ -143,7 +143,7 @@
    "name": "セントキルダ",
    "time": "1:27.6",
    "margin": "１",
-   "pos4": null,
+   "pos4": 5,
    "last3f": null,
    "popularity": null
   },
@@ -154,7 +154,7 @@
    "name": "シシフンジン",
    "time": "1:27.9",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 5,
    "last3f": null,
    "popularity": null
   },
@@ -165,7 +165,7 @@
    "name": "トーケンタカハール",
    "time": "1:28.3",
    "margin": "２",
-   "pos4": null,
+   "pos4": 7,
    "last3f": null,
    "popularity": null
   },
