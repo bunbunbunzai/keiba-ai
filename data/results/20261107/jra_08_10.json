@@ -1,0 +1,228 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 5,
+   "name": "ルクスデイジー",
+   "time": "1:11.1",
+   "margin": "",
+   "corners": "6-6",
+   "last3f": 35.6,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "number": 6,
+   "name": "ウルスクローム",
+   "time": "1:11.2",
+   "margin": "１／２",
+   "corners": "8-8",
+   "last3f": 35.4,
+   "popularity": 4
+  },
+  {
+   "finish": "3",
+   "number": 13,
+   "name": "ユウトザレン",
+   "time": "1:11.3",
+   "margin": "クビ",
+   "corners": "7-6",
+   "last3f": 35.6,
+   "popularity": 5
+  },
+  {
+   "finish": "4",
+   "number": 1,
+   "name": "メイショウバルク",
+   "time": "1:11.3",
+   "margin": "クビ",
+   "corners": "1-1",
+   "last3f": 36.4,
+   "popularity": 1
+  },
+  {
+   "finish": "5",
+   "number": 12,
+   "name": "スペシャルナンバー",
+   "time": "1:11.6",
+   "margin": "１ 1/2",
+   "corners": "12-13",
+   "last3f": 35.3,
+   "popularity": 9
+  },
+  {
+   "finish": "6",
+   "number": 3,
+   "name": "ジャーヴィス",
+   "time": "1:11.8",
+   "margin": "１ 1/4",
+   "corners": "12-11",
+   "last3f": 35.6,
+   "popularity": 12
+  },
+  {
+   "finish": "7",
+   "number": 8,
+   "name": "キタノソワレ",
+   "time": "1:11.8",
+   "margin": "クビ",
+   "corners": "10-11",
+   "last3f": 35.7,
+   "popularity": 11
+  },
+  {
+   "finish": "8",
+   "number": 11,
+   "name": "シュヴァルボヌール",
+   "time": "1:11.9",
+   "margin": "クビ",
+   "corners": "3-3",
+   "last3f": 36.7,
+   "popularity": 6
+  },
+  {
+   "finish": "9",
+   "number": 10,
+   "name": "テーオーグレーザー",
+   "time": "1:12.0",
+   "margin": "３／４",
+   "corners": "2-2",
+   "last3f": 36.9,
+   "popularity": 3
+  },
+  {
+   "finish": "10",
+   "number": 9,
+   "name": "カミーロ",
+   "time": "1:12.2",
+   "margin": "１ 1/4",
+   "corners": "8-8",
+   "last3f": 36.4,
+   "popularity": 13
+  },
+  {
+   "finish": "11",
+   "number": 14,
+   "name": "ゼンノツキヨミ",
+   "time": "1:12.3",
+   "margin": "３／４",
+   "corners": "3-3",
+   "last3f": 37.0,
+   "popularity": 7
+  },
+  {
+   "finish": "12",
+   "number": 7,
+   "name": "メイショウタイゲイ",
+   "time": "1:12.4",
+   "margin": "クビ",
+   "corners": "14-14",
+   "last3f": 35.9,
+   "popularity": 14
+  },
+  {
+   "finish": "13",
+   "number": 2,
+   "name": "ユハンヌス",
+   "time": "1:12.4",
+   "margin": "ハナ",
+   "corners": "10-8",
+   "last3f": 36.5,
+   "popularity": 8
+  },
+  {
+   "finish": "14",
+   "number": 4,
+   "name": "クリノオリーブ",
+   "time": "1:12.8",
+   "margin": "２ 1/2",
+   "corners": "3-3",
+   "last3f": 37.5,
+   "popularity": 10
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "5",
+    "yen": 370,
+    "pop": 2
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "5",
+    "yen": 140,
+    "pop": 2
+   },
+   {
+    "combo": "6",
+    "yen": 140,
+    "pop": 3
+   },
+   {
+    "combo": "13",
+    "yen": 270,
+    "pop": 5
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-4",
+    "yen": 830,
+    "pop": 4
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "5-6",
+    "yen": 280,
+    "pop": 2
+   },
+   {
+    "combo": "5-13",
+    "yen": 770,
+    "pop": 8
+   },
+   {
+    "combo": "6-13",
+    "yen": 820,
+    "pop": 9
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "5-6",
+    "yen": 800,
+    "pop": 4
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "5-6",
+    "yen": 1530,
+    "pop": 5
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "5-6-13",
+    "yen": 2960,
+    "pop": 8
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "5-6-13",
+    "yen": 11480,
+    "pop": 34
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261107",
+ "venue_code": "08",
+ "race_no": 10,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605011020261107/1A",
+ "title": "レース結果 JRA"
+}
