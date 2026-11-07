@@ -89,7 +89,7 @@
    "url": "https://www.ai-keiba-log.com/2026/11/07/kyoto/08r/",
    "created": "2026-11-07 12:01",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2118905738256933262",
    "x_at": "2026-11-07 12:17",
    "x_thread_ids": [
@@ -97,8 +97,8 @@
     "2118905741612323099",
     "2118905742711234649"
    ],
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'ANqEoT1UndpvV8YTlKwK8P1'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'Ah4hpvioOPUPz9VuNDN_EOw'}",
+   "instagram_tries": 3
   },
   "hit-jra_20261107_東京_04": {
    "kind": "hit",
@@ -112,11 +112,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/07/tokyo/04r/",
    "created": "2026-11-07 12:01",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2118905745307566528",
    "x_at": "2026-11-07 12:17",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'code': 200, 'type': 'OAuthException', 'fbtrace_id': 'AOm0kuXpvcHNTEDntc87IMe'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'ASCL0PotFmxL_AJz1pE9wYO'}",
+   "instagram_tries": 3
   },
   "hit-jra_20261107_京都_07": {
    "kind": "hit",
@@ -129,8 +129,12 @@
    "ig_caption": "【的中】京都7R \n◎9パンサーズ　〇8テーオーパーセル　▲6マイティマイティー\n複勝 9　150円\n投資100円→払戻150円（回収率150.0%）\n\nこのレースの全頭評価と買い目 → www.ai-keiba-log.com/2026/11/07/kyoto/07r/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#競馬予想 #京都競馬 #AI予想 #的中 #競馬 #競馬全頭ログ",
    "url": "https://www.ai-keiba-log.com/2026/11/07/kyoto/07r/",
    "created": "2026-11-07 14:44",
-   "x": "pending",
-   "instagram": "pending"
+   "x": "posted",
+   "instagram": "pending",
+   "x_id": "2118942930090033239",
+   "x_at": "2026-11-07 14:45",
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'code': 200, 'type': 'OAuthException', 'fbtrace_id': 'A27DX-ouENu8ruw_Bgx12_J'}",
+   "instagram_tries": 1
   },
   "res-jra_20261107_京都_08": {
    "kind": "grade_res",
@@ -143,8 +147,12 @@
    "ig_caption": "【的中】京都8R 京都ジャンプステークス（J・G3）\n◎9ディナースタ　〇7コンテナワールド　▲6シホノスペランツァ\n複勝 9　110円\n3連複 6-8-9　480円\n投資800円→払戻590円（回収率73.8%）\n\nこのレースの全頭評価と買い目 → www.ai-keiba-log.com/2026/11/07/kyoto/08r/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#京都ジャンプステークス #競馬予想 #京都競馬 #AI予想 #重賞 #競馬 #競馬全頭ログ",
    "url": "https://www.ai-keiba-log.com/2026/11/07/kyoto/08r/",
    "created": "2026-11-07 14:44",
-   "x": "pending",
-   "instagram": "pending"
+   "x": "posted",
+   "instagram": "pending",
+   "x_id": "2118942934762496003",
+   "x_at": "2026-11-07 14:45",
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AXtrhMVcr4e6vUGcJ389_sm'}",
+   "instagram_tries": 1
   },
   "hit-jra_20261107_東京_08": {
    "kind": "hit",
@@ -157,8 +165,12 @@
    "ig_caption": "【的中】東京8R \n◎7アクロフェイズ　〇5リポサンテ　▲3ラディアントスター\n複勝 7　110円\n投資100円→払戻110円（回収率110.0%）\n\nこのレースの全頭評価と買い目 → www.ai-keiba-log.com/2026/11/07/tokyo/08r/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#競馬予想 #東京競馬 #AI予想 #的中 #競馬 #競馬全頭ログ",
    "url": "https://www.ai-keiba-log.com/2026/11/07/tokyo/08r/",
    "created": "2026-11-07 14:44",
-   "x": "pending",
-   "instagram": "pending"
+   "x": "posted",
+   "instagram": "pending",
+   "x_id": "2118942937987821967",
+   "x_at": "2026-11-07 14:45",
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AHhL7_JR8pKQo5l-0sx2MDm'}",
+   "instagram_tries": 1
   },
   "hit-jra_20261107_東京_09": {
    "kind": "hit",
@@ -171,8 +183,12 @@
    "ig_caption": "【的中】東京9R 神奈川新聞杯\n◎6ボクマダネムイヨ　〇5ユウトザユウト　▲1ローズマイスター\n複勝 6　130円\n投資100円→払戻130円（回収率130.0%）\n\nこのレースの全頭評価と買い目 → www.ai-keiba-log.com/2026/11/07/tokyo/09r/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#競馬予想 #東京競馬 #AI予想 #的中 #競馬 #競馬全頭ログ",
    "url": "https://www.ai-keiba-log.com/2026/11/07/tokyo/09r/",
    "created": "2026-11-07 14:44",
-   "x": "pending",
-   "instagram": "pending"
+   "x": "posted",
+   "instagram": "pending",
+   "x_id": "2118942940957491434",
+   "x_at": "2026-11-07 14:45",
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A5vAvAFZdMJt8FInmWpKXuM'}",
+   "instagram_tries": 1
   },
   "pre-jra_20261107_東京_11": {
    "kind": "grade_pre",
@@ -189,8 +205,17 @@
    "ig_caption": "【重賞AI予想】東京11R 京王杯（G2）\n11/7 15:35発走\n◎10ロンドンガーズ　〇9ブルージェイ　▲5グルーヴェンス\n自信度C\n◎は前走もみじSで同じ芝1400mを逃げ切り、速い上がりも出した10ロンドンガーズ。単勝7.5倍の5番人気で、人気の割に…\n\nこのレースの全頭評価と買い目 → www.ai-keiba-log.com/2026/11/07/tokyo/11r/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#京王杯 #競馬予想 #東京競馬 #AI予想 #重賞 #競馬 #競馬全頭ログ",
    "url": "https://www.ai-keiba-log.com/2026/11/07/tokyo/11r/",
    "created": "2026-11-07 14:44",
-   "x": "pending",
-   "instagram": "pending"
+   "x": "posted",
+   "instagram": "pending",
+   "x_id": "2118942944191226200",
+   "x_at": "2026-11-07 14:45",
+   "x_thread_ids": [
+    "2118942945936064607",
+    "2118942947135656379",
+    "2118942948213576099"
+   ],
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AtWg3F8oCKW2ZfZUGd_EpzI'}",
+   "instagram_tries": 1
   },
   "hit-jra_20261107_福島_07": {
    "kind": "hit",
@@ -203,8 +228,12 @@
    "ig_caption": "【的中】福島7R \n◎9フロムレイブン　〇3セゾンデフィーユ　▲4グレイシエーション\n複勝 9　110円\n投資100円→払戻110円（回収率110.0%）\n\nこのレースの全頭評価と買い目 → www.ai-keiba-log.com/2026/11/07/fukushima/07r/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#競馬予想 #福島競馬 #AI予想 #的中 #競馬 #競馬全頭ログ",
    "url": "https://www.ai-keiba-log.com/2026/11/07/fukushima/07r/",
    "created": "2026-11-07 14:44",
-   "x": "pending",
-   "instagram": "pending"
+   "x": "posted",
+   "instagram": "pending",
+   "x_id": "2118942950910562498",
+   "x_at": "2026-11-07 14:45",
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'Acg7K75S_qX0MxRgut0Lz4K'}",
+   "instagram_tries": 1
   },
   "hit-jra_20261107_福島_08": {
    "kind": "hit",
@@ -217,8 +246,12 @@
    "ig_caption": "【的中】福島8R \n◎9モズオウンゴール　〇12マダムイグレイン　▲11グラスゴー\n複勝 9　150円\n投資100円→払戻150円（回収率150.0%）\n\nこのレースの全頭評価と買い目 → www.ai-keiba-log.com/2026/11/07/fukushima/08r/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#競馬予想 #福島競馬 #AI予想 #的中 #競馬 #競馬全頭ログ",
    "url": "https://www.ai-keiba-log.com/2026/11/07/fukushima/08r/",
    "created": "2026-11-07 14:44",
-   "x": "pending",
-   "instagram": "pending"
+   "x": "posted",
+   "instagram": "pending",
+   "x_id": "2118942954152657069",
+   "x_at": "2026-11-07 14:45",
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AbwPOHqLCYROHyfwbilhusz'}",
+   "instagram_tries": 1
   }
  }
 }
