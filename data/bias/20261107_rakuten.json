@@ -1,13 +1,14 @@
 {
  "date": "20261107",
- "updated": "2026-11-07 16:14",
+ "updated": "2026-11-07 16:20",
  "bias": {
   "高知ダ": {
    "judgement": "先行有利・外",
-   "confidence": "弱",
+   "confidence": "中",
    "races": [
     1,
-    2
+    2,
+    3
    ],
    "front_share": 1.0,
    "inner_share": 0.0,
