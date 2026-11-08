@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261108",
  "race_id": "202611083129100204",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "ヴィーラー",
    "time": "1:25.7",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 39.4,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "トシッキーセカンド",
    "time": "1:25.9",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 40.1,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "メイショウユウゲン",
    "time": "1:26.2",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 40.3,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "ジーティービバ",
    "time": "1:27.2",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 41.0,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "シデレウス",
    "time": "1:27.6",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 41.0,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "コスモラパウィラ",
    "time": "1:27.6",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 41.0,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "ジョウショーレーヴ",
    "time": "1:28.3",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 41.1,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "サンシャインビーチ",
    "time": "1:28.4",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 41.9,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "トーセンブレンダ",
    "time": "1:29.7",
    "margin": "６",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 42.6,
    "popularity": null
   }
  ]
