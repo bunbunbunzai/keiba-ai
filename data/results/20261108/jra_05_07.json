@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 7,
+   "name": "ハクシンブライアン",
+   "time": "1:36.9",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "number": 14,
+   "name": "ダノンマスタング",
+   "time": "1:36.9",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "number": 3,
+   "name": "アイランド",
+   "time": "1:37.4",
+   "margin": "３",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "4",
+   "number": 5,
+   "name": "サトノリシャール",
+   "time": "1:37.4",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "number": 11,
+   "name": "ブレスドナイル",
+   "time": "1:37.5",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "6",
+   "number": 4,
+   "name": "イーサンミラー",
+   "time": "1:37.6",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "7",
+   "number": 1,
+   "name": "ポッドロルフ",
+   "time": "1:37.8",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "8",
+   "number": 12,
+   "name": "ロードヴェルテクス",
+   "time": "1:37.9",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "9",
+   "number": 13,
+   "name": "イージーブリージー",
+   "time": "1:37.9",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "10",
+   "number": 2,
+   "name": "インディヴァイン",
+   "time": "1:38.4",
+   "margin": "３",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "11",
+   "number": 9,
+   "name": "メイショウルーク",
+   "time": "1:38.6",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "12",
+   "number": 8,
+   "name": "アルデキングダム",
+   "time": "1:38.7",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "13",
+   "number": 16,
+   "name": "スクイーズアウト",
+   "time": "1:39.1",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "14",
+   "number": 10,
+   "name": "レッドアヴィオン",
+   "time": "1:39.8",
+   "margin": "４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "15",
+   "number": 15,
+   "name": "パッションディーバ",
+   "time": "1:39.9",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 16
+  },
+  {
+   "finish": "16",
+   "number": 6,
+   "name": "オウケンサクラコ",
+   "time": "1:40.6",
+   "margin": "４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 15
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "7",
+    "yen": 600,
+    "pop": 2
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "7",
+    "yen": 140,
+    "pop": 2
+   },
+   {
+    "combo": "14",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "3",
+    "yen": 310,
+    "pop": 6
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-7",
+    "yen": 340,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "7-14",
+    "yen": 210,
+    "pop": 1
+   },
+   {
+    "combo": "3-7",
+    "yen": 880,
+    "pop": 10
+   },
+   {
+    "combo": "3-14",
+    "yen": 470,
+    "pop": 5
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "7-14",
+    "yen": 420,
+    "pop": 2
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "7-14",
+    "yen": 1880,
+    "pop": 8
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-7-14",
+    "yen": 1610,
+    "pop": 5
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "7-14-3",
+    "yen": 14560,
+    "pop": 37
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261108",
+ "venue_code": "05",
+ "race_no": 7,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605020720261108/0D",
+ "title": "レース結果 JRA"
+}
