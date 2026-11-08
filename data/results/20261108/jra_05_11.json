@@ -1,0 +1,268 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 6,
+   "name": "ファミリータイム",
+   "time": "2:30.9",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 16
+  },
+  {
+   "finish": "2",
+   "number": 15,
+   "name": "ホーエリート",
+   "time": "2:31.0",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "3",
+   "number": 12,
+   "name": "メイショウゲキリン",
+   "time": "2:31.0",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "4",
+   "number": 3,
+   "name": "マイネルエンペラー",
+   "time": "2:31.0",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "5",
+   "number": 1,
+   "name": "ジーティーダーリン",
+   "time": "2:31.1",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "6",
+   "number": 4,
+   "name": "ミラージュナイト",
+   "time": "2:31.3",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "7",
+   "number": 5,
+   "name": "ドゥラドーレス",
+   "time": "2:31.4",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "8",
+   "number": 7,
+   "name": "ファイアンクランツ",
+   "time": "2:31.6",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "9",
+   "number": 16,
+   "name": "キングズパレス",
+   "time": "2:31.6",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "10",
+   "number": 9,
+   "name": "レッドバンデ",
+   "time": "2:31.6",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "11",
+   "number": 11,
+   "name": "ウエストナウ",
+   "time": "2:31.6",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "12",
+   "number": 17,
+   "name": "キングスコール",
+   "time": "2:31.7",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "13",
+   "number": 2,
+   "name": "ビザンチンドリーム",
+   "time": "2:31.8",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "14",
+   "number": 8,
+   "name": "ジョイボーイ",
+   "time": "2:31.8",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "15",
+   "number": 10,
+   "name": "ボーンディスウェイ",
+   "time": "2:32.3",
+   "margin": "３",
+   "corners": "",
+   "last3f": null,
+   "popularity": 17
+  },
+  {
+   "finish": "16",
+   "number": 13,
+   "name": "マイネルカンパーナ",
+   "time": "2:32.7",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 18
+  },
+  {
+   "finish": "17",
+   "number": 18,
+   "name": "ミステリーウェイ",
+   "time": "2:32.7",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "18",
+   "number": 14,
+   "name": "ミクニインスパイア",
+   "time": "2:33.1",
+   "margin": "２ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "6",
+    "yen": 7420,
+    "pop": 16
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "6",
+    "yen": 1960,
+    "pop": 15
+   },
+   {
+    "combo": "15",
+    "yen": 1020,
+    "pop": 12
+   },
+   {
+    "combo": "12",
+    "yen": 1200,
+    "pop": 13
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-7",
+    "yen": 3290,
+    "pop": 18
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "6-15",
+    "yen": 29720,
+    "pop": 133
+   },
+   {
+    "combo": "6-12",
+    "yen": 35470,
+    "pop": 140
+   },
+   {
+    "combo": "12-15",
+    "yen": 17450,
+    "pop": 106
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "6-15",
+    "yen": 135980,
+    "pop": 135
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "6-15",
+    "yen": 291600,
+    "pop": 278
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "6-12-15",
+    "yen": 1635170,
+    "pop": 755
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "6-15-12",
+    "yen": 12065300,
+    "pop": 4608
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261108",
+ "venue_code": "05",
+ "race_no": 11,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605021120261108/21",
+ "title": "レース結果 JRA"
+}
