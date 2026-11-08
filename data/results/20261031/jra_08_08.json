@@ -6,8 +6,8 @@
    "name": "マメタンク",
    "time": "1:10.6",
    "margin": "",
-   "corners": "",
-   "last3f": null,
+   "corners": "3-6",
+   "last3f": 35.5,
    "popularity": 3
   },
   {
@@ -16,8 +16,8 @@
    "name": "ライトオブヌカタ",
    "time": "1:11.0",
    "margin": "２",
-   "corners": "",
-   "last3f": null,
+   "corners": "7-7",
+   "last3f": 35.7,
    "popularity": 1
   },
   {
@@ -26,8 +26,8 @@
    "name": "モンサンゴールデン",
    "time": "1:11.0",
    "margin": "ハナ",
-   "corners": "",
-   "last3f": null,
+   "corners": "8-9",
+   "last3f": 35.5,
    "popularity": 5
   },
   {
@@ -36,8 +36,8 @@
    "name": "ルイステソーロ",
    "time": "1:11.0",
    "margin": "アタマ",
-   "corners": "",
-   "last3f": null,
+   "corners": "3-3",
+   "last3f": 35.9,
    "popularity": 11
   },
   {
@@ -46,8 +46,8 @@
    "name": "ミサビスケッツ",
    "time": "1:11.2",
    "margin": "１ 1/4",
-   "corners": "",
-   "last3f": null,
+   "corners": "10-9",
+   "last3f": 35.5,
    "popularity": 6
   },
   {
@@ -56,8 +56,8 @@
    "name": "ズバットマサムネ",
    "time": "1:11.2",
    "margin": "ハナ",
-   "corners": "",
-   "last3f": null,
+   "corners": "1-1",
+   "last3f": 36.8,
    "popularity": 10
   },
   {
@@ -66,8 +66,8 @@
    "name": "ダノンモンテローザ",
    "time": "1:11.3",
    "margin": "３／４",
-   "corners": "",
-   "last3f": null,
+   "corners": "8-7",
+   "last3f": 35.9,
    "popularity": 2
   },
   {
@@ -76,8 +76,8 @@
    "name": "バッハアルプゼー",
    "time": "1:11.5",
    "margin": "１ 1/4",
-   "corners": "",
-   "last3f": null,
+   "corners": "3-3",
+   "last3f": 36.4,
    "popularity": 4
   },
   {
@@ -86,8 +86,8 @@
    "name": "ジーベック",
    "time": "1:11.6",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "12-12",
+   "last3f": 35.5,
    "popularity": 9
   },
   {
@@ -96,8 +96,8 @@
    "name": "ワイノナオミ",
    "time": "1:11.6",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "12-12",
+   "last3f": 35.5,
    "popularity": 12
   },
   {
@@ -106,8 +106,8 @@
    "name": "ダズリングダンス",
    "time": "1:11.9",
    "margin": "１ 1/2",
-   "corners": "",
-   "last3f": null,
+   "corners": "2-2",
+   "last3f": 37.0,
    "popularity": 7
   },
   {
@@ -116,8 +116,8 @@
    "name": "バイファーザベスト",
    "time": "1:12.1",
    "margin": "１ 1/2",
-   "corners": "",
-   "last3f": null,
+   "corners": "12-14",
+   "last3f": 35.8,
    "popularity": 14
   },
   {
@@ -126,8 +126,8 @@
    "name": "ストラテージュ",
    "time": "1:12.5",
    "margin": "２ 1/2",
-   "corners": "",
-   "last3f": null,
+   "corners": "3-3",
+   "last3f": 37.4,
    "popularity": 13
   },
   {
@@ -136,8 +136,8 @@
    "name": "ビッグドリーム",
    "time": "1:12.6",
    "margin": "１／２",
-   "corners": "",
-   "last3f": null,
+   "corners": "10-9",
+   "last3f": 36.8,
    "popularity": 8
   }
  ],
@@ -223,6 +223,6 @@
  "date": "20261031",
  "venue_code": "08",
  "race_no": 8,
- "url": "/JRADB/accessS.html?CNAME=pw01sde0108202604100820261031/01",
+ "url": "/JRADB/accessS.html?CNAME=pw01sde1008202604100820261031/E0",
  "title": "レース結果 JRA"
 }
