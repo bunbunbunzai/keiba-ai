@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 16,
+   "name": "ルクスコスモス",
+   "time": "1:10.0",
+   "margin": "",
+   "corners": "6-6",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "2",
+   "number": 12,
+   "name": "ステキサプライズ",
+   "time": "1:10.3",
+   "margin": "２",
+   "corners": "4-3",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "3",
+   "number": 15,
+   "name": "レッドカメリア",
+   "time": "1:10.4",
+   "margin": "クビ",
+   "corners": "9-9",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "4",
+   "number": 9,
+   "name": "ジェムシリカ",
+   "time": "1:10.6",
+   "margin": "１",
+   "corners": "3-3",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "5",
+   "number": 4,
+   "name": "チュウワメロディー",
+   "time": "1:10.6",
+   "margin": "クビ",
+   "corners": "4-5",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "6",
+   "number": 11,
+   "name": "ロンドンアームズ",
+   "time": "1:10.7",
+   "margin": "クビ",
+   "corners": "8-9",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "number": 14,
+   "name": "モズレイラココナ",
+   "time": "1:10.7",
+   "margin": "ハナ",
+   "corners": "13-13",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "8",
+   "number": 7,
+   "name": "ジューンオアシス",
+   "time": "1:11.0",
+   "margin": "１ 1/2",
+   "corners": "6-6",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "9",
+   "number": 6,
+   "name": "ディオデルマーレ",
+   "time": "1:11.1",
+   "margin": "１／２",
+   "corners": "9-8",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "10",
+   "number": 3,
+   "name": "スピリットライズ",
+   "time": "1:11.1",
+   "margin": "アタマ",
+   "corners": "16-15",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "11",
+   "number": 10,
+   "name": "ペイシャアーサー",
+   "time": "1:11.2",
+   "margin": "１／２",
+   "corners": "9-9",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "12",
+   "number": 13,
+   "name": "レオプルミエール",
+   "time": "1:11.3",
+   "margin": "３／４",
+   "corners": "9-12",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "13",
+   "number": 5,
+   "name": "ディーズメンフィス",
+   "time": "1:11.4",
+   "margin": "１／２",
+   "corners": "2-2",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "14",
+   "number": 8,
+   "name": "リュウセイコウテイ",
+   "time": "1:11.7",
+   "margin": "１ 3/4",
+   "corners": "13-13",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "15",
+   "number": 2,
+   "name": "クラウンフリード",
+   "time": "1:12.2",
+   "margin": "３",
+   "corners": "15-15",
+   "last3f": null,
+   "popularity": 16
+  },
+  {
+   "finish": "16",
+   "number": 1,
+   "name": "マイネルユーゲント",
+   "time": "1:12.8",
+   "margin": "３ 1/2",
+   "corners": "1-1",
+   "last3f": null,
+   "popularity": 3
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "16",
+    "yen": 930,
+    "pop": 4
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "16",
+    "yen": 460,
+    "pop": 7
+   },
+   {
+    "combo": "12",
+    "yen": 620,
+    "pop": 9
+   },
+   {
+    "combo": "15",
+    "yen": 1050,
+    "pop": 11
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "6-8",
+    "yen": 4290,
+    "pop": 19
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "12-16",
+    "yen": 5580,
+    "pop": 56
+   },
+   {
+    "combo": "15-16",
+    "yen": 3600,
+    "pop": 42
+   },
+   {
+    "combo": "12-15",
+    "yen": 11330,
+    "pop": 83
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "12-16",
+    "yen": 14160,
+    "pop": 49
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "16-12",
+    "yen": 24800,
+    "pop": 87
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "12-15-16",
+    "yen": 83420,
+    "pop": 214
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "16-12-15",
+    "yen": 408800,
+    "pop": 1053
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261108",
+ "venue_code": "03",
+ "race_no": 12,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603021220261108/E0",
+ "title": "レース結果 JRA"
+}
