@@ -1,0 +1,218 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 4,
+   "name": "リアンドゥクール",
+   "time": "1:52.9",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 9,
+   "name": "ロイスター",
+   "time": "1:53.0",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "number": 8,
+   "name": "ヴァンアグレアブル",
+   "time": "1:53.3",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "4",
+   "number": 1,
+   "name": "エターナルプロミス",
+   "time": "1:53.4",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "5",
+   "number": 3,
+   "name": "ヒミノエトワール",
+   "time": "1:53.5",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "6",
+   "number": 11,
+   "name": "レディーゴール",
+   "time": "1:53.6",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "7",
+   "number": 10,
+   "name": "プリンセスアツコ",
+   "time": "1:53.9",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "8",
+   "number": 6,
+   "name": "スカイビート",
+   "time": "1:53.9",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "9",
+   "number": 5,
+   "name": "フクキタテーラー",
+   "time": "1:53.9",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "10",
+   "number": 13,
+   "name": "エアニゲラ",
+   "time": "1:54.1",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "11",
+   "number": 12,
+   "name": "ユウェンタース",
+   "time": "1:54.3",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "12",
+   "number": 2,
+   "name": "マクノス",
+   "time": "1:54.3",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "13",
+   "number": 7,
+   "name": "アイブリンク",
+   "time": "1:54.5",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "4",
+    "yen": 220,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "4",
+    "yen": 140,
+    "pop": 1
+   },
+   {
+    "combo": "9",
+    "yen": 180,
+    "pop": 3
+   },
+   {
+    "combo": "8",
+    "yen": 280,
+    "pop": 6
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-6",
+    "yen": 510,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-9",
+    "yen": 350,
+    "pop": 2
+   },
+   {
+    "combo": "4-8",
+    "yen": 730,
+    "pop": 9
+   },
+   {
+    "combo": "8-9",
+    "yen": 880,
+    "pop": 14
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-9",
+    "yen": 690,
+    "pop": 2
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "4-9",
+    "yen": 1100,
+    "pop": 2
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-8-9",
+    "yen": 2920,
+    "pop": 9
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "4-9-8",
+    "yen": 7870,
+    "pop": 16
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261108",
+ "venue_code": "08",
+ "race_no": 7,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605020720261108/EB",
+ "title": "レース結果 JRA"
+}
