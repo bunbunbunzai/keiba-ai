@@ -66,13 +66,14 @@
   },
   "京都ダ": {
    "judgement": "内先行",
-   "confidence": "中",
+   "confidence": "強",
    "races": [
     1,
     2,
     4,
     7,
-    9
+    9,
+    11
    ],
    "front_share": 1.0,
    "inner_share": 0.75,
