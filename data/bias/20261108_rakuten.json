@@ -1,9 +1,9 @@
 {
  "date": "20261108",
- "updated": "2026-11-08 17:44",
+ "updated": "2026-11-08 17:50",
  "bias": {
   "盛岡ダ": {
-   "judgement": "先行有利・外",
+   "judgement": "先行有利",
    "confidence": "中",
    "races": [
     1,
@@ -15,12 +15,13 @@
     7,
     8,
     9,
-    10
+    10,
+    11
    ],
-   "front_share": 0.8,
-   "inner_share": 0.15,
+   "front_share": 0.82,
+   "inner_share": 0.18,
    "outer_share": 0.45,
-   "horses": 20
+   "horses": 22
   },
   "高知ダ": {
    "judgement": "先行有利",
@@ -47,10 +48,10 @@
     4,
     5
    ],
-   "front_share": 1.0,
-   "inner_share": 0.12,
-   "outer_share": 0.38,
-   "horses": 8
+   "front_share": 0.9,
+   "inner_share": 0.3,
+   "outer_share": 0.3,
+   "horses": 10
   }
  }
 }
