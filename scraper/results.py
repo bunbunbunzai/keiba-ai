@@ -37,6 +37,24 @@ def has_full_result(f) -> bool:
     return bool(rows) and any(r.get("pos4") is not None for r in rows)
 
 
+def _jra_progress(rows: list) -> tuple[int, int]:
+    """(着順の行数, 通過順のある行数)。速報 → 全着順 → 通過順つき、の順に増える。"""
+    return len(rows), sum(1 for r in rows if r.get("corners"))
+
+
+def _jra_rows_full(rows: list) -> bool:
+    n, c = _jra_progress(rows)
+    return n >= 6 and c > 0
+
+
+def has_full_jra_result(f) -> bool:
+    """JRAは確定直後の速報ページが上位5頭だけ（コーナー通過順なし）のことがある。払戻があっても
+    全着順と通過順が無ければ未完成として取り直す（bias.py の通過順判定と◎の着順表示に使う）。"""
+    if not has_payouts(f):
+        return False
+    return _jra_rows_full(json.loads(f.read_text(encoding="utf-8")).get("rows") or [])
+
+
 def drop_cache(url: str) -> None:
     from jra_cards import CNAME_RE
     cm = CNAME_RE.search(url)
@@ -58,12 +76,21 @@ def jra(target: str) -> int:
         for url in links:
             m = re.search(r"pw01sde\d{2}(\d{2})(\d{4})(\d{2})(\d{2})(\d{2})", url)
             venue_code, rno = (m.group(1), int(m.group(5))) if m else ("XX", 0)
-            if has_payouts(DATA_DIR / "results" / target / f"jra_{venue_code}_{rno:02d}.json"):
-                continue  # 確定済みは取り直さない
+            out_f = DATA_DIR / "results" / target / f"jra_{venue_code}_{rno:02d}.json"
+            if has_full_jra_result(out_f):
+                continue  # 確定済み（全着順あり）は取り直さない
+            saved_quick = has_payouts(out_f)
+            if saved_quick:
+                drop_cache(url)  # 速報（上位5頭だけ）で保存済み → キャッシュを捨てて全着順を取り直す
             rh = cached_result(sess, url)
             res = parse_result(rh)
-            if not res.get("payouts"):
-                drop_cache(url)  # 未確定のページはキャッシュしない（次回取り直す）
+            full = _jra_rows_full(res.get("rows") or [])
+            if not res.get("payouts") or not full:
+                drop_cache(url)  # 未確定・速報だけのページはキャッシュしない（次回取り直す）
+            if saved_quick and not full:
+                prev = _jra_progress(json.loads(out_f.read_text(encoding="utf-8")).get("rows") or [])
+                if _jra_progress(res.get("rows") or []) <= prev:
+                    continue  # まだ速報のまま。保存済みより進んでいないので書き換えない
             title = BeautifulSoup(rh, "html.parser").title
             res.update(source="jra", date=target, venue_code=venue_code, race_no=rno, url=url,
                        title=text(title))
