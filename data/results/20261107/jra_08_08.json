@@ -14,7 +14,7 @@
    "finish": "2",
    "number": 6,
    "name": "シホノスペランツァ",
-   "time": "",
+   "time": "3:38.4",
    "margin": "８",
    "corners": "3-3-3-3",
    "last3f": null,
@@ -24,7 +24,7 @@
    "finish": "3",
    "number": 9,
    "name": "ディナースタ",
-   "time": "",
+   "time": "3:38.9",
    "margin": "３ 1/2",
    "corners": "4-4-5-4",
    "last3f": null,
@@ -34,7 +34,7 @@
    "finish": "4",
    "number": 7,
    "name": "コンテナワールド",
-   "time": "",
+   "time": "3:39.0",
    "margin": "クビ",
    "corners": "2-2-2-2",
    "last3f": null,
@@ -44,11 +44,51 @@
    "finish": "5",
    "number": 4,
    "name": "メイショウアツイタ",
-   "time": "",
+   "time": "3:39.7",
    "margin": "４",
    "corners": "5-5-6-6",
    "last3f": null,
    "popularity": 6
+  },
+  {
+   "finish": "6",
+   "number": 3,
+   "name": "トーアモルペウス",
+   "time": "3:40.1",
+   "margin": "２ 1/2",
+   "corners": "5-6-7-7",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "7",
+   "number": 5,
+   "name": "ヴラディア",
+   "time": "3:40.6",
+   "margin": "３",
+   "corners": "5-6-8-8",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "8",
+   "number": 1,
+   "name": "ロードリベラシオン",
+   "time": "3:40.7",
+   "margin": "１",
+   "corners": "8-6-3-5",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "中止",
+   "number": 2,
+   "name": "グラニットピーク",
+   "time": "",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
   }
  ],
  "payouts": {
@@ -133,6 +173,6 @@
  "date": "20261107",
  "venue_code": "08",
  "race_no": 8,
- "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605010820261107/70",
+ "url": "/JRADB/accessS.html?CNAME=pw01sde1008202605010820261107/4F",
  "title": "レース結果 JRA"
 }

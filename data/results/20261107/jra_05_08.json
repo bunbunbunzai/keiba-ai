@@ -6,8 +6,8 @@
    "name": "ラディアントスター",
    "time": "2:00.5",
    "margin": "",
-   "corners": "",
-   "last3f": null,
+   "corners": "10-10-10",
+   "last3f": 32.8,
    "popularity": 2
   },
   {
@@ -16,8 +16,8 @@
    "name": "アクロフェイズ",
    "time": "2:00.5",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "3-4-2",
+   "last3f": 33.5,
    "popularity": 1
   },
   {
@@ -26,8 +26,8 @@
    "name": "リポサンテ",
    "time": "2:00.5",
    "margin": "アタマ",
-   "corners": "",
-   "last3f": null,
+   "corners": "9-8-8",
+   "last3f": 33.1,
    "popularity": 3
   },
   {
@@ -36,8 +36,8 @@
    "name": "マイネルアレス",
    "time": "2:00.8",
    "margin": "１ 1/2",
-   "corners": "",
-   "last3f": null,
+   "corners": "5-6-4",
+   "last3f": 33.7,
    "popularity": 9
   },
   {
@@ -46,8 +46,8 @@
    "name": "ウェイクフィールド",
    "time": "2:01.0",
    "margin": "１ 1/4",
-   "corners": "",
-   "last3f": null,
+   "corners": "1-1-1",
+   "last3f": 34.1,
    "popularity": 4
   },
   {
@@ -56,8 +56,8 @@
    "name": "ロングミックス",
    "time": "2:01.0",
    "margin": "アタマ",
-   "corners": "",
-   "last3f": null,
+   "corners": "2-2-2",
+   "last3f": 34.0,
    "popularity": 5
   },
   {
@@ -66,8 +66,8 @@
    "name": "セイウンパシュート",
    "time": "2:01.1",
    "margin": "１／２",
-   "corners": "",
-   "last3f": null,
+   "corners": "6-6-6",
+   "last3f": 33.9,
    "popularity": 10
   },
   {
@@ -76,8 +76,8 @@
    "name": "アッカン",
    "time": "2:01.1",
    "margin": "アタマ",
-   "corners": "",
-   "last3f": null,
+   "corners": "8-8-8",
+   "last3f": 33.6,
    "popularity": 7
   },
   {
@@ -86,8 +86,8 @@
    "name": "クラッシファイド",
    "time": "2:01.3",
    "margin": "１ 1/2",
-   "corners": "",
-   "last3f": null,
+   "corners": "6-4-6",
+   "last3f": 34.1,
    "popularity": 6
   },
   {
@@ -96,8 +96,8 @@
    "name": "サイモンシャリオ",
    "time": "2:01.4",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "3-2-4",
+   "last3f": 34.3,
    "popularity": 8
   }
  ],
@@ -183,6 +183,6 @@
  "date": "20261107",
  "venue_code": "05",
  "race_no": 8,
- "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605010820261107/92",
+ "url": "/JRADB/accessS.html?CNAME=pw01sde1005202605010820261107/71",
  "title": "レース結果 JRA"
 }

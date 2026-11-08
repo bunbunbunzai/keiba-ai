@@ -6,49 +6,149 @@
    "name": "ドラゴンドール",
    "time": "1:34.4",
    "margin": "",
-   "corners": "",
-   "last3f": null,
+   "corners": "3-4",
+   "last3f": 34.6,
    "popularity": 6
   },
   {
    "finish": "2",
    "number": 8,
    "name": "レーヴドヒロイン",
-   "time": "",
+   "time": "1:34.5",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "3-3",
+   "last3f": 34.8,
    "popularity": 4
   },
   {
    "finish": "3",
    "number": 14,
    "name": "コジアン",
-   "time": "",
+   "time": "1:34.5",
    "margin": "アタマ",
-   "corners": "",
-   "last3f": null,
+   "corners": "5-6",
+   "last3f": 34.5,
    "popularity": 9
   },
   {
    "finish": "4",
    "number": 2,
    "name": "ハニーベル",
-   "time": "",
+   "time": "1:34.8",
    "margin": "２",
-   "corners": "",
-   "last3f": null,
+   "corners": "5-6",
+   "last3f": 34.8,
    "popularity": 1
   },
   {
    "finish": "5",
    "number": 5,
    "name": "マスリュウオー",
-   "time": "",
+   "time": "1:34.9",
    "margin": "１／２",
-   "corners": "",
-   "last3f": null,
+   "corners": "11-10",
+   "last3f": 34.5,
    "popularity": 5
+  },
+  {
+   "finish": "6",
+   "number": 15,
+   "name": "クラルテロワ",
+   "time": "1:35.2",
+   "margin": "１ 3/4",
+   "corners": "9-10",
+   "last3f": 35.0,
+   "popularity": 10
+  },
+  {
+   "finish": "7",
+   "number": 10,
+   "name": "アイデア",
+   "time": "1:35.2",
+   "margin": "クビ",
+   "corners": "9-8",
+   "last3f": 35.0,
+   "popularity": 7
+  },
+  {
+   "finish": "8",
+   "number": 6,
+   "name": "グラシアレスインク",
+   "time": "1:35.4",
+   "margin": "１",
+   "corners": "1-1",
+   "last3f": 36.0,
+   "popularity": 3
+  },
+  {
+   "finish": "9",
+   "number": 13,
+   "name": "オスカーレイア",
+   "time": "1:35.5",
+   "margin": "１／２",
+   "corners": "13-13",
+   "last3f": 34.9,
+   "popularity": 2
+  },
+  {
+   "finish": "10",
+   "number": 9,
+   "name": "ノンヴェドローラ",
+   "time": "1:35.6",
+   "margin": "３／４",
+   "corners": "15-15",
+   "last3f": 34.8,
+   "popularity": 12
+  },
+  {
+   "finish": "11",
+   "number": 7,
+   "name": "マイネルブラントン",
+   "time": "1:35.7",
+   "margin": "１／２",
+   "corners": "13-13",
+   "last3f": 35.2,
+   "popularity": 14
+  },
+  {
+   "finish": "12",
+   "number": 1,
+   "name": "グリーンアイランド",
+   "time": "1:35.7",
+   "margin": "ハナ",
+   "corners": "5-4",
+   "last3f": 35.9,
+   "popularity": 8
+  },
+  {
+   "finish": "13",
+   "number": 4,
+   "name": "ココフルール",
+   "time": "1:36.1",
+   "margin": "２ 1/2",
+   "corners": "2-2",
+   "last3f": 36.6,
+   "popularity": 11
+  },
+  {
+   "finish": "14",
+   "number": 3,
+   "name": "ダイヴ",
+   "time": "1:36.6",
+   "margin": "３",
+   "corners": "8-8",
+   "last3f": 36.5,
+   "popularity": 15
+  },
+  {
+   "finish": "15",
+   "number": 12,
+   "name": "ドゥラドゥーラ",
+   "time": "1:36.9",
+   "margin": "１ 3/4",
+   "corners": "11-12",
+   "last3f": 36.6,
+   "popularity": 13
   }
  ],
  "payouts": {
@@ -133,6 +233,6 @@
  "date": "20261107",
  "venue_code": "08",
  "race_no": 4,
- "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605010420261107/9C",
+ "url": "/JRADB/accessS.html?CNAME=pw01sde1008202605010420261107/7B",
  "title": "レース結果 JRA"
 }

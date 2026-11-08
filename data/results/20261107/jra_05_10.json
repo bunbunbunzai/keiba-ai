@@ -6,8 +6,8 @@
    "name": "ボウウィンドウ",
    "time": "2:00.2",
    "margin": "",
-   "corners": "",
-   "last3f": null,
+   "corners": "5-5-5",
+   "last3f": 33.9,
    "popularity": 1
   },
   {
@@ -16,8 +16,8 @@
    "name": "マイネルフーガ",
    "time": "2:00.3",
    "margin": "１／２",
-   "corners": "",
-   "last3f": null,
+   "corners": "3-3-3",
+   "last3f": 34.1,
    "popularity": 9
   },
   {
@@ -26,8 +26,8 @@
    "name": "トリプルコーク",
    "time": "2:00.3",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "7-6-8",
+   "last3f": 33.7,
    "popularity": 3
   },
   {
@@ -36,8 +36,8 @@
    "name": "ダンツファイター",
    "time": "2:00.3",
    "margin": "ハナ",
-   "corners": "",
-   "last3f": null,
+   "corners": "1-1-1",
+   "last3f": 34.4,
    "popularity": 8
   },
   {
@@ -46,8 +46,8 @@
    "name": "オストラヴァ",
    "time": "2:00.3",
    "margin": "アタマ",
-   "corners": "",
-   "last3f": null,
+   "corners": "7-8-6",
+   "last3f": 33.9,
    "popularity": 2
   },
   {
@@ -56,8 +56,8 @@
    "name": "フクノブルーレイク",
    "time": "2:00.5",
    "margin": "１ 1/4",
-   "corners": "",
-   "last3f": null,
+   "corners": "4-3-3",
+   "last3f": 34.3,
    "popularity": 7
   },
   {
@@ -66,8 +66,8 @@
    "name": "ロードガレリア",
    "time": "2:00.6",
    "margin": "１／２",
-   "corners": "",
-   "last3f": null,
+   "corners": "9-8-9",
+   "last3f": 33.9,
    "popularity": 6
   },
   {
@@ -76,8 +76,8 @@
    "name": "ピンキープロミス",
    "time": "2:00.7",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "9-8-9",
+   "last3f": 33.9,
    "popularity": 10
   },
   {
@@ -86,8 +86,8 @@
    "name": "シャハザマーン",
    "time": "2:01.1",
    "margin": "２ 1/2",
-   "corners": "",
-   "last3f": null,
+   "corners": "6-6-6",
+   "last3f": 34.7,
    "popularity": 4
   },
   {
@@ -96,8 +96,8 @@
    "name": "キングノジョー",
    "time": "2:01.3",
    "margin": "１",
-   "corners": "",
-   "last3f": null,
+   "corners": "2-2-2",
+   "last3f": 35.3,
    "popularity": 5
   },
   {
@@ -106,8 +106,8 @@
    "name": "ショーマンフリート",
    "time": "2:01.3",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "11-11-9",
+   "last3f": 34.6,
    "popularity": 11
   }
  ],
@@ -193,6 +193,6 @@
  "date": "20261107",
  "venue_code": "05",
  "race_no": 10,
- "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605011020261107/3C",
+ "url": "/JRADB/accessS.html?CNAME=pw01sde1005202605011020261107/1B",
  "title": "レース結果 JRA"
 }
