@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261108",
  "race_id": "202611083129100212",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 4,
+   "name": "エスケーブラッド",
+   "time": "1:26.9",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 40.7,
+   "popularity": 5
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 7,
+   "name": "ユイノナナフシギ",
+   "time": "1:27.5",
+   "margin": "３",
+   "pos4": 2,
+   "last3f": 41.2,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 12,
+   "name": "ビビットピンク",
+   "time": "1:27.5",
+   "margin": "クビ",
+   "pos4": 3,
+   "last3f": 41.1,
+   "popularity": 1
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 5,
+   "name": "メイジョウエナジー",
+   "time": "1:28.0",
+   "margin": "２ １／２",
+   "pos4": 4,
+   "last3f": 41.4,
+   "popularity": 6
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 8,
+   "name": "アキヤン",
+   "time": "1:28.1",
+   "margin": "１／２",
+   "pos4": 11,
+   "last3f": 40.6,
+   "popularity": 9
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 6,
+   "name": "キンデアポチャン",
+   "time": "1:28.1",
+   "margin": "ハナ",
+   "pos4": 5,
+   "last3f": 41.1,
+   "popularity": 8
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 3,
+   "name": "セージブラッシュ",
+   "time": "1:28.2",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": 40.9,
+   "popularity": 4
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 11,
+   "name": "スノープリンス",
+   "time": "1:28.7",
+   "margin": "２ １／２",
+   "pos4": 9,
+   "last3f": 42.0,
+   "popularity": 3
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 10,
+   "name": "ウィギル",
+   "time": "1:28.9",
+   "margin": "１",
+   "pos4": 5,
+   "last3f": 42.1,
+   "popularity": 7
+  },
+  {
+   "finish": "10",
+   "frame": 1,
+   "number": 1,
+   "name": "クラールス",
+   "time": "1:29.1",
+   "margin": "１",
+   "pos4": 10,
+   "last3f": 41.9,
+   "popularity": 12
+  },
+  {
+   "finish": "11",
+   "frame": 2,
+   "number": 2,
+   "name": "トラジロウ",
+   "time": "1:29.6",
+   "margin": "２ １／２",
+   "pos4": 5,
+   "last3f": 42.0,
+   "popularity": 10
+  },
+  {
+   "finish": "12",
+   "frame": 7,
+   "number": 9,
+   "name": "ヴィルアヴァンセ",
+   "time": "1:30.2",
+   "margin": "３",
+   "pos4": 12,
+   "last3f": 42.9,
+   "popularity": 11
+  }
+ ]
 }
