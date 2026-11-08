@@ -1,0 +1,238 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 13,
+   "name": "エリーニック",
+   "time": "1:43.9",
+   "margin": "",
+   "corners": "11-11-6-4",
+   "last3f": 35.7,
+   "popularity": 4
+  },
+  {
+   "finish": "2",
+   "number": 2,
+   "name": "ルージュボニート",
+   "time": "1:44.0",
+   "margin": "１／２",
+   "corners": "1-1-1-1",
+   "last3f": 36.2,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "number": 10,
+   "name": "ミヤジテン",
+   "time": "1:44.8",
+   "margin": "５",
+   "corners": "8-8-2-2",
+   "last3f": 37.0,
+   "popularity": 13
+  },
+  {
+   "finish": "4",
+   "number": 8,
+   "name": "ジョアン",
+   "time": "1:44.9",
+   "margin": "クビ",
+   "corners": "3-3-6-4",
+   "last3f": 36.8,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "number": 4,
+   "name": "テクノピーチ",
+   "time": "1:45.0",
+   "margin": "１／２",
+   "corners": "8-8-6-7",
+   "last3f": 36.8,
+   "popularity": 9
+  },
+  {
+   "finish": "6",
+   "number": 5,
+   "name": "チャチャコマニ",
+   "time": "1:45.0",
+   "margin": "ハナ",
+   "corners": "2-2-2-2",
+   "last3f": 37.1,
+   "popularity": 2
+  },
+  {
+   "finish": "7",
+   "number": 14,
+   "name": "アンリーベイビー",
+   "time": "1:45.1",
+   "margin": "３／４",
+   "corners": "14-14-11-12",
+   "last3f": 36.7,
+   "popularity": 7
+  },
+  {
+   "finish": "8",
+   "number": 6,
+   "name": "サザンティスプーン",
+   "time": "1:45.5",
+   "margin": "２",
+   "corners": "6-5-11-9",
+   "last3f": 37.1,
+   "popularity": 6
+  },
+  {
+   "finish": "9",
+   "number": 1,
+   "name": "ランスノーブル",
+   "time": "1:45.5",
+   "margin": "クビ",
+   "corners": "8-8-6-9",
+   "last3f": 37.3,
+   "popularity": 12
+  },
+  {
+   "finish": "10",
+   "number": 12,
+   "name": "クシマトゥルー",
+   "time": "1:46.1",
+   "margin": "３ 1/2",
+   "corners": "3-3-2-6",
+   "last3f": 38.2,
+   "popularity": 10
+  },
+  {
+   "finish": "11",
+   "number": 9,
+   "name": "クッカユフラ",
+   "time": "1:46.1",
+   "margin": "クビ",
+   "corners": "12-12-11-14",
+   "last3f": 37.7,
+   "popularity": 14
+  },
+  {
+   "finish": "12",
+   "number": 3,
+   "name": "ノーブルクインダム",
+   "time": "1:46.2",
+   "margin": "クビ",
+   "corners": "12-12-14-14",
+   "last3f": 37.5,
+   "popularity": 11
+  },
+  {
+   "finish": "13",
+   "number": 15,
+   "name": "プレイメイカー",
+   "time": "1:46.4",
+   "margin": "１ 1/4",
+   "corners": "5-5-2-7",
+   "last3f": 38.5,
+   "popularity": 3
+  },
+  {
+   "finish": "14",
+   "number": 11,
+   "name": "ギンケイ",
+   "time": "1:46.6",
+   "margin": "１ 1/2",
+   "corners": "14-15-14-9",
+   "last3f": 38.0,
+   "popularity": 8
+  },
+  {
+   "finish": "15",
+   "number": 7,
+   "name": "サツキバラード",
+   "time": "1:46.9",
+   "margin": "１ 3/4",
+   "corners": "6-5-6-12",
+   "last3f": 38.7,
+   "popularity": 15
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "13",
+    "yen": 900,
+    "pop": 4
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "13",
+    "yen": 290,
+    "pop": 3
+   },
+   {
+    "combo": "2",
+    "yen": 170,
+    "pop": 1
+   },
+   {
+    "combo": "10",
+    "yen": 1260,
+    "pop": 13
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-7",
+    "yen": 1570,
+    "pop": 6
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-13",
+    "yen": 820,
+    "pop": 5
+   },
+   {
+    "combo": "10-13",
+    "yen": 5300,
+    "pop": 58
+   },
+   {
+    "combo": "2-10",
+    "yen": 3410,
+    "pop": 43
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-13",
+    "yen": 1950,
+    "pop": 4
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "13-2",
+    "yen": 4230,
+    "pop": 10
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-10-13",
+    "yen": 28670,
+    "pop": 108
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "13-2-10",
+    "yen": 151670,
+    "pop": 608
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261108",
+ "venue_code": "03",
+ "race_no": 3,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603020320261108/43",
+ "title": "レース結果 JRA"
+}

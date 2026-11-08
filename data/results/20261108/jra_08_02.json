@@ -1,0 +1,218 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 1,
+   "name": "サルトヴェローチェ",
+   "time": "1:24.6",
+   "margin": "",
+   "corners": "2-2",
+   "last3f": 37.6,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 7,
+   "name": "エルダークローネ",
+   "time": "1:24.7",
+   "margin": "１／２",
+   "corners": "1-1",
+   "last3f": 37.9,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "number": 2,
+   "name": "スゴイジャン",
+   "time": "1:25.5",
+   "margin": "５",
+   "corners": "3-2",
+   "last3f": 38.4,
+   "popularity": 8
+  },
+  {
+   "finish": "4",
+   "number": 4,
+   "name": "カムトゥルー",
+   "time": "1:25.7",
+   "margin": "１ 1/2",
+   "corners": "4-4",
+   "last3f": 38.5,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "number": 13,
+   "name": "パロディ",
+   "time": "1:25.8",
+   "margin": "クビ",
+   "corners": "5-5",
+   "last3f": 38.4,
+   "popularity": 10
+  },
+  {
+   "finish": "6",
+   "number": 6,
+   "name": "オメガダフネ",
+   "time": "1:27.0",
+   "margin": "７",
+   "corners": "13-10",
+   "last3f": 38.0,
+   "popularity": 7
+  },
+  {
+   "finish": "7",
+   "number": 11,
+   "name": "アスレイ",
+   "time": "1:27.0",
+   "margin": "クビ",
+   "corners": "9-8",
+   "last3f": 38.7,
+   "popularity": 9
+  },
+  {
+   "finish": "8",
+   "number": 5,
+   "name": "トワイライトローズ",
+   "time": "1:27.1",
+   "margin": "１／２",
+   "corners": "7-6",
+   "last3f": 39.5,
+   "popularity": 5
+  },
+  {
+   "finish": "9",
+   "number": 8,
+   "name": "キャンディリヒト",
+   "time": "1:28.2",
+   "margin": "７",
+   "corners": "11-12",
+   "last3f": 39.7,
+   "popularity": 3
+  },
+  {
+   "finish": "10",
+   "number": 10,
+   "name": "ミライショウグン",
+   "time": "1:28.3",
+   "margin": "１／２",
+   "corners": "6-6",
+   "last3f": 40.7,
+   "popularity": 12
+  },
+  {
+   "finish": "11",
+   "number": 12,
+   "name": "ハイグッドカンフー",
+   "time": "1:28.6",
+   "margin": "２",
+   "corners": "8-9",
+   "last3f": 40.5,
+   "popularity": 6
+  },
+  {
+   "finish": "12",
+   "number": 9,
+   "name": "アランチャ",
+   "time": "1:28.6",
+   "margin": "クビ",
+   "corners": "11-12",
+   "last3f": 40.0,
+   "popularity": 13
+  },
+  {
+   "finish": "13",
+   "number": 3,
+   "name": "フィアローゼン",
+   "time": "1:29.6",
+   "margin": "６",
+   "corners": "9-10",
+   "last3f": 41.3,
+   "popularity": 11
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "1",
+    "yen": 110,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "1",
+    "yen": 100,
+    "pop": 1
+   },
+   {
+    "combo": "7",
+    "yen": 140,
+    "pop": 2
+   },
+   {
+    "combo": "2",
+    "yen": 470,
+    "pop": 8
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-5",
+    "yen": 250,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-7",
+    "yen": 170,
+    "pop": 1
+   },
+   {
+    "combo": "1-2",
+    "yen": 780,
+    "pop": 9
+   },
+   {
+    "combo": "2-7",
+    "yen": 1760,
+    "pop": 19
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-7",
+    "yen": 300,
+    "pop": 1
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "1-7",
+    "yen": 310,
+    "pop": 1
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-2-7",
+    "yen": 3280,
+    "pop": 12
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "1-7-2",
+    "yen": 6160,
+    "pop": 20
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261108",
+ "venue_code": "08",
+ "race_no": 2,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605020220261108/62",
+ "title": "レース結果 JRA"
+}

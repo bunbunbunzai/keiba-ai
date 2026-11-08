@@ -1,0 +1,228 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 2,
+   "name": "テリオスベラ",
+   "time": "1:13.3",
+   "margin": "",
+   "corners": "7-5",
+   "last3f": 36.7,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 5,
+   "name": "スマートメモリー",
+   "time": "1:13.4",
+   "margin": "１",
+   "corners": "4-3",
+   "last3f": 37.0,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "number": 12,
+   "name": "レグルスロウ",
+   "time": "1:13.5",
+   "margin": "１／２",
+   "corners": "3-3",
+   "last3f": 37.3,
+   "popularity": 7
+  },
+  {
+   "finish": "4",
+   "number": 7,
+   "name": "リワナグ",
+   "time": "1:13.9",
+   "margin": "２",
+   "corners": "1-1",
+   "last3f": 37.9,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "number": 13,
+   "name": "ツーハーツ",
+   "time": "1:14.0",
+   "margin": "１／２",
+   "corners": "6-7",
+   "last3f": 37.4,
+   "popularity": 2
+  },
+  {
+   "finish": "6",
+   "number": 9,
+   "name": "ランスオブナイト",
+   "time": "1:14.1",
+   "margin": "１／２",
+   "corners": "11-11",
+   "last3f": 36.7,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "number": 4,
+   "name": "リケアワルツ",
+   "time": "1:14.2",
+   "margin": "１／２",
+   "corners": "10-9",
+   "last3f": 37.1,
+   "popularity": 12
+  },
+  {
+   "finish": "8",
+   "number": 1,
+   "name": "シュライアハフト",
+   "time": "1:14.2",
+   "margin": "アタマ",
+   "corners": "7-7",
+   "last3f": 37.5,
+   "popularity": 6
+  },
+  {
+   "finish": "9",
+   "number": 8,
+   "name": "ベイビーブラザー",
+   "time": "1:14.2",
+   "margin": "クビ",
+   "corners": "9-9",
+   "last3f": 37.1,
+   "popularity": 10
+  },
+  {
+   "finish": "10",
+   "number": 11,
+   "name": "ワイドウィンザー",
+   "time": "1:14.6",
+   "margin": "２ 1/2",
+   "corners": "2-2",
+   "last3f": 38.5,
+   "popularity": 8
+  },
+  {
+   "finish": "11",
+   "number": 6,
+   "name": "ナンヨーカルチャー",
+   "time": "1:15.3",
+   "margin": "４",
+   "corners": "13-12",
+   "last3f": 37.5,
+   "popularity": 11
+  },
+  {
+   "finish": "12",
+   "number": 3,
+   "name": "ナムラポピー",
+   "time": "1:15.3",
+   "margin": "クビ",
+   "corners": "4-5",
+   "last3f": 38.8,
+   "popularity": 9
+  },
+  {
+   "finish": "13",
+   "number": 10,
+   "name": "ゼイン",
+   "time": "1:16.0",
+   "margin": "４",
+   "corners": "12-13",
+   "last3f": 38.4,
+   "popularity": 13
+  },
+  {
+   "finish": "14",
+   "number": 14,
+   "name": "キタノゲートウェイ",
+   "time": "1:18.2",
+   "margin": "大差",
+   "corners": "14-14",
+   "last3f": 38.9,
+   "popularity": 14
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "2",
+    "yen": 270,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "2",
+    "yen": 130,
+    "pop": 1
+   },
+   {
+    "combo": "5",
+    "yen": 210,
+    "pop": 3
+   },
+   {
+    "combo": "12",
+    "yen": 350,
+    "pop": 7
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-4",
+    "yen": 840,
+    "pop": 3
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-5",
+    "yen": 410,
+    "pop": 3
+   },
+   {
+    "combo": "2-12",
+    "yen": 710,
+    "pop": 8
+   },
+   {
+    "combo": "5-12",
+    "yen": 1540,
+    "pop": 20
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-5",
+    "yen": 870,
+    "pop": 3
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "2-5",
+    "yen": 1440,
+    "pop": 4
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-5-12",
+    "yen": 3580,
+    "pop": 11
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "2-5-12",
+    "yen": 11680,
+    "pop": 32
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261108",
+ "venue_code": "08",
+ "race_no": 1,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605020120261108/AD",
+ "title": "レース結果 JRA"
+}
