@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 14,
+   "name": "シェーンリヒト",
+   "time": "2:00.7",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 10,
+   "name": "ポルターガイスト",
+   "time": "",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "3",
+   "number": 7,
+   "name": "タイセイソアリング",
+   "time": "",
+   "margin": "２ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "number": 11,
+   "name": "ソヴリンゲート",
+   "time": "",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "5",
+   "number": 4,
+   "name": "カペラテソーロ",
+   "time": "",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "14",
+    "yen": 250,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "14",
+    "yen": 120,
+    "pop": 1
+   },
+   {
+    "combo": "10",
+    "yen": 200,
+    "pop": 4
+   },
+   {
+    "combo": "7",
+    "yen": 170,
+    "pop": 3
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "6-8",
+    "yen": 310,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "10-14",
+    "yen": 480,
+    "pop": 3
+   },
+   {
+    "combo": "7-14",
+    "yen": 330,
+    "pop": 2
+   },
+   {
+    "combo": "7-10",
+    "yen": 800,
+    "pop": 12
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "10-14",
+    "yen": 1250,
+    "pop": 4
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "14-10",
+    "yen": 1770,
+    "pop": 5
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "7-10-14",
+    "yen": 2050,
+    "pop": 5
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "14-10-7",
+    "yen": 8360,
+    "pop": 18
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261108",
+ "venue_code": "05",
+ "race_no": 3,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605020320261108/39",
+ "title": "レース結果 JRA"
+}
