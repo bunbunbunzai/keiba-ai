@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 5,
+   "name": "ドナビッグベン",
+   "time": "1:09.2",
+   "margin": "",
+   "corners": "1-1",
+   "last3f": 36.6,
+   "popularity": 3
+  },
+  {
+   "finish": "2",
+   "number": 3,
+   "name": "イリスロッソ",
+   "time": "1:09.4",
+   "margin": "１ 1/4",
+   "corners": "3-3",
+   "last3f": 36.6,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "number": 4,
+   "name": "サノノソルジャー",
+   "time": "1:09.6",
+   "margin": "１ 1/2",
+   "corners": "3-5",
+   "last3f": 36.8,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "number": 7,
+   "name": "アースグリッパー",
+   "time": "1:09.6",
+   "margin": "アタマ",
+   "corners": "2-2",
+   "last3f": 37.0,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "number": 11,
+   "name": "オラパ",
+   "time": "1:09.7",
+   "margin": "クビ",
+   "corners": "7-7",
+   "last3f": 36.6,
+   "popularity": 6
+  },
+  {
+   "finish": "6",
+   "number": 9,
+   "name": "ベアアミーチ",
+   "time": "1:09.7",
+   "margin": "クビ",
+   "corners": "3-3",
+   "last3f": 37.0,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "number": 15,
+   "name": "マルモタワー",
+   "time": "1:09.9",
+   "margin": "１ 1/4",
+   "corners": "7-7",
+   "last3f": 36.8,
+   "popularity": 8
+  },
+  {
+   "finish": "8",
+   "number": 12,
+   "name": "アスコットペスカ",
+   "time": "1:10.0",
+   "margin": "１／２",
+   "corners": "7-5",
+   "last3f": 36.9,
+   "popularity": 13
+  },
+  {
+   "finish": "9",
+   "number": 1,
+   "name": "ブラックブレット",
+   "time": "1:10.3",
+   "margin": "１ 3/4",
+   "corners": "10-10",
+   "last3f": 37.0,
+   "popularity": 11
+  },
+  {
+   "finish": "10",
+   "number": 2,
+   "name": "シースファイア",
+   "time": "1:10.5",
+   "margin": "３／４",
+   "corners": "10-10",
+   "last3f": 37.2,
+   "popularity": 10
+  },
+  {
+   "finish": "11",
+   "number": 14,
+   "name": "タガノカハンカ",
+   "time": "1:11.0",
+   "margin": "３",
+   "corners": "6-7",
+   "last3f": 38.1,
+   "popularity": 7
+  },
+  {
+   "finish": "12",
+   "number": 13,
+   "name": "ヴォルールドクール",
+   "time": "1:11.0",
+   "margin": "クビ",
+   "corners": "13-12",
+   "last3f": 37.1,
+   "popularity": 14
+  },
+  {
+   "finish": "13",
+   "number": 8,
+   "name": "シウンハゴロモ",
+   "time": "1:11.0",
+   "margin": "ハナ",
+   "corners": "12-12",
+   "last3f": 37.3,
+   "popularity": 9
+  },
+  {
+   "finish": "14",
+   "number": 10,
+   "name": "ヒガンバナ",
+   "time": "1:11.8",
+   "margin": "５",
+   "corners": "15-15",
+   "last3f": 37.0,
+   "popularity": 15
+  },
+  {
+   "finish": "15",
+   "number": 16,
+   "name": "スマイルハープ",
+   "time": "1:12.1",
+   "margin": "１ 1/2",
+   "corners": "14-14",
+   "last3f": 37.8,
+   "popularity": 12
+  },
+  {
+   "finish": "16",
+   "number": 6,
+   "name": "ルージュロア",
+   "time": "1:12.9",
+   "margin": "５",
+   "corners": "15-16",
+   "last3f": 38.2,
+   "popularity": 16
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "5",
+    "yen": 490,
+    "pop": 3
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "5",
+    "yen": 110,
+    "pop": 3
+   },
+   {
+    "combo": "3",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "4",
+    "yen": 110,
+    "pop": 2
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-3",
+    "yen": 310,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-5",
+    "yen": 220,
+    "pop": 2
+   },
+   {
+    "combo": "4-5",
+    "yen": 260,
+    "pop": 3
+   },
+   {
+    "combo": "3-4",
+    "yen": 220,
+    "pop": 1
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-5",
+    "yen": 510,
+    "pop": 2
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "5-3",
+    "yen": 1250,
+    "pop": 5
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-4-5",
+    "yen": 570,
+    "pop": 1
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "5-3-4",
+    "yen": 3480,
+    "pop": 6
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261108",
+ "venue_code": "03",
+ "race_no": 1,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603020120261108/D9",
+ "title": "レース結果 JRA"
+}

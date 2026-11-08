@@ -1,0 +1,198 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 2,
+   "name": "サノノファイター",
+   "time": "1:39.0",
+   "margin": "",
+   "corners": "1-1",
+   "last3f": 39.4,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 7,
+   "name": "ブルーサンタ",
+   "time": "1:39.2",
+   "margin": "１ 1/4",
+   "corners": "3-2",
+   "last3f": 39.4,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "number": 4,
+   "name": "ルボワ",
+   "time": "1:39.2",
+   "margin": "アタマ",
+   "corners": "9-9",
+   "last3f": 38.5,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "number": 11,
+   "name": "ココビスケット",
+   "time": "1:39.3",
+   "margin": "１／２",
+   "corners": "8-8",
+   "last3f": 38.8,
+   "popularity": 9
+  },
+  {
+   "finish": "5",
+   "number": 9,
+   "name": "ナックドリーム",
+   "time": "1:39.7",
+   "margin": "２ 1/2",
+   "corners": "5-5",
+   "last3f": 39.6,
+   "popularity": 4
+  },
+  {
+   "finish": "6",
+   "number": 6,
+   "name": "タイセイアドーレ",
+   "time": "1:39.8",
+   "margin": "１／２",
+   "corners": "2-2",
+   "last3f": 40.1,
+   "popularity": 6
+  },
+  {
+   "finish": "7",
+   "number": 10,
+   "name": "ドッカイッチャッテ",
+   "time": "1:40.2",
+   "margin": "２ 1/2",
+   "corners": "3-4",
+   "last3f": 40.2,
+   "popularity": 8
+  },
+  {
+   "finish": "8",
+   "number": 8,
+   "name": "グラスリズム",
+   "time": "1:40.4",
+   "margin": "１ 1/4",
+   "corners": "11-11",
+   "last3f": 39.2,
+   "popularity": 10
+  },
+  {
+   "finish": "9",
+   "number": 5,
+   "name": "シャイニーヒーロー",
+   "time": "1:40.9",
+   "margin": "３",
+   "corners": "10-10",
+   "last3f": 39.9,
+   "popularity": 11
+  },
+  {
+   "finish": "10",
+   "number": 3,
+   "name": "セイウンサイフィー",
+   "time": "1:40.9",
+   "margin": "クビ",
+   "corners": "5-5",
+   "last3f": 40.8,
+   "popularity": 7
+  },
+  {
+   "finish": "11",
+   "number": 1,
+   "name": "パワープレイ",
+   "time": "1:42.4",
+   "margin": "９",
+   "corners": "5-5",
+   "last3f": 42.2,
+   "popularity": 5
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "2",
+    "yen": 180,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "2",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "7",
+    "yen": 140,
+    "pop": 3
+   },
+   {
+    "combo": "4",
+    "yen": 140,
+    "pop": 4
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-6",
+    "yen": 430,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-7",
+    "yen": 230,
+    "pop": 2
+   },
+   {
+    "combo": "2-4",
+    "yen": 220,
+    "pop": 1
+   },
+   {
+    "combo": "4-7",
+    "yen": 380,
+    "pop": 5
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-7",
+    "yen": 450,
+    "pop": 1
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "2-7",
+    "yen": 670,
+    "pop": 1
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-4-7",
+    "yen": 740,
+    "pop": 1
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "2-7-4",
+    "yen": 2290,
+    "pop": 2
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261108",
+ "venue_code": "05",
+ "race_no": 1,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605020120261108/CF",
+ "title": "レース結果 JRA"
+}
