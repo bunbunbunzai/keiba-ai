@@ -1,6 +1,6 @@
 {
  "date": "20261108",
- "updated": "2026-11-08 11:27",
+ "updated": "2026-11-08 11:42",
  "bias": {
   "福島ダ": {
    "judgement": "内先行",
@@ -30,7 +30,8 @@
    "judgement": "内先行",
    "confidence": "弱",
    "races": [
-    1
+    1,
+    4
    ],
    "front_share": 1.0,
    "inner_share": 0.5,
