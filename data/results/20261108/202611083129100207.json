@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261108",
  "race_id": "202611083129100207",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "サノノエスポ",
    "time": "1:44.3",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 39.8,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ダオラダオラ",
    "time": "1:44.6",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 38.6,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ライラボンド",
    "time": "1:44.9",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 40.3,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "エクセレントタイム",
    "time": "1:44.9",
    "margin": "ハナ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 39.6,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "ニクソンテソーロ",
    "time": "1:45.4",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 40.3,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "プレイサーゴールド",
    "time": "1:45.6",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 40.9,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "アムレートゥム",
    "time": "1:45.9",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 10,
+   "last3f": 40.4,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "グラティアスグー",
    "time": "1:45.9",
    "margin": "ハナ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 40.9,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "エスケンドリーム",
    "time": "1:46.0",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 40.9,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "グッドヒューマー",
    "time": "1:46.8",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 42.4,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "サンダーゼウス",
    "time": "1:49.0",
    "margin": "大差",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 44.4,
    "popularity": null
   }
  ]
