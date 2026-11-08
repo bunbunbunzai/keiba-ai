@@ -6,49 +6,139 @@
    "name": "サトノグロリア",
    "time": "1:52.8",
    "margin": "",
-   "corners": "",
-   "last3f": null,
+   "corners": "5-6-6-6",
+   "last3f": 37.2,
    "popularity": 1
   },
   {
    "finish": "2",
    "number": 8,
    "name": "トラッドロア",
-   "time": "",
+   "time": "1:53.1",
    "margin": "２",
-   "corners": "",
-   "last3f": null,
+   "corners": "2-2-2-2",
+   "last3f": 38.0,
    "popularity": 8
   },
   {
    "finish": "3",
    "number": 7,
    "name": "アメリカンスタイル",
-   "time": "",
+   "time": "1:53.1",
    "margin": "ハナ",
-   "corners": "",
-   "last3f": null,
+   "corners": "9-7-7-6",
+   "last3f": 37.4,
    "popularity": 4
   },
   {
    "finish": "4",
    "number": 10,
    "name": "コルヴァス",
-   "time": "",
+   "time": "1:53.5",
    "margin": "２",
-   "corners": "",
-   "last3f": null,
+   "corners": "6-3-3-3",
+   "last3f": 38.2,
    "popularity": 6
   },
   {
    "finish": "5",
    "number": 1,
    "name": "ペトリコール",
-   "time": "",
+   "time": "1:53.6",
    "margin": "１／２",
-   "corners": "",
-   "last3f": null,
+   "corners": "3-3-3-3",
+   "last3f": 38.3,
    "popularity": 3
+  },
+  {
+   "finish": "6",
+   "number": 12,
+   "name": "アミラル",
+   "time": "1:53.6",
+   "margin": "アタマ",
+   "corners": "12-11-10-8",
+   "last3f": 37.5,
+   "popularity": 7
+  },
+  {
+   "finish": "7",
+   "number": 9,
+   "name": "クリュギスト",
+   "time": "1:54.0",
+   "margin": "２ 1/2",
+   "corners": "7-7-8-8",
+   "last3f": 38.1,
+   "popularity": 2
+  },
+  {
+   "finish": "8",
+   "number": 2,
+   "name": "ガイラルディア",
+   "time": "1:54.1",
+   "margin": "クビ",
+   "corners": "7-7-10-8",
+   "last3f": 38.1,
+   "popularity": 14
+  },
+  {
+   "finish": "9",
+   "number": 4,
+   "name": "ゴーントゥファー",
+   "time": "1:54.1",
+   "margin": "アタマ",
+   "corners": "14-14-13-13",
+   "last3f": 37.7,
+   "popularity": 11
+  },
+  {
+   "finish": "10",
+   "number": 5,
+   "name": "アルビオン",
+   "time": "1:54.1",
+   "margin": "クビ",
+   "corners": "12-13-13-13",
+   "last3f": 37.8,
+   "popularity": 13
+  },
+  {
+   "finish": "11",
+   "number": 13,
+   "name": "アメリカンイズム",
+   "time": "1:54.3",
+   "margin": "１ 1/4",
+   "corners": "3-3-3-5",
+   "last3f": 39.0,
+   "popularity": 5
+  },
+  {
+   "finish": "12",
+   "number": 3,
+   "name": "ダノンストラーダ",
+   "time": "1:54.6",
+   "margin": "１ 3/4",
+   "corners": "1-1-1-1",
+   "last3f": 39.7,
+   "popularity": 10
+  },
+  {
+   "finish": "13",
+   "number": 11,
+   "name": "メイショウサッソウ",
+   "time": "1:54.7",
+   "margin": "１／２",
+   "corners": "11-11-10-11",
+   "last3f": 38.6,
+   "popularity": 9
+  },
+  {
+   "finish": "14",
+   "number": 14,
+   "name": "ビナハイバン",
+   "time": "1:56.1",
+   "margin": "８",
+   "corners": "9-7-8-11",
+   "last3f": 40.2,
+   "popularity": 12
   }
  ],
  "payouts": {
@@ -133,6 +223,6 @@
  "date": "20261108",
  "venue_code": "08",
  "race_no": 4,
- "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605020420261108/CC",
+ "url": "/JRADB/accessS.html?CNAME=pw01sde1008202605020420261108/AB",
  "title": "レース結果 JRA"
 }

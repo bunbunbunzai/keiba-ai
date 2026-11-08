@@ -6,49 +6,159 @@
    "name": "カクウチ",
    "time": "1:49.8",
    "margin": "",
-   "corners": "",
-   "last3f": null,
+   "corners": "3-3-3-2",
+   "last3f": 37.3,
    "popularity": 6
   },
   {
    "finish": "2",
    "number": 6,
    "name": "コンバットペスカ",
-   "time": "",
+   "time": "1:49.9",
    "margin": "１／２",
-   "corners": "",
-   "last3f": null,
+   "corners": "1-1-1-1",
+   "last3f": 37.6,
    "popularity": 9
   },
   {
    "finish": "3",
    "number": 9,
    "name": "バンオンタイム",
-   "time": "",
+   "time": "1:50.0",
    "margin": "３／４",
-   "corners": "",
-   "last3f": null,
+   "corners": "4-4-4-4",
+   "last3f": 37.3,
    "popularity": 1
   },
   {
    "finish": "4",
    "number": 3,
    "name": "ウインポセイドン",
-   "time": "",
+   "time": "1:50.1",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "6-4-4-2",
+   "last3f": 37.5,
    "popularity": 5
   },
   {
    "finish": "5",
    "number": 2,
    "name": "クラシカルカイザー",
-   "time": "",
+   "time": "1:50.1",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "16-16-14-13",
+   "last3f": 36.6,
    "popularity": 13
+  },
+  {
+   "finish": "6",
+   "number": 4,
+   "name": "ミエノフェアリー",
+   "time": "1:50.3",
+   "margin": "１ 1/4",
+   "corners": "9-9-7-6",
+   "last3f": 37.4,
+   "popularity": 7
+  },
+  {
+   "finish": "7",
+   "number": 5,
+   "name": "アッパーウォーター",
+   "time": "1:50.5",
+   "margin": "３／４",
+   "corners": "7-7-7-10",
+   "last3f": 37.6,
+   "popularity": 4
+  },
+  {
+   "finish": "8",
+   "number": 16,
+   "name": "ルージュアストレア",
+   "time": "1:50.5",
+   "margin": "ハナ",
+   "corners": "14-12-11-10",
+   "last3f": 37.3,
+   "popularity": 14
+  },
+  {
+   "finish": "9",
+   "number": 10,
+   "name": "ユメシルベ",
+   "time": "1:50.5",
+   "margin": "アタマ",
+   "corners": "11-9-11-10",
+   "last3f": 37.4,
+   "popularity": 10
+  },
+  {
+   "finish": "10",
+   "number": 12,
+   "name": "ノーブルライナー",
+   "time": "1:50.8",
+   "margin": "１ 3/4",
+   "corners": "7-7-7-9",
+   "last3f": 37.9,
+   "popularity": 15
+  },
+  {
+   "finish": "11",
+   "number": 8,
+   "name": "カージオイド",
+   "time": "1:51.5",
+   "margin": "４",
+   "corners": "4-4-4-6",
+   "last3f": 38.8,
+   "popularity": 3
+  },
+  {
+   "finish": "12",
+   "number": 7,
+   "name": "ホウオウギンガ",
+   "time": "1:51.5",
+   "margin": "クビ",
+   "corners": "15-15-7-6",
+   "last3f": 38.5,
+   "popularity": 2
+  },
+  {
+   "finish": "13",
+   "number": 15,
+   "name": "レッドシュテルン",
+   "time": "1:51.5",
+   "margin": "ハナ",
+   "corners": "13-12-14-14",
+   "last3f": 38.1,
+   "popularity": 11
+  },
+  {
+   "finish": "14",
+   "number": 11,
+   "name": "ビルバンテ",
+   "time": "1:51.7",
+   "margin": "１ 1/4",
+   "corners": "2-2-2-4",
+   "last3f": 39.3,
+   "popularity": 12
+  },
+  {
+   "finish": "15",
+   "number": 1,
+   "name": "サトノカイロス",
+   "time": "1:52.0",
+   "margin": "１ 1/2",
+   "corners": "11-12-16-16",
+   "last3f": 38.2,
+   "popularity": 8
+  },
+  {
+   "finish": "16",
+   "number": 14,
+   "name": "ロジルーラー",
+   "time": "1:52.7",
+   "margin": "４",
+   "corners": "9-11-11-14",
+   "last3f": 39.5,
+   "popularity": 16
   }
  ],
  "payouts": {
@@ -133,6 +243,6 @@
  "date": "20261108",
  "venue_code": "03",
  "race_no": 9,
- "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603020920261108/81",
+ "url": "/JRADB/accessS.html?CNAME=pw01sde1003202603020920261108/60",
  "title": "レース結果 JRA"
 }

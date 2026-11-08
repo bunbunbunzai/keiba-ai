@@ -6,49 +6,149 @@
    "name": "ホットロッドハート",
    "time": "1:52.7",
    "margin": "",
-   "corners": "",
-   "last3f": null,
+   "corners": "15-15-15-15",
+   "last3f": 36.7,
    "popularity": 13
   },
   {
    "finish": "2",
    "number": 10,
    "name": "マーズエクレール",
-   "time": "",
+   "time": "1:52.8",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "14-14-14-7",
+   "last3f": 36.7,
    "popularity": 5
   },
   {
    "finish": "3",
    "number": 3,
    "name": "エピドゥブレ",
-   "time": "",
+   "time": "1:53.0",
    "margin": "１ 1/2",
-   "corners": "",
-   "last3f": null,
+   "corners": "10-10-9-10",
+   "last3f": 37.4,
    "popularity": 2
   },
   {
    "finish": "4",
    "number": 1,
    "name": "ハメドスタイル",
-   "time": "",
+   "time": "1:53.1",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "1-1-1-1",
+   "last3f": 38.3,
    "popularity": 3
   },
   {
    "finish": "5",
    "number": 13,
    "name": "アメリカンソウル",
-   "time": "",
+   "time": "1:53.2",
    "margin": "３／４",
-   "corners": "",
-   "last3f": null,
+   "corners": "3-3-3-3",
+   "last3f": 38.1,
    "popularity": 1
+  },
+  {
+   "finish": "6",
+   "number": 15,
+   "name": "ヤマニンガルブ",
+   "time": "1:53.2",
+   "margin": "ハナ",
+   "corners": "10-10-11-13",
+   "last3f": 37.4,
+   "popularity": 6
+  },
+  {
+   "finish": "7",
+   "number": 11,
+   "name": "トゥザファイナル",
+   "time": "1:53.2",
+   "margin": "アタマ",
+   "corners": "12-12-11-7",
+   "last3f": 37.4,
+   "popularity": 7
+  },
+  {
+   "finish": "8",
+   "number": 9,
+   "name": "ファブリック",
+   "time": "1:53.6",
+   "margin": "２",
+   "corners": "12-12-13-13",
+   "last3f": 37.8,
+   "popularity": 15
+  },
+  {
+   "finish": "9",
+   "number": 6,
+   "name": "テムファイア",
+   "time": "1:53.7",
+   "margin": "１／２",
+   "corners": "8-8-7-7",
+   "last3f": 38.2,
+   "popularity": 14
+  },
+  {
+   "finish": "10",
+   "number": 12,
+   "name": "アンドレバローズ",
+   "time": "1:53.7",
+   "margin": "ハナ",
+   "corners": "6-7-9-10",
+   "last3f": 38.1,
+   "popularity": 12
+  },
+  {
+   "finish": "11",
+   "number": 2,
+   "name": "ロジアコース",
+   "time": "1:54.0",
+   "margin": "２",
+   "corners": "3-3-3-4",
+   "last3f": 38.8,
+   "popularity": 8
+  },
+  {
+   "finish": "12",
+   "number": 7,
+   "name": "パルパル",
+   "time": "1:54.2",
+   "margin": "３／４",
+   "corners": "2-2-2-2",
+   "last3f": 39.3,
+   "popularity": 10
+  },
+  {
+   "finish": "13",
+   "number": 5,
+   "name": "ユーフォナイト",
+   "time": "1:55.8",
+   "margin": "１０",
+   "corners": "8-8-7-10",
+   "last3f": 40.2,
+   "popularity": 11
+  },
+  {
+   "finish": "14",
+   "number": 8,
+   "name": "デラスゴイガン",
+   "time": "1:55.9",
+   "margin": "３／４",
+   "corners": "6-5-5-5",
+   "last3f": 40.6,
+   "popularity": 4
+  },
+  {
+   "finish": "15",
+   "number": 14,
+   "name": "エンジャムメント",
+   "time": "1:57.5",
+   "margin": "１０",
+   "corners": "5-5-5-5",
+   "last3f": 42.2,
+   "popularity": 9
   }
  ],
  "payouts": {
@@ -133,6 +233,6 @@
  "date": "20261108",
  "venue_code": "08",
  "race_no": 9,
- "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605020920261108/55",
+ "url": "/JRADB/accessS.html?CNAME=pw01sde1008202605020920261108/34",
  "title": "レース結果 JRA"
 }

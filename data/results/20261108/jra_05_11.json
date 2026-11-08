@@ -6,8 +6,8 @@
    "name": "ファミリータイム",
    "time": "2:30.9",
    "margin": "",
-   "corners": "",
-   "last3f": null,
+   "corners": "4-4-4-4",
+   "last3f": 33.9,
    "popularity": 16
   },
   {
@@ -16,8 +16,8 @@
    "name": "ホーエリート",
    "time": "2:31.0",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "6-6-6-6",
+   "last3f": 33.5,
    "popularity": 13
   },
   {
@@ -26,8 +26,8 @@
    "name": "メイショウゲキリン",
    "time": "2:31.0",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "2-2-2-2",
+   "last3f": 35.0,
    "popularity": 12
   },
   {
@@ -36,8 +36,8 @@
    "name": "マイネルエンペラー",
    "time": "2:31.0",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "5-5-5-5",
+   "last3f": 33.7,
    "popularity": 9
   },
   {
@@ -46,8 +46,8 @@
    "name": "ジーティーダーリン",
    "time": "2:31.1",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "3-3-3-3",
+   "last3f": 34.6,
    "popularity": 14
   },
   {
@@ -56,8 +56,8 @@
    "name": "ミラージュナイト",
    "time": "2:31.3",
    "margin": "１ 1/2",
-   "corners": "",
-   "last3f": null,
+   "corners": "10-8-8-8",
+   "last3f": 33.6,
    "popularity": 2
   },
   {
@@ -66,8 +66,8 @@
    "name": "ドゥラドーレス",
    "time": "2:31.4",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "12-10-11-10",
+   "last3f": 33.5,
    "popularity": 4
   },
   {
@@ -76,8 +76,8 @@
    "name": "ファイアンクランツ",
    "time": "2:31.6",
    "margin": "１ 1/4",
-   "corners": "",
-   "last3f": null,
+   "corners": "15-15-11-11",
+   "last3f": 33.6,
    "popularity": 3
   },
   {
@@ -86,8 +86,8 @@
    "name": "キングズパレス",
    "time": "2:31.6",
    "margin": "ハナ",
-   "corners": "",
-   "last3f": null,
+   "corners": "9-10-10-8",
+   "last3f": 33.8,
    "popularity": 11
   },
   {
@@ -96,8 +96,8 @@
    "name": "レッドバンデ",
    "time": "2:31.6",
    "margin": "ハナ",
-   "corners": "",
-   "last3f": null,
+   "corners": "7-7-6-6",
+   "last3f": 34.1,
    "popularity": 1
   },
   {
@@ -106,8 +106,8 @@
    "name": "ウエストナウ",
    "time": "2:31.6",
    "margin": "ハナ",
-   "corners": "",
-   "last3f": null,
+   "corners": "7-8-8-11",
+   "last3f": 33.6,
    "popularity": 7
   },
   {
@@ -116,8 +116,8 @@
    "name": "キングスコール",
    "time": "2:31.7",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "12-13-15-13",
+   "last3f": 33.5,
    "popularity": 10
   },
   {
@@ -126,8 +126,8 @@
    "name": "ビザンチンドリーム",
    "time": "2:31.8",
    "margin": "１",
-   "corners": "",
-   "last3f": null,
+   "corners": "15-15-16-13",
+   "last3f": 33.6,
    "popularity": 6
   },
   {
@@ -136,8 +136,8 @@
    "name": "ジョイボーイ",
    "time": "2:31.8",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "17-17-17-17",
+   "last3f": 33.3,
    "popularity": 5
   },
   {
@@ -146,8 +146,8 @@
    "name": "ボーンディスウェイ",
    "time": "2:32.3",
    "margin": "３",
-   "corners": "",
-   "last3f": null,
+   "corners": "14-13-13-13",
+   "last3f": 34.1,
    "popularity": 17
   },
   {
@@ -156,8 +156,8 @@
    "name": "マイネルカンパーナ",
    "time": "2:32.7",
    "margin": "２",
-   "corners": "",
-   "last3f": null,
+   "corners": "10-12-13-13",
+   "last3f": 34.5,
    "popularity": 18
   },
   {
@@ -166,8 +166,8 @@
    "name": "ミステリーウェイ",
    "time": "2:32.7",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "1-1-1-1",
+   "last3f": 36.7,
    "popularity": 15
   },
   {
@@ -176,8 +176,8 @@
    "name": "ミクニインスパイア",
    "time": "2:33.1",
    "margin": "２ 1/2",
-   "corners": "",
-   "last3f": null,
+   "corners": "18-18-18-17",
+   "last3f": 34.6,
    "popularity": 8
   }
  ],
@@ -263,6 +263,6 @@
  "date": "20261108",
  "venue_code": "05",
  "race_no": 11,
- "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605021120261108/21",
+ "url": "/JRADB/accessS.html?CNAME=pw01sde1005202605021120261108/00",
  "title": "レース結果 JRA"
 }

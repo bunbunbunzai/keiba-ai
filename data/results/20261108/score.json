@@ -1,6 +1,6 @@
 {
  "date": "20261108",
- "updated": "2026-11-08 21:43",
+ "updated": "2026-11-09 05:59",
  "races_total": 83,
  "races_scored": 83,
  "stake": 12600,
@@ -864,7 +864,7 @@
    "race_id": "jra_20261108_京都_04",
    "confidence": "C",
    "honmei": 9,
-   "honmei_finish": null,
+   "honmei_finish": "7",
    "top3": [
     6,
     8,
@@ -1100,7 +1100,7 @@
    "race_id": "jra_20261108_東京_06",
    "confidence": "A",
    "honmei": 13,
-   "honmei_finish": null,
+   "honmei_finish": "10",
    "top3": [
     7,
     8,
@@ -1320,7 +1320,7 @@
    "race_id": "jra_20261108_福島_07",
    "confidence": "B",
    "honmei": 9,
-   "honmei_finish": null,
+   "honmei_finish": "13",
    "top3": [
     15,
     16,
@@ -1352,7 +1352,7 @@
    "race_id": "jra_20261108_福島_09",
    "confidence": "C",
    "honmei": 8,
-   "honmei_finish": null,
+   "honmei_finish": "11",
    "top3": [
     13,
     6,

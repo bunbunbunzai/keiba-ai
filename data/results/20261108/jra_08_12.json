@@ -7,48 +7,178 @@
    "time": "1:20.3",
    "margin": "",
    "corners": "4-4",
-   "last3f": null,
+   "last3f": 34.4,
    "popularity": 13
   },
   {
    "finish": "2",
    "number": 18,
    "name": "フロンティエール",
-   "time": "",
+   "time": "1:20.4",
    "margin": "３／４",
    "corners": "11-9",
-   "last3f": null,
+   "last3f": 34.0,
    "popularity": 4
   },
   {
    "finish": "3",
    "number": 5,
    "name": "キシャール",
-   "time": "",
+   "time": "1:20.4",
    "margin": "ハナ",
    "corners": "4-4",
-   "last3f": null,
+   "last3f": 34.5,
    "popularity": 1
   },
   {
    "finish": "4",
    "number": 4,
    "name": "エグジスタンス",
-   "time": "",
+   "time": "1:20.5",
    "margin": "３／４",
    "corners": "7-7",
-   "last3f": null,
+   "last3f": 34.4,
    "popularity": 11
   },
   {
    "finish": "5",
    "number": 11,
    "name": "サリュエ",
-   "time": "",
+   "time": "1:20.5",
    "margin": "ハナ",
    "corners": "13-11",
-   "last3f": null,
+   "last3f": 33.9,
    "popularity": 12
+  },
+  {
+   "finish": "6",
+   "number": 10,
+   "name": "ニシノトリビュート",
+   "time": "1:20.8",
+   "margin": "１ 3/4",
+   "corners": "16-16",
+   "last3f": 33.7,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "number": 13,
+   "name": "タイガーロード",
+   "time": "1:20.9",
+   "margin": "１／２",
+   "corners": "9-9",
+   "last3f": 34.6,
+   "popularity": 16
+  },
+  {
+   "finish": "8",
+   "number": 7,
+   "name": "アラビアンジョイ",
+   "time": "1:20.9",
+   "margin": "ハナ",
+   "corners": "18-18",
+   "last3f": 33.6,
+   "popularity": 3
+  },
+  {
+   "finish": "9",
+   "number": 9,
+   "name": "ナクソス",
+   "time": "1:20.9",
+   "margin": "クビ",
+   "corners": "2-2",
+   "last3f": 35.3,
+   "popularity": 18
+  },
+  {
+   "finish": "10",
+   "number": 14,
+   "name": "スウィッチインラヴ",
+   "time": "1:20.9",
+   "margin": "ハナ",
+   "corners": "7-7",
+   "last3f": 34.8,
+   "popularity": 7
+  },
+  {
+   "finish": "11",
+   "number": 6,
+   "name": "ブルズアイプリンス",
+   "time": "1:21.1",
+   "margin": "３／４",
+   "corners": "16-16",
+   "last3f": 34.0,
+   "popularity": 17
+  },
+  {
+   "finish": "12",
+   "number": 8,
+   "name": "ダノンブランニュー",
+   "time": "1:21.1",
+   "margin": "クビ",
+   "corners": "13-14",
+   "last3f": 34.4,
+   "popularity": 9
+  },
+  {
+   "finish": "13",
+   "number": 17,
+   "name": "スマッシング",
+   "time": "1:21.2",
+   "margin": "３／４",
+   "corners": "4-4",
+   "last3f": 35.4,
+   "popularity": 10
+  },
+  {
+   "finish": "14",
+   "number": 3,
+   "name": "メイショウハッケイ",
+   "time": "1:21.4",
+   "margin": "３／４",
+   "corners": "12-11",
+   "last3f": 34.9,
+   "popularity": 8
+  },
+  {
+   "finish": "15",
+   "number": 1,
+   "name": "コスモレッド",
+   "time": "1:21.6",
+   "margin": "１ 1/4",
+   "corners": "9-11",
+   "last3f": 35.2,
+   "popularity": 14
+  },
+  {
+   "finish": "16",
+   "number": 16,
+   "name": "メイクワンズデイ",
+   "time": "1:21.7",
+   "margin": "１／２",
+   "corners": "1-1",
+   "last3f": 36.2,
+   "popularity": 2
+  },
+  {
+   "finish": "17",
+   "number": 2,
+   "name": "モルティフレーバー",
+   "time": "1:22.6",
+   "margin": "５",
+   "corners": "15-14",
+   "last3f": 35.8,
+   "popularity": 6
+  },
+  {
+   "finish": "18",
+   "number": 15,
+   "name": "クールフラン",
+   "time": "1:22.8",
+   "margin": "１",
+   "corners": "2-3",
+   "last3f": 37.2,
+   "popularity": 15
   }
  ],
  "payouts": {
@@ -133,6 +263,6 @@
  "date": "20261108",
  "venue_code": "08",
  "race_no": 12,
- "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605021220261108/B4",
+ "url": "/JRADB/accessS.html?CNAME=pw01sde1008202605021220261108/93",
  "title": "レース結果 JRA"
 }

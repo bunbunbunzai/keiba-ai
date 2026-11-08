@@ -6,49 +6,179 @@
    "name": "ルージュセレーノ",
    "time": "1:20.4",
    "margin": "",
-   "corners": "",
-   "last3f": null,
+   "corners": "1-1",
+   "last3f": 35.2,
    "popularity": 3
   },
   {
    "finish": "2",
    "number": 9,
    "name": "マリアネーラ",
-   "time": "",
+   "time": "1:20.9",
    "margin": "３",
-   "corners": "",
-   "last3f": null,
+   "corners": "5-5",
+   "last3f": 35.3,
    "popularity": 7
   },
   {
    "finish": "3",
    "number": 10,
    "name": "グランヴァレイ",
-   "time": "",
+   "time": "1:20.9",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "7-6",
+   "last3f": 34.8,
    "popularity": 4
   },
   {
    "finish": "4",
    "number": 7,
    "name": "アンスラレイ",
-   "time": "",
+   "time": "1:21.1",
    "margin": "３／４",
-   "corners": "",
-   "last3f": null,
+   "corners": "8-8",
+   "last3f": 34.9,
    "popularity": 9
   },
   {
    "finish": "5",
    "number": 2,
    "name": "タントスペランツァ",
-   "time": "",
+   "time": "1:21.3",
    "margin": "１ 1/4",
-   "corners": "",
-   "last3f": null,
+   "corners": "10-10",
+   "last3f": 34.6,
    "popularity": 10
+  },
+  {
+   "finish": "6",
+   "number": 15,
+   "name": "アートップ",
+   "time": "1:21.3",
+   "margin": "クビ",
+   "corners": "11-10",
+   "last3f": 34.6,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "number": 6,
+   "name": "メイショウチハル",
+   "time": "1:21.4",
+   "margin": "３／４",
+   "corners": "3-3",
+   "last3f": 35.9,
+   "popularity": 8
+  },
+  {
+   "finish": "8",
+   "number": 12,
+   "name": "ヴォーギング",
+   "time": "1:21.6",
+   "margin": "１",
+   "corners": "12-12",
+   "last3f": 34.6,
+   "popularity": 15
+  },
+  {
+   "finish": "9",
+   "number": 18,
+   "name": "マテンロウヒルズ",
+   "time": "1:21.9",
+   "margin": "１ 3/4",
+   "corners": "3-3",
+   "last3f": 36.4,
+   "popularity": 1
+  },
+  {
+   "finish": "10",
+   "number": 5,
+   "name": "ゴッドブルーローズ",
+   "time": "1:22.1",
+   "margin": "１ 1/2",
+   "corners": "8-8",
+   "last3f": 35.9,
+   "popularity": 16
+  },
+  {
+   "finish": "11",
+   "number": 17,
+   "name": "テーオーレコード",
+   "time": "1:22.1",
+   "margin": "ハナ",
+   "corners": "6-6",
+   "last3f": 36.2,
+   "popularity": 2
+  },
+  {
+   "finish": "12",
+   "number": 13,
+   "name": "ビップルミナス",
+   "time": "1:22.3",
+   "margin": "３／４",
+   "corners": "2-2",
+   "last3f": 36.9,
+   "popularity": 13
+  },
+  {
+   "finish": "13",
+   "number": 3,
+   "name": "スターオブファイア",
+   "time": "1:22.3",
+   "margin": "ハナ",
+   "corners": "17-16",
+   "last3f": 34.5,
+   "popularity": 11
+  },
+  {
+   "finish": "14",
+   "number": 11,
+   "name": "フォルトナレガーロ",
+   "time": "1:22.5",
+   "margin": "１ 1/4",
+   "corners": "15-13",
+   "last3f": 35.0,
+   "popularity": 6
+  },
+  {
+   "finish": "15",
+   "number": 8,
+   "name": "ミスティ",
+   "time": "1:22.8",
+   "margin": "１ 3/4",
+   "corners": "15-16",
+   "last3f": 35.2,
+   "popularity": 12
+  },
+  {
+   "finish": "16",
+   "number": 4,
+   "name": "カセノシルク",
+   "time": "1:22.9",
+   "margin": "１ 1/4",
+   "corners": "14-14",
+   "last3f": 35.4,
+   "popularity": 14
+  },
+  {
+   "finish": "17",
+   "number": 1,
+   "name": "キーサポート",
+   "time": "1:24.4",
+   "margin": "９",
+   "corners": "12-14",
+   "last3f": 37.0,
+   "popularity": 18
+  },
+  {
+   "finish": "18",
+   "number": 16,
+   "name": "テイクアショット",
+   "time": "1:26.0",
+   "margin": "１０",
+   "corners": "18-18",
+   "last3f": 37.0,
+   "popularity": 17
   }
  ],
  "payouts": {
@@ -133,6 +263,6 @@
  "date": "20261108",
  "venue_code": "08",
  "race_no": 6,
- "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605020620261108/36",
+ "url": "/JRADB/accessS.html?CNAME=pw01sde1008202605020620261108/15",
  "title": "レース結果 JRA"
 }
