@@ -1,11 +1,11 @@
 {
  "date": "20261108",
- "updated": "2026-11-08 15:31",
+ "updated": "2026-11-08 15:32",
  "races_total": 83,
- "races_scored": 41,
- "stake": 5900,
+ "races_scored": 42,
+ "stake": 6000,
  "return": 4090,
- "roi": 69.3,
+ "roi": 68.2,
  "hit_races": 18,
  "honmei_win": 9,
  "honmei_top3": 22,
@@ -1296,7 +1296,19 @@
   },
   {
    "race_id": "jra_20261108_福島_11",
-   "status": "結果未取得"
+   "confidence": "C",
+   "honmei": 2,
+   "honmei_finish": null,
+   "top3": [
+    8,
+    6,
+    7
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": false
   },
   {
    "race_id": "jra_20261108_福島_12",
