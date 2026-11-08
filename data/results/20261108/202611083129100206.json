@@ -2,7 +2,194 @@
  "source": "rakuten",
  "date": "20261108",
  "race_id": "202611083129100206",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 4,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "7",
+    "yen": 650
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "7-5",
+    "yen": 990
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "7",
+    "yen": 140
+   },
+   {
+    "combo": "5",
+    "yen": 110
+   },
+   {
+    "combo": "10",
+    "yen": 170
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "5-7",
+    "yen": 160
+   },
+   {
+    "combo": "7-10",
+    "yen": 540
+   },
+   {
+    "combo": "5-10",
+    "yen": 190
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-6",
+    "yen": 250
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "5-7-10",
+    "yen": 640
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "7-5-10",
+    "yen": 4070
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "5-7",
+    "yen": 230
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 7,
+   "name": "パーセルペーパー",
+   "time": "1:25.1",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "ワンダーミューズ",
+   "time": "1:25.5",
+   "margin": "２",
+   "pos4": 1,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 10,
+   "name": "ガディスビクトリア",
+   "time": "1:26.2",
+   "margin": "３",
+   "pos4": 5,
+   "last3f": 39.8,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 4,
+   "name": "メイショウゴウケツ",
+   "time": "1:26.6",
+   "margin": "２",
+   "pos4": 3,
+   "last3f": 40.6,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 11,
+   "name": "ショウナンアンバー",
+   "time": "1:26.8",
+   "margin": "１",
+   "pos4": 6,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "ナムラコハル",
+   "time": "1:27.2",
+   "margin": "２",
+   "pos4": 9,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 6,
+   "name": "パウラメロディーア",
+   "time": "1:27.5",
+   "margin": "１ １／２",
+   "pos4": 3,
+   "last3f": 41.9,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 8,
+   "name": "ファーストシーン",
+   "time": "1:27.6",
+   "margin": "１／２",
+   "pos4": 8,
+   "last3f": 41.0,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 3,
+   "number": 3,
+   "name": "ベルベットアノ",
+   "time": "1:28.5",
+   "margin": "４",
+   "pos4": 6,
+   "last3f": 42.6,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 1,
+   "number": 1,
+   "name": "タッカー",
+   "time": "1:30.1",
+   "margin": "８",
+   "pos4": 10,
+   "last3f": 44.3,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 7,
+   "number": 9,
+   "name": "ゼンノスタニング",
+   "time": "-",
+   "margin": "取消",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
