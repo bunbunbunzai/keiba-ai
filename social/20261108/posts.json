@@ -733,11 +733,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/08/obihiro/10r/",
    "created": "2026-11-08 20:45",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2119396214542053475",
    "x_at": "2026-11-08 20:46",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'code': 200, 'type': 'OAuthException', 'fbtrace_id': 'A7Ba6hZfHICVPQHDOKFDY4E'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AllTUeLkhaRdXK95jsVobqe'}",
+   "instagram_tries": 3
   },
   "res-202611080304160311": {
    "kind": "grade_res",
@@ -751,11 +751,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/08/obihiro/11r/",
    "created": "2026-11-08 20:45",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2119396217612292197",
    "x_at": "2026-11-08 20:46",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'Acdd_bLZzPCudsAkAy46ivZ'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AbK-HLUr9-9imxoB-YMms5s'}",
+   "instagram_tries": 3
   },
   "hit-202611083129100211": {
    "kind": "hit",
@@ -769,11 +769,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/08/kochi/11r/",
    "created": "2026-11-08 20:45",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2119396220686803155",
    "x_at": "2026-11-08 20:46",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AXTR0-C3VYp6f2h9FQ0rgu_'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AlCxSK-mc3LZ5-POnSB8JLD'}",
+   "instagram_tries": 3
   },
   "hit-202611083230130208": {
    "kind": "hit",
@@ -787,11 +787,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/08/saga/08r/",
    "created": "2026-11-08 20:45",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2119396224327373063",
    "x_at": "2026-11-08 20:46",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AFVgOpZVyQWfZ_ab1d7q6pq'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'ALj-kGTOyQTd78NYhfnxV_p'}",
+   "instagram_tries": 3
   },
   "hit-202611083230130210": {
    "kind": "hit",
@@ -805,11 +805,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/08/saga/10r/",
    "created": "2026-11-08 20:45",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2119396227498287253",
    "x_at": "2026-11-08 20:46",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'Ak86rTxEShlNch4VBB0XYyf'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A4ne68qDK2Cv70tOVRt0zPF'}",
+   "instagram_tries": 3
   },
   "hit-202611083129100212": {
    "kind": "hit",
@@ -822,8 +822,12 @@
    "ig_caption": "【的中】高知12R ファイナルレース\n◎12ビビットピンク　〇3セージブラッシュ　▲6キンデアポチャン\n複勝 12　160円\n投資100円→払戻160円（回収率160.0%）\n\nこのレースの全頭評価と買い目 → www.ai-keiba-log.com/2026/11/08/kochi/12r/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#競馬予想 #高知競馬 #AI予想 #的中 #競馬 #競馬全頭ログ",
    "url": "https://www.ai-keiba-log.com/2026/11/08/kochi/12r/",
    "created": "2026-11-08 21:46",
-   "x": "pending",
-   "instagram": "pending"
+   "x": "posted",
+   "instagram": "pending",
+   "x_id": "2119411632908476626",
+   "x_at": "2026-11-08 21:48",
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'Al2b4jy2Eg5VlnMlnH--bXm'}",
+   "instagram_tries": 1
   },
   "hit-202611083230130211": {
    "kind": "hit",
@@ -836,8 +840,12 @@
    "ig_caption": "【的中】佐賀11R SAGAリベFEVER14\n◎8ディアーモルタル　〇12イサゴールド　▲9ユイノササヤキ\n複勝 8　100円\n投資100円→払戻100円（回収率100.0%）\n\nこのレースの全頭評価と買い目 → www.ai-keiba-log.com/2026/11/08/saga/11r/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#競馬予想 #佐賀競馬 #AI予想 #的中 #競馬 #競馬全頭ログ",
    "url": "https://www.ai-keiba-log.com/2026/11/08/saga/11r/",
    "created": "2026-11-08 21:46",
-   "x": "pending",
-   "instagram": "pending"
+   "x": "posted",
+   "instagram": "pending",
+   "x_id": "2119411636452675966",
+   "x_at": "2026-11-08 21:48",
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AED_MHVNCVejvIFCJodziGE'}",
+   "instagram_tries": 1
   },
   "sum-20261108": {
    "kind": "summary",
@@ -851,8 +859,12 @@
    "ig_caption": "【11/8 AI予想の全成績】\n京都・佐賀・帯広・東京・盛岡・福島・高知の76レース\n的中38（うちプラス24）／当日回収率53.9%\n収支-5,810円（各点100円・外れも含む）\n最高：東京7R 払戻1,610円\n累計回収率63.4%\n\nこの日の全レースの予想と成績 → www.ai-keiba-log.com/2026/11/08/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#競馬予想 #中央競馬 #地方競馬 #AI予想 #回収率 #競馬 #競馬全頭ログ",
    "url": "https://www.ai-keiba-log.com/2026/11/08/",
    "created": "2026-11-08 21:46",
-   "x": "pending",
-   "instagram": "pending"
+   "x": "posted",
+   "instagram": "pending",
+   "x_id": "2119411641745834045",
+   "x_at": "2026-11-08 21:48",
+   "instagram_error": "item 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AxEaMV8S8y73i0lYAuLbRcx'}",
+   "instagram_tries": 1
   }
  }
 }
