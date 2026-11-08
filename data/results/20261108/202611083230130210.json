@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261108",
  "race_id": "202611083230130210",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -77,7 +77,7 @@
    "name": "テイエムサンレーヴ",
    "time": "1:28.3",
    "margin": "",
-   "pos4": null,
+   "pos4": 1,
    "last3f": null,
    "popularity": null
   },
@@ -88,7 +88,7 @@
    "name": "ラウダーティオ",
    "time": "1:30.2",
    "margin": "大差",
-   "pos4": null,
+   "pos4": 2,
    "last3f": null,
    "popularity": null
   },
@@ -99,7 +99,7 @@
    "name": "セプトラム",
    "time": "1:30.2",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 8,
    "last3f": null,
    "popularity": null
   },
@@ -110,7 +110,7 @@
    "name": "キトーウィン",
    "time": "1:30.2",
    "margin": "アタマ",
-   "pos4": null,
+   "pos4": 5,
    "last3f": null,
    "popularity": null
   },
@@ -121,7 +121,7 @@
    "name": "エイシンチェンバー",
    "time": "1:30.6",
    "margin": "２",
-   "pos4": null,
+   "pos4": 9,
    "last3f": null,
    "popularity": null
   },
@@ -132,7 +132,7 @@
    "name": "ビービーベジェサ",
    "time": "1:30.7",
    "margin": "３／４",
-   "pos4": null,
+   "pos4": 4,
    "last3f": null,
    "popularity": null
   },
@@ -143,7 +143,7 @@
    "name": "カシノルーカス",
    "time": "1:30.8",
    "margin": "１／２",
-   "pos4": null,
+   "pos4": 7,
    "last3f": null,
    "popularity": null
   },
@@ -154,7 +154,7 @@
    "name": "カルドウェル",
    "time": "1:31.1",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 3,
    "last3f": null,
    "popularity": null
   },
@@ -165,7 +165,7 @@
    "name": "クチャモザクワジャ",
    "time": "1:31.8",
    "margin": "４",
-   "pos4": null,
+   "pos4": 5,
    "last3f": null,
    "popularity": null
   },
@@ -176,7 +176,7 @@
    "name": "ミフネ",
    "time": "1:31.9",
    "margin": "１／２",
-   "pos4": null,
+   "pos4": 10,
    "last3f": null,
    "popularity": null
   }
