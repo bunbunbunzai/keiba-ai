@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 4,
+   "name": "ホットロッドハート",
+   "time": "1:52.7",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "2",
+   "number": 10,
+   "name": "マーズエクレール",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "3",
+   "number": 3,
+   "name": "エピドゥブレ",
+   "time": "",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "number": 1,
+   "name": "ハメドスタイル",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "5",
+   "number": 13,
+   "name": "アメリカンソウル",
+   "time": "",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "4",
+    "yen": 9150,
+    "pop": 13
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "4",
+    "yen": 1180,
+    "pop": 13
+   },
+   {
+    "combo": "10",
+    "yen": 280,
+    "pop": 4
+   },
+   {
+    "combo": "3",
+    "yen": 190,
+    "pop": 2
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-6",
+    "yen": 5860,
+    "pop": 21
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-10",
+    "yen": 5470,
+    "pop": 58
+   },
+   {
+    "combo": "3-4",
+    "yen": 2590,
+    "pop": 32
+   },
+   {
+    "combo": "3-10",
+    "yen": 760,
+    "pop": 5
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-10",
+    "yen": 27450,
+    "pop": 63
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "4-10",
+    "yen": 74660,
+    "pop": 144
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-4-10",
+    "yen": 18610,
+    "pop": 62
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "4-10-3",
+    "yen": 317390,
+    "pop": 848
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261108",
+ "venue_code": "08",
+ "race_no": 9,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605020920261108/55",
+ "title": "レース結果 JRA"
+}
