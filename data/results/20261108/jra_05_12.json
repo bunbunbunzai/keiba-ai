@@ -1,0 +1,208 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 4,
+   "name": "デンプシー",
+   "time": "1:22.3",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "2",
+   "number": 7,
+   "name": "カルロット",
+   "time": "1:22.5",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "3",
+   "number": 8,
+   "name": "ラミアメンテ",
+   "time": "1:22.5",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "4",
+   "number": 3,
+   "name": "スペルーチェ",
+   "time": "1:22.7",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "5",
+   "number": 9,
+   "name": "ツルノマイハシ",
+   "time": "1:22.8",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "6",
+   "number": 12,
+   "name": "ウォーターエアリー",
+   "time": "1:22.8",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "7",
+   "number": 10,
+   "name": "チョングク",
+   "time": "1:22.9",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "8",
+   "number": 6,
+   "name": "ルージュベルベット",
+   "time": "1:23.0",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "9",
+   "number": 11,
+   "name": "アステルディーヴァ",
+   "time": "1:23.1",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "10",
+   "number": 5,
+   "name": "インプロペリア",
+   "time": "1:23.2",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "11",
+   "number": 2,
+   "name": "リュウノタブーク",
+   "time": "1:23.2",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "12",
+   "number": 1,
+   "name": "グランテレーズ",
+   "time": "1:23.2",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "4",
+    "yen": 720,
+    "pop": 3
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "4",
+    "yen": 340,
+    "pop": 3
+   },
+   {
+    "combo": "7",
+    "yen": 340,
+    "pop": 4
+   },
+   {
+    "combo": "8",
+    "yen": 420,
+    "pop": 5
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-6",
+    "yen": 2130,
+    "pop": 7
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-7",
+    "yen": 1000,
+    "pop": 9
+   },
+   {
+    "combo": "4-8",
+    "yen": 1100,
+    "pop": 12
+   },
+   {
+    "combo": "7-8",
+    "yen": 1260,
+    "pop": 15
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-7",
+    "yen": 3890,
+    "pop": 12
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "4-7",
+    "yen": 7430,
+    "pop": 19
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-7-8",
+    "yen": 10300,
+    "pop": 30
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "4-7-8",
+    "yen": 63310,
+    "pop": 153
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261108",
+ "venue_code": "05",
+ "race_no": 12,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605021220261108/D6",
+ "title": "レース結果 JRA"
+}

@@ -1,6 +1,6 @@
 {
  "date": "20261108",
- "updated": "2026-11-08 16:17",
+ "updated": "2026-11-08 16:22",
  "bias": {
   "福島ダ": {
    "judgement": "内先行",
@@ -52,13 +52,14 @@
   },
   "東京芝": {
    "judgement": "差し有利・内",
-   "confidence": "中",
+   "confidence": "強",
    "races": [
     2,
     3,
     5,
     9,
-    11
+    11,
+    12
    ],
    "front_share": 0.0,
    "inner_share": 0.5,
