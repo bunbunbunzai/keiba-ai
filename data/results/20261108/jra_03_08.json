@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 6,
+   "name": "オプティモ",
+   "time": "1:08.0",
+   "margin": "",
+   "corners": "1-1",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "number": 9,
+   "name": "ファンシーフリル",
+   "time": "1:08.1",
+   "margin": "３／４",
+   "corners": "2-2",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "3",
+   "number": 15,
+   "name": "アメリカンビヨンド",
+   "time": "1:08.3",
+   "margin": "１ 1/2",
+   "corners": "7-4",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "number": 2,
+   "name": "ダイイズキャスト",
+   "time": "1:08.4",
+   "margin": "１／２",
+   "corners": "7-8",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "5",
+   "number": 4,
+   "name": "ミスタートントン",
+   "time": "1:08.5",
+   "margin": "１／２",
+   "corners": "4-4",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "6",
+   "number": 11,
+   "name": "ライトニングロッド",
+   "time": "1:08.6",
+   "margin": "クビ",
+   "corners": "3-3",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "7",
+   "number": 12,
+   "name": "アイファーモービル",
+   "time": "1:08.6",
+   "margin": "クビ",
+   "corners": "14-13",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "8",
+   "number": 13,
+   "name": "グランルチャドール",
+   "time": "1:08.7",
+   "margin": "１／２",
+   "corners": "4-4",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "9",
+   "number": 14,
+   "name": "トゥインクルアップ",
+   "time": "1:08.8",
+   "margin": "クビ",
+   "corners": "15-13",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "10",
+   "number": 16,
+   "name": "スペルビア",
+   "time": "1:09.0",
+   "margin": "１",
+   "corners": "12-11",
+   "last3f": null,
+   "popularity": 16
+  },
+  {
+   "finish": "11",
+   "number": 5,
+   "name": "シェイプオブユー",
+   "time": "1:09.5",
+   "margin": "３",
+   "corners": "7-8",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "12",
+   "number": 3,
+   "name": "ラテラルパーム",
+   "time": "1:10.1",
+   "margin": "３ 1/2",
+   "corners": "4-4",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "13",
+   "number": 8,
+   "name": "タヤスロレンヌ",
+   "time": "1:10.4",
+   "margin": "２",
+   "corners": "7-10",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "14",
+   "number": 10,
+   "name": "アイスメルティング",
+   "time": "1:10.6",
+   "margin": "１",
+   "corners": "13-13",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "15",
+   "number": 1,
+   "name": "アスコットアイ",
+   "time": "1:10.6",
+   "margin": "クビ",
+   "corners": "11-11",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "16",
+   "number": 7,
+   "name": "レジェンダリーデイ",
+   "time": "2:01.8",
+   "margin": "大差",
+   "corners": "16-16",
+   "last3f": null,
+   "popularity": 7
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "6",
+    "yen": 430,
+    "pop": 2
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "6",
+    "yen": 170,
+    "pop": 1
+   },
+   {
+    "combo": "9",
+    "yen": 430,
+    "pop": 8
+   },
+   {
+    "combo": "15",
+    "yen": 200,
+    "pop": 3
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-5",
+    "yen": 2120,
+    "pop": 9
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "6-9",
+    "yen": 1970,
+    "pop": 25
+   },
+   {
+    "combo": "6-15",
+    "yen": 710,
+    "pop": 3
+   },
+   {
+    "combo": "9-15",
+    "yen": 1960,
+    "pop": 24
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "6-9",
+    "yen": 5870,
+    "pop": 23
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "6-9",
+    "yen": 10700,
+    "pop": 40
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "6-9-15",
+    "yen": 12820,
+    "pop": 36
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "6-9-15",
+    "yen": 72210,
+    "pop": 202
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261108",
+ "venue_code": "03",
+ "race_no": 8,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603020820261108/CC",
+ "title": "レース結果 JRA"
+}
