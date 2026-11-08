@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261108",
  "race_id": "202611083129100209",
- "tries": 2,
+ "tries": 5,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,105 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 6,
+   "name": "モズリッキー",
+   "time": "1:45.3",
+   "margin": "",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 4,
+   "number": 4,
+   "name": "ネオブレイブ",
+   "time": "1:45.9",
+   "margin": "３",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 5,
+   "name": "リーチアディール",
+   "time": "1:46.1",
+   "margin": "１",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "アースライザー",
+   "time": "1:46.3",
+   "margin": "１",
+   "pos4": 5,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 9,
+   "name": "ヒビキ",
+   "time": "1:47.1",
+   "margin": "４",
+   "pos4": 2,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 8,
+   "name": "フユソウビ",
+   "time": "1:47.5",
+   "margin": "２",
+   "pos4": 8,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 7,
+   "name": "ダノンダンサー",
+   "time": "1:47.6",
+   "margin": "１／２",
+   "pos4": 6,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "ベルリネッタ",
+   "time": "1:48.7",
+   "margin": "５",
+   "pos4": 7,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 3,
+   "number": 3,
+   "name": "カツベンケイ",
+   "time": "-",
+   "margin": "取消",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
