@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261108",
  "race_id": "202611083129100203",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -71,7 +71,7 @@
    "name": "フランスゴデイナ",
    "time": "1:23.7",
    "margin": "",
-   "pos4": null,
+   "pos4": 1,
    "last3f": null,
    "popularity": null
   },
@@ -82,7 +82,7 @@
    "name": "エーデルクラフト",
    "time": "1:26.2",
    "margin": "大差",
-   "pos4": null,
+   "pos4": 3,
    "last3f": null,
    "popularity": null
   },
@@ -93,7 +93,7 @@
    "name": "リュネヴィル",
    "time": "1:27.4",
    "margin": "６",
-   "pos4": null,
+   "pos4": 4,
    "last3f": null,
    "popularity": null
   },
@@ -104,7 +104,7 @@
    "name": "ピコバレット",
    "time": "1:28.0",
    "margin": "３",
-   "pos4": null,
+   "pos4": 5,
    "last3f": null,
    "popularity": null
   },
@@ -115,7 +115,7 @@
    "name": "ナチュラルスマイル",
    "time": "1:28.1",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 6,
    "last3f": null,
    "popularity": null
   },
@@ -126,7 +126,7 @@
    "name": "キーゴールド",
    "time": "1:28.8",
    "margin": "３",
-   "pos4": null,
+   "pos4": 2,
    "last3f": null,
    "popularity": null
   },
@@ -137,7 +137,7 @@
    "name": "ブルジョア",
    "time": "1:28.8",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 7,
    "last3f": null,
    "popularity": null
   },
@@ -148,7 +148,7 @@
    "name": "モズラストセール",
    "time": "1:28.8",
    "margin": "アタマ",
-   "pos4": null,
+   "pos4": 8,
    "last3f": null,
    "popularity": null
   }
