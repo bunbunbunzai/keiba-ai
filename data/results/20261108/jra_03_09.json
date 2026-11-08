@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 13,
+   "name": "カクウチ",
+   "time": "1:49.8",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "2",
+   "number": 6,
+   "name": "コンバットペスカ",
+   "time": "",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "3",
+   "number": 9,
+   "name": "バンオンタイム",
+   "time": "",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "4",
+   "number": 3,
+   "name": "ウインポセイドン",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "number": 2,
+   "name": "クラシカルカイザー",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "13",
+    "yen": 1290,
+    "pop": 6
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "13",
+    "yen": 490,
+    "pop": 10
+   },
+   {
+    "combo": "6",
+    "yen": 470,
+    "pop": 8
+   },
+   {
+    "combo": "9",
+    "yen": 200,
+    "pop": 1
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-7",
+    "yen": 4670,
+    "pop": 20
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "6-13",
+    "yen": 7140,
+    "pop": 78
+   },
+   {
+    "combo": "9-13",
+    "yen": 1760,
+    "pop": 18
+   },
+   {
+    "combo": "6-9",
+    "yen": 1850,
+    "pop": 19
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "6-13",
+    "yen": 24440,
+    "pop": 74
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "13-6",
+    "yen": 43780,
+    "pop": 149
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "6-9-13",
+    "yen": 43450,
+    "pop": 162
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "13-6-9",
+    "yen": 323820,
+    "pop": 1141
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261108",
+ "venue_code": "03",
+ "race_no": 9,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603020920261108/81",
+ "title": "レース結果 JRA"
+}
