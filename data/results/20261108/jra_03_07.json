@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 15,
+   "name": "ミトノリン",
+   "time": "1:10.4",
+   "margin": "",
+   "corners": "8-6",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "2",
+   "number": 16,
+   "name": "ナンナンプー",
+   "time": "",
+   "margin": "ハナ",
+   "corners": "10-8",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "3",
+   "number": 7,
+   "name": "ミエノブラボー",
+   "time": "",
+   "margin": "アタマ",
+   "corners": "14-13",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "4",
+   "number": 8,
+   "name": "ルシェロアズーリ",
+   "time": "",
+   "margin": "クビ",
+   "corners": "1-1",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "5",
+   "number": 1,
+   "name": "カモメガトンダ",
+   "time": "",
+   "margin": "１",
+   "corners": "5-4",
+   "last3f": null,
+   "popularity": 6
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "15",
+    "yen": 2020,
+    "pop": 8
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "15",
+    "yen": 610,
+    "pop": 9
+   },
+   {
+    "combo": "16",
+    "yen": 1300,
+    "pop": 13
+   },
+   {
+    "combo": "7",
+    "yen": 260,
+    "pop": 3
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "8-8",
+    "yen": 27980,
+    "pop": 33
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "15-16",
+    "yen": 6670,
+    "pop": 64
+   },
+   {
+    "combo": "7-15",
+    "yen": 2820,
+    "pop": 32
+   },
+   {
+    "combo": "7-16",
+    "yen": 5230,
+    "pop": 57
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "15-16",
+    "yen": 25600,
+    "pop": 66
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "15-16",
+    "yen": 48500,
+    "pop": 123
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "7-15-16",
+    "yen": 69940,
+    "pop": 200
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "15-16-7",
+    "yen": 485620,
+    "pop": 1254
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261108",
+ "venue_code": "03",
+ "race_no": 7,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603020720261108/17",
+ "title": "レース結果 JRA"
+}
