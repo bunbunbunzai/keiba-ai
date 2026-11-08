@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261108",
  "race_id": "202611083230130209",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -77,7 +77,7 @@
    "name": "フラクタル",
    "time": "1:30.3",
    "margin": "",
-   "pos4": null,
+   "pos4": 3,
    "last3f": null,
    "popularity": null
   },
@@ -88,7 +88,7 @@
    "name": "デルマタモン",
    "time": "1:30.3",
    "margin": "アタマ",
-   "pos4": null,
+   "pos4": 1,
    "last3f": null,
    "popularity": null
   },
@@ -99,7 +99,7 @@
    "name": "サムシンググレート",
    "time": "1:31.2",
    "margin": "５",
-   "pos4": null,
+   "pos4": 1,
    "last3f": null,
    "popularity": null
   },
@@ -110,7 +110,7 @@
    "name": "ヴィアトル",
    "time": "1:31.4",
    "margin": "１",
-   "pos4": null,
+   "pos4": 4,
    "last3f": null,
    "popularity": null
   },
@@ -121,7 +121,7 @@
    "name": "メトゥス",
    "time": "1:31.5",
    "margin": "１／２",
-   "pos4": null,
+   "pos4": 6,
    "last3f": null,
    "popularity": null
   },
@@ -132,7 +132,7 @@
    "name": "コワン",
    "time": "1:31.7",
    "margin": "１",
-   "pos4": null,
+   "pos4": 4,
    "last3f": null,
    "popularity": null
   },
@@ -143,7 +143,7 @@
    "name": "ファイナルソード",
    "time": "1:31.8",
    "margin": "１／２",
-   "pos4": null,
+   "pos4": 8,
    "last3f": null,
    "popularity": null
   },
@@ -154,7 +154,7 @@
    "name": "マイブレイブ",
    "time": "1:32.3",
    "margin": "２ １／２",
-   "pos4": null,
+   "pos4": 7,
    "last3f": null,
    "popularity": null
   },
@@ -165,7 +165,7 @@
    "name": "ボブズヤアンクル",
    "time": "1:32.5",
    "margin": "１",
-   "pos4": null,
+   "pos4": 8,
    "last3f": null,
    "popularity": null
   },
@@ -176,7 +176,7 @@
    "name": "ナッシングオンユー",
    "time": "1:32.6",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 10,
    "last3f": null,
    "popularity": null
   }
