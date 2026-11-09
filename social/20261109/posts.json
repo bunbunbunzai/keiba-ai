@@ -13,11 +13,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/09/",
    "created": "2026-11-09 08:32",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2119574097457746056",
    "x_at": "2026-11-09 08:33",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AwGAeyw9Hhq2dv0lo14JZw2'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A3-XUFwMM61NyORA0laUEeV'}",
+   "instagram_tries": 3
   }
  }
 }
