@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261109",
  "race_id": "202611092433160103",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,127 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 7,
+   "name": "ウインビスタ",
+   "time": "1:41.5",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.3,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 3,
+   "number": 3,
+   "name": "エコロガルダ",
+   "time": "1:41.6",
+   "margin": "クビ",
+   "pos4": 3,
+   "last3f": 39.2,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 8,
+   "name": "コスモゼーリエ",
+   "time": "1:42.2",
+   "margin": "３",
+   "pos4": 4,
+   "last3f": 39.9,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 1,
+   "number": 1,
+   "name": "ミツカネルナ",
+   "time": "1:42.3",
+   "margin": "１／２",
+   "pos4": 4,
+   "last3f": 39.9,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 5,
+   "name": "リュウノバモス",
+   "time": "1:42.3",
+   "margin": "クビ",
+   "pos4": 1,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 10,
+   "name": "ウワサノモアナ",
+   "time": "1:43.2",
+   "margin": "４",
+   "pos4": 11,
+   "last3f": 40.0,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 6,
+   "name": "ビーチェ",
+   "time": "1:43.2",
+   "margin": "クビ",
+   "pos4": 9,
+   "last3f": 40.5,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 11,
+   "name": "スマートピクタス",
+   "time": "1:43.3",
+   "margin": "クビ",
+   "pos4": 6,
+   "last3f": 41.0,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 4,
+   "number": 4,
+   "name": "レーヌシェーヌ",
+   "time": "1:43.6",
+   "margin": "１ １／２",
+   "pos4": 7,
+   "last3f": 40.9,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 2,
+   "number": 2,
+   "name": "セイヒンクイーン",
+   "time": "1:44.3",
+   "margin": "３",
+   "pos4": 10,
+   "last3f": 41.3,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 7,
+   "number": 9,
+   "name": "シルヴァークラウン",
+   "time": "1:45.1",
+   "margin": "４",
+   "pos4": 7,
+   "last3f": 42.8,
+   "popularity": null
+  }
+ ]
 }
