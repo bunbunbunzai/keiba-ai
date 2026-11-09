@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261109",
  "race_id": "202611092433160104",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,116 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 8,
+   "name": "バリウマ",
+   "time": "57.9",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 37.6,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "イグレックリヤン",
+   "time": "58.5",
+   "margin": "３",
+   "pos4": 1,
+   "last3f": 38.3,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 6,
+   "name": "ダイユーホーク",
+   "time": "59.3",
+   "margin": "４",
+   "pos4": 3,
+   "last3f": 39.0,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 9,
+   "name": "ノースバレリーナ",
+   "time": "59.5",
+   "margin": "３／４",
+   "pos4": 5,
+   "last3f": 38.4,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 3,
+   "number": 3,
+   "name": "アヴェンタ",
+   "time": "59.7",
+   "margin": "１",
+   "pos4": 8,
+   "last3f": 38.0,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "アノヒノヤクソク",
+   "time": "59.7",
+   "margin": "クビ",
+   "pos4": 9,
+   "last3f": 38.2,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 1,
+   "number": 1,
+   "name": "ゴールデンシャイナ",
+   "time": "1:00.3",
+   "margin": "３",
+   "pos4": 9,
+   "last3f": 39.0,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 7,
+   "name": "プリンセスナツキ",
+   "time": "1:00.6",
+   "margin": "１ １／２",
+   "pos4": 4,
+   "last3f": 39.9,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 4,
+   "number": 4,
+   "name": "ニシキマカヒキ",
+   "time": "1:01.0",
+   "margin": "２",
+   "pos4": 5,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 8,
+   "number": 10,
+   "name": "セプテンバームーン",
+   "time": "1:01.0",
+   "margin": "アタマ",
+   "pos4": 7,
+   "last3f": 40.3,
+   "popularity": null
+  }
+ ]
 }
