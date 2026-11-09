@@ -605,7 +605,7 @@ def publish(date: str, dry: bool = False, only: str = "") -> int:
     st = load_state(date)
     n = 0
     # Instagram側でAPIが止められている間は送らない（失敗を重ねない）。毎回の確認で解除されたら自動で再開する
-    ig_blocked = "API access blocked" in " ".join((load(SOCIAL / "status.json", {}) or {}).get("ig_probe") or [])
+    ig_blocked = (not only) and "API access blocked" in " ".join((load(SOCIAL / "status.json", {}) or {}).get("ig_probe") or [])  # 投稿IDを指定した手動テストでは送る
     for pid, e in st["posts"].items():
         if only and pid != only:
             continue
