@@ -118,8 +118,8 @@ _card_fetched: dict[str, float] = {}
 
 
 def refresh_bets(date: str) -> bool:
-    """発走が近い自信度Aのレースについて、オッズ（中央は3連複の発表オッズ、地方は単勝オッズ）を取り直し、
-    bets.py で買い目を組み直す。書き換えたら True。"""
+    """発走が近いレースについて、自信度Aは3連複の発表オッズ（中央）・単勝オッズ（地方）を取り直し、
+    blend.py で◎と自信度を、bets.py で買い目を組み直す。書き換えたら True。"""
     import bets as BT
     import combo_odds as CO
 
@@ -130,8 +130,6 @@ def refresh_bets(date: str) -> bool:
             p = json.loads(f.read_text(encoding="utf-8"))
         except Exception:  # noqa: BLE001
             continue
-        if p.get("confidence") != "A":
-            continue
         rid = p.get("race_id")
         rf = DATA_DIR / "races" / date / f"{rid}.json"
         if not rf.exists():
@@ -140,6 +138,8 @@ def refresh_bets(date: str) -> bool:
         if post is None or not (BET_WINDOW[0] < (post - t).total_seconds() / 60 <= BET_WINDOW[1]):
             continue
         all_ids.append(rid)
+        if p.get("confidence") != "A":
+            continue  # 3連複オッズの取り直しは自信度Aだけ（B・Cは単複1点なので不要）
         if rid.startswith("jra_"):
             tr = BT.load_trio(date, rid)
             age = (t - datetime.fromisoformat(tr["fetched_ts"])).total_seconds() / 60 if tr and tr.get("fetched_ts") else 1e9
@@ -168,8 +168,11 @@ def refresh_bets(date: str) -> bool:
             sh("python", "scraper/parse_rakuten.py", "--date", date)
         except Exception as e:  # noqa: BLE001
             print("rakuten card error:", e)
+    import blend as BL
+
+    moved = BL.apply(date, all_ids, write=True)  # オッズが動いて補正勝率の1位が変われば◎も変わる
     changed = BT.apply(date, all_ids, write=True)
-    print(f"{now():%H:%M} 買い目の組み直し {len(all_ids)}R（変更 {len(changed)}R）")
+    print(f"{now():%H:%M} 買い目の組み直し {len(all_ids)}R（◎変更 {len(moved)}R・買い目変更 {len(changed)}R）")
     return True
 
 
