@@ -360,8 +360,8 @@
    "instagram": "pending",
    "x_id": "2119773389631947244",
    "x_at": "2026-11-09 21:45",
-   "instagram_error": "item 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AfuQdaEYGoPWJCzuWFVIgXo'}",
-   "instagram_tries": 1,
+   "instagram_error": "item 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A_YguC0C_TfeSedTk2DISjI'}",
+   "instagram_tries": 2,
    "instagram_wait": "Instagram側でAPIが止められているため待機"
   }
  }
