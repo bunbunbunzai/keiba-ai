@@ -107,7 +107,8 @@ if __name__ == "__main__":
         for r in rs:
             if r["race_id"] in done or (r.get("post_time") or "99:99") < a.after:
                 continue
-            odds = sum(1 for h in r.get("horses", []) if h.get("odds") is not None)
+            # 楽天は発売開始直後に「0.0（-人気）」を出すことがある。0.0 はオッズ未確定として数えない
+            odds = sum(1 for h in r.get("horses", []) if h.get("odds"))
             g = grade_of(r)
             print(f"{r.get('post_time')} {r['race_id']} {r.get('venue')}{r.get('race_no')}R " + (f"【重賞:{g}】" if g else "") +
                   f"{r.get('surface') or ''}{r.get('distance') or ''} {r.get('field')}頭 オッズ{odds}/{r.get('field')}")
