@@ -2,7 +2,205 @@
  "source": "rakuten",
  "date": "20261109",
  "race_id": "202611091006100501",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "4",
+    "yen": 270
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "4-9",
+    "yen": 1270
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "4",
+    "yen": 160
+   },
+   {
+    "combo": "9",
+    "yen": 150
+   },
+   {
+    "combo": "11",
+    "yen": 200
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-9",
+    "yen": 350
+   },
+   {
+    "combo": "4-11",
+    "yen": 490
+   },
+   {
+    "combo": "9-11",
+    "yen": 430
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-7",
+    "yen": 770
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-9-11",
+    "yen": 1420
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "4-9-11",
+    "yen": 5040
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-9",
+    "yen": 790
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 4,
+   "name": "シャイニーテースト",
+   "time": "1:00.4",
+   "margin": "",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 9,
+   "name": "エメラルドテソーロ",
+   "time": "1:00.6",
+   "margin": "１ １／４",
+   "pos4": 5,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 11,
+   "name": "リオンアンサー",
+   "time": "1:01.3",
+   "margin": "４",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 12,
+   "name": "ハートループ",
+   "time": "1:01.4",
+   "margin": "３／４",
+   "pos4": 6,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 5,
+   "name": "クリノサクセス",
+   "time": "1:01.4",
+   "margin": "クビ",
+   "pos4": 7,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 7,
+   "name": "アンジュリオ",
+   "time": "1:01.4",
+   "margin": "ハナ",
+   "pos4": 8,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 3,
+   "name": "ダズルオーロラ",
+   "time": "1:01.8",
+   "margin": "２ １／２",
+   "pos4": 9,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "キャリーアドリーム",
+   "time": "1:01.9",
+   "margin": "１／２",
+   "pos4": 4,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 10,
+   "name": "ハミッツキャンディ",
+   "time": "1:02.2",
+   "margin": "１ ３／４",
+   "pos4": 10,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 6,
+   "name": "マローディープ",
+   "time": "1:02.4",
+   "margin": "１ １／４",
+   "pos4": 11,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 2,
+   "number": 2,
+   "name": "スーパーシスター",
+   "time": "1:02.6",
+   "margin": "３／４",
+   "pos4": 2,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 6,
+   "number": 8,
+   "name": "カゼヨウビ",
+   "time": "1:03.1",
+   "margin": "３",
+   "pos4": 12,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
