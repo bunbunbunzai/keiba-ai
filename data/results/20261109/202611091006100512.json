@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261109",
  "race_id": "202611091006100512",
- "tries": 8,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -77,9 +77,9 @@
    "name": "バトルバーリライ",
    "time": "1:38.1",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 5,
+   "last3f": 38.4,
+   "popularity": 3
   },
   {
    "finish": "2",
@@ -88,9 +88,9 @@
    "name": "オンラインボス",
    "time": "1:38.4",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 2,
+   "last3f": 39.0,
+   "popularity": 1
   },
   {
    "finish": "3",
@@ -99,9 +99,9 @@
    "name": "ボウトロイ",
    "time": "1:38.5",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 6,
+   "last3f": 38.4,
+   "popularity": 7
   },
   {
    "finish": "4",
@@ -110,9 +110,9 @@
    "name": "ローザレイア",
    "time": "1:38.6",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 10,
+   "last3f": 37.9,
+   "popularity": 9
   },
   {
    "finish": "5",
@@ -121,9 +121,9 @@
    "name": "ヴァトレニ",
    "time": "1:38.8",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 7,
+   "last3f": 38.9,
+   "popularity": 8
   },
   {
    "finish": "6",
@@ -132,9 +132,9 @@
    "name": "サラサワン",
    "time": "1:39.1",
    "margin": "１ ３／４",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 7,
+   "last3f": 39.5,
+   "popularity": 5
   },
   {
    "finish": "7",
@@ -143,9 +143,9 @@
    "name": "アルサーフィ",
    "time": "1:39.3",
    "margin": "１ １／４",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 1,
+   "last3f": 39.5,
+   "popularity": 12
   },
   {
    "finish": "8",
@@ -154,9 +154,9 @@
    "name": "ワガンセ",
    "time": "1:40.8",
    "margin": "９",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 3,
+   "last3f": 41.4,
+   "popularity": 6
   },
   {
    "finish": "9",
@@ -165,9 +165,9 @@
    "name": "エイシンワンド",
    "time": "1:41.0",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 9,
+   "last3f": 40.8,
+   "popularity": 11
   },
   {
    "finish": "10",
@@ -176,9 +176,9 @@
    "name": "ミナトミナイト",
    "time": "1:41.1",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 11,
+   "last3f": 40.9,
+   "popularity": 10
   },
   {
    "finish": "11",
@@ -187,9 +187,9 @@
    "name": "リトルサムシング",
    "time": "1:41.7",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 4,
+   "last3f": 42.3,
+   "popularity": 2
   },
   {
    "finish": "12",
@@ -198,9 +198,9 @@
    "name": "ブラックバトラー",
    "time": "1:44.8",
    "margin": "大差",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 12,
+   "last3f": 44.7,
+   "popularity": 4
   }
  ]
 }
