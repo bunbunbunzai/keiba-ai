@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261109",
  "race_id": "202611092433160112",
- "tries": 2,
+ "tries": 5,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 8,
+   "name": "クリノゴージャス",
+   "time": "1:39.0",
+   "margin": "",
+   "pos4": null,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 9,
+   "name": "ヴィータリッカ",
+   "time": "1:39.2",
+   "margin": "１",
+   "pos4": null,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 7,
+   "name": "ワイルドカイザー",
+   "time": "1:39.2",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": 39.3,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "ポンテヴェッキオ",
+   "time": "1:40.1",
+   "margin": "４",
+   "pos4": null,
+   "last3f": 41.1,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 10,
+   "name": "ダゴベルト",
+   "time": "1:40.5",
+   "margin": "２",
+   "pos4": null,
+   "last3f": 41.4,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 3,
+   "number": 3,
+   "name": "アオゾラランチ",
+   "time": "1:40.8",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": 40.9,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 6,
+   "name": "プリヴィマーク",
+   "time": "1:40.8",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": 40.6,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "アイゼンハイム",
+   "time": "1:41.1",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": 42.3,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 5,
+   "name": "ウシワカマル",
+   "time": "1:41.2",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": 42.4,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 4,
+   "number": 4,
+   "name": "メイショウツキヨ",
+   "time": "1:41.3",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": 41.8,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 8,
+   "number": 11,
+   "name": "ゴールドアベニュー",
+   "time": "1:41.4",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": 41.5,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 8,
+   "number": 12,
+   "name": "サンライズハリー",
+   "time": "1:41.5",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": 41.1,
+   "popularity": null
+  }
+ ]
 }
