@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261109",
  "race_id": "202611093230130306",
- "tries": 3,
+ "tries": 5,
  "payouts": {
   "単勝": [
    {
@@ -71,7 +71,7 @@
    "name": "ユイアヴェニール",
    "time": "1:30.3",
    "margin": "",
-   "pos4": null,
+   "pos4": 2,
    "last3f": null,
    "popularity": null
   },
@@ -82,7 +82,7 @@
    "name": "モズオラージュ",
    "time": "1:30.6",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 4,
    "last3f": null,
    "popularity": null
   },
@@ -93,7 +93,7 @@
    "name": "サクセスビービー",
    "time": "1:30.8",
    "margin": "１",
-   "pos4": null,
+   "pos4": 1,
    "last3f": null,
    "popularity": null
   },
@@ -104,7 +104,7 @@
    "name": "カシノハンゾウ",
    "time": "1:31.6",
    "margin": "４",
-   "pos4": null,
+   "pos4": 2,
    "last3f": null,
    "popularity": null
   },
@@ -115,7 +115,7 @@
    "name": "カシノメンコチャン",
    "time": "1:32.8",
    "margin": "６",
-   "pos4": null,
+   "pos4": 7,
    "last3f": null,
    "popularity": null
   },
@@ -126,7 +126,7 @@
    "name": "アイアムルンルン",
    "time": "1:32.9",
    "margin": "１／２",
-   "pos4": null,
+   "pos4": 6,
    "last3f": null,
    "popularity": null
   },
@@ -137,7 +137,7 @@
    "name": "ドゥエルセーラ",
    "time": "1:33.1",
    "margin": "１ １／４",
-   "pos4": null,
+   "pos4": 8,
    "last3f": null,
    "popularity": null
   },
@@ -148,7 +148,7 @@
    "name": "ムタビリス",
    "time": "1:33.2",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 5,
    "last3f": null,
    "popularity": null
   }
