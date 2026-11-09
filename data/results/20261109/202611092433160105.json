@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261109",
  "race_id": "202611092433160105",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,127 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 10,
+   "name": "ヤングゼネラル",
+   "time": "1:38.0",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 4,
+   "number": 4,
+   "name": "サンヨウゴージャス",
+   "time": "1:39.3",
+   "margin": "６",
+   "pos4": 4,
+   "last3f": 39.1,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 2,
+   "number": 2,
+   "name": "ルクスオリジン",
+   "time": "1:40.4",
+   "margin": "５",
+   "pos4": 7,
+   "last3f": 40.7,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 8,
+   "name": "ジグザグチェイス",
+   "time": "1:41.0",
+   "margin": "３",
+   "pos4": 2,
+   "last3f": 42.5,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 11,
+   "name": "スカーヒップ",
+   "time": "1:41.1",
+   "margin": "１／２",
+   "pos4": 6,
+   "last3f": 41.4,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 5,
+   "name": "オンディーヌ",
+   "time": "1:41.4",
+   "margin": "１ １／２",
+   "pos4": 2,
+   "last3f": 42.9,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 6,
+   "name": "ノストラルーチェ",
+   "time": "1:41.9",
+   "margin": "２ １／２",
+   "pos4": 4,
+   "last3f": 43.3,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "アイムマウイ",
+   "time": "1:42.0",
+   "margin": "１／２",
+   "pos4": 8,
+   "last3f": 42.7,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 1,
+   "number": 1,
+   "name": "ダバイストリーム",
+   "time": "1:42.8",
+   "margin": "４",
+   "pos4": 9,
+   "last3f": 42.9,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 9,
+   "name": "ブライティアバニー",
+   "time": "1:43.3",
+   "margin": "２ １／２",
+   "pos4": 10,
+   "last3f": 43.5,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 6,
+   "number": 7,
+   "name": "プリンセスミオ",
+   "time": "1:45.5",
+   "margin": "大差",
+   "pos4": 11,
+   "last3f": 46.0,
+   "popularity": null
+  }
+ ]
 }
