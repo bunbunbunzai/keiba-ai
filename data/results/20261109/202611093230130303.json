@@ -2,7 +2,194 @@
  "source": "rakuten",
  "date": "20261109",
  "race_id": "202611093230130303",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "1",
+    "yen": 150
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "1-6",
+    "yen": 930
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "1",
+    "yen": 130
+   },
+   {
+    "combo": "6",
+    "yen": 220
+   },
+   {
+    "combo": "4",
+    "yen": 100
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-6",
+    "yen": 220
+   },
+   {
+    "combo": "1-4",
+    "yen": 130
+   },
+   {
+    "combo": "4-6",
+    "yen": 240
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-6",
+    "yen": 830
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-4-6",
+    "yen": 330
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "1-6-4",
+    "yen": 1630
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-6",
+    "yen": 750
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 1,
+   "number": 1,
+   "name": "スターチスブーケ",
+   "time": "1:31.0",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 6,
+   "name": "ツトムユニバース",
+   "time": "1:32.5",
+   "margin": "８",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "サマーブライド",
+   "time": "1:32.6",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 10,
+   "name": "メイショウトレック",
+   "time": "1:32.6",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 8,
+   "name": "ホウオウパシュート",
+   "time": "1:33.3",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 7,
+   "name": "メイショウハヤセ",
+   "time": "1:33.3",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 5,
+   "name": "レドンホール",
+   "time": "1:33.5",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 9,
+   "name": "ウィザードオブマリ",
+   "time": "1:33.9",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 3,
+   "number": 3,
+   "name": "レインチェック",
+   "time": "1:34.2",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 2,
+   "number": 2,
+   "name": "サスペンスクィーン",
+   "time": "1:34.4",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 8,
+   "number": 11,
+   "name": "ブルームソング",
+   "time": "1:34.8",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
