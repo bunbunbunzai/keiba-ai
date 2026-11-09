@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261109",
  "race_id": "202611092135090112",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,149 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 7,
+   "name": "ブルーオーシャン",
+   "time": "1:45.0",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.4,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 11,
+   "name": "フルミネビアンコ",
+   "time": "1:45.0",
+   "margin": "クビ",
+   "pos4": 2,
+   "last3f": 39.1,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "イトシサ",
+   "time": "1:46.7",
+   "margin": "８",
+   "pos4": 4,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 8,
+   "name": "ジーカンピオーネ",
+   "time": "1:47.9",
+   "margin": "６",
+   "pos4": 3,
+   "last3f": 41.8,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 13,
+   "name": "キタノホウセキ",
+   "time": "1:48.8",
+   "margin": "４",
+   "pos4": 5,
+   "last3f": 42.5,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 4,
+   "number": 5,
+   "name": "サーブザミッション",
+   "time": "1:49.1",
+   "margin": "１ １／２",
+   "pos4": 11,
+   "last3f": 41.7,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 4,
+   "name": "チョコラテ",
+   "time": "1:49.3",
+   "margin": "１",
+   "pos4": 9,
+   "last3f": 41.9,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 5,
+   "number": 6,
+   "name": "バスクレヒオン",
+   "time": "1:49.3",
+   "margin": "ハナ",
+   "pos4": 9,
+   "last3f": 42.6,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 12,
+   "name": "シトロンヴェール",
+   "time": "1:49.3",
+   "margin": "ハナ",
+   "pos4": 12,
+   "last3f": 42.1,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 10,
+   "name": "ウワサノアノコ",
+   "time": "1:50.1",
+   "margin": "４",
+   "pos4": 7,
+   "last3f": 43.8,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 6,
+   "number": 9,
+   "name": "ミヤビクライ",
+   "time": "1:50.8",
+   "margin": "３",
+   "pos4": 6,
+   "last3f": 44.9,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 2,
+   "number": 2,
+   "name": "ロジキセキ",
+   "time": "1:51.2",
+   "margin": "２",
+   "pos4": 8,
+   "last3f": 44.4,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 1,
+   "number": 1,
+   "name": "シゲルオトコギ",
+   "time": "-",
+   "margin": "取消",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
