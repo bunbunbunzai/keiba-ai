@@ -1,7 +1,7 @@
 """X・Instagram への自動投稿。
 
 投稿するもの（1レース・1日につき1回だけ）
-- hit       ：回収率100%以上の的中（重賞は grade_res にまとめる）
+- hit       ：大きな的中だけ（払戻が購入額の3倍以上かつ300円以上のプラス。1日3件まで。小さな的中は summary の一覧にまとめる。重賞は grade_res）
 - grade_pre ：重賞の予想（発走の10〜120分前）
 - grade_res ：重賞の結果（的中・不的中とも）
 - summary   ：その日の全成績（全レース確定後、または21:40以降）
@@ -138,6 +138,12 @@ def ledger_roi() -> str:
 
 
 # ---------------- 投稿の候補 ----------------
+# フォロワーが少ないうちに小さな的中を大量に流すとスパム扱いされやすいので、個別の的中投稿は大きなものだけにする（2026-11-10）
+HIT_MULT = 3            # 払戻が購入額の3倍以上
+HIT_MIN_PROFIT = 300    # かつ300円以上のプラス
+HIT_MAX_PER_DAY = 3     # 1日3件まで（払戻の大きい順）
+
+
 def candidates(date: str) -> list[dict]:
     rs = races_of(date)
     t = now()
@@ -155,8 +161,8 @@ def candidates(date: str) -> list[dict]:
                 out.append({"id": f"eve-{p['race_id']}", "kind": "grade_pre", "p": p, "eve": True})
             if sc and sc["stake"]:
                 out.append({"id": f"res-{p['race_id']}", "kind": "grade_res", "p": p})
-        elif sc and sc["stake"] and sc["return"] >= sc["stake"]:
-            out.append({"id": f"hit-{p['race_id']}", "kind": "hit", "p": p})
+        elif sc and sc["stake"] and sc["return"] >= HIT_MULT * sc["stake"] and sc["return"] - sc["stake"] >= HIT_MIN_PROFIT:
+            out.append({"id": f"hit-{p['race_id']}", "kind": "hit", "p": p, "ret": sc["return"]})
     # 朝の「今日の勝負レース」：7:30〜11:30に1回（前日夜の予想と重賞から選ぶ。昼の予想が増えても再投稿はしない）
     if t.strftime("%Y%m%d") == date and "07:30" <= t.strftime("%H:%M") <= "11:30":
         from build import picks
@@ -425,9 +431,15 @@ def prepare(date: str, cfg: dict) -> int:
 
     st = load_state(date)
     n = 0
-    for c in candidates(date):
+    hits_made = sum(1 for e in st["posts"].values() if e.get("kind") == "hit")
+    cands = sorted(candidates(date), key=lambda c: -(c.get("ret") or 0))  # 的中は払戻の大きい順に
+    for c in cands:
         if c["id"] in st["posts"]:
             continue
+        if c["kind"] == "hit":
+            if hits_made >= HIT_MAX_PER_DAY:
+                continue
+            hits_made += 1
         img = SOCIAL / date / f"{ascii_name(c['id'])}.jpg"
         social_img.render(img, card(date, c))
         images = [f"/social/{date}/{ascii_name(c['id'])}.jpg"]

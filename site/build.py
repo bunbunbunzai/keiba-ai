@@ -695,7 +695,8 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
     tags = "競馬予想,AI予想" + (f",{extra.clean_name(gname0).replace('(', '').replace(')', '')}" if g0 else "")
     url = BASE_URL + race_path(date, p)
     share_html = (f"<div class='share'><a href='https://twitter.com/intent/tweet?text={quote(share_text[:110])}&url={quote(url)}&hashtags={quote(tags)}' target='_blank' rel='noopener'>Xでシェア</a>"
-                  f"<a href='https://social-plugins.line.me/lineit/share?url={quote(url)}' target='_blank' rel='noopener'>LINEで送る</a></div>")
+                  f"<a href='https://social-plugins.line.me/lineit/share?url={quote(url)}' target='_blank' rel='noopener'>LINEで送る</a>"
+                  f"<a href='{X_URL}' target='_blank' rel='noopener me'>Xでフォロー（重賞予想と大きな的中を配信）</a></div>")
     # AI vs あなた（発走前だけ選べる。結果が出たら勝敗を表示）
     vs_html = ""
     hon = p.get("marks", {}).get("◎")
@@ -1711,7 +1712,7 @@ var S=[
  {f:'point',h:'予想の見方',b:'<p>各レースに印を付けています。</p><ul><li><span class="mk">◎</span>本命：いちばん勝ちそうな馬</li><li><span class="mk">〇</span>対抗　<span class="mk">▲</span>単穴：◎を負かす候補</li><li><span class="mk">△</span>連下　<span class="mk">☆</span>穴：3着までに来そうな馬</li></ul><p><b>自信度A・B・C</b>は◎が勝つ見込みの高さ。Aがいちばん自信ありです。</p>'},
  {f:'calc',h:'成績の見方',b:'<p>成績は、買い目を<b>1点100円ずつ全部買った</b>として計算しています。</p><p><b>回収率</b>が100%を超えればプラス、下回ればマイナス。今の数字は<a href="/results/">成績</a>ページで毎日更新しています。</p>'},
  {f:'study',h:'わからないことは聞いてね',b:'<p>レースページの右下にいる僕のボタンから、そのレースについて質問できます（「△は3連単で2着まで入れる？」など）。</p><p>言葉がわからないときは<a href="/glossary/">用語集</a>、競馬自体がはじめてなら<a href="/column/guide-keiba-hajimekata/">競馬の始め方</a>からどうぞ。</p>'},
- {f:'cheer',h:'さいごに',b:'<p>予想は情報提供で、当たりを約束するものではありません。馬券は<b>20歳から</b>、無理のない金額で楽しんでください。</p><div class="links"><a href="/">今日の予想を見る</a><a href="/about/">予想の方法</a><a href="/limits/">AI予想の限界</a></div>'}
+ {f:'cheer',h:'さいごに',b:'<p>予想は情報提供で、当たりを約束するものではありません。馬券は<b>20歳から</b>、無理のない金額で楽しんでください。</p><div class="links"><a href="/">今日の予想を見る</a><a href="/about/">予想の方法</a><a href="/limits/">AI予想の限界</a><a href="https://x.com/zentou_log" target="_blank" rel="noopener">Xで重賞予想を受け取る</a></div>'}
 ];
 function ga(n,p){try{if(window.gtag)gtag('event',n,p||{})}catch(e){}}
 function seen(v){try{if(v)localStorage.setItem(K,v);return localStorage.getItem(K);}catch(e){return 'x';}}
