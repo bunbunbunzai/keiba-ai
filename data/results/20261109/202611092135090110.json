@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261109",
  "race_id": "202611092135090110",
- "tries": 2,
+ "tries": 8,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,160 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 10,
+   "name": "オウケンデューク",
+   "time": "2:15.4",
+   "margin": "",
+   "pos4": 2,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 3,
+   "number": 3,
+   "name": "ハナノウタゲ",
+   "time": "2:15.4",
+   "margin": "アタマ",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 5,
+   "name": "ビルドラポール",
+   "time": "2:16.8",
+   "margin": "７",
+   "pos4": 7,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 7,
+   "name": "ユメドリーム",
+   "time": "2:17.0",
+   "margin": "３／４",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 6,
+   "name": "マインドユアミモザ",
+   "time": "2:17.2",
+   "margin": "１",
+   "pos4": 4,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 9,
+   "name": "モンゲーハガネ",
+   "time": "2:17.8",
+   "margin": "３",
+   "pos4": 9,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 2,
+   "number": 2,
+   "name": "ワチュゴナドゥ",
+   "time": "2:17.9",
+   "margin": "１／２",
+   "pos4": 5,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 11,
+   "name": "エスプリアキラサン",
+   "time": "2:17.9",
+   "margin": "ハナ",
+   "pos4": 8,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 1,
+   "number": 1,
+   "name": "ハクシュ",
+   "time": "2:18.0",
+   "margin": "１／２",
+   "pos4": 9,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 8,
+   "number": 14,
+   "name": "ヘニーズネフュー",
+   "time": "2:18.2",
+   "margin": "３／４",
+   "pos4": 11,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 5,
+   "number": 8,
+   "name": "ベルノレイズ",
+   "time": "2:18.3",
+   "margin": "１／２",
+   "pos4": 13,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 8,
+   "number": 13,
+   "name": "ルトネール",
+   "time": "2:18.6",
+   "margin": "１ １／２",
+   "pos4": 6,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "13",
+   "frame": 3,
+   "number": 4,
+   "name": "コパノモンタナ",
+   "time": "2:18.8",
+   "margin": "１",
+   "pos4": 14,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "14",
+   "frame": 7,
+   "number": 12,
+   "name": "ギンユウシジン",
+   "time": "2:19.3",
+   "margin": "２ １／２",
+   "pos4": 11,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
