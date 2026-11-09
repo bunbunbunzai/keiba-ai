@@ -1,11 +1,11 @@
 {
  "date": "20261109",
- "updated": "2026-11-09 16:53",
+ "updated": "2026-11-09 17:07",
  "races_total": 48,
- "races_scored": 25,
- "stake": 4100,
+ "races_scored": 26,
+ "stake": 4200,
  "return": 2250,
- "roi": 54.9,
+ "roi": 53.6,
  "hit_races": 10,
  "honmei_win": 6,
  "honmei_top3": 14,
@@ -188,7 +188,7 @@
     null,
     null
    ],
-   "stake": 700,
+   "stake": 500,
    "return": 0,
    "roi": 0.0,
    "hits": [],
@@ -204,9 +204,9 @@
     null,
     null
    ],
-   "stake": 100,
+   "stake": 0,
    "return": 0,
-   "roi": 0.0,
+   "roi": null,
    "hits": [],
    "voided": true
   },
@@ -320,9 +320,9 @@
     null,
     null
    ],
-   "stake": 100,
+   "stake": 0,
    "return": 0,
-   "roi": 0.0,
+   "roi": null,
    "hits": [],
    "voided": true
   },
@@ -352,7 +352,7 @@
     null,
     null
    ],
-   "stake": 100,
+   "stake": 700,
    "return": 0,
    "roi": 0.0,
    "hits": [],
@@ -561,7 +561,7 @@
   {
    "race_id": "202611092433160110",
    "confidence": "C",
-   "honmei": 9,
+   "honmei": 8,
    "honmei_finish": null,
    "top3": [
     null,
@@ -592,8 +592,8 @@
   },
   {
    "race_id": "202611092433160112",
-   "confidence": "B",
-   "honmei": 9,
+   "confidence": "C",
+   "honmei": 3,
    "honmei_finish": null,
    "top3": [
     null,
@@ -674,17 +674,17 @@
    "race_id": "202611093230130305",
    "confidence": "C",
    "honmei": 3,
-   "honmei_finish": null,
+   "honmei_finish": "6",
    "top3": [
-    null,
-    null,
-    null
+    8,
+    2,
+    7
    ],
    "stake": 100,
    "return": 0,
    "roi": 0.0,
    "hits": [],
-   "voided": true
+   "voided": false
   },
   {
    "race_id": "202611093230130306",
