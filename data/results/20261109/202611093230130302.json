@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261109",
  "race_id": "202611093230130302",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -71,7 +71,7 @@
    "name": "グランディオーソ",
    "time": "1:26.8",
    "margin": "",
-   "pos4": null,
+   "pos4": 3,
    "last3f": null,
    "popularity": null
   },
@@ -82,7 +82,7 @@
    "name": "ハクアイファミリー",
    "time": "1:27.0",
    "margin": "１",
-   "pos4": null,
+   "pos4": 1,
    "last3f": null,
    "popularity": null
   },
@@ -93,7 +93,7 @@
    "name": "ツキヨノネガイ",
    "time": "1:27.2",
    "margin": "３／４",
-   "pos4": null,
+   "pos4": 1,
    "last3f": null,
    "popularity": null
   },
@@ -104,7 +104,7 @@
    "name": "ルミナスブーケ",
    "time": "1:27.3",
    "margin": "３／４",
-   "pos4": null,
+   "pos4": 4,
    "last3f": null,
    "popularity": null
   },
@@ -115,7 +115,7 @@
    "name": "ダバイホーオー",
    "time": "1:27.5",
    "margin": "１ １／４",
-   "pos4": null,
+   "pos4": 4,
    "last3f": null,
    "popularity": null
   },
@@ -126,7 +126,7 @@
    "name": "カシノヴィタ",
    "time": "1:28.4",
    "margin": "５",
-   "pos4": null,
+   "pos4": 6,
    "last3f": null,
    "popularity": null
   },
@@ -137,7 +137,7 @@
    "name": "バミューダボーイ",
    "time": "1:28.4",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 7,
    "last3f": null,
    "popularity": null
   },
@@ -148,7 +148,7 @@
    "name": "ハクアイボヌール",
    "time": "1:28.5",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 8,
    "last3f": null,
    "popularity": null
   }
