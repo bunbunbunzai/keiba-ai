@@ -669,6 +669,7 @@ if __name__ == "__main__":
             status["x_user"], status["x_checked"] = old["x_user"], today
         else:
             try:
+                import requests
                 r = requests.get("https://api.x.com/2/users/me", auth=_x_auth(), timeout=30,
                                  params={"user.fields": "protected,public_metrics,created_at,verified"})
                 if r.ok:
