@@ -1,6 +1,6 @@
 {
  "date": "20261109",
- "updated": "2026-11-09 19:04",
+ "updated": "2026-11-09 19:18",
  "bias": {
   "盛岡ダ": {
    "judgement": "先行有利",
@@ -33,14 +33,12 @@
     3,
     4,
     5,
-    6,
-    7,
-    8
+    6
    ],
    "front_share": 1.0,
-   "inner_share": 0.36,
-   "outer_share": 0.14,
-   "horses": 14
+   "inner_share": 0.33,
+   "outer_share": 0.17,
+   "horses": 12
   },
   "名古屋ダ": {
    "judgement": "先行有利",
@@ -64,7 +62,7 @@
    "horses": 22
   },
   "佐賀ダ": {
-   "judgement": "先行有利",
+   "judgement": "内先行",
    "confidence": "強",
    "races": [
     1,
@@ -77,9 +75,9 @@
     8
    ],
    "front_share": 1.0,
-   "inner_share": 0.5,
+   "inner_share": 0.58,
    "outer_share": 0.25,
-   "horses": 16
+   "horses": 12
   }
  }
 }
