@@ -662,6 +662,25 @@ if __name__ == "__main__":
                 status["ig_probe"] = PROBE[:]
         except Exception as ex:  # noqa: BLE001
             status["ig_check_error"] = str(ex)[:200]
+    if has_x():  # どのアカウントに投稿しているか（1日1回だけ確かめる。中身は公開情報だけ）
+        old = load(SOCIAL / "status.json", {}) or {}
+        today = now().strftime("%Y%m%d")
+        if old.get("x_checked") == today and old.get("x_user"):
+            status["x_user"], status["x_checked"] = old["x_user"], today
+        else:
+            try:
+                r = requests.get("https://api.x.com/2/users/me", auth=_x_auth(), timeout=30,
+                                 params={"user.fields": "protected,public_metrics,created_at,verified"})
+                if r.ok:
+                    u = r.json().get("data", {})
+                    status["x_user"] = {"username": u.get("username"), "name": u.get("name"), "protected": u.get("protected"),
+                                        "followers": (u.get("public_metrics") or {}).get("followers_count"),
+                                        "tweets": (u.get("public_metrics") or {}).get("tweet_count")}
+                else:
+                    status["x_user"] = {"error": f"{r.status_code} {r.text[:150]}"}
+                status["x_checked"] = today
+            except Exception as ex:  # noqa: BLE001
+                status["x_user"] = {"error": str(ex)[:150]}
     sp = SOCIAL / "status.json"
     if load(sp, {}) != status:
         sp.write_text(json.dumps(status), encoding="utf-8")
