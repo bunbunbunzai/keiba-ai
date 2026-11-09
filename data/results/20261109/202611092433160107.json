@@ -2,7 +2,205 @@
  "source": "rakuten",
  "date": "20261109",
  "race_id": "202611092433160107",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "2",
+    "yen": 530
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "2-9",
+    "yen": 1600
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "2",
+    "yen": 160
+   },
+   {
+    "combo": "9",
+    "yen": 140
+   },
+   {
+    "combo": "7",
+    "yen": 190
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-9",
+    "yen": 240
+   },
+   {
+    "combo": "2-7",
+    "yen": 360
+   },
+   {
+    "combo": "7-9",
+    "yen": 330
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-7",
+    "yen": 690
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-7-9",
+    "yen": 890
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "2-9-7",
+    "yen": 5760
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-9",
+    "yen": 590
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 2,
+   "number": 2,
+   "name": "シェンロン",
+   "time": "1:36.2",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 37.4,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 9,
+   "name": "コンティ",
+   "time": "1:37.2",
+   "margin": "５",
+   "pos4": 1,
+   "last3f": 39.1,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 7,
+   "name": "ペプチドマッハ",
+   "time": "1:38.1",
+   "margin": "４",
+   "pos4": 5,
+   "last3f": 38.5,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 5,
+   "name": "ディレクティオ",
+   "time": "1:38.8",
+   "margin": "３",
+   "pos4": 4,
+   "last3f": 39.9,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 10,
+   "name": "プロットシッケンズ",
+   "time": "1:38.9",
+   "margin": "１／２",
+   "pos4": 6,
+   "last3f": 40.0,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 6,
+   "name": "アルミラージ",
+   "time": "1:39.6",
+   "margin": "３",
+   "pos4": 3,
+   "last3f": 41.5,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 3,
+   "name": "アルファリラエ",
+   "time": "1:39.9",
+   "margin": "１ １／２",
+   "pos4": 9,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 4,
+   "number": 4,
+   "name": "リアンマカ",
+   "time": "1:40.5",
+   "margin": "３",
+   "pos4": 7,
+   "last3f": 41.3,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 11,
+   "name": "バックトラック",
+   "time": "1:40.8",
+   "margin": "１ １／２",
+   "pos4": 11,
+   "last3f": 40.9,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 8,
+   "number": 12,
+   "name": "ゼンダンマイウェイ",
+   "time": "1:41.5",
+   "margin": "３",
+   "pos4": 10,
+   "last3f": 41.9,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 6,
+   "number": 8,
+   "name": "リーゼントモニカ",
+   "time": "1:42.8",
+   "margin": "６",
+   "pos4": 8,
+   "last3f": 44.5,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 1,
+   "number": 1,
+   "name": "イマジェリーナ",
+   "time": "-",
+   "margin": "中止",
+   "pos4": 12,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
