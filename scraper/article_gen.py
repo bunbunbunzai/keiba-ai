@@ -87,7 +87,7 @@ def marks_table(pred: dict, race: dict) -> str:
             odds_t = f"{odds}" if odds and float(odds) > 0 else "―"
             rows.append(f"| {m} | {n} | {h.get('name') or e.get('name') or ''} | {h.get('frame') or ''} | {h.get('weight') or ''} | {h.get('jockey') or ''} | "
                         f"{e.get('score', '')} | {str(e.get('win_pct')) + '%' if e.get('win_pct') is not None else '―'} | {odds_t} | {value_txt(e.get('win_pct'), odds) if odds and float(odds) > 0 else '―'} |")
-    return "| 印 | 馬番 | 馬名 | 枠 | 斤量 | 騎手 | 評価点 | 想定勝率 | 単勝 | 判定 |\n|---|---|---|---|---|---|---|---|---|---|\n" + "\n".join(rows)
+    return "| 印 | 馬番 | 馬名 | 枠 | 斤量 | 騎手 | 評価点 | 想定勝率（AI） | 単勝 | 判定 |\n|---|---|---|---|---|---|---|---|---|---|\n" + "\n".join(rows)
 
 
 def all_table(pred: dict, race: dict) -> str:
@@ -173,7 +173,7 @@ def make(date: str, pred: dict, race: dict, slug: str, name: str, grade: str) ->
             f"- 日時：{dt.year}年{dt.month}月{dt.day}日（{WD[dt.weekday()]}）{race.get('post_time') or ''}発走\n"
             f"- 条件：{race.get('surface') or ''}{race.get('distance') or ''}m・{race.get('field')}頭立て" + (f"・{cond}" if cond else "") + "\n"
             f"- このレースのAI予想ページ：[{race.get('venue')}{race.get('race_no')}R {name}]({race_path(date, race, pred)})（結果と的中・回収率はここに反映される）\n\n"
-            f"## 結論と印\n\n{marks_table(pred, race)}\n\n自信度：{pred.get('confidence')}（◎の想定勝率で決まる。A：40%以上、B：30〜39%、C：30%未満）。"
+            f"## 結論と印\n\n{marks_table(pred, race)}\n\n自信度：{pred.get('confidence')}（" + ("◎の補正勝率（単勝オッズとAIの評価を合わせた勝つ確率）で決まる。A：50%以上、B：35〜49%、C：35%未満" if pred.get('blend') else "◎の想定勝率で決まる。A：40%以上、B：30〜39%、C：30%未満") + "）。"
             f"単勝は予想を出した時点のオッズ。判定は、AIの見積もった勝つ確率と単勝オッズを掛けた値が1.2以上なら「妙味あり」（人気の割に勝ち目がある）、0.8未満なら「過剰人気」（人気ほどの勝ち目はない）。\n\n"
             f"**◎{hon} {hon_name}の根拠。** {j.get('honmei', '')}\n\n"
             f"## 展開予想\n\n{j.get('tenkai', '')}\n\n## 相手の選び方\n\n{j.get('aite', '')}\n\n## 人気との比較\n\n{j.get('ninki', '')}\n\n"

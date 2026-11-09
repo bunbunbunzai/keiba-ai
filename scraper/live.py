@@ -138,15 +138,15 @@ def refresh_bets(date: str) -> bool:
         if post is None or not (BET_WINDOW[0] < (post - t).total_seconds() / 60 <= BET_WINDOW[1]):
             continue
         all_ids.append(rid)
-        if p.get("confidence") != "A":
-            continue  # 3連複オッズの取り直しは自信度Aだけ（B・Cは単複1点なので不要）
         if rid.startswith("jra_"):
+            if p.get("confidence") != "A":
+                continue  # 中央の単勝オッズは日中の取得で足りる。3連複オッズの取り直しは自信度Aだけ
             tr = BT.load_trio(date, rid)
             age = (t - datetime.fromisoformat(tr["fetched_ts"])).total_seconds() / 60 if tr and tr.get("fetched_ts") else 1e9
             if age > ODDS_MAX_AGE:
                 jra_ids.append(rid)
         elif time.monotonic() - _card_fetched.get(rid, -1e9) > ODDS_MAX_AGE * 60:
-            local_ids.append(rid)
+            local_ids.append(rid)  # 地方は全レース：◎と自信度が単勝オッズで決まるので、発走前のオッズで決め直す
     if not all_ids:
         return False
     if jra_ids:
@@ -161,7 +161,7 @@ def refresh_bets(date: str) -> bool:
 
             sess = PoliteSession(min_interval=61.0)
             time.sleep(61)
-            for rid in local_ids:
+            for rid in local_ids[:4]:  # 1回の周回で取り直すのは4レースまで（楽天の60秒間隔を守りつつ周回を止めない）
                 html = sess.get(rakuten.BASE + rakuten.PAGES["card"].format(rid=rid)).text
                 save_raw("rakuten_card", date, rid, html)
                 _card_fetched[rid] = time.monotonic()

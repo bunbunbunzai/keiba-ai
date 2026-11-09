@@ -315,7 +315,7 @@ def card(date: str, c: dict) -> dict:
             hon = p["marks"]["◎"]
             wp, od, val = honmei_value(p)
             lines.append(("◎", f"{venue(p)}{rno(p)}R {hon} {horse(p, hon)}"))
-            rows.append(f"{p['_race'].get('post_time') or ''}発走　自信度{p.get('confidence')}" + (f"　想定勝率{wp:.0f}%・単勝{od:.1f}倍" if wp is not None and od else ""))
+            rows.append(f"{p['_race'].get('post_time') or ''}発走　自信度{p.get('confidence')}" + (f"　{'補正勝率' if p.get('blend') else '想定勝率'}{wp:.0f}%・単勝{od:.1f}倍" if wp is not None and od else ""))
         return {"kind": "grade_pre", "label": "今日の勝負レース", "date": md, "head": f"AIの◎ 的中しやすい{len(lines)}レース",
                 "sub": "自信度・◎の人気・中央を優先（朝のオッズ）", "lines": lines, "rows": rows}
     p = c["p"]

@@ -608,7 +608,7 @@ def ask_context(date: str, p: dict) -> str:
     mk = p.get("marks", {})
     marks = "、".join(f"{m}{mk[m]}{horse_name(p, mk[m])}" for m in ("◎", "〇", "▲") if mk.get(m) is not None)
     sub = "、".join(f"{m}{'・'.join(str(x) for x in (v if isinstance(v, list) else [v]))}" for m, v in ((k, mk.get(k)) for k in ("△", "☆")) if v)
-    ev = "\n".join(f"{e.get('number')} {e.get('name')}：評価点{e.get('score')}" + (f" 想定勝率{e.get('win_pct')}%" if e.get("win_pct") is not None else "") + f" {e.get('comment') or ''}" for e in p.get("horses", []))
+    ev = "\n".join(f"{e.get('number')} {e.get('name')}：評価点{e.get('score')}" + (f" 補正勝率{e.get('adj_pct'):.0f}%" if isinstance(e.get("adj_pct"), (int, float)) else "") + (f" AIの想定勝率{e.get('win_pct')}%" if e.get("win_pct") is not None else "") + f" {e.get('comment') or ''}" for e in p.get("horses", []))
     bets = "、".join(f"{b['type']} {b['combo']}" for b in p.get("bets", []))
     ctx = (f"{base}\n\n【AIの予想】印：{marks}" + (f"、{sub}" if sub else "") + f"。自信度{p.get('confidence')}\n要約：{p.get('summary')}\n展開予想：{p.get('pace')}\n買い目（各100円）：{bets}\n全頭の評価：\n{ev}")
     ck = course_key(p)
@@ -905,7 +905,7 @@ def hero(date: str, preds: list[dict]) -> tuple[str, str | None]:
         res = (f"<p class='hres {'hit' if sc['return'] >= sc['stake'] else 'tg' if sc['return'] else 'miss'}'>結果 {esc(top)}　"
                f"{'的中' if sc['return'] else '不的中'}　回収率{roi_txt(sc['stake'], sc['return'])}</p>")
     else:
-        res = f"<p class='hres'>{esc(r.get('post_time') or '')}発走" + (f"　想定勝率{wp:.0f}%" if wp is not None else "") + (f"　単勝{od:.1f}倍" if od else "") + "</p>"
+        res = f"<p class='hres'>{esc(r.get('post_time') or '')}発走" + (f"　{'補正勝率' if p.get('blend') else '想定勝率'}{wp:.0f}%" if wp is not None else "") + (f"　単勝{od:.1f}倍" if od else "") + "</p>"
     img = race_og(date, p)
     vs = webp_variants(OUT / img.lstrip("/"), (OUT / img.lstrip("/")).parent, widths=(600,)) if img != "/og/default.jpg" else []
     hero_src = f"<source type='image/webp' srcset='{str(Path(img).parent)}/{vs[0][1]}'>" if vs else ""
@@ -1088,7 +1088,7 @@ def picks_html(date: str, preds: list[dict], today: bool, exclude: str | None = 
                    f"<span class='res {'tg' if sc['return'] < sc['stake'] else 'hit'}'>的中 回収率{roi_txt(sc['stake'], sc['return'])}</span>")
         else:
             res = f"<span class='res wait'>{esc(p['_race'].get('post_time') or '')}発走</span>"
-        meta = "・".join(x for x in (f"想定勝率{wp:.0f}%" if wp is not None else "", f"単勝{od:.1f}倍" if od else "",
+        meta = "・".join(x for x in (f"{'補正勝率' if p.get('blend') else '想定勝率'}{wp:.0f}%" if wp is not None else "", f"単勝{od:.1f}倍" if od else "",
                                      f"期待値{val:.2f}" if val is not None else "") if x)
         items.append(f"<li><a href='{race_path(date, p)}'><span class='rno'>{esc(extra.nfkc(race_label(p)))}</span>"
                      f"<span class='hon'>◎{hon} {esc(horse_name(p, hon))}</span><span class='conf c{esc(p.get('confidence'))}'>{esc(p.get('confidence'))}</span>"
