@@ -56,6 +56,24 @@ def check(pred: dict, race: dict | None) -> list[str]:
     return errs
 
 
+def check_blend(pred: dict, race: dict | None, date: str) -> list[str]:
+    """◎と自信度が補正勝率（blend.py）どおりか。発走20分前を過ぎたレースは見ない。"""
+    if not race or pred.get("confidence") == "見送り":
+        return []
+    from datetime import datetime, timedelta
+
+    import bets as BT
+    import blend as BL
+
+    post = BT._post_dt(date, race)
+    if post is not None and datetime.now(BT.JST) > post - timedelta(minutes=BT.LOCK_MIN):
+        return []
+    q = BL.blend(pred, race)
+    if q and (q["marks"] != pred.get("marks") or q["confidence"] != pred.get("confidence")):
+        return [f"◎・自信度が補正勝率と違う（python blend.py --date {date} --write で直す）"]
+    return []
+
+
 def check_bets(pred: dict, race: dict | None, date: str) -> list[str]:
     """買い目が bets.py の組み方（オッズを見てトリガミの組み合わせを外す）と同じか。発走20分前を過ぎたレースは見ない。"""
     if not race:
@@ -88,7 +106,7 @@ if __name__ == "__main__":
             continue
         rf = DATA_DIR / "races" / d / f"{pred.get('race_id')}.json"
         race = json.loads(rf.read_text(encoding="utf-8")) if rf.exists() else None
-        errs = check(pred, race) + ([] if race else ["出馬表データがない（race_id を確認）"]) + check_bets(pred, race, d)
+        errs = check(pred, race) + ([] if race else ["出馬表データがない（race_id を確認）"]) + check_blend(pred, race, d) + check_bets(pred, race, d)
         if errs:
             bad += 1
             print(f"NG {f.name}: " + " / ".join(errs))

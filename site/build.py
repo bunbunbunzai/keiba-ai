@@ -184,9 +184,10 @@ def zk(face: str, size: int = 48) -> str:
 GLOSSARY = [
     ("mark", "印（◎〇▲△☆）", "予想の評価順。◎は本命（1着候補の筆頭）、〇は対抗、▲は単穴（展開次第で勝てる馬）、△は連下（2〜3着候補）、☆は穴（人気薄で一発がある馬）。"),
     ("score", "評価点", "能力・条件適性・展開利・状態・人的要素の5軸を1〜5点で採点し、重みを付けて合計した45点満点の点数。印はこの点数と人気を見て決める。"),
-    ("winpct", "想定勝率", "AIがその馬が勝つと見積もった確率（%）。評価点の上位6頭程度に付け、合計は100%以内。自信度はこの数字で決まる。"),
+    ("winpct", "想定勝率", "AIがその馬が勝つと見積もった確率（%）。評価点の上位6頭程度に付け、合計は100%以内。オッズを見ないAIの見立てで、妙味の計算に使う。"),
+    ("adjpct", "補正勝率", "単勝オッズ（世の中の評価）とAIの評価点を合わせて計算した、その馬が勝つ確率（%）。過去のレースでは、オッズだけ・AIだけのどちらよりも着順をよく当てていた。本命（◎）は補正勝率1位の馬、自信度は◎の補正勝率で決まる（Aは50%以上）。"),
     ("value", "妙味・期待値", "想定勝率×単勝オッズ。1.2以上なら「AIの見立てより配当が高い＝狙い目（妙味あり）」、0.8未満なら「人気ほど勝ち目がない＝過剰人気」。"),
-    ("confidence", "自信度", "◎の想定勝率による区分。A＝40%以上、B＝30〜39%、C＝30%未満。「見送り」は判断材料（近走のデータ）が足りないレースで、買い目を出さない。"),
+    ("confidence", "自信度", "◎の補正勝率による区分（2026年11月10日から）。A＝50%以上（2回に1回は勝つ見込み）、B＝35〜49%、C＝35%未満。3連複を買うのはAのレースだけ。「見送り」は判断材料（近走のデータ）が足りないレースで、買い目を出さない。"),
     ("pace", "展開利", "逃げ・先行・差し・追い込みの脚質と、想定ペース・枠順・当日の馬場傾向の組み合わせで、その馬に有利かどうかの見立て。"),
     ("bias", "トラックバイアス", "その日の馬場で、先行馬が残りやすいか、内枠が有利かなどの偏り。その日の午前のレース結果から見極め、傾向がはっきりしているときだけ午後の予想に使う。"),
     ("roi", "回収率", "払戻金の合計÷購入金額の合計×100（%）。100%を超えれば勝ち。このサイトでは、外れたレースも含めて、すべての買い目を1点100円ずつ買ったとして計算している。"),
@@ -652,13 +653,15 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
         except (TypeError, ValueError):
             pass
         pop = h.get("popularity") or fr.get("popularity")
+        adj = e.get("adj_pct")
+        prob_txt = f"補正勝率{adj:.0f}%" if isinstance(adj, (int, float)) else (f"勝率{esc(wp)}%" if wp else "")
         rows.append(
             f"<li class='hr{' mk' if num in mk else ''}{' top' if str(fin) in ('1', '2', '3') else ''}'>"
             f"<span class='c-no'><b class='fr f{esc(h.get('frame') or fr.get('frame') or frame_of(num, len(horses) or len(evals)))}'>{esc(num)}</b></span>"
             f"<span class='c-mk mark'>{esc(mk.get(num, ''))}</span>"
             f"<span class='c-nm'><b>{link_horse(h.get('name') or e.get('name'))}</b><small>{link_jockey(h.get('jockey'))}{' ・' + esc(h.get('sex_age')) if h.get('sex_age') else ''}</small></span>"
             f"<span class='c-od'>{esc(odds) if odds else '-'}<small>{f'{esc(pop)}人気' if pop else ''}</small></span>"
-            f"<span class='c-sc'>{esc(e.get('score')) if e.get('score') is not None else '-'}<small>{f'勝率{esc(wp)}%' if wp else ''}</small></span>"
+            f"<span class='c-sc'>{esc(e.get('score')) if e.get('score') is not None else '-'}<small>{prob_txt}</small></span>"
             f"<span class='c-vl'>{val or '-'}{tag}</span>"
             f"<span class='c-fn'>{fin_txt}</span>"
             f"<span class='c-cm'>{esc(e.get('comment'))}</span></li>")
@@ -777,14 +780,14 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
 <p class="answer">{esc(answer_sentence(date, p))}</p>
 <section class="card"><div class="marks">{marks_html}</div>{f"<p class='subs'>{esc(subs)}</p>" if subs else ''}
 <p>{term("confidence", "自信度")} <span class="conf c{esc(p.get('confidence'))}">{esc(p.get('confidence'))}</span></p>
-<h2>結論</h2>{plain_line(p)}<p class="sum">{esc(p.get('summary'))}</p>
+<h2>結論</h2>{plain_line(p)}<p class="sum">{esc(p.get('summary'))}</p>{ai_top_line(p)}
 <h3>買い目（各100円・計{len(p.get('bets', []))}点）</h3><ul class="bets">{bets or '<li>買い目なし</li>'}</ul>{bets_note}{aff_rakuten('race') if not str(p['race_id']).startswith('jra_') and p.get('confidence') != '見送り' else ''}</section>
 {res_html}
 <section class="card"><h2>{term("pace", "展開予想")}</h2><p>{esc(p.get('pace'))}</p></section>
 {bias_html}
 <section class="card"><h2>全頭評価</h2>
 <ul class="hl"><li class="hr hd"><span class="c-no">馬番</span><span class="c-mk">印</span><span class="c-nm">馬名・騎手</span><span class="c-od">単勝</span><span class="c-sc">評価点</span><span class="c-vl">妙味</span><span class="c-fn">着順</span><span class="c-cm">短評</span></li>{''.join(rows)}</ul>
-<p class="meta">{term("score", "評価点")}は45点満点。{term("value", "妙味")}は「AIの{term("winpct", "想定勝率")}×単勝オッズ」。1.2以上なら配当の割に勝ち目がある狙い目、0.8未満なら人気しすぎ（過剰人気）という目安（オッズは予想を出した時点のもの）。用語は<a href="/glossary/">用語集</a>へ。</p></section>
+<p class="meta">{term("score", "評価点")}は45点満点。{term("adjpct", "補正勝率")}は単勝オッズとAIの評価点を合わせた勝つ確率で、◎と自信度はこれで決めている。{term("value", "妙味")}は「AIの{term("winpct", "想定勝率")}×単勝オッズ」（参考）。1.2以上なら配当の割に勝ち目がある狙い目、0.8未満なら人気しすぎ（過剰人気）という目安（オッズは予想を出した時点のもの）。用語は<a href="/glossary/">用語集</a>へ。</p></section>
 {f'<section class="card"><h2>更新履歴</h2><ul>{updates}</ul></section>' if updates else ''}
 {graded_link}
 {ask_html}
@@ -1021,12 +1024,25 @@ def scoreboard(date: str, preds: list[dict]) -> str:
 CONF_RANK = {"A": 3, "B": 2, "C": 1}
 
 
+def ai_top_line(p: dict) -> str:
+    """AIの評価点1位が◎（補正勝率1位）と違うとき、その馬を示す。"""
+    bl = p.get("blend") or {}
+    top, hon = bl.get("ai_top"), (p.get("marks") or {}).get("◎")
+    if top is None or hon is None or int(top) == int(hon):
+        return ""
+    sc = {h.get("number"): h.get("score") for h in p.get("horses", [])}
+    return (f"<p class='aitop'>AIの評価点1位は<b>{top} {esc(horse_name(p, top))}</b>（評価点{esc(sc.get(top))}）。"
+            f"本命はオッズとAIの評価を合わせた補正勝率で決めており、◎{hon}は補正勝率{bl.get('honmei_pct')}%で1位。"
+            f"オッズを見ないAIの見立てでは{top}番が上。</p>")
+
+
 def honmei_value(p: dict) -> tuple[float | None, float | None, float | None]:
-    """◎の想定勝率・単勝オッズ・期待値（勝率×オッズ）。オッズが無ければ None。"""
+    """◎の勝つ確率（補正勝率があればそれ、無ければAIの想定勝率）・単勝オッズ・期待値（勝率×オッズ）。"""
     hon = p.get("marks", {}).get("◎")
     if hon is None:
         return None, None, None
-    wp = next((h.get("win_pct") for h in p.get("horses", []) if h.get("number") == hon), None)
+    wp = next((h.get("adj_pct") if isinstance(h.get("adj_pct"), (int, float)) else h.get("win_pct")
+               for h in p.get("horses", []) if h.get("number") == hon), None)
     od = next((h.get("odds") for h in p["_race"].get("horses", []) or [] if h.get("number") == hon), None)
     try:
         wp = float(wp) if wp is not None else None
@@ -1318,7 +1334,7 @@ ABOUT = f"""<h1>予想の方法</h1>{banner("about")}
 <li>展開利（×2）：想定ペースと脚質、枠順、当日の馬場の傾向</li>
 <li>状態・ローテ（×1）：間隔、休み明け、馬体重</li>
 <li>人的・その他（×1）：騎手、厩舎、斤量、血統</li></ul></section>
-<section class="card"><h2>印・自信度・買い目</h2><p>評価点の上位の馬には「勝つ確率の見積もり（想定勝率）」を付け、それに単勝オッズを掛けた値が1.2以上なら狙い目（妙味あり）、0.8未満なら人気しすぎ（過剰人気）と見る。印は◎（本命）〇（対抗）▲（単穴）△（連下）☆（穴）。自信度はA・B・C・見送りの4段階。2026年11月1日からは◎の想定勝率で決めている（A：40%以上、B：30〜39%、C：30%未満）。判断材料が足りないレースは「見送り」にして買い目を出さない。買い目は決まった組み方にしている：◎の単複1点（1〜2番人気は複勝、3〜5番人気は単勝、6番人気以下は買わない）と、自信度Aのレースだけ3連複フォーメーション（◎→〇▲→印全部）。自信度B・Cは◎の単複1点だけ（2026年11月7日から。それまでは全レースで3連複も買っていたが、BとCの3連複が回収率を大きく下げていた）。2026年11月8日からは買い目をオッズを見て組んでいる：3連複は、当たっても購入額の合計を下回る組み合わせ（トリガミ）を外し、3連複を買うときは複勝を買わない。オッズは、中央競馬は発走前に取り直す3連複の発表オッズ、地方競馬と発表前は単勝オッズからの推定（過去の配当で較正した目安）を使い、レースページの買い目の横に表示している。馬連・馬単・3連単・ワイドは使わない。◎を2番人気にするのは、1番人気より評価がはっきり高く、1番人気に具体的な不安があるときだけ。</p></section>
+<section class="card"><h2>印・自信度・買い目</h2><p>印は◎（本命）〇（対抗）▲（単穴）△（連下）☆（穴）。2026年11月10日からは、本命（◎）と自信度を「補正勝率」で決めている。補正勝率は、単勝オッズ（世の中の評価）とAIの評価点を合わせて計算した勝つ確率で、過去約740レースではオッズだけ・AIの評価だけのどちらよりも着順をよく当てた。◎は補正勝率1位の馬で、自信度はA（◎の補正勝率50%以上）・B（35〜49%）・C（35%未満）・見送りの4段階。AIが自分の評価だけで選んだ1位（評価点1位）が◎と違うときは、レースページに「AIの評価点1位」として表示している。評価点の配点は、実績で着順を説明していた割合に合わせて、能力を最も重く、次に騎手・厩舎の最近の成績を重く見ている。AIの想定勝率に単勝オッズを掛けた「妙味」は参考として表示している。判断材料が足りないレースは「見送り」にして買い目を出さない。買い目は決まった組み方にしている：◎の単複1点（1〜2番人気は複勝、3〜5番人気は単勝、6番人気以下は買わない）と、自信度Aのレースだけ3連複フォーメーション（◎→〇▲→印全部）。自信度B・Cは◎の単複1点だけ（2026年11月7日から。それまでは全レースで3連複も買っていたが、BとCの3連複が回収率を大きく下げていた）。2026年11月8日からは買い目をオッズを見て組んでいる：3連複は、当たっても購入額の合計を下回る組み合わせ（トリガミ）を外し、3連複を買うときは複勝を買わない。オッズは、中央競馬は発走前に取り直す3連複の発表オッズ、地方競馬と発表前は単勝オッズからの推定（過去の配当で較正した目安）を使い、レースページの買い目の横に表示している。馬連・馬単・3連単・ワイドは使わない。</p></section>
 <section class="card"><h2>当たらないこともある</h2><p>回収率は100%を下回っている。どこが弱いか、数字をどう見るかは<a href="/limits/">AI予想の限界と注意点</a>に正直に書いている。</p></section>
 <section class="card support-box"><h2>運営を支援する</h2><p>予想・集計・SNS投稿はすべて自動で動いていますが、サーバー代などの運営費は個人で負担しています。応援してもよいと思ったら、<a href="{OFUSE_URL}" target="_blank" rel="noopener">OFUSE（オフセ）</a>からファンレターと一緒に支援できます（コンビニ・PayPay・クレジットカード対応）。支援の有無で予想の内容や公開範囲は変わりません。</p><p><a class="btn" href="{OFUSE_URL}" target="_blank" rel="noopener">OFUSEで応援する</a></p></section>
 <section class="card"><h2>よくある質問</h2>
@@ -1443,6 +1459,7 @@ SITE_CHANGES = [
     ("2026-10-30", "レースごとの的中・回収率を、確定のたびに更新するようにした。初心者向けコラムの準備。"),
     ("2026-11-01", "サイト名を「競馬全頭ログ」に変更。XとInstagramへの自動投稿（的中・重賞・毎晩の全成績）を開始。コラム4本を公開。買い方別の回収率、週次の重賞回顧、馬別ページを追加。"),
     ("2026-11-02", "買い目の組み方を1つに決めた（◎の単勝か複勝を人気で切り替え＋3連複フォーメーション）。デザインを刷新。挿絵を追加。お問い合わせフォームと支援（OFUSE）の導線を設置。"),
+    ("2026-11-10", "本命（◎）と自信度を、単勝オッズとAIの評価を合わせた「補正勝率」で決めるようにした。AIの評価点1位が◎と違うときはレースページに表示。評価点の配点を見直し、騎手・厩舎の最近の成績を予想の材料に加えた。"),
     ("2026-11-10", "ページの表示を軽くした（画像を軽い形式・画面に合った大きさで配信、文字のフォントを後から読み込む）。本文中のリンクに下線を付け、スマホで押しやすくした。トップの過去の予想の一覧をスマホで読みやすくした。"),
     ("2026-11-08", "買い目をオッズを見て組むようにした。3連複は当たっても購入額を下回る組み合わせ（トリガミ）を外し、3連複を買うときは複勝を買わない。レースページの買い目の横にオッズを表示。"),
     ("2026-11-07", "574レース分の成績から予想ルールを見直した。3連複は自信度Aのレースだけに絞り、2番人気を本命にする基準を厳しくし、当日朝にオッズで前日予想を見直す回を追加。初めて訪れた人向けに、全頭くんがサイトの見方を案内するポップアップを追加。地方競馬のオッズの読み取りの不具合も直した。"),
@@ -1597,7 +1614,7 @@ table{border-collapse:collapse;width:100%;font-size:14px;background:var(--panel)
 /* 目玉レース */
 .hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:0 20px;align-items:center;background:var(--panel);border-top:3px solid var(--rule);border-bottom:1px solid var(--line);margin:0 0 14px;padding:14px}
 .hero img{width:100%;height:auto;display:block;border:1px solid var(--line)}.hero h2{border:0;padding:0;margin:2px 0 4px;font-size:22px}.hero h2 a{color:var(--fg)}.hero .meta{margin:0 0 8px}
-.hlabel{margin:0;font-size:13px;color:var(--mut)}.hmarks{display:flex;flex-wrap:wrap;gap:4px 18px;margin:4px 0;font-weight:700}.hmarks b{color:var(--acc);font-size:20px;margin-right:4px;font-family:"Shippori Mincho B1",serif}
+.aitop{font-size:14px;background:var(--acc-soft);padding:8px 10px;margin:8px 0;line-height:1.7}.hlabel{margin:0;font-size:13px;color:var(--mut)}.hmarks{display:flex;flex-wrap:wrap;gap:4px 18px;margin:4px 0;font-weight:700}.hmarks b{color:var(--acc);font-size:20px;margin-right:4px;font-family:"Shippori Mincho B1",serif}
 .hres{margin:6px 0 0;font-weight:700;font-size:15px}.hres.miss{color:var(--miss)}
 @media (max-width:720px){.hero{grid-template-columns:1fr;gap:10px;padding:12px}.hero h2{font-size:20px}}
 /* レース行 */

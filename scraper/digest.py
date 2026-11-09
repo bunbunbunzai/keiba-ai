@@ -13,6 +13,7 @@ import re
 from pathlib import Path
 
 from common import DATA_DIR
+import people
 
 import sys as _sys
 _sys.path.insert(0, str(DATA_DIR.parent / "site"))
@@ -82,7 +83,8 @@ def detail(r: dict, date: str = "") -> str:
         damsire = h.get("damsire") or prof.get("母の父") or ""
         lines.append(
             f"[{h.get('frame')}-{h.get('number')}] {h.get('name')} {h.get('sex_age')} {h.get('weight')}kg "
-            f"{h.get('jockey')} / {h.get('trainer')} | 父{sire} 母父{damsire} | "
+            f"{h.get('jockey')}（騎手 {people.label(date, r.get('race_id'), 'j', h.get('jockey'))}） / "
+            f"{h.get('trainer')}（厩舎 {people.label(date, r.get('race_id'), 't', h.get('trainer'))}） | 父{sire} 母父{damsire} | "
             f"単勝{h.get('odds') if h.get('odds') is not None else '-'} 人気{h.get('popularity') or '-'} "
             f"体重{h.get('body_weight') or ''}{h.get('body_weight_change') or ''}")
         for p in (h.get("past") or [])[:5]:
