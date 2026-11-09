@@ -21,44 +21,44 @@
   "bets": [
     {
       "type": "3連複",
-      "combo": "3-5-12",
-      "odds": 7.4,
-      "odds_src": "推定"
-    },
-    {
-      "type": "3連複",
       "combo": "2-3-12",
-      "odds": 17.0,
+      "odds": 7.7,
       "odds_src": "推定"
     },
     {
       "type": "3連複",
-      "combo": "3-4-12",
-      "odds": 17.0,
-      "odds_src": "推定"
-    },
-    {
-      "type": "3連複",
-      "combo": "3-7-12",
-      "odds": 17.0,
-      "odds_src": "推定"
-    },
-    {
-      "type": "3連複",
-      "combo": "5-7-12",
-      "odds": 17.0,
+      "combo": "3-5-12",
+      "odds": 8.6,
       "odds_src": "推定"
     },
     {
       "type": "3連複",
       "combo": "2-7-12",
-      "odds": 39.2,
+      "odds": 12.6,
+      "odds_src": "推定"
+    },
+    {
+      "type": "3連複",
+      "combo": "5-7-12",
+      "odds": 14.1,
+      "odds_src": "推定"
+    },
+    {
+      "type": "3連複",
+      "combo": "3-7-12",
+      "odds": 20.5,
+      "odds_src": "推定"
+    },
+    {
+      "type": "3連複",
+      "combo": "3-4-12",
+      "odds": 34.7,
       "odds_src": "推定"
     },
     {
       "type": "3連複",
       "combo": "4-7-12",
-      "odds": 39.2,
+      "odds": 57.2,
       "odds_src": "推定"
     }
   ],
