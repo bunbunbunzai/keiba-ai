@@ -301,11 +301,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/09/kawasaki/11r/",
    "created": "2026-11-09 20:45",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2119758807429472574",
    "x_at": "2026-11-09 20:47",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'Alv8x4vA_QzAslK8a4Ci3Pc'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AryDZQl0w7KrT9q4FyzXio5'}",
+   "instagram_tries": 3
   },
   "hit-202611093230130309": {
    "kind": "hit",
@@ -319,11 +319,11 @@
    "url": "https://www.ai-keiba-log.com/2026/11/09/saga/09r/",
    "created": "2026-11-09 20:45",
    "x": "posted",
-   "instagram": "pending",
+   "instagram": "failed",
    "x_id": "2119758811892199623",
    "x_at": "2026-11-09 20:47",
-   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AjqCOlmw16fV1ZhR7CDUSFQ'}",
-   "instagram_tries": 2
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A4HwV72Q-T_Nj0GOO76ivrX'}",
+   "instagram_tries": 3
   },
   "hit-202611093230130312": {
    "kind": "hit",
@@ -336,8 +336,12 @@
    "ig_caption": "【的中】佐賀12R SAGAリベFEVER14\n◎13モズナツノジン　〇11レネガード　▲10アラウズ\n複勝 13　100円\n投資100円→払戻100円（回収率100.0%）\n\nこのレースの全頭評価と買い目 → www.ai-keiba-log.com/2026/11/09/saga/12r/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#競馬予想 #佐賀競馬 #AI予想 #的中 #競馬 #競馬全頭ログ",
    "url": "https://www.ai-keiba-log.com/2026/11/09/saga/12r/",
    "created": "2026-11-09 21:43",
-   "x": "pending",
-   "instagram": "pending"
+   "x": "posted",
+   "instagram": "pending",
+   "x_id": "2119773382740726151",
+   "x_at": "2026-11-09 21:45",
+   "instagram_error": "media 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AA06WszhTowhfdMZLXre72K'}",
+   "instagram_tries": 1
   },
   "sum-20261109": {
    "kind": "summary",
@@ -351,8 +355,12 @@
    "ig_caption": "【11/9 AI予想の全成績】\n佐賀・名古屋・川崎・盛岡の47レース\n的中18（うちプラス11）／当日回収率46.2%\n収支-4,570円（各点100円・外れも含む）\n最高：名古屋1R 払戻1,230円\n累計回収率63.1%\n\nこの日の全レースの予想と成績 → www.ai-keiba-log.com/2026/11/09/\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n#競馬予想 #地方競馬 #AI予想 #回収率 #競馬 #競馬全頭ログ",
    "url": "https://www.ai-keiba-log.com/2026/11/09/",
    "created": "2026-11-09 21:43",
-   "x": "pending",
-   "instagram": "pending"
+   "x": "posted",
+   "instagram": "pending",
+   "x_id": "2119773389631947244",
+   "x_at": "2026-11-09 21:45",
+   "instagram_error": "item 400: {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AfuQdaEYGoPWJCzuWFVIgXo'}",
+   "instagram_tries": 1
   }
  }
 }
