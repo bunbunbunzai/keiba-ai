@@ -449,8 +449,12 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
         c["_hero"] = hero
         og_img = f"/assets/{hero}.jpg" if hero else "/og/default.jpg"
         if hero:
+            from imgutil import webp_variants  # 見出しの画像は WebP の縮小版を先に読む（記事の最初に見える画像）
+            vs = webp_variants(ROOT / "site" / "assets" / f"{hero}.jpg", ROOT / "_site" / "assets", widths=(720, 1200))
+            src = (f"<source type='image/webp' srcset='{', '.join(f'/assets/{n} {w}w' for w, n in vs)}' sizes='(max-width: 760px) 100vw, 720px'>"
+                   if vs else "")
             html_ = html_.replace(
-                "<p class='meta'>公開", f"<img class='hero' src='/assets/{hero}.jpg' alt='' width='1200' height='800'><p class='meta'>公開", 1)
+                "<p class='meta'>公開", f"<picture>{src}<img class='hero' src='/assets/{hero}.jpg' alt='' width='1200' height='800' fetchpriority='high'></picture><p class='meta'>公開", 1)
             ld["image"] = base_url + og_img
         write(path, page(f"{title} | {site_name}", html_, path, desc=desc, noindex=c["draft"],
                          head_extra=jsonld(ld) + jsonld(crumb), og_image=og_img))

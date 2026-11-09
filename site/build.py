@@ -21,6 +21,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import column
+from imgutil import webp_variants
 import extra
 import og
 import strategy
@@ -102,6 +103,13 @@ def load_json(p: Path):
 
 def fmt_date(d: str) -> str:
     return f"{d[:4]}年{int(d[4:6])}月{int(d[6:8])}日"
+
+
+def short_date(d: str) -> str:
+    """一覧用の短い日付：11月9日（日）。今年以外は年も付ける。"""
+    dt = datetime.strptime(d, "%Y%m%d")
+    y = "" if d[:4] == datetime.now(JST).strftime("%Y") else f"{d[:4]}年"
+    return f"{y}{dt.month}月{dt.day}日（{'月火水木金土日'[dt.weekday()]}）"
 
 
 def md(d: str) -> str:
@@ -242,11 +250,15 @@ def venue_pic(v: str, surface: str = "", distance=0, date: str = "") -> str:
 
 
 def banner(slug: str, alt: str = "") -> str:
-    """ページ見出し用の挿絵（site/assets/ban-<slug>.jpg があるときだけ）。"""
+    """ページ見出し用の挿絵（site/assets/ban-<slug>.jpg があるときだけ）。見出し直下で最初に見える画像なので先に読む。"""
     f = ASSETS / f"ban-{slug}.jpg"
     if not f.exists():
         return ""
-    return f"<div class='banner'><img src='/assets/ban-{slug}.jpg' alt='{esc(alt)}' width='1600' height='580' loading='lazy'></div>"
+    vs = webp_variants(f, OUT / "assets")
+    src = (f"<source type='image/webp' srcset='{', '.join(f'/assets/{n} {w}w' for w, n in vs)}' sizes='(max-width: 960px) 100vw, 928px'>"
+           if vs else "")
+    return (f"<div class='banner'><picture>{src}<img src='/assets/ban-{slug}.jpg' alt='{esc(alt)}' width='1600' height='580' "
+            f"loading='eager' fetchpriority='high' decoding='async'></picture></div>")
 
 
 def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False, head_extra: str = "",
@@ -268,7 +280,7 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False
 <meta name="theme-color" content="#146b45"><link rel="manifest" href="/manifest.webmanifest">
 {FAVICON}<link rel="alternate" type="application/rss+xml" title="{SITE_NAME}" href="/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Shippori+Mincho+B1:wght@700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Shippori+Mincho+B1:wght@700;800&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Shippori+Mincho+B1:wght@700;800&display=swap"></noscript>
 <link rel="stylesheet" href="/style.css?v={ASSET_V}">
 {head_extra}
 </head><body data-built="{BUILT_ISO}">
@@ -892,8 +904,10 @@ def hero(date: str, preds: list[dict]) -> tuple[str, str | None]:
     else:
         res = f"<p class='hres'>{esc(r.get('post_time') or '')}発走" + (f"　想定勝率{wp:.0f}%" if wp is not None else "") + (f"　単勝{od:.1f}倍" if od else "") + "</p>"
     img = race_og(date, p)
+    vs = webp_variants(OUT / img.lstrip("/"), (OUT / img.lstrip("/")).parent, widths=(600,)) if img != "/og/default.jpg" else []
+    hero_src = f"<source type='image/webp' srcset='{str(Path(img).parent)}/{vs[0][1]}'>" if vs else ""
     lbl = "今日の重賞" if (extra.grade_of(r, p.get("race_name") or r.get("race_name") or "") and date == TODAY) else "注目レース" if extra.grade_of(r, p.get("race_name") or r.get("race_name") or "") else "今日の勝負レース" if date == TODAY else "この日の勝負レース"
-    return (f"<section class='hero'><a href='{race_path(date, p)}'><img src='{img}' alt='' width='600' height='315' loading='eager'></a>"
+    return (f"<section class='hero'><a href='{race_path(date, p)}'><picture>{hero_src}<img src='{img}' alt='{esc(extra.nfkc(race_label(p)))}のAI予想' width='600' height='315' loading='eager' fetchpriority='high'></picture></a>"
             f"<div class='hbody'><p class='hlabel'>{lbl}{grade_badge(p)}</p>"
             f"<h2><a href='{race_path(date, p)}'>{esc(extra.nfkc(race_label(p)))}</a></h2><p class='meta'>{esc(race_cond(p))}　自信度 <span class='conf c{esc(p.get('confidence'))}'>{esc(p.get('confidence'))}</span></p>"
             f"<p class='hmarks'>{marks}</p>{res}</div></section>"), p["race_id"]
@@ -1267,7 +1281,13 @@ def social_page() -> None:
     sdir = ROOT / "social"
     if not sdir.exists():
         return
-    shutil.copytree(sdir, OUT / "social", dirs_exist_ok=True, ignore=shutil.ignore_patterns("*.json"))
+    keep = (datetime.now(JST) - timedelta(days=14)).strftime("%Y%m%d")  # 公開サイトに置くSNS画像は直近14日分だけ（サイト容量を抑える）
+    for sd in sdir.iterdir():
+        if sd.is_dir() and sd.name.isdigit() and sd.name >= keep:
+            shutil.copytree(sd, OUT / "social" / sd.name, dirs_exist_ok=True, ignore=shutil.ignore_patterns("*.json"))
+        elif sd.is_file() and sd.suffix != ".json":
+            (OUT / "social").mkdir(parents=True, exist_ok=True)
+            shutil.copy2(sd, OUT / "social" / sd.name)
     label = {"posted": "投稿済み", "draft": "下書き（鍵が未設定）", "pending": "投稿待ち", "failed": "失敗", "off": "対象外"}
     blocks = []
     for d in sorted((p.name for p in sdir.iterdir() if p.is_dir()), reverse=True)[:7]:
@@ -1423,6 +1443,7 @@ SITE_CHANGES = [
     ("2026-10-30", "レースごとの的中・回収率を、確定のたびに更新するようにした。初心者向けコラムの準備。"),
     ("2026-11-01", "サイト名を「競馬全頭ログ」に変更。XとInstagramへの自動投稿（的中・重賞・毎晩の全成績）を開始。コラム4本を公開。買い方別の回収率、週次の重賞回顧、馬別ページを追加。"),
     ("2026-11-02", "買い目の組み方を1つに決めた（◎の単勝か複勝を人気で切り替え＋3連複フォーメーション）。デザインを刷新。挿絵を追加。お問い合わせフォームと支援（OFUSE）の導線を設置。"),
+    ("2026-11-10", "ページの表示を軽くした（画像を軽い形式・画面に合った大きさで配信、文字のフォントを後から読み込む）。本文中のリンクに下線を付け、スマホで押しやすくした。トップの過去の予想の一覧をスマホで読みやすくした。"),
     ("2026-11-08", "買い目をオッズを見て組むようにした。3連複は当たっても購入額を下回る組み合わせ（トリガミ）を外し、3連複を買うときは複勝を買わない。レースページの買い目の横にオッズを表示。"),
     ("2026-11-07", "574レース分の成績から予想ルールを見直した。3連複は自信度Aのレースだけに絞り、2番人気を本命にする基準を厳しくし、当日朝にオッズで前日予想を見直す回を追加。初めて訪れた人向けに、全頭くんがサイトの見方を案内するポップアップを追加。地方競馬のオッズの読み取りの不具合も直した。"),
     ("2026-11-04", "公式キャラクター「全頭くん」が登場。レースページ右下のボタンから、そのレースについて全頭くんに質問できるようにした。結果欄の振り返りも全頭くんが担当。サイト全体の言葉づかいを、初めての人にも分かる表現に見直した。"),
@@ -1488,7 +1509,7 @@ CSS = """.ask .alog{margin-top:10px}.ask .qa{border-top:1px solid var(--line);pa
 @media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#141614;--panel:#1c1f1c;--fg:#ecefe9;--mut:#a4aba5;--line:#343934;--rule:#ecefe9;--acc:#6cc497;--acc-soft:#1f2e26;--hit:#ff7b8c;--hit-soft:#3a2126;--tg:#d9a93a;--miss:#8b918c}}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 "BIZ UDPGothic","Hiragino Sans","Noto Sans JP",system-ui,sans-serif;font-variant-numeric:tabular-nums}
-a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}main p a:not([class]),.col li a:not([class]),.card ul:not([class]) li>a:not([class]),.foot p:not(.sitemap-links):not(.sns) a{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}.foot .sitemap-links a,.foot .sns a{display:inline-block;padding:6px 2px;min-height:24px}:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
 .wrap{max-width:960px;margin:0 auto;padding:0 16px}
 h1,h2,h3,.kpis b,.marks b,.sum{font-family:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif;font-weight:800;letter-spacing:.01em}
 h1{font-size:28px;line-height:1.35;margin:22px 0 6px}h2{font-size:19px;line-height:1.4;margin:22px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--rule)}h3{font-size:16px;margin:18px 0 6px}
@@ -1841,7 +1862,7 @@ def build() -> None:
         top_list = f"<section class='today'>{day_list(main_d, by_date[main_d])}</section>"
     else:
         head, top_list = "今日の予想", "<p>予想はまだありません。</p>"
-    past = "".join(f"<li><a href='{day_path(d)}'><span>{fmt_date(d)}（{n}レース）</span><span>回収率 {roi}</span></a></li>"
+    past = "".join(f"<li><a href='{day_path(d)}'><span>{short_date(d)}　{n}レース</span><span>回収率 {roi}</span></a></li>"
                    for d, n, roi in day_rows if d != main_d)
     body = (f"<h1>{head}<small>{fmt_date(main_d) if main_d else ''}</small></h1>"
             f"<p class='answer'>AIが日本の競馬（JRA・地方）の全レースを毎日予想し、外れも含めた成績を公開している。累計回収率は{t['roi']}（{t['n']}レース。◎が3着以内に入った割合は{t['top3']}）。<a href='/results/'>成績の詳細</a>　<span class='meta'>最終更新 {now.strftime('%m/%d %H:%M')}</span></p>"
@@ -1925,8 +1946,8 @@ def build() -> None:
     write("/contact/thanks/", page(f"送信しました | {SITE_NAME}", THANKS, "/contact/thanks/", noindex=True))
     write("/about/", page(f"予想の方法とよくある質問 | {SITE_NAME}", ABOUT, "/about/", head_extra=jsonld(FAQ_LD),
                           desc="競馬全頭ログの予想の作り方（評価の5軸・印・自信度・買い目）と、回収率の計算方法。"))
-    write("/operator/", page(f"運営者情報 | {SITE_NAME}", OPERATOR, "/operator/"))
-    write("/privacy/", page(f"プライバシーポリシー | {SITE_NAME}", PRIVACY, "/privacy/"))
+    write("/operator/", page(f"運営者情報 | {SITE_NAME}", OPERATOR, "/operator/", desc=f"{SITE_NAME}の運営者・連絡先・SNS・運営の支援についての情報。"))
+    write("/privacy/", page(f"プライバシーポリシー | {SITE_NAME}", PRIVACY, "/privacy/", desc=f"{SITE_NAME}のプライバシーポリシー。アクセス解析・広告・お問い合わせで扱う情報と、その使い方。"))
     today_iso = now.strftime("%Y-%m-%d")
     lastmod.update(column.build(write, page, jsonld, BASE_URL, SITE_NAME, STATS_FROM, today_iso))
     for old, new in (("results.html", "/results/"), ("about.html", "/about/")):
