@@ -592,6 +592,8 @@ def live(url: str) -> bool:
 def publish(date: str, dry: bool = False, only: str = "") -> int:
     st = load_state(date)
     n = 0
+    # Instagram側でAPIが止められている間は送らない（失敗を重ねない）。毎回の確認で解除されたら自動で再開する
+    ig_blocked = "API access blocked" in " ".join((load(SOCIAL / "status.json", {}) or {}).get("ig_probe") or [])
     for pid, e in st["posts"].items():
         if only and pid != only:
             continue
@@ -609,6 +611,9 @@ def publish(date: str, dry: bool = False, only: str = "") -> int:
         if not dry and not all(live(BASE_URL + u) for u in imgs):
             continue  # まだサイトに出ていない（次の公開後に出す）
         for k in todo:
+            if k == "instagram" and ig_blocked and not dry:
+                e["instagram_wait"] = "Instagram側でAPIが止められているため待機"
+                continue
             ok = has_x() if k == "x" else has_ig()
             if dry or not ok:
                 e[k] = "draft"
