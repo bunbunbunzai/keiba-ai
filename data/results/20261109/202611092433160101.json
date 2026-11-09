@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261109",
  "race_id": "202611092433160101",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,127 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 9,
+   "name": "フクチャンダイオウ",
+   "time": "1:39.2",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 2,
+   "number": 2,
+   "name": "サノノスレーヴ",
+   "time": "1:39.8",
+   "margin": "３",
+   "pos4": 4,
+   "last3f": 40.7,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 5,
+   "name": "ニシキエバー",
+   "time": "1:40.2",
+   "margin": "２",
+   "pos4": 4,
+   "last3f": 40.6,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 6,
+   "name": "テルレーヌ",
+   "time": "1:40.3",
+   "margin": "１／２",
+   "pos4": 7,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 11,
+   "name": "アリス",
+   "time": "1:40.4",
+   "margin": "１／２",
+   "pos4": 1,
+   "last3f": 41.6,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 1,
+   "number": 1,
+   "name": "ヴィクトリアビーチ",
+   "time": "1:40.9",
+   "margin": "２ １／２",
+   "pos4": 6,
+   "last3f": 41.3,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 10,
+   "name": "ヨザクラブルース",
+   "time": "1:41.3",
+   "margin": "２",
+   "pos4": 8,
+   "last3f": 41.4,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 4,
+   "number": 4,
+   "name": "ファリナータ",
+   "time": "1:42.4",
+   "margin": "５",
+   "pos4": 9,
+   "last3f": 42.0,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 6,
+   "number": 7,
+   "name": "シロイヤツ",
+   "time": "1:42.8",
+   "margin": "２",
+   "pos4": 11,
+   "last3f": 42.1,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 8,
+   "name": "トリプルアイ",
+   "time": "1:43.3",
+   "margin": "２ １／２",
+   "pos4": 9,
+   "last3f": 43.4,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 3,
+   "number": 3,
+   "name": "ニホンピロデルマー",
+   "time": "1:44.0",
+   "margin": "３",
+   "pos4": 3,
+   "last3f": 45.3,
+   "popularity": null
+  }
+ ]
 }
