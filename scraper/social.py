@@ -605,6 +605,7 @@ def publish(date: str, dry: bool = False, only: str = "") -> int:
     st = load_state(date)
     n = 0
     # Instagram側でAPIが止められている間は送らない（失敗を重ねない）。毎回の確認で解除されたら自動で再開する
+    ig_on = (load(SOCIAL / "config.json", {}) or {}).get("instagram", True)
     ig_blocked = (not only) and "API access blocked" in " ".join((load(SOCIAL / "status.json", {}) or {}).get("ig_probe") or [])  # 投稿IDを指定した手動テストでは送る
     for pid, e in st["posts"].items():
         if only and pid != only:
@@ -623,6 +624,9 @@ def publish(date: str, dry: bool = False, only: str = "") -> int:
         if not dry and not all(live(BASE_URL + u) for u in imgs):
             continue  # まだサイトに出ていない（次の公開後に出す）
         for k in todo:
+            if k == "instagram" and not ig_on and not only:
+                e[k] = "off"
+                continue
             if k == "instagram" and ig_blocked and not dry:
                 e["instagram_wait"] = "Instagram側でAPIが止められているため待機"
                 continue
@@ -669,7 +673,9 @@ if __name__ == "__main__":
     posted = 0 if a.prepare_only else publish(a.date, a.dry_run, a.only)
     made = 0 if a.only else prepare(a.date, cfg)
     status = {"x_keys": has_x(), "ig_keys": has_ig()}  # 鍵の有無だけ（中身は書かない）
-    if has_ig():
+    if not cfg.get("instagram", True):
+        status["ig"] = "off"  # 設定で止めている間は確認も送らない（social/config.json の instagram を true に戻すと再開）
+    elif has_ig():
         try:
             tok = os.environ["IG_ACCESS_TOKEN"].strip()
             status["ig_token_type"] = "instagram" if tok.startswith("IG") else "facebook"
