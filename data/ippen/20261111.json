@@ -1,10 +1,11 @@
 {
  "date": "20261111",
- "updated": "2026-11-11 01:02",
+ "updated": "2026-11-11 05:29",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
-  "letdown": "前走で人気を裏切った人気薄"
+  "letdown": "前走で人気を裏切った人気薄",
+  "aitop": "AIの評価点1位（◎ではない馬）"
  },
  "horses": [
   {
@@ -1859,7 +1860,7 @@
     "field": 11,
     "popularity": 3
    },
-   "odds": 13.1,
+   "odds": 18.8,
    "popularity": 6
   },
   {
@@ -1880,7 +1881,7 @@
     "field": 14,
     "popularity": 6
    },
-   "odds": 4.8,
+   "odds": 3.4,
    "popularity": 2
   },
   {
@@ -1901,8 +1902,8 @@
     "field": 11,
     "popularity": 6
    },
-   "odds": 38.7,
-   "popularity": 10
+   "odds": 40.5,
+   "popularity": 11
   },
   {
    "race_id": "202611112135090311",
@@ -1922,8 +1923,8 @@
     "field": 10,
     "popularity": null
    },
-   "odds": 26.9,
-   "popularity": 8
+   "odds": 34.2,
+   "popularity": 9
   },
   {
    "race_id": "202611113601160212",
