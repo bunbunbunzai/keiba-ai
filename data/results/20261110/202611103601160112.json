@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261110",
  "race_id": "202611103601160112",
- "tries": 2,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 6,
+   "name": "スキャボロフェアー",
+   "time": "1:58.9",
+   "margin": "",
+   "pos4": 3,
+   "last3f": 40.3,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 9,
+   "name": "ヤマニンエラマ",
+   "time": "1:58.9",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": 39.9,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 8,
+   "name": "ガイストゼーゲン",
+   "time": "1:59.0",
+   "margin": "１／２",
+   "pos4": 5,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 7,
+   "name": "イケメンパリピ",
+   "time": "1:59.3",
+   "margin": "１ １／２",
+   "pos4": 1,
+   "last3f": 41.7,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 10,
+   "name": "カネトシエテルノ",
+   "time": "1:59.4",
+   "margin": "３／４",
+   "pos4": 2,
+   "last3f": 41.0,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 1,
+   "number": 1,
+   "name": "ファーマシャイン",
+   "time": "2:00.1",
+   "margin": "３",
+   "pos4": 3,
+   "last3f": 41.5,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 3,
+   "name": "ブレイキンアウェイ",
+   "time": "2:00.2",
+   "margin": "３／４",
+   "pos4": 5,
+   "last3f": 41.2,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 5,
+   "number": 5,
+   "name": "トーセンジャック",
+   "time": "2:00.3",
+   "margin": "１／２",
+   "pos4": 10,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 4,
+   "number": 4,
+   "name": "ユニバーサルラヴ",
+   "time": "2:00.4",
+   "margin": "１／２",
+   "pos4": 5,
+   "last3f": 41.8,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 2,
+   "number": 2,
+   "name": "リムショット",
+   "time": "2:00.9",
+   "margin": "２ １／２",
+   "pos4": 10,
+   "last3f": 41.3,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 8,
+   "number": 12,
+   "name": "シルバーミラージュ",
+   "time": "2:03.8",
+   "margin": "大差",
+   "pos4": 5,
+   "last3f": 45.6,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 8,
+   "number": 11,
+   "name": "タイセイシャルト",
+   "time": "2:04.1",
+   "margin": "１ １／２",
+   "pos4": 12,
+   "last3f": 43.9,
+   "popularity": null
+  }
+ ]
 }
