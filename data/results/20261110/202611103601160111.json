@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261110",
  "race_id": "202611103601160111",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 3,
+   "number": 3,
+   "name": "ペプチドクレマチス",
+   "time": "1:02.1",
+   "margin": "",
+   "pos4": null,
+   "last3f": 38.0,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 9,
+   "name": "クインズタンポポ",
+   "time": "1:02.5",
+   "margin": "２",
+   "pos4": null,
+   "last3f": 37.7,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 6,
+   "name": "ラグナキリア",
+   "time": "1:02.6",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": 37.2,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 4,
+   "name": "クリイロ",
+   "time": "1:02.6",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": 37.6,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 8,
+   "name": "レイブンナイト",
+   "time": "1:02.7",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": 37.9,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 11,
+   "name": "ユーキャンフライ",
+   "time": "1:02.7",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": 38.1,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 12,
+   "name": "ディープレゼント",
+   "time": "1:02.7",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": 37.2,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 2,
+   "number": 2,
+   "name": "フロンテアブライト",
+   "time": "1:02.9",
+   "margin": "１",
+   "pos4": null,
+   "last3f": 38.3,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 1,
+   "number": 1,
+   "name": "スティールファイン",
+   "time": "1:02.9",
+   "margin": "ハナ",
+   "pos4": null,
+   "last3f": 38.1,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 10,
+   "name": "アイガイッパイ",
+   "time": "1:03.0",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": 37.8,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 6,
+   "number": 7,
+   "name": "ワイルドタイタン",
+   "time": "1:03.2",
+   "margin": "１",
+   "pos4": null,
+   "last3f": 37.8,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 5,
+   "number": 5,
+   "name": "セイランマクフィ",
+   "time": "1:03.6",
+   "margin": "２",
+   "pos4": null,
+   "last3f": 39.3,
+   "popularity": null
+  }
+ ]
 }
