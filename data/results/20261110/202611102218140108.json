@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261110",
  "race_id": "202611102218140108",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "プペアンビスキュイ",
    "time": "1:36.6",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 39.3,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "スカイプレリュード",
    "time": "1:39.1",
    "margin": "大差",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 40.2,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "グレイイメル",
    "time": "1:39.2",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 40.0,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "ダイヒョウカーク",
    "time": "1:39.4",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 42.1,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "モルトカリーナ",
    "time": "1:41.8",
    "margin": "大差",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 42.6,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "シャドウクライ",
    "time": "1:42.2",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 42.7,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "モロノディアマンテ",
    "time": "1:42.3",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 43.8,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ファインブルー",
    "time": "1:42.6",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 41.7,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "ピタカゲ",
    "time": "1:45.6",
    "margin": "大差",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 45.1,
    "popularity": null
   }
  ]
