@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261110",
  "race_id": "202611102218140105",
- "tries": 2,
+ "tries": 7,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "イリノセラビア",
    "time": "1:38.4",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 39.4,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "スラッシュ",
    "time": "1:38.8",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 39.5,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ジーティートゥーリ",
    "time": "1:39.7",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 40.5,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "ノクターナルハント",
    "time": "1:39.9",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 39.3,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "アドバンスジェンヌ",
    "time": "1:40.1",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 40.5,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "オメガオリーブ",
    "time": "1:40.5",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 41.2,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "デルマシラカミ",
    "time": "1:41.5",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 40.9,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "スカッシュボーイ",
    "time": "1:41.9",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 41.3,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "ビースペシフィック",
    "time": "1:43.3",
    "margin": "７",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 42.7,
    "popularity": null
   }
  ]
