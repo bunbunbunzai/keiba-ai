@@ -89,6 +89,17 @@ def build_pages(B, by_date: dict, led: list[dict], venue_of_race: dict, today: s
         vrows = "".join(f"<tr><td>{esc(v)}</td><td>{x[2]}</td><td>{B.roi_txt(x[0], x[1])}</td><td>{x[1] - x[0]:+,}円</td></tr>" for v, x in venues)
         brows = "".join(f"<tr><td>{esc(k)}</td><td>{n}</td><td>{r:.1f}%</td></tr>" for k, r, n in best[:8])
         crows = "".join(f"<tr><td>{esc(c)}</td><td>{x[2]}</td><td>{B.roi_txt(x[0], x[1])}</td></tr>" for c, x in sorted(cb.items()))
+        # 今のルール（11/11〜）と厳選レース（自信度A）
+        rule_html = ""
+        nrows = [r for r in rows if r["date"] >= B.RULE_FROM]
+        if nrows:
+            tn = B.totals(nrows)
+            ta = B.totals([r for r in nrows if r["confidence"] == "A"])
+            rr = (f"<tr><td>今のルールの全レース</td><td>{tn['n']}</td><td>{tn['roi']}</td><td>{tn['hit']}</td><td>{tn['top3']}</td></tr>"
+                  f"<tr><td>うち厳選レース（自信度A）</td><td>{ta['n']}</td><td>{ta['roi'] if ta['n'] else '―'}</td><td>{ta['hit']}</td><td>{ta['top3']}</td></tr>")
+            rule_html = (f"<section class='card gensen-box'><h2>今のルールと厳選レース</h2><p>{esc(B.rule_label())}のレース（◎は補正勝率、買い目は◎の単勝か複勝1点）。"
+                         f"厳選レースは◎の補正勝率が50%以上のレース。</p><div class='scroll'><table><thead><tr><th>区分</th><th>レース</th><th>回収率</th><th>的中率</th><th>◎の3着内率</th></tr></thead>"
+                         f"<tbody>{rr}</tbody></table></div><p class='meta'>累計は<a href='/results/#gensen'>成績ページ</a>へ。</p></section>")
         top_html = ""
         if top and top_p:
             d, p = top_p
@@ -102,6 +113,7 @@ def build_pages(B, by_date: dict, led: list[dict], venue_of_race: dict, today: s
                 + (f"<section class='card'><h2>累計回収率の推移（月内）</h2>{chart}</section>" if chart else "")
                 + f"<section class='card'><h2>場別</h2><div class='scroll'><table><thead><tr><th>場</th><th>レース</th><th>回収率</th><th>収支</th></tr></thead><tbody>{vrows}</tbody></table></div><p class='meta'>5レース以上の場のみ。</p></section>"
                 + (f"<section class='card'><h2>買い方別（この月）</h2><div class='scroll'><table><thead><tr><th>買い方</th><th>レース</th><th>回収率</th></tr></thead><tbody>{brows}</tbody></table></div><p class='meta'>20レース以上の区分のみ。買い方の意味は<a href='/strategy/'>買い方別の回収率</a>へ。</p></section>" if brows else "")
+                + rule_html
                 + f"<section class='card'><h2>自信度別</h2><div class='scroll'><table><thead><tr><th>自信度</th><th>レース</th><th>回収率</th></tr></thead><tbody>{crows}</tbody></table></div></section>"
                 + top_html
                 + "<p class='meta'>買い目を1点100円ずつ買った計算で、外れも含む。買い目を出さなかった「見送り」と返還になったレースは含まない。</p>")

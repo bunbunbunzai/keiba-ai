@@ -78,7 +78,11 @@ def stats(date: str) -> dict:
                     if key in seen:
                         continue
                     seen.add(key)
-                    bump("jra" if _is_jra(p.get("venue")) else "local", "j", p.get("jockey"), fin)
+                    jk = p.get("jockey")
+                    if not jk:  # ばんえいの近走は騎手が class 欄に「騎手名 660」の形で入っている
+                        m = re.match(r"(\S+)\s+\d{3,4}$", str(p.get("class") or ""))
+                        jk = m.group(1) if m else None
+                    bump("jra" if _is_jra(p.get("venue")) else "local", "j", jk, fin)
     # 厩舎：予想して結果が確定したレースから
     for i in range(1, DAYS + 1):
         d = (end - timedelta(days=i)).strftime("%Y%m%d")

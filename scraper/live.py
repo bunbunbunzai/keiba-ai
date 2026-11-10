@@ -114,7 +114,9 @@ class Interleaver:
 
 BET_WINDOW = (22, 90)   # 発走の90〜22分前のレースは、オッズを見て◎・自信度・買い目（単勝か複勝か）を決め直す
 ODDS_MAX_AGE = 20       # 地方の単勝オッズは20分たったら取り直す
+LAST_WINDOW = (2, 12)   # 地方は発走の12〜2分前にもう一度出馬表を取り、直前のオッズを final_odds に残す
 _card_fetched: dict[str, float] = {}
+_last_done: set[str] = set()
 
 
 def refresh_bets(date: str) -> bool:
@@ -124,7 +126,7 @@ def refresh_bets(date: str) -> bool:
     import bets as BT
 
     t = now()
-    local_ids, all_ids = [], []
+    local_ids, all_ids, last_ids = [], [], []
     for f in sorted((ROOT / "predictions" / date).glob("*.json")):
         try:
             p = json.loads(f.read_text(encoding="utf-8"))
@@ -135,11 +137,41 @@ def refresh_bets(date: str) -> bool:
         if not rf.exists():
             continue
         post = BT._post_dt(date, json.loads(rf.read_text(encoding="utf-8")))
-        if post is None or not (BET_WINDOW[0] < (post - t).total_seconds() / 60 <= BET_WINDOW[1]):
+        if post is None:
+            continue
+        mins = (post - t).total_seconds() / 60
+        if (not rid.startswith("jra_") and LAST_WINDOW[0] < mins <= LAST_WINDOW[1] and rid not in _last_done
+                and not (DATA_DIR / "final_odds" / date / f"{rid}.json").exists()):
+            last_ids.append(rid)
+        if not (BET_WINDOW[0] < mins <= BET_WINDOW[1]):
             continue
         all_ids.append(rid)
         if not rid.startswith("jra_") and time.monotonic() - _card_fetched.get(rid, -1e9) > ODDS_MAX_AGE * 60:
             local_ids.append(rid)  # 地方は全レース：◎と自信度が単勝オッズで決まるので、発走前のオッズで決め直す
+    if last_ids and not daily_running():
+        try:  # 発走直前の出馬表（オッズ）を取り、final_odds に残す（確定オッズとの差を測るため。最大2レース）
+            import final_odds
+            import rakuten
+            from common import PoliteSession, save_raw
+
+            sess = PoliteSession(min_interval=61.0)
+            time.sleep(61)
+            for rid in last_ids[:2]:
+                html = sess.get(rakuten.BASE + rakuten.PAGES["card"].format(rid=rid)).text
+                save_raw("rakuten_card_last", date, rid, html)
+                _last_done.add(rid)
+                import parse_rakuten
+
+                race = parse_rakuten.parse_card(html, rid)
+                cur = DATA_DIR / "races" / date / f"{rid}.json"
+                if race.get("horses") and cur.exists():
+                    base = json.loads(cur.read_text(encoding="utf-8"))  # 出馬表のファイルは書き換えず、オッズだけ取り出す
+                    by = {h.get("number"): h for h in race["horses"]}
+                    tmp = dict(base, horses=[dict(h, odds=(by.get(h.get("number")) or {}).get("odds"),
+                                                  popularity=(by.get(h.get("number")) or {}).get("popularity")) for h in base.get("horses") or []])
+                    final_odds.snapshot_race(date, rid, tmp, "直前")
+        except Exception as e:  # noqa: BLE001
+            print("last odds error:", e)
     if not all_ids:
         return False
     if local_ids and not daily_running():

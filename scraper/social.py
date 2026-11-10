@@ -4,7 +4,8 @@
 - hit       ：大きな的中だけ（払戻が購入額の3倍以上かつ300円以上のプラス。1日3件まで。小さな的中は summary の一覧にまとめる。重賞は grade_res）
 - grade_pre ：重賞の予想（発走の10〜120分前）
 - grade_res ：重賞の結果（的中・不的中とも）
-- summary   ：その日の全成績（全レース確定後、または21:40以降）
+- summary   ：その日の全成績（全レース確定後、または21:40以降）。厳選レースがあった日は、その結果をスレッド（返信）に1件
+- gensen    ：朝（9:30〜11:30）の「今日の厳選レース」（自信度A）。無い日は picks（今日の勝負レース）
 
 流れ（pages のデプロイ後に毎回呼ばれる）
 1. publish：画像が公開URLで見られる「ready」の投稿を X・Instagram に出す（鍵が無ければ draft のまま）
@@ -163,17 +164,55 @@ def candidates(date: str) -> list[dict]:
                 out.append({"id": f"res-{p['race_id']}", "kind": "grade_res", "p": p})
         elif sc and sc["stake"] and sc["return"] >= HIT_MULT * sc["stake"] and sc["return"] - sc["stake"] >= HIT_MIN_PROFIT:
             out.append({"id": f"hit-{p['race_id']}", "kind": "hit", "p": p, "ret": sc["return"]})
-    # 朝の「今日の勝負レース」：7:30〜11:30に1回（前日夜の予想と重賞から選ぶ。昼の予想が増えても再投稿はしない）
-    if t.strftime("%Y%m%d") == date and "07:30" <= t.strftime("%H:%M") <= "11:30":
-        from build import picks
-        ps = [p for p in picks(rs) if not p["_score"]]
-        if len(ps) >= 2:
-            out.append({"id": f"picks-{date}", "kind": "picks", "ps": ps})
+    # 朝の投稿（1日1回）：9:30〜11:30に「今日の厳選レース」（自信度A＝◎の補正勝率50%以上。朝のオッズで決まったもの）。
+    # 厳選レースが無ければ従来の「今日の勝負レース」。厳選は当日朝のオッズ反映（9:03の回）の後に決まるので9:30から。
+    if t.strftime("%Y%m%d") == date and "09:30" <= t.strftime("%H:%M") <= "11:30":
+        gs = gensen_races(date, rs, t)
+        if gs:
+            out.append({"id": f"picks-{date}", "kind": "gensen", "ps": gs})
+        else:
+            from build import picks
+            ps = [p for p in picks(rs) if not p["_score"]]
+            if len(ps) >= 2:
+                out.append({"id": f"picks-{date}", "kind": "picks", "ps": ps})
     bet = [p for p in rs if p.get("confidence") != "見送り"]
     done = [p for p in bet if p["_score"]]
     if bet and done and (len(done) == len(bet) or t.strftime("%Y%m%d") > date or t.strftime("%H:%M") >= "21:40"):
         out.append({"id": f"sum-{date}", "kind": "summary", "rs": bet})
     return out
+
+
+def gensen_races(date: str, rs: list[dict], t: datetime) -> list[dict]:
+    """これから発走する厳選レース（自信度A・オッズ込みの補正勝率で決まったもの）を発走順に。"""
+    out = []
+    for p in rs:
+        pd = post_dt(date, p)
+        b = p.get("blend") or {}
+        if (p.get("confidence") == "A" and b.get("kind") == "オッズ込み" and not p["_score"]
+                and pd and pd - t >= timedelta(minutes=20)):
+            out.append(p)
+    return sorted(out, key=lambda p: p["_race"].get("post_time") or "99")[:8]
+
+
+def gensen_result_text(date: str, rs: list[dict]) -> str:
+    """夜の全成績のスレッド（返信）用：その日の厳選レースの結果。"""
+    a = [p for p in rs if p.get("confidence") == "A" and p["_score"] and p["_score"].get("stake")]
+    if not a:
+        return ""
+    st, rt = sum(p["_score"]["stake"] for p in a), sum(p["_score"]["return"] for p in a)
+    hit = sum(1 for p in a if p["_score"]["return"] > 0)
+    head = f"【{fmt_md(date)} 厳選レース（自信度A）の結果】{len(a)}レース 的中{hit}・回収率{100 * rt / st:.0f}%"
+    lines = []
+    for p in sorted(a, key=lambda q: q["_race"].get("post_time") or ""):
+        hon = (p.get("marks") or {}).get("◎")
+        fin = p["_score"].get("honmei_finish") or "-"
+        lines.append(f"{venue(p)}{rno(p)}R ◎{hon}{horse(p, hon)} {fin}着" + (f" 払戻{p['_score']['return']:,}円" if p["_score"]["return"] else ""))
+    body = head
+    for ln in lines:
+        if x_len(body + "\n" + ln + "\n※各100円・外れも含む") > 280:
+            break
+        body += "\n" + ln
+    return body + "\n※各100円・外れも含む"
 
 
 # ---------------- 文面 ----------------
@@ -235,6 +274,17 @@ def texts(date: str, c: dict, cfg: dict) -> dict:
         local = any(not str(p["race_id"]).startswith("jra_") for p in rs)
         tags = ["#競馬予想"] + (["#中央競馬"] if jra else []) + (["#地方競馬"] if local else []) + ["#AI予想", "#回収率"]
         url = BASE_URL + f"/{date[:4]}/{date[4:6]}/{date[6:8]}/"
+    elif kind == "gensen":
+        lines = [f"【{fmt_md(date)} 今日の厳選レース】"]
+        for p in c["ps"]:
+            hon = p["marks"]["◎"]
+            b = p.get("blend") or {}
+            od = next((h.get("odds") for h in p["_race"].get("horses", []) or [] if h.get("number") == hon), None)
+            ex = f"（補正勝率{b.get('honmei_pct'):.0f}%" + (f"・単勝{float(od):.1f}倍" if od else "") + "）" if b.get("honmei_pct") is not None else ""
+            lines.append(f"{p['_race'].get('post_time') or ''} {venue(p)}{rno(p)}R ◎{hon}{horse(p, hon)}{ex}")
+        lines.append("AIの◎が勝つ確率50%以上のレース。買い目は◎の単勝か複勝1点（発走前のオッズで変わることあり）")
+        tags = ["#競馬予想", "#AI予想", "#厳選レース"]
+        url = BASE_URL + f"/{date[:4]}/{date[4:6]}/{date[6:8]}/"
     elif kind == "picks":
         from build import honmei_value
         lines = [f"【{fmt_md(date)} 今日の勝負レース】"]
@@ -280,10 +330,10 @@ def texts(date: str, c: dict, cfg: dict) -> dict:
         url = race_url(date, p)
     mode = cfg.get("x_url", "none")
     with_url = (mode == "all" or (mode == "graded" and kind.startswith("grade"))
-                or (mode == "key" and (kind.startswith("grade") or kind in ("picks", "summary"))))
+                or (mode == "key" and (kind.startswith("grade") or kind in ("picks", "gensen", "summary"))))
     x_url = url if with_url else None
     x = fit_x(lines, tags, x_url)
-    ig_lbl = "この日の全レースの予想と成績" if kind in ("summary", "picks") else "このレースの全頭評価と買い目"
+    ig_lbl = "この日の全レースの予想と成績" if kind in ("summary", "picks", "gensen") else "このレースの全頭評価と買い目"
     ig = ("\n".join(lines) + f"\n\n{ig_lbl} → {url.replace('https://', '')}\n外れも含めた全レースの予想と成績はプロフィールのリンクから。\n※予想は情報提供です。馬券は20歳から。\n\n"
           + " ".join(tags + ["#競馬", "#競馬全頭ログ"]))
     return {"x": x, "instagram": ig, "url": url}
@@ -308,6 +358,17 @@ def card(date: str, c: dict) -> dict:
         return {"kind": kind, "label": "本日の全成績", "date": md, "head": f"{len(done)}レース 的中{hit}（プラス{plus}）",
                 "sub": "外れも含む全予想・各点100円で集計", "rows": rows, "big": f"{100 * rt / st:.1f}%" if st else "―",
                 "big_label": "当日回収率", "foot": f"収支{rt - st:+,}円　累計回収率{ledger_roi()}"}
+    if kind == "gensen":
+        lines, rows = [], []
+        for p in c["ps"]:
+            hon = p["marks"]["◎"]
+            b = p.get("blend") or {}
+            od = next((h.get("odds") for h in p["_race"].get("horses", []) or [] if h.get("number") == hon), None)
+            lines.append(("◎", f"{venue(p)}{rno(p)}R {hon} {horse(p, hon)}"))
+            rows.append(f"{p['_race'].get('post_time') or ''}発走" + (f"　補正勝率{b['honmei_pct']:.0f}%" if b.get("honmei_pct") is not None else "")
+                        + (f"・単勝{float(od):.1f}倍" if od else ""))
+        return {"kind": "grade_pre", "label": "今日の厳選レース", "date": md, "head": f"AIの◎が勝つ確率50%以上の{len(lines)}レース",
+                "sub": "買い目は◎の単勝か複勝1点（朝のオッズ）", "lines": lines[:6], "rows": rows[:6]}
     if kind == "picks":
         from build import honmei_value
         lines, rows = [], []
@@ -363,7 +424,10 @@ def ascii_name(pid: str) -> str:
 
 
 def thread_texts(date: str, c: dict) -> list[str]:
-    """重賞予想のXスレッド（返信）用：評価点上位の要点を2〜3ツイートに。"""
+    """重賞予想のXスレッド（返信）用：評価点上位の要点を2〜3ツイートに。全成績には厳選レースの結果を1ツイート。"""
+    if c["kind"] == "summary":
+        t = gensen_result_text(date, c["rs"])
+        return [t] if t else []
     if c["kind"] != "grade_pre":
         return []
     p = c["p"]

@@ -5,6 +5,8 @@
 1. 休み明け：前走から90日を超えて間が空いた馬
 2. 前走大敗からの巻き返し：前走が下位1/3の着順（6頭立て以上）だが、その前の4走に上位1/4以内の好走がある馬
 3. 前走で人気を裏切った人気薄：前走1〜3番人気で6着以下、今回は4番人気以下の馬
+4. AIの独自評価（2026-11-11追加）：AIの評価点1位なのに、補正勝率（オッズ込み）では◎にならなかった馬
+   （AIがオッズと違う見方をした馬。過去の少数のレースでは単勝回収率が高く出たことがあるため、成績に数えずに確かめる）
 判定：条件ごとに300頭以上たまってから、単勝・複勝の回収率と95%区間を見る。区間の下限が100%を超える条件だけ、
 予想の材料に入れるかを検討する（数十頭の段階の数字では判断しない）。
 
@@ -36,6 +38,7 @@ TYPES = {
     "layoff": "休み明け（90日超）",
     "rebound": "前走大敗からの巻き返し",
     "letdown": "前走で人気を裏切った人気薄",
+    "aitop": "AIの評価点1位（◎ではない馬）",
 }
 
 
@@ -125,6 +128,31 @@ def _post_dt(date: str, race: dict) -> datetime | None:
         return None
 
 
+def ai_top(date: str, race: dict) -> int | None:
+    """AIの評価点1位が◎（補正勝率1位）と違うとき、その馬番。予想が無い・見送り・オッズ無しなら None。"""
+    pf = ROOT / "predictions" / date / f"{race.get('race_id')}.json"
+    if not pf.exists():
+        return None
+    try:
+        pred = json.loads(pf.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        return None
+    if pred.get("confidence") == "見送り":
+        return None
+    b = pred.get("blend") or {}
+    marks = pred.get("marks") or {}
+    if not b:  # 11/10より前の予想は、今の決め方を当てはめる（参考）
+        import blend as BL
+
+        q = BL.blend(pred, race)
+        if not q:
+            return None
+        b, marks = q["blend"], q["marks"]
+    if b.get("kind") != "オッズ込み" or b.get("ai_top") is None or marks.get("◎") is None:
+        return None
+    return int(b["ai_top"]) if int(b["ai_top"]) != int(marks["◎"]) else None
+
+
 def build_day(date: str) -> list[dict]:
     """その日の全レースの候補（記録の形）。"""
     rows = []
@@ -137,7 +165,21 @@ def build_day(date: str) -> list[dict]:
         except Exception:  # noqa: BLE001
             continue
         rid = race.get("race_id") or f.stem
-        for c in candidates(date, race):
+        cs = candidates(date, race)
+        top = ai_top(date, race)
+        if top is not None:
+            hit = next((c for c in cs if c["number"] == top), None)
+            if hit:
+                hit["types"].append("aitop")
+            else:
+                h = next((x for x in race.get("horses") or [] if _int(x.get("number")) == top), {})
+                try:
+                    odds = float(h.get("odds")) if h.get("odds") else None
+                except (TypeError, ValueError):
+                    odds = None
+                cs.append({"number": top, "name": h.get("name"), "types": ["aitop"], "odds": odds,
+                           "popularity": _popularity(race).get(top)})
+        for c in sorted(cs, key=lambda c: c["number"]):
             rows.append({"race_id": rid, "results_key": results_key(rid), "venue": race.get("venue"),
                          "race_no": race.get("race_no"), "post_time": race.get("post_time"), **c})
     return rows

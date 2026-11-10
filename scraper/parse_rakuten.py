@@ -111,12 +111,14 @@ def parse_card(html: str, race_id: str) -> dict:
         race["post_time"] = None
         for dt in note.find_all("dt"):
             dd = dt.find_next_sibling("dd")
-            k = dt.get_text(strip=True)
+            k = dt.get_text(strip=True).rstrip("：:")  # 「天候：」「ダ：」のように全角コロンが付く
             if dd and "発走" in k:
                 m2 = re.search(r"\d{1,2}:\d{2}", dd.get_text())
                 race["post_time"] = m2.group() if m2 else None
-            elif dd and k in ("天候", "馬場"):
-                race["weather" if k == "天候" else "track"] = dd.get_text(strip=True)
+            elif dd and k == "天候":
+                race["weather"] = dd.get_text(strip=True)
+            elif dd and k in ("馬場", "芝", "ダ", "ダート"):
+                race["track"] = dd.get_text(strip=True)  # 良・稍重など。ばんえいは馬場水分（例 2.0%）
         h2 = note.find("h2")
         race["race_name"] = " ".join(h2.get_text(" ", strip=True).split()) if h2 else None
         cond = note.find("ul", class_="horseCondition")

@@ -72,11 +72,48 @@ def bias_line(date: str, r: dict) -> str:
     return "当日バイアス：未判定"
 
 
+def _banei_prev_weight(p: dict) -> float | None:
+    """ばんえいの近走の斤量。楽天の近走は class 欄が「騎手名 660」の形。"""
+    if p.get("weight"):
+        try:
+            return float(p["weight"])
+        except (TypeError, ValueError):
+            pass
+    m = re.search(r"(\d{3,4})\s*$", str(p.get("class") or ""))
+    return float(m.group(1)) if m else None
+
+
+def banei_lines(r: dict) -> tuple[str, dict]:
+    """ばんえい専用の材料（2026-11-11から）：馬場水分と、各馬の斤量・前走からの斤量差・重い順。"""
+    ws = {}
+    for h in r.get("horses", []):
+        try:
+            ws[h.get("number")] = float(h.get("weight"))
+        except (TypeError, ValueError):
+            pass
+    order = sorted(ws.values(), reverse=True)
+    per = {}
+    for h in r.get("horses", []):
+        w = ws.get(h.get("number"))
+        if w is None:
+            continue
+        prev = _banei_prev_weight((h.get("past") or [{}])[0]) if h.get("past") else None
+        per[h.get("number")] = (f"    ばんえい：斤量{w:.0f}kg（出走馬で重いほうから{order.index(w) + 1}番目"
+                                + (f"・前走{prev:.0f}kgから{w - prev:+.0f}kg" if prev else "") + "）")
+    tr = r.get("track") or "不明"
+    head = (f"ばんえいの材料：馬場水分{tr}（水分が多いほど砂が締まって軽く、時計が速く先行有利。水分が少ない乾いた馬場は重く、"
+            f"力と斤量の差が出やすい）。斤量は最重{order[0]:.0f}kg・最軽{order[-1]:.0f}kg。前走より斤量が大きく増えた馬は割り引く。" if order else "")
+    return head, per
+
+
 def detail(r: dict, date: str = "") -> str:
     head = (f"{r.get('race_id')} | {r.get('venue')}{r.get('race_no')}R {r.get('post_time') or ''} "
             f"{r.get('surface') or ''}{r.get('distance') or ''}m {r.get('field')}頭 | "
-            f"{r.get('race_name') or r.get('title_text') or ''} {r.get('conditions') or ''}")
-    lines = [head, bias_line(date, r) if date else ""]
+            f"{r.get('race_name') or r.get('title_text') or ''} {r.get('conditions') or ''}"
+            + (f" | 天候{r['weather']}" if r.get("weather") else "") + (f" 馬場{r['track']}" if r.get("track") else ""))
+    banei = str(r.get("venue") or "").startswith("帯広")
+    bhead, bper = banei_lines(r) if banei else ("", {})
+    lines = [head, bias_line(date, r) if date else ""] + ([bhead] if bhead else [])
     for h in r.get("horses", []):
         prof = h.get("profile") or {}
         sire = h.get("sire") or prof.get("父") or ""
@@ -87,6 +124,8 @@ def detail(r: dict, date: str = "") -> str:
             f"{h.get('trainer')}（厩舎 {people.label(date, r.get('race_id'), 't', h.get('trainer'))}） | 父{sire} 母父{damsire} | "
             f"単勝{h.get('odds') if h.get('odds') is not None else '-'} 人気{h.get('popularity') or '-'} "
             f"体重{h.get('body_weight') or ''}{h.get('body_weight_change') or ''}")
+        if h.get("number") in bper:
+            lines.append(bper[h.get("number")])
         for p in (h.get("past") or [])[:5]:
             lines.append("    " + past_line(p))
         if not h.get("past"):

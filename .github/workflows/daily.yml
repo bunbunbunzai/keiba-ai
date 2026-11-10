@@ -105,6 +105,7 @@ jobs:
             eve-rakuten)  python rakuten.py --date "$D" --kinds card $IL && python parse_rakuten.py --date "$D" ;;
             noon-rakuten) python rakuten.py --date "$D" --kinds card --after-now $IL && python parse_rakuten.py --date "$D" ;;
             mid-rakuten)  python results.py --date "$D" --source rakuten --finished-only; python bias.py --date "$D" --source "$SRC"; python rakuten.py --date "$D" --kinds card --after-now $IL && python parse_rakuten.py --date "$D" ;;
+            night-jra)    python results.py --date "$D" --source jra; python bias.py --date "$D" --source jra; python final_odds.py --date "$D" --source jra || echo "final_odds failed" ;;
             night-*)      python results.py --date "$D" --source "$SRC"; python bias.py --date "$D" --source "$SRC" ;;
           esac
         continue-on-error: true
