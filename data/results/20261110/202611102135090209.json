@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261110",
  "race_id": "202611102135090209",
- "tries": 5,
+ "tries": 6,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "エースクイーン",
    "time": "55.6",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 37.5,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ラックナシェード",
    "time": "55.7",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 37.8,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ロックマイソウル",
    "time": "56.0",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 38.2,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "ハーイバービー",
    "time": "56.3",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 38.2,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "サウンドプリモ",
    "time": "56.3",
    "margin": "ハナ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 38.1,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "マロンデプティ",
    "time": "56.6",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 38.0,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "ピーチマカロン",
    "time": "56.8",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 37.8,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "イイクニアシェル",
    "time": "56.8",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 37.6,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "スレヒトゥヴアルク",
    "time": "56.8",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 38.6,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "ケイツーユーロ",
    "time": "56.9",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 38.5,
    "popularity": null
   }
  ]
