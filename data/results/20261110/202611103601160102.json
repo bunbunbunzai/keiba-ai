@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261110",
  "race_id": "202611103601160102",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 10,
+   "name": "スキップストーン",
+   "time": "1:02.8",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 37.2,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 4,
+   "number": 4,
+   "name": "ベラジオゼウス",
+   "time": "1:02.9",
+   "margin": "３／４",
+   "pos4": 3,
+   "last3f": 37.1,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 6,
+   "name": "プランドゥボヌール",
+   "time": "1:03.5",
+   "margin": "３",
+   "pos4": 3,
+   "last3f": 37.6,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 12,
+   "name": "ウィルスパングル",
+   "time": "1:03.8",
+   "margin": "１ １／２",
+   "pos4": 1,
+   "last3f": 38.2,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 3,
+   "number": 3,
+   "name": "リックベッラ",
+   "time": "1:03.8",
+   "margin": "アタマ",
+   "pos4": 5,
+   "last3f": 37.6,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 7,
+   "name": "ドウヤラファミリー",
+   "time": "1:04.3",
+   "margin": "２ １／２",
+   "pos4": 5,
+   "last3f": 38.1,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 8,
+   "name": "イゼルトヴァルト",
+   "time": "1:04.6",
+   "margin": "１ １／２",
+   "pos4": 7,
+   "last3f": 38.3,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "ギフトオブマジック",
+   "time": "1:05.0",
+   "margin": "２",
+   "pos4": 10,
+   "last3f": 37.6,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 9,
+   "name": "シセイフット",
+   "time": "1:05.1",
+   "margin": "１／２",
+   "pos4": 7,
+   "last3f": 38.6,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 2,
+   "number": 2,
+   "name": "オーキクナアレ",
+   "time": "1:05.1",
+   "margin": "クビ",
+   "pos4": 11,
+   "last3f": 37.1,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 5,
+   "number": 5,
+   "name": "バウマイオール",
+   "time": "1:05.4",
+   "margin": "１ １／２",
+   "pos4": 9,
+   "last3f": 38.6,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 8,
+   "number": 11,
+   "name": "エリオラ",
+   "time": "-",
+   "margin": "除外",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
