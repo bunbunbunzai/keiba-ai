@@ -1,6 +1,6 @@
 {
  "date": "20261110",
- "updated": "2026-11-10 14:51",
+ "updated": "2026-11-10 14:56",
  "bias": {
   "盛岡ダ": {
    "judgement": "内先行",
@@ -25,12 +25,24 @@
     1,
     2,
     3,
-    4
+    4,
+    5
    ],
-   "front_share": 0.62,
+   "front_share": 0.7,
    "inner_share": 0.5,
    "outer_share": 0.5,
-   "horses": 8
+   "horses": 10
+  },
+  "門別ダ": {
+   "judgement": "内先行",
+   "confidence": "弱",
+   "races": [
+    1
+   ],
+   "front_share": 1.0,
+   "inner_share": 0.5,
+   "outer_share": 0.0,
+   "horses": 2
   }
  }
 }
