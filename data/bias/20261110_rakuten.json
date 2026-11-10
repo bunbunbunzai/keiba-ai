@@ -1,5 +1,18 @@
 {
  "date": "20261110",
- "updated": "2026-11-10 11:47",
- "bias": {}
+ "updated": "2026-11-10 12:24",
+ "bias": {
+  "盛岡ダ": {
+   "judgement": "フラット",
+   "confidence": "弱",
+   "races": [
+    1,
+    2
+   ],
+   "front_share": 0.5,
+   "inner_share": 0.5,
+   "outer_share": 0.25,
+   "horses": 4
+  }
+ }
 }
