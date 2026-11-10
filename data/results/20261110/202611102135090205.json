@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261110",
  "race_id": "202611102135090205",
- "tries": 2,
+ "tries": 6,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 12,
+   "name": "コパノオーランド",
+   "time": "1:32.7",
+   "margin": "",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 6,
+   "name": "サンクリュウ",
+   "time": "1:33.0",
+   "margin": "１ １／２",
+   "pos4": 5,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 7,
+   "name": "カレンメラメーラ",
+   "time": "1:33.5",
+   "margin": "２ １／２",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 8,
+   "name": "エクラドット",
+   "time": "1:34.0",
+   "margin": "２ １／２",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 1,
+   "number": 1,
+   "name": "ドナソラーレ",
+   "time": "1:34.2",
+   "margin": "１",
+   "pos4": 9,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 11,
+   "name": "サトノフレア",
+   "time": "1:34.5",
+   "margin": "１ １／２",
+   "pos4": 6,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 2,
+   "number": 2,
+   "name": "パンツオンリー",
+   "time": "1:34.7",
+   "margin": "１",
+   "pos4": 7,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 9,
+   "name": "スタークイック",
+   "time": "1:35.1",
+   "margin": "２",
+   "pos4": 10,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 3,
+   "number": 3,
+   "name": "ファインティアラ",
+   "time": "1:35.2",
+   "margin": "３／４",
+   "pos4": 4,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 4,
+   "number": 4,
+   "name": "シナノフラッシュ",
+   "time": "1:35.7",
+   "margin": "２ １／２",
+   "pos4": 8,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 5,
+   "number": 5,
+   "name": "キイチマイルス",
+   "time": "1:36.4",
+   "margin": "３",
+   "pos4": 12,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 7,
+   "number": 10,
+   "name": "トルーカ",
+   "time": "1:37.0",
+   "margin": "３",
+   "pos4": 11,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
