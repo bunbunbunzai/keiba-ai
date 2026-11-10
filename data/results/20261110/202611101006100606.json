@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261110",
  "race_id": "202611101006100606",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -77,7 +77,7 @@
    "name": "タカマキシックス",
    "time": "1:00.1",
    "margin": "",
-   "pos4": null,
+   "pos4": 1,
    "last3f": null,
    "popularity": null
   },
@@ -88,7 +88,7 @@
    "name": "スターライトテール",
    "time": "1:00.3",
    "margin": "１ １／４",
-   "pos4": null,
+   "pos4": 7,
    "last3f": null,
    "popularity": null
   },
@@ -99,7 +99,7 @@
    "name": "コスモレンブランサ",
    "time": "1:00.6",
    "margin": "１ ３／４",
-   "pos4": null,
+   "pos4": 2,
    "last3f": null,
    "popularity": null
   },
@@ -110,7 +110,7 @@
    "name": "インテンシーヴォ",
    "time": "1:00.6",
    "margin": "アタマ",
-   "pos4": null,
+   "pos4": 3,
    "last3f": null,
    "popularity": null
   },
@@ -121,7 +121,7 @@
    "name": "モリオン",
    "time": "1:01.5",
    "margin": "６",
-   "pos4": null,
+   "pos4": 11,
    "last3f": null,
    "popularity": null
   },
@@ -132,7 +132,7 @@
    "name": "アミラジオネ",
    "time": "1:01.7",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 5,
    "last3f": null,
    "popularity": null
   },
@@ -143,7 +143,7 @@
    "name": "アグリオ",
    "time": "1:01.8",
    "margin": "１／２",
-   "pos4": null,
+   "pos4": 9,
    "last3f": null,
    "popularity": null
   },
@@ -154,7 +154,7 @@
    "name": "ポケットフルコイン",
    "time": "1:01.8",
    "margin": "ハナ",
-   "pos4": null,
+   "pos4": 8,
    "last3f": null,
    "popularity": null
   },
@@ -165,7 +165,7 @@
    "name": "ダークファンタジー",
    "time": "1:02.1",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 4,
    "last3f": null,
    "popularity": null
   },
@@ -176,7 +176,7 @@
    "name": "キタノルシール",
    "time": "1:02.4",
    "margin": "２",
-   "pos4": null,
+   "pos4": 5,
    "last3f": null,
    "popularity": null
   },
@@ -187,7 +187,7 @@
    "name": "ネコニコタツ",
    "time": "1:03.3",
    "margin": "６",
-   "pos4": null,
+   "pos4": 9,
    "last3f": null,
    "popularity": null
   }
