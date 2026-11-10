@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261110",
  "race_id": "202611102218140109",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "グリグリグリュック",
    "time": "1:36.9",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 39.3,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "リュウノアスラーム",
    "time": "1:37.4",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 39.9,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ハイエストポイント",
    "time": "1:37.6",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 39.7,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "キャンドルベリー",
    "time": "1:37.7",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 39.8,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "ナインパワー",
    "time": "1:37.7",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 39.3,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ミンナデガンバル",
    "time": "1:37.9",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 39.5,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "エクセルゴールド",
    "time": "1:38.2",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 40.3,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ワーキングアセット",
    "time": "1:38.4",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 39.6,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "タルバン",
    "time": "1:39.6",
    "margin": "６",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 41.2,
    "popularity": null
   }
  ]
