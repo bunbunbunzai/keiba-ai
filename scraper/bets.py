@@ -1,21 +1,23 @@
 """買い目をオッズから組む（PREDICT.md「買い目の型」をプログラムにしたもの）。
 
-印と自信度はAIが決め、買い目はこのスクリプトが決める。
-- ◎の単複（1点）：◎が1〜2番人気または単勝3.9倍以下 → 複勝、3〜5番人気（4.0〜9.9倍）→ 単勝、6番人気以下 → なし。
+印と自信度はAIの評価点とオッズから決め（blend.py）、買い目はこのスクリプトが決める。
+
+2026-11-11から：買い目は◎の単複1点だけ。
+- ◎が1〜2番人気または単勝3.9倍以下 → 複勝、3〜5番人気（4.0〜9.9倍）→ 単勝、6番人気以下 → 買わない。
   オッズが無ければ複勝。
-- 3連複フォーメーション（◎→〇▲→印全部）は自信度Aのレースだけ。オッズを見て、
-  当たっても購入額の合計を下回る組み合わせ（トリガミ）を外す。外すと購入額が減るので、残りがすべて
-  購入額以上になるまで繰り返す。2点以上残ったら買う。3連複を買うときは複勝は買わない
-  （◎が3着以内に来ても3連複が外れると、複勝だけでは購入額を取り戻せないため）。
+- 3連複はやめた。11/1〜11/10の全レースで、3連複フォーメーションの回収率は自信度Aでも約73%で、
+  ◎の単複（約83%）を下回った。3連複を足すほど全体の回収率が下がっていた。
+
+11/8〜11/10の型（自信度Aだけ3連複フォーメーション。トリガミの組み合わせを外し、複勝なし）は、
+戦略別回収率で比べ続けるため build(..., with_trio=True) で再現できるようにしてある。
 - 3連複のオッズは、発表オッズ（data/odds/<日付>/<race_id>.json）があればそれを、無ければ単勝オッズからの推定を使う。
   推定はハーヴィル法（各馬の勝つ確率を単勝オッズから求め、3頭が3着以内に入る確率を順番の全パターンで足す）で、
   過去503レースの実際の3連複配当で較正した（実際の配当は素の推定の約0.59倍。順位の相関0.71）。
-  低い組み合わせでは推定は発表オッズの約半分に出る（=トリガミ判定では安全側）。
-  発表オッズを使うときは、締め切りまでの下落を見込んで8割の値で判定する（表示は発表オッズのまま）。
+  発表オッズを使うときは、締め切りまでの下落を見込んで8割の値で判定する。
 
-  python bets.py --date 20261108                # 結果を表示するだけ
-  python bets.py --date 20261108 --write        # 予想ファイルの bets を書き換える（発走20分前を過ぎたレースは触らない）
-  python bets.py --date 20261108 --race jra_20261108_東京_11 --write
+  python bets.py --date 20261111                # 結果を表示するだけ
+  python bets.py --date 20261111 --write        # 予想ファイルの bets を書き換える（発走20分前を過ぎたレースは触らない）
+  python bets.py --date 20261111 --race jra_20261111_東京_11 --write
 """
 from __future__ import annotations
 
@@ -129,8 +131,8 @@ def formation(pred: dict, scratched: set[int]) -> list[tuple[int, int, int]]:
     return sorted({tuple(sorted((hon, a, b))) for a in second for b in third if a != b})
 
 
-def build(pred: dict, race: dict, trio: dict | None = None) -> tuple[list[dict], str]:
-    """(買い目, 読者向けの一言) を返す。"""
+def build(pred: dict, race: dict, trio: dict | None = None, with_trio: bool = False) -> tuple[list[dict], str]:
+    """(買い目, 読者向けの一言) を返す。with_trio=True は11/8〜11/10の型（比較用）。"""
     if pred.get("confidence") == "見送り":
         return [], ""
     hon = _int_list((pred.get("marks") or {}).get("◎"))
@@ -140,6 +142,10 @@ def build(pred: dict, race: dict, trio: dict | None = None) -> tuple[list[dict],
     od = win_odds(race)
     ready = odds_ready(race, od)
     tp = tanpuku(hon, od if ready else {})
+    if not with_trio:
+        if not tp:
+            return [], "◎が6番人気以下（単勝10倍以上）のため、買い目なし（印だけ）"
+        return tp, ""
     if pred.get("confidence") != "A":
         return tp, ""
     real = (trio or {}).get("3連複") or {}
@@ -225,8 +231,13 @@ def apply(date: str, race_ids: list[str] | None = None, write: bool = False, for
             continue
         pred["bets"], pred["bet_note"] = bets, note
         if not same and old:
-            ups = pred.setdefault("updates", [])
-            ups.append({"at": now.strftime("%m/%d %H:%M"), "text": reason or "オッズを見て買い目を組み直した（当たっても購入額を下回る3連複の組み合わせを外す）"})
+            horses_old = {c for b in old for c in str(b.get("combo")).split("-")}
+            hon_changed = bool(bets) and str(bets[0]["combo"]) not in horses_old
+            text = reason or ("" if hon_changed else  # ◎が替わったときは blend.py が書いた更新履歴で足りる
+                              "オッズの変化で◎の人気が変わったため、単勝と複勝を切り替えた" if bets
+                              else "◎が6番人気以下になったため、買い目を外した")
+            if text:
+                pred.setdefault("updates", []).append({"at": now.strftime("%m/%d %H:%M"), "text": text})
         f.write_text(json.dumps(pred, ensure_ascii=False, indent=2), encoding="utf-8")
         if not same:
             changed.append(rid)
@@ -239,8 +250,9 @@ def main() -> None:
     ap.add_argument("--race", action="append", default=[])
     ap.add_argument("--write", action="store_true")
     ap.add_argument("--force", action="store_true", help="発走20分前を過ぎたレースも書き換える（検証用）")
+    ap.add_argument("--reason", default="", help="買い目を変えたときに更新履歴へ書く理由")
     a = ap.parse_args()
-    ch = apply(a.date, a.race or None, a.write, a.force)
+    ch = apply(a.date, a.race or None, a.write, a.force, a.reason)
     print(f"bets: {len(ch)} races changed" + (" (written)" if a.write else " (dry run)"))
 
 

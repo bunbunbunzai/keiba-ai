@@ -177,11 +177,12 @@ def make(date: str, pred: dict, race: dict, slug: str, name: str, grade: str) ->
             f"単勝は予想を出した時点のオッズ。判定は、AIの見積もった勝つ確率と単勝オッズを掛けた値が1.2以上なら「妙味あり」（人気の割に勝ち目がある）、0.8未満なら「過剰人気」（人気ほどの勝ち目はない）。\n\n"
             f"**◎{hon} {hon_name}の根拠。** {j.get('honmei', '')}\n\n"
             f"## 展開予想\n\n{j.get('tenkai', '')}\n\n## 相手の選び方\n\n{j.get('aite', '')}\n\n## 人気との比較\n\n{j.get('ninki', '')}\n\n"
-            f"## 買い目（各100円）\n\n{bets_text(pred)}\n\n" + ("買い目はAIの裁量ではなく型で決めている（◎の単勝か複勝1点、自信度Aのときは3連複フォーメーション◎→〇▲→印全部から、オッズを見て当たっても購入額を下回る組み合わせを外したもの）。型の理由は[3連複フォーメーションのコラム](/column/sanrenpuku-formation/)と[トリガミのコラム](/column/torigami/)へ。\n\n" if date >= "20261108"
+            f"## 買い目（各100円）\n\n{bets_text(pred)}\n\n" + ("買い目はAIの裁量ではなく型で決めている：◎の単勝か複勝の1点だけ（1〜2番人気は複勝、3〜5番人気は単勝、6番人気以下は買わない）。3連複をやめた理由は[3連複フォーメーションのコラム](/column/sanrenpuku-formation/)へ。\n\n" if date >= "20261111"
+             else "買い目はAIの裁量ではなく型で決めている（◎の単勝か複勝1点、自信度Aのときは3連複フォーメーション◎→〇▲→印全部から、オッズを見て当たっても購入額を下回る組み合わせを外したもの）。型の理由は[3連複フォーメーションのコラム](/column/sanrenpuku-formation/)と[トリガミのコラム](/column/torigami/)へ。\n\n" if date >= "20261108"
              else "買い目はAIの裁量ではなく型で決めている（◎の単勝か複勝1点＋自信度Aのときだけ3連複フォーメーション◎→〇▲→印全部）。型の理由は[3連複フォーメーションのコラム](/column/sanrenpuku-formation/)と[単勝と複勝のコラム](/column/tansho-fukusho/)へ。\n\n" if date >= "20261107"
              else "買い目はAIの裁量ではなく型で決めている（◎の単勝か複勝1点＋3連複フォーメーション◎→〇▲→印全部）。型の理由は[3連複フォーメーションのコラム](/column/sanrenpuku-formation/)と[単勝と複勝のコラム](/column/tansho-fukusho/)へ。\n\n" if date >= "20261102" else "") +
             f"## 外れるとしたら\n\n{j.get('chui', '')}\n\n## 全頭診断\n\n{all_table(pred, race)}\n\n"
-            f"評価点は能力（×3）・条件適性（×2）・展開利（×2）・状態（×1）・人的要素（×1）の45点満点。予想は当日にオッズ・馬体重・馬場の傾向を見て見直すことがあり、変更はレースページの更新履歴に残す。\n\n"
+            + ("評価点は能力（×4）・騎手や厩舎などの人的要素（×2）・条件適性（×1）・展開利（×1）・状態（×1）の45点満点。" if date >= "20261110" else "評価点は能力（×3）・条件適性（×2）・展開利（×2）・状態（×1）・人的要素（×1）の45点満点。") + f"予想は当日にオッズ・馬体重・馬場の傾向を見て見直すことがあり、変更はレースページの更新履歴に残す。\n\n"
             f"> 馬券は20歳から購入できる。予想は的中や利益を保証するものではない。")
     meta = {"title": title, "description": str(j.get("description", "")).replace("\n", " "), "lead": str(j.get("lead", "")).replace("\n", " "),
             "date": f"{dt.year}-{dt.month:02d}-{dt.day:02d}", "draft": "false", "order": 0, "auto": "true", "race_id": pred["race_id"], "race_date": date}

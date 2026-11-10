@@ -112,19 +112,19 @@ class Interleaver:
         self.last = time.monotonic()
 
 
-BET_WINDOW = (22, 90)   # 発走の90〜22分前の自信度Aのレースは、オッズを取り直して買い目を組み直す
-ODDS_MAX_AGE = 20       # 発表オッズは20分たったら取り直す
+BET_WINDOW = (22, 90)   # 発走の90〜22分前のレースは、オッズを見て◎・自信度・買い目（単勝か複勝か）を決め直す
+ODDS_MAX_AGE = 20       # 地方の単勝オッズは20分たったら取り直す
 _card_fetched: dict[str, float] = {}
 
 
 def refresh_bets(date: str) -> bool:
-    """発走が近いレースについて、自信度Aは3連複の発表オッズ（中央）・単勝オッズ（地方）を取り直し、
-    blend.py で◎と自信度を、bets.py で買い目を組み直す。書き換えたら True。"""
+    """発走が近いレースについて、地方は単勝オッズを取り直し（中央は日中の取得で足りる）、
+    blend.py で◎と自信度を、bets.py で買い目を組み直す。書き換えたら True。
+    （3連複の発表オッズの取得は、11/11に3連複をやめたので行わない）"""
     import bets as BT
-    import combo_odds as CO
 
     t = now()
-    jra_ids, local_ids, all_ids = [], [], []
+    local_ids, all_ids = [], []
     for f in sorted((ROOT / "predictions" / date).glob("*.json")):
         try:
             p = json.loads(f.read_text(encoding="utf-8"))
@@ -138,22 +138,10 @@ def refresh_bets(date: str) -> bool:
         if post is None or not (BET_WINDOW[0] < (post - t).total_seconds() / 60 <= BET_WINDOW[1]):
             continue
         all_ids.append(rid)
-        if rid.startswith("jra_"):
-            if p.get("confidence") != "A":
-                continue  # 中央の単勝オッズは日中の取得で足りる。3連複オッズの取り直しは自信度Aだけ
-            tr = BT.load_trio(date, rid)
-            age = (t - datetime.fromisoformat(tr["fetched_ts"])).total_seconds() / 60 if tr and tr.get("fetched_ts") else 1e9
-            if age > ODDS_MAX_AGE:
-                jra_ids.append(rid)
-        elif time.monotonic() - _card_fetched.get(rid, -1e9) > ODDS_MAX_AGE * 60:
+        if not rid.startswith("jra_") and time.monotonic() - _card_fetched.get(rid, -1e9) > ODDS_MAX_AGE * 60:
             local_ids.append(rid)  # 地方は全レース：◎と自信度が単勝オッズで決まるので、発走前のオッズで決め直す
     if not all_ids:
         return False
-    if jra_ids:
-        try:
-            CO.jra(date, jra_ids)
-        except Exception as e:  # noqa: BLE001
-            print("combo_odds error:", e)
     if local_ids and not daily_running():
         try:  # 地方は出馬表を取り直して単勝オッズを新しくする（楽天の60秒間隔を守る）
             import rakuten
@@ -196,6 +184,12 @@ def cycle(date: str) -> None:
         touched = refresh_bets(date)
     except Exception as e:  # noqa: BLE001
         print("refresh_bets error:", e)
+    try:  # 一変候補（実験）の記録：オッズが動くと「人気薄」の判定が変わるので、発走前のレースだけ更新する
+        import ippen
+
+        ippen.record(date)
+    except Exception as e:  # noqa: BLE001
+        print("ippen error:", e)
     after = flush(date, before)
     if touched and after == before:  # 結果が増えていなくても、買い目を変えたら push する
         push(date, after)

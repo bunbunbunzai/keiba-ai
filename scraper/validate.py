@@ -75,7 +75,7 @@ def check_blend(pred: dict, race: dict | None, date: str) -> list[str]:
 
 
 def check_bets(pred: dict, race: dict | None, date: str) -> list[str]:
-    """買い目が bets.py の組み方（オッズを見てトリガミの組み合わせを外す）と同じか。発走20分前を過ぎたレースは見ない。"""
+    """買い目が bets.py の組み方（11/11から◎の単複1点）と同じか。発走20分前を過ぎたレースは見ない。"""
     if not race:
         return []
     from datetime import datetime, timedelta

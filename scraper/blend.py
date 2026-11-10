@@ -7,6 +7,8 @@ AIは全頭の評価点・想定勝率・短評・印（AI自身の見立て）�
 2. ◎を補正勝率1位の馬にする。AIの◎と違うときは、AIの◎を〇にし、印を順に送る（総数は変えない）。
 3. 自信度を◎の補正勝率で決める：A 50%以上／B 35〜49%／C 35%未満（見送りはAIの判断のまま）。
 4. 各馬に adj_pct（補正勝率%）を入れ、AIが書いた印・自信度と評価点1位は blend に残す（サイトに「AIの評価点1位」として出す）。
+5. 計算に使った単勝オッズを blend.odds に、その時刻を blend.odds_at に残す（2026-11-11から。確定オッズとの差を odds_drift.py で測る）。
+   発走20分前を過ぎると書き換えないので、残るのは「買い目を決めた時点のオッズ」になる。
 
 過去の検証（日付で分けて、学習に使っていないレースで計算）：◎の勝率28.4%→36.2%、3着内率60.7%→66.4%、
 同じ買い目の型で回収率73.3%→79.9%（95%区間64〜100、差は誤差の範囲）。
@@ -37,6 +39,12 @@ def _num(x):
         return float(x)
     except (TypeError, ValueError):
         return None
+
+
+def odds_used(race: dict) -> dict[str, float]:
+    """補正勝率の計算に使った単勝オッズ（記録用。オッズがそろっていなければ空）。"""
+    od = BT.win_odds(race)
+    return {str(n): o for n, o in sorted(od.items())} if BT.odds_ready(race, od) else {}
 
 
 def probs(pred: dict, race: dict) -> tuple[dict[int, float], str]:
@@ -129,6 +137,11 @@ def blend(pred: dict, race: dict) -> dict | None:
                    for h in pred.get("horses") or []]
     q["blend"] = {"kind": kind, "ai_marks": ai_marks, "ai_confidence": ai_conf, "ai_top": top_score,
                   "marks": marks, "honmei_pct": round(100 * pr[new], 1)}
+    od = odds_used(race)
+    if od:  # 予想に使った単勝オッズを残す（確定オッズとの差を測るため。odds_at は apply() が入れる）
+        q["blend"]["odds"] = od
+        if old_blend.get("odds") == od and old_blend.get("odds_at"):
+            q["blend"]["odds_at"] = old_blend["odds_at"]
     return q
 
 
@@ -160,6 +173,8 @@ def apply(date: str, race_ids: list[str] | None = None, write: bool = False, for
         if pred.get("blend") and old_hon is not None and int(old_hon) != int(new_hon):
             q.setdefault("updates", []).append({"at": now.strftime("%m/%d %H:%M"),
                                                 "text": f"オッズの変化で補正勝率の1位が変わったため、本命を{old_hon}番から{new_hon}番に替えた"})
+        if q["blend"].get("odds") and not q["blend"].get("odds_at"):
+            q["blend"]["odds_at"] = now.strftime("%m/%d %H:%M")
         if json.dumps(q, ensure_ascii=False, sort_keys=True) != json.dumps(pred, ensure_ascii=False, sort_keys=True):
             f.write_text(json.dumps(q, ensure_ascii=False, indent=2), encoding="utf-8")
             if diff:

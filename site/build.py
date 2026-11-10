@@ -28,6 +28,7 @@ import strategy
 import review
 import horses
 import monthly
+import ippen as IPPEN  # scraper/（strategy が sys.path に入れる）
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "_site"
@@ -80,6 +81,7 @@ def aff_rakuten(kind: str = "race") -> str:
     return (f"<div class='aff affbox'><span class='pr'>PR</span><p>地方競馬の馬券をネットで買うなら{a}。全15場（ばんえい含む）に対応し、登録無料。楽天銀行なら入出金が即時で、購入額に応じて楽天ポイントが貯まる。</p>"
             f"<a href='{AFF_RAKUTEN.format(id=70)}' target='_blank' rel='nofollow sponsored noopener' data-aff='rakuten-keiba-banner'><img src='{AFF_RAKUTEN_IMG.format(id=70)}' alt='楽天競馬' width='728' height='90' loading='lazy'></a></div>")
 STATS_FROM = "20261026"  # 自動運用を始めた日。これより前（試運転）は成績に含めない
+GENSEN_FROM = "20261111"  # 厳選レース（自信度A・◎の単複1点）の成績を数え始めた日
 VENUE_SLUG = {
     "札幌": "sapporo", "函館": "hakodate", "福島": "fukushima", "新潟": "niigata", "東京": "tokyo",
     "中山": "nakayama", "中京": "chukyo", "京都": "kyoto", "阪神": "hanshin", "小倉": "kokura",
@@ -187,13 +189,15 @@ GLOSSARY = [
     ("winpct", "想定勝率", "AIがその馬が勝つと見積もった確率（%）。評価点の上位6頭程度に付け、合計は100%以内。オッズを見ないAIの見立てで、妙味の計算に使う。"),
     ("adjpct", "補正勝率", "単勝オッズ（世の中の評価）とAIの評価点を合わせて計算した、その馬が勝つ確率（%）。過去のレースでは、オッズだけ・AIだけのどちらよりも着順をよく当てていた。本命（◎）は補正勝率1位の馬、自信度は◎の補正勝率で決まる（Aは50%以上）。"),
     ("value", "妙味・期待値", "想定勝率×単勝オッズ。1.2以上なら「AIの見立てより配当が高い＝狙い目（妙味あり）」、0.8未満なら「人気ほど勝ち目がない＝過剰人気」。"),
-    ("confidence", "自信度", "◎の補正勝率による区分（2026年11月10日から）。A＝50%以上（2回に1回は勝つ見込み）、B＝35〜49%、C＝35%未満。3連複を買うのはAのレースだけ。「見送り」は判断材料（近走のデータ）が足りないレースで、買い目を出さない。"),
+    ("confidence", "自信度", "◎の補正勝率による区分（2026年11月10日から）。A＝50%以上（2回に1回は勝つ見込み）、B＝35〜49%、C＝35%未満。Aのレースは「厳選」として成績を別に出している。「見送り」は判断材料（近走のデータ）が足りないレースで、買い目を出さない。"),
     ("pace", "展開利", "逃げ・先行・差し・追い込みの脚質と、想定ペース・枠順・当日の馬場傾向の組み合わせで、その馬に有利かどうかの見立て。"),
     ("bias", "トラックバイアス", "その日の馬場で、先行馬が残りやすいか、内枠が有利かなどの偏り。その日の午前のレース結果から見極め、傾向がはっきりしているときだけ午後の予想に使う。"),
     ("roi", "回収率", "払戻金の合計÷購入金額の合計×100（%）。100%を超えれば勝ち。このサイトでは、外れたレースも含めて、すべての買い目を1点100円ずつ買ったとして計算している。"),
     ("torigami", "トリガミ", "馬券は当たったが、払戻が買った金額を下回ること。「的中」でも収支はマイナス。"),
-    ("formation", "3連複フォーメーション", "1頭目◎、2頭目〇▲、3頭目は印全部、という組み合わせの3連複。このサイトでは自信度Aのレースだけ買う（2026年11月7日から。11月2日〜6日は全レース）。"),
-    ("tanpuku", "単複の切り替え", "◎の単勝か複勝かを人気で決める方式。1〜2番人気は複勝、3〜5番人気は単勝、6番人気以下は買わない。"),
+    ("formation", "3連複フォーメーション", "1頭目◎、2頭目〇▲、3頭目は印全部、という組み合わせの3連複。このサイトでは11月2日〜10日に買っていたが、11月11日にやめた（平均の回収率は◎の単複と同程度で、ぶれがはるかに大きかった）。"),
+    ("gensen", "厳選レース", "自信度A（◎の補正勝率50%以上）のレース。全体の1割ほどで、成績を別に集計している。買い目は他のレースと同じ◎の単複1点。"),
+    ("ippen", "一変候補", "休み明け・前走で大敗したが以前は好走していた馬・前走で人気を裏切った人気薄など、成績が一変するかもしれない馬。実験として毎日記録しているが、予想や成績には数えていない。"),
+    ("tanpuku", "単複の切り替え", "◎の単勝か複勝かを人気で決める方式。1〜2番人気は複勝、3〜5番人気は単勝、6番人気以下は買わない。2026年11月11日からは、このサイトの買い目はこの1点だけ。"),
 ]
 GLOSSARY_ID = {k: t for k, t, _ in GLOSSARY}
 
@@ -298,7 +302,7 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False
 <p>出走表や結果など正式な情報は、各主催者の発表をご確認ください。成績は、すべての買い目を1点100円ずつ買ったとして計算しています。</p>
 <p class="support">このサイトは個人が運営しています。サーバー代やX投稿のAPI代の支援は <a href="{OFUSE_URL}" target="_blank" rel="noopener">OFUSE（投げ銭・ファンレター）</a> から。支援の有無で予想の内容や公開範囲は変わりません。</p>
 <p class="sns">重賞の予想と大きな的中は <a href="{X_URL}" target="_blank" rel="noopener me">X（@zentou_log）</a> でも配信中</p>
-<p class="sitemap-links"><a href="/graded/">重賞</a>　<a href="/review/">重賞回顧</a>　<a href="/monthly/">月次レポート</a>　<a href="/strategy/">買い方別の回収率</a>　<a href="/course/">コース別</a>　<a href="/jockey/">騎手別</a>　<a href="/horse/">馬別</a>　<a href="/column/">コラム</a>　<a href="/glossary/">用語集</a>　<a href="/limits/">AI予想の限界</a>　<a href="/changelog/">更新履歴</a></p>
+<p class="sitemap-links"><a href="/graded/">重賞</a>　<a href="/review/">重賞回顧</a>　<a href="/monthly/">月次レポート</a>　<a href="/strategy/">買い方別の回収率</a>　<a href="/ippen/">一変候補（実験）</a>　<a href="/course/">コース別</a>　<a href="/jockey/">騎手別</a>　<a href="/horse/">馬別</a>　<a href="/column/">コラム</a>　<a href="/glossary/">用語集</a>　<a href="/limits/">AI予想の限界</a>　<a href="/changelog/">更新履歴</a></p>
 <p class="prefs"><button type="button" class="theme" data-mode="auto">表示：自動</button></p>
 <p><a href="/operator/">運営者情報</a>　<a href="/privacy/">プライバシーポリシー</a>　<a href="/contact/">お問い合わせ</a></p>
 </footer>
@@ -621,7 +625,7 @@ def ask_context(date: str, p: dict) -> str:
         big = "\n\n【過去の公式レース結果（AIの予想とは無関係。主催者が公開した結果から集計。数が多いので傾向の根拠に向く）】\n" + big
     if hist:
         hist = ("\n\n【このサイトの過去の記録（印ごとの着順・配当・人気・脚質・このサイトの成績）】\n" + hist
-                + "\n（このサイトの買い目は◎の単勝か複勝と、自信度Aのレースだけ3連複フォーメーション（◎→〇▲→印全部）。3連単・馬単は買っていない）")
+                + "\n（このサイトの買い目は、2026年11月11日から◎の単勝か複勝の1点だけ。それまでは自信度Aのレースで3連複フォーメーション（◎→〇▲→印全部）も買っていた。3連単・馬単は買っていない）")
     hist = big + hist
     return ctx[:14000 - len(hist)] + hist
 
@@ -788,6 +792,7 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
 <section class="card"><h2>全頭評価</h2>
 <ul class="hl"><li class="hr hd"><span class="c-no">馬番</span><span class="c-mk">印</span><span class="c-nm">馬名・騎手</span><span class="c-od">単勝</span><span class="c-sc">評価点</span><span class="c-vl">妙味</span><span class="c-fn">着順</span><span class="c-cm">短評</span></li>{''.join(rows)}</ul>
 <p class="meta">{term("score", "評価点")}は45点満点。{term("adjpct", "補正勝率")}は単勝オッズとAIの評価点を合わせた勝つ確率で、◎と自信度はこれで決めている。{term("value", "妙味")}は「AIの{term("winpct", "想定勝率")}×単勝オッズ」（参考）。1.2以上なら配当の割に勝ち目がある狙い目、0.8未満なら人気しすぎ（過剰人気）という目安（オッズは予想を出した時点のもの）。用語は<a href="/glossary/">用語集</a>へ。</p></section>
+{ippen_line(date, p)}
 {f'<section class="card"><h2>更新履歴</h2><ul>{updates}</ul></section>' if updates else ''}
 {graded_link}
 {ask_html}
@@ -974,7 +979,7 @@ def race_item(date: str, p: dict) -> str:
     pt = p["_race"].get("post_time") or ""
     return (f"<li data-conf='{esc(p.get('confidence'))}' data-venue='{esc(venue_of(p))}' data-post='{date}{pt.replace(':', '')}'>"
             f"<a href='{race_path(date, p)}'><span class='rb'>{race_no(p)}R</span>"
-            f"<span class='rinfo'><span class='rname'>{esc(VENUE_NAME.get(venue_of(p), venue_of(p)))} {esc(race_short(p))}{grade_badge(p)}</span>"
+            f"<span class='rinfo'><span class='rname'>{esc(VENUE_NAME.get(venue_of(p), venue_of(p)))} {esc(race_short(p))}{grade_badge(p)}{'<span class=\'gensen\'>厳選</span>' if p.get('confidence') == 'A' and date >= GENSEN_FROM else ''}</span>"
             f"<span class='rsub'>{esc(pt)}{'発走' if pt else ''} {esc(race_cond(p))}</span></span>"
             f"<span class='hon'>{esc(hon_txt)}{odds_txt}</span>"
             f"<span class='conf c{esc(p.get('confidence'))}'>{esc(p.get('confidence'))}</span>{badge}</a></li>")
@@ -988,7 +993,7 @@ def day_stats(preds: list[dict]) -> tuple[int, int]:
 def filters(venues: list[str]) -> str:
     vb = "".join(f"<button data-venue='{esc(v)}'>{esc(VENUE_NAME.get(v, v))}</button>" for v in venues)
     return (f"<div class='filters vtabs' data-kind='venue'><button class='on' data-venue='all'>全場</button>{vb}</div>"
-            "<div class='filters' data-kind='conf'><button class='on' data-conf='all'>全自信度</button><button data-conf='A'>A</button>"
+            "<div class='filters' data-kind='conf'><button class='on' data-conf='all'>全自信度</button><button data-conf='A'>A（厳選）</button>"
             "<button data-conf='B'>B</button><button data-conf='C'>C</button><button data-conf='見送り'>見送り</button></div>")
 
 
@@ -1097,6 +1102,148 @@ def picks_html(date: str, preds: list[dict], today: bool, exclude: str | None = 
             f"<p class='meta'>AIが「当てやすい」と見た3レース。自信度や◎の人気などから選んでいる（配当が高い順ではない）。買い方ごとの回収率は<a href='/strategy/'>買い方別</a>へ。</p></section>")
 
 
+GENSEN: dict = {}
+IPPEN_BY_RACE: dict[tuple[str, str], list[dict]] = {}
+
+
+def ippen_line(date: str, p: dict) -> str:
+    """レースページ：このレースの一変候補（実験・成績に数えない）。"""
+    rows = IPPEN_BY_RACE.get((date, p["race_id"])) or []
+    if not rows:
+        return ""
+    mk = {int(n): m for m, v in (p.get("marks") or {}).items() for n in (v if isinstance(v, list) else [v]) if n is not None}
+    items = "".join(f"<li><b>{r['number']}</b> {esc(r.get('name'))}{('（' + esc(mk[r['number']]) + '）') if r['number'] in mk else ''}："
+                    + "・".join(esc(IPPEN.TYPES[t]) for t in r["types"]) + "</li>" for r in rows)
+    return (f"<section class='card ippen'><h2>{term('ippen', '一変候補')}<small>実験中・予想と成績には使っていない</small></h2><ul>{items}</ul>"
+            f"<p class='meta'>休み明けや前走の大敗など、成績が一変するかもしれない条件に当てはまる馬を毎日記録している。効果があるかは<a href='/ippen/'>一変候補の記録</a>で判定中。</p></section>")
+
+
+def _ippen_table(stats: dict) -> str:
+    def ci(v, lo_hi):
+        return f"{v:.0f}%<small>（{lo_hi[0]:.0f}〜{lo_hi[1]:.0f}）</small>"
+    rows = []
+    for k, label in IPPEN.TYPES.items():
+        st = stats.get(k) or {"n": 0}
+        if not st["n"]:
+            rows.append(f"<tr><td>{esc(label)}</td><td>0</td><td>―</td><td>―</td><td>―</td><td>―</td></tr>")
+            continue
+        rows.append(f"<tr><td>{esc(label)}</td><td>{st['n']}</td><td>{st['win']:.1f}%</td><td>{st['top3']:.1f}%</td>"
+                    f"<td>{ci(st['tan_roi'], st['tan_ci'])}</td><td>{ci(st['fuku_roi'], st['fuku_ci'])}</td></tr>")
+    return ("<div class='scroll'><table><thead><tr><th>条件</th><th>頭数</th><th>勝率</th><th>3着内率</th><th>単勝回収率（95%区間）</th><th>複勝回収率（95%区間）</th></tr></thead>"
+            f"<tbody>{''.join(rows)}</tbody></table></div>")
+
+
+def ippen_page(by_date: dict) -> str:
+    card_dates = sorted(x.name for x in (ROOT / "data" / "races").iterdir() if x.is_dir() and x.name.isdigit())
+    fwd, back = defaultdict(list), defaultdict(list)
+    back_dates = [d for d in card_dates if d < IPPEN.FORWARD_FROM]
+    fwd_dates = [d for d in card_dates if d >= IPPEN.FORWARD_FROM]
+    for d in card_dates:
+        for r in IPPEN.outcomes(d, IPPEN.load(d)):
+            for t in r["types"]:
+                (fwd if d >= IPPEN.FORWARD_FROM else back)[t].append(r)
+    fs = {k: IPPEN.summarize(v) for k, v in fwd.items()}
+    bs = {k: IPPEN.summarize(v) for k, v in back.items()}
+    since = f"{int(IPPEN.FORWARD_FROM[4:6])}月{int(IPPEN.FORWARD_FROM[6:8])}日"
+    left = [f"{IPPEN.TYPES[k].split('（')[0]}はあと{max(0, IPPEN.JUDGE_N - (fs.get(k) or {}).get('n', 0))}頭" for k in IPPEN.TYPES]
+    # 最新日の候補（予想ページがあればリンク）
+    pred_of = {(d, q["race_id"]): q for d, ps in by_date.items() for q in ps}
+    latest = max((d for d in fwd_dates if (ROOT / "data" / "ippen" / f"{d}.json").exists()), default=None)
+    lst = ""
+    if latest:
+        rows = IPPEN.load(latest)
+        by_race = defaultdict(list)
+        for r in rows:
+            by_race[r["race_id"]].append(r)
+        items = []
+        for rid, rs in by_race.items():
+            q = pred_of.get((latest, rid))
+            r0 = rs[0]
+            lab = f"{VENUE_NAME.get(r0.get('venue'), r0.get('venue') or '')} {r0.get('race_no')}R" + (f"（{r0['post_time']}）" if r0.get("post_time") else "")
+            lab_html = f"<a href='{race_path(latest, q)}'>{esc(lab)}</a>" if q else esc(lab)
+            hs = "、".join(f"{r['number']} {esc(r.get('name'))}（" + "・".join(esc(IPPEN.TYPES[t].split('（')[0]) for t in r["types"]) + "）" for r in rs)
+            items.append(f"<li>{lab_html}：{hs}</li>")
+        lst = (f"<section class='card'><h2>{fmt_date(latest)}の一変候補<small>{len(rows)}頭</small></h2>"
+               f"<ul class='ippen-list'>{''.join(items)}</ul><p class='meta'>発走20分前を過ぎたレースの記録は書き換えない。人気薄の判定は発走前の単勝オッズで更新する。</p></section>")
+    back_range = f"{fmt_date(back_dates[0])}〜{fmt_date(back_dates[-1])}" if back_dates else ""
+    body = f"""<p class="crumb"><a href="/">トップ</a> › <a href="/results/">成績</a> › 一変候補（実験）</p>
+<h1>一変候補の記録<small>実験中</small></h1>
+<p class="answer">休み明けや前走の大敗などで人気を落とし、成績が一変するかもしれない馬を、条件を先に決めて{since}から毎日記録している。AIの印・買い目・成績には使っていない。条件ごとに{IPPEN.JUDGE_N}頭たまったら、単勝・複勝の回収率で効果を判定する（判定まで、{esc('、'.join(left))}）。</p>
+<section class="card"><h2>条件</h2><ul>
+<li><b>休み明け（90日超）</b>：前走から90日を超えて間が空いた馬</li>
+<li><b>前走大敗からの巻き返し</b>：前走が下位3分の1の着順（6頭立て以上）だが、その前の4走に上位4分の1以内の好走がある馬</li>
+<li><b>前走で人気を裏切った人気薄</b>：前走1〜3番人気で6着以下に負け、今回は4番人気以下の馬</li></ul>
+<p class="meta">条件は出馬表（近走の成績と単勝オッズ）だけで決まり、レースの結果は使わない。1頭が複数の条件に当てはまることがある。</p></section>
+<section class="card"><h2>{since}からの記録</h2>{_ippen_table(fs)}
+<p class="meta">各100円で単勝・複勝を買った計算。かっこ内は、偶然のぶれを考えた95%の範囲（ブートストラップ法）。範囲の下限が100%を超えた条件だけ、予想に取り入れるかを検討する。</p></section>
+{lst}
+<section class="card"><h2>参考：過去の出馬表に当てはめた場合</h2>{_ippen_table(bs)}
+<p class="meta">{esc(back_range)}の出馬表に同じ条件を当てはめた数字。この期間を見てから実験を決めたので、判定には使わない。</p></section>
+<p class="meta">一変候補は買い目ではない。予想の方法は<a href="/about/">予想の方法</a>、全体の成績は<a href="/results/">成績</a>へ。</p>"""
+    return page(f"一変候補の記録（実験中）：休み明け・前走大敗からの巻き返し | {SITE_NAME}", body, "/ippen/",
+                desc="休み明け・前走大敗からの巻き返し・前走で人気を裏切った人気薄を毎日記録し、単勝・複勝の回収率で効果を検証する実験。AIの予想と成績には使っていない。")
+
+
+def gensen_stats(by_date: dict, led: list[dict]) -> dict:
+    """厳選レース（自信度A）の成績。実績は GENSEN_FROM から、参考は それより前のレースに今の決め方（補正勝率の◎・単複1点）を当てはめたもの。"""
+    act = totals([r for r in led if r["date"] >= GENSEN_FROM and r.get("confidence") == "A"])
+    n = st = rt = top3 = win = 0
+    for d, ps in by_date.items():
+        if not (STATS_FROM <= d < GENSEN_FROM):
+            continue
+        for p in ps:
+            sc, res = scored(p), p.get("_result") or {}
+            if not sc or not sc["stake"] or not res.get("payouts"):
+                continue
+            try:
+                q = strategy._BL.blend(p, p["_race"])
+            except Exception:  # noqa: BLE001
+                q = None
+            if not q or q.get("confidence") != "A":
+                continue
+            bets, _ = strategy._BT.build(q, p["_race"])
+            hon = int(q["marks"]["◎"])
+            fin = next((r.get("finish") for r in res.get("rows") or [] if str(r.get("number")) == str(hon)), None)
+            n += 1
+            st += 100 * len(bets)
+            rt += sum(strategy._pay(res, b["type"], str(b["combo"])) for b in bets)
+            win += str(fin).strip() == "1"
+            top3 += str(fin).strip() in ("1", "2", "3")
+    ref = {"n": n, "roi": roi_txt(st, rt), "win": f"{100 * win / n:.0f}%" if n else "―", "top3": f"{100 * top3 / n:.0f}%" if n else "―"}
+    return {"act": act, "ref": ref}
+
+
+def gensen_line() -> str:
+    """厳選レースの累計成績の1〜2文。"""
+    if not GENSEN:
+        return ""
+    a, r = GENSEN["act"], GENSEN["ref"]
+    since = f"{int(GENSEN_FROM[4:6])}月{int(GENSEN_FROM[6:8])}日"
+    act = (f"{since}からの実績は{a['n']}レース・回収率{a['roi']}・的中率{a['hit']}・◎の3着内率{a['top3']}。" if a["n"]
+           else f"{since}から集計を始めた（結果が出たレースはまだ無い）。")
+    ref = (f"参考：それより前の{r['n']}レースに今の決め方を当てはめると、◎の3着内率{r['top3']}・回収率{r['roi']}"
+           "（補正勝率の計算式を作った期間と重なるため、実際より良く出やすい）。" if r["n"] else "")
+    return act + ref
+
+
+def gensen_day(date: str, preds: list[dict]) -> str:
+    """その日の厳選レース（自信度A）の一覧。"""
+    if date < GENSEN_FROM:
+        return ""
+    a = [p for p in preds if p.get("confidence") == "A"]
+    when = "今日" if date == TODAY else "この日"
+    head = f"<h2>{when}の厳選レース<small>自信度A・{len(a)}レース</small></h2>"
+    act = GENSEN.get("act") or {}
+    rec = (f"{int(GENSEN_FROM[4:6])}月{int(GENSEN_FROM[6:8])}日からの実績は{act['n']}レース・回収率{act['roi']}・◎の3着内率{act['top3']}。"
+           if act.get("n") else "")
+    expl = (f"<p class='meta'>◎の{term('adjpct', '補正勝率')}が50%以上のレース。買い目は他と同じ◎の単勝か複勝1点。"
+            f"{esc(rec)}<a href='/results/#gensen'>厳選レースの成績</a></p>")
+    if not a:
+        return f"<section class='card gensen-box'>{head}<p>{when}は◎の補正勝率が50%に届くレースが無い。</p>{expl}</section>"
+    return (f"<section class='card gensen-box'>{head}<ul class='races rlist'>"
+            + "".join(race_item(date, p) for p in a) + f"</ul>{expl}</section>")
+
+
 def day_list(date: str, preds: list[dict]) -> str:
     venues = sorted({venue_of(p) for p in preds})
     today = date == TODAY
@@ -1110,7 +1257,7 @@ def day_list(date: str, preds: list[dict]) -> str:
     if len(gl) >= 2:
         glist = ("<section class='card'><h2>{}の重賞</h2><ul class='races rlist'>".format("今日" if today else "この日")
                  + "".join(race_item(date, p) for p in sorted(gl, key=lambda q: q["_race"].get("post_time") or "")) + "</ul></section>")
-    return (stale + tmr + date_tabs(date) + h + scoreboard(date, preds) + glist + picks_html(date, preds, today, hid) + filters(venues)
+    return (stale + tmr + date_tabs(date) + h + scoreboard(date, preds) + gensen_day(date, preds) + glist + picks_html(date, preds, today, hid) + filters(venues)
             + (f"<p class='jump'><a href='#next' class='to-next'>次の発走へ ↓</a><button class='toggle-gone'>発走済みを表示</button></p>" if today else "")
             + "<ul class='races rlist'>" + "".join(race_item(date, p) for p in preds) + "</ul>")
 
@@ -1149,6 +1296,17 @@ def totals(rows) -> dict:
             "hit": f"{100 * sum(int(r['return']) > 0 for r in rows) / n:.1f}%" if n else "―"}
 
 
+def gensen_table() -> str:
+    if not GENSEN:
+        return ""
+    a, r = GENSEN["act"], GENSEN["ref"]
+    since = f"{int(GENSEN_FROM[4:6])}/{int(GENSEN_FROM[6:8])}〜"
+    rows = (f"<tr><td>実績（{since}）</td><td>{a['n']}</td><td>{a['roi'] if a['n'] else '―'}</td><td>{a['hit']}</td><td>{a['win']}</td><td>{a['top3']}</td></tr>"
+            f"<tr><td>参考（{since[:-1]}より前に当てはめ）</td><td>{r['n']}</td><td>{r['roi']}</td><td>―</td><td>{r['win']}</td><td>{r['top3']}</td></tr>")
+    return ("<div class='scroll'><table><thead><tr><th>期間</th><th>レース</th><th>回収率</th><th>的中率</th><th>◎の勝率</th><th>◎の3着内率</th></tr></thead>"
+            f"<tbody>{rows}</tbody></table></div>")
+
+
 def results_page(rows: list[dict], venue_of_race: dict) -> str:
     by_day = defaultdict(list)
     for r in rows:
@@ -1184,12 +1342,14 @@ def results_page(rows: list[dict], venue_of_race: dict) -> str:
 <div class="kpis"><div><b>{t['n']}</b><span>予想したレース</span></div><div><b>{t['roi']}</b><span>累計回収率</span></div>
 <div><b>{t['win']}</b><span>◎の勝率</span></div><div><b>{t['top3']}</b><span>◎の3着内率</span></div></div>
 <section class="card"><h2>累計回収率の推移</h2>{svg_line(cum, labels=[md(d) for d in days]) or '<p>2日分以上たまると表示します。</p>'}</section>
-<section class="card"><h2>自信度別</h2><div class="scroll">{table({k: totals(v) for k, v in sorted(conf.items())}, '自信度')}</div></section>
+<section class="card gensen-box" id="gensen"><h2>厳選レース（自信度A）</h2><p>◎の{term('adjpct', '補正勝率')}が50%以上のレースを「厳選」とし、{int(GENSEN_FROM[4:6])}月{int(GENSEN_FROM[6:8])}日から成績を別に出している。買い目は他のレースと同じ◎の単勝か複勝1点。全体の1割ほどのレースに絞った場合の成績が分かる。</p>
+{gensen_table()}<p class="meta">{esc(gensen_line())}</p></section>
+<section class="card"><h2>自信度別</h2><div class="scroll">{table({k: totals(v) for k, v in sorted(conf.items())}, '自信度')}</div><p class="meta">実際に出した買い目の成績。自信度の決め方は11月10日に、買い目の組み方は11月11日に変えたので、上の厳選レースの数字とは対象が違う（11月9日まではAIの想定勝率でA〜Cを決め、11月10日までは自信度Aのレースで3連複も買っていた）。</p></section>
 <section class="card"><h2>場別</h2><div class="scroll">{table({venue_link(k): totals(v) for k, v in sorted(ven.items(), key=lambda kv: -len(kv[1]))}, '場', raw=True)}</div></section>
 <section class="card"><h2>月別</h2><p>{month_sentence}</p><div class="scroll">{table(monthly, '月')}</div></section>
 <section class="card"><h2>券種別</h2>{column.stats(STATS_FROM)[1]["table_bets"]}</section>
 <section class="card"><h2>日別</h2><div class="scroll">{table(daily, '日付')}</div></section>
-<p class="meta">買い方を変えた場合の回収率は<a href="/strategy/">買い方別</a>、コースごとの成績と傾向は<a href="/course/">コース別</a>、騎手ごとは<a href="/jockey/">騎手別</a>、重賞は<a href="/graded/">重賞一覧</a>へ。</p>
+<p class="meta">買い方を変えた場合の回収率は<a href="/strategy/">買い方別</a>、成績に数えない実験は<a href="/ippen/">一変候補の記録</a>、コースごとの成績と傾向は<a href="/course/">コース別</a>、騎手ごとは<a href="/jockey/">騎手別</a>、重賞は<a href="/graded/">重賞一覧</a>へ。</p>
 <p class="meta">毎日の自動予想を始めた2026年10月26日以降のレースが対象。買い目を出さなかった「見送り」のレースは含まない。全予想の記録（CSV）は<a href="/data/results_ledger.csv" download>ダウンロード</a>でき、<a href="{REPO}/blob/main/results_ledger.csv">GitHub</a>でも公開している。</p>"""
     ld = {"@context": "https://schema.org", "@type": "Dataset", "name": f"{SITE_NAME} AI競馬予想 全成績",
           "description": "日本の競馬（JRA・地方）全レースのAI予想と結果・回収率の記録（買い目を1点100円ずつ買った計算）",
@@ -1334,7 +1494,7 @@ ABOUT = f"""<h1>予想の方法</h1>{banner("about")}
 <li>展開利（×2）：想定ペースと脚質、枠順、当日の馬場の傾向</li>
 <li>状態・ローテ（×1）：間隔、休み明け、馬体重</li>
 <li>人的・その他（×1）：騎手、厩舎、斤量、血統</li></ul></section>
-<section class="card"><h2>印・自信度・買い目</h2><p>印は◎（本命）〇（対抗）▲（単穴）△（連下）☆（穴）。2026年11月10日からは、本命（◎）と自信度を「補正勝率」で決めている。補正勝率は、単勝オッズ（世の中の評価）とAIの評価点を合わせて計算した勝つ確率で、過去約740レースではオッズだけ・AIの評価だけのどちらよりも着順をよく当てた。◎は補正勝率1位の馬で、自信度はA（◎の補正勝率50%以上）・B（35〜49%）・C（35%未満）・見送りの4段階。AIが自分の評価だけで選んだ1位（評価点1位）が◎と違うときは、レースページに「AIの評価点1位」として表示している。評価点の配点は、実績で着順を説明していた割合に合わせて、能力を最も重く、次に騎手・厩舎の最近の成績を重く見ている。AIの想定勝率に単勝オッズを掛けた「妙味」は参考として表示している。判断材料が足りないレースは「見送り」にして買い目を出さない。買い目は決まった組み方にしている：◎の単複1点（1〜2番人気は複勝、3〜5番人気は単勝、6番人気以下は買わない）と、自信度Aのレースだけ3連複フォーメーション（◎→〇▲→印全部）。自信度B・Cは◎の単複1点だけ（2026年11月7日から。それまでは全レースで3連複も買っていたが、BとCの3連複が回収率を大きく下げていた）。2026年11月8日からは買い目をオッズを見て組んでいる：3連複は、当たっても購入額の合計を下回る組み合わせ（トリガミ）を外し、3連複を買うときは複勝を買わない。オッズは、中央競馬は発走前に取り直す3連複の発表オッズ、地方競馬と発表前は単勝オッズからの推定（過去の配当で較正した目安）を使い、レースページの買い目の横に表示している。馬連・馬単・3連単・ワイドは使わない。</p></section>
+<section class="card"><h2>印・自信度・買い目</h2><p>印は◎（本命）〇（対抗）▲（単穴）△（連下）☆（穴）。2026年11月10日からは、本命（◎）と自信度を「補正勝率」で決めている。補正勝率は、単勝オッズ（世の中の評価）とAIの評価点を合わせて計算した勝つ確率で、過去約740レースではオッズだけ・AIの評価だけのどちらよりも着順をよく当てた。◎は補正勝率1位の馬で、自信度はA（◎の補正勝率50%以上）・B（35〜49%）・C（35%未満）・見送りの4段階。AIが自分の評価だけで選んだ1位（評価点1位）が◎と違うときは、レースページに「AIの評価点1位」として表示している。評価点の配点は、実績で着順を説明していた割合に合わせて、能力を最も重く、次に騎手・厩舎の最近の成績を重く見ている。AIの想定勝率に単勝オッズを掛けた「妙味」は参考として表示している。判断材料が足りないレースは「見送り」にして買い目を出さない。買い目は◎の単複1点だけ（2026年11月11日から）：1〜2番人気は複勝、3〜5番人気は単勝、6番人気以下は買わない（印だけ）。発走の90〜22分前にオッズを見て決め直すので、単勝と複勝が入れ替わることがある。それまでは自信度Aのレースで3連複フォーメーション（◎→〇▲→印全部）も買っていたが、約800レースで比べると、平均の回収率は◎の単複1点とほぼ同じで、数件の大当たりを除くと単複のほうが13ポイント高かった。自信度Aのレースは「厳選」として成績を別に出している。馬連・馬単・3連単・ワイド・3連複は使わない。</p></section>
 <section class="card"><h2>当たらないこともある</h2><p>回収率は100%を下回っている。どこが弱いか、数字をどう見るかは<a href="/limits/">AI予想の限界と注意点</a>に正直に書いている。</p></section>
 <section class="card support-box"><h2>運営を支援する</h2><p>予想・集計・SNS投稿はすべて自動で動いていますが、サーバー代などの運営費は個人で負担しています。応援してもよいと思ったら、<a href="{OFUSE_URL}" target="_blank" rel="noopener">OFUSE（オフセ）</a>からファンレターと一緒に支援できます（コンビニ・PayPay・クレジットカード対応）。支援の有無で予想の内容や公開範囲は変わりません。</p><p><a class="btn" href="{OFUSE_URL}" target="_blank" rel="noopener">OFUSEで応援する</a></p></section>
 <section class="card"><h2>よくある質問</h2>
@@ -1459,6 +1619,7 @@ SITE_CHANGES = [
     ("2026-10-30", "レースごとの的中・回収率を、確定のたびに更新するようにした。初心者向けコラムの準備。"),
     ("2026-11-01", "サイト名を「競馬全頭ログ」に変更。XとInstagramへの自動投稿（的中・重賞・毎晩の全成績）を開始。コラム4本を公開。買い方別の回収率、週次の重賞回顧、馬別ページを追加。"),
     ("2026-11-02", "買い目の組み方を1つに決めた（◎の単勝か複勝を人気で切り替え＋3連複フォーメーション）。デザインを刷新。挿絵を追加。お問い合わせフォームと支援（OFUSE）の導線を設置。"),
+    ("2026-11-11", "買い目を◎の単勝か複勝の1点だけにし、3連複をやめた。自信度Aのレースを「厳選」として成績を別に表示。成績に数えない実験として「一変候補」の記録を始めた。"),
     ("2026-11-10", "本命（◎）と自信度を、単勝オッズとAIの評価を合わせた「補正勝率」で決めるようにした。AIの評価点1位が◎と違うときはレースページに表示。評価点の配点を見直し、騎手・厩舎の最近の成績を予想の材料に加えた。"),
     ("2026-11-10", "ページの表示を軽くした（画像を軽い形式・画面に合った大きさで配信、文字のフォントを後から読み込む）。本文中のリンクに下線を付け、スマホで押しやすくした。トップの過去の予想の一覧をスマホで読みやすくした。"),
     ("2026-11-08", "買い目をオッズを見て組むようにした。3連複は当たっても購入額を下回る組み合わせ（トリガミ）を外し、3連複を買うときは複勝を買わない。レースページの買い目の横にオッズを表示。"),
@@ -1549,6 +1710,9 @@ main{padding-bottom:24px}
 .marks{display:flex;flex-wrap:wrap;gap:6px 28px;margin:4px 0 6px}.marks .m{display:flex;align-items:baseline;gap:8px;padding:2px 0}
 .marks b{font-size:28px;color:var(--acc);line-height:1}.marks span{font-weight:700;font-size:18px}.marks .m:first-child span{font-size:20px}.subs{color:var(--mut);margin:0 0 8px}
 .conf{display:inline-block;min-width:26px;text-align:center;border-radius:2px;font-size:12px;font-weight:700;padding:0 6px;border:1px solid var(--line);line-height:20px;vertical-align:middle}
+.gensen{display:inline-block;font-size:11px;font-weight:700;color:var(--acc);border:1px solid var(--acc);border-radius:2px;padding:0 4px;margin-left:6px;line-height:16px;vertical-align:1px;font-family:inherit}
+.card h2 small{font-size:13px;color:var(--mut);margin-left:8px;font-weight:400;font-family:"BIZ UDPGothic",sans-serif}.ippen ul{margin:4px 0;padding-left:1.2em}.ippen-list li{margin:4px 0}
+.gensen-box{border-left:3px solid var(--acc)}
 .cA{background:var(--acc);color:#fff;border-color:var(--acc)}.cB{color:var(--acc);border-color:var(--acc)}.cC{color:var(--mut)}.c見送り{color:var(--mut);border-style:dashed}
 .bets{display:flex;flex-wrap:wrap;gap:6px 8px;list-style:none;padding:0;margin:6px 0}.bets li{border:1px solid var(--line);background:var(--panel);border-radius:2px;padding:2px 9px;font-size:14px}.bets li.won{background:var(--hit-soft);border-color:var(--hit);color:var(--hit);font-weight:700}
 /* 一覧：出馬表のような罫線の行 */
@@ -1817,6 +1981,12 @@ def build() -> None:
     by_date = {}
     for d in dates:
         by_date[d] = predictions(d)
+    GENSEN.clear(); GENSEN.update(gensen_stats(by_date, ledger()))
+    IPPEN_BY_RACE.clear()
+    for d in dates:
+        if d >= IPPEN.FORWARD_FROM:
+            for r in IPPEN.load(d):
+                IPPEN_BY_RACE.setdefault((d, r["race_id"]), []).append(r)
     global MARK_STATS
     MARK_STATS = build_mark_stats(by_date)
     global HIST_STATS
@@ -1893,6 +2063,7 @@ def build() -> None:
                     head_extra="".join(jsonld(x) for x in site_ld),
                     og_image=f"/og/{main_d}/day.jpg" if main_d and (OUT / "og" / main_d / "day.jpg").exists() else "/og/default.jpg"))
     write("/results/", results_page(led, venue_of_race))
+    write("/ippen/", ippen_page(by_date))
     # 戦略別回収率
     sg = strategy.collect(by_date, STATS_FROM)
     s_body, s_rank = strategy.render(sg, esc, roi_txt, f"{int(STATS_FROM[4:6])}月{int(STATS_FROM[6:8])}日", fmt_date(max(by_date)) if by_date else "")
@@ -1999,7 +2170,7 @@ def build() -> None:
         f"# {SITE_NAME}\n\n> AI（Claude）が日本の競馬（JRA・地方）の全レースを毎日予想し、外れも含めた全予想の回収率を公開するサイト。\n\n"
         f"- [今日の予想]({BASE_URL}/)\n- [成績・回収率]({BASE_URL}/results/)：累計{t['n']}レース・回収率{t['roi']}\n"
         f"- [買い方別の回収率]({BASE_URL}/strategy/)\n- [重賞回顧]({BASE_URL}/review/)\n- [馬別のAI評価履歴]({BASE_URL}/horse/)\n- [予想の方法]({BASE_URL}/about/)\n" + (f"- [初心者向けコラム]({BASE_URL}/column/)：馬券の種類・回収率・人気と勝率などを実データで解説\n" if HAS_COLUMN else "") + f"- [全予想の記録CSV]({REPO}/blob/main/results_ledger.csv)\n", encoding="utf-8")
-    fixed = {"/": today_iso, "/results/": today_iso, "/strategy/": today_iso, "/about/": None, "/contact/": None, "/glossary/": None, "/limits/": today_iso, "/changelog/": today_iso, "/operator/": None, "/privacy/": None}
+    fixed = {"/": today_iso, "/results/": today_iso, "/strategy/": today_iso, "/ippen/": today_iso, "/about/": None, "/contact/": None, "/glossary/": None, "/limits/": today_iso, "/changelog/": today_iso, "/operator/": None, "/privacy/": None}
     sm = "".join(f"<url><loc>{BASE_URL}{u}</loc>{f'<lastmod>{m}</lastmod>' if m else ''}</url>"
                  for u, m in list(fixed.items()) + sorted(lastmod.items(), reverse=True))
     (OUT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + sm + "</urlset>\n", encoding="utf-8")
