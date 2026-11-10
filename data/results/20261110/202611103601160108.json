@@ -2,7 +2,238 @@
  "source": "rakuten",
  "date": "20261110",
  "race_id": "202611103601160108",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 3,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "7",
+    "yen": 1220
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "7-9",
+    "yen": 3950
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "7",
+    "yen": 240
+   },
+   {
+    "combo": "9",
+    "yen": 140
+   },
+   {
+    "combo": "1",
+    "yen": 1250
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "7-9",
+    "yen": 380
+   },
+   {
+    "combo": "1-7",
+    "yen": 4930
+   },
+   {
+    "combo": "1-9",
+    "yen": 2170
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-5",
+    "yen": 1580
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-7-9",
+    "yen": 10720
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "7-9-1",
+    "yen": 60630
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "7-9",
+    "yen": 850
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 7,
+   "name": "キタノオンザバス",
+   "time": "1:16.7",
+   "margin": "",
+   "pos4": 3,
+   "last3f": 38.8,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 9,
+   "name": "クリアーゲイル",
+   "time": "1:16.8",
+   "margin": "１／２",
+   "pos4": 1,
+   "last3f": 39.5,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 1,
+   "number": 1,
+   "name": "カネショウラッシュ",
+   "time": "1:17.6",
+   "margin": "４",
+   "pos4": 5,
+   "last3f": 39.2,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 14,
+   "name": "ブラックアイロン",
+   "time": "1:17.6",
+   "margin": "アタマ",
+   "pos4": 3,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 3,
+   "number": 5,
+   "name": "ダイヤノゴトク",
+   "time": "1:17.7",
+   "margin": "クビ",
+   "pos4": 7,
+   "last3f": 38.9,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 13,
+   "name": "パリコトパナナ",
+   "time": "1:17.8",
+   "margin": "１／２",
+   "pos4": 9,
+   "last3f": 38.7,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 4,
+   "name": "マルコバローズ",
+   "time": "1:17.9",
+   "margin": "１／２",
+   "pos4": 9,
+   "last3f": 38.8,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 6,
+   "number": 11,
+   "name": "シアワセカプチーノ",
+   "time": "1:17.9",
+   "margin": "ハナ",
+   "pos4": 1,
+   "last3f": 41.0,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 3,
+   "name": "スマイリングスカイ",
+   "time": "1:17.9",
+   "margin": "ハナ",
+   "pos4": 12,
+   "last3f": 38.3,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 8,
+   "name": "ミサトベレーザ",
+   "time": "1:17.9",
+   "margin": "アタマ",
+   "pos4": 5,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 8,
+   "number": 15,
+   "name": "フジノアルファ",
+   "time": "1:18.1",
+   "margin": "１",
+   "pos4": 8,
+   "last3f": 39.5,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 7,
+   "number": 12,
+   "name": "ダイメイイースター",
+   "time": "1:18.1",
+   "margin": "ハナ",
+   "pos4": 13,
+   "last3f": 38.0,
+   "popularity": null
+  },
+  {
+   "finish": "13",
+   "frame": 6,
+   "number": 10,
+   "name": "ベストカリフ",
+   "time": "1:18.3",
+   "margin": "１",
+   "pos4": 11,
+   "last3f": 39.4,
+   "popularity": null
+  },
+  {
+   "finish": "14",
+   "frame": 4,
+   "number": 6,
+   "name": "ベイサルシュート",
+   "time": "1:20.4",
+   "margin": "大差",
+   "pos4": 13,
+   "last3f": 40.6,
+   "popularity": null
+  },
+  {
+   "finish": "15",
+   "frame": 2,
+   "number": 2,
+   "name": "ハルシャダ",
+   "time": "1:20.6",
+   "margin": "１",
+   "pos4": 15,
+   "last3f": 40.2,
+   "popularity": null
+  }
+ ]
 }
