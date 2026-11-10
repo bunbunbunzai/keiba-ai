@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261110",
  "race_id": "202611102218140107",
- "tries": 8,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -71,9 +71,9 @@
    "name": "リバージュエル",
    "time": "1:33.0",
    "margin": "",
-   "pos4": null,
+   "pos4": 4,
    "last3f": 38.4,
-   "popularity": null
+   "popularity": 1
   },
   {
    "finish": "2",
@@ -82,9 +82,9 @@
    "name": "クロシオカレント",
    "time": "1:33.8",
    "margin": "４",
-   "pos4": null,
+   "pos4": 7,
    "last3f": 38.4,
-   "popularity": null
+   "popularity": 6
   },
   {
    "finish": "3",
@@ -93,9 +93,9 @@
    "name": "セランディア",
    "time": "1:34.3",
    "margin": "２ １／２",
-   "pos4": null,
+   "pos4": 1,
    "last3f": 41.2,
-   "popularity": null
+   "popularity": 3
   },
   {
    "finish": "4",
@@ -104,9 +104,9 @@
    "name": "タワワ",
    "time": "1:34.6",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 5,
    "last3f": 40.0,
-   "popularity": null
+   "popularity": 4
   },
   {
    "finish": "5",
@@ -115,9 +115,9 @@
    "name": "ナムラハンナ",
    "time": "1:35.0",
    "margin": "２",
-   "pos4": null,
+   "pos4": 2,
    "last3f": 41.8,
-   "popularity": null
+   "popularity": 2
   },
   {
    "finish": "6",
@@ -126,9 +126,9 @@
    "name": "ピースネイル",
    "time": "1:35.0",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 8,
    "last3f": 40.0,
-   "popularity": null
+   "popularity": 7
   },
   {
    "finish": "7",
@@ -137,9 +137,9 @@
    "name": "ミディエイター",
    "time": "1:35.1",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 3,
    "last3f": 41.9,
-   "popularity": null
+   "popularity": 5
   },
   {
    "finish": "8",
@@ -148,9 +148,9 @@
    "name": "デアトゥバトル",
    "time": "1:36.6",
    "margin": "７",
-   "pos4": null,
+   "pos4": 6,
    "last3f": 43.0,
-   "popularity": null
+   "popularity": 8
   }
  ]
 }

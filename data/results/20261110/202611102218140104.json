@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261110",
  "race_id": "202611102218140104",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -69,7 +69,7 @@
    "margin": "",
    "pos4": 1,
    "last3f": 40.3,
-   "popularity": null
+   "popularity": 2
   },
   {
    "finish": "2",
@@ -80,7 +80,7 @@
    "margin": "ハナ",
    "pos4": 3,
    "last3f": 40.0,
-   "popularity": null
+   "popularity": 1
   },
   {
    "finish": "3",
@@ -91,7 +91,7 @@
    "margin": "３",
    "pos4": 5,
    "last3f": 40.4,
-   "popularity": null
+   "popularity": 4
   },
   {
    "finish": "4",
@@ -102,7 +102,7 @@
    "margin": "３",
    "pos4": 2,
    "last3f": 41.6,
-   "popularity": null
+   "popularity": 3
   },
   {
    "finish": "5",
@@ -113,7 +113,7 @@
    "margin": "８",
    "pos4": 4,
    "last3f": 43.4,
-   "popularity": null
+   "popularity": 5
   },
   {
    "finish": "6",
@@ -124,7 +124,7 @@
    "margin": "６",
    "pos4": 6,
    "last3f": 42.6,
-   "popularity": null
+   "popularity": 6
   },
   {
    "finish": "7",
@@ -135,7 +135,7 @@
    "margin": "９",
    "pos4": 7,
    "last3f": 44.5,
-   "popularity": null
+   "popularity": 7
   }
  ]
 }

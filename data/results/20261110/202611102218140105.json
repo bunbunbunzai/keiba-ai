@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261110",
  "race_id": "202611102218140105",
- "tries": 7,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -79,7 +79,7 @@
    "margin": "",
    "pos4": 1,
    "last3f": 39.4,
-   "popularity": null
+   "popularity": 1
   },
   {
    "finish": "2",
@@ -90,7 +90,7 @@
    "margin": "２",
    "pos4": 2,
    "last3f": 39.5,
-   "popularity": null
+   "popularity": 2
   },
   {
    "finish": "3",
@@ -101,7 +101,7 @@
    "margin": "４",
    "pos4": 2,
    "last3f": 40.5,
-   "popularity": null
+   "popularity": 4
   },
   {
    "finish": "4",
@@ -112,7 +112,7 @@
    "margin": "１",
    "pos4": 6,
    "last3f": 39.3,
-   "popularity": null
+   "popularity": 3
   },
   {
    "finish": "5",
@@ -123,7 +123,7 @@
    "margin": "１",
    "pos4": 5,
    "last3f": 40.5,
-   "popularity": null
+   "popularity": 6
   },
   {
    "finish": "6",
@@ -134,7 +134,7 @@
    "margin": "２",
    "pos4": 4,
    "last3f": 41.2,
-   "popularity": null
+   "popularity": 5
   },
   {
    "finish": "7",
@@ -145,7 +145,7 @@
    "margin": "５",
    "pos4": 8,
    "last3f": 40.9,
-   "popularity": null
+   "popularity": 8
   },
   {
    "finish": "8",
@@ -156,7 +156,7 @@
    "margin": "２",
    "pos4": 7,
    "last3f": 41.3,
-   "popularity": null
+   "popularity": 9
   },
   {
    "finish": "9",
@@ -167,7 +167,7 @@
    "margin": "７",
    "pos4": 9,
    "last3f": 42.7,
-   "popularity": null
+   "popularity": 7
   }
  ]
 }
