@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261111",
  "race_id": "202611112433160304",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -63,5 +63,94 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 3,
+   "number": 3,
+   "name": "フィリアアスティ",
+   "time": "1:38.7",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.3,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 2,
+   "number": 2,
+   "name": "コーズシャチホコ",
+   "time": "1:38.9",
+   "margin": "１",
+   "pos4": 1,
+   "last3f": 39.5,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 5,
+   "name": "モズレディーラック",
+   "time": "1:39.0",
+   "margin": "１／２",
+   "pos4": 5,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 7,
+   "name": "セバスティアン",
+   "time": "1:39.1",
+   "margin": "クビ",
+   "pos4": 3,
+   "last3f": 39.5,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 6,
+   "name": "サラカノ",
+   "time": "1:39.2",
+   "margin": "１／２",
+   "pos4": 6,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 8,
+   "name": "バンシイハーピー",
+   "time": "1:39.3",
+   "margin": "１／２",
+   "pos4": 3,
+   "last3f": 39.5,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 4,
+   "name": "ルナプレーナ",
+   "time": "1:40.8",
+   "margin": "７",
+   "pos4": 7,
+   "last3f": 40.6,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "ピンチ",
+   "time": "1:41.6",
+   "margin": "４",
+   "pos4": 7,
+   "last3f": 41.4,
+   "popularity": null
+  }
+ ]
 }
