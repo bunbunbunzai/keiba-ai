@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261111",
  "race_id": "202611112726180111",
- "tries": 2,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,127 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 2,
+   "number": 2,
+   "name": "エイシンリガーズ",
+   "time": "1:18.5",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 37.8,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 1,
+   "number": 1,
+   "name": "ビクトリーブリッジ",
+   "time": "1:18.6",
+   "margin": "３／４",
+   "pos4": 1,
+   "last3f": 38.2,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "ミルトライディーン",
+   "time": "1:18.8",
+   "margin": "１",
+   "pos4": 3,
+   "last3f": 38.0,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 11,
+   "name": "アンノドミニ",
+   "time": "1:19.4",
+   "margin": "３ １／２",
+   "pos4": 4,
+   "last3f": 38.4,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 3,
+   "number": 3,
+   "name": "カレンマウラー",
+   "time": "1:20.9",
+   "margin": "９",
+   "pos4": 5,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 10,
+   "name": "マイドオオキニ",
+   "time": "1:21.2",
+   "margin": "２",
+   "pos4": 8,
+   "last3f": 38.1,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 9,
+   "name": "ニシノヴィヴィ",
+   "time": "1:21.3",
+   "margin": "１／２",
+   "pos4": 8,
+   "last3f": 38.5,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 5,
+   "number": 5,
+   "name": "ニシノタンギー",
+   "time": "1:21.3",
+   "margin": "クビ",
+   "pos4": 7,
+   "last3f": 39.3,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 6,
+   "number": 7,
+   "name": "シルバーブレッド",
+   "time": "1:21.4",
+   "margin": "クビ",
+   "pos4": 8,
+   "last3f": 38.6,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 8,
+   "name": "ワイルドゴーア",
+   "time": "1:21.9",
+   "margin": "３",
+   "pos4": 6,
+   "last3f": 41.0,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 6,
+   "number": 6,
+   "name": "ノイジーアプローチ",
+   "time": "1:25.1",
+   "margin": "大差",
+   "pos4": 11,
+   "last3f": 41.6,
+   "popularity": null
+  }
+ ]
 }
