@@ -1,6 +1,6 @@
 {
  "date": "20261111",
- "updated": "2026-11-11 13:14",
+ "updated": "2026-11-11 13:22",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -547,7 +547,7 @@
    "types": [
     "aitop"
    ],
-   "odds": 15.9,
+   "odds": 14.9,
    "popularity": 4
   },
   {
@@ -569,7 +569,7 @@
     "field": 10,
     "popularity": 3
    },
-   "odds": 21.1,
+   "odds": 20.5,
    "popularity": 5
   },
   {
@@ -590,8 +590,22 @@
     "field": 11,
     "popularity": 10
    },
-   "odds": 94.1,
+   "odds": 85.7,
    "popularity": 9
+  },
+  {
+   "race_id": "202611113601160201",
+   "results_key": "202611113601160201",
+   "venue": "門別",
+   "race_no": 1,
+   "post_time": "14:20",
+   "number": 1,
+   "name": "ベラジオファイト",
+   "types": [
+    "aitop"
+   ],
+   "odds": 4.0,
+   "popularity": 2
   },
   {
    "race_id": "202611112433160305",
@@ -632,8 +646,8 @@
     "field": 9,
     "popularity": 3
    },
-   "odds": null,
-   "popularity": null
+   "odds": 4.0,
+   "popularity": 1
   },
   {
    "race_id": "202611112135090301",
@@ -653,8 +667,50 @@
     "field": 12,
     "popularity": 6
    },
-   "odds": null,
-   "popularity": null
+   "odds": 4.8,
+   "popularity": 4
+  },
+  {
+   "race_id": "202611112135090301",
+   "results_key": "202611112135090301",
+   "venue": "川崎",
+   "race_no": 1,
+   "post_time": "14:45",
+   "number": 5,
+   "name": "ワイドカクゲン",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 28,
+   "last": {
+    "date": "2026-10-14",
+    "finish": 9,
+    "field": 10,
+    "popularity": 3
+   },
+   "odds": 35.6,
+   "popularity": 7
+  },
+  {
+   "race_id": "202611112135090301",
+   "results_key": "202611112135090301",
+   "venue": "川崎",
+   "race_no": 1,
+   "post_time": "14:45",
+   "number": 7,
+   "name": "ユイノスレチガイ",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 28,
+   "last": {
+    "date": "2026-10-14",
+    "finish": 7,
+    "field": 10,
+    "popularity": 2
+   },
+   "odds": 10.5,
+   "popularity": 6
   },
   {
    "race_id": "202611112726180109",
