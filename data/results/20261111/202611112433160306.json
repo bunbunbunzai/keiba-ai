@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261111",
  "race_id": "202611112433160306",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 9,
+   "name": "ブルーアンビエンス",
+   "time": "1:36.2",
+   "margin": "",
+   "pos4": null,
+   "last3f": 38.7,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 8,
+   "name": "タマモパルファン",
+   "time": "1:37.5",
+   "margin": "６",
+   "pos4": null,
+   "last3f": 40.1,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "ネオシューマン",
+   "time": "1:37.6",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 12,
+   "name": "アルマフレイヤ",
+   "time": "1:38.1",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 11,
+   "name": "ハクサンリング",
+   "time": "1:39.0",
+   "margin": "４",
+   "pos4": null,
+   "last3f": 41.4,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 6,
+   "name": "ポセイドンテソーロ",
+   "time": "1:39.2",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": 41.1,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 7,
+   "name": "ショルタメンテ",
+   "time": "1:39.2",
+   "margin": "ハナ",
+   "pos4": null,
+   "last3f": 40.8,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 10,
+   "name": "ウイングリフィス",
+   "time": "1:40.1",
+   "margin": "４",
+   "pos4": null,
+   "last3f": 41.6,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 5,
+   "name": "タガノポストマン",
+   "time": "1:40.4",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": 41.0,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 4,
+   "number": 4,
+   "name": "マジョリカ",
+   "time": "1:42.0",
+   "margin": "８",
+   "pos4": null,
+   "last3f": 43.6,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 1,
+   "number": 1,
+   "name": "バレドラパン",
+   "time": "1:42.4",
+   "margin": "２",
+   "pos4": null,
+   "last3f": 43.5,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 2,
+   "number": 2,
+   "name": "アグネス",
+   "time": "1:43.0",
+   "margin": "３",
+   "pos4": null,
+   "last3f": 44.6,
+   "popularity": null
+  }
+ ]
 }
