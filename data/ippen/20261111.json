@@ -1,6 +1,6 @@
 {
  "date": "20261111",
- "updated": "2026-11-11 14:20",
+ "updated": "2026-11-11 14:32",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -802,8 +802,8 @@
     "field": 11,
     "popularity": 3
    },
-   "odds": 12.4,
-   "popularity": 6
+   "odds": 13.5,
+   "popularity": 5
   },
   {
    "race_id": "202611112726180110",
@@ -824,8 +824,8 @@
     "field": 15,
     "popularity": 15
    },
-   "odds": 22.1,
-   "popularity": 9
+   "odds": 26.4,
+   "popularity": 7
   },
   {
    "race_id": "202611112433160307",
@@ -929,8 +929,22 @@
     "field": 9,
     "popularity": null
    },
-   "odds": null,
-   "popularity": null
+   "odds": 104.9,
+   "popularity": 14
+  },
+  {
+   "race_id": "202611113601160204",
+   "results_key": "202611113601160204",
+   "venue": "門別",
+   "race_no": 4,
+   "post_time": "15:55",
+   "number": 5,
+   "name": "ボブノップスターン",
+   "types": [
+    "aitop"
+   ],
+   "odds": 9.9,
+   "popularity": 5
   },
   {
    "race_id": "202611113601160204",
@@ -950,8 +964,8 @@
     "field": 12,
     "popularity": null
    },
-   "odds": null,
-   "popularity": null
+   "odds": 29.9,
+   "popularity": 10
   },
   {
    "race_id": "202611112726180111",
