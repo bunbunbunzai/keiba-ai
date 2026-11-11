@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261111",
  "race_id": "202611112433160305",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,105 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 6,
+   "name": "カローナ",
+   "time": "1:37.8",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.1,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 1,
+   "number": 1,
+   "name": "アークレオン",
+   "time": "1:38.5",
+   "margin": "３",
+   "pos4": 5,
+   "last3f": 38.8,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 8,
+   "name": "ロンリーマン",
+   "time": "1:38.9",
+   "margin": "２",
+   "pos4": 6,
+   "last3f": 40.0,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 9,
+   "name": "ロイヤルガンモ",
+   "time": "1:38.9",
+   "margin": "クビ",
+   "pos4": 2,
+   "last3f": 40.0,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 2,
+   "number": 2,
+   "name": "カンソウシタイナ",
+   "time": "1:39.0",
+   "margin": "３／４",
+   "pos4": 4,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 4,
+   "number": 4,
+   "name": "ナガノアリス",
+   "time": "1:39.4",
+   "margin": "２",
+   "pos4": 3,
+   "last3f": 40.3,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 3,
+   "name": "コスモフィデリタス",
+   "time": "1:40.1",
+   "margin": "３",
+   "pos4": 7,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 5,
+   "number": 5,
+   "name": "マオノファースト",
+   "time": "-",
+   "margin": "中止",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 7,
+   "number": 7,
+   "name": "デナリ",
+   "time": "-",
+   "margin": "取消",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
