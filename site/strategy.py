@@ -2,6 +2,7 @@
 
 - サイトの買い目（基準）、券種別、自信度別、中央／地方別
 - ◎の単勝のみ・複勝のみ、◎-〇のワイド1点・馬連1点
+- 今のルールの印で買い方だけを変えた場合（単複3:7、ワイド＋馬連など。2026-11-11追加）
 - ◎の人気別（1番人気／2〜3番人気／4番人気以下）、◎の期待値（想定勝率×単勝）別
 各点100円の均等買い。見送り・返還は除く。
 """
@@ -56,6 +57,43 @@ class Bucket:
         rest = sorted(self.rows, key=lambda x: -x[1])[k:]
         s = sum(x[0] for x in rest)
         return 100 * sum(x[1] for x in rest) / s if s else None
+
+
+NOW_KEYS = ["今の型：◎の単複（人気で切替）", "◎の単勝だけ", "◎の複勝だけ", "◎の単勝：複勝＝3：7（300円＋700円）",
+            "◎-〇のワイド＋馬連（各1点）", "◎→〇▲のワイド＋馬連（各2点）", "◎→印全部のワイド＋馬連",
+            "◎-〇のワイドだけ（1点）", "◎-〇の馬連だけ（1点）"]
+
+
+def _now_rule(add, q: dict, res: dict, built3) -> None:
+    """今のルールの印（◎・〇は補正勝率で決め直したもの）で、買い方だけを変えた場合。"""
+    m = q.get("marks") or {}
+
+    def lst(k):
+        v = m.get(k)
+        return [int(x) for x in (v if isinstance(v, list) else [v] if v is not None else []) if x is not None]
+
+    hon = int(m["◎"])
+    if built3:
+        add("now", NOW_KEYS[0], 100 * len(built3), sum(_pay(res, b["type"], str(b["combo"])) for b in built3))
+    tan, fuku = _pay(res, "単勝", str(hon)), _pay(res, "複勝", str(hon))
+    add("now", NOW_KEYS[1], 100, tan)
+    add("now", NOW_KEYS[2], 100, fuku)
+    add("now", NOW_KEYS[3], 1000, 3 * tan + 7 * fuku)
+    tai = [x for x in lst("〇") if x != hon][:1]
+    top = [x for x in lst("〇") + lst("▲") if x != hon]
+    alls = top + [x for x in lst("△") + lst("☆") if x != hon and x not in top]
+
+    def wu(partners):
+        return 200 * len(partners), sum(_pay(res, "ワイド", _norm(hon, x)) + _pay(res, "馬連", _norm(hon, x)) for x in partners)
+
+    if tai:
+        add("now", NOW_KEYS[4], *wu(tai))
+        add("now", NOW_KEYS[7], 100, _pay(res, "ワイド", _norm(hon, tai[0])))
+        add("now", NOW_KEYS[8], 100, _pay(res, "馬連", _norm(hon, tai[0])))
+    if len(top) >= 2:
+        add("now", NOW_KEYS[5], *wu(top[:2]))
+    if alls:
+        add("now", NOW_KEYS[6], *wu(alls))
 
 
 def collect(preds_by_date: dict[str, list[dict]], stats_from: str) -> dict[str, dict[str, Bucket]]:
@@ -148,6 +186,8 @@ def collect(preds_by_date: dict[str, list[dict]], stats_from: str) -> dict[str, 
                 add("tmpl", BLEND_TMPL, 100 * len(built2), sum(_pay(res, b["type"], str(b["combo"])) for b in built2))
             if built3:  # 11/11からの型：補正勝率の◎の単複1点
                 add("tmpl", TANPUKU_TMPL, 100 * len(built3), sum(_pay(res, b["type"], str(b["combo"])) for b in built3))
+            if q:  # 今のルールの印（補正勝率の◎）で、買い方だけを変えて比べる
+                _now_rule(add, q, res, built3)
             if tanpuku:
                 add("tmpl", f"◎の単複（人気で切替）のみ", 100, tanpuku[1])
             # 型の比較用（11/2の週次見直しで候補に残した買い方）：◎から印全部へ流す
@@ -181,7 +221,10 @@ def collect(preds_by_date: dict[str, list[dict]], stats_from: str) -> dict[str, 
 GROUPS = [
     ("base", "基準：サイトの買い目", "各レースの買い目をすべて各点100円で買った場合（成績ページと同じ）。"),
     ("tmpl", "基本の買い方", "11/11からは◎の単複1点だけ（1〜2番人気は複勝、3〜5番人気は単勝、6番人気以下は買わない）。◎と自信度は補正勝率（単勝オッズとAIの評価を合わせた勝つ確率）で決める。それまでの型も比べられるように残している：3連複フォーメーション（1頭目◎、2頭目〇▲、3頭目は印全部）を足した型（〜11/6）、3連複を自信度Aだけにした型（11/7）、オッズを見て当たっても購入額を下回る組み合わせ（トリガミ）を外し複勝を買わない型（11/8〜11/10）。過去のレースには、その時点の単勝オッズと推定オッズで当てはめている。補正勝率の計算式は過去のレースから求めたものなので、過去に当てはめた成績は実際より少し良く出やすい（学習に使っていないレースで試すと◎の単複は約83%だった）。比較用に、同じ印から◎を軸に印全部へ流すワイド・馬連・3連複（2頭流し）も載せる。"),
-    ("hon", "◎・〇だけを買う", "印の上位だけを1点ずつ買った場合。買い目を減らすと当たる回数は減るが、使う金額も減る。"),
+    ("now", "今のルールの印で、買い方だけを変える", "◎・〇は今のルール（補正勝率）で決めた印。同じ印で、券種と配分だけを変えた場合。"
+            "「単勝：複勝＝3：7」は1レース1,000円（単勝300円・複勝700円）。「ワイド＋馬連」は同じ組み合わせをワイドと馬連の両方で買う（1組200円）。"
+            "◎→〇▲は〇と▲の2頭、◎→印全部は印の付いた全頭が相手。補正勝率の計算式は同じ期間のレースから求めたので、どの数字も実際より少し良く出やすいが、買い方どうしの比較は同じ印なので公平。"),
+    ("hon", "◎・〇だけを買う（その日に出した印）", "印の上位だけを1点ずつ買った場合。買い目を減らすと当たる回数は減るが、使う金額も減る。"),
     ("bet", "券種をしぼる", "サイトの買い目のうち、その券種だけを買った場合。"),
     ("conf", "自信度でしぼる", "自信度が高いレースだけを買った場合。"),
     ("val", "◎の期待値でしぼる", "期待値＝AIの想定勝率×予想時点の単勝オッズ。1.0以上は、AIが世間の人気より高く評価している馬。サイトの買い目で計算。"),
@@ -200,6 +243,7 @@ def _order(group: str, keys: list[str]) -> list[str]:
         "pop": ["◎が1番人気", "◎が2〜3番人気", "◎が4〜6番人気", "◎が7番人気以下"],
         "tmpl": [TANPUKU_TMPL, BLEND_TMPL, NEW_TMPL, "基本の買い方（11/7から）：◎の単複＋自信度Aだけ3連複フォーメーション", "基本の買い方：◎の単複（人気で切替）＋3連複フォーメーション", "◎の単複（人気で切替）のみ", "3連複 ◎→〇▲→印全部（フォーメーション）",
                  "複勝◎＋3連複フォーメーション", "3連複 ◎→印全部（2頭流し）", "ワイド ◎→印全部", "馬連 ◎→印全部"],
+        "now": NOW_KEYS,
         "hon": ["◎の単勝だけ（1点）", "◎の複勝だけ（1点）", "◎-〇のワイド1点", "◎-〇の馬連1点"],
         "bet": ["単勝だけ", "複勝だけ", "ワイドだけ", "馬連だけ", "馬単だけ", "3連複だけ", "3連単だけ"],
     }
