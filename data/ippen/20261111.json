@@ -1,6 +1,6 @@
 {
  "date": "20261111",
- "updated": "2026-11-11 12:52",
+ "updated": "2026-11-11 12:55",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -547,7 +547,7 @@
    "types": [
     "aitop"
    ],
-   "odds": 8.0,
+   "odds": 15.9,
    "popularity": 4
   },
   {
@@ -559,7 +559,8 @@
    "number": 5,
    "name": "クルシファー",
    "types": [
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 14,
    "last": {
@@ -568,8 +569,8 @@
     "field": 10,
     "popularity": 3
    },
-   "odds": 6.4,
-   "popularity": 3
+   "odds": 21.1,
+   "popularity": 5
   },
   {
    "race_id": "202611112726180108",
@@ -589,29 +590,8 @@
     "field": 11,
     "popularity": 10
    },
-   "odds": 64.0,
-   "popularity": 7
-  },
-  {
-   "race_id": "202611112726180108",
-   "results_key": "202611112726180108",
-   "venue": "園田",
-   "race_no": 8,
-   "post_time": "14:20",
-   "number": 9,
-   "name": "エイシンジザイテン",
-   "types": [
-    "letdown"
-   ],
-   "gap_days": 21,
-   "last": {
-    "date": "2026-10-21",
-    "finish": 8,
-    "field": 12,
-    "popularity": 1
-   },
-   "odds": 8.0,
-   "popularity": 4
+   "odds": 94.1,
+   "popularity": 9
   },
   {
    "race_id": "202611112433160305",
