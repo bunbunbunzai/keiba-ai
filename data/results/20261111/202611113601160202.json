@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261111",
  "race_id": "202611113601160202",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 2,
+   "number": 2,
+   "name": "スティールロード",
+   "time": "1:02.0",
+   "margin": "",
+   "pos4": null,
+   "last3f": 37.0,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 12,
+   "name": "プラウドホウショウ",
+   "time": "1:03.1",
+   "margin": "５",
+   "pos4": null,
+   "last3f": 38.4,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 7,
+   "name": "マルホ",
+   "time": "1:03.1",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": 38.5,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 8,
+   "name": "エイシンスラッグ",
+   "time": "1:03.2",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": 37.8,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 9,
+   "name": "ブエナモーダ",
+   "time": "1:03.3",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": 38.1,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 10,
+   "name": "タルシェクーン",
+   "time": "1:03.4",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": 37.4,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 6,
+   "name": "チェックレイズ",
+   "time": "1:03.9",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": 37.5,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 5,
+   "number": 5,
+   "name": "ビッグホープルーフ",
+   "time": "1:04.2",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": 38.7,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 3,
+   "number": 3,
+   "name": "ベビーギャング",
+   "time": "1:04.9",
+   "margin": "３",
+   "pos4": null,
+   "last3f": 37.4,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 8,
+   "number": 11,
+   "name": "アノコロイチバン",
+   "time": "1:04.9",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": 38.8,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 4,
+   "number": 4,
+   "name": "リックグールド",
+   "time": "1:05.0",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": 37.8,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 1,
+   "number": 1,
+   "name": "アサグモ",
+   "time": "1:05.0",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": 38.9,
+   "popularity": null
+  }
+ ]
 }

@@ -1,6 +1,6 @@
 {
  "date": "20261111",
- "updated": "2026-11-11 15:00",
+ "updated": "2026-11-11 15:09",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -845,7 +845,7 @@
     "field": 12,
     "popularity": 7
    },
-   "odds": 44.4,
+   "odds": 44.8,
    "popularity": 9
   },
   {
@@ -866,8 +866,8 @@
     "field": 12,
     "popularity": 8
    },
-   "odds": 66.6,
-   "popularity": 11
+   "odds": 74.8,
+   "popularity": 12
   },
   {
    "race_id": "202611112433160307",
@@ -887,8 +887,8 @@
     "field": 12,
     "popularity": 12
    },
-   "odds": 83.3,
-   "popularity": 12
+   "odds": 59.8,
+   "popularity": 11
   },
   {
    "race_id": "202611112135090303",
@@ -985,7 +985,7 @@
     "field": 8,
     "popularity": 1
    },
-   "odds": 9.3,
+   "odds": 8.9,
    "popularity": 3
   },
   {
@@ -1006,7 +1006,7 @@
     "field": 12,
     "popularity": 10
    },
-   "odds": 15.6,
+   "odds": 20.4,
    "popularity": 4
   },
   {
@@ -1121,6 +1121,20 @@
    "venue": "門別",
    "race_no": 5,
    "post_time": "16:30",
+   "number": 1,
+   "name": "カイノミチシルベ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 56.6,
+   "popularity": 8
+  },
+  {
+   "race_id": "202611113601160205",
+   "results_key": "202611113601160205",
+   "venue": "門別",
+   "race_no": 5,
+   "post_time": "16:30",
    "number": 12,
    "name": "マジカルウィーク",
    "types": [
@@ -1133,8 +1147,8 @@
     "field": 10,
     "popularity": null
    },
-   "odds": null,
-   "popularity": null
+   "odds": 61.7,
+   "popularity": 9
   },
   {
    "race_id": "202611112726180112",
