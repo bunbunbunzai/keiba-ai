@@ -1,6 +1,6 @@
 {
  "date": "20261111",
- "updated": "2026-11-11 12:09",
+ "updated": "2026-11-11 12:27",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -166,8 +166,22 @@
     "field": 12,
     "popularity": 6
    },
-   "odds": 33.0,
-   "popularity": 9
+   "odds": 64.0,
+   "popularity": 7
+  },
+  {
+   "race_id": "202611112433160302",
+   "results_key": "202611112433160302",
+   "venue": "名古屋",
+   "race_no": 2,
+   "post_time": "13:00",
+   "number": 2,
+   "name": "サンタカタリナ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 20.0,
+   "popularity": 3
   },
   {
    "race_id": "202611112433160302",
@@ -187,8 +201,8 @@
     "field": 12,
     "popularity": 11
    },
-   "odds": 33.0,
-   "popularity": 9
+   "odds": 113.8,
+   "popularity": 12
   },
   {
    "race_id": "202611112433160302",
@@ -208,8 +222,8 @@
     "field": 12,
     "popularity": 10
    },
-   "odds": 4.3,
-   "popularity": 2
+   "odds": 25.6,
+   "popularity": 5
   },
   {
    "race_id": "202611112726180106",
@@ -229,8 +243,22 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": 7.6,
-   "popularity": 5
+   "odds": 16.1,
+   "popularity": 7
+  },
+  {
+   "race_id": "202611112726180106",
+   "results_key": "202611112726180106",
+   "venue": "園田",
+   "race_no": 6,
+   "post_time": "13:15",
+   "number": 4,
+   "name": "マイティスカイ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 12.3,
+   "popularity": 6
   },
   {
    "race_id": "202611112726180106",
@@ -241,7 +269,8 @@
    "number": 6,
    "name": "モモノコトノハ",
    "types": [
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 69,
    "last": {
@@ -250,8 +279,8 @@
     "field": 12,
     "popularity": 1
    },
-   "odds": 4.4,
-   "popularity": 3
+   "odds": 7.6,
+   "popularity": 4
   },
   {
    "race_id": "202611112726180106",
@@ -271,8 +300,8 @@
     "field": 12,
     "popularity": 3
    },
-   "odds": 4.4,
-   "popularity": 3
+   "odds": 3.5,
+   "popularity": 2
   },
   {
    "race_id": "202611112433160303",
@@ -292,8 +321,8 @@
     "field": 12,
     "popularity": 12
    },
-   "odds": 9.1,
-   "popularity": 5
+   "odds": 18.9,
+   "popularity": 9
   },
   {
    "race_id": "202611112433160303",
@@ -314,8 +343,8 @@
     "field": 12,
     "popularity": 2
    },
-   "odds": 21.3,
-   "popularity": 10
+   "odds": 49.8,
+   "popularity": 11
   },
   {
    "race_id": "202611112433160303",
@@ -335,8 +364,22 @@
     "field": 12,
     "popularity": 10
    },
-   "odds": 21.3,
+   "odds": 24.9,
    "popularity": 10
+  },
+  {
+   "race_id": "202611112433160303",
+   "results_key": "202611112433160303",
+   "venue": "名古屋",
+   "race_no": 3,
+   "post_time": "13:30",
+   "number": 5,
+   "name": "シャンクスレガシー",
+   "types": [
+    "aitop"
+   ],
+   "odds": 10.2,
+   "popularity": 4
   },
   {
    "race_id": "202611112433160303",
@@ -356,7 +399,7 @@
     "field": 12,
     "popularity": 3
    },
-   "odds": 10.6,
+   "odds": 10.7,
    "popularity": 6
   },
   {
@@ -378,8 +421,8 @@
     "field": 12,
     "popularity": 1
    },
-   "odds": 10.6,
-   "popularity": 6
+   "odds": 10.4,
+   "popularity": 5
   },
   {
    "race_id": "202611112726180107",
@@ -399,8 +442,8 @@
     "field": 16,
     "popularity": 14
    },
-   "odds": 13.2,
-   "popularity": 4
+   "odds": 19.2,
+   "popularity": 6
   },
   {
    "race_id": "202611112726180107",
@@ -420,7 +463,7 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": 79.2,
+   "odds": 27.2,
    "popularity": 7
   },
   {
@@ -441,8 +484,8 @@
     "field": 16,
     "popularity": 11
    },
-   "odds": 6.0,
-   "popularity": 3
+   "odds": 13.6,
+   "popularity": 5
   },
   {
    "race_id": "202611112433160304",
@@ -453,7 +496,8 @@
    "number": 3,
    "name": "フィリアアスティ",
    "types": [
-    "rebound"
+    "rebound",
+    "aitop"
    ],
    "gap_days": 13,
    "last": {
@@ -506,6 +550,20 @@
    },
    "odds": 15.3,
    "popularity": 6
+  },
+  {
+   "race_id": "202611112726180108",
+   "results_key": "202611112726180108",
+   "venue": "園田",
+   "race_no": 8,
+   "post_time": "14:20",
+   "number": 3,
+   "name": "ビカムキング",
+   "types": [
+    "aitop"
+   ],
+   "odds": 8.0,
+   "popularity": 4
   },
   {
    "race_id": "202611112726180108",
@@ -568,6 +626,20 @@
     "popularity": 1
    },
    "odds": 8.0,
+   "popularity": 4
+  },
+  {
+   "race_id": "202611112433160305",
+   "results_key": "202611112433160305",
+   "venue": "名古屋",
+   "race_no": 5,
+   "post_time": "14:35",
+   "number": 1,
+   "name": "アークレオン",
+   "types": [
+    "aitop"
+   ],
+   "odds": 19.9,
    "popularity": 4
   },
   {
@@ -677,6 +749,20 @@
    "popularity": 7
   },
   {
+   "race_id": "202611112726180109",
+   "results_key": "202611112726180109",
+   "venue": "園田",
+   "race_no": 9,
+   "post_time": "14:55",
+   "number": 8,
+   "name": "ゴールデンドラゴン",
+   "types": [
+    "aitop"
+   ],
+   "odds": 15.2,
+   "popularity": 5
+  },
+  {
    "race_id": "202611112726180110",
    "results_key": "202611112726180110",
    "venue": "園田",
@@ -718,6 +804,20 @@
    },
    "odds": 38.8,
    "popularity": 6
+  },
+  {
+   "race_id": "202611112433160307",
+   "results_key": "202611112433160307",
+   "venue": "名古屋",
+   "race_no": 7,
+   "post_time": "15:40",
+   "number": 3,
+   "name": "リゼクールグレー",
+   "types": [
+    "aitop"
+   ],
+   "odds": 6.9,
+   "popularity": 2
   },
   {
    "race_id": "202611112433160307",
@@ -994,6 +1094,20 @@
    "popularity": 9
   },
   {
+   "race_id": "202611112433160308",
+   "results_key": "202611112433160308",
+   "venue": "名古屋",
+   "race_no": 8,
+   "post_time": "16:25",
+   "number": 9,
+   "name": "ラントリサント",
+   "types": [
+    "aitop"
+   ],
+   "odds": 6.3,
+   "popularity": 3
+  },
+  {
    "race_id": "202611113601160205",
    "results_key": "202611113601160205",
    "venue": "門別",
@@ -1139,6 +1253,20 @@
    },
    "odds": 25.1,
    "popularity": 6
+  },
+  {
+   "race_id": "202611112433160309",
+   "results_key": "202611112433160309",
+   "venue": "名古屋",
+   "race_no": 9,
+   "post_time": "16:55",
+   "number": 11,
+   "name": "イッツナッシング",
+   "types": [
+    "aitop"
+   ],
+   "odds": 11.4,
+   "popularity": 2
   },
   {
    "race_id": "202611113601160206",
@@ -1420,6 +1548,20 @@
    "venue": "名古屋",
    "race_no": 11,
    "post_time": "18:00",
+   "number": 6,
+   "name": "ムーンスカイ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 8.8,
+   "popularity": 5
+  },
+  {
+   "race_id": "202611112433160311",
+   "results_key": "202611112433160311",
+   "venue": "名古屋",
+   "race_no": 11,
+   "post_time": "18:00",
    "number": 7,
    "name": "ラジカルバローズ",
    "types": [
@@ -1582,6 +1724,20 @@
    },
    "odds": null,
    "popularity": null
+  },
+  {
+   "race_id": "202611112433160312",
+   "results_key": "202611112433160312",
+   "venue": "名古屋",
+   "race_no": 12,
+   "post_time": "18:35",
+   "number": 3,
+   "name": "クレセントゼファー",
+   "types": [
+    "aitop"
+   ],
+   "odds": 19.4,
+   "popularity": 5
   },
   {
    "race_id": "202611113601160209",
