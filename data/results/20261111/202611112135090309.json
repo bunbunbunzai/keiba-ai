@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261111",
  "race_id": "202611112135090309",
- "tries": 6,
+ "tries": 7,
  "payouts": {
   "単勝": [
    {
@@ -89,5 +89,160 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 3,
+   "number": 3,
+   "name": "チェリスト",
+   "time": "1:45.3",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 9,
+   "name": "ハネダブライアン",
+   "time": "1:45.7",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 10,
+   "name": "ヴルールドロワ",
+   "time": "1:46.1",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 12,
+   "name": "ホースワン",
+   "time": "1:46.1",
+   "margin": "同着",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 1,
+   "number": 1,
+   "name": "サラサグッドワーク",
+   "time": "1:46.3",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "マイネルボス",
+   "time": "1:46.3",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 13,
+   "name": "ホウオウパレード",
+   "time": "1:46.4",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 4,
+   "name": "リュウバター",
+   "time": "1:47.1",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 7,
+   "name": "エスケントバゴ",
+   "time": "1:47.5",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 4,
+   "number": 6,
+   "name": "カナールゲイル",
+   "time": "1:48.1",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 8,
+   "number": 14,
+   "name": "マインドブロン",
+   "time": "1:48.2",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 5,
+   "number": 8,
+   "name": "ラーマ",
+   "time": "1:48.3",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "13",
+   "frame": 4,
+   "number": 5,
+   "name": "ダイバオーソ",
+   "time": "1:48.6",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "14",
+   "frame": 7,
+   "number": 11,
+   "name": "カセノラオー",
+   "time": "1:49.3",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
