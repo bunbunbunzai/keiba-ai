@@ -1,6 +1,6 @@
 {
  "date": "20261111",
- "updated": "2026-11-11 14:05",
+ "updated": "2026-11-11 14:11",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -651,7 +651,8 @@
    "number": 1,
    "name": "リケアフェデリーニ",
    "types": [
-    "layoff"
+    "layoff",
+    "aitop"
    ],
    "gap_days": 100,
    "last": {
@@ -660,7 +661,7 @@
     "field": 9,
     "popularity": 3
    },
-   "odds": 3.8,
+   "odds": 3.9,
    "popularity": 2
   },
   {
@@ -681,8 +682,8 @@
     "field": 12,
     "popularity": 6
    },
-   "odds": 5.4,
-   "popularity": 4
+   "odds": 6.1,
+   "popularity": 5
   },
   {
    "race_id": "202611112135090301",
@@ -702,7 +703,7 @@
     "field": 10,
     "popularity": 3
    },
-   "odds": 37.9,
+   "odds": 34.3,
    "popularity": 7
   },
   {
@@ -723,7 +724,7 @@
     "field": 10,
     "popularity": 2
    },
-   "odds": 9.2,
+   "odds": 8.8,
    "popularity": 6
   },
   {
