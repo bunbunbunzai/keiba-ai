@@ -1,18 +1,19 @@
 {
  "date": "20261111",
- "updated": "2026-11-11 13:40",
+ "updated": "2026-11-11 14:00",
  "bias": {
   "名古屋ダ": {
    "judgement": "先行有利",
-   "confidence": "弱",
+   "confidence": "中",
    "races": [
     1,
-    2
+    2,
+    3
    ],
    "front_share": 1.0,
-   "inner_share": 0.25,
-   "outer_share": 0.25,
-   "horses": 4
+   "inner_share": 0.17,
+   "outer_share": 0.33,
+   "horses": 6
   },
   "園田ダ": {
    "judgement": "先行有利",
