@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261111",
  "race_id": "202611112433160312",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 6,
+   "name": "ルージュソムニウム",
+   "time": "1:37.6",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.3,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 9,
+   "name": "テイクザスローン",
+   "time": "1:37.7",
+   "margin": "１／２",
+   "pos4": 2,
+   "last3f": 39.1,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 12,
+   "name": "メーテルリンク",
+   "time": "1:37.9",
+   "margin": "１",
+   "pos4": 3,
+   "last3f": 38.6,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 11,
+   "name": "ブリリアンス",
+   "time": "1:38.4",
+   "margin": "２ １／２",
+   "pos4": 7,
+   "last3f": 39.5,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 2,
+   "number": 2,
+   "name": "フィアスゲイル",
+   "time": "1:38.9",
+   "margin": "２ １／２",
+   "pos4": 9,
+   "last3f": 39.9,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 4,
+   "number": 4,
+   "name": "ダイユウレゾナンス",
+   "time": "1:39.4",
+   "margin": "２ １／２",
+   "pos4": 4,
+   "last3f": 40.8,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 8,
+   "name": "テルケンレンタッチ",
+   "time": "1:39.5",
+   "margin": "１／２",
+   "pos4": 4,
+   "last3f": 41.0,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "クレセントゼファー",
+   "time": "1:39.6",
+   "margin": "３／４",
+   "pos4": 9,
+   "last3f": 41.0,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 1,
+   "number": 1,
+   "name": "キタノタイキ",
+   "time": "1:40.0",
+   "margin": "２",
+   "pos4": 9,
+   "last3f": 41.3,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 10,
+   "name": "クイーンオブハート",
+   "time": "1:40.2",
+   "margin": "１",
+   "pos4": 12,
+   "last3f": 41.2,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 5,
+   "number": 5,
+   "name": "ミスティパープル",
+   "time": "1:40.4",
+   "margin": "１",
+   "pos4": 4,
+   "last3f": 42.0,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 6,
+   "number": 7,
+   "name": "ラスターヴァース",
+   "time": "1:42.2",
+   "margin": "９",
+   "pos4": 8,
+   "last3f": 43.8,
+   "popularity": null
+  }
+ ]
 }

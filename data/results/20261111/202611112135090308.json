@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261111",
  "race_id": "202611112135090308",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "アパタイトテソーロ",
    "time": "1:32.4",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 40.5,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ノーブルウィスパー",
    "time": "1:32.9",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 40.3,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ブリッツアロング",
    "time": "1:33.5",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 40.7,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "スマートラスター",
    "time": "1:33.6",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 40.6,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "ササキントモゴロウ",
    "time": "1:33.6",
    "margin": "同着",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 41.3,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ルージュフィーリア",
    "time": "1:33.7",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 41.8,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "エイシントゥラン",
    "time": "1:34.0",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 41.0,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ルージュアマリア",
    "time": "1:34.2",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 41.0,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "ライヴペッパー",
    "time": "1:34.5",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 10,
+   "last3f": 41.3,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "マッセダムール",
    "time": "1:35.1",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 42.3,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "クレバス",
    "time": "1:35.5",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 42.3,
    "popularity": null
   }
  ]
