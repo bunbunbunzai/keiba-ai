@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261111",
  "race_id": "202611113601160208",
- "tries": 2,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -77,7 +77,7 @@
    "name": "トレンドライン",
    "time": "1:51.9",
    "margin": "",
-   "pos4": null,
+   "pos4": 4,
    "last3f": 38.9,
    "popularity": null
   },
@@ -88,7 +88,7 @@
    "name": "オリザレコルト",
    "time": "1:52.0",
    "margin": "３／４",
-   "pos4": null,
+   "pos4": 1,
    "last3f": 39.6,
    "popularity": null
   },
@@ -99,7 +99,7 @@
    "name": "ライトビーンズ",
    "time": "1:52.7",
    "margin": "３",
-   "pos4": null,
+   "pos4": 2,
    "last3f": 40.7,
    "popularity": null
   },
@@ -110,7 +110,7 @@
    "name": "カセノイーグル",
    "time": "1:52.7",
    "margin": "ハナ",
-   "pos4": null,
+   "pos4": 9,
    "last3f": 39.0,
    "popularity": null
   },
@@ -121,7 +121,7 @@
    "name": "ケイキカーネ",
    "time": "1:52.8",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 4,
    "last3f": 39.8,
    "popularity": null
   },
@@ -132,7 +132,7 @@
    "name": "レギュム",
    "time": "1:52.9",
    "margin": "３／４",
-   "pos4": null,
+   "pos4": 4,
    "last3f": 39.9,
    "popularity": null
   },
@@ -143,7 +143,7 @@
    "name": "ランシュネル",
    "time": "1:52.9",
    "margin": "アタマ",
-   "pos4": null,
+   "pos4": 9,
    "last3f": 39.5,
    "popularity": null
   },
@@ -154,7 +154,7 @@
    "name": "ミスプランセス",
    "time": "1:53.0",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 4,
    "last3f": 40.0,
    "popularity": null
   },
@@ -165,7 +165,7 @@
    "name": "ブリエテーション",
    "time": "1:53.6",
    "margin": "３",
-   "pos4": null,
+   "pos4": 2,
    "last3f": 41.1,
    "popularity": null
   },
@@ -176,7 +176,7 @@
    "name": "スターリーローラー",
    "time": "1:53.7",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 11,
    "last3f": 40.3,
    "popularity": null
   },
@@ -187,7 +187,7 @@
    "name": "イイヒタビダチ",
    "time": "1:54.1",
    "margin": "２",
-   "pos4": null,
+   "pos4": 12,
    "last3f": 40.4,
    "popularity": null
   },
@@ -198,7 +198,7 @@
    "name": "デルピエロ",
    "time": "1:54.5",
    "margin": "２",
-   "pos4": null,
+   "pos4": 4,
    "last3f": 41.8,
    "popularity": null
   }
