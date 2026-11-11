@@ -1,6 +1,6 @@
 {
  "date": "20261111",
- "updated": "2026-11-11 11:12",
+ "updated": "2026-11-11 11:16",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -47,8 +47,22 @@
     "field": 10,
     "popularity": 9
    },
-   "odds": 9.5,
-   "popularity": 4
+   "odds": 14.9,
+   "popularity": 6
+  },
+  {
+   "race_id": "202611112433160301",
+   "results_key": "202611112433160301",
+   "venue": "名古屋",
+   "race_no": 1,
+   "post_time": "12:25",
+   "number": 3,
+   "name": "ウォーターブビンガ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 7.0,
+   "popularity": 2
   },
   {
    "race_id": "202611112726180105",
