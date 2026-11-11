@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261111",
  "race_id": "202611113601160212",
- "tries": 2,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 7,
+   "name": "シラントロ",
+   "time": "1:01.9",
+   "margin": "",
+   "pos4": 2,
+   "last3f": 37.8,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 12,
+   "name": "ノアルパフェ",
+   "time": "1:02.0",
+   "margin": "１／２",
+   "pos4": 7,
+   "last3f": 37.2,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 8,
+   "name": "サヤオンニ",
+   "time": "1:02.0",
+   "margin": "アタマ",
+   "pos4": 4,
+   "last3f": 37.4,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 5,
+   "name": "ミソドレミ",
+   "time": "1:02.1",
+   "margin": "クビ",
+   "pos4": 1,
+   "last3f": 38.4,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 9,
+   "name": "マイラーズドーン",
+   "time": "1:02.5",
+   "margin": "２",
+   "pos4": 2,
+   "last3f": 38.5,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 1,
+   "number": 1,
+   "name": "ロアリングフレイム",
+   "time": "1:02.7",
+   "margin": "３／４",
+   "pos4": 11,
+   "last3f": 37.2,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 3,
+   "name": "ラピルスイメル",
+   "time": "1:02.7",
+   "margin": "アタマ",
+   "pos4": 4,
+   "last3f": 38.6,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 4,
+   "number": 4,
+   "name": "ササキンメロディ",
+   "time": "1:02.8",
+   "margin": "１／２",
+   "pos4": 8,
+   "last3f": 37.7,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "キアキア",
+   "time": "1:02.9",
+   "margin": "クビ",
+   "pos4": 8,
+   "last3f": 38.3,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 10,
+   "name": "ヨシノカムイ",
+   "time": "1:03.0",
+   "margin": "１／２",
+   "pos4": 8,
+   "last3f": 37.7,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 5,
+   "number": 6,
+   "name": "パープルビューティ",
+   "time": "1:03.8",
+   "margin": "４",
+   "pos4": 12,
+   "last3f": 38.3,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 8,
+   "number": 11,
+   "name": "ジャスパーロイヤル",
+   "time": "1:04.1",
+   "margin": "１ １／２",
+   "pos4": 4,
+   "last3f": 39.8,
+   "popularity": null
+  }
+ ]
 }
