@@ -1,6 +1,6 @@
 {
  "date": "20261111",
- "updated": "2026-11-11 16:44",
+ "updated": "2026-11-11 16:55",
  "bias": {
   "川崎ダ": {
    "judgement": "内先行",
@@ -56,7 +56,7 @@
    "horses": 22
   },
   "門別ダ": {
-   "judgement": "先行有利",
+   "judgement": "内先行",
    "confidence": "中",
    "races": [
     1,
@@ -67,8 +67,8 @@
    ],
    "front_share": 1.0,
    "inner_share": 0.5,
-   "outer_share": 0.25,
-   "horses": 8
+   "outer_share": 0.2,
+   "horses": 10
   }
  }
 }

@@ -1,6 +1,6 @@
 {
  "date": "20261111",
- "updated": "2026-11-11 16:41",
+ "updated": "2026-11-11 16:55",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1731,7 +1731,7 @@
     "field": 12,
     "popularity": 10
    },
-   "odds": 31.6,
+   "odds": 35.7,
    "popularity": 7
   },
   {
@@ -1753,7 +1753,7 @@
     "field": 9,
     "popularity": 2
    },
-   "odds": 22.0,
+   "odds": 19.5,
    "popularity": 5
   },
   {
@@ -1774,7 +1774,7 @@
     "field": 12,
     "popularity": 4
    },
-   "odds": 23.0,
+   "odds": 26.3,
    "popularity": 6
   },
   {
@@ -1795,8 +1795,8 @@
     "field": 11,
     "popularity": 10
    },
-   "odds": 44.6,
-   "popularity": 10
+   "odds": 40.5,
+   "popularity": 9
   },
   {
    "race_id": "202611112433160312",
@@ -1853,6 +1853,20 @@
    },
    "odds": 20.0,
    "popularity": 7
+  },
+  {
+   "race_id": "202611113601160209",
+   "results_key": "202611113601160209",
+   "venue": "門別",
+   "race_no": 9,
+   "post_time": "18:40",
+   "number": 12,
+   "name": "メイショウカラクサ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 12.9,
+   "popularity": 4
   },
   {
    "race_id": "202611112135090309",
