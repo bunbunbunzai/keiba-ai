@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261111",
  "race_id": "202611112726180108",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,105 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 9,
+   "name": "エイシンジザイテン",
+   "time": "1:32.7",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.5,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 2,
+   "number": 2,
+   "name": "ミリオングローリー",
+   "time": "1:33.0",
+   "margin": "１ １／２",
+   "pos4": 2,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "ダイシンデリー",
+   "time": "1:33.1",
+   "margin": "３／４",
+   "pos4": 5,
+   "last3f": 39.1,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 1,
+   "number": 1,
+   "name": "エリカブルージュ",
+   "time": "1:33.5",
+   "margin": "２ １／２",
+   "pos4": 6,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 3,
+   "number": 3,
+   "name": "ビカムキング",
+   "time": "1:33.6",
+   "margin": "３／４",
+   "pos4": 2,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 6,
+   "name": "ナムラトレビアン",
+   "time": "1:33.7",
+   "margin": "クビ",
+   "pos4": 4,
+   "last3f": 40.3,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 8,
+   "name": "クールブリエ",
+   "time": "1:35.0",
+   "margin": "８",
+   "pos4": 7,
+   "last3f": 40.8,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 5,
+   "number": 5,
+   "name": "クルシファー",
+   "time": "1:35.6",
+   "margin": "３ １／２",
+   "pos4": 7,
+   "last3f": 42.4,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 7,
+   "name": "キャノンボール",
+   "time": "1:37.1",
+   "margin": "９",
+   "pos4": 9,
+   "last3f": 43.7,
+   "popularity": null
+  }
+ ]
 }
