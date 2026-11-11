@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261111",
  "race_id": "202611112135090312",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,160 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 7,
+   "name": "フクシマジンロッソ",
+   "time": "1:39.6",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 42.7,
+   "popularity": 9
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 10,
+   "name": "トンヤイビーン",
+   "time": "1:39.6",
+   "margin": "アタマ",
+   "pos4": 2,
+   "last3f": 41.7,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 8,
+   "name": "クリノフローレンス",
+   "time": "1:40.5",
+   "margin": "４",
+   "pos4": 5,
+   "last3f": 41.7,
+   "popularity": 10
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 6,
+   "name": "シェナベスト",
+   "time": "1:40.5",
+   "margin": "アタマ",
+   "pos4": 11,
+   "last3f": 41.8,
+   "popularity": 3
+  },
+  {
+   "finish": "5",
+   "frame": 1,
+   "number": 1,
+   "name": "マロンルピナス",
+   "time": "1:40.6",
+   "margin": "３／４",
+   "pos4": 5,
+   "last3f": 42.0,
+   "popularity": 8
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 14,
+   "name": "フィードウィン",
+   "time": "1:40.6",
+   "margin": "ハナ",
+   "pos4": 4,
+   "last3f": 42.3,
+   "popularity": 7
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 11,
+   "name": "コンポスト",
+   "time": "1:40.8",
+   "margin": "３／４",
+   "pos4": 9,
+   "last3f": 42.3,
+   "popularity": 12
+  },
+  {
+   "finish": "8",
+   "frame": 6,
+   "number": 9,
+   "name": "クイーンズステート",
+   "time": "1:40.8",
+   "margin": "クビ",
+   "pos4": 3,
+   "last3f": 42.3,
+   "popularity": 14
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "ドーサンドーサン",
+   "time": "1:41.0",
+   "margin": "３／４",
+   "pos4": 12,
+   "last3f": 42.0,
+   "popularity": 4
+  },
+  {
+   "finish": "10",
+   "frame": 3,
+   "number": 3,
+   "name": "オーバーユー",
+   "time": "1:42.3",
+   "margin": "６",
+   "pos4": 13,
+   "last3f": 42.9,
+   "popularity": 13
+  },
+  {
+   "finish": "11",
+   "frame": 8,
+   "number": 13,
+   "name": "ミュークフォルテ",
+   "time": "1:42.3",
+   "margin": "クビ",
+   "pos4": 9,
+   "last3f": 43.8,
+   "popularity": 11
+  },
+  {
+   "finish": "12",
+   "frame": 4,
+   "number": 5,
+   "name": "スカルラッティ",
+   "time": "1:42.5",
+   "margin": "１",
+   "pos4": 5,
+   "last3f": 44.3,
+   "popularity": 5
+  },
+  {
+   "finish": "13",
+   "frame": 7,
+   "number": 12,
+   "name": "シュヴァイゲン",
+   "time": "1:45.5",
+   "margin": "大差",
+   "pos4": 5,
+   "last3f": 48.0,
+   "popularity": 6
+  },
+  {
+   "finish": "-",
+   "frame": 3,
+   "number": 4,
+   "name": "アースヴィンチ",
+   "time": "-",
+   "margin": "中止",
+   "pos4": 14,
+   "last3f": null,
+   "popularity": 2
+  }
+ ]
 }
