@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261111",
  "race_id": "202611112135090307",
- "tries": 8,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "ヴィトーリアヘーザ",
    "time": "1:32.2",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 41.0,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ノヴァヴィア",
    "time": "1:32.7",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 40.7,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ギフテッドクィーン",
    "time": "1:33.0",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 41.0,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "トリル",
    "time": "1:33.1",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 41.3,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "アリハッピー",
    "time": "1:33.3",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 40.8,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "フェイティアン",
    "time": "1:33.3",
    "margin": "ハナ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 41.1,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "リコーターター",
    "time": "1:33.7",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 40.8,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "アトラスライズ",
    "time": "1:33.7",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 41.5,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "プレストマーヴェル",
    "time": "1:34.2",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 41.5,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "メーゼ",
    "time": "1:37.8",
    "margin": "大差",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 45.4,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "アーサ",
    "time": "1:37.8",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 45.4,
    "popularity": null
   }
  ]
