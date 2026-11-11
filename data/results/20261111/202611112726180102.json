@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261111",
  "race_id": "202611112726180102",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -63,5 +63,94 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 7,
+   "name": "ゼットヒーロ",
+   "time": "1:20.6",
+   "margin": "",
+   "pos4": 2,
+   "last3f": 38.7,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "ハギノギフテッド",
+   "time": "1:20.6",
+   "margin": "ハナ",
+   "pos4": 3,
+   "last3f": 38.5,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 6,
+   "name": "マイネルゼーロス",
+   "time": "1:20.7",
+   "margin": "１／２",
+   "pos4": 1,
+   "last3f": 38.9,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 4,
+   "name": "スマルト",
+   "time": "1:21.3",
+   "margin": "３ １／２",
+   "pos4": 4,
+   "last3f": 38.9,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 8,
+   "name": "ピコブロッサム",
+   "time": "1:21.4",
+   "margin": "１／２",
+   "pos4": 5,
+   "last3f": 39.0,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 1,
+   "number": 1,
+   "name": "バルミーパール",
+   "time": "1:22.3",
+   "margin": "５",
+   "pos4": 7,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 3,
+   "name": "ワキノアリエス",
+   "time": "1:23.5",
+   "margin": "７",
+   "pos4": 5,
+   "last3f": 41.4,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 2,
+   "number": 2,
+   "name": "ルビーブロンド",
+   "time": "1:23.6",
+   "margin": "クビ",
+   "pos4": 8,
+   "last3f": 40.8,
+   "popularity": null
+  }
+ ]
 }
