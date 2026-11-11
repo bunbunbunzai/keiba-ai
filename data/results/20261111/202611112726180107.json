@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261111",
  "race_id": "202611112726180107",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -63,5 +63,94 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 1,
+   "number": 1,
+   "name": "ペプチドアロン",
+   "time": "1:20.7",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 38.1,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 7,
+   "name": "コテツハマー",
+   "time": "1:21.3",
+   "margin": "３ １／２",
+   "pos4": 2,
+   "last3f": 38.7,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "シーシェル",
+   "time": "1:22.1",
+   "margin": "５",
+   "pos4": 2,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 8,
+   "name": "リヨン",
+   "time": "1:22.2",
+   "margin": "１／２",
+   "pos4": 6,
+   "last3f": 38.8,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 6,
+   "name": "アレナトーレ",
+   "time": "1:22.2",
+   "margin": "クビ",
+   "pos4": 2,
+   "last3f": 39.9,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 3,
+   "number": 3,
+   "name": "ジェリーコアコアラ",
+   "time": "1:22.4",
+   "margin": "１ １／２",
+   "pos4": 5,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 5,
+   "name": "タイムレスラブ",
+   "time": "1:23.0",
+   "margin": "３ １／２",
+   "pos4": 7,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 2,
+   "number": 2,
+   "name": "コッコラーレ",
+   "time": "1:24.3",
+   "margin": "８",
+   "pos4": 7,
+   "last3f": 41.2,
+   "popularity": null
+  }
+ ]
 }
