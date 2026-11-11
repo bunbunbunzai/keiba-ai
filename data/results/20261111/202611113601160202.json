@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261111",
  "race_id": "202611113601160202",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -77,7 +77,7 @@
    "name": "スティールロード",
    "time": "1:02.0",
    "margin": "",
-   "pos4": null,
+   "pos4": 3,
    "last3f": 37.0,
    "popularity": null
   },
@@ -88,7 +88,7 @@
    "name": "プラウドホウショウ",
    "time": "1:03.1",
    "margin": "５",
-   "pos4": null,
+   "pos4": 1,
    "last3f": 38.4,
    "popularity": null
   },
@@ -99,7 +99,7 @@
    "name": "マルホ",
    "time": "1:03.1",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 1,
    "last3f": 38.5,
    "popularity": null
   },
@@ -110,7 +110,7 @@
    "name": "エイシンスラッグ",
    "time": "1:03.2",
    "margin": "１／２",
-   "pos4": null,
+   "pos4": 6,
    "last3f": 37.8,
    "popularity": null
   },
@@ -121,7 +121,7 @@
    "name": "ブエナモーダ",
    "time": "1:03.3",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 4,
    "last3f": 38.1,
    "popularity": null
   },
@@ -132,7 +132,7 @@
    "name": "タルシェクーン",
    "time": "1:03.4",
    "margin": "１／２",
-   "pos4": null,
+   "pos4": 7,
    "last3f": 37.4,
    "popularity": null
   },
@@ -143,7 +143,7 @@
    "name": "チェックレイズ",
    "time": "1:03.9",
    "margin": "２ １／２",
-   "pos4": null,
+   "pos4": 9,
    "last3f": 37.5,
    "popularity": null
   },
@@ -154,7 +154,7 @@
    "name": "ビッグホープルーフ",
    "time": "1:04.2",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 4,
    "last3f": 38.7,
    "popularity": null
   },
@@ -165,7 +165,7 @@
    "name": "ベビーギャング",
    "time": "1:04.9",
    "margin": "３",
-   "pos4": null,
+   "pos4": 11,
    "last3f": 37.4,
    "popularity": null
   },
@@ -176,7 +176,7 @@
    "name": "アノコロイチバン",
    "time": "1:04.9",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 8,
    "last3f": 38.8,
    "popularity": null
   },
@@ -187,7 +187,7 @@
    "name": "リックグールド",
    "time": "1:05.0",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 11,
    "last3f": 37.8,
    "popularity": null
   },
@@ -198,7 +198,7 @@
    "name": "アサグモ",
    "time": "1:05.0",
    "margin": "アタマ",
-   "pos4": null,
+   "pos4": 9,
    "last3f": 38.9,
    "popularity": null
   }
