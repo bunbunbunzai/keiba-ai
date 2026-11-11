@@ -2,7 +2,205 @@
  "source": "rakuten",
  "date": "20261111",
  "race_id": "202611113601160206",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "12",
+    "yen": 230
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "12-3",
+    "yen": 4940
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "12",
+    "yen": 120
+   },
+   {
+    "combo": "3",
+    "yen": 430
+   },
+   {
+    "combo": "8",
+    "yen": 130
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-12",
+    "yen": 1100
+   },
+   {
+    "combo": "8-12",
+    "yen": 210
+   },
+   {
+    "combo": "3-8",
+    "yen": 1520
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-8",
+    "yen": 2700
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-8-12",
+    "yen": 2650
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "12-3-8",
+    "yen": 20070
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-12",
+    "yen": 2900
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 12,
+   "name": "スティールスピネル",
+   "time": "1:02.7",
+   "margin": "",
+   "pos4": 3,
+   "last3f": 38.4,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 3,
+   "number": 3,
+   "name": "ニシノランペイジ",
+   "time": "1:02.8",
+   "margin": "１／２",
+   "pos4": 6,
+   "last3f": 37.8,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 8,
+   "name": "ゴーゴーエイミー",
+   "time": "1:03.0",
+   "margin": "１",
+   "pos4": 3,
+   "last3f": 38.7,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 9,
+   "name": "メチカブーラ",
+   "time": "1:03.1",
+   "margin": "１／２",
+   "pos4": 12,
+   "last3f": 37.2,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 1,
+   "number": 1,
+   "name": "アジーザム",
+   "time": "1:03.1",
+   "margin": "アタマ",
+   "pos4": 8,
+   "last3f": 37.8,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 4,
+   "number": 4,
+   "name": "フィカスリラータ",
+   "time": "1:03.2",
+   "margin": "１／２",
+   "pos4": 8,
+   "last3f": 38.0,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 5,
+   "name": "ヤマニンアリーズ",
+   "time": "1:03.3",
+   "margin": "１／２",
+   "pos4": 1,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 5,
+   "number": 6,
+   "name": "イナンナ",
+   "time": "1:03.4",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": 39.3,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 6,
+   "number": 7,
+   "name": "ヤマノプリティー",
+   "time": "1:03.6",
+   "margin": "３／４",
+   "pos4": 10,
+   "last3f": 38.1,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 8,
+   "number": 11,
+   "name": "ルナエルフ",
+   "time": "1:03.6",
+   "margin": "アタマ",
+   "pos4": 6,
+   "last3f": 39.2,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 2,
+   "number": 2,
+   "name": "ティファニジェンヌ",
+   "time": "1:04.4",
+   "margin": "４",
+   "pos4": 10,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 7,
+   "number": 10,
+   "name": "ルックスライクパツ",
+   "time": "1:06.2",
+   "margin": "９",
+   "pos4": 2,
+   "last3f": 42.5,
+   "popularity": null
+  }
+ ]
 }
