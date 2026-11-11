@@ -1,6 +1,6 @@
 {
  "date": "20261111",
- "updated": "2026-11-11 13:05",
+ "updated": "2026-11-11 13:09",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -599,20 +599,6 @@
    "venue": "名古屋",
    "race_no": 5,
    "post_time": "14:35",
-   "number": 1,
-   "name": "アークレオン",
-   "types": [
-    "aitop"
-   ],
-   "odds": 19.9,
-   "popularity": 4
-  },
-  {
-   "race_id": "202611112433160305",
-   "results_key": "202611112433160305",
-   "venue": "名古屋",
-   "race_no": 5,
-   "post_time": "14:35",
    "number": 4,
    "name": "ナガノアリス",
    "types": [
@@ -625,8 +611,8 @@
     "field": 12,
     "popularity": 12
    },
-   "odds": 53.0,
-   "popularity": 6
+   "odds": 28.4,
+   "popularity": 7
   },
   {
    "race_id": "202611112135090301",
