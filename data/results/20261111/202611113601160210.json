@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261111",
  "race_id": "202611113601160210",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,149 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 4,
+   "name": "ピエナクレスコ",
+   "time": "1:15.2",
+   "margin": "",
+   "pos4": null,
+   "last3f": 38.1,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 3,
+   "number": 3,
+   "name": "ジューンランド",
+   "time": "1:15.6",
+   "margin": "２",
+   "pos4": null,
+   "last3f": 39.1,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 6,
+   "name": "トニーオーシャンズ",
+   "time": "1:15.7",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": 38.1,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 5,
+   "name": "クラフトキング",
+   "time": "1:16.0",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": 38.6,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 7,
+   "name": "コココーハク",
+   "time": "1:16.4",
+   "margin": "２",
+   "pos4": null,
+   "last3f": 40.3,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 11,
+   "name": "サンゼントカガヤク",
+   "time": "1:16.6",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": 39.5,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 8,
+   "name": "リコーグロック",
+   "time": "1:16.7",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": 40.6,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 10,
+   "name": "ベルオーブ",
+   "time": "1:17.4",
+   "margin": "３",
+   "pos4": null,
+   "last3f": 41.0,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "キュータロー",
+   "time": "1:17.5",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": 41.1,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 1,
+   "number": 1,
+   "name": "シロカーク",
+   "time": "1:18.5",
+   "margin": "５",
+   "pos4": null,
+   "last3f": 40.3,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 6,
+   "number": 9,
+   "name": "ブレイヴァリーボス",
+   "time": "1:18.7",
+   "margin": "１",
+   "pos4": null,
+   "last3f": 41.1,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 8,
+   "number": 13,
+   "name": "メビウス",
+   "time": "1:18.9",
+   "margin": "１",
+   "pos4": null,
+   "last3f": 41.7,
+   "popularity": null
+  },
+  {
+   "finish": "13",
+   "frame": 8,
+   "number": 12,
+   "name": "プレイフルネス",
+   "time": "1:19.6",
+   "margin": "３",
+   "pos4": null,
+   "last3f": 43.2,
+   "popularity": null
+  }
+ ]
 }
