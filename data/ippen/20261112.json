@@ -1,6 +1,6 @@
 {
  "date": "20261112",
- "updated": "2026-11-12 13:35",
+ "updated": "2026-11-12 13:41",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -759,7 +759,8 @@
    "number": 4,
    "name": "フィーユレアル",
    "types": [
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 24,
    "last": {
@@ -768,8 +769,8 @@
     "field": 11,
     "popularity": 2
    },
-   "odds": 5.0,
-   "popularity": 2
+   "odds": 69.7,
+   "popularity": 8
   },
   {
    "race_id": "202611122433160406",
@@ -789,8 +790,22 @@
     "field": 11,
     "popularity": 7
    },
-   "odds": 6.0,
-   "popularity": 3
+   "odds": 34.8,
+   "popularity": 4
+  },
+  {
+   "race_id": "202611122433160406",
+   "results_key": "202611122433160406",
+   "venue": "名古屋",
+   "race_no": 6,
+   "post_time": "15:05",
+   "number": 8,
+   "name": "ホウショウリュウ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 16.7,
+   "popularity": 2
   },
   {
    "race_id": "202611123601160303",
