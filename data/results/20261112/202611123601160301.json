@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261112",
  "race_id": "202611123601160301",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,160 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 13,
+   "name": "リコークックー",
+   "time": "1:16.2",
+   "margin": "",
+   "pos4": null,
+   "last3f": 38.9,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 10,
+   "name": "ダンストンフォルテ",
+   "time": "1:16.5",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 12,
+   "name": "スキャンダルガール",
+   "time": "1:16.6",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": 39.5,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 3,
+   "name": "ノーモアウォー",
+   "time": "1:16.8",
+   "margin": "１",
+   "pos4": null,
+   "last3f": 38.7,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 9,
+   "name": "コノハナメガミ",
+   "time": "1:16.9",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": 39.0,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 11,
+   "name": "サブメルジュ",
+   "time": "1:17.0",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": 39.0,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 4,
+   "name": "カラーウィール",
+   "time": "1:17.3",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": 39.4,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 2,
+   "number": 2,
+   "name": "サスラオウ",
+   "time": "1:17.4",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": 39.9,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 4,
+   "number": 6,
+   "name": "オーバーチュア",
+   "time": "1:17.7",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": 39.0,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 8,
+   "name": "ユーデンブルク",
+   "time": "1:18.2",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": 39.2,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 4,
+   "number": 5,
+   "name": "ヴァンヴァンヴァン",
+   "time": "1:19.3",
+   "margin": "５",
+   "pos4": null,
+   "last3f": 40.1,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 8,
+   "number": 14,
+   "name": "コバシリデス",
+   "time": "1:20.4",
+   "margin": "５",
+   "pos4": null,
+   "last3f": 41.4,
+   "popularity": null
+  },
+  {
+   "finish": "13",
+   "frame": 5,
+   "number": 7,
+   "name": "アヤサンカンバック",
+   "time": "1:21.4",
+   "margin": "５",
+   "pos4": null,
+   "last3f": 42.1,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 1,
+   "number": 1,
+   "name": "オーロラヒメアオイ",
+   "time": "-",
+   "margin": "取消",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
