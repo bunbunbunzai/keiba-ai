@@ -1,6 +1,6 @@
 {
  "date": "20261112",
- "updated": "2026-11-12 11:17",
+ "updated": "2026-11-12 11:20",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -144,7 +144,8 @@
    "number": 7,
    "name": "ボトムレス",
    "types": [
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 27,
    "last": {
@@ -153,8 +154,8 @@
     "field": 9,
     "popularity": 2
    },
-   "odds": 6.8,
-   "popularity": 3
+   "odds": 28.9,
+   "popularity": 8
   },
   {
    "race_id": "202611122433160402",
