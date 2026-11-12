@@ -2,7 +2,129 @@
  "source": "rakuten",
  "date": "20261112",
  "race_id": "202611122433160410",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 3,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "4",
+    "yen": 200
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "4-5",
+    "yen": 520
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "4",
+    "yen": 130
+   },
+   {
+    "combo": "5",
+    "yen": 100
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-5",
+    "yen": 130
+   },
+   {
+    "combo": "1-4",
+    "yen": 350
+   },
+   {
+    "combo": "1-5",
+    "yen": 230
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-4-5",
+    "yen": 620
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "4-5-1",
+    "yen": 2740
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-5",
+    "yen": 170
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 4,
+   "name": "スターペスショウマ",
+   "time": "2:11.6",
+   "margin": "",
+   "pos4": 3,
+   "last3f": 37.8,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "スイッチブレード",
+   "time": "2:11.6",
+   "margin": "クビ",
+   "pos4": 1,
+   "last3f": 38.9,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 1,
+   "number": 1,
+   "name": "アルファヒディ",
+   "time": "2:11.7",
+   "margin": "１／２",
+   "pos4": 3,
+   "last3f": 38.0,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 3,
+   "name": "ロイヤルペガサス",
+   "time": "2:12.6",
+   "margin": "４",
+   "pos4": 6,
+   "last3f": 38.2,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 2,
+   "number": 2,
+   "name": "タナバタ",
+   "time": "2:12.7",
+   "margin": "クビ",
+   "pos4": 1,
+   "last3f": 40.1,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 6,
+   "name": "トーマステソーロ",
+   "time": "2:13.7",
+   "margin": "５",
+   "pos4": 5,
+   "last3f": 39.7,
+   "popularity": null
+  }
+ ]
 }
