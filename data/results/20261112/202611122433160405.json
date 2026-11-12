@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261112",
  "race_id": "202611122433160405",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,127 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 8,
+   "name": "リリーボレア",
+   "time": "1:37.5",
+   "margin": "",
+   "pos4": 3,
+   "last3f": 39.1,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 3,
+   "number": 3,
+   "name": "シルフ",
+   "time": "1:37.8",
+   "margin": "１ １／２",
+   "pos4": 1,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 11,
+   "name": "ロジクリスエス",
+   "time": "1:37.8",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": 39.4,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 10,
+   "name": "ハイグッドエース",
+   "time": "1:39.1",
+   "margin": "６",
+   "pos4": 8,
+   "last3f": 40.1,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 4,
+   "name": "スミレノハナ",
+   "time": "1:39.1",
+   "margin": "クビ",
+   "pos4": 3,
+   "last3f": 40.9,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "エストレリータ",
+   "time": "1:39.5",
+   "margin": "２",
+   "pos4": 8,
+   "last3f": 40.7,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 5,
+   "name": "メイショウイッシン",
+   "time": "1:39.8",
+   "margin": "１ １／２",
+   "pos4": 7,
+   "last3f": 41.4,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 6,
+   "number": 7,
+   "name": "ベールドゥフィーユ",
+   "time": "1:39.9",
+   "margin": "クビ",
+   "pos4": 8,
+   "last3f": 41.0,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 6,
+   "number": 6,
+   "name": "メイショウヨリキリ",
+   "time": "1:39.9",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": 42.0,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 1,
+   "number": 1,
+   "name": "ジーティーネージュ",
+   "time": "1:40.4",
+   "margin": "２ １／２",
+   "pos4": 2,
+   "last3f": 42.5,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 7,
+   "number": 9,
+   "name": "マルクドクール",
+   "time": "1:40.6",
+   "margin": "１",
+   "pos4": 11,
+   "last3f": 41.8,
+   "popularity": null
+  }
+ ]
 }
