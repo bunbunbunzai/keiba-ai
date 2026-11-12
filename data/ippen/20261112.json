@@ -1,6 +1,6 @@
 {
  "date": "20261112",
- "updated": "2026-11-12 16:48",
+ "updated": "2026-11-12 16:52",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1847,8 +1847,29 @@
     "field": 12,
     "popularity": 7
    },
-   "odds": 18.0,
+   "odds": 27.8,
    "popularity": 8
+  },
+  {
+   "race_id": "202611122135090408",
+   "results_key": "202611122135090408",
+   "venue": "川崎",
+   "race_no": 8,
+   "post_time": "18:20",
+   "number": 3,
+   "name": "クリムゾンプリンス",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 31,
+   "last": {
+    "date": "2026-10-12",
+    "finish": 7,
+    "field": 12,
+    "popularity": 3
+   },
+   "odds": 8.2,
+   "popularity": 4
   },
   {
    "race_id": "202611122135090408",
@@ -1868,7 +1889,7 @@
     "field": 11,
     "popularity": 7
    },
-   "odds": 11.1,
+   "odds": 14.9,
    "popularity": 5
   },
   {
