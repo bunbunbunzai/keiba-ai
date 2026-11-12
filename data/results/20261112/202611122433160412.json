@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261112",
  "race_id": "202611122433160412",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 8,
+   "name": "アミナス",
+   "time": "1:36.5",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.5,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "マーゴットデウス",
+   "time": "1:37.0",
+   "margin": "２ １／２",
+   "pos4": 2,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "クライナリーゼ",
+   "time": "1:37.0",
+   "margin": "ハナ",
+   "pos4": 6,
+   "last3f": 39.5,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 7,
+   "name": "キミノナハオリョウ",
+   "time": "1:37.4",
+   "margin": "２",
+   "pos4": 4,
+   "last3f": 40.1,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 12,
+   "name": "ファインヒメ",
+   "time": "1:38.0",
+   "margin": "３",
+   "pos4": 3,
+   "last3f": 40.9,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 6,
+   "name": "フライトマップ",
+   "time": "1:38.1",
+   "margin": "１／２",
+   "pos4": 7,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 2,
+   "number": 2,
+   "name": "ヴェロシア",
+   "time": "1:38.3",
+   "margin": "１",
+   "pos4": 8,
+   "last3f": 40.6,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 9,
+   "name": "ビアーレ",
+   "time": "1:38.4",
+   "margin": "クビ",
+   "pos4": 4,
+   "last3f": 41.4,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 10,
+   "name": "メイショウバルキア",
+   "time": "1:38.5",
+   "margin": "３／４",
+   "pos4": 11,
+   "last3f": 40.6,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 1,
+   "number": 1,
+   "name": "ノヴァレジーナ",
+   "time": "1:38.6",
+   "margin": "３／４",
+   "pos4": 11,
+   "last3f": 40.7,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 4,
+   "number": 4,
+   "name": "ウインモアナ",
+   "time": "1:38.6",
+   "margin": "アタマ",
+   "pos4": 8,
+   "last3f": 40.6,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 8,
+   "number": 11,
+   "name": "ジャッキーバローズ",
+   "time": "1:39.1",
+   "margin": "２ １／２",
+   "pos4": 8,
+   "last3f": 42.0,
+   "popularity": null
+  }
+ ]
 }
