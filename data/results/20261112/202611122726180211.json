@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261112",
  "race_id": "202611122726180211",
- "tries": 4,
+ "tries": 5,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "ゼットシルヴィア",
    "time": "1:30.6",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 38.0,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "クラウドノイズ",
    "time": "1:30.8",
    "margin": "１ １／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 38.5,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "グレイスオブゴッド",
    "time": "1:30.9",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 38.1,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "ベラジオウマムスコ",
    "time": "1:31.0",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 38.2,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "ダイヤグラフ",
    "time": "1:31.0",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 37.9,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "キングレジェンド",
    "time": "1:31.2",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 38.1,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "ウインオーブ",
    "time": "1:31.3",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 38.9,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ゼンダンスカイ",
    "time": "1:31.5",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 38.6,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "シアージスト",
    "time": "1:32.2",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 39.7,
    "popularity": null
   }
  ]
