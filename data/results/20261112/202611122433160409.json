@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261112",
  "race_id": "202611122433160409",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 12,
+   "name": "カフジアッサム",
+   "time": "1:37.7",
+   "margin": "",
+   "pos4": 2,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "パキラスイート",
+   "time": "1:38.1",
+   "margin": "２",
+   "pos4": 5,
+   "last3f": 39.8,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 1,
+   "number": 1,
+   "name": "テーオーニルソン",
+   "time": "1:38.1",
+   "margin": "アタマ",
+   "pos4": 8,
+   "last3f": 39.1,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 7,
+   "name": "バイバイダーリン",
+   "time": "1:38.1",
+   "margin": "ハナ",
+   "pos4": 3,
+   "last3f": 39.9,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 8,
+   "name": "カフジジャワ",
+   "time": "1:38.2",
+   "margin": "１／２",
+   "pos4": 1,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 9,
+   "name": "アルゴフィリオ",
+   "time": "1:38.3",
+   "margin": "１／２",
+   "pos4": 6,
+   "last3f": 40.0,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 10,
+   "name": "テーオーパーソナル",
+   "time": "1:38.5",
+   "margin": "１",
+   "pos4": 12,
+   "last3f": 39.0,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 2,
+   "number": 2,
+   "name": "ドルチェルナ",
+   "time": "1:38.7",
+   "margin": "１ １／２",
+   "pos4": 8,
+   "last3f": 40.1,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 4,
+   "number": 4,
+   "name": "カルツァクライン",
+   "time": "1:38.9",
+   "margin": "３／４",
+   "pos4": 6,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 8,
+   "number": 11,
+   "name": "ハチハチローズ",
+   "time": "1:38.9",
+   "margin": "ハナ",
+   "pos4": 3,
+   "last3f": 40.8,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 3,
+   "number": 3,
+   "name": "メイショウオハコ",
+   "time": "1:39.2",
+   "margin": "１ １／２",
+   "pos4": 10,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 5,
+   "number": 6,
+   "name": "プルメリアリング",
+   "time": "1:39.2",
+   "margin": "アタマ",
+   "pos4": 11,
+   "last3f": 40.4,
+   "popularity": null
+  }
+ ]
 }
