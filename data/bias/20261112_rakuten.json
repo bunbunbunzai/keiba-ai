@@ -1,6 +1,6 @@
 {
  "date": "20261112",
- "updated": "2026-11-12 15:51",
+ "updated": "2026-11-12 15:57",
  "bias": {
   "川崎ダ": {
    "judgement": "先行有利",
@@ -23,12 +23,13 @@
     3,
     4,
     5,
-    6
+    6,
+    7
    ],
-   "front_share": 1.0,
-   "inner_share": 0.33,
-   "outer_share": 0.5,
-   "horses": 12
+   "front_share": 0.93,
+   "inner_share": 0.43,
+   "outer_share": 0.43,
+   "horses": 14
   },
   "園田ダ": {
    "judgement": "先行有利・外",
