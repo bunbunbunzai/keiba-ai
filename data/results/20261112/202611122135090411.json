@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261112",
  "race_id": "202611122135090411",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,160 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 5,
+   "name": "ティンバリートス",
+   "time": "1:45.4",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 10,
+   "name": "ワイルドウルル",
+   "time": "1:46.0",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 9,
+   "name": "パープルフォッグ",
+   "time": "1:46.1",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 4,
+   "name": "リヴァールミナス",
+   "time": "1:46.3",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 2,
+   "number": 2,
+   "name": "フルールマジック",
+   "time": "1:46.6",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 3,
+   "number": 3,
+   "name": "ミナスター",
+   "time": "1:46.8",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 6,
+   "name": "シャンハイハニー",
+   "time": "1:47.1",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 14,
+   "name": "ラビリンスティアラ",
+   "time": "1:48.3",
+   "margin": "６",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 7,
+   "name": "チュラブロッサム",
+   "time": "1:49.3",
+   "margin": "５",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 8,
+   "number": 13,
+   "name": "アキヴィオーラ",
+   "time": "1:49.7",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 1,
+   "number": 1,
+   "name": "レインボーライフ",
+   "time": "1:50.4",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 5,
+   "number": 8,
+   "name": "ウィズサークレット",
+   "time": "1:51.4",
+   "margin": "５",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "13",
+   "frame": 7,
+   "number": 12,
+   "name": "ブリザードキャット",
+   "time": "1:54.3",
+   "margin": "大差",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 7,
+   "number": 11,
+   "name": "ゴールドモナコ",
+   "time": "-",
+   "margin": "取消",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
