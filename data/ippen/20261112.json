@@ -1,6 +1,6 @@
 {
  "date": "20261112",
- "updated": "2026-11-12 14:26",
+ "updated": "2026-11-12 14:33",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -769,8 +769,8 @@
     "field": 11,
     "popularity": 2
    },
-   "odds": 59.0,
-   "popularity": 8
+   "odds": 48.0,
+   "popularity": 7
   },
   {
    "race_id": "202611122433160406",
@@ -790,8 +790,8 @@
     "field": 11,
     "popularity": 7
    },
-   "odds": 33.3,
-   "popularity": 4
+   "odds": 35.7,
+   "popularity": 5
   },
   {
    "race_id": "202611122433160406",
@@ -804,7 +804,7 @@
    "types": [
     "aitop"
    ],
-   "odds": 13.6,
+   "odds": 10.1,
    "popularity": 2
   },
   {
@@ -860,7 +860,7 @@
     "field": 12,
     "popularity": 4
    },
-   "odds": 69.1,
+   "odds": 84.0,
    "popularity": 10
   },
   {
@@ -874,7 +874,7 @@
    "types": [
     "aitop"
    ],
-   "odds": 4.5,
+   "odds": 4.8,
    "popularity": 4
   },
   {
@@ -896,8 +896,8 @@
     "field": 15,
     "popularity": 13
    },
-   "odds": 3.5,
-   "popularity": 2
+   "odds": 4.1,
+   "popularity": 3
   },
   {
    "race_id": "202611122726180210",
@@ -918,7 +918,7 @@
     "field": 8,
     "popularity": 1
    },
-   "odds": 3.1,
+   "odds": 2.9,
    "popularity": 1
   },
   {
@@ -939,8 +939,8 @@
     "field": 10,
     "popularity": 3
    },
-   "odds": 42.8,
-   "popularity": 7
+   "odds": 50.4,
+   "popularity": 8
   },
   {
    "race_id": "202611122433160407",
@@ -1096,6 +1096,20 @@
    "venue": "門別",
    "race_no": 4,
    "post_time": "15:55",
+   "number": 1,
+   "name": "オハマチャン",
+   "types": [
+    "aitop"
+   ],
+   "odds": 32.6,
+   "popularity": 9
+  },
+  {
+   "race_id": "202611123601160304",
+   "results_key": "202611123601160304",
+   "venue": "門別",
+   "race_no": 4,
+   "post_time": "15:55",
    "number": 8,
    "name": "ヤマトノカゼ",
    "types": [
@@ -1108,8 +1122,8 @@
     "field": 12,
     "popularity": null
    },
-   "odds": null,
-   "popularity": null
+   "odds": 1.2,
+   "popularity": 1
   },
   {
    "race_id": "202611122726180211",
