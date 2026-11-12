@@ -1,6 +1,6 @@
 {
  "date": "20261112",
- "updated": "2026-11-12 15:12",
+ "updated": "2026-11-12 15:19",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1164,7 +1164,7 @@
     "field": 12,
     "popularity": 2
    },
-   "odds": 7.1,
+   "odds": 4.3,
    "popularity": 3
   },
   {
@@ -1185,8 +1185,8 @@
     "field": 12,
     "popularity": 12
    },
-   "odds": 17.2,
-   "popularity": 4
+   "odds": 23.1,
+   "popularity": 6
   },
   {
    "race_id": "202611122135090404",
@@ -1206,8 +1206,8 @@
     "field": 14,
     "popularity": 4
    },
-   "odds": 23.3,
-   "popularity": 6
+   "odds": 31.8,
+   "popularity": 7
   },
   {
    "race_id": "202611122433160408",
@@ -1293,6 +1293,41 @@
    "venue": "川崎",
    "race_no": 5,
    "post_time": "16:45",
+   "number": 1,
+   "name": "シンデレラリバティ",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 20,
+   "last": {
+    "date": "2026-10-23",
+    "finish": 7,
+    "field": 11,
+    "popularity": 3
+   },
+   "odds": 26.8,
+   "popularity": 8
+  },
+  {
+   "race_id": "202611122135090405",
+   "results_key": "202611122135090405",
+   "venue": "川崎",
+   "race_no": 5,
+   "post_time": "16:45",
+   "number": 4,
+   "name": "クォリティショコラ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 10.7,
+   "popularity": 6
+  },
+  {
+   "race_id": "202611122135090405",
+   "results_key": "202611122135090405",
+   "venue": "川崎",
+   "race_no": 5,
+   "post_time": "16:45",
    "number": 5,
    "name": "ブライトメロディー",
    "types": [
@@ -1305,8 +1340,8 @@
     "field": 12,
     "popularity": 10
    },
-   "odds": null,
-   "popularity": null
+   "odds": 41.5,
+   "popularity": 9
   },
   {
    "race_id": "202611122135090405",
@@ -1326,8 +1361,8 @@
     "field": 11,
     "popularity": 8
    },
-   "odds": null,
-   "popularity": null
+   "odds": 62.3,
+   "popularity": 12
   },
   {
    "race_id": "202611122135090405",
@@ -1347,8 +1382,8 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": null,
-   "popularity": null
+   "odds": 20.1,
+   "popularity": 7
   },
   {
    "race_id": "202611122433160409",

@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261112",
  "race_id": "202611122726180209",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -77,7 +77,7 @@
    "name": "クールスカイ",
    "time": "1:31.3",
    "margin": "",
-   "pos4": null,
+   "pos4": 1,
    "last3f": 39.6,
    "popularity": null
   },
@@ -88,7 +88,7 @@
    "name": "コパノジャマイカ",
    "time": "1:32.4",
    "margin": "７",
-   "pos4": null,
+   "pos4": 3,
    "last3f": 40.3,
    "popularity": null
   },
@@ -99,7 +99,7 @@
    "name": "ルジュエ",
    "time": "1:32.6",
    "margin": "１ １／４",
-   "pos4": null,
+   "pos4": 2,
    "last3f": 40.8,
    "popularity": null
   },
@@ -110,7 +110,7 @@
    "name": "シンティランテ",
    "time": "1:32.7",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 6,
    "last3f": 40.1,
    "popularity": null
   },
@@ -121,7 +121,7 @@
    "name": "イトシノファーザ",
    "time": "1:32.8",
    "margin": "１／２",
-   "pos4": null,
+   "pos4": 5,
    "last3f": 40.8,
    "popularity": null
   },
@@ -132,7 +132,7 @@
    "name": "ブラーヴテン",
    "time": "1:32.9",
    "margin": "３／４",
-   "pos4": null,
+   "pos4": 3,
    "last3f": 40.9,
    "popularity": null
   },
@@ -143,7 +143,7 @@
    "name": "モーモーシャイン",
    "time": "1:33.2",
    "margin": "１ ３／４",
-   "pos4": null,
+   "pos4": 8,
    "last3f": 40.8,
    "popularity": null
   },
@@ -154,7 +154,7 @@
    "name": "ペリドット",
    "time": "1:33.4",
    "margin": "１ １／４",
-   "pos4": null,
+   "pos4": 7,
    "last3f": 41.1,
    "popularity": null
   },
@@ -165,7 +165,7 @@
    "name": "プリンセスロード",
    "time": "1:34.2",
    "margin": "５",
-   "pos4": null,
+   "pos4": 11,
    "last3f": 40.7,
    "popularity": null
   },
@@ -176,7 +176,7 @@
    "name": "ヒナデコルテ",
    "time": "1:35.2",
    "margin": "６",
-   "pos4": null,
+   "pos4": 8,
    "last3f": 42.9,
    "popularity": null
   },
@@ -187,7 +187,7 @@
    "name": "アカネノソラ",
    "time": "1:35.8",
    "margin": "３ １／２",
-   "pos4": null,
+   "pos4": 10,
    "last3f": 43.4,
    "popularity": null
   },
@@ -198,7 +198,7 @@
    "name": "ベラジオエイチャン",
    "time": "1:36.1",
    "margin": "１ ３／４",
-   "pos4": null,
+   "pos4": 12,
    "last3f": 42.8,
    "popularity": null
   }
