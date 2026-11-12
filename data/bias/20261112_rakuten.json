@@ -1,6 +1,6 @@
 {
  "date": "20261112",
- "updated": "2026-11-12 12:19",
+ "updated": "2026-11-12 12:35",
  "bias": {
   "園田ダ": {
    "judgement": "先行有利・外",
@@ -8,12 +8,13 @@
    "races": [
     1,
     2,
-    3
+    3,
+    4
    ],
    "front_share": 1.0,
    "inner_share": 0.0,
-   "outer_share": 0.67,
-   "horses": 6
+   "outer_share": 0.62,
+   "horses": 8
   }
  }
 }
