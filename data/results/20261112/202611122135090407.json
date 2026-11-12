@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261112",
  "race_id": "202611122135090407",
- "tries": 8,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "カルカンサン",
    "time": "1:34.2",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 41.3,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ホッコームジカ",
    "time": "1:34.4",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 42.9,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "スマイルフェリス",
    "time": "1:34.5",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 42.2,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "ニシノゲッパク",
    "time": "1:34.6",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 42.9,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "クロスダイヤ",
    "time": "1:35.0",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 42.9,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "マサノプレジオーソ",
    "time": "1:35.1",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 42.8,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "ザムト",
    "time": "1:35.9",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 44.0,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "レバット",
    "time": "1:36.9",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 45.2,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "ホーススピリット",
    "time": "1:37.0",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 10,
+   "last3f": 44.3,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "ティンガティンガ",
    "time": "1:37.5",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 45.6,
    "popularity": null
   }
  ]

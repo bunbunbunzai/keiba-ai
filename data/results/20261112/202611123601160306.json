@@ -67,6 +67,9 @@
     "combo": "12-14",
     "yen": 6040
    }
+  ],
+  "_refund": [
+   "3"
   ]
  },
  "rows": [
@@ -79,7 +82,7 @@
    "margin": "",
    "pos4": 2,
    "last3f": 37.7,
-   "popularity": null
+   "popularity": 6
   },
   {
    "finish": "2",
@@ -90,7 +93,7 @@
    "margin": "１ １／２",
    "pos4": 4,
    "last3f": 37.7,
-   "popularity": null
+   "popularity": 3
   },
   {
    "finish": "3",
@@ -101,7 +104,7 @@
    "margin": "３",
    "pos4": 1,
    "last3f": 39.0,
-   "popularity": null
+   "popularity": 5
   },
   {
    "finish": "4",
@@ -112,7 +115,7 @@
    "margin": "ハナ",
    "pos4": 8,
    "last3f": 38.4,
-   "popularity": null
+   "popularity": 1
   },
   {
    "finish": "5",
@@ -123,7 +126,7 @@
    "margin": "１／２",
    "pos4": 4,
    "last3f": 38.6,
-   "popularity": null
+   "popularity": 8
   },
   {
    "finish": "6",
@@ -134,7 +137,7 @@
    "margin": "ハナ",
    "pos4": 2,
    "last3f": 38.9,
-   "popularity": null
+   "popularity": 2
   },
   {
    "finish": "7",
@@ -145,7 +148,7 @@
    "margin": "クビ",
    "pos4": 6,
    "last3f": 38.5,
-   "popularity": null
+   "popularity": 10
   },
   {
    "finish": "8",
@@ -156,7 +159,7 @@
    "margin": "１ １／２",
    "pos4": 10,
    "last3f": 38.6,
-   "popularity": null
+   "popularity": 4
   },
   {
    "finish": "9",
@@ -167,7 +170,7 @@
    "margin": "２ １／２",
    "pos4": 12,
    "last3f": 37.7,
-   "popularity": null
+   "popularity": 10
   },
   {
    "finish": "10",
@@ -178,7 +181,7 @@
    "margin": "クビ",
    "pos4": 6,
    "last3f": 39.5,
-   "popularity": null
+   "popularity": 7
   },
   {
    "finish": "11",
@@ -189,7 +192,7 @@
    "margin": "２",
    "pos4": 11,
    "last3f": 39.1,
-   "popularity": null
+   "popularity": 9
   },
   {
    "finish": "12",
@@ -200,7 +203,7 @@
    "margin": "８",
    "pos4": 8,
    "last3f": 41.2,
-   "popularity": null
+   "popularity": 12
   },
   {
    "finish": "-",
