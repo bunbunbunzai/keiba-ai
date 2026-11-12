@@ -1,6 +1,6 @@
 {
  "date": "20261112",
- "updated": "2026-11-12 14:17",
+ "updated": "2026-11-12 14:21",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -670,8 +670,8 @@
     "field": 7,
     "popularity": 6
    },
-   "odds": 16.6,
-   "popularity": 6
+   "odds": 11.3,
+   "popularity": 5
   },
   {
    "race_id": "202611122726180209",
@@ -691,8 +691,8 @@
     "field": 12,
     "popularity": null
    },
-   "odds": 12.5,
-   "popularity": 5
+   "odds": 15.4,
+   "popularity": 6
   },
   {
    "race_id": "202611122726180209",
@@ -705,7 +705,7 @@
    "types": [
     "aitop"
    ],
-   "odds": 10.5,
+   "odds": 7.7,
    "popularity": 4
   },
   {
@@ -726,7 +726,7 @@
     "field": 12,
     "popularity": 11
    },
-   "odds": 19.3,
+   "odds": 25.1,
    "popularity": 9
   },
   {
@@ -747,7 +747,7 @@
     "field": 12,
     "popularity": 9
    },
-   "odds": 104.0,
+   "odds": 120.8,
    "popularity": 12
   },
   {
@@ -1002,8 +1002,8 @@
     "field": 9,
     "popularity": 6
    },
-   "odds": null,
-   "popularity": null
+   "odds": 47.7,
+   "popularity": 7
   },
   {
    "race_id": "202611122135090403",
@@ -1023,8 +1023,8 @@
     "field": 12,
     "popularity": 7
    },
-   "odds": null,
-   "popularity": null
+   "odds": 34.2,
+   "popularity": 6
   },
   {
    "race_id": "202611122135090403",
@@ -1045,8 +1045,8 @@
     "field": 12,
     "popularity": 4
    },
-   "odds": null,
-   "popularity": null
+   "odds": 18.6,
+   "popularity": 3
   },
   {
    "race_id": "202611122135090403",
@@ -1066,8 +1066,29 @@
     "field": 8,
     "popularity": 7
    },
-   "odds": null,
-   "popularity": null
+   "odds": 54.9,
+   "popularity": 10
+  },
+  {
+   "race_id": "202611122135090403",
+   "results_key": "202611122135090403",
+   "venue": "川崎",
+   "race_no": 3,
+   "post_time": "15:45",
+   "number": 8,
+   "name": "トロピカルブリーズ",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 30,
+   "last": {
+    "date": "2026-10-13",
+    "finish": 8,
+    "field": 8,
+    "popularity": 3
+   },
+   "odds": 72.5,
+   "popularity": 11
   },
   {
    "race_id": "202611123601160304",
