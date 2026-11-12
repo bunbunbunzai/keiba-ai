@@ -1,6 +1,6 @@
 {
  "date": "20261112",
- "updated": "2026-11-12 15:03",
+ "updated": "2026-11-12 15:08",
  "bias": {
   "名古屋ダ": {
    "judgement": "先行有利",
@@ -39,12 +39,13 @@
    "judgement": "先行有利・外",
    "confidence": "弱",
    "races": [
-    1
+    1,
+    2
    ],
-   "front_share": 1.0,
+   "front_share": 0.75,
    "inner_share": 0.0,
    "outer_share": 1.0,
-   "horses": 2
+   "horses": 4
   }
  }
 }

@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261112",
  "race_id": "202611123601160302",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,127 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 10,
+   "name": "ナナイロ",
+   "time": "1:03.4",
+   "margin": "",
+   "pos4": 11,
+   "last3f": 37.5,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 8,
+   "name": "リコーシュターケン",
+   "time": "1:03.5",
+   "margin": "１／２",
+   "pos4": 2,
+   "last3f": 39.2,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 9,
+   "name": "モーニングスミレ",
+   "time": "1:03.5",
+   "margin": "アタマ",
+   "pos4": 10,
+   "last3f": 38.1,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 5,
+   "name": "スティールライズ",
+   "time": "1:03.5",
+   "margin": "アタマ",
+   "pos4": 1,
+   "last3f": 39.5,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 4,
+   "name": "プリンセスジャス",
+   "time": "1:03.6",
+   "margin": "クビ",
+   "pos4": 7,
+   "last3f": 38.4,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 11,
+   "name": "タケノクイーン",
+   "time": "1:04.0",
+   "margin": "２",
+   "pos4": 7,
+   "last3f": 38.8,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 1,
+   "number": 1,
+   "name": "アンクルチャーリー",
+   "time": "1:04.1",
+   "margin": "１／２",
+   "pos4": 5,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "テンビーキャッスル",
+   "time": "1:04.1",
+   "margin": "アタマ",
+   "pos4": 2,
+   "last3f": 39.8,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 6,
+   "number": 6,
+   "name": "メンコイコイ",
+   "time": "1:04.1",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": 39.8,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 6,
+   "number": 7,
+   "name": "ラディアントレイ",
+   "time": "1:04.2",
+   "margin": "１／２",
+   "pos4": 7,
+   "last3f": 39.1,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 2,
+   "number": 2,
+   "name": "ヘルエッジロード",
+   "time": "1:05.3",
+   "margin": "５",
+   "pos4": 2,
+   "last3f": 41.0,
+   "popularity": null
+  }
+ ]
 }
