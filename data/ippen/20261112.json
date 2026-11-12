@@ -1,6 +1,6 @@
 {
  "date": "20261112",
- "updated": "2026-11-12 14:57",
+ "updated": "2026-11-12 15:03",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1143,8 +1143,8 @@
     "field": 8,
     "popularity": 3
    },
-   "odds": 2.9,
-   "popularity": 2
+   "odds": 3.4,
+   "popularity": 3
   },
   {
    "race_id": "202611122135090404",
@@ -1227,8 +1227,8 @@
     "field": 12,
     "popularity": 7
    },
-   "odds": 3.4,
-   "popularity": 2
+   "odds": 10.7,
+   "popularity": 6
   },
   {
    "race_id": "202611122433160408",
@@ -1249,8 +1249,22 @@
     "field": 12,
     "popularity": 3
    },
-   "odds": 25.6,
-   "popularity": 7
+   "odds": 9.0,
+   "popularity": 4
+  },
+  {
+   "race_id": "202611123601160305",
+   "results_key": "202611123601160305",
+   "venue": "門別",
+   "race_no": 5,
+   "post_time": "16:30",
+   "number": 9,
+   "name": "エクセレンウイナー",
+   "types": [
+    "aitop"
+   ],
+   "odds": 7.2,
+   "popularity": 3
   },
   {
    "race_id": "202611122726180212",
