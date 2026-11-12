@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261112",
  "race_id": "202611122433160406",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -77,7 +77,7 @@
    "name": "グレートアゲイン",
    "time": "1:36.0",
    "margin": "",
-   "pos4": null,
+   "pos4": 2,
    "last3f": 37.0,
    "popularity": null
   },
@@ -88,7 +88,7 @@
    "name": "ホウショウリュウ",
    "time": "1:36.6",
    "margin": "３",
-   "pos4": null,
+   "pos4": 1,
    "last3f": 37.7,
    "popularity": null
   },
@@ -99,7 +99,7 @@
    "name": "ステイラッキー",
    "time": "1:37.8",
    "margin": "６",
-   "pos4": null,
+   "pos4": 4,
    "last3f": 38.5,
    "popularity": null
   },
@@ -110,7 +110,7 @@
    "name": "チャットケリー",
    "time": "1:38.0",
    "margin": "１",
-   "pos4": null,
+   "pos4": 3,
    "last3f": 39.0,
    "popularity": null
   },
@@ -121,7 +121,7 @@
    "name": "フィーユレアル",
    "time": "1:38.1",
    "margin": "１／２",
-   "pos4": null,
+   "pos4": 5,
    "last3f": 38.7,
    "popularity": null
   },
@@ -132,7 +132,7 @@
    "name": "フローラルウェイ",
    "time": "1:38.5",
    "margin": "２",
-   "pos4": null,
+   "pos4": 6,
    "last3f": 38.8,
    "popularity": null
   },
@@ -143,7 +143,7 @@
    "name": "ピカレスクヒーロー",
    "time": "1:38.7",
    "margin": "３／４",
-   "pos4": null,
+   "pos4": 9,
    "last3f": 38.5,
    "popularity": null
   },
@@ -154,7 +154,7 @@
    "name": "ジオパークコハク",
    "time": "1:38.8",
    "margin": "１／２",
-   "pos4": null,
+   "pos4": 7,
    "last3f": 38.9,
    "popularity": null
   },
@@ -165,7 +165,7 @@
    "name": "ビックピカンテ",
    "time": "1:39.7",
    "margin": "４",
-   "pos4": null,
+   "pos4": 10,
    "last3f": 39.6,
    "popularity": null
   },
@@ -176,7 +176,7 @@
    "name": "ヒダサワヤカ",
    "time": "1:40.1",
    "margin": "２",
-   "pos4": null,
+   "pos4": 7,
    "last3f": 40.0,
    "popularity": null
   },
@@ -187,7 +187,7 @@
    "name": "シャイニングウェイ",
    "time": "1:40.3",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 12,
    "last3f": 39.7,
    "popularity": null
   },
@@ -198,7 +198,7 @@
    "name": "ハネマン",
    "time": "1:42.1",
    "margin": "９",
-   "pos4": null,
+   "pos4": 11,
    "last3f": 42.2,
    "popularity": null
   }
