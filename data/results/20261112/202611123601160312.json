@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261112",
  "race_id": "202611123601160312",
- "tries": 2,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,160 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 14,
+   "name": "カイシンパジェント",
+   "time": "1:14.2",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 38.1,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 13,
+   "name": "クインズモナカ",
+   "time": "1:14.3",
+   "margin": "１／２",
+   "pos4": 4,
+   "last3f": 38.1,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 4,
+   "name": "ウィンストラテジー",
+   "time": "1:14.4",
+   "margin": "クビ",
+   "pos4": 7,
+   "last3f": 36.9,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 11,
+   "name": "アースコーリング",
+   "time": "1:14.9",
+   "margin": "２ １／２",
+   "pos4": 4,
+   "last3f": 38.7,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 10,
+   "name": "デュジャック",
+   "time": "1:15.3",
+   "margin": "２",
+   "pos4": 1,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "ハニーベリー",
+   "time": "1:15.3",
+   "margin": "アタマ",
+   "pos4": 6,
+   "last3f": 38.8,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 5,
+   "name": "サウンドロックス",
+   "time": "1:15.6",
+   "margin": "１ １／２",
+   "pos4": 7,
+   "last3f": 38.8,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "メイショウマーブル",
+   "time": "1:15.7",
+   "margin": "クビ",
+   "pos4": 13,
+   "last3f": 37.5,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 8,
+   "name": "ヴァーチェ",
+   "time": "1:15.7",
+   "margin": "クビ",
+   "pos4": 1,
+   "last3f": 39.8,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 12,
+   "name": "ジャスパーシャイン",
+   "time": "1:16.0",
+   "margin": "１ １／２",
+   "pos4": 11,
+   "last3f": 38.3,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 1,
+   "number": 1,
+   "name": "グラストップロード",
+   "time": "1:16.3",
+   "margin": "１ １／２",
+   "pos4": 11,
+   "last3f": 38.2,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 4,
+   "number": 6,
+   "name": "マジカルレイズ",
+   "time": "1:16.3",
+   "margin": "ハナ",
+   "pos4": 10,
+   "last3f": 38.9,
+   "popularity": null
+  },
+  {
+   "finish": "13",
+   "frame": 6,
+   "number": 9,
+   "name": "コンバットグランデ",
+   "time": "1:16.5",
+   "margin": "１",
+   "pos4": 7,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "14",
+   "frame": 5,
+   "number": 7,
+   "name": "ワールドウィスラー",
+   "time": "1:20.0",
+   "margin": "大差",
+   "pos4": 14,
+   "last3f": 41.8,
+   "popularity": null
+  }
+ ]
 }
