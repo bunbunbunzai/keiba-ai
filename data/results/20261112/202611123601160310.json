@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261112",
  "race_id": "202611123601160310",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "ベストカーラ",
    "time": "1:01.7",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 37.4,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "バシュネル",
    "time": "1:01.8",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 37.1,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ウィルアイガー",
    "time": "1:02.0",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 37.1,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "アスフィート",
    "time": "1:02.4",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 37.0,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "スダレ",
    "time": "1:02.4",
    "margin": "ハナ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 37.9,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "スタニングアロー",
    "time": "1:02.6",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 37.0,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "ミラヴィー",
    "time": "1:02.8",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 38.6,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ヨシノトップラン",
    "time": "1:02.8",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 37.9,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "リコーレイダー",
    "time": "1:02.8",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 37.9,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "ダスティミラー",
    "time": "1:02.8",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 12,
+   "last3f": 37.1,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "エイシンブリス",
    "time": "1:03.2",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 37.8,
    "popularity": null
   },
   {
@@ -198,8 +198,8 @@
    "name": "イコロ",
    "time": "1:03.4",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 38.6,
    "popularity": null
   }
  ]
