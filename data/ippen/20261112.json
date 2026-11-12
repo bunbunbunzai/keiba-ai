@@ -1,6 +1,6 @@
 {
  "date": "20261112",
- "updated": "2026-11-12 13:56",
+ "updated": "2026-11-12 14:01",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -508,8 +508,8 @@
     "field": 12,
     "popularity": 10
    },
-   "odds": 77.9,
-   "popularity": 11
+   "odds": 94.6,
+   "popularity": 10
   },
   {
    "race_id": "202611122433160405",
@@ -529,8 +529,8 @@
     "field": 12,
     "popularity": 5
    },
-   "odds": 43.2,
-   "popularity": 8
+   "odds": 68.8,
+   "popularity": 9
   },
   {
    "race_id": "202611122135090401",
@@ -813,6 +813,20 @@
    "venue": "門別",
    "race_no": 3,
    "post_time": "15:25",
+   "number": 5,
+   "name": "クロームボーイ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 17.4,
+   "popularity": 9
+  },
+  {
+   "race_id": "202611123601160303",
+   "results_key": "202611123601160303",
+   "venue": "門別",
+   "race_no": 3,
+   "post_time": "15:25",
    "number": 7,
    "name": "ジャックルージュ",
    "types": [
@@ -825,8 +839,8 @@
     "field": 12,
     "popularity": null
    },
-   "odds": null,
-   "popularity": null
+   "odds": 20.1,
+   "popularity": 11
   },
   {
    "race_id": "202611122726180210",
