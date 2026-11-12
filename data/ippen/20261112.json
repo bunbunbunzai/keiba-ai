@@ -1,6 +1,6 @@
 {
  "date": "20261112",
- "updated": "2026-11-12 16:38",
+ "updated": "2026-11-12 16:45",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1749,7 +1749,7 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": 172.6,
+   "odds": 182.2,
    "popularity": 12
   },
   {
@@ -1770,7 +1770,7 @@
     "field": 10,
     "popularity": 2
    },
-   "odds": 17.9,
+   "odds": 17.8,
    "popularity": 7
   },
   {
@@ -1791,7 +1791,7 @@
     "field": 10,
     "popularity": 1
    },
-   "odds": 3.9,
+   "odds": 4.6,
    "popularity": 3
   },
   {
@@ -1812,8 +1812,22 @@
     "field": 8,
     "popularity": null
    },
-   "odds": 12.3,
-   "popularity": 3
+   "odds": 12.7,
+   "popularity": 4
+  },
+  {
+   "race_id": "202611123601160308",
+   "results_key": "202611123601160308",
+   "venue": "門別",
+   "race_no": 8,
+   "post_time": "18:05",
+   "number": 3,
+   "name": "フォーティンブラス",
+   "types": [
+    "aitop"
+   ],
+   "odds": 6.1,
+   "popularity": 2
   },
   {
    "race_id": "202611122135090408",
