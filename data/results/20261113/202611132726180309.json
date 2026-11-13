@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261113",
  "race_id": "202611132726180309",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "イレブンアップ",
    "time": "50.7",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 36.5,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ヘヴンズドライブ",
    "time": "50.9",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 36.7,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "イチバンボシ",
    "time": "51.3",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 36.8,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "プロメトル",
    "time": "51.5",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 36.9,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "モンシャトール",
    "time": "51.7",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 37.0,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "トップザスマイル",
    "time": "52.0",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 37.7,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "セイウンスペリオル",
    "time": "52.0",
    "margin": "ハナ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 37.1,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ミヤカグラ",
    "time": "52.0",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 37.4,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "エイシンバーマン",
    "time": "52.6",
    "margin": "３ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 37.6,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "ヘルミオーネ",
    "time": "52.7",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 10,
+   "last3f": 37.2,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "ジャングルマリサ",
    "time": "52.8",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 10,
+   "last3f": 37.6,
    "popularity": null
   },
   {
@@ -198,8 +198,8 @@
    "name": "ジェントルショット",
    "time": "53.7",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 12,
+   "last3f": 38.2,
    "popularity": null
   }
  ]
