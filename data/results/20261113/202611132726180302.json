@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261113",
  "race_id": "202611132726180302",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -67,8 +67,8 @@
    "name": "ハルディナ",
    "time": "51.4",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 36.9,
    "popularity": null
   },
   {
@@ -78,8 +78,8 @@
    "name": "インドラダヌス",
    "time": "51.5",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 36.5,
    "popularity": null
   },
   {
@@ -89,8 +89,8 @@
    "name": "エチケット",
    "time": "51.9",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 37.4,
    "popularity": null
   },
   {
@@ -100,8 +100,8 @@
    "name": "クツワフリムケバ",
    "time": "52.4",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 37.5,
    "popularity": null
   },
   {
@@ -111,8 +111,8 @@
    "name": "メディウィッチ",
    "time": "52.7",
    "margin": "１ ３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 37.4,
    "popularity": null
   },
   {
@@ -122,8 +122,8 @@
    "name": "カゼノキセキ",
    "time": "52.7",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 38.0,
    "popularity": null
   },
   {
@@ -133,8 +133,8 @@
    "name": "ロンギングウィン",
    "time": "54.9",
    "margin": "大差",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 39.8,
    "popularity": null
   }
  ]
