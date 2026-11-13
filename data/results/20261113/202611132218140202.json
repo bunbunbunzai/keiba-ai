@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261113",
  "race_id": "202611132218140202",
- "tries": 4,
+ "tries": 5,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "オニギリ",
    "time": "1:40.2",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 39.3,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ファントムグレース",
    "time": "1:40.6",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 39.5,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "シンデレラヒメ",
    "time": "1:41.0",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 39.7,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "ストライプブルー",
    "time": "1:41.7",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 40.2,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "シュンレツ",
    "time": "1:42.2",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 41.0,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ストロボエッジ",
    "time": "1:42.5",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 41.1,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "フィーユポワソン",
    "time": "1:43.0",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 41.6,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "モーモーインディゴ",
    "time": "1:43.7",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 40.1,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "クリノヒビキ",
    "time": "1:43.8",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 41.8,
    "popularity": null
   }
  ]
