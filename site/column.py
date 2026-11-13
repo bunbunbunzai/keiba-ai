@@ -416,6 +416,31 @@ def columns() -> list[dict]:
     return sorted((parse(f) for f in COLDIR.glob("*.md")), key=lambda c: (c["order"], c["slug"]))
 
 
+TOC_MIN = 4  # 見出し（##）がこの数以上ある記事には目次を付ける
+_TOC_H2 = re.compile(r"^<h2>(.*?)</h2>$", re.M)
+
+
+def add_toc(body_html: str) -> str:
+    """本文の ## 見出しに番号のidを振り、最初の見出しの前に目次を差し込む。"""
+    heads = _TOC_H2.findall(body_html)
+    if len(heads) < TOC_MIN:
+        return body_html
+    n = iter(range(1, len(heads) + 1))
+    body_html = _TOC_H2.sub(lambda m: f"<h2 id='s{next(n)}'>{m.group(1)}</h2>", body_html)
+    toc = ("<nav class='toc' aria-label='目次'><p>目次</p><ol>"
+           + "".join(f"<li><a href='#s{i}'>{re.sub(r'<[^>]+>', '', h)}</a></li>" for i, h in enumerate(heads, 1)) + "</ol></nav>")
+    return body_html.replace("<h2 id='s1'>", toc + "<h2 id='s1'>", 1)
+
+
+_GRAM_DROP = re.compile(r"[\s　、。・,，.．:：「」『』（）()【】［］\[\]｜|!?！？〜~\-－—%％0-9０-９]")
+
+
+def _grams(text: str) -> set[str]:
+    """関連記事を選ぶための文字の2文字組（日本語は単語で区切れないので2文字ずつ見る）。"""
+    t = _GRAM_DROP.sub("", text)
+    return {t[i:i + 2] for i in range(len(t) - 1)}
+
+
 def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, today_iso: str) -> dict[str, str]:
     """コラムを書き出し、サイトマップ用の {path: lastmod} を返す（下書きは含めない）。"""
     cols = columns()
@@ -429,22 +454,62 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
         tables["aff_rakuten"] = tables["aff_saikyo"] = ""
     pub = [c for c in cols if not c["draft"]]
     lastmod = {}
+    autos_new = sorted((o for o in pub if o.get("auto") == "true"), key=lambda o: o.get("date", ""), reverse=True)
+
+    def hero_c(c):
+        if "_hero" not in c:
+            c["_hero"] = hero_of(c)
+        return c["_hero"]
+
+    def grams_c(c):
+        if "_grams" not in c:
+            c["_grams"] = _grams(subst(c.get("title", ""), v) + subst(c.get("description", ""), v))
+        return c["_grams"]
+
+    def similar(c, n):
+        """タイトル・説明の似ている順（同じシリーズは少し優先）。特集と重賞の自動記事は除く。"""
+        me = grams_c(c)
+        cands = [o for o in pub if o is not c and o.get("auto") != "true" and o.get("series") not in FEATURE_IDS + ("weekly",)]
+
+        def score(o):
+            g = grams_c(o)
+            return len(me & g) / (len(me | g) or 1) + (0.25 if c.get("series") and o.get("series") == c.get("series") else 0)
+        return sorted(cands, key=score, reverse=True)[:n]
+
+    def _li(c):
+        h = hero_c(c) or ""
+        th = (f"<img class='th' src='/assets/{h}-s.jpg' alt='' width='120' height='80' loading='lazy'>"
+              if h and (ASSET / f"{h}-s.jpg").exists() else "")
+        return (f"<li{' class=\'wth\'' if th else ''}><a href='/column/{c['slug']}/'>{th}<span class='tx'><b>{esc(subst(c.get('title', ''), v))}</b>"
+                f"<span>{esc(subst(c.get('description', ''), v))}</span></span></a></li>")
+
+    def rel_block(head, items, thumbs):
+        if not items:
+            return ""
+        if thumbs:
+            return f"<section class='card'><h2>{esc(head)}</h2><ul class='cols rel'>{''.join(_li(o) for o in items)}</ul></section>"
+        return (f"<section class='card'><h2>{esc(head)}</h2><ul>"
+                + "".join(f"<li><a href='/column/{o['slug']}/'>{esc(subst(o.get('title', ''), v))}</a></li>" for o in items) + "</ul></section>")
+
     for c in cols:
         path = f"/column/{c['slug']}/"
         title, lead = subst(c.get("title", ""), v), subst(c.get("lead", ""), v)
         desc = subst(c.get("description", ""), v)
-        body_html = render(subst(c["body"], v), tables)
+        body_html = add_toc(render(subst(c["body"], v), tables))
         auto_c = c.get("auto") == "true"
-        rel_src = [o for o in pub if o is not c and (o.get("auto") != "true" or (auto_c and o.get("auto") == "true"))]
+        # 記事の下の関連リスト：以前は全記事の題名を並べていた（80本近く）。読む人が選びやすいように絞る
         if auto_c:
-            rel_src = [o for o in pub if o is not c and o.get("auto") == "true"][:5] + [o for o in pub if o.get("auto") != "true"][:6]
+            related = (rel_block("ほかの重賞の全頭診断", [o for o in autos_new if o is not c][:5], False)
+                       + rel_block("競馬の基本を知る", similar(c, 4), True))
         elif c.get("series") in FEATURE_IDS:  # 特集の記事は、同じ特集の記事を先に並べ、ほかの特集の入口（order 1）を続ける
-            rel_src = sorted((o for o in pub if o is not c and o.get("series") == c.get("series")), key=lambda o: int(o.get("order") or 0)) \
-                + [o for o in pub if o is not c and o.get("series") in FEATURE_IDS and o.get("series") != c.get("series")
-                   and str(o.get("order")) == "1"] + [o for o in pub if o.get("auto") == "true"][:3]
+            same = sorted((o for o in pub if o is not c and o.get("series") == c.get("series")), key=lambda o: int(o.get("order") or 0))
+            others = [o for o in pub if o is not c and o.get("series") in FEATURE_IDS and o.get("series") != c.get("series") and str(o.get("order")) == "1"]
+            related = (rel_block("この特集のほかの記事", same, False) + rel_block("ほかの特集", others, False)
+                       + rel_block("最近の重賞の全頭診断", autos_new[:3], False))
         else:
-            rel_src = [o for o in pub if o is not c and o.get("auto") != "true"] + [o for o in pub if o.get("auto") == "true"][:3]
-        related = "".join(f"<li><a href='/column/{o['slug']}/'>{esc(subst(o.get('title', ''), v))}</a></li>" for o in rel_src)
+            related = rel_block("関連するコラム", similar(c, 6), True) + rel_block("最近の重賞の全頭診断", autos_new[:3], False)
+        if related:
+            related += "<p class='morelink'><a href='/column/'>コラムの一覧へ →</a></p>"
         ld = {"@context": "https://schema.org", "@type": "Article", "headline": title, "description": desc,
               "datePublished": c.get("date"), "dateModified": today_iso, "inLanguage": "ja",
               "author": {"@type": "Organization", "name": site_name, "url": base_url + "/operator/"},
@@ -463,9 +528,8 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
                  "<a href='/'>今日の予想</a>・<a href='/results/'>成績</a>・<a href='/about/'>予想の方法</a></p>"
                  + ("</div>" if (ROOT / "site" / "assets" / "zk-normal.png").exists() else "")
                  + "<p class='meta'>馬券の購入は20歳から。予想は的中や利益を保証するものではない。</p></section>"
-                 + (f"<section class='card'><h2>ほかのコラム</h2><ul>{related}</ul></section>" if related else ""))
-        hero = hero_of(c)
-        c["_hero"] = hero
+                 + related)
+        hero = hero_c(c)
         og_img = f"/assets/{hero}.jpg" if hero else "/og/default.jpg"
         if hero:
             from imgutil import webp_variants  # 見出しの画像は WebP の縮小版を先に読む（記事の最初に見える画像）
@@ -479,34 +543,37 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
                          head_extra=jsonld(ld) + jsonld(crumb), og_image=og_img))
         if not c["draft"]:
             lastmod[path] = today_iso
-    def _li(c):
-        h = c.get("_hero") or ""
-        th = (f"<img class='th' src='/assets/{h}-s.jpg' alt='' width='120' height='80' loading='lazy'>"
-              if h and (ASSET / f"{h}-s.jpg").exists() else "")
-        return (f"<li{' class=\'wth\'' if th else ''}><a href='/column/{c['slug']}/'>{th}<span class='tx'><b>{esc(subst(c.get('title', ''), v))}</b>"
-                f"<span>{esc(subst(c.get('description', ''), v))}</span></span></a></li>")
     items = "".join(_li(c) for c in pub if c.get("auto") != "true" and c.get("series") not in ("weekly", "guide") + FEATURE_IDS)
     feat_items = ""
+    jumps = []  # 一覧の上に並べる、各見出しへのジャンプ
     for sid, head, note in FEATURE_SERIES:
         feats = sorted((c for c in pub if c.get("series") == sid), key=lambda c: int(c.get("order") or 0))
         if feats:
             feat_items += (f"<h2 id='{sid}'>{esc(head)}</h2><p class='meta'>{esc(note)}</p>"
                            f"<ul class='cols'>{''.join(_li(c) for c in feats)}</ul>")
+            jumps.append((sid, head.replace("特集：", "")))
     guides = sorted((c for c in pub if c.get("series") == "guide"), key=lambda c: int(c.get("order") or 0))
-    guide_items = ("<h2>はじめての競馬ガイド</h2><p class='meta'>競馬の始め方、馬券の買い方、出馬表やパドックの見方など、最初に知っておきたいことを順番にまとめている。</p>"
+    guide_items = ("<h2 id='guide'>はじめての競馬ガイド</h2><p class='meta'>競馬の始め方、馬券の買い方、出馬表やパドックの見方など、最初に知っておきたいことを順番にまとめている。</p>"
                    f"<ul class='cols'>{''.join(_li(c) for c in guides)}</ul>") if guides else ""
+    if guides:
+        jumps.append(("guide", "はじめての競馬ガイド"))
     weeklies = sorted((c for c in pub if c.get("series") == "weekly"), key=lambda c: c.get("date", ""), reverse=True)
-    weekly_items = ("<h2>AI予想の週間振り返り</h2><p class='meta'>毎週、1週間分の全予想と結果をAIが分析し、当たった条件・外れた条件をまとめている。</p>"
+    weekly_items = ("<h2 id='weekly'>AI予想の週間振り返り</h2><p class='meta'>毎週、1週間分の全予想と結果をAIが分析し、当たった条件・外れた条件をまとめている。</p>"
                     f"<ul class='cols'>{''.join(_li(c) for c in weeklies[:12])}</ul>") if weeklies else ""
-    autos = sorted((c for c in pub if c.get("auto") == "true"), key=lambda c: c.get("date", ""), reverse=True)
-    auto_items = "".join(_li(c) for c in autos[:40])
+    if weeklies:
+        jumps.append(("weekly", "週間振り返り"))
+    if items:
+        jumps.append(("data", "初心者向け・データ分析"))
+    auto_items = "".join(_li(c) for c in autos_new[:40])
     if auto_items:
-        auto_items = ("<h2>重賞の全頭診断（レースごと）</h2><p class='meta'>重賞ごとに、AIの印・評価点・想定勝率・買い目と、確定後の結果・回顧を1本の記事にしている。レース当日の昼までに公開。</p>"
-                      f"<ul class='cols'>{auto_items}</ul>" + ("<p class='meta'>直近40本を表示。</p>" if len(autos) > 40 else ""))
+        auto_items = ("<h2 id='zensou'>重賞の全頭診断（レースごと）</h2><p class='meta'>重賞ごとに、AIの印・評価点・想定勝率・買い目と、確定後の結果・回顧を1本の記事にしている。レース当日の昼までに公開。</p>"
+                      f"<ul class='cols'>{auto_items}</ul>" + ("<p class='meta'>直近40本を表示。</p>" if len(autos_new) > 40 else ""))
+        jumps.append(("zensou", "重賞の全頭診断"))
+    jump_html = ("<p class='jumpnav'>" + "".join(f"<a class='jn' href='#{k}'>{esc(t)}</a>" for k, t in jumps) + "</p>") if len(jumps) > 1 else ""
     write("/column/", page(f"競馬初心者向けコラム | {site_name}",
                            "<p class='crumb'><a href='/'>トップ</a> › コラム</p><h1>競馬初心者向けコラム</h1>" + __import__("build").banner("column") +
                            "<p class='answer'>馬券の種類や回収率の考え方などを、このサイトの全レースの記録（実データ）を使って解説する。数字は記録が増えるたびに自動で更新される。</p>"
-                           + feat_items + guide_items + weekly_items + (f"<h2>初心者向け・データ分析</h2><ul class='cols'>{items}</ul>" if items else "<p>準備中。</p>") + auto_items,
+                           + jump_html + feat_items + guide_items + weekly_items + (f"<h2 id='data'>初心者向け・データ分析</h2><ul class='cols'>{items}</ul>" if items else "<p>準備中。</p>") + auto_items,
                            "/column/", desc="競馬初心者向けに、馬券の種類・回収率・人気と勝率・トラックバイアスを、AI予想の全レースの実データで解説するコラム。",
                            noindex=not pub))
     if pub:

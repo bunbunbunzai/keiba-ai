@@ -16,16 +16,31 @@ def _finish(p: dict, num) -> str:
     return ""
 
 
+TRACK = {"稍": "稍重", "不": "不良"}
+
+
+def _course(r: dict) -> str:
+    """「ダ1200m・稍重」。地方の近走は距離・芝ダが無いことがあるので、あるものだけ並べる。"""
+    dist = r.get("distance")
+    c = f"{r.get('surface') or ''}{dist}m" if dist else ""
+    tr = TRACK.get(r.get("track") or "", r.get("track") or "")
+    return "・".join(x for x in (c, tr) if x) or "-"
+
+
 def _past_html(past: list, esc) -> str:
     if not past:
         return ""
+    rs = past[:5]
+    has_pop = any(r.get("popularity") for r in rs)  # 地方の近走は人気が無いので、そのときは列ごと出さない
     rows = "".join(
-        f"<tr><td>{esc(r.get('date') or '')}</td><td>{esc(r.get('venue') or '')} {esc(r.get('race_name') or '')}</td>"
-        f"<td>{esc(r.get('surface') or '')}{esc(r.get('distance') or '')}m・{esc(r.get('track') or '')}</td><td>{esc(r.get('field') or '')}頭</td>"
-        f"<td>{esc(r.get('popularity') or '-')}番人気</td><td><b>{esc(r.get('finish') or '-')}着</b></td><td>{esc(r.get('corners') or '-')}</td><td>{esc(r.get('last3f') or '-')}</td></tr>"
-        for r in past[:5])
-    return ("<section class='card'><h2>近走（直近5走）</h2><div class='scroll'><table><thead><tr><th>日付</th><th>レース</th><th>コース</th><th>頭数</th>"
-            f"<th>人気</th><th>着順</th><th>通過</th><th>上がり</th></tr></thead><tbody>{rows}</tbody></table></div>"
+        f"<tr><td class='nw'>{esc(r.get('date') or '')}</td><td>{esc(r.get('venue') or '')} {esc(' '.join(nfkc(r.get('race_name') or '').split()))}</td>"
+        f"<td>{esc(_course(r))}</td><td>{esc(r.get('field') or '-')}{'頭' if r.get('field') else ''}</td>"
+        + (f"<td>{esc(r.get('popularity'))}番人気</td>" if has_pop and r.get('popularity') else "<td>-</td>" if has_pop else "")
+        + f"<td><b>{esc(r.get('finish') or '-')}{'着' if str(r.get('finish') or '').isdigit() else ''}</b></td><td>{esc(r.get('corners') or '-')}</td><td>{esc(r.get('last3f') or '-')}</td></tr>"
+        for r in rs)
+    return ("<section class='card'><h2>近走（直近5走）</h2><div class='scroll'><table><thead><tr><th>日付</th><th>レース</th><th>コース・馬場</th><th>頭数</th>"
+            + ("<th>人気</th>" if has_pop else "")
+            + f"<th>着順</th><th>通過</th><th>上がり</th></tr></thead><tbody>{rows}</tbody></table></div>"
             "<p class='meta'>最後に評価したレースの出馬表に載っていた近走。</p></section>")
 
 

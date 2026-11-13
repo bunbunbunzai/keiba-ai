@@ -70,8 +70,9 @@ def _course_inputs(B, by_date: dict):
     return site_c, hist, ok
 
 
-def race_guide_html(B, slug: str) -> str:
-    """重賞のレースガイド（data/race_guides、AIがWeb検索で調べて書いたもの）。"""
+def race_guide_html(B, slug: str, show_lead: bool = True) -> str:
+    """重賞のレースガイド（data/race_guides、AIがWeb検索で調べて書いたもの）。
+    show_lead=False：ページの冒頭ですでにガイドの導入文を出しているとき（同じ文を2回並べない）。"""
     g = B.load_json(B.ROOT / "data" / "race_guides" / f"{slug}.json")
     if not g:
         return ""
@@ -82,11 +83,34 @@ def race_guide_html(B, slug: str) -> str:
                   for x in g.get("sources") or [] if str(x.get("url", "")).startswith("http"))
     course = (f"<p>このコースの過去のレース結果の傾向：<a href='/course/{g['course_slug']}/'>{esc(g['venue'])}{'芝' if g['surface'] == '芝' else 'ダート' if g['surface'] == 'ダ' else '障害'}{g['distance']}mの傾向</a></p>"
               if g.get("course_slug") and (_COURSE_PAGES is None or g["course_slug"] in _COURSE_PAGES) else "")
-    return (f"<section class='card'><h2>{esc(g['name'])}のレースガイド</h2><p>{esc(g['lead'])}</p>"
+    return (f"<section class='card'><h2>{esc(g['name'])}のレースガイド</h2>" + (f"<p>{esc(g['lead'])}</p>" if show_lead else "")
             + (f"<div class='scroll'><table class='facts'><tbody>{facts}</tbody></table></div>" if facts else "") + secs + course
             + (f"<p class='meta'>出典：</p><ul class='meta'>{src}</ul>" if src else "")
             + f"<p class='meta'>公開情報と過去のレース結果をもとにAIが{esc(g['updated'])}にまとめたガイド。施行条件は年によって変わることがあるので、正式な情報は主催者の発表を確認してほしい。</p></section>")
 
+
+
+def feature_links() -> dict[str, tuple[str, str]]:
+    """重賞の名前（例：有馬記念）→ (特集の入口記事の slug, 特集名)。重賞ページから特集へ案内するため。"""
+    try:
+        import column
+    except Exception:  # noqa: BLE001
+        return {}
+    hubs = {c.get("series"): c["slug"] for c in column.columns()
+            if not c["draft"] and c.get("series") in column.FEATURE_IDS and str(c.get("order")) == "1"}
+    out = {}
+    for sid, head, _ in column.FEATURE_SERIES:
+        name = re.sub(r"\d{4}.*$", "", head.replace("特集：", "")).strip()
+        if sid in hubs and name:
+            out[name] = (hubs[sid], head.replace("特集：", ""))
+    return out
+
+
+def feature_notice(esc, name: str, links: dict) -> str:
+    hit = links.get(name)
+    if not hit:
+        return ""
+    return f"<p class='notice'><a href='/column/{hit[0]}/'>特集「{esc(hit[1])}」を読む →</a></p>"
 
 
 def _pic_banner(B, p: dict, d: str) -> str:
@@ -150,6 +174,7 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
     iso = lambda d: f"{d[:4]}-{d[4:6]}-{d[6:8]}"
 
     # ---------- 重賞 ----------
+    feats = feature_links()
     graded = defaultdict(list)  # slug -> [(date, p, name, grade)]
     for d, ps in by_date.items():
         for p in ps:
@@ -182,7 +207,7 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
                 f"（{B.fmt_date(latest[0])}）。全頭の評価点・印・買い目と、確定後の的中・回収率を年ごとに記録している。")
         body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/graded/'>重賞</a> › {esc(name)}</p>"
                 f"<h1>{esc(name)} AI予想と傾向（{esc(g)}）</h1>{B.banner(_pic_banner(B, p0, d0), name)}<p class='answer'>{esc(lead)}</p>"
-                + race_guide_html(B, slug) +
+                + feature_notice(esc, name, feats) + race_guide_html(B, slug) +
                 f"<section class='card'><h2>年ごとのAI予想と結果</h2><ul class='days'>{''.join(lis)}</ul></section>"
                 f"<p class='meta'>毎年このページに追加される。最新の予想はレース当日の昼（重賞は前日夜にも）公開。</p>")
         ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
@@ -202,7 +227,7 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
         path = f"/graded/{slug}/"
         body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/graded/'>重賞</a> › {esc(name)}</p>"
                 f"<h1>{esc(name)}の傾向とレースガイド（{esc(g)}）</h1><p class='answer'>{esc(gd.get('lead', ''))}</p>"
-                + race_guide_html(B, slug)
+                + feature_notice(esc, name, feats) + race_guide_html(B, slug, show_lead=not gd.get("lead"))
                 + "<p class='meta'>このレースのAI予想（全頭の評価点・印・買い目）は、レースの前日夜または当日昼にこのページに追加される。</p>")
         ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": B.SITE_NAME, "item": B.BASE_URL + "/"},

@@ -15,6 +15,7 @@ from __future__ import annotations
 import csv
 import html
 import json
+import re
 import shutil
 from collections import defaultdict
 from datetime import datetime, timedelta, timezone
@@ -302,7 +303,7 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False
 <p>出走表や結果など正式な情報は、各主催者の発表をご確認ください。成績は、すべての買い目を1点100円ずつ買ったとして計算しています。</p>
 <p class="support">このサイトは個人が運営しています。サーバー代やX投稿のAPI代の支援は <a href="{OFUSE_URL}" target="_blank" rel="noopener">OFUSE（投げ銭・ファンレター）</a> から。支援の有無で予想の内容や公開範囲は変わりません。</p>
 <p class="sns">重賞の予想と大きな的中は <a href="{X_URL}" target="_blank" rel="noopener me">X（@zentou_log）</a> でも配信中</p>
-<p class="sitemap-links"><a href="/graded/">重賞</a>　<a href="/review/">重賞回顧</a>　<a href="/monthly/">月次レポート</a>　<a href="/strategy/">買い方別の回収率</a>　<a href="/ippen/">実験中の狙い馬</a>　<a href="/course/">コース別</a>　<a href="/jockey/">騎手別</a>　<a href="/horse/">馬別</a>　<a href="/column/">コラム</a>　<a href="/glossary/">用語集</a>　<a href="/limits/">AI予想の限界</a>　<a href="/changelog/">更新履歴</a></p>
+<p class="sitemap-links"><a href="/graded/">重賞</a>　<a href="/review/">重賞回顧</a>　<a href="/monthly/">月次レポート</a>　<a href="/days/">過去の予想</a>　<a href="/strategy/">買い方別の回収率</a>　<a href="/ippen/">実験中の狙い馬</a>　<a href="/course/">コース別</a>　<a href="/jockey/">騎手別</a>　<a href="/horse/">馬別</a>　<a href="/column/">コラム</a>　<a href="/glossary/">用語集</a>　<a href="/limits/">AI予想の限界</a>　<a href="/changelog/">更新履歴</a></p>
 <p class="prefs"><button type="button" class="theme" data-mode="auto">表示：自動</button></p>
 <p><a href="/operator/">運営者情報</a>　<a href="/privacy/">プライバシーポリシー</a>　<a href="/contact/">お問い合わせ</a></p>
 </footer>
@@ -403,28 +404,43 @@ def horse_name(p: dict, num) -> str:
 
 
 def race_label(p: dict) -> str:
-    name = p.get("race_name") or p["_race"].get("race_name") or p["_race"].get("title_text") or ""
+    # 全角の「Ｃ３」などは半角にそろえる（一覧の race_short と同じ表記にする）
+    name = extra.nfkc(p.get("race_name") or p["_race"].get("race_name") or p["_race"].get("title_text") or "")
     return f"{venue_of(p)}{race_no(p)}R {' '.join(name.split())}".strip()
 
 
-def result_text(p: dict) -> str:
+NOW_KEY = ""  # build() の最初に設定（YYYYMMDDHHMM・日本時間）。発走前かどうかの判定に使う
+
+
+def before_post(date: str, p: dict) -> bool:
+    """ビルドした時点でまだ発走前のレースか（発走時刻が分からないときは False）。"""
+    pt = (p.get("_race") or {}).get("post_time") or ""
+    if not NOW_KEY or not re.fullmatch(r"\d{1,2}:\d{2}", pt):
+        return False
+    return f"{date}{pt.zfill(5).replace(':', '')}" > NOW_KEY
+
+
+def result_text(p: dict, date: str = "") -> str:
     sc = p.get("_score")
     if not sc or "stake" not in sc:
         return ""
     if sc.get("voided"):
-        return "結果待ち、または返還"
+        # 結果のファイルは発走前から空のまま置かれるので、発走前のレースには結果の文を付けない
+        return "" if date and before_post(date, p) else "結果待ち、または返還"
     top = "-".join(str(x) for x in sc.get("top3", []) if x is not None)
     return f"結果は{top}で{'的中（払戻' + format(sc['return'], ',') + '円）' if sc['return'] else '不的中'}"
 
 
 def answer_sentence(date: str, p: dict) -> str:
     hon = p.get("marks", {}).get("◎")
-    base = f"{race_label(p)}（{fmt_date(date)}）のAI予想は"
+    pt = (p.get("_race") or {}).get("post_time") or ""
+    pre = before_post(date, p)
+    base = f"{race_label(p)}（{fmt_date(date)}{f' {pt}発走' if pre and pt else ''}）のAI予想は"
     if p.get("confidence") == "見送り":
         s = base + "見送り（データ不足などで買い目なし）。"
     else:
         s = base + f"◎{hon}{horse_name(p, hon)}、自信度{p.get('confidence')}。"
-    rt = result_text(p)
+    rt = result_text(p, date)
     return s + (rt + "。" if rt else "")
 
 
@@ -726,7 +742,7 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
         vs_html = (f"<section class='card vs' data-key='vs:{date}:{race_path(date, p)}' data-post='{post}' data-ai='{esc(hon)}' "
                    f"data-fin='{esc(json.dumps(fin_map))}' data-url='{esc(url)}' data-label='{esc(race_label(p))}'>"
                    f"<h2>AI vs あなた</h2><p class='meta'>あなたの◎を1頭選んで、AIの◎（{esc(hon)}番）と勝負。発走前まで選べる（選んだ馬は、いまお使いのブラウザにだけ保存されます）。</p>"
-                   f"<div class='pick'><select><option value=''>馬を選ぶ</option>{opts}</select> <button type='button' class='go'>この馬に決める</button></div>"
+                   f"<div class='pick'><select aria-label='あなたの◎にする馬'><option value=''>馬を選ぶ</option>{opts}</select> <button type='button' class='go'>この馬に決める</button></div>"
                    f"<p class='r'></p><p class='meta'><a href='/me/'>あなたの成績（累計）を見る</a></p></section>")
     bias_html = ""
     bz = bias_for(date, p)
@@ -751,7 +767,7 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
         (OUT / "askdata" / date / f"{VENUE_SLUG.get(venue_of(p), 'venue')}-{race_no(p):02d}.json").write_text(
             json.dumps({"label": race_label(p), "post": post_key, "context": ctx}, ensure_ascii=False), encoding="utf-8")
         ask_html = (f"<section class='card zkteaser'>{zk('normal', 48)}<p>このレースのことを<b>全頭くん</b>に聞ける。<br><span class='meta'>画面右下のボタンからも開けます</span></p><button type='button' class='zkopen'>質問する</button></section>"
-                    f"<button type='button' class='zkfab' aria-label='全頭くんに質問' aria-expanded='false' aria-controls='askpop'>{zk('normal', 56) or '?'}<span class='zktip'>質問できるよ</span></button>"
+                    f"<button type='button' class='zkfab' aria-label='全頭くんに質問できるよ' aria-expanded='false' aria-controls='askpop'>{zk('normal', 56) or '?'}<span class='zktip'>質問できるよ</span></button>"
                     f"<section id='askpop' class='card ask askpop' role='dialog' aria-label='全頭くんに質問' data-page='{race_path(date, p)}' data-post='{post_key}' data-url='{ASK_URL}'{" data-zk='1'" if HAS_ZK else ''}>"
                     f"<h2 class='zkh'>{zk('normal', 48)}<span>全頭くんに質問<small>{esc(race_label(p))}について答えます</small></span><button type='button' class='zkclose' aria-label='閉じる'>×</button></h2><p class='meta'>出走馬の近走やAIの評価、これまでの予想の記録をもとに、短く答えます。たとえば「◎を選んだ理由は？」「3連単で△を2着まで入れるべき？」「このコースの3連単の配当はどれくらい？」。質問できるのは発走20分前まで、1日30回までです（混み合う日は早めに受付を終えることがあります）。</p>"
                     f"<div class='pick'><input type='text' maxlength='200' placeholder='このレースについて質問' aria-label='質問'> <button type='button' class='go'>聞く</button></div>"
@@ -922,11 +938,14 @@ def date_tabs(date: str) -> str:
         return ""
     i = ds.index(date)
     items = []
-    for d in ds[max(0, i - 2): i + 2]:
+    shown = ds[max(0, i - 2): i + 2]
+    for k, d in enumerate(shown):
         href = "/" if d == TODAY else day_path(d)
         lbl = f"{int(d[4:6])}/{int(d[6:8])}({'月火水木金土日'[datetime(int(d[:4]), int(d[4:6]), int(d[6:8])).weekday()]})"
-        items.append(f"<a href='{href}' class='{'on' if d == date else ''}'>{esc(lbl)}{'<small>今日</small>' if d == TODAY else ''}</a>")
-    return f"<nav class='dtabs'>{''.join(items)}<a href='/#past' class='more'>過去の日付</a></nav>"
+        # 4日分あるときは、スマホでは一番古い日を出さない（「過去の日付」まで画面に収める）
+        cls = " ".join(x for x in ("on" if d == date else "", "old" if k == 0 and len(shown) >= 4 and d != date else "") if x)
+        items.append(f"<a href='{href}' class='{cls}'>{esc(lbl)}{'<small>今日</small>' if d == TODAY else ''}</a>")
+    return f"<nav class='dtabs' aria-label='日付'>{''.join(items)}<a href='/days/' class='more'>過去の日付</a></nav>"
 
 
 def hero(date: str, preds: list[dict]) -> tuple[str, str | None]:
@@ -1309,10 +1328,43 @@ def day_list(date: str, preds: list[dict]) -> str:
             + "<ul class='races rlist'>" + "".join(race_item(date, p) for p in preds) + "</ul>")
 
 
+PAST_ON_TOP = 14  # トップの「過去の予想」に出す日数（それより前は /days/ へ）
+
+
+def days_page(day_rows: list[tuple], money: dict[str, tuple[int, int]]) -> str:
+    """/days/：予想を出したすべての日付を月ごとに（新しい順）。月の合計も出す。"""
+    by_month: dict[str, list] = defaultdict(list)
+    for d, n, roi in day_rows:
+        by_month[d[:6]].append((d, n, roi))
+    secs, jump = [], []
+    for ym in sorted(by_month, reverse=True):
+        rows = by_month[ym]
+        st = sum(money.get(d, (0, 0))[0] for d, _, _ in rows)
+        rt = sum(money.get(d, (0, 0))[1] for d, _, _ in rows)
+        label = f"{int(ym[:4])}年{int(ym[4:])}月"
+        jump.append(f"<a class='jn' href='#m{ym}'>{label}</a>")
+        lis = "".join(f"<li><a href='{day_path(d)}'><span>{short_date(d)}　{n}レース</span><span>回収率 {roi}</span></a></li>" for d, n, roi in rows)
+        mon = (f"<p class='meta'><a href='/monthly/{ym[:4]}-{ym[4:]}/'>{label}の月次レポート</a>（場別・買い方別の成績）</p>"
+               if (OUT / "monthly" / f"{ym[:4]}-{ym[4:]}").exists() else "")
+        secs.append(f"<section class='card' id='m{ym}'><h2>{label}<small>{len(rows)}日・{sum(n for _, n, _ in rows):,}レース・回収率{roi_txt(st, rt)}</small></h2>"
+                    f"<ul class='days'>{lis}</ul>{mon}</section>")
+    body = ("<p class='crumb'><a href='/'>トップ</a> › 過去の予想</p><h1>過去の予想（日付別）</h1>"
+            f"<p class='answer'>これまでに予想を出した{len(day_rows)}日分の一覧。日付を開くと、その日の全レースの印・買い目と結果が見られる。回収率は外れも含めて、買い目を1点100円ずつ買った計算。</p>"
+            + (f"<p class='jumpnav'>{''.join(jump)}</p>" if len(jump) > 1 else "") + "".join(secs))
+    return page(f"過去の競馬AI予想 日付別一覧 | {SITE_NAME}", body, "/days/",
+                desc=f"競馬全頭ログがこれまでに予想を出した{len(day_rows)}日分の一覧。日付ごとの全レースのAI予想と回収率。")
+
+
 # ---------------- 成績 ----------------
-def svg_line(points: list[float], w=640, h=180, labels: list[str] | None = None) -> str:
+def svg_line(points: list[float], w=860, h=220, labels: list[str] | None = None) -> str:
+    """累計回収率の折れ線。SVGは幅に合わせて拡大・縮小されるので、文字の大きさがそろうように
+    PC用（横長）とスマホ用（縦長・目盛りを間引く）の2枚を作り、CSSで出し分ける。"""
     if len(points) < 2:
         return ""
+    return _svg_line(points, w, h, labels, "wide", 8) + _svg_line(points, 360, 220, labels, "narrow", 4)
+
+
+def _svg_line(points: list[float], w: int, h: int, labels: list[str] | None, cls: str, max_labels: int) -> str:
     h_plot = h - 20 if labels else h
     lo, hi = min(points + [100]), max(points + [100])
     pad = (hi - lo) * 0.1 or 10
@@ -1320,14 +1372,17 @@ def svg_line(points: list[float], w=640, h=180, labels: list[str] | None = None)
     xs = [i * (w - 60) / (len(points) - 1) + 40 for i in range(len(points))]
     ys = [h_plot - 20 - (v - lo) / (hi - lo) * (h_plot - 40) for v in points]
     y100 = h_plot - 20 - (100 - lo) / (hi - lo) * (h_plot - 40)
-    step = max(1, len(points) // 8)
-    lab = "".join(f"<text x='{xs[i]:.1f}' y='{h - 4}' class='lbl mid'>{esc(labels[i])}</text>"
-                  for i in range(0, len(points), step)) if labels else ""
+    step = max(1, -(-len(points) // max_labels))
+    # 目盛りは最初から間引き、最後の日（最新）は必ず出す。最後と近すぎる目盛りは重なるので外す
+    idx = [i for i in range(0, len(points), step) if len(points) - 1 - i >= step * 0.75 or i == len(points) - 1]
+    if len(points) - 1 not in idx:
+        idx.append(len(points) - 1)
+    lab = "".join(f"<text x='{xs[i]:.1f}' y='{h - 4}' class='lbl mid'>{esc(labels[i])}</text>" for i in idx) if labels else ""
     dots = "".join(f"<circle cx='{x:.1f}' cy='{y:.1f}' r='2.5' class='pt'/>" for x, y in zip(xs, ys)) if len(points) <= 40 else ""
     path = " ".join(f"{'M' if i == 0 else 'L'}{x:.1f},{y:.1f}" for i, (x, y) in enumerate(zip(xs, ys)))
     desc_ = f"累計回収率の推移。最初{points[0]:.1f}%から最新{points[-1]:.1f}%。最高{max(points):.1f}%、最低{min(points):.1f}%。点線は100%。"
-    return (f"<svg viewBox='0 0 {w} {h}' class='chart' role='img' aria-label='{esc(desc_)}'><title>{esc(desc_)}</title>"
-            f"<line x1='30' x2='{w - 10}' y1='{y100:.1f}' y2='{y100:.1f}' class='base'/>"
+    return (f"<svg viewBox='0 0 {w} {h}' class='chart {cls}' role='img' aria-label='{esc(desc_)}'><title>{esc(desc_)}</title>"
+            f"<line x1='38' x2='{w - 10}' y1='{y100:.1f}' y2='{y100:.1f}' class='base'/>"
             f"<text x='2' y='{y100 + 4:.1f}' class='lbl'>100%</text>"
             f"<path d='{path}' class='ln'/>{dots}{lab}<circle cx='{xs[-1]:.1f}' cy='{ys[-1]:.1f}' r='4' class='pt'/>"
             f"<text x='{xs[-1] - 4:.1f}' y='{ys[-1] - 8:.1f}' class='lbl end'>{points[-1]:.1f}%</text></svg>")
@@ -1713,6 +1768,7 @@ SITE_CHANGES = [
     ("2026-11-07", "574レース分の成績から予想ルールを見直した。3連複は自信度Aのレースだけに絞り、2番人気を本命にする基準を厳しくし、当日朝にオッズで前日予想を見直す回を追加。初めて訪れた人向けに、全頭くんがサイトの見方を案内するポップアップを追加。地方競馬のオッズの読み取りの不具合も直した。"),
     ("2026-11-04", "公式キャラクター「全頭くん」が登場。レースページ右下のボタンから、そのレースについて全頭くんに質問できるようにした。結果欄の振り返りも全頭くんが担当。サイト全体の言葉づかいを、初めての人にも分かる表現に見直した。"),
     ("2026-11-03", "コラムを21本追加（AI予想は当たるのか、3連複フォーメーション、単勝と複勝、期待値買い、自信度、中央と地方、2番人気の本命、予想ページの見方、ばんえい競馬、脚質別・枠順別・オッズ別・頭数別・馬体重別・間隔別の勝率、点数計算早見表、ChatGPTでの予想、地方競馬のネット投票、馬連・馬単・ワイド、トリガミ、当たらない理由）。数字はすべて実データから自動更新。"),
+    ("2026-11-13", "表示を見直した。「見送り」の表示崩れ、PCのレース一覧の列のずれ、スマホで日付タブ・表・回収率のグラフが読みにくかった点を直し、表は横に動かせることが分かるようにした。発走前のレースに「結果待ち」と出ていたのを直した。コラムに目次と関連記事を付け、過去の予想は月ごとの一覧（過去の日付）にまとめた。プライバシーポリシーに広告・アフィリエイト・全頭くんへの質問の扱いを追記。"),
 ]
 
 
@@ -1742,11 +1798,29 @@ OPERATOR = f"""<h1>運営者情報</h1>{banner("operator")}
 <section class="card"><h2>免責事項</h2><p>本サイトの予想・情報は正確性や完全性を保証するものではありません。本サイトの情報を利用して生じた損害について、運営者は責任を負いません。馬券の購入はご自身の判断と責任で行ってください。</p></section>"""
 
 PRIVACY = f"""<h1>プライバシーポリシー</h1>
-<section class="card"><h2>個人情報の取り扱い</h2><p>本サイトは、閲覧者の氏名やメールアドレスなどの個人情報を収集していません。お問い合わせの際にご提供いただいた情報は、回答のためにのみ使用します。</p></section>
+<p class="answer">このサイトで扱う情報と、その使い方をまとめています。会員登録はなく、氏名やメールアドレスを入力しなくても、すべてのページを見られます。</p>
+<section class="card"><h2>個人情報の取り扱い</h2><p>本サイトは、閲覧者の氏名やメールアドレスなどの個人情報を収集していません。お問い合わせの際にご提供いただいた情報は、回答のためにのみ使用し、法令に基づく場合を除いて第三者に提供しません。</p></section>
+<section class="card"><h2>お問い合わせフォーム</h2><p><a href="/contact/">お問い合わせフォーム</a>の内容は、メール転送サービス「FormSubmit」を通じて運営者のメールアドレスに届きます。送信された内容は回答のためにのみ使用します。</p></section>
 <section class="card"><h2>アクセス解析について</h2><p>本サイトでは、Google LLCのアクセス解析ツール「Googleアナリティクス」を利用しています。Googleアナリティクスはデータ収集のためにCookieを使用し、閲覧したページや滞在時間、おおよその地域、使用端末などの情報を収集します。これらの情報は匿名で収集されており、個人を特定するものではありません。データの取り扱いについては<a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener">Googleのサービスを使用するサイトやアプリから収集した情報のGoogleによる使用</a>をご覧ください。収集を望まない場合は、ブラウザの設定でCookieを無効にするか、<a href="https://tools.google.com/dlpage/gaoptout?hl=ja" target="_blank" rel="noopener">Googleアナリティクス オプトアウト アドオン</a>をご利用ください。</p></section>
-<section class="card"><h2>広告について</h2><p>本サイトでは今後、広告配信やアフィリエイトプログラムを利用する場合があります。これらのサービスはCookie等を使用して閲覧情報を収集することがありますが、個人を特定する情報は含まれません。Cookieはブラウザの設定で無効にできます。</p></section>
-<section class="card"><h2>広告の表記</h2><p>本サイトに掲載する広告・アフィリエイトリンクには、その旨を明記します。</p></section>
-<section class="card"><h2>改定</h2><p>本ポリシーは必要に応じて改定することがあります。制定日：2026年10月27日／改定日：2026年11月1日（Googleアナリティクスの利用を追記）</p></section>"""
+<section class="card"><h2>広告について（Google AdSense）</h2><p>本サイトは、第三者配信の広告サービス「Google AdSense（グーグルアドセンス）」を利用しています。</p>
+<ul><li>Googleなどの第三者配信事業者は、Cookieを使用して、ユーザーがこのサイトや他のサイトに過去にアクセスした際の情報に基づいて広告を配信します。</li>
+<li>Googleが広告Cookieを使用することにより、ユーザーがこのサイトや他のサイトにアクセスした際の情報に基づいて、Googleやそのパートナーが適切な広告をユーザーに表示できます。</li>
+<li>ユーザーは、Googleの<a href="https://adssettings.google.com/" target="_blank" rel="noopener">広告設定</a>でパーソナライズ広告を無効にできます。また、<a href="https://www.aboutads.info/" target="_blank" rel="noopener">www.aboutads.info</a>にアクセスすれば、第三者配信事業者のCookieによるパーソナライズ広告を無効にできます。</li></ul>
+<p>Googleによる広告でのCookieの使い方は、<a href="https://policies.google.com/technologies/ads?hl=ja" target="_blank" rel="noopener">広告（Googleのポリシーと規約）</a>をご覧ください。</p></section>
+<section class="card"><h2>アフィリエイトについて</h2><p>本サイトは、A8.net・TGアフィリエイト（楽天競馬など）のアフィリエイトプログラムに参加しています。紹介したサービスへの登録や申し込みがあった場合、運営者が報酬を受け取ることがあります。各サービスは成果を確認するためにCookieなどを使用することがあります。</p></section>
+<section class="card"><h2>広告の表記</h2><p>本サイトに掲載する広告・アフィリエイトリンクには「PR」と明記します。予想の印・買い目・成績は、広告の有無や報酬によって変えていません。</p></section>
+<section class="card"><h2>全頭くんへの質問（AIの回答）について</h2><p>レースページの「全頭くんに質問」に入力した質問は、回答を作るために、Cloudflare社のサーバーを通じてAnthropic社のAI（Claude）に送られます。本サイトは質問の内容を保存しません。送られた質問のAnthropic社での取り扱いは、<a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">同社のプライバシーポリシー</a>に従います。使いすぎを防ぐため、IPアドレスごとの質問回数を1日単位で記録し、期限が過ぎた記録は自動で消します。質問欄には、氏名・連絡先などの個人情報を入力しないでください。</p></section>
+<section class="card"><h2>ブラウザへの保存</h2><p>表示の設定（ライト・ダーク）、レース一覧の絞り込み、「AI vs あなた」で選んだ馬、その日の質問回数、サイト案内を見たかどうかは、お使いのブラウザの中（ローカルストレージ）にだけ保存し、本サイトのサーバーには送りません。ブラウザの設定から消すことができます。</p></section>
+<section class="card"><h2>外部のサービスに送られる情報</h2><p>ページを表示すると、次のサービスにアクセスの情報（IPアドレス、ブラウザの種類、見たページのURLなど）が送られます。</p>
+<div class="scroll"><table class="facts"><tbody>
+<tr><th>Googleアナリティクス（Google LLC）</th><td>アクセス解析</td></tr>
+<tr><th>Google AdSense（Google LLC）</th><td>広告の配信</td></tr>
+<tr><th>Google Fonts（Google LLC）</th><td>文字（フォント）の表示</td></tr>
+<tr><th>A8.net・TGアフィリエイト</th><td>広告の表示と成果の確認（広告のあるページだけ）</td></tr>
+<tr><th>Cloudflare・Anthropic</th><td>全頭くんへの質問の回答（質問したときだけ）</td></tr>
+<tr><th>FormSubmit</th><td>お問い合わせの転送（送信したときだけ）</td></tr>
+</tbody></table></div></section>
+<section class="card"><h2>改定</h2><p>本ポリシーは必要に応じて改定することがあります。制定日：2026年10月27日／改定日：2026年11月13日（広告・アフィリエイト・全頭くんへの質問・ブラウザへの保存・外部のサービスに送られる情報について追記）</p></section>"""
 
 CSS = """.ask .alog{margin-top:10px}.ask .qa{border-top:1px solid var(--line);padding:8px 0}.ask .qa .q{color:var(--mut);font-size:13px}.ask .qa .a{margin:4px 0 0;line-height:1.7}.ask input{flex:1;min-width:0}.ask .pick{display:flex;gap:8px}.ask .err{color:var(--hit);font-size:13px}
 .kaiko{display:flex;gap:10px;align-items:flex-start;border-left:3px solid var(--acc);padding:8px 10px;background:var(--acc-soft);line-height:1.7}.kaiko p{margin:0}.kaiko b{display:block;font-size:12px;color:var(--mut)}
@@ -1912,6 +1986,36 @@ th.sortable{cursor:pointer;user-select:none}th.sortable:hover{color:var(--acc)}t
 @media (max-width:560px){.zkw-bg{align-items:flex-end;padding:0}.zkw{border-radius:18px 18px 0 0;width:100%;padding-bottom:calc(16px + env(safe-area-inset-bottom))}.zkw img{width:72px;height:72px}}
 @media (prefers-reduced-motion:no-preference){.zkw{animation:zkwin .28s ease-out}@keyframes zkwin{from{transform:translateY(16px);opacity:0}to{transform:none;opacity:1}}}
 .prefs .zkguide{border:1px solid var(--line);background:var(--panel);color:var(--fg);border-radius:2px;padding:2px 10px;font:inherit;font-size:12px;cursor:pointer;margin-left:6px}
+/* 表示の見直し（2026-11-13）：崩れの修正とスマホでの読みやすさ */
+.totop[hidden]{display:none}
+.conf{white-space:nowrap}
+@media (min-width:721px){.rlist a{grid-template-columns:52px minmax(0,1.3fr) minmax(0,1fr) 52px 176px}.rlist .conf{justify-self:center}.rlist .res{white-space:normal}
+.hr{grid-template-columns:48px 28px minmax(150px,1.4fr) 70px 86px 76px 48px 2.2fr}}
+@media (max-width:720px){.rlist a{grid-template-columns:44px minmax(0,1fr) auto}.rlist .conf{justify-self:end}}
+.odds.pre{display:block;border:0;padding:0;margin:1px 0 0;font-size:11px}
+@media (max-width:520px){.dtabs a{padding:6px 9px;font-size:13px}.dtabs a.more{padding:6px 2px 6px 8px;font-size:12px}.dtabs a.old{display:none}}
+header nav.ovf{-webkit-mask-image:linear-gradient(to right,transparent,#000 28px,#000 calc(100% - 36px),transparent);mask-image:linear-gradient(to right,transparent,#000 28px,#000 calc(100% - 36px),transparent)}
+header nav.ovf.beg{-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 36px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 36px),transparent)}
+header nav.ovf.end{-webkit-mask-image:linear-gradient(to right,transparent,#000 28px);mask-image:linear-gradient(to right,transparent,#000 28px)}
+.chart.narrow{display:none}
+@media (max-width:600px){.chart.wide{display:none}.chart.narrow{display:block}}
+.scroll{background:linear-gradient(to right,var(--panel) 30%,transparent) left center/24px 100% no-repeat local,linear-gradient(to left,var(--panel) 30%,transparent) right center/24px 100% no-repeat local,radial-gradient(farthest-side at 0 50%,rgba(127,127,127,.4),transparent) left center/10px 100% no-repeat scroll,radial-gradient(farthest-side at 100% 50%,rgba(127,127,127,.4),transparent) right center/10px 100% no-repeat scroll;background-color:var(--panel)}
+.scroll>table{background:transparent}
+.scroll table.facts{white-space:normal}.facts td{min-width:8em}.scroll td.nw{white-space:nowrap;min-width:0}
+@media (max-width:720px){.scroll th:first-child,.scroll td:first-child{position:sticky;left:0;z-index:1;background:var(--panel);box-shadow:inset -1px 0 0 var(--line)}
+.scroll tr.mk td:first-child{background:var(--acc-soft)}.scroll td:first-child{min-width:8.5em;max-width:11em}
+.scroll .facts th:first-child{position:static;box-shadow:none;white-space:normal;width:7.5em}
+.kpis b{font-size:clamp(19px,5.6vw,26px)}}
+.kpis b{overflow-wrap:anywhere}
+.jumpnav{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 4px;font-size:13px}
+.jumpnav a{border:1px solid var(--line);background:var(--panel);color:var(--fg);border-radius:2px;padding:3px 10px}
+.jumpnav a:hover{text-decoration:none;border-color:var(--acc);color:var(--acc)}
+nav.toc{display:block;margin:16px 0 20px;padding:10px 16px 12px;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--acc);overflow:visible;font-size:14px}
+.toc p{margin:0 0 4px;font-weight:700}.toc ol{margin:0;padding-left:1.4em;line-height:1.8}.toc a{color:var(--fg)}
+.col h2[id],.card[id],h2[id]{scroll-margin-top:12px}
+.morelink{margin:8px 0 0;font-size:14px;text-align:right}
+.cols.rel .tx span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+@media (max-width:720px){.cols .tx span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.cols .tx b{font-size:15px;line-height:1.55}.cols .th{width:84px;height:56px}}
 """
 
 JS = """(function(){document.querySelectorAll('.ptabs').forEach(function(t){var bs=t.querySelectorAll('button');function show(k){bs.forEach(function(b){var on=b.dataset.p===k;b.classList.toggle('on',on);b.setAttribute('aria-selected',on?'true':'false')});document.querySelectorAll('.period').forEach(function(d){d.hidden=d.dataset.p!==k});}bs.forEach(function(b){b.addEventListener('click',function(){show(b.dataset.p);try{localStorage.setItem('period',b.dataset.p)}catch(e){}})});var k=t.dataset.def;try{var v=localStorage.getItem('period');if(v)k=v}catch(e){}if(!t.querySelector("[data-p='"+k+"']"))k=t.dataset.def;show(k);});})();
@@ -1970,7 +2074,7 @@ document.querySelectorAll('.filters[data-kind]').forEach(function(f){f.addEventL
 var now=new Date(Date.now()+9*3600e3),s=now.toISOString().replace(/[-:T]/g,'').slice(0,12),first=null;
 (function(){var b=document.body.dataset.built;if(!b)return;var age=(Date.now()-Date.parse(b))/36e5;var st=document.querySelector('.notice.stale');if(st&&age>6)st.hidden=false;
  if(document.querySelector('.today')&&document.querySelector('.races li[data-post]')){var pend=[].some.call(document.querySelectorAll('.races li[data-post]'),function(li){return !li.querySelector('.res.hit,.res.miss,.res.tg')&&li.dataset.conf!=='見送り'});
-  if(pend){setInterval(function(){if(document.visibilityState==='visible'&&(Date.now()-(window.__lastHide||0))>0)location.reload();},5*60*1000);}}})();
+  if(pend){setInterval(function(){var ae=document.activeElement;if(document.visibilityState!=='visible'||(ae&&/^(INPUT|SELECT|TEXTAREA)$/.test(ae.tagName))||document.querySelector('.zkw-bg,.askpop.open'))return;location.reload();},5*60*1000);}}})();
 document.querySelectorAll('.races li[data-post]').forEach(function(li){var p=li.dataset.post;if(p.length<12)return;
  if(p<=s){li.classList.add('gone');if(!li.querySelector('.res')&&li.dataset.conf!=='見送り'){var w=document.createElement('span');w.className='res wait';w.textContent='結果待ち';li.querySelector('a').appendChild(w);}}else if(!first){first=li;}});
 if(first&&document.body.contains(first)&&document.querySelector('.today')){first.classList.add('next');first.id='next';}
@@ -2025,6 +2129,7 @@ var fb=document.querySelector('.prefs');if(fb){var gb=document.createElement('bu
 if(seen()||navigator.webdriver||/bot|crawl|spider|lighthouse|headless/i.test(navigator.userAgent)||SK.some(function(p){return location.pathname.indexOf(p)===0;}))return;
 setTimeout(function(){if(document.querySelector('.askpop.open'))return;if(seen())return;show(0);ga('welcome_shown',{page:location.pathname});},1500);
 })();
+(function(){var n=document.querySelector('header nav');if(!n)return;function f(){var o=n.scrollWidth>n.clientWidth+4;n.classList.toggle('ovf',o);n.classList.toggle('beg',n.scrollLeft<=4);n.classList.toggle('end',!o||n.scrollLeft+n.clientWidth>=n.scrollWidth-4);}var a=n.querySelector('a.on');if(a&&a.offsetLeft+a.offsetWidth>n.clientWidth)n.scrollLeft=a.offsetLeft-(n.clientWidth-a.offsetWidth)/2;f();n.addEventListener('scroll',f,{passive:true});window.addEventListener('resize',f);})();
 """
 
 
@@ -2063,14 +2168,17 @@ def build() -> None:
                   ["中央競馬・地方競馬の全レースを毎日予想", "外れも含めた全成績を公開"])
     now = datetime.now(JST)
     today = now.strftime("%Y%m%d")
-    global TODAY, ALL_DATES, BUILT_ISO
+    global TODAY, ALL_DATES, BUILT_ISO, NOW_KEY
     TODAY = today
     BUILT_ISO = now.strftime('%Y-%m-%dT%H:%M:%S+09:00')
+    NOW_KEY = now.strftime("%Y%m%d%H%M")
     dates = all_dates()
     ALL_DATES = list(dates)
     lastmod: dict[str, str] = {}
     venue_of_race: dict[str, str] = {}
     day_rows = []
+    day_money: dict[str, tuple[int, int]] = {}
+    today_iso_ = now.strftime("%Y-%m-%d")
     by_date = {}
     for d in dates:
         by_date[d] = predictions(d)
@@ -2120,6 +2228,7 @@ def build() -> None:
                 lastmod[path] = f"{d[:4]}-{d[4:6]}-{d[6:8]}"
         st, rt = day_stats(ps)
         day_rows.append((d, len(ps), roi_txt(st, rt)))
+        day_money[d] = (st, rt)
         dog = "/og/default.jpg"
         if d >= (datetime.now(JST) - timedelta(days=OG_DAYS)).strftime("%Y%m%d"):
             dog = f"/og/{d}/day.jpg"
@@ -2143,8 +2252,11 @@ def build() -> None:
         top_list = f"<section class='today'>{day_list(main_d, by_date[main_d])}</section>"
     else:
         head, top_list = "今日の予想", "<p>予想はまだありません。</p>"
+    past_rows = [x for x in day_rows if x[0] != main_d]
     past = "".join(f"<li><a href='{day_path(d)}'><span>{short_date(d)}　{n}レース</span><span>回収率 {roi}</span></a></li>"
-                   for d, n, roi in day_rows if d != main_d)
+                   for d, n, roi in past_rows[:PAST_ON_TOP])
+    if len(past_rows) > PAST_ON_TOP:  # トップには直近だけ。全部の日付は /days/ に月ごとにまとめる
+        past += f"<li><a href='/days/'><span>すべての日付（{len(day_rows)}日分）</span><span>月ごとに見る →</span></a></li>"
     body = (f"<h1>{head}<small>{fmt_date(main_d) if main_d else ''}</small></h1>"
             f"<p class='answer'>AIが日本の競馬（JRA・地方）の全レースを毎日予想し、外れも含めた成績を公開している。累計回収率は{t['roi']}（{t['n']}レース。◎が3着以内に入った割合は{t['top3']}）。"
             + (f"今のルール（{rule_label()}、買い目は◎の単勝か複勝1点）では{tn_['roi']}（{tn_['n']}レース）。" if tn_["n"] else "")
@@ -2175,6 +2287,8 @@ def build() -> None:
     lastmod.update(review.build_pages(_sys.modules[__name__], by_date, today))
     lastmod.update(horses.build_pages(_sys.modules[__name__], by_date, today))
     lastmod.update(monthly.build_pages(_sys.modules[__name__], by_date, led, venue_of_race, today))
+    write("/days/", days_page(day_rows, day_money))  # 月次レポートへのリンクを付けるので、月次の後に作る
+    lastmod["/days/"] = today_iso_
     FEED_EXTRA[:] = [(k, "重賞回顧 " + k.split("/")[2]) for k in lastmod if k.startswith("/review/2")][:3] + \
                     [(k, "月次レポート " + k.split("/")[2]) for k in lastmod if k.startswith("/monthly/2")][:2]
     # 検索索引（馬名・レース名・重賞名 → ページ）。小さく保つため、馬は最新1件のレースページへ
@@ -2232,7 +2346,7 @@ def build() -> None:
     write("/about/", page(f"予想の方法とよくある質問 | {SITE_NAME}", ABOUT, "/about/", head_extra=jsonld(FAQ_LD),
                           desc="競馬全頭ログの予想の作り方（評価の5軸・印・自信度・買い目）と、回収率の計算方法。"))
     write("/operator/", page(f"運営者情報 | {SITE_NAME}", OPERATOR, "/operator/", desc=f"{SITE_NAME}の運営者・連絡先・SNS・運営の支援についての情報。"))
-    write("/privacy/", page(f"プライバシーポリシー | {SITE_NAME}", PRIVACY, "/privacy/", desc=f"{SITE_NAME}のプライバシーポリシー。アクセス解析・広告・お問い合わせで扱う情報と、その使い方。"))
+    write("/privacy/", page(f"プライバシーポリシー | {SITE_NAME}", PRIVACY, "/privacy/", desc=f"{SITE_NAME}のプライバシーポリシー。アクセス解析・広告（Google AdSense）・アフィリエイト・お問い合わせ・全頭くんへの質問で扱う情報と、その使い方。"))
     today_iso = now.strftime("%Y-%m-%d")
     lastmod.update(column.build(write, page, jsonld, BASE_URL, SITE_NAME, STATS_FROM, today_iso))
     for old, new in (("results.html", "/results/"), ("about.html", "/about/")):

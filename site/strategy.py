@@ -269,12 +269,13 @@ def render(g: dict[str, dict[str, Bucket]], esc, roi_txt, since: str, asof: str)
             cls = "hit" if r is not None and r >= 100 else "tg" if r is not None and r >= 85 else ""
             ex = b.roi_ex_top(3)
             ex_txt = f"{ex:.1f}%" if ex is not None and b.n > 3 else "-"
-            rows.append(f"<tr><td>{esc(k)}</td><td>{b.n:,}</td><td>{b.hit:,}（{100 * b.hit / b.n:.0f}%）</td>"
-                        f"<td>{b.stake:,}円</td><td>{b.ret:,}円</td><td class='{cls}'><b>{roi_txt(b.stake, b.ret)}</b></td><td>{b.ret - b.stake:+,}円</td><td>{ex_txt}</td></tr>")
+            # スマホでも最初に見えるように、回収率を買い方のすぐ右に置く
+            rows.append(f"<tr><td>{esc(k)}</td><td class='{cls}'><b>{roi_txt(b.stake, b.ret)}</b></td><td>{b.n:,}</td><td>{b.hit:,}（{100 * b.hit / b.n:.0f}%）</td>"
+                        f"<td>{b.ret - b.stake:+,}円</td><td>{ex_txt}</td><td>{b.stake:,}円</td><td>{b.ret:,}円</td></tr>")
             if key != "base" and b.n >= 100 and r is not None:  # 冒頭で紹介するのは偶然の影響が小さい100レース以上の買い方だけ
                 ranking.append((k, r, b.n, ex))
         sections.append(f"<section class='card'><h2>{esc(title)}</h2><p class='meta'>{esc(note)}</p><div class='scroll'><table>"
-                        "<thead><tr><th>買い方</th><th>レース</th><th>的中</th><th>購入額</th><th>払戻</th><th>回収率</th><th>収支</th><th>大当たり3回を除く</th></tr></thead>"
+                        "<thead><tr><th>買い方</th><th>回収率</th><th>レース</th><th>的中</th><th>収支</th><th>大当たり3回を除く</th><th>購入額</th><th>払戻</th></tr></thead>"
                         f"<tbody>{''.join(rows)}</tbody></table></div></section>")
     ranking.sort(key=lambda x: -x[1])
     intro = ""
