@@ -1,6 +1,6 @@
 {
  "date": "20261113",
- "updated": "2026-11-13 12:11",
+ "updated": "2026-11-13 12:28",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -184,6 +184,48 @@
    "venue": "名古屋",
    "race_no": 2,
    "post_time": "13:05",
+   "number": 2,
+   "name": "ゴーゴーゴウト",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 14,
+   "last": {
+    "date": "2026-10-30",
+    "finish": 10,
+    "field": 12,
+    "popularity": 3
+   },
+   "odds": 37.6,
+   "popularity": 8
+  },
+  {
+   "race_id": "202611132433160502",
+   "results_key": "202611132433160502",
+   "venue": "名古屋",
+   "race_no": 2,
+   "post_time": "13:05",
+   "number": 3,
+   "name": "フーダオラ",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 14,
+   "last": {
+    "date": "2026-10-30",
+    "finish": 7,
+    "field": 12,
+    "popularity": 1
+   },
+   "odds": 75.2,
+   "popularity": 9
+  },
+  {
+   "race_id": "202611132433160502",
+   "results_key": "202611132433160502",
+   "venue": "名古屋",
+   "race_no": 2,
+   "post_time": "13:05",
    "number": 4,
    "name": "サンマルフォース",
    "types": [
@@ -197,8 +239,8 @@
     "field": 12,
     "popularity": 4
    },
-   "odds": 6.0,
-   "popularity": 3
+   "odds": 7.5,
+   "popularity": 4
   },
   {
    "race_id": "202611132433160502",
@@ -218,7 +260,7 @@
     "field": 11,
     "popularity": 10
    },
-   "odds": 10.6,
+   "odds": 21.4,
    "popularity": 5
   },
   {
@@ -239,8 +281,8 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": null,
-   "popularity": null
+   "odds": 110.4,
+   "popularity": 11
   },
   {
    "race_id": "202611132726180306",
@@ -260,8 +302,22 @@
     "field": 12,
     "popularity": 6
    },
-   "odds": 6.8,
-   "popularity": 2
+   "odds": 6.0,
+   "popularity": 4
+  },
+  {
+   "race_id": "202611132726180306",
+   "results_key": "202611132726180306",
+   "venue": "園田",
+   "race_no": 6,
+   "post_time": "13:25",
+   "number": 10,
+   "name": "ユイノオトコヤマ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 19.2,
+   "popularity": 6
   },
   {
    "race_id": "202611132726180308",
@@ -484,7 +540,8 @@
    "number": 7,
    "name": "プロメトル",
    "types": [
-    "rebound"
+    "rebound",
+    "aitop"
    ],
    "gap_days": 23,
    "last": {
