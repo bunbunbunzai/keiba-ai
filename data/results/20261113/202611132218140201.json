@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261113",
  "race_id": "202611132218140201",
- "tries": 2,
+ "tries": 7,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "ロングロングロング",
    "time": "1:39.9",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 39.9,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ルディドゥゲンジ",
    "time": "1:40.9",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 42.3,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ユイノレジスタンス",
    "time": "1:41.0",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 42.6,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "シャインヴィーラ",
    "time": "1:41.1",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 41.3,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "ココア",
    "time": "1:42.5",
    "margin": "７",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 42.7,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "シックスレター",
    "time": "1:44.1",
    "margin": "８",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 44.0,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "ヴェリーヌ",
    "time": "1:46.4",
    "margin": "大差",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 46.0,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "デルマアソ",
    "time": "1:48.7",
    "margin": "大差",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 50.1,
    "popularity": null
   },
   {
