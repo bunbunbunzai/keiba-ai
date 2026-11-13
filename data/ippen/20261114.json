@@ -1,6 +1,6 @@
 {
  "date": "20261114",
- "updated": "2026-11-14 07:38",
+ "updated": "2026-11-14 08:21",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -70,6 +70,20 @@
    },
    "odds": 30.7,
    "popularity": 8
+  },
+  {
+   "race_id": "jra_20261114_東京_01",
+   "results_key": "jra_05_01",
+   "venue": "東京",
+   "race_no": 1,
+   "post_time": "09:50",
+   "number": 13,
+   "name": "リーズメイリー",
+   "types": [
+    "aitop"
+   ],
+   "odds": 6.8,
+   "popularity": 3
   },
   {
    "race_id": "jra_20261114_福島_02",
