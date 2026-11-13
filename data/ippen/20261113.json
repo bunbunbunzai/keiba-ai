@@ -1,6 +1,6 @@
 {
  "date": "20261113",
- "updated": "2026-11-13 13:52",
+ "updated": "2026-11-13 13:58",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -337,7 +337,7 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": 35.7,
+   "odds": 56.7,
    "popularity": 9
   },
   {
@@ -358,7 +358,7 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": 22.8,
+   "odds": 44.6,
    "popularity": 8
   },
   {
@@ -379,7 +379,7 @@
     "field": 12,
     "popularity": 7
    },
-   "odds": 77.0,
+   "odds": 80.7,
    "popularity": 12
   },
   {
@@ -400,7 +400,7 @@
     "field": 12,
     "popularity": 8
    },
-   "odds": 44.0,
+   "odds": 35.5,
    "popularity": 8
   },
   {
@@ -422,7 +422,7 @@
     "field": 7,
     "popularity": 5
    },
-   "odds": 59.6,
+   "odds": 61.7,
    "popularity": 11
   },
   {
@@ -443,8 +443,8 @@
     "field": 12,
     "popularity": 5
    },
-   "odds": 12.6,
-   "popularity": 5
+   "odds": 10.7,
+   "popularity": 4
   },
   {
    "race_id": "202611132135090501",
@@ -465,7 +465,7 @@
     "field": 9,
     "popularity": 7
    },
-   "odds": 33.0,
+   "odds": 34.4,
    "popularity": 7
   },
   {
@@ -486,8 +486,8 @@
     "field": 12,
     "popularity": 9
    },
-   "odds": 47.3,
-   "popularity": 9
+   "odds": 43.7,
+   "popularity": 10
   },
   {
    "race_id": "202611132135090501",
@@ -507,7 +507,7 @@
     "field": 14,
     "popularity": 5
    },
-   "odds": 31.3,
+   "odds": 30.0,
    "popularity": 6
   },
   {
@@ -521,7 +521,7 @@
    "types": [
     "aitop"
    ],
-   "odds": 10.1,
+   "odds": 10.7,
    "popularity": 4
   },
   {
@@ -733,29 +733,8 @@
     "field": 11,
     "popularity": 8
    },
-   "odds": null,
-   "popularity": null
-  },
-  {
-   "race_id": "202611132218140201",
-   "results_key": "202611132218140201",
-   "venue": "金沢",
-   "race_no": 1,
-   "post_time": "15:25",
-   "number": 6,
-   "name": "ヴィオラダンサー",
-   "types": [
-    "layoff"
-   ],
-   "gap_days": 166,
-   "last": {
-    "date": "2026-05-31",
-    "finish": 6,
-    "field": 9,
-    "popularity": 2
-   },
-   "odds": null,
-   "popularity": null
+   "odds": 16.8,
+   "popularity": 4
   },
   {
    "race_id": "202611132218140201",
@@ -775,8 +754,8 @@
     "field": 9,
     "popularity": 4
    },
-   "odds": null,
-   "popularity": null
+   "odds": 1.1,
+   "popularity": 1
   },
   {
    "race_id": "202611132726180310",
