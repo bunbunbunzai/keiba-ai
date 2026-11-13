@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261113",
  "race_id": "202611132726180308",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,105 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 8,
+   "name": "トシクン",
+   "time": "1:31.2",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.8,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "ベスポジ",
+   "time": "1:31.5",
+   "margin": "１ １／２",
+   "pos4": 3,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "インジェクション",
+   "time": "1:31.8",
+   "margin": "２",
+   "pos4": 4,
+   "last3f": 39.9,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 9,
+   "name": "テイムキッド",
+   "time": "1:31.8",
+   "margin": "ハナ",
+   "pos4": 5,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 6,
+   "name": "ミコカスターニャ",
+   "time": "1:32.0",
+   "margin": "１",
+   "pos4": 1,
+   "last3f": 40.7,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 4,
+   "number": 4,
+   "name": "ジョコーソ",
+   "time": "1:32.5",
+   "margin": "３",
+   "pos4": 6,
+   "last3f": 40.0,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 2,
+   "number": 2,
+   "name": "エクスプロラベスト",
+   "time": "1:33.0",
+   "margin": "３",
+   "pos4": 8,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "パトロールラン",
+   "time": "1:33.5",
+   "margin": "３",
+   "pos4": 8,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 7,
+   "name": "クロスノット",
+   "time": "1:33.9",
+   "margin": "２ １／２",
+   "pos4": 7,
+   "last3f": 41.7,
+   "popularity": null
+  }
+ ]
 }
