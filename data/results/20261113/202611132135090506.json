@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261113",
  "race_id": "202611132135090506",
- "tries": 8,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "サラサダンディー",
    "time": "1:39.5",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 40.2,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ルゼンチ",
    "time": "1:40.2",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 41.2,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ペールデュクラン",
    "time": "1:40.5",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 40.9,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "レイディアントアイ",
    "time": "1:40.6",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 40.4,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "パッションローザ",
    "time": "1:40.8",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 41.4,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "キョウエイアート",
    "time": "1:41.2",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 40.0,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "ワイズブレイズ",
    "time": "1:41.3",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 41.2,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ラクシオンデクラ",
    "time": "1:41.8",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 41.9,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "テンザンパパ",
    "time": "1:42.3",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 42.4,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "キサラフラッシュ",
    "time": "1:42.7",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 42.4,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "コンバットステート",
    "time": "1:43.1",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 43.8,
    "popularity": null
   },
   {
@@ -198,8 +198,8 @@
    "name": "アスパラノヴァ",
    "time": "1:44.3",
    "margin": "６",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 13,
+   "last3f": 42.8,
    "popularity": null
   },
   {
@@ -209,8 +209,8 @@
    "name": "コスモローマ",
    "time": "1:44.4",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 12,
+   "last3f": 43.8,
    "popularity": null
   },
   {

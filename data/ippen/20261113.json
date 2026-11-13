@@ -1,6 +1,6 @@
 {
  "date": "20261113",
- "updated": "2026-11-13 17:08",
+ "updated": "2026-11-13 18:32",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1827,7 +1827,7 @@
     "field": 12,
     "popularity": 9
    },
-   "odds": 3.1,
+   "odds": 7.2,
    "popularity": 2
   },
   {
@@ -1839,7 +1839,8 @@
    "number": 8,
    "name": "ファーストフラワー",
    "types": [
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 17,
    "last": {
@@ -1848,8 +1849,8 @@
     "field": 10,
     "popularity": 1
    },
-   "odds": 6.1,
-   "popularity": 3
+   "odds": 14.5,
+   "popularity": 4
   },
   {
    "race_id": "202611132135090509",
@@ -1869,8 +1870,8 @@
     "field": 13,
     "popularity": 7
    },
-   "odds": 9.6,
-   "popularity": 5
+   "odds": 7.7,
+   "popularity": 4
   },
   {
    "race_id": "202611132135090509",
@@ -1890,8 +1891,8 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": 26.8,
-   "popularity": 9
+   "odds": 43.2,
+   "popularity": 11
   },
   {
    "race_id": "202611132218140208",
@@ -1904,7 +1905,7 @@
    "types": [
     "aitop"
    ],
-   "odds": 6.1,
+   "odds": 6.7,
    "popularity": 2
   },
   {
@@ -1925,8 +1926,8 @@
     "field": 12,
     "popularity": 7
    },
-   "odds": 16.6,
-   "popularity": 6
+   "odds": 18.4,
+   "popularity": 5
   },
   {
    "race_id": "202611132218140208",
@@ -1947,8 +1948,8 @@
     "field": 10,
     "popularity": 3
    },
-   "odds": 25.8,
-   "popularity": 9
+   "odds": 55.2,
+   "popularity": 11
   },
   {
    "race_id": "202611132135090510",
@@ -1968,8 +1969,8 @@
     "field": 10,
     "popularity": 1
    },
-   "odds": 4.2,
-   "popularity": 1
+   "odds": 6.7,
+   "popularity": 3
   },
   {
    "race_id": "202611132135090510",
@@ -1989,8 +1990,8 @@
     "field": 12,
     "popularity": 3
    },
-   "odds": 35.8,
-   "popularity": 10
+   "odds": 34.2,
+   "popularity": 11
   },
   {
    "race_id": "202611132135090510",
@@ -2010,7 +2011,7 @@
     "field": 13,
     "popularity": 13
    },
-   "odds": 53.7,
+   "odds": 66.0,
    "popularity": 12
   },
   {
@@ -2024,8 +2025,8 @@
    "types": [
     "aitop"
    ],
-   "odds": 7.4,
-   "popularity": 4
+   "odds": 7.7,
+   "popularity": 5
   },
   {
    "race_id": "202611132218140209",
