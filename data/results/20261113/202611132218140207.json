@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261113",
  "race_id": "202611132218140207",
- "tries": 4,
+ "tries": 5,
  "payouts": {
   "単勝": [
    {
@@ -71,8 +71,8 @@
    "name": "レッツリブオン",
    "time": "1:31.8",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 38.8,
    "popularity": null
   },
   {
@@ -82,8 +82,8 @@
    "name": "ペガサスターボ",
    "time": "1:32.3",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 39.0,
    "popularity": null
   },
   {
@@ -93,8 +93,8 @@
    "name": "ファーストフラワー",
    "time": "1:32.6",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 39.4,
    "popularity": null
   },
   {
@@ -104,8 +104,8 @@
    "name": "シントーツバキ",
    "time": "1:32.8",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 40.0,
    "popularity": null
   },
   {
@@ -115,8 +115,8 @@
    "name": "アンクルサンダー",
    "time": "1:32.8",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 39.0,
    "popularity": null
   },
   {
@@ -126,8 +126,8 @@
    "name": "ゼローソ",
    "time": "1:32.9",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 39.1,
    "popularity": null
   },
   {
@@ -137,8 +137,8 @@
    "name": "レギウス",
    "time": "1:33.4",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 40.3,
    "popularity": null
   },
   {
@@ -148,8 +148,8 @@
    "name": "ショウガフクキタル",
    "time": "1:35.3",
    "margin": "９",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 42.4,
    "popularity": null
   }
  ]
