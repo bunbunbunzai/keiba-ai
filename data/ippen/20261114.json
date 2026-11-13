@@ -1,6 +1,6 @@
 {
  "date": "20261114",
- "updated": "2026-11-14 08:21",
+ "updated": "2026-11-14 08:31",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -84,6 +84,20 @@
    ],
    "odds": 6.8,
    "popularity": 3
+  },
+  {
+   "race_id": "jra_20261114_京都_01",
+   "results_key": "jra_08_01",
+   "venue": "京都",
+   "race_no": 1,
+   "post_time": "10:00",
+   "number": 10,
+   "name": "アヴレディール",
+   "types": [
+    "aitop"
+   ],
+   "odds": 3.5,
+   "popularity": 2
   },
   {
    "race_id": "jra_20261114_福島_02",
