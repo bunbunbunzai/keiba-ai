@@ -1,6 +1,6 @@
 {
  "date": "20261113",
- "updated": "2026-11-12 03:16",
+ "updated": "2026-11-13 11:04",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -26,8 +26,8 @@
     "field": 9,
     "popularity": 4
    },
-   "odds": null,
-   "popularity": null
+   "odds": 19.0,
+   "popularity": 4
   },
   {
    "race_id": "202611132726180303",
@@ -48,8 +48,8 @@
     "field": 12,
     "popularity": 4
    },
-   "odds": null,
-   "popularity": null
+   "odds": 1.5,
+   "popularity": 1
   },
   {
    "race_id": "202611132726180304",
@@ -69,8 +69,8 @@
     "field": 12,
     "popularity": 11
    },
-   "odds": null,
-   "popularity": null
+   "odds": 181.8,
+   "popularity": 12
   },
   {
    "race_id": "202611132726180304",
@@ -90,8 +90,8 @@
     "field": 10,
     "popularity": 9
    },
-   "odds": null,
-   "popularity": null
+   "odds": 8.0,
+   "popularity": 4
   },
   {
    "race_id": "202611132726180304",
@@ -111,8 +111,8 @@
     "field": 9,
     "popularity": 6
    },
-   "odds": null,
-   "popularity": null
+   "odds": 6.4,
+   "popularity": 2
   },
   {
    "race_id": "202611132433160501",
@@ -132,8 +132,8 @@
     "field": 12,
     "popularity": 7
    },
-   "odds": null,
-   "popularity": null
+   "odds": 35.3,
+   "popularity": 9
   },
   {
    "race_id": "202611132726180305",
@@ -153,8 +153,8 @@
     "field": 10,
     "popularity": 4
    },
-   "odds": null,
-   "popularity": null
+   "odds": 95.3,
+   "popularity": 9
   },
   {
    "race_id": "202611132726180305",
@@ -175,8 +175,8 @@
     "field": 9,
     "popularity": 5
    },
-   "odds": null,
-   "popularity": null
+   "odds": 25.0,
+   "popularity": 5
   },
   {
    "race_id": "202611132433160502",
@@ -197,8 +197,8 @@
     "field": 12,
     "popularity": 4
    },
-   "odds": null,
-   "popularity": null
+   "odds": 6.0,
+   "popularity": 3
   },
   {
    "race_id": "202611132433160502",
@@ -218,8 +218,8 @@
     "field": 11,
     "popularity": 10
    },
-   "odds": null,
-   "popularity": null
+   "odds": 10.6,
+   "popularity": 5
   },
   {
    "race_id": "202611132726180306",
@@ -260,8 +260,8 @@
     "field": 12,
     "popularity": 6
    },
-   "odds": null,
-   "popularity": null
+   "odds": 6.8,
+   "popularity": 2
   },
   {
    "race_id": "202611132726180308",
@@ -281,8 +281,8 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": null,
-   "popularity": null
+   "odds": 85.0,
+   "popularity": 7
   },
   {
    "race_id": "202611132726180308",
@@ -302,8 +302,8 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": null,
-   "popularity": null
+   "odds": 127.6,
+   "popularity": 8
   },
   {
    "race_id": "202611132135090501",
@@ -472,8 +472,8 @@
     "field": 10,
     "popularity": 6
    },
-   "odds": null,
-   "popularity": null
+   "odds": 351.2,
+   "popularity": 9
   },
   {
    "race_id": "202611132726180309",
@@ -493,8 +493,8 @@
     "field": 12,
     "popularity": 5
    },
-   "odds": null,
-   "popularity": null
+   "odds": 5.5,
+   "popularity": 3
   },
   {
    "race_id": "202611132726180309",
@@ -514,8 +514,8 @@
     "field": 12,
     "popularity": 6
    },
-   "odds": null,
-   "popularity": null
+   "odds": 1.7,
+   "popularity": 1
   },
   {
    "race_id": "202611132726180309",
@@ -535,8 +535,8 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": null,
-   "popularity": null
+   "odds": 16.7,
+   "popularity": 5
   },
   {
    "race_id": "202611132726180309",
@@ -556,8 +556,8 @@
     "field": 12,
     "popularity": 9
    },
-   "odds": null,
-   "popularity": null
+   "odds": 29.2,
+   "popularity": 7
   },
   {
    "race_id": "202611132433160506",
@@ -577,8 +577,8 @@
     "field": 12,
     "popularity": 11
    },
-   "odds": null,
-   "popularity": null
+   "odds": 8.5,
+   "popularity": 4
   },
   {
    "race_id": "202611132433160506",
@@ -598,8 +598,8 @@
     "field": 12,
     "popularity": 11
    },
-   "odds": null,
-   "popularity": null
+   "odds": 12.8,
+   "popularity": 7
   },
   {
    "race_id": "202611132433160506",
@@ -610,7 +610,8 @@
    "number": 7,
    "name": "メイショウハンゾウ",
    "types": [
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 14,
    "last": {
@@ -619,8 +620,8 @@
     "field": 12,
     "popularity": 3
    },
-   "odds": null,
-   "popularity": null
+   "odds": 12.8,
+   "popularity": 7
   },
   {
    "race_id": "202611132433160506",
@@ -640,8 +641,8 @@
     "field": 12,
     "popularity": 5
    },
-   "odds": null,
-   "popularity": null
+   "odds": 8.5,
+   "popularity": 4
   },
   {
    "race_id": "202611132218140201",
@@ -724,8 +725,8 @@
     "field": 15,
     "popularity": 11
    },
-   "odds": null,
-   "popularity": null
+   "odds": 4.8,
+   "popularity": 2
   },
   {
    "race_id": "202611132726180310",
@@ -745,8 +746,8 @@
     "field": 10,
     "popularity": 9
    },
-   "odds": null,
-   "popularity": null
+   "odds": 70.0,
+   "popularity": 8
   },
   {
    "race_id": "202611132433160507",
@@ -767,8 +768,8 @@
     "field": 12,
     "popularity": 7
    },
-   "odds": null,
-   "popularity": null
+   "odds": 3.0,
+   "popularity": 1
   },
   {
    "race_id": "202611132433160507",
@@ -809,8 +810,8 @@
     "field": 11,
     "popularity": 8
    },
-   "odds": null,
-   "popularity": null
+   "odds": 7.2,
+   "popularity": 4
   },
   {
    "race_id": "202611132433160507",
@@ -830,8 +831,8 @@
     "field": 11,
     "popularity": 2
    },
-   "odds": null,
-   "popularity": null
+   "odds": 12.0,
+   "popularity": 5
   },
   {
    "race_id": "202611132433160507",
@@ -852,8 +853,8 @@
     "field": 12,
     "popularity": 4
    },
-   "odds": null,
-   "popularity": null
+   "odds": 3.0,
+   "popularity": 1
   },
   {
    "race_id": "202611132218140202",
@@ -882,11 +883,54 @@
    "venue": "園田",
    "race_no": 11,
    "post_time": "16:15",
+   "number": 1,
+   "name": "ブリリアドロ",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 28,
+   "last": {
+    "date": "2026-10-16",
+    "finish": 6,
+    "field": 10,
+    "popularity": 2
+   },
+   "odds": 38.4,
+   "popularity": 8
+  },
+  {
+   "race_id": "202611132726180311",
+   "results_key": "202611132726180311",
+   "venue": "園田",
+   "race_no": 11,
+   "post_time": "16:15",
+   "number": 2,
+   "name": "テクノエクスプレス",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 22,
+   "last": {
+    "date": "2026-10-22",
+    "finish": 7,
+    "field": 12,
+    "popularity": 3
+   },
+   "odds": 192.0,
+   "popularity": 12
+  },
+  {
+   "race_id": "202611132726180311",
+   "results_key": "202611132726180311",
+   "venue": "園田",
+   "race_no": 11,
+   "post_time": "16:15",
    "number": 10,
    "name": "スカイノハル",
    "types": [
     "layoff",
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 121,
    "last": {
@@ -895,8 +939,8 @@
     "field": 9,
     "popularity": 1
    },
-   "odds": null,
-   "popularity": null
+   "odds": 11.2,
+   "popularity": 5
   },
   {
    "race_id": "202611132726180311",
@@ -916,8 +960,8 @@
     "field": 8,
     "popularity": 6
    },
-   "odds": null,
-   "popularity": null
+   "odds": 96.0,
+   "popularity": 9
   },
   {
    "race_id": "202611132433160508",
@@ -958,8 +1002,8 @@
     "field": 12,
     "popularity": 6
    },
-   "odds": null,
-   "popularity": null
+   "odds": 7.4,
+   "popularity": 4
   },
   {
    "race_id": "202611132433160508",
@@ -979,8 +1023,8 @@
     "field": 9,
     "popularity": 6
    },
-   "odds": null,
-   "popularity": null
+   "odds": 4.4,
+   "popularity": 2
   },
   {
    "race_id": "202611132218140203",
@@ -1021,8 +1065,8 @@
     "field": 17,
     "popularity": null
    },
-   "odds": null,
-   "popularity": null
+   "odds": 7.3,
+   "popularity": 4
   },
   {
    "race_id": "202611132726180312",
@@ -1042,8 +1086,8 @@
     "field": 12,
     "popularity": 7
    },
-   "odds": null,
-   "popularity": null
+   "odds": 3.2,
+   "popularity": 2
   },
   {
    "race_id": "202611132726180312",
@@ -1063,8 +1107,8 @@
     "field": 8,
     "popularity": null
    },
-   "odds": null,
-   "popularity": null
+   "odds": 9.6,
+   "popularity": 5
   },
   {
    "race_id": "202611132726180312",
@@ -1084,8 +1128,8 @@
     "field": 14,
     "popularity": 6
    },
-   "odds": null,
-   "popularity": null
+   "odds": 3.2,
+   "popularity": 2
   },
   {
    "race_id": "202611132433160509",
@@ -1252,8 +1296,8 @@
     "field": 11,
     "popularity": 5
    },
-   "odds": null,
-   "popularity": null
+   "odds": 17.6,
+   "popularity": 5
   },
   {
    "race_id": "202611132433160510",
@@ -1273,8 +1317,8 @@
     "field": 11,
     "popularity": 10
    },
-   "odds": null,
-   "popularity": null
+   "odds": 4.4,
+   "popularity": 3
   },
   {
    "race_id": "202611132433160510",
@@ -1294,8 +1338,8 @@
     "field": 11,
     "popularity": 6
    },
-   "odds": null,
-   "popularity": null
+   "odds": 8.8,
+   "popularity": 4
   },
   {
    "race_id": "202611132433160510",
@@ -1315,8 +1359,8 @@
     "field": 11,
     "popularity": 7
    },
-   "odds": null,
-   "popularity": null
+   "odds": 17.6,
+   "popularity": 5
   },
   {
    "race_id": "202611132433160510",
@@ -1422,8 +1466,8 @@
     "field": 12,
     "popularity": 9
    },
-   "odds": null,
-   "popularity": null
+   "odds": 11.2,
+   "popularity": 6
   },
   {
    "race_id": "202611132433160511",
@@ -1464,8 +1508,8 @@
     "field": 10,
     "popularity": 9
    },
-   "odds": null,
-   "popularity": null
+   "odds": 3.3,
+   "popularity": 1
   },
   {
    "race_id": "202611132433160511",
@@ -1548,8 +1592,29 @@
     "field": 11,
     "popularity": 9
    },
-   "odds": null,
-   "popularity": null
+   "odds": 44.4,
+   "popularity": 10
+  },
+  {
+   "race_id": "202611132433160512",
+   "results_key": "202611132433160512",
+   "venue": "名古屋",
+   "race_no": 12,
+   "post_time": "18:45",
+   "number": 7,
+   "name": "ドナエポナ",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 14,
+   "last": {
+    "date": "2026-10-30",
+    "finish": 7,
+    "field": 11,
+    "popularity": 3
+   },
+   "odds": 88.8,
+   "popularity": 11
   },
   {
    "race_id": "202611132433160512",
@@ -1569,8 +1634,8 @@
     "field": 11,
     "popularity": 4
    },
-   "odds": null,
-   "popularity": null
+   "odds": 17.7,
+   "popularity": 7
   },
   {
    "race_id": "202611132218140207",
