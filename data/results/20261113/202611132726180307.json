@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261113",
  "race_id": "202611132726180307",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -59,5 +59,83 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 6,
+   "name": "ワーイズオーバー",
+   "time": "1:30.3",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 40.1,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 1,
+   "number": 1,
+   "name": "アンブロジアーナ",
+   "time": "1:30.5",
+   "margin": "１ １／２",
+   "pos4": 1,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 7,
+   "name": "タンバブショウ",
+   "time": "1:31.2",
+   "margin": "４",
+   "pos4": 6,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "トリニティノット",
+   "time": "1:31.5",
+   "margin": "１ ３／４",
+   "pos4": 3,
+   "last3f": 41.1,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 4,
+   "name": "ラブミーメアリー",
+   "time": "1:31.8",
+   "margin": "１ １／２",
+   "pos4": 4,
+   "last3f": 41.2,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 5,
+   "name": "アイヤナ",
+   "time": "1:31.8",
+   "margin": "アタマ",
+   "pos4": 4,
+   "last3f": 41.0,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 3,
+   "name": "デイドリームビーチ",
+   "time": "1:32.6",
+   "margin": "５",
+   "pos4": 7,
+   "last3f": 41.0,
+   "popularity": null
+  }
+ ]
 }
