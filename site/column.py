@@ -373,6 +373,19 @@ def parse(f: Path) -> dict:
 ASSET = ROOT / "site" / "assets"
 
 
+# 期間限定の特集（シリーズ名, 見出し, 説明）。コラム一覧ではこの順に並べ、ふつうの記事の一覧からは外す
+FEATURE_SERIES = [
+    ("aki2026", "特集：秋のG1 2026", "11〜12月のG1の日程と、5つのG1の過去10年を並べた比較。各レースの特集への入口。"),
+    ("eliza2026", "特集：エリザベス女王杯2026", "11月15日（日）京都芝2200m。過去10年の全着順（JRA公式の成績）から、人気・枠・年齢・騎手の傾向と今年の出走馬をまとめている。"),
+    ("mile2026", "特集：マイルチャンピオンシップ2026", "11月22日（日）京都芝1600m。過去10年の全着順から、人気・枠・年齢・騎手の傾向と、2026年のマイル路線をまとめている。"),
+    ("jc2026", "特集：ジャパンカップ2026", "11月29日（日）東京芝2400mのジャパンカップに向けて、過去10年の全着順（JRA公式の成績）から人気・枠・年齢・前走・騎手の傾向と、今年の有力馬をまとめている。"),
+    ("jcd2026", "特集：チャンピオンズカップ2026", "12月6日（日）中京ダート1800m。過去10年の全着順から、人気・枠・年齢・騎手の傾向と、JBC・みやこSなど前哨戦の結果をまとめている。"),
+    ("arima2026", "特集：有馬記念2026", "12月27日（日）中山芝2500m。過去10年の全着順から、人気・枠・年齢・騎手の傾向をまとめている。"),
+    ("jbc2026", "特集：JBC2026（金沢・門別）", "11月3日に行われたJBC4競走の結果と、このサイトのAI予想の振り返り。"),
+]
+FEATURE_IDS = tuple(sid for sid, _, _ in FEATURE_SERIES)
+
+
 def hero_of(c: dict) -> str:
     """記事の挿絵（assets/<stem>.jpg の stem）。専用の絵が無い重賞記事は、コース・季節に合う汎用の絵を使う。"""
     if (ASSET / f"col-{c['slug']}.jpg").exists():
@@ -425,9 +438,10 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
         rel_src = [o for o in pub if o is not c and (o.get("auto") != "true" or (auto_c and o.get("auto") == "true"))]
         if auto_c:
             rel_src = [o for o in pub if o is not c and o.get("auto") == "true"][:5] + [o for o in pub if o.get("auto") != "true"][:6]
-        elif c.get("series") == "jc2026":  # 特集の記事は、同じ特集の記事を先に並べる
-            rel_src = sorted((o for o in pub if o is not c and o.get("series") == "jc2026"), key=lambda o: int(o.get("order") or 0)) \
-                + [o for o in pub if o.get("auto") == "true"][:3]
+        elif c.get("series") in FEATURE_IDS:  # 特集の記事は、同じ特集の記事を先に並べ、ほかの特集の入口（order 1）を続ける
+            rel_src = sorted((o for o in pub if o is not c and o.get("series") == c.get("series")), key=lambda o: int(o.get("order") or 0)) \
+                + [o for o in pub if o is not c and o.get("series") in FEATURE_IDS and o.get("series") != c.get("series")
+                   and str(o.get("order")) == "1"] + [o for o in pub if o.get("auto") == "true"][:3]
         else:
             rel_src = [o for o in pub if o is not c and o.get("auto") != "true"] + [o for o in pub if o.get("auto") == "true"][:3]
         related = "".join(f"<li><a href='/column/{o['slug']}/'>{esc(subst(o.get('title', ''), v))}</a></li>" for o in rel_src)
@@ -471,11 +485,13 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
               if h and (ASSET / f"{h}-s.jpg").exists() else "")
         return (f"<li{' class=\'wth\'' if th else ''}><a href='/column/{c['slug']}/'>{th}<span class='tx'><b>{esc(subst(c.get('title', ''), v))}</b>"
                 f"<span>{esc(subst(c.get('description', ''), v))}</span></span></a></li>")
-    items = "".join(_li(c) for c in pub if c.get("auto") != "true" and c.get("series") not in ("weekly", "guide", "jc2026"))
-    feats = sorted((c for c in pub if c.get("series") == "jc2026"), key=lambda c: int(c.get("order") or 0))
-    feat_items = ("<h2 id='jc2026'>特集：ジャパンカップ2026</h2><p class='meta'>11月29日（日）東京芝2400mのジャパンカップに向けて、過去10年の全着順（JRA公式の成績）から"
-                  "人気・枠・年齢・前走・騎手の傾向と、今年の有力馬をまとめている。</p>"
-                  f"<ul class='cols'>{''.join(_li(c) for c in feats)}</ul>") if feats else ""
+    items = "".join(_li(c) for c in pub if c.get("auto") != "true" and c.get("series") not in ("weekly", "guide") + FEATURE_IDS)
+    feat_items = ""
+    for sid, head, note in FEATURE_SERIES:
+        feats = sorted((c for c in pub if c.get("series") == sid), key=lambda c: int(c.get("order") or 0))
+        if feats:
+            feat_items += (f"<h2 id='{sid}'>{esc(head)}</h2><p class='meta'>{esc(note)}</p>"
+                           f"<ul class='cols'>{''.join(_li(c) for c in feats)}</ul>")
     guides = sorted((c for c in pub if c.get("series") == "guide"), key=lambda c: int(c.get("order") or 0))
     guide_items = ("<h2>はじめての競馬ガイド</h2><p class='meta'>競馬の始め方、馬券の買い方、出馬表やパドックの見方など、最初に知っておきたいことを順番にまとめている。</p>"
                    f"<ul class='cols'>{''.join(_li(c) for c in guides)}</ul>") if guides else ""
