@@ -1,6 +1,6 @@
 {
  "date": "20261113",
- "updated": "2026-11-13 15:04",
+ "updated": "2026-11-13 15:14",
  "bias": {
   "名古屋ダ": {
    "judgement": "先行有利・外",
@@ -9,12 +9,13 @@
     1,
     2,
     3,
-    4
+    4,
+    5
    ],
    "front_share": 1.0,
-   "inner_share": 0.12,
-   "outer_share": 0.75,
-   "horses": 8
+   "inner_share": 0.1,
+   "outer_share": 0.6,
+   "horses": 10
   },
   "園田ダ": {
    "judgement": "先行有利・外",
