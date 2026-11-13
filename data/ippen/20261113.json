@@ -1,6 +1,6 @@
 {
  "date": "20261113",
- "updated": "2026-11-13 16:28",
+ "updated": "2026-11-13 16:34",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1222,6 +1222,20 @@
    "venue": "名古屋",
    "race_no": 9,
    "post_time": "17:05",
+   "number": 3,
+   "name": "バルフルール",
+   "types": [
+    "aitop"
+   ],
+   "odds": 3.5,
+   "popularity": 2
+  },
+  {
+   "race_id": "202611132433160509",
+   "results_key": "202611132433160509",
+   "venue": "名古屋",
+   "race_no": 9,
+   "post_time": "17:05",
    "number": 6,
    "name": "バイアンドホールド",
    "types": [
@@ -1255,7 +1269,7 @@
     "field": 15,
     "popularity": null
    },
-   "odds": 1.3,
+   "odds": 1.2,
    "popularity": 1
   },
   {
@@ -1276,7 +1290,7 @@
     "field": 7,
     "popularity": 6
    },
-   "odds": 20.3,
+   "odds": 28.4,
    "popularity": 7
   },
   {
@@ -1297,8 +1311,8 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": 9.5,
-   "popularity": 3
+   "odds": 14.9,
+   "popularity": 5
   },
   {
    "race_id": "202611132135090506",
@@ -1318,7 +1332,7 @@
     "field": 14,
     "popularity": 10
    },
-   "odds": 59.4,
+   "odds": 54.1,
    "popularity": 10
   },
   {
@@ -1339,8 +1353,8 @@
     "field": 12,
     "popularity": 12
    },
-   "odds": 66.5,
-   "popularity": 12
+   "odds": 98.9,
+   "popularity": 13
   },
   {
    "race_id": "202611132135090506",
@@ -1360,7 +1374,7 @@
     "field": 15,
     "popularity": 6
    },
-   "odds": 5.5,
+   "odds": 6.6,
    "popularity": 2
   },
   {
@@ -1435,7 +1449,8 @@
    "number": 8,
    "name": "サラサラヘアー",
    "types": [
-    "rebound"
+    "rebound",
+    "aitop"
    ],
    "gap_days": 15,
    "last": {
@@ -1487,8 +1502,22 @@
     "field": 8,
     "popularity": 3
    },
-   "odds": 11.8,
+   "odds": 11.7,
    "popularity": 4
+  },
+  {
+   "race_id": "202611132218140205",
+   "results_key": "202611132218140205",
+   "venue": "金沢",
+   "race_no": 5,
+   "post_time": "17:50",
+   "number": 5,
+   "name": "ルストラーレ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 14.4,
+   "popularity": 5
   },
   {
    "race_id": "202611132218140205",
@@ -1508,8 +1537,8 @@
     "field": 10,
     "popularity": 1
    },
-   "odds": 16.1,
-   "popularity": 5
+   "odds": 15.4,
+   "popularity": 6
   },
   {
    "race_id": "202611132135090507",
