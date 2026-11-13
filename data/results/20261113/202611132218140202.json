@@ -2,7 +2,172 @@
  "source": "rakuten",
  "date": "20261113",
  "race_id": "202611132218140202",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 4,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "8",
+    "yen": 220
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "8-7",
+    "yen": 450
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "8",
+    "yen": 100
+   },
+   {
+    "combo": "7",
+    "yen": 110
+   },
+   {
+    "combo": "6",
+    "yen": 250
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "7-8",
+    "yen": 130
+   },
+   {
+    "combo": "6-8",
+    "yen": 310
+   },
+   {
+    "combo": "6-7",
+    "yen": 280
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "7-8",
+    "yen": 190
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "6-7-8",
+    "yen": 560
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "8-7-6",
+    "yen": 1590
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "7-8",
+    "yen": 170
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 8,
+   "name": "オニギリ",
+   "time": "1:40.2",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 7,
+   "name": "ファントムグレース",
+   "time": "1:40.6",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 6,
+   "name": "シンデレラヒメ",
+   "time": "1:41.0",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 4,
+   "name": "ストライプブルー",
+   "time": "1:41.7",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 5,
+   "name": "シュンレツ",
+   "time": "1:42.2",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 1,
+   "number": 1,
+   "name": "ストロボエッジ",
+   "time": "1:42.5",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 9,
+   "name": "フィーユポワソン",
+   "time": "1:43.0",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "モーモーインディゴ",
+   "time": "1:43.7",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "クリノヒビキ",
+   "time": "1:43.8",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
