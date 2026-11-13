@@ -813,6 +813,19 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
                 og_image=race_og(date, p))
 
 
+FEATURES = [  # トップに出す特集（期間限定）：(表示する最終日, リンク, 見出し, 説明)
+    ("20261129", "/column/jc2026-guide/", "特集：ジャパンカップ2026（11月29日）",
+     "過去10年の全着順から、人気・枠・年齢・前走・騎手の傾向と、カランダガン、ダノンデサイルなど有力馬を15本の記事でまとめた。"),
+]
+
+
+def feature_banner() -> str:
+    for last, href, title, text in FEATURES:
+        if TODAY <= last and (ROOT / "columns" / (href.strip("/").split("/")[-1] + ".md")).exists():
+            return f"<p class='notice feature'><a href='{href}'><b>{esc(title)}</b></a>　{esc(text)}</p>"
+    return ""
+
+
 def pre_odds(date: str, p: dict) -> bool:
     """オッズが出る前に作った予想で、まだ結果が出ていないか（当日朝・発走前にオッズで見直す）。"""
     if p.get("confidence") == "見送り" or date < TODAY or (p.get("_result") or {}).get("payouts"):
@@ -1680,6 +1693,7 @@ SITE_CHANGES = [
     ("2026-10-30", "レースごとの的中・回収率を、確定のたびに更新するようにした。初心者向けコラムの準備。"),
     ("2026-11-01", "サイト名を「競馬全頭ログ」に変更。XとInstagramへの自動投稿（的中・重賞・毎晩の全成績）を開始。コラム4本を公開。買い方別の回収率、週次の重賞回顧、馬別ページを追加。"),
     ("2026-11-02", "買い目の組み方を1つに決めた（◎の単勝か複勝を人気で切り替え＋3連複フォーメーション）。デザインを刷新。挿絵を追加。お問い合わせフォームと支援（OFUSE）の導線を設置。"),
+    ("2026-11-13", "特集「ジャパンカップ2026」を公開。過去10年の全着順から人気・枠・年齢・前走・騎手の傾向と、有力馬を15本の記事にまとめた。"),
     ("2026-11-11", "買い目を◎の単勝か複勝の1点だけにし、3連複をやめた。自信度Aのレースを「厳選」として成績を別に表示（推移グラフ・月次レポートにも）。成績ページで「今のルール」と「全期間」を切り替えられるようにした。成績に数えない実験として「一変候補」と「AIの評価点1位（◎ではない馬）」の記録を始めた。オッズが出る前の予想に「オッズ反映前」と表示。Xで朝に厳選レース、夜に厳選の結果を投稿。"),
     ("2026-11-10", "本命（◎）と自信度を、単勝オッズとAIの評価を合わせた「補正勝率」で決めるようにした。AIの評価点1位が◎と違うときはレースページに表示。評価点の配点を見直し、騎手・厩舎の最近の成績を予想の材料に加えた。"),
     ("2026-11-10", "ページの表示を軽くした（画像を軽い形式・画面に合った大きさで配信、文字のフォントを後から読み込む）。本文中のリンクに下線を付け、スマホで押しやすくした。トップの過去の予想の一覧をスマホで読みやすくした。"),
@@ -2025,8 +2039,8 @@ def build() -> None:
     nrows = [r for r in led0 if r["date"] >= RULE_FROM]
     if len(nrows) >= RULE_MIN:  # 今のルールの成績がたまったら、見出しはそちらを出す
         st0, rt0 = sum(int(r["stake"]) for r in nrows), sum(int(r["return"]) for r in nrows)
-        HEADER_ROI = (f"<a class='roi-badge' href='/results/'>今のルール（{rule_label()}）の回収率 <b>{roi_txt(st0, rt0)}</b>"
-                      f"（{len(nrows)}レース・外れも含む）</a>")
+        HEADER_ROI = (f"<a class='roi-badge' href='/results/'>{int(RULE_FROM[4:6])}/{int(RULE_FROM[6:8])}〜の回収率 <b>{roi_txt(st0, rt0)}</b>"
+                      f"（{len(nrows)}レース・外れ込み）</a>")
     elif mrows:
         st0, rt0 = sum(int(r["stake"]) for r in mrows), sum(int(r["return"]) for r in mrows)
         HEADER_ROI = (f"<a class='roi-badge' href='/results/'>{int(mrows[0]['date'][4:6])}月の回収率 <b>{roi_txt(st0, rt0)}</b>"
@@ -2123,6 +2137,7 @@ def build() -> None:
             f"<p class='answer'>AIが日本の競馬（JRA・地方）の全レースを毎日予想し、外れも含めた成績を公開している。累計回収率は{t['roi']}（{t['n']}レース。◎が3着以内に入った割合は{t['top3']}）。"
             + (f"今のルール（{rule_label()}、買い目は◎の単勝か複勝1点）では{tn_['roi']}（{tn_['n']}レース）。" if tn_["n"] else "")
             + f"<a href='/results/'>成績の詳細</a>　<span class='meta'>最終更新 {now.strftime('%m/%d %H:%M')}</span></p>"
+            + feature_banner()
             + top_list + (f"<section id='past'><h2>過去の予想</h2><ul class='days'>{past}</ul></section>" if past else ""))
     site_ld = [{"@context": "https://schema.org", "@type": "Organization", "name": SITE_NAME, "url": BASE_URL + "/", "logo": BASE_URL + "/assets/logo-mark.png",
                 "sameAs": [X_URL, IG_URL], "contactPoint": {"@type": "ContactPoint", "contactType": "customer support", "url": BASE_URL + "/contact/"}},

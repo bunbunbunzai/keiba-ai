@@ -377,6 +377,8 @@ def hero_of(c: dict) -> str:
     """記事の挿絵（assets/<stem>.jpg の stem）。専用の絵が無い重賞記事は、コース・季節に合う汎用の絵を使う。"""
     if (ASSET / f"col-{c['slug']}.jpg").exists():
         return f"col-{c['slug']}"
+    if c.get("hero") and (ASSET / f"{c['hero']}.jpg").exists():  # 特集記事などは、既存の汎用の絵を名前で指定できる
+        return c["hero"]
     if c.get("auto") != "true":
         return ""
     d = c.get("race_date", "") or re.sub(r"\D", "", c.get("date", ""))[:8]
@@ -423,6 +425,9 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
         rel_src = [o for o in pub if o is not c and (o.get("auto") != "true" or (auto_c and o.get("auto") == "true"))]
         if auto_c:
             rel_src = [o for o in pub if o is not c and o.get("auto") == "true"][:5] + [o for o in pub if o.get("auto") != "true"][:6]
+        elif c.get("series") == "jc2026":  # 特集の記事は、同じ特集の記事を先に並べる
+            rel_src = sorted((o for o in pub if o is not c and o.get("series") == "jc2026"), key=lambda o: int(o.get("order") or 0)) \
+                + [o for o in pub if o.get("auto") == "true"][:3]
         else:
             rel_src = [o for o in pub if o is not c and o.get("auto") != "true"] + [o for o in pub if o.get("auto") == "true"][:3]
         related = "".join(f"<li><a href='/column/{o['slug']}/'>{esc(subst(o.get('title', ''), v))}</a></li>" for o in rel_src)
@@ -466,7 +471,11 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
               if h and (ASSET / f"{h}-s.jpg").exists() else "")
         return (f"<li{' class=\'wth\'' if th else ''}><a href='/column/{c['slug']}/'>{th}<span class='tx'><b>{esc(subst(c.get('title', ''), v))}</b>"
                 f"<span>{esc(subst(c.get('description', ''), v))}</span></span></a></li>")
-    items = "".join(_li(c) for c in pub if c.get("auto") != "true" and c.get("series") not in ("weekly", "guide"))
+    items = "".join(_li(c) for c in pub if c.get("auto") != "true" and c.get("series") not in ("weekly", "guide", "jc2026"))
+    feats = sorted((c for c in pub if c.get("series") == "jc2026"), key=lambda c: int(c.get("order") or 0))
+    feat_items = ("<h2 id='jc2026'>特集：ジャパンカップ2026</h2><p class='meta'>11月29日（日）東京芝2400mのジャパンカップに向けて、過去10年の全着順（JRA公式の成績）から"
+                  "人気・枠・年齢・前走・騎手の傾向と、今年の有力馬をまとめている。</p>"
+                  f"<ul class='cols'>{''.join(_li(c) for c in feats)}</ul>") if feats else ""
     guides = sorted((c for c in pub if c.get("series") == "guide"), key=lambda c: int(c.get("order") or 0))
     guide_items = ("<h2>はじめての競馬ガイド</h2><p class='meta'>競馬の始め方、馬券の買い方、出馬表やパドックの見方など、最初に知っておきたいことを順番にまとめている。</p>"
                    f"<ul class='cols'>{''.join(_li(c) for c in guides)}</ul>") if guides else ""
@@ -481,7 +490,7 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
     write("/column/", page(f"競馬初心者向けコラム | {site_name}",
                            "<p class='crumb'><a href='/'>トップ</a> › コラム</p><h1>競馬初心者向けコラム</h1>" + __import__("build").banner("column") +
                            "<p class='answer'>馬券の種類や回収率の考え方などを、このサイトの全レースの記録（実データ）を使って解説する。数字は記録が増えるたびに自動で更新される。</p>"
-                           + guide_items + weekly_items + (f"<h2>初心者向け・データ分析</h2><ul class='cols'>{items}</ul>" if items else "<p>準備中。</p>") + auto_items,
+                           + feat_items + guide_items + weekly_items + (f"<h2>初心者向け・データ分析</h2><ul class='cols'>{items}</ul>" if items else "<p>準備中。</p>") + auto_items,
                            "/column/", desc="競馬初心者向けに、馬券の種類・回収率・人気と勝率・トラックバイアスを、AI予想の全レースの実データで解説するコラム。",
                            noindex=not pub))
     if pub:
