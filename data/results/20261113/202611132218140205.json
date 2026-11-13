@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261113",
  "race_id": "202611132218140205",
- "tries": 2,
+ "tries": 8,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,105 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 1,
+   "number": 1,
+   "name": "ミニュイ",
+   "time": "1:38.7",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 4,
+   "number": 4,
+   "name": "ウインブリザード",
+   "time": "1:39.2",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 6,
+   "name": "ロージーキャンドル",
+   "time": "1:40.0",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "ローズライズ",
+   "time": "1:40.1",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 3,
+   "number": 3,
+   "name": "ラブソング",
+   "time": "1:40.4",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 5,
+   "name": "ルストラーレ",
+   "time": "1:41.1",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 9,
+   "name": "ジョアンズベスト",
+   "time": "1:41.2",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 7,
+   "name": "マハラージャ",
+   "time": "1:41.6",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 8,
+   "name": "メイショウピュルテ",
+   "time": "1:42.8",
+   "margin": "６",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
