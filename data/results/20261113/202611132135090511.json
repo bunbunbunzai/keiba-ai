@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261113",
  "race_id": "202611132135090511",
- "tries": 2,
+ "tries": 5,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,105 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 4,
+   "name": "サンズ",
+   "time": "1:43.9",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 38.3,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 6,
+   "name": "ホッコーソムニウム",
+   "time": "1:45.3",
+   "margin": "７",
+   "pos4": 2,
+   "last3f": 39.5,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 2,
+   "number": 2,
+   "name": "コスモギガンティア",
+   "time": "1:45.4",
+   "margin": "３／４",
+   "pos4": 3,
+   "last3f": 39.4,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 7,
+   "name": "オペラプラージュ",
+   "time": "1:45.9",
+   "margin": "２ １／２",
+   "pos4": 3,
+   "last3f": 40.1,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 8,
+   "name": "エリンアキレウス",
+   "time": "1:46.1",
+   "margin": "１",
+   "pos4": 6,
+   "last3f": 40.1,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 3,
+   "number": 3,
+   "name": "ミーヴァトン",
+   "time": "1:46.2",
+   "margin": "クビ",
+   "pos4": 7,
+   "last3f": 39.8,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 1,
+   "number": 1,
+   "name": "スペンサーバローズ",
+   "time": "1:46.3",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": 40.3,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 9,
+   "name": "ビップソリオ",
+   "time": "1:46.4",
+   "margin": "３／４",
+   "pos4": 7,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 5,
+   "name": "ナガタエース",
+   "time": "1:47.5",
+   "margin": "５",
+   "pos4": 9,
+   "last3f": 40.9,
+   "popularity": null
+  }
+ ]
 }
