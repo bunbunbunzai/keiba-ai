@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261113",
  "race_id": "202611132135090508",
- "tries": 5,
+ "tries": 6,
  "payouts": {
   "単勝": [
    {
@@ -77,7 +77,7 @@
    "name": "ブラックリザード",
    "time": "1:48.7",
    "margin": "",
-   "pos4": null,
+   "pos4": 1,
    "last3f": null,
    "popularity": null
   },
@@ -88,7 +88,7 @@
    "name": "ツブアン",
    "time": "1:48.8",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 1,
    "last3f": null,
    "popularity": null
   },
@@ -99,7 +99,7 @@
    "name": "セブンソード",
    "time": "1:48.8",
    "margin": "アタマ",
-   "pos4": null,
+   "pos4": 3,
    "last3f": null,
    "popularity": null
   },
@@ -110,7 +110,7 @@
    "name": "ブエンディア",
    "time": "1:49.0",
    "margin": "１",
-   "pos4": null,
+   "pos4": 3,
    "last3f": null,
    "popularity": null
   },
@@ -121,7 +121,7 @@
    "name": "ラモンパンサー",
    "time": "1:49.2",
    "margin": "３／４",
-   "pos4": null,
+   "pos4": 3,
    "last3f": null,
    "popularity": null
   },
@@ -132,7 +132,7 @@
    "name": "ムリムリカタツムリ",
    "time": "1:49.3",
    "margin": "３／４",
-   "pos4": null,
+   "pos4": 9,
    "last3f": null,
    "popularity": null
   },
@@ -143,7 +143,7 @@
    "name": "ユウユウアドニス",
    "time": "1:50.0",
    "margin": "３",
-   "pos4": null,
+   "pos4": 6,
    "last3f": null,
    "popularity": null
   },
@@ -154,7 +154,7 @@
    "name": "ズットオレノターン",
    "time": "1:50.3",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 11,
    "last3f": null,
    "popularity": null
   },
@@ -165,7 +165,7 @@
    "name": "コーズブルー",
    "time": "1:50.4",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 6,
    "last3f": null,
    "popularity": null
   },
@@ -176,7 +176,7 @@
    "name": "デンデンデングリ",
    "time": "1:51.3",
    "margin": "４",
-   "pos4": null,
+   "pos4": 6,
    "last3f": null,
    "popularity": null
   },
@@ -187,7 +187,7 @@
    "name": "ドコフクカゼ",
    "time": "1:52.1",
    "margin": "４",
-   "pos4": null,
+   "pos4": 9,
    "last3f": null,
    "popularity": null
   }
