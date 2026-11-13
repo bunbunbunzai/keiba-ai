@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261113",
  "race_id": "202611132135090510",
- "tries": 5,
+ "tries": 6,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "ルパピヨンブラン",
    "time": "1:38.8",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 40.1,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ジュンフカリ",
    "time": "1:39.0",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 39.5,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ベセル",
    "time": "1:39.0",
    "margin": "ハナ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 39.2,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "ゴットランド",
    "time": "1:39.1",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 40.4,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "バイルシュタイン",
    "time": "1:39.5",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 10,
+   "last3f": 40.0,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "フラッシュタイム",
    "time": "1:39.8",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 40.8,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "コルネットロッソ",
    "time": "1:39.9",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 40.9,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ウインメラナイト",
    "time": "1:40.1",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 40.1,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "イルフロッタント",
    "time": "1:40.3",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 41.1,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "キャッスルレーヴ",
    "time": "1:40.6",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 12,
+   "last3f": 41.0,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "ブラックトルマリン",
    "time": "1:41.9",
    "margin": "６",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 42.7,
    "popularity": null
   },
   {
@@ -198,8 +198,8 @@
    "name": "ミオサンダー",
    "time": "1:42.2",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 43.4,
    "popularity": null
   }
  ]
