@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261113",
  "race_id": "202611132433160512",
- "tries": 4,
+ "tries": 5,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 4,
+   "name": "ドリームトリップ",
+   "time": "1:36.5",
+   "margin": "",
+   "pos4": null,
+   "last3f": 38.3,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 11,
+   "name": "ブルージェネシス",
+   "time": "1:37.0",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": 39.0,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 8,
+   "name": "ブロークンハート",
+   "time": "1:37.7",
+   "margin": "３",
+   "pos4": null,
+   "last3f": 39.2,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 7,
+   "name": "ドナエポナ",
+   "time": "1:38.0",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": 39.0,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 2,
+   "number": 2,
+   "name": "アジュアカレンツ",
+   "time": "1:38.0",
+   "margin": "ハナ",
+   "pos4": null,
+   "last3f": 40.1,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 12,
+   "name": "アショカ",
+   "time": "1:38.0",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": 39.0,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 1,
+   "number": 1,
+   "name": "ハッピーアシュレイ",
+   "time": "1:38.0",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": 38.6,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "ブリリアントギフト",
+   "time": "1:38.1",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": 39.2,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 9,
+   "name": "ミツカネスコーピオ",
+   "time": "1:38.6",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": 39.9,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 6,
+   "name": "コパノカーター",
+   "time": "1:38.7",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 7,
+   "number": 10,
+   "name": "ナゴヤバシリ",
+   "time": "1:40.3",
+   "margin": "８",
+   "pos4": null,
+   "last3f": 42.0,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 5,
+   "number": 5,
+   "name": "ゴールドレーン",
+   "time": "1:40.5",
+   "margin": "１",
+   "pos4": null,
+   "last3f": 42.5,
+   "popularity": null
+  }
+ ]
 }
