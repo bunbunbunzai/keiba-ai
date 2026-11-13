@@ -1,6 +1,6 @@
 {
  "date": "20261114",
- "updated": "2026-11-14 00:19",
+ "updated": "2026-11-14 01:01",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -3378,27 +3378,6 @@
     "finish": 9,
     "field": 11,
     "popularity": 9
-   },
-   "odds": null,
-   "popularity": null
-  },
-  {
-   "race_id": "202611143129100309",
-   "results_key": "202611143129100309",
-   "venue": "高知",
-   "race_no": 9,
-   "post_time": "19:50",
-   "number": 2,
-   "name": "アッティラ",
-   "types": [
-    "layoff"
-   ],
-   "gap_days": 138,
-   "last": {
-    "date": "2026-06-29",
-    "finish": 6,
-    "field": 13,
-    "popularity": null
    },
    "odds": null,
    "popularity": null
