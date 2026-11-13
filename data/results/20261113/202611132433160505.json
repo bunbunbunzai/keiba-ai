@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261113",
  "race_id": "202611132433160505",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,127 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 5,
+   "name": "シンボリサーブル",
+   "time": "1:39.7",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.8,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 7,
+   "name": "アルバイトボシュウ",
+   "time": "1:40.1",
+   "margin": "２",
+   "pos4": 4,
+   "last3f": 39.3,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 10,
+   "name": "ニシキクイーン",
+   "time": "1:40.3",
+   "margin": "１",
+   "pos4": 3,
+   "last3f": 40.3,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 11,
+   "name": "センカンナガト",
+   "time": "1:40.7",
+   "margin": "２",
+   "pos4": 4,
+   "last3f": 40.3,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 2,
+   "number": 2,
+   "name": "ルブラッシュノモー",
+   "time": "1:42.0",
+   "margin": "６",
+   "pos4": 1,
+   "last3f": 42.3,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 9,
+   "name": "ベアベルヴォワ",
+   "time": "1:42.1",
+   "margin": "１／２",
+   "pos4": 8,
+   "last3f": 40.9,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 4,
+   "name": "ヴィオラリク",
+   "time": "1:42.5",
+   "margin": "２",
+   "pos4": 4,
+   "last3f": 42.5,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "カウェーカネム",
+   "time": "1:42.9",
+   "margin": "２",
+   "pos4": 7,
+   "last3f": 42.1,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 8,
+   "name": "ノーブルフォース",
+   "time": "1:43.1",
+   "margin": "１",
+   "pos4": 9,
+   "last3f": 41.3,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 6,
+   "number": 6,
+   "name": "ラブマイティー",
+   "time": "1:44.0",
+   "margin": "４",
+   "pos4": 9,
+   "last3f": 42.6,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 3,
+   "number": 3,
+   "name": "ディヴィナス",
+   "time": "-",
+   "margin": "除外",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
