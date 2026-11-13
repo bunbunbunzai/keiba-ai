@@ -1,6 +1,6 @@
 {
  "date": "20261113",
- "updated": "2026-11-13 13:06",
+ "updated": "2026-11-13 13:33",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -337,8 +337,8 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": 29.6,
-   "popularity": 8
+   "odds": 35.7,
+   "popularity": 9
   },
   {
    "race_id": "202611132726180308",
@@ -358,8 +358,8 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": 18.9,
-   "popularity": 6
+   "odds": 22.8,
+   "popularity": 8
   },
   {
    "race_id": "202611132135090501",
@@ -379,8 +379,8 @@
     "field": 12,
     "popularity": 7
    },
-   "odds": null,
-   "popularity": null
+   "odds": 77.0,
+   "popularity": 12
   },
   {
    "race_id": "202611132135090501",
@@ -400,8 +400,8 @@
     "field": 12,
     "popularity": 8
    },
-   "odds": null,
-   "popularity": null
+   "odds": 44.0,
+   "popularity": 8
   },
   {
    "race_id": "202611132135090501",
@@ -422,8 +422,8 @@
     "field": 7,
     "popularity": 5
    },
-   "odds": null,
-   "popularity": null
+   "odds": 59.6,
+   "popularity": 11
   },
   {
    "race_id": "202611132135090501",
@@ -443,8 +443,8 @@
     "field": 12,
     "popularity": 5
    },
-   "odds": null,
-   "popularity": null
+   "odds": 12.6,
+   "popularity": 5
   },
   {
    "race_id": "202611132135090501",
@@ -465,8 +465,8 @@
     "field": 9,
     "popularity": 7
    },
-   "odds": null,
-   "popularity": null
+   "odds": 33.0,
+   "popularity": 7
   },
   {
    "race_id": "202611132135090501",
@@ -486,8 +486,8 @@
     "field": 12,
     "popularity": 9
    },
-   "odds": null,
-   "popularity": null
+   "odds": 47.3,
+   "popularity": 9
   },
   {
    "race_id": "202611132135090501",
@@ -507,8 +507,22 @@
     "field": 14,
     "popularity": 5
    },
-   "odds": null,
-   "popularity": null
+   "odds": 31.3,
+   "popularity": 6
+  },
+  {
+   "race_id": "202611132135090501",
+   "results_key": "202611132135090501",
+   "venue": "川崎",
+   "race_no": 1,
+   "post_time": "15:00",
+   "number": 11,
+   "name": "ラシャスバラード",
+   "types": [
+    "aitop"
+   ],
+   "odds": 10.1,
+   "popularity": 4
   },
   {
    "race_id": "202611132726180309",
