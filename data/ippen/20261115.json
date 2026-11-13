@@ -1,0 +1,159 @@
+{
+ "date": "20261115",
+ "updated": "2026-11-14 02:47",
+ "types": {
+  "layoff": "休み明け（90日超）",
+  "rebound": "前走大敗からの巻き返し",
+  "letdown": "前走で人気を裏切った人気薄",
+  "aitop": "AIの評価点1位（◎ではない馬）"
+ },
+ "horses": [
+  {
+   "race_id": "jra_20261115_京都_11",
+   "results_key": "jra_08_11",
+   "venue": "京都",
+   "race_no": 11,
+   "post_time": "15:40",
+   "number": 2,
+   "name": "レイクラシック",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 63,
+   "last": {
+    "date": "2026年9月13日",
+    "finish": 10,
+    "field": 12,
+    "popularity": 7
+   },
+   "odds": 73.9,
+   "popularity": 16
+  },
+  {
+   "race_id": "jra_20261115_京都_11",
+   "results_key": "jra_08_11",
+   "venue": "京都",
+   "race_no": 11,
+   "post_time": "15:40",
+   "number": 3,
+   "name": "ステレンボッシュ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 77,
+   "last": {
+    "date": "2026年8月30日",
+    "finish": 11,
+    "field": 11,
+    "popularity": 5
+   },
+   "odds": 65.1,
+   "popularity": 14
+  },
+  {
+   "race_id": "jra_20261115_京都_11",
+   "results_key": "jra_08_11",
+   "venue": "京都",
+   "race_no": 11,
+   "post_time": "15:40",
+   "number": 4,
+   "name": "エストゥペンダ",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 99,
+   "last": {
+    "date": "2026年8月8日",
+    "finish": 1,
+    "field": 16,
+    "popularity": 1
+   },
+   "odds": 62.1,
+   "popularity": 13
+  },
+  {
+   "race_id": "jra_20261115_京都_11",
+   "results_key": "jra_08_11",
+   "venue": "京都",
+   "race_no": 11,
+   "post_time": "15:40",
+   "number": 10,
+   "name": "セキトバイースト",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 35,
+   "last": {
+    "date": "2026年10月11日",
+    "finish": 15,
+    "field": 16,
+    "popularity": 6
+   },
+   "odds": 21.0,
+   "popularity": 10
+  },
+  {
+   "race_id": "jra_20261115_京都_11",
+   "results_key": "jra_08_11",
+   "venue": "京都",
+   "race_no": 11,
+   "post_time": "15:40",
+   "number": 11,
+   "name": "ジュウリョクピエロ",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 175,
+   "last": {
+    "date": "2026年5月24日",
+    "finish": 1,
+    "field": 18,
+    "popularity": 5
+   },
+   "odds": 3.6,
+   "popularity": 1
+  },
+  {
+   "race_id": "jra_20261115_京都_11",
+   "results_key": "jra_08_11",
+   "venue": "京都",
+   "race_no": 11,
+   "post_time": "15:40",
+   "number": 15,
+   "name": "ラフターラインズ",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 175,
+   "last": {
+    "date": "2026年5月24日",
+    "finish": 3,
+    "field": 18,
+    "popularity": 2
+   },
+   "odds": 9.4,
+   "popularity": 5
+  },
+  {
+   "race_id": "jra_20261115_京都_11",
+   "results_key": "jra_08_11",
+   "venue": "京都",
+   "race_no": 11,
+   "post_time": "15:40",
+   "number": 18,
+   "name": "コガネノソラ",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 105,
+   "last": {
+    "date": "2026年8月2日",
+    "finish": 2,
+    "field": 14,
+    "popularity": 3
+   },
+   "odds": 13.8,
+   "popularity": 7
+  }
+ ]
+}
