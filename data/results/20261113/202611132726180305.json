@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261113",
  "race_id": "202611132726180305",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,127 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 11,
+   "name": "マインドユアリズム",
+   "time": "1:21.2",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.4,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 7,
+   "name": "オクトンハッチ",
+   "time": "1:21.2",
+   "margin": "クビ",
+   "pos4": 1,
+   "last3f": 39.5,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 8,
+   "name": "キモンキャリントン",
+   "time": "1:21.7",
+   "margin": "３",
+   "pos4": 3,
+   "last3f": 39.9,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 4,
+   "name": "ウインリフレクト",
+   "time": "1:21.9",
+   "margin": "１ １／２",
+   "pos4": 4,
+   "last3f": 40.0,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 3,
+   "number": 3,
+   "name": "フィーロ",
+   "time": "1:22.0",
+   "margin": "クビ",
+   "pos4": 7,
+   "last3f": 39.4,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 9,
+   "name": "ブロンドエール",
+   "time": "1:22.1",
+   "margin": "１／２",
+   "pos4": 9,
+   "last3f": 39.5,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 6,
+   "name": "ブチエードリーム",
+   "time": "1:22.3",
+   "margin": "１ １／４",
+   "pos4": 9,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "テクノハッピー",
+   "time": "1:22.5",
+   "margin": "１",
+   "pos4": 4,
+   "last3f": 40.6,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 5,
+   "name": "ジョウショータイプ",
+   "time": "1:22.6",
+   "margin": "クビ",
+   "pos4": 7,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 8,
+   "number": 10,
+   "name": "トライファン",
+   "time": "1:22.7",
+   "margin": "１／２",
+   "pos4": 6,
+   "last3f": 40.3,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 2,
+   "number": 2,
+   "name": "マスキュラー",
+   "time": "-",
+   "margin": "取消",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
