@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261113",
  "race_id": "202611132218140205",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "ミニュイ",
    "time": "1:38.7",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 39.7,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ウインブリザード",
    "time": "1:39.2",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 39.9,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ロージーキャンドル",
    "time": "1:40.0",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 40.0,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "ローズライズ",
    "time": "1:40.1",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 41.3,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "ラブソング",
    "time": "1:40.4",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 41.3,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ルストラーレ",
    "time": "1:41.1",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 40.9,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "ジョアンズベスト",
    "time": "1:41.2",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 41.3,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "マハラージャ",
    "time": "1:41.6",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 42.4,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "メイショウピュルテ",
    "time": "1:42.8",
    "margin": "６",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 42.2,
    "popularity": null
   }
  ]
