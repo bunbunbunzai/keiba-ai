@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261113",
  "race_id": "202611132218140210",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 7,
+   "name": "シュガーシャック",
+   "time": "1:39.3",
+   "margin": "",
+   "pos4": 5,
+   "last3f": 40.7,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 11,
+   "name": "マイネルイグザルト",
+   "time": "1:39.7",
+   "margin": "２",
+   "pos4": 9,
+   "last3f": 40.3,
+   "popularity": 6
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "ナックレジーナ",
+   "time": "1:39.7",
+   "margin": "クビ",
+   "pos4": 1,
+   "last3f": 42.1,
+   "popularity": 7
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 12,
+   "name": "スイートハイデン",
+   "time": "1:40.2",
+   "margin": "２ １／２",
+   "pos4": 3,
+   "last3f": 42.6,
+   "popularity": 1
+  },
+  {
+   "finish": "5",
+   "frame": 2,
+   "number": 2,
+   "name": "トンデトンデトンデ",
+   "time": "1:40.4",
+   "margin": "１",
+   "pos4": 5,
+   "last3f": 41.8,
+   "popularity": 10
+  },
+  {
+   "finish": "6",
+   "frame": 1,
+   "number": 1,
+   "name": "トクシーゼファー",
+   "time": "1:40.5",
+   "margin": "１／２",
+   "pos4": 5,
+   "last3f": 42.4,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 9,
+   "name": "テーオーニュートン",
+   "time": "1:40.6",
+   "margin": "１／２",
+   "pos4": 11,
+   "last3f": 41.8,
+   "popularity": 4
+  },
+  {
+   "finish": "8",
+   "frame": 5,
+   "number": 5,
+   "name": "メイショウバリスタ",
+   "time": "1:40.6",
+   "margin": "クビ",
+   "pos4": 3,
+   "last3f": 43.0,
+   "popularity": 8
+  },
+  {
+   "finish": "9",
+   "frame": 3,
+   "number": 3,
+   "name": "マイネルオラクル",
+   "time": "1:41.0",
+   "margin": "２",
+   "pos4": 9,
+   "last3f": 42.5,
+   "popularity": 9
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 6,
+   "name": "ナックキャンドル",
+   "time": "1:41.0",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": 43.5,
+   "popularity": 3
+  },
+  {
+   "finish": "11",
+   "frame": 7,
+   "number": 10,
+   "name": "ハクサンスオーノ",
+   "time": "1:41.2",
+   "margin": "３／４",
+   "pos4": 2,
+   "last3f": 43.8,
+   "popularity": 12
+  },
+  {
+   "finish": "12",
+   "frame": 6,
+   "number": 8,
+   "name": "パープルウインド",
+   "time": "1:42.9",
+   "margin": "８",
+   "pos4": 11,
+   "last3f": 44.6,
+   "popularity": 11
+  }
+ ]
 }
