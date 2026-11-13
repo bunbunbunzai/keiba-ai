@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261113",
  "race_id": "202611132726180306",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,127 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 2,
+   "number": 2,
+   "name": "ヒデガミクィーン",
+   "time": "1:32.3",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 10,
+   "name": "ユイノオトコヤマ",
+   "time": "1:32.4",
+   "margin": "クビ",
+   "pos4": 4,
+   "last3f": 39.5,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 11,
+   "name": "イエローキャブ",
+   "time": "1:32.8",
+   "margin": "２ １／２",
+   "pos4": 1,
+   "last3f": 41.1,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 1,
+   "number": 1,
+   "name": "ラロワイヤル",
+   "time": "1:33.2",
+   "margin": "２ １／２",
+   "pos4": 3,
+   "last3f": 40.9,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 6,
+   "name": "アカノストロング",
+   "time": "1:33.6",
+   "margin": "２ １／２",
+   "pos4": 10,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 8,
+   "name": "カリグラフィー",
+   "time": "1:33.7",
+   "margin": "１／２",
+   "pos4": 10,
+   "last3f": 40.0,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 4,
+   "name": "プレシャスストーン",
+   "time": "1:33.7",
+   "margin": "ハナ",
+   "pos4": 5,
+   "last3f": 41.1,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 5,
+   "number": 5,
+   "name": "クライオブジアース",
+   "time": "1:33.7",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": 41.4,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 6,
+   "number": 7,
+   "name": "ジョイブラック",
+   "time": "1:34.0",
+   "margin": "１ ３／４",
+   "pos4": 9,
+   "last3f": 41.3,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 3,
+   "number": 3,
+   "name": "イヤーズストレイト",
+   "time": "1:34.1",
+   "margin": "クビ",
+   "pos4": 7,
+   "last3f": 41.0,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 7,
+   "number": 9,
+   "name": "テイケイヴィーノ",
+   "time": "1:34.7",
+   "margin": "３ １／２",
+   "pos4": 7,
+   "last3f": 42.4,
+   "popularity": null
+  }
+ ]
 }
