@@ -1,6 +1,6 @@
 {
  "date": "20261113",
- "updated": "2026-11-13 16:51",
+ "updated": "2026-11-13 17:05",
  "bias": {
   "川崎ダ": {
    "judgement": "先行有利・外",
@@ -18,10 +18,11 @@
   },
   "金沢ダ": {
    "judgement": "先行有利・外",
-   "confidence": "弱",
+   "confidence": "中",
    "races": [
     1,
-    2
+    2,
+    3
    ],
    "front_share": 1.0,
    "inner_share": 0.0,
