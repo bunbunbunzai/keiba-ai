@@ -1,6 +1,6 @@
 {
  "date": "20261113",
- "updated": "2026-11-13 14:42",
+ "updated": "2026-11-13 14:48",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -733,8 +733,8 @@
     "field": 11,
     "popularity": 8
    },
-   "odds": 17.9,
-   "popularity": 5
+   "odds": 15.3,
+   "popularity": 4
   },
   {
    "race_id": "202611132218140201",
@@ -754,7 +754,7 @@
     "field": 9,
     "popularity": 4
    },
-   "odds": 1.2,
+   "odds": 1.1,
    "popularity": 1
   },
   {
@@ -819,8 +819,8 @@
     "field": 12,
     "popularity": 7
    },
-   "odds": 34.8,
-   "popularity": 10
+   "odds": 29.2,
+   "popularity": 8
   },
   {
    "race_id": "202611132433160507",
@@ -840,7 +840,7 @@
     "field": 11,
     "popularity": 9
    },
-   "odds": 78.3,
+   "odds": 81.3,
    "popularity": 11
   },
   {
@@ -861,8 +861,8 @@
     "field": 11,
     "popularity": 8
    },
-   "odds": 17.4,
-   "popularity": 5
+   "odds": 20.3,
+   "popularity": 6
   },
   {
    "race_id": "202611132433160507",
@@ -882,8 +882,8 @@
     "field": 11,
     "popularity": 2
    },
-   "odds": 8.9,
-   "popularity": 3
+   "odds": 5.9,
+   "popularity": 2
   },
   {
    "race_id": "202611132433160507",
@@ -904,7 +904,7 @@
     "field": 12,
     "popularity": 4
    },
-   "odds": 1.6,
+   "odds": 1.9,
    "popularity": 1
   },
   {
@@ -946,8 +946,8 @@
     "field": 10,
     "popularity": 2
    },
-   "odds": 38.4,
-   "popularity": 8
+   "odds": 49.1,
+   "popularity": 11
   },
   {
    "race_id": "202611132726180311",
@@ -967,7 +967,7 @@
     "field": 12,
     "popularity": 3
    },
-   "odds": 192.0,
+   "odds": 56.4,
    "popularity": 12
   },
   {
@@ -980,8 +980,7 @@
    "name": "スカイノハル",
    "types": [
     "layoff",
-    "rebound",
-    "letdown"
+    "rebound"
    ],
    "gap_days": 121,
    "last": {
@@ -990,8 +989,8 @@
     "field": 9,
     "popularity": 1
    },
-   "odds": 11.2,
-   "popularity": 5
+   "odds": 5.3,
+   "popularity": 2
   },
   {
    "race_id": "202611132726180311",
@@ -1011,8 +1010,8 @@
     "field": 8,
     "popularity": 6
    },
-   "odds": 96.0,
-   "popularity": 9
+   "odds": 8.0,
+   "popularity": 5
   },
   {
    "race_id": "202611132433160508",
