@@ -1,6 +1,6 @@
 {
  "date": "20261114",
- "updated": "2026-11-14 13:14",
+ "updated": "2026-11-14 13:23",
  "bias": {
   "福島ダ": {
    "judgement": "先行有利",
@@ -11,9 +11,9 @@
     7
    ],
    "front_share": 1.0,
-   "inner_share": 0.25,
-   "outer_share": 0.5,
-   "horses": 4
+   "inner_share": 0.33,
+   "outer_share": 0.33,
+   "horses": 6
   },
   "福島芝": {
    "judgement": "先行有利・外",
@@ -34,7 +34,8 @@
    "confidence": "弱",
    "races": [
     1,
-    3
+    3,
+    7
    ],
    "front_share": 0.5,
    "inner_share": 0.5,
