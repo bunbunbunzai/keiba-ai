@@ -7,48 +7,158 @@
    "time": "1:09.6",
    "margin": "",
    "corners": "4-3",
-   "last3f": null,
+   "last3f": 35.5,
    "popularity": 5
   },
   {
    "finish": "2",
    "number": 12,
    "name": "ペガサスノース",
-   "time": "",
+   "time": "1:09.6",
    "margin": "クビ",
    "corners": "8-8",
-   "last3f": null,
+   "last3f": 35.1,
    "popularity": 2
   },
   {
    "finish": "3",
    "number": 15,
    "name": "トレヴィ",
-   "time": "",
+   "time": "1:09.6",
    "margin": "クビ",
    "corners": "2-2",
-   "last3f": null,
+   "last3f": 35.7,
    "popularity": 10
   },
   {
    "finish": "4",
    "number": 5,
    "name": "ムーンリットアイル",
-   "time": "",
+   "time": "1:10.0",
    "margin": "２",
    "corners": "6-5",
-   "last3f": null,
+   "last3f": 35.7,
    "popularity": 1
   },
   {
    "finish": "5",
    "number": 6,
    "name": "グランフィエルテ",
-   "time": "",
+   "time": "1:10.0",
    "margin": "クビ",
    "corners": "10-8",
-   "last3f": null,
+   "last3f": 35.3,
    "popularity": 6
+  },
+  {
+   "finish": "6",
+   "number": 11,
+   "name": "ラブリーガール",
+   "time": "1:10.1",
+   "margin": "３／４",
+   "corners": "16-15",
+   "last3f": 34.7,
+   "popularity": 7
+  },
+  {
+   "finish": "7",
+   "number": 7,
+   "name": "テルケンユミクイン",
+   "time": "1:10.3",
+   "margin": "１",
+   "corners": "2-3",
+   "last3f": 36.4,
+   "popularity": 4
+  },
+  {
+   "finish": "8",
+   "number": 16,
+   "name": "ココボロ",
+   "time": "1:10.3",
+   "margin": "クビ",
+   "corners": "14-12",
+   "last3f": 35.2,
+   "popularity": 13
+  },
+  {
+   "finish": "9",
+   "number": 13,
+   "name": "サニーサルサ",
+   "time": "1:10.3",
+   "margin": "クビ",
+   "corners": "11-11",
+   "last3f": 35.5,
+   "popularity": 11
+  },
+  {
+   "finish": "10",
+   "number": 14,
+   "name": "ランプローグ",
+   "time": "1:10.7",
+   "margin": "２",
+   "corners": "6-5",
+   "last3f": 36.4,
+   "popularity": 12
+  },
+  {
+   "finish": "11",
+   "number": 9,
+   "name": "タガノアルブラック",
+   "time": "1:10.7",
+   "margin": "クビ",
+   "corners": "8-10",
+   "last3f": 36.2,
+   "popularity": 9
+  },
+  {
+   "finish": "12",
+   "number": 3,
+   "name": "レザンクレール",
+   "time": "1:10.8",
+   "margin": "クビ",
+   "corners": "13-12",
+   "last3f": 35.9,
+   "popularity": 14
+  },
+  {
+   "finish": "13",
+   "number": 10,
+   "name": "アレーティア",
+   "time": "1:10.9",
+   "margin": "３／４",
+   "corners": "11-12",
+   "last3f": 36.1,
+   "popularity": 8
+  },
+  {
+   "finish": "14",
+   "number": 2,
+   "name": "ニシノサリーナ",
+   "time": "1:11.8",
+   "margin": "５",
+   "corners": "1-1",
+   "last3f": 38.6,
+   "popularity": 3
+  },
+  {
+   "finish": "15",
+   "number": 8,
+   "name": "アーブルラーブル",
+   "time": "1:12.3",
+   "margin": "３",
+   "corners": "15-16",
+   "last3f": 37.1,
+   "popularity": 16
+  },
+  {
+   "finish": "16",
+   "number": 1,
+   "name": "ソレイケギンチャン",
+   "time": "1:12.8",
+   "margin": "２ 1/2",
+   "corners": "4-5",
+   "last3f": 38.7,
+   "popularity": 15
   }
  ],
  "payouts": {
