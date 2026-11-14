@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 14,
+   "name": "アンジュオレンジ",
+   "time": "2:02.9",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "2",
+   "number": 8,
+   "name": "グラスクインビー",
+   "time": "2:03.2",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "3",
+   "number": 9,
+   "name": "トーアロイガル",
+   "time": "2:03.2",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "4",
+   "number": 13,
+   "name": "エルカミニート",
+   "time": "2:03.3",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "5",
+   "number": 5,
+   "name": "エコロレディ",
+   "time": "2:03.5",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "6",
+   "number": 11,
+   "name": "ラブパンダ",
+   "time": "2:03.8",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "7",
+   "number": 4,
+   "name": "ツェアシュテーラー",
+   "time": "2:03.8",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "8",
+   "number": 12,
+   "name": "ウインバーミリオン",
+   "time": "2:04.1",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "9",
+   "number": 16,
+   "name": "ハワイミソロジー",
+   "time": "2:04.1",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "10",
+   "number": 7,
+   "name": "ホットイッツユー",
+   "time": "2:04.3",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "11",
+   "number": 2,
+   "name": "インペリアルトレド",
+   "time": "2:04.4",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "12",
+   "number": 1,
+   "name": "エヴァートン",
+   "time": "2:05.1",
+   "margin": "４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "13",
+   "number": 10,
+   "name": "ライトパル",
+   "time": "2:05.4",
+   "margin": "１ 3/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "14",
+   "number": 15,
+   "name": "ヨナグバラード",
+   "time": "2:05.7",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 16
+  },
+  {
+   "finish": "15",
+   "number": 6,
+   "name": "フレンドリーキング",
+   "time": "2:06.0",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "16",
+   "number": 3,
+   "name": "レーヴドプレミア",
+   "time": "2:06.7",
+   "margin": "４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "14",
+    "yen": 750,
+    "pop": 3
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "14",
+    "yen": 260,
+    "pop": 3
+   },
+   {
+    "combo": "8",
+    "yen": 480,
+    "pop": 7
+   },
+   {
+    "combo": "9",
+    "yen": 1040,
+    "pop": 13
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-7",
+    "yen": 1040,
+    "pop": 6
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "8-14",
+    "yen": 1800,
+    "pop": 21
+   },
+   {
+    "combo": "9-14",
+    "yen": 3290,
+    "pop": 34
+   },
+   {
+    "combo": "8-9",
+    "yen": 4480,
+    "pop": 52
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "8-14",
+    "yen": 4910,
+    "pop": 18
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "14-8",
+    "yen": 9120,
+    "pop": 32
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "8-9-14",
+    "yen": 50220,
+    "pop": 152
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "14-8-9",
+    "yen": 181720,
+    "pop": 568
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261114",
+ "venue_code": "03",
+ "race_no": 5,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603030520261114/86",
+ "title": "レース結果 JRA"
+}
