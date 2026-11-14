@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 13,
+   "name": "レッドタイラント",
+   "time": "1:47.0",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "number": 9,
+   "name": "サウンドファイト",
+   "time": "",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "number": 8,
+   "name": "ノーズライダー",
+   "time": "",
+   "margin": "４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "4",
+   "number": 4,
+   "name": "ハナナ",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "5",
+   "number": 2,
+   "name": "マサノブルスカイ",
+   "time": "",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "13",
+    "yen": 260,
+    "pop": 2
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "13",
+    "yen": 140,
+    "pop": 2
+   },
+   {
+    "combo": "9",
+    "yen": 160,
+    "pop": 3
+   },
+   {
+    "combo": "8",
+    "yen": 280,
+    "pop": 5
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "6-8",
+    "yen": 600,
+    "pop": 3
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "9-13",
+    "yen": 340,
+    "pop": 3
+   },
+   {
+    "combo": "8-13",
+    "yen": 850,
+    "pop": 11
+   },
+   {
+    "combo": "8-9",
+    "yen": 940,
+    "pop": 13
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "9-13",
+    "yen": 800,
+    "pop": 3
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "13-9",
+    "yen": 1310,
+    "pop": 4
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "8-9-13",
+    "yen": 3020,
+    "pop": 11
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "13-9-8",
+    "yen": 8920,
+    "pop": 21
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261114",
+ "venue_code": "08",
+ "race_no": 4,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605030420261114/A5",
+ "title": "レース結果 JRA"
+}
