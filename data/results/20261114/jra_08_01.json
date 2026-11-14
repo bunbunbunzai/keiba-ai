@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 10,
+   "name": "アヴレディール",
+   "time": "1:26.1",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "number": 3,
+   "name": "クリコリンダ",
+   "time": "",
+   "margin": "３",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "3",
+   "number": 7,
+   "name": "ファーストステイト",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "4",
+   "number": 8,
+   "name": "ルナヴェリタス",
+   "time": "",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "5",
+   "number": 6,
+   "name": "マスターピース",
+   "time": "",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "10",
+    "yen": 270,
+    "pop": 2
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "10",
+    "yen": 120,
+    "pop": 2
+   },
+   {
+    "combo": "3",
+    "yen": 2820,
+    "pop": 12
+   },
+   {
+    "combo": "7",
+    "yen": 300,
+    "pop": 3
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-7",
+    "yen": 18010,
+    "pop": 18
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-10",
+    "yen": 3250,
+    "pop": 25
+   },
+   {
+    "combo": "7-10",
+    "yen": 350,
+    "pop": 3
+   },
+   {
+    "combo": "3-7",
+    "yen": 5550,
+    "pop": 36
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-10",
+    "yen": 16790,
+    "pop": 24
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "10-3",
+    "yen": 27550,
+    "pop": 42
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-7-10",
+    "yen": 17230,
+    "pop": 35
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "10-3-7",
+    "yen": 116810,
+    "pop": 204
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261114",
+ "venue_code": "08",
+ "race_no": 1,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605030120261114/86",
+ "title": "レース結果 JRA"
+}
