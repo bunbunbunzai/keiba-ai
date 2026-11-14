@@ -6,49 +6,129 @@
    "name": "アヴレディール",
    "time": "1:26.1",
    "margin": "",
-   "corners": "",
-   "last3f": null,
+   "corners": "2-2",
+   "last3f": 37.5,
    "popularity": 2
   },
   {
    "finish": "2",
    "number": 3,
    "name": "クリコリンダ",
-   "time": "",
+   "time": "1:26.6",
    "margin": "３",
-   "corners": "",
-   "last3f": null,
+   "corners": "5-4",
+   "last3f": 37.9,
    "popularity": 11
   },
   {
    "finish": "3",
    "number": 7,
    "name": "ファーストステイト",
-   "time": "",
+   "time": "1:26.7",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "5-4",
+   "last3f": 37.9,
    "popularity": 4
   },
   {
    "finish": "4",
    "number": 8,
    "name": "ルナヴェリタス",
-   "time": "",
+   "time": "1:26.8",
    "margin": "１／２",
-   "corners": "",
-   "last3f": null,
+   "corners": "5-4",
+   "last3f": 38.0,
    "popularity": 3
   },
   {
    "finish": "5",
    "number": 6,
    "name": "マスターピース",
-   "time": "",
+   "time": "1:27.0",
    "margin": "１ 1/4",
-   "corners": "",
-   "last3f": null,
+   "corners": "1-1",
+   "last3f": 38.5,
    "popularity": 1
+  },
+  {
+   "finish": "6",
+   "number": 2,
+   "name": "ブルーエノワール",
+   "time": "1:27.4",
+   "margin": "２ 1/2",
+   "corners": "10-7",
+   "last3f": 38.1,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "number": 9,
+   "name": "ドリームリボン",
+   "time": "1:27.8",
+   "margin": "２ 1/2",
+   "corners": "2-2",
+   "last3f": 39.3,
+   "popularity": 6
+  },
+  {
+   "finish": "8",
+   "number": 5,
+   "name": "ウルスス",
+   "time": "1:27.8",
+   "margin": "ハナ",
+   "corners": "12-12",
+   "last3f": 38.1,
+   "popularity": 12
+  },
+  {
+   "finish": "9",
+   "number": 13,
+   "name": "セーズアマゾネス",
+   "time": "1:27.8",
+   "margin": "クビ",
+   "corners": "13-13",
+   "last3f": 37.2,
+   "popularity": 10
+  },
+  {
+   "finish": "10",
+   "number": 12,
+   "name": "テムルヴァン",
+   "time": "1:28.0",
+   "margin": "１",
+   "corners": "10-10",
+   "last3f": 38.5,
+   "popularity": 9
+  },
+  {
+   "finish": "11",
+   "number": 1,
+   "name": "レタートゥブリッジ",
+   "time": "1:29.1",
+   "margin": "７",
+   "corners": "8-11",
+   "last3f": 39.8,
+   "popularity": 8
+  },
+  {
+   "finish": "12",
+   "number": 11,
+   "name": "スタニングヨシノ",
+   "time": "1:29.1",
+   "margin": "クビ",
+   "corners": "4-7",
+   "last3f": 40.3,
+   "popularity": 13
+  },
+  {
+   "finish": "13",
+   "number": 4,
+   "name": "クリスレグナム",
+   "time": "1:29.4",
+   "margin": "２",
+   "corners": "8-9",
+   "last3f": 40.1,
+   "popularity": 7
   }
  ],
  "payouts": {
