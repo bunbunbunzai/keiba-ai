@@ -1,6 +1,6 @@
 {
  "date": "20261114",
- "updated": "2026-11-14 17:08",
+ "updated": "2026-11-14 19:19",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -3743,8 +3743,8 @@
     "field": 11,
     "popularity": 2
    },
-   "odds": 31.2,
-   "popularity": 10
+   "odds": 19.3,
+   "popularity": 6
   },
   {
    "race_id": "202611143129100309",
@@ -3764,7 +3764,7 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": 2.5,
+   "odds": 2.9,
    "popularity": 1
   },
   {
@@ -3785,8 +3785,8 @@
     "field": 11,
     "popularity": 8
    },
-   "odds": 7.8,
-   "popularity": 3
+   "odds": 28.9,
+   "popularity": 9
   },
   {
    "race_id": "202611143129100309",
@@ -3807,8 +3807,8 @@
     "field": 11,
     "popularity": 1
    },
-   "odds": 13.3,
-   "popularity": 5
+   "odds": 6.8,
+   "popularity": 4
   },
   {
    "race_id": "202611143129100309",
@@ -3828,29 +3828,8 @@
     "field": 11,
     "popularity": 10
    },
-   "odds": 18.7,
-   "popularity": 9
-  },
-  {
-   "race_id": "202611140304160411",
-   "results_key": "202611140304160411",
-   "venue": "帯広ば",
-   "race_no": 11,
-   "post_time": "20:00",
-   "number": 2,
-   "name": "スカーレット",
-   "types": [
-    "letdown"
-   ],
-   "gap_days": 19,
-   "last": {
-    "date": "2026-10-26",
-    "finish": 7,
-    "field": 10,
-    "popularity": 3
-   },
-   "odds": 8.9,
-   "popularity": 4
+   "odds": 37.2,
+   "popularity": 10
   },
   {
    "race_id": "202611140304160411",
@@ -3870,8 +3849,8 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": 11.1,
-   "popularity": 6
+   "odds": 14.9,
+   "popularity": 7
   },
   {
    "race_id": "202611140304160411",
@@ -3891,8 +3870,8 @@
     "field": 9,
     "popularity": 8
    },
-   "odds": 22.2,
-   "popularity": 9
+   "odds": 20.9,
+   "popularity": 8
   },
   {
    "race_id": "202611140304160411",
@@ -3905,8 +3884,8 @@
    "types": [
     "aitop"
    ],
-   "odds": 4.9,
-   "popularity": 2
+   "odds": 5.7,
+   "popularity": 4
   },
   {
    "race_id": "202611143230130410",
@@ -3991,8 +3970,22 @@
     "field": 9,
     "popularity": 8
    },
-   "odds": 12.6,
-   "popularity": 7
+   "odds": 19.9,
+   "popularity": 6
+  },
+  {
+   "race_id": "202611140304160412",
+   "results_key": "202611140304160412",
+   "venue": "帯広ば",
+   "race_no": 12,
+   "post_time": "20:30",
+   "number": 7,
+   "name": "タンジロウ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 6.6,
+   "popularity": 5
   },
   {
    "race_id": "202611143230130411",
