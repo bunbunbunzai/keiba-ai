@@ -1,0 +1,228 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 1,
+   "name": "バッデレイト",
+   "time": "1:58.7",
+   "margin": "",
+   "corners": "8-8-8-7",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "2",
+   "number": 13,
+   "name": "ジャスティンビスタ",
+   "time": "1:58.7",
+   "margin": "アタマ",
+   "corners": "12-11-10-10",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "3",
+   "number": 2,
+   "name": "レクスノヴァス",
+   "time": "1:58.7",
+   "margin": "クビ",
+   "corners": "10-11-10-10",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "4",
+   "number": 7,
+   "name": "グランヴィノス",
+   "time": "1:58.9",
+   "margin": "１",
+   "corners": "3-5-6-5",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "5",
+   "number": 12,
+   "name": "アマイ",
+   "time": "1:58.9",
+   "margin": "クビ",
+   "corners": "1-1-1-1",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "6",
+   "number": 6,
+   "name": "アスクカムオンモア",
+   "time": "1:59.0",
+   "margin": "１",
+   "corners": "7-5-4-5",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "7",
+   "number": 8,
+   "name": "ホールネス",
+   "time": "1:59.1",
+   "margin": "クビ",
+   "corners": "8-9-8-7",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "8",
+   "number": 3,
+   "name": "ディマイザキッド",
+   "time": "1:59.1",
+   "margin": "ハナ",
+   "corners": "10-10-10-10",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "9",
+   "number": 5,
+   "name": "ショウナンラプンタ",
+   "time": "1:59.2",
+   "margin": "１",
+   "corners": "13-13-13-13",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "10",
+   "number": 4,
+   "name": "ダンツエラン",
+   "time": "2:00.0",
+   "margin": "５",
+   "corners": "13-13-14-14",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "11",
+   "number": 10,
+   "name": "ピースワンデュック",
+   "time": "2:00.0",
+   "margin": "クビ",
+   "corners": "3-4-4-3",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "12",
+   "number": 9,
+   "name": "コスモブッドレア",
+   "time": "2:00.1",
+   "margin": "１／２",
+   "corners": "6-7-7-7",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "13",
+   "number": 11,
+   "name": "ゴートゥファースト",
+   "time": "2:00.1",
+   "margin": "アタマ",
+   "corners": "2-2-2-2",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "14",
+   "number": 14,
+   "name": "シルトホルン",
+   "time": "2:00.5",
+   "margin": "２",
+   "corners": "3-3-3-3",
+   "last3f": null,
+   "popularity": 11
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "1",
+    "yen": 780,
+    "pop": 4
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "1",
+    "yen": 220,
+    "pop": 3
+   },
+   {
+    "combo": "13",
+    "yen": 330,
+    "pop": 8
+   },
+   {
+    "combo": "2",
+    "yen": 310,
+    "pop": 6
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-8",
+    "yen": 2610,
+    "pop": 13
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-13",
+    "yen": 1210,
+    "pop": 17
+   },
+   {
+    "combo": "1-2",
+    "yen": 1190,
+    "pop": 16
+   },
+   {
+    "combo": "2-13",
+    "yen": 1600,
+    "pop": 25
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-13",
+    "yen": 3250,
+    "pop": 16
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "1-13",
+    "yen": 6520,
+    "pop": 31
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-2-13",
+    "yen": 9730,
+    "pop": 39
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "1-13-2",
+    "yen": 55680,
+    "pop": 219
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261114",
+ "venue_code": "08",
+ "race_no": 10,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605031020261114/23",
+ "title": "レース結果 JRA"
+}
