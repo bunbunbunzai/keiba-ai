@@ -1,0 +1,218 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 9,
+   "name": "ホークフィールド",
+   "time": "3:26.0",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "2",
+   "number": 6,
+   "name": "サトノエピック",
+   "time": "3:26.5",
+   "margin": "３",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "3",
+   "number": 8,
+   "name": "ライツフォル",
+   "time": "3:26.8",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "4",
+   "number": 10,
+   "name": "タイキフロリゼル",
+   "time": "3:27.0",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "5",
+   "number": 2,
+   "name": "サイード",
+   "time": "3:27.0",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "6",
+   "number": 13,
+   "name": "コスモチプリア",
+   "time": "3:27.7",
+   "margin": "４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "7",
+   "number": 1,
+   "name": "デシマルサーガ",
+   "time": "3:27.9",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "8",
+   "number": 12,
+   "name": "ブライトマン",
+   "time": "3:28.0",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "9",
+   "number": 11,
+   "name": "プラチナトレジャー",
+   "time": "3:28.3",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "10",
+   "number": 4,
+   "name": "ヒットアンドロール",
+   "time": "3:28.4",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "11",
+   "number": 3,
+   "name": "モンツァフレイバー",
+   "time": "3:28.6",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "12",
+   "number": 5,
+   "name": "ニシノルアノーヴァ",
+   "time": "3:28.7",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "13",
+   "number": 7,
+   "name": "フームスムート",
+   "time": "3:29.5",
+   "margin": "５",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "9",
+    "yen": 580,
+    "pop": 4
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "9",
+    "yen": 220,
+    "pop": 4
+   },
+   {
+    "combo": "6",
+    "yen": 250,
+    "pop": 5
+   },
+   {
+    "combo": "8",
+    "yen": 300,
+    "pop": 6
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-6",
+    "yen": 1900,
+    "pop": 8
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "6-9",
+    "yen": 870,
+    "pop": 10
+   },
+   {
+    "combo": "8-9",
+    "yen": 1230,
+    "pop": 17
+   },
+   {
+    "combo": "6-8",
+    "yen": 1670,
+    "pop": 19
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "6-9",
+    "yen": 2860,
+    "pop": 10
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "9-6",
+    "yen": 4610,
+    "pop": 20
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "6-8-9",
+    "yen": 12180,
+    "pop": 34
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "9-6-8",
+    "yen": 53690,
+    "pop": 152
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261114",
+ "venue_code": "05",
+ "race_no": 8,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605030820261114/9B",
+ "title": "レース結果 JRA"
+}
