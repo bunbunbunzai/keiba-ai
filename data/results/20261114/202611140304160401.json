@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261114",
  "race_id": "202611140304160401",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,116 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 5,
+   "name": "ハゴロモディアナ",
+   "time": "2:18.9",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 8,
+   "name": "ジェイワールド",
+   "time": "2:19.6",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 1,
+   "number": 1,
+   "name": "ガオノチカラ",
+   "time": "2:23.7",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "トヨミヒラリ",
+   "time": "2:24.0",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 4,
+   "name": "トウマオー",
+   "time": "2:25.5",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 3,
+   "number": 3,
+   "name": "ヴィクトワールラン",
+   "time": "2:28.1",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 7,
+   "name": "シャインサクラ",
+   "time": "2:31.5",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 9,
+   "name": "クマモトイヤサカ",
+   "time": "2:41.3",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 10,
+   "name": "タカラエビス",
+   "time": "2:46.2",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 6,
+   "number": 6,
+   "name": "マルホンカオン",
+   "time": "2:49.9",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }

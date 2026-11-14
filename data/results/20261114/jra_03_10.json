@@ -1,0 +1,238 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 10,
+   "name": "アラナコア",
+   "time": "1:44.3",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 9,
+   "name": "アンティミスト",
+   "time": "1:44.4",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "3",
+   "number": 5,
+   "name": "ディアウス",
+   "time": "1:44.7",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "number": 7,
+   "name": "ショーダンサー",
+   "time": "1:44.8",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "number": 12,
+   "name": "オオツカ",
+   "time": "1:44.9",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "6",
+   "number": 11,
+   "name": "ラストレガシー",
+   "time": "1:44.9",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "7",
+   "number": 13,
+   "name": "ライフゲート",
+   "time": "1:45.0",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "8",
+   "number": 6,
+   "name": "ルージュビバーチェ",
+   "time": "1:45.0",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "9",
+   "number": 15,
+   "name": "タンテドヴィーヴル",
+   "time": "1:45.3",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "10",
+   "number": 2,
+   "name": "スリーケイ",
+   "time": "1:45.4",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "11",
+   "number": 3,
+   "name": "ジオパーククラウン",
+   "time": "1:45.4",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "12",
+   "number": 4,
+   "name": "ユージュアーナ",
+   "time": "1:46.2",
+   "margin": "５",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "13",
+   "number": 8,
+   "name": "コスモコンフェルマ",
+   "time": "1:46.4",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "14",
+   "number": 1,
+   "name": "タイキインドラ",
+   "time": "1:46.6",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "15",
+   "number": 14,
+   "name": "ザハント",
+   "time": "1:47.1",
+   "margin": "３",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "10",
+    "yen": 310,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "10",
+    "yen": 150,
+    "pop": 1
+   },
+   {
+    "combo": "9",
+    "yen": 360,
+    "pop": 7
+   },
+   {
+    "combo": "5",
+    "yen": 220,
+    "pop": 3
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-6",
+    "yen": 1920,
+    "pop": 9
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "9-10",
+    "yen": 820,
+    "pop": 7
+   },
+   {
+    "combo": "5-10",
+    "yen": 440,
+    "pop": 2
+   },
+   {
+    "combo": "5-9",
+    "yen": 1470,
+    "pop": 16
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "9-10",
+    "yen": 2260,
+    "pop": 6
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "10-9",
+    "yen": 3880,
+    "pop": 12
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "5-9-10",
+    "yen": 5010,
+    "pop": 12
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "10-9-5",
+    "yen": 23620,
+    "pop": 49
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261114",
+ "venue_code": "03",
+ "race_no": 10,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603031020261114/4F",
+ "title": "レース結果 JRA"
+}
