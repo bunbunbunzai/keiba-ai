@@ -6,49 +6,179 @@
    "name": "フェニックスロール",
    "time": "1:35.1",
    "margin": "",
-   "corners": "",
-   "last3f": null,
+   "corners": "1-1",
+   "last3f": 35.7,
    "popularity": 1
   },
   {
    "finish": "2",
    "number": 13,
    "name": "マハルキタ",
-   "time": "",
+   "time": "1:35.2",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "13-13",
+   "last3f": 34.9,
    "popularity": 2
   },
   {
    "finish": "3",
    "number": 8,
    "name": "ティアラスピリット",
-   "time": "",
+   "time": "1:35.2",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "10-9",
+   "last3f": 35.1,
    "popularity": 11
   },
   {
    "finish": "4",
    "number": 17,
    "name": "ミツカネリゲル",
-   "time": "",
+   "time": "1:35.4",
    "margin": "１",
-   "corners": "",
-   "last3f": null,
+   "corners": "10-9",
+   "last3f": 35.3,
    "popularity": 12
   },
   {
    "finish": "5",
    "number": 15,
    "name": "アルティマノヴァ",
-   "time": "",
+   "time": "1:35.5",
    "margin": "１／２",
-   "corners": "",
-   "last3f": null,
+   "corners": "15-15",
+   "last3f": 35.0,
    "popularity": 6
+  },
+  {
+   "finish": "6",
+   "number": 11,
+   "name": "シャインフォード",
+   "time": "1:35.6",
+   "margin": "１／２",
+   "corners": "7-8",
+   "last3f": 35.6,
+   "popularity": 4
+  },
+  {
+   "finish": "7",
+   "number": 12,
+   "name": "セイウントレジャ",
+   "time": "1:35.6",
+   "margin": "クビ",
+   "corners": "17-16",
+   "last3f": 34.9,
+   "popularity": 10
+  },
+  {
+   "finish": "8",
+   "number": 14,
+   "name": "パープルタウン",
+   "time": "1:35.6",
+   "margin": "クビ",
+   "corners": "9-9",
+   "last3f": 35.5,
+   "popularity": 9
+  },
+  {
+   "finish": "9",
+   "number": 10,
+   "name": "ベルセルク",
+   "time": "1:35.8",
+   "margin": "３／４",
+   "corners": "3-2",
+   "last3f": 36.3,
+   "popularity": 7
+  },
+  {
+   "finish": "10",
+   "number": 16,
+   "name": "ロードキャピタル",
+   "time": "1:35.8",
+   "margin": "ハナ",
+   "corners": "6-6",
+   "last3f": 35.9,
+   "popularity": 5
+  },
+  {
+   "finish": "11",
+   "number": 7,
+   "name": "ヨドノプレミアム",
+   "time": "1:35.9",
+   "margin": "１／２",
+   "corners": "13-13",
+   "last3f": 35.5,
+   "popularity": 3
+  },
+  {
+   "finish": "12",
+   "number": 9,
+   "name": "イヴナンバーフォー",
+   "time": "1:35.9",
+   "margin": "クビ",
+   "corners": "4-4",
+   "last3f": 36.2,
+   "popularity": 14
+  },
+  {
+   "finish": "13",
+   "number": 4,
+   "name": "ロワデュモンド",
+   "time": "1:36.0",
+   "margin": "１／２",
+   "corners": "4-4",
+   "last3f": 36.3,
+   "popularity": 8
+  },
+  {
+   "finish": "14",
+   "number": 6,
+   "name": "プラティナライヴァ",
+   "time": "1:36.1",
+   "margin": "１／２",
+   "corners": "2-2",
+   "last3f": 36.6,
+   "popularity": 13
+  },
+  {
+   "finish": "15",
+   "number": 1,
+   "name": "デスタンドレ",
+   "time": "1:36.2",
+   "margin": "１／２",
+   "corners": "10-9",
+   "last3f": 36.1,
+   "popularity": 15
+  },
+  {
+   "finish": "16",
+   "number": 18,
+   "name": "カシノデスティニー",
+   "time": "1:36.6",
+   "margin": "２ 1/2",
+   "corners": "16-18",
+   "last3f": 35.4,
+   "popularity": 17
+  },
+  {
+   "finish": "17",
+   "number": 5,
+   "name": "チリチョウズ",
+   "time": "1:36.7",
+   "margin": "１",
+   "corners": "17-16",
+   "last3f": 35.9,
+   "popularity": 18
+  },
+  {
+   "finish": "18",
+   "number": 3,
+   "name": "シルバータイガー",
+   "time": "1:37.5",
+   "margin": "５",
+   "corners": "7-6",
+   "last3f": 37.6,
+   "popularity": 16
   }
  ],
  "payouts": {
