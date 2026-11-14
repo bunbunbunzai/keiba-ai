@@ -1,6 +1,6 @@
 {
  "date": "20261114",
- "updated": "2026-11-14 10:47",
+ "updated": "2026-11-14 12:28",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1278,6 +1278,20 @@
    "venue": "京都",
    "race_no": 8,
    "post_time": "13:55",
+   "number": 7,
+   "name": "アーリーハーベスト",
+   "types": [
+    "aitop"
+   ],
+   "odds": 7.0,
+   "popularity": 4
+  },
+  {
+   "race_id": "jra_20261114_京都_08",
+   "results_key": "jra_08_08",
+   "venue": "京都",
+   "race_no": 8,
+   "post_time": "13:55",
    "number": 8,
    "name": "マディソンガール",
    "types": [
@@ -1471,7 +1485,8 @@
    "number": 4,
    "name": "タガノアバンドーネ",
    "types": [
-    "layoff"
+    "layoff",
+    "aitop"
    ],
    "gap_days": 97,
    "last": {
@@ -1716,6 +1731,20 @@
    },
    "odds": 19.3,
    "popularity": 11
+  },
+  {
+   "race_id": "jra_20261114_東京_10",
+   "results_key": "jra_05_10",
+   "venue": "東京",
+   "race_no": 10,
+   "post_time": "14:55",
+   "number": 5,
+   "name": "ヒシアマン",
+   "types": [
+    "aitop"
+   ],
+   "odds": 7.3,
+   "popularity": 3
   },
   {
    "race_id": "jra_20261114_東京_10",
@@ -2572,7 +2601,8 @@
    "number": 1,
    "name": "ジーネキング",
    "types": [
-    "layoff"
+    "layoff",
+    "aitop"
    ],
    "gap_days": 98,
    "last": {
