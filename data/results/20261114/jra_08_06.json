@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 1,
+   "name": "ルージュナイアス",
+   "time": "1:55.4",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "number": 11,
+   "name": "シブレット",
+   "time": "1:55.5",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "number": 10,
+   "name": "マンノアルテミス",
+   "time": "1:55.7",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "4",
+   "number": 15,
+   "name": "ハナマンカイ",
+   "time": "1:56.1",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "5",
+   "number": 14,
+   "name": "リメンバーホープ",
+   "time": "1:56.3",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "6",
+   "number": 12,
+   "name": "バケットリズム",
+   "time": "1:56.5",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "7",
+   "number": 6,
+   "name": "トゥルーモーメント",
+   "time": "1:57.3",
+   "margin": "５",
+   "corners": "",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "8",
+   "number": 8,
+   "name": "センターフォールド",
+   "time": "1:57.4",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "9",
+   "number": 7,
+   "name": "ヘクラ",
+   "time": "1:57.6",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "10",
+   "number": 5,
+   "name": "アランフェス",
+   "time": "1:58.3",
+   "margin": "４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "11",
+   "number": 4,
+   "name": "メイショウタマヨ",
+   "time": "1:58.8",
+   "margin": "３",
+   "corners": "",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "12",
+   "number": 16,
+   "name": "トモジャハナ",
+   "time": "1:59.1",
+   "margin": "１ 3/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 16
+  },
+  {
+   "finish": "13",
+   "number": 9,
+   "name": "スノーグロウ",
+   "time": "1:59.3",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "14",
+   "number": 13,
+   "name": "トールドヤ",
+   "time": "1:59.6",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "15",
+   "number": 2,
+   "name": "アディエル",
+   "time": "1:59.8",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "16",
+   "number": 3,
+   "name": "ガンファースト",
+   "time": "2:01.0",
+   "margin": "７",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "1",
+    "yen": 340,
+    "pop": 2
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "1",
+    "yen": 150,
+    "pop": 2
+   },
+   {
+    "combo": "11",
+    "yen": 130,
+    "pop": 1
+   },
+   {
+    "combo": "10",
+    "yen": 1100,
+    "pop": 13
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-6",
+    "yen": 340,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-11",
+    "yen": 250,
+    "pop": 1
+   },
+   {
+    "combo": "1-10",
+    "yen": 3240,
+    "pop": 36
+   },
+   {
+    "combo": "10-11",
+    "yen": 2280,
+    "pop": 22
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-11",
+    "yen": 420,
+    "pop": 1
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "1-11",
+    "yen": 850,
+    "pop": 2
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-10-11",
+    "yen": 6090,
+    "pop": 15
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "1-11-10",
+    "yen": 22330,
+    "pop": 57
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261114",
+ "venue_code": "08",
+ "race_no": 6,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605030620261114/0F",
+ "title": "レース結果 JRA"
+}
