@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261114",
  "race_id": "202611143129100303",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,127 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 2,
+   "number": 2,
+   "name": "アソス",
+   "time": "1:33.7",
+   "margin": "",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 1,
+   "number": 1,
+   "name": "フジルバーブ",
+   "time": "1:34.1",
+   "margin": "２",
+   "pos4": 4,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 10,
+   "name": "ライトスリー",
+   "time": "1:34.3",
+   "margin": "１",
+   "pos4": 8,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 7,
+   "name": "ブラックオレンジ",
+   "time": "1:34.3",
+   "margin": "アタマ",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 4,
+   "name": "サイカク",
+   "time": "1:34.5",
+   "margin": "１",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 6,
+   "name": "マイネルサンテ",
+   "time": "1:35.2",
+   "margin": "３",
+   "pos4": 6,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 3,
+   "name": "グロリアスヒーロー",
+   "time": "1:35.7",
+   "margin": "２ １／２",
+   "pos4": 6,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 8,
+   "name": "ドルンレースツェン",
+   "time": "1:35.7",
+   "margin": "アタマ",
+   "pos4": 8,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 5,
+   "name": "アルデココ",
+   "time": "1:36.3",
+   "margin": "３",
+   "pos4": 10,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 9,
+   "name": "エメラルハッピー",
+   "time": "1:36.9",
+   "margin": "３",
+   "pos4": 4,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 8,
+   "number": 11,
+   "name": "フォートポータル",
+   "time": "1:41.7",
+   "margin": "大差",
+   "pos4": 10,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
