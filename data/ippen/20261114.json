@@ -1,6 +1,6 @@
 {
  "date": "20261114",
- "updated": "2026-11-14 13:35",
+ "updated": "2026-11-14 13:45",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1922,10 +1922,32 @@
    "venue": "帯広ば",
    "race_no": 2,
    "post_time": "15:10",
+   "number": 3,
+   "name": "トカチキャップ",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 13,
+   "last": {
+    "date": "2026-11-01",
+    "finish": 10,
+    "field": 10,
+    "popularity": 1
+   },
+   "odds": 9.1,
+   "popularity": 4
+  },
+  {
+   "race_id": "202611140304160402",
+   "results_key": "202611140304160402",
+   "venue": "帯広ば",
+   "race_no": 2,
+   "post_time": "15:10",
    "number": 4,
    "name": "カイセイプリンス",
    "types": [
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 13,
    "last": {
@@ -1934,8 +1956,8 @@
     "field": 10,
     "popularity": 3
    },
-   "odds": null,
-   "popularity": null
+   "odds": 15.6,
+   "popularity": 8
   },
   {
    "race_id": "jra_20261114_福島_11",
