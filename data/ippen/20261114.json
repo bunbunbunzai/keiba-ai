@@ -1,6 +1,6 @@
 {
  "date": "20261114",
- "updated": "2026-11-14 16:39",
+ "updated": "2026-11-14 16:56",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -3174,8 +3174,8 @@
    "types": [
     "aitop"
    ],
-   "odds": 16.6,
-   "popularity": 9
+   "odds": 10.5,
+   "popularity": 7
   },
   {
    "race_id": "202611140304160406",
@@ -3195,8 +3195,8 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": 12.4,
-   "popularity": 7
+   "odds": 9.9,
+   "popularity": 6
   },
   {
    "race_id": "202611140304160406",
@@ -3216,7 +3216,7 @@
     "field": 10,
     "popularity": 2
    },
-   "odds": 18.7,
+   "odds": 14.0,
    "popularity": 10
   },
   {
@@ -3237,8 +3237,8 @@
     "field": 10,
     "popularity": 4
    },
-   "odds": 6.5,
-   "popularity": 3
+   "odds": 5.6,
+   "popularity": 2
   },
   {
    "race_id": "202611140304160406",
@@ -3258,8 +3258,8 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": 5.5,
-   "popularity": 2
+   "odds": 8.2,
+   "popularity": 5
   },
   {
    "race_id": "202611143230130405",
@@ -3401,6 +3401,20 @@
    "venue": "高知",
    "race_no": 6,
    "post_time": "18:20",
+   "number": 1,
+   "name": "ジーティーオウジャ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 8.1,
+   "popularity": 4
+  },
+  {
+   "race_id": "202611143129100306",
+   "results_key": "202611143129100306",
+   "venue": "高知",
+   "race_no": 6,
+   "post_time": "18:20",
    "number": 4,
    "name": "ココリハクタク",
    "types": [
@@ -3413,7 +3427,7 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": 67.2,
+   "odds": 53.6,
    "popularity": 12
   },
   {
@@ -3881,6 +3895,20 @@
    "popularity": 9
   },
   {
+   "race_id": "202611140304160411",
+   "results_key": "202611140304160411",
+   "venue": "帯広ば",
+   "race_no": 11,
+   "post_time": "20:00",
+   "number": 8,
+   "name": "ホクセイテンリュウ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 4.9,
+   "popularity": 2
+  },
+  {
    "race_id": "202611143230130410",
    "results_key": "202611143230130410",
    "venue": "佐賀",
@@ -3911,7 +3939,8 @@
    "number": 3,
    "name": "ドライグ",
    "types": [
-    "layoff"
+    "layoff",
+    "aitop"
    ],
    "gap_days": 166,
    "last": {
