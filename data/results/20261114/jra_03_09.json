@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 13,
+   "name": "スワローシチー",
+   "time": "1:49.7",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "2",
+   "number": 1,
+   "name": "ライフイズカラフル",
+   "time": "",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "3",
+   "number": 2,
+   "name": "サンヴィクトワール",
+   "time": "",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "4",
+   "number": 6,
+   "name": "ファンクション",
+   "time": "",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "5",
+   "number": 8,
+   "name": "クイーンズワーフ",
+   "time": "",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "13",
+    "yen": 690,
+    "pop": 3
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "13",
+    "yen": 230,
+    "pop": 4
+   },
+   {
+    "combo": "1",
+    "yen": 260,
+    "pop": 5
+   },
+   {
+    "combo": "2",
+    "yen": 140,
+    "pop": 1
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-7",
+    "yen": 3340,
+    "pop": 13
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-13",
+    "yen": 1330,
+    "pop": 16
+   },
+   {
+    "combo": "2-13",
+    "yen": 500,
+    "pop": 3
+   },
+   {
+    "combo": "1-2",
+    "yen": 560,
+    "pop": 4
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-13",
+    "yen": 4640,
+    "pop": 18
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "13-1",
+    "yen": 8420,
+    "pop": 33
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-2-13",
+    "yen": 3350,
+    "pop": 6
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "13-1-2",
+    "yen": 36860,
+    "pop": 101
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261114",
+ "venue_code": "03",
+ "race_no": 9,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603030920261114/5A",
+ "title": "レース結果 JRA"
+}

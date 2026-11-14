@@ -1,6 +1,6 @@
 {
  "date": "20261114",
- "updated": "2026-11-14 14:11",
+ "updated": "2026-11-14 14:20",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -2124,8 +2124,22 @@
     "field": 7,
     "popularity": 5
    },
-   "odds": 72.6,
-   "popularity": 8
+   "odds": 79.9,
+   "popularity": 9
+  },
+  {
+   "race_id": "202611143230130401",
+   "results_key": "202611143230130401",
+   "venue": "佐賀",
+   "race_no": 1,
+   "post_time": "15:20",
+   "number": 8,
+   "name": "カロンテソーロ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 6.3,
+   "popularity": 3
   },
   {
    "race_id": "jra_20261114_東京_11",
