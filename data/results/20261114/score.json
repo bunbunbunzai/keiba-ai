@@ -1128,7 +1128,19 @@
   },
   {
    "race_id": "jra_20261114_福島_12",
-   "status": "結果未取得"
+   "confidence": "C",
+   "honmei": 5,
+   "honmei_finish": "4",
+   "top3": [
+    4,
+    12,
+    15
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": false
   }
  ]
 }
