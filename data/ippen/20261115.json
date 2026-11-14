@@ -1,6 +1,6 @@
 {
  "date": "20261115",
- "updated": "2026-11-15 08:40",
+ "updated": "2026-11-15 08:45",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -220,7 +220,8 @@
    "number": 8,
    "name": "オンザボー",
    "types": [
-    "layoff"
+    "layoff",
+    "aitop"
    ],
    "gap_days": 92,
    "last": {
