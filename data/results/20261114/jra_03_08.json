@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 8,
+   "name": "メイショウピリカ",
+   "time": "2:42.7",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "2",
+   "number": 10,
+   "name": "オーサムユニバンス",
+   "time": "2:42.8",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "3",
+   "number": 9,
+   "name": "サトノブリジャール",
+   "time": "2:43.0",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "4",
+   "number": 4,
+   "name": "ギオンバヤシ",
+   "time": "2:43.2",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "5",
+   "number": 16,
+   "name": "ドンテスタマスター",
+   "time": "2:43.4",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "6",
+   "number": 5,
+   "name": "カットソロ",
+   "time": "2:43.4",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "7",
+   "number": 15,
+   "name": "クリスタルドレス",
+   "time": "2:43.4",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "8",
+   "number": 12,
+   "name": "ブライトエアリー",
+   "time": "2:43.5",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "9",
+   "number": 11,
+   "name": "テイキットイージー",
+   "time": "2:43.6",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "10",
+   "number": 7,
+   "name": "アスクファイアモア",
+   "time": "2:43.7",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "11",
+   "number": 14,
+   "name": "レットミーテイク",
+   "time": "2:43.8",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "12",
+   "number": 2,
+   "name": "アイサーベル",
+   "time": "2:43.8",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "13",
+   "number": 6,
+   "name": "アイアムコロンブス",
+   "time": "2:44.2",
+   "margin": "２ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 16
+  },
+  {
+   "finish": "14",
+   "number": 1,
+   "name": "エテルノレガーメ",
+   "time": "2:44.2",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "15",
+   "number": 13,
+   "name": "ウィスピア",
+   "time": "2:44.3",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "16",
+   "number": 3,
+   "name": "サヴマ",
+   "time": "2:45.3",
+   "margin": "６",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "8",
+    "yen": 1530,
+    "pop": 8
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "8",
+    "yen": 350,
+    "pop": 6
+   },
+   {
+    "combo": "10",
+    "yen": 310,
+    "pop": 4
+   },
+   {
+    "combo": "9",
+    "yen": 150,
+    "pop": 1
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-5",
+    "yen": 830,
+    "pop": 2
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "8-10",
+    "yen": 2640,
+    "pop": 37
+   },
+   {
+    "combo": "8-9",
+    "yen": 950,
+    "pop": 8
+   },
+   {
+    "combo": "9-10",
+    "yen": 750,
+    "pop": 3
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "8-10",
+    "yen": 7980,
+    "pop": 32
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "8-10",
+    "yen": 17680,
+    "pop": 68
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "8-9-10",
+    "yen": 7500,
+    "pop": 17
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "8-10-9",
+    "yen": 55250,
+    "pop": 160
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261114",
+ "venue_code": "03",
+ "race_no": 8,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603030820261114/A5",
+ "title": "レース結果 JRA"
+}
