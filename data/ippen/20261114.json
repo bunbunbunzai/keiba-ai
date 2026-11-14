@@ -1,6 +1,6 @@
 {
  "date": "20261114",
- "updated": "2026-11-14 09:16",
+ "updated": "2026-11-14 10:10",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -222,7 +222,7 @@
     "field": 11,
     "popularity": 5
    },
-   "odds": 34.8,
+   "odds": 37.2,
    "popularity": 14
   },
   {
@@ -236,8 +236,8 @@
    "types": [
     "aitop"
    ],
-   "odds": 6.1,
-   "popularity": 2
+   "odds": 6.2,
+   "popularity": 3
   },
   {
    "race_id": "jra_20261114_東京_03",
@@ -257,7 +257,7 @@
     "field": 15,
     "popularity": 1
    },
-   "odds": 2.0,
+   "odds": 1.8,
    "popularity": 1
   },
   {
@@ -278,8 +278,8 @@
     "field": 16,
     "popularity": 13
    },
-   "odds": 58.2,
-   "popularity": 11
+   "odds": 42.1,
+   "popularity": 8
   },
   {
    "race_id": "jra_20261114_東京_03",
@@ -299,8 +299,8 @@
     "field": 16,
     "popularity": 2
    },
-   "odds": 10.7,
-   "popularity": 4
+   "odds": 13.3,
+   "popularity": 6
   },
   {
    "race_id": "jra_20261114_京都_03",
@@ -320,7 +320,7 @@
     "field": 12,
     "popularity": 7
    },
-   "odds": 18.7,
+   "odds": 25.3,
    "popularity": 7
   },
   {
@@ -341,7 +341,7 @@
     "field": 13,
     "popularity": 13
    },
-   "odds": 71.4,
+   "odds": 78.4,
    "popularity": 12
   },
   {
@@ -362,8 +362,8 @@
     "field": 12,
     "popularity": 5
    },
-   "odds": 22.3,
-   "popularity": 9
+   "odds": 16.8,
+   "popularity": 7
   },
   {
    "race_id": "jra_20261114_福島_04",
@@ -383,7 +383,7 @@
     "field": 15,
     "popularity": 13
    },
-   "odds": 36.5,
+   "odds": 36.0,
    "popularity": 14
   },
   {
@@ -404,7 +404,7 @@
     "field": 12,
     "popularity": 1
    },
-   "odds": 9.5,
+   "odds": 8.7,
    "popularity": 4
   },
   {
@@ -425,8 +425,8 @@
     "field": 13,
     "popularity": 10
    },
-   "odds": 19.8,
-   "popularity": 7
+   "odds": 30.6,
+   "popularity": 12
   },
   {
    "race_id": "jra_20261114_福島_04",
@@ -446,8 +446,8 @@
     "field": 15,
     "popularity": 10
    },
-   "odds": 32.8,
-   "popularity": 12
+   "odds": 23.8,
+   "popularity": 10
   },
   {
    "race_id": "jra_20261114_福島_04",
@@ -467,7 +467,7 @@
     "field": 16,
     "popularity": 7
    },
-   "odds": 7.6,
+   "odds": 6.3,
    "popularity": 3
   },
   {
@@ -488,7 +488,7 @@
     "field": 16,
     "popularity": 3
    },
-   "odds": 36.1,
+   "odds": 39.3,
    "popularity": 10
   },
   {
@@ -509,7 +509,7 @@
     "field": 11,
     "popularity": 3
    },
-   "odds": 10.6,
+   "odds": 11.8,
    "popularity": 4
   },
   {
@@ -523,7 +523,7 @@
    "types": [
     "aitop"
    ],
-   "odds": 5.2,
+   "odds": 3.8,
    "popularity": 2
   },
   {
@@ -544,7 +544,7 @@
     "field": 6,
     "popularity": 5
    },
-   "odds": 1.5,
+   "odds": 2.2,
    "popularity": 1
   },
   {
@@ -565,7 +565,7 @@
     "field": 14,
     "popularity": 3
    },
-   "odds": 5.7,
+   "odds": 5.9,
    "popularity": 3
   },
   {
@@ -586,8 +586,8 @@
     "field": 18,
     "popularity": 7
    },
-   "odds": 21.1,
-   "popularity": 10
+   "odds": 21.5,
+   "popularity": 9
   },
   {
    "race_id": "jra_20261114_福島_06",
@@ -607,7 +607,7 @@
     "field": 16,
     "popularity": 1
    },
-   "odds": 6.3,
+   "odds": 6.9,
    "popularity": 4
   },
   {
@@ -628,15 +628,15 @@
     "field": 16,
     "popularity": 6
    },
-   "odds": 13.3,
-   "popularity": 6
+   "odds": 16.5,
+   "popularity": 8
   },
   {
    "race_id": "jra_20261114_福島_07",
    "results_key": "jra_03_07",
    "venue": "福島",
    "race_no": 7,
-   "post_time": "13:00",
+   "post_time": "13:01",
    "number": 2,
    "name": "サラサチャチャチャ",
    "types": [
@@ -651,14 +651,14 @@
     "popularity": 1
    },
    "odds": 7.5,
-   "popularity": 4
+   "popularity": 5
   },
   {
    "race_id": "jra_20261114_福島_07",
    "results_key": "jra_03_07",
    "venue": "福島",
    "race_no": 7,
-   "post_time": "13:00",
+   "post_time": "13:01",
    "number": 6,
    "name": "チュラビックタイム",
    "types": [
@@ -671,7 +671,7 @@
     "field": 11,
     "popularity": 11
    },
-   "odds": 154.9,
+   "odds": 111.4,
    "popularity": 15
   },
   {
@@ -679,7 +679,7 @@
    "results_key": "jra_03_07",
    "venue": "福島",
    "race_no": 7,
-   "post_time": "13:00",
+   "post_time": "13:01",
    "number": 13,
    "name": "オブシディアーナ",
    "types": [
@@ -692,7 +692,7 @@
     "field": 10,
     "popularity": 4
    },
-   "odds": 13.4,
+   "odds": 14.9,
    "popularity": 7
   },
   {
@@ -700,7 +700,7 @@
    "results_key": "jra_03_07",
    "venue": "福島",
    "race_no": 7,
-   "post_time": "13:00",
+   "post_time": "13:01",
    "number": 14,
    "name": "マテンロウゼロ",
    "types": [
@@ -713,7 +713,7 @@
     "field": 10,
     "popularity": 4
    },
-   "odds": 11.5,
+   "odds": 14.4,
    "popularity": 6
   },
   {
@@ -734,7 +734,7 @@
     "field": 10,
     "popularity": 1
    },
-   "odds": 2.0,
+   "odds": 1.7,
    "popularity": 1
   },
   {
@@ -755,7 +755,7 @@
     "field": 16,
     "popularity": 3
    },
-   "odds": 13.5,
+   "odds": 15.8,
    "popularity": 4
   },
   {
@@ -776,7 +776,7 @@
     "field": 16,
     "popularity": 7
    },
-   "odds": 21.9,
+   "odds": 22.7,
    "popularity": 6
   },
   {
@@ -797,8 +797,8 @@
     "field": 16,
     "popularity": 8
    },
-   "odds": 58.6,
-   "popularity": 13
+   "odds": 67.9,
+   "popularity": 14
   },
   {
    "race_id": "jra_20261114_東京_07",
@@ -818,8 +818,8 @@
     "field": 12,
     "popularity": 8
    },
-   "odds": 74.5,
-   "popularity": 16
+   "odds": 76.1,
+   "popularity": 15
   },
   {
    "race_id": "jra_20261114_東京_07",
@@ -839,7 +839,7 @@
     "field": 16,
     "popularity": 4
    },
-   "odds": 4.6,
+   "odds": 5.3,
    "popularity": 2
   },
   {
@@ -861,8 +861,8 @@
     "field": 16,
     "popularity": 2
    },
-   "odds": 34.3,
-   "popularity": 8
+   "odds": 30.7,
+   "popularity": 7
   },
   {
    "race_id": "jra_20261114_京都_07",
@@ -882,8 +882,8 @@
     "field": 14,
     "popularity": 1
    },
-   "odds": 58.0,
-   "popularity": 15
+   "odds": 45.7,
+   "popularity": 12
   },
   {
    "race_id": "jra_20261114_京都_07",
@@ -903,7 +903,7 @@
     "field": 11,
     "popularity": null
    },
-   "odds": 12.8,
+   "odds": 13.7,
    "popularity": 6
   },
   {
@@ -924,8 +924,8 @@
     "field": 16,
     "popularity": 9
    },
-   "odds": 16.1,
-   "popularity": 8
+   "odds": 16.2,
+   "popularity": 10
   },
   {
    "race_id": "jra_20261114_京都_07",
@@ -946,7 +946,7 @@
     "field": 16,
     "popularity": 7
    },
-   "odds": 37.2,
+   "odds": 34.5,
    "popularity": 11
   },
   {
@@ -967,7 +967,7 @@
     "field": 16,
     "popularity": 9
    },
-   "odds": 59.3,
+   "odds": 64.5,
    "popularity": 16
   },
   {
@@ -988,8 +988,8 @@
     "field": 12,
     "popularity": 3
    },
-   "odds": 17.5,
-   "popularity": 9
+   "odds": 15.1,
+   "popularity": 8
   },
   {
    "race_id": "jra_20261114_福島_08",
@@ -1009,7 +1009,7 @@
     "field": 12,
     "popularity": 6
    },
-   "odds": 5.3,
+   "odds": 6.0,
    "popularity": 1
   },
   {
@@ -1030,8 +1030,8 @@
     "field": 18,
     "popularity": 4
    },
-   "odds": 16.6,
-   "popularity": 10
+   "odds": 19.8,
+   "popularity": 11
   },
   {
    "race_id": "jra_20261114_福島_08",
@@ -1051,8 +1051,8 @@
     "field": 18,
     "popularity": 6
    },
-   "odds": 7.7,
-   "popularity": 3
+   "odds": 10.4,
+   "popularity": 6
   },
   {
    "race_id": "jra_20261114_福島_08",
@@ -1072,8 +1072,8 @@
     "field": 16,
     "popularity": 1
    },
-   "odds": 11.1,
-   "popularity": 5
+   "odds": 9.4,
+   "popularity": 4
   },
   {
    "race_id": "jra_20261114_福島_08",
@@ -1093,8 +1093,8 @@
     "field": 17,
     "popularity": 10
    },
-   "odds": 12.0,
-   "popularity": 7
+   "odds": 9.5,
+   "popularity": 5
   },
   {
    "race_id": "jra_20261114_福島_08",
@@ -1114,7 +1114,7 @@
     "field": 12,
     "popularity": 8
    },
-   "odds": 13.6,
+   "odds": 12.7,
    "popularity": 8
   },
   {
@@ -1135,7 +1135,7 @@
     "field": 14,
     "popularity": 4
    },
-   "odds": 15.3,
+   "odds": 16.1,
    "popularity": 9
   },
   {
@@ -1156,7 +1156,7 @@
     "field": 18,
     "popularity": 5
    },
-   "odds": 21.5,
+   "odds": 23.6,
    "popularity": 12
   },
   {
@@ -1177,7 +1177,7 @@
     "field": 8,
     "popularity": 5
    },
-   "odds": 47.3,
+   "odds": 41.7,
    "popularity": 11
   },
   {
@@ -1198,7 +1198,7 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": 33.4,
+   "odds": 24.7,
    "popularity": 9
   },
   {
@@ -1219,7 +1219,7 @@
     "field": 11,
     "popularity": 1
    },
-   "odds": 7.0,
+   "odds": 8.1,
    "popularity": 5
   },
   {
@@ -1240,8 +1240,8 @@
     "field": 12,
     "popularity": 4
    },
-   "odds": 43.7,
-   "popularity": 10
+   "odds": 24.2,
+   "popularity": 8
   },
   {
    "race_id": "jra_20261114_京都_08",
@@ -1261,8 +1261,8 @@
     "field": 12,
     "popularity": 4
    },
-   "odds": 7.5,
-   "popularity": 5
+   "odds": 6.8,
+   "popularity": 3
   },
   {
    "race_id": "jra_20261114_京都_08",
@@ -1283,7 +1283,7 @@
     "field": 13,
     "popularity": 9
    },
-   "odds": 17.0,
+   "odds": 13.8,
    "popularity": 7
   },
   {
@@ -1305,8 +1305,8 @@
     "field": 10,
     "popularity": 2
    },
-   "odds": 3.2,
-   "popularity": 2
+   "odds": 2.7,
+   "popularity": 1
   },
   {
    "race_id": "jra_20261114_福島_09",
@@ -1326,8 +1326,8 @@
     "field": 12,
     "popularity": null
    },
-   "odds": 44.2,
-   "popularity": 15
+   "odds": 43.2,
+   "popularity": 13
   },
   {
    "race_id": "jra_20261114_福島_09",
@@ -1347,7 +1347,7 @@
     "field": 18,
     "popularity": 7
    },
-   "odds": 19.6,
+   "odds": 17.8,
    "popularity": 10
   },
   {
@@ -1368,7 +1368,7 @@
     "field": 17,
     "popularity": 11
    },
-   "odds": 20.0,
+   "odds": 27.4,
    "popularity": 12
   },
   {
@@ -1389,7 +1389,7 @@
     "field": 14,
     "popularity": 10
    },
-   "odds": 10.5,
+   "odds": 10.6,
    "popularity": 5
   },
   {
@@ -1410,8 +1410,8 @@
     "field": 18,
     "popularity": 4
    },
-   "odds": 19.6,
-   "popularity": 10
+   "odds": 20.4,
+   "popularity": 11
   },
   {
    "race_id": "jra_20261114_東京_09",
@@ -1431,15 +1431,15 @@
     "field": 15,
     "popularity": 4
    },
-   "odds": 13.2,
-   "popularity": 6
+   "odds": 18.2,
+   "popularity": 10
   },
   {
    "race_id": "jra_20261114_京都_09",
    "results_key": "jra_08_09",
    "venue": "京都",
    "race_no": 9,
-   "post_time": "14:30",
+   "post_time": "14:31",
    "number": 1,
    "name": "ロフティストーリー",
    "types": [
@@ -1452,15 +1452,15 @@
     "field": 15,
     "popularity": 3
    },
-   "odds": 15.9,
-   "popularity": 9
+   "odds": 16.3,
+   "popularity": 10
   },
   {
    "race_id": "jra_20261114_京都_09",
    "results_key": "jra_08_09",
    "venue": "京都",
    "race_no": 9,
-   "post_time": "14:30",
+   "post_time": "14:31",
    "number": 2,
    "name": "ロカヒ",
    "types": [
@@ -1473,15 +1473,15 @@
     "field": 16,
     "popularity": 2
    },
-   "odds": 12.8,
-   "popularity": 7
+   "odds": 12.2,
+   "popularity": 8
   },
   {
    "race_id": "jra_20261114_京都_09",
    "results_key": "jra_08_09",
    "venue": "京都",
    "race_no": 9,
-   "post_time": "14:30",
+   "post_time": "14:31",
    "number": 4,
    "name": "タガノアバンドーネ",
    "types": [
@@ -1494,7 +1494,7 @@
     "field": 12,
     "popularity": 7
    },
-   "odds": 5.5,
+   "odds": 6.4,
    "popularity": 3
   },
   {
@@ -1502,7 +1502,7 @@
    "results_key": "jra_08_09",
    "venue": "京都",
    "race_no": 9,
-   "post_time": "14:30",
+   "post_time": "14:31",
    "number": 5,
    "name": "メイショウソウタ",
    "types": [
@@ -1515,15 +1515,15 @@
     "field": 11,
     "popularity": 10
    },
-   "odds": 16.2,
-   "popularity": 10
+   "odds": 14.0,
+   "popularity": 9
   },
   {
    "race_id": "jra_20261114_京都_09",
    "results_key": "jra_08_09",
    "venue": "京都",
    "race_no": 9,
-   "post_time": "14:30",
+   "post_time": "14:31",
    "number": 7,
    "name": "リベッチオ",
    "types": [
@@ -1536,7 +1536,7 @@
     "field": 13,
     "popularity": 3
    },
-   "odds": 6.6,
+   "odds": 7.6,
    "popularity": 4
   },
   {
@@ -1544,7 +1544,7 @@
    "results_key": "jra_08_09",
    "venue": "京都",
    "race_no": 9,
-   "post_time": "14:30",
+   "post_time": "14:31",
    "number": 9,
    "name": "キングブルー",
    "types": [
@@ -1558,8 +1558,8 @@
     "field": 16,
     "popularity": 9
    },
-   "odds": 13.1,
-   "popularity": 8
+   "odds": 11.7,
+   "popularity": 6
   },
   {
    "race_id": "202611140304160401",
@@ -1642,8 +1642,8 @@
     "field": 16,
     "popularity": 11
    },
-   "odds": 32.1,
-   "popularity": 12
+   "odds": 24.1,
+   "popularity": 11
   },
   {
    "race_id": "jra_20261114_福島_10",
@@ -1663,8 +1663,8 @@
     "field": 14,
     "popularity": 8
    },
-   "odds": 44.4,
-   "popularity": 14
+   "odds": 51.1,
+   "popularity": 15
   },
   {
    "race_id": "jra_20261114_福島_10",
@@ -1684,7 +1684,7 @@
     "field": 13,
     "popularity": 10
    },
-   "odds": 36.3,
+   "odds": 37.0,
    "popularity": 13
   },
   {
@@ -1706,8 +1706,8 @@
     "field": 15,
     "popularity": 3
    },
-   "odds": 10.4,
-   "popularity": 7
+   "odds": 9.4,
+   "popularity": 6
   },
   {
    "race_id": "jra_20261114_東京_10",
@@ -1728,8 +1728,8 @@
     "field": 9,
     "popularity": 3
    },
-   "odds": 17.4,
-   "popularity": 10
+   "odds": 19.3,
+   "popularity": 11
   },
   {
    "race_id": "jra_20261114_東京_10",
@@ -1749,7 +1749,7 @@
     "field": 18,
     "popularity": 2
    },
-   "odds": 12.1,
+   "odds": 11.4,
    "popularity": 5
   },
   {
@@ -1770,8 +1770,8 @@
     "field": 13,
     "popularity": 3
    },
-   "odds": 18.8,
-   "popularity": 11
+   "odds": 20.1,
+   "popularity": 12
   },
   {
    "race_id": "jra_20261114_東京_10",
@@ -1791,8 +1791,8 @@
     "field": 18,
     "popularity": 3
    },
-   "odds": 12.2,
-   "popularity": 6
+   "odds": 9.4,
+   "popularity": 4
   },
   {
    "race_id": "jra_20261114_京都_10",
@@ -1812,7 +1812,7 @@
     "field": 8,
     "popularity": 2
    },
-   "odds": 7.4,
+   "odds": 7.2,
    "popularity": 3
   },
   {
@@ -1834,8 +1834,8 @@
     "field": 14,
     "popularity": 1
    },
-   "odds": 7.9,
-   "popularity": 5
+   "odds": 7.8,
+   "popularity": 4
   },
   {
    "race_id": "jra_20261114_京都_10",
@@ -1855,8 +1855,8 @@
     "field": 14,
     "popularity": 3
    },
-   "odds": 9.0,
-   "popularity": 6
+   "odds": 12.2,
+   "popularity": 8
   },
   {
    "race_id": "jra_20261114_京都_10",
@@ -1876,7 +1876,7 @@
     "field": 16,
     "popularity": 11
    },
-   "odds": 21.8,
+   "odds": 23.9,
    "popularity": 10
   },
   {
@@ -1898,8 +1898,8 @@
     "field": 18,
     "popularity": 14
    },
-   "odds": 7.6,
-   "popularity": 4
+   "odds": 8.2,
+   "popularity": 5
   },
   {
    "race_id": "202611140304160402",
@@ -1940,8 +1940,8 @@
     "field": 13,
     "popularity": 4
    },
-   "odds": 32.9,
-   "popularity": 15
+   "odds": 23.5,
+   "popularity": 14
   },
   {
    "race_id": "jra_20261114_福島_11",
@@ -1961,7 +1961,7 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": 17.8,
+   "odds": 16.3,
    "popularity": 10
   },
   {
@@ -1982,8 +1982,8 @@
     "field": 12,
     "popularity": 6
    },
-   "odds": 15.0,
-   "popularity": 8
+   "odds": 14.9,
+   "popularity": 9
   },
   {
    "race_id": "jra_20261114_福島_11",
@@ -2003,8 +2003,8 @@
     "field": 11,
     "popularity": 1
    },
-   "odds": 10.7,
-   "popularity": 6
+   "odds": 9.3,
+   "popularity": 4
   },
   {
    "race_id": "jra_20261114_福島_11",
@@ -2024,7 +2024,7 @@
     "field": 12,
     "popularity": 7
    },
-   "odds": 25.7,
+   "odds": 21.5,
    "popularity": 13
   },
   {
@@ -2045,8 +2045,8 @@
     "field": 12,
     "popularity": 2
    },
-   "odds": 10.8,
-   "popularity": 7
+   "odds": 10.7,
+   "popularity": 6
   },
   {
    "race_id": "jra_20261114_福島_11",
@@ -2066,8 +2066,8 @@
     "field": 10,
     "popularity": 3
    },
-   "odds": 32.3,
-   "popularity": 14
+   "odds": 31.1,
+   "popularity": 15
   },
   {
    "race_id": "202611143230130401",
@@ -2108,7 +2108,7 @@
     "field": 14,
     "popularity": 8
    },
-   "odds": 30.0,
+   "odds": 31.2,
    "popularity": 12
   },
   {
@@ -2130,7 +2130,7 @@
     "field": 11,
     "popularity": 6
    },
-   "odds": 14.2,
+   "odds": 14.1,
    "popularity": 7
   },
   {
@@ -2151,8 +2151,8 @@
     "field": 14,
     "popularity": 1
    },
-   "odds": 4.8,
-   "popularity": 1
+   "odds": 4.5,
+   "popularity": 2
   },
   {
    "race_id": "jra_20261114_東京_11",
@@ -2173,7 +2173,7 @@
     "field": 16,
     "popularity": 2
    },
-   "odds": 11.0,
+   "odds": 12.2,
    "popularity": 6
   },
   {
@@ -2194,7 +2194,7 @@
     "field": 15,
     "popularity": 3
    },
-   "odds": 29.7,
+   "odds": 25.3,
    "popularity": 11
   },
   {
@@ -2257,7 +2257,7 @@
     "field": 10,
     "popularity": 4
    },
-   "odds": 17.4,
+   "odds": 18.5,
    "popularity": 8
   },
   {
@@ -2278,7 +2278,7 @@
     "field": 7,
     "popularity": 5
    },
-   "odds": 35.9,
+   "odds": 36.6,
    "popularity": 11
   },
   {
@@ -2299,7 +2299,7 @@
     "field": 10,
     "popularity": 9
    },
-   "odds": 20.3,
+   "odds": 23.8,
    "popularity": 10
   },
   {
@@ -2320,8 +2320,8 @@
     "field": 13,
     "popularity": 1
    },
-   "odds": 7.8,
-   "popularity": 4
+   "odds": 9.9,
+   "popularity": 5
   },
   {
    "race_id": "202611140304160403",
@@ -2454,7 +2454,7 @@
    "results_key": "jra_03_12",
    "venue": "福島",
    "race_no": 12,
-   "post_time": "16:00",
+   "post_time": "16:01",
    "number": 2,
    "name": "ニシノサリーナ",
    "types": [
@@ -2468,7 +2468,7 @@
     "field": 16,
     "popularity": 1
    },
-   "odds": 4.4,
+   "odds": 4.7,
    "popularity": 1
   },
   {
@@ -2476,7 +2476,7 @@
    "results_key": "jra_03_12",
    "venue": "福島",
    "race_no": 12,
-   "post_time": "16:00",
+   "post_time": "16:01",
    "number": 4,
    "name": "マーシーラン",
    "types": [
@@ -2489,7 +2489,7 @@
     "field": 17,
     "popularity": 5
    },
-   "odds": 8.7,
+   "odds": 10.2,
    "popularity": 4
   },
   {
@@ -2497,7 +2497,7 @@
    "results_key": "jra_03_12",
    "venue": "福島",
    "race_no": 12,
-   "post_time": "16:00",
+   "post_time": "16:01",
    "number": 8,
    "name": "アーブルラーブル",
    "types": [
@@ -2511,15 +2511,15 @@
     "field": 16,
     "popularity": 16
    },
-   "odds": 30.5,
-   "popularity": 12
+   "odds": 34.2,
+   "popularity": 13
   },
   {
    "race_id": "jra_20261114_福島_12",
    "results_key": "jra_03_12",
    "venue": "福島",
    "race_no": 12,
-   "post_time": "16:00",
+   "post_time": "16:01",
    "number": 9,
    "name": "タガノアルブラック",
    "types": [
@@ -2533,14 +2533,14 @@
     "popularity": null
    },
    "odds": 13.9,
-   "popularity": 6
+   "popularity": 8
   },
   {
    "race_id": "jra_20261114_福島_12",
    "results_key": "jra_03_12",
    "venue": "福島",
    "race_no": 12,
-   "post_time": "16:00",
+   "post_time": "16:01",
    "number": 14,
    "name": "ランプローグ",
    "types": [
@@ -2553,15 +2553,15 @@
     "field": 12,
     "popularity": 6
    },
-   "odds": 35.9,
-   "popularity": 13
+   "odds": 32.9,
+   "popularity": 12
   },
   {
    "race_id": "jra_20261114_福島_12",
    "results_key": "jra_03_12",
    "venue": "福島",
    "race_no": 12,
-   "post_time": "16:00",
+   "post_time": "16:01",
    "number": 15,
    "name": "トレヴィ",
    "types": [
@@ -2574,7 +2574,7 @@
     "field": 16,
     "popularity": 10
    },
-   "odds": 22.9,
+   "odds": 19.5,
    "popularity": 11
   },
   {
@@ -2595,8 +2595,8 @@
     "field": 13,
     "popularity": 1
    },
-   "odds": 4.1,
-   "popularity": 2
+   "odds": 5.8,
+   "popularity": 4
   },
   {
    "race_id": "jra_20261114_東京_12",
@@ -2616,29 +2616,8 @@
     "field": 7,
     "popularity": 5
    },
-   "odds": 22.9,
-   "popularity": 9
-  },
-  {
-   "race_id": "jra_20261114_東京_12",
-   "results_key": "jra_05_12",
-   "venue": "東京",
-   "race_no": 12,
-   "post_time": "16:10",
-   "number": 6,
-   "name": "ノビリシマビジョン",
-   "types": [
-    "letdown"
-   ],
-   "gap_days": 42,
-   "last": {
-    "date": "2026年10月3日",
-    "finish": 6,
-    "field": 12,
-    "popularity": 3
-   },
-   "odds": 7.1,
-   "popularity": 4
+   "odds": 28.7,
+   "popularity": 10
   },
   {
    "race_id": "jra_20261114_東京_12",
@@ -2659,7 +2638,7 @@
     "field": 9,
     "popularity": 2
    },
-   "odds": 11.2,
+   "odds": 16.3,
    "popularity": 6
   },
   {
@@ -2701,7 +2680,7 @@
     "field": 9,
     "popularity": 9
    },
-   "odds": 74.8,
+   "odds": 70.2,
    "popularity": 17
   },
   {
@@ -2722,8 +2701,8 @@
     "field": 18,
     "popularity": 6
    },
-   "odds": 9.9,
-   "popularity": 5
+   "odds": 14.5,
+   "popularity": 8
   },
   {
    "race_id": "jra_20261114_京都_12",
@@ -2743,8 +2722,8 @@
     "field": 14,
     "popularity": 2
    },
-   "odds": 15.3,
-   "popularity": 8
+   "odds": 12.5,
+   "popularity": 7
   },
   {
    "race_id": "jra_20261114_京都_12",
@@ -2764,8 +2743,8 @@
     "field": 9,
     "popularity": 5
    },
-   "odds": 23.8,
-   "popularity": 12
+   "odds": 20.8,
+   "popularity": 11
   },
   {
    "race_id": "jra_20261114_京都_12",
@@ -2785,7 +2764,7 @@
     "field": 16,
     "popularity": 15
    },
-   "odds": 41.6,
+   "odds": 54.3,
    "popularity": 16
   },
   {
@@ -2827,8 +2806,8 @@
     "field": 13,
     "popularity": 8
    },
-   "odds": 21.4,
-   "popularity": 11
+   "odds": 21.0,
+   "popularity": 12
   },
   {
    "race_id": "202611143230130403",
