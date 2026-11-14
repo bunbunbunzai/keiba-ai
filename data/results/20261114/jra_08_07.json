@@ -6,49 +6,159 @@
    "name": "キーンセンス",
    "time": "1:24.0",
    "margin": "",
-   "corners": "",
-   "last3f": null,
+   "corners": "3-2",
+   "last3f": 36.5,
    "popularity": 4
   },
   {
    "finish": "2",
    "number": 14,
    "name": "カフジクロミエ",
-   "time": "",
+   "time": "1:24.3",
    "margin": "１ 3/4",
-   "corners": "",
-   "last3f": null,
+   "corners": "5-4",
+   "last3f": 36.7,
    "popularity": 11
   },
   {
    "finish": "3",
    "number": 10,
    "name": "エブリデイ",
-   "time": "",
+   "time": "1:24.4",
    "margin": "１",
-   "corners": "",
-   "last3f": null,
+   "corners": "16-16",
+   "last3f": 35.7,
    "popularity": 6
   },
   {
    "finish": "4",
    "number": 4,
    "name": "エイシンティザー",
-   "time": "",
+   "time": "1:24.5",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "12-9",
+   "last3f": 36.3,
    "popularity": 3
   },
   {
    "finish": "5",
    "number": 6,
    "name": "モズジェネラル",
-   "time": "",
+   "time": "1:24.8",
    "margin": "２",
-   "corners": "",
-   "last3f": null,
+   "corners": "3-5",
+   "last3f": 37.3,
    "popularity": 5
+  },
+  {
+   "finish": "6",
+   "number": 11,
+   "name": "ツァレヴナ",
+   "time": "1:24.9",
+   "margin": "クビ",
+   "corners": "15-13",
+   "last3f": 36.5,
+   "popularity": 13
+  },
+  {
+   "finish": "7",
+   "number": 12,
+   "name": "フリッシュ",
+   "time": "1:24.9",
+   "margin": "アタマ",
+   "corners": "10-9",
+   "last3f": 36.8,
+   "popularity": 12
+  },
+  {
+   "finish": "8",
+   "number": 16,
+   "name": "ホウオウバローロ",
+   "time": "1:25.0",
+   "margin": "１／２",
+   "corners": "13-13",
+   "last3f": 36.7,
+   "popularity": 9
+  },
+  {
+   "finish": "9",
+   "number": 3,
+   "name": "ハグレジョー",
+   "time": "1:25.4",
+   "margin": "２ 1/2",
+   "corners": "10-11",
+   "last3f": 37.4,
+   "popularity": 1
+  },
+  {
+   "finish": "10",
+   "number": 5,
+   "name": "アクアアイ",
+   "time": "1:25.6",
+   "margin": "１",
+   "corners": "13-13",
+   "last3f": 37.4,
+   "popularity": 2
+  },
+  {
+   "finish": "11",
+   "number": 8,
+   "name": "ルーポ",
+   "time": "1:25.8",
+   "margin": "１",
+   "corners": "2-2",
+   "last3f": 38.5,
+   "popularity": 10
+  },
+  {
+   "finish": "12",
+   "number": 7,
+   "name": "バンダムソレール",
+   "time": "1:26.2",
+   "margin": "２ 1/2",
+   "corners": "6-5",
+   "last3f": 38.5,
+   "popularity": 14
+  },
+  {
+   "finish": "13",
+   "number": 1,
+   "name": "イッタレイッタレ",
+   "time": "1:26.6",
+   "margin": "２",
+   "corners": "6-7",
+   "last3f": 38.8,
+   "popularity": 8
+  },
+  {
+   "finish": "14",
+   "number": 13,
+   "name": "バロニアル",
+   "time": "1:26.8",
+   "margin": "１ 1/4",
+   "corners": "1-1",
+   "last3f": 39.7,
+   "popularity": 15
+  },
+  {
+   "finish": "15",
+   "number": 9,
+   "name": "リピース",
+   "time": "1:26.9",
+   "margin": "１／２",
+   "corners": "6-11",
+   "last3f": 39.1,
+   "popularity": 16
+  },
+  {
+   "finish": "16",
+   "number": 2,
+   "name": "ガルディエンヌ",
+   "time": "1:26.9",
+   "margin": "ハナ",
+   "corners": "9-7",
+   "last3f": 39.0,
+   "popularity": 7
   }
  ],
  "payouts": {
