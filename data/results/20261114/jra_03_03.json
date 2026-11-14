@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 14,
+   "name": "タケル",
+   "time": "1:10.1",
+   "margin": "",
+   "corners": "11-9",
+   "last3f": 35.0,
+   "popularity": 9
+  },
+  {
+   "finish": "2",
+   "number": 13,
+   "name": "アウアリイ",
+   "time": "1:10.1",
+   "margin": "クビ",
+   "corners": "4-3",
+   "last3f": 35.9,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "number": 10,
+   "name": "バックトゥザスター",
+   "time": "1:10.2",
+   "margin": "１／２",
+   "corners": "6-7",
+   "last3f": 35.9,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "number": 9,
+   "name": "ノーブルウィナー",
+   "time": "1:10.3",
+   "margin": "３／４",
+   "corners": "6-6",
+   "last3f": 36.0,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "number": 16,
+   "name": "ウインリスノアール",
+   "time": "1:10.3",
+   "margin": "アタマ",
+   "corners": "9-9",
+   "last3f": 35.7,
+   "popularity": 8
+  },
+  {
+   "finish": "6",
+   "number": 7,
+   "name": "シクラメン",
+   "time": "1:10.4",
+   "margin": "クビ",
+   "corners": "8-7",
+   "last3f": 35.9,
+   "popularity": 10
+  },
+  {
+   "finish": "7",
+   "number": 5,
+   "name": "リアシュアー",
+   "time": "1:10.4",
+   "margin": "クビ",
+   "corners": "1-1",
+   "last3f": 36.4,
+   "popularity": 7
+  },
+  {
+   "finish": "8",
+   "number": 8,
+   "name": "シュネーバレン",
+   "time": "1:10.5",
+   "margin": "クビ",
+   "corners": "2-2",
+   "last3f": 36.5,
+   "popularity": 5
+  },
+  {
+   "finish": "9",
+   "number": 15,
+   "name": "ミスターキリシマ",
+   "time": "1:10.8",
+   "margin": "１ 3/4",
+   "corners": "11-9",
+   "last3f": 35.8,
+   "popularity": 12
+  },
+  {
+   "finish": "10",
+   "number": 1,
+   "name": "ブルーリボン",
+   "time": "1:10.8",
+   "margin": "クビ",
+   "corners": "4-3",
+   "last3f": 36.6,
+   "popularity": 6
+  },
+  {
+   "finish": "11",
+   "number": 4,
+   "name": "スイトーヨ",
+   "time": "1:11.3",
+   "margin": "３",
+   "corners": "10-12",
+   "last3f": 36.5,
+   "popularity": 13
+  },
+  {
+   "finish": "12",
+   "number": 11,
+   "name": "ウルウノマーズ",
+   "time": "1:11.5",
+   "margin": "１ 1/2",
+   "corners": "13-13",
+   "last3f": 36.1,
+   "popularity": 16
+  },
+  {
+   "finish": "13",
+   "number": 12,
+   "name": "インペリアルライツ",
+   "time": "1:11.7",
+   "margin": "１ 1/4",
+   "corners": "2-3",
+   "last3f": 37.6,
+   "popularity": 1
+  },
+  {
+   "finish": "14",
+   "number": 3,
+   "name": "ドールアップ",
+   "time": "1:11.9",
+   "margin": "１ 1/4",
+   "corners": "14-15",
+   "last3f": 36.3,
+   "popularity": 14
+  },
+  {
+   "finish": "15",
+   "number": 6,
+   "name": "イサチルサリーレ",
+   "time": "1:12.5",
+   "margin": "３ 1/2",
+   "corners": "16-16",
+   "last3f": 36.6,
+   "popularity": 11
+  },
+  {
+   "finish": "16",
+   "number": 2,
+   "name": "ビシット",
+   "time": "1:13.4",
+   "margin": "５",
+   "corners": "14-13",
+   "last3f": 37.8,
+   "popularity": 15
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "14",
+    "yen": 2890,
+    "pop": 9
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "14",
+    "yen": 600,
+    "pop": 8
+   },
+   {
+    "combo": "13",
+    "yen": 180,
+    "pop": 2
+   },
+   {
+    "combo": "10",
+    "yen": 230,
+    "pop": 3
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "7-7",
+    "yen": 7230,
+    "pop": 21
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "13-14",
+    "yen": 1860,
+    "pop": 22
+   },
+   {
+    "combo": "10-14",
+    "yen": 3310,
+    "pop": 33
+   },
+   {
+    "combo": "10-13",
+    "yen": 620,
+    "pop": 4
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "13-14",
+    "yen": 5410,
+    "pop": 20
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "14-13",
+    "yen": 12730,
+    "pop": 42
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "10-13-14",
+    "yen": 11710,
+    "pop": 34
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "14-13-10",
+    "yen": 121400,
+    "pop": 345
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261114",
+ "venue_code": "03",
+ "race_no": 3,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603030320261114/1C",
+ "title": "レース結果 JRA"
+}
