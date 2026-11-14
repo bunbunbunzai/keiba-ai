@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 15,
+   "name": "キーンセンス",
+   "time": "1:24.0",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "2",
+   "number": 14,
+   "name": "カフジクロミエ",
+   "time": "",
+   "margin": "１ 3/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "3",
+   "number": 10,
+   "name": "エブリデイ",
+   "time": "",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "4",
+   "number": 4,
+   "name": "エイシンティザー",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "5",
+   "number": 6,
+   "name": "モズジェネラル",
+   "time": "",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "15",
+    "yen": 820,
+    "pop": 4
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "15",
+    "yen": 360,
+    "pop": 5
+   },
+   {
+    "combo": "14",
+    "yen": 770,
+    "pop": 10
+   },
+   {
+    "combo": "10",
+    "yen": 500,
+    "pop": 6
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "7-8",
+    "yen": 8230,
+    "pop": 19
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "14-15",
+    "yen": 4420,
+    "pop": 40
+   },
+   {
+    "combo": "10-15",
+    "yen": 2010,
+    "pop": 20
+   },
+   {
+    "combo": "10-14",
+    "yen": 5870,
+    "pop": 49
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "14-15",
+    "yen": 19460,
+    "pop": 39
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "15-14",
+    "yen": 30510,
+    "pop": 71
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "10-14-15",
+    "yen": 61970,
+    "pop": 140
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "15-14-10",
+    "yen": 292840,
+    "pop": 649
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261114",
+ "venue_code": "08",
+ "race_no": 7,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605030720261114/C4",
+ "title": "レース結果 JRA"
+}
