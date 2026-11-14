@@ -6,49 +6,159 @@
    "name": "ルヴァレドクール",
    "time": "1:35.3",
    "margin": "",
-   "corners": "",
-   "last3f": null,
+   "corners": "1-1",
+   "last3f": 36.1,
    "popularity": 5
   },
   {
    "finish": "2",
    "number": 1,
    "name": "ダノンフィーゴ",
-   "time": "",
+   "time": "1:35.3",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "11-11",
+   "last3f": 35.3,
    "popularity": 9
   },
   {
    "finish": "3",
    "number": 13,
    "name": "ライノ",
-   "time": "",
+   "time": "1:35.3",
    "margin": "ハナ",
-   "corners": "",
-   "last3f": null,
+   "corners": "2-2",
+   "last3f": 36.0,
    "popularity": 11
   },
   {
    "finish": "4",
    "number": 7,
    "name": "ヘニーガイスト",
-   "time": "",
+   "time": "1:35.4",
    "margin": "１／２",
-   "corners": "",
-   "last3f": null,
+   "corners": "4-4",
+   "last3f": 35.9,
    "popularity": 2
   },
   {
    "finish": "5",
    "number": 10,
    "name": "ジェイパームス",
-   "time": "",
+   "time": "1:35.5",
    "margin": "３／４",
-   "corners": "",
-   "last3f": null,
+   "corners": "12-11",
+   "last3f": 35.4,
    "popularity": 4
+  },
+  {
+   "finish": "6",
+   "number": 12,
+   "name": "ロックターミガン",
+   "time": "1:35.7",
+   "margin": "１",
+   "corners": "12-11",
+   "last3f": 35.6,
+   "popularity": 8
+  },
+  {
+   "finish": "7",
+   "number": 11,
+   "name": "ドンエレクトス",
+   "time": "1:35.8",
+   "margin": "１／２",
+   "corners": "2-2",
+   "last3f": 36.5,
+   "popularity": 3
+  },
+  {
+   "finish": "8",
+   "number": 3,
+   "name": "バトルクライ",
+   "time": "1:35.9",
+   "margin": "１／２",
+   "corners": "15-14",
+   "last3f": 35.5,
+   "popularity": 12
+  },
+  {
+   "finish": "9",
+   "number": 16,
+   "name": "ジャスティンアース",
+   "time": "1:35.9",
+   "margin": "クビ",
+   "corners": "4-4",
+   "last3f": 36.4,
+   "popularity": 10
+  },
+  {
+   "finish": "10",
+   "number": 4,
+   "name": "アピーリングルック",
+   "time": "1:35.9",
+   "margin": "ハナ",
+   "corners": "8-8",
+   "last3f": 36.1,
+   "popularity": 14
+  },
+  {
+   "finish": "11",
+   "number": 9,
+   "name": "トリリオンボーイ",
+   "time": "1:35.9",
+   "margin": "アタマ",
+   "corners": "16-16",
+   "last3f": 34.8,
+   "popularity": 13
+  },
+  {
+   "finish": "12",
+   "number": 2,
+   "name": "クールブロン",
+   "time": "1:36.0",
+   "margin": "１／２",
+   "corners": "9-8",
+   "last3f": 36.1,
+   "popularity": 15
+  },
+  {
+   "finish": "13",
+   "number": 14,
+   "name": "ハセドン",
+   "time": "1:36.1",
+   "margin": "１／２",
+   "corners": "12-14",
+   "last3f": 35.8,
+   "popularity": 16
+  },
+  {
+   "finish": "14",
+   "number": 5,
+   "name": "オメガギネス",
+   "time": "1:36.2",
+   "margin": "クビ",
+   "corners": "9-8",
+   "last3f": 36.3,
+   "popularity": 7
+  },
+  {
+   "finish": "15",
+   "number": 6,
+   "name": "ドンインザムード",
+   "time": "1:36.4",
+   "margin": "１ 1/2",
+   "corners": "6-4",
+   "last3f": 36.8,
+   "popularity": 1
+  },
+  {
+   "finish": "16",
+   "number": 8,
+   "name": "エンペラーワケア",
+   "time": "1:38.8",
+   "margin": "大差",
+   "corners": "6-4",
+   "last3f": 39.2,
+   "popularity": 6
   }
  ],
  "payouts": {
