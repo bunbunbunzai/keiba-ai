@@ -6,7 +6,7 @@
    "name": "トーセンマスラオ",
    "time": "2:01.6",
    "margin": "",
-   "corners": "",
+   "corners": "3-3-3-1",
    "last3f": null,
    "popularity": 1
   },
@@ -14,9 +14,9 @@
    "finish": "2",
    "number": 13,
    "name": "エクスマキナ",
-   "time": "",
+   "time": "2:02.0",
    "margin": "２ 1/2",
-   "corners": "",
+   "corners": "7-6-5-4",
    "last3f": null,
    "popularity": 4
   },
@@ -24,9 +24,9 @@
    "finish": "3",
    "number": 3,
    "name": "サンゴート",
-   "time": "",
+   "time": "2:02.4",
    "margin": "２ 1/2",
-   "corners": "",
+   "corners": "8-8-9-8",
    "last3f": null,
    "popularity": 16
   },
@@ -34,9 +34,9 @@
    "finish": "4",
    "number": 11,
    "name": "ダノンコレクト",
-   "time": "",
+   "time": "2:02.5",
    "margin": "１／２",
-   "corners": "",
+   "corners": "14-14-13-12",
    "last3f": null,
    "popularity": 3
   },
@@ -44,11 +44,121 @@
    "finish": "5",
    "number": 4,
    "name": "ウィールズアップ",
-   "time": "",
+   "time": "2:02.6",
    "margin": "クビ",
-   "corners": "",
+   "corners": "11-10-12-11",
    "last3f": null,
    "popularity": 9
+  },
+  {
+   "finish": "6",
+   "number": 2,
+   "name": "ジオロジー",
+   "time": "2:02.6",
+   "margin": "クビ",
+   "corners": "8-8-8-6",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "7",
+   "number": 9,
+   "name": "ムーンパッセ",
+   "time": "2:02.7",
+   "margin": "クビ",
+   "corners": "1-1-1-2",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "8",
+   "number": 14,
+   "name": "クレイターレイク",
+   "time": "2:02.7",
+   "margin": "クビ",
+   "corners": "10-10-9-8",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "9",
+   "number": 8,
+   "name": "ロクメイカン",
+   "time": "2:02.8",
+   "margin": "３／４",
+   "corners": "3-3-3-4",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "10",
+   "number": 1,
+   "name": "ジュエルシップ",
+   "time": "2:02.9",
+   "margin": "クビ",
+   "corners": "13-13-13-14",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "11",
+   "number": 7,
+   "name": "ステラルミノーザ",
+   "time": "2:03.0",
+   "margin": "１／２",
+   "corners": "15-15-15-15",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "12",
+   "number": 6,
+   "name": "シンヒダカムーン",
+   "time": "2:03.1",
+   "margin": "１／２",
+   "corners": "12-10-9-10",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "13",
+   "number": 5,
+   "name": "コスモノーチラス",
+   "time": "2:03.3",
+   "margin": "１ 1/2",
+   "corners": "16-16-15-15",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "14",
+   "number": 10,
+   "name": "クラオルグジェシダ",
+   "time": "2:03.4",
+   "margin": "１／２",
+   "corners": "2-2-2-2",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "15",
+   "number": 12,
+   "name": "ニシノカチオトコ",
+   "time": "2:03.7",
+   "margin": "１ 1/2",
+   "corners": "5-5-5-6",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "16",
+   "number": 16,
+   "name": "タピオラン",
+   "time": "2:05.2",
+   "margin": "９",
+   "corners": "5-6-5-12",
+   "last3f": null,
+   "popularity": 5
   }
  ],
  "payouts": {
