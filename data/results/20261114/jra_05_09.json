@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 13,
+   "name": "コスモストーム",
+   "time": "1:36.8",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "number": 11,
+   "name": "ウリズンベー",
+   "time": "",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "number": 5,
+   "name": "ファイアマン",
+   "time": "",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "number": 2,
+   "name": "ホレーショ",
+   "time": "",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "number": 14,
+   "name": "タイセイジェイド",
+   "time": "",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": null
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "13",
+    "yen": 400,
+    "pop": null
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "13",
+    "yen": 140,
+    "pop": null
+   },
+   {
+    "combo": "11",
+    "yen": 230,
+    "pop": null
+   },
+   {
+    "combo": "5",
+    "yen": 110,
+    "pop": null
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "7-8",
+    "yen": 1450,
+    "pop": null
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "11-13",
+    "yen": 630,
+    "pop": null
+   },
+   {
+    "combo": "5-13",
+    "yen": 210,
+    "pop": null
+   },
+   {
+    "combo": "5-11",
+    "yen": 590,
+    "pop": null
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "11-13",
+    "yen": 2300,
+    "pop": null
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "13-11",
+    "yen": 3970,
+    "pop": null
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "5-11-13",
+    "yen": 1670,
+    "pop": null
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "13-11-5",
+    "yen": 13270,
+    "pop": null
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261114",
+ "venue_code": "05",
+ "race_no": 9,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605030920261114/50",
+ "title": "レース結果 JRA"
+}
