@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 15,
+   "name": "ルヴァレドクール",
+   "time": "1:35.3",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "2",
+   "number": 1,
+   "name": "ダノンフィーゴ",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "3",
+   "number": 13,
+   "name": "ライノ",
+   "time": "",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "4",
+   "number": 7,
+   "name": "ヘニーガイスト",
+   "time": "",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "5",
+   "number": 10,
+   "name": "ジェイパームス",
+   "time": "",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "15",
+    "yen": 970,
+    "pop": 5
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "15",
+    "yen": 330,
+    "pop": 3
+   },
+   {
+    "combo": "1",
+    "yen": 670,
+    "pop": 8
+   },
+   {
+    "combo": "13",
+    "yen": 680,
+    "pop": 9
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-8",
+    "yen": 3970,
+    "pop": 16
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-15",
+    "yen": 3580,
+    "pop": 40
+   },
+   {
+    "combo": "13-15",
+    "yen": 2710,
+    "pop": 32
+   },
+   {
+    "combo": "1-13",
+    "yen": 5880,
+    "pop": 65
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-15",
+    "yen": 13120,
+    "pop": 42
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "15-1",
+    "yen": 23110,
+    "pop": 74
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-13-15",
+    "yen": 76460,
+    "pop": 195
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "15-1-13",
+    "yen": 441750,
+    "pop": 1088
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261114",
+ "venue_code": "05",
+ "race_no": 11,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605031120261114/FA",
+ "title": "レース結果 JRA"
+}
