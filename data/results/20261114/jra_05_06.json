@@ -1,0 +1,238 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 5,
+   "name": "カルメンソリス",
+   "time": "1:37.2",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "number": 2,
+   "name": "スプレマレイナ",
+   "time": "1:37.5",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "number": 10,
+   "name": "ディルッソ",
+   "time": "1:37.5",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "4",
+   "number": 1,
+   "name": "ニクスフィリア",
+   "time": "1:37.7",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "5",
+   "number": 11,
+   "name": "サウンドミュー",
+   "time": "1:37.7",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "6",
+   "number": 14,
+   "name": "ミズバショウ",
+   "time": "1:37.8",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "number": 3,
+   "name": "ルビーアテナ",
+   "time": "1:37.9",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "8",
+   "number": 9,
+   "name": "クレイン",
+   "time": "1:37.9",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "9",
+   "number": 13,
+   "name": "フジセイフウ",
+   "time": "1:38.6",
+   "margin": "４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "10",
+   "number": 8,
+   "name": "フェリシアマルス",
+   "time": "1:38.6",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "11",
+   "number": 15,
+   "name": "アシャカブリヤン",
+   "time": "1:38.7",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "12",
+   "number": 6,
+   "name": "サクラプレジャー",
+   "time": "1:38.9",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "13",
+   "number": 7,
+   "name": "フレンドクール",
+   "time": "1:39.1",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "14",
+   "number": 4,
+   "name": "リルヴィーラ",
+   "time": "1:39.3",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "15",
+   "number": 12,
+   "name": "ホウオウパンジー",
+   "time": "1:44.6",
+   "margin": "大差",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "5",
+    "yen": 670,
+    "pop": 2
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "5",
+    "yen": 180,
+    "pop": 3
+   },
+   {
+    "combo": "2",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "10",
+    "yen": 430,
+    "pop": 7
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-3",
+    "yen": 380,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-5",
+    "yen": 240,
+    "pop": 1
+   },
+   {
+    "combo": "5-10",
+    "yen": 1520,
+    "pop": 16
+   },
+   {
+    "combo": "2-10",
+    "yen": 700,
+    "pop": 6
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-5",
+    "yen": 480,
+    "pop": 1
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "5-2",
+    "yen": 1360,
+    "pop": 5
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-5-10",
+    "yen": 2200,
+    "pop": 6
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "5-2-10",
+    "yen": 13860,
+    "pop": 42
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261114",
+ "venue_code": "05",
+ "race_no": 6,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605030620261114/31",
+ "title": "レース結果 JRA"
+}
