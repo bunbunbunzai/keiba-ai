@@ -1,6 +1,6 @@
 {
  "date": "20261114",
- "updated": "2026-11-14 16:30",
+ "updated": "2026-11-14 16:36",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -3148,6 +3148,20 @@
    "venue": "佐賀",
    "race_no": 4,
    "post_time": "17:00",
+   "number": 1,
+   "name": "フォードテソーロ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 7.4,
+   "popularity": 4
+  },
+  {
+   "race_id": "202611143230130404",
+   "results_key": "202611143230130404",
+   "venue": "佐賀",
+   "race_no": 4,
+   "post_time": "17:00",
    "number": 8,
    "name": "コスモファルネーゼ",
    "types": [
@@ -3169,6 +3183,20 @@
    "venue": "帯広ば",
    "race_no": 6,
    "post_time": "17:25",
+   "number": 1,
+   "name": "フジゴーリキ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 16.6,
+   "popularity": 9
+  },
+  {
+   "race_id": "202611140304160406",
+   "results_key": "202611140304160406",
+   "venue": "帯広ば",
+   "race_no": 6,
+   "post_time": "17:25",
    "number": 2,
    "name": "マナザシ",
    "types": [
@@ -3181,7 +3209,7 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": 11.1,
+   "odds": 12.4,
    "popularity": 7
   },
   {
@@ -3202,7 +3230,7 @@
     "field": 10,
     "popularity": 2
    },
-   "odds": 18.5,
+   "odds": 18.7,
    "popularity": 10
   },
   {
@@ -3223,8 +3251,8 @@
     "field": 10,
     "popularity": 4
    },
-   "odds": 8.5,
-   "popularity": 6
+   "odds": 6.5,
+   "popularity": 3
   },
   {
    "race_id": "202611140304160406",
@@ -3244,8 +3272,22 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": 4.6,
-   "popularity": 1
+   "odds": 5.5,
+   "popularity": 2
+  },
+  {
+   "race_id": "202611143230130405",
+   "results_key": "202611143230130405",
+   "venue": "佐賀",
+   "race_no": 5,
+   "post_time": "17:35",
+   "number": 3,
+   "name": "スマイルフォレスト",
+   "types": [
+    "aitop"
+   ],
+   "odds": 17.8,
+   "popularity": 6
   },
   {
    "race_id": "202611143129100305",
@@ -3265,8 +3307,8 @@
     "field": 9,
     "popularity": 3
    },
-   "odds": 28.4,
-   "popularity": 9
+   "odds": 14.4,
+   "popularity": 7
   },
   {
    "race_id": "202611143129100305",
@@ -3287,8 +3329,8 @@
     "field": 11,
     "popularity": 2
    },
-   "odds": 8.7,
-   "popularity": 5
+   "odds": 6.6,
+   "popularity": 4
   },
   {
    "race_id": "202611143129100305",
@@ -3308,7 +3350,7 @@
     "field": 11,
     "popularity": 5
    },
-   "odds": 56.8,
+   "odds": 39.6,
    "popularity": 11
   },
   {
@@ -3329,7 +3371,21 @@
     "field": 10,
     "popularity": 9
    },
-   "odds": 13.4,
+   "odds": 15.0,
+   "popularity": 7
+  },
+  {
+   "race_id": "202611140304160407",
+   "results_key": "202611140304160407",
+   "venue": "帯広ば",
+   "race_no": 7,
+   "post_time": "17:55",
+   "number": 2,
+   "name": "カイセキングオー",
+   "types": [
+    "aitop"
+   ],
+   "odds": 13.0,
    "popularity": 6
   },
   {
