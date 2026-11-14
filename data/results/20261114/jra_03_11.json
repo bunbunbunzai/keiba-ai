@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 3,
+   "name": "アスタールフナ",
+   "time": "1:07.2",
+   "margin": "",
+   "corners": "3-4",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "2",
+   "number": 14,
+   "name": "サウスバンク",
+   "time": "1:07.4",
+   "margin": "１",
+   "corners": "3-3",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "3",
+   "number": 4,
+   "name": "タカネノハナコサン",
+   "time": "1:07.6",
+   "margin": "１ 1/2",
+   "corners": "2-2",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "4",
+   "number": 2,
+   "name": "ローズカリス",
+   "time": "1:07.6",
+   "margin": "アタマ",
+   "corners": "1-1",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "5",
+   "number": 7,
+   "name": "モリノセピア",
+   "time": "1:07.7",
+   "margin": "クビ",
+   "corners": "13-11",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "6",
+   "number": 12,
+   "name": "キーガッツ",
+   "time": "1:07.7",
+   "margin": "ハナ",
+   "corners": "10-8",
+   "last3f": null,
+   "popularity": 16
+  },
+  {
+   "finish": "7",
+   "number": 1,
+   "name": "モーゲンセン",
+   "time": "1:07.7",
+   "margin": "クビ",
+   "corners": "12-11",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "8",
+   "number": 6,
+   "name": "クロナ",
+   "time": "1:07.8",
+   "margin": "クビ",
+   "corners": "14-14",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "9",
+   "number": 9,
+   "name": "イリフィ",
+   "time": "1:07.8",
+   "margin": "アタマ",
+   "corners": "8-5",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "10",
+   "number": 15,
+   "name": "ワークソング",
+   "time": "1:07.9",
+   "margin": "１／２",
+   "corners": "15-14",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "11",
+   "number": 10,
+   "name": "ゴールデンバランス",
+   "time": "1:08.0",
+   "margin": "１",
+   "corners": "5-5",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "12",
+   "number": 8,
+   "name": "キャリーグレイス",
+   "time": "1:08.1",
+   "margin": "クビ",
+   "corners": "10-11",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "13",
+   "number": 13,
+   "name": "アイアムイチバン",
+   "time": "1:08.3",
+   "margin": "１ 1/2",
+   "corners": "9-8",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "14",
+   "number": 11,
+   "name": "ルージュアズライト",
+   "time": "1:08.4",
+   "margin": "１／２",
+   "corners": "6-5",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "15",
+   "number": 5,
+   "name": "ラストシャリナ",
+   "time": "1:08.7",
+   "margin": "１ 3/4",
+   "corners": "16-16",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "16",
+   "number": 16,
+   "name": "テセラリアン",
+   "time": "1:09.8",
+   "margin": "７",
+   "corners": "6-10",
+   "last3f": null,
+   "popularity": 15
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "3",
+    "yen": 1100,
+    "pop": 6
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "3",
+    "yen": 420,
+    "pop": 7
+   },
+   {
+    "combo": "14",
+    "yen": 410,
+    "pop": 6
+   },
+   {
+    "combo": "4",
+    "yen": 610,
+    "pop": 10
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-7",
+    "yen": 4220,
+    "pop": 27
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-14",
+    "yen": 3300,
+    "pop": 46
+   },
+   {
+    "combo": "3-4",
+    "yen": 2810,
+    "pop": 34
+   },
+   {
+    "combo": "4-14",
+    "yen": 9830,
+    "pop": 99
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-14",
+    "yen": 7990,
+    "pop": 32
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "3-14",
+    "yen": 16840,
+    "pop": 69
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-4-14",
+    "yen": 102050,
+    "pop": 327
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "3-14-4",
+    "yen": 618230,
+    "pop": 1919
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261114",
+ "venue_code": "03",
+ "race_no": 11,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603031120261114/04",
+ "title": "レース結果 JRA"
+}
