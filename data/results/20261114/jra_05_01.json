@@ -1,0 +1,228 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 1,
+   "name": "リアスブルー",
+   "time": "1:25.5",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "2",
+   "number": 10,
+   "name": "エコロブラン",
+   "time": "1:25.6",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "number": 13,
+   "name": "リーズメイリー",
+   "time": "1:25.9",
+   "margin": "１ 3/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "number": 9,
+   "name": "サラサハヤブサ",
+   "time": "1:26.3",
+   "margin": "２ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "number": 7,
+   "name": "ミヤルロワ",
+   "time": "1:26.3",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "6",
+   "number": 6,
+   "name": "ロイヤルグルーヴ",
+   "time": "1:26.4",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "7",
+   "number": 14,
+   "name": "オペレッタテソーロ",
+   "time": "1:26.7",
+   "margin": "１ 3/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "8",
+   "number": 3,
+   "name": "キャンディメモリー",
+   "time": "1:26.7",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "9",
+   "number": 11,
+   "name": "クアヒネ",
+   "time": "1:27.0",
+   "margin": "１ 3/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "10",
+   "number": 12,
+   "name": "ワンキャンパス",
+   "time": "1:27.1",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "11",
+   "number": 8,
+   "name": "ブルーグラビティ",
+   "time": "1:27.2",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "12",
+   "number": 2,
+   "name": "ラブシンフォニー",
+   "time": "1:27.3",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "13",
+   "number": 5,
+   "name": "ニューイヤーズベル",
+   "time": "1:27.9",
+   "margin": "４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "14",
+   "number": 4,
+   "name": "ダブルブロッサム",
+   "time": "1:28.3",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 14
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "1",
+    "yen": 1290,
+    "pop": 4
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "1",
+    "yen": 480,
+    "pop": 4
+   },
+   {
+    "combo": "10",
+    "yen": 240,
+    "pop": 2
+   },
+   {
+    "combo": "13",
+    "yen": 330,
+    "pop": 3
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-6",
+    "yen": 2210,
+    "pop": 7
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-10",
+    "yen": 650,
+    "pop": 5
+   },
+   {
+    "combo": "1-13",
+    "yen": 760,
+    "pop": 7
+   },
+   {
+    "combo": "10-13",
+    "yen": 340,
+    "pop": 3
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-10",
+    "yen": 2380,
+    "pop": 5
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "1-10",
+    "yen": 6580,
+    "pop": 16
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-10-13",
+    "yen": 2670,
+    "pop": 8
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "1-10-13",
+    "yen": 28940,
+    "pop": 73
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261114",
+ "venue_code": "05",
+ "race_no": 1,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605030120261114/A8",
+ "title": "レース結果 JRA"
+}
