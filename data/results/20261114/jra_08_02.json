@@ -6,49 +6,129 @@
    "name": "テムレーション",
    "time": "1:54.7",
    "margin": "",
-   "corners": "",
-   "last3f": null,
+   "corners": "3-3-2-2",
+   "last3f": 37.1,
    "popularity": 6
   },
   {
    "finish": "2",
    "number": 13,
    "name": "ハイウェイワン",
-   "time": "",
+   "time": "1:54.8",
    "margin": "３／４",
-   "corners": "",
-   "last3f": null,
+   "corners": "4-4-4-1",
+   "last3f": 37.0,
    "popularity": 3
   },
   {
    "finish": "3",
    "number": 9,
    "name": "サンライズジャポネ",
-   "time": "",
+   "time": "1:54.9",
    "margin": "１／２",
-   "corners": "",
-   "last3f": null,
+   "corners": "13-13-6-2",
+   "last3f": 36.9,
    "popularity": 2
   },
   {
    "finish": "4",
    "number": 2,
    "name": "ボビーザグレート",
-   "time": "",
+   "time": "1:55.5",
    "margin": "３ 1/2",
-   "corners": "",
-   "last3f": null,
+   "corners": "11-11-11-7",
+   "last3f": 37.3,
    "popularity": 4
   },
   {
    "finish": "5",
    "number": 4,
    "name": "カネトシブレイン",
-   "time": "",
+   "time": "1:55.5",
    "margin": "アタマ",
-   "corners": "",
-   "last3f": null,
+   "corners": "4-4-4-5",
+   "last3f": 37.7,
    "popularity": 1
+  },
+  {
+   "finish": "6",
+   "number": 11,
+   "name": "ダイユウエゾフジ",
+   "time": "1:56.4",
+   "margin": "５",
+   "corners": "9-9-6-5",
+   "last3f": 38.4,
+   "popularity": 7
+  },
+  {
+   "finish": "7",
+   "number": 3,
+   "name": "サンフォルティス",
+   "time": "1:57.0",
+   "margin": "４",
+   "corners": "6-6-10-10",
+   "last3f": 39.0,
+   "popularity": 13
+  },
+  {
+   "finish": "8",
+   "number": 12,
+   "name": "ドリームアムニス",
+   "time": "1:57.5",
+   "margin": "３",
+   "corners": "6-6-6-7",
+   "last3f": 39.5,
+   "popularity": 5
+  },
+  {
+   "finish": "9",
+   "number": 1,
+   "name": "スナークゴーギャン",
+   "time": "1:57.6",
+   "margin": "クビ",
+   "corners": "9-9-11-11",
+   "last3f": 39.3,
+   "popularity": 8
+  },
+  {
+   "finish": "10",
+   "number": 7,
+   "name": "テーオーフォアマン",
+   "time": "1:57.7",
+   "margin": "３／４",
+   "corners": "11-12-13-11",
+   "last3f": 39.1,
+   "popularity": 10
+  },
+  {
+   "finish": "11",
+   "number": 5,
+   "name": "キタノディレク",
+   "time": "1:57.9",
+   "margin": "３／４",
+   "corners": "1-1-1-4",
+   "last3f": 40.6,
+   "popularity": 12
+  },
+  {
+   "finish": "12",
+   "number": 8,
+   "name": "オーラムミーティア",
+   "time": "1:57.9",
+   "margin": "クビ",
+   "corners": "8-6-6-11",
+   "last3f": 39.9,
+   "popularity": 9
+  },
+  {
+   "finish": "13",
+   "number": 6,
+   "name": "アランチャ",
+   "time": "2:02.1",
+   "margin": "大差",
+   "corners": "2-2-2-7",
+   "last3f": 44.6,
+   "popularity": 11
   }
  ],
  "payouts": {
