@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261115",
  "race_id": "202611151106070101",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -67,7 +67,7 @@
    "name": "エヴァロン",
    "time": "52.5",
    "margin": "",
-   "pos4": null,
+   "pos4": 2,
    "last3f": null,
    "popularity": null
   },
@@ -78,7 +78,7 @@
    "name": "パフスリーブ",
    "time": "52.6",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 1,
    "last3f": null,
    "popularity": null
   },
@@ -89,7 +89,7 @@
    "name": "エムワンハールマキ",
    "time": "54.2",
    "margin": "１０",
-   "pos4": null,
+   "pos4": 3,
    "last3f": null,
    "popularity": null
   },
@@ -100,7 +100,7 @@
    "name": "ラブドラゴン",
    "time": "55.0",
    "margin": "５",
-   "pos4": null,
+   "pos4": 4,
    "last3f": null,
    "popularity": null
   },
@@ -111,7 +111,7 @@
    "name": "アインノワール",
    "time": "59.3",
    "margin": "大差",
-   "pos4": null,
+   "pos4": 5,
    "last3f": null,
    "popularity": null
   }
