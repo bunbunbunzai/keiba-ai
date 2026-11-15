@@ -7,48 +7,158 @@
    "time": "1:10.8",
    "margin": "",
    "corners": "6-5",
-   "last3f": null,
+   "last3f": 35.8,
    "popularity": 2
   },
   {
    "finish": "2",
    "number": 11,
    "name": "ダイユウルミナス",
-   "time": "",
+   "time": "1:10.8",
    "margin": "クビ",
    "corners": "10-8",
-   "last3f": null,
+   "last3f": 35.5,
    "popularity": 4
   },
   {
    "finish": "3",
    "number": 6,
    "name": "シヴィータス",
-   "time": "",
+   "time": "1:10.8",
    "margin": "クビ",
    "corners": "1-1",
-   "last3f": null,
+   "last3f": 36.2,
    "popularity": 1
   },
   {
    "finish": "4",
    "number": 16,
    "name": "レオプルミエール",
-   "time": "",
+   "time": "1:11.1",
    "margin": "１ 3/4",
    "corners": "13-12",
-   "last3f": null,
+   "last3f": 35.5,
    "popularity": 14
   },
   {
    "finish": "5",
    "number": 14,
    "name": "ディーズメンフィス",
-   "time": "",
+   "time": "1:11.2",
    "margin": "クビ",
    "corners": "4-2",
-   "last3f": null,
+   "last3f": 36.3,
    "popularity": 10
+  },
+  {
+   "finish": "6",
+   "number": 7,
+   "name": "ジェムシリカ",
+   "time": "1:11.2",
+   "margin": "アタマ",
+   "corners": "6-5",
+   "last3f": 36.2,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "number": 2,
+   "name": "サムハラ",
+   "time": "1:11.4",
+   "margin": "１",
+   "corners": "9-8",
+   "last3f": 36.2,
+   "popularity": 11
+  },
+  {
+   "finish": "8",
+   "number": 5,
+   "name": "マイネルステラート",
+   "time": "1:11.6",
+   "margin": "１ 1/2",
+   "corners": "2-2",
+   "last3f": 36.9,
+   "popularity": 9
+  },
+  {
+   "finish": "9",
+   "number": 1,
+   "name": "ジュエルドレーサー",
+   "time": "1:11.6",
+   "margin": "クビ",
+   "corners": "10-11",
+   "last3f": 36.3,
+   "popularity": 12
+  },
+  {
+   "finish": "10",
+   "number": 13,
+   "name": "キタノクニカラ",
+   "time": "1:11.7",
+   "margin": "クビ",
+   "corners": "16-14",
+   "last3f": 35.6,
+   "popularity": 13
+  },
+  {
+   "finish": "11",
+   "number": 10,
+   "name": "ゴールドパレード",
+   "time": "1:11.7",
+   "margin": "クビ",
+   "corners": "12-12",
+   "last3f": 36.3,
+   "popularity": 3
+  },
+  {
+   "finish": "12",
+   "number": 12,
+   "name": "ブライティアブーケ",
+   "time": "1:11.8",
+   "margin": "１／２",
+   "corners": "4-2",
+   "last3f": 36.9,
+   "popularity": 7
+  },
+  {
+   "finish": "13",
+   "number": 3,
+   "name": "サウンドファミリエ",
+   "time": "1:12.0",
+   "margin": "１",
+   "corners": "15-16",
+   "last3f": 36.2,
+   "popularity": 8
+  },
+  {
+   "finish": "14",
+   "number": 8,
+   "name": "ノアールビーナス",
+   "time": "1:12.1",
+   "margin": "１／２",
+   "corners": "13-14",
+   "last3f": 36.5,
+   "popularity": 6
+  },
+  {
+   "finish": "15",
+   "number": 9,
+   "name": "ハッピーダンシング",
+   "time": "1:12.7",
+   "margin": "３ 1/2",
+   "corners": "2-5",
+   "last3f": 38.0,
+   "popularity": 16
+  },
+  {
+   "finish": "16",
+   "number": 4,
+   "name": "ワタシイノッテマス",
+   "time": "1:12.9",
+   "margin": "１ 1/2",
+   "corners": "6-8",
+   "last3f": 37.9,
+   "popularity": 15
   }
  ],
  "payouts": {
