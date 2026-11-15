@@ -1,6 +1,6 @@
 {
  "date": "20261115",
- "updated": "2026-11-15 14:34",
+ "updated": "2026-11-15 14:43",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -2751,20 +2751,6 @@
    "venue": "水沢",
    "race_no": 7,
    "post_time": "15:20",
-   "number": 1,
-   "name": "デュアルロンド",
-   "types": [
-    "aitop"
-   ],
-   "odds": 5.2,
-   "popularity": 3
-  },
-  {
-   "race_id": "202611151106070107",
-   "results_key": "202611151106070107",
-   "venue": "水沢",
-   "race_no": 7,
-   "post_time": "15:20",
    "number": 2,
    "name": "ロバリアノキセキ",
    "types": [
@@ -2777,8 +2763,8 @@
     "field": 12,
     "popularity": 5
    },
-   "odds": 12.8,
-   "popularity": 6
+   "odds": 71.5,
+   "popularity": 7
   },
   {
    "race_id": "202611151106070107",
@@ -2798,8 +2784,8 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": 15.8,
-   "popularity": 7
+   "odds": 93.6,
+   "popularity": 8
   },
   {
    "race_id": "202611153129100402",
@@ -3010,7 +2996,7 @@
     "popularity": 3
    },
    "odds": 7.6,
-   "popularity": 4
+   "popularity": 5
   },
   {
    "race_id": "202611150304160503",
@@ -3030,7 +3016,7 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": 9.0,
+   "odds": 9.7,
    "popularity": 6
   },
   {
@@ -3044,7 +3030,7 @@
    "types": [
     "aitop"
    ],
-   "odds": 12.4,
+   "odds": 13.4,
    "popularity": 8
   },
   {
@@ -3066,7 +3052,7 @@
     "field": 10,
     "popularity": 3
    },
-   "odds": 11.0,
+   "odds": 11.9,
    "popularity": 7
   },
   {
