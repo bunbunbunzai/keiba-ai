@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 7,
+   "name": "ゴッドブルービー",
+   "time": "1:43.3",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "2",
+   "number": 15,
+   "name": "サンライズアリオン",
+   "time": "",
+   "margin": "２ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "3",
+   "number": 4,
+   "name": "スナークラファエロ",
+   "time": "",
+   "margin": "２ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "4",
+   "number": 3,
+   "name": "レヴォントゥレット",
+   "time": "",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "5",
+   "number": 5,
+   "name": "シンビリーブ",
+   "time": "",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "7",
+    "yen": 700,
+    "pop": 3
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "7",
+    "yen": 220,
+    "pop": 3
+   },
+   {
+    "combo": "15",
+    "yen": 1610,
+    "pop": 14
+   },
+   {
+    "combo": "4",
+    "yen": 340,
+    "pop": 6
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-8",
+    "yen": 980,
+    "pop": 4
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "7-15",
+    "yen": 6520,
+    "pop": 66
+   },
+   {
+    "combo": "4-7",
+    "yen": 1220,
+    "pop": 13
+   },
+   {
+    "combo": "4-15",
+    "yen": 10670,
+    "pop": 83
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "7-15",
+    "yen": 24670,
+    "pop": 63
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "7-15",
+    "yen": 39950,
+    "pop": 114
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-7-15",
+    "yen": 73440,
+    "pop": 208
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "7-15-4",
+    "yen": 590880,
+    "pop": 1378
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261115",
+ "venue_code": "03",
+ "race_no": 11,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603041120261115/34",
+ "title": "レース結果 JRA"
+}
