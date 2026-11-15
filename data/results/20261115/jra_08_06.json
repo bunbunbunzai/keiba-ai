@@ -6,49 +6,159 @@
    "name": "モスカテル",
    "time": "1:50.9",
    "margin": "",
-   "corners": "",
-   "last3f": null,
+   "corners": "2-2-2-2",
+   "last3f": 37.3,
    "popularity": 1
   },
   {
    "finish": "2",
    "number": 9,
    "name": "ナムラヒナギク",
-   "time": "",
+   "time": "1:51.3",
    "margin": "２",
-   "corners": "",
-   "last3f": null,
+   "corners": "3-3-2-3",
+   "last3f": 37.7,
    "popularity": 7
   },
   {
    "finish": "3",
    "number": 13,
    "name": "アキノビューティー",
-   "time": "",
+   "time": "1:51.4",
    "margin": "１／２",
-   "corners": "",
-   "last3f": null,
+   "corners": "8-8-7-6",
+   "last3f": 37.1,
    "popularity": 5
   },
   {
    "finish": "4",
    "number": 10,
    "name": "アーデルリーベ",
-   "time": "",
+   "time": "1:51.4",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "7-7-5-4",
+   "last3f": 37.4,
    "popularity": 3
   },
   {
    "finish": "5",
    "number": 7,
    "name": "レザーアンドレース",
-   "time": "",
+   "time": "1:51.7",
    "margin": "１ 1/2",
-   "corners": "",
-   "last3f": null,
+   "corners": "14-14-14-14",
+   "last3f": 36.9,
    "popularity": 8
+  },
+  {
+   "finish": "6",
+   "number": 3,
+   "name": "アリストクラシア",
+   "time": "1:51.9",
+   "margin": "１ 1/4",
+   "corners": "9-8-10-10",
+   "last3f": 37.5,
+   "popularity": 10
+  },
+  {
+   "finish": "7",
+   "number": 1,
+   "name": "クイーンズホリデー",
+   "time": "1:51.9",
+   "margin": "アタマ",
+   "corners": "1-1-1-1",
+   "last3f": 38.9,
+   "popularity": 11
+  },
+  {
+   "finish": "8",
+   "number": 6,
+   "name": "デルマサクラサク",
+   "time": "1:51.9",
+   "margin": "アタマ",
+   "corners": "12-11-13-12",
+   "last3f": 37.2,
+   "popularity": 9
+  },
+  {
+   "finish": "9",
+   "number": 5,
+   "name": "ウォーターエルピス",
+   "time": "1:52.0",
+   "margin": "１／２",
+   "corners": "10-8-7-6",
+   "last3f": 37.8,
+   "popularity": 14
+  },
+  {
+   "finish": "10",
+   "number": 15,
+   "name": "ガイラルディア",
+   "time": "1:52.2",
+   "margin": "１ 1/2",
+   "corners": "14-14-15-14",
+   "last3f": 37.2,
+   "popularity": 13
+  },
+  {
+   "finish": "11",
+   "number": 4,
+   "name": "バレンシア",
+   "time": "1:52.5",
+   "margin": "１ 1/2",
+   "corners": "5-5-7-9",
+   "last3f": 38.3,
+   "popularity": 12
+  },
+  {
+   "finish": "12",
+   "number": 12,
+   "name": "マリノエステーラ",
+   "time": "1:52.5",
+   "margin": "クビ",
+   "corners": "5-5-5-6",
+   "last3f": 38.5,
+   "popularity": 16
+  },
+  {
+   "finish": "13",
+   "number": 14,
+   "name": "シゲルオトヒメ",
+   "time": "1:52.8",
+   "margin": "１ 3/4",
+   "corners": "16-16-16-14",
+   "last3f": 37.7,
+   "popularity": 15
+  },
+  {
+   "finish": "14",
+   "number": 11,
+   "name": "イルカンダ",
+   "time": "1:52.8",
+   "margin": "クビ",
+   "corners": "3-3-4-4",
+   "last3f": 39.0,
+   "popularity": 4
+  },
+  {
+   "finish": "15",
+   "number": 16,
+   "name": "ヒメモモアスク",
+   "time": "1:53.0",
+   "margin": "３／４",
+   "corners": "13-13-10-10",
+   "last3f": 38.5,
+   "popularity": 6
+  },
+  {
+   "finish": "16",
+   "number": 8,
+   "name": "ティエラレイナ",
+   "time": "1:53.1",
+   "margin": "１／２",
+   "corners": "10-11-10-13",
+   "last3f": 38.5,
+   "popularity": 2
   }
  ],
  "payouts": {
