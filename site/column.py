@@ -455,6 +455,10 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
     pub = [c for c in cols if not c["draft"]]
     lastmod = {}
     autos_new = sorted((o for o in pub if o.get("auto") == "true"), key=lambda o: o.get("date", ""), reverse=True)
+    _tk = today_iso.replace("-", "")
+    # 重賞のデータ記事：これから行われるレースを日付の近い順に、終わったレースは新しい順に続ける
+    gdata_new = sorted((o for o in pub if o.get("series") == "gdata"),
+                       key=lambda o: ((0, o.get("race_date", "")) if o.get("race_date", "") >= _tk else (1, str(99999999 - int(o.get("race_date") or 0))), int(o.get("order") or 0)))
 
     def hero_c(c):
         if "_hero" not in c:
@@ -469,7 +473,7 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
     def similar(c, n):
         """タイトル・説明の似ている順（同じシリーズは少し優先）。特集と重賞の自動記事は除く。"""
         me = grams_c(c)
-        cands = [o for o in pub if o is not c and o.get("auto") != "true" and o.get("series") not in FEATURE_IDS + ("weekly",)]
+        cands = [o for o in pub if o is not c and o.get("auto") != "true" and o.get("series") not in FEATURE_IDS + ("weekly", "gdata")]
 
         def score(o):
             g = grams_c(o)
@@ -501,6 +505,11 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
         if auto_c:
             related = (rel_block("ほかの重賞の全頭診断", [o for o in autos_new if o is not c][:5], False)
                        + rel_block("競馬の基本を知る", similar(c, 4), True))
+        elif c.get("series") == "gdata":  # 重賞のデータ記事：同じレースの記事を先に、近く行われるほかの重賞を続ける
+            same = sorted((o for o in pub if o is not c and o.get("series") == "gdata" and o.get("race") == c.get("race")), key=lambda o: int(o.get("order") or 0))
+            near = [o for o in gdata_new if o.get("race") != c.get("race") and str(o.get("order")) == "1"][:6]
+            related = (rel_block(f"{c.get('race_name', 'このレース')}のデータ記事", same, False) + rel_block("ほかの重賞のデータ記事", near, False)
+                       + rel_block("最近の重賞の全頭診断", autos_new[:3], False))
         elif c.get("series") in FEATURE_IDS:  # 特集の記事は、同じ特集の記事を先に並べ、ほかの特集の入口（order 1）を続ける
             same = sorted((o for o in pub if o is not c and o.get("series") == c.get("series")), key=lambda o: int(o.get("order") or 0))
             others = [o for o in pub if o is not c and o.get("series") in FEATURE_IDS and o.get("series") != c.get("series") and str(o.get("order")) == "1"]
@@ -543,7 +552,7 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
                          head_extra=jsonld(ld) + jsonld(crumb), og_image=og_img))
         if not c["draft"]:
             lastmod[path] = today_iso
-    items = "".join(_li(c) for c in pub if c.get("auto") != "true" and c.get("series") not in ("weekly", "guide") + FEATURE_IDS)
+    items = "".join(_li(c) for c in pub if c.get("auto") != "true" and c.get("series") not in ("weekly", "guide", "gdata") + FEATURE_IDS)
     feat_items = ""
     jumps = []  # 一覧の上に並べる、各見出しへのジャンプ
     for sid, head, note in FEATURE_SERIES:
@@ -569,11 +578,28 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
         auto_items = ("<h2 id='zensou'>重賞の全頭診断（レースごと）</h2><p class='meta'>重賞ごとに、AIの印・評価点・想定勝率・買い目と、確定後の結果・回顧を1本の記事にしている。レース当日の昼までに公開。</p>"
                       f"<ul class='cols'>{auto_items}</ul>" + ("<p class='meta'>直近40本を表示。</p>" if len(autos_new) > 40 else ""))
         jumps.append(("zensou", "重賞の全頭診断"))
+    gdata_items = ""
+    if gdata_new:
+        races, seen = [], set()
+        for o in gdata_new:
+            if o.get("race") not in seen:
+                seen.add(o.get("race"))
+                races.append(o.get("race"))
+        blocks = ""
+        for rslug in races[:20]:
+            arts = [o for o in gdata_new if o.get("race") == rslug]
+            d = arts[0].get("race_date", "")
+            when = f"{int(d[4:6])}月{int(d[6:8])}日" if len(d) == 8 else ""
+            blocks += (f"<li><b>{esc(arts[0].get('race_name', ''))}</b>" + (f"（{when}）" if when else "") + "："
+                       + "・".join(f"<a href='/column/{o['slug']}/'>{esc({'kako10nen': '過去10年の結果', 'ninki-waku': '人気・枠順・脚質', 'nenrei-kishu': '年齢・騎手・厩舎'}.get(o.get('kind'), o.get('title', '')))}</a>" for o in arts) + "</li>")
+        gdata_items = ("<h2 id='gdata'>重賞の過去10年データ（レースごと）</h2><p class='meta'>JRAの重賞ごとに、過去10年の全着順（JRA公式の成績）から人気・枠順・脚質・年齢・騎手の傾向を集計している。レースの約2週間前に自動で公開する。</p>"
+                       f"<ul>{blocks}</ul>" + (f"<p class='meta'>日付の近い{min(20, len(races))}レースを表示。</p>" if len(races) > 20 else ""))
+        jumps.append(("gdata", "重賞の過去10年データ"))
     jump_html = ("<p class='jumpnav'>" + "".join(f"<a class='jn' href='#{k}'>{esc(t)}</a>" for k, t in jumps) + "</p>") if len(jumps) > 1 else ""
     write("/column/", page(f"競馬初心者向けコラム | {site_name}",
                            "<p class='crumb'><a href='/'>トップ</a> › コラム</p><h1>競馬初心者向けコラム</h1>" + __import__("build").banner("column") +
                            "<p class='answer'>馬券の種類や回収率の考え方などを、このサイトの全レースの記録（実データ）を使って解説する。数字は記録が増えるたびに自動で更新される。</p>"
-                           + jump_html + feat_items + guide_items + weekly_items + (f"<h2 id='data'>初心者向け・データ分析</h2><ul class='cols'>{items}</ul>" if items else "<p>準備中。</p>") + auto_items,
+                           + jump_html + feat_items + gdata_items + guide_items + weekly_items + (f"<h2 id='data'>初心者向け・データ分析</h2><ul class='cols'>{items}</ul>" if items else "<p>準備中。</p>") + auto_items,
                            "/column/", desc="競馬初心者向けに、馬券の種類・回収率・人気と勝率・トラックバイアスを、AI予想の全レースの実データで解説するコラム。",
                            noindex=not pub))
     if pub:

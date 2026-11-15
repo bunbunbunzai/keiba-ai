@@ -106,6 +106,30 @@ def feature_links() -> dict[str, tuple[str, str]]:
     return out
 
 
+_GDATA = None
+
+
+def gdata_notice(esc, slug: str) -> str:
+    """重賞ページに出す、そのレースの「過去10年データ記事」（columns の series: gdata）へのリンク。"""
+    global _GDATA
+    if _GDATA is None:
+        _GDATA = {}
+        try:
+            import column
+            for c in column.columns():
+                if not c["draft"] and c.get("series") == "gdata" and c.get("race"):
+                    _GDATA.setdefault(c["race"], []).append(c)
+        except Exception:  # noqa: BLE001
+            pass
+    arts = sorted(_GDATA.get(slug) or [], key=lambda c: int(c.get("order") or 0))
+    if not arts:
+        return ""
+    label = {"kako10nen": "過去10年の結果一覧", "ninki-waku": "人気・枠順・脚質の傾向", "nenrei-kishu": "年齢・性別・騎手・厩舎の傾向"}
+    return ("<section class='card'><h2>過去10年のデータ</h2><ul>"
+            + "".join(f"<li><a href='/column/{c['slug']}/'>{esc(label.get(c.get('kind'), c.get('title', '')))}</a></li>" for c in arts)
+            + "</ul><p class='meta'>JRA公式の全着順から集計した記事。</p></section>")
+
+
 def feature_notice(esc, name: str, links: dict) -> str:
     hit = links.get(name)
     if not hit:
@@ -207,7 +231,7 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
                 f"（{B.fmt_date(latest[0])}）。全頭の評価点・印・買い目と、確定後の的中・回収率を年ごとに記録している。")
         body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/graded/'>重賞</a> › {esc(name)}</p>"
                 f"<h1>{esc(name)} AI予想と傾向（{esc(g)}）</h1>{B.banner(_pic_banner(B, p0, d0), name)}<p class='answer'>{esc(lead)}</p>"
-                + feature_notice(esc, name, feats) + race_guide_html(B, slug) +
+                + feature_notice(esc, name, feats) + gdata_notice(esc, slug) + race_guide_html(B, slug) +
                 f"<section class='card'><h2>年ごとのAI予想と結果</h2><ul class='days'>{''.join(lis)}</ul></section>"
                 f"<p class='meta'>毎年このページに追加される。最新の予想はレース当日の昼（重賞は前日夜にも）公開。</p>")
         ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
@@ -227,7 +251,7 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
         path = f"/graded/{slug}/"
         body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/graded/'>重賞</a> › {esc(name)}</p>"
                 f"<h1>{esc(name)}の傾向とレースガイド（{esc(g)}）</h1><p class='answer'>{esc(gd.get('lead', ''))}</p>"
-                + feature_notice(esc, name, feats) + race_guide_html(B, slug, show_lead=not gd.get("lead"))
+                + feature_notice(esc, name, feats) + gdata_notice(esc, slug) + race_guide_html(B, slug, show_lead=not gd.get("lead"))
                 + "<p class='meta'>このレースのAI予想（全頭の評価点・印・買い目）は、レースの前日夜または当日昼にこのページに追加される。</p>")
         ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": B.SITE_NAME, "item": B.BASE_URL + "/"},
