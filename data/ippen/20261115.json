@@ -1,6 +1,6 @@
 {
  "date": "20261115",
- "updated": "2026-11-15 13:38",
+ "updated": "2026-11-15 13:43",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -2178,7 +2178,7 @@
     "field": 10,
     "popularity": 9
    },
-   "odds": 20.0,
+   "odds": 17.1,
    "popularity": 6
   },
   {
@@ -2199,7 +2199,7 @@
     "field": 12,
     "popularity": 12
    },
-   "odds": 3.4,
+   "odds": 3.5,
    "popularity": 2
   },
   {
@@ -2213,7 +2213,7 @@
    "types": [
     "aitop"
    ],
-   "odds": 3.4,
+   "odds": 3.5,
    "popularity": 2
   },
   {
@@ -2319,8 +2319,22 @@
     "field": 8,
     "popularity": 8
    },
-   "odds": null,
-   "popularity": null
+   "odds": 1.7,
+   "popularity": 1
+  },
+  {
+   "race_id": "202611150304160502",
+   "results_key": "202611150304160502",
+   "venue": "帯広ば",
+   "race_no": 2,
+   "post_time": "15:10",
+   "number": 6,
+   "name": "カワノネネチャン",
+   "types": [
+    "aitop"
+   ],
+   "odds": 11.7,
+   "popularity": 4
   },
   {
    "race_id": "202611150304160502",
@@ -2340,8 +2354,8 @@
     "field": 9,
     "popularity": 7
    },
-   "odds": null,
-   "popularity": null
+   "odds": 105.6,
+   "popularity": 9
   },
   {
    "race_id": "jra_20261115_福島_11",

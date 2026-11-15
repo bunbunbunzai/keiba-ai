@@ -1,0 +1,238 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 12,
+   "name": "リトセア",
+   "time": "1:08.1",
+   "margin": "",
+   "corners": "6-5",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "2",
+   "number": 13,
+   "name": "アパレイユ",
+   "time": "1:08.2",
+   "margin": "１／２",
+   "corners": "2-2",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "number": 11,
+   "name": "ブルーレース",
+   "time": "1:08.3",
+   "margin": "３／４",
+   "corners": "9-9",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "4",
+   "number": 2,
+   "name": "ミスヘンリー",
+   "time": "1:08.5",
+   "margin": "１ 1/2",
+   "corners": "9-5",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "number": 8,
+   "name": "ミッシオーネ",
+   "time": "1:08.8",
+   "margin": "１ 3/4",
+   "corners": "13-12",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "6",
+   "number": 3,
+   "name": "ペイシャクロス",
+   "time": "1:08.9",
+   "margin": "クビ",
+   "corners": "1-1",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "7",
+   "number": 7,
+   "name": "シュヴァルム",
+   "time": "1:09.0",
+   "margin": "１／２",
+   "corners": "12-11",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "8",
+   "number": 1,
+   "name": "パドゼフィール",
+   "time": "1:09.2",
+   "margin": "１ 1/4",
+   "corners": "3-3",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "9",
+   "number": 5,
+   "name": "クイーンレグナント",
+   "time": "1:09.2",
+   "margin": "クビ",
+   "corners": "6-9",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "10",
+   "number": 14,
+   "name": "リカード",
+   "time": "1:09.3",
+   "margin": "クビ",
+   "corners": "15-14",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "11",
+   "number": 15,
+   "name": "メモリーデイズ",
+   "time": "1:09.3",
+   "margin": "アタマ",
+   "corners": "3-3",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "12",
+   "number": 6,
+   "name": "カレンココナ",
+   "time": "1:09.5",
+   "margin": "１",
+   "corners": "3-5",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "13",
+   "number": 9,
+   "name": "オテンバムスメ",
+   "time": "1:09.7",
+   "margin": "１ 1/2",
+   "corners": "13-14",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "14",
+   "number": 4,
+   "name": "マジンタクシー",
+   "time": "1:09.9",
+   "margin": "３／４",
+   "corners": "6-5",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "15",
+   "number": 10,
+   "name": "シンガソング",
+   "time": "1:10.0",
+   "margin": "１／２",
+   "corners": "9-12",
+   "last3f": null,
+   "popularity": 12
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "12",
+    "yen": 1550,
+    "pop": 7
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "12",
+    "yen": 230,
+    "pop": 3
+   },
+   {
+    "combo": "13",
+    "yen": 160,
+    "pop": 2
+   },
+   {
+    "combo": "11",
+    "yen": 120,
+    "pop": 1
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "7-7",
+    "yen": 2360,
+    "pop": 11
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "12-13",
+    "yen": 850,
+    "pop": 11
+   },
+   {
+    "combo": "11-12",
+    "yen": 580,
+    "pop": 4
+   },
+   {
+    "combo": "11-13",
+    "yen": 290,
+    "pop": 1
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "12-13",
+    "yen": 2380,
+    "pop": 10
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "12-13",
+    "yen": 6150,
+    "pop": 22
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "11-12-13",
+    "yen": 2060,
+    "pop": 3
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "12-13-11",
+    "yen": 19680,
+    "pop": 38
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261115",
+ "venue_code": "03",
+ "race_no": 8,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603040820261115/D5",
+ "title": "レース結果 JRA"
+}
