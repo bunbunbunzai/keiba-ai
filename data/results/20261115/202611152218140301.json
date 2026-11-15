@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261115",
  "race_id": "202611152218140301",
- "tries": 5,
+ "tries": 6,
  "payouts": {
   "単勝": [
    {
@@ -77,7 +77,7 @@
    "name": "ハナイロマヒナ",
    "time": "1:31.1",
    "margin": "",
-   "pos4": null,
+   "pos4": 1,
    "last3f": 38.0,
    "popularity": null
   },
@@ -88,7 +88,7 @@
    "name": "アベニンマリア",
    "time": "1:32.2",
    "margin": "５",
-   "pos4": null,
+   "pos4": 2,
    "last3f": 39.2,
    "popularity": null
   },
@@ -99,7 +99,7 @@
    "name": "バーニングフレーム",
    "time": "1:32.5",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 2,
    "last3f": 39.1,
    "popularity": null
   },
@@ -110,7 +110,7 @@
    "name": "リュウノアーチスト",
    "time": "1:33.0",
    "margin": "２ １／２",
-   "pos4": null,
+   "pos4": 6,
    "last3f": 39.3,
    "popularity": null
   },
@@ -121,7 +121,7 @@
    "name": "ダイバーシティ",
    "time": "1:33.4",
    "margin": "２",
-   "pos4": null,
+   "pos4": 5,
    "last3f": 40.1,
    "popularity": null
   },
@@ -132,7 +132,7 @@
    "name": "ヨドノストーリー",
    "time": "1:33.4",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 6,
    "last3f": 39.6,
    "popularity": null
   },
@@ -143,7 +143,7 @@
    "name": "ペクトラル",
    "time": "1:33.6",
    "margin": "１",
-   "pos4": null,
+   "pos4": 4,
    "last3f": 40.5,
    "popularity": null
   },
@@ -154,7 +154,7 @@
    "name": "ウルダ",
    "time": "1:34.0",
    "margin": "２",
-   "pos4": null,
+   "pos4": 8,
    "last3f": 39.9,
    "popularity": null
   },
@@ -165,7 +165,7 @@
    "name": "フェスティヴイリス",
    "time": "1:34.6",
    "margin": "３",
-   "pos4": null,
+   "pos4": 9,
    "last3f": 40.4,
    "popularity": null
   }
