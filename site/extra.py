@@ -31,6 +31,19 @@ GRADED_SLUG = {
     "JBC2歳優駿": "jbc-2yo-yushun", "かしわ記念": "kashiwa-kinen", "川崎記念": "kawasaki-kinen",
     "全日本2歳優駿": "zen-nihon-2yo-yushun", "東京ダービー": "tokyo-derby", "ジャパンダートクラシック": "japan-dirt-classic",
     "南部杯": "nambu-hai", "マイルチャンピオンシップ南部杯": "nambu-hai",
+    # JRAのG2・G3・障害重賞（レースガイドの一覧に無いもの）
+    "CBC賞": "cbc-sho", "しらさぎステークス": "shirasagi-stakes", "アイルランドトロフィー": "ireland-trophy",
+    "アンタレスステークス": "antares-stakes", "エルムステークス": "elm-stakes", "キーンランドカップ": "keeneland-cup",
+    "クイーンステークス": "queen-stakes", "チャーチルダウンズカップ": "churchill-downs-cup", "マイラーズカップ": "milers-cup",
+    "マーメイドステークス": "mermaid-stakes", "ラジオNIKKEI賞": "radio-nikkei-sho", "レパードステークス": "leopard-stakes",
+    "中京2歳ステークス": "chukyo-2yo-stakes", "中京記念": "chukyo-kinen", "中山牝馬ステークス": "nakayama-himba-stakes",
+    "京都ジャンプステークス": "kyoto-jump-stakes", "京都ハイジャンプ": "kyoto-high-jump", "京都新聞杯": "kyoto-shimbun-hai",
+    "京都牝馬ステークス": "kyoto-himba-stakes", "京阪杯": "keihan-hai", "函館2歳ステークス": "hakodate-2yo-stakes",
+    "小倉サマージャンプ": "kokura-summer-jump", "小倉ジャンプステークス": "kokura-jump-stakes", "小倉牝馬ステークス": "kokura-himba-stakes",
+    "小倉記念": "kokura-kinen", "平安ステークス": "heian-stakes", "愛知杯": "aichi-hai", "新潟2歳ステークス": "niigata-2yo-stakes",
+    "新潟ジャンプステークス": "niigata-jump-stakes", "新潟大賞典": "niigata-daishoten", "東京ジャンプステークス": "tokyo-jump-stakes",
+    "東京ハイジャンプ": "tokyo-high-jump", "毎日杯": "mainichi-hai", "葵ステークス": "aoi-stakes", "阪急杯": "hankyu-hai",
+    "阪神ジャンプステークス": "hanshin-jump-stakes", "鳴尾記念": "naruo-kinen",
 }
 try:  # レースガイドの一覧の名前も、同じページに合流させる
     import sys as _sys

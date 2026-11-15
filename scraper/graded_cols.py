@@ -67,18 +67,21 @@ def load_all() -> dict[int, list[dict]]:
 
 def keyed(all_: dict[int, list[dict]]) -> dict[str, dict[int, dict]]:
     """レースを年をまたいで束ねる：{slug: {年: レース}}。slug は成績ページの正式名から決め、決まらないものは一覧の略称で束ねる。"""
+    def slug_of(r):
+        t = re.sub(r"\s+障害.*$", "", extra.clean_name(r.get("title") or ""))
+        s = extra.graded_slug(t, "x") if t else ""
+        return "" if not s or HASH_RE.search(s) else s
     by_abbr: dict[str, str] = {}
     for y in sorted(all_, reverse=True):
         for r in all_[y]:
-            s = r.get("slug") or ""
-            if s and not HASH_RE.search(s):
+            r["abbr"] = re.sub(r"^(?:新設)?重賞", "", r["abbr"])
+            s = slug_of(r)
+            if s:
                 by_abbr.setdefault(r["abbr"], s)
     out: dict[str, dict[int, dict]] = defaultdict(dict)
     for y, rs in all_.items():
         for r in rs:
-            s = r.get("slug") or ""
-            if not s or HASH_RE.search(s):
-                s = by_abbr.get(r["abbr"]) or extra.graded_slug(expand(r["abbr"]), "x")
+            s = slug_of(r) or by_abbr.get(r["abbr"]) or extra.graded_slug(expand(r["abbr"]), "x")
             if HASH_RE.search(s):
                 s = "abbr:" + r["abbr"]
             out[s][y] = r

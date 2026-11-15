@@ -83,7 +83,7 @@ def parse_list(html: str, year: int) -> list[dict]:
             a = cell.find("a")
             abbr = re.sub(r"\s*\(?(?:J\s*[・･.]?\s*)?G\s*(?:[ⅠⅡⅢ]|I{1,3}|[123])\)?\s*$", "", tx(a) if a and tx(a) else tx(cell)).strip()
             abbr = re.sub(r"^\(?(?:J\s*[・･.]?\s*)?G\s*(?:[ⅠⅡⅢ]|I{1,3}|[123])\)?\s*", "", abbr)  # 格が文字で先頭に付く行がある
-            abbr = re.sub(r"\s+", "", abbr)
+            abbr = re.sub(r"^(?:新設)?重賞", "", re.sub(r"\s+", "", abbr))
             course = tx(tds[idx["コース"]]) if idx["コース"] is not None else ""
             cm = re.search(r"(芝|ダ|障)\D*([\d,]+)", course)
             url = None

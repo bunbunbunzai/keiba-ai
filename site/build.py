@@ -2355,6 +2355,8 @@ def build() -> None:
     write("/privacy/", page(f"プライバシーポリシー | {SITE_NAME}", PRIVACY, "/privacy/", desc=f"{SITE_NAME}のプライバシーポリシー。アクセス解析・広告（Google AdSense）・アフィリエイト・お問い合わせ・全頭くんへの質問で扱う情報と、その使い方。"))
     today_iso = now.strftime("%Y-%m-%d")
     lastmod.update(column.build(write, page, jsonld, BASE_URL, SITE_NAME, STATS_FROM, today_iso))
+    for old, new in (("/graded/kyoto-5c5158c3/", "/graded/kyoto-jump-stakes/"), ("/column/kyoto-5c5158c3-2026/", "/column/kyoto-jump-stakes-2026/")):
+        write(old, redirect_page(new))  # 重賞ページの名前を付け直した分
     for old, new in (("results.html", "/results/"), ("about.html", "/about/")):
         (OUT / old).write_text(redirect_page(new), encoding="utf-8")
     social_page()
