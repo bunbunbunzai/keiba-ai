@@ -1,6 +1,6 @@
 {
  "date": "20261115",
- "updated": "2026-11-15 13:56",
+ "updated": "2026-11-15 14:05",
  "bias": {
   "福島ダ": {
    "judgement": "先行有利",
@@ -64,12 +64,13 @@
    "races": [
     1,
     4,
-    6
+    6,
+    8
    ],
-   "front_share": 0.83,
+   "front_share": 0.88,
    "inner_share": 0.5,
-   "outer_share": 0.33,
-   "horses": 6
+   "outer_share": 0.38,
+   "horses": 8
   },
   "京都芝": {
    "judgement": "フラット",
