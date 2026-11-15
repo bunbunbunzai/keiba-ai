@@ -1,6 +1,6 @@
 {
  "date": "20261115",
- "updated": "2026-11-15 12:23",
+ "updated": "2026-11-15 12:27",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1616,8 +1616,8 @@
     "field": 8,
     "popularity": 4
    },
-   "odds": null,
-   "popularity": null
+   "odds": 11.0,
+   "popularity": 4
   },
   {
    "race_id": "202611152218140302",
@@ -1637,8 +1637,8 @@
     "field": 8,
     "popularity": 8
    },
-   "odds": null,
-   "popularity": null
+   "odds": 14.6,
+   "popularity": 5
   },
   {
    "race_id": "jra_20261115_福島_09",
@@ -1849,6 +1849,20 @@
     "popularity": 3
    },
    "odds": 12.1,
+   "popularity": 5
+  },
+  {
+   "race_id": "jra_20261115_京都_09",
+   "results_key": "jra_08_09",
+   "venue": "京都",
+   "race_no": 9,
+   "post_time": "14:20",
+   "number": 5,
+   "name": "マンナット",
+   "types": [
+    "aitop"
+   ],
+   "odds": 7.5,
    "popularity": 5
   },
   {
@@ -3264,6 +3278,20 @@
    },
    "odds": 19.1,
    "popularity": 10
+  },
+  {
+   "race_id": "jra_20261115_福島_12",
+   "results_key": "jra_03_12",
+   "venue": "福島",
+   "race_no": 12,
+   "post_time": "15:55",
+   "number": 15,
+   "name": "ミッドセンチュリー",
+   "types": [
+    "aitop"
+   ],
+   "odds": 10.5,
+   "popularity": 6
   },
   {
    "race_id": "jra_20261115_福島_12",
