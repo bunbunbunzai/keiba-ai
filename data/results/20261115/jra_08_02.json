@@ -1,0 +1,208 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 4,
+   "name": "ジーティーハルカゼ",
+   "time": "1:35.1",
+   "margin": "",
+   "corners": "1-1",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "2",
+   "number": 2,
+   "name": "リーベラーリア",
+   "time": "1:35.1",
+   "margin": "ハナ",
+   "corners": "2-2",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "number": 10,
+   "name": "シャトンダンス",
+   "time": "1:35.7",
+   "margin": "３ 1/2",
+   "corners": "10-10",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "4",
+   "number": 12,
+   "name": "ポネンテ",
+   "time": "1:35.8",
+   "margin": "１",
+   "corners": "7-8",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "5",
+   "number": 1,
+   "name": "アレオクール",
+   "time": "1:35.9",
+   "margin": "アタマ",
+   "corners": "2-2",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "6",
+   "number": 6,
+   "name": "マイヴェール",
+   "time": "1:36.1",
+   "margin": "１ 1/4",
+   "corners": "7-6",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "7",
+   "number": 3,
+   "name": "ディスクレタメンテ",
+   "time": "1:36.1",
+   "margin": "クビ",
+   "corners": "7-8",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "8",
+   "number": 7,
+   "name": "スクールディーヴァ",
+   "time": "1:36.3",
+   "margin": "１ 1/4",
+   "corners": "5-4",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "9",
+   "number": 8,
+   "name": "コパノマハロ",
+   "time": "1:36.4",
+   "margin": "３／４",
+   "corners": "11-11",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "10",
+   "number": 9,
+   "name": "ラストフィールド",
+   "time": "1:37.4",
+   "margin": "６",
+   "corners": "12-12",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "11",
+   "number": 11,
+   "name": "オールインアスク",
+   "time": "1:37.5",
+   "margin": "１",
+   "corners": "6-6",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "12",
+   "number": 5,
+   "name": "メイショウノゾミ",
+   "time": "1:38.3",
+   "margin": "５",
+   "corners": "4-4",
+   "last3f": null,
+   "popularity": 10
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "4",
+    "yen": 1310,
+    "pop": 5
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "4",
+    "yen": 280,
+    "pop": 5
+   },
+   {
+    "combo": "2",
+    "yen": 130,
+    "pop": 1
+   },
+   {
+    "combo": "10",
+    "yen": 200,
+    "pop": 4
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-4",
+    "yen": 1500,
+    "pop": 5
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-4",
+    "yen": 610,
+    "pop": 8
+   },
+   {
+    "combo": "4-10",
+    "yen": 1100,
+    "pop": 16
+   },
+   {
+    "combo": "2-10",
+    "yen": 370,
+    "pop": 3
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-4",
+    "yen": 1560,
+    "pop": 7
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "4-2",
+    "yen": 3990,
+    "pop": 16
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-4-10",
+    "yen": 2990,
+    "pop": 10
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "4-2-10",
+    "yen": 22410,
+    "pop": 80
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261115",
+ "venue_code": "08",
+ "race_no": 2,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605040220261115/6B",
+ "title": "レース結果 JRA"
+}
