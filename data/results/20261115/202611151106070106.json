@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261115",
  "race_id": "202611151106070106",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -67,7 +67,7 @@
    "name": "リュウノマッスル",
    "time": "1:43.4",
    "margin": "",
-   "pos4": null,
+   "pos4": 1,
    "last3f": null,
    "popularity": null
   },
@@ -78,7 +78,7 @@
    "name": "ユウユウジュレップ",
    "time": "1:44.3",
    "margin": "６",
-   "pos4": null,
+   "pos4": 2,
    "last3f": null,
    "popularity": null
   },
@@ -89,7 +89,7 @@
    "name": "ミズサンウィズダム",
    "time": "1:44.4",
    "margin": "１／２",
-   "pos4": null,
+   "pos4": 3,
    "last3f": null,
    "popularity": null
   },
@@ -100,7 +100,7 @@
    "name": "ニムロッド",
    "time": "1:45.7",
    "margin": "８",
-   "pos4": null,
+   "pos4": 3,
    "last3f": null,
    "popularity": null
   },
@@ -111,7 +111,7 @@
    "name": "ミリオンジュピター",
    "time": "1:46.6",
    "margin": "６",
-   "pos4": null,
+   "pos4": 5,
    "last3f": null,
    "popularity": null
   },
@@ -122,7 +122,7 @@
    "name": "アルヴェルナ",
    "time": "1:48.6",
    "margin": "大差",
-   "pos4": null,
+   "pos4": 6,
    "last3f": null,
    "popularity": null
   },
@@ -133,7 +133,7 @@
    "name": "ヒルダズトルーパー",
    "time": "1:48.9",
    "margin": "２",
-   "pos4": null,
+   "pos4": 7,
    "last3f": null,
    "popularity": null
   }
