@@ -1,6 +1,6 @@
 {
  "date": "20261115",
- "updated": "2026-11-15 17:06",
+ "updated": "2026-11-15 17:10",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -4584,6 +4584,20 @@
    "venue": "高知",
    "race_no": 8,
    "post_time": "18:40",
+   "number": 8,
+   "name": "ツマヤ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 6.4,
+   "popularity": 4
+  },
+  {
+   "race_id": "202611153129100408",
+   "results_key": "202611153129100408",
+   "venue": "高知",
+   "race_no": 8,
+   "post_time": "18:40",
    "number": 10,
    "name": "セキショウイダイ",
    "types": [
@@ -4900,6 +4914,20 @@
    "venue": "高知",
    "race_no": 10,
    "post_time": "19:45",
+   "number": 8,
+   "name": "ジーティーハッピー",
+   "types": [
+    "aitop"
+   ],
+   "odds": 24.8,
+   "popularity": 7
+  },
+  {
+   "race_id": "202611153129100410",
+   "results_key": "202611153129100410",
+   "venue": "高知",
+   "race_no": 10,
+   "post_time": "19:45",
    "number": 9,
    "name": "イルヴェント",
    "types": [
@@ -4956,6 +4984,20 @@
    },
    "odds": 18.8,
    "popularity": 7
+  },
+  {
+   "race_id": "202611153230130510",
+   "results_key": "202611153230130510",
+   "venue": "佐賀",
+   "race_no": 10,
+   "post_time": "20:10",
+   "number": 3,
+   "name": "レミギノテソーロ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 15.0,
+   "popularity": 6
   },
   {
    "race_id": "202611153230130510",
@@ -5041,6 +5083,20 @@
    },
    "odds": 1.0,
    "popularity": 1
+  },
+  {
+   "race_id": "202611150304160512",
+   "results_key": "202611150304160512",
+   "venue": "帯広ば",
+   "race_no": 12,
+   "post_time": "20:30",
+   "number": 8,
+   "name": "コトブキラベンダー",
+   "types": [
+    "aitop"
+   ],
+   "odds": 56.0,
+   "popularity": 4
   },
   {
    "race_id": "202611153129100412",
