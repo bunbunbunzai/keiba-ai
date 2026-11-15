@@ -6,49 +6,159 @@
    "name": "エコロメジャー",
    "time": "1:09.2",
    "margin": "",
-   "corners": "",
-   "last3f": null,
+   "corners": "7-5",
+   "last3f": 37.0,
    "popularity": 1
   },
   {
    "finish": "2",
    "number": 5,
    "name": "ポッドハンター",
-   "time": "",
+   "time": "1:09.3",
    "margin": "１／２",
-   "corners": "",
-   "last3f": null,
+   "corners": "1-1",
+   "last3f": 37.7,
    "popularity": 9
   },
   {
    "finish": "3",
    "number": 7,
    "name": "クリスタルシャイン",
-   "time": "",
+   "time": "1:09.4",
    "margin": "１ 1/4",
-   "corners": "",
-   "last3f": null,
+   "corners": "9-8",
+   "last3f": 37.1,
    "popularity": 2
   },
   {
    "finish": "4",
    "number": 11,
    "name": "ビーテリオス",
-   "time": "",
+   "time": "1:09.6",
    "margin": "１ 1/4",
-   "corners": "",
-   "last3f": null,
+   "corners": "2-2",
+   "last3f": 37.9,
    "popularity": 4
   },
   {
    "finish": "5",
    "number": 12,
    "name": "アーバーバイティ",
-   "time": "",
+   "time": "1:09.7",
    "margin": "３／４",
-   "corners": "",
-   "last3f": null,
+   "corners": "2-3",
+   "last3f": 38.0,
    "popularity": 6
+  },
+  {
+   "finish": "6",
+   "number": 1,
+   "name": "シュネルアステリア",
+   "time": "1:10.1",
+   "margin": "２ 1/2",
+   "corners": "4-4",
+   "last3f": 38.2,
+   "popularity": 8
+  },
+  {
+   "finish": "7",
+   "number": 16,
+   "name": "サザンヴィターレ",
+   "time": "1:10.3",
+   "margin": "１ 1/4",
+   "corners": "10-10",
+   "last3f": 37.8,
+   "popularity": 7
+  },
+  {
+   "finish": "8",
+   "number": 13,
+   "name": "プリンセスロッティ",
+   "time": "1:10.4",
+   "margin": "１／２",
+   "corners": "4-5",
+   "last3f": 38.5,
+   "popularity": 12
+  },
+  {
+   "finish": "9",
+   "number": 9,
+   "name": "スペシャルサンクス",
+   "time": "1:10.5",
+   "margin": "クビ",
+   "corners": "6-7",
+   "last3f": 38.5,
+   "popularity": 5
+  },
+  {
+   "finish": "10",
+   "number": 14,
+   "name": "アマンドショコラ",
+   "time": "1:10.6",
+   "margin": "３／４",
+   "corners": "14-14",
+   "last3f": 37.0,
+   "popularity": 13
+  },
+  {
+   "finish": "11",
+   "number": 2,
+   "name": "アップルザビート",
+   "time": "1:11.0",
+   "margin": "２ 1/2",
+   "corners": "11-11",
+   "last3f": 38.4,
+   "popularity": 14
+  },
+  {
+   "finish": "12",
+   "number": 10,
+   "name": "ピコジャック",
+   "time": "1:11.0",
+   "margin": "クビ",
+   "corners": "7-8",
+   "last3f": 38.8,
+   "popularity": 3
+  },
+  {
+   "finish": "13",
+   "number": 4,
+   "name": "エマーソンズ",
+   "time": "1:11.5",
+   "margin": "３",
+   "corners": "15-15",
+   "last3f": 37.6,
+   "popularity": 11
+  },
+  {
+   "finish": "14",
+   "number": 3,
+   "name": "マリノミステリアス",
+   "time": "1:11.7",
+   "margin": "３／４",
+   "corners": "13-13",
+   "last3f": 38.4,
+   "popularity": 15
+  },
+  {
+   "finish": "15",
+   "number": 6,
+   "name": "アプリコットスカイ",
+   "time": "1:12.2",
+   "margin": "３",
+   "corners": "11-12",
+   "last3f": 39.6,
+   "popularity": 16
+  },
+  {
+   "finish": "16",
+   "number": 15,
+   "name": "ラブジェンヌ",
+   "time": "1:14.4",
+   "margin": "大差",
+   "corners": "16-16",
+   "last3f": 39.7,
+   "popularity": 10
   }
  ],
  "payouts": {
