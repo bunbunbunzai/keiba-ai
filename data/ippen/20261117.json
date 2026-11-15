@@ -1,11 +1,1717 @@
 {
  "date": "20261117",
- "updated": "2026-11-16 01:34",
+ "updated": "2026-11-16 02:13",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
   "letdown": "前走で人気を裏切った人気薄",
   "aitop": "AIの評価点1位（◎ではない馬）"
  },
- "horses": []
+ "horses": [
+  {
+   "race_id": "202611171106070301",
+   "results_key": "202611171106070301",
+   "venue": "水沢",
+   "race_no": 1,
+   "post_time": "11:35",
+   "number": 1,
+   "name": "ポルテボヌール",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 8,
+   "last": {
+    "date": "2026-11-09",
+    "finish": 12,
+    "field": 12,
+    "popularity": 7
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611171106070301",
+   "results_key": "202611171106070301",
+   "venue": "水沢",
+   "race_no": 1,
+   "post_time": "11:35",
+   "number": 3,
+   "name": "アッセクシー",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 13,
+   "last": {
+    "date": "2026-11-04",
+    "finish": 7,
+    "field": 9,
+    "popularity": 6
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611171106070301",
+   "results_key": "202611171106070301",
+   "venue": "水沢",
+   "race_no": 1,
+   "post_time": "11:35",
+   "number": 4,
+   "name": "スーパーハイウェイ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 7,
+   "last": {
+    "date": "2026-11-10",
+    "finish": 6,
+    "field": 7,
+    "popularity": 1
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611171106070301",
+   "results_key": "202611171106070301",
+   "venue": "水沢",
+   "race_no": 1,
+   "post_time": "11:35",
+   "number": 8,
+   "name": "エールヴァーゲ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 13,
+   "last": {
+    "date": "2026-11-04",
+    "finish": 8,
+    "field": 9,
+    "popularity": 4
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611171106070301",
+   "results_key": "202611171106070301",
+   "venue": "水沢",
+   "race_no": 1,
+   "post_time": "11:35",
+   "number": 10,
+   "name": "アイディンエース",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 21,
+   "last": {
+    "date": "2026-10-27",
+    "finish": 11,
+    "field": 11,
+    "popularity": 6
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611171106070302",
+   "results_key": "202611171106070302",
+   "venue": "水沢",
+   "race_no": 2,
+   "post_time": "12:10",
+   "number": 4,
+   "name": "アニマルキリシマ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 13,
+   "last": {
+    "date": "2026-11-04",
+    "finish": 9,
+    "field": 9,
+    "popularity": 9
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611171106070303",
+   "results_key": "202611171106070303",
+   "venue": "水沢",
+   "race_no": 3,
+   "post_time": "12:45",
+   "number": 4,
+   "name": "ヴィーナスキック",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 7,
+   "last": {
+    "date": "2026-11-10",
+    "finish": 8,
+    "field": 8,
+    "popularity": 6
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611171106070303",
+   "results_key": "202611171106070303",
+   "venue": "水沢",
+   "race_no": 3,
+   "post_time": "12:45",
+   "number": 5,
+   "name": "アジャイブ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 7,
+   "last": {
+    "date": "2026-11-10",
+    "finish": 7,
+    "field": 7,
+    "popularity": 4
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611171106070303",
+   "results_key": "202611171106070303",
+   "venue": "水沢",
+   "race_no": 3,
+   "post_time": "12:45",
+   "number": 10,
+   "name": "シャンペトルブーケ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 84,
+   "last": {
+    "date": "2026-08-25",
+    "finish": 7,
+    "field": 10,
+    "popularity": 3
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172218140501",
+   "results_key": "202611172218140501",
+   "venue": "金沢",
+   "race_no": 1,
+   "post_time": "14:10",
+   "number": 3,
+   "name": "ソラムパレード",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 13,
+   "last": {
+    "date": "2026-11-04",
+    "finish": 8,
+    "field": 9,
+    "popularity": 8
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172218140501",
+   "results_key": "202611172218140501",
+   "venue": "金沢",
+   "race_no": 1,
+   "post_time": "14:10",
+   "number": 7,
+   "name": "キャンパスレディ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 14,
+   "last": {
+    "date": "2026-11-03",
+    "finish": 10,
+    "field": 12,
+    "popularity": 11
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120201",
+   "results_key": "202611172015120201",
+   "venue": "大井",
+   "race_no": 1,
+   "post_time": "14:30",
+   "number": 6,
+   "name": "ノアサンサン",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 140,
+   "last": {
+    "date": "2026-06-30",
+    "finish": 2,
+    "field": 11,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120201",
+   "results_key": "202611172015120201",
+   "venue": "大井",
+   "race_no": 1,
+   "post_time": "14:30",
+   "number": 11,
+   "name": "スコッチキルト",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 18,
+   "last": {
+    "date": "2026-10-30",
+    "finish": 12,
+    "field": 14,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611171106070306",
+   "results_key": "202611171106070306",
+   "venue": "水沢",
+   "race_no": 6,
+   "post_time": "14:35",
+   "number": 3,
+   "name": "レディーショコラ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 15,
+   "last": {
+    "date": "2026-11-02",
+    "finish": 12,
+    "field": 12,
+    "popularity": 11
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611171106070306",
+   "results_key": "202611171106070306",
+   "venue": "水沢",
+   "race_no": 6,
+   "post_time": "14:35",
+   "number": 6,
+   "name": "トゥーナカメリア",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 72,
+   "last": {
+    "date": "2026-09-06",
+    "finish": 7,
+    "field": 7,
+    "popularity": 4
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611171106070306",
+   "results_key": "202611171106070306",
+   "venue": "水沢",
+   "race_no": 6,
+   "post_time": "14:35",
+   "number": 7,
+   "name": "ワクワク",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 47,
+   "last": {
+    "date": "2026-10-01",
+    "finish": 9,
+    "field": 12,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611171106070306",
+   "results_key": "202611171106070306",
+   "venue": "水沢",
+   "race_no": 6,
+   "post_time": "14:35",
+   "number": 10,
+   "name": "コパノエビス",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 15,
+   "last": {
+    "date": "2026-11-02",
+    "finish": 11,
+    "field": 12,
+    "popularity": 9
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172218140502",
+   "results_key": "202611172218140502",
+   "venue": "金沢",
+   "race_no": 2,
+   "post_time": "14:45",
+   "number": 2,
+   "name": "カラーズリング",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 18,
+   "last": {
+    "date": "2026-10-30",
+    "finish": 7,
+    "field": 10,
+    "popularity": 10
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172218140502",
+   "results_key": "202611172218140502",
+   "venue": "金沢",
+   "race_no": 2,
+   "post_time": "14:45",
+   "number": 7,
+   "name": "シャークシャイニー",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 13,
+   "last": {
+    "date": "2026-11-04",
+    "finish": 7,
+    "field": 10,
+    "popularity": 4
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120202",
+   "results_key": "202611172015120202",
+   "venue": "大井",
+   "race_no": 2,
+   "post_time": "15:02",
+   "number": 6,
+   "name": "コーントップス",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 18,
+   "last": {
+    "date": "2026-10-30",
+    "finish": 13,
+    "field": 14,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120202",
+   "results_key": "202611172015120202",
+   "venue": "大井",
+   "race_no": 2,
+   "post_time": "15:02",
+   "number": 8,
+   "name": "メイショウトキイロ",
+   "types": [
+    "layoff",
+    "rebound"
+   ],
+   "gap_days": 159,
+   "last": {
+    "date": "2026-06-11",
+    "finish": 8,
+    "field": 11,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120202",
+   "results_key": "202611172015120202",
+   "venue": "大井",
+   "race_no": 2,
+   "post_time": "15:02",
+   "number": 9,
+   "name": "ハナヒラク",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 18,
+   "last": {
+    "date": "2026-10-30",
+    "finish": 10,
+    "field": 12,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120202",
+   "results_key": "202611172015120202",
+   "venue": "大井",
+   "race_no": 2,
+   "post_time": "15:02",
+   "number": 10,
+   "name": "テンポルバート",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 19,
+   "last": {
+    "date": "2026-10-29",
+    "finish": 9,
+    "field": 12,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120202",
+   "results_key": "202611172015120202",
+   "venue": "大井",
+   "race_no": 2,
+   "post_time": "15:02",
+   "number": 12,
+   "name": "コトブキエース",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 93,
+   "last": {
+    "date": "2026-08-16",
+    "finish": 2,
+    "field": 13,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611171106070307",
+   "results_key": "202611171106070307",
+   "venue": "水沢",
+   "race_no": 7,
+   "post_time": "15:10",
+   "number": 3,
+   "name": "エルプロフェッサー",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 13,
+   "last": {
+    "date": "2026-11-04",
+    "finish": 10,
+    "field": 10,
+    "popularity": 9
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611171106070307",
+   "results_key": "202611171106070307",
+   "venue": "水沢",
+   "race_no": 7,
+   "post_time": "15:10",
+   "number": 7,
+   "name": "ゴージャスレディ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 28,
+   "last": {
+    "date": "2026-10-20",
+    "finish": 10,
+    "field": 12,
+    "popularity": 12
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611171106070307",
+   "results_key": "202611171106070307",
+   "venue": "水沢",
+   "race_no": 7,
+   "post_time": "15:10",
+   "number": 8,
+   "name": "ブルドッグキング",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 140,
+   "last": {
+    "date": "2026-06-30",
+    "finish": 6,
+    "field": 9,
+    "popularity": 1
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172218140503",
+   "results_key": "202611172218140503",
+   "venue": "金沢",
+   "race_no": 3,
+   "post_time": "15:20",
+   "number": 4,
+   "name": "スズランクイーン",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 14,
+   "last": {
+    "date": "2026-11-03",
+    "finish": 8,
+    "field": 9,
+    "popularity": 2
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611171106070308",
+   "results_key": "202611171106070308",
+   "venue": "水沢",
+   "race_no": 8,
+   "post_time": "15:45",
+   "number": 4,
+   "name": "ルミナヴァル",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 13,
+   "last": {
+    "date": "2026-11-04",
+    "finish": 10,
+    "field": 12,
+    "popularity": 1
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172218140504",
+   "results_key": "202611172218140504",
+   "venue": "金沢",
+   "race_no": 4,
+   "post_time": "15:55",
+   "number": 1,
+   "name": "タケウチビー",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 14,
+   "last": {
+    "date": "2026-11-03",
+    "finish": 10,
+    "field": 10,
+    "popularity": 3
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172218140504",
+   "results_key": "202611172218140504",
+   "venue": "金沢",
+   "race_no": 4,
+   "post_time": "15:55",
+   "number": 2,
+   "name": "ディープエフェクト",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 14,
+   "last": {
+    "date": "2026-11-03",
+    "finish": 9,
+    "field": 12,
+    "popularity": 7
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172218140504",
+   "results_key": "202611172218140504",
+   "venue": "金沢",
+   "race_no": 4,
+   "post_time": "15:55",
+   "number": 8,
+   "name": "ガールズヒロイン",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 14,
+   "last": {
+    "date": "2026-11-03",
+    "finish": 9,
+    "field": 10,
+    "popularity": 4
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120204",
+   "results_key": "202611172015120204",
+   "venue": "大井",
+   "race_no": 4,
+   "post_time": "16:07",
+   "number": 4,
+   "name": "トゥーナルビーズ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 21,
+   "last": {
+    "date": "2026-10-27",
+    "finish": 12,
+    "field": 13,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120204",
+   "results_key": "202611172015120204",
+   "venue": "大井",
+   "race_no": 4,
+   "post_time": "16:07",
+   "number": 9,
+   "name": "スズノグレイス",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 30,
+   "last": {
+    "date": "2026-10-18",
+    "finish": 7,
+    "field": 9,
+    "popularity": 3
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611171106070309",
+   "results_key": "202611171106070309",
+   "venue": "水沢",
+   "race_no": 9,
+   "post_time": "16:20",
+   "number": 1,
+   "name": "グレンノアラシ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 28,
+   "last": {
+    "date": "2026-10-20",
+    "finish": 10,
+    "field": 11,
+    "popularity": 4
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611171106070309",
+   "results_key": "202611171106070309",
+   "venue": "水沢",
+   "race_no": 9,
+   "post_time": "16:20",
+   "number": 8,
+   "name": "エバーグリーン",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 78,
+   "last": {
+    "date": "2026-08-31",
+    "finish": 8,
+    "field": 10,
+    "popularity": 2
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611171106070309",
+   "results_key": "202611171106070309",
+   "venue": "水沢",
+   "race_no": 9,
+   "post_time": "16:20",
+   "number": 9,
+   "name": "マルジェラ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 15,
+   "last": {
+    "date": "2026-11-02",
+    "finish": 9,
+    "field": 11,
+    "popularity": 7
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611171106070309",
+   "results_key": "202611171106070309",
+   "venue": "水沢",
+   "race_no": 9,
+   "post_time": "16:20",
+   "number": 10,
+   "name": "ヴィグルズマン",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 15,
+   "last": {
+    "date": "2026-11-02",
+    "finish": 8,
+    "field": 11,
+    "popularity": 9
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120205",
+   "results_key": "202611172015120205",
+   "venue": "大井",
+   "race_no": 5,
+   "post_time": "16:40",
+   "number": 5,
+   "name": "ピーチサワー",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 217,
+   "last": {
+    "date": "2026-04-14",
+    "finish": null,
+    "field": 11,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120205",
+   "results_key": "202611172015120205",
+   "venue": "大井",
+   "race_no": 5,
+   "post_time": "16:40",
+   "number": 8,
+   "name": "ルビースターク",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 119,
+   "last": {
+    "date": "2026-07-21",
+    "finish": 10,
+    "field": 14,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120205",
+   "results_key": "202611172015120205",
+   "venue": "大井",
+   "race_no": 5,
+   "post_time": "16:40",
+   "number": 9,
+   "name": "ナナセショー",
+   "types": [
+    "layoff",
+    "rebound"
+   ],
+   "gap_days": 97,
+   "last": {
+    "date": "2026-08-12",
+    "finish": 11,
+    "field": 14,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120205",
+   "results_key": "202611172015120205",
+   "venue": "大井",
+   "race_no": 5,
+   "post_time": "16:40",
+   "number": 11,
+   "name": "ティーズアラモード",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 120,
+   "last": {
+    "date": "2026-07-20",
+    "finish": 3,
+    "field": 10,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611171106070310",
+   "results_key": "202611171106070310",
+   "venue": "水沢",
+   "race_no": 10,
+   "post_time": "16:55",
+   "number": 6,
+   "name": "タイセイアダマス",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 13,
+   "last": {
+    "date": "2026-11-04",
+    "finish": 11,
+    "field": 12,
+    "popularity": 3
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172218140506",
+   "results_key": "202611172218140506",
+   "venue": "金沢",
+   "race_no": 6,
+   "post_time": "17:05",
+   "number": 4,
+   "name": "ブロンドナイト",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 33,
+   "last": {
+    "date": "2026-10-15",
+    "finish": 6,
+    "field": 7,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120206",
+   "results_key": "202611172015120206",
+   "venue": "大井",
+   "race_no": 6,
+   "post_time": "17:12",
+   "number": 6,
+   "name": "マサノエターナル",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 21,
+   "last": {
+    "date": "2026-10-27",
+    "finish": 12,
+    "field": 12,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120206",
+   "results_key": "202611172015120206",
+   "venue": "大井",
+   "race_no": 6,
+   "post_time": "17:12",
+   "number": 10,
+   "name": "サカイワンパクオー",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 160,
+   "last": {
+    "date": "2026-06-10",
+    "finish": 2,
+    "field": 11,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611171106070311",
+   "results_key": "202611171106070311",
+   "venue": "水沢",
+   "race_no": 11,
+   "post_time": "17:30",
+   "number": 4,
+   "name": "サクラカゼ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 13,
+   "last": {
+    "date": "2026-11-04",
+    "finish": 9,
+    "field": 12,
+    "popularity": 8
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611171106070311",
+   "results_key": "202611171106070311",
+   "venue": "水沢",
+   "race_no": 11,
+   "post_time": "17:30",
+   "number": 9,
+   "name": "フィアレスハート",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 13,
+   "last": {
+    "date": "2026-11-04",
+    "finish": 9,
+    "field": 11,
+    "popularity": 8
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611171106070311",
+   "results_key": "202611171106070311",
+   "venue": "水沢",
+   "race_no": 11,
+   "post_time": "17:30",
+   "number": 11,
+   "name": "コスモモカ",
+   "types": [
+    "layoff",
+    "rebound"
+   ],
+   "gap_days": 127,
+   "last": {
+    "date": "2026-07-13",
+    "finish": 12,
+    "field": 12,
+    "popularity": 6
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172218140507",
+   "results_key": "202611172218140507",
+   "venue": "金沢",
+   "race_no": 7,
+   "post_time": "17:40",
+   "number": 1,
+   "name": "パインピーチ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 14,
+   "last": {
+    "date": "2026-11-03",
+    "finish": 9,
+    "field": 9,
+    "popularity": 9
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172218140507",
+   "results_key": "202611172218140507",
+   "venue": "金沢",
+   "race_no": 7,
+   "post_time": "17:40",
+   "number": 4,
+   "name": "カノアレディー",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 14,
+   "last": {
+    "date": "2026-11-03",
+    "finish": 6,
+    "field": 8,
+    "popularity": 7
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172218140507",
+   "results_key": "202611172218140507",
+   "venue": "金沢",
+   "race_no": 7,
+   "post_time": "17:40",
+   "number": 5,
+   "name": "エイトビートレター",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 92,
+   "last": {
+    "date": "2026-08-17",
+    "finish": 2,
+    "field": 9,
+    "popularity": 5
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172218140507",
+   "results_key": "202611172218140507",
+   "venue": "金沢",
+   "race_no": 7,
+   "post_time": "17:40",
+   "number": 9,
+   "name": "ビューティーハニー",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 91,
+   "last": {
+    "date": "2026-08-18",
+    "finish": 4,
+    "field": 7,
+    "popularity": 4
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120207",
+   "results_key": "202611172015120207",
+   "venue": "大井",
+   "race_no": 7,
+   "post_time": "17:45",
+   "number": 2,
+   "name": "ホウオウチェスター",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 159,
+   "last": {
+    "date": "2026-06-11",
+    "finish": 8,
+    "field": 13,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120207",
+   "results_key": "202611172015120207",
+   "venue": "大井",
+   "race_no": 7,
+   "post_time": "17:45",
+   "number": 3,
+   "name": "ポルトディタリー",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 21,
+   "last": {
+    "date": "2026-10-27",
+    "finish": 10,
+    "field": 12,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120207",
+   "results_key": "202611172015120207",
+   "venue": "大井",
+   "race_no": 7,
+   "post_time": "17:45",
+   "number": 4,
+   "name": "シルフラ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 22,
+   "last": {
+    "date": "2026-10-26",
+    "finish": 9,
+    "field": 12,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120207",
+   "results_key": "202611172015120207",
+   "venue": "大井",
+   "race_no": 7,
+   "post_time": "17:45",
+   "number": 10,
+   "name": "ティブロン",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 150,
+   "last": {
+    "date": "2026-06-20",
+    "finish": 7,
+    "field": 16,
+    "popularity": 10
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120207",
+   "results_key": "202611172015120207",
+   "venue": "大井",
+   "race_no": 7,
+   "post_time": "17:45",
+   "number": 13,
+   "name": "ジョーアラモード",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 95,
+   "last": {
+    "date": "2026-08-14",
+    "finish": 12,
+    "field": 12,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611171106070312",
+   "results_key": "202611171106070312",
+   "venue": "水沢",
+   "race_no": 12,
+   "post_time": "18:05",
+   "number": 3,
+   "name": "コンバットキャモ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 15,
+   "last": {
+    "date": "2026-11-02",
+    "finish": 9,
+    "field": 12,
+    "popularity": 11
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172218140508",
+   "results_key": "202611172218140508",
+   "venue": "金沢",
+   "race_no": 8,
+   "post_time": "18:15",
+   "number": 1,
+   "name": "マイラブジャック",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 120,
+   "last": {
+    "date": "2026-07-20",
+    "finish": 3,
+    "field": 7,
+    "popularity": 2
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172218140508",
+   "results_key": "202611172218140508",
+   "venue": "金沢",
+   "race_no": 8,
+   "post_time": "18:15",
+   "number": 10,
+   "name": "セッカチケーン",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 18,
+   "last": {
+    "date": "2026-10-30",
+    "finish": 5,
+    "field": 6,
+    "popularity": 4
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120208",
+   "results_key": "202611172015120208",
+   "venue": "大井",
+   "race_no": 8,
+   "post_time": "18:20",
+   "number": 7,
+   "name": "サヴォイア",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 22,
+   "last": {
+    "date": "2026-10-26",
+    "finish": 12,
+    "field": 14,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120208",
+   "results_key": "202611172015120208",
+   "venue": "大井",
+   "race_no": 8,
+   "post_time": "18:20",
+   "number": 9,
+   "name": "カクヒメ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 21,
+   "last": {
+    "date": "2026-10-27",
+    "finish": 11,
+    "field": 13,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172218140509",
+   "results_key": "202611172218140509",
+   "venue": "金沢",
+   "race_no": 9,
+   "post_time": "18:50",
+   "number": 8,
+   "name": "ドリームスパート",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 21,
+   "last": {
+    "date": "2026-10-27",
+    "finish": 6,
+    "field": 7,
+    "popularity": 6
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120209",
+   "results_key": "202611172015120209",
+   "venue": "大井",
+   "race_no": 9,
+   "post_time": "18:55",
+   "number": 6,
+   "name": "ディアモアー",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 19,
+   "last": {
+    "date": "2026-10-29",
+    "finish": 7,
+    "field": 9,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172218140510",
+   "results_key": "202611172218140510",
+   "venue": "金沢",
+   "race_no": 10,
+   "post_time": "19:25",
+   "number": 1,
+   "name": "タブラオ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 28,
+   "last": {
+    "date": "2026-10-20",
+    "finish": 5,
+    "field": 6,
+    "popularity": 3
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172218140510",
+   "results_key": "202611172218140510",
+   "venue": "金沢",
+   "race_no": 10,
+   "post_time": "19:25",
+   "number": 3,
+   "name": "ハクサンパイオニア",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 30,
+   "last": {
+    "date": "2026-10-18",
+    "finish": 8,
+    "field": 10,
+    "popularity": 2
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172218140510",
+   "results_key": "202611172218140510",
+   "venue": "金沢",
+   "race_no": 10,
+   "post_time": "19:25",
+   "number": 9,
+   "name": "コスモメイゲツ",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 100,
+   "last": {
+    "date": "2026-08-09",
+    "finish": 2,
+    "field": 10,
+    "popularity": 6
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120210",
+   "results_key": "202611172015120210",
+   "venue": "大井",
+   "race_no": 10,
+   "post_time": "19:30",
+   "number": 8,
+   "name": "レゲエビーチ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 20,
+   "last": {
+    "date": "2026-10-28",
+    "finish": 8,
+    "field": 11,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120210",
+   "results_key": "202611172015120210",
+   "venue": "大井",
+   "race_no": 10,
+   "post_time": "19:30",
+   "number": 9,
+   "name": "ヘニングセン",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 204,
+   "last": {
+    "date": "2026-04-27",
+    "finish": 9,
+    "field": 14,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120210",
+   "results_key": "202611172015120210",
+   "venue": "大井",
+   "race_no": 10,
+   "post_time": "19:30",
+   "number": 12,
+   "name": "ディルムッド",
+   "types": [
+    "layoff",
+    "rebound"
+   ],
+   "gap_days": 97,
+   "last": {
+    "date": "2026-08-12",
+    "finish": 14,
+    "field": 14,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172218140511",
+   "results_key": "202611172218140511",
+   "venue": "金沢",
+   "race_no": 11,
+   "post_time": "20:00",
+   "number": 2,
+   "name": "ルビーオーシャン",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 13,
+   "last": {
+    "date": "2026-11-04",
+    "finish": 5,
+    "field": 6,
+    "popularity": 6
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120211",
+   "results_key": "202611172015120211",
+   "venue": "大井",
+   "race_no": 11,
+   "post_time": "20:10",
+   "number": 1,
+   "name": "シャルフジン",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 131,
+   "last": {
+    "date": "2026-07-09",
+    "finish": 5,
+    "field": 14,
+    "popularity": 4
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120211",
+   "results_key": "202611172015120211",
+   "venue": "大井",
+   "race_no": 11,
+   "post_time": "20:10",
+   "number": 3,
+   "name": "スタンリーテソーロ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 28,
+   "last": {
+    "date": "2026-10-20",
+    "finish": 9,
+    "field": 11,
+    "popularity": 1
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120211",
+   "results_key": "202611172015120211",
+   "venue": "大井",
+   "race_no": 11,
+   "post_time": "20:10",
+   "number": 4,
+   "name": "ケイアイメキラ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 59,
+   "last": {
+    "date": "2026-09-19",
+    "finish": 12,
+    "field": 16,
+    "popularity": 16
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120211",
+   "results_key": "202611172015120211",
+   "venue": "大井",
+   "race_no": 11,
+   "post_time": "20:10",
+   "number": 5,
+   "name": "マザオ",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 162,
+   "last": {
+    "date": "2026-06-08",
+    "finish": 3,
+    "field": 9,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120211",
+   "results_key": "202611172015120211",
+   "venue": "大井",
+   "race_no": 11,
+   "post_time": "20:10",
+   "number": 14,
+   "name": "アルムラトゥール",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 20,
+   "last": {
+    "date": "2026-10-28",
+    "finish": 11,
+    "field": 13,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172218140512",
+   "results_key": "202611172218140512",
+   "venue": "金沢",
+   "race_no": 12,
+   "post_time": "20:40",
+   "number": 5,
+   "name": "ソウルユニバンス",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 21,
+   "last": {
+    "date": "2026-10-27",
+    "finish": 8,
+    "field": 10,
+    "popularity": 5
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172218140512",
+   "results_key": "202611172218140512",
+   "venue": "金沢",
+   "race_no": 12,
+   "post_time": "20:40",
+   "number": 6,
+   "name": "ファビュラスロード",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 21,
+   "last": {
+    "date": "2026-10-27",
+    "finish": 10,
+    "field": 10,
+    "popularity": 6
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120212",
+   "results_key": "202611172015120212",
+   "venue": "大井",
+   "race_no": 12,
+   "post_time": "20:50",
+   "number": 7,
+   "name": "アレグランサ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 62,
+   "last": {
+    "date": "2026-09-16",
+    "finish": 10,
+    "field": 14,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "202611172015120212",
+   "results_key": "202611172015120212",
+   "venue": "大井",
+   "race_no": 12,
+   "post_time": "20:50",
+   "number": 15,
+   "name": "ヴィラスターリ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 43,
+   "last": {
+    "date": "2026-10-05",
+    "finish": 11,
+    "field": 11,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  }
+ ]
 }
