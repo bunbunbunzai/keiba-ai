@@ -2,7 +2,172 @@
  "source": "rakuten",
  "date": "20261115",
  "race_id": "202611150304160511",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "9",
+    "yen": 240
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "9-1",
+    "yen": 2820
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "9",
+    "yen": 110
+   },
+   {
+    "combo": "1",
+    "yen": 210
+   },
+   {
+    "combo": "7",
+    "yen": 110
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-9",
+    "yen": 330
+   },
+   {
+    "combo": "7-9",
+    "yen": 140
+   },
+   {
+    "combo": "1-7",
+    "yen": 240
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-8",
+    "yen": 1770
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-7-9",
+    "yen": 720
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "9-1-7",
+    "yen": 5870
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-9",
+    "yen": 2050
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 9,
+   "name": "キョウエイエース",
+   "time": "1:38.4",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 1,
+   "number": 1,
+   "name": "コウテイ",
+   "time": "1:39.1",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 7,
+   "name": "オーシャンウイナー",
+   "time": "1:39.8",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 6,
+   "name": "カフカ",
+   "time": "1:43.8",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 5,
+   "name": "ミチシオ",
+   "time": "1:44.2",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 4,
+   "number": 4,
+   "name": "ウンカイダイマオー",
+   "time": "1:51.1",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 2,
+   "number": 2,
+   "name": "ライジンサン",
+   "time": "1:53.3",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 8,
+   "name": "リュウセイウンカイ",
+   "time": "1:55.1",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 3,
+   "number": 3,
+   "name": "ネオキングダム",
+   "time": "2:00.4",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
