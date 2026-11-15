@@ -296,7 +296,7 @@ def kako10(rc: Race) -> str:
             + (f"3連単は{man(t3[0])}から{man(t3[-1])}まで開きがあり、10万円を超えたのは{over}回。" if t3 else "") + this_year(rc))
     title = f"{rc.name}過去10年の結果一覧（{rc.span}）｜勝ち馬・人気・枠・配当"
     desc = (f"{rc.name}（{rc.grade()}）{rc.span}の勝ち馬・2着・3着と人気、枠、騎手、勝ち時計、配当をJRA公式の成績から一覧にした。"
-            f"勝ち馬は{pop_sentence(c)}。{rc.year}年は{rc.date_txt()}に{rc.now['venue']}で行われる。")
+            f"勝ち馬は{pop_sentence(c)}。今年は{rc.date_txt()}に{rc.now['venue']}で行われる。")
     t1 = "| 年 | 1着 | 2着 | 3着 |\n|---|---|---|---|\n" + "".join(
         f"| {y} | {names(rc.top(y, 1))} | {names(rc.top(y, 2))} | {names(rc.top(y, 3))} |\n" for y in rc.ys)
     t2 = "| 年 | 勝ち馬 | 性齢 | 枠・馬番 | 騎手 | 勝ち時計 | 開催・馬場 |\n|---|---|---|---|---|---|---|\n"
@@ -497,7 +497,7 @@ def nenrei(rc: Race) -> str:
             jt += f"| {j} | {fmt(v)} | {v['n']} | {tp} |\n"
         zero = [z for z in rank(gj, 5) if not (z[1]["w"] + z[1]["s"] + z[1]["t"])][:3]
         body += ("\n\n## 騎手別の成績（成績の良い順）\n\n" + jt + "\n" + f"最も成績が良いのは{J[0][0]}騎手（{fmt(J[0][1])}）。"
-                 + ("一方、" + "、".join(f"{z[0]}騎手は{z[1]['n']}回騎乗して3着以内がない" for z in zero) + "。" if zero else ""))
+                 + ("一方、" + "、".join(f"{z[0]}騎手（{z[1]['n']}回騎乗）" for z in zero) + "は3着以内がない。" if zero else ""))
     if T:
         tt = "| 厩舎（調教師） | 成績 | 出走数 | 3着以内に入った馬 |\n|---|---|---|---|\n"
         for t, v, rs in T:
@@ -548,7 +548,7 @@ def main() -> None:
         if slug.startswith("abbr:"):
             print("skip（重賞ページの名前が決まらない）:", cur["abbr"], cur["date"], flush=True)
             continue
-        if slug in MANUAL.get(year, set()) and not a.force:
+        if slug in MANUAL.get(year, set()) and not (a.force and a.slug):
             print("skip（手書きの特集がある）:", slug)
             continue
         rc = Race(slug, ys, year)
