@@ -1,0 +1,268 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 8,
+   "name": "ルミナレーヌ",
+   "time": "1:35.5",
+   "margin": "",
+   "corners": "8-7",
+   "last3f": 35.5,
+   "popularity": 6
+  },
+  {
+   "finish": "2",
+   "number": 18,
+   "name": "ナジュム",
+   "time": "1:35.5",
+   "margin": "ハナ",
+   "corners": "13-7",
+   "last3f": 35.4,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "number": 10,
+   "name": "ランスオブアグア",
+   "time": "1:35.7",
+   "margin": "１ 1/4",
+   "corners": "11-12",
+   "last3f": 35.5,
+   "popularity": 12
+  },
+  {
+   "finish": "4",
+   "number": 12,
+   "name": "レイヨンラゼール",
+   "time": "1:35.8",
+   "margin": "３／４",
+   "corners": "2-2",
+   "last3f": 36.4,
+   "popularity": 14
+  },
+  {
+   "finish": "5",
+   "number": 17,
+   "name": "クリノアペイロン",
+   "time": "1:35.9",
+   "margin": "１／２",
+   "corners": "11-13",
+   "last3f": 35.7,
+   "popularity": 17
+  },
+  {
+   "finish": "6",
+   "number": 9,
+   "name": "スマートソラーレ",
+   "time": "1:36.1",
+   "margin": "１ 1/4",
+   "corners": "1-1",
+   "last3f": 36.8,
+   "popularity": 4
+  },
+  {
+   "finish": "7",
+   "number": 13,
+   "name": "ナムラキャロル",
+   "time": "1:36.4",
+   "margin": "１ 3/4",
+   "corners": "3-2",
+   "last3f": 36.9,
+   "popularity": 16
+  },
+  {
+   "finish": "8",
+   "number": 11,
+   "name": "サトノミラクル",
+   "time": "1:36.9",
+   "margin": "２ 1/2",
+   "corners": "6-7",
+   "last3f": 37.1,
+   "popularity": 1
+  },
+  {
+   "finish": "9",
+   "number": 7,
+   "name": "フォーセブンライズ",
+   "time": "1:37.2",
+   "margin": "２",
+   "corners": "8-10",
+   "last3f": 37.3,
+   "popularity": 2
+  },
+  {
+   "finish": "10",
+   "number": 6,
+   "name": "プリンセスバローズ",
+   "time": "1:37.3",
+   "margin": "１／２",
+   "corners": "16-14",
+   "last3f": 36.9,
+   "popularity": 8
+  },
+  {
+   "finish": "11",
+   "number": 2,
+   "name": "テーオーハピネス",
+   "time": "1:37.3",
+   "margin": "ハナ",
+   "corners": "8-10",
+   "last3f": 37.4,
+   "popularity": 5
+  },
+  {
+   "finish": "12",
+   "number": 5,
+   "name": "サウンドソーナイス",
+   "time": "1:37.3",
+   "margin": "クビ",
+   "corners": "6-4",
+   "last3f": 37.6,
+   "popularity": 7
+  },
+  {
+   "finish": "13",
+   "number": 15,
+   "name": "スマートプルーフ",
+   "time": "1:37.4",
+   "margin": "クビ",
+   "corners": "13-14",
+   "last3f": 37.0,
+   "popularity": 15
+  },
+  {
+   "finish": "14",
+   "number": 1,
+   "name": "ソダンキュラ",
+   "time": "1:37.7",
+   "margin": "１ 3/4",
+   "corners": "3-4",
+   "last3f": 38.1,
+   "popularity": 13
+  },
+  {
+   "finish": "15",
+   "number": 14,
+   "name": "ウォーターテオ",
+   "time": "1:37.7",
+   "margin": "アタマ",
+   "corners": "3-4",
+   "last3f": 38.1,
+   "popularity": 18
+  },
+  {
+   "finish": "16",
+   "number": 4,
+   "name": "コスモエルバイト",
+   "time": "1:38.3",
+   "margin": "３ 1/2",
+   "corners": "17-16",
+   "last3f": 37.5,
+   "popularity": 11
+  },
+  {
+   "finish": "17",
+   "number": 16,
+   "name": "テーオーファーザー",
+   "time": "1:40.9",
+   "margin": "大差",
+   "corners": "17-18",
+   "last3f": 40.1,
+   "popularity": 9
+  },
+  {
+   "finish": "18",
+   "number": 3,
+   "name": "ニシノヴィンセント",
+   "time": "1:42.0",
+   "margin": "７",
+   "corners": "13-16",
+   "last3f": 41.6,
+   "popularity": 10
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "8",
+    "yen": 1500,
+    "pop": 6
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "8",
+    "yen": 480,
+    "pop": 7
+   },
+   {
+    "combo": "18",
+    "yen": 210,
+    "pop": 2
+   },
+   {
+    "combo": "10",
+    "yen": 1140,
+    "pop": 13
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-8",
+    "yen": 710,
+    "pop": 2
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "8-18",
+    "yen": 1110,
+    "pop": 9
+   },
+   {
+    "combo": "8-10",
+    "yen": 7340,
+    "pop": 62
+   },
+   {
+    "combo": "10-18",
+    "yen": 2970,
+    "pop": 28
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "8-18",
+    "yen": 2860,
+    "pop": 9
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "8-18",
+    "yen": 7580,
+    "pop": 25
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "8-10-18",
+    "yen": 31420,
+    "pop": 84
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "8-18-10",
+    "yen": 163020,
+    "pop": 433
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261115",
+ "venue_code": "08",
+ "race_no": 5,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605040520261115/8A",
+ "title": "レース結果 JRA"
+}
