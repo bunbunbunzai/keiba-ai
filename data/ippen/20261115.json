@@ -1,6 +1,6 @@
 {
  "date": "20261115",
- "updated": "2026-11-15 17:10",
+ "updated": "2026-11-15 19:15",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -4883,8 +4883,8 @@
     "field": 11,
     "popularity": 2
    },
-   "odds": 11.9,
-   "popularity": 5
+   "odds": 15.3,
+   "popularity": 9
   },
   {
    "race_id": "202611153129100410",
@@ -4905,8 +4905,8 @@
     "field": 11,
     "popularity": 3
    },
-   "odds": 17.5,
-   "popularity": 6
+   "odds": 13.3,
+   "popularity": 8
   },
   {
    "race_id": "202611153129100410",
@@ -4919,29 +4919,8 @@
    "types": [
     "aitop"
    ],
-   "odds": 24.8,
-   "popularity": 7
-  },
-  {
-   "race_id": "202611153129100410",
-   "results_key": "202611153129100410",
-   "venue": "高知",
-   "race_no": 10,
-   "post_time": "19:45",
-   "number": 9,
-   "name": "イルヴェント",
-   "types": [
-    "letdown"
-   ],
-   "gap_days": 14,
-   "last": {
-    "date": "2026-11-01",
-    "finish": 8,
-    "field": 12,
-    "popularity": 2
-   },
-   "odds": 59.6,
-   "popularity": 11
+   "odds": 5.0,
+   "popularity": 2
   },
   {
    "race_id": "202611153129100410",
@@ -4961,8 +4940,8 @@
     "field": 12,
     "popularity": 11
    },
-   "odds": 33.1,
-   "popularity": 9
+   "odds": 83.1,
+   "popularity": 11
   },
   {
    "race_id": "202611153230130510",
@@ -5039,8 +5018,8 @@
     "field": 10,
     "popularity": 10
    },
-   "odds": 224.2,
-   "popularity": 8
+   "odds": 47.2,
+   "popularity": 9
   },
   {
    "race_id": "202611150304160512",
@@ -5060,8 +5039,8 @@
     "field": 10,
     "popularity": 6
    },
-   "odds": 99.6,
-   "popularity": 7
+   "odds": 30.7,
+   "popularity": 8
   },
   {
    "race_id": "202611150304160512",
@@ -5081,7 +5060,7 @@
     "field": 10,
     "popularity": 6
    },
-   "odds": 1.0,
+   "odds": 1.1,
    "popularity": 1
   },
   {
@@ -5095,8 +5074,29 @@
    "types": [
     "aitop"
    ],
-   "odds": 56.0,
-   "popularity": 4
+   "odds": 21.9,
+   "popularity": 5
+  },
+  {
+   "race_id": "202611150304160512",
+   "results_key": "202611150304160512",
+   "venue": "帯広ば",
+   "race_no": 12,
+   "post_time": "20:30",
+   "number": 9,
+   "name": "スターノチカラ",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 14,
+   "last": {
+    "date": "2026-11-01",
+    "finish": 8,
+    "field": 10,
+    "popularity": 2
+   },
+   "odds": 22.7,
+   "popularity": 6
   },
   {
    "race_id": "202611153129100412",

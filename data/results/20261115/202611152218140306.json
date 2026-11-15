@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261115",
  "race_id": "202611152218140306",
- "tries": 8,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -77,9 +77,9 @@
    "name": "リュウジンオー",
    "time": "1:30.1",
    "margin": "",
-   "pos4": null,
+   "pos4": 1,
    "last3f": 39.3,
-   "popularity": null
+   "popularity": 1
   },
   {
    "finish": "2",
@@ -88,9 +88,9 @@
    "name": "ラブラブセイナ",
    "time": "1:31.7",
    "margin": "８",
-   "pos4": null,
+   "pos4": 2,
    "last3f": 40.1,
-   "popularity": null
+   "popularity": 4
   },
   {
    "finish": "3",
@@ -99,9 +99,9 @@
    "name": "モーモークローム",
    "time": "1:31.8",
    "margin": "１／２",
-   "pos4": null,
+   "pos4": 5,
    "last3f": 39.8,
-   "popularity": null
+   "popularity": 2
   },
   {
    "finish": "4",
@@ -110,9 +110,9 @@
    "name": "オーデンオパール",
    "time": "1:31.8",
    "margin": "ハナ",
-   "pos4": null,
+   "pos4": 5,
    "last3f": 39.2,
-   "popularity": null
+   "popularity": 7
   },
   {
    "finish": "5",
@@ -121,9 +121,9 @@
    "name": "ダフニス",
    "time": "1:32.2",
    "margin": "２",
-   "pos4": null,
+   "pos4": 3,
    "last3f": 40.9,
-   "popularity": null
+   "popularity": 5
   },
   {
    "finish": "6",
@@ -132,9 +132,9 @@
    "name": "ドライヴトウショウ",
    "time": "1:33.1",
    "margin": "４",
-   "pos4": null,
+   "pos4": 4,
    "last3f": 41.7,
-   "popularity": null
+   "popularity": 3
   },
   {
    "finish": "7",
@@ -143,9 +143,9 @@
    "name": "マイボーイ",
    "time": "1:33.6",
    "margin": "２ １／２",
-   "pos4": null,
+   "pos4": 8,
    "last3f": 41.1,
-   "popularity": null
+   "popularity": 10
   },
   {
    "finish": "8",
@@ -154,9 +154,9 @@
    "name": "カクシン",
    "time": "1:33.6",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 7,
    "last3f": 41.1,
-   "popularity": null
+   "popularity": 9
   },
   {
    "finish": "9",
@@ -165,9 +165,9 @@
    "name": "ランスオブビーナス",
    "time": "1:34.2",
    "margin": "３",
-   "pos4": null,
+   "pos4": 8,
    "last3f": 42.5,
-   "popularity": null
+   "popularity": 11
   },
   {
    "finish": "10",
@@ -176,9 +176,9 @@
    "name": "ランドシュール",
    "time": "1:35.6",
    "margin": "７",
-   "pos4": null,
+   "pos4": 10,
    "last3f": 43.5,
-   "popularity": null
+   "popularity": 8
   },
   {
    "finish": "11",
@@ -187,9 +187,9 @@
    "name": "ミリアドタレント",
    "time": "1:35.6",
    "margin": "ハナ",
-   "pos4": null,
+   "pos4": 10,
    "last3f": 44.0,
-   "popularity": null
+   "popularity": 6
   }
  ]
 }
