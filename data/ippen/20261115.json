@@ -1,6 +1,6 @@
 {
  "date": "20261115",
- "updated": "2026-11-15 08:45",
+ "updated": "2026-11-15 09:15",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -442,6 +442,20 @@
    },
    "odds": 20.9,
    "popularity": 8
+  },
+  {
+   "race_id": "jra_20261115_東京_03",
+   "results_key": "jra_05_03",
+   "venue": "東京",
+   "race_no": 3,
+   "post_time": "10:45",
+   "number": 8,
+   "name": "ブルードロップ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 9.5,
+   "popularity": 5
   },
   {
    "race_id": "jra_20261115_京都_03",
