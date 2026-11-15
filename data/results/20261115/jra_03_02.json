@@ -6,7 +6,7 @@
    "name": "イテルム",
    "time": "1:51.1",
    "margin": "",
-   "corners": "",
+   "corners": "2-2-3-3",
    "last3f": null,
    "popularity": 2
   },
@@ -14,9 +14,9 @@
    "finish": "2",
    "number": 14,
    "name": "プレママドンナ",
-   "time": "",
+   "time": "1:51.5",
    "margin": "２ 1/2",
-   "corners": "",
+   "corners": "2-2-2-2",
    "last3f": null,
    "popularity": 8
   },
@@ -24,9 +24,9 @@
    "finish": "3",
    "number": 4,
    "name": "セレスタイト",
-   "time": "",
+   "time": "1:51.7",
    "margin": "１ 1/4",
-   "corners": "",
+   "corners": "4-4-3-3",
    "last3f": null,
    "popularity": 6
   },
@@ -34,9 +34,9 @@
    "finish": "4",
    "number": 16,
    "name": "ノーマンデー",
-   "time": "",
+   "time": "1:51.9",
    "margin": "１ 1/4",
-   "corners": "",
+   "corners": "7-7-8-7",
    "last3f": null,
    "popularity": 5
   },
@@ -44,11 +44,121 @@
    "finish": "5",
    "number": 5,
    "name": "サンオブシディアン",
-   "time": "",
+   "time": "1:51.9",
    "margin": "クビ",
-   "corners": "",
+   "corners": "10-12-12-11",
    "last3f": null,
    "popularity": 1
+  },
+  {
+   "finish": "6",
+   "number": 1,
+   "name": "ニシノメガミサマ",
+   "time": "1:52.1",
+   "margin": "１ 1/4",
+   "corners": "4-4-6-6",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "7",
+   "number": 15,
+   "name": "ブンブクチャガマ",
+   "time": "1:52.2",
+   "margin": "クビ",
+   "corners": "1-1-1-1",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "8",
+   "number": 6,
+   "name": "ワンダーラヴグッド",
+   "time": "1:52.4",
+   "margin": "１ 1/2",
+   "corners": "15-12-12-12",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "9",
+   "number": 7,
+   "name": "ヴェントリナ",
+   "time": "1:52.5",
+   "margin": "１／２",
+   "corners": "8-7-6-7",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "10",
+   "number": 2,
+   "name": "セイバードライバー",
+   "time": "1:52.5",
+   "margin": "クビ",
+   "corners": "8-7-9-9",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "11",
+   "number": 8,
+   "name": "モーモーゼロ",
+   "time": "1:52.6",
+   "margin": "クビ",
+   "corners": "14-15-15-15",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "12",
+   "number": 10,
+   "name": "ウインロッドブレス",
+   "time": "1:52.8",
+   "margin": "１ 1/2",
+   "corners": "13-12-12-12",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "13",
+   "number": 13,
+   "name": "コウサイリクリ",
+   "time": "1:52.8",
+   "margin": "クビ",
+   "corners": "10-10-9-9",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "14",
+   "number": 12,
+   "name": "ララアウローラ",
+   "time": "1:53.0",
+   "margin": "３／４",
+   "corners": "4-4-5-5",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "15",
+   "number": 3,
+   "name": "ヌンエリン",
+   "time": "1:53.5",
+   "margin": "３ 1/2",
+   "corners": "16-15-15-15",
+   "last3f": null,
+   "popularity": 16
+  },
+  {
+   "finish": "16",
+   "number": 9,
+   "name": "ミリオンカラー",
+   "time": "1:54.2",
+   "margin": "４",
+   "corners": "10-10-9-12",
+   "last3f": null,
+   "popularity": 15
   }
  ],
  "payouts": {
