@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 6,
+   "name": "ミラキュラスアース",
+   "time": "1:34.4",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "2",
+   "number": 17,
+   "name": "ルーチェブリラーレ",
+   "time": "",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "number": 7,
+   "name": "ロードレジェロ",
+   "time": "",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "4",
+   "number": 12,
+   "name": "シャンパンライフ",
+   "time": "",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "5",
+   "number": 9,
+   "name": "ムーンライトラガー",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "6",
+    "yen": 2810,
+    "pop": 10
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "6",
+    "yen": 470,
+    "pop": 9
+   },
+   {
+    "combo": "17",
+    "yen": 170,
+    "pop": 2
+   },
+   {
+    "combo": "7",
+    "yen": 160,
+    "pop": 1
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-8",
+    "yen": 1030,
+    "pop": 2
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "6-17",
+    "yen": 2100,
+    "pop": 29
+   },
+   {
+    "combo": "6-7",
+    "yen": 1750,
+    "pop": 23
+   },
+   {
+    "combo": "7-17",
+    "yen": 430,
+    "pop": 1
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "6-17",
+    "yen": 9630,
+    "pop": 34
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "6-17",
+    "yen": 23460,
+    "pop": 74
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "6-7-17",
+    "yen": 8840,
+    "pop": 27
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "6-17-7",
+    "yen": 109830,
+    "pop": 342
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261115",
+ "venue_code": "08",
+ "race_no": 7,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605040720261115/F4",
+ "title": "レース結果 JRA"
+}
