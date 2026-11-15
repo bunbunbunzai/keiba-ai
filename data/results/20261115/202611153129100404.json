@@ -2,7 +2,172 @@
  "source": "rakuten",
  "date": "20261115",
  "race_id": "202611153129100404",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "9",
+    "yen": 1460
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "9-4",
+    "yen": 8970
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "9",
+    "yen": 320
+   },
+   {
+    "combo": "4",
+    "yen": 100
+   },
+   {
+    "combo": "5",
+    "yen": 110
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-9",
+    "yen": 610
+   },
+   {
+    "combo": "5-9",
+    "yen": 1820
+   },
+   {
+    "combo": "4-5",
+    "yen": 160
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-8",
+    "yen": 630
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-5-9",
+    "yen": 1660
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "9-4-5",
+    "yen": 32190
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-9",
+    "yen": 1430
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 9,
+   "name": "イカホ",
+   "time": "1:23.9",
+   "margin": "",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 4,
+   "number": 4,
+   "name": "リワードファラオン",
+   "time": "1:24.1",
+   "margin": "１",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 5,
+   "name": "グランパリッシュ",
+   "time": "1:24.3",
+   "margin": "１",
+   "pos4": 4,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "コンジャンクション",
+   "time": "1:24.5",
+   "margin": "１",
+   "pos4": 6,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 6,
+   "name": "グリントリッター",
+   "time": "1:24.6",
+   "margin": "１／２",
+   "pos4": 4,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 7,
+   "name": "トーケンレナン",
+   "time": "1:24.8",
+   "margin": "３／４",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 1,
+   "number": 1,
+   "name": "ハンドレインジ",
+   "time": "1:24.9",
+   "margin": "３／４",
+   "pos4": 8,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 8,
+   "name": "シティオブロンドン",
+   "time": "1:28.3",
+   "margin": "大差",
+   "pos4": 7,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 3,
+   "number": 3,
+   "name": "フリントロック",
+   "time": "1:29.1",
+   "margin": "４",
+   "pos4": 9,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }

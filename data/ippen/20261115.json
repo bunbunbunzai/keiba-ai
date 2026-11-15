@@ -1,6 +1,6 @@
 {
  "date": "20261115",
- "updated": "2026-11-15 16:56",
+ "updated": "2026-11-15 17:06",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -4136,8 +4136,22 @@
     "field": 12,
     "popularity": 9
    },
-   "odds": 33.6,
-   "popularity": 10
+   "odds": 22.9,
+   "popularity": 9
+  },
+  {
+   "race_id": "202611153129100406",
+   "results_key": "202611153129100406",
+   "venue": "高知",
+   "race_no": 6,
+   "post_time": "17:35",
+   "number": 5,
+   "name": "ハピアーザンエバー",
+   "types": [
+    "aitop"
+   ],
+   "odds": 17.7,
+   "popularity": 5
   },
   {
    "race_id": "202611153129100406",
@@ -4208,6 +4222,20 @@
    "venue": "帯広ば",
    "race_no": 7,
    "post_time": "17:50",
+   "number": 2,
+   "name": "イワキソルシエール",
+   "types": [
+    "aitop"
+   ],
+   "odds": 17.0,
+   "popularity": 3
+  },
+  {
+   "race_id": "202611150304160507",
+   "results_key": "202611150304160507",
+   "venue": "帯広ば",
+   "race_no": 7,
+   "post_time": "17:50",
    "number": 3,
    "name": "プリンセスエア",
    "types": [
@@ -4221,8 +4249,8 @@
     "field": 10,
     "popularity": 2
    },
-   "odds": 18.0,
-   "popularity": 5
+   "odds": 31.0,
+   "popularity": 6
   },
   {
    "race_id": "202611150304160507",
@@ -4242,7 +4270,7 @@
     "field": 10,
     "popularity": 1
    },
-   "odds": 1.6,
+   "odds": 1.2,
    "popularity": 1
   },
   {
@@ -4254,7 +4282,8 @@
    "number": 7,
    "name": "ファーストココロノ",
    "types": [
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 15,
    "last": {
@@ -4263,8 +4292,8 @@
     "field": 10,
     "popularity": 1
    },
-   "odds": 13.7,
-   "popularity": 3
+   "odds": 22.7,
+   "popularity": 5
   },
   {
    "race_id": "202611153230130506",
@@ -4306,7 +4335,7 @@
     "field": 13,
     "popularity": 13
    },
-   "odds": 34.8,
+   "odds": 27.4,
    "popularity": 8
   },
   {
@@ -4327,8 +4356,8 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": 70.8,
-   "popularity": 12
+   "odds": 93.1,
+   "popularity": 11
   },
   {
    "race_id": "202611151106070112",
@@ -4348,7 +4377,7 @@
     "field": 11,
     "popularity": null
    },
-   "odds": 6.0,
+   "odds": 7.9,
    "popularity": 4
   },
   {
@@ -4369,8 +4398,22 @@
     "field": 12,
     "popularity": 5
    },
-   "odds": 57.0,
-   "popularity": 10
+   "odds": 39.2,
+   "popularity": 9
+  },
+  {
+   "race_id": "202611153129100407",
+   "results_key": "202611153129100407",
+   "venue": "高知",
+   "race_no": 7,
+   "post_time": "18:10",
+   "number": 5,
+   "name": "ロイヤルタイム",
+   "types": [
+    "aitop"
+   ],
+   "odds": 6.1,
+   "popularity": 3
   },
   {
    "race_id": "202611152218140308",
@@ -4434,6 +4477,20 @@
    },
    "odds": 22.9,
    "popularity": 8
+  },
+  {
+   "race_id": "202611152218140308",
+   "results_key": "202611152218140308",
+   "venue": "金沢",
+   "race_no": 8,
+   "post_time": "18:15",
+   "number": 12,
+   "name": "ゴッドフェンサー",
+   "types": [
+    "aitop"
+   ],
+   "odds": 9.7,
+   "popularity": 5
   },
   {
    "race_id": "202611153230130507",
