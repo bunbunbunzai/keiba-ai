@@ -2,7 +2,194 @@
  "source": "rakuten",
  "date": "20261115",
  "race_id": "202611153230130505",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "6",
+    "yen": 230
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "6-11",
+    "yen": 1560
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "6",
+    "yen": 130
+   },
+   {
+    "combo": "11",
+    "yen": 210
+   },
+   {
+    "combo": "5",
+    "yen": 210
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "6-11",
+    "yen": 410
+   },
+   {
+    "combo": "5-6",
+    "yen": 320
+   },
+   {
+    "combo": "5-11",
+    "yen": 540
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "6-8",
+    "yen": 660
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "5-6-11",
+    "yen": 1240
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "6-11-5",
+    "yen": 4870
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "6-11",
+    "yen": 1110
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 6,
+   "name": "アメストリス",
+   "time": "1:30.2",
+   "margin": "",
+   "pos4": 3,
+   "last3f": 38.2,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 11,
+   "name": "トルーマンテソーロ",
+   "time": "1:30.8",
+   "margin": "３",
+   "pos4": 4,
+   "last3f": 39.7,
+   "popularity": 4
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 5,
+   "name": "スターオブフェイス",
+   "time": "1:31.1",
+   "margin": "１ １／２",
+   "pos4": 1,
+   "last3f": 40.8,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "ロードミッドナイト",
+   "time": "1:31.2",
+   "margin": "３／４",
+   "pos4": 2,
+   "last3f": 40.3,
+   "popularity": 2
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 9,
+   "name": "ニジイロハーピー",
+   "time": "1:31.6",
+   "margin": "２",
+   "pos4": 7,
+   "last3f": 40.3,
+   "popularity": 9
+  },
+  {
+   "finish": "6",
+   "frame": 1,
+   "number": 1,
+   "name": "ラディアントホース",
+   "time": "1:32.3",
+   "margin": "４",
+   "pos4": 5,
+   "last3f": 41.3,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 10,
+   "name": "テイエムタリスマ",
+   "time": "1:32.5",
+   "margin": "３／４",
+   "pos4": 9,
+   "last3f": 41.3,
+   "popularity": 7
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "マイネルサハラ",
+   "time": "1:32.7",
+   "margin": "１",
+   "pos4": 5,
+   "last3f": 42.0,
+   "popularity": 8
+  },
+  {
+   "finish": "9",
+   "frame": 4,
+   "number": 4,
+   "name": "テイエムランウェイ",
+   "time": "1:32.9",
+   "margin": "１",
+   "pos4": 8,
+   "last3f": 42.1,
+   "popularity": 6
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 8,
+   "name": "ベネロングポイント",
+   "time": "1:33.1",
+   "margin": "３／４",
+   "pos4": 11,
+   "last3f": 40.3,
+   "popularity": 11
+  },
+  {
+   "finish": "11",
+   "frame": 6,
+   "number": 7,
+   "name": "ガルヴァナイズ",
+   "time": "1:33.4",
+   "margin": "１ １／２",
+   "pos4": 10,
+   "last3f": 40.5,
+   "popularity": 10
+  }
+ ]
 }
