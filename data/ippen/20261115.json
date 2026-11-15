@@ -1,6 +1,6 @@
 {
  "date": "20261115",
- "updated": "2026-11-15 14:19",
+ "updated": "2026-11-15 14:25",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -3087,8 +3087,8 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": null,
-   "popularity": null
+   "odds": 53.6,
+   "popularity": 7
   },
   {
    "race_id": "202611153230130502",
@@ -3108,8 +3108,8 @@
     "field": 10,
     "popularity": 10
    },
-   "odds": null,
-   "popularity": null
+   "odds": 160.8,
+   "popularity": 8
   },
   {
    "race_id": "202611151106070108",
@@ -3130,8 +3130,8 @@
     "field": 12,
     "popularity": 8
    },
-   "odds": 8.2,
-   "popularity": 4
+   "odds": 11.0,
+   "popularity": 7
   },
   {
    "race_id": "202611151106070108",
@@ -3151,8 +3151,8 @@
     "field": 12,
     "popularity": 6
    },
-   "odds": 32.8,
-   "popularity": 9
+   "odds": 14.9,
+   "popularity": 8
   },
   {
    "race_id": "jra_20261115_福島_12",
