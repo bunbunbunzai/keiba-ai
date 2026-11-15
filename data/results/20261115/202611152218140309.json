@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261115",
  "race_id": "202611152218140309",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,105 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 8,
+   "name": "プロスペロ",
+   "time": "56.5",
+   "margin": "",
+   "pos4": 2,
+   "last3f": 37.0,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 1,
+   "number": 1,
+   "name": "イズジョーアザヤカ",
+   "time": "56.6",
+   "margin": "１／２",
+   "pos4": 7,
+   "last3f": 36.6,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 6,
+   "name": "ポッドボレット",
+   "time": "56.6",
+   "margin": "ハナ",
+   "pos4": 8,
+   "last3f": 36.3,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 9,
+   "name": "ブレイクネック",
+   "time": "57.1",
+   "margin": "２ １／２",
+   "pos4": 1,
+   "last3f": 37.8,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 7,
+   "name": "エコロドゥネス",
+   "time": "57.5",
+   "margin": "２",
+   "pos4": 5,
+   "last3f": 38.0,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "シェーンシュタット",
+   "time": "57.5",
+   "margin": "アタマ",
+   "pos4": 6,
+   "last3f": 37.8,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 5,
+   "name": "メイショウオオミネ",
+   "time": "57.6",
+   "margin": "クビ",
+   "pos4": 3,
+   "last3f": 38.1,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "ベラジオカゼタチヌ",
+   "time": "57.9",
+   "margin": "１ １／２",
+   "pos4": 8,
+   "last3f": 37.4,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 4,
+   "number": 4,
+   "name": "アーバンエア",
+   "time": "58.1",
+   "margin": "１ １／２",
+   "pos4": 3,
+   "last3f": 38.6,
+   "popularity": null
+  }
+ ]
 }

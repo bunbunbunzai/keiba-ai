@@ -1,6 +1,6 @@
 {
  "date": "20261115",
- "updated": "2026-11-15 19:15",
+ "updated": "2026-11-15 19:29",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -4961,21 +4961,7 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": 18.8,
-   "popularity": 7
-  },
-  {
-   "race_id": "202611153230130510",
-   "results_key": "202611153230130510",
-   "venue": "佐賀",
-   "race_no": 10,
-   "post_time": "20:10",
-   "number": 3,
-   "name": "レミギノテソーロ",
-   "types": [
-    "aitop"
-   ],
-   "odds": 15.0,
+   "odds": 9.8,
    "popularity": 6
   },
   {
@@ -4997,7 +4983,28 @@
     "field": 10,
     "popularity": 2
    },
-   "odds": 9.4,
+   "odds": 11.9,
+   "popularity": 8
+  },
+  {
+   "race_id": "202611153230130510",
+   "results_key": "202611153230130510",
+   "venue": "佐賀",
+   "race_no": 10,
+   "post_time": "20:10",
+   "number": 7,
+   "name": "ショウナンアワード",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 15,
+   "last": {
+    "date": "2026-10-31",
+    "finish": 9,
+    "field": 12,
+    "popularity": 2
+   },
+   "odds": 7.8,
    "popularity": 5
   },
   {
@@ -5116,7 +5123,7 @@
     "field": 9,
     "popularity": 8
    },
-   "odds": 7.9,
+   "odds": 8.0,
    "popularity": 5
   },
   {
@@ -5137,8 +5144,8 @@
     "field": 11,
     "popularity": 11
    },
-   "odds": 7.1,
-   "popularity": 4
+   "odds": 7.9,
+   "popularity": 3
   },
   {
    "race_id": "202611153129100412",
@@ -5158,8 +5165,8 @@
     "field": 9,
     "popularity": 4
    },
-   "odds": 12.1,
-   "popularity": 7
+   "odds": 6.0,
+   "popularity": 2
   },
   {
    "race_id": "202611153129100412",
@@ -5179,7 +5186,7 @@
     "field": 10,
     "popularity": 9
    },
-   "odds": 17.6,
+   "odds": 14.7,
    "popularity": 10
   }
  ]
