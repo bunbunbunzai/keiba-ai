@@ -1,8 +1,8 @@
 {
  "date": "20261115",
- "updated": "2026-11-15 11:42",
+ "updated": "2026-11-15 11:56",
  "races_total": 23,
- "races_scored": 12,
+ "races_scored": 13,
  "stake": 1000,
  "return": 1130,
  "roi": 113.0,
@@ -14,17 +14,17 @@
    "race_id": "202611151106070101",
    "confidence": "見送り",
    "honmei": 1,
-   "honmei_finish": null,
+   "honmei_finish": "4",
    "top3": [
-    null,
-    null,
-    null
+    5,
+    2,
+    3
    ],
    "stake": 0,
    "return": 0,
    "roi": null,
    "hits": [],
-   "voided": true
+   "voided": false
   },
   {
    "race_id": "202611151106070102",
