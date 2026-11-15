@@ -806,11 +806,11 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
 <h3>買い目（各100円・計{len(p.get('bets', []))}点）</h3><ul class="bets">{bets or '<li>買い目なし</li>'}</ul>{bets_note}{aff_rakuten('race') if not str(p['race_id']).startswith('jra_') and p.get('confidence') != '見送り' else ''}</section>
 {res_html}
 <section class="card"><h2>{term("pace", "展開予想")}</h2><p>{esc(p.get('pace'))}</p></section>
-{racesim.section(p, frame_of, RACESIM_V)}
 {bias_html}
 <section class="card"><h2>全頭評価</h2>
 <ul class="hl"><li class="hr hd"><span class="c-no">馬番</span><span class="c-mk">印</span><span class="c-nm">馬名・騎手</span><span class="c-od">単勝</span><span class="c-sc">評価点</span><span class="c-vl">妙味</span><span class="c-fn">着順</span><span class="c-cm">短評</span></li>{''.join(rows)}</ul>
 <p class="meta">{term("score", "評価点")}は45点満点。{term("adjpct", "補正勝率")}は単勝オッズとAIの評価点を合わせた勝つ確率で、◎と自信度はこれで決めている。{term("value", "妙味")}は「AIの{term("winpct", "想定勝率")}×単勝オッズ」（参考）。1.2以上なら配当の割に勝ち目がある狙い目、0.8未満なら人気しすぎ（過剰人気）という目安（オッズは予想を出した時点のもの）。用語は<a href="/glossary/">用語集</a>へ。</p></section>
+{racesim.section(p, frame_of, RACESIM_V)}
 {ippen_line(date, p)}
 {f'<section class="card"><h2>更新履歴</h2><ul>{updates}</ul></section>' if updates else ''}
 {graded_link}
