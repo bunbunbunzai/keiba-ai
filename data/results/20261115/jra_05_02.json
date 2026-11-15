@@ -1,0 +1,258 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 8,
+   "name": "オンザボー",
+   "time": "1:48.0",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "number": 11,
+   "name": "シュートザワークス",
+   "time": "1:48.1",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "number": 1,
+   "name": "シネファイル",
+   "time": "1:48.2",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "4",
+   "number": 7,
+   "name": "パッションノーヴァ",
+   "time": "1:48.5",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "5",
+   "number": 4,
+   "name": "メイダイ",
+   "time": "1:48.6",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "6",
+   "number": 13,
+   "name": "ロジグローリー",
+   "time": "1:48.7",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "7",
+   "number": 15,
+   "name": "ロジリッパー",
+   "time": "1:49.1",
+   "margin": "２ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "8",
+   "number": 9,
+   "name": "シーバップ",
+   "time": "1:49.1",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "9",
+   "number": 3,
+   "name": "グレータードリーム",
+   "time": "1:49.5",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "10",
+   "number": 2,
+   "name": "ポジティブレンサ",
+   "time": "1:49.5",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "11",
+   "number": 6,
+   "name": "サターンテソーロ",
+   "time": "1:49.6",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "12",
+   "number": 16,
+   "name": "ヴィルアペックス",
+   "time": "1:49.7",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "13",
+   "number": 12,
+   "name": "ブロナバラッド",
+   "time": "1:50.1",
+   "margin": "２ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "14",
+   "number": 5,
+   "name": "フォルミナンテ",
+   "time": "1:50.2",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 16
+  },
+  {
+   "finish": "15",
+   "number": 10,
+   "name": "リョウランリノ",
+   "time": "1:50.2",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 17
+  },
+  {
+   "finish": "16",
+   "number": 17,
+   "name": "コールドスリープ",
+   "time": "1:50.5",
+   "margin": "１ 3/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "17",
+   "number": 14,
+   "name": "ガーシュウィン",
+   "time": "1:51.2",
+   "margin": "４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "8",
+    "yen": 310,
+    "pop": 2
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "8",
+    "yen": 130,
+    "pop": 1
+   },
+   {
+    "combo": "11",
+    "yen": 130,
+    "pop": 3
+   },
+   {
+    "combo": "1",
+    "yen": 130,
+    "pop": 2
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-6",
+    "yen": 640,
+    "pop": 2
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "8-11",
+    "yen": 230,
+    "pop": 2
+   },
+   {
+    "combo": "1-8",
+    "yen": 190,
+    "pop": 1
+   },
+   {
+    "combo": "1-11",
+    "yen": 250,
+    "pop": 3
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "8-11",
+    "yen": 590,
+    "pop": 2
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "8-11",
+    "yen": 1070,
+    "pop": 3
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-8-11",
+    "yen": 470,
+    "pop": 1
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "8-11-1",
+    "yen": 3070,
+    "pop": 4
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261115",
+ "venue_code": "05",
+ "race_no": 2,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605040220261115/8D",
+ "title": "レース結果 JRA"
+}
