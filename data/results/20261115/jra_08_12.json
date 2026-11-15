@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 16,
+   "name": "アイスグリーン",
+   "time": "1:47.5",
+   "margin": "",
+   "corners": "2-2",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "2",
+   "number": 14,
+   "name": "スパークリシャール",
+   "time": "",
+   "margin": "アタマ",
+   "corners": "6-4",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "3",
+   "number": 4,
+   "name": "マトラコーニッシュ",
+   "time": "",
+   "margin": "クビ",
+   "corners": "14-14",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "4",
+   "number": 7,
+   "name": "アスクコモンタレヴ",
+   "time": "",
+   "margin": "１",
+   "corners": "16-16",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "5",
+   "number": 8,
+   "name": "ハギノアルデバラン",
+   "time": "",
+   "margin": "クビ",
+   "corners": "3-3",
+   "last3f": null,
+   "popularity": 15
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "16",
+    "yen": 840,
+    "pop": 4
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "16",
+    "yen": 290,
+    "pop": 3
+   },
+   {
+    "combo": "14",
+    "yen": 300,
+    "pop": 4
+   },
+   {
+    "combo": "4",
+    "yen": 370,
+    "pop": 7
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "7-8",
+    "yen": 1670,
+    "pop": 9
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "14-16",
+    "yen": 1000,
+    "pop": 6
+   },
+   {
+    "combo": "4-16",
+    "yen": 1650,
+    "pop": 18
+   },
+   {
+    "combo": "4-14",
+    "yen": 2240,
+    "pop": 29
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "14-16",
+    "yen": 3020,
+    "pop": 7
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "16-14",
+    "yen": 6560,
+    "pop": 17
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-14-16",
+    "yen": 13780,
+    "pop": 31
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "16-14-4",
+    "yen": 75270,
+    "pop": 173
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261115",
+ "venue_code": "08",
+ "race_no": 12,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605041220261115/BD",
+ "title": "レース結果 JRA"
+}
