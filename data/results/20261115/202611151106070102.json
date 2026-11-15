@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261115",
  "race_id": "202611151106070102",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,127 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 1,
+   "number": 1,
+   "name": "ペイシャラム",
+   "time": "1:23.2",
+   "margin": "",
+   "pos4": 2,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 6,
+   "name": "ビッグノエルルーフ",
+   "time": "1:23.4",
+   "margin": "１",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "ツクバアヴァロン",
+   "time": "1:24.7",
+   "margin": "８",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 11,
+   "name": "ホットジュピター",
+   "time": "1:25.5",
+   "margin": "５",
+   "pos4": 4,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 9,
+   "name": "エリオステモン",
+   "time": "1:25.8",
+   "margin": "１ ３／４",
+   "pos4": 7,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 7,
+   "name": "ソアサージュ",
+   "time": "1:26.9",
+   "margin": "７",
+   "pos4": 5,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 4,
+   "name": "フッカツノジャンボ",
+   "time": "1:27.0",
+   "margin": "３／４",
+   "pos4": 11,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 10,
+   "name": "ピースワンボイス",
+   "time": "1:27.1",
+   "margin": "クビ",
+   "pos4": 9,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "リトルコリンズ",
+   "time": "1:27.3",
+   "margin": "１",
+   "pos4": 5,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 8,
+   "name": "ラストパラダイス",
+   "time": "1:27.5",
+   "margin": "１",
+   "pos4": 9,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 5,
+   "number": 5,
+   "name": "ジーティーミュウ",
+   "time": "1:28.2",
+   "margin": "４",
+   "pos4": 8,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
