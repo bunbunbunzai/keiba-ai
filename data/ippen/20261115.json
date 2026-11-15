@@ -1,6 +1,6 @@
 {
  "date": "20261115",
- "updated": "2026-11-15 14:08",
+ "updated": "2026-11-15 14:19",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -2756,7 +2756,7 @@
    "types": [
     "aitop"
    ],
-   "odds": 6.7,
+   "odds": 5.2,
    "popularity": 3
   },
   {
@@ -2777,7 +2777,7 @@
     "field": 12,
     "popularity": 5
    },
-   "odds": 10.9,
+   "odds": 12.8,
    "popularity": 6
   },
   {
@@ -2999,7 +2999,8 @@
    "number": 2,
    "name": "ヒメトラハピネス",
    "types": [
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 15,
    "last": {
@@ -3008,8 +3009,8 @@
     "field": 10,
     "popularity": 3
    },
-   "odds": null,
-   "popularity": null
+   "odds": 7.6,
+   "popularity": 4
   },
   {
    "race_id": "202611150304160503",
@@ -3029,8 +3030,22 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": null,
-   "popularity": null
+   "odds": 9.0,
+   "popularity": 6
+  },
+  {
+   "race_id": "202611150304160503",
+   "results_key": "202611150304160503",
+   "venue": "帯広ば",
+   "race_no": 3,
+   "post_time": "15:45",
+   "number": 6,
+   "name": "アリチャン",
+   "types": [
+    "aitop"
+   ],
+   "odds": 12.4,
+   "popularity": 8
   },
   {
    "race_id": "202611150304160503",
@@ -3041,7 +3056,8 @@
    "number": 9,
    "name": "ヒノクニスピード",
    "types": [
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 14,
    "last": {
@@ -3050,8 +3066,8 @@
     "field": 10,
     "popularity": 3
    },
-   "odds": null,
-   "popularity": null
+   "odds": 11.0,
+   "popularity": 7
   },
   {
    "race_id": "202611153230130502",
