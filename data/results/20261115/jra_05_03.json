@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 11,
+   "name": "ドミナートル",
+   "time": "1:23.3",
+   "margin": "",
+   "corners": "8-6",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 9,
+   "name": "ダブルスプリング",
+   "time": "1:23.5",
+   "margin": "１ 1/4",
+   "corners": "3-4",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "3",
+   "number": 14,
+   "name": "シュプレヒコール",
+   "time": "1:23.7",
+   "margin": "１",
+   "corners": "10-8",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "number": 15,
+   "name": "アルパイングリーン",
+   "time": "1:23.8",
+   "margin": "３／４",
+   "corners": "8-8",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "number": 8,
+   "name": "ブルードロップ",
+   "time": "1:24.0",
+   "margin": "１ 1/4",
+   "corners": "2-2",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "6",
+   "number": 5,
+   "name": "バサーニオ",
+   "time": "1:24.0",
+   "margin": "ハナ",
+   "corners": "14-11",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "7",
+   "number": 6,
+   "name": "ショウナンワンパク",
+   "time": "1:24.0",
+   "margin": "クビ",
+   "corners": "1-1",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "8",
+   "number": 12,
+   "name": "フィオリアーモ",
+   "time": "1:24.1",
+   "margin": "３／４",
+   "corners": "12-11",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "9",
+   "number": 2,
+   "name": "アイレバルバドス",
+   "time": "1:24.1",
+   "margin": "ハナ",
+   "corners": "3-2",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "10",
+   "number": 4,
+   "name": "ジーティーマドンナ",
+   "time": "1:24.2",
+   "margin": "１／２",
+   "corners": "15-15",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "11",
+   "number": 16,
+   "name": "スリーフラワー",
+   "time": "1:24.3",
+   "margin": "クビ",
+   "corners": "11-11",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "12",
+   "number": 7,
+   "name": "パーシビア",
+   "time": "1:24.4",
+   "margin": "３／４",
+   "corners": "16-16",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "13",
+   "number": 13,
+   "name": "ドナミモザ",
+   "time": "1:24.5",
+   "margin": "３／４",
+   "corners": "6-6",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "14",
+   "number": 10,
+   "name": "ナンヨーカラフル",
+   "time": "1:24.6",
+   "margin": "１／２",
+   "corners": "7-8",
+   "last3f": null,
+   "popularity": 16
+  },
+  {
+   "finish": "15",
+   "number": 3,
+   "name": "サンレガート",
+   "time": "1:24.9",
+   "margin": "２",
+   "corners": "3-4",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "16",
+   "number": 1,
+   "name": "ファナウ",
+   "time": "1:25.4",
+   "margin": "３",
+   "corners": "12-11",
+   "last3f": null,
+   "popularity": 12
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "11",
+    "yen": 280,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "11",
+    "yen": 160,
+    "pop": 1
+   },
+   {
+    "combo": "9",
+    "yen": 350,
+    "pop": 7
+   },
+   {
+    "combo": "14",
+    "yen": 210,
+    "pop": 3
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-6",
+    "yen": 970,
+    "pop": 4
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "9-11",
+    "yen": 500,
+    "pop": 3
+   },
+   {
+    "combo": "11-14",
+    "yen": 300,
+    "pop": 1
+   },
+   {
+    "combo": "9-14",
+    "yen": 750,
+    "pop": 8
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "9-11",
+    "yen": 1210,
+    "pop": 3
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "11-9",
+    "yen": 2140,
+    "pop": 5
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "9-11-14",
+    "yen": 1550,
+    "pop": 1
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "11-9-14",
+    "yen": 7110,
+    "pop": 4
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261115",
+ "venue_code": "05",
+ "race_no": 3,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605040320261115/42",
+ "title": "レース結果 JRA"
+}
