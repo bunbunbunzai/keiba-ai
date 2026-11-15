@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261115",
  "race_id": "202611152218140302",
- "tries": 5,
+ "tries": 6,
  "payouts": {
   "単勝": [
    {
@@ -77,7 +77,7 @@
    "name": "ワイドシャッフエン",
    "time": "1:37.8",
    "margin": "",
-   "pos4": null,
+   "pos4": 3,
    "last3f": 38.5,
    "popularity": null
   },
@@ -88,7 +88,7 @@
    "name": "リアアーテシアン",
    "time": "1:37.8",
    "margin": "ハナ",
-   "pos4": null,
+   "pos4": 1,
    "last3f": 38.8,
    "popularity": null
   },
@@ -99,7 +99,7 @@
    "name": "サバイバルトゥルー",
    "time": "1:38.0",
    "margin": "１",
-   "pos4": null,
+   "pos4": 1,
    "last3f": 39.0,
    "popularity": null
   },
@@ -110,7 +110,7 @@
    "name": "ハンターワディー",
    "time": "1:38.2",
    "margin": "１",
-   "pos4": null,
+   "pos4": 3,
    "last3f": 39.0,
    "popularity": null
   },
@@ -121,7 +121,7 @@
    "name": "シャドウマッドネス",
    "time": "1:39.0",
    "margin": "４",
-   "pos4": null,
+   "pos4": 6,
    "last3f": 38.6,
    "popularity": null
   },
@@ -132,7 +132,7 @@
    "name": "アマソナ",
    "time": "1:39.1",
    "margin": "１／２",
-   "pos4": null,
+   "pos4": 5,
    "last3f": 39.3,
    "popularity": null
   },
@@ -143,7 +143,7 @@
    "name": "マイネルエトルタ",
    "time": "1:39.8",
    "margin": "３",
-   "pos4": null,
+   "pos4": 9,
    "last3f": 38.5,
    "popularity": null
   },
@@ -154,7 +154,7 @@
    "name": "ワールドラブ",
    "time": "1:40.2",
    "margin": "２",
-   "pos4": null,
+   "pos4": 6,
    "last3f": 40.1,
    "popularity": null
   },
@@ -165,7 +165,7 @@
    "name": "ソルセルリ",
    "time": "1:40.9",
    "margin": "３",
-   "pos4": null,
+   "pos4": 6,
    "last3f": 40.4,
    "popularity": null
   }

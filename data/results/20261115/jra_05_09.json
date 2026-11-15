@@ -6,7 +6,7 @@
    "name": "トヨサカエ",
    "time": "1:23.8",
    "margin": "",
-   "corners": "",
+   "corners": "12-12",
    "last3f": null,
    "popularity": 1
   },
@@ -14,9 +14,9 @@
    "finish": "2",
    "number": 14,
    "name": "サンマルノヴェル",
-   "time": "",
+   "time": "1:24.3",
    "margin": "２ 1/2",
-   "corners": "",
+   "corners": "6-6",
    "last3f": null,
    "popularity": 3
   },
@@ -24,9 +24,9 @@
    "finish": "3",
    "number": 1,
    "name": "キョウエイカンセ",
-   "time": "",
+   "time": "1:24.3",
    "margin": "ハナ",
-   "corners": "",
+   "corners": "14-13",
    "last3f": null,
    "popularity": 4
   },
@@ -34,9 +34,9 @@
    "finish": "4",
    "number": 4,
    "name": "レイズカイザー",
-   "time": "",
+   "time": "1:24.5",
    "margin": "１",
-   "corners": "",
+   "corners": "6-7",
    "last3f": null,
    "popularity": 6
   },
@@ -44,11 +44,121 @@
    "finish": "5",
    "number": 16,
    "name": "マッシャーブルム",
-   "time": "",
+   "time": "1:24.6",
    "margin": "３／４",
-   "corners": "",
+   "corners": "10-11",
    "last3f": null,
    "popularity": 5
+  },
+  {
+   "finish": "6",
+   "number": 2,
+   "name": "アデランテ",
+   "time": "1:24.7",
+   "margin": "１",
+   "corners": "1-1",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "7",
+   "number": 12,
+   "name": "ブリックワーク",
+   "time": "1:24.7",
+   "margin": "ハナ",
+   "corners": "10-9",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "8",
+   "number": 9,
+   "name": "パラサイコロジー",
+   "time": "1:24.9",
+   "margin": "３／４",
+   "corners": "2-2",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "9",
+   "number": 3,
+   "name": "ディニトーソ",
+   "time": "1:25.3",
+   "margin": "２ 1/2",
+   "corners": "6-7",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "10",
+   "number": 13,
+   "name": "ガンウルフ",
+   "time": "1:25.4",
+   "margin": "クビ",
+   "corners": "4-2",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "11",
+   "number": 11,
+   "name": "リゾートアイランド",
+   "time": "1:26.0",
+   "margin": "３ 1/2",
+   "corners": "9-9",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "12",
+   "number": 7,
+   "name": "ウナギノボリ",
+   "time": "1:26.0",
+   "margin": "ハナ",
+   "corners": "15-15",
+   "last3f": null,
+   "popularity": 16
+  },
+  {
+   "finish": "13",
+   "number": 6,
+   "name": "サトミノキラリ",
+   "time": "1:26.4",
+   "margin": "２ 1/2",
+   "corners": "16-15",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "14",
+   "number": 5,
+   "name": "ビルカール",
+   "time": "1:26.4",
+   "margin": "ハナ",
+   "corners": "5-5",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "15",
+   "number": 15,
+   "name": "アタリダイキチ",
+   "time": "1:26.6",
+   "margin": "１ 1/2",
+   "corners": "12-13",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "16",
+   "number": 10,
+   "name": "カフェニクス",
+   "time": "1:26.7",
+   "margin": "クビ",
+   "corners": "2-2",
+   "last3f": null,
+   "popularity": 12
   }
  ],
  "payouts": {
