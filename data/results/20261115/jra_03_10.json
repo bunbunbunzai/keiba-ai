@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 9,
+   "name": "ドッビアーコ",
+   "time": "2:46.2",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "2",
+   "number": 7,
+   "name": "バースライト",
+   "time": "2:46.4",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "3",
+   "number": 13,
+   "name": "ヴァイザーバルコ",
+   "time": "2:46.7",
+   "margin": "１ 3/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "4",
+   "number": 6,
+   "name": "ジュンライデン",
+   "time": "2:47.2",
+   "margin": "３",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "number": 5,
+   "name": "タケルフォーカス",
+   "time": "2:47.3",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "6",
+   "number": 8,
+   "name": "スズカミエール",
+   "time": "2:47.4",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "7",
+   "number": 14,
+   "name": "ハイラント",
+   "time": "2:47.6",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "8",
+   "number": 16,
+   "name": "ゲンジ",
+   "time": "2:47.6",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "9",
+   "number": 3,
+   "name": "レーヴドロペラ",
+   "time": "2:47.9",
+   "margin": "１ 3/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "10",
+   "number": 12,
+   "name": "アスクデッドヒート",
+   "time": "2:48.0",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "11",
+   "number": 1,
+   "name": "エリム",
+   "time": "2:48.2",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 16
+  },
+  {
+   "finish": "12",
+   "number": 4,
+   "name": "ダノンピクチャー",
+   "time": "2:48.5",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "13",
+   "number": 2,
+   "name": "リギーロ",
+   "time": "2:48.6",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "14",
+   "number": 10,
+   "name": "オルトパラティウム",
+   "time": "2:49.9",
+   "margin": "８",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "15",
+   "number": 11,
+   "name": "オオタチ",
+   "time": "2:50.6",
+   "margin": "４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "16",
+   "number": 15,
+   "name": "ブリヤディアマンテ",
+   "time": "2:51.4",
+   "margin": "５",
+   "corners": "",
+   "last3f": null,
+   "popularity": 14
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "9",
+    "yen": 2230,
+    "pop": 10
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "9",
+    "yen": 820,
+    "pop": 12
+   },
+   {
+    "combo": "7",
+    "yen": 300,
+    "pop": 4
+   },
+   {
+    "combo": "13",
+    "yen": 880,
+    "pop": 13
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-5",
+    "yen": 3310,
+    "pop": 14
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "7-9",
+    "yen": 3740,
+    "pop": 52
+   },
+   {
+    "combo": "9-13",
+    "yen": 11130,
+    "pop": 92
+   },
+   {
+    "combo": "7-13",
+    "yen": 4740,
+    "pop": 58
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "7-9",
+    "yen": 10020,
+    "pop": 44
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "9-7",
+    "yen": 20580,
+    "pop": 85
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "7-9-13",
+    "yen": 104820,
+    "pop": 301
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "9-7-13",
+    "yen": 438750,
+    "pop": 1375
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261115",
+ "venue_code": "03",
+ "race_no": 10,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603041020261115/7F",
+ "title": "レース結果 JRA"
+}
