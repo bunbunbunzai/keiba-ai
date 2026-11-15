@@ -1,0 +1,64 @@
+name: graded (重賞の過去成績を集めてデータ記事を作る)
+
+# 毎日1回：JRAの重賞一覧から過去の成績を集め（集め終えた年は読まない）、
+# 2週間以内に行われる重賞の「過去10年データ記事」を作る。記事は集計だけで作り、AIは呼ばない。
+on:
+  schedule:
+    - cron: "23 17 * * *"   # JST 2:23
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "all / sample（形の確認）/ hist（成績だけ）/ cols（記事だけ）"
+        required: true
+        default: all
+      minutes:
+        description: "成績を集める最大時間（分）"
+        required: false
+        default: "200"
+      days:
+        description: "何日先までの重賞の記事を作るか"
+        required: false
+        default: "16"
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: graded
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q -r requirements.txt
+      - name: 実行
+        working-directory: scraper
+        env:
+          MODE: ${{ inputs.mode || 'all' }}
+          MINUTES: ${{ inputs.minutes || '200' }}
+          DAYS: ${{ inputs.days || '16' }}
+        run: |
+          case "$MODE" in
+            sample) python -u graded_hist.py --years 2 --sample ;;
+            hist)   python -u graded_hist.py --max-minutes "$MINUTES" ;;
+            cols)   python -u graded_cols.py --days "$DAYS" ;;
+            *)      python -u graded_hist.py --max-minutes "$MINUTES"; python -u graded_cols.py --days "$DAYS" ;;
+          esac
+      - name: 保存
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for d in data/graded_hist data/raw/graded_hist columns; do [ -e "$d" ] && git add "$d"; done
+          if git diff --cached --quiet; then echo "変更なし"; exit 0; fi
+          git commit -q -m "graded: 重賞の過去成績・データ記事を更新"
+          for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && break; sleep 7; done
+          gh workflow run pages.yml --ref main
+        env:
+          GH_TOKEN: ${{ github.token }}
