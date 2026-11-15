@@ -46,6 +46,7 @@ jobs:
           DAYS: ${{ inputs.days || '16' }}
         run: |
           case "$MODE" in
+            probe)  python -u graded_hist.py --probe https://www.jra.go.jp/datafile/seiseki/replay/2018/001.html https://www.jra.go.jp/datafile/seiseki/replay/2016/104.html https://www.jra.go.jp/datafile/seiseki/replay/2020/001.html https://www.jra.go.jp/datafile/seiseki/g1/arima/result/arima2017.html https://www.jra.go.jp/datafile/seiseki/g1/arima/result/arima2019.html https://www.jra.go.jp/datafile/seiseki/replay/2018/050.html ;;
             sample) python -u graded_hist.py --years 2 --sample ;;
             hist)   python -u graded_hist.py --max-minutes "$MINUTES" ;;
             cols)   python -u graded_cols.py --days "$DAYS" ;;

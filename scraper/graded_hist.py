@@ -204,7 +204,15 @@ def main() -> None:
     ap.add_argument("--years", type=int, default=11, help="今年を含めてさかのぼる年数")
     ap.add_argument("--max-minutes", type=float, default=120)
     ap.add_argument("--sample", action="store_true", help="成績ページを2つだけ読んで、生のHTMLも data/raw/graded_hist に残す（形の確認用）")
+    ap.add_argument("--probe", nargs="*", help="指定したページの生のHTMLを data/raw/graded_hist に残すだけ（形の確認用）")
     a = ap.parse_args()
+    if a.probe:
+        ps = PoliteSession(min_interval=5.0, encoding="shift_jis")
+        raw = DATA_DIR / "raw" / "graded_hist"
+        raw.mkdir(parents=True, exist_ok=True)
+        for u in a.probe:
+            (raw / (re.sub(r"[^0-9A-Za-z]+", "_", u.split("seiseki/")[-1]) + ".html")).write_text(ps.get(u).text, encoding="utf-8")
+        return
     deadline = time.monotonic() + a.max_minutes * 60
     now = datetime.now(JST)
     sess = PoliteSession(min_interval=5.0, encoding="shift_jis")
