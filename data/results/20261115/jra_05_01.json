@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 7,
+   "name": "オーケーエース",
+   "time": "1:26.3",
+   "margin": "",
+   "corners": "3-4",
+   "last3f": 36.3,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 12,
+   "name": "ケッパレ",
+   "time": "1:26.5",
+   "margin": "１",
+   "corners": "9-7",
+   "last3f": 36.2,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "number": 9,
+   "name": "コールレスポンス",
+   "time": "1:26.8",
+   "margin": "２",
+   "corners": "2-2",
+   "last3f": 37.0,
+   "popularity": 5
+  },
+  {
+   "finish": "4",
+   "number": 16,
+   "name": "ルバルマン",
+   "time": "1:26.8",
+   "margin": "アタマ",
+   "corners": "3-4",
+   "last3f": 36.8,
+   "popularity": 11
+  },
+  {
+   "finish": "5",
+   "number": 13,
+   "name": "ジェラシックパーク",
+   "time": "1:27.0",
+   "margin": "１",
+   "corners": "6-7",
+   "last3f": 36.7,
+   "popularity": 10
+  },
+  {
+   "finish": "6",
+   "number": 3,
+   "name": "コスモツクヨミ",
+   "time": "1:27.1",
+   "margin": "１／２",
+   "corners": "6-6",
+   "last3f": 36.9,
+   "popularity": 2
+  },
+  {
+   "finish": "7",
+   "number": 15,
+   "name": "トラストヨシノブ",
+   "time": "1:27.2",
+   "margin": "クビ",
+   "corners": "10-11",
+   "last3f": 36.7,
+   "popularity": 12
+  },
+  {
+   "finish": "8",
+   "number": 10,
+   "name": "ディーヴァレギオン",
+   "time": "1:27.2",
+   "margin": "クビ",
+   "corners": "12-12",
+   "last3f": 36.5,
+   "popularity": 6
+  },
+  {
+   "finish": "9",
+   "number": 14,
+   "name": "トーセンイルン",
+   "time": "1:27.7",
+   "margin": "２ 1/2",
+   "corners": "3-2",
+   "last3f": 37.8,
+   "popularity": 4
+  },
+  {
+   "finish": "10",
+   "number": 8,
+   "name": "キュータンチャン",
+   "time": "1:27.7",
+   "margin": "クビ",
+   "corners": "1-1",
+   "last3f": 38.0,
+   "popularity": 7
+  },
+  {
+   "finish": "11",
+   "number": 11,
+   "name": "ミラクルオーラ",
+   "time": "1:27.9",
+   "margin": "１ 1/4",
+   "corners": "12-12",
+   "last3f": 37.2,
+   "popularity": 9
+  },
+  {
+   "finish": "12",
+   "number": 6,
+   "name": "マイネルヴェスペル",
+   "time": "1:28.5",
+   "margin": "３ 1/2",
+   "corners": "10-9",
+   "last3f": 38.1,
+   "popularity": 8
+  },
+  {
+   "finish": "13",
+   "number": 4,
+   "name": "ニシノイッセン",
+   "time": "1:28.6",
+   "margin": "１／２",
+   "corners": "15-15",
+   "last3f": 37.7,
+   "popularity": 15
+  },
+  {
+   "finish": "14",
+   "number": 2,
+   "name": "ワイプユアアイズ",
+   "time": "1:29.0",
+   "margin": "２ 1/2",
+   "corners": "15-16",
+   "last3f": 37.9,
+   "popularity": 16
+  },
+  {
+   "finish": "15",
+   "number": 1,
+   "name": "コーズサム",
+   "time": "1:29.5",
+   "margin": "３ 1/2",
+   "corners": "6-9",
+   "last3f": 39.1,
+   "popularity": 13
+  },
+  {
+   "finish": "16",
+   "number": 5,
+   "name": "ヤマタケゲジオー",
+   "time": "1:29.9",
+   "margin": "２ 1/2",
+   "corners": "14-12",
+   "last3f": 39.1,
+   "popularity": 14
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "7",
+    "yen": 190,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "7",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "12",
+    "yen": 170,
+    "pop": 3
+   },
+   {
+    "combo": "9",
+    "yen": 280,
+    "pop": 5
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-6",
+    "yen": 450,
+    "pop": 2
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "7-12",
+    "yen": 270,
+    "pop": 2
+   },
+   {
+    "combo": "7-9",
+    "yen": 570,
+    "pop": 6
+   },
+   {
+    "combo": "9-12",
+    "yen": 1300,
+    "pop": 16
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "7-12",
+    "yen": 500,
+    "pop": 2
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "7-12",
+    "yen": 770,
+    "pop": 3
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "7-9-12",
+    "yen": 2530,
+    "pop": 8
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "7-12-9",
+    "yen": 5550,
+    "pop": 16
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261115",
+ "venue_code": "05",
+ "race_no": 1,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605040120261115/D8",
+ "title": "レース結果 JRA"
+}
