@@ -1,6 +1,6 @@
 {
  "date": "20261115",
- "updated": "2026-11-15 13:18",
+ "updated": "2026-11-15 13:38",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -2009,7 +2009,7 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": 36.6,
+   "odds": 9.5,
    "popularity": 7
   },
   {
@@ -2030,8 +2030,8 @@
     "field": 10,
     "popularity": 1
    },
-   "odds": 3.7,
-   "popularity": 1
+   "odds": 5.1,
+   "popularity": 2
   },
   {
    "race_id": "202611150304160501",
@@ -2051,8 +2051,8 @@
     "field": 9,
     "popularity": 5
    },
-   "odds": 73.2,
-   "popularity": 10
+   "odds": 24.8,
+   "popularity": 9
   },
   {
    "race_id": "jra_20261115_東京_10",
@@ -2267,7 +2267,8 @@
    "number": 2,
    "name": "ウィルフレッド",
    "types": [
-    "rebound"
+    "rebound",
+    "aitop"
    ],
    "gap_days": 34,
    "last": {
@@ -2276,7 +2277,7 @@
     "field": 11,
     "popularity": 5
    },
-   "odds": 6.6,
+   "odds": 4.8,
    "popularity": 3
   },
   {
@@ -2297,8 +2298,8 @@
     "field": 10,
     "popularity": 4
    },
-   "odds": 20.0,
-   "popularity": 5
+   "odds": 18.7,
+   "popularity": 6
   },
   {
    "race_id": "202611150304160502",

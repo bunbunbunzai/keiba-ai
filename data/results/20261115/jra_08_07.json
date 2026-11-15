@@ -6,49 +6,179 @@
    "name": "ミラキュラスアース",
    "time": "1:34.4",
    "margin": "",
-   "corners": "",
-   "last3f": null,
+   "corners": "6-6",
+   "last3f": 34.2,
    "popularity": 10
   },
   {
    "finish": "2",
    "number": 17,
    "name": "ルーチェブリラーレ",
-   "time": "",
+   "time": "1:34.5",
    "margin": "１／２",
-   "corners": "",
-   "last3f": null,
+   "corners": "10-6",
+   "last3f": 34.3,
    "popularity": 2
   },
   {
    "finish": "3",
    "number": 7,
    "name": "ロードレジェロ",
-   "time": "",
+   "time": "1:34.5",
    "margin": "アタマ",
-   "corners": "",
-   "last3f": null,
+   "corners": "1-1",
+   "last3f": 34.6,
    "popularity": 1
   },
   {
    "finish": "4",
    "number": 12,
    "name": "シャンパンライフ",
-   "time": "",
+   "time": "1:34.6",
    "margin": "３／４",
-   "corners": "",
-   "last3f": null,
+   "corners": "2-2",
+   "last3f": 34.6,
    "popularity": 7
   },
   {
    "finish": "5",
    "number": 9,
    "name": "ムーンライトラガー",
-   "time": "",
+   "time": "1:34.7",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "14-11",
+   "last3f": 34.3,
    "popularity": 6
+  },
+  {
+   "finish": "6",
+   "number": 5,
+   "name": "アルヴァンドルード",
+   "time": "1:34.9",
+   "margin": "１ 1/2",
+   "corners": "3-4",
+   "last3f": 34.8,
+   "popularity": 3
+  },
+  {
+   "finish": "7",
+   "number": 16,
+   "name": "ホワイトオーキッド",
+   "time": "1:35.0",
+   "margin": "クビ",
+   "corners": "11-9",
+   "last3f": 34.6,
+   "popularity": 12
+  },
+  {
+   "finish": "8",
+   "number": 18,
+   "name": "カステッロトゥーレ",
+   "time": "1:35.0",
+   "margin": "クビ",
+   "corners": "15-15",
+   "last3f": 34.3,
+   "popularity": 17
+  },
+  {
+   "finish": "9",
+   "number": 15,
+   "name": "コスモグローリー",
+   "time": "1:35.1",
+   "margin": "１",
+   "corners": "3-3",
+   "last3f": 35.1,
+   "popularity": 8
+  },
+  {
+   "finish": "10",
+   "number": 14,
+   "name": "ゴールドブレス",
+   "time": "1:35.2",
+   "margin": "クビ",
+   "corners": "6-4",
+   "last3f": 35.1,
+   "popularity": 11
+  },
+  {
+   "finish": "11",
+   "number": 3,
+   "name": "カドーダムール",
+   "time": "1:35.3",
+   "margin": "１／２",
+   "corners": "17-17",
+   "last3f": 34.3,
+   "popularity": 13
+  },
+  {
+   "finish": "12",
+   "number": 10,
+   "name": "エクリュ",
+   "time": "1:35.3",
+   "margin": "クビ",
+   "corners": "5-6",
+   "last3f": 35.1,
+   "popularity": 5
+  },
+  {
+   "finish": "13",
+   "number": 1,
+   "name": "メイショウトウコウ",
+   "time": "1:35.4",
+   "margin": "クビ",
+   "corners": "6-9",
+   "last3f": 35.0,
+   "popularity": 4
+  },
+  {
+   "finish": "14",
+   "number": 8,
+   "name": "コーディアリー",
+   "time": "1:35.4",
+   "margin": "クビ",
+   "corners": "11-13",
+   "last3f": 34.8,
+   "popularity": 18
+  },
+  {
+   "finish": "15",
+   "number": 13,
+   "name": "ドルチェリターン",
+   "time": "1:35.4",
+   "margin": "ハナ",
+   "corners": "15-15",
+   "last3f": 34.5,
+   "popularity": 14
+  },
+  {
+   "finish": "16",
+   "number": 2,
+   "name": "レッドリガーレ",
+   "time": "1:35.4",
+   "margin": "アタマ",
+   "corners": "6-11",
+   "last3f": 35.0,
+   "popularity": 9
+  },
+  {
+   "finish": "17",
+   "number": 11,
+   "name": "ラテライト",
+   "time": "1:35.7",
+   "margin": "１ 3/4",
+   "corners": "18-17",
+   "last3f": 34.6,
+   "popularity": 15
+  },
+  {
+   "finish": "18",
+   "number": 4,
+   "name": "ラヴリーティアラ",
+   "time": "1:35.9",
+   "margin": "１ 1/4",
+   "corners": "11-13",
+   "last3f": 35.3,
+   "popularity": 16
   }
  ],
  "payouts": {
