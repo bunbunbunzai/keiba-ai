@@ -1,0 +1,198 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 10,
+   "name": "ハニーコム",
+   "time": "1:47.1",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "2",
+   "number": 4,
+   "name": "ハートメテオ",
+   "time": "1:47.1",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "3",
+   "number": 9,
+   "name": "タイセイプランセス",
+   "time": "1:47.3",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "number": 8,
+   "name": "クリニクラウン",
+   "time": "1:47.3",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "number": 11,
+   "name": "ファムクラジューズ",
+   "time": "1:47.4",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "6",
+   "number": 1,
+   "name": "ガジュノリ",
+   "time": "1:47.4",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "7",
+   "number": 6,
+   "name": "マイエレメント",
+   "time": "1:47.6",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "8",
+   "number": 3,
+   "name": "ラージギャラリー",
+   "time": "1:47.7",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "9",
+   "number": 2,
+   "name": "クロシェットノエル",
+   "time": "1:48.0",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "10",
+   "number": 7,
+   "name": "フルールドール",
+   "time": "1:48.1",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "11",
+   "number": 5,
+   "name": "ロンギングセリーヌ",
+   "time": "1:48.3",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "10",
+    "yen": 5240,
+    "pop": 10
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "10",
+    "yen": 770,
+    "pop": 10
+   },
+   {
+    "combo": "4",
+    "yen": 380,
+    "pop": 6
+   },
+   {
+    "combo": "9",
+    "yen": 180,
+    "pop": 2
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-8",
+    "yen": 1090,
+    "pop": 4
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-10",
+    "yen": 3870,
+    "pop": 37
+   },
+   {
+    "combo": "9-10",
+    "yen": 2040,
+    "pop": 22
+   },
+   {
+    "combo": "4-9",
+    "yen": 1010,
+    "pop": 10
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-10",
+    "yen": 15470,
+    "pop": 37
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "10-4",
+    "yen": 48830,
+    "pop": 79
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-9-10",
+    "yen": 20270,
+    "pop": 62
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "10-4-9",
+    "yen": 267510,
+    "pop": 482
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261115",
+ "venue_code": "05",
+ "race_no": 10,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605041020261115/75",
+ "title": "レース結果 JRA"
+}
