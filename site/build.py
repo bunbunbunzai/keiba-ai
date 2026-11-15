@@ -806,7 +806,7 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
 <h3>買い目（各100円・計{len(p.get('bets', []))}点）</h3><ul class="bets">{bets or '<li>買い目なし</li>'}</ul>{bets_note}{aff_rakuten('race') if not str(p['race_id']).startswith('jra_') and p.get('confidence') != '見送り' else ''}</section>
 {res_html}
 <section class="card"><h2>{term("pace", "展開予想")}</h2><p>{esc(p.get('pace'))}</p></section>
-{racesim.section(p, frame_of, RACESIM_V)}
+{racesim.section(p, frame_of, RACESIM_V, d3=f"/racesim3d.js?v={RACESIM3D_V}" if g0 else None)}
 {bias_html}
 <section class="card"><h2>全頭評価</h2>
 <ul class="hl"><li class="hr hd"><span class="c-no">馬番</span><span class="c-mk">印</span><span class="c-nm">馬名・騎手</span><span class="c-od">単勝</span><span class="c-sc">評価点</span><span class="c-vl">妙味</span><span class="c-fn">着順</span><span class="c-cm">短評</span></li>{''.join(rows)}</ul>
@@ -2139,6 +2139,8 @@ import hashlib as _hashlib
 CSS += racesim.CSS
 RACESIM_JS = (Path(__file__).resolve().parent / "racesim.js").read_text(encoding="utf-8")  # レースページでだけ読み込む
 RACESIM_V = _hashlib.md5(RACESIM_JS.encode("utf-8")).hexdigest()[:8]
+RACESIM3D_JS = (Path(__file__).resolve().parent / "racesim3d.js").read_bytes()  # 重賞の3D表示（site/3d で three.js から作る）
+RACESIM3D_V = _hashlib.md5(RACESIM3D_JS).hexdigest()[:8]
 ASSET_V = _hashlib.md5((CSS + JS).encode("utf-8")).hexdigest()[:8]
 
 
@@ -2154,6 +2156,7 @@ def build() -> None:
     (OUT / "ads.txt").write_text(f"google.com, {ADSENSE_PUB.replace('ca-', '')}, DIRECT, f08c47fec0942fa0\n", encoding="utf-8")
     (OUT / "app.js").write_text(JS, encoding="utf-8")
     (OUT / "racesim.js").write_text(RACESIM_JS, encoding="utf-8")
+    (OUT / "racesim3d.js").write_bytes(RACESIM3D_JS)
     (OUT / ".nojekyll").write_text("", encoding="utf-8")
     global HEADER_ROI
     led0 = ledger()
