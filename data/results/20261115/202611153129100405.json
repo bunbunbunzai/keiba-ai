@@ -2,7 +2,205 @@
  "source": "rakuten",
  "date": "20261115",
  "race_id": "202611153129100405",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "5",
+    "yen": 740
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "5-12",
+    "yen": 1460
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "5",
+    "yen": 160
+   },
+   {
+    "combo": "12",
+    "yen": 100
+   },
+   {
+    "combo": "6",
+    "yen": 130
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "5-12",
+    "yen": 120
+   },
+   {
+    "combo": "5-6",
+    "yen": 300
+   },
+   {
+    "combo": "6-12",
+    "yen": 160
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-8",
+    "yen": 140
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "5-6-12",
+    "yen": 420
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "5-12-6",
+    "yen": 4200
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "5-12",
+    "yen": 300
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 5,
+   "name": "メイショウハボマイ",
+   "time": "1:23.5",
+   "margin": "",
+   "pos4": 2,
+   "last3f": 38.8,
+   "popularity": 3
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 12,
+   "name": "ザガラ",
+   "time": "1:23.6",
+   "margin": "１／２",
+   "pos4": 1,
+   "last3f": 38.9,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 6,
+   "name": "モズプリフォール",
+   "time": "1:24.4",
+   "margin": "４",
+   "pos4": 5,
+   "last3f": 38.3,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 3,
+   "name": "エレガントウインク",
+   "time": "1:24.6",
+   "margin": "１",
+   "pos4": 4,
+   "last3f": 39.1,
+   "popularity": 7
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 4,
+   "name": "ララハカランダ",
+   "time": "1:24.6",
+   "margin": "ハナ",
+   "pos4": 3,
+   "last3f": 39.4,
+   "popularity": 5
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "セージグリーン",
+   "time": "1:24.6",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": 38.9,
+   "popularity": 4
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 11,
+   "name": "サプライズビュー",
+   "time": "1:25.4",
+   "margin": "４",
+   "pos4": 7,
+   "last3f": 39.5,
+   "popularity": 11
+  },
+  {
+   "finish": "8",
+   "frame": 6,
+   "number": 8,
+   "name": "ドウフォルス",
+   "time": "1:25.4",
+   "margin": "ハナ",
+   "pos4": 7,
+   "last3f": 39.2,
+   "popularity": 8
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 10,
+   "name": "オケイン",
+   "time": "1:25.6",
+   "margin": "１",
+   "pos4": 9,
+   "last3f": 39.4,
+   "popularity": 12
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 9,
+   "name": "チャンピオンリボン",
+   "time": "1:25.8",
+   "margin": "１",
+   "pos4": 9,
+   "last3f": 39.5,
+   "popularity": 10
+  },
+  {
+   "finish": "11",
+   "frame": 6,
+   "number": 7,
+   "name": "カノンウッドテール",
+   "time": "1:25.9",
+   "margin": "３／４",
+   "pos4": 11,
+   "last3f": 39.0,
+   "popularity": 6
+  },
+  {
+   "finish": "12",
+   "frame": 1,
+   "number": 1,
+   "name": "ハバナローズ",
+   "time": "1:27.2",
+   "margin": "６",
+   "pos4": 12,
+   "last3f": 41.0,
+   "popularity": 9
+  }
+ ]
 }
