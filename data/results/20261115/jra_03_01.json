@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 8,
+   "name": "エコロメジャー",
+   "time": "1:09.2",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 5,
+   "name": "ポッドハンター",
+   "time": "",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "3",
+   "number": 7,
+   "name": "クリスタルシャイン",
+   "time": "",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "number": 11,
+   "name": "ビーテリオス",
+   "time": "",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "number": 12,
+   "name": "アーバーバイティ",
+   "time": "",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "8",
+    "yen": 260,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "8",
+    "yen": 120,
+    "pop": 1
+   },
+   {
+    "combo": "5",
+    "yen": 690,
+    "pop": 9
+   },
+   {
+    "combo": "7",
+    "yen": 140,
+    "pop": 2
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-4",
+    "yen": 3020,
+    "pop": 7
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "5-8",
+    "yen": 1870,
+    "pop": 22
+   },
+   {
+    "combo": "7-8",
+    "yen": 240,
+    "pop": 1
+   },
+   {
+    "combo": "5-7",
+    "yen": 2310,
+    "pop": 25
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "5-8",
+    "yen": 5920,
+    "pop": 19
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "8-5",
+    "yen": 8820,
+    "pop": 29
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "5-7-8",
+    "yen": 6210,
+    "pop": 20
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "8-5-7",
+    "yen": 46870,
+    "pop": 135
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261115",
+ "venue_code": "03",
+ "race_no": 1,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603040120261115/E2",
+ "title": "レース結果 JRA"
+}
