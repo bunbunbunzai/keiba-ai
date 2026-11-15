@@ -6,49 +6,179 @@
    "name": "ラフターラインズ",
    "time": "2:14.7",
    "margin": "",
-   "corners": "",
-   "last3f": null,
+   "corners": "14-15-15-14",
+   "last3f": 33.3,
    "popularity": 7
   },
   {
    "finish": "2",
    "number": 7,
    "name": "カムニャック",
-   "time": "",
+   "time": "2:14.8",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "4-3-2-2",
+   "last3f": 34.5,
    "popularity": 1
   },
   {
    "finish": "3",
    "number": 16,
    "name": "アクアヴァーナル",
-   "time": "",
+   "time": "2:15.1",
    "margin": "１ 3/4",
-   "corners": "",
-   "last3f": null,
+   "corners": "5-5-4-3",
+   "last3f": 34.5,
    "popularity": 3
   },
   {
    "finish": "4",
    "number": 2,
    "name": "レイクラシック",
-   "time": "",
+   "time": "2:15.1",
    "margin": "アタマ",
-   "corners": "",
-   "last3f": null,
+   "corners": "6-6-8-6",
+   "last3f": 34.2,
    "popularity": 16
   },
   {
    "finish": "5",
    "number": 10,
    "name": "セキトバイースト",
-   "time": "",
+   "time": "2:15.1",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "2-1-1-1",
+   "last3f": 35.0,
    "popularity": 10
+  },
+  {
+   "finish": "6",
+   "number": 6,
+   "name": "ヴーレヴー",
+   "time": "2:15.2",
+   "margin": "クビ",
+   "corners": "1-2-2-3",
+   "last3f": 34.8,
+   "popularity": 6
+  },
+  {
+   "finish": "7",
+   "number": 13,
+   "name": "ジョスラン",
+   "time": "2:15.3",
+   "margin": "１／２",
+   "corners": "8-8-7-6",
+   "last3f": 34.5,
+   "popularity": 5
+  },
+  {
+   "finish": "8",
+   "number": 9,
+   "name": "クイーンズウォーク",
+   "time": "2:15.3",
+   "margin": "ハナ",
+   "corners": "6-6-5-5",
+   "last3f": 34.7,
+   "popularity": 4
+  },
+  {
+   "finish": "9",
+   "number": 12,
+   "name": "シャドウメテオ",
+   "time": "2:15.3",
+   "margin": "ハナ",
+   "corners": "14-13-13-14",
+   "last3f": 34.0,
+   "popularity": 9
+  },
+  {
+   "finish": "10",
+   "number": 17,
+   "name": "ケリフレッドアスク",
+   "time": "2:15.3",
+   "margin": "アタマ",
+   "corners": "8-9-8-9",
+   "last3f": 34.3,
+   "popularity": 17
+  },
+  {
+   "finish": "11",
+   "number": 11,
+   "name": "ジュウリョクピエロ",
+   "time": "2:15.3",
+   "margin": "クビ",
+   "corners": "16-16-16-16",
+   "last3f": 33.6,
+   "popularity": 2
+  },
+  {
+   "finish": "12",
+   "number": 1,
+   "name": "ラヴァンダ",
+   "time": "2:15.6",
+   "margin": "１ 1/2",
+   "corners": "2-3-5-6",
+   "last3f": 34.9,
+   "popularity": 11
+  },
+  {
+   "finish": "13",
+   "number": 18,
+   "name": "コガネノソラ",
+   "time": "2:15.6",
+   "margin": "ハナ",
+   "corners": "11-13-12-12",
+   "last3f": 34.4,
+   "popularity": 8
+  },
+  {
+   "finish": "14",
+   "number": 14,
+   "name": "チェルヴィニア",
+   "time": "2:15.8",
+   "margin": "１ 1/4",
+   "corners": "11-12-10-10",
+   "last3f": 34.7,
+   "popularity": 13
+  },
+  {
+   "finish": "15",
+   "number": 8,
+   "name": "レーゼドラマ",
+   "time": "2:15.9",
+   "margin": "１",
+   "corners": "11-9-13-10",
+   "last3f": 34.7,
+   "popularity": 12
+  },
+  {
+   "finish": "16",
+   "number": 4,
+   "name": "エストゥペンダ",
+   "time": "2:16.2",
+   "margin": "１ 3/4",
+   "corners": "17-17-17-16",
+   "last3f": 34.4,
+   "popularity": 14
+  },
+  {
+   "finish": "17",
+   "number": 3,
+   "name": "ステレンボッシュ",
+   "time": "2:16.4",
+   "margin": "１ 1/4",
+   "corners": "17-17-18-18",
+   "last3f": 34.2,
+   "popularity": 18
+  },
+  {
+   "finish": "18",
+   "number": 5,
+   "name": "ニシノティアモ",
+   "time": "2:16.6",
+   "margin": "１",
+   "corners": "10-9-10-12",
+   "last3f": 35.4,
+   "popularity": 15
   }
  ],
  "payouts": {
