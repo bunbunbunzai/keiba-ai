@@ -1,14 +1,14 @@
 {
  "date": "20261115",
- "updated": "2026-11-15 12:12",
- "races_total": 23,
- "races_scored": 14,
+ "updated": "2026-11-15 12:23",
+ "races_total": 35,
+ "races_scored": 15,
  "stake": 1100,
  "return": 1240,
  "roi": 112.7,
  "hit_races": 10,
  "honmei_win": 5,
- "honmei_top3": 12,
+ "honmei_top3": 13,
  "races": [
   {
    "race_id": "202611151106070101",
@@ -45,7 +45,39 @@
   {
    "race_id": "202611151106070103",
    "confidence": "C",
-   "honmei": 3,
+   "honmei": 6,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611151106070104",
+   "confidence": "A",
+   "honmei": 9,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611151106070105",
+   "confidence": "C",
+   "honmei": 10,
    "honmei_finish": null,
    "top3": [
     null,
@@ -62,6 +94,38 @@
    "race_id": "202611151106070112",
    "confidence": "C",
    "honmei": 1,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611152218140301",
+   "confidence": "B",
+   "honmei": 1,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611152218140302",
+   "confidence": "C",
+   "honmei": 7,
    "honmei_finish": null,
    "top3": [
     null,
@@ -153,6 +217,14 @@
    "status": "結果未取得"
   },
   {
+   "race_id": "jra_20261115_京都_07",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261115_京都_08",
+   "status": "結果未取得"
+  },
+  {
    "race_id": "jra_20261115_京都_11",
    "status": "結果未取得"
   },
@@ -228,10 +300,34 @@
   },
   {
    "race_id": "jra_20261115_東京_05",
-   "status": "結果未取得"
+   "confidence": "見送り",
+   "honmei": 10,
+   "honmei_finish": "3",
+   "top3": [
+    5,
+    8,
+    10
+   ],
+   "stake": 0,
+   "return": 0,
+   "roi": null,
+   "hits": [],
+   "voided": false
   },
   {
    "race_id": "jra_20261115_東京_06",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261115_東京_07",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261115_東京_08",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261115_東京_09",
    "status": "結果未取得"
   },
   {
@@ -324,6 +420,18 @@
   },
   {
    "race_id": "jra_20261115_福島_06",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261115_福島_07",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261115_福島_08",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261115_福島_09",
    "status": "結果未取得"
   }
  ]

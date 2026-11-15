@@ -1,6 +1,6 @@
 {
  "date": "20261115",
- "updated": "2026-11-15 12:17",
+ "updated": "2026-11-15 12:23",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1220,7 +1220,7 @@
     "field": 10,
     "popularity": 6
    },
-   "odds": 6.3,
+   "odds": 5.1,
    "popularity": 2
   },
   {
@@ -1241,8 +1241,8 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": null,
-   "popularity": null
+   "odds": 27.0,
+   "popularity": 8
   },
   {
    "race_id": "jra_20261115_京都_07",
@@ -1295,7 +1295,8 @@
    "number": 12,
    "name": "シャンパンライフ",
    "types": [
-    "letdown"
+    "letdown",
+    "aitop"
    ],
    "gap_days": 21,
    "last": {
@@ -1453,8 +1454,8 @@
     "field": 11,
     "popularity": 9
    },
-   "odds": 12.9,
-   "popularity": 2
+   "odds": 33.9,
+   "popularity": 6
   },
   {
    "race_id": "jra_20261115_東京_08",
@@ -1518,6 +1519,20 @@
    },
    "odds": 13.9,
    "popularity": 5
+  },
+  {
+   "race_id": "jra_20261115_京都_08",
+   "results_key": "jra_08_08",
+   "venue": "京都",
+   "race_no": 8,
+   "post_time": "13:50",
+   "number": 1,
+   "name": "ショウナンタハティ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 6.9,
+   "popularity": 3
   },
   {
    "race_id": "jra_20261115_京都_08",
