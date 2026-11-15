@@ -1,0 +1,208 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 1,
+   "name": "ジャスパートレノ",
+   "time": "1:11.1",
+   "margin": "",
+   "corners": "1-1",
+   "last3f": 37.3,
+   "popularity": 4
+  },
+  {
+   "finish": "2",
+   "number": 3,
+   "name": "ラヴィサンエール",
+   "time": "1:11.5",
+   "margin": "２ 1/2",
+   "corners": "5-3",
+   "last3f": 37.0,
+   "popularity": 6
+  },
+  {
+   "finish": "3",
+   "number": 12,
+   "name": "ダイシンドラゴン",
+   "time": "1:11.5",
+   "margin": "クビ",
+   "corners": "2-2",
+   "last3f": 37.5,
+   "popularity": 1
+  },
+  {
+   "finish": "4",
+   "number": 4,
+   "name": "ノヴァーリス",
+   "time": "1:11.7",
+   "margin": "１ 1/2",
+   "corners": "8-7",
+   "last3f": 36.8,
+   "popularity": 2
+  },
+  {
+   "finish": "5",
+   "number": 8,
+   "name": "ショウナンハーヴェ",
+   "time": "1:11.8",
+   "margin": "１／２",
+   "corners": "3-3",
+   "last3f": 37.5,
+   "popularity": 8
+  },
+  {
+   "finish": "6",
+   "number": 10,
+   "name": "ダマスク",
+   "time": "1:11.8",
+   "margin": "ハナ",
+   "corners": "10-9",
+   "last3f": 36.7,
+   "popularity": 11
+  },
+  {
+   "finish": "7",
+   "number": 9,
+   "name": "ライフイズアート",
+   "time": "1:12.0",
+   "margin": "１",
+   "corners": "5-5",
+   "last3f": 37.5,
+   "popularity": 12
+  },
+  {
+   "finish": "8",
+   "number": 5,
+   "name": "イトウカカリチョウ",
+   "time": "1:12.1",
+   "margin": "１／２",
+   "corners": "10-10",
+   "last3f": 36.9,
+   "popularity": 5
+  },
+  {
+   "finish": "9",
+   "number": 7,
+   "name": "ライーリーアース",
+   "time": "1:12.2",
+   "margin": "３／４",
+   "corners": "3-5",
+   "last3f": 37.8,
+   "popularity": 9
+  },
+  {
+   "finish": "10",
+   "number": 6,
+   "name": "ショウナンカノア",
+   "time": "1:12.3",
+   "margin": "３／４",
+   "corners": "5-7",
+   "last3f": 37.7,
+   "popularity": 3
+  },
+  {
+   "finish": "11",
+   "number": 2,
+   "name": "ラキアーヴェ",
+   "time": "1:12.3",
+   "margin": "アタマ",
+   "corners": "12-12",
+   "last3f": 36.8,
+   "popularity": 7
+  },
+  {
+   "finish": "12",
+   "number": 11,
+   "name": "ダイメイビッグボス",
+   "time": "1:12.6",
+   "margin": "１ 1/2",
+   "corners": "8-10",
+   "last3f": 37.7,
+   "popularity": 10
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "1",
+    "yen": 600,
+    "pop": 4
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "1",
+    "yen": 190,
+    "pop": 3
+   },
+   {
+    "combo": "3",
+    "yen": 290,
+    "pop": 5
+   },
+   {
+    "combo": "12",
+    "yen": 140,
+    "pop": 1
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-3",
+    "yen": 4190,
+    "pop": 17
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-3",
+    "yen": 1330,
+    "pop": 16
+   },
+   {
+    "combo": "1-12",
+    "yen": 350,
+    "pop": 2
+   },
+   {
+    "combo": "3-12",
+    "yen": 800,
+    "pop": 8
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-3",
+    "yen": 4410,
+    "pop": 16
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "1-3",
+    "yen": 6490,
+    "pop": 28
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-3-12",
+    "yen": 3780,
+    "pop": 9
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "1-3-12",
+    "yen": 32470,
+    "pop": 111
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261115",
+ "venue_code": "03",
+ "race_no": 9,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603040920261115/8A",
+ "title": "レース結果 JRA"
+}
