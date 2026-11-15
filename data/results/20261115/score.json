@@ -1,11 +1,11 @@
 {
  "date": "20261115",
- "updated": "2026-11-15 20:52",
+ "updated": "2026-11-15 21:03",
  "races_total": 92,
- "races_scored": 91,
- "stake": 8200,
+ "races_scored": 92,
+ "stake": 8300,
  "return": 7730,
- "roi": 94.3,
+ "roi": 93.1,
  "hit_races": 57,
  "honmei_win": 33,
  "honmei_top3": 62,
@@ -784,7 +784,7 @@
    "return": 0,
    "roi": 0.0,
    "hits": [],
-   "voided": true
+   "voided": false
   },
   {
    "race_id": "202611153230130501",
