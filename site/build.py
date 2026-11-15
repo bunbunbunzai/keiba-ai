@@ -22,6 +22,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import column
+import racesim
 from imgutil import webp_variants
 import extra
 import og
@@ -805,6 +806,7 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
 <h3>買い目（各100円・計{len(p.get('bets', []))}点）</h3><ul class="bets">{bets or '<li>買い目なし</li>'}</ul>{bets_note}{aff_rakuten('race') if not str(p['race_id']).startswith('jra_') and p.get('confidence') != '見送り' else ''}</section>
 {res_html}
 <section class="card"><h2>{term("pace", "展開予想")}</h2><p>{esc(p.get('pace'))}</p></section>
+{racesim.section(p, frame_of, RACESIM_V)}
 {bias_html}
 <section class="card"><h2>全頭評価</h2>
 <ul class="hl"><li class="hr hd"><span class="c-no">馬番</span><span class="c-mk">印</span><span class="c-nm">馬名・騎手</span><span class="c-od">単勝</span><span class="c-sc">評価点</span><span class="c-vl">妙味</span><span class="c-fn">着順</span><span class="c-cm">短評</span></li>{''.join(rows)}</ul>
@@ -2134,6 +2136,9 @@ setTimeout(function(){if(document.querySelector('.askpop.open'))return;if(seen()
 
 
 import hashlib as _hashlib
+CSS += racesim.CSS
+RACESIM_JS = (Path(__file__).resolve().parent / "racesim.js").read_text(encoding="utf-8")  # レースページでだけ読み込む
+RACESIM_V = _hashlib.md5(RACESIM_JS.encode("utf-8")).hexdigest()[:8]
 ASSET_V = _hashlib.md5((CSS + JS).encode("utf-8")).hexdigest()[:8]
 
 
@@ -2148,6 +2153,7 @@ def build() -> None:
         ensure_ascii=False), encoding="utf-8")
     (OUT / "ads.txt").write_text(f"google.com, {ADSENSE_PUB.replace('ca-', '')}, DIRECT, f08c47fec0942fa0\n", encoding="utf-8")
     (OUT / "app.js").write_text(JS, encoding="utf-8")
+    (OUT / "racesim.js").write_text(RACESIM_JS, encoding="utf-8")
     (OUT / ".nojekyll").write_text("", encoding="utf-8")
     global HEADER_ROI
     led0 = ledger()
