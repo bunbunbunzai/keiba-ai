@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 13,
+   "name": "レイオウロンド",
+   "time": "1:24.2",
+   "margin": "",
+   "corners": "5-5",
+   "last3f": 35.9,
+   "popularity": 4
+  },
+  {
+   "finish": "2",
+   "number": 3,
+   "name": "ドラゴンジョルノ",
+   "time": "1:24.4",
+   "margin": "１ 1/4",
+   "corners": "1-1",
+   "last3f": 36.6,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "number": 12,
+   "name": "ユーキャンダンス",
+   "time": "1:24.9",
+   "margin": "３",
+   "corners": "3-3",
+   "last3f": 36.8,
+   "popularity": 1
+  },
+  {
+   "finish": "4",
+   "number": 9,
+   "name": "アマル",
+   "time": "1:25.0",
+   "margin": "３／４",
+   "corners": "8-8",
+   "last3f": 36.5,
+   "popularity": 11
+  },
+  {
+   "finish": "5",
+   "number": 5,
+   "name": "ゴッドスカーレット",
+   "time": "1:25.2",
+   "margin": "１ 1/4",
+   "corners": "2-2",
+   "last3f": 37.3,
+   "popularity": 6
+  },
+  {
+   "finish": "6",
+   "number": 1,
+   "name": "ゴールドビスケッツ",
+   "time": "1:25.3",
+   "margin": "クビ",
+   "corners": "5-5",
+   "last3f": 37.1,
+   "popularity": 8
+  },
+  {
+   "finish": "7",
+   "number": 16,
+   "name": "スターペスアサミ",
+   "time": "1:25.6",
+   "margin": "２",
+   "corners": "8-8",
+   "last3f": 37.0,
+   "popularity": 15
+  },
+  {
+   "finish": "8",
+   "number": 7,
+   "name": "モズデキマリ",
+   "time": "1:25.8",
+   "margin": "１",
+   "corners": "5-5",
+   "last3f": 37.6,
+   "popularity": 2
+  },
+  {
+   "finish": "9",
+   "number": 2,
+   "name": "アリエスアルバ",
+   "time": "1:26.0",
+   "margin": "１ 1/4",
+   "corners": "3-4",
+   "last3f": 38.0,
+   "popularity": 10
+  },
+  {
+   "finish": "10",
+   "number": 6,
+   "name": "ヤマニンウラカン",
+   "time": "1:26.2",
+   "margin": "１",
+   "corners": "14-14",
+   "last3f": 36.1,
+   "popularity": 9
+  },
+  {
+   "finish": "11",
+   "number": 14,
+   "name": "アンソフィリア",
+   "time": "1:26.2",
+   "margin": "ハナ",
+   "corners": "10-10",
+   "last3f": 37.3,
+   "popularity": 7
+  },
+  {
+   "finish": "12",
+   "number": 10,
+   "name": "ジェリーロラム",
+   "time": "1:26.2",
+   "margin": "アタマ",
+   "corners": "12-12",
+   "last3f": 37.0,
+   "popularity": 5
+  },
+  {
+   "finish": "13",
+   "number": 8,
+   "name": "タマモマカロン",
+   "time": "1:27.1",
+   "margin": "５",
+   "corners": "13-13",
+   "last3f": 37.9,
+   "popularity": 12
+  },
+  {
+   "finish": "14",
+   "number": 11,
+   "name": "ヴァシロピタ",
+   "time": "1:27.2",
+   "margin": "１／２",
+   "corners": "10-10",
+   "last3f": 38.4,
+   "popularity": 14
+  },
+  {
+   "finish": "15",
+   "number": 15,
+   "name": "モズノンノン",
+   "time": "1:30.1",
+   "margin": "大差",
+   "corners": "15-15",
+   "last3f": 39.3,
+   "popularity": 16
+  },
+  {
+   "finish": "16",
+   "number": 4,
+   "name": "デルマヨシノ",
+   "time": "1:32.4",
+   "margin": "大差",
+   "corners": "16-16",
+   "last3f": 41.0,
+   "popularity": 13
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "13",
+    "yen": 1170,
+    "pop": 4
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "13",
+    "yen": 190,
+    "pop": 3
+   },
+   {
+    "combo": "3",
+    "yen": 200,
+    "pop": 4
+   },
+   {
+    "combo": "12",
+    "yen": 110,
+    "pop": 1
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-7",
+    "yen": 2970,
+    "pop": 8
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-13",
+    "yen": 1330,
+    "pop": 12
+   },
+   {
+    "combo": "12-13",
+    "yen": 380,
+    "pop": 3
+   },
+   {
+    "combo": "3-12",
+    "yen": 320,
+    "pop": 1
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-13",
+    "yen": 4900,
+    "pop": 13
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "13-3",
+    "yen": 9770,
+    "pop": 21
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-12-13",
+    "yen": 2580,
+    "pop": 4
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "13-3-12",
+    "yen": 28210,
+    "pop": 87
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261115",
+ "venue_code": "08",
+ "race_no": 4,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605040420261115/D5",
+ "title": "レース結果 JRA"
+}
