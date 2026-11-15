@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 1,
+   "name": "プラウディッツ",
+   "time": "2:02.0",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 4,
+   "name": "ディアボリカドンナ",
+   "time": "",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "3",
+   "number": 2,
+   "name": "エリュグレイス",
+   "time": "",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "4",
+   "number": 8,
+   "name": "インテンスゲイズ",
+   "time": "",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 16
+  },
+  {
+   "finish": "5",
+   "number": 14,
+   "name": "エバーシャンティ",
+   "time": "",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "1",
+    "yen": 270,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "1",
+    "yen": 170,
+    "pop": 1
+   },
+   {
+    "combo": "4",
+    "yen": 1500,
+    "pop": 13
+   },
+   {
+    "combo": "2",
+    "yen": 1350,
+    "pop": 12
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-2",
+    "yen": 840,
+    "pop": 4
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-4",
+    "yen": 4120,
+    "pop": 41
+   },
+   {
+    "combo": "1-2",
+    "yen": 3580,
+    "pop": 37
+   },
+   {
+    "combo": "2-4",
+    "yen": 28260,
+    "pop": 104
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-4",
+    "yen": 9280,
+    "pop": 31
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "1-4",
+    "yen": 11900,
+    "pop": 44
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-2-4",
+    "yen": 102630,
+    "pop": 224
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "1-4-2",
+    "yen": 300540,
+    "pop": 777
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261115",
+ "venue_code": "05",
+ "race_no": 12,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605041220261115/DF",
+ "title": "レース結果 JRA"
+}
