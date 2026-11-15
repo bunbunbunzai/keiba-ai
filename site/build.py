@@ -758,7 +758,7 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
     if ASK_URL and p.get("confidence") != "見送り" and date >= TODAY and horses:
         post_ = f"{date}{(r.get('post_time') or '23:59').replace(':', '')}"
         try:
-            post_dt = datetime.strptime(post_, "%Y%m%d%H%M").replace(tzinfo=JST) - timedelta(minutes=20)
+            post_dt = datetime.strptime(post_, "%Y%m%d%H%M").replace(tzinfo=JST) - timedelta(minutes=5)  # 質問は発走5分前まで（予想の書き換えは20分前までのまま）
             post_key = post_dt.strftime("%Y%m%d%H%M")
         except ValueError:
             post_key = post_
@@ -769,7 +769,7 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
         ask_html = (f"<section class='card zkteaser'>{zk('normal', 48)}<p>このレースのことを<b>全頭くん</b>に聞ける。<br><span class='meta'>画面右下のボタンからも開けます</span></p><button type='button' class='zkopen'>質問する</button></section>"
                     f"<button type='button' class='zkfab' aria-label='全頭くんに質問できるよ' aria-expanded='false' aria-controls='askpop'>{zk('normal', 56) or '?'}<span class='zktip'>質問できるよ</span></button>"
                     f"<section id='askpop' class='card ask askpop' role='dialog' aria-label='全頭くんに質問' data-page='{race_path(date, p)}' data-post='{post_key}' data-url='{ASK_URL}'{" data-zk='1'" if HAS_ZK else ''}>"
-                    f"<h2 class='zkh'>{zk('normal', 48)}<span>全頭くんに質問<small>{esc(race_label(p))}について答えます</small></span><button type='button' class='zkclose' aria-label='閉じる'>×</button></h2><p class='meta'>出走馬の近走やAIの評価、これまでの予想の記録をもとに、短く答えます。たとえば「◎を選んだ理由は？」「3連単で△を2着まで入れるべき？」「このコースの3連単の配当はどれくらい？」。質問できるのは発走20分前まで、1日30回までです（混み合う日は早めに受付を終えることがあります）。</p>"
+                    f"<h2 class='zkh'>{zk('normal', 48)}<span>全頭くんに質問<small>{esc(race_label(p))}について答えます</small></span><button type='button' class='zkclose' aria-label='閉じる'>×</button></h2><p class='meta'>出走馬の近走やAIの評価、これまでの予想の記録をもとに、短く答えます。たとえば「◎を選んだ理由は？」「3連単で△を2着まで入れるべき？」「このコースの3連単の配当はどれくらい？」。質問できるのは発走5分前まで、1日30回までです（予想そのものは発走20分前以降は変わりません）（混み合う日は早めに受付を終えることがあります）。</p>"
                     f"<div class='pick'><input type='text' maxlength='200' placeholder='このレースについて質問' aria-label='質問'> <button type='button' class='go'>聞く</button></div>"
                     f"<div class='alog'></div><p class='meta'>答えはAIの見立てで、的中を保証するものではありません。サイトの記録に無いことはWebで調べて答えることがあり、そのときは出典を表示します。質問の内容は回答にだけ使い、保存しません。</p></section>")
     updates = "".join(f"<li><b>{esc(u.get('at'))}</b> {esc(u.get('text'))}</li>" for u in p.get("updates", []))
@@ -2032,7 +2032,7 @@ document.querySelectorAll('.zkopen').forEach(function(b){b.addEventListener('cli
 var cl=s.querySelector('.zkclose');if(cl)cl.addEventListener('click',function(){open(false);if(fab)fab.focus();});
 document.addEventListener('keydown',function(e){if(e.key==='Escape'&&s.classList.contains('open')){open(false);if(fab)fab.focus();}});
 btn.addEventListener('click',go);inp.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();go();}});
-var post=s.dataset.post,now=new Date(Date.now()+9*3600*1000),k=now.toISOString().slice(0,10).replace(/-/g,'')+now.toISOString().slice(11,16).replace(':','');if(post&&k>=post){inp.disabled=true;btn.disabled=true;inp.placeholder='発走20分前を過ぎたので、質問の受付は終わりました';}})();
+var post=s.dataset.post,now=new Date(Date.now()+9*3600*1000),k=now.toISOString().slice(0,10).replace(/-/g,'')+now.toISOString().slice(11,16).replace(':','');if(post&&k>=post){inp.disabled=true;btn.disabled=true;inp.placeholder='発走5分前を過ぎたので、質問の受付は終わりました';}})();
 (function(){
 function ga(n,p){try{if(window.gtag)gtag('event',n,p||{})}catch(e){}}
 document.addEventListener('click',function(e){var a=e.target.closest('a');if(!a)return;var h=a.href||'';

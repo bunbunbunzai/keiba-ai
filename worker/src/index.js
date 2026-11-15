@@ -3,7 +3,7 @@
  * POST /ask  {page: "/2026/11/03/funabashi/01r/", q: "◎を軽視した理由は？"}
  *   → サイトが公開している /askdata/<date>/<venue>-<NN>.json（出馬表・近走・AIの予想）を読み、
  *     その情報だけを根拠に Anthropic API（Haiku）で短く答える。
- * 制限：質問200字まで、発走20分前以降は受けない、IPごとに1分5回・1日30回、サイト全体で1日600回。
+ * 制限：質問200字まで、発走5分前以降は受けない、IPごとに1分5回・1日30回、サイト全体で1日600回。
  * 鍵は wrangler secret（ANTHROPIC_API_KEY）。サイトのHTMLには出ない。
  */
 
@@ -142,10 +142,10 @@ export default {
     }
     if (!res.ok) return reply(env, req, 404, { error: "このレースは、まだ予想が出ていないか、終わったレースのため質問できません。" });
     const data = await res.json();
-    // 発走20分前を過ぎたら受け付けない（後出し防止と費用の節約）
+    // 発走5分前を過ぎたら受け付けない（締め切り時刻はサイト側の data.post で決まる）（後出し防止と費用の節約）
     const now = jstNow();
     const nowKey = ymd(now) + now.toISOString().slice(11, 16).replace(":", "");
-    if (data.post && nowKey >= String(data.post)) return reply(env, req, 410, { error: "発走20分前を過ぎたので、このレースの質問は受け付けていません。結果が出たら、ページの結果欄で全頭くんの振り返りが読めます。" });
+    if (data.post && nowKey >= String(data.post)) return reply(env, req, 410, { error: "発走5分前を過ぎたので、このレースの質問は受け付けていません。結果が出たら、ページの結果欄で全頭くんの振り返りが読めます。" });
     // 回数制限
     const ip = req.headers.get("CF-Connecting-IP") || "0";
     const day = ymd(now);
