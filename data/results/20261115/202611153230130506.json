@@ -2,7 +2,172 @@
  "source": "rakuten",
  "date": "20261115",
  "race_id": "202611153230130506",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "7",
+    "yen": 3520
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "7-3",
+    "yen": 15190
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "7",
+    "yen": 720
+   },
+   {
+    "combo": "3",
+    "yen": 160
+   },
+   {
+    "combo": "4",
+    "yen": 180
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-7",
+    "yen": 2850
+   },
+   {
+    "combo": "4-7",
+    "yen": 2070
+   },
+   {
+    "combo": "3-4",
+    "yen": 450
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-7",
+    "yen": 10250
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-4-7",
+    "yen": 18220
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "7-3-4",
+    "yen": 185430
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-7",
+    "yen": 10950
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 7,
+   "name": "スマイルモア",
+   "time": "1:30.3",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 38.8,
+   "popularity": 6
+  },
+  {
+   "finish": "2",
+   "frame": 3,
+   "number": 3,
+   "name": "テイエムヒショウ",
+   "time": "1:31.0",
+   "margin": "４",
+   "pos4": 2,
+   "last3f": 39.3,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "エスシーアルベル",
+   "time": "1:31.2",
+   "margin": "１",
+   "pos4": 3,
+   "last3f": 39.7,
+   "popularity": 5
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 6,
+   "name": "ページェント",
+   "time": "1:31.5",
+   "margin": "１ １／２",
+   "pos4": 5,
+   "last3f": 38.8,
+   "popularity": 1
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 8,
+   "name": "ココキュンキュン",
+   "time": "1:31.6",
+   "margin": "クビ",
+   "pos4": 4,
+   "last3f": 39.9,
+   "popularity": 4
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 5,
+   "name": "ハディア",
+   "time": "1:31.6",
+   "margin": "アタマ",
+   "pos4": 8,
+   "last3f": 38.6,
+   "popularity": 8
+  },
+  {
+   "finish": "7",
+   "frame": 1,
+   "number": 1,
+   "name": "デジタルサイオン",
+   "time": "1:32.2",
+   "margin": "３",
+   "pos4": 6,
+   "last3f": 39.6,
+   "popularity": 3
+  },
+  {
+   "finish": "8",
+   "frame": 2,
+   "number": 2,
+   "name": "タイキマクスウェル",
+   "time": "1:33.0",
+   "margin": "４",
+   "pos4": 7,
+   "last3f": 41.1,
+   "popularity": 7
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 9,
+   "name": "ミステリオーソ",
+   "time": "1:33.6",
+   "margin": "３",
+   "pos4": 9,
+   "last3f": 40.4,
+   "popularity": 9
+  }
+ ]
 }
