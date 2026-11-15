@@ -1,6 +1,6 @@
 {
  "date": "20261115",
- "updated": "2026-11-15 11:18",
+ "updated": "2026-11-15 11:21",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -919,6 +919,20 @@
    },
    "odds": 28.1,
    "popularity": 10
+  },
+  {
+   "race_id": "jra_20261115_京都_06",
+   "results_key": "jra_08_06",
+   "venue": "京都",
+   "race_no": 6,
+   "post_time": "12:50",
+   "number": 8,
+   "name": "ティエラレイナ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 4.5,
+   "popularity": 2
   },
   {
    "race_id": "jra_20261115_京都_06",
