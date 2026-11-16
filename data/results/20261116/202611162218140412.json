@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261116",
  "race_id": "202611162218140412",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -67,8 +67,8 @@
    "name": "シンリミテス",
    "time": "1:49.1",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 37.9,
    "popularity": null
   },
   {
@@ -78,8 +78,8 @@
    "name": "ルージュミラージュ",
    "time": "1:50.6",
    "margin": "７",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 39.4,
    "popularity": null
   },
   {
@@ -89,8 +89,8 @@
    "name": "ドライブアウェイ",
    "time": "1:51.2",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 38.7,
    "popularity": null
   },
   {
@@ -100,8 +100,8 @@
    "name": "デルマアートマン",
    "time": "1:52.4",
    "margin": "６",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 39.7,
    "popularity": null
   },
   {
@@ -111,8 +111,8 @@
    "name": "ロードランヴェルセ",
    "time": "1:52.6",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 41.0,
    "popularity": null
   }
  ]
