@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261116",
  "race_id": "202611162015120108",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,160 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 3,
+   "number": 3,
+   "name": "リアライズブルーム",
+   "time": "1:41.7",
+   "margin": "",
+   "pos4": 3,
+   "last3f": 38.1,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 12,
+   "name": "ブラーヴジャン",
+   "time": "1:41.9",
+   "margin": "１",
+   "pos4": 1,
+   "last3f": 38.7,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 5,
+   "name": "トーセンディーン",
+   "time": "1:44.3",
+   "margin": "大差",
+   "pos4": 10,
+   "last3f": 39.3,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 11,
+   "name": "スマートシエラ",
+   "time": "1:44.5",
+   "margin": "１ １／４",
+   "pos4": 2,
+   "last3f": 41.3,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 10,
+   "name": "マルチキータ",
+   "time": "1:44.7",
+   "margin": "３／４",
+   "pos4": 5,
+   "last3f": 41.1,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 1,
+   "number": 1,
+   "name": "アーティキュレート",
+   "time": "1:44.7",
+   "margin": "アタマ",
+   "pos4": 7,
+   "last3f": 40.6,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 14,
+   "name": "ディープマウンテン",
+   "time": "1:44.9",
+   "margin": "３／４",
+   "pos4": 9,
+   "last3f": 40.6,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 4,
+   "name": "ロジマギー",
+   "time": "1:45.2",
+   "margin": "１ ３／４",
+   "pos4": 5,
+   "last3f": 41.5,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 8,
+   "name": "ミュークエンペラー",
+   "time": "1:45.5",
+   "margin": "１ １／２",
+   "pos4": 14,
+   "last3f": 39.8,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 2,
+   "number": 2,
+   "name": "ミラクルロマンス",
+   "time": "1:45.6",
+   "margin": "１／２",
+   "pos4": 7,
+   "last3f": 41.8,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 4,
+   "number": 6,
+   "name": "モンゲーヴィーナス",
+   "time": "1:45.6",
+   "margin": "ハナ",
+   "pos4": 10,
+   "last3f": 41.6,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 5,
+   "number": 7,
+   "name": "ブラックパロット",
+   "time": "1:45.7",
+   "margin": "１／２",
+   "pos4": 12,
+   "last3f": 41.0,
+   "popularity": null
+  },
+  {
+   "finish": "13",
+   "frame": 6,
+   "number": 9,
+   "name": "ルネサンスクラブ",
+   "time": "1:45.8",
+   "margin": "１／２",
+   "pos4": 13,
+   "last3f": 40.5,
+   "popularity": null
+  },
+  {
+   "finish": "14",
+   "frame": 8,
+   "number": 13,
+   "name": "テリコス",
+   "time": "1:45.9",
+   "margin": "３／４",
+   "pos4": 3,
+   "last3f": 42.7,
+   "popularity": null
+  }
+ ]
 }
