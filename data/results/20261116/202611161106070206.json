@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261116",
  "race_id": "202611161106070206",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 2,
+   "number": 2,
+   "name": "ビッグヴィノルーフ",
+   "time": "1:30.0",
+   "margin": "",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "オーラムブレイズ",
+   "time": "1:30.1",
+   "margin": "１／２",
+   "pos4": 2,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 10,
+   "name": "リュウノパイレーツ",
+   "time": "1:30.1",
+   "margin": "アタマ",
+   "pos4": 6,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 4,
+   "name": "サンエイチェリー",
+   "time": "1:30.4",
+   "margin": "１ １／２",
+   "pos4": 2,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 1,
+   "number": 1,
+   "name": "ジョーバローズ",
+   "time": "1:30.4",
+   "margin": "ハナ",
+   "pos4": 5,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 12,
+   "name": "フミタツアクション",
+   "time": "1:30.9",
+   "margin": "３",
+   "pos4": 4,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 3,
+   "name": "カンパネルラ",
+   "time": "1:31.0",
+   "margin": "クビ",
+   "pos4": 10,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 5,
+   "number": 6,
+   "name": "ソルシート",
+   "time": "1:31.2",
+   "margin": "１ １／４",
+   "pos4": 9,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 9,
+   "name": "ヴィクトールキック",
+   "time": "1:31.7",
+   "margin": "３",
+   "pos4": 8,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 6,
+   "number": 8,
+   "name": "マイマホウジン",
+   "time": "1:32.3",
+   "margin": "４",
+   "pos4": 11,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 8,
+   "number": 11,
+   "name": "トモノミラグレ",
+   "time": "1:32.5",
+   "margin": "１ １／４",
+   "pos4": 7,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 6,
+   "number": 7,
+   "name": "チェリーロード",
+   "time": "1:33.7",
+   "margin": "７",
+   "pos4": 12,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
