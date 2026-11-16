@@ -2,7 +2,155 @@
  "source": "rakuten",
  "date": "20261116",
  "race_id": "202611162218140407",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 3,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "3",
+    "yen": 270
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "3-8",
+    "yen": 410
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "3",
+    "yen": 100
+   },
+   {
+    "combo": "8",
+    "yen": 100
+   },
+   {
+    "combo": "4",
+    "yen": 140
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-8",
+    "yen": 110
+   },
+   {
+    "combo": "3-4",
+    "yen": 320
+   },
+   {
+    "combo": "4-8",
+    "yen": 250
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-4-8",
+    "yen": 330
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "3-8-4",
+    "yen": 1740
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-8",
+    "yen": 130
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 3,
+   "number": 3,
+   "name": "サンライズスコール",
+   "time": "1:38.8",
+   "margin": "",
+   "pos4": null,
+   "last3f": 40.6,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 8,
+   "name": "ベアフォースワン",
+   "time": "1:39.7",
+   "margin": "４",
+   "pos4": null,
+   "last3f": 41.5,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "マオノブリージー",
+   "time": "1:39.9",
+   "margin": "１",
+   "pos4": null,
+   "last3f": 41.4,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 6,
+   "name": "ネムレスクイーン",
+   "time": "1:40.5",
+   "margin": "３",
+   "pos4": null,
+   "last3f": 41.8,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 1,
+   "number": 1,
+   "name": "コンチマカロン",
+   "time": "1:41.0",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": 42.8,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 5,
+   "name": "ミスキャサリン",
+   "time": "1:41.9",
+   "margin": "４",
+   "pos4": null,
+   "last3f": 42.2,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 2,
+   "number": 2,
+   "name": "ウインシャルマン",
+   "time": "1:42.1",
+   "margin": "１",
+   "pos4": null,
+   "last3f": 42.3,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 7,
+   "name": "ハイムリヒカイザー",
+   "time": "1:42.9",
+   "margin": "４",
+   "pos4": null,
+   "last3f": 42.2,
+   "popularity": null
+  }
+ ]
 }
