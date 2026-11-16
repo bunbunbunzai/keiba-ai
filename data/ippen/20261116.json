@@ -1,6 +1,6 @@
 {
  "date": "20261116",
- "updated": "2026-11-16 20:08",
+ "updated": "2026-11-16 20:12",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1941,22 +1941,8 @@
     "field": 9,
     "popularity": null
    },
-   "odds": 19.4,
+   "odds": 23.1,
    "popularity": 8
-  },
-  {
-   "race_id": "202611162015120112",
-   "results_key": "202611162015120112",
-   "venue": "大井",
-   "race_no": 12,
-   "post_time": "20:50",
-   "number": 8,
-   "name": "ヘイシリン",
-   "types": [
-    "aitop"
-   ],
-   "odds": 6.3,
-   "popularity": 2
   },
   {
    "race_id": "202611162015120112",
@@ -1976,7 +1962,7 @@
     "field": 14,
     "popularity": null
    },
-   "odds": 9.7,
+   "odds": 10.5,
    "popularity": 4
   },
   {
