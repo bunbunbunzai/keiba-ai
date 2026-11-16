@@ -1,6 +1,6 @@
 {
  "date": "20261116",
- "updated": "2026-11-16 14:48",
+ "updated": "2026-11-16 14:55",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -559,8 +559,8 @@
     "field": 8,
     "popularity": 4
    },
-   "odds": 16.1,
-   "popularity": 5
+   "odds": 21.9,
+   "popularity": 6
   },
   {
    "race_id": "202611161106070208",
@@ -580,7 +580,7 @@
     "field": 10,
     "popularity": 6
    },
-   "odds": 34.1,
+   "odds": 46.4,
    "popularity": 10
   },
   {
@@ -601,7 +601,7 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": 21.9,
+   "odds": 27.8,
    "popularity": 8
   },
   {
@@ -622,8 +622,8 @@
     "field": 8,
     "popularity": 7
    },
-   "odds": 18.0,
-   "popularity": 6
+   "odds": 24.5,
+   "popularity": 7
   },
   {
    "race_id": "202611160304160604",
@@ -671,7 +671,7 @@
    "types": [
     "aitop"
    ],
-   "odds": 5.0,
+   "odds": 2.9,
    "popularity": 2
   },
   {
@@ -683,7 +683,8 @@
    "number": 2,
    "name": "ベストベルシック",
    "types": [
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 12,
    "last": {
@@ -692,8 +693,8 @@
     "field": 9,
     "popularity": 2
    },
-   "odds": null,
-   "popularity": null
+   "odds": 23.9,
+   "popularity": 5
   },
   {
    "race_id": "202611162218140408",
@@ -713,8 +714,8 @@
     "field": 9,
     "popularity": 6
    },
-   "odds": 7.6,
-   "popularity": 5
+   "odds": 39.8,
+   "popularity": 9
   },
   {
    "race_id": "202611161106070209",
