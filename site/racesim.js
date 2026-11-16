@@ -79,12 +79,12 @@
   }
 
   // geom / pt / sectionName は下で定義（関数宣言なのでここから参照できる）。3D の描き方（racesim3d.js）も使う
-  // 序盤の隊列ができあがる時点（P.rf）。後ろの馬が下がって見えないよう、差が開く速さを先頭の速さの4割ほどまでに抑える。
+  // 序盤の隊列ができあがる時点（P.rf）。後ろの馬が下がって見えないよう、差が開く速さを先頭の速さの半分ほどまでに抑える。
   // 画面上の馬はコースに対して大きく描いているので、隊列の差を開ききるには長めの距離が要る
   function formEnd(P, g) {
     var eMax = 0;
     P.h.forEach(function (h) { if (h.e > eMax) eMax = h.e; });
-    return Math.max(P.r0, Math.min(P.ts - 0.03, eMax * g.L * 3.6 / g.Dpx));
+    return Math.max(P.r0, Math.min(P.ts - 0.03, eMax * g.L * 3.0 / g.Dpx));
   }
   var api = { rng: rng, hashStr: hashStr, plOrder: plOrder, tally: tally, plan: plan, gapAt: gapAt, smooth: smooth, ease: ease, formEnd: formEnd,
     geom: geom, pt: pt, sectionName: sectionName };
@@ -361,7 +361,7 @@
         placed.forEach(function (q) {
           var d = Math.abs(q.u - prog[i]);
           if (d < need) busy[q.l] = 1;
-          if (d < need * 1.7) wide[q.l] = 1;
+          if (d < need * (g.abreast ? 1.2 : 1.7)) wide[q.l] = 1;
         });
         var cur = Math.min(maxL, st.tgt[i]), was = cur;
         st.hold[i] -= dt;
@@ -375,7 +375,7 @@
           }
           cur = best < 0 ? Math.min(maxL, cur) : best;
         }
-        if (cur !== was) st.hold[i] = 0.9;
+        if (cur !== was) st.hold[i] = g.abreast ? 0.3 : 0.9;
         st.tgt[i] = cur;
         placed.push({ u: prog[i], l: cur });
         // ゲートを出てすぐは横一列のまま走り、前後がばらけるにつれて内へ寄っていく
@@ -400,7 +400,7 @@
       order = order || orderOf(prog);
       var h = hud(prog, order);
       R.draw({ prog: prog, order: order, lane: st.lane, t: st.t, clock: st.clock, hon: hon, info: h.info, line: h.line,
-        running: !!(raf || cool), fin: st.fin, vref: G().Dpx / Tsec });
+        running: !!(raf || cool), fin: st.fin, vref: G().Dpx / Tsec, slow: raf ? (st.slow || 1) : 1 });
       return h;
     }
 
@@ -408,7 +408,8 @@
       var dt = Math.min(0.05, Math.max(0, (now - last) / 1000)); // タブが裏に回っても一気に進めない
       last = now;
       st.clock += dt;
-      st.t += dt / Tsec;
+      st.slow = ((1 - ease(st.t)) * data.dist < 30 && st.fin.length < Math.min(3, n)) ? 0.4 : 1;
+      st.t += dt * st.slow / Tsec;
       var g = G(), prog = positions(), t = st.t, D = data.dist;
       assignLanes(prog, dt);
       // ゴールの判定（同じフレームで複数ならゴール時の差の小さい順）

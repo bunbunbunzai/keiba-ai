@@ -36,6 +36,10 @@ export async function create(stage, data, api) {
   const H = data.horses;
   const G = data.straight ? api.geom(1200, 320, data) : api.geom(1200, 600, data);
   G.abreast = true;                 // ゲートでは全頭が横一列に並ぶ
+  { // 3Dでは馬1頭ぶんほどの細いレーンにする（コースの幅は変えない）。前があけば次々に内へ寄っていける
+    const width = G.lanes * G.laneW;
+    G.laneW = 8.6; G.lanes = Math.max(4, Math.floor(width / G.laneW));
+  }
   G.coast = G.straight ? 25 : 260;  // ゴール後に流して走る長さ
   const STRIDE = 64;                // 襲歩1完歩で進む長さ（脚の回転を進む速さに合わせて、足が滑って見えないようにする）
   const HQ = /[?&]rsimhq=1/.test(location.search); // 確認用：重くても影を切らない
@@ -74,6 +78,10 @@ export async function create(stage, data, api) {
   hud.className = 'rsim-hud';
   hud.innerHTML = '<span class="i"></span><span class="l"></span>';
   const hudI = hud.querySelector('.i'), hudL = hud.querySelector('.l');
+  const finEl = document.createElement('div'); // ゴールした順に 1〜3着 を大きく出す
+  finEl.className = 'rsim-fin'; finEl.hidden = true;
+  stage.appendChild(finEl);
+  let finShown = -1;
   stage.appendChild(canvas);
   stage.appendChild(hud);
 
@@ -243,9 +251,27 @@ export async function create(stage, data, api) {
   // ゴール板とゴールの線（ゴールは走った長さが G.Dpx の地点）
   {
     const a = P3(G.Dpx, -0.6), b = P3(G.Dpx, G.lanes - 0.3);
-    const line = new Mesh(new BoxGeometry(a.distanceTo(b), 0.1, 1.2), new MeshBasicMaterial({ color: '#ffffff' }));
+    const fc = document.createElement('canvas'); fc.width = 32; fc.height = 32;
+    const fx = fc.getContext('2d');
+    fx.fillStyle = '#ffffff'; fx.fillRect(0, 0, 32, 32); fx.fillStyle = '#111111'; fx.fillRect(0, 0, 16, 16); fx.fillRect(16, 16, 16, 16);
+    const wide = a.distanceTo(b);
+    const line = new Mesh(new BoxGeometry(wide, 0.1, 5), new MeshBasicMaterial({ map: tex(fc, wide / 5, 1) }));
     line.position.copy(a).add(b).multiplyScalar(0.5); line.position.y = 0.32;
     line.rotation.y = -Math.atan2(b.z - a.z, b.x - a.x);
+    // 外側の柱と、コースをまたぐ横断幕
+    const o2 = P3(G.Dpx, G.lanes + 0.2), i2 = P3(G.Dpx, -1.3);
+    const p2 = new Mesh(new CylinderGeometry(0.6, 0.6, 34, 10), std('#c8102e', { roughness: 0.4 })); p2.position.set(o2.x, 17, o2.z); scene.add(p2);
+    const p3 = new Mesh(new CylinderGeometry(0.6, 0.6, 8, 10), std('#c8102e', { roughness: 0.4 })); p3.position.set(i2.x, 30, i2.z); scene.add(p3);
+    const bc = document.createElement('canvas'); bc.width = 512; bc.height = 48;
+    const bx = bc.getContext('2d');
+    bx.fillStyle = '#c8102e'; bx.fillRect(0, 0, 512, 48);
+    bx.fillStyle = '#ffffff'; bx.font = '700 34px sans-serif'; bx.textAlign = 'center'; bx.textBaseline = 'middle'; bx.fillText('GOAL', 256, 26);
+    const bt = new CanvasTexture(bc); bt.colorSpace = SRGBColorSpace;
+    const bm = new MeshBasicMaterial({ map: bt }), red = new MeshBasicMaterial({ color: '#c8102e' });
+    const banner = new Mesh(new BoxGeometry(i2.distanceTo(o2), 5, 0.6), [red, red, red, red, bm, bm]);
+    banner.position.copy(i2).add(o2).multiplyScalar(0.5); banner.position.y = 31.5;
+    banner.rotation.y = -Math.atan2(o2.z - i2.z, o2.x - i2.x);
+    scene.add(banner);
     scene.add(line);
     const side = P3(G.Dpx, -1.3), out = P3(G.Dpx, G.lanes + 4);
     const pole = new Mesh(new CylinderGeometry(0.6, 0.6, 26, 10), std('#c8102e', { roughness: 0.4 }));
@@ -388,7 +414,8 @@ export async function create(stage, data, api) {
   });
 
   // ---------- カメラ ----------
-  let view = 'tv', snap = true, lastNow = 0, shadowHalf = 0;
+  let view = 'tv', snap = true, lastNow = 0, shadowHalf = 0, finClock = -1, wasAtLine = false;
+  const esc = (s) => String(s).replace(/[&<>"']/g, (c) => '&#' + c.charCodeAt(0) + ';');
   let slowN = 0, slowSum = 0, lite = false, lastW = 0, lastH = 0; // 動きが重い端末では影をやめて軽くする
   const camPos = new Vector3(), camLook = new Vector3();
   function topView() {
@@ -430,6 +457,7 @@ export async function create(stage, data, api) {
     const big = view === 'top', hs = big ? 1.7 : 1, bs = big ? 2.6 : 1;
     const pack = new Vector3(); let pc = 0, leadU = 0;
     gate.visible = f.t < 0.1;
+    const slow = f.slow || 1;
     f.order.forEach((i, k) => {
       const hz = horses[i], u = f.prog[i], lane = Math.min(f.lane[i], G.lanes - 0.6);
       P3(u, lane, tmp);
@@ -454,7 +482,7 @@ export async function create(stage, data, api) {
       }
       hz.model.rotation.x = hz.roll;
       // 走り方：速さに応じて 立ち姿 → 駈歩 → 襲歩 をなめらかに混ぜ、脚の回転は進む速さに合わせる
-      const a = Math.min(1.2, speed / Math.max(1, f.vref));
+      const a = Math.min(1.2, speed / Math.max(1, f.vref * slow));
       hz.amp += (a - hz.amp) * Math.min(1, dt * 5);
       const wg = api.smooth(0.5, 0.85, hz.amp), wc = hz.canter ? api.smooth(0.1, 0.38, hz.amp) * (1 - wg) : 0;
       hz.gallop.setEffectiveWeight(hz.canter ? wg : api.smooth(0.1, 0.6, hz.amp));
@@ -463,7 +491,7 @@ export async function create(stage, data, api) {
       const v = hz.amp * f.vref;
       hz.gallop.timeScale = hz.rate * Math.max(0.6, Math.min(1.3, v / STRIDE * hz.gallop.getClip().duration));
       if (hz.canter) hz.canter.timeScale = hz.rate * Math.max(0.6, Math.min(1.25, v / (STRIDE * 0.55) * hz.canter.getClip().duration));
-      hz.mixer.update(dt);
+      hz.mixer.update(dt * slow);
       hz.g.position.copy(tmp);
       hz.g.scale.setScalar(hs);
       hz.sp.scale.set(6.4 * bs, 8.8 * bs, 1);
@@ -473,7 +501,16 @@ export async function create(stage, data, api) {
     });
     pack.multiplyScalar(1 / Math.max(1, pc));
     // カメラ
+    // ゴール前（残り約150m）から1着が入って少しの間は、ゴール板の先の内側に据えたカメラで正面から迎える
+    if (f.t <= 0) finClock = -1;
+    if (f.fin.length && finClock < 0) finClock = f.clock;
+    const atLine = f.running && view !== 'top' && leadU > G.Dpx * (1 - 150 / data.dist) && (finClock < 0 || f.clock - finClock < 2.6);
+    if (atLine !== wasAtLine) { wasAtLine = atLine; snap = true; }
     if (view === 'top') topView();
+    else if (atLine) {
+      P3(G.Dpx + 62, -4.5, camPos); camPos.y = 15;
+      P3(G.Dpx - 30, G.lanes * 0.32, camLook); camLook.y = 9;
+    }
     else {
       // 中継カメラ：内馬場の側から先頭集団を望遠で追う（外側だとスタンドに隠れるため）。背景にスタンドが映る
       const lane = G.lanes / 2;
@@ -498,6 +535,15 @@ export async function create(stage, data, api) {
       const sc = sun.shadow.camera; sc.left = -half; sc.right = half; sc.top = half; sc.bottom = -half; sc.updateProjectionMatrix();
     }
     renderer.render(scene, camera);
+    const shown = Math.min(3, f.fin.length);
+    if (shown !== finShown) {
+      finShown = shown;
+      finEl.hidden = !shown;
+      finEl.innerHTML = shown ? '<b>ゴール！</b>' + f.fin.slice(0, 3).map((i, k) => {
+        const h = H[i], c = api.FR[h.f] || api.FR[1];
+        return '<span>' + (k + 1) + '着 <i style="background:' + c[0] + ';color:' + c[1] + '">' + h.n + '</i> ' + esc(h.name) + '</span>';
+      }).join('') : '';
+    }
     if (hudI.textContent !== f.info) hudI.textContent = f.info;
     const l = f.t > 0 ? f.line : '';
     if (hudL.textContent !== l) hudL.textContent = l;
@@ -508,7 +554,7 @@ export async function create(stage, data, api) {
     geom: () => G,
     resize,
     draw,
-    show(on) { canvas.style.display = on ? '' : 'none'; hud.style.display = on ? '' : 'none'; },
+    show(on) { canvas.style.display = on ? '' : 'none'; hud.style.display = on ? '' : 'none'; finEl.style.display = on ? '' : 'none'; },
     setView(v) { view = v === 'top' ? 'top' : 'tv'; snap = true; },
   };
 }
