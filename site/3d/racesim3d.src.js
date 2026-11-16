@@ -17,6 +17,8 @@ import {
 import { AnimationMixer } from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { clone as cloneSkinned } from 'three/addons/utils/SkeletonUtils.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { PMREMGenerator } from 'three';
 
 // 毛色：体・たてがみと尾・脚の先
 const COATS = [
@@ -72,6 +74,12 @@ export async function create(stage, data, api) {
   sun.shadow.bias = -0.0004; sun.shadow.normalBias = 0.5;
   sun.shadow.camera.near = 10; sun.shadow.camera.far = 3000;
   scene.add(sun, sun.target);
+  let coatEnv = null;
+  {
+    const pm = new PMREMGenerator(renderer);
+    coatEnv = pm.fromScene(new RoomEnvironment(), 0.04).texture; // 馬体にだけ使う（背景まで白っぽくしない）
+    pm.dispose();
+  }
   const SUN_DIR = new Vector3(0.4, 0.85, -0.3).normalize(); // 内馬場の側から照らす（中継カメラから見て順光）
 
   const hud = document.createElement('div');
@@ -341,19 +349,27 @@ export async function create(stage, data, api) {
   }
 
   // ---------- 馬と騎手（racehorse.glb：骨格と走るアニメーション付きのモデルを頭数分だけ複製して色を変える） ----------
+  const HORSE_PARTS = { Coat: 1, Points: 1, ManeTail: 1, Hoof: 1, Eye: 1, Markings: 1 };
   const MODEL_SCALE = 8.2; // モデルはメートル単位。コースの縮尺（1馬身≒17）に合わせる
   const gltf = await new GLTFLoader().loadAsync(new URL('racehorse.glb' + new URL(import.meta.url).search, import.meta.url).href);
   const clip = (name) => gltf.animations.find((a) => a.name === name);
   // ゼッケン：モデルに UV が無いので、左右の面それぞれで数字が正しく読めるように UV を作る
   gltf.scene.traverse((o) => {
     if (!o.isMesh || !o.material || o.material.name !== 'SaddleCloth') return;
-    const g = o.geometry, p = g.getAttribute('position');
-    g.computeBoundingBox();
-    const b = g.boundingBox, w = b.max.x - b.min.x || 1, h = b.max.y - b.min.y || 1, uv = new Float32Array(p.count * 2);
+    const g = o.geometry, p = g.getAttribute('position'), nr = g.getAttribute('normal');
+    // 横を向いた面（左右の布の面）だけで範囲を測る。帯など他の部分が混ざると数字の位置がずれるため
+    let x0 = Infinity, x1 = -Infinity, y0 = Infinity, y1 = -Infinity;
     for (let k = 0; k < p.count; k++) {
-      const u = (p.getX(k) - b.min.x) / w;
+      if (Math.abs(nr.getZ(k)) < 0.7) continue;
+      x0 = Math.min(x0, p.getX(k)); x1 = Math.max(x1, p.getX(k)); y0 = Math.min(y0, p.getY(k)); y1 = Math.max(y1, p.getY(k));
+    }
+    if (!(x1 > x0)) { g.computeBoundingBox(); x0 = g.boundingBox.min.x; x1 = g.boundingBox.max.x; y0 = g.boundingBox.min.y; y1 = g.boundingBox.max.y; }
+    const w = x1 - x0 || 1, h = y1 - y0 || 1, uv = new Float32Array(p.count * 2);
+    for (let k = 0; k < p.count; k++) {
+      // 数字はゼッケンの後ろ寄り6割に入れる（前のほうは騎手の足に隠れるため）
+      const u = (p.getX(k) - x0) / w / 0.6;
       uv[k * 2] = p.getZ(k) >= 0 ? u : 1 - u;
-      uv[k * 2 + 1] = (p.getY(k) - b.min.y) / h;
+      uv[k * 2 + 1] = (p.getY(k) - y0) / h;
     }
     g.setAttribute('uv', new Float32BufferAttribute(uv, 2));
   });
@@ -363,7 +379,6 @@ export async function create(stage, data, api) {
     const c = document.createElement('canvas'); c.width = 128; c.height = 96;
     const x = c.getContext('2d');
     x.fillStyle = '#f6f6f3'; x.fillRect(0, 0, 128, 96);
-    x.strokeStyle = '#1c1c1c'; x.lineWidth = 4; x.strokeRect(3, 3, 122, 90);
     x.fillStyle = '#111111'; x.font = '700 64px sans-serif'; x.textAlign = 'center'; x.textBaseline = 'middle';
     x.fillText(String(h.n), 64, 52);
     const t = new CanvasTexture(c); t.colorSpace = SRGBColorSpace; t.anisotropy = maxAniso; return t;
@@ -394,7 +409,8 @@ export async function create(stage, data, api) {
       if (!o.isMesh) return;
       o.castShadow = true; o.frustumCulled = false;
       const m = o.material.clone(); o.material = m;
-      m.roughness = Math.max(m.roughness, 0.55);
+      if (HORSE_PARTS[m.name]) { m.envMap = coatEnv; m.envMapIntensity = 0.28; }
+      else m.roughness = Math.max(m.roughness, 0.6);
       if (paintBy[m.name]) m.color.set(paintBy[m.name]);
       if (m.name === 'Markings' && !marks) m.color.set(coat.body);
       if (m.name === 'SaddleCloth') { m.color.set('#ffffff'); m.map = clothTex(h); m.roughness = 0.8; }
