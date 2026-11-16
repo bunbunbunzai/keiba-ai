@@ -2,7 +2,172 @@
  "source": "rakuten",
  "date": "20261116",
  "race_id": "202611162015120111",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "8",
+    "yen": 690
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "8-9",
+    "yen": 3700
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "8",
+    "yen": 280
+   },
+   {
+    "combo": "9",
+    "yen": 180
+   },
+   {
+    "combo": "4",
+    "yen": 120
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "8-9",
+    "yen": 620
+   },
+   {
+    "combo": "4-8",
+    "yen": 470
+   },
+   {
+    "combo": "4-9",
+    "yen": 270
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "8-8",
+    "yen": 2100
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-8-9",
+    "yen": 1790
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "8-9-4",
+    "yen": 12870
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "8-9",
+    "yen": 2060
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 8,
+   "name": "セイエイ",
+   "time": "1:54.1",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 9,
+   "name": "ヴュルディヒ",
+   "time": "1:54.1",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "ホウオウカブキ",
+   "time": "1:55.0",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 1,
+   "number": 1,
+   "name": "サヨノトレイダー",
+   "time": "1:55.1",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 5,
+   "name": "ブルマリンシェール",
+   "time": "1:55.1",
+   "margin": "ハナ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 6,
+   "name": "スパルタレオニダス",
+   "time": "1:55.1",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 7,
+   "name": "ポッドフェスタ",
+   "time": "1:56.7",
+   "margin": "８",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 2,
+   "number": 2,
+   "name": "マイネルボンバー",
+   "time": "1:56.9",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 3,
+   "number": 3,
+   "name": "ゴールドジャッジ",
+   "time": "1:58.4",
+   "margin": "７",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
