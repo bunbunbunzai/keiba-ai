@@ -2,7 +2,140 @@
  "source": "rakuten",
  "date": "20261116",
  "race_id": "202611162015120103",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "6",
+    "yen": 170
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "6-5",
+    "yen": 300
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "6",
+    "yen": 100
+   },
+   {
+    "combo": "5",
+    "yen": 120
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "5-6",
+    "yen": 110
+   },
+   {
+    "combo": "3-6",
+    "yen": 200
+   },
+   {
+    "combo": "3-5",
+    "yen": 260
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-5-6",
+    "yen": 380
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "6-5-3",
+    "yen": 1180
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "5-6",
+    "yen": 180
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 6,
+   "name": "ファンキージャズ",
+   "time": "1:28.1",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 37.6,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "ナンデアル",
+   "time": "1:28.7",
+   "margin": "３",
+   "pos4": 2,
+   "last3f": 38.1,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "アベニンスターチス",
+   "time": "1:30.0",
+   "margin": "６",
+   "pos4": 3,
+   "last3f": 39.1,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "ベルクヴェルク",
+   "time": "1:31.9",
+   "margin": "９",
+   "pos4": 4,
+   "last3f": 37.0,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 7,
+   "name": "ユラカイドウ",
+   "time": "1:48.1",
+   "margin": "大差",
+   "pos4": 5,
+   "last3f": 43.1,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 1,
+   "number": 1,
+   "name": "リュウゴジュエル",
+   "time": "-",
+   "margin": "中止",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 4,
+   "number": 4,
+   "name": "ジーティーショウカ",
+   "time": "-",
+   "margin": "取消",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
