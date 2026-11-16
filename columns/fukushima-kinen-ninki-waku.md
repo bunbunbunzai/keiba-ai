@@ -97,7 +97,7 @@ hero: col-ninki-shoritsu
 
 - [福島記念の過去10年の結果一覧](/column/fukushima-kinen-kako10nen/)
 - [福島記念の年齢・性別・騎手・厩舎の傾向](/column/fukushima-kinen-nenrei-kishu/)
-- [福島記念のジンクス・データの偏り](/column/fukushima-kinen-jinx/)
+- [福島記念のジンクス](/column/fukushima-kinen-jinx/)
 - [福島記念のレースガイドとAI予想](/graded/fukushima-kinen/)
 
 > 過去の傾向は、これからの結果を約束するものではない。1つのレースの10回分は少ないデータで、強い馬がたまたまそこにいた影響も含まれる。馬券は20歳から購入できる。

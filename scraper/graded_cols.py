@@ -252,7 +252,7 @@ def this_year(rc: Race) -> str:
 
 
 def links(rc: Race, me: str) -> str:
-    items = [("kako10nen", "過去10年の結果一覧"), ("ninki-waku", "人気・枠順・脚質の傾向"), ("nenrei-kishu", "年齢・性別・騎手・厩舎の傾向"), ("jinx", "ジンクス・データの偏り")]
+    items = [("kako10nen", "過去10年の結果一覧"), ("ninki-waku", "人気・枠順・脚質の傾向"), ("nenrei-kishu", "年齢・性別・騎手・厩舎の傾向"), ("jinx", "ジンクス")]
     out = [f"- [{rc.name}の{t}](/column/{rc.slug}-{k}/)" for k, t in items if k != me]
     if (DATA_DIR / "race_guides" / f"{rc.slug}.json").exists():
         out.append(f"- [{rc.name}のレースガイドとAI予想](/graded/{rc.slug}/)")
@@ -633,7 +633,7 @@ def jinx_items(rc: Race) -> list[tuple]:
         b3 = [x for x in big if fin(x) <= 3]
         yrs = len({x["year"] for x in b3})
         if not b3:
-            add(11, "big", "10番人気以下は1頭も3着以内に入っていない", f"10番人気以下は延べ{len(big)}頭が出走して、3着以内がない。人気薄を拾う必要が小さいレースといえる。", "10番人気以下は3着以内なし")
+            add(11, "big", "10番人気以下は1頭も3着以内に入っていない", f"10番人気以下は延べ{len(big)}頭が出走して、3着以内がない。人気薄には厳しいレースになっている。", "10番人気以下は3着以内なし")
         elif yrs >= 0.5 * n:
             add(7 + 10 * yrs / n, "big", f"10番人気以下が{n}回中{yrs}回、3着以内に入っている", f"入ったのは{hits(big)}。延べ{len(big)}頭で3着以内{len(b3)}回。", f"10番人気以下が{yrs}回3着以内")
     # 1・2番人気の決着
@@ -690,7 +690,7 @@ def jinx_items(rc: Race) -> list[tuple]:
         ev = sum(1 for x in ww if x["num"] % 2 == 0)
         if ww and max(ev, len(ww) - ev) >= 0.8 * len(ww) and len(ww) >= 8:
             k = "偶数" if ev > len(ww) - ev else "奇数"
-            add(7 + max(ev, len(ww) - ev) - 0.8 * len(ww), "parity", f"勝ち馬{len(ww)}頭のうち{max(ev, len(ww) - ev)}頭が{k}の馬番", f"勝ち馬の馬番は新しい年から" + "、".join(f"{x['num']}番" for x in sorted(ww, key=lambda x: -x["year"])) + f"{note}。偶数の馬番は後からゲートに入る。ただし、これだけ偏る理由としては弱く、偶然の可能性が高い。")
+            add(7 + max(ev, len(ww) - ev) - 0.8 * len(ww), "parity", f"勝ち馬{len(ww)}頭のうち{max(ev, len(ww) - ev)}頭が{k}の馬番", f"勝ち馬の馬番は新しい年から" + "、".join(f"{x['num']}番" for x in sorted(ww, key=lambda x: -x["year"])) + f"{note}。偶数の馬番は後からゲートに入るぶん有利とも言われるが、ここまで偏る理由としては弱い。")
         zoro = [y for y in yw if len({x["frame"] for x in W if x["year"] == y and fin(x) <= 2}) == 1 and sum(1 for x in W if x["year"] == y and fin(x) <= 2) == 2]
         if len(zoro) >= 2:
             add(5 + 2 * len(zoro), "zoro", f"同じ枠の2頭で1・2着が決まった年が{len(zoro)}回ある", f"{'・'.join(str(y) for y in sorted(zoro))}年は、1着と2着が同じ枠の馬だった（枠連のゾロ目）{note}。")
@@ -783,7 +783,7 @@ def jinx_items(rc: Race) -> list[tuple]:
         if len(over) >= 0.5 * len(t3p):
             add(6 + 10 * len(over) / len(t3p), "pay", f"3連単が{len(t3p)}回中{len(over)}回、10万円を超えている", f"10万円を超えたのは{'・'.join(str(y) for y in sorted(over))}年。最高は{man(max(v for _, v in t3p))}。", f"3連単10万円超えが{len(over)}回")
         elif not over:
-            add(8, "pay", f"3連単が1度も10万円を超えていない", f"過去{len(t3p)}回の3連単の最高は{man(max(v for _, v in t3p))}。大きく荒れたことがないレースといえる。", "3連単は10万円超えなし")
+            add(8, "pay", f"3連単が1度も10万円を超えていない", f"過去{len(t3p)}回の3連単の最高は{man(max(v for _, v in t3p))}。大きく荒れたことがないレースである。", "3連単は10万円超えなし")
         if len(under) >= 0.4 * len(t3p):
             add(5 + 10 * len(under) / len(t3p), "pay2", f"3連単が{len(t3p)}回中{len(under)}回、1万円未満", f"1万円未満だったのは{'・'.join(str(y) for y in sorted(under))}年。", f"3連単1万円未満が{len(under)}回")
     # 馬名（理由のない偏り）
@@ -792,13 +792,47 @@ def jinx_items(rc: Race) -> list[tuple]:
         L, c = ln.most_common(1)[0]
         allL = [x for x in R if len(x["name"]) == L]
         if c >= 4 and c / len(wins) >= 1.6 * len(allL) / len(R):
-            add(3 + c, "name", f"勝ち馬{len(wins)}頭のうち{c}頭が、馬名{L}文字", f"{L}文字の馬は延べ{len(allL)}頭（出走馬全体の{100 * len(allL) / len(R):.0f}%）で、成績は{fmt(rec(allL))}。勝ったのは{hits(allL, 1)}。馬名の長さが結果に影響する理由はなく、偶然の偏りと考えるのが自然である。", f"勝ち馬の{c}頭が馬名{L}文字")
+            add(3 + c, "name", f"勝ち馬{len(wins)}頭のうち{c}頭が、馬名{L}文字", f"{L}文字の馬は延べ{len(allL)}頭（出走馬全体の{100 * len(allL) / len(R):.0f}%）で、成績は{fmt(rec(allL))}。勝ったのは{hits(allL, 1)}。馬名の長さが結果に影響する理由は見当たらないが、数字としては偏っている。", f"勝ち馬の{c}頭が馬名{L}文字")
         ini = Counter(x["name"][0] for x in wins)
         ch, c = ini.most_common(1)[0]
         if c >= 3:
             allC = [x for x in R if x["name"][0] == ch]
-            add(2 + 2 * c, "ini", f"馬名が「{ch}」で始まる馬が{c}勝している", f"「{ch}」で始まる馬は延べ{len(allC)}頭で、成績は{fmt(rec(allC))}。勝ったのは{hits(allC, 1)}。" + ("同じ馬主の冠名による偏りで、馬名そのものに意味があるわけではない。" if len({x['name'][:3] for x in allC if fin(x) == 1}) < c else "偶然の偏りと考えるのが自然である。"), f"「{ch}」で始まる馬が{c}勝")
+            add(2 + 2 * c, "ini", f"馬名が「{ch}」で始まる馬が{c}勝している", f"「{ch}」で始まる馬は延べ{len(allC)}頭で、成績は{fmt(rec(allC))}。勝ったのは{hits(allC, 1)}。" + ("同じ馬主の冠名による偏りで、馬名そのものに意味があるわけではない。" if len({x['name'][:3] for x in allC if fin(x) == 1}) < c else "理由は見当たらないが、数字としては偏っている。"), f"「{ch}」で始まる馬が{c}勝")
     return out
+
+
+HOOKS = {
+    "pop": "今年もこの人気の馬が馬券の軸になるのか。当日のオッズで何番人気になるかに注目したい。",
+    "popwin": "今年この人気に支持される馬は、発走直前まで確認しておきたい。",
+    "winpop": "今年も上位人気から勝ち馬が出るのか、それとも初めての伏兵が現れるのか。",
+    "top3": "今年の上位人気3頭は、どこまで信頼できるか。",
+    "tan": "今年の勝ち馬の単勝はいくらになるか。",
+    "fav": "今年の1番人気は、この流れを変えられるか。",
+    "fav2": "今年の1番人気にとっては、嫌なデータである。",
+    "big": "今年も人気薄の出番はあるのか。",
+    "q12": "今年の1番人気と2番人気の組み合わせは、買うか切るかの分かれ目になる。",
+    "frame0": "今年この枠に入った馬は、データを覆せるか。枠順の発表に注目したい。",
+    "frame": "今年この枠を引くのはどの馬か。枠順が出たら最初に確認したい。",
+    "outer": "今年、外枠に入った有力馬は割り引くべきか。枠順の発表が1つの山場になる。",
+    "digit": "今年、2けたの馬番に入った有力馬は試される。",
+    "num": "今年この馬番に入る馬は、それだけで気になる存在になる。",
+    "parity": "今年の勝ち馬の馬番はどちらになるか。",
+    "zoro": "今年も枠連のゾロ目はあるのか。",
+    "pos": "今年も同じ位置から勝ち馬が出るのか。前走までの通過順を見ておきたい。",
+    "lead": "今年、先手を取るのはどの馬か。",
+    "age": "今年もこの世代から勝ち馬が出るのか。",
+    "age0": "今年この年齢で出走する馬は、初めての勝ち馬になれるか。",
+    "old": "今年のベテラン勢は、この壁を越えられるか。",
+    "fem": "今年出走する牝馬は、このデータにどう向き合うか。",
+    "jockey": "今年の騎乗馬が決まったら、まず確認したい騎手である。",
+    "cold": "今年こそ、このデータを止められるか。",
+    "trainer": "今年の出走馬に、この厩舎の馬がいるかを確認したい。",
+    "rep": "去年の上位馬が今年も出てくるなら、見逃せないデータである。",
+    "pay": "今年の配当はどちらに転ぶか。",
+    "pay2": "今年も堅く収まるのか。",
+    "name": "今年の出走馬で、この文字数に当てはまる馬を数えてみるのも面白い。",
+    "ini": "今年の出走馬に、当てはまる馬はいるか。",
+}
 
 
 def chance3(n: int, p: float = 0.1) -> float:
@@ -823,21 +857,20 @@ def jinx(rc: Race) -> str | None:
     if len(pick) < 3:
         return None
     heads = [it[4] for it in pick[:2]]
-    title = f"{rc.name}のジンクス・データの偏り{len(pick)}個：{heads[0]}、{heads[1]}（過去10年）"
-    desc = (f"{rc.name}（{rc.grade()}）{rc.span}の全着順から、数字の偏りが大きいものを{len(pick)}個拾った。" + "、".join(it[4] for it in pick[:4])
-            + "など。理由が考えられるものと、偶然と見るべきものを分けて書いた。")
-    lead = (f"{rc.name}の過去{rc.n}回（{rc.span}）で目立つ偏りは、{pick[0][2]}こと、{pick[1][2]}こと。"
-            f"ほかにも{len(pick) - 2}個を拾った。どれも{rc.n}回分の結果で、今年も続くとは限らない。")
-    body = (f"\n## {rc.name}のジンクス一覧（{rc.span}）\n\n" + "\n".join(f"{i}. {it[2]}" for i, it in enumerate(pick, 1))
-            + f"\n\n{rc.venue_note()}数字はJRA公式の成績から機械的に数えたもので、偏りの大きい順に並べている。\n")
+    title = f"【{rc.year}】{rc.name}のジンクス{len(pick)}選｜{heads[0]}、{heads[1]}…今年も続くか"
+    desc = (f"{rc.name}（{rc.grade()}）の過去{rc.n}回（{rc.span}）に隠れたジンクスを{len(pick)}個。" + "、".join(it[4] for it in pick[:4])
+            + f"など、JRA公式の全着順から数えた。{rc.year}年も続くのか、出走馬と見比べたい。")
+    lead = (f"{rc.name}には、知っているかどうかで馬券の組み立てが変わりそうな偏りがある。過去{rc.n}回（{rc.span}）で{pick[0][2]}。さらに、{pick[1][2]}。"
+            f"ほかにも{len(pick) - 2}個、気になるデータが見つかった。{rc.year}年はどこまで当てはまるのか。")
+    body = (f"\n## {rc.name}のジンクス{len(pick)}選（{rc.span}）\n\n" + "\n".join(f"{i}. {it[2]}" for i, it in enumerate(pick, 1))
+            + f"\n\n{rc.venue_note()}すべてJRA公式の成績から数えた実際の数字で、偏りの大きい順に並べている。\n")
     for i, it in enumerate(pick, 1):
-        body += f"\n## {i}. {it[2]}\n\n{it[3]}\n"
-    body += ("\n## ジンクスの読み方\n\n"
-             f"1つのレースの{rc.n}回分は、傾向を言い切るには少ない。たとえば勝率10%の条件でも、{rc.n}回のうち3回以上当たることは偶然で{chance3(rc.n):.0f}%ほど起きる。"
-             "枠や脚質の偏りはコースの形から説明できることがあるが、馬番の偶数・奇数や馬名の偏りには理由がない。"
-             "ここに挙げた数字は、予想の根拠ではなく、出走馬を見るときの話の種として使うのがよい。\n\n"
-             "このサイトのAI予想は、こうしたジンクスを印には使っていない。馬ごとの近走・コース実績・騎手・馬場をもとに評価し、◎の単勝か複勝を1点だけ買う"
-             "（[単勝と複勝の使い分け](/column/tansho-fukusho/)）。\n")
+        body += f"\n## {i}. {it[2]}\n\n{it[3]}{HOOKS.get(it[1], '')}\n"
+    body += (f"\n## このジンクス、{rc.year}年も続くか\n\n"
+             f"出走馬と枠順が決まったら、上の{len(pick)}個に当てはまる馬を探してみてほしい。複数のジンクスが重なる馬がいれば、それだけで買う理由にも、疑う理由にもなる。\n\n"
+             f"ただし、過去{rc.n}回分の結果なので、偶然が混ざっている可能性は十分にある。勝率10%の条件でも、{rc.n}回のうち3回以上当たることは偶然で{chance3(rc.n):.0f}%ほど起きる。"
+             "枠や脚質の偏りはコースの形から説明できることがあるが、馬番や馬名の偏りには理由が見当たらない。続くか、止まるかを見届けるのも競馬の楽しみ方の1つである。\n\n"
+             "このサイトのAI予想は、ジンクスではなく、馬ごとの近走・コース実績・騎手・馬場から全頭を評価している。ジンクスに当てはまる馬にAIがどんな印を打つのか、レース当日に見比べてほしい。\n")
     if rc.slug in MANUAL_LINKS:
         lk = "\n".join(f"- [{rc.name}の{t}](/column/{k}/)" for k, t in MANUAL_LINKS[rc.slug] if (COLS / f"{k}.md").exists())
         if (DATA_DIR / "race_guides" / f"{rc.slug}.json").exists():
