@@ -15,6 +15,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+from urllib.parse import urljoin
 import sys
 import time
 import unicodedata
@@ -83,7 +84,7 @@ def parse_list(html: str, year: int) -> list[dict]:
             a = cell.find("a")
             abbr = re.sub(r"\s*\(?(?:J\s*[・･.]?\s*)?G\s*(?:[ⅠⅡⅢ]|I{1,3}|[123])\)?\s*$", "", tx(a) if a and tx(a) else tx(cell)).strip()
             abbr = re.sub(r"^\(?(?:J\s*[・･.]?\s*)?G\s*(?:[ⅠⅡⅢ]|I{1,3}|[123])\)?\s*", "", abbr)  # 格が文字で先頭に付く行がある
-            abbr = re.sub(r"\s+", "", abbr)
+            abbr = re.sub(r"^(?:新設)?重賞", "", re.sub(r"\s+", "", abbr))
             course = tx(tds[idx["コース"]]) if idx["コース"] is not None else ""
             cm = re.search(r"(芝|ダ|障)\D*([\d,]+)", course)
             url = None
@@ -95,14 +96,162 @@ def parse_list(html: str, year: int) -> list[dict]:
             out.append({"date": f"{year}{int(m.group(1)):02d}{int(m.group(2)):02d}", "abbr": abbr, "grade": grade_from(cell),
                         "venue": next((v for v in VENUES if v in venue), venue), "cond": tx(tds[idx["性齢"]]) if idx["性齢"] is not None else "",
                         "course": course, "surface": cm.group(1) if cm else "", "distance": to_int(cm.group(2)) if cm else None, "url": url})
+    return out or parse_list_old(s, year)
+
+
+def parse_list_old(s, year: int) -> list[dict]:
+    """2015年ごろまでの重賞一覧（月/日・レース名・場・（性齢）・コース・優勝馬・騎手・結果。リンクは同じ階層への相対）。"""
+    out = []
+    for t in s.find_all("table"):
+        if t.find("table") is not None:
+            continue
+        trs = t.find_all("tr")
+        if not trs:
+            continue
+        cols = [tx(c).replace(" ", "") for c in trs[0].find_all(["th", "td"])]
+        if "レース名" not in cols or "月/日" not in cols:
+            continue
+        ix = {k: cols.index(k) if k in cols else None for k in ("月/日", "レース名", "場", "性齢", "コース", "結果")}
+        for tr in trs[1:]:
+            tds = tr.find_all(["td", "th"])
+            if len(tds) < len(cols):
+                continue
+            m = re.search(r"(\d+)\s*/\s*(\d+)", tx(tds[ix["月/日"]]))
+            if not m:
+                continue
+            cell = tds[ix["レース名"]]
+            abbr = re.sub(r"\s*[（(](?:J\s*[・･.]?\s*)?(?:G|Jpn)\s*(?:III|II|I|[123])[）)]\s*$", "", tx(cell).replace("Ⅲ", "III").replace("Ⅱ", "II").replace("Ⅰ", "I"))
+            abbr = re.sub(r"^(?:新設)?重賞", "", re.sub(r"\s+", "", abbr))
+            g = grade_from(cell)
+            if not g:
+                im = re.search(r"icon_(j?)(?:g|jpn)(\d)", " ".join(i.get("src", "") for i in cell.find_all("img")))
+                g = (("J・" if im.group(1) else "") + "G" + im.group(2)) if im else ""
+            course = tx(tds[ix["コース"]]) if ix["コース"] is not None else ""
+            cm = re.search(r"(芝|ダ|障)\D*([\d,]+)", course)
+            url = None
+            if ix["結果"] is not None:
+                ra = tds[ix["結果"]].find("a", href=True)
+                if ra:
+                    h = ra["href"]
+                    url = urljoin(f"{BASE}/datafile/seiseki/replay/{year}/jyusyo.html", h)
+            venue = tx(tds[ix["場"]]) if ix["場"] is not None else ""
+            out.append({"date": f"{year}{int(m.group(1)):02d}{int(m.group(2)):02d}", "abbr": abbr, "grade": g,
+                        "venue": next((v for v in VENUES if v in venue), venue), "cond": tx(tds[ix["性齢"]]) if ix["性齢"] is not None else "",
+                        "course": course, "surface": cm.group(1) if cm else "", "distance": to_int(cm.group(2)) if cm else None, "url": url})
     return out
+
+
+KINDS = ("単勝", "複勝", "枠連", "ワイド", "馬連", "馬単", "3連複", "3連単")
+
+
+def corner_pos(order: str) -> dict:
+    """「3,6(1,12)(10,15)…」のコーナー通過順から 馬番→順位。かっこ内（並走）は同じ順位。"""
+    pos, n, group, star = {}, 0, None, False
+    for tok in re.findall(r"\(|\)|\*|\d+", order):
+        if tok == "(":
+            group = n + 1
+        elif tok == ")":
+            group = None
+        elif tok == "*":  # 「(*2,7)」は並走のうち2がわずかに前（2が1番手、7が2番手）
+            star = True
+        else:
+            n += 1
+            pos[int(tok)] = group or n
+            if star and group:
+                group, star = n + 1, False
+    return pos
+
+
+def legacy(s) -> tuple[list, dict]:
+    """2017年ごろまでの形（class のない表）。列の並びは固定：着順・枠・馬番・馬名・性齢・負担重量・印・騎手・タイム・着差・上り・馬体重・増減・調教師・人気。"""
+    def lines(td):
+        return [x for x in (re.sub(r"\s+", " ", nf(t)).strip() for t in td.get_text("\n").split("\n")) if x]
+    corners = []
+    for td in s.find_all("td"):
+        if re.fullmatch(r"[1-4]コーナー", tx(td)):
+            nx = td.find_next_sibling("td")
+            if nx is not None and re.search(r"\d", tx(nx)):
+                corners.append(corner_pos(tx(nx)))
+    rows = []
+    for t in s.find_all("table"):
+        if t.find("table") is not None:
+            continue
+        trs = t.find_all("tr")
+        if not trs or "着順" not in tx(trs[0]) or "馬名" not in tx(trs[0]):
+            continue
+        old = "記号" in tx(trs[0])  # 2007年ごろまで：着順・枠・馬番・記号・馬名・性・齢・負担重量・騎手・タイム・着差・馬体重・増減・調教師・人気
+        for tr in trs[1:]:
+            tds = tr.find_all("td")
+            if len(tds) != 15:
+                continue
+            v = [tx(c) for c in tds]
+            if old:
+                v = [v[0], v[1], v[2], v[4], v[5] + v[6], v[7].replace("kg", ""), "", v[8], v[9], v[10], "", v[11], v[12], v[13], v[14]]
+            name = re.sub(r"[（(].*?[）)]", "", v[3]).strip()
+            if not name:
+                continue
+            frame = to_int(v[1]) or next((to_int(i.get("alt", "")) for i in tds[1].find_all("img") if to_int(i.get("alt", ""))), None)
+            sm = re.match(r"(牡|牝|せん|セ|騸)\s*(\d+)", v[4])
+            num = to_int(v[2])
+            rows.append({"fin": to_int(v[0]) if re.match(r"^\d+", v[0]) else v[0], "frame": frame, "num": num, "name": name,
+                         "sex": ("せん" if sm.group(1) in ("セ", "騸") else sm.group(1)) if sm else "", "age": int(sm.group(2)) if sm else None,
+                         "kg": v[5], "jockey": re.sub(r"[▲△☆★◇]", "", v[7]).replace(" ", ""), "time": v[8], "margin": v[9],
+                         "corners": "-".join(str(c[num]) for c in corners if num in c), "last3f": v[10], "pop": to_int(v[14]),
+                         "trainer": v[13].replace(" ", "")})
+        if rows:
+            break
+    pay = {}
+    for td in s.find_all("td"):
+        kind = tx(td).replace(" ", "")
+        if kind not in KINDS or kind in pay:
+            continue
+        sib = td.find_next_siblings("td", limit=3)
+        if len(sib) < 3:
+            continue
+        cs, ys, ps = lines(sib[0]), lines(sib[1]), lines(sib[2])
+        items = [[c.replace(" ", ""), to_int(y), to_int(ps[i]) if i < len(ps) else None] for i, (c, y) in enumerate(zip(cs, ys)) if to_int(y)]
+        if items:
+            pay[kind] = items
+    return rows, pay
+
+
+def old_rows(s) -> list:
+    """2018年11月までの成績表（table.mainList）。通過順は別表（cornerJuniList）から起こす。"""
+    t = s.select_one("table.mainList")
+    if t is None:
+        return []
+    corners = []
+    ct = s.select_one("table.cornerJuniList")
+    if ct is not None:
+        for tr in ct.find_all("tr"):
+            td = tr.find("td")
+            if td is not None and re.search(r"\d", tx(td)):
+                corners.append(corner_pos(tx(td)))
+    rows = []
+    for tr in t.find_all("tr"):
+        def g(cls):
+            c = tr.select_one("td." + cls)
+            return tx(c) if c is not None else ""
+        name = re.sub(r"[（(].*?[）)]", "", g("umameiCol")).strip()
+        if not name:
+            continue
+        w = tr.select_one("td.wakuCol")
+        frame = (to_int(tx(w)) or next((to_int(i.get("alt", "")) for i in w.find_all("img") if to_int(i.get("alt", ""))), None)) if w is not None else None
+        sm = re.match(r"(牡|牝|せん|セ|騸)\s*(\d+)", g("seireiCol"))
+        fin, num = g("chakuCol"), to_int(g("umabanCol"))
+        rows.append({"fin": to_int(fin) if re.match(r"^\d+", fin) else fin, "frame": frame, "num": num, "name": name,
+                     "sex": ("せん" if sm.group(1) in ("セ", "騸") else sm.group(1)) if sm else "", "age": int(sm.group(2)) if sm else None,
+                     "kg": g("hutanCol"), "jockey": re.sub(r"[▲△☆★◇]", "", g("jocCol")).replace(" ", ""), "time": g("timeCol"), "margin": g("chakusaCol"),
+                     "corners": "-".join(str(c[num]) for c in corners if num in c), "last3f": g("suiteiCol"), "pop": to_int(g("ninkiCol")),
+                     "trainer": g("choukyoCol").replace(" ", "")})
+    return rows
 
 
 def parse_result(html: str) -> dict:
     s = BeautifulSoup(html, "html.parser")
     title = ""
-    for el in s.find_all(["h1", "h2", "h3", "span", "div", "p"]):
-        t = tx(el)
+    for el in s.find_all(["h1", "h2", "h3", "span", "div", "p", "th"]):
+        t = re.sub(r"^\d+\s*R\s*", "", tx(el))
         if re.match(r"^第\s*\d+\s*回\s*\S", t) and len(t) < 60:
             title = t
             break
@@ -146,19 +295,46 @@ def parse_result(html: str) -> dict:
                          "kg": g("kg"), "jockey": re.sub(r"[▲△☆★◇]", "", g("jockey")).replace(" ", ""), "time": g("time"), "margin": g("margin"),
                          "corners": "-".join(re.findall(r"\d+", g("corners"))), "last3f": g("last3f"), "pop": to_int(g("pop")),
                          "trainer": g("trainer").replace(" ", "")})
+    if len(rows) < 3 or any(len(str(x.get("name") or "")) > 30 or not x.get("num") for x in rows):  # 別の表を読んでしまったとき
+        rows = []
+    if not rows:
+        rows = old_rows(s)
     pay = {}
     for dl in s.find_all("dl"):
         kind = tx(dl.find("dt"))
-        if kind not in ("単勝", "複勝", "枠連", "ワイド", "馬連", "馬単", "3連複", "3連単"):
+        if kind not in KINDS:
             continue
         items = []
-        for line in dl.select("div.line"):
-            c, y = line.select_one("div.num"), line.select_one("div.yen")
+        for line in dl.select(".line"):
+            c, y = line.select_one(".num"), line.select_one(".yen")
             if c is not None and y is not None and to_int(tx(y)):
-                items.append([tx(c).replace(" ", ""), to_int(tx(y)), to_int(tx(line.select_one("div.pop")))])
+                items.append([tx(c).replace(" ", ""), to_int(tx(y)), to_int(tx(line.select_one(".pop")))])
         if items:
             pay[kind] = items
-    if not pay:  # 表組みの払戻（古い年の形）
+    if not pay:  # 2018年11月までの形（table.haraimodoshiList）
+        for t in s.select("table.haraimodoshiList"):
+            kind = ""
+            for tr in t.find_all("tr"):
+                th = tr.find("th")
+                if th is not None:
+                    kind = tx(th).replace(" ", "")
+                c, y = tr.select_one("td.umabanCol"), tr.select_one("td.haraimodoshiCol")
+                if kind in KINDS and c is not None and y is not None and to_int(tx(y)):
+                    pay.setdefault(kind, []).append([tx(c).replace(" ", ""), to_int(tx(y)), to_int(tx(tr.select_one("td.ninkiCol")))])
+    if not pay:  # 2007年ごろまでの形（th に券種、次の行に続きがある）
+        kind = ""
+        for tr in s.find_all("tr"):
+            if tr.find("table") is not None:
+                continue
+            th = tr.find("th")
+            tds = tr.find_all("td")
+            if th is not None:
+                kind = tx(th).replace(" ", "")
+            elif len(tds) != 3:
+                kind = ""
+            if kind in KINDS and len(tds) == 3 and to_int(tx(tds[1])) and "円" in tx(tds[1]):
+                pay.setdefault(kind, []).append([tx(tds[0]).replace(" ", ""), to_int(tx(tds[1])), to_int(tx(tds[2]))])
+    if not pay:  # 表組みの払戻（その他の形）
         for th in s.find_all(["th", "dt"]):
             kind = tx(th).replace(" ", "")
             if kind not in ("単勝", "複勝", "枠連", "ワイド", "馬連", "馬単", "3連複", "3連単") or kind in pay:
@@ -172,6 +348,10 @@ def parse_result(html: str) -> dict:
                      for m in re.finditer(r"(\d+(?:\s*-\s*\d+){0,2})\s+([\d,]+)\s*円", body)]
             if items:
                 pay[kind] = items
+    if not rows:
+        rows, lp = legacy(s)
+        pay = pay or lp
+    title = re.sub(r"\s*[（(](?:J\s*[・･.]?\s*)?G\s*(?:III|II|I|[123])[）)]\s*$|\s*[（(]新設重賞[）)]\s*$", "", title)
     text = tx(s.body) if s.body else ""
     tm = re.search(r"(芝|ダート)\s*[:：]?\s*(不良|稍重|良|重)", text)
     wm = re.search(r"天候\s*[:：]?\s*(晴|曇|小雨|雨|小雪|雪)", text)
@@ -201,10 +381,18 @@ def save_year(d: dict) -> None:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--years", type=int, default=11, help="今年を含めてさかのぼる年数")
+    ap.add_argument("--years", type=int, default=21, help="今年を含めてさかのぼる年数")
     ap.add_argument("--max-minutes", type=float, default=120)
     ap.add_argument("--sample", action="store_true", help="成績ページを2つだけ読んで、生のHTMLも data/raw/graded_hist に残す（形の確認用）")
+    ap.add_argument("--probe", nargs="*", help="指定したページの生のHTMLを data/raw/graded_hist に残すだけ（形の確認用）")
     a = ap.parse_args()
+    if a.probe:
+        ps = PoliteSession(min_interval=5.0, encoding="shift_jis")
+        raw = DATA_DIR / "raw" / "graded_hist"
+        raw.mkdir(parents=True, exist_ok=True)
+        for u in a.probe:
+            (raw / (re.sub(r"[^0-9A-Za-z]+", "_", u.split("seiseki/")[-1]) + ".html")).write_text(ps.get(u).text, encoding="utf-8")
+        return
     deadline = time.monotonic() + a.max_minutes * 60
     now = datetime.now(JST)
     sess = PoliteSession(min_interval=5.0, encoding="shift_jis")

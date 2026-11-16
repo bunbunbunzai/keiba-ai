@@ -5,7 +5,7 @@
 - grade_pre ：重賞の予想（発走の10〜120分前）
 - grade_res ：重賞の結果（的中・不的中とも）
 - summary   ：その日の全成績（全レース確定後、または21:40以降）。厳選レースがあった日は、その結果をスレッド（返信）に1件
-- gensen    ：朝（9:30〜11:30）の「今日の厳選レース」（自信度A）。無い日は picks（今日の勝負レース）
+- gensen    ：昼（9:30〜14:30）の「今日の厳選レース」（自信度A）。13:00を過ぎても無い日は picks（今日の勝負レース）
 
 流れ（pages のデプロイ後に毎回呼ばれる）
 1. publish：画像が公開URLで見られる「ready」の投稿を X・Instagram に出す（鍵が無ければ draft のまま）
@@ -142,6 +142,8 @@ def ledger_roi() -> str:
 # フォロワーが少ないうちに小さな的中を大量に流すとスパム扱いされやすいので、個別の的中投稿は大きなものだけにする（2026-11-10）
 HIT_MULT = 3            # 払戻が購入額の3倍以上
 HIT_MIN_PROFIT = 300    # かつ300円以上のプラス
+GENSEN_WINDOW = ("09:30", "14:30")  # 「今日の厳選レース」を出す時間帯（当日昼の回の予想が出そろう12:20過ぎを含める）
+PICKS_FALLBACK_FROM = "13:00"       # 厳選レースが無い日に「今日の勝負レース」を出すのはこの時刻以降（昼の予想が出る前に出さない）
 HIT_MAX_PER_DAY = 3     # 1日3件まで（払戻の大きい順）
 
 
@@ -164,13 +166,14 @@ def candidates(date: str) -> list[dict]:
                 out.append({"id": f"res-{p['race_id']}", "kind": "grade_res", "p": p})
         elif sc and sc["stake"] and sc["return"] >= HIT_MULT * sc["stake"] and sc["return"] - sc["stake"] >= HIT_MIN_PROFIT:
             out.append({"id": f"hit-{p['race_id']}", "kind": "hit", "p": p, "ret": sc["return"]})
-    # 朝の投稿（1日1回）：9:30〜11:30に「今日の厳選レース」（自信度A＝◎の補正勝率50%以上。朝のオッズで決まったもの）。
-    # 厳選レースが無ければ従来の「今日の勝負レース」。厳選は当日朝のオッズ反映（9:03の回）の後に決まるので9:30から。
-    if t.strftime("%Y%m%d") == date and "09:30" <= t.strftime("%H:%M") <= "11:30":
+    # 昼の投稿（1日1回）：9:30〜14:30に「今日の厳選レース」（自信度A＝◎の補正勝率50%以上。その時点のオッズで決まったもの）。
+    # 厳選レースの大半は当日昼の回（12:11〜12:20）で予想されるので、窓を14:30まで広げた（2026-11-15。11:30までの窓では
+    # 11/11〜15の5日間、厳選レースがまだ無く投稿できていなかった）。厳選が無ければ13:00以降に従来の「今日の勝負レース」。
+    if t.strftime("%Y%m%d") == date and GENSEN_WINDOW[0] <= t.strftime("%H:%M") <= GENSEN_WINDOW[1]:
         gs = gensen_races(date, rs, t)
         if gs:
             out.append({"id": f"picks-{date}", "kind": "gensen", "ps": gs})
-        else:
+        elif t.strftime("%H:%M") >= PICKS_FALLBACK_FROM:
             from build import picks
             ps = [p for p in picks(rs) if not p["_score"]]
             if len(ps) >= 2:
@@ -368,7 +371,7 @@ def card(date: str, c: dict) -> dict:
             rows.append(f"{p['_race'].get('post_time') or ''}発走" + (f"　補正勝率{b['honmei_pct']:.0f}%" if b.get("honmei_pct") is not None else "")
                         + (f"・単勝{float(od):.1f}倍" if od else ""))
         return {"kind": "grade_pre", "label": "今日の厳選レース", "date": md, "head": f"AIの◎が勝つ確率50%以上の{len(lines)}レース",
-                "sub": "買い目は◎の単勝か複勝1点（朝のオッズ）", "lines": lines[:6], "rows": rows[:6]}
+                "sub": "買い目は◎の単勝か複勝1点（投稿時点のオッズ）", "lines": lines[:6], "rows": rows[:6]}
     if kind == "picks":
         from build import honmei_value
         lines, rows = [], []
@@ -378,7 +381,7 @@ def card(date: str, c: dict) -> dict:
             lines.append(("◎", f"{venue(p)}{rno(p)}R {hon} {horse(p, hon)}"))
             rows.append(f"{p['_race'].get('post_time') or ''}発走　自信度{p.get('confidence')}" + (f"　{'補正勝率' if p.get('blend') else '想定勝率'}{wp:.0f}%・単勝{od:.1f}倍" if wp is not None and od else ""))
         return {"kind": "grade_pre", "label": "今日の勝負レース", "date": md, "head": f"AIの◎ 的中しやすい{len(lines)}レース",
-                "sub": "自信度・◎の人気・中央を優先（朝のオッズ）", "lines": lines, "rows": rows}
+                "sub": "自信度・◎の人気・中央を優先（投稿時点のオッズ）", "lines": lines, "rows": rows}
     p = c["p"]
     sc, g = p["_score"], p["_grade"]
     m = p.get("marks", {})

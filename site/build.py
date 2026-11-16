@@ -806,11 +806,11 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
 <h3>買い目（各100円・計{len(p.get('bets', []))}点）</h3><ul class="bets">{bets or '<li>買い目なし</li>'}</ul>{bets_note}{aff_rakuten('race') if not str(p['race_id']).startswith('jra_') and p.get('confidence') != '見送り' else ''}</section>
 {res_html}
 <section class="card"><h2>{term("pace", "展開予想")}</h2><p>{esc(p.get('pace'))}</p></section>
-{racesim.section(p, frame_of, RACESIM_V, d3=f"/racesim3d.js?v={RACESIM3D_V}" if g0 else None)}
 {bias_html}
 <section class="card"><h2>全頭評価</h2>
 <ul class="hl"><li class="hr hd"><span class="c-no">馬番</span><span class="c-mk">印</span><span class="c-nm">馬名・騎手</span><span class="c-od">単勝</span><span class="c-sc">評価点</span><span class="c-vl">妙味</span><span class="c-fn">着順</span><span class="c-cm">短評</span></li>{''.join(rows)}</ul>
 <p class="meta">{term("score", "評価点")}は45点満点。{term("adjpct", "補正勝率")}は単勝オッズとAIの評価点を合わせた勝つ確率で、◎と自信度はこれで決めている。{term("value", "妙味")}は「AIの{term("winpct", "想定勝率")}×単勝オッズ」（参考）。1.2以上なら配当の割に勝ち目がある狙い目、0.8未満なら人気しすぎ（過剰人気）という目安（オッズは予想を出した時点のもの）。用語は<a href="/glossary/">用語集</a>へ。</p></section>
+{racesim.section(p, frame_of, RACESIM_V, d3=f"/racesim3d.js?v={RACESIM3D_V}" if g0 else None)}
 {ippen_line(date, p)}
 {f'<section class="card"><h2>更新履歴</h2><ul>{updates}</ul></section>' if updates else ''}
 {graded_link}
@@ -1771,6 +1771,10 @@ SITE_CHANGES = [
     ("2026-11-04", "公式キャラクター「全頭くん」が登場。レースページ右下のボタンから、そのレースについて全頭くんに質問できるようにした。結果欄の振り返りも全頭くんが担当。サイト全体の言葉づかいを、初めての人にも分かる表現に見直した。"),
     ("2026-11-03", "コラムを21本追加（AI予想は当たるのか、3連複フォーメーション、単勝と複勝、期待値買い、自信度、中央と地方、2番人気の本命、予想ページの見方、ばんえい競馬、脚質別・枠順別・オッズ別・頭数別・馬体重別・間隔別の勝率、点数計算早見表、ChatGPTでの予想、地方競馬のネット投票、馬連・馬単・ワイド、トリガミ、当たらない理由）。数字はすべて実データから自動更新。"),
     ("2026-11-13", "表示を見直した。「見送り」の表示崩れ、PCのレース一覧の列のずれ、スマホで日付タブ・表・回収率のグラフが読みにくかった点を直し、表は横に動かせることが分かるようにした。発走前のレースに「結果待ち」と出ていたのを直した。コラムに目次と関連記事を付け、過去の予想は月ごとの一覧（過去の日付）にまとめた。プライバシーポリシーに広告・アフィリエイト・全頭くんへの質問の扱いを追記。"),
+    ("2026-11-16", "Xの「今日の厳選レース」の投稿時間を昼（当日昼の予想が出そろった後）に変えた。朝の時間帯では厳選レースがまだ決まっておらず、11月11日からの5日間は投稿できていなかった。"),
+    ("2026-11-16", "JRAの重賞（G1〜G3・障害重賞）ごとに、過去10年の結果一覧、人気・枠順・脚質の傾向、年齢・騎手・厩舎の傾向の記事を、開催の約2週間前に自動で公開するようにした。JRA公式の成績を集計して作る。"),
+    ("2026-11-16", "重賞のデータ記事を、過去10年から過去20年（2006年以降）の集計に広げた。"),
+    ("2026-11-16", "重賞ごとに「ジンクス・データの偏り」の記事も自動で公開するようにした。過去10年の全着順から偏りの大きい数字を拾っている。"),
 ]
 
 
@@ -2013,7 +2017,7 @@ header nav.ovf.end{-webkit-mask-image:linear-gradient(to right,transparent,#000 
 .jumpnav a{border:1px solid var(--line);background:var(--panel);color:var(--fg);border-radius:2px;padding:3px 10px}
 .jumpnav a:hover{text-decoration:none;border-color:var(--acc);color:var(--acc)}
 nav.toc{display:block;margin:16px 0 20px;padding:10px 16px 12px;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--acc);overflow:visible;font-size:14px}
-.toc p{margin:0 0 4px;font-weight:700}.toc ol{margin:0;padding-left:1.4em;line-height:1.8}.toc a{color:var(--fg)}
+.toc p{margin:0 0 4px;font-weight:700}.toc ol{margin:0;padding-left:1.4em;line-height:1.8}.toc a{color:var(--fg);white-space:normal}
 .col h2[id],.card[id],h2[id]{scroll-margin-top:12px}
 .morelink{margin:8px 0 0;font-size:14px;text-align:right}
 .cols.rel .tx span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
@@ -2140,7 +2144,8 @@ CSS += racesim.CSS
 RACESIM_JS = (Path(__file__).resolve().parent / "racesim.js").read_text(encoding="utf-8")  # レースページでだけ読み込む
 RACESIM_V = _hashlib.md5(RACESIM_JS.encode("utf-8")).hexdigest()[:8]
 RACESIM3D_JS = (Path(__file__).resolve().parent / "racesim3d.js").read_bytes()  # 重賞の3D表示（site/3d で three.js から作る）
-RACESIM3D_V = _hashlib.md5(RACESIM3D_JS).hexdigest()[:8]
+RACEHORSE_GLB = (Path(__file__).resolve().parent / "3d" / "racehorse.glb").read_bytes()  # 馬と騎手の3Dモデル
+RACESIM3D_V = _hashlib.md5(RACESIM3D_JS + RACEHORSE_GLB).hexdigest()[:8]
 ASSET_V = _hashlib.md5((CSS + JS).encode("utf-8")).hexdigest()[:8]
 
 
@@ -2157,6 +2162,7 @@ def build() -> None:
     (OUT / "app.js").write_text(JS, encoding="utf-8")
     (OUT / "racesim.js").write_text(RACESIM_JS, encoding="utf-8")
     (OUT / "racesim3d.js").write_bytes(RACESIM3D_JS)
+    (OUT / "racehorse.glb").write_bytes(RACEHORSE_GLB)
     (OUT / ".nojekyll").write_text("", encoding="utf-8")
     global HEADER_ROI
     led0 = ledger()
@@ -2358,6 +2364,12 @@ def build() -> None:
     write("/privacy/", page(f"プライバシーポリシー | {SITE_NAME}", PRIVACY, "/privacy/", desc=f"{SITE_NAME}のプライバシーポリシー。アクセス解析・広告（Google AdSense）・アフィリエイト・お問い合わせ・全頭くんへの質問で扱う情報と、その使い方。"))
     today_iso = now.strftime("%Y-%m-%d")
     lastmod.update(column.build(write, page, jsonld, BASE_URL, SITE_NAME, STATS_FROM, today_iso))
+    for old, new in (("/graded/kyoto-5c5158c3/", "/graded/kyoto-jump-stakes/"), ("/column/kyoto-5c5158c3-2026/", "/column/kyoto-jump-stakes-2026/")):
+        write(old, redirect_page(new))  # 重賞ページの名前を付け直した分
+    _cs = {c["slug"] for c in column.columns() if not c["draft"]}
+    for sl in _cs:  # 重賞の結果一覧は、20年分にしたときに記事名を変えた（古いURLから移す）
+        if sl.endswith("-kako-kekka") and sl[:-11] + "-kako10nen" not in _cs:
+            write(f"/column/{sl[:-11]}-kako10nen/", redirect_page(f"/column/{sl}/"))
     for old, new in (("results.html", "/results/"), ("about.html", "/about/")):
         (OUT / old).write_text(redirect_page(new), encoding="utf-8")
     social_page()
