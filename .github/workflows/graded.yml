@@ -8,13 +8,17 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "all / sample（形の確認）/ hist（成績だけ）/ cols（記事だけ）"
+        description: "all / probe / sample（形の確認）/ hist（成績だけ）/ cols（記事だけ）"
         required: true
         default: all
       minutes:
         description: "成績を集める最大時間（分）"
         required: false
         default: "200"
+      urls:
+        description: "probe で取るページ（空白区切り）"
+        required: false
+        default: ""
       days:
         description: "何日先までの重賞の記事を作るか"
         required: false
@@ -44,9 +48,10 @@ jobs:
           MODE: ${{ inputs.mode || 'all' }}
           MINUTES: ${{ inputs.minutes || '200' }}
           DAYS: ${{ inputs.days || '16' }}
+          URLS: ${{ inputs.urls }}
         run: |
           case "$MODE" in
-            probe)  python -u graded_hist.py --probe https://www.jra.go.jp/datafile/seiseki/replay/2018/001.html https://www.jra.go.jp/datafile/seiseki/replay/2016/104.html https://www.jra.go.jp/datafile/seiseki/replay/2020/001.html https://www.jra.go.jp/datafile/seiseki/g1/arima/result/arima2017.html https://www.jra.go.jp/datafile/seiseki/g1/arima/result/arima2019.html https://www.jra.go.jp/datafile/seiseki/replay/2018/050.html ;;
+            probe)  python -u graded_hist.py --probe $URLS ;;
             sample) python -u graded_hist.py --years 2 --sample ;;
             hist)   python -u graded_hist.py --max-minutes "$MINUTES" ;;
             cols)   python -u graded_cols.py --days "$DAYS" ;;
