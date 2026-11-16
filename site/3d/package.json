@@ -3,7 +3,7 @@
   "private": true,
   "description": "レースシミュレーションの3D表示（site/racesim3d.js）を three.js から作る",
   "scripts": {
-    "build": "esbuild racesim3d.src.js --bundle --format=esm --minify --target=es2018 --legal-comments=eof --outfile=../racesim3d.js"
+    "build": "esbuild racesim3d.src.js --bundle --format=esm --minify --target=es2020 --legal-comments=eof --outfile=../racesim3d.js"
   },
   "devDependencies": {
     "esbuild": "0.28.2",

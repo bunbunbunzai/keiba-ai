@@ -14,23 +14,25 @@ import {
   TubeGeometry, CatmullRomCurve3, SRGBColorSpace, BufferGeometry, Float32BufferAttribute, RepeatWrapping,
   PCFShadowMap, ACESFilmicToneMapping
 } from 'three';
-import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
+import { AnimationMixer } from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { clone as cloneSkinned } from 'three/addons/utils/SkeletonUtils.js';
 
 // 毛色：体・たてがみと尾・脚の先
 const COATS = [
-  { body: '#6b3a1c', points: '#17110d', legs: '#1d1511' }, // 鹿毛
-  { body: '#8a4a22', points: '#7a3f1c', legs: '#7d4420' }, // 栗毛
-  { body: '#3d2415', points: '#120d0a', legs: '#140f0c' }, // 黒鹿毛
-  { body: '#1f1713', points: '#0c0908', legs: '#0f0b0a' }, // 青鹿毛
-  { body: '#5a2f17', points: '#4d2712', legs: '#4f2a14' }, // 栃栗毛
-  { body: '#a9a8a3', points: '#d8d7d2', legs: '#6f6e6a' }, // 芦毛
+  { body: '#9a5a30', points: '#1d1612', legs: '#241a15' }, // 鹿毛
+  { body: '#b8703c', points: '#a05e30', legs: '#a86434' }, // 栗毛
+  { body: '#5e3a26', points: '#16100d', legs: '#1a1310' }, // 黒鹿毛
+  { body: '#3a2c26', points: '#120e0c', legs: '#16110f' }, // 青鹿毛
+  { body: '#86482a', points: '#733c22', legs: '#783f24' }, // 栃栗毛
+  { body: '#c9c8c3', points: '#e3e2dd', legs: '#8d8b86' }, // 芦毛
 ];
 const SILKS = [['#1e4fa8', '#f2c200'], ['#c8102e', '#ffffff'], ['#f2c200', '#111111'], ['#1f8f4a', '#ffffff'], ['#7a2c8f', '#f2c200'],
   ['#f08a24', '#1e4fa8'], ['#111111', '#c8102e'], ['#e9e9e9', '#c8102e'], ['#0f8fa6', '#ffffff'], ['#b5651d', '#f2c200'],
   ['#d14f8f', '#ffffff'], ['#2f4f2f', '#f08a24']];
 const Y = new Vector3(0, 1, 0);
 
-export function create(stage, data, api) {
+export async function create(stage, data, api) {
   const H = data.horses;
   const G = data.straight ? api.geom(1200, 320, data) : api.geom(1200, 600, data);
   const base = G.straight ? 0 : G.us;
@@ -298,84 +300,32 @@ export function create(stage, data, api) {
     scene.add(trunk, leaf);
   }
 
-  // ---------- 馬と騎手の形 ----------
-  // 色つきの部品にする（あとで1つにまとめるため、uv を外して頂点に色を持たせる）
-  function paint(geo, color) {
-    const g = geo.index ? geo.toNonIndexed() : geo;
-    g.deleteAttribute('uv');
-    const c = new Color(color), n = g.getAttribute('position').count, arr = new Float32Array(n * 3);
-    for (let k = 0; k < n; k++) { arr[k * 3] = c.r; arr[k * 3 + 1] = c.g; arr[k * 3 + 2] = c.b; }
-    g.setAttribute('color', new Float32BufferAttribute(arr, 3));
-    return g;
-  }
-  // 断面（だ円）を背骨に沿って並べてつなぎ、なめらかな体を作る。rings: [x, y, 縦の半径, 横の半径]
-  function loft(rings, seg, color) {
-    const pos = [], idx = [], n = rings.length;
-    for (let i = 0; i < n; i++) {
-      const a = rings[Math.max(0, i - 1)], b = rings[Math.min(n - 1, i + 1)];
-      let tx = b[0] - a[0], ty = b[1] - a[1]; const l = Math.hypot(tx, ty) || 1; tx /= l; ty /= l;
-      const [cx, cy, ry, rz] = rings[i];
-      for (let k = 0; k < seg; k++) {
-        const an = k / seg * Math.PI * 2, c = Math.cos(an) * ry, s = Math.sin(an) * rz;
-        pos.push(cx - ty * c, cy + tx * c, s);
-      }
+  // ---------- 馬と騎手（racehorse.glb：骨格と走るアニメーション付きのモデルを頭数分だけ複製して色を変える） ----------
+  const MODEL_SCALE = 8.2; // モデルはメートル単位。コースの縮尺（1馬身≒17）に合わせる
+  const gltf = await new GLTFLoader().loadAsync(new URL('racehorse.glb' + new URL(import.meta.url).search, import.meta.url).href);
+  const clip = (name) => gltf.animations.find((a) => a.name === name);
+  // ゼッケン：モデルに UV が無いので、左右の面それぞれで数字が正しく読めるように UV を作る
+  gltf.scene.traverse((o) => {
+    if (!o.isMesh || !o.material || o.material.name !== 'SaddleCloth') return;
+    const g = o.geometry, p = g.getAttribute('position');
+    g.computeBoundingBox();
+    const b = g.boundingBox, w = b.max.x - b.min.x || 1, h = b.max.y - b.min.y || 1, uv = new Float32Array(p.count * 2);
+    for (let k = 0; k < p.count; k++) {
+      const u = (p.getX(k) - b.min.x) / w;
+      uv[k * 2] = p.getZ(k) >= 0 ? u : 1 - u;
+      uv[k * 2 + 1] = (p.getY(k) - b.min.y) / h;
     }
-    for (let i = 0; i < n - 1; i++) for (let k = 0; k < seg; k++) {
-      const A = i * seg + k, B = (i + 1) * seg + k, C = (i + 1) * seg + (k + 1) % seg, D = i * seg + (k + 1) % seg;
-      idx.push(A, C, B, A, D, C);
-    }
-    const c0 = pos.length / 3; pos.push(rings[0][0], rings[0][1], 0);
-    const c1 = c0 + 1; pos.push(rings[n - 1][0], rings[n - 1][1], 0);
-    for (let k = 0; k < seg; k++) { idx.push(c0, (k + 1) % seg, k); idx.push(c1, (n - 1) * seg + k, (n - 1) * seg + (k + 1) % seg); }
-    const g = new BufferGeometry();
-    g.setAttribute('position', new Float32BufferAttribute(pos, 3));
-    g.setIndex(idx); g.computeVertexNormals();
-    return paint(g, color);
-  }
-  const q = new Quaternion();
-  function limb(a, b, r, color) {
-    const d = new Vector3(b[0] - a[0], b[1] - a[1], b[2] - a[2]), len = d.length();
-    const g = new CapsuleGeometry(r, len, 3, 8);
-    g.applyQuaternion(q.setFromUnitVectors(Y, d.normalize()));
-    g.translate((a[0] + b[0]) / 2, (a[1] + b[1]) / 2, (a[2] + b[2]) / 2);
-    return paint(g, color);
-  }
-  const at = (g, x, y, z) => { g.translate(x, y, z); return g; };
-
-  const coatParts = COATS.map((c) => {
-    const body = loft([
-      [-7.3, 11.3, 0.5, 0.5], [-6.7, 11.5, 2.1, 1.9], [-5.0, 11.5, 3.0, 2.6], [-2.6, 11.0, 2.9, 2.6], [0, 10.7, 2.8, 2.5],
-      [2.2, 10.7, 3.0, 2.6], [4.2, 11.1, 3.1, 2.4], [5.6, 12.2, 2.6, 1.8], [7.0, 13.6, 2.0, 1.3], [8.5, 15.0, 1.6, 1.05],
-      [9.7, 16.0, 1.45, 1.0], [10.8, 16.3, 1.35, 1.0], [12.0, 15.6, 1.15, 0.9], [13.3, 14.5, 0.85, 0.72], [14.0, 13.9, 0.45, 0.45]], 14, c.body);
-    const mane = loft([[5.2, 14.6, 0.5, 0.2], [6.4, 15.5, 0.95, 0.24], [7.8, 16.6, 1.0, 0.24], [9.2, 17.4, 0.9, 0.22], [10.4, 17.6, 0.45, 0.18]], 6, c.points);
-    const ears = [-1, 1].map((s) => { const e = new ConeGeometry(0.34, 1.3, 6); e.rotateZ(-0.35); e.rotateX(s * 0.25); return at(paint(e, c.body), 10.3, 17.9, s * 0.55); });
-    const eyes = [-1, 1].map((s) => at(paint(new SphereGeometry(0.17, 6, 5), '#0b0908'), 11.3, 16.6, s * 0.88));
-    const nose = at(paint(new SphereGeometry(0.5, 8, 6), c.points === c.body ? '#2a1a12' : c.points), 13.75, 14.0, 0);
-    const lowerLeg = (len) => mergeGeometries([
-      at(paint(new CylinderGeometry(0.5, 0.4, len, 8), c.legs), 0, -len / 2, 0),
-      at(paint(new SphereGeometry(0.5, 8, 6), c.legs), 0, 0, 0),
-      at(paint(new CylinderGeometry(0.5, 0.68, 0.8, 8), '#161210'), 0, -len - 0.4, 0)]);
-    return {
-      fixed: [body, mane, nose, ...ears, ...eyes],
-      fU: at(paint(new CylinderGeometry(1.0, 0.55, 4.9, 8), c.body), 0, -2.45, 0),
-      fL: lowerLeg(3.7),
-      hU: at(paint(new CylinderGeometry(1.55, 0.62, 5.3, 8), c.body), 0, -2.65, 0),
-      hL: lowerLeg(4.1),
-      tail: loft([[0, 0, 0.4, 0.4], [-1.2, -0.5, 0.62, 0.55], [-2.6, -2.0, 0.75, 0.62], [-3.7, -4.2, 0.62, 0.5], [-4.3, -6.3, 0.2, 0.18]], 7, c.points),
-    };
+    g.setAttribute('uv', new Float32BufferAttribute(uv, 2));
   });
-  const horseMat = new MeshStandardMaterial({ vertexColors: true, roughness: 0.55, metalness: 0.05 });
-  const whiteMat = std('#f6f6f3', { roughness: 0.8 });
-  const clothGeo = new BoxGeometry(4.4, 2.9, 5.5);
   const rnd = api.rng(api.hashStr((data.id || '') + 'horses'));
 
   function clothTex(h) {
-    const c = document.createElement('canvas'); c.width = 128; c.height = 84;
+    const c = document.createElement('canvas'); c.width = 128; c.height = 96;
     const x = c.getContext('2d');
-    x.fillStyle = '#f6f6f3'; x.fillRect(0, 0, 128, 84);
-    x.strokeStyle = '#1c1c1c'; x.lineWidth = 4; x.strokeRect(3, 3, 122, 78);
-    x.fillStyle = '#111111'; x.font = '700 60px sans-serif'; x.textAlign = 'center'; x.textBaseline = 'middle';
-    x.fillText(String(h.n), 64, 46);
+    x.fillStyle = '#f6f6f3'; x.fillRect(0, 0, 128, 96);
+    x.strokeStyle = '#1c1c1c'; x.lineWidth = 4; x.strokeRect(3, 3, 122, 90);
+    x.fillStyle = '#111111'; x.font = '700 64px sans-serif'; x.textAlign = 'center'; x.textBaseline = 'middle';
+    x.fillText(String(h.n), 64, 52);
     const t = new CanvasTexture(c); t.colorSpace = SRGBColorSpace; t.anisotropy = maxAniso; return t;
   }
   function badgeTex(h, honme) {
@@ -392,52 +342,34 @@ export function create(stage, data, api) {
     x.fillText(String(h.n), 64, 116);
     const t = new CanvasTexture(c); t.colorSpace = SRGBColorSpace; return t;
   }
-  function jockey(silk, cap) {
-    const skin = '#e3b08c', br = '#f4f4f0', boot = '#151515', parts = [];
-    parts.push(limb([-0.6, 15.5, 0], [3.3, 16.9, 0], 1.0, silk[0]));                        // 胴（前かがみ）
-    for (const s of [-1, 1]) {
-      parts.push(limb([-0.4, 15.2, s * 0.9], [2.0, 14.3, s * 2.1], 0.6, br));               // もも
-      parts.push(limb([2.0, 14.3, s * 2.1], [0.7, 12.3, s * 2.75], 0.48, boot));            // すね・ブーツ
-      parts.push(limb([3.0, 16.7, s * 1.0], [4.6, 15.6, s * 1.3], 0.42, silk[1]));          // 上腕
-      parts.push(limb([4.6, 15.6, s * 1.3], [6.4, 15.2, s * 0.7], 0.36, silk[1]));          // 前腕
-      parts.push(at(paint(new SphereGeometry(0.4, 6, 5), '#f4f4f0'), 6.5, 15.2, s * 0.7));  // 手袋
-    }
-    parts.push(at(paint(new SphereGeometry(0.78, 10, 8), skin), 4.25, 17.75, 0));           // 頭
-    parts.push(at(paint(new SphereGeometry(0.95, 12, 8, 0, Math.PI * 2, 0, Math.PI * 0.6), cap), 4.25, 17.95, 0)); // 帽子（枠の色）
-    const brim = new CylinderGeometry(0.55, 0.55, 0.12, 10); brim.scale(1.3, 1, 1);
-    parts.push(at(paint(brim, cap), 5.15, 17.75, 0));
-    parts.push(at(paint(new BoxGeometry(0.5, 0.45, 1.5), '#1b1b1b'), 4.9, 17.8, 0));        // ゴーグル
-    return parts;
-  }
 
   const horses = H.map((h) => {
-    const ci = Math.floor(rnd() * COATS.length), cp = coatParts[ci];
-    const g = new Group(), body = new Group();
+    const coat = COATS[Math.floor(rnd() * COATS.length)];
     const silk = SILKS[(h.n * 5 + Math.floor(rnd() * 4)) % SILKS.length], cap = (api.FR[h.f] || api.FR[1])[0];
-    const fixed = new Mesh(mergeGeometries(cp.fixed.concat(jockey(silk, cap))), horseMat);
-    fixed.castShadow = true; body.add(fixed);
-    const cm = new MeshStandardMaterial({ map: clothTex(h), roughness: 0.8 });
-    const cloth = new Mesh(clothGeo, [whiteMat, whiteMat, whiteMat, whiteMat, cm, cm]);
-    cloth.position.set(0.4, 11.8, 0); body.add(cloth);
-    // 脚：付け根（up）とひざ・飛節（lo）の2関節
-    const legs = [[4.3, 9.4, 1.3, 1], [4.3, 9.4, -1.3, 1], [-4.7, 9.8, 1.45, 0], [-4.7, 9.8, -1.45, 0]].map(([x, y, z, front]) => {
-      const up = new Group(), lo = new Group();
-      up.position.set(x, y, z);
-      const um = new Mesh(front ? cp.fU : cp.hU, horseMat), lm = new Mesh(front ? cp.fL : cp.hL, horseMat);
-      um.castShadow = lm.castShadow = true;
-      lo.position.y = front ? -4.9 : -5.3;
-      up.add(um); lo.add(lm); up.add(lo); body.add(up);
-      return { up, lo, front };
+    const marks = rnd() < 0.5; // 額や脚先の白は半分くらいの馬に
+    const paintBy = { Coat: coat.body, Points: coat.legs, ManeTail: coat.points, Silks: silk[0], Sleeves: silk[1], Cap: cap };
+    const model = cloneSkinned(gltf.scene);
+    model.scale.setScalar(MODEL_SCALE);
+    model.traverse((o) => {
+      if (!o.isMesh) return;
+      o.castShadow = true; o.frustumCulled = false;
+      const m = o.material.clone(); o.material = m;
+      m.roughness = Math.max(m.roughness, 0.55);
+      if (paintBy[m.name]) m.color.set(paintBy[m.name]);
+      if (m.name === 'Markings' && !marks) m.color.set(coat.body);
+      if (m.name === 'SaddleCloth') { m.color.set('#ffffff'); m.map = clothTex(h); m.roughness = 0.8; }
     });
-    const tail = new Group(); tail.position.set(-7.0, 11.9, 0);
-    const tm = new Mesh(cp.tail, horseMat); tm.castShadow = true; tail.add(tm); body.add(tail);
-    g.add(body);
+    const g = new Group(); g.add(model);
+    const mixer = new AnimationMixer(model);
+    const gallop = mixer.clipAction(clip('Gallop_InPlace')), idle = clip('Idle') ? mixer.clipAction(clip('Idle')) : null;
+    gallop.play(); gallop.time = rnd() * gallop.getClip().duration; gallop.setEffectiveWeight(0);
+    if (idle) { idle.play(); idle.time = rnd() * 2; idle.setEffectiveWeight(1); }
+    mixer.update(0);
     const sp = new Sprite(new SpriteMaterial({ map: badgeTex(h, h.m === '◎'), depthTest: false, transparent: true }));
-    sp.scale.set(6.4, 8.8, 1); sp.position.y = 27; sp.renderOrder = 10; g.add(sp);
+    sp.scale.set(6.4, 8.8, 1); sp.position.y = 26; sp.renderOrder = 10; g.add(sp);
     scene.add(g);
-    return { g, body, legs, tail, sp, phase: rnd() * Math.PI * 2, prev: null, amp: 0 };
+    return { g, sp, mixer, gallop, idle, rate: 0.96 + rnd() * 0.1, prev: null, amp: 0 };
   });
-  const LEG_PH = [0, 0.55, 3.3, 3.85]; // 襲歩（ギャロップ）の脚の順番
 
   // ---------- カメラ ----------
   let view = 'tv', snap = true, lastNow = 0, shadowHalf = 0;
@@ -489,16 +421,10 @@ export function create(stage, data, api) {
       hz.prev = (hz.prev || new Vector3()).copy(tmp);
       const target = f.running ? Math.min(1, speed / 60) : 0;
       hz.amp += (target - hz.amp) * Math.min(1, dt * 6);
-      hz.phase += dt * 2 * Math.PI * 2.3 * hz.amp;
-      const a = hz.amp, ph = hz.phase;
-      hz.legs.forEach((L, j) => {
-        const s = Math.sin(ph + LEG_PH[j]), c = Math.max(0, Math.cos(ph + LEG_PH[j])); // c>0 は脚を前へ運んでいる間
-        if (L.front) { L.up.rotation.z = a * (0.12 + 0.85 * s); L.lo.rotation.z = -a * 1.35 * c; }
-        else { L.up.rotation.z = -0.3 + a * (0.12 + 0.75 * s); L.lo.rotation.z = 0.55 + a * 0.95 * c - a * 0.25; }
-      });
-      hz.tail.rotation.z = -a * (0.55 + 0.12 * Math.sin(ph * 2)); // 走るほど後ろに流れる
-      hz.body.position.y = 0.75 * a * Math.abs(Math.sin(ph));
-      hz.body.rotation.z = 0.055 * a * Math.sin(ph + 1.2);
+      hz.gallop.setEffectiveWeight(hz.amp);
+      if (hz.idle) hz.idle.setEffectiveWeight(1 - hz.amp);
+      hz.gallop.timeScale = hz.rate * (0.55 + 0.45 * hz.amp); // 止まりぎわは脚の回転もゆっくりに
+      hz.mixer.update(dt);
       hz.g.position.copy(tmp);
       hz.g.scale.setScalar(hs);
       hz.sp.scale.set(6.4 * bs, 8.8 * bs, 1);
@@ -513,7 +439,7 @@ export function create(stage, data, api) {
       // 中継カメラ：内馬場の側から先頭集団を望遠で追う（外側だとスタンドに隠れるため）。背景にスタンドが映る
       const lane = G.lanes / 2;
       const p = P3(leadU, lane), inward = p.clone().sub(P3(leadU, lane + 1)).normalize(), tan = P3(leadU + 3, lane).sub(p).normalize();
-      const dist = camera.aspect < 1.4 ? 172 : 148;
+      const dist = camera.aspect < 1.4 ? 150 : 124;
       camPos.copy(pack).addScaledVector(inward, dist).addScaledVector(tan, 16); camPos.y = 30;
       camLook.copy(pack).addScaledVector(tan, -15); camLook.y = 12;
     }

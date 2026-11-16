@@ -478,7 +478,9 @@
         stage.classList.add('rsim-loading');
         // 古いブラウザで構文エラーにならないよう、import() は文字列から作る
         (new Function('u', 'return import(u)'))(data.d3).then(function (m) {
-          R3 = m.create(stage, data, api);
+          return m.create(stage, data, api); // 馬のモデルの読み込みを待つ
+        }).then(function (r3) {
+          R3 = r3;
           R3.show(false);
           views.hidden = false;
           use('tv');
