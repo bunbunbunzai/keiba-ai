@@ -2,7 +2,205 @@
  "source": "rakuten",
  "date": "20261116",
  "race_id": "202611162015120106",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "3",
+    "yen": 140
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "3-1",
+    "yen": 13190
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "3",
+    "yen": 110
+   },
+   {
+    "combo": "1",
+    "yen": 1440
+   },
+   {
+    "combo": "4",
+    "yen": 150
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-3",
+    "yen": 4530
+   },
+   {
+    "combo": "3-4",
+    "yen": 220
+   },
+   {
+    "combo": "1-4",
+    "yen": 8740
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-3",
+    "yen": 12780
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-3-4",
+    "yen": 13150
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "3-1-4",
+    "yen": 59650
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-3",
+    "yen": 13720
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 3,
+   "number": 3,
+   "name": "ジェントルバローズ",
+   "time": "1:44.8",
+   "margin": "",
+   "pos4": 3,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 1,
+   "number": 1,
+   "name": "ファジーエンジェル",
+   "time": "1:45.3",
+   "margin": "２ １／２",
+   "pos4": 1,
+   "last3f": 41.0,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "ココミサイル",
+   "time": "1:45.4",
+   "margin": "１／２",
+   "pos4": 5,
+   "last3f": 40.8,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 7,
+   "name": "アフリカンビート",
+   "time": "1:45.5",
+   "margin": "１／２",
+   "pos4": 7,
+   "last3f": 40.8,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 10,
+   "name": "ニシノロッドマン",
+   "time": "1:45.7",
+   "margin": "１",
+   "pos4": 11,
+   "last3f": 40.0,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 5,
+   "name": "ビハインドヘッド",
+   "time": "1:45.7",
+   "margin": "アタマ",
+   "pos4": 8,
+   "last3f": 40.5,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 9,
+   "name": "サンタピア",
+   "time": "1:45.7",
+   "margin": "クビ",
+   "pos4": 1,
+   "last3f": 41.4,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 2,
+   "number": 2,
+   "name": "パレルモフレイバー",
+   "time": "1:45.7",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": 40.8,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 11,
+   "name": "マジェスティルール",
+   "time": "1:45.8",
+   "margin": "クビ",
+   "pos4": 12,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 6,
+   "name": "トップダイヤ",
+   "time": "1:46.1",
+   "margin": "１ ３／４",
+   "pos4": 9,
+   "last3f": 41.4,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 8,
+   "number": 12,
+   "name": "ミドルマン",
+   "time": "1:46.2",
+   "margin": "３／４",
+   "pos4": 3,
+   "last3f": 41.8,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 6,
+   "number": 8,
+   "name": "ロココ",
+   "time": "1:47.6",
+   "margin": "７",
+   "pos4": 9,
+   "last3f": 42.3,
+   "popularity": null
+  }
+ ]
 }
