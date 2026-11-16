@@ -15,6 +15,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+from urllib.parse import urljoin
 import sys
 import time
 import unicodedata
@@ -95,6 +96,48 @@ def parse_list(html: str, year: int) -> list[dict]:
             out.append({"date": f"{year}{int(m.group(1)):02d}{int(m.group(2)):02d}", "abbr": abbr, "grade": grade_from(cell),
                         "venue": next((v for v in VENUES if v in venue), venue), "cond": tx(tds[idx["性齢"]]) if idx["性齢"] is not None else "",
                         "course": course, "surface": cm.group(1) if cm else "", "distance": to_int(cm.group(2)) if cm else None, "url": url})
+    return out or parse_list_old(s, year)
+
+
+def parse_list_old(s, year: int) -> list[dict]:
+    """2015年ごろまでの重賞一覧（月/日・レース名・場・（性齢）・コース・優勝馬・騎手・結果。リンクは同じ階層への相対）。"""
+    out = []
+    for t in s.find_all("table"):
+        if t.find("table") is not None:
+            continue
+        trs = t.find_all("tr")
+        if not trs:
+            continue
+        cols = [tx(c).replace(" ", "") for c in trs[0].find_all(["th", "td"])]
+        if "レース名" not in cols or "月/日" not in cols:
+            continue
+        ix = {k: cols.index(k) if k in cols else None for k in ("月/日", "レース名", "場", "性齢", "コース", "結果")}
+        for tr in trs[1:]:
+            tds = tr.find_all(["td", "th"])
+            if len(tds) < len(cols):
+                continue
+            m = re.search(r"(\d+)\s*/\s*(\d+)", tx(tds[ix["月/日"]]))
+            if not m:
+                continue
+            cell = tds[ix["レース名"]]
+            abbr = re.sub(r"\s*[（(](?:J\s*[・･.]?\s*)?(?:G|Jpn)\s*(?:III|II|I|[123])[）)]\s*$", "", tx(cell).replace("Ⅲ", "III").replace("Ⅱ", "II").replace("Ⅰ", "I"))
+            abbr = re.sub(r"^(?:新設)?重賞", "", re.sub(r"\s+", "", abbr))
+            g = grade_from(cell)
+            if not g:
+                im = re.search(r"icon_(j?)(?:g|jpn)(\d)", " ".join(i.get("src", "") for i in cell.find_all("img")))
+                g = (("J・" if im.group(1) else "") + "G" + im.group(2)) if im else ""
+            course = tx(tds[ix["コース"]]) if ix["コース"] is not None else ""
+            cm = re.search(r"(芝|ダ|障)\D*([\d,]+)", course)
+            url = None
+            if ix["結果"] is not None:
+                ra = tds[ix["結果"]].find("a", href=True)
+                if ra:
+                    h = ra["href"]
+                    url = urljoin(f"{BASE}/datafile/seiseki/replay/{year}/jyusyo.html", h)
+            venue = tx(tds[ix["場"]]) if ix["場"] is not None else ""
+            out.append({"date": f"{year}{int(m.group(1)):02d}{int(m.group(2)):02d}", "abbr": abbr, "grade": g,
+                        "venue": next((v for v in VENUES if v in venue), venue), "cond": tx(tds[ix["性齢"]]) if ix["性齢"] is not None else "",
+                        "course": course, "surface": cm.group(1) if cm else "", "distance": to_int(cm.group(2)) if cm else None, "url": url})
     return out
 
 
@@ -136,11 +179,14 @@ def legacy(s) -> tuple[list, dict]:
         trs = t.find_all("tr")
         if not trs or "着順" not in tx(trs[0]) or "馬名" not in tx(trs[0]):
             continue
+        old = "記号" in tx(trs[0])  # 2007年ごろまで：着順・枠・馬番・記号・馬名・性・齢・負担重量・騎手・タイム・着差・馬体重・増減・調教師・人気
         for tr in trs[1:]:
             tds = tr.find_all("td")
             if len(tds) != 15:
                 continue
             v = [tx(c) for c in tds]
+            if old:
+                v = [v[0], v[1], v[2], v[4], v[5] + v[6], v[7].replace("kg", ""), "", v[8], v[9], v[10], "", v[11], v[12], v[13], v[14]]
             name = re.sub(r"[（(].*?[）)]", "", v[3]).strip()
             if not name:
                 continue
@@ -204,7 +250,7 @@ def old_rows(s) -> list:
 def parse_result(html: str) -> dict:
     s = BeautifulSoup(html, "html.parser")
     title = ""
-    for el in s.find_all(["h1", "h2", "h3", "span", "div", "p"]):
+    for el in s.find_all(["h1", "h2", "h3", "span", "div", "p", "th"]):
         t = re.sub(r"^\d+\s*R\s*", "", tx(el))
         if re.match(r"^第\s*\d+\s*回\s*\S", t) and len(t) < 60:
             title = t
@@ -249,6 +295,8 @@ def parse_result(html: str) -> dict:
                          "kg": g("kg"), "jockey": re.sub(r"[▲△☆★◇]", "", g("jockey")).replace(" ", ""), "time": g("time"), "margin": g("margin"),
                          "corners": "-".join(re.findall(r"\d+", g("corners"))), "last3f": g("last3f"), "pop": to_int(g("pop")),
                          "trainer": g("trainer").replace(" ", "")})
+    if len(rows) < 3 or any(len(str(x.get("name") or "")) > 30 or not x.get("num") for x in rows):  # 別の表を読んでしまったとき
+        rows = []
     if not rows:
         rows = old_rows(s)
     pay = {}
@@ -273,6 +321,19 @@ def parse_result(html: str) -> dict:
                 c, y = tr.select_one("td.umabanCol"), tr.select_one("td.haraimodoshiCol")
                 if kind in KINDS and c is not None and y is not None and to_int(tx(y)):
                     pay.setdefault(kind, []).append([tx(c).replace(" ", ""), to_int(tx(y)), to_int(tx(tr.select_one("td.ninkiCol")))])
+    if not pay:  # 2007年ごろまでの形（th に券種、次の行に続きがある）
+        kind = ""
+        for tr in s.find_all("tr"):
+            if tr.find("table") is not None:
+                continue
+            th = tr.find("th")
+            tds = tr.find_all("td")
+            if th is not None:
+                kind = tx(th).replace(" ", "")
+            elif len(tds) != 3:
+                kind = ""
+            if kind in KINDS and len(tds) == 3 and to_int(tx(tds[1])) and "円" in tx(tds[1]):
+                pay.setdefault(kind, []).append([tx(tds[0]).replace(" ", ""), to_int(tx(tds[1])), to_int(tx(tds[2]))])
     if not pay:  # 表組みの払戻（その他の形）
         for th in s.find_all(["th", "dt"]):
             kind = tx(th).replace(" ", "")
@@ -320,7 +381,7 @@ def save_year(d: dict) -> None:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--years", type=int, default=11, help="今年を含めてさかのぼる年数")
+    ap.add_argument("--years", type=int, default=21, help="今年を含めてさかのぼる年数")
     ap.add_argument("--max-minutes", type=float, default=120)
     ap.add_argument("--sample", action="store_true", help="成績ページを2つだけ読んで、生のHTMLも data/raw/graded_hist に残す（形の確認用）")
     ap.add_argument("--probe", nargs="*", help="指定したページの生のHTMLを data/raw/graded_hist に残すだけ（形の確認用）")
