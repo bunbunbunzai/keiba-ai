@@ -1,6 +1,6 @@
 {
  "date": "20261116",
- "updated": "2026-11-16 15:14",
+ "updated": "2026-11-16 15:21",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -580,8 +580,8 @@
     "field": 8,
     "popularity": 4
    },
-   "odds": 21.9,
-   "popularity": 6
+   "odds": 33.5,
+   "popularity": 7
   },
   {
    "race_id": "202611161106070208",
@@ -601,8 +601,8 @@
     "field": 10,
     "popularity": 6
    },
-   "odds": 46.4,
-   "popularity": 10
+   "odds": 2.5,
+   "popularity": 2
   },
   {
    "race_id": "202611161106070208",
@@ -622,8 +622,29 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": 27.8,
+   "odds": 44.6,
    "popularity": 8
+  },
+  {
+   "race_id": "202611161106070208",
+   "results_key": "202611161106070208",
+   "venue": "水沢",
+   "race_no": 8,
+   "post_time": "15:50",
+   "number": 6,
+   "name": "インセプション",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 12,
+   "last": {
+    "date": "2026-11-04",
+    "finish": 6,
+    "field": 10,
+    "popularity": 3
+   },
+   "odds": 25.1,
+   "popularity": 6
   },
   {
    "race_id": "202611161106070208",
@@ -643,8 +664,8 @@
     "field": 8,
     "popularity": 7
    },
-   "odds": 24.5,
-   "popularity": 7
+   "odds": 47.2,
+   "popularity": 9
   },
   {
    "race_id": "202611160304160604",
@@ -714,8 +735,8 @@
     "field": 9,
     "popularity": 2
    },
-   "odds": 23.9,
-   "popularity": 5
+   "odds": 29.9,
+   "popularity": 6
   },
   {
    "race_id": "202611162218140408",
@@ -735,7 +756,7 @@
     "field": 9,
     "popularity": 6
    },
-   "odds": 39.8,
+   "odds": 49.8,
    "popularity": 9
   },
   {
