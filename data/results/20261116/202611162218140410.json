@@ -2,7 +2,172 @@
  "source": "rakuten",
  "date": "20261116",
  "race_id": "202611162218140410",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "2",
+    "yen": 220
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "2-8",
+    "yen": 2860
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "2",
+    "yen": 110
+   },
+   {
+    "combo": "8",
+    "yen": 370
+   },
+   {
+    "combo": "1",
+    "yen": 140
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-8",
+    "yen": 500
+   },
+   {
+    "combo": "1-2",
+    "yen": 160
+   },
+   {
+    "combo": "1-8",
+    "yen": 510
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-8",
+    "yen": 430
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-2-8",
+    "yen": 1650
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "2-8-1",
+    "yen": 11250
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-8",
+    "yen": 2250
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 2,
+   "number": 2,
+   "name": "デルマニンフ",
+   "time": "1:37.9",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 8,
+   "name": "カドバンソコヂカラ",
+   "time": "1:38.1",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 1,
+   "number": 1,
+   "name": "キングボールダー",
+   "time": "1:38.1",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 3,
+   "name": "ブーディガ",
+   "time": "1:38.7",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 9,
+   "name": "ナックステート",
+   "time": "1:38.8",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 4,
+   "number": 4,
+   "name": "プライムライン",
+   "time": "1:39.2",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 5,
+   "name": "ノエル",
+   "time": "1:40.5",
+   "margin": "６",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 6,
+   "number": 6,
+   "name": "ハジメテノチュウ",
+   "time": "1:42.2",
+   "margin": "８",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 7,
+   "name": "ブルーメリー",
+   "time": "1:42.7",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
