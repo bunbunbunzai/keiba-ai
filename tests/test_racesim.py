@@ -180,3 +180,13 @@ def test_section_embeds_safe_json_and_script():
 def test_section_empty_when_no_data():
     p = jra_pred(horses=[])
     assert racesim.section(p, frame_of, "x") == ""
+
+
+def test_section_3d_url_only_when_given():
+    p = jra_pred()
+    plain = racesim.section(p, frame_of, "x")
+    assert '"d3"' not in plain
+    html = racesim.section(p, frame_of, "x", d3="/racesim3d.js?v=1")
+    start = html.index('class="simdata">') + len('class="simdata">')
+    d = json.loads(html[start:html.index("</script>", start)])
+    assert d["d3"] == "/racesim3d.js?v=1"

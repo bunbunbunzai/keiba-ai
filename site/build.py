@@ -810,7 +810,7 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
 <section class="card"><h2>全頭評価</h2>
 <ul class="hl"><li class="hr hd"><span class="c-no">馬番</span><span class="c-mk">印</span><span class="c-nm">馬名・騎手</span><span class="c-od">単勝</span><span class="c-sc">評価点</span><span class="c-vl">妙味</span><span class="c-fn">着順</span><span class="c-cm">短評</span></li>{''.join(rows)}</ul>
 <p class="meta">{term("score", "評価点")}は45点満点。{term("adjpct", "補正勝率")}は単勝オッズとAIの評価点を合わせた勝つ確率で、◎と自信度はこれで決めている。{term("value", "妙味")}は「AIの{term("winpct", "想定勝率")}×単勝オッズ」（参考）。1.2以上なら配当の割に勝ち目がある狙い目、0.8未満なら人気しすぎ（過剰人気）という目安（オッズは予想を出した時点のもの）。用語は<a href="/glossary/">用語集</a>へ。</p></section>
-{racesim.section(p, frame_of, RACESIM_V)}
+{racesim.section(p, frame_of, RACESIM_V, d3=f"/racesim3d.js?v={RACESIM3D_V}" if g0 else None)}
 {ippen_line(date, p)}
 {f'<section class="card"><h2>更新履歴</h2><ul>{updates}</ul></section>' if updates else ''}
 {graded_link}
@@ -2143,6 +2143,9 @@ import hashlib as _hashlib
 CSS += racesim.CSS
 RACESIM_JS = (Path(__file__).resolve().parent / "racesim.js").read_text(encoding="utf-8")  # レースページでだけ読み込む
 RACESIM_V = _hashlib.md5(RACESIM_JS.encode("utf-8")).hexdigest()[:8]
+RACESIM3D_JS = (Path(__file__).resolve().parent / "racesim3d.js").read_bytes()  # 重賞の3D表示（site/3d で three.js から作る）
+RACEHORSE_GLB = (Path(__file__).resolve().parent / "3d" / "racehorse.glb").read_bytes()  # 馬と騎手の3Dモデル
+RACESIM3D_V = _hashlib.md5(RACESIM3D_JS + RACEHORSE_GLB).hexdigest()[:8]
 ASSET_V = _hashlib.md5((CSS + JS).encode("utf-8")).hexdigest()[:8]
 
 
@@ -2158,6 +2161,8 @@ def build() -> None:
     (OUT / "ads.txt").write_text(f"google.com, {ADSENSE_PUB.replace('ca-', '')}, DIRECT, f08c47fec0942fa0\n", encoding="utf-8")
     (OUT / "app.js").write_text(JS, encoding="utf-8")
     (OUT / "racesim.js").write_text(RACESIM_JS, encoding="utf-8")
+    (OUT / "racesim3d.js").write_bytes(RACESIM3D_JS)
+    (OUT / "racehorse.glb").write_bytes(RACEHORSE_GLB)
     (OUT / ".nojekyll").write_text("", encoding="utf-8")
     global HEADER_ROI
     led0 = ledger()

@@ -153,11 +153,14 @@ def sim_data(p: dict, frame_of: Callable) -> dict | None:
             "straight": "直" in ct, "lap": lap, "home": home, "horses": horses, "result": _top3(p)}
 
 
-def section(p: dict, frame_of: Callable, js_v: str) -> str:
-    """レースページに差し込むカード（データが無ければ空文字）。"""
+def section(p: dict, frame_of: Callable, js_v: str, d3: str | None = None) -> str:
+    """レースページに差し込むカード（データが無ければ空文字）。
+    d3 に3D表示のスクリプトのURLを渡すと（重賞のページ）、対応している端末では3Dで描く。"""
     d = sim_data(p, frame_of)
     if not d:
         return ""
+    if d3:
+        d["d3"] = d3
     data = json.dumps(d, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     label = html.escape(f"{d['dist']}m {d['surface']}のレースを上から見た図")
     return (
@@ -189,4 +192,14 @@ CSS = (".rsim-stage{position:relative;margin:8px 0 6px;border:1px solid var(--li
        ".rsim-tally td.n,.rsim-tally th.n{text-align:right;white-space:nowrap}"
        ".rsim-tally .bar{display:inline-block;height:8px;background:var(--acc);border-radius:2px;margin-left:6px;vertical-align:middle;opacity:.7}"
        ".rsim-tally details{margin-top:6px}.rsim-tally summary{cursor:pointer;font-size:14px;color:var(--acc)}"
-       "@media (max-width:520px){.rsim-tally .bar{display:none}.rsim-tally th,.rsim-tally td{padding:6px 5px}}")
+       "@media (max-width:520px){.rsim-tally .bar{display:none}.rsim-tally th,.rsim-tally td{padding:6px 5px}}"
+       # 3D（重賞）
+       ".rsim-stage .rsim-3d{display:block;width:100%}"
+       ".rsim-hud{position:absolute;left:10px;right:10px;top:8px;display:flex;justify-content:space-between;gap:10px;pointer-events:none;"
+       "color:#fff;font-weight:700;font-size:14px;text-shadow:0 1px 3px rgba(0,0,0,.75),0 0 2px rgba(0,0,0,.6)}"
+       ".rsim-hud .l{font-size:12px;text-align:right}"
+       ".rsim-loading::after{content:'3Dを準備中…';position:absolute;right:10px;bottom:8px;font-size:12px;color:var(--mut)}"
+       ".rsim-views{display:inline-flex;margin-left:auto}"
+       ".rsim-views button{border-radius:0;margin-left:-1px}.rsim-views button:first-child{border-radius:6px 0 0 6px}.rsim-views button:last-child{border-radius:0 6px 6px 0}"
+       ".rsim-views button[aria-pressed=true]{background:var(--acc);color:#fff;border-color:var(--acc)}"
+       "@media (max-width:520px){.rsim-views{margin-left:0}.rsim-hud{font-size:12px}.rsim-hud .l{font-size:11px}}")
