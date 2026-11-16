@@ -1,6 +1,6 @@
 {
  "date": "20261116",
- "updated": "2026-11-16 13:01",
+ "updated": "2026-11-16 13:07",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -251,7 +251,7 @@
     "field": 11,
     "popularity": 5
    },
-   "odds": 10.4,
+   "odds": 10.5,
    "popularity": 3
   },
   {
@@ -272,8 +272,8 @@
     "field": 9,
     "popularity": null
    },
-   "odds": 60.6,
-   "popularity": 8
+   "odds": 20.5,
+   "popularity": 7
   },
   {
    "race_id": "202611161106070205",
@@ -286,7 +286,7 @@
    "types": [
     "aitop"
    ],
-   "odds": 13.1,
+   "odds": 13.4,
    "popularity": 4
   },
   {
@@ -349,8 +349,22 @@
     "field": 14,
     "popularity": null
    },
-   "odds": null,
-   "popularity": null
+   "odds": 9.1,
+   "popularity": 4
+  },
+  {
+   "race_id": "202611162015120101",
+   "results_key": "202611162015120101",
+   "venue": "大井",
+   "race_no": 1,
+   "post_time": "14:30",
+   "number": 9,
+   "name": "シューキング",
+   "types": [
+    "aitop"
+   ],
+   "odds": 8.8,
+   "popularity": 3
   },
   {
    "race_id": "202611162015120101",
@@ -370,8 +384,8 @@
     "field": 14,
     "popularity": null
    },
-   "odds": null,
-   "popularity": null
+   "odds": 17.3,
+   "popularity": 7
   },
   {
    "race_id": "202611161106070206",
