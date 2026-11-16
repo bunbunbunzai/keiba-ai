@@ -247,6 +247,30 @@ def old_rows(s) -> list:
     return rows
 
 
+def frame_of(num, n):
+    """馬番と頭数から枠番を出す（JRAの決まりどおり。枠の画像が読めない古いページ用）。"""
+    if n <= 8:
+        return num
+    if n <= 16:
+        single = 16 - n
+        return num if num <= single else single + (num - single + 1) // 2
+    if n == 17:
+        return (num + 1) // 2 if num <= 14 else 8
+    return (num + 1) // 2 if num <= 12 else (7 if num <= 15 else 8)
+
+
+def fill_frames(rows):
+    nums = [r["num"] for r in rows if isinstance(r.get("num"), int)]
+    if not nums or all(r.get("frame") for r in rows):
+        return rows
+    n = max(nums)
+    for r in rows:
+        if not r.get("frame") and isinstance(r.get("num"), int):
+            r["frame"] = frame_of(r["num"], n)
+    return rows
+
+
+
 def parse_result(html: str) -> dict:
     s = BeautifulSoup(html, "html.parser")
     title = ""
@@ -355,6 +379,7 @@ def parse_result(html: str) -> dict:
     text = tx(s.body) if s.body else ""
     tm = re.search(r"(芝|ダート)\s*[:：]?\s*(不良|稍重|良|重)", text)
     wm = re.search(r"天候\s*[:：]?\s*(晴|曇|小雨|雨|小雪|雪)", text)
+    fill_frames(rows)
     return {"title": title, "rows": rows, "pay": pay, "track": tm.group(2) if tm else "", "weather": wm.group(1) if wm else ""}
 
 

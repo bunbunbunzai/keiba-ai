@@ -67,10 +67,21 @@ def load_all() -> dict[int, list[dict]]:
     return out
 
 
+# 名前が変わっただけで条件が続いているレース（古い名前 → 今の名前）
+RENAMED = {
+    "arlington-cup": "churchill-downs-cup",
+    "kokura-summer-jump": "kokura-jump-stakes",
+    "abbr:いちょうS": "saudi-arabia-rc",
+    "abbr:東京オータムジャンプ": "tokyo-jump-stakes",
+}
+
+
 def keyed(all_: dict[int, list[dict]]) -> dict[str, dict[int, dict]]:
     """レースを年をまたいで束ねる：{slug: {年: レース}}。slug は成績ページの正式名から決め、決まらないものは一覧の略称で束ねる。"""
     def slug_of(r):
         t = re.sub(r"\s+障害.*$", "", extra.clean_name(r.get("title") or ""))
+        if "ダート" in t and "ジャパン" in t:  # ジャパンCダート（〜2013年）はジャパンCと別のレース
+            return "japan-cup-dirt"
         s = extra.graded_slug(t, "x") if t else ""
         return "" if not s or HASH_RE.search(s) else s
     by_abbr: dict[str, str] = {}
@@ -83,9 +94,16 @@ def keyed(all_: dict[int, list[dict]]) -> dict[str, dict[int, dict]]:
     out: dict[str, dict[int, dict]] = defaultdict(dict)
     for y, rs in all_.items():
         for r in rs:
-            s = slug_of(r) or by_abbr.get(r["abbr"]) or extra.graded_slug(expand(r["abbr"]), "x")
+            # 一覧の略称は年が違っても同じなので、まず略称で束ねる（冠名つきの正式名で別レースに化けるのを防ぐ）
+            s = by_abbr.get(r["abbr"]) or slug_of(r) or extra.graded_slug(expand(r["abbr"]), "x")
             if HASH_RE.search(s):
                 s = "abbr:" + r["abbr"]
+            s = RENAMED.get(s, s)
+            # 2025年に名前が入れ替わった：秋の東京・牝馬1800mは「アイルランドトロフィー」が引き継ぐ
+            if s == "fuchu-himba-stakes" and r["date"][4:6] >= "09":
+                s = "ireland-trophy"
+            if y in out[s] and out[s][y] is not r:
+                print("warn: 同じ年に2レース", s, y, out[s][y]["abbr"], r["abbr"], flush=True)
             out[s][y] = r
     return out
 
