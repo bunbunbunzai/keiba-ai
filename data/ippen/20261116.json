@@ -1,6 +1,6 @@
 {
  "date": "20261116",
- "updated": "2026-11-16 13:07",
+ "updated": "2026-11-16 13:17",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -393,6 +393,20 @@
    "venue": "水沢",
    "race_no": 6,
    "post_time": "14:40",
+   "number": 5,
+   "name": "オーラムブレイズ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 27.0,
+   "popularity": 7
+  },
+  {
+   "race_id": "202611161106070206",
+   "results_key": "202611161106070206",
+   "venue": "水沢",
+   "race_no": 6,
+   "post_time": "14:40",
    "number": 6,
    "name": "ソルシート",
    "types": [
@@ -405,8 +419,8 @@
     "field": 12,
     "popularity": 12
    },
-   "odds": null,
-   "popularity": null
+   "odds": 90.1,
+   "popularity": 12
   },
   {
    "race_id": "202611162218140406",
