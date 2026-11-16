@@ -73,13 +73,20 @@
   }
   // 先頭からの差（馬身）。t は先頭がゴールする時点を 1 とした進み具合
   function gapAt(h, t, P) {
-    var r = smooth(0, P.r0, t), w = smooth(P.ts, 1, t);
+    var r = smooth(0, P.rf || P.r0, t), w = smooth(P.ts, 1, t);
     var wob = h.a * Math.sin(2 * Math.PI * (t * h.fr + h.ph)) * r * (1 - w);
     return Math.max(0, (h.e * r + wob) * (1 - w) + h.f * w);
   }
 
   // geom / pt / sectionName は下で定義（関数宣言なのでここから参照できる）。3D の描き方（racesim3d.js）も使う
-  var api = { rng: rng, hashStr: hashStr, plOrder: plOrder, tally: tally, plan: plan, gapAt: gapAt, smooth: smooth, ease: ease,
+  // 序盤の隊列ができあがる時点（P.rf）。後ろの馬が下がって見えないよう、差が開く速さを先頭の速さの4割ほどまでに抑える。
+  // 画面上の馬はコースに対して大きく描いているので、隊列の差を開ききるには長めの距離が要る
+  function formEnd(P, g) {
+    var eMax = 0;
+    P.h.forEach(function (h) { if (h.e > eMax) eMax = h.e; });
+    return Math.max(P.r0, Math.min(P.ts - 0.03, eMax * g.L * 3.6 / g.Dpx));
+  }
+  var api = { rng: rng, hashStr: hashStr, plOrder: plOrder, tally: tally, plan: plan, gapAt: gapAt, smooth: smooth, ease: ease, formEnd: formEnd,
     geom: geom, pt: pt, sectionName: sectionName };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   if (typeof document === 'undefined') return;
@@ -310,19 +317,21 @@
     function fresh(rand) {
       P = plan(data, rand);
       var g = G(), L = g.lanes, straight = g.straight, lane = [], zig = [];
+      P.rf = formEnd(P, g);
       H.forEach(function (_, i) {
         if (g.abreast) { lane.push(n > 1 ? -0.35 + i / (n - 1) * (L - 0.3) : 0); zig.push(0); }
         else if (straight) { lane.push(n > 1 ? i / (n - 1) * (L - 1) : 0); zig.push((i % 2) * 1.2); }
         else { lane.push(i % L); zig.push(Math.floor(i / L) * 2.3); }
       });
       return { t: 0, lane: lane, tgt: lane.map(function (v) { return Math.max(0, Math.min(L - 1, Math.round(v))); }), zig: zig,
-        hold: H.map(function () { return 0; }), fin: [], said: {}, lead: -1, leadAt: 0, clock: 0 };
+        hold: H.map(function () { return 0; }), far: H.map(function () { return -1e9; }), fin: [], said: {}, lead: -1, leadAt: 0, clock: 0 };
     }
     function positions() {
       var g = G(), t = st.t, out = [], r = smooth(0, P.r0, t), cap = g.coast || (g.straight ? 30 : g.r * 8), lead = ease(t) * g.Dpx;
       var back = Infinity, i, u;
       for (i = 0; i < n; i++) {
         u = lead - gapAt(P.h[i], t, P) * g.L - st.zig[i] * g.r * (1 - r);
+        if (u < st.far[i]) u = st.far[i]; else st.far[i] = u; // 念のため：一度進んだ位置より後ろへは戻さない
         if (u < back) back = u;
         out.push(u);
       }
