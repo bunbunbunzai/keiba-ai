@@ -1,6 +1,6 @@
 {
  "date": "20261116",
- "updated": "2026-11-16 19:11",
+ "updated": "2026-11-16 19:17",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1843,8 +1843,8 @@
     "field": 10,
     "popularity": 9
    },
-   "odds": 17.4,
-   "popularity": 9
+   "odds": 7.8,
+   "popularity": 6
   },
   {
    "race_id": "202611160304160612",
@@ -1864,8 +1864,8 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": 13.9,
-   "popularity": 8
+   "odds": 22.4,
+   "popularity": 9
   },
   {
    "race_id": "202611160304160612",
@@ -1885,22 +1885,8 @@
     "field": 9,
     "popularity": 4
    },
-   "odds": 6.1,
+   "odds": 5.7,
    "popularity": 3
-  },
-  {
-   "race_id": "202611160304160612",
-   "results_key": "202611160304160612",
-   "venue": "帯広ば",
-   "race_no": 12,
-   "post_time": "20:45",
-   "number": 8,
-   "name": "プラチナガール",
-   "types": [
-    "aitop"
-   ],
-   "odds": 9.5,
-   "popularity": 6
   },
   {
    "race_id": "202611160304160612",
@@ -1920,8 +1906,8 @@
     "field": 9,
     "popularity": 9
    },
-   "odds": 6.7,
-   "popularity": 4
+   "odds": 9.7,
+   "popularity": 7
   },
   {
    "race_id": "202611162015120112",
