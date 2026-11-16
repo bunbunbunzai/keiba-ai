@@ -1,6 +1,6 @@
 {
  "date": "20261116",
- "updated": "2026-11-16 13:31",
+ "updated": "2026-11-16 13:41",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -398,8 +398,8 @@
    "types": [
     "aitop"
    ],
-   "odds": 27.0,
-   "popularity": 7
+   "odds": 25.7,
+   "popularity": 5
   },
   {
    "race_id": "202611161106070206",
@@ -419,8 +419,29 @@
     "field": 12,
     "popularity": 12
    },
-   "odds": 90.1,
+   "odds": 116.0,
    "popularity": 12
+  },
+  {
+   "race_id": "202611160304160602",
+   "results_key": "202611160304160602",
+   "venue": "帯広ば",
+   "race_no": 2,
+   "post_time": "15:05",
+   "number": 8,
+   "name": "トウヤカムニャック",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 21,
+   "last": {
+    "date": "2026-10-26",
+    "finish": 6,
+    "field": 10,
+    "popularity": 3
+   },
+   "odds": 25.0,
+   "popularity": 8
   },
   {
    "race_id": "202611162218140406",
