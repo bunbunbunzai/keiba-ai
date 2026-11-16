@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261116",
  "race_id": "202611162015120111",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "セイエイ",
    "time": "1:54.1",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 38.6,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ヴュルディヒ",
    "time": "1:54.1",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 38.2,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ホウオウカブキ",
    "time": "1:55.0",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 39.0,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "サヨノトレイダー",
    "time": "1:55.1",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 38.6,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "ブルマリンシェール",
    "time": "1:55.1",
    "margin": "ハナ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 38.8,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "スパルタレオニダス",
    "time": "1:55.1",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 38.8,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "ポッドフェスタ",
    "time": "1:56.7",
    "margin": "８",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 39.0,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "マイネルボンバー",
    "time": "1:56.9",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 41.4,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "ゴールドジャッジ",
    "time": "1:58.4",
    "margin": "７",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 41.3,
    "popularity": null
   }
  ]
