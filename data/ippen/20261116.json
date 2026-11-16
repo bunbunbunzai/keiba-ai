@@ -1,6 +1,6 @@
 {
  "date": "20261116",
- "updated": "2026-11-16 15:27",
+ "updated": "2026-11-16 15:33",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -673,20 +673,6 @@
    "venue": "帯広ば",
    "race_no": 4,
    "post_time": "16:15",
-   "number": 3,
-   "name": "パリスエンジェル",
-   "types": [
-    "aitop"
-   ],
-   "odds": 6.7,
-   "popularity": 5
-  },
-  {
-   "race_id": "202611160304160604",
-   "results_key": "202611160304160604",
-   "venue": "帯広ば",
-   "race_no": 4,
-   "post_time": "16:15",
    "number": 9,
    "name": "メオトコトブキ",
    "types": [
@@ -699,8 +685,8 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": 12.1,
-   "popularity": 8
+   "odds": 3.4,
+   "popularity": 1
   },
   {
    "race_id": "202611162218140408",
@@ -861,8 +847,8 @@
     "field": 8,
     "popularity": 8
    },
-   "odds": 3.8,
-   "popularity": 1
+   "odds": 23.2,
+   "popularity": 8
   },
   {
    "race_id": "202611161106070210",
