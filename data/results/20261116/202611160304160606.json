@@ -2,7 +2,172 @@
  "source": "rakuten",
  "date": "20261116",
  "race_id": "202611160304160606",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 3,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "1",
+    "yen": 520
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "1-5",
+    "yen": 5620
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "1",
+    "yen": 260
+   },
+   {
+    "combo": "5",
+    "yen": 400
+   },
+   {
+    "combo": "2",
+    "yen": 310
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-5",
+    "yen": 990
+   },
+   {
+    "combo": "1-2",
+    "yen": 870
+   },
+   {
+    "combo": "2-5",
+    "yen": 1490
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-5",
+    "yen": 4780
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-2-5",
+    "yen": 7040
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "1-5-2",
+    "yen": 31900
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-5",
+    "yen": 3200
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 1,
+   "number": 1,
+   "name": "クシロキングマン",
+   "time": "1:37.5",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "マルホンカヒア",
+   "time": "1:40.4",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 2,
+   "number": 2,
+   "name": "ホクセイスズタロウ",
+   "time": "1:41.6",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 3,
+   "name": "サッコノイモウト",
+   "time": "1:42.3",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 8,
+   "name": "キタノスミレ",
+   "time": "1:43.3",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 4,
+   "number": 4,
+   "name": "ヒノクニキングオー",
+   "time": "1:45.9",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 9,
+   "name": "トウメイクイン",
+   "time": "1:46.9",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 6,
+   "number": 6,
+   "name": "リオンハート",
+   "time": "1:47.0",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 7,
+   "name": "マックスクロー",
+   "time": "2:07.4",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
