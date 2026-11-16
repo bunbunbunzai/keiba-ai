@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261116",
  "race_id": "202611162218140407",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -71,7 +71,7 @@
    "name": "サンライズスコール",
    "time": "1:38.8",
    "margin": "",
-   "pos4": null,
+   "pos4": 1,
    "last3f": 40.6,
    "popularity": null
   },
@@ -82,7 +82,7 @@
    "name": "ベアフォースワン",
    "time": "1:39.7",
    "margin": "４",
-   "pos4": null,
+   "pos4": 2,
    "last3f": 41.5,
    "popularity": null
   },
@@ -93,7 +93,7 @@
    "name": "マオノブリージー",
    "time": "1:39.9",
    "margin": "１",
-   "pos4": null,
+   "pos4": 4,
    "last3f": 41.4,
    "popularity": null
   },
@@ -104,7 +104,7 @@
    "name": "ネムレスクイーン",
    "time": "1:40.5",
    "margin": "３",
-   "pos4": null,
+   "pos4": 5,
    "last3f": 41.8,
    "popularity": null
   },
@@ -115,7 +115,7 @@
    "name": "コンチマカロン",
    "time": "1:41.0",
    "margin": "２ １／２",
-   "pos4": null,
+   "pos4": 3,
    "last3f": 42.8,
    "popularity": null
   },
@@ -126,7 +126,7 @@
    "name": "ミスキャサリン",
    "time": "1:41.9",
    "margin": "４",
-   "pos4": null,
+   "pos4": 7,
    "last3f": 42.2,
    "popularity": null
   },
@@ -137,7 +137,7 @@
    "name": "ウインシャルマン",
    "time": "1:42.1",
    "margin": "１",
-   "pos4": null,
+   "pos4": 6,
    "last3f": 42.3,
    "popularity": null
   },
@@ -148,7 +148,7 @@
    "name": "ハイムリヒカイザー",
    "time": "1:42.9",
    "margin": "４",
-   "pos4": null,
+   "pos4": 8,
    "last3f": 42.2,
    "popularity": null
   }
