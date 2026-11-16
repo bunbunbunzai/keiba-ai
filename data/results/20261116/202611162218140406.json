@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261116",
  "race_id": "202611162218140406",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -63,5 +63,94 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 7,
+   "name": "クィーンコッチャン",
+   "time": "1:39.3",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 8,
+   "name": "ナイトプラネット",
+   "time": "1:40.3",
+   "margin": "５",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "アドバンスドリーム",
+   "time": "1:40.7",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "マノンルージュ",
+   "time": "1:40.9",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 5,
+   "name": "ブリックス",
+   "time": "1:41.3",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 6,
+   "name": "ナムラパール",
+   "time": "1:41.8",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 1,
+   "number": 1,
+   "name": "オルミラベル",
+   "time": "1:42.4",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 4,
+   "number": 4,
+   "name": "ルビープリンセス",
+   "time": "1:42.9",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
