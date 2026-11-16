@@ -50,6 +50,9 @@
     var u = (x - a) / (b - a);
     return u * u * (3 - 2 * u);
   }
+  // スタートの加速。時間の進み t（0〜1）を走った割合に直す。出だしはゆっくりで、t=1 でちょうど 1 になる
+  var EASE_A = 0.03, EASE_K = 1 - EASE_A + EASE_A * Math.exp(-1 / EASE_A);
+  function ease(t) { return t <= 0 ? 0 : (t + EASE_A * Math.exp(-t / EASE_A) - EASE_A) / EASE_K; }
   // 1回分のレースの筋書き。差の単位は馬身
   function plan(data, rand) {
     var H = data.horses, n = H.length, D = data.dist;
@@ -76,7 +79,7 @@
   }
 
   // geom / pt / sectionName は下で定義（関数宣言なのでここから参照できる）。3D の描き方（racesim3d.js）も使う
-  var api = { rng: rng, hashStr: hashStr, plOrder: plOrder, tally: tally, plan: plan, gapAt: gapAt, smooth: smooth,
+  var api = { rng: rng, hashStr: hashStr, plOrder: plOrder, tally: tally, plan: plan, gapAt: gapAt, smooth: smooth, ease: ease,
     geom: geom, pt: pt, sectionName: sectionName };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   if (typeof document === 'undefined') return;
@@ -299,26 +302,39 @@
     }
 
     var R2 = make2D(canvas, data, hon), R = R2, R3 = null;
-    var P, st = null, raf = 0, last = 0;
+    var P, st = null, raf = 0, last = 0, cool = 0, coolEnd = 0;
     var Tsec = Math.max(12, Math.min(26, 10 + data.dist / 220));
     function G() { return R.geom(); }
 
     // ゲートの並び：楕円ではレーンの数ごとに列を分け、直線では横一列に広げる（zig は後ろへずらす量、馬の半径の何倍か）
     function fresh(rand) {
       P = plan(data, rand);
-      var L = G().lanes, straight = G().straight, lane = [], zig = [];
+      var g = G(), L = g.lanes, straight = g.straight, lane = [], zig = [];
       H.forEach(function (_, i) {
-        if (straight) { lane.push(n > 1 ? i / (n - 1) * (L - 1) : 0); zig.push((i % 2) * 1.2); }
+        if (g.abreast) { lane.push(n > 1 ? -0.35 + i / (n - 1) * (L - 0.3) : 0); zig.push(0); }
+        else if (straight) { lane.push(n > 1 ? i / (n - 1) * (L - 1) : 0); zig.push((i % 2) * 1.2); }
         else { lane.push(i % L); zig.push(Math.floor(i / L) * 2.3); }
       });
-      return { t: 0, lane: lane, tgt: lane.map(Math.round), zig: zig, fin: [], said: {}, lead: -1, leadAt: 0, clock: 0 };
+      return { t: 0, lane: lane, tgt: lane.map(function (v) { return Math.max(0, Math.min(L - 1, Math.round(v))); }), zig: zig,
+        hold: H.map(function () { return 0; }), fin: [], said: {}, lead: -1, leadAt: 0, clock: 0 };
     }
     function positions() {
-      var g = G(), t = st.t, out = [], r = smooth(0, P.r0, t), cap = g.straight ? 30 : g.r * 8;
-      for (var i = 0; i < n; i++) {
-        var u = t * g.Dpx - gapAt(P.h[i], t, P) * g.L - st.zig[i] * g.r * (1 - r);
-        if (u > g.Dpx) u = g.Dpx + cap * (1 - Math.exp(-(u - g.Dpx) / cap)); // ゴールしたら少しずつ止まる
+      var g = G(), t = st.t, out = [], r = smooth(0, P.r0, t), cap = g.coast || (g.straight ? 30 : g.r * 8), lead = ease(t) * g.Dpx;
+      var back = Infinity, i, u;
+      for (i = 0; i < n; i++) {
+        u = lead - gapAt(P.h[i], t, P) * g.L - st.zig[i] * g.r * (1 - r);
+        if (u < back) back = u;
         out.push(u);
+      }
+      if (g.coast) {
+        // 3D：最後の1頭がゴールするまでは全頭そのまま走り抜け、そのあと全体で同じだけ速さを落とす（前後の間隔は変えない）
+        if (back > g.Dpx) {
+          var x = back - g.Dpx, cut = x - cap * Math.log(1 + x / cap);
+          for (i = 0; i < n; i++) out[i] -= cut;
+        }
+      } else {
+        // 2D：ゴールした馬は少し先で止まる
+        for (i = 0; i < n; i++) if (out[i] > g.Dpx) out[i] = g.Dpx + cap * (1 - Math.exp(-(out[i] - g.Dpx) / cap));
       }
       return out;
     }
@@ -332,10 +348,16 @@
       var g = G(), idx = prog.map(function (_, i) { return i; }).sort(function (a, b) { return prog[b] - prog[a]; });
       var placed = [], need = g.r * 2.15, maxL = g.lanes - 1;
       idx.forEach(function (i) {
-        var busy = {};
-        placed.forEach(function (q) { if (Math.abs(q.u - prog[i]) < need) busy[q.l] = 1; });
-        var cur = Math.min(maxL, st.tgt[i]);
-        if (!g.straight && cur > 0 && !busy[cur - 1]) cur -= 1; // 楕円では内が空いていれば内へ（直線は広がったまま）
+        var busy = {}, wide = {};
+        placed.forEach(function (q) {
+          var d = Math.abs(q.u - prog[i]);
+          if (d < need) busy[q.l] = 1;
+          if (d < need * 1.7) wide[q.l] = 1;
+        });
+        var cur = Math.min(maxL, st.tgt[i]), was = cur;
+        st.hold[i] -= dt;
+        // 楕円では内が十分に空いていれば内へ（直線は広がったまま）。動いた直後は動かない
+        if (!g.straight && cur > 0 && st.hold[i] <= 0 && !wide[cur - 1]) cur -= 1;
         if (busy[cur]) {                                        // ふさがっていれば近い空きレーンへ
           var best = -1;
           for (var d = 1; d <= maxL; d++) {
@@ -344,16 +366,19 @@
           }
           cur = best < 0 ? Math.min(maxL, cur) : best;
         }
+        if (cur !== was) st.hold[i] = 0.9;
         st.tgt[i] = cur;
         placed.push({ u: prog[i], l: cur });
-        st.lane[i] += (cur - st.lane[i]) * Math.min(1, dt * 3.5);
+        // ゲートを出てすぐは横一列のまま走り、前後がばらけるにつれて内へ寄っていく
+        var rate = g.abreast ? 2.0 * smooth(P.r0 * 0.25, P.r0 * 1.3, st.t) : 3.5;
+        st.lane[i] += (cur - st.lane[i]) * Math.min(1, dt * rate);
       });
     }
     // 区間・残り距離・隊列の文字
     function hud(prog, order) {
       var g = G(), t = st.t, lead = order[0];
       var sec = sectionName(g, P, t, (g.straight ? 0 : g.us) + prog[lead]);
-      var rem = Math.max(0, Math.ceil((1 - t) * data.dist / 10) * 10);
+      var rem = Math.max(0, Math.ceil((1 - ease(t)) * data.dist / 10) * 10);
       var info = t <= 0 ? data.dist + 'm ' + (data.surface === '芝' ? '芝' : 'ダート') + (data.straight ? '・直線' : data.dir === 'L' ? '・左回り' : '・右回り')
         : sec + (t < 1 ? '　残り' + rem + 'm' : '');
       var line = '隊列 ' + order.slice(0, 8).map(function (i) { return H[i].n; }).join('-') + (n > 8 ? '…' : '');
@@ -366,7 +391,7 @@
       order = order || orderOf(prog);
       var h = hud(prog, order);
       R.draw({ prog: prog, order: order, lane: st.lane, t: st.t, clock: st.clock, hon: hon, info: h.info, line: h.line,
-        running: !!raf, fin: st.fin });
+        running: !!(raf || cool), fin: st.fin, vref: G().Dpx / Tsec });
       return h;
     }
 
@@ -383,7 +408,7 @@
       newly.sort(function (a, b) { return P.h[a].f - P.h[b].f; }).forEach(function (i) { st.fin.push(i); });
       var order = orderOf(prog), lead = order[0];
       // 実況
-      var S = st.said, rem = (1 - t) * D;
+      var S = st.said, rem = (1 - ease(t)) * D;
       if (!S.start) { S.start = 1; say('ゲートが開いて、' + n + '頭がいっせいにスタート！', true); }
       else if (!S.form && t >= P.r0 + 0.03 && t < P.ts) {
         S.form = 1;
@@ -402,8 +427,23 @@
       }
       if (st.fin.length && !S.win) { S.win = 1; say(nm(st.fin[0]) + '、1着でゴール！', true); }
       render(prog, order);
-      if (st.fin.length >= n) { finish(); return; }
+      if (st.fin.length >= n) {
+        finish();
+        if (R.kind === '3d') { coolEnd = st.clock + 6; cool = requestAnimationFrame(coast); }
+        return;
+      }
       raf = requestAnimationFrame(step);
+    }
+
+    function coast(now) {
+      var dt = Math.min(0.05, Math.max(0, (now - last) / 1000));
+      last = now;
+      st.clock += dt;
+      st.t += dt / Tsec;
+      var prog = positions();
+      assignLanes(prog, dt);
+      cool = st.clock < coolEnd ? requestAnimationFrame(coast) : 0;
+      render(prog, orderOf(prog));
     }
 
     function finish() {
@@ -430,6 +470,7 @@
 
     btn.addEventListener('click', function () {
       if (raf) return;
+      if (cool) { cancelAnimationFrame(cool); cool = 0; }
       if (synth) synth.cancel();
       st = fresh(rng((Math.random() * 4294967296) >>> 0));
       resEl.hidden = true;
@@ -438,14 +479,14 @@
       raf = requestAnimationFrame(step);
     });
 
-    function onResize() { R.resize(); if (!raf) render(); }
+    function onResize() { R.resize(); if (!raf && !cool) render(); }
     if (typeof ResizeObserver !== 'undefined') new ResizeObserver(onResize).observe(stage);
     else window.addEventListener('resize', onResize);
     // 表示の明暗を切り替えたら描き直す
-    document.addEventListener('click', function (e) { if (e.target && e.target.closest && e.target.closest('.theme')) setTimeout(function () { if (!raf) render(); }, 0); });
+    document.addEventListener('click', function (e) { if (e.target && e.target.closest && e.target.closest('.theme')) setTimeout(function () { if (!raf && !cool) render(); }, 0); });
     if (window.matchMedia) {
       var mq = window.matchMedia('(prefers-color-scheme: dark)');
-      if (mq.addEventListener) mq.addEventListener('change', function () { if (!raf) render(); });
+      if (mq.addEventListener) mq.addEventListener('change', function () { if (!raf && !cool) render(); });
     }
     R.resize();
     render();
@@ -468,7 +509,7 @@
         if (v !== '2d' && R3.setView) R3.setView(v);
         cur = v;
         views.querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.v === v ? 'true' : 'false'); });
-        if (!raf) render();
+        if (!raf && !cool) render();
       };
       views.addEventListener('click', function (e) {
         var b = e.target.closest && e.target.closest('button');

@@ -35,6 +35,10 @@ const Y = new Vector3(0, 1, 0);
 export async function create(stage, data, api) {
   const H = data.horses;
   const G = data.straight ? api.geom(1200, 320, data) : api.geom(1200, 600, data);
+  G.abreast = true;                 // ゲートでは全頭が横一列に並ぶ
+  G.coast = G.straight ? 25 : 260;  // ゴール後に流して走る長さ
+  const STRIDE = 64;                // 襲歩1完歩で進む長さ（脚の回転を進む速さに合わせて、足が滑って見えないようにする）
+  const HQ = /[?&]rsimhq=1/.test(location.search); // 確認用：重くても影を切らない
   const base = G.straight ? 0 : G.us;
   const W2 = G.W / 2, H2 = G.H / 2;
   const tmp = new Vector3(), tmp2 = new Vector3();
@@ -260,16 +264,26 @@ export async function create(stage, data, api) {
       const cap = new Mesh(new CylinderGeometry(0.75, 0.75, 2.2, 8), std(k % 2 ? '#c8102e' : '#1e4fa8')); cap.position.set(p.x, 9.6, p.z); scene.add(cap);
     }
   }
-  // スタートのゲート（スタートとゴールが同じ場所でなければ）
-  if (G.straight || Math.abs(((G.us - G.uf) % G.P + G.P) % G.P) > 20) {
-    const a = P3(0, -0.6), b = P3(0, G.lanes - 0.3), len = a.distanceTo(b);
-    const gate = new Group(), gm = std('#e9edf0', { roughness: 0.4, metalness: 0.3 }), gg = std('#1f8f4a');
-    const beam = new Mesh(new BoxGeometry(5, 2.4, len), gg); beam.position.y = 15; gate.add(beam);
-    const cnt = Math.max(3, Math.round(len / 9));
-    for (let k = 0; k <= cnt; k++) { const tw = new Mesh(new BoxGeometry(4.4, 15, 0.7), gm); tw.position.set(0, 7.5, -len / 2 + len * k / cnt); tw.castShadow = true; gate.add(tw); }
-    const fwd = P3(0, G.lanes / 2).sub(P3(-6, G.lanes / 2)).normalize().multiplyScalar(7); // ゲートは馬の少し前
-    gate.position.copy(a).add(b).multiplyScalar(0.5).add(fwd);
-    gate.lookAt(b.x + fwd.x, 0, b.z + fwd.z);
+  // スタートのゲート：1頭ずつの枠（前後の柱）と屋根。馬は枠の中からまっすぐ出る。走り出したら片づける
+  const gate = new Group();
+  {
+    const n = H.length, stepL = n > 1 ? (G.lanes - 0.3) / (n - 1) : 1;
+    const gm = std('#e9edf0', { roughness: 0.4, metalness: 0.3 }), gg = std('#1f8f4a');
+    const postGeo = new CylinderGeometry(0.45, 0.45, 21.5, 6);
+    let first = null, last = null;
+    for (let k = 0; k <= n; k++) {
+      const lb = -0.35 + (k - 0.5) * stepL;
+      for (const u of [-17, 5]) {
+        const p = P3(u, lb), post = new Mesh(postGeo, gm);
+        post.position.set(p.x, 10.75, p.z); post.castShadow = true; gate.add(post);
+      }
+      const mid = P3(-6, lb);
+      if (k === 0) first = mid; last = mid;
+    }
+    const roof = new Mesh(new BoxGeometry(first.distanceTo(last) + 2, 1.4, 24), gg);
+    roof.position.copy(first).add(last).multiplyScalar(0.5); roof.position.y = 22;
+    roof.rotation.y = -Math.atan2(last.z - first.z, last.x - first.x);
+    roof.castShadow = true; gate.add(roof);
     scene.add(gate);
   }
   // 木（コースの外に散らす。葉は丸いかたまりを2つ重ねる）
@@ -362,13 +376,15 @@ export async function create(stage, data, api) {
     const g = new Group(); g.add(model);
     const mixer = new AnimationMixer(model);
     const gallop = mixer.clipAction(clip('Gallop_InPlace')), idle = clip('Idle') ? mixer.clipAction(clip('Idle')) : null;
+    const canter = clip('Canter_InPlace') ? mixer.clipAction(clip('Canter_InPlace')) : null;
     gallop.play(); gallop.time = rnd() * gallop.getClip().duration; gallop.setEffectiveWeight(0);
+    if (canter) { canter.play(); canter.time = rnd() * canter.getClip().duration; canter.setEffectiveWeight(0); }
     if (idle) { idle.play(); idle.time = rnd() * 2; idle.setEffectiveWeight(1); }
     mixer.update(0);
     const sp = new Sprite(new SpriteMaterial({ map: badgeTex(h, h.m === '◎'), depthTest: false, transparent: true }));
     sp.scale.set(6.4, 8.8, 1); sp.position.y = 26; sp.renderOrder = 10; g.add(sp);
     scene.add(g);
-    return { g, sp, mixer, gallop, idle, rate: 0.96 + rnd() * 0.1, prev: null, amp: 0 };
+    return { g, sp, model, mixer, gallop, canter, idle, rate: 0.97 + rnd() * 0.06, prev: null, amp: 0, yaw: 0, roll: 0 };
   });
 
   // ---------- カメラ ----------
@@ -399,7 +415,7 @@ export async function create(stage, data, api) {
   function draw(f) {
     const now = performance.now(), raw = lastNow ? (now - lastNow) / 1000 : 0, dt = Math.min(0.05, raw);
     lastNow = now;
-    if (f.running && !lite && raw > 0 && raw < 0.5) {
+    if (f.running && !lite && !HQ && raw > 0 && raw < 0.5) {
       slowSum += raw; slowN++;
       if (slowN >= 20) {
         if (slowSum / slowN > 0.04) { // 平均25コマ/秒を下回ったら軽い設定へ
@@ -413,22 +429,45 @@ export async function create(stage, data, api) {
     // 馬（上からの視点では、見分けやすいように馬と番号を大きくする）
     const big = view === 'top', hs = big ? 1.7 : 1, bs = big ? 2.6 : 1;
     const pack = new Vector3(); let pc = 0, leadU = 0;
+    gate.visible = f.t < 0.1;
     f.order.forEach((i, k) => {
-      const hz = horses[i], u = f.prog[i], lane = Math.min(f.lane[i], G.lanes - 1);
+      const hz = horses[i], u = f.prog[i], lane = Math.min(f.lane[i], G.lanes - 0.6);
       P3(u, lane, tmp);
       P3(u + 4, lane, tmp2);
-      const speed = hz.prev && dt > 0 ? tmp.distanceTo(hz.prev) / dt : 0;
+      const along = -Math.atan2(tmp2.z - tmp.z, tmp2.x - tmp.x); // コースに沿った向き
+      // 実際に動いた向きと速さ（位置が大きく飛んだとき＝走り直しのときは、止まっている扱いにする）
+      let speed = 0, heading = along, jumped = !hz.prev;
+      if (hz.prev && dt > 0) {
+        const dx = tmp.x - hz.prev.x, dz = tmp.z - hz.prev.z, d = Math.hypot(dx, dz);
+        if (d > 60) jumped = true;
+        else { speed = d / dt; if (speed > f.vref * 0.15) heading = -Math.atan2(dz, dx); }
+      }
       hz.prev = (hz.prev || new Vector3()).copy(tmp);
-      const target = f.running ? Math.min(1, speed / 60) : 0;
-      hz.amp += (target - hz.amp) * Math.min(1, dt * 6);
-      hz.gallop.setEffectiveWeight(hz.amp);
-      if (hz.idle) hz.idle.setEffectiveWeight(1 - hz.amp);
-      hz.gallop.timeScale = hz.rate * (0.55 + 0.45 * hz.amp); // 止まりぎわは脚の回転もゆっくりに
+      // 向き：進む方向へなめらかに向ける（進路を変えるときは体ごと斜めに向く）。曲がるときは内側へ体を倒す
+      if (jumped) { hz.yaw = along; hz.roll = 0; hz.amp = 0; }
+      else {
+        let dy = heading - hz.yaw; dy = Math.atan2(Math.sin(dy), Math.cos(dy));
+        const turn = dy * (1 - Math.exp(-dt * 7));
+        hz.yaw += turn;
+        const lean = dt > 0 ? Math.max(-0.16, Math.min(0.16, -0.17 * turn / dt)) : 0;
+        hz.roll += (lean - hz.roll) * Math.min(1, dt * 4);
+      }
+      hz.model.rotation.x = hz.roll;
+      // 走り方：速さに応じて 立ち姿 → 駈歩 → 襲歩 をなめらかに混ぜ、脚の回転は進む速さに合わせる
+      const a = Math.min(1.2, speed / Math.max(1, f.vref));
+      hz.amp += (a - hz.amp) * Math.min(1, dt * 5);
+      const wg = api.smooth(0.5, 0.85, hz.amp), wc = hz.canter ? api.smooth(0.1, 0.38, hz.amp) * (1 - wg) : 0;
+      hz.gallop.setEffectiveWeight(hz.canter ? wg : api.smooth(0.1, 0.6, hz.amp));
+      if (hz.canter) hz.canter.setEffectiveWeight(wc);
+      if (hz.idle) hz.idle.setEffectiveWeight(Math.max(0, 1 - wg - wc));
+      const v = hz.amp * f.vref;
+      hz.gallop.timeScale = hz.rate * Math.max(0.6, Math.min(1.3, v / STRIDE * hz.gallop.getClip().duration));
+      if (hz.canter) hz.canter.timeScale = hz.rate * Math.max(0.6, Math.min(1.25, v / (STRIDE * 0.55) * hz.canter.getClip().duration));
       hz.mixer.update(dt);
       hz.g.position.copy(tmp);
       hz.g.scale.setScalar(hs);
       hz.sp.scale.set(6.4 * bs, 8.8 * bs, 1);
-      hz.g.rotation.y = -Math.atan2(tmp2.z - tmp.z, tmp2.x - tmp.x);
+      hz.g.rotation.y = hz.yaw;
       if (k === 0) leadU = u;
       if (k < 3) { pack.add(tmp); pc++; }
     });
