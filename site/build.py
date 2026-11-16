@@ -1773,6 +1773,7 @@ SITE_CHANGES = [
     ("2026-11-13", "表示を見直した。「見送り」の表示崩れ、PCのレース一覧の列のずれ、スマホで日付タブ・表・回収率のグラフが読みにくかった点を直し、表は横に動かせることが分かるようにした。発走前のレースに「結果待ち」と出ていたのを直した。コラムに目次と関連記事を付け、過去の予想は月ごとの一覧（過去の日付）にまとめた。プライバシーポリシーに広告・アフィリエイト・全頭くんへの質問の扱いを追記。"),
     ("2026-11-16", "Xの「今日の厳選レース」の投稿時間を昼（当日昼の予想が出そろった後）に変えた。朝の時間帯では厳選レースがまだ決まっておらず、11月11日からの5日間は投稿できていなかった。"),
     ("2026-11-16", "JRAの重賞（G1〜G3・障害重賞）ごとに、過去10年の結果一覧、人気・枠順・脚質の傾向、年齢・騎手・厩舎の傾向の記事を、開催の約2週間前に自動で公開するようにした。JRA公式の成績を集計して作る。"),
+    ("2026-11-16", "重賞ごとに「ジンクス・データの偏り」の記事も自動で公開するようにした。過去10年の全着順から偏りの大きい数字を拾い、偶然と見るべきものはそう書いている。"),
 ]
 
 
@@ -2015,7 +2016,7 @@ header nav.ovf.end{-webkit-mask-image:linear-gradient(to right,transparent,#000 
 .jumpnav a{border:1px solid var(--line);background:var(--panel);color:var(--fg);border-radius:2px;padding:3px 10px}
 .jumpnav a:hover{text-decoration:none;border-color:var(--acc);color:var(--acc)}
 nav.toc{display:block;margin:16px 0 20px;padding:10px 16px 12px;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--acc);overflow:visible;font-size:14px}
-.toc p{margin:0 0 4px;font-weight:700}.toc ol{margin:0;padding-left:1.4em;line-height:1.8}.toc a{color:var(--fg)}
+.toc p{margin:0 0 4px;font-weight:700}.toc ol{margin:0;padding-left:1.4em;line-height:1.8}.toc a{color:var(--fg);white-space:normal}
 .col h2[id],.card[id],h2[id]{scroll-margin-top:12px}
 .morelink{margin:8px 0 0;font-size:14px;text-align:right}
 .cols.rel .tx span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}

@@ -81,6 +81,7 @@ hero: g-sprint
 
 - [京阪杯の人気・枠順・脚質の傾向](/column/keihan-hai-ninki-waku/)
 - [京阪杯の年齢・性別・騎手・厩舎の傾向](/column/keihan-hai-nenrei-kishu/)
+- [京阪杯のジンクス・データの偏り](/column/keihan-hai-jinx/)
 
 > 過去の傾向は、これからの結果を約束するものではない。1つのレースの10回分は少ないデータで、強い馬がたまたまそこにいた影響も含まれる。馬券は20歳から購入できる。
 

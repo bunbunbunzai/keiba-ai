@@ -61,6 +61,7 @@ hero: g-turf-autumn
 
 - [東京スポーツ杯2歳ステークスの過去10年の結果一覧](/column/tokyo-sports-hai-2yo-kako10nen/)
 - [東京スポーツ杯2歳ステークスの人気・枠順・脚質の傾向](/column/tokyo-sports-hai-2yo-ninki-waku/)
+- [東京スポーツ杯2歳ステークスのジンクス・データの偏り](/column/tokyo-sports-hai-2yo-jinx/)
 - [東京スポーツ杯2歳ステークスのレースガイドとAI予想](/graded/tokyo-sports-hai-2yo/)
 
 > 過去の傾向は、これからの結果を約束するものではない。1つのレースの10回分は少ないデータで、強い馬がたまたまそこにいた影響も含まれる。馬券は20歳から購入できる。
