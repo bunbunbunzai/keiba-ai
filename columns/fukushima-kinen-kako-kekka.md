@@ -10,7 +10,7 @@ race: fukushima-kinen
 race_name: 福島記念
 race_date: 20261121
 year: 2026
-kind: kako10nen
+kind: kako-kekka
 hero: g-turf-autumn
 ---
 
@@ -83,7 +83,7 @@ hero: g-turf-autumn
 - [福島記念のジンクス](/column/fukushima-kinen-jinx/)
 - [福島記念のレースガイドとAI予想](/graded/fukushima-kinen/)
 
-> 過去の傾向は、これからの結果を約束するものではない。1つのレースの10回分は少ないデータで、強い馬がたまたまそこにいた影響も含まれる。馬券は20歳から購入できる。
+> 過去の傾向は、これからの結果を約束するものではない。1つのレースだけの集計は数が少なく、強い馬がたまたまそこにいた影響も含まれる。馬券は20歳から購入できる。
 
 ## 出典
 

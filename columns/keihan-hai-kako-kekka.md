@@ -10,7 +10,7 @@ race: keihan-hai
 race_name: 京阪杯
 race_date: 20261129
 year: 2026
-kind: kako10nen
+kind: kako-kekka
 hero: g-sprint
 ---
 
@@ -83,7 +83,7 @@ hero: g-sprint
 - [京阪杯の年齢・性別・騎手・厩舎の傾向](/column/keihan-hai-nenrei-kishu/)
 - [京阪杯のジンクス](/column/keihan-hai-jinx/)
 
-> 過去の傾向は、これからの結果を約束するものではない。1つのレースの10回分は少ないデータで、強い馬がたまたまそこにいた影響も含まれる。馬券は20歳から購入できる。
+> 過去の傾向は、これからの結果を約束するものではない。1つのレースだけの集計は数が少なく、強い馬がたまたまそこにいた影響も含まれる。馬券は20歳から購入できる。
 
 ## 出典
 

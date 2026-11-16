@@ -1,14 +1,14 @@
-"""重賞の「過去10年データ記事」を自動で作る（集計だけで作り、AIは呼ばない）。
+"""重賞の「過去20年データ記事」を自動で作る（集計だけで作り、AIは呼ばない）。
 
 元データは graded_hist.py が集めた data/graded_hist/<年>.json（JRA公式の全着順・払戻）。
 今日から --days 日以内に行われる JRA の重賞について、レースごとに4本の記事を columns/ に書く：
 
-  <slug>-kako10nen.md     過去10年の結果一覧（勝ち馬・2〜3着・配当・共通点）
+  <slug>-kako-kekka.md    過去20年の結果一覧（勝ち馬・2〜3着・配当・共通点）
   <slug>-ninki-waku.md    人気・枠順・脚質の傾向
   <slug>-nenrei-kishu.md  年齢・性別・騎手・厩舎の傾向
   <slug>-jinx.md          ジンクス・データの偏り（数字の偏りが大きいものを拾う）
 
-その年の分をすでに書いていれば何もしない（翌年、同じファイルを新しい10年分で書き直す）。
+その年の分をすでに書いていれば何もしない（翌年、同じファイルを新しい20年分で書き直す）。
 数字はすべて集計から作る。過去の開催が6回に満たないレース、名前から重賞ページ（/graded/<slug>/）を決められないレースは書かない。
 
   python graded_cols.py --days 16
@@ -36,6 +36,7 @@ HIST = DATA_DIR / "graded_hist"
 COLS = ROOT / "columns"
 WD = "月火水木金土日"
 MIN_RUNS = 6
+N_YEARS = 20  # さかのぼる回数（開催がそれより少ないレースは、ある分だけ）
 # 手で書いた特集がある年は自動記事を作らない（同じ内容のページを2つ作らないため）
 MANUAL = {2026: {"queen-elizabeth-cup", "mile-championship", "japan-cup", "champions-cup", "arima-kinen"}}
 ABBR = [("東スポ杯", "東京スポーツ杯"), ("アメリカJCC", "アメリカジョッキークラブカップ"), ("ジャパンC", "ジャパンカップ"), ("チャンピオンズC", "チャンピオンズカップ"),
@@ -165,7 +166,7 @@ class Race:
         self.slug, self.year = slug, year
         self.now = years[year]
         self.past = {y: r for y, r in years.items() if y < year and runners(r) and r.get("pay")}
-        self.ys = sorted(self.past, reverse=True)[:10]
+        self.ys = sorted(self.past, reverse=True)[:N_YEARS]
         self.past = {y: self.past[y] for y in self.ys}
         self.name = self._name()
         self.R = [dict(x, year=y) for y in self.ys for x in runners(self.past[y])]
@@ -184,6 +185,11 @@ class Race:
     @property
     def n(self) -> int:
         return len(self.ys)
+
+    @property
+    def kako(self) -> str:
+        """「過去20年」。途中で行われなかった年があるとき・歴史の浅いレースは「過去12回」。"""
+        return f"過去{self.n}年" if self.ys[0] - self.ys[-1] + 1 == self.n else f"過去{self.n}回"
 
     def top(self, y: int, k: int) -> list[dict]:
         return [x for x in runners(self.past[y]) if fin(x) == k]
@@ -252,14 +258,14 @@ def this_year(rc: Race) -> str:
 
 
 def links(rc: Race, me: str) -> str:
-    items = [("kako10nen", "過去10年の結果一覧"), ("ninki-waku", "人気・枠順・脚質の傾向"), ("nenrei-kishu", "年齢・性別・騎手・厩舎の傾向"), ("jinx", "ジンクス")]
+    items = [("kako-kekka", "過去の結果一覧"), ("ninki-waku", "人気・枠順・脚質の傾向"), ("nenrei-kishu", "年齢・性別・騎手・厩舎の傾向"), ("jinx", "ジンクス")]
     out = [f"- [{rc.name}の{t}](/column/{rc.slug}-{k}/)" for k, t in items if k != me]
     if (DATA_DIR / "race_guides" / f"{rc.slug}.json").exists():
         out.append(f"- [{rc.name}のレースガイドとAI予想](/graded/{rc.slug}/)")
     return "\n".join(out)
 
 
-CAUTION = ("> 過去の傾向は、これからの結果を約束するものではない。1つのレースの10回分は少ないデータで、強い馬がたまたまそこにいた影響も含まれる。"
+CAUTION = ("> 過去の傾向は、これからの結果を約束するものではない。1つのレースだけの集計は数が少なく、強い馬がたまたまそこにいた影響も含まれる。"
            "馬券は20歳から購入できる。")
 
 
@@ -295,7 +301,7 @@ def kako10(rc: Race) -> str:
     lead = (f"{rc.name}の過去{rc.n}回（{rc.span}）の勝ち馬は、{pop_sentence(c)}。"
             + (f"最も人気がなかった勝ち馬は{upset['year']}年の{upset['name']}（{upset['pop']}番人気）。" if upset["pop"] >= 4 else "勝ち馬はすべて3番人気以内だった。")
             + (f"3連単は{man(t3[0])}から{man(t3[-1])}まで開きがあり、10万円を超えたのは{over}回。" if t3 else "") + this_year(rc))
-    title = f"{rc.name}過去10年の結果一覧（{rc.span}）｜勝ち馬・人気・枠・配当"
+    title = f"{rc.name}{rc.kako}の結果一覧（{rc.span}）｜勝ち馬・人気・枠・配当"
     desc = (f"{rc.name}（{rc.grade()}）{rc.span}の勝ち馬・2着・3着と人気、枠、騎手、勝ち時計、配当をJRA公式の成績から一覧にした。"
             f"勝ち馬は{pop_sentence(c)}。今年は{rc.date_txt()}に{rc.now['venue']}で行われる。")
     t1 = "| 年 | 1着 | 2着 | 3着 |\n|---|---|---|---|\n" + "".join(
@@ -339,9 +345,9 @@ def kako10(rc: Race) -> str:
         bl.append("- **続けて好走した馬**：" + "、".join(rp))
     body = ("\n## 勝ち馬と2着・3着（" + rc.span + "）\n\nかっこ内は単勝の人気。\n\n" + t1 + "\n## 勝ち馬の詳細\n\n" + t2 + "\n" + rc.venue_note()
             + "\n\n## 配当\n\n" + t3t + "\n" + pay_txt + "\n\n## 勝ち馬" + str(len(wins)) + "頭の共通点\n\n" + "\n".join(bl)
-            + f"\n\n## {rc.year}年に向けて\n\n" + this_year(rc) + "人気や枠、年齢ごとの成績は次の記事にまとめている。\n\n" + links(rc, "kako10nen")
+            + f"\n\n## {rc.year}年に向けて\n\n" + this_year(rc) + "人気や枠、年齢ごとの成績は次の記事にまとめている。\n\n" + links(rc, "kako-kekka")
             + "\n\n" + CAUTION + "\n\n## 出典\n\n" + rc.src() + "\n")
-    return front(rc, "kako10nen", 1, title, desc, lead) + body
+    return front(rc, "kako-kekka", 1, title, desc, lead) + body
 
 
 # ---------- 記事2：人気・枠順・脚質 ----------
@@ -359,7 +365,7 @@ def ninki(rc: Race) -> str:
     lead = (f"{rc.name}の1番人気は、過去{rc.n}回で{p1['w']}勝・2着{p1['s']}回・3着{p1['t']}回。単勝を毎回買った場合の回収率は{roi:.0f}%だった。"
             + (f"10番人気以下の馬は3着以内に{len(lows)}回入っている。" if lows else "10番人気以下の馬は、3着以内に1度も入っていない。")
             + (f"3連単の真ん中の値（中央値）は{man(int(median(t3)))}。" if t3 else ""))
-    title = f"{rc.name}の人気・枠順・脚質の傾向：1番人気は{p1['w']}勝、3着内率{p1['r3']:.0f}%（過去10年）"
+    title = f"{rc.name}の人気・枠順・脚質の傾向：1番人気は{p1['w']}勝、3着内率{p1['r3']:.0f}%（{rc.kako}）"
     desc = (f"{rc.name}（{rc.grade()}）{rc.span}の人気別・枠番別・4コーナーの位置別の成績をJRA公式の成績から集計。1番人気は{fmt(p1)}で単勝回収率{roi:.0f}%、"
             f"10番人気以下の3着以内は{len(lows)}回。配当の水準もまとめた。")
     pop_t = "| 人気 " + THEAD.replace("|---|---|---|---|---|---|", "|---|---|---|---|---|---|") + "\n".join(row(k, P[k]) for k in POPS)
@@ -469,7 +475,7 @@ def nenrei(rc: Race) -> str:
     lead = "".join(parts) or f"{rc.name}の過去{rc.n}回の騎手別・厩舎別の成績をまとめた。"
     what = "年齢・性別・騎手・厩舎" if multi_age else "性別・騎手・厩舎"
     j0t = f"{J[0][0]}騎手は{J[0][1]['n']}回で{J[0][1]['w']}勝" if J else "騎手別の成績"
-    title = f"{rc.name}の{what}の傾向：{(max(A, key=lambda k: (A[k]['w'], A[k]['r3'])) + 'が' + str(max(v['w'] for v in A.values())) + '勝、') if multi_age else ''}{j0t}（過去10年）"
+    title = f"{rc.name}の{what}の傾向：{(max(A, key=lambda k: (A[k]['w'], A[k]['r3'])) + 'が' + str(max(v['w'] for v in A.values())) + '勝、') if multi_age else ''}{j0t}（{rc.kako}）"
     desc = (f"{rc.name}（{rc.grade()}）{rc.span}の{what}別の成績をJRA公式の成績から集計した。"
             + ("年齢別は" + "、".join(f"{k}{fmt(v)}" for k, v in A.items()) + "。" if multi_age else "")
             + (f"{j0t}。" if J else ""))
@@ -562,6 +568,7 @@ def streak(flags: list[bool]) -> int:
 def jinx_items(rc: Race) -> list[tuple]:
     """(点数, 種類, 見出し, 本文, 題に使う短い言い方) の一覧。点数が高いほど偏りが大きい。"""
     R, n, ys = rc.R, rc.n, rc.ys
+    W3 = need_wins(n)  # 「◯勝している」と書く最低の勝ち数
     out = []
     wins = [x for x in R if fin(x) == 1]
 
@@ -589,7 +596,7 @@ def jinx_items(rc: Race) -> list[tuple]:
     for p in range(2, 10):
         v = [x for x in R if x["pop"] == p]
         r = rec(v)
-        if r["w"] >= 3 and (not best or p != best[0] or True):
+        if r["w"] >= W3 and (not best or p != best[0] or True):
             tr = tan_roi(rc, v)
             add(6 + 2 * r["w"] + (1 if p >= 4 else 0), f"popwin", f"{p}番人気が{r['w']}勝している",
                 f"勝ったのは{hits(v, 1)}。{p}番人気の単勝を毎回100円買っていた場合の回収率は{tr:.0f}%。同じ期間の1番人気は{rec([x for x in R if x['pop'] == 1])['w']}勝だった。",
@@ -662,7 +669,7 @@ def jinx_items(rc: Race) -> list[tuple]:
                 add(9 + len(v) / 10, "frame0", f"{f}枠は延べ{len(v)}頭が出走して3着以内がない", f"{f}枠の成績は{fmt(r)}{note}。最も良い着順は{min(fin(x) for x in v)}着。", f"{f}枠は3着以内なし")
             elif len(v) >= 10 and r["w"] == 0 and len(v) >= 2 * wn - 2 and f in (1, 8):
                 add(6, "frame0", f"{f}枠は延べ{len(v)}頭が出走して勝ち馬がいない", f"{f}枠の成績は{fmt(r)}{note}。")
-            if r["w"] >= 3:
+            if r["w"] >= W3:
                 add(6 + 2 * r["w"], "frame", f"{f}枠が{r['w']}勝している", f"{f}枠の成績は{fmt(r)}{note}。勝ったのは{hits(v, 1)}。", f"{f}枠が{r['w']}勝")
         outer = [x for x in W if x["frame"] in (7, 8)]
         ro = rec(outer)
@@ -676,7 +683,7 @@ def jinx_items(rc: Race) -> list[tuple]:
         for x in W:
             nums[x["num"]].append(x)
         bn = max(nums.items(), key=lambda kv: (rec(kv[1])["w"], rec(kv[1])["r3"]), default=None)
-        if bn and rec(bn[1])["w"] >= 3:
+        if bn and rec(bn[1])["w"] >= W3:
             r = rec(bn[1])
             add(7 + 2 * r["w"], "num", f"馬番{bn[0]}番が{r['w']}勝している", f"馬番{bn[0]}番の成績は{fmt(r)}{note}。勝ったのは{hits(bn[1], 1)}。", f"馬番{bn[0]}番が{r['w']}勝")
         else:
@@ -684,7 +691,7 @@ def jinx_items(rc: Race) -> list[tuple]:
             if bn:
                 r = rec(bn[1])
                 t3 = r["w"] + r["s"] + r["t"]
-                if t3 >= 5:
+                if t3 >= W3 + 2:
                     add(5 + t3, "num", f"馬番{bn[0]}番が{wn}回中{t3}回、3着以内に入っている", f"馬番{bn[0]}番の成績は{fmt(r)}{note}。入ったのは{hits(bn[1])}。", f"馬番{bn[0]}番が3着以内{t3}回")
         ww = [x for x in W if fin(x) == 1]
         ev = sum(1 for x in ww if x["num"] % 2 == 0)
@@ -692,7 +699,7 @@ def jinx_items(rc: Race) -> list[tuple]:
             k = "偶数" if ev > len(ww) - ev else "奇数"
             add(7 + max(ev, len(ww) - ev) - 0.8 * len(ww), "parity", f"勝ち馬{len(ww)}頭のうち{max(ev, len(ww) - ev)}頭が{k}の馬番", f"勝ち馬の馬番は新しい年から" + "、".join(f"{x['num']}番" for x in sorted(ww, key=lambda x: -x["year"])) + f"{note}。偶数の馬番は後からゲートに入るぶん有利とも言われるが、ここまで偏る理由としては弱い。")
         zoro = [y for y in yw if len({x["frame"] for x in W if x["year"] == y and fin(x) <= 2}) == 1 and sum(1 for x in W if x["year"] == y and fin(x) <= 2) == 2]
-        if len(zoro) >= 2:
+        if len(zoro) >= max(2, n // 6):
             add(5 + 2 * len(zoro), "zoro", f"同じ枠の2頭で1・2着が決まった年が{len(zoro)}回ある", f"{'・'.join(str(y) for y in sorted(zoro))}年は、1着と2着が同じ枠の馬だった（枠連のゾロ目）{note}。")
         P = [x for x in W if pos4(x)]
         pw = [x for x in P if fin(x) == 1]
@@ -712,7 +719,7 @@ def jinx_items(rc: Race) -> list[tuple]:
             r = rec(lead)
             if len(lead) >= 6 and r["w"] + r["s"] + r["t"] == 0:
                 add(8, "lead", f"4コーナーを先頭で回った馬は{len(lead)}頭とも4着以下", f"逃げた馬（4コーナー先頭）の成績は{fmt(r)}{note}。")
-            elif r["w"] >= 3:
+            elif r["w"] >= W3:
                 add(6 + 2 * r["w"], "lead", f"4コーナーを先頭で回った馬が{r['w']}勝している", f"4コーナー先頭の馬の成績は{fmt(r)}{note}。勝ったのは{hits(lead, 1)}。", f"逃げ馬が{r['w']}勝")
     # 年齢・性別
     ages = sorted({x["age"] for x in R if x["age"]})
@@ -743,13 +750,13 @@ def jinx_items(rc: Race) -> list[tuple]:
         jk[x["jockey"]].append(x)
     j, v = max(jk.items(), key=lambda kv: (rec(kv[1])["w"], rec(kv[1])["r3"]))
     r = rec(v)
-    if r["w"] >= 3:
+    if r["w"] >= W3:
         add(6 + 2 * r["w"], "jockey", f"{j}騎手が{r['w']}勝している", f"{j}騎手の成績は{fmt(r)}（{len(v)}回騎乗）。勝ったのは{hits(v, 1)}。", f"{j}騎手が{r['w']}勝")
     else:
         j, v = max(jk.items(), key=lambda kv: (rec(kv[1])["w"] + rec(kv[1])["s"] + rec(kv[1])["t"], rec(kv[1])["r3"]))
         r = rec(v)
         t3 = r["w"] + r["s"] + r["t"]
-        if t3 >= 3 and r["r3"] >= 50:
+        if t3 >= W3 and r["r3"] >= 50:
             add(4 + t3, "jockey", f"{j}騎手が{len(v)}回騎乗して{t3}回、3着以内に入っている", f"{j}騎手の成績は{fmt(r)}。入ったのは{hits(v)}。", f"{j}騎手は{len(v)}回で3着以内{t3}回")
     cold = [(j, v) for j, v in jk.items() if len(v) >= 6 and rec(v)["w"] + rec(v)["s"] + rec(v)["t"] == 0]
     if cold:
@@ -760,7 +767,7 @@ def jinx_items(rc: Race) -> list[tuple]:
         tr[x["trainer"]].append(x)
     t, v = max(tr.items(), key=lambda kv: (rec(kv[1])["w"], rec(kv[1])["r3"]))
     r = rec(v)
-    if r["w"] >= 3:
+    if r["w"] >= W3:
         add(5 + 2 * r["w"], "trainer", f"{t}厩舎が{r['w']}勝している", f"{t}厩舎の成績は{fmt(r)}（延べ{len(v)}頭）。勝ったのは{hits(v, 1)}。", f"{t}厩舎が{r['w']}勝")
     # リピーター：前の年に3着以内だった馬が、次の年も出たとき
     rep = []
@@ -791,11 +798,11 @@ def jinx_items(rc: Race) -> list[tuple]:
         ln = Counter(len(x["name"]) for x in wins)
         L, c = ln.most_common(1)[0]
         allL = [x for x in R if len(x["name"]) == L]
-        if c >= 4 and c / len(wins) >= 1.6 * len(allL) / len(R):
+        if c >= W3 + 1 and c / len(wins) >= 1.6 * len(allL) / len(R):
             add(3 + c, "name", f"勝ち馬{len(wins)}頭のうち{c}頭が、馬名{L}文字", f"{L}文字の馬は延べ{len(allL)}頭（出走馬全体の{100 * len(allL) / len(R):.0f}%）で、成績は{fmt(rec(allL))}。勝ったのは{hits(allL, 1)}。馬名の長さが結果に影響する理由は見当たらないが、数字としては偏っている。", f"勝ち馬の{c}頭が馬名{L}文字")
         ini = Counter(x["name"][0] for x in wins)
         ch, c = ini.most_common(1)[0]
-        if c >= 3:
+        if c >= W3:
             allC = [x for x in R if x["name"][0] == ch]
             add(2 + 2 * c, "ini", f"馬名が「{ch}」で始まる馬が{c}勝している", f"「{ch}」で始まる馬は延べ{len(allC)}頭で、成績は{fmt(rec(allC))}。勝ったのは{hits(allC, 1)}。" + ("同じ馬主の冠名による偏りで、馬名そのものに意味があるわけではない。" if len({x['name'][:3] for x in allC if fin(x) == 1}) < c else "理由は見当たらないが、数字としては偏っている。"), f"「{ch}」で始まる馬が{c}勝")
     return out
@@ -835,10 +842,14 @@ HOOKS = {
 }
 
 
+def need_wins(n: int) -> int:
+    return 3 if n <= 12 else 4 if n <= 16 else 5
+
+
 def chance3(n: int, p: float = 0.1) -> float:
-    """勝率pの条件が、n回のうち3回以上当たる確率（%）。"""
+    """勝率pの条件が、n回のうち need_wins(n) 回以上当たる確率（%）。"""
     from math import comb
-    return 100 * (1 - sum(comb(n, k) * p ** k * (1 - p) ** (n - k) for k in range(3)))
+    return 100 * (1 - sum(comb(n, k) * p ** k * (1 - p) ** (n - k) for k in range(need_wins(n))))
 
 
 def jinx(rc: Race) -> str | None:
@@ -868,20 +879,15 @@ def jinx(rc: Race) -> str | None:
         body += f"\n## {i}. {it[2]}\n\n{it[3]}{HOOKS.get(it[1], '')}\n"
     body += (f"\n## このジンクス、{rc.year}年も続くか\n\n"
              f"出走馬と枠順が決まったら、上の{len(pick)}個に当てはまる馬を探してみてほしい。複数のジンクスが重なる馬がいれば、それだけで買う理由にも、疑う理由にもなる。\n\n"
-             f"ただし、過去{rc.n}回分の結果なので、偶然が混ざっている可能性は十分にある。勝率10%の条件でも、{rc.n}回のうち3回以上当たることは偶然で{chance3(rc.n):.0f}%ほど起きる。"
+             f"ただし、過去{rc.n}回分の結果なので、偶然が混ざっている可能性は十分にある。勝率10%の条件でも、{rc.n}回のうち{need_wins(rc.n)}回以上当たることは偶然で{chance3(rc.n):.0f}%ほど起きる。"
              "枠や脚質の偏りはコースの形から説明できることがあるが、馬番や馬名の偏りには理由が見当たらない。続くか、止まるかを見届けるのも競馬の楽しみ方の1つである。\n\n"
              "このサイトのAI予想は、ジンクスではなく、馬ごとの近走・コース実績・騎手・馬場から全頭を評価している。ジンクスに当てはまる馬にAIがどんな印を打つのか、レース当日に見比べてほしい。\n")
-    if rc.slug in MANUAL_LINKS:
-        lk = "\n".join(f"- [{rc.name}の{t}](/column/{k}/)" for k, t in MANUAL_LINKS[rc.slug] if (COLS / f"{k}.md").exists())
-        if (DATA_DIR / "race_guides" / f"{rc.slug}.json").exists():
-            lk += f"\n- [{rc.name}のレースガイドとAI予想](/graded/{rc.slug}/)"
-    else:
-        lk = links(rc, "jinx")
+    lk = links(rc, "jinx")
     body += (f"\n## {rc.year}年に向けて\n\n" + this_year(rc) + "\n\n" + lk + "\n\n" + CAUTION + "\n\n## 出典\n\n" + rc.src() + "\n")
     return front(rc, "jinx", 4, title, desc, lead, "col-ninki-shoritsu" if False else None) + body
 
 
-KINDS = {"kako10nen": kako10, "ninki-waku": ninki, "nenrei-kishu": nenrei, "jinx": jinx}
+KINDS = {"kako-kekka": kako10, "ninki-waku": ninki, "nenrei-kishu": nenrei, "jinx": jinx}
 
 
 def front_year(p: Path) -> int | None:
@@ -920,7 +926,7 @@ def main() -> None:
         if slug.startswith("abbr:"):
             print("skip（重賞ページの名前が決まらない）:", cur["abbr"], cur["date"], flush=True)
             continue
-        manual = slug in MANUAL.get(year, set()) and not (a.force and a.slug)
+        manual = False
         rc = Race(slug, ys, year)
         if rc.n < MIN_RUNS:
             print("skip（過去の成績が足りない）:", slug, rc.n, flush=True)

@@ -10,7 +10,7 @@ race: tokyo-sports-hai-2yo
 race_name: 東京スポーツ杯2歳ステークス
 race_date: 20261123
 year: 2026
-kind: kako10nen
+kind: kako-kekka
 hero: g-turf-autumn
 ---
 
@@ -81,7 +81,7 @@ hero: g-turf-autumn
 - [東京スポーツ杯2歳ステークスのジンクス](/column/tokyo-sports-hai-2yo-jinx/)
 - [東京スポーツ杯2歳ステークスのレースガイドとAI予想](/graded/tokyo-sports-hai-2yo/)
 
-> 過去の傾向は、これからの結果を約束するものではない。1つのレースの10回分は少ないデータで、強い馬がたまたまそこにいた影響も含まれる。馬券は20歳から購入できる。
+> 過去の傾向は、これからの結果を約束するものではない。1つのレースだけの集計は数が少なく、強い馬がたまたまそこにいた影響も含まれる。馬券は20歳から購入できる。
 
 ## 出典
 

@@ -1773,6 +1773,7 @@ SITE_CHANGES = [
     ("2026-11-13", "表示を見直した。「見送り」の表示崩れ、PCのレース一覧の列のずれ、スマホで日付タブ・表・回収率のグラフが読みにくかった点を直し、表は横に動かせることが分かるようにした。発走前のレースに「結果待ち」と出ていたのを直した。コラムに目次と関連記事を付け、過去の予想は月ごとの一覧（過去の日付）にまとめた。プライバシーポリシーに広告・アフィリエイト・全頭くんへの質問の扱いを追記。"),
     ("2026-11-16", "Xの「今日の厳選レース」の投稿時間を昼（当日昼の予想が出そろった後）に変えた。朝の時間帯では厳選レースがまだ決まっておらず、11月11日からの5日間は投稿できていなかった。"),
     ("2026-11-16", "JRAの重賞（G1〜G3・障害重賞）ごとに、過去10年の結果一覧、人気・枠順・脚質の傾向、年齢・騎手・厩舎の傾向の記事を、開催の約2週間前に自動で公開するようにした。JRA公式の成績を集計して作る。"),
+    ("2026-11-16", "重賞のデータ記事を、過去10年から過去20年（2006年以降）の集計に広げた。"),
     ("2026-11-16", "重賞ごとに「ジンクス・データの偏り」の記事も自動で公開するようにした。過去10年の全着順から偏りの大きい数字を拾っている。"),
 ]
 
@@ -2360,6 +2361,10 @@ def build() -> None:
     lastmod.update(column.build(write, page, jsonld, BASE_URL, SITE_NAME, STATS_FROM, today_iso))
     for old, new in (("/graded/kyoto-5c5158c3/", "/graded/kyoto-jump-stakes/"), ("/column/kyoto-5c5158c3-2026/", "/column/kyoto-jump-stakes-2026/")):
         write(old, redirect_page(new))  # 重賞ページの名前を付け直した分
+    _cs = {c["slug"] for c in column.columns() if not c["draft"]}
+    for sl in _cs:  # 重賞の結果一覧は、20年分にしたときに記事名を変えた（古いURLから移す）
+        if sl.endswith("-kako-kekka") and sl[:-11] + "-kako10nen" not in _cs:
+            write(f"/column/{sl[:-11]}-kako10nen/", redirect_page(f"/column/{sl}/"))
     for old, new in (("results.html", "/results/"), ("about.html", "/about/")):
         (OUT / old).write_text(redirect_page(new), encoding="utf-8")
     social_page()

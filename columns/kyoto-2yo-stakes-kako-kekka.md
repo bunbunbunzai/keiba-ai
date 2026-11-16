@@ -10,7 +10,7 @@ race: kyoto-2yo-stakes
 race_name: 京都2歳ステークス
 race_date: 20261128
 year: 2026
-kind: kako10nen
+kind: kako-kekka
 hero: g-turf-autumn
 ---
 
@@ -81,7 +81,7 @@ hero: g-turf-autumn
 - [京都2歳ステークスのジンクス](/column/kyoto-2yo-stakes-jinx/)
 - [京都2歳ステークスのレースガイドとAI予想](/graded/kyoto-2yo-stakes/)
 
-> 過去の傾向は、これからの結果を約束するものではない。1つのレースの10回分は少ないデータで、強い馬がたまたまそこにいた影響も含まれる。馬券は20歳から購入できる。
+> 過去の傾向は、これからの結果を約束するものではない。1つのレースだけの集計は数が少なく、強い馬がたまたまそこにいた影響も含まれる。馬券は20歳から購入できる。
 
 ## 出典
 

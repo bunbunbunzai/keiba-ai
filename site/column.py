@@ -591,10 +591,10 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
             d = arts[0].get("race_date", "")
             when = f"{int(d[4:6])}月{int(d[6:8])}日" if len(d) == 8 else ""
             blocks += (f"<li><b>{esc(arts[0].get('race_name', ''))}</b>" + (f"（{when}）" if when else "") + "："
-                       + "・".join(f"<a href='/column/{o['slug']}/'>{esc({'kako10nen': '過去10年の結果', 'ninki-waku': '人気・枠順・脚質', 'nenrei-kishu': '年齢・騎手・厩舎', 'jinx': 'ジンクス'}.get(o.get('kind'), o.get('title', '')))}</a>" for o in arts) + "</li>")
-        gdata_items = ("<h2 id='gdata'>重賞の過去10年データ（レースごと）</h2><p class='meta'>JRAの重賞ごとに、過去10年の全着順（JRA公式の成績）から人気・枠順・脚質・年齢・騎手の傾向と、数字の偏り（ジンクス）を集計している。レースの約2週間前に自動で公開する。</p>"
+                       + "・".join(f"<a href='/column/{o['slug']}/'>{esc({'kako-kekka': '過去の結果', 'ninki-waku': '人気・枠順・脚質', 'nenrei-kishu': '年齢・騎手・厩舎', 'jinx': 'ジンクス'}.get(o.get('kind'), o.get('title', '')))}</a>" for o in arts) + "</li>")
+        gdata_items = ("<h2 id='gdata'>重賞の過去20年データ（レースごと）</h2><p class='meta'>JRAの重賞ごとに、過去20年の全着順（JRA公式の成績）から人気・枠順・脚質・年齢・騎手の傾向と、数字の偏り（ジンクス）を集計している。レースの約2週間前に自動で公開する。</p>"
                        f"<ul>{blocks}</ul>" + (f"<p class='meta'>日付の近い{min(20, len(races))}レースを表示。</p>" if len(races) > 20 else ""))
-        jumps.append(("gdata", "重賞の過去10年データ"))
+        jumps.append(("gdata", "重賞の過去20年データ"))
     jump_html = ("<p class='jumpnav'>" + "".join(f"<a class='jn' href='#{k}'>{esc(t)}</a>" for k, t in jumps) + "</p>") if len(jumps) > 1 else ""
     write("/column/", page(f"競馬初心者向けコラム | {site_name}",
                            "<p class='crumb'><a href='/'>トップ</a> › コラム</p><h1>競馬初心者向けコラム</h1>" + __import__("build").banner("column") +
