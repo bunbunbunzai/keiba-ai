@@ -149,8 +149,12 @@ def sim_data(p: dict, frame_of: Callable) -> dict | None:
             fr = 1
         horses.append({"n": n, "name": h.get("name") or e.get("name") or "", "f": min(8, max(1, fr)),
                        "m": mk.get(n, ""), "p": w[n], "s": 0.5 if st is None else st})
-    return {"id": str(p.get("race_id") or ""), "dist": dist, "surface": surface, "dir": turn,
+    out = {"id": str(p.get("race_id") or ""), "dist": dist, "surface": surface, "dir": turn,
             "straight": "直" in ct, "lap": lap, "home": home, "horses": horses, "result": _top3(p)}
+    going = str(r.get("track") or "").strip()
+    if going in ("良", "稍重", "重", "不良"):  # 馬場状態（分かっているレースだけ。3Dのダートの砂の色に使う）
+        out["going"] = going
+    return out
 
 
 def section(p: dict, frame_of: Callable, js_v: str, d3: str | None = None) -> str:
@@ -203,7 +207,7 @@ CSS = (".rsim-stage{position:relative;margin:8px 0 6px;border:1px solid var(--li
        ".rsim-fin[hidden]{display:none}"
        ".rsim-fin b{align-self:center;font-size:20px;letter-spacing:.08em;color:#ffd54a}"
        ".rsim-fin i{display:inline-block;min-width:1.5em;padding:0 3px;border-radius:3px;text-align:center;font-style:normal}"
-       ".rsim-loading::after{content:'3Dを準備中…';position:absolute;right:10px;bottom:8px;font-size:12px;color:var(--mut)}"
+       ".rsim-loading::after{content:'3Dを準備中…';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);padding:6px 14px;border-radius:6px;background:rgba(0,0,0,.6);color:#fff;font-size:14px;font-weight:700}"
        ".rsim-views{display:inline-flex;margin-left:auto}"
        ".rsim-views button{border-radius:0;margin-left:-1px}.rsim-views button:first-child{border-radius:6px 0 0 6px}.rsim-views button:last-child{border-radius:0 6px 6px 0}"
        ".rsim-views button[aria-pressed=true]{background:var(--acc);color:#fff;border-color:var(--acc)}"

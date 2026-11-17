@@ -503,13 +503,14 @@
     render();
     btn.disabled = false;
 
-    // ---------- 重賞：3D（カードが画面に近づいたら読み込む。使えない端末は2Dのまま） ----------
+    // ---------- 重賞：3Dは選んだときだけ（最初は2D。3Dのボタンを押したときに初めて読み込む。使えない端末にはボタンを出さない） ----------
     if (data.d3 && webglOK()) {
       var views = document.createElement('div');
-      views.className = 'rsim-views'; views.hidden = true; views.setAttribute('role', 'group'); views.setAttribute('aria-label', '見え方');
-      views.innerHTML = '<button type="button" data-v="tv">中継カメラ</button><button type="button" data-v="top">上から</button><button type="button" data-v="2d">2D</button>';
+      views.className = 'rsim-views'; views.setAttribute('role', 'group'); views.setAttribute('aria-label', '見え方');
+      views.innerHTML = '<button type="button" data-v="2d" aria-pressed="true">2D</button><button type="button" data-v="tv" aria-pressed="false">3D 中継</button>' +
+        '<button type="button" data-v="chase" aria-pressed="false">3D 並走</button><button type="button" data-v="top" aria-pressed="false">3D 上から</button>';
       card.querySelector('.rsim-ctl').appendChild(views);
-      var cur = 'tv';
+      var loading = null;
       var use = function (v) {
         var r = v === '2d' ? R2 : R3;
         if (!r) return;
@@ -518,32 +519,34 @@
           if (st && st.t === 0 && !raf) st = null; // 走る前ならゲートの並びを作り直す
         }
         if (v !== '2d' && R3.setView) R3.setView(v);
-        cur = v;
         views.querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.v === v ? 'true' : 'false'); });
         if (!raf && !cool) render();
       };
-      views.addEventListener('click', function (e) {
-        var b = e.target.closest && e.target.closest('button');
-        if (b) use(b.dataset.v);
-      });
+      // 3Dの読み込み（1回だけ）。読み込めなかったら3Dのボタンを片づけて2Dのままにする
       var load = function () {
+        if (loading) return loading;
         stage.classList.add('rsim-loading');
         // 古いブラウザで構文エラーにならないよう、import() は文字列から作る
-        (new Function('u', 'return import(u)'))(data.d3).then(function (m) {
+        loading = (new Function('u', 'return import(u)'))(data.d3).then(function (m) {
           return m.create(stage, data, api); // 馬のモデルの読み込みを待つ
         }).then(function (r3) {
           R3 = r3;
           R3.show(false);
-          views.hidden = false;
-          use('tv');
-        }).catch(function () { views.remove(); }).then(function () { stage.classList.remove('rsim-loading'); });
+          return true;
+        }).catch(function () {
+          views.querySelectorAll('button:not([data-v="2d"])').forEach(function (b) { b.remove(); });
+          callEl.textContent = 'この端末では3Dを表示できませんでした。2Dでご覧ください。';
+          return false;
+        }).then(function (ok) { stage.classList.remove('rsim-loading'); return ok; });
+        return loading;
       };
-      if ('IntersectionObserver' in window) {
-        var io = new IntersectionObserver(function (es) {
-          if (es.some(function (x) { return x.isIntersecting; })) { io.disconnect(); load(); }
-        }, { rootMargin: '300px' });
-        io.observe(stage);
-      } else load();
+      views.addEventListener('click', function (e) {
+        var b = e.target.closest && e.target.closest('button');
+        if (!b) return;
+        var v = b.dataset.v;
+        if (v === '2d' || R3) { use(v); return; }
+        load().then(function (ok) { if (ok) use(v); });
+      });
     }
   }
 
