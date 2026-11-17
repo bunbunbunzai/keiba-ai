@@ -1,6 +1,6 @@
 {
  "date": "20261117",
- "updated": "2026-11-17 12:07",
+ "updated": "2026-11-17 12:28",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -807,6 +807,20 @@
    "venue": "水沢",
    "race_no": 9,
    "post_time": "16:20",
+   "number": 5,
+   "name": "キングスペード",
+   "types": [
+    "aitop"
+   ],
+   "odds": 9.6,
+   "popularity": 4
+  },
+  {
+   "race_id": "202611171106070309",
+   "results_key": "202611171106070309",
+   "venue": "水沢",
+   "race_no": 9,
+   "post_time": "16:20",
    "number": 8,
    "name": "エバーグリーン",
    "types": [
@@ -1328,6 +1342,20 @@
    },
    "odds": 4.8,
    "popularity": 2
+  },
+  {
+   "race_id": "202611171106070312",
+   "results_key": "202611171106070312",
+   "venue": "水沢",
+   "race_no": 12,
+   "post_time": "18:05",
+   "number": 6,
+   "name": "ハクシンマルペンサ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 9.6,
+   "popularity": 6
   },
   {
    "race_id": "202611172218140508",
