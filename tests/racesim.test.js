@@ -63,3 +63,31 @@ test('plan の序盤は脚質の前の馬ほど前にいる（おおむね）', 
   }
   assert.ok(ok >= 45, `${ok}/50`);
 });
+
+// 画面の縮尺（3Dと同じ 1200×600）でも、スタートからゴールまで後ろへ下がる馬がいないこと
+for (const [n, dist] of [[18, 1200], [18, 2200], [16, 1600], [18, 3600], [8, 1000]]) {
+  test(`${n}頭・${dist}m：どの馬も後ろへ下がらない`, () => {
+    const d = field(n, dist);
+    const g = { L: 9 * 1.9, Dpx: dist * (2 * 713 + 2 * Math.PI * 241) / d.lap };
+    for (let s = 0; s < 30; s++) {
+      const P = S.plan(d, S.rng(500 + s));
+      P.rf = S.formEnd(P, g);
+      assert.ok(P.rf < P.ts);
+      const prev = P.h.map(() => -Infinity);
+      for (let t = 0; t <= 1.0001; t += 0.002) {
+        P.h.forEach((h, i) => {
+          const u = S.ease(t) * g.Dpx - S.gapAt(h, t, P) * g.L;
+          assert.ok(u >= prev[i] - 1e-6, `seed ${s} 馬${i} t=${t.toFixed(3)}: ${prev[i]} → ${u}`);
+          prev[i] = u;
+        });
+      }
+    }
+  });
+}
+
+test('ease は 0 から始まり、t=1 でちょうど 1、ずっと増え続ける', () => {
+  assert.strictEqual(S.ease(0), 0);
+  assert.ok(Math.abs(S.ease(1) - 1) < 1e-12);
+  let p = 0;
+  for (let t = 0.001; t <= 1.2; t += 0.001) { const v = S.ease(t); assert.ok(v > p); p = v; }
+});

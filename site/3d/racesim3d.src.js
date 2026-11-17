@@ -17,6 +17,8 @@ import {
 import { AnimationMixer } from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { clone as cloneSkinned } from 'three/addons/utils/SkeletonUtils.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { PMREMGenerator } from 'three';
 
 // 毛色：体・たてがみと尾・脚の先
 const COATS = [
@@ -35,6 +37,14 @@ const Y = new Vector3(0, 1, 0);
 export async function create(stage, data, api) {
   const H = data.horses;
   const G = data.straight ? api.geom(1200, 320, data) : api.geom(1200, 600, data);
+  G.abreast = true;                 // ゲートでは全頭が横一列に並ぶ
+  { // 3Dでは馬1頭ぶんほどの細いレーンにする（コースの幅は変えない）。前があけば次々に内へ寄っていける
+    const width = G.lanes * G.laneW;
+    G.laneW = 8.6; G.lanes = Math.max(4, Math.floor(width / G.laneW));
+  }
+  G.coast = G.straight ? 25 : 260;  // ゴール後に流して走る長さ
+  const STRIDE = 64;                // 襲歩1完歩で進む長さ（脚の回転を進む速さに合わせて、足が滑って見えないようにする）
+  const HQ = /[?&]rsimhq=1/.test(location.search); // 確認用：重くても影を切らない
   const base = G.straight ? 0 : G.us;
   const W2 = G.W / 2, H2 = G.H / 2;
   const tmp = new Vector3(), tmp2 = new Vector3();
@@ -64,12 +74,22 @@ export async function create(stage, data, api) {
   sun.shadow.bias = -0.0004; sun.shadow.normalBias = 0.5;
   sun.shadow.camera.near = 10; sun.shadow.camera.far = 3000;
   scene.add(sun, sun.target);
+  let coatEnv = null;
+  {
+    const pm = new PMREMGenerator(renderer);
+    coatEnv = pm.fromScene(new RoomEnvironment(), 0.04).texture; // 馬体にだけ使う（背景まで白っぽくしない）
+    pm.dispose();
+  }
   const SUN_DIR = new Vector3(0.4, 0.85, -0.3).normalize(); // 内馬場の側から照らす（中継カメラから見て順光）
 
   const hud = document.createElement('div');
   hud.className = 'rsim-hud';
   hud.innerHTML = '<span class="i"></span><span class="l"></span>';
   const hudI = hud.querySelector('.i'), hudL = hud.querySelector('.l');
+  const finEl = document.createElement('div'); // ゴールした順に 1〜3着 を大きく出す
+  finEl.className = 'rsim-fin'; finEl.hidden = true;
+  stage.appendChild(finEl);
+  let finShown = -1;
   stage.appendChild(canvas);
   stage.appendChild(hud);
 
@@ -239,9 +259,27 @@ export async function create(stage, data, api) {
   // ゴール板とゴールの線（ゴールは走った長さが G.Dpx の地点）
   {
     const a = P3(G.Dpx, -0.6), b = P3(G.Dpx, G.lanes - 0.3);
-    const line = new Mesh(new BoxGeometry(a.distanceTo(b), 0.1, 1.2), new MeshBasicMaterial({ color: '#ffffff' }));
+    const fc = document.createElement('canvas'); fc.width = 32; fc.height = 32;
+    const fx = fc.getContext('2d');
+    fx.fillStyle = '#ffffff'; fx.fillRect(0, 0, 32, 32); fx.fillStyle = '#111111'; fx.fillRect(0, 0, 16, 16); fx.fillRect(16, 16, 16, 16);
+    const wide = a.distanceTo(b);
+    const line = new Mesh(new BoxGeometry(wide, 0.1, 5), new MeshBasicMaterial({ map: tex(fc, wide / 5, 1) }));
     line.position.copy(a).add(b).multiplyScalar(0.5); line.position.y = 0.32;
     line.rotation.y = -Math.atan2(b.z - a.z, b.x - a.x);
+    // 外側の柱と、コースをまたぐ横断幕
+    const o2 = P3(G.Dpx, G.lanes + 0.2), i2 = P3(G.Dpx, -1.3);
+    const p2 = new Mesh(new CylinderGeometry(0.6, 0.6, 34, 10), std('#c8102e', { roughness: 0.4 })); p2.position.set(o2.x, 17, o2.z); scene.add(p2);
+    const p3 = new Mesh(new CylinderGeometry(0.6, 0.6, 8, 10), std('#c8102e', { roughness: 0.4 })); p3.position.set(i2.x, 30, i2.z); scene.add(p3);
+    const bc = document.createElement('canvas'); bc.width = 512; bc.height = 48;
+    const bx = bc.getContext('2d');
+    bx.fillStyle = '#c8102e'; bx.fillRect(0, 0, 512, 48);
+    bx.fillStyle = '#ffffff'; bx.font = '700 34px sans-serif'; bx.textAlign = 'center'; bx.textBaseline = 'middle'; bx.fillText('GOAL', 256, 26);
+    const bt = new CanvasTexture(bc); bt.colorSpace = SRGBColorSpace;
+    const bm = new MeshBasicMaterial({ map: bt }), red = new MeshBasicMaterial({ color: '#c8102e' });
+    const banner = new Mesh(new BoxGeometry(i2.distanceTo(o2), 5, 0.6), [red, red, red, red, bm, bm]);
+    banner.position.copy(i2).add(o2).multiplyScalar(0.5); banner.position.y = 31.5;
+    banner.rotation.y = -Math.atan2(o2.z - i2.z, o2.x - i2.x);
+    scene.add(banner);
     scene.add(line);
     const side = P3(G.Dpx, -1.3), out = P3(G.Dpx, G.lanes + 4);
     const pole = new Mesh(new CylinderGeometry(0.6, 0.6, 26, 10), std('#c8102e', { roughness: 0.4 }));
@@ -260,16 +298,26 @@ export async function create(stage, data, api) {
       const cap = new Mesh(new CylinderGeometry(0.75, 0.75, 2.2, 8), std(k % 2 ? '#c8102e' : '#1e4fa8')); cap.position.set(p.x, 9.6, p.z); scene.add(cap);
     }
   }
-  // スタートのゲート（スタートとゴールが同じ場所でなければ）
-  if (G.straight || Math.abs(((G.us - G.uf) % G.P + G.P) % G.P) > 20) {
-    const a = P3(0, -0.6), b = P3(0, G.lanes - 0.3), len = a.distanceTo(b);
-    const gate = new Group(), gm = std('#e9edf0', { roughness: 0.4, metalness: 0.3 }), gg = std('#1f8f4a');
-    const beam = new Mesh(new BoxGeometry(5, 2.4, len), gg); beam.position.y = 15; gate.add(beam);
-    const cnt = Math.max(3, Math.round(len / 9));
-    for (let k = 0; k <= cnt; k++) { const tw = new Mesh(new BoxGeometry(4.4, 15, 0.7), gm); tw.position.set(0, 7.5, -len / 2 + len * k / cnt); tw.castShadow = true; gate.add(tw); }
-    const fwd = P3(0, G.lanes / 2).sub(P3(-6, G.lanes / 2)).normalize().multiplyScalar(7); // ゲートは馬の少し前
-    gate.position.copy(a).add(b).multiplyScalar(0.5).add(fwd);
-    gate.lookAt(b.x + fwd.x, 0, b.z + fwd.z);
+  // スタートのゲート：1頭ずつの枠（前後の柱）と屋根。馬は枠の中からまっすぐ出る。走り出したら片づける
+  const gate = new Group();
+  {
+    const n = H.length, stepL = n > 1 ? (G.lanes - 0.3) / (n - 1) : 1;
+    const gm = std('#e9edf0', { roughness: 0.4, metalness: 0.3 }), gg = std('#1f8f4a');
+    const postGeo = new CylinderGeometry(0.45, 0.45, 21.5, 6);
+    let first = null, last = null;
+    for (let k = 0; k <= n; k++) {
+      const lb = -0.35 + (k - 0.5) * stepL;
+      for (const u of [-17, 5]) {
+        const p = P3(u, lb), post = new Mesh(postGeo, gm);
+        post.position.set(p.x, 10.75, p.z); post.castShadow = true; gate.add(post);
+      }
+      const mid = P3(-6, lb);
+      if (k === 0) first = mid; last = mid;
+    }
+    const roof = new Mesh(new BoxGeometry(first.distanceTo(last) + 2, 1.4, 24), gg);
+    roof.position.copy(first).add(last).multiplyScalar(0.5); roof.position.y = 22;
+    roof.rotation.y = -Math.atan2(last.z - first.z, last.x - first.x);
+    roof.castShadow = true; gate.add(roof);
     scene.add(gate);
   }
   // 木（コースの外に散らす。葉は丸いかたまりを2つ重ねる）
@@ -301,32 +349,43 @@ export async function create(stage, data, api) {
   }
 
   // ---------- 馬と騎手（racehorse.glb：骨格と走るアニメーション付きのモデルを頭数分だけ複製して色を変える） ----------
+  const HORSE_PARTS = { Coat: 1, Points: 1, ManeTail: 1, Hoof: 1, Eye: 1, Markings: 1 };
   const MODEL_SCALE = 8.2; // モデルはメートル単位。コースの縮尺（1馬身≒17）に合わせる
   const gltf = await new GLTFLoader().loadAsync(new URL('racehorse.glb' + new URL(import.meta.url).search, import.meta.url).href);
   const clip = (name) => gltf.animations.find((a) => a.name === name);
+  let clothHasUV = false;
   // ゼッケン：モデルに UV が無いので、左右の面それぞれで数字が正しく読めるように UV を作る
   gltf.scene.traverse((o) => {
     if (!o.isMesh || !o.material || o.material.name !== 'SaddleCloth') return;
-    const g = o.geometry, p = g.getAttribute('position');
-    g.computeBoundingBox();
-    const b = g.boundingBox, w = b.max.x - b.min.x || 1, h = b.max.y - b.min.y || 1, uv = new Float32Array(p.count * 2);
+    if (o.geometry.getAttribute('uv')) { clothHasUV = true; return; }
+    const g = o.geometry, p = g.getAttribute('position'), nr = g.getAttribute('normal');
+    // 横を向いた面（左右の布の面）だけで範囲を測る。帯など他の部分が混ざると数字の位置がずれるため
+    let x0 = Infinity, x1 = -Infinity, y0 = Infinity, y1 = -Infinity;
     for (let k = 0; k < p.count; k++) {
-      const u = (p.getX(k) - b.min.x) / w;
+      if (Math.abs(nr.getZ(k)) < 0.7) continue;
+      x0 = Math.min(x0, p.getX(k)); x1 = Math.max(x1, p.getX(k)); y0 = Math.min(y0, p.getY(k)); y1 = Math.max(y1, p.getY(k));
+    }
+    if (!(x1 > x0)) { g.computeBoundingBox(); x0 = g.boundingBox.min.x; x1 = g.boundingBox.max.x; y0 = g.boundingBox.min.y; y1 = g.boundingBox.max.y; }
+    const w = x1 - x0 || 1, h = y1 - y0 || 1, uv = new Float32Array(p.count * 2);
+    for (let k = 0; k < p.count; k++) {
+      // 数字はゼッケンの後ろ寄り6割に入れる（前のほうは騎手の足に隠れるため）
+      const u = (p.getX(k) - x0) / w / 0.6;
       uv[k * 2] = p.getZ(k) >= 0 ? u : 1 - u;
-      uv[k * 2 + 1] = (p.getY(k) - b.min.y) / h;
+      uv[k * 2 + 1] = (p.getY(k) - y0) / h;
     }
     g.setAttribute('uv', new Float32BufferAttribute(uv, 2));
   });
   const rnd = api.rng(api.hashStr((data.id || '') + 'horses'));
 
   function clothTex(h) {
-    const c = document.createElement('canvas'); c.width = 128; c.height = 96;
+    const c = document.createElement('canvas'); c.width = 160; c.height = 104;
     const x = c.getContext('2d');
-    x.fillStyle = '#f6f6f3'; x.fillRect(0, 0, 128, 96);
-    x.strokeStyle = '#1c1c1c'; x.lineWidth = 4; x.strokeRect(3, 3, 122, 90);
-    x.fillStyle = '#111111'; x.font = '700 64px sans-serif'; x.textAlign = 'center'; x.textBaseline = 'middle';
-    x.fillText(String(h.n), 64, 52);
-    const t = new CanvasTexture(c); t.colorSpace = SRGBColorSpace; t.anisotropy = maxAniso; return t;
+    x.fillStyle = '#f6f6f3'; x.fillRect(0, 0, 160, 104);
+    x.fillStyle = '#111111'; x.font = '700 78px sans-serif'; x.textAlign = 'center'; x.textBaseline = 'middle';
+    x.fillText(String(h.n), 80, 56);
+    const t = new CanvasTexture(c); t.colorSpace = SRGBColorSpace; t.anisotropy = maxAniso;
+    if (clothHasUV) t.flipY = false; // glTF の UV は上が 0
+    return t;
   }
   function badgeTex(h, honme) {
     const c = document.createElement('canvas'); c.width = 128; c.height = 176;
@@ -354,7 +413,8 @@ export async function create(stage, data, api) {
       if (!o.isMesh) return;
       o.castShadow = true; o.frustumCulled = false;
       const m = o.material.clone(); o.material = m;
-      m.roughness = Math.max(m.roughness, 0.55);
+      if (HORSE_PARTS[m.name]) { m.envMap = coatEnv; m.envMapIntensity = 0.28; if (m.normalMap) m.normalScale.set(0.45, 0.45); }
+      else m.roughness = Math.max(m.roughness, 0.6);
       if (paintBy[m.name]) m.color.set(paintBy[m.name]);
       if (m.name === 'Markings' && !marks) m.color.set(coat.body);
       if (m.name === 'SaddleCloth') { m.color.set('#ffffff'); m.map = clothTex(h); m.roughness = 0.8; }
@@ -362,17 +422,22 @@ export async function create(stage, data, api) {
     const g = new Group(); g.add(model);
     const mixer = new AnimationMixer(model);
     const gallop = mixer.clipAction(clip('Gallop_InPlace')), idle = clip('Idle') ? mixer.clipAction(clip('Idle')) : null;
+    const canter = clip('Canter_InPlace') ? mixer.clipAction(clip('Canter_InPlace')) : null;
     gallop.play(); gallop.time = rnd() * gallop.getClip().duration; gallop.setEffectiveWeight(0);
+    if (canter) { canter.play(); canter.time = rnd() * canter.getClip().duration; canter.setEffectiveWeight(0); }
+    const drive = clip('Drive_InPlace') ? mixer.clipAction(clip('Drive_InPlace')) : null;
+    if (drive) { drive.play(); drive.time = gallop.time; drive.setEffectiveWeight(0); }
     if (idle) { idle.play(); idle.time = rnd() * 2; idle.setEffectiveWeight(1); }
     mixer.update(0);
     const sp = new Sprite(new SpriteMaterial({ map: badgeTex(h, h.m === '◎'), depthTest: false, transparent: true }));
     sp.scale.set(6.4, 8.8, 1); sp.position.y = 26; sp.renderOrder = 10; g.add(sp);
     scene.add(g);
-    return { g, sp, mixer, gallop, idle, rate: 0.96 + rnd() * 0.1, prev: null, amp: 0 };
+    return { g, sp, model, mixer, gallop, canter, idle, drive, dw: 0, rate: 0.97 + rnd() * 0.06, prev: null, amp: 0, yaw: 0, roll: 0 };
   });
 
   // ---------- カメラ ----------
-  let view = 'tv', snap = true, lastNow = 0, shadowHalf = 0;
+  let view = 'tv', snap = true, lastNow = 0, shadowHalf = 0, finClock = -1, wasAtLine = false;
+  const esc = (s) => String(s).replace(/[&<>"']/g, (c) => '&#' + c.charCodeAt(0) + ';');
   let slowN = 0, slowSum = 0, lite = false, lastW = 0, lastH = 0; // 動きが重い端末では影をやめて軽くする
   const camPos = new Vector3(), camLook = new Vector3();
   function topView() {
@@ -399,7 +464,7 @@ export async function create(stage, data, api) {
   function draw(f) {
     const now = performance.now(), raw = lastNow ? (now - lastNow) / 1000 : 0, dt = Math.min(0.05, raw);
     lastNow = now;
-    if (f.running && !lite && raw > 0 && raw < 0.5) {
+    if (f.running && !lite && !HQ && raw > 0 && raw < 0.5) {
       slowSum += raw; slowN++;
       if (slowN >= 20) {
         if (slowSum / slowN > 0.04) { // 平均25コマ/秒を下回ったら軽い設定へ
@@ -413,28 +478,66 @@ export async function create(stage, data, api) {
     // 馬（上からの視点では、見分けやすいように馬と番号を大きくする）
     const big = view === 'top', hs = big ? 1.7 : 1, bs = big ? 2.6 : 1;
     const pack = new Vector3(); let pc = 0, leadU = 0;
+    gate.visible = f.t < 0.1;
+    const slow = f.slow || 1;
     f.order.forEach((i, k) => {
-      const hz = horses[i], u = f.prog[i], lane = Math.min(f.lane[i], G.lanes - 1);
+      const hz = horses[i], u = f.prog[i], lane = Math.min(f.lane[i], G.lanes - 0.6);
       P3(u, lane, tmp);
       P3(u + 4, lane, tmp2);
-      const speed = hz.prev && dt > 0 ? tmp.distanceTo(hz.prev) / dt : 0;
+      const along = -Math.atan2(tmp2.z - tmp.z, tmp2.x - tmp.x); // コースに沿った向き
+      // 実際に動いた向きと速さ（位置が大きく飛んだとき＝走り直しのときは、止まっている扱いにする）
+      let speed = 0, heading = along, jumped = !hz.prev;
+      if (hz.prev && dt > 0) {
+        const dx = tmp.x - hz.prev.x, dz = tmp.z - hz.prev.z, d = Math.hypot(dx, dz);
+        if (d > 60) jumped = true;
+        else { speed = d / dt; if (speed > f.vref * 0.15) heading = -Math.atan2(dz, dx); }
+      }
       hz.prev = (hz.prev || new Vector3()).copy(tmp);
-      const target = f.running ? Math.min(1, speed / 60) : 0;
-      hz.amp += (target - hz.amp) * Math.min(1, dt * 6);
-      hz.gallop.setEffectiveWeight(hz.amp);
-      if (hz.idle) hz.idle.setEffectiveWeight(1 - hz.amp);
-      hz.gallop.timeScale = hz.rate * (0.55 + 0.45 * hz.amp); // 止まりぎわは脚の回転もゆっくりに
-      hz.mixer.update(dt);
+      // 向き：進む方向へなめらかに向ける（進路を変えるときは体ごと斜めに向く）。曲がるときは内側へ体を倒す
+      if (jumped) { hz.yaw = along; hz.roll = 0; hz.amp = 0; }
+      else {
+        let dy = heading - hz.yaw; dy = Math.atan2(Math.sin(dy), Math.cos(dy));
+        const turn = dy * (1 - Math.exp(-dt * 7));
+        hz.yaw += turn;
+        const lean = dt > 0 ? Math.max(-0.16, Math.min(0.16, -0.17 * turn / dt)) : 0;
+        hz.roll += (lean - hz.roll) * Math.min(1, dt * 4);
+      }
+      hz.model.rotation.x = hz.roll;
+      // 走り方：速さに応じて 立ち姿 → 駈歩 → 襲歩 をなめらかに混ぜ、脚の回転は進む速さに合わせる
+      const a = Math.min(1.2, speed / Math.max(1, f.vref * slow));
+      hz.amp += (a - hz.amp) * Math.min(1, dt * 5);
+      const wg = api.smooth(0.5, 0.85, hz.amp), wc = hz.canter ? api.smooth(0.1, 0.38, hz.amp) * (1 - wg) : 0;
+      const pushing = f.running && f.t < 1.2 && f.rem < f.home && f.fin.indexOf(i) < 0 ? 1 : 0;
+      hz.dw += (pushing - hz.dw) * Math.min(1, dt * 2.5);
+      const wgAll = hz.canter ? wg : api.smooth(0.1, 0.6, hz.amp), wd = hz.drive ? wgAll * hz.dw : 0;
+      hz.gallop.setEffectiveWeight(wgAll - wd);
+      if (hz.drive) { hz.drive.setEffectiveWeight(wd); hz.drive.time = hz.gallop.time; }
+      if (hz.canter) hz.canter.setEffectiveWeight(wc);
+      if (hz.idle) hz.idle.setEffectiveWeight(Math.max(0, 1 - wg - wc));
+      const v = hz.amp * f.vref;
+      hz.gallop.timeScale = hz.rate * Math.max(0.6, Math.min(1.3, v / STRIDE * hz.gallop.getClip().duration));
+      if (hz.drive) hz.drive.timeScale = hz.gallop.timeScale;
+      if (hz.canter) hz.canter.timeScale = hz.rate * Math.max(0.6, Math.min(1.25, v / (STRIDE * 0.55) * hz.canter.getClip().duration));
+      hz.mixer.update(dt * slow);
       hz.g.position.copy(tmp);
       hz.g.scale.setScalar(hs);
       hz.sp.scale.set(6.4 * bs, 8.8 * bs, 1);
-      hz.g.rotation.y = -Math.atan2(tmp2.z - tmp.z, tmp2.x - tmp.x);
+      hz.g.rotation.y = hz.yaw;
       if (k === 0) leadU = u;
       if (k < 3) { pack.add(tmp); pc++; }
     });
     pack.multiplyScalar(1 / Math.max(1, pc));
     // カメラ
+    // ゴール前（残り約150m）から1着が入って少しの間は、ゴール板の先の内側に据えたカメラで正面から迎える
+    if (f.t <= 0) finClock = -1;
+    if (f.fin.length && finClock < 0) finClock = f.clock;
+    const atLine = f.running && view !== 'top' && leadU > G.Dpx * (1 - 150 / data.dist) && (finClock < 0 || f.clock - finClock < 2.6);
+    if (atLine !== wasAtLine) { wasAtLine = atLine; snap = true; }
     if (view === 'top') topView();
+    else if (atLine) {
+      P3(G.Dpx + 62, -4.5, camPos); camPos.y = 15;
+      P3(G.Dpx - 30, G.lanes * 0.32, camLook); camLook.y = 9;
+    }
     else {
       // 中継カメラ：内馬場の側から先頭集団を望遠で追う（外側だとスタンドに隠れるため）。背景にスタンドが映る
       const lane = G.lanes / 2;
@@ -459,6 +562,15 @@ export async function create(stage, data, api) {
       const sc = sun.shadow.camera; sc.left = -half; sc.right = half; sc.top = half; sc.bottom = -half; sc.updateProjectionMatrix();
     }
     renderer.render(scene, camera);
+    const shown = Math.min(3, f.fin.length);
+    if (shown !== finShown) {
+      finShown = shown;
+      finEl.hidden = !shown;
+      finEl.innerHTML = shown ? '<b>ゴール！</b>' + f.fin.slice(0, 3).map((i, k) => {
+        const h = H[i], c = api.FR[h.f] || api.FR[1];
+        return '<span>' + (k + 1) + '着 <i style="background:' + c[0] + ';color:' + c[1] + '">' + h.n + '</i> ' + esc(h.name) + '</span>';
+      }).join('') : '';
+    }
     if (hudI.textContent !== f.info) hudI.textContent = f.info;
     const l = f.t > 0 ? f.line : '';
     if (hudL.textContent !== l) hudL.textContent = l;
@@ -469,7 +581,7 @@ export async function create(stage, data, api) {
     geom: () => G,
     resize,
     draw,
-    show(on) { canvas.style.display = on ? '' : 'none'; hud.style.display = on ? '' : 'none'; },
+    show(on) { canvas.style.display = on ? '' : 'none'; hud.style.display = on ? '' : 'none'; finEl.style.display = on ? '' : 'none'; },
     setView(v) { view = v === 'top' ? 'top' : 'tv'; snap = true; },
   };
 }
