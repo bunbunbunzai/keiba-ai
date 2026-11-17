@@ -1,6 +1,6 @@
 {
  "date": "20261117",
- "updated": "2026-11-17 19:12",
+ "updated": "2026-11-17 19:23",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1716,8 +1716,22 @@
     "field": 6,
     "popularity": 6
    },
-   "odds": 95.9,
+   "odds": 125.5,
    "popularity": 12
+  },
+  {
+   "race_id": "202611172218140511",
+   "results_key": "202611172218140511",
+   "venue": "金沢",
+   "race_no": 11,
+   "post_time": "20:00",
+   "number": 6,
+   "name": "ハジマリノアイズ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 3.5,
+   "popularity": 2
   },
   {
    "race_id": "202611172218140511",
@@ -1737,7 +1751,7 @@
     "field": 12,
     "popularity": 3
    },
-   "odds": 14.8,
+   "odds": 16.3,
    "popularity": 5
   },
   {
@@ -1906,8 +1920,8 @@
     "field": 14,
     "popularity": null
    },
-   "odds": 22.4,
-   "popularity": 9
+   "odds": 16.1,
+   "popularity": 7
   },
   {
    "race_id": "202611172015120212",
@@ -1927,7 +1941,7 @@
     "field": 11,
     "popularity": null
    },
-   "odds": 9.5,
+   "odds": 10.2,
    "popularity": 5
   }
  ]
