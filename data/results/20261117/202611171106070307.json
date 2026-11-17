@@ -2,7 +2,172 @@
  "source": "rakuten",
  "date": "20261117",
  "race_id": "202611171106070307",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "5",
+    "yen": 270
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "5-1",
+    "yen": 36280
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "5",
+    "yen": 170
+   },
+   {
+    "combo": "1",
+    "yen": 1340
+   },
+   {
+    "combo": "2",
+    "yen": 150
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-5",
+    "yen": 3410
+   },
+   {
+    "combo": "2-5",
+    "yen": 170
+   },
+   {
+    "combo": "1-2",
+    "yen": 2630
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-5",
+    "yen": 20100
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-2-5",
+    "yen": 10710
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "5-1-2",
+    "yen": 137020
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-5",
+    "yen": 22980
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 5,
+   "name": "コンフィアンサ",
+   "time": "50.5",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 1,
+   "number": 1,
+   "name": "タカマキスリー",
+   "time": "51.3",
+   "margin": "５",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 2,
+   "number": 2,
+   "name": "ノースプリマ",
+   "time": "51.4",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 8,
+   "name": "ブルドッグキング",
+   "time": "51.4",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 6,
+   "name": "イキザマ",
+   "time": "51.8",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 7,
+   "name": "ゴージャスレディ",
+   "time": "52.0",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 4,
+   "name": "フラメンタ",
+   "time": "52.1",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "エルプロフェッサー",
+   "time": "52.1",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 9,
+   "name": "ハヤブサアポチャン",
+   "time": "52.1",
+   "margin": "ハナ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
