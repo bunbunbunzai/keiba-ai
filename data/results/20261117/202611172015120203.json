@@ -2,7 +2,155 @@
  "source": "rakuten",
  "date": "20261117",
  "race_id": "202611172015120203",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 3,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "4",
+    "yen": 3020
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "4-2",
+    "yen": 7090
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "4",
+    "yen": 230
+   },
+   {
+    "combo": "2",
+    "yen": 100
+   },
+   {
+    "combo": "5",
+    "yen": 110
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-4",
+    "yen": 540
+   },
+   {
+    "combo": "4-5",
+    "yen": 390
+   },
+   {
+    "combo": "2-5",
+    "yen": 140
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-4-5",
+    "yen": 590
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "4-2-5",
+    "yen": 21530
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-4",
+    "yen": 3090
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 4,
+   "name": "ジューンオーシャン",
+   "time": "1:46.0",
+   "margin": "",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 2,
+   "number": 2,
+   "name": "タリスマックス",
+   "time": "1:46.4",
+   "margin": "２",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 5,
+   "name": "ギャラクシス",
+   "time": "1:47.1",
+   "margin": "３ １／２",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 3,
+   "name": "ハンデンアプローズ",
+   "time": "1:47.9",
+   "margin": "４",
+   "pos4": 6,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 8,
+   "name": "ネクターサイン",
+   "time": "1:47.9",
+   "margin": "ハナ",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 6,
+   "name": "ヤマショウレジーナ",
+   "time": "1:49.3",
+   "margin": "７",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 1,
+   "number": 1,
+   "name": "ヨスガ",
+   "time": "1:49.4",
+   "margin": "３／４",
+   "pos4": 7,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 7,
+   "name": "クロームタッチ",
+   "time": "1:50.2",
+   "margin": "４",
+   "pos4": 8,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
