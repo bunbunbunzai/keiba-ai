@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261117",
  "race_id": "202611172218140507",
- "tries": 8,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "サンシップ",
    "time": "1:30.3",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 38.5,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "エイトビートレター",
    "time": "1:30.3",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 38.7,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ルミナスフラックス",
    "time": "1:30.4",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 39.1,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "アイオラナキラ",
    "time": "1:31.1",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 39.1,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "ユナパール",
    "time": "1:31.3",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 38.5,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ノーブルジェネシス",
    "time": "1:31.4",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 38.9,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "カノアレディー",
    "time": "1:31.8",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 40.6,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ビューティーハニー",
    "time": "1:32.0",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 39.5,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "ミヤギロード",
    "time": "1:32.2",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 40.5,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "スカイトライア",
    "time": "1:33.0",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 41.5,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "ダンナイ",
    "time": "1:33.7",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 40.7,
    "popularity": null
   },
   {
@@ -198,8 +198,8 @@
    "name": "パインピーチ",
    "time": "1:33.8",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 41.7,
    "popularity": null
   }
  ]

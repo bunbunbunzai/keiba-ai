@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261117",
  "race_id": "202611172218140506",
- "tries": 8,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -77,9 +77,9 @@
    "name": "リュウノアメリカン",
    "time": "1:38.7",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 2,
+   "last3f": 39.2,
+   "popularity": 2
   },
   {
    "finish": "2",
@@ -88,9 +88,9 @@
    "name": "スターズオブサワー",
    "time": "1:38.8",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 4,
+   "last3f": 39.1,
+   "popularity": 1
   },
   {
    "finish": "3",
@@ -99,9 +99,9 @@
    "name": "ブロンドナイト",
    "time": "1:39.0",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 4,
+   "last3f": 39.2,
+   "popularity": 3
   },
   {
    "finish": "4",
@@ -110,9 +110,9 @@
    "name": "フロアガリノビール",
    "time": "1:39.4",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 1,
+   "last3f": 40.1,
+   "popularity": 4
   },
   {
    "finish": "5",
@@ -121,9 +121,9 @@
    "name": "ケーズグロリア",
    "time": "1:39.4",
    "margin": "ハナ",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 2,
+   "last3f": 40.1,
+   "popularity": 6
   },
   {
    "finish": "6",
@@ -132,9 +132,9 @@
    "name": "ハートサイン",
    "time": "1:40.4",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 8,
+   "last3f": 39.6,
+   "popularity": 10
   },
   {
    "finish": "7",
@@ -143,9 +143,9 @@
    "name": "カロヤカ",
    "time": "1:40.5",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 7,
+   "last3f": 40.2,
+   "popularity": 8
   },
   {
    "finish": "8",
@@ -154,9 +154,9 @@
    "name": "レインボーツリー",
    "time": "1:41.8",
    "margin": "６",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 11,
+   "last3f": 40.9,
+   "popularity": 5
   },
   {
    "finish": "9",
@@ -165,9 +165,9 @@
    "name": "サンエイヴェスタ",
    "time": "1:42.0",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 4,
+   "last3f": 42.5,
+   "popularity": 11
   },
   {
    "finish": "10",
@@ -176,9 +176,9 @@
    "name": "ラルテフテフ",
    "time": "1:42.6",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 8,
+   "last3f": 42.1,
+   "popularity": 7
   },
   {
    "finish": "11",
@@ -187,9 +187,9 @@
    "name": "コンヤザカ",
    "time": "1:42.6",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 8,
+   "last3f": 42.2,
+   "popularity": 9
   }
  ]
 }
