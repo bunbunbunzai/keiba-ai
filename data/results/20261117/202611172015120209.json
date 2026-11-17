@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261117",
  "race_id": "202611172015120209",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "リノカ",
    "time": "1:42.6",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 38.2,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ベルオーシャン",
    "time": "1:42.8",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 38.8,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ヒンナ",
    "time": "1:43.4",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 39.6,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "エリザベートバディ",
    "time": "1:44.0",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 39.8,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "フェスティヴハート",
    "time": "1:44.2",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 40.4,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "スズノアリマール",
    "time": "1:44.2",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 40.4,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "ディアモアー",
    "time": "1:44.6",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 10,
+   "last3f": 39.4,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "アキミューミュー",
    "time": "1:45.1",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 40.3,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "ジャストリアン",
    "time": "1:45.3",
    "margin": "１ １／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 40.9,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "ベネメレンティ",
    "time": "1:46.0",
    "margin": "３ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 40.0,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "トップエアデール",
    "time": "1:46.5",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 41.7,
    "popularity": null
   }
  ]
