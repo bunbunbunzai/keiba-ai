@@ -17,6 +17,7 @@ import {
 import { AnimationMixer } from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { clone as cloneSkinned } from 'three/addons/utils/SkeletonUtils.js';
+import { Points, ShaderMaterial, BufferAttribute } from 'three';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { PMREMGenerator } from 'three';
 
@@ -121,7 +122,12 @@ export async function create(stage, data, api) {
   const turf = data.surface === '芝';
   const grassOut = noiseCanvas('#5f9a4a', '#7fb963', '#3f7a35');
   const grassIn = noiseCanvas('#6fae55', '#8cc66e', '#4d8a3f', '#66a54e');
-  const trackC = turf ? noiseCanvas('#3f8f3d', '#5cab52', '#2c7030') : noiseCanvas('#b88a5a', '#d2a878', '#93693f');
+  // ダートの砂：乾いていると明るい灰茶、濡れるほど濃くなる（data.going = 良・稍重・重・不良。無ければ良の扱い）
+  const WET = { '稍重': 1, '重': 2, '不良': 3 }[data.going] || 0;
+  const SAND = [['#a99273', '#c2ad8f', '#8a7558'], ['#96805f', '#ad977a', '#786449'], ['#7f6a4d', '#947f63', '#63513a'], ['#6c5940', '#806c52', '#52422f']][WET];
+  const trackC = turf ? noiseCanvas('#3f8f3d', '#5cab52', '#2c7030') : noiseCanvas(SAND[0], SAND[1], SAND[2]);
+  // JRA のダートコースは芝コースの内側にある。外側に芝コースの帯を描く（地方の競馬場はダートだけ）
+  const OUTER = !turf && !G.straight && /^jra_/.test(data.id || '') ? 62 : 0;
 
   // ---------- 空・雲・遠くの山 ----------
   {
@@ -161,7 +167,7 @@ export async function create(stage, data, api) {
   const ground = new Mesh(flat(new PlaneGeometry(9000, 9000)), std('#ffffff', { map: tex(grassOut, 110) }));
   ground.position.y = -0.5; ground.receiveShadow = true;
   scene.add(ground);
-  const trackMat = std('#ffffff', { map: tex(trackC, 1 / 55), side: DoubleSide, roughness: turf ? 0.9 : 1 });
+  const trackMat = std('#ffffff', { map: tex(trackC, 1 / 55), side: DoubleSide, roughness: turf ? 0.9 : [1, 0.85, 0.65, 0.45][WET] });
   const infieldMat = std('#ffffff', { map: tex(grassIn, 1 / 90), side: DoubleSide });
   const railMat = std('#ffffff', { roughness: 0.5 });
 
@@ -216,9 +222,16 @@ export async function create(stage, data, api) {
     const inf = new Mesh(shapeOf(inner), infieldMat); inf.position.y = 0.1; inf.receiveShadow = true; scene.add(inf);
     posts(tubeAlong(stadiumPts(G.Ri - 0.5, 56), 3.4, 0.45, railMat, true), 22);
     posts(tubeAlong(stadiumPts(G.Ro + 0.5, 56), 3.4, 0.45, railMat, true), 22);
+    if (OUTER) {
+      const turfC = noiseCanvas('#3f8f3d', '#5cab52', '#2c7030');
+      const band = new Mesh(shapeOf(stadiumPts(G.Ro + OUTER, 56), stadiumPts(G.Ro + 5, 56)), std('#ffffff', { map: tex(turfC, 1 / 55), side: DoubleSide, roughness: 0.9 }));
+      band.position.y = 0.2; band.receiveShadow = true; scene.add(band);
+      posts(tubeAlong(stadiumPts(G.Ro + 4.5, 56), 3.4, 0.45, railMat, true), 22);
+      posts(tubeAlong(stadiumPts(G.Ro + OUTER + 0.5, 56), 3.4, 0.45, railMat, true), 22);
+    }
     tubeAlong(stadiumPts(G.Ri - 4.5, 56), 0.9, 1.5, hedgeMat, true); // 内柵の内側の生け垣
     // スタンド（最後の直線の外側）：観客席・屋根・柱・ガラス
-    const zs = G.cy + G.Ro - H2 + STAND_BACK, len = G.Ls * 0.9;
+    const zs = G.cy + G.Ro - H2 + OUTER + STAND_BACK, len = G.Ls * 0.9;
     const apron = new Mesh(flat(new PlaneGeometry(len * 1.25, STAND_BACK + 14)), std('#b5b3ab', { roughness: 1 }));
     apron.position.set(0, 0.05, zs - STAND_BACK / 2 + 14); apron.receiveShadow = true; scene.add(apron);
     const cc = document.createElement('canvas'); cc.width = 256; cc.height = 128;
@@ -256,8 +269,8 @@ export async function create(stage, data, api) {
     const frame = std('#20262b'), scr = new MeshBasicMaterial({ map: vt });
     // 大型ビジョンは向正面の外側に置く（内馬場に置くと、スタンド側のカメラから向正面の馬が隠れるため）
     const vis = new Mesh(new BoxGeometry(150, 44, 4), [frame, frame, frame, frame, scr, scr]);
-    vis.position.set(-G.Ls * 0.22, 34, G.cy - G.Ro - 70 - H2); scene.add(vis);
-    for (const s of [-1, 1]) { const leg = new Mesh(new BoxGeometry(5, 12, 4), std('#59616a')); leg.position.set(vis.position.x + s * 50, 6, vis.position.z); scene.add(leg); }
+    vis.position.set(-G.Ls * 0.22, 58, G.cy - G.Ro - OUTER - 70 - H2); scene.add(vis); // 高めに置いて、馬番の札と重ならないようにする
+    for (const s of [-1, 1]) { const leg = new Mesh(new BoxGeometry(5, 12, 4), std('#59616a')); leg.position.set(vis.position.x + s * 50, 18, vis.position.z); leg.scale.y = 3; scene.add(leg); }
   }
 
   // ゴール板とゴールの線（ゴールは走った長さが G.Dpx の地点）
@@ -272,17 +285,17 @@ export async function create(stage, data, api) {
     line.rotation.y = -Math.atan2(b.z - a.z, b.x - a.x);
     // 外側の柱と、コースをまたぐ横断幕
     const o2 = P3(G.Dpx, G.lanes + 0.2), i2 = P3(G.Dpx, -1.3);
-    const near = new Mesh(new CylinderGeometry(0.28, 0.28, 24, 8), std('#c8102e', { roughness: 0.4 }));
-    near.position.set(o2.x, 12, o2.z); scene.add(near);
+    const near = new Mesh(new CylinderGeometry(0.28, 0.28, 20, 8), std('#c8102e', { roughness: 0.4 }));
+    near.position.set(o2.x, 10, o2.z); scene.add(near);
     scene.add(line);
     const side = P3(G.Dpx, -1.3), out = P3(G.Dpx, G.lanes + 4);
-    const pole = new Mesh(new CylinderGeometry(0.6, 0.6, 26, 10), std('#c8102e', { roughness: 0.4 }));
-    pole.position.set(side.x, 13, side.z); pole.castShadow = true; scene.add(pole);
+    const pole = new Mesh(new CylinderGeometry(0.6, 0.6, 14, 10), std('#c8102e', { roughness: 0.4 }));
+    pole.position.set(side.x, 7, side.z); pole.castShadow = true; scene.add(pole);
     const board = new Group();
-    board.add(new Mesh(new CylinderGeometry(5.6, 5.6, 0.8, 28).rotateX(Math.PI / 2), std('#c8102e', { roughness: 0.4 })));
-    const face = new Mesh(new CylinderGeometry(4.6, 4.6, 1.0, 28).rotateX(Math.PI / 2), std('#f4f6f7', { roughness: 0.1, metalness: 0.7 }));
+    board.add(new Mesh(new CylinderGeometry(4.4, 4.4, 0.8, 28).rotateX(Math.PI / 2), std('#c8102e', { roughness: 0.4 })));
+    const face = new Mesh(new CylinderGeometry(3.6, 3.6, 1.0, 28).rotateX(Math.PI / 2), std('#f4f6f7', { roughness: 0.1, metalness: 0.7 }));
     board.add(face);
-    board.position.set(side.x, 28, side.z); board.lookAt(out.x, 28, out.z); scene.add(board);
+    board.position.set(side.x, 17, side.z); board.lookAt(out.x, 17, out.z); scene.add(board);
   }
   // 200mごとの標識（ハロン棒）
   if (!G.straight) {
@@ -326,8 +339,8 @@ export async function create(stage, data, api) {
       const x = (rand() - 0.5) * 2300, z = (rand() - 0.5) * 1500;
       const nx = Math.abs(x) - G.Ls / 2, inside = G.straight
         ? Math.abs(z - ((G.top + G.bot) / 2 - H2)) < (G.bot - G.top) / 2 + 60
-        : Math.hypot(Math.max(0, nx), z - (G.cy - H2)) < G.Ro + 45;
-      const stand = !G.straight && Math.abs(x) < G.Ls * 0.55 && z > G.cy + G.Ro - H2 && z < G.cy + G.Ro - H2 + 190;
+        : Math.hypot(Math.max(0, nx), z - (G.cy - H2)) < G.Ro + OUTER + 45;
+      const stand = !G.straight && Math.abs(x) < G.Ls * 0.55 && z > G.cy + G.Ro - H2 && z < G.cy + G.Ro - H2 + OUTER + 190;
       if (inside || stand) continue;
       const s = 0.8 + rand() * 0.9;
       o.rotation.set(0, rand() * 6, 0);
@@ -396,6 +409,7 @@ export async function create(stage, data, api) {
     const t = new CanvasTexture(c); t.colorSpace = SRGBColorSpace; return t;
   }
 
+  const rndD = api.rng(12345);
   const horses = H.map((h) => {
     const coat = COATS[Math.floor(rnd() * COATS.length)];
     const silk = SILKS[(h.n * 5 + Math.floor(rnd() * 4)) % SILKS.length], cap = (api.FR[h.f] || api.FR[1])[0];
@@ -432,17 +446,57 @@ export async function create(stage, data, api) {
   // ---------- カメラ ----------
   let view = 'tv', snap = true, lastNow = 0, shadowHalf = 0, finClock = -1, lastShot = '', camFov = 30;
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => '&#' + c.charCodeAt(0) + ';');
+  // 蹴り上げた砂（ダート）と芝のかけら。粒ごとに大きさと濃さを持たせ、古い粒から順に使い回す
+  const DUST_N = turf ? 500 : 4200;
+  const dust = (() => {
+    const pos = new Float32Array(DUST_N * 3), size = new Float32Array(DUST_N), alpha = new Float32Array(DUST_N);
+    const vel = new Float32Array(DUST_N * 3), life = new Float32Array(DUST_N), span = new Float32Array(DUST_N);
+    const g = new BufferGeometry();
+    g.setAttribute('position', new BufferAttribute(pos, 3));
+    g.setAttribute('aSize', new BufferAttribute(size, 1));
+    g.setAttribute('aAlpha', new BufferAttribute(alpha, 1));
+    const col = new Color(turf ? '#3c2f1e' : SAND[1]);
+    const mat = new ShaderMaterial({
+      transparent: true, depthWrite: false,
+      uniforms: { uColor: { value: col }, uScale: { value: 300 } },
+      vertexShader: 'attribute float aSize; attribute float aAlpha; varying float vA; uniform float uScale;\nvoid main(){ vA = aAlpha; vec4 mv = modelViewMatrix * vec4(position, 1.0); gl_PointSize = aSize * uScale / -mv.z; gl_Position = projectionMatrix * mv; }',
+      fragmentShader: 'uniform vec3 uColor; varying float vA;\nvoid main(){ float d = length(gl_PointCoord - 0.5); float a = smoothstep(0.5, ' + (turf ? '0.35' : '0.05') + ', d) * vA; if (a < 0.01) discard; gl_FragColor = vec4(uColor, a);\n#include <tonemapping_fragment>\n#include <colorspace_fragment>\n}',
+    });
+    const pts = new Points(g, mat); pts.frustumCulled = false; pts.renderOrder = 5; scene.add(pts);
+    let next = 0;
+    return {
+      mat, pts,
+      emit(x, y, z, vx, vy, vz, sz, sec) {
+        const k = next; next = (next + 1) % DUST_N;
+        pos[k * 3] = x; pos[k * 3 + 1] = y; pos[k * 3 + 2] = z;
+        vel[k * 3] = vx; vel[k * 3 + 1] = vy; vel[k * 3 + 2] = vz;
+        size[k] = sz; life[k] = sec; span[k] = sec;
+      },
+      step(dt) {
+        for (let k = 0; k < DUST_N; k++) {
+          if (life[k] <= 0) { alpha[k] = 0; continue; }
+          life[k] -= dt;
+          const u = Math.max(0, life[k] / span[k]);
+          pos[k * 3] += vel[k * 3] * dt; pos[k * 3 + 1] = Math.max(0.3, pos[k * 3 + 1] + vel[k * 3 + 1] * dt); pos[k * 3 + 2] += vel[k * 3 + 2] * dt;
+          if (turf) { vel[k * 3 + 1] -= 60 * dt; alpha[k] = u > 0.15 ? 0.9 : u * 6; }            // 芝のかけらは放物線で落ちる
+          else { vel[k * 3] *= 1 - 2.2 * dt; vel[k * 3 + 2] *= 1 - 2.2 * dt; vel[k * 3 + 1] -= 9 * dt; size[k] += 9 * dt; alpha[k] = DUST_A * u * u; } // 砂は広がりながら薄れる
+        }
+        g.attributes.position.needsUpdate = g.attributes.aSize.needsUpdate = g.attributes.aAlpha.needsUpdate = true;
+      },
+    };
+  })();
+  const DUST_A = [0.6, 0.42, 0.2, 0.1][WET]; // 濡れた馬場ほど砂ぼこりは立たない
   let slowN = 0, slowSum = 0, lite = false, lastW = 0, lastH = 0; // 動きが重い端末では影をやめて軽くする
   const camPos = new Vector3(), camLook = new Vector3();
   // ゴール用のカメラ：ゴール線を外へ延ばした先（スタンド前）。低めに構える
   const POST_CAM = (() => {
     const a = P3(G.Dpx, 0), b = P3(G.Dpx, G.lanes), out = b.clone().sub(a).normalize();
-    const p = b.clone().addScaledVector(out, STAND_BACK + 12); p.y = 13; return p;
+    const p = b.clone().addScaledVector(out, OUTER + STAND_BACK + 12); p.y = 13 + OUTER * 0.08; return p;
   })();
   // 中継のメインカメラ：ゴール板の近く、スタンド前のやぐらの上（直線コースでは外柵の外の高い位置）
   const MAIN_CAM = G.straight
     ? new Vector3(P3(G.Dpx, 0).x - 70, 62, (G.bot - H2) + 170)
-    : new Vector3(P3(G.Dpx - 40, 0).x, 36, G.cy + G.Ro - H2 + STAND_BACK + 18); // ゴール板の少し手前。低めに構えて横から見る角度にする
+    : new Vector3(P3(G.Dpx - 40, 0).x, 36, G.cy + G.Ro - H2 + OUTER + STAND_BACK + 18); // ゴール板の少し手前。低めに構えて横から見る角度にする
   function topView() {
     const vf = 30 * Math.PI / 180, hf = 2 * Math.atan(Math.tan(vf / 2) * camera.aspect);
     const half = (G.straight ? G.W * 0.5 : G.W * 0.55) + 20;
@@ -522,6 +576,17 @@ export async function create(stage, data, api) {
       if (hz.drive) hz.drive.timeScale = hz.gallop.timeScale;
       if (hz.canter) hz.canter.timeScale = hz.rate * Math.max(0.6, Math.min(1.25, v / (STRIDE * 0.55) * hz.canter.getClip().duration));
       hz.mixer.update(dt * slow);
+      // 蹴り上げ：走っている馬の後ろ脚のあたりから。ダートは毎コマ数粒、芝はときどき
+      if (hz.amp > 0.5 && dt > 0 && !lite) {
+        const c = Math.cos(hz.yaw), s = Math.sin(hz.yaw), vf = hz.amp * f.vref * slow;
+        const cnt = turf ? (rndD() < 0.18 ? 1 : 0) : (WET >= 2 ? 1 : 3);
+        for (let q = 0; q < cnt; q++) {
+          const back = 5 + rndD() * 6, side = (rndD() - 0.5) * 5;
+          const px = tmp.x - c * back + s * side, pz = tmp.z + s * back + c * side;
+          if (turf) dust.emit(px, 1, pz, c * vf * 0.25 + (rndD() - 0.5) * 8, 14 + rndD() * 16, -s * vf * 0.25 + (rndD() - 0.5) * 8, 0.3 + rndD() * 0.35, 0.6); // 芝のかけらは小さく
+          else dust.emit(px, 1 + rndD() * 2, pz, c * vf * 0.3 + (rndD() - 0.5) * 10, 7 + rndD() * 9, -s * vf * 0.3 + (rndD() - 0.5) * 10, 4.5 + rndD() * 4, 0.8 + rndD() * 0.7);
+        }
+      }
       hz.g.position.copy(tmp);
       hz.g.scale.setScalar(hs);
       hz.sp.scale.set(6.4 * bs, 8.8 * bs, 1);
@@ -590,6 +655,8 @@ export async function create(stage, data, api) {
       shadowHalf = half;
       const sc = sun.shadow.camera; sc.left = -half; sc.right = half; sc.top = half; sc.bottom = -half; sc.updateProjectionMatrix();
     }
+    dust.step(dt * slow);
+    dust.mat.uniforms.uScale.value = renderer.domElement.height / (2 * Math.tan(camera.fov * Math.PI / 360));
     renderer.render(scene, camera);
     const shown = Math.min(3, f.fin.length);
     if (shown !== finShown) {

@@ -149,8 +149,12 @@ def sim_data(p: dict, frame_of: Callable) -> dict | None:
             fr = 1
         horses.append({"n": n, "name": h.get("name") or e.get("name") or "", "f": min(8, max(1, fr)),
                        "m": mk.get(n, ""), "p": w[n], "s": 0.5 if st is None else st})
-    return {"id": str(p.get("race_id") or ""), "dist": dist, "surface": surface, "dir": turn,
+    out = {"id": str(p.get("race_id") or ""), "dist": dist, "surface": surface, "dir": turn,
             "straight": "直" in ct, "lap": lap, "home": home, "horses": horses, "result": _top3(p)}
+    going = str(r.get("track") or "").strip()
+    if going in ("良", "稍重", "重", "不良"):  # 馬場状態（分かっているレースだけ。3Dのダートの砂の色に使う）
+        out["going"] = going
+    return out
 
 
 def section(p: dict, frame_of: Callable, js_v: str, d3: str | None = None) -> str:

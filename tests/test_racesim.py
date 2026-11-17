@@ -190,3 +190,12 @@ def test_section_3d_url_only_when_given():
     start = html.index('class="simdata">') + len('class="simdata">')
     d = json.loads(html[start:html.index("</script>", start)])
     assert d["d3"] == "/racesim3d.js?v=1"
+
+
+def test_sim_data_going_only_when_known():
+    p = jra_pred()
+    assert "going" not in racesim.sim_data(p, frame_of)
+    p["_race"]["track"] = "重"
+    assert racesim.sim_data(p, frame_of)["going"] == "重"
+    p["_race"]["track"] = "晴"
+    assert "going" not in racesim.sim_data(p, frame_of)
