@@ -1,6 +1,6 @@
 {
  "date": "20261117",
- "updated": "2026-11-17 16:48",
+ "updated": "2026-11-17 16:53",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1134,20 +1134,6 @@
    "venue": "水沢",
    "race_no": 11,
    "post_time": "17:30",
-   "number": 3,
-   "name": "ディーンズリスター",
-   "types": [
-    "aitop"
-   ],
-   "odds": 5.4,
-   "popularity": 3
-  },
-  {
-   "race_id": "202611171106070311",
-   "results_key": "202611171106070311",
-   "venue": "水沢",
-   "race_no": 11,
-   "post_time": "17:30",
    "number": 4,
    "name": "サクラカゼ",
    "types": [
@@ -1224,7 +1210,7 @@
     "field": 9,
     "popularity": 9
    },
-   "odds": 27.3,
+   "odds": 32.1,
    "popularity": 8
   },
   {
@@ -1245,8 +1231,8 @@
     "field": 8,
     "popularity": 7
    },
-   "odds": 5.9,
-   "popularity": 4
+   "odds": 3.7,
+   "popularity": 1
   },
   {
    "race_id": "202611172218140507",
@@ -1266,8 +1252,8 @@
     "field": 9,
     "popularity": 5
    },
-   "odds": 7.0,
-   "popularity": 5
+   "odds": 8.9,
+   "popularity": 6
   },
   {
    "race_id": "202611172218140507",
@@ -1287,8 +1273,8 @@
     "field": 7,
     "popularity": 4
    },
-   "odds": 38.2,
-   "popularity": 10
+   "odds": 48.1,
+   "popularity": 11
   },
   {
    "race_id": "202611172015120207",
@@ -1448,8 +1434,22 @@
     "field": 7,
     "popularity": 2
    },
-   "odds": 18.3,
-   "popularity": 5
+   "odds": 17.9,
+   "popularity": 6
+  },
+  {
+   "race_id": "202611172218140508",
+   "results_key": "202611172218140508",
+   "venue": "金沢",
+   "race_no": 8,
+   "post_time": "18:15",
+   "number": 5,
+   "name": "エスティメート",
+   "types": [
+    "aitop"
+   ],
+   "odds": 4.0,
+   "popularity": 2
   },
   {
    "race_id": "202611172218140508",
@@ -1469,8 +1469,8 @@
     "field": 6,
     "popularity": 4
    },
-   "odds": 24.4,
-   "popularity": 7
+   "odds": 16.2,
+   "popularity": 5
   },
   {
    "race_id": "202611172015120208",
@@ -1490,8 +1490,8 @@
     "field": 14,
     "popularity": null
    },
-   "odds": 8.1,
-   "popularity": 4
+   "odds": 5.0,
+   "popularity": 2
   },
   {
    "race_id": "202611172015120208",
@@ -1511,8 +1511,22 @@
     "field": 13,
     "popularity": null
    },
-   "odds": 20.1,
-   "popularity": 9
+   "odds": 6.3,
+   "popularity": 4
+  },
+  {
+   "race_id": "202611172015120208",
+   "results_key": "202611172015120208",
+   "venue": "大井",
+   "race_no": 8,
+   "post_time": "18:20",
+   "number": 11,
+   "name": "コンゴウ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 13.5,
+   "popularity": 8
   },
   {
    "race_id": "202611172218140509",
