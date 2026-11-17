@@ -1,6 +1,6 @@
 {
  "date": "20261117",
- "updated": "2026-11-17 10:10",
+ "updated": "2026-11-17 10:50",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -27,7 +27,7 @@
     "popularity": 7
    },
    "odds": 45.7,
-   "popularity": 10
+   "popularity": 11
   },
   {
    "race_id": "202611171106070301",
@@ -47,8 +47,8 @@
     "field": 9,
     "popularity": 6
    },
-   "odds": 35.2,
-   "popularity": 7
+   "odds": 39.6,
+   "popularity": 10
   },
   {
    "race_id": "202611171106070301",
@@ -69,22 +69,8 @@
     "field": 7,
     "popularity": 1
    },
-   "odds": 19.0,
-   "popularity": 5
-  },
-  {
-   "race_id": "202611171106070301",
-   "results_key": "202611171106070301",
-   "venue": "水沢",
-   "race_no": 1,
-   "post_time": "11:35",
-   "number": 6,
-   "name": "ラブマニック",
-   "types": [
-    "aitop"
-   ],
-   "odds": 13.8,
-   "popularity": 3
+   "odds": 15.2,
+   "popularity": 4
   },
   {
    "race_id": "202611171106070301",
@@ -104,8 +90,8 @@
     "field": 9,
     "popularity": 4
    },
-   "odds": 14.3,
-   "popularity": 4
+   "odds": 16.5,
+   "popularity": 5
   },
   {
    "race_id": "202611171106070301",
@@ -125,8 +111,8 @@
     "field": 11,
     "popularity": 6
    },
-   "odds": 35.2,
-   "popularity": 7
+   "odds": 34.9,
+   "popularity": 8
   },
   {
    "race_id": "202611171106070302",
@@ -145,27 +131,6 @@
     "finish": 9,
     "field": 9,
     "popularity": 9
-   },
-   "odds": null,
-   "popularity": null
-  },
-  {
-   "race_id": "202611171106070303",
-   "results_key": "202611171106070303",
-   "venue": "水沢",
-   "race_no": 3,
-   "post_time": "12:45",
-   "number": 4,
-   "name": "ヴィーナスキック",
-   "types": [
-    "rebound"
-   ],
-   "gap_days": 7,
-   "last": {
-    "date": "2026-11-10",
-    "finish": 8,
-    "field": 8,
-    "popularity": 6
    },
    "odds": null,
    "popularity": null
@@ -209,8 +174,8 @@
     "field": 10,
     "popularity": 3
    },
-   "odds": null,
-   "popularity": null
+   "odds": 2.0,
+   "popularity": 1
   },
   {
    "race_id": "202611172218140501",
@@ -314,8 +279,8 @@
     "field": 12,
     "popularity": 11
    },
-   "odds": null,
-   "popularity": null
+   "odds": 24.0,
+   "popularity": 6
   },
   {
    "race_id": "202611171106070306",
@@ -335,8 +300,8 @@
     "field": 7,
     "popularity": 4
    },
-   "odds": null,
-   "popularity": null
+   "odds": 2.0,
+   "popularity": 1
   },
   {
    "race_id": "202611171106070306",
@@ -356,8 +321,29 @@
     "field": 12,
     "popularity": null
    },
-   "odds": null,
-   "popularity": null
+   "odds": 4.8,
+   "popularity": 2
+  },
+  {
+   "race_id": "202611171106070306",
+   "results_key": "202611171106070306",
+   "venue": "水沢",
+   "race_no": 6,
+   "post_time": "14:35",
+   "number": 8,
+   "name": "リュウノゴウワン",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 15,
+   "last": {
+    "date": "2026-11-02",
+    "finish": 6,
+    "field": 12,
+    "popularity": 3
+   },
+   "odds": 12.0,
+   "popularity": 5
   },
   {
    "race_id": "202611171106070306",
@@ -546,8 +532,8 @@
     "field": 10,
     "popularity": 9
    },
-   "odds": null,
-   "popularity": null
+   "odds": 12.0,
+   "popularity": 6
   },
   {
    "race_id": "202611171106070307",
@@ -588,8 +574,8 @@
     "field": 9,
     "popularity": 1
    },
-   "odds": null,
-   "popularity": null
+   "odds": 3.0,
+   "popularity": 1
   },
   {
    "race_id": "202611172218140503",
@@ -621,7 +607,8 @@
    "number": 4,
    "name": "ルミナヴァル",
    "types": [
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 13,
    "last": {
@@ -630,8 +617,29 @@
     "field": 12,
     "popularity": 1
    },
-   "odds": null,
-   "popularity": null
+   "odds": 15.2,
+   "popularity": 5
+  },
+  {
+   "race_id": "202611171106070308",
+   "results_key": "202611171106070308",
+   "venue": "水沢",
+   "race_no": 8,
+   "post_time": "15:45",
+   "number": 9,
+   "name": "ポマイカイ",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 21,
+   "last": {
+    "date": "2026-10-27",
+    "finish": 7,
+    "field": 10,
+    "popularity": 3
+   },
+   "odds": 30.4,
+   "popularity": 7
   },
   {
    "race_id": "202611172218140504",
@@ -756,8 +764,8 @@
     "field": 11,
     "popularity": 4
    },
-   "odds": null,
-   "popularity": null
+   "odds": 38.4,
+   "popularity": 7
   },
   {
    "race_id": "202611171106070309",
@@ -768,7 +776,8 @@
    "number": 8,
    "name": "エバーグリーン",
    "types": [
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 78,
    "last": {
@@ -777,8 +786,8 @@
     "field": 10,
     "popularity": 2
    },
-   "odds": null,
-   "popularity": null
+   "odds": 19.2,
+   "popularity": 6
   },
   {
    "race_id": "202611171106070309",
@@ -798,8 +807,8 @@
     "field": 11,
     "popularity": 7
    },
-   "odds": null,
-   "popularity": null
+   "odds": 3.8,
+   "popularity": 3
   },
   {
    "race_id": "202611171106070309",
@@ -819,8 +828,8 @@
     "field": 11,
     "popularity": 9
    },
-   "odds": null,
-   "popularity": null
+   "odds": 38.4,
+   "popularity": 7
   },
   {
    "race_id": "202611172015120205",
@@ -997,6 +1006,27 @@
    "venue": "水沢",
    "race_no": 11,
    "post_time": "17:30",
+   "number": 3,
+   "name": "ディーンズリスター",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 13,
+   "last": {
+    "date": "2026-11-04",
+    "finish": 7,
+    "field": 12,
+    "popularity": 1
+   },
+   "odds": 7.5,
+   "popularity": 4
+  },
+  {
+   "race_id": "202611171106070311",
+   "results_key": "202611171106070311",
+   "venue": "水沢",
+   "race_no": 11,
+   "post_time": "17:30",
    "number": 4,
    "name": "サクラカゼ",
    "types": [
@@ -1009,8 +1039,8 @@
     "field": 12,
     "popularity": 8
    },
-   "odds": null,
-   "popularity": null
+   "odds": 18.8,
+   "popularity": 6
   },
   {
    "race_id": "202611171106070311",
@@ -1052,8 +1082,8 @@
     "field": 12,
     "popularity": 6
    },
-   "odds": null,
-   "popularity": null
+   "odds": 37.6,
+   "popularity": 8
   },
   {
    "race_id": "202611172218140507",
@@ -1262,8 +1292,8 @@
     "field": 12,
     "popularity": 11
    },
-   "odds": null,
-   "popularity": null
+   "odds": 4.8,
+   "popularity": 2
   },
   {
    "race_id": "202611172218140508",
