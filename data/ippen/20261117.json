@@ -1,6 +1,6 @@
 {
  "date": "20261117",
- "updated": "2026-11-17 10:53",
+ "updated": "2026-11-17 11:18",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -145,8 +145,29 @@
     "field": 9,
     "popularity": 9
    },
-   "odds": 41.4,
+   "odds": 56.8,
    "popularity": 11
+  },
+  {
+   "race_id": "202611171106070303",
+   "results_key": "202611171106070303",
+   "venue": "水沢",
+   "race_no": 3,
+   "post_time": "12:45",
+   "number": 1,
+   "name": "ユマハム",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 13,
+   "last": {
+    "date": "2026-11-04",
+    "finish": 10,
+    "field": 11,
+    "popularity": 3
+   },
+   "odds": 19.4,
+   "popularity": 6
   },
   {
    "race_id": "202611171106070303",
@@ -166,8 +187,8 @@
     "field": 7,
     "popularity": 4
    },
-   "odds": null,
-   "popularity": null
+   "odds": 22.5,
+   "popularity": 7
   },
   {
    "race_id": "202611171106070303",
@@ -187,8 +208,8 @@
     "field": 10,
     "popularity": 3
    },
-   "odds": 2.0,
-   "popularity": 1
+   "odds": 9.1,
+   "popularity": 3
   },
   {
    "race_id": "202611172218140501",
