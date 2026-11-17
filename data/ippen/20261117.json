@@ -1,6 +1,6 @@
 {
  "date": "20261117",
- "updated": "2026-11-17 18:24",
+ "updated": "2026-11-17 18:32",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1715,8 +1715,29 @@
     "field": 6,
     "popularity": 6
    },
-   "odds": 89.7,
+   "odds": 116.7,
    "popularity": 12
+  },
+  {
+   "race_id": "202611172218140511",
+   "results_key": "202611172218140511",
+   "venue": "金沢",
+   "race_no": 11,
+   "post_time": "20:00",
+   "number": 9,
+   "name": "ベラジオクロエ",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 28,
+   "last": {
+    "date": "2026-10-20",
+    "finish": 7,
+    "field": 12,
+    "popularity": 3
+   },
+   "odds": 14.7,
+   "popularity": 5
   },
   {
    "race_id": "202611172015120211",
