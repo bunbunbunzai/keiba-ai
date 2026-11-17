@@ -1,6 +1,6 @@
 {
  "date": "20261117",
- "updated": "2026-11-17 15:18",
+ "updated": "2026-11-17 15:29",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1038,7 +1038,8 @@
    "number": 6,
    "name": "タイセイアダマス",
    "types": [
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 13,
    "last": {
@@ -1047,8 +1048,8 @@
     "field": 12,
     "popularity": 3
    },
-   "odds": null,
-   "popularity": null
+   "odds": 26.8,
+   "popularity": 6
   },
   {
    "race_id": "202611172218140506",

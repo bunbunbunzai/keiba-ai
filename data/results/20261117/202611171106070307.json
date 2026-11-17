@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261117",
  "race_id": "202611171106070307",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -77,7 +77,7 @@
    "name": "コンフィアンサ",
    "time": "50.5",
    "margin": "",
-   "pos4": null,
+   "pos4": 1,
    "last3f": null,
    "popularity": null
   },
@@ -88,7 +88,7 @@
    "name": "タカマキスリー",
    "time": "51.3",
    "margin": "５",
-   "pos4": null,
+   "pos4": 5,
    "last3f": null,
    "popularity": null
   },
@@ -99,7 +99,7 @@
    "name": "ノースプリマ",
    "time": "51.4",
    "margin": "１／２",
-   "pos4": null,
+   "pos4": 7,
    "last3f": null,
    "popularity": null
   },
@@ -110,7 +110,7 @@
    "name": "ブルドッグキング",
    "time": "51.4",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 2,
    "last3f": null,
    "popularity": null
   },
@@ -121,7 +121,7 @@
    "name": "イキザマ",
    "time": "51.8",
    "margin": "２ １／２",
-   "pos4": null,
+   "pos4": 3,
    "last3f": null,
    "popularity": null
   },
@@ -132,7 +132,7 @@
    "name": "ゴージャスレディ",
    "time": "52.0",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 4,
    "last3f": null,
    "popularity": null
   },
@@ -143,7 +143,7 @@
    "name": "フラメンタ",
    "time": "52.1",
    "margin": "１／２",
-   "pos4": null,
+   "pos4": 6,
    "last3f": null,
    "popularity": null
   },
@@ -154,7 +154,7 @@
    "name": "エルプロフェッサー",
    "time": "52.1",
    "margin": "アタマ",
-   "pos4": null,
+   "pos4": 7,
    "last3f": null,
    "popularity": null
   },
@@ -165,7 +165,7 @@
    "name": "ハヤブサアポチャン",
    "time": "52.1",
    "margin": "ハナ",
-   "pos4": null,
+   "pos4": 9,
    "last3f": null,
    "popularity": null
   }
