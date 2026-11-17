@@ -353,9 +353,11 @@ export async function create(stage, data, api) {
   const MODEL_SCALE = 8.2; // モデルはメートル単位。コースの縮尺（1馬身≒17）に合わせる
   const gltf = await new GLTFLoader().loadAsync(new URL('racehorse.glb' + new URL(import.meta.url).search, import.meta.url).href);
   const clip = (name) => gltf.animations.find((a) => a.name === name);
+  let clothHasUV = false;
   // ゼッケン：モデルに UV が無いので、左右の面それぞれで数字が正しく読めるように UV を作る
   gltf.scene.traverse((o) => {
     if (!o.isMesh || !o.material || o.material.name !== 'SaddleCloth') return;
+    if (o.geometry.getAttribute('uv')) { clothHasUV = true; return; }
     const g = o.geometry, p = g.getAttribute('position'), nr = g.getAttribute('normal');
     // 横を向いた面（左右の布の面）だけで範囲を測る。帯など他の部分が混ざると数字の位置がずれるため
     let x0 = Infinity, x1 = -Infinity, y0 = Infinity, y1 = -Infinity;
@@ -376,12 +378,14 @@ export async function create(stage, data, api) {
   const rnd = api.rng(api.hashStr((data.id || '') + 'horses'));
 
   function clothTex(h) {
-    const c = document.createElement('canvas'); c.width = 128; c.height = 96;
+    const c = document.createElement('canvas'); c.width = 160; c.height = 104;
     const x = c.getContext('2d');
-    x.fillStyle = '#f6f6f3'; x.fillRect(0, 0, 128, 96);
-    x.fillStyle = '#111111'; x.font = '700 64px sans-serif'; x.textAlign = 'center'; x.textBaseline = 'middle';
-    x.fillText(String(h.n), 64, 52);
-    const t = new CanvasTexture(c); t.colorSpace = SRGBColorSpace; t.anisotropy = maxAniso; return t;
+    x.fillStyle = '#f6f6f3'; x.fillRect(0, 0, 160, 104);
+    x.fillStyle = '#111111'; x.font = '700 78px sans-serif'; x.textAlign = 'center'; x.textBaseline = 'middle';
+    x.fillText(String(h.n), 80, 56);
+    const t = new CanvasTexture(c); t.colorSpace = SRGBColorSpace; t.anisotropy = maxAniso;
+    if (clothHasUV) t.flipY = false; // glTF の UV は上が 0
+    return t;
   }
   function badgeTex(h, honme) {
     const c = document.createElement('canvas'); c.width = 128; c.height = 176;
@@ -409,7 +413,7 @@ export async function create(stage, data, api) {
       if (!o.isMesh) return;
       o.castShadow = true; o.frustumCulled = false;
       const m = o.material.clone(); o.material = m;
-      if (HORSE_PARTS[m.name]) { m.envMap = coatEnv; m.envMapIntensity = 0.28; }
+      if (HORSE_PARTS[m.name]) { m.envMap = coatEnv; m.envMapIntensity = 0.28; if (m.normalMap) m.normalScale.set(0.45, 0.45); }
       else m.roughness = Math.max(m.roughness, 0.6);
       if (paintBy[m.name]) m.color.set(paintBy[m.name]);
       if (m.name === 'Markings' && !marks) m.color.set(coat.body);
@@ -421,12 +425,14 @@ export async function create(stage, data, api) {
     const canter = clip('Canter_InPlace') ? mixer.clipAction(clip('Canter_InPlace')) : null;
     gallop.play(); gallop.time = rnd() * gallop.getClip().duration; gallop.setEffectiveWeight(0);
     if (canter) { canter.play(); canter.time = rnd() * canter.getClip().duration; canter.setEffectiveWeight(0); }
+    const drive = clip('Drive_InPlace') ? mixer.clipAction(clip('Drive_InPlace')) : null;
+    if (drive) { drive.play(); drive.time = gallop.time; drive.setEffectiveWeight(0); }
     if (idle) { idle.play(); idle.time = rnd() * 2; idle.setEffectiveWeight(1); }
     mixer.update(0);
     const sp = new Sprite(new SpriteMaterial({ map: badgeTex(h, h.m === '◎'), depthTest: false, transparent: true }));
     sp.scale.set(6.4, 8.8, 1); sp.position.y = 26; sp.renderOrder = 10; g.add(sp);
     scene.add(g);
-    return { g, sp, model, mixer, gallop, canter, idle, rate: 0.97 + rnd() * 0.06, prev: null, amp: 0, yaw: 0, roll: 0 };
+    return { g, sp, model, mixer, gallop, canter, idle, drive, dw: 0, rate: 0.97 + rnd() * 0.06, prev: null, amp: 0, yaw: 0, roll: 0 };
   });
 
   // ---------- カメラ ----------
@@ -501,11 +507,16 @@ export async function create(stage, data, api) {
       const a = Math.min(1.2, speed / Math.max(1, f.vref * slow));
       hz.amp += (a - hz.amp) * Math.min(1, dt * 5);
       const wg = api.smooth(0.5, 0.85, hz.amp), wc = hz.canter ? api.smooth(0.1, 0.38, hz.amp) * (1 - wg) : 0;
-      hz.gallop.setEffectiveWeight(hz.canter ? wg : api.smooth(0.1, 0.6, hz.amp));
+      const pushing = f.running && f.t < 1.2 && f.rem < f.home && f.fin.indexOf(i) < 0 ? 1 : 0;
+      hz.dw += (pushing - hz.dw) * Math.min(1, dt * 2.5);
+      const wgAll = hz.canter ? wg : api.smooth(0.1, 0.6, hz.amp), wd = hz.drive ? wgAll * hz.dw : 0;
+      hz.gallop.setEffectiveWeight(wgAll - wd);
+      if (hz.drive) { hz.drive.setEffectiveWeight(wd); hz.drive.time = hz.gallop.time; }
       if (hz.canter) hz.canter.setEffectiveWeight(wc);
       if (hz.idle) hz.idle.setEffectiveWeight(Math.max(0, 1 - wg - wc));
       const v = hz.amp * f.vref;
       hz.gallop.timeScale = hz.rate * Math.max(0.6, Math.min(1.3, v / STRIDE * hz.gallop.getClip().duration));
+      if (hz.drive) hz.drive.timeScale = hz.gallop.timeScale;
       if (hz.canter) hz.canter.timeScale = hz.rate * Math.max(0.6, Math.min(1.25, v / (STRIDE * 0.55) * hz.canter.getClip().duration));
       hz.mixer.update(dt * slow);
       hz.g.position.copy(tmp);

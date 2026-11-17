@@ -400,7 +400,8 @@
       order = order || orderOf(prog);
       var h = hud(prog, order);
       R.draw({ prog: prog, order: order, lane: st.lane, t: st.t, clock: st.clock, hon: hon, info: h.info, line: h.line,
-        running: !!(raf || cool), fin: st.fin, vref: G().Dpx / Tsec, slow: raf ? (st.slow || 1) : 1 });
+        running: !!(raf || cool), fin: st.fin, vref: G().Dpx / Tsec, slow: raf ? (st.slow || 1) : 1,
+        rem: (1 - ease(st.t)) * data.dist, home: P.home });
       return h;
     }
 
