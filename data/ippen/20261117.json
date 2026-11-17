@@ -1,6 +1,6 @@
 {
  "date": "20261117",
- "updated": "2026-11-17 13:27",
+ "updated": "2026-11-17 13:33",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -250,7 +250,7 @@
     "field": 9,
     "popularity": 8
    },
-   "odds": 79.9,
+   "odds": 106.9,
    "popularity": 9
   },
   {
@@ -271,8 +271,8 @@
     "field": 12,
     "popularity": 11
    },
-   "odds": 3.2,
-   "popularity": 2
+   "odds": 3.9,
+   "popularity": 3
   },
   {
    "race_id": "202611172218140501",
@@ -292,7 +292,7 @@
     "field": 10,
     "popularity": 3
    },
-   "odds": 4.4,
+   "odds": 5.5,
    "popularity": 4
   },
   {
@@ -357,27 +357,6 @@
    "venue": "水沢",
    "race_no": 6,
    "post_time": "14:35",
-   "number": 2,
-   "name": "タイセイアルーア",
-   "types": [
-    "letdown"
-   ],
-   "gap_days": 15,
-   "last": {
-    "date": "2026-11-02",
-    "finish": 7,
-    "field": 12,
-    "popularity": 1
-   },
-   "odds": 9.3,
-   "popularity": 5
-  },
-  {
-   "race_id": "202611171106070306",
-   "results_key": "202611171106070306",
-   "venue": "水沢",
-   "race_no": 6,
-   "post_time": "14:35",
    "number": 3,
    "name": "レディーショコラ",
    "types": [
@@ -390,7 +369,7 @@
     "field": 12,
     "popularity": 11
    },
-   "odds": 31.6,
+   "odds": 28.0,
    "popularity": 10
   },
   {
@@ -411,7 +390,7 @@
     "field": 7,
     "popularity": 4
    },
-   "odds": 6.8,
+   "odds": 6.4,
    "popularity": 3
   },
   {
@@ -432,7 +411,7 @@
     "field": 12,
     "popularity": null
    },
-   "odds": 2.8,
+   "odds": 3.1,
    "popularity": 1
   },
   {
@@ -453,8 +432,8 @@
     "field": 12,
     "popularity": 3
    },
-   "odds": 8.0,
-   "popularity": 4
+   "odds": 9.0,
+   "popularity": 5
   },
   {
    "race_id": "202611171106070306",
@@ -474,7 +453,7 @@
     "field": 12,
     "popularity": 9
    },
-   "odds": 15.2,
+   "odds": 19.0,
    "popularity": 9
   },
   {
