@@ -2,7 +2,183 @@
  "source": "rakuten",
  "date": "20261117",
  "race_id": "202611171106070308",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 3,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "9",
+    "yen": 190
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "9-2",
+    "yen": 1670
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "9",
+    "yen": 160
+   },
+   {
+    "combo": "2",
+    "yen": 340
+   },
+   {
+    "combo": "4",
+    "yen": 220
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-9",
+    "yen": 570
+   },
+   {
+    "combo": "4-9",
+    "yen": 500
+   },
+   {
+    "combo": "2-4",
+    "yen": 1410
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-8",
+    "yen": 1000
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-4-9",
+    "yen": 4800
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "9-2-4",
+    "yen": 25110
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-9",
+    "yen": 1440
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 9,
+   "name": "ポマイカイ",
+   "time": "50.1",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 2,
+   "number": 2,
+   "name": "コスモタラゴン",
+   "time": "50.7",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "ルミナヴァル",
+   "time": "51.0",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 3,
+   "name": "アースアワー",
+   "time": "51.0",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 6,
+   "name": "エイシンビアビア",
+   "time": "51.2",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 10,
+   "name": "ストームサージ",
+   "time": "51.3",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 5,
+   "name": "イテマエダセン",
+   "time": "51.4",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 7,
+   "name": "ソレア",
+   "time": "51.6",
+   "margin": "１ １／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 1,
+   "number": 1,
+   "name": "オスカーブレイン",
+   "time": "51.7",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 8,
+   "name": "キタノロワーズ",
+   "time": "52.0",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
