@@ -272,6 +272,8 @@ export async function create(stage, data, api) {
     line.rotation.y = -Math.atan2(b.z - a.z, b.x - a.x);
     // 外側の柱と、コースをまたぐ横断幕
     const o2 = P3(G.Dpx, G.lanes + 0.2), i2 = P3(G.Dpx, -1.3);
+    const near = new Mesh(new CylinderGeometry(0.28, 0.28, 24, 8), std('#c8102e', { roughness: 0.4 }));
+    near.position.set(o2.x, 12, o2.z); scene.add(near);
     scene.add(line);
     const side = P3(G.Dpx, -1.3), out = P3(G.Dpx, G.lanes + 4);
     const pole = new Mesh(new CylinderGeometry(0.6, 0.6, 26, 10), std('#c8102e', { roughness: 0.4 }));
@@ -432,6 +434,11 @@ export async function create(stage, data, api) {
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => '&#' + c.charCodeAt(0) + ';');
   let slowN = 0, slowSum = 0, lite = false, lastW = 0, lastH = 0; // 動きが重い端末では影をやめて軽くする
   const camPos = new Vector3(), camLook = new Vector3();
+  // ゴール用のカメラ：ゴール線を外へ延ばした先（スタンド前）。低めに構える
+  const POST_CAM = (() => {
+    const a = P3(G.Dpx, 0), b = P3(G.Dpx, G.lanes), out = b.clone().sub(a).normalize();
+    const p = b.clone().addScaledVector(out, STAND_BACK + 12); p.y = 13; return p;
+  })();
   // 中継のメインカメラ：ゴール板の近く、スタンド前のやぐらの上（直線コースでは外柵の外の高い位置）
   const MAIN_CAM = G.straight
     ? new Vector3(P3(G.Dpx, 0).x - 70, 62, (G.bot - H2) + 170)
@@ -530,9 +537,11 @@ export async function create(stage, data, api) {
     if (f.t <= 0) finClock = -1;
     if (f.fin.length && finClock < 0) finClock = f.clock;
     const nearLine = f.running && leadU > G.Dpx * (1 - 150 / data.dist) && (finClock < 0 || f.clock - finClock < 2.6);
+    // 中継のゴール：残り約80mから1着が入って少しの間は、ゴール線の真横に据えたカメラに切り替える（カメラは振らない）
+    const atPost = f.running && leadU > G.Dpx * (1 - 80 / data.dist) && (finClock < 0 || f.clock - finClock < 2.4);
     let shot = 'top', fov = 30;
     if (view === 'chase') shot = nearLine ? 'line' : 'chase';
-    else if (view !== 'top') shot = f.t < 0.03 ? 'gate' : 'main';
+    else if (view !== 'top') shot = f.t < 0.03 ? 'gate' : atPost ? 'post' : 'main';
     if (shot !== lastShot) { lastShot = shot; snap = true; }
     if (shot === 'top') topView();
     else if (shot === 'gate') {
@@ -548,6 +557,12 @@ export async function create(stage, data, api) {
       const dist = camPos.distanceTo(camLook), half = a.distanceTo(b) / 2 + (nearLine ? 34 : 48);
       const vf = 2 * Math.atan(Math.tan(Math.atan(half / dist)) / camera.aspect) * 180 / Math.PI;
       fov = Math.max(4.5, Math.min(38, Math.max(vf, 2 * Math.atan(34 / dist) * 180 / Math.PI)));
+    } else if (shot === 'post') {
+      // ゴール線をそのまま外へ延ばした先から、線に沿って真横に見る。手前と奥の柱が重なった所がゴール
+      camPos.copy(POST_CAM);
+      P3(G.Dpx, G.lanes * 0.45, camLook); camLook.y = 10;
+      const dist = camPos.distanceTo(camLook);
+      fov = Math.max(14, Math.min(40, 2 * Math.atan(Math.tan(Math.atan(44 / dist)) / camera.aspect) * 180 / Math.PI)); // 柱の左右に2馬身ずつほど
     } else if (shot === 'line') {
       P3(G.Dpx + 62, -4.5, camPos); camPos.y = 15;
       P3(G.Dpx - 30, G.lanes * 0.32, camLook); camLook.y = 9;
@@ -558,7 +573,7 @@ export async function create(stage, data, api) {
       camPos.copy(pack).addScaledVector(inward, dist).addScaledVector(tan, 16); camPos.y = 30;
       camLook.copy(pack).addScaledVector(tan, -15); camLook.y = 12;
     }
-    if (snap || !f.running) { camera.position.copy(camPos); camera.userData.look = camLook.clone(); camFov = fov; snap = false; }
+    if (snap || !f.running || shot === 'post') { camera.position.copy(camPos); camera.userData.look = camLook.clone(); camFov = fov; snap = false; }
     else {
       const k = 1 - Math.exp(-dt * (shot === 'main' ? 2.4 : 3.2));
       camera.position.lerp(camPos, k);
