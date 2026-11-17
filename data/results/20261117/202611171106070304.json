@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261117",
  "race_id": "202611171106070304",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 6,
+   "name": "パノラマステージ",
+   "time": "1:28.0",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 3,
+   "number": 3,
+   "name": "エコロアビス",
+   "time": "1:29.3",
+   "margin": "８",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 12,
+   "name": "サンエイキャノン",
+   "time": "1:29.9",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 4,
+   "name": "エムティトップ",
+   "time": "1:30.0",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 7,
+   "name": "ファイヤサラマンダ",
+   "time": "1:30.0",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 8,
+   "name": "ゴールドオリス",
+   "time": "1:30.4",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 5,
+   "name": "テンクウノヤマジロ",
+   "time": "1:30.4",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 11,
+   "name": "カンフーヒーロー",
+   "time": "1:30.4",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 1,
+   "number": 1,
+   "name": "シンデレラカラー",
+   "time": "1:30.6",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 10,
+   "name": "ニシノトマラナイ",
+   "time": "1:31.3",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 7,
+   "number": 9,
+   "name": "エバーアリエル",
+   "time": "1:32.0",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 2,
+   "number": 2,
+   "name": "ブルークレスト",
+   "time": "1:43.6",
+   "margin": "大差",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
