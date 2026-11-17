@@ -507,7 +507,7 @@
     if (data.d3 && webglOK()) {
       var views = document.createElement('div');
       views.className = 'rsim-views'; views.hidden = true; views.setAttribute('role', 'group'); views.setAttribute('aria-label', '見え方');
-      views.innerHTML = '<button type="button" data-v="tv">中継カメラ</button><button type="button" data-v="top">上から</button><button type="button" data-v="2d">2D</button>';
+      views.innerHTML = '<button type="button" data-v="tv">中継</button><button type="button" data-v="chase">並走</button><button type="button" data-v="top">上から</button><button type="button" data-v="2d">2D</button>';
       card.querySelector('.rsim-ctl').appendChild(views);
       var cur = 'tv';
       var use = function (v) {

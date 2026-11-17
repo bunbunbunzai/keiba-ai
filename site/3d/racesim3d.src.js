@@ -196,6 +196,7 @@ export async function create(stage, data, api) {
     }
     scene.add(im);
   }
+  const STAND_BACK = 60; // コースの外柵からスタンドまでの空き
   const hedgeMat = std('#3f8a3d');
 
   if (G.straight) {
@@ -217,7 +218,9 @@ export async function create(stage, data, api) {
     posts(tubeAlong(stadiumPts(G.Ro + 0.5, 56), 3.4, 0.45, railMat, true), 22);
     tubeAlong(stadiumPts(G.Ri - 4.5, 56), 0.9, 1.5, hedgeMat, true); // 内柵の内側の生け垣
     // スタンド（最後の直線の外側）：観客席・屋根・柱・ガラス
-    const zs = G.cy + G.Ro - H2, len = G.Ls * 0.9;
+    const zs = G.cy + G.Ro - H2 + STAND_BACK, len = G.Ls * 0.9;
+    const apron = new Mesh(flat(new PlaneGeometry(len * 1.25, STAND_BACK + 14)), std('#b5b3ab', { roughness: 1 }));
+    apron.position.set(0, 0.05, zs - STAND_BACK / 2 + 14); apron.receiveShadow = true; scene.add(apron);
     const cc = document.createElement('canvas'); cc.width = 256; cc.height = 128;
     const cx = cc.getContext('2d');
     cx.fillStyle = '#3b4250'; cx.fillRect(0, 0, 256, 128);
@@ -251,9 +254,10 @@ export async function create(stage, data, api) {
     vx.fillText(data.dist + 'm ' + (turf ? '芝' : 'ダート') + '  ' + H.length + '頭', 256, 122);
     const vt = new CanvasTexture(vc); vt.colorSpace = SRGBColorSpace; vt.anisotropy = maxAniso;
     const frame = std('#20262b'), scr = new MeshBasicMaterial({ map: vt });
-    const vis = new Mesh(new BoxGeometry(120, 38, 4), [frame, frame, frame, frame, scr, scr]);
-    vis.position.set(0, 30, G.cy - G.Ri * 0.15 - H2); scene.add(vis);
-    for (const s of [-1, 1]) { const leg = new Mesh(new BoxGeometry(5, 12, 4), std('#59616a')); leg.position.set(s * 40, 6, vis.position.z); scene.add(leg); }
+    // 大型ビジョンは向正面の外側に置く（内馬場に置くと、スタンド側のカメラから向正面の馬が隠れるため）
+    const vis = new Mesh(new BoxGeometry(150, 44, 4), [frame, frame, frame, frame, scr, scr]);
+    vis.position.set(-G.Ls * 0.22, 34, G.cy - G.Ro - 70 - H2); scene.add(vis);
+    for (const s of [-1, 1]) { const leg = new Mesh(new BoxGeometry(5, 12, 4), std('#59616a')); leg.position.set(vis.position.x + s * 50, 6, vis.position.z); scene.add(leg); }
   }
 
   // ゴール板とゴールの線（ゴールは走った長さが G.Dpx の地点）
@@ -268,18 +272,6 @@ export async function create(stage, data, api) {
     line.rotation.y = -Math.atan2(b.z - a.z, b.x - a.x);
     // 外側の柱と、コースをまたぐ横断幕
     const o2 = P3(G.Dpx, G.lanes + 0.2), i2 = P3(G.Dpx, -1.3);
-    const p2 = new Mesh(new CylinderGeometry(0.6, 0.6, 34, 10), std('#c8102e', { roughness: 0.4 })); p2.position.set(o2.x, 17, o2.z); scene.add(p2);
-    const p3 = new Mesh(new CylinderGeometry(0.6, 0.6, 8, 10), std('#c8102e', { roughness: 0.4 })); p3.position.set(i2.x, 30, i2.z); scene.add(p3);
-    const bc = document.createElement('canvas'); bc.width = 512; bc.height = 48;
-    const bx = bc.getContext('2d');
-    bx.fillStyle = '#c8102e'; bx.fillRect(0, 0, 512, 48);
-    bx.fillStyle = '#ffffff'; bx.font = '700 34px sans-serif'; bx.textAlign = 'center'; bx.textBaseline = 'middle'; bx.fillText('GOAL', 256, 26);
-    const bt = new CanvasTexture(bc); bt.colorSpace = SRGBColorSpace;
-    const bm = new MeshBasicMaterial({ map: bt }), red = new MeshBasicMaterial({ color: '#c8102e' });
-    const banner = new Mesh(new BoxGeometry(i2.distanceTo(o2), 5, 0.6), [red, red, red, red, bm, bm]);
-    banner.position.copy(i2).add(o2).multiplyScalar(0.5); banner.position.y = 31.5;
-    banner.rotation.y = -Math.atan2(o2.z - i2.z, o2.x - i2.x);
-    scene.add(banner);
     scene.add(line);
     const side = P3(G.Dpx, -1.3), out = P3(G.Dpx, G.lanes + 4);
     const pole = new Mesh(new CylinderGeometry(0.6, 0.6, 26, 10), std('#c8102e', { roughness: 0.4 }));
@@ -333,7 +325,7 @@ export async function create(stage, data, api) {
       const nx = Math.abs(x) - G.Ls / 2, inside = G.straight
         ? Math.abs(z - ((G.top + G.bot) / 2 - H2)) < (G.bot - G.top) / 2 + 60
         : Math.hypot(Math.max(0, nx), z - (G.cy - H2)) < G.Ro + 45;
-      const stand = !G.straight && Math.abs(x) < G.Ls * 0.55 && z > G.cy + G.Ro - H2 && z < G.cy + G.Ro - H2 + 110;
+      const stand = !G.straight && Math.abs(x) < G.Ls * 0.55 && z > G.cy + G.Ro - H2 && z < G.cy + G.Ro - H2 + 190;
       if (inside || stand) continue;
       const s = 0.8 + rand() * 0.9;
       o.rotation.set(0, rand() * 6, 0);
@@ -436,12 +428,16 @@ export async function create(stage, data, api) {
   });
 
   // ---------- カメラ ----------
-  let view = 'tv', snap = true, lastNow = 0, shadowHalf = 0, finClock = -1, wasAtLine = false;
+  let view = 'tv', snap = true, lastNow = 0, shadowHalf = 0, finClock = -1, lastShot = '', camFov = 30;
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => '&#' + c.charCodeAt(0) + ';');
   let slowN = 0, slowSum = 0, lite = false, lastW = 0, lastH = 0; // 動きが重い端末では影をやめて軽くする
   const camPos = new Vector3(), camLook = new Vector3();
+  // 中継のメインカメラ：ゴール板の近く、スタンド前のやぐらの上（直線コースでは外柵の外の高い位置）
+  const MAIN_CAM = G.straight
+    ? new Vector3(P3(G.Dpx, 0).x - 70, 62, (G.bot - H2) + 170)
+    : new Vector3(P3(G.Dpx - 40, 0).x, 36, G.cy + G.Ro - H2 + STAND_BACK + 18); // ゴール板の少し手前。低めに構えて横から見る角度にする
   function topView() {
-    const vf = camera.fov * Math.PI / 180, hf = 2 * Math.atan(Math.tan(vf / 2) * camera.aspect);
+    const vf = 30 * Math.PI / 180, hf = 2 * Math.atan(Math.tan(vf / 2) * camera.aspect);
     const half = (G.straight ? G.W * 0.5 : G.W * 0.55) + 20;
     const d = Math.max(half / Math.tan(hf / 2), (G.H * 0.62) / Math.tan(vf / 2)) * 1.05;
     const el = G.straight ? 0.9 : 0.95;
@@ -528,30 +524,48 @@ export async function create(stage, data, api) {
     });
     pack.multiplyScalar(1 / Math.max(1, pc));
     // カメラ
-    // ゴール前（残り約150m）から1着が入って少しの間は、ゴール板の先の内側に据えたカメラで正面から迎える
+    // カメラの切り替え（テレビ中継と同じく、据え置きのカメラを振って撮る。切り替えは一瞬）
+    //  中継：ゲート横のカメラ → スタンド前の高い位置のカメラ（望遠で馬群を追い、ゴール前は先頭集団に寄る）
+    //  並走：内馬場の側を馬群と一緒に動くカメラ。ゴール前はゴール板の先から正面で迎える
     if (f.t <= 0) finClock = -1;
     if (f.fin.length && finClock < 0) finClock = f.clock;
-    const atLine = f.running && view !== 'top' && leadU > G.Dpx * (1 - 150 / data.dist) && (finClock < 0 || f.clock - finClock < 2.6);
-    if (atLine !== wasAtLine) { wasAtLine = atLine; snap = true; }
-    if (view === 'top') topView();
-    else if (atLine) {
+    const nearLine = f.running && leadU > G.Dpx * (1 - 150 / data.dist) && (finClock < 0 || f.clock - finClock < 2.6);
+    let shot = 'top', fov = 30;
+    if (view === 'chase') shot = nearLine ? 'line' : 'chase';
+    else if (view !== 'top') shot = f.t < 0.03 ? 'gate' : 'main';
+    if (shot !== lastShot) { lastShot = shot; snap = true; }
+    if (shot === 'top') topView();
+    else if (shot === 'gate') {
+      // ゲートの少し先、外柵の外から振り返って撮る。ゲートが開くと馬がこちらへ飛び出してくる
+      P3(46, G.lanes + 2.2, camPos); camPos.y = 9;
+      P3(-4, G.lanes * 0.42, camLook); camLook.y = 9;
+      fov = 34;
+    } else if (shot === 'main') {
+      camPos.copy(MAIN_CAM);
+      // 先頭から7番手（ゴール前は4番手）までが画面に収まるように、向きと望遠の度合いを決める
+      const a = horses[f.order[0]].prev, b = horses[f.order[Math.min(f.order.length - 1, nearLine ? 3 : 6)]].prev;
+      camLook.copy(a).add(b).multiplyScalar(0.5); camLook.y = 7;
+      const dist = camPos.distanceTo(camLook), half = a.distanceTo(b) / 2 + (nearLine ? 34 : 48);
+      const vf = 2 * Math.atan(Math.tan(Math.atan(half / dist)) / camera.aspect) * 180 / Math.PI;
+      fov = Math.max(4.5, Math.min(38, Math.max(vf, 2 * Math.atan(34 / dist) * 180 / Math.PI)));
+    } else if (shot === 'line') {
       P3(G.Dpx + 62, -4.5, camPos); camPos.y = 15;
       P3(G.Dpx - 30, G.lanes * 0.32, camLook); camLook.y = 9;
-    }
-    else {
-      // 中継カメラ：内馬場の側から先頭集団を望遠で追う（外側だとスタンドに隠れるため）。背景にスタンドが映る
+    } else {
       const lane = G.lanes / 2;
       const p = P3(leadU, lane), inward = p.clone().sub(P3(leadU, lane + 1)).normalize(), tan = P3(leadU + 3, lane).sub(p).normalize();
       const dist = camera.aspect < 1.4 ? 150 : 124;
       camPos.copy(pack).addScaledVector(inward, dist).addScaledVector(tan, 16); camPos.y = 30;
       camLook.copy(pack).addScaledVector(tan, -15); camLook.y = 12;
     }
-    if (snap || !f.running) { camera.position.copy(camPos); camera.userData.look = camLook.clone(); snap = false; }
+    if (snap || !f.running) { camera.position.copy(camPos); camera.userData.look = camLook.clone(); camFov = fov; snap = false; }
     else {
-      const k = 1 - Math.exp(-dt * 3.2);
+      const k = 1 - Math.exp(-dt * (shot === 'main' ? 2.4 : 3.2));
       camera.position.lerp(camPos, k);
       camera.userData.look.lerp(camLook, k);
+      camFov += (fov - camFov) * (1 - Math.exp(-dt * 1.6)); // 寄り引きはゆっくり
     }
+    if (Math.abs(camera.fov - camFov) > 0.01) { camera.fov = camFov; camera.updateProjectionMatrix(); }
     camera.lookAt(camera.userData.look);
     // 影：見えている範囲にだけ影の地図を当てる
     const half = big ? 820 : 210, center = big ? tmp.set(0, 0, 0) : camera.userData.look;
@@ -582,6 +596,6 @@ export async function create(stage, data, api) {
     resize,
     draw,
     show(on) { canvas.style.display = on ? '' : 'none'; hud.style.display = on ? '' : 'none'; finEl.style.display = on ? '' : 'none'; },
-    setView(v) { view = v === 'top' ? 'top' : 'tv'; snap = true; },
+    setView(v) { view = v === 'top' || v === 'chase' ? v : 'tv'; snap = true; },
   };
 }
