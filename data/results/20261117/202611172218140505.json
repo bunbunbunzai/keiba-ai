@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261117",
  "race_id": "202611172218140505",
- "tries": 5,
+ "tries": 6,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "ルナカカオ",
    "time": "1:31.0",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 38.9,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "エースレイジング",
    "time": "1:31.7",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 39.3,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ハガネ",
    "time": "1:32.4",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 39.8,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "トップタルマエ",
    "time": "1:32.6",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 38.9,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "ハクサンアンタレス",
    "time": "1:32.8",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 39.4,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ラストヨンマル",
    "time": "1:33.1",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 39.5,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "ミテクレコノアシ",
    "time": "1:33.4",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 41.1,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "マークオブゾロ",
    "time": "1:34.5",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 41.5,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "リプレット",
    "time": "1:34.5",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 41.2,
    "popularity": null
   }
  ]
