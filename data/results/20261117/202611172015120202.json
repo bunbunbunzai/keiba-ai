@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261117",
  "race_id": "202611172015120202",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,171 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 15,
+   "name": "ナックリーガル",
+   "time": "1:16.6",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 1,
+   "number": 1,
+   "name": "マキズシトイナ",
+   "time": "1:16.7",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 14,
+   "name": "シャークコパ",
+   "time": "1:17.0",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 11,
+   "name": "ダーカザンブラック",
+   "time": "1:17.1",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 12,
+   "name": "コトブキエース",
+   "time": "1:17.2",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 3,
+   "name": "ベッティーナ",
+   "time": "1:17.2",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 10,
+   "name": "テンポルバート",
+   "time": "1:17.3",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 13,
+   "name": "フェアリーマイア",
+   "time": "1:17.7",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 3,
+   "number": 5,
+   "name": "イッツバッド",
+   "time": "1:17.8",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 9,
+   "name": "ハナヒラク",
+   "time": "1:17.8",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 4,
+   "number": 7,
+   "name": "ロードオブキング",
+   "time": "1:17.9",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 3,
+   "number": 4,
+   "name": "ターンドルレーヴ",
+   "time": "1:18.3",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "13",
+   "frame": 4,
+   "number": 6,
+   "name": "コーントップス",
+   "time": "1:18.3",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "14",
+   "frame": 5,
+   "number": 8,
+   "name": "メイショウトキイロ",
+   "time": "1:18.5",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "15",
+   "frame": 2,
+   "number": 2,
+   "name": "ショウナンマナ",
+   "time": "1:18.9",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
