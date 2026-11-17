@@ -2,7 +2,227 @@
  "source": "rakuten",
  "date": "20261117",
  "race_id": "202611172015120211",
- "tries": 3,
- "payouts": {},
- "rows": []
+ "tries": 7,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "6",
+    "yen": 1420
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "6-1",
+    "yen": 9520
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "6",
+    "yen": 390
+   },
+   {
+    "combo": "1",
+    "yen": 320
+   },
+   {
+    "combo": "12",
+    "yen": 200
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-6",
+    "yen": 1040
+   },
+   {
+    "combo": "6-12",
+    "yen": 820
+   },
+   {
+    "combo": "1-12",
+    "yen": 900
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-4",
+    "yen": 3890
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-6-12",
+    "yen": 5640
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "6-1-12",
+    "yen": 45450
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-6",
+    "yen": 3340
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 6,
+   "name": "フジユージーン",
+   "time": "1:25.7",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 1,
+   "number": 1,
+   "name": "シャルフジン",
+   "time": "1:26.1",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 12,
+   "name": "ハビレ",
+   "time": "1:26.2",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 13,
+   "name": "フルム",
+   "time": "1:26.2",
+   "margin": "ハナ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 5,
+   "name": "マザオ",
+   "time": "1:26.5",
+   "margin": "１ ３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 3,
+   "number": 4,
+   "name": "ケイアイメキラ",
+   "time": "1:26.5",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 14,
+   "name": "アルムラトゥール",
+   "time": "1:27.0",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 6,
+   "number": 10,
+   "name": "ショウナンカブト",
+   "time": "1:27.3",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 11,
+   "name": "ベルダーイメル",
+   "time": "1:27.3",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 7,
+   "name": "イーグルノワール",
+   "time": "1:27.4",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 6,
+   "number": 9,
+   "name": "イスラアネーロ",
+   "time": "1:29.1",
+   "margin": "８",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 3,
+   "number": 3,
+   "name": "スタンリーテソーロ",
+   "time": "1:29.2",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "13",
+   "frame": 2,
+   "number": 2,
+   "name": "バグラダス",
+   "time": "1:29.5",
+   "margin": "１ ３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 5,
+   "number": 8,
+   "name": "サンライズホーク",
+   "time": "-",
+   "margin": "除外",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
