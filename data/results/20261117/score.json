@@ -1,14 +1,14 @@
 {
  "date": "20261117",
- "updated": "2026-11-17 12:21",
- "races_total": 3,
- "races_scored": 2,
- "stake": 200,
+ "updated": "2026-11-17 12:56",
+ "races_total": 36,
+ "races_scored": 3,
+ "stake": 300,
  "return": 210,
- "roi": 105.0,
+ "roi": 70.0,
  "hit_races": 2,
- "honmei_win": 1,
- "honmei_top3": 1,
+ "honmei_win": 2,
+ "honmei_top3": 2,
  "races": [
   {
    "race_id": "202611171106070301",
@@ -32,11 +32,11 @@
    "race_id": "202611171106070302",
    "confidence": "A",
    "honmei": 10,
-   "honmei_finish": null,
+   "honmei_finish": "1",
    "top3": [
-    null,
-    null,
-    null
+    10,
+    1,
+    3
    ],
    "stake": 100,
    "return": 100,
@@ -50,6 +50,534 @@
    "race_id": "202611171106070303",
    "confidence": "B",
    "honmei": 3,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": false
+  },
+  {
+   "race_id": "202611171106070304",
+   "confidence": "A",
+   "honmei": 6,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611171106070305",
+   "confidence": "B",
+   "honmei": 2,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611171106070306",
+   "confidence": "C",
+   "honmei": 11,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611171106070307",
+   "confidence": "C",
+   "honmei": 2,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611171106070308",
+   "confidence": "C",
+   "honmei": 10,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611171106070309",
+   "confidence": "C",
+   "honmei": 6,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611171106070310",
+   "confidence": "B",
+   "honmei": 10,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611171106070311",
+   "confidence": "C",
+   "honmei": 3,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611171106070312",
+   "confidence": "C",
+   "honmei": 7,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611172015120201",
+   "confidence": "C",
+   "honmei": 3,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611172015120202",
+   "confidence": "C",
+   "honmei": 11,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611172015120203",
+   "confidence": "見送り",
+   "honmei": 5,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 0,
+   "return": 0,
+   "roi": null,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611172015120204",
+   "confidence": "C",
+   "honmei": 3,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611172015120205",
+   "confidence": "C",
+   "honmei": 12,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611172015120206",
+   "confidence": "C",
+   "honmei": 11,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611172015120207",
+   "confidence": "B",
+   "honmei": 7,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611172015120208",
+   "confidence": "C",
+   "honmei": 11,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611172015120209",
+   "confidence": "C",
+   "honmei": 10,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611172015120210",
+   "confidence": "C",
+   "honmei": 7,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611172015120211",
+   "confidence": "C",
+   "honmei": 7,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611172015120212",
+   "confidence": "C",
+   "honmei": 14,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611172218140501",
+   "confidence": "C",
+   "honmei": 9,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611172218140502",
+   "confidence": "C",
+   "honmei": 3,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611172218140503",
+   "confidence": "C",
+   "honmei": 2,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611172218140504",
+   "confidence": "B",
+   "honmei": 6,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611172218140505",
+   "confidence": "B",
+   "honmei": 8,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611172218140506",
+   "confidence": "C",
+   "honmei": 8,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611172218140507",
+   "confidence": "C",
+   "honmei": 10,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611172218140508",
+   "confidence": "C",
+   "honmei": 5,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611172218140509",
+   "confidence": "C",
+   "honmei": 3,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611172218140510",
+   "confidence": "C",
+   "honmei": 3,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611172218140511",
+   "confidence": "C",
+   "honmei": 6,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611172218140512",
+   "confidence": "B",
+   "honmei": 10,
    "honmei_finish": null,
    "top3": [
     null,
