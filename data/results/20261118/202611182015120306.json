@@ -2,7 +2,227 @@
  "source": "rakuten",
  "date": "20261118",
  "race_id": "202611182015120306",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 4,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "6",
+    "yen": 120
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "6-5",
+    "yen": 1110
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "6",
+    "yen": 110
+   },
+   {
+    "combo": "5",
+    "yen": 400
+   },
+   {
+    "combo": "3",
+    "yen": 490
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "5-6",
+    "yen": 460
+   },
+   {
+    "combo": "3-6",
+    "yen": 660
+   },
+   {
+    "combo": "3-5",
+    "yen": 3330
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-4",
+    "yen": 920
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-5-6",
+    "yen": 4280
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "6-5-3",
+    "yen": 9000
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "5-6",
+    "yen": 900
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 6,
+   "name": "キタノプレミアム",
+   "time": "1:13.5",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 4,
+   "number": 5,
+   "name": "エレパイオ",
+   "time": "1:14.0",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "シルエットライド",
+   "time": "1:14.0",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 14,
+   "name": "カシマショウリュウ",
+   "time": "1:14.7",
+   "margin": "３ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 3,
+   "number": 4,
+   "name": "ザレインソング",
+   "time": "1:15.0",
+   "margin": "１ ３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 8,
+   "name": "ストレートビーム",
+   "time": "1:15.3",
+   "margin": "１ ３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 11,
+   "name": "ショーンバローズ",
+   "time": "1:15.5",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "タイセイディエティ",
+   "time": "1:15.6",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "ラインメテオラ",
+   "time": "1:15.7",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 8,
+   "number": 13,
+   "name": "リコーステアー",
+   "time": "1:15.7",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 7,
+   "number": 12,
+   "name": "マヒロ",
+   "time": "1:16.0",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 6,
+   "number": 10,
+   "name": "ラッケンブース",
+   "time": "1:16.6",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "13",
+   "frame": 5,
+   "number": 7,
+   "name": "ニシノタチアナ",
+   "time": "1:17.5",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "14",
+   "frame": 6,
+   "number": 9,
+   "name": "ブイスリー",
+   "time": "1:18.9",
+   "margin": "７",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
