@@ -1094,7 +1094,8 @@
    "number": 1,
    "name": "リュクスウォリアー",
    "types": [
-    "layoff"
+    "layoff",
+    "aitop"
    ],
    "gap_days": 121,
    "last": {
@@ -1231,6 +1232,20 @@
    },
    "odds": 13.6,
    "popularity": 5
+  },
+  {
+   "race_id": "202611182726180412",
+   "results_key": "202611182726180412",
+   "venue": "園田",
+   "race_no": 12,
+   "post_time": "16:30",
+   "number": 3,
+   "name": "リリーオブザハート",
+   "types": [
+    "aitop"
+   ],
+   "odds": 6.1,
+   "popularity": 3
   },
   {
    "race_id": "202611182726180412",
