@@ -2,7 +2,172 @@
  "source": "rakuten",
  "date": "20261118",
  "race_id": "202611182726180403",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "5",
+    "yen": 280
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "5-9",
+    "yen": 4890
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "5",
+    "yen": 140
+   },
+   {
+    "combo": "9",
+    "yen": 500
+   },
+   {
+    "combo": "7",
+    "yen": 140
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "5-9",
+    "yen": 1130
+   },
+   {
+    "combo": "5-7",
+    "yen": 240
+   },
+   {
+    "combo": "7-9",
+    "yen": 1270
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-8",
+    "yen": 2650
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "5-7-9",
+    "yen": 3020
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "5-9-7",
+    "yen": 16030
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "5-9",
+    "yen": 3780
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 5,
+   "name": "サカキ",
+   "time": "1:35.3",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 9,
+   "name": "グッドホース",
+   "time": "1:35.4",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 7,
+   "name": "ピエスダルジャン",
+   "time": "1:35.5",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "ニシノフォーリーフ",
+   "time": "1:36.0",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 8,
+   "name": "アスクサヴァイバル",
+   "time": "1:36.1",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 1,
+   "number": 1,
+   "name": "メエメエ",
+   "time": "1:36.2",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 6,
+   "name": "メタルメタリカ",
+   "time": "1:36.2",
+   "margin": "ハナ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 4,
+   "number": 4,
+   "name": "チョウハクタカ",
+   "time": "1:37.3",
+   "margin": "７",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 3,
+   "number": 3,
+   "name": "コパノジャンピング",
+   "time": "1:38.1",
+   "margin": "５",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
