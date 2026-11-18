@@ -7,6 +7,8 @@ on:
   workflow_run:
     workflows: ["daily (毎日の自動取得)"]
     types: [completed]
+  schedule:
+    - cron: "3 15 * * *"   # JST 0:03：日付が変わったら「今日」を切り替える（GitHubの定時起動は遅れることがある）
   workflow_dispatch:
 
 permissions:
@@ -32,6 +34,16 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install pillow requests
+      # 回収率の計算の検算（採点の決まりが崩れていたら公開しない。記録との照合のずれは警告だけ出す）
+      - run: python tests/test_scoring.py
+      # 画像の作り置き（レースごとの共有画像など）。その日の最初の公開で保存し、以後の公開はそれを使う
+      - id: day
+        run: echo "d=$(TZ=Asia/Tokyo date +%Y%m%d)" >> "$GITHUB_OUTPUT"
+      - uses: actions/cache@v4
+        with:
+          path: .imgcache
+          key: imgcache-${{ steps.day.outputs.d }}
+          restore-keys: imgcache-
       - run: python site/build.py
         env:
           ASK_URL: ${{ vars.ASK_URL }}

@@ -148,7 +148,8 @@ jobs:
         run: |
           git config user.name "keiba-ai-bot"
           git config user.email "keiba-ai-bot@users.noreply.github.com"
-          git add -A data results_ledger.csv
+          (cd scraper && python prune_old.py) || true   # 古い作業用データ（取得したままのHTML・投稿済み画像）を消す
+          git add -A data results_ledger.csv social
           git commit -m "score ${{ needs.plan.outputs.date }}" || exit 0
           for i in 1 2 3; do if git pull --rebase -X theirs && git push; then break; fi; git rebase --abort 2>/dev/null || true; sleep 5; done
 

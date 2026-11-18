@@ -337,7 +337,7 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False
 <meta name="theme-color" content="#146b45"><link rel="manifest" href="/manifest.webmanifest">
 {FAVICON}<link rel="alternate" type="application/rss+xml" title="{SITE_NAME}" href="/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Shippori+Mincho+B1:wght@700;800&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Shippori+Mincho+B1:wght@700;800&display=swap"></noscript>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@800&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@800&display=swap"></noscript>
 <link rel="stylesheet" href="/style.css?v={ASSET_V}">
 {head_extra}
 </head><body data-built="{BUILT_ISO}">
@@ -1931,7 +1931,7 @@ main{padding-bottom:24px}
 .marks b{font-size:28px;color:var(--acc);line-height:1}.marks span{font-weight:700;font-size:18px}.marks .m:first-child span{font-size:20px}.subs{color:var(--mut);margin:0 0 8px}
 .conf{display:inline-block;min-width:26px;text-align:center;border-radius:2px;font-size:12px;font-weight:700;padding:0 6px;border:1px solid var(--line);line-height:20px;vertical-align:middle}
 .gensen{display:inline-block;font-size:11px;font-weight:700;color:var(--acc);border:1px solid var(--acc);border-radius:2px;padding:0 4px;margin-left:6px;line-height:16px;vertical-align:1px;font-family:inherit}
-.card h2 small{font-size:13px;color:var(--mut);margin-left:8px;font-weight:400;font-family:"BIZ UDPGothic",sans-serif}.ippen ul{margin:4px 0;padding-left:1.2em}.ippen-list li{margin:4px 0}
+.card h2 small{font-size:13px;color:var(--mut);margin-left:8px;font-weight:400;font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic","Noto Sans JP","Noto Sans CJK JP",Meiryo,system-ui,sans-serif}.ippen ul{margin:4px 0;padding-left:1.2em}.ippen-list li{margin:4px 0}
 .gensen-box{border-left:3px solid var(--acc)}.odds.pre{color:var(--mut);border:1px dashed var(--line);padding:0 4px;margin-left:4px;border-radius:2px}
 .cA{background:var(--acc);color:#fff;border-color:var(--acc)}.cB{color:var(--acc);border-color:var(--acc)}.cC{color:var(--mut)}.c見送り{color:var(--mut);border-style:dashed}
 .bets{display:flex;flex-wrap:wrap;gap:6px 8px;list-style:none;padding:0;margin:6px 0}.bets li{border:1px solid var(--line);background:var(--panel);border-radius:2px;padding:2px 9px;font-size:14px}.bets li.won{background:var(--hit-soft);border-color:var(--hit);color:var(--hit);font-weight:700}
@@ -2007,10 +2007,10 @@ table{border-collapse:collapse;width:100%;font-size:14px;background:var(--panel)
 .rinfo{display:flex;flex-direction:column;min-width:0}.rname{font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.rsub{color:var(--mut);font-size:12px;white-space:nowrap}
 .rlist .hon{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.rlist .res{text-align:right;white-space:nowrap}
 .rlist li.gone .rb{background:var(--mut)}.rlist li.next .rb{background:var(--acc)}.rlist li.next .rsub::after{content:"　次に発走";color:var(--acc);font-weight:700}
-.gr{display:inline-block;margin-left:6px;font-size:11px;font-weight:700;padding:0 6px;border-radius:2px;color:#fff;line-height:18px;vertical-align:middle;font-family:"BIZ UDPGothic",sans-serif}
+.gr{display:inline-block;margin-left:6px;font-size:11px;font-weight:700;padding:0 6px;border-radius:2px;color:#fff;line-height:18px;vertical-align:middle;font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic","Noto Sans JP","Noto Sans CJK JP",Meiryo,system-ui,sans-serif}
 .g1{background:#1b4fd8}.g2{background:#d0342c}.g3{background:#2b8a3e}.gj{background:#6b3fa0}.gl{background:#555}
 @media (max-width:720px){.rlist a{grid-template-columns:44px minmax(0,1fr) 28px;grid-template-areas:"rb info conf" "rb hon hon" "rb res res"}.rlist .rb{grid-area:rb;align-self:start}.rlist .rinfo{grid-area:info}.rlist .conf{grid-area:conf}.rlist .hon{grid-area:hon;white-space:normal}.rlist .res{grid-area:res;text-align:left}}
-h1 small{display:block;font-size:14px;color:var(--mut);font-family:"BIZ UDPGothic",sans-serif;font-weight:400;margin-top:2px}
+h1 small{display:block;font-size:14px;color:var(--mut);font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic","Noto Sans JP","Noto Sans CJK JP",Meiryo,system-ui,sans-serif;font-weight:400;margin-top:2px}
 
 .banner{margin:6px 0 14px}.banner img{width:100%;height:auto;aspect-ratio:16/5;object-fit:cover;object-position:right center;display:block;border:1px solid var(--line)}@media (max-width:720px){.banner img{aspect-ratio:16/8}}.live .banner{margin:4px 0 10px}.venue-pic{float:right;width:min(42%,360px);margin:0 0 10px 16px}.venue-pic img{width:100%;height:auto;display:block;border:1px solid var(--line)}@media (max-width:720px){.venue-pic{float:none;width:100%;margin:0 0 10px}}
 
@@ -2476,6 +2476,11 @@ def build() -> None:
     if (ROOT / "results_ledger.csv").exists():
         shutil.copy(ROOT / "results_ledger.csv", OUT / "data" / "results_ledger.csv")
     (OUT / "CNAME").write_text(DOMAIN + "\n", encoding="utf-8")
+    try:
+        import imgutil
+        imgutil.prune()  # 使われなくなった画像の作り置きを消す
+    except Exception:  # noqa: BLE001
+        pass
     (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n" + ("Disallow: /league/\n" if LEAGUE_URL and LEAGUE_OWNERS and os.environ.get("LEAGUE_PUBLIC") != "1" else "") + ("Disallow: /vs/\n" if LEAGUE_URL and not VS_PUBLIC else "")
                                     + f"Sitemap: {BASE_URL}/sitemap.xml\n", encoding="utf-8")
     (OUT / "llms.txt").write_text(

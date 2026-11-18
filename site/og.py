@@ -66,8 +66,26 @@ def header(d: ImageDraw.ImageDraw, sub: str) -> None:
     d.text((76 + d.textlength("競馬全頭ログ", font=font(30)) + 18, 72), sub, font=font(24, False), fill=MUT)
 
 
-def race_image(out: Path, date_txt: str, label: str, meta: str, marks: list[tuple[str, str, str]],
-               conf: str, result: tuple[str, bool] | None, bg: str = "") -> None:
+_SELF_SIG = ""
+
+
+def _sig() -> str:
+    """このファイル（絵の描き方）と下地の絵が変わったら、作り置きを使わない。"""
+    global _SELF_SIG
+    if not _SELF_SIG:
+        import imgutil
+        here = Path(__file__).resolve()
+        _SELF_SIG = imgutil.file_sig(here) + "|" + "|".join(imgutil.file_sig(f) for f in sorted((here.parent / "assets").glob("og-*.*")))
+    return _SELF_SIG
+
+
+def race_image(out: Path, *args, **kw) -> None:
+    import imgutil
+    imgutil.cached(out, ("race", _sig(), args, sorted(kw.items())), lambda o: _race_image(o, *args, **kw))
+
+
+def _race_image(out: Path, date_txt: str, label: str, meta: str, marks: list[tuple[str, str, str]],
+                conf: str, result: tuple[str, bool] | None, bg: str = "") -> None:
     label = unicodedata.normalize("NFKC", label)
     im = canvas(bg)
     d = ImageDraw.Draw(im)
