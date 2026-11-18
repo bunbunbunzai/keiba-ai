@@ -18,4 +18,6 @@ LEAGUE_PUBLIC = "0"
 PRIZES_ALLOWED = "0"
 # 「AI vs あなた」月間ランキングだけを一般公開する（2026-11-19〜）。"0" に戻すとプレビュー用のコードが必要になる
 VS_PUBLIC = "1"
+# ランキングに載る最少レース数。いったん下限なし（1）。戻すときは 20 など
+VS_MIN_PICKS = "1"
 # 秘密の値（wrangler secret で登録。ここには書かない）：ADMIN_TOKEN、PREVIEW_CODE

@@ -11,13 +11,13 @@ from __future__ import annotations
 
 import json
 
-MIN_PICKS = 20  # league/src/versus.js の MIN_PICKS と同じ（表示用。実際の判定は API 側）
+MIN_PICKS = 1  # ランキングに載る最少レース数（表示用。実際の判定は API 側：league/wrangler.toml の VS_MIN_PICKS）。いまは下限なし
 
 RULES = f"""
-<section class='card' id='rules'><h2>ルール</h2><ul>
+<section class='card' id='rules'><h2>ルール</h2><p><a href='/vs/guide/'>はじめての方へ：遊び方と順位の決まり方（全頭くんの案内）</a></p><ul>
 <li><b>参加のしかた</b>：下で名前を決めたら、各レースページの「AI vs あなた」で◎を1頭選ぶだけ。発走時刻までなら選び直せます。発走後は変えられません。</li>
 <li><b>順位は回収率</b>：その月に選んだ◎の単勝を、1レース100円ずつ買ったとして計算します（払戻の合計÷購入額の合計）。人気薄を当てるほど上がります。</li>
-<li><b>ランキングの対象</b>：その月に{MIN_PICKS}レース以上、結果が出た人。それより少ない間も、自分の成績はこのページで見られます。</li>
+<li><b>ランキングの対象</b>：その月に1レースでも結果が出た人は全員（レース数の下限はありません）。</li>
 <li><b>AIとの対戦成績</b>：同じレースで、あなたの◎とAIの◎の着順をくらべます。着順が上なら勝ち、同じ馬・同着なら引き分け。順位には使いませんが、ランキングに並べて出します。</li>
 <li><b>取消・除外・中止</b>：選んだ馬が出走取消・競走除外になったレースと、払戻の無かったレースは、買わなかった扱いで数えません。</li>
 <li><b>結果と払戻</b>：このサイトの成績と同じデータで自動集計します（確定から反映まで数分〜10分ほど）。正式な結果は主催者の発表をご確認ください。</li>
@@ -65,7 +65,7 @@ if(card&&!app){
  var note=el('p',{cls:'meta vs-sv'});card.insertBefore(note,card.querySelector('.r'));
  var now=function(){var d=new Date(Date.now()+9*3600e3);return d.toISOString().slice(0,16).replace(/[-T:]/g,'');};
  var named=ls('vs_name');
- if(!ls('vs_token')||!named){note.textContent='';note.appendChild(el('a',{href:'/vs/',text:'月間ランキングに参加する（名前を決めるだけ・無料）'}));return;}
+ if(!ls('vs_token')||!named){note.textContent='';note.appendChild(el('a',{href:'/vs/',text:'月間ランキングに参加する（名前を決めるだけ・無料）'}));note.appendChild(document.createTextNode('　'));note.appendChild(el('a',{href:'/vs/guide/',text:'遊び方'}));return;}
  note.textContent='ここで選んだ◎は、月間ランキングに記録されます（'+named+'）。';
  var lead=card.querySelector('p.meta');if(lead)lead.textContent=lead.textContent.replace('（選んだ馬は、いまお使いのブラウザにだけ保存されます）','');
  function send(n){api('POST','/api/vs/pick',{path:path,number:+n}).then(function(j){
@@ -111,12 +111,12 @@ function meCard(d){var me=d.me,c=el('section',{cls:'card'},[el('h2',{text:'あ�
  return c;}
 function rankCard(d,ai){var c=el('section',{cls:'card'},[el('h2',{text:ym.replace('-','年')+'月のランキング'})]);
  if(d.months&&d.months.length>1){var nav=el('nav',{cls:'vs-months','aria-label':'月を選ぶ'});d.months.forEach(function(m){var a=el('a',{href:'/vs/?ym='+m,text:m.replace('-','年')+'月'});if(m===ym)a.setAttribute('aria-current','page');nav.appendChild(a);});c.appendChild(nav);}
- c.appendChild(el('p',{cls:'meta',text:'◎の単勝を100円ずつ買ったときの回収率の順（'+d.min_picks+'レース以上）。参加'+d.players+'人のうち、AIに勝ち越しているのは'+d.beat_ai+'人。'}));
+ c.appendChild(el('p',{cls:'meta',text:'◎の単勝を100円ずつ買ったときの回収率の順'+(d.min_picks>1?'（'+d.min_picks+'レース以上）':'')+'。参加'+d.players+'人のうち、AIに勝ち越しているのは'+d.beat_ai+'人。'}));
  var tb=el('tbody');
  function row(r,cls,rk){var tr=el('tr',cls?{cls:cls}:{},[el('td',{text:rk}),el('td',{cls:'nm',text:r.name}),el('td',{text:pct(r.roi)}),el('td',{text:r.hits+'／'+r.n}),el('td',{text:r.win==null?'—':r.win+'勝'+r.lose+'敗'+(r.draw?r.draw+'分':'')})]);tb.appendChild(tr);}
  d.ranked.forEach(function(r){row(r,r.me?'me':'',r.rank+'位');});
  if(ai&&ai.n)row({name:'AI（このサイトの◎）',roi:ai.roi,hits:ai.hits,n:ai.n,win:null},'ai','参考');
- if(!d.ranked.length)c.appendChild(el('p',{text:'まだ'+d.min_picks+'レースに届いた人がいません。最初の1人になれます。'}));
+ if(!d.ranked.length)c.appendChild(el('p',{text:(d.min_picks>1?'まだ'+d.min_picks+'レースに届いた人がいません。':'まだ結果の出た参加者がいません。')+'最初の1人になれます。'}));
  c.appendChild(el('div',{cls:'scroll'},[el('table',{cls:'vs-rank'},[el('thead',{},[el('tr',{},[el('th',{text:'順位'}),el('th',{text:'名前'}),el('th',{text:'回収率'}),el('th',{text:'的中／レース'}),el('th',{text:'AIとの対戦'})])]),tb])]));
  if(ai&&ai.n)c.appendChild(el('p',{cls:'meta',text:'参考の行は、AIの◎の単勝を同じ月の全レースで100円ずつ買った場合（サイトの成績ページの買い目とは別の計算）。'}));
  return c;}
@@ -151,17 +151,81 @@ def race_attrs(api_url: str, public: bool) -> str:
 SCRIPT = "<script src='/assets/versus.js' defer></script>"
 
 
-def build(write, page, out_dir, api_url: str, site_name: str, public: bool) -> None:
+def build(write, page, out_dir, api_url: str, site_name: str, public: bool, jsonld=None, zk_art=None, base_url: str = "") -> None:
     (out_dir / "assets").mkdir(parents=True, exist_ok=True)
     (out_dir / "assets" / "versus.js").write_text(JS, encoding="utf-8")
     (out_dir / "assets" / "versus.css").write_text(CSS, encoding="utf-8")
     body = ("<p class='crumb'><a href='/'>トップ</a> › AI vs あなた 月間ランキング</p><h1>AI vs あなた 月間ランキング</h1>"
-            "<p class='answer'>各レースであなたの◎を1頭選び、AIの◎と勝負する。月ごとに、選んだ◎の単勝の回収率で順位を出す（参加無料）。</p>"
+            "<p class='answer'>各レースであなたの◎を1頭選び、AIの◎と勝負する。月ごとに、選んだ◎の単勝の回収率で順位を出す（参加無料）。"
+            + ("<a href='/vs/guide/'>遊び方を見る</a>" if public else "") + "</p>"
             f"<div id='vs-app' data-api='{api_url}' data-public='{'1' if public else '0'}' data-min='{MIN_PICKS}'><p class='meta'>読み込み中…</p></div>"
             + RULES + SCRIPT)
     write("/vs/", page(f"AI vs あなた 月間ランキング｜{site_name}", body, "/vs/", noindex=not public,
                        desc="競馬全頭ログのAIの◎と、あなたの◎で勝負する月間ランキング。順位は単勝の回収率、AIとの対戦成績も表示。参加無料。",
                        head_extra="<link rel='stylesheet' href='/assets/versus.css'>"))
+    if public and jsonld and zk_art:
+        write("/vs/guide/", guide_page(page, jsonld, zk_art, site_name, base_url))
+
+
+GUIDE_FAQ = [
+    ("参加にお金はかかりますか", "かかりません。名前を決めるだけで参加できます。賞品はなく、馬券を買う必要もありません。"),
+    ("何レース選べばランキングに載りますか", "1レースでも結果が出れば載ります。レース数の下限はありません。回収率が同じときは、的中数、レース数の多い人が上になります。"),
+    ("◎はいつまで選べますか", "そのレースの発走時刻までです。それまでは何度でも選び直せます。発走後は変えられません。"),
+    ("AIの◎と同じ馬を選んでもいいですか", "かまいません。その場合、AIとの対戦は引き分けになります。回収率にはそのまま数えます。"),
+    ("選んだ馬が出走取消になったらどうなりますか", "そのレースは買わなかった扱いで、成績に数えません。払戻の無かったレースも同じです。"),
+    ("結果はいつ反映されますか", "レースの結果がこのサイトに載ってから、1〜2分でランキングに反映されます。"),
+    ("スマホとパソコンの両方で使えますか", "使えます。ランキングのページの「名前を変える・ほかの端末に引き継ぐ」にある引き継ぎコードを、もう一方の端末に入れてください。"),
+    ("名前はあとで変えられますか", "変えられます。ランキングのページの「名前を変える・ほかの端末に引き継ぐ」から変更できます。ほかの人が使っている名前は使えません。"),
+    ("AIの成績は載りますか", "ランキングの表のいちばん下に、参考として「AIの◎の単勝を同じ月の全レースで買った場合」の回収率を出しています。順位は付きません。"),
+]
+
+
+def guide_page(page, jsonld, zk_art, site_name: str, base_url: str) -> str:
+    faq = "".join(f"<h3>{q}</h3><p>{a}</p>" for q, a in GUIDE_FAQ)
+    ld = {"@context": "https://schema.org", "@type": "FAQPage",
+          "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in GUIDE_FAQ]}
+    bc = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": site_name, "item": base_url + "/"},
+        {"@type": "ListItem", "position": 2, "name": "AI vs あなた 月間ランキング", "item": base_url + "/vs/"},
+        {"@type": "ListItem", "position": 3, "name": "遊び方", "item": base_url + "/vs/guide/"}]}
+    body = (
+        "<p class='crumb'><a href='/'>トップ</a> › <a href='/vs/'>AI vs あなた 月間ランキング</a> › 遊び方</p>"
+        "<h1>AI vs あなた 月間ランキングの遊び方</h1>"
+        "<p class='answer'>「AI vs あなた 月間ランキング」は、競馬全頭ログのAIが出す◎（本命）と、あなたが選ぶ◎で勝負する無料の企画。"
+        "各レースで◎を1頭選ぶと、月ごとに「◎の単勝の回収率」で順位が出て、AIとの対戦成績（3勝2敗のような形）も記録される。</p>"
+        + zk_art("trophy", "<p><b>全頭くん</b>：僕（AI）の◎は毎日全レースで公開しています。同じレースであなたの◎を1頭選んで、どっちが当たるか勝負しましょう。"
+                           "名前を決めるだけで、すぐ始められます。</p>")
+        + "<p><a class='vs-btn' href='/vs/'>ランキングを見る・参加する</a></p>"
+        "<section class='card'><h2>遊び方（3ステップ）</h2><ol>"
+        "<li><b>名前を決める</b>：<a href='/vs/'>ランキングのページ</a>で、ランキングに出す名前（2〜12文字）を入れます。メールアドレスなどの登録は要りません。</li>"
+        "<li><b>レースページで◎を選ぶ</b>：<a href='/'>今日の予想</a>から好きなレースを開き、ページの下のほうにある「AI vs あなた」で馬を1頭選んで「この馬に決める」を押します。"
+        "AIの◎・全頭の評価・オッズは同じページで見られます。</li>"
+        "<li><b>結果を待つ</b>：レースが確定すると、そのレースページに勝敗が出て、ランキングにも反映されます。</li></ol>"
+        "<p class='meta'>何レース選んでもかまいません。1日1レースでも、全レースでも参加できます。</p></section>"
+        "<section class='card'><h2>順位の決まり方</h2>"
+        "<p>順位は<b>回収率</b>で決まります。その月に選んだ◎の単勝を、1レース100円ずつ買ったとして計算します。</p>"
+        "<div class='scroll'><table><thead><tr><th>例</th><th>選んだレース</th><th>的中</th><th>払戻の合計</th><th>回収率</th></tr></thead><tbody>"
+        "<tr><td>Aさん</td><td>10レース（1,000円）</td><td>3回（単勝2.1倍・3.4倍・1.8倍）</td><td>730円</td><td>73.0%</td></tr>"
+        "<tr><td>Bさん</td><td>10レース（1,000円）</td><td>1回（単勝15.2倍）</td><td>1,520円</td><td>152.0%</td></tr>"
+        "</tbody></table></div>"
+        "<p>当てた回数が少なくても、人気の無い馬を当てたBさんのほうが上になります。AIと同じ人気馬ばかり選ぶと、回収率はAIに近づきます。</p>"
+        "<p class='meta'>回収率が同じときは、的中数、レース数の多い人が上。すべて同じなら同じ順位です。</p></section>"
+        "<section class='card'><h2>AIとの対戦成績</h2>"
+        "<p>同じレースで、あなたの◎とAIの◎の<b>着順</b>をくらべます。あなたの◎が先に入れば勝ち、後なら負け、同じ馬を選んだときと同着は引き分けです。</p>"
+        "<p>対戦成績は順位には使いませんが、ランキングに「3勝2敗」のような形で並びます。「AIに勝ち越している人が何人いるか」もランキングのページに出ます。</p></section>"
+        "<section class='card'><h2>数えないレース</h2><ul>"
+        "<li>選んだ馬が出走取消・競走除外になったレース</li><li>払戻の無かったレース（中止など）</li>"
+        "<li>AIが「見送り」にしたレースと、予想がまだ出ていないレース（◎を選べません）</li></ul>"
+        "<p class='meta'>結果と払戻は、このサイトの成績と同じデータで自動集計します。正式な結果は主催者の発表をご確認ください。</p></section>"
+        f"<section class='card'><h2>よくある質問</h2>{faq}</section>"
+        "<section class='card'><h2>お願い</h2><ul>"
+        "<li>1人1つの名前でお願いします。不適切な名前は運営が削除することがあります。</li>"
+        "<li>保存するのは、決めた名前と選んだ◎の記録だけです（<a href='/privacy/'>プライバシーポリシー</a>）。</li>"
+        "<li>この企画はゲームです。馬券の購入をすすめるものではなく、的中や利益を約束するものでもありません。馬券は20歳から。</li></ul>"
+        "<p><a class='vs-btn' href='/vs/'>ランキングを見る・参加する</a></p></section>")
+    return page(f"AI vs あなた 月間ランキングの遊び方｜AIの◎と勝負する無料企画｜{site_name}", body, "/vs/guide/",
+                desc="競馬全頭ログのAIの◎と、あなたの◎で勝負する無料の月間ランキングの遊び方。参加のしかた、回収率による順位の決まり方、AIとの対戦成績、よくある質問。",
+                head_extra="<link rel='stylesheet' href='/assets/versus.css'>" + jsonld(ld) + jsonld(bc))
 
 
 def game_data(by_date: dict, race_path, race_label, post_of, horses_of) -> tuple[dict, dict]:

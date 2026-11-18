@@ -2122,6 +2122,7 @@ var S=[
  {f:'point',h:'予想の見方',b:'<p>各レースに印を付けています。</p><ul><li><span class="mk">◎</span>本命：いちばん勝ちそうな馬</li><li><span class="mk">〇</span>対抗　<span class="mk">▲</span>単穴：◎を負かす候補</li><li><span class="mk">△</span>連下　<span class="mk">☆</span>穴：3着までに来そうな馬</li></ul><p><b>自信度A・B・C</b>は◎が勝つ見込みの高さ。Aがいちばん自信ありです。</p>'},
  {f:'calc',h:'成績の見方',b:'<p>成績は、買い目を<b>1点100円ずつ全部買った</b>として計算しています。</p><p><b>回収率</b>が100%を超えればプラス、下回ればマイナス。今の数字は<a href="/results/">成績</a>ページで毎日更新しています。</p>'},
  {f:'study',h:'わからないことは聞いてね',b:'<p>レースページの右下にいる僕のボタンから、そのレースについて質問できます（「△は3連単で2着まで入れる？」など）。</p><p>言葉がわからないときは<a href="/glossary/">用語集</a>、競馬自体がはじめてなら<a href="/column/guide-keiba-hajimekata/">競馬の始め方</a>からどうぞ。</p>'},
+ /*VS_STEP*/
  {f:'cheer',h:'さいごに',b:'<p>予想は情報提供で、当たりを約束するものではありません。馬券は<b>20歳から</b>、無理のない金額で楽しんでください。</p><div class="links"><a href="/">今日の予想を見る</a><a href="/about/">予想の方法</a><a href="/limits/">AI予想の限界</a><a href="https://x.com/zentou_log" target="_blank" rel="noopener">Xで重賞予想を受け取る</a></div>'}
 ];
 function ga(n,p){try{if(window.gtag)gtag('event',n,p||{})}catch(e){}}
@@ -2169,7 +2170,11 @@ def build() -> None:
         "icons": [{"src": "/assets/logo-mark.png", "sizes": "512x512", "type": "image/png"}, {"src": "/assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png"}]},
         ensure_ascii=False), encoding="utf-8")
     (OUT / "ads.txt").write_text(f"google.com, {ADSENSE_PUB.replace('ca-', '')}, DIRECT, f08c47fec0942fa0\n", encoding="utf-8")
-    (OUT / "app.js").write_text(JS, encoding="utf-8")
+    # 全頭くんのサイト案内：月間ランキングを公開している間は、その紹介を1枚足す
+    _vs_step = ("{f:'trophy',h:'僕と勝負しませんか',b:'<p>各レースページの下にある<b>「AI vs あなた」</b>で、あなたの◎を1頭選ぶと、僕の◎と勝負できます。</p>"
+                "<p>名前を決めて参加すると、<b>月間ランキング</b>に載ります。順位は◎の単勝の回収率。参加は無料です。</p>"
+                "<div class=\"links\"><a href=\"/vs/guide/\">遊び方</a><a href=\"/vs/\">ランキングを見る</a></div>'},") if LEAGUE_URL and VS_PUBLIC else ""
+    (OUT / "app.js").write_text(JS.replace("/*VS_STEP*/", _vs_step), encoding="utf-8")
     (OUT / "racesim.js").write_text(RACESIM_JS, encoding="utf-8")
     (OUT / "racesim3d.js").write_bytes(RACESIM3D_JS)
     (OUT / "racehorse.glb").write_bytes(RACEHORSE_GLB)
@@ -2354,7 +2359,7 @@ def build() -> None:
                        "<p class='crumb'><a href='/'>トップ</a> › あなたの成績</p><h1>あなたの成績</h1>" + banner("mine") +
                        "<p class='answer'>各レースページの「AI vs あなた」で選んだ◎の成績。記録は、いまお使いのブラウザにだけ保存され、外部には送られない。</p>"
                        "<div id='me'><p class='meta'>読み込み中…</p></div>"
-                       + ("<p class='notice'><a href='/vs/'>月間ランキングに参加する（名前を決めるだけ・無料）→</a></p>" if LEAGUE_URL and VS_PUBLIC else "") +
+                       + ("<p class='notice'><a href='/vs/'>月間ランキングに参加する（名前を決めるだけ・無料）→</a>　<a href='/vs/guide/'>遊び方</a></p>" if LEAGUE_URL and VS_PUBLIC else "") +
                        "<p class='meta'>勝敗は「あなたの◎の着順」と「AIの◎の着順」を比べて決める。同着は引き分け。結果がまだ出ていないレースは数えない。</p>", "/me/", noindex=True))
     write("/glossary/", glossary_page())
     lastmod.update(glossary_term_pages())
@@ -2376,7 +2381,7 @@ def build() -> None:
     today_iso = now.strftime("%Y-%m-%d")
     lastmod.update(column.build(write, page, jsonld, BASE_URL, SITE_NAME, STATS_FROM, today_iso))
     if LEAGUE_URL:  # 「AI vs あなた」月間ランキング（一般公開までは noindex・ナビに載せない）
-        versus.build(write, page, OUT, LEAGUE_URL, SITE_NAME, VS_PUBLIC)
+        versus.build(write, page, OUT, LEAGUE_URL, SITE_NAME, VS_PUBLIC, jsonld=jsonld, zk_art=zk_art, base_url=BASE_URL)
         _days, _ai = versus.game_data(
             by_date, race_path, race_label,
             lambda d_, p_: (d_ + p_["_race"]["post_time"].replace(":", "")) if re.fullmatch(r"\d{2}:\d{2}", str(p_["_race"].get("post_time") or "")) else "",
@@ -2384,6 +2389,7 @@ def build() -> None:
         versus.write_game_data(OUT, _days, _ai)
         if VS_PUBLIC:
             lastmod["/vs/"] = today_iso
+            lastmod["/vs/guide/"] = today_iso
         if LEAGUE_OWNERS:
             league.build(write, page, OUT, LEAGUE_URL, SITE_NAME)
     for old, new in (("/graded/kyoto-5c5158c3/", "/graded/kyoto-jump-stakes/"), ("/column/kyoto-5c5158c3-2026/", "/column/kyoto-jump-stakes-2026/")):
