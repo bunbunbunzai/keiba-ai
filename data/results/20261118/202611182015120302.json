@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261118",
  "race_id": "202611182015120302",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,127 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 2,
+   "number": 2,
+   "name": "マイネルシュラハト",
+   "time": "1:43.0",
+   "margin": "",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 3,
+   "number": 3,
+   "name": "カリビアンダンサー",
+   "time": "1:43.7",
+   "margin": "３ １／２",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 1,
+   "number": 1,
+   "name": "トネタロウ",
+   "time": "1:43.8",
+   "margin": "３／４",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 8,
+   "name": "マーゴットリック",
+   "time": "1:43.8",
+   "margin": "ハナ",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 7,
+   "name": "グレートロッタリー",
+   "time": "1:43.8",
+   "margin": "ハナ",
+   "pos4": 7,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 10,
+   "name": "ラジャブルック",
+   "time": "1:43.9",
+   "margin": "３／４",
+   "pos4": 6,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 5,
+   "name": "レッドスカイ",
+   "time": "1:44.0",
+   "margin": "クビ",
+   "pos4": 7,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 9,
+   "name": "エトワールブルー",
+   "time": "1:44.2",
+   "margin": "１ １／４",
+   "pos4": 7,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 4,
+   "number": 4,
+   "name": "ニシノナスタチウム",
+   "time": "1:44.5",
+   "margin": "１ １／２",
+   "pos4": 10,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 8,
+   "number": 11,
+   "name": "サラン",
+   "time": "1:44.6",
+   "margin": "１／２",
+   "pos4": 10,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 6,
+   "number": 6,
+   "name": "ヨロシクユウキ",
+   "time": "1:45.6",
+   "margin": "５",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
