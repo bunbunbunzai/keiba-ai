@@ -75,7 +75,7 @@ test("月間ランキング：回収率順・最少レース数・同順位・�
   // 1Rは2番が勝って600円、2〜4Rは1番（AIの◎）が勝って150円。4Rは3番が取消
   day[P("05", 1)] = result(day[P("05", 1)], [2, 1, 3, 4, 5, 6, 7, 8], 600);
   for (let i = 2; i <= 4; i++) day[P("05", i)] = result(day[P("05", i)], [1, 2, 4, 5, 6, 7, 8], 150, { 3: "取消" });
-  at("2026-12-05T12:10");                                                      // 同じ日の読み直しは5分に1回
+  at("2026-12-05T12:10");                                                      // 同じ日の読み直しは1分に1回
   r = await vs.ranking("2026-12", a, 3);
   const row = (n) => r.ranked.find((x) => x.name === n);
   assert.deepEqual([row("アオゾラ").roi, row("アオゾラ").hits, row("アオゾラ").n], [150, 1, 4]);       // 600/400
@@ -106,4 +106,14 @@ test("結果の訂正は上書きされ、二重に数えない", async () => {
   at("2026-12-06T11:10");
   const r = await vs.ranking("2026-12", a, 1);
   assert.equal(r.me.stats.n, 1); assert.equal(r.me.stats.ret, 0); assert.equal(r.me.pending, 1);
+});
+
+test("管理者は不適切な名前の参加者を消せる", async () => {
+  const { vs, days, user } = make("2026-12-07T09:00");
+  days["20261207"] = { [P("07", 1)]: race("202612071000") };
+  const a = await user("ワルイナマエ"); await vs.pick(a, P("07", 1), 2);
+  assert.throws(() => vs.removePlayer("いない人"), (e) => e.status === 404);
+  assert.equal(vs.removePlayer("ワルイナマエ").removed, true);
+  assert.equal(vs.player(a), null); assert.equal(vs.myPick(a, P("07", 1)).number, null);
+  assert.equal(vs.saveName(a, "フツウノナマエ").name, "フツウノナマエ");
 });

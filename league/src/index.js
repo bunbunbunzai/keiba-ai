@@ -28,7 +28,8 @@ export class LeagueDO {
     const origin = (env.VS_DATA_ORIGIN || env.SITE_ORIGIN || "").replace(/\/$/, "");
     this.vs = new Versus(state.storage.sql, () => Date.now(), async (date) => {
       if (!/^\d{8}$/.test(date)) return null;
-      const r = await fetch(`${origin}/vsgame/${date}.json`, { cf: { cacheTtl: 60 } });
+      // サイトの配信は10分ほど古い内容を返すことがあるので、分ごとに違うURLで読んで、公開されたばかりの結果を拾う
+      const r = await fetch(`${origin}/vsgame/${date}.json?t=${Math.floor(Date.now() / 60000)}`);
       return r.ok ? r.json() : null;
     });
   }
@@ -88,6 +89,8 @@ export class LeagueDO {
             case "admin.reopen": lg.reopenMonth(args.ym); out = { ok: true }; break;
             case "admin.approve": lg.approveMonth(args.ym); out = lg.ranking(args.ym, flags); break;
             case "admin.month_prize": lg.setMonthPrize(args.ym, !!args.on); out = lg.months(); break;
+            case "admin.vs_players": out = { players: this.vs.all("SELECT user_id, name, created_at FROM vs_players ORDER BY created_at DESC LIMIT 500") }; break;
+            case "admin.vs_remove": out = this.vs.removePlayer(args.name); break;
             case "admin.settings":
               if (args.public !== undefined) lg.setSetting("public", args.public ? "1" : "0");
               if (args.prizes_allowed !== undefined) lg.setSetting("prizes_allowed", args.prizes_allowed ? "1" : "0");
@@ -113,7 +116,7 @@ const ROUTES = {
   "GET /api/admin/overview": "admin.overview", "POST /api/admin/round": "admin.round", "POST /api/admin/race": "admin.race",
   "POST /api/admin/scratch": "admin.scratch", "POST /api/admin/result": "admin.result", "POST /api/admin/finalize": "admin.finalize",
   "POST /api/admin/reopen": "admin.reopen", "POST /api/admin/approve": "admin.approve", "POST /api/admin/month_prize": "admin.month_prize",
-  "POST /api/admin/settings": "admin.settings",
+  "POST /api/admin/settings": "admin.settings", "GET /api/admin/vs/players": "admin.vs_players", "POST /api/admin/vs/remove": "admin.vs_remove",
   "GET /api/vs/me": "vs.me", "POST /api/vs/name": "vs.name", "POST /api/vs/pick": "vs.pick", "GET /api/vs/pick": "vs.mypick",
   "GET /api/vs/history": "vs.history", "GET /api/vs/ranking": "vs.ranking",
 };
@@ -138,7 +141,8 @@ export default {
     if (op.startsWith("admin.") && !admin) return reply(403, { ok: false, error: "管理者のみの操作です。" });
     // 一般公開前は、プレビューコードを知っている人と管理者だけ
     const pv = req.headers.get("x-league-preview") || "";
-    const isPublic = env.LEAGUE_PUBLIC === "1";
+    // VS_PUBLIC：「AI vs あなた」月間ランキング（と利用者の登録）だけを一般公開する。オーナーズリーグは LEAGUE_PUBLIC のまま
+    const isPublic = env.LEAGUE_PUBLIC === "1" || (env.VS_PUBLIC === "1" && (op.startsWith("vs.") || op === "register"));
     if (!isPublic && !admin && !safeEqual(pv, env.PREVIEW_CODE || "")) {
       return reply(403, { ok: false, error: "この機能は準備中です（関係者プレビューのみ）。", preview_required: true });
     }

@@ -37,7 +37,7 @@ jobs:
           ASK_URL: ${{ vars.ASK_URL }}
           # 「AI vs あなた」月間ランキングのAPI。repository variable LEAGUE_URL があればそちらを使う（"off" と入れると機能ごと止まる）
           LEAGUE_URL: ${{ vars.LEAGUE_URL == 'off' && '' || vars.LEAGUE_URL || 'https://keiba-league.bunbunbunzai.workers.dev' }}
-          VS_PUBLIC: ${{ vars.VS_PUBLIC }}
+          VS_PUBLIC: ${{ vars.VS_PUBLIC || '1' }}  # 月間ランキングを一般公開（repository variable で 0 にすると合言葉つきに戻る）
           LEAGUE_OWNERS: ${{ vars.LEAGUE_OWNERS }}
       - uses: actions/upload-pages-artifact@v3
         with:

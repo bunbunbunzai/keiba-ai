@@ -61,6 +61,7 @@ AFF_RAKUTEN_IMG = "https://srv2.trafficgate.net/t/b/{id}/1958/319633_399587"
 ASK_URL = __import__("os").environ.get("ASK_URL", "").rstrip("/")  # 「AIに質問」の Workers のURL（空なら機能を出さない）
 LEAGUE_URL = os.environ.get("LEAGUE_URL", "").rstrip("/")  # 「AI vs あなた」月間ランキング（とオーナーズリーグ）のAPI。空なら何も作らない
 VS_PUBLIC = os.environ.get("VS_PUBLIC") == "1"  # 月間ランキングを一般公開するか（それまでは noindex・プレビューのコードを入れた人だけ）
+VS_FOOT = '<a href="/vs/">AI vs あなた ランキング</a>\u3000' if LEAGUE_URL and VS_PUBLIC else ""
 LEAGUE_OWNERS = os.environ.get("LEAGUE_OWNERS") == "1"  # オーナーズリーグ（仮想馬）の画面も作るか。いまは出さない
 AFF_SAIKYO_URL = "https://px.a8.net/svt/ejp?a8mat=4BE9CR+9T22IA+47AY+601S1"
 AFF_SAIKYO_IMG = "https://www20.a8.net/svt/bgt?aid=261005787593&wid=001&eno=01&mid=s00000019609001008000&mc=1"
@@ -310,7 +311,7 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False
 <p>出走表や結果など正式な情報は、各主催者の発表をご確認ください。成績は、すべての買い目を1点100円ずつ買ったとして計算しています。</p>
 <p class="support">このサイトは個人が運営しています。サーバー代やX投稿のAPI代の支援は <a href="{OFUSE_URL}" target="_blank" rel="noopener">OFUSE（投げ銭・ファンレター）</a> から。支援の有無で予想の内容や公開範囲は変わりません。</p>
 <p class="sns">重賞の予想と大きな的中は <a href="{X_URL}" target="_blank" rel="noopener me">X（@zentou_log）</a> でも配信中</p>
-<p class="sitemap-links"><a href="/graded/">重賞</a>　<a href="/review/">重賞回顧</a>　<a href="/monthly/">月次レポート</a>　<a href="/days/">過去の予想</a>　<a href="/strategy/">買い方別の回収率</a>　<a href="/ippen/">実験中の狙い馬</a>　<a href="/course/">コース別</a>　<a href="/jockey/">騎手別</a>　<a href="/horse/">馬別</a>　<a href="/column/">コラム</a>　<a href="/glossary/">用語集</a>　<a href="/limits/">AI予想の限界</a>　<a href="/changelog/">更新履歴</a></p>
+<p class="sitemap-links"><a href="/graded/">重賞</a>　<a href="/review/">重賞回顧</a>　<a href="/monthly/">月次レポート</a>　<a href="/days/">過去の予想</a>　{VS_FOOT}<a href="/strategy/">買い方別の回収率</a>　<a href="/ippen/">実験中の狙い馬</a>　<a href="/course/">コース別</a>　<a href="/jockey/">騎手別</a>　<a href="/horse/">馬別</a>　<a href="/column/">コラム</a>　<a href="/glossary/">用語集</a>　<a href="/limits/">AI予想の限界</a>　<a href="/changelog/">更新履歴</a></p>
 <p class="prefs"><button type="button" class="theme" data-mode="auto">表示：自動</button></p>
 <p><a href="/operator/">運営者情報</a>　<a href="/privacy/">プライバシーポリシー</a>　<a href="/contact/">お問い合わせ</a></p>
 </footer>
@@ -1763,6 +1764,7 @@ def limits_page(t: dict, worst_venue: tuple[str, str] | None) -> str:
 
 
 SITE_CHANGES = [
+    ("2026-11-19", "「AI vs あなた」に月間ランキングを追加。名前を決めて各レースで◎を選ぶと、◎の単勝の回収率で順位が出る。AIの◎との対戦成績も並ぶ（参加無料）。"),
     ("2026-11-19", "重賞の判定を直した。レース名に「重賞」の文字があるだけの条件戦と準重賞が、重賞として表示・投稿されていた（11月3日・5日・19日の4レース）。また、東海菊花賞・ばんえい菊花賞・兵庫クイーンカップが、中央の菊花賞・クイーンカップの重賞ページに混ざっていたので、それぞれ別のページに分けた。"),
     ("2026-10-26", "毎日の自動予想を開始。全レースの予想・結果・回収率の公開を始めた。"),
     ("2026-10-30", "レースごとの的中・回収率を、確定のたびに更新するようにした。初心者向けコラムの準備。"),
@@ -1823,6 +1825,7 @@ PRIVACY = f"""<h1>プライバシーポリシー</h1>
 <section class="card"><h2>アフィリエイトについて</h2><p>本サイトは、A8.net・TGアフィリエイト（楽天競馬など）のアフィリエイトプログラムに参加しています。紹介したサービスへの登録や申し込みがあった場合、運営者が報酬を受け取ることがあります。各サービスは成果を確認するためにCookieなどを使用することがあります。</p></section>
 <section class="card"><h2>広告の表記</h2><p>本サイトに掲載する広告・アフィリエイトリンクには「PR」と明記します。予想の印・買い目・成績は、広告の有無や報酬によって変えていません。</p></section>
 <section class="card"><h2>全頭くんへの質問（AIの回答）について</h2><p>レースページの「全頭くんに質問」に入力した質問は、回答を作るために、Cloudflare社のサーバーを通じてAnthropic社のAI（Claude）に送られます。本サイトは質問の内容を保存しません。送られた質問のAnthropic社での取り扱いは、<a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">同社のプライバシーポリシー</a>に従います。使いすぎを防ぐため、IPアドレスごとの質問回数を1日単位で記録し、期限が過ぎた記録は自動で消します。質問欄には、氏名・連絡先などの個人情報を入力しないでください。</p></section>
+<section class="card"><h2>「AI vs あなた」月間ランキングについて</h2><p>月間ランキングに参加すると、決めた名前と、各レースで選んだ◎の記録を、ランキングの集計と表示のためにCloudflare社のサーバーに保存します。名前・回収率・的中数・AIとの対戦成績はランキングのページで誰でも見られます。メールアドレスなどは集めません。参加しない場合、選んだ◎はお使いのブラウザにだけ保存されます。</p></section>
 <section class="card"><h2>ブラウザへの保存</h2><p>表示の設定（ライト・ダーク）、レース一覧の絞り込み、「AI vs あなた」で選んだ馬、その日の質問回数、サイト案内を見たかどうかは、お使いのブラウザの中（ローカルストレージ）にだけ保存し、本サイトのサーバーには送りません。ブラウザの設定から消すことができます。</p></section>
 <section class="card"><h2>外部のサービスに送られる情報</h2><p>ページを表示すると、次のサービスにアクセスの情報（IPアドレス、ブラウザの種類、見たページのURLなど）が送られます。</p>
 <div class="scroll"><table class="facts"><tbody>
@@ -2351,6 +2354,7 @@ def build() -> None:
                        "<p class='crumb'><a href='/'>トップ</a> › あなたの成績</p><h1>あなたの成績</h1>" + banner("mine") +
                        "<p class='answer'>各レースページの「AI vs あなた」で選んだ◎の成績。記録は、いまお使いのブラウザにだけ保存され、外部には送られない。</p>"
                        "<div id='me'><p class='meta'>読み込み中…</p></div>"
+                       + ("<p class='notice'><a href='/vs/'>月間ランキングに参加する（名前を決めるだけ・無料）→</a></p>" if LEAGUE_URL and VS_PUBLIC else "") +
                        "<p class='meta'>勝敗は「あなたの◎の着順」と「AIの◎の着順」を比べて決める。同着は引き分け。結果がまだ出ていないレースは数えない。</p>", "/me/", noindex=True))
     write("/glossary/", glossary_page())
     lastmod.update(glossary_term_pages())
@@ -2378,6 +2382,8 @@ def build() -> None:
             lambda d_, p_: (d_ + p_["_race"]["post_time"].replace(":", "")) if re.fullmatch(r"\d{2}:\d{2}", str(p_["_race"].get("post_time") or "")) else "",
             lambda p_: sorted(h.get("number") for h in (p_["_race"].get("horses") or []) if isinstance(h.get("number"), int)))
         versus.write_game_data(OUT, _days, _ai)
+        if VS_PUBLIC:
+            lastmod["/vs/"] = today_iso
         if LEAGUE_OWNERS:
             league.build(write, page, OUT, LEAGUE_URL, SITE_NAME)
     for old, new in (("/graded/kyoto-5c5158c3/", "/graded/kyoto-jump-stakes/"), ("/column/kyoto-5c5158c3-2026/", "/column/kyoto-jump-stakes-2026/")):

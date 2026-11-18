@@ -80,6 +80,15 @@ export class Versus {
     return { name };
   }
 
+  /** 管理者：不適切な名前の参加者を、選んだ◎ごと消す（本人は別の名前で登録し直せる）。 */
+  removePlayer(name) {
+    const r = this.one("SELECT user_id FROM vs_players WHERE name_key = ?", nameKey(String(name || "")));
+    if (!r) bad("その名前の参加者はいません。", 404);
+    this.run("DELETE FROM vs_picks WHERE user_id = ?", r.user_id);
+    this.run("DELETE FROM vs_players WHERE user_id = ?", r.user_id);
+    return { removed: true };
+  }
+
   // ---------------- ◎を選ぶ ----------------
   async pick(uid, path, number) {
     if (!this.player(uid)) bad("先にランキング用の名前を登録してください。");
@@ -104,13 +113,13 @@ export class Versus {
   }
 
   // ---------------- 結果の取り込み ----------------
-  /** 発走を過ぎたのに結果がまだ無い◎がある日のデータを読み直す（同じ日は5分に1回まで）。 */
+  /** 発走を過ぎたのに結果がまだ無い◎がある日のデータを読み直す（同じ日は1分に1回まで）。 */
   async settle() {
     const now = this.nowKey(), sec = Math.floor(this.now() / 1000);
     const days = this.all("SELECT DISTINCT p.date AS date FROM vs_picks p LEFT JOIN vs_results r ON r.path = p.path WHERE r.path IS NULL AND p.post <= ? ORDER BY p.date", now);
     for (const { date } of days) {
       const f = this.one("SELECT at FROM vs_fetch WHERE date = ?", date);
-      if (f && sec - f.at < 300) continue;
+      if (f && sec - f.at < 60) continue;
       this.run("INSERT INTO vs_fetch (date, at) VALUES (?, ?) ON CONFLICT(date) DO UPDATE SET at = excluded.at", date, sec);
       let day = null;
       try { day = await this.load(date); } catch { day = null; }

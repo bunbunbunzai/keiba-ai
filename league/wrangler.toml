@@ -16,4 +16,6 @@ SITE_ORIGIN = "https://www.ai-keiba-log.com"
 # 一般公開と賞品の大元のスイッチ。データ利用条件と大会規約を確認するまで "0"
 LEAGUE_PUBLIC = "0"
 PRIZES_ALLOWED = "0"
+# 「AI vs あなた」月間ランキングだけを一般公開する（2026-11-19〜）。"0" に戻すとプレビュー用のコードが必要になる
+VS_PUBLIC = "1"
 # 秘密の値（wrangler secret で登録。ここには書かない）：ADMIN_TOKEN、PREVIEW_CODE
