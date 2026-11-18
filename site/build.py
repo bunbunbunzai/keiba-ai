@@ -106,6 +106,14 @@ hl.parentNode.insertBefore(bar,hl);apply();
 """
 
 
+SUPERSEDED = {
+    "mile-kako10nen": "mile-championship-kako-kekka", "mile-ninki-waku": "mile-championship-ninki-waku", "mile-nenrei-kishu": "mile-championship-nenrei-kishu",
+    "jc-kako10nen": "japan-cup-kako-kekka", "jc-ninki-haitou": "japan-cup-ninki-waku", "jc-waku": "japan-cup-ninki-waku",
+    "jc-nenrei-seibetsu": "japan-cup-nenrei-kishu", "jc-kishu": "japan-cup-nenrei-kishu",
+    "champions-cup-kako10nen": "champions-cup-kako-kekka", "arima-kinen-kako10nen": "arima-kinen-kako-kekka",
+}
+
+
 def share_links(url: str, text: str, tags: str = "競馬全頭ログ") -> str:
     """X・LINE の共有ボタン（レースページ以外：コラム・重賞ページ用）。"""
     return (f"<div class='share'><a href='https://twitter.com/intent/tweet?text={quote(text[:110])}&url={quote(url)}&hashtags={quote(tags)}' target='_blank' rel='noopener'>Xでシェア</a>"
@@ -2446,6 +2454,10 @@ def build() -> None:
     # ばんえい菊花賞の診断記事は、中央の菊花賞と同じ記事名（kikka-sho-2026）で作られていた。記事名を直し、古いURLから移す
     if "kikka-sho-2026" not in _cs and "banei-kikka-sho-2026" in _cs:
         write("/column/kikka-sho-2026/", redirect_page("/column/banei-kikka-sho-2026/"))
+    # G1の特集のうち、過去20年の記事と題材が重なる10年版（結果一覧・人気と枠順・年齢と騎手）は、20年の記事へ移す
+    for old, new in SUPERSEDED.items():
+        if old not in _cs and new in _cs:
+            write(f"/column/{old}/", redirect_page(f"/column/{new}/"))
     for sl in _cs:  # 重賞の結果一覧は、20年分にしたときに記事名を変えた（古いURLから移す）
         if sl.endswith("-kako-kekka") and sl[:-11] + "-kako10nen" not in _cs:
             write(f"/column/{sl[:-11]}-kako10nen/", redirect_page(f"/column/{sl}/"))

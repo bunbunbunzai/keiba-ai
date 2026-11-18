@@ -56,7 +56,7 @@ NHKマイルC（5月10日・東京）はロデオドライブが勝った。
 | ガイアフォース | 昨年2着 | 7歳以上は3着以内なし |
 | ロデオドライブ | NHKマイルC馬 | 3歳牡馬は3勝 |
 
-過去10年は1番人気が3勝しかしておらず、4〜5番人気から4頭が勝っている（[人気と枠順](/column/mile-ninki-waku/)）。春のG1馬がそろうと人気が割れやすく、どの馬が1番人気になるかは枠順や当日の馬場でも変わる。
+過去10年は1番人気が3勝しかしておらず、4〜5番人気から4頭が勝っている（[人気と枠順](/column/mile-championship-ninki-waku/)）。春のG1馬がそろうと人気が割れやすく、どの馬が1番人気になるかは枠順や当日の馬場でも変わる。
 
 このサイトのAI予想は、レース前日の夜に公開し、当日のオッズを見て見直す。◎が3〜5番人気なら単勝、1〜2番人気なら複勝を買う（[AI予想の決め方](/column/jc2026-ai-yosou/)はジャパンカップの例で説明している）。
 
@@ -64,4 +64,4 @@ NHKマイルC（5月10日・東京）はロデオドライブが勝った。
 
 - JRA公式「[安田記念 2026年の成績](https://www.jra.go.jp/datafile/seiseki/g1/yasuda/result/yasuda2026.html)」「[ヴィクトリアマイル 2026年の成績](https://www.jra.go.jp/datafile/seiseki/g1/victoria/result/victoria2026.html)」「[桜花賞 2026年の成績](https://www.jra.go.jp/datafile/seiseki/g1/ouka/result/ouka2026.html)」
 - NHKマイルC・ニュージーランドT・京王杯SC・阪神牝馬S・スワンS・まほろばSの結果：JRA出馬表の過去走（このサイトが毎日集めているデータ）
-- 過去10年の傾向：[マイルCS過去10年の結果一覧](/column/mile-kako10nen/)、[年齢・性別・騎手](/column/mile-nenrei-kishu/)
+- 過去10年の傾向：[マイルCS過去10年の結果一覧](/column/mile-championship-kako-kekka/)、[年齢・性別・騎手](/column/mile-championship-nenrei-kishu/)

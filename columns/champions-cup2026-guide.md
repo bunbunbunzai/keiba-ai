@@ -42,11 +42,11 @@ hero: g-dirt-day
 - **内枠が勝つ**：1〜3枠から6頭が勝ち、8枠の勝ちは2023年のレモンポップだけ
 - **7歳以上は勝てない**：延べ28頭で、2着1回・3着2回はあるが勝ちはない（[年齢・騎手](/column/champions-cup-nenrei-kishu/)）
 - **坂井瑠星騎手が3連勝中**：レモンポップで2勝、ダブルハートボンドで1勝。C.ルメール騎手は9回騎乗で勝ちがない
-- **3年続けて2着の馬がいる**：ウィルソンテソーロ（2023〜2025年）。2023年は12番人気だった（[過去10年の結果一覧](/column/champions-cup-kako10nen/)）
+- **3年続けて2着の馬がいる**：ウィルソンテソーロ（2023〜2025年）。2023年は12番人気だった（[過去10年の結果一覧](/column/champions-cup-kako-kekka/)）
 
 ## 特集の記事
 
-- [過去10年の結果一覧（2016〜2025年）](/column/champions-cup-kako10nen/)
+- [過去10年の結果一覧（2016〜2025年）](/column/champions-cup-kako-kekka/)
 - [人気と枠順：1番人気は4勝、8枠は1勝](/column/champions-cup-ninki-waku/)
 - [年齢・性別・騎手：坂井瑠星騎手が4回騎乗で3勝](/column/champions-cup-nenrei-kishu/)
 - [前哨戦の結果：JBCクラシック、みやこS、シリウスSほか](/column/champions-cup2026-zensou/)

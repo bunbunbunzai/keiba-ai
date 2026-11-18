@@ -47,9 +47,9 @@ AIの評価点の1位と◎が違うときは、予想ページに「AIの評価
 
 特集で整理した過去10年のデータは、AIの評価の材料にもなる。
 
-- 1番人気は6勝・3着以内9回、10番人気以下は73頭すべて4着以下（[人気と配当](/column/jc-ninki-haitou/)）
-- 1〜3枠が9勝、7〜8枠は0勝（[枠順](/column/jc-waku/)）
-- 6歳以上は3着以内なし（[年齢・性別](/column/jc-nenrei-seibetsu/)）
+- 1番人気は6勝・3着以内9回、10番人気以下は73頭すべて4着以下（[人気と配当](/column/japan-cup-ninki-waku/)）
+- 1〜3枠が9勝、7〜8枠は0勝（[枠順](/column/japan-cup-ninki-waku/)）
+- 6歳以上は3着以内なし（[年齢・性別](/column/japan-cup-nenrei-kishu/)）
 - 天皇賞（秋）の勝ち馬は出走5頭すべて3着以内（[前走別](/column/jc-zensou/)）
 - ダービー馬は延べ19頭で3着以内8回（[東京芝2400m](/column/jc-tokyo2400/)）
 

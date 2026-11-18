@@ -39,23 +39,23 @@ hero: g-turf-autumn
 
 2016〜2025年の10回、延べ163頭の全着順（JRA公式の成績）を集計した。
 
-- **1番人気が強い**：6勝・2着2回・3着1回。3着以内を外したのは2019年のレイデオロ（11着）だけ（[人気と配当](/column/jc-ninki-haitou/)）
+- **1番人気が強い**：6勝・2着2回・3着1回。3着以内を外したのは2019年のレイデオロ（11着）だけ（[人気と配当](/column/japan-cup-ninki-waku/)）
 - **人気薄はほぼ来ない**：10番人気以下は73頭すべて4着以下。3着以内で最も人気がなかったのは8番人気（2024年2着のシンエンペラー）
-- **内枠が勝っている**：1〜3枠が9勝。7〜8枠は延べ49頭で0勝（[枠順](/column/jc-waku/)）
-- **6歳以上は苦戦**：延べ51頭が出て、3着以内は0回（[年齢・性別](/column/jc-nenrei-seibetsu/)）
+- **内枠が勝っている**：1〜3枠が9勝。7〜8枠は延べ49頭で0勝（[枠順](/column/japan-cup-ninki-waku/)）
+- **6歳以上は苦戦**：延べ51頭が出て、3着以内は0回（[年齢・性別](/column/japan-cup-nenrei-kishu/)）
 - **外国馬は1勝**：延べ22頭で、勝ったのは昨年のカランダガンだけ。ほかの21頭はすべて4着以下（[外国馬](/column/jc-gaikokuba/)）
 - **前走は天皇賞（秋）が中心**：勝ち馬10頭のうち5頭が天皇賞（秋）から（[前走別](/column/jc-zensou/)）
-- **ルメール騎手が3勝**：10回騎乗して3勝・2着3回（[騎手](/column/jc-kishu/)）
+- **ルメール騎手が3勝**：10回騎乗して3勝・2着3回（[騎手](/column/japan-cup-nenrei-kishu/)）
 
 ## 特集の記事
 
 データ編
-- [過去10年の結果一覧（2016〜2025年）](/column/jc-kako10nen/)
-- [1番人気の成績と配当の傾向](/column/jc-ninki-haitou/)
-- [枠順の傾向：1枠5勝、7〜8枠は0勝](/column/jc-waku/)
-- [年齢・性別：6歳以上は3着以内ゼロ](/column/jc-nenrei-seibetsu/)
+- [過去10年の結果一覧（2016〜2025年）](/column/japan-cup-kako-kekka/)
+- [1番人気の成績と配当の傾向](/column/japan-cup-ninki-waku/)
+- [枠順の傾向：1枠5勝、7〜8枠は0勝](/column/japan-cup-ninki-waku/)
+- [年齢・性別：6歳以上は3着以内ゼロ](/column/japan-cup-nenrei-kishu/)
 - [外国馬の成績と2026年の予備登録馬](/column/jc-gaikokuba/)
-- [騎手別の成績](/column/jc-kishu/)
+- [騎手別の成績](/column/japan-cup-nenrei-kishu/)
 - [前走別の成績：天皇賞（秋）組と京都大賞典組](/column/jc-zensou/)
 - [東京芝2400mはどんなコースか](/column/jc-tokyo2400/)
 
