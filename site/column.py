@@ -446,6 +446,7 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
     cols = columns()
     if not cols:
         return {}
+    _B = __import__("build")
     v, tables = stats(stats_from)
     try:
         tables["aff_rakuten"] = __import__("build").aff_rakuten("column")
@@ -538,6 +539,8 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
                  + ("</div>" if (ROOT / "site" / "assets" / "zk-normal.png").exists() else "")
                  + "<p class='meta'>馬券の購入は20歳から。予想は的中や利益を保証するものではない。</p></section>"
                  + (_league_link(c) if auto_c else "")
+                 + _aff_for(c, tables)
+                 + _B.share_links(base_url + path, title)
                  + related)
         hero = hero_c(c)
         og_img = f"/assets/{hero}.jpg" if hero else "/og/default.jpg"
@@ -553,14 +556,21 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
                          head_extra=jsonld(ld) + jsonld(crumb), og_image=og_img))
         if not c["draft"]:
             lastmod[path] = today_iso
-    items = "".join(_li(c) for c in pub if c.get("auto") != "true" and c.get("series") not in ("weekly", "guide", "gdata") + FEATURE_IDS)
+    def clip(lis: list, n: int = 6) -> str:
+        """一覧が長くなりすぎないよう、最初の n 本だけ見せて残りは畳む（スマホで1ページが長すぎたため）。"""
+        if len(lis) <= n + 2:
+            return f"<ul class='cols'>{''.join(lis)}</ul>"
+        return (f"<ul class='cols'>{''.join(lis[:n])}</ul><details class='more'><summary>残りの{len(lis) - n}本を見る</summary>"
+                f"<ul class='cols'>{''.join(lis[n:])}</ul></details>")
+    items = clip([_li(c) for c in pub if c.get("auto") != "true" and c.get("series") not in ("weekly", "guide", "gdata") + FEATURE_IDS], 10)
+    items = items if "<li" in items else ""
     feat_items = ""
     jumps = []  # 一覧の上に並べる、各見出しへのジャンプ
     for sid, head, note in FEATURE_SERIES:
         feats = sorted((c for c in pub if c.get("series") == sid), key=lambda c: int(c.get("order") or 0))
         if feats:
             feat_items += (f"<h2 id='{sid}'>{esc(head)}</h2><p class='meta'>{esc(note)}</p>"
-                           f"<ul class='cols'>{''.join(_li(c) for c in feats)}</ul>")
+                           + clip([_li(c) for c in feats], 5))
             jumps.append((sid, head.replace("特集：", "")))
     guides = sorted((c for c in pub if c.get("series") == "guide"), key=lambda c: int(c.get("order") or 0))
     guide_items = ("<h2 id='guide'>はじめての競馬ガイド</h2><p class='meta'>競馬の始め方、馬券の買い方、出馬表やパドックの見方など、最初に知っておきたいことを順番にまとめている。</p>"
@@ -569,15 +579,15 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
         jumps.append(("guide", "はじめての競馬ガイド"))
     weeklies = sorted((c for c in pub if c.get("series") == "weekly"), key=lambda c: c.get("date", ""), reverse=True)
     weekly_items = ("<h2 id='weekly'>AI予想の週間振り返り</h2><p class='meta'>毎週、1週間分の全予想と結果をAIが分析し、当たった条件・外れた条件をまとめている。</p>"
-                    f"<ul class='cols'>{''.join(_li(c) for c in weeklies[:12])}</ul>") if weeklies else ""
+                    + clip([_li(c) for c in weeklies[:12]], 3)) if weeklies else ""
     if weeklies:
         jumps.append(("weekly", "週間振り返り"))
     if items:
         jumps.append(("data", "初心者向け・データ分析"))
-    auto_items = "".join(_li(c) for c in autos_new[:40])
+    auto_items = clip([_li(c) for c in autos_new[:40]], 6) if autos_new else ""
     if auto_items:
         auto_items = ("<h2 id='zensou'>重賞の全頭診断（レースごと）</h2><p class='meta'>重賞ごとに、AIの印・評価点・想定勝率・買い目と、確定後の結果・回顧を1本の記事にしている。レース当日の昼までに公開。</p>"
-                      f"<ul class='cols'>{auto_items}</ul>" + ("<p class='meta'>直近40本を表示。</p>" if len(autos_new) > 40 else ""))
+                      + auto_items + ("<p class='meta'>直近40本を表示。</p>" if len(autos_new) > 40 else ""))
         jumps.append(("zensou", "重賞の全頭診断"))
     gdata_items = ""
     if gdata_new:
@@ -600,7 +610,7 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
     write("/column/", page(f"競馬初心者向けコラム | {site_name}",
                            "<p class='crumb'><a href='/'>トップ</a> › コラム</p><h1>競馬初心者向けコラム</h1>" + __import__("build").banner("column") +
                            "<p class='answer'>馬券の種類や回収率の考え方などを、このサイトの全レースの記録（実データ）を使って解説する。数字は記録が増えるたびに自動で更新される。</p>"
-                           + jump_html + feat_items + gdata_items + guide_items + weekly_items + (f"<h2 id='data'>初心者向け・データ分析</h2><ul class='cols'>{items}</ul>" if items else "<p>準備中。</p>") + auto_items,
+                           + jump_html + feat_items + gdata_items + guide_items + weekly_items + (f"<h2 id='data'>初心者向け・データ分析</h2>{items}" if items else "<p>準備中。</p>") + auto_items,
                            "/column/", desc="競馬初心者向けに、馬券の種類・回収率・人気と勝率・トラックバイアスを、AI予想の全レースの実データで解説するコラム。",
                            noindex=not pub))
     if pub:
@@ -615,3 +625,23 @@ def _league_link(c: dict) -> str:
         return ""
     import league
     return league.article_link(str(c["race_id"]))
+
+
+_JRA_VENUES = ("札幌", "函館", "福島", "新潟", "東京", "中山", "中京", "京都", "阪神", "小倉")
+
+
+def _aff_for(c: dict, tables: dict) -> str:
+    """重賞のデータ記事・全頭診断の末尾に置くPR。本文にすでに入っている記事と、重賞以外の記事には足さない。
+
+    中央の重賞：競馬最強の法則WEB（人間の予想家の見解と比べたい人向け）。地方の重賞：楽天競馬（そのレースを買える）。
+    """
+    if "{aff_" in c.get("body", ""):
+        return ""
+    if c.get("series") == "gdata":
+        return tables.get("aff_saikyo", "")
+    if c.get("auto") == "true":
+        head = c.get("body", "")[:400]
+        m = re.search(r"レース：.*?([^\s（）()]+)競馬場", head)
+        jra = bool(m and m.group(1).endswith(_JRA_VENUES))
+        return tables.get("aff_saikyo" if jra else "aff_rakuten", "")
+    return ""

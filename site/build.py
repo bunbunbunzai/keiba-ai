@@ -27,6 +27,7 @@ import racesim
 from imgutil import webp_variants
 import league
 import versus
+from urllib.parse import quote
 import extra
 import og
 import strategy
@@ -68,6 +69,48 @@ AFF_SAIKYO_IMG = "https://www20.a8.net/svt/bgt?aid=261005787593&wid=001&eno=01&m
 AFF_SAIKYO_PX = "https://www10.a8.net/0.gif?a8mat=4BE9CR+9T22IA+47AY+601S1"
 AFF_SAIKYO_TXT_URL = "https://px.a8.net/svt/ejp?a8mat=4BE9CR+9T22IA+47AY+61Z82"
 AFF_SAIKYO_TXT_PX = "https://www14.a8.net/0.gif?a8mat=4BE9CR+9T22IA+47AY+61Z82"
+
+
+# 押しやすさ：小さな文字リンク（パンくず・フッター・出典の一覧）に、指で押せる高さを持たせる
+EXTRA_CSS = """
+.crumb a,.foot .sitemap-links a,.card ul.meta li a{display:inline-block;padding:5px 0;min-height:24px}
+.foot .sitemap-links a{padding:6px 2px}.card ul.meta li{margin:2px 0}
+.rtoc{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0;padding:0;list-style:none}.rtoc a{display:inline-block;border:1px solid var(--line);background:var(--panel);color:var(--fg);padding:6px 10px;font-size:13px;border-radius:2px;text-decoration:none}
+.hsort{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 8px}.hsort button{border:1px solid var(--line);background:var(--panel);color:var(--fg);padding:6px 10px;font:inherit;font-size:13px;border-radius:2px;cursor:pointer}.hsort button[aria-pressed=true]{background:var(--rule);color:var(--bg);border-color:var(--rule)}
+details.more{margin:6px 0 4px}details.more>summary{cursor:pointer;color:var(--acc);padding:8px 0;font-size:14px}
+.colnav{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}.colnav a{display:inline-block;border:1px solid var(--line);background:var(--panel);color:var(--fg);padding:6px 10px;font-size:13px;border-radius:2px;text-decoration:none}
+details.colgrp>summary{cursor:pointer;font-weight:700;padding:10px 0;font-size:17px}details.colgrp{border-top:2px solid var(--rule);margin-top:14px}
+"""
+
+
+# レースページ：ページ内の目次（各欄へ飛ぶ）と、全頭評価の並べ替え（馬番順／評価点順／印のある馬だけ）
+EXTRA_JS = r"""
+(function(){var hl=document.querySelector('main ul.hl');if(!hl)return;
+function ga(n,p){try{if(window.gtag)gtag('event',n,p||{})}catch(e){}}
+var ans=document.querySelector('main p.answer'),hs=[].slice.call(document.querySelectorAll('main section.card>h2'));
+if(ans&&hs.length>3){var ul=document.createElement('ul');ul.className='rtoc';ul.setAttribute('aria-label','このページの目次');
+ hs.forEach(function(h,i){var c=h.cloneNode(true);[].forEach.call(c.querySelectorAll('small,.tag,span'),function(x){x.remove();});var t=c.textContent.trim();if(!t)return;if(!h.id)h.id='s'+i;
+  var li=document.createElement('li'),a=document.createElement('a');a.href='#'+h.id;a.textContent=t;a.addEventListener('click',function(){ga('race_toc',{to:t});});li.appendChild(a);ul.appendChild(li);});
+ ans.parentNode.insertBefore(ul,ans.nextSibling);}
+var rows=[].slice.call(hl.querySelectorAll('li.hr:not(.hd)'));if(rows.length<6)return;
+rows.forEach(function(r,i){r.dataset.i=i;r.dataset.sc=parseFloat((r.querySelector('.c-sc')||{}).textContent)||0;r.dataset.mk=((r.querySelector('.c-mk')||{}).textContent||'').trim()?'1':'';});
+var bar=document.createElement('div');bar.className='hsort';bar.setAttribute('role','group');bar.setAttribute('aria-label','全頭評価の並べ方');
+var mode='no',only=false;
+function apply(){var a=rows.slice().sort(function(x,y){return mode==='sc'?(y.dataset.sc-x.dataset.sc)||(x.dataset.i-y.dataset.i):x.dataset.i-y.dataset.i;});
+ a.forEach(function(r){r.hidden=only&&!r.dataset.mk;hl.appendChild(r);});
+ [].forEach.call(bar.children,function(b){b.setAttribute('aria-pressed',b.dataset.k==='only'?String(only):String(b.dataset.k===mode));});}
+[['no','馬番順'],['sc','評価点順'],['only','印のある馬だけ']].forEach(function(x){var b=document.createElement('button');b.type='button';b.dataset.k=x[0];b.textContent=x[1];
+ b.onclick=function(){if(x[0]==='only')only=!only;else mode=x[0];apply();ga('race_sort',{mode:mode,only:only});};bar.appendChild(b);});
+hl.parentNode.insertBefore(bar,hl);apply();
+})();
+"""
+
+
+def share_links(url: str, text: str, tags: str = "競馬全頭ログ") -> str:
+    """X・LINE の共有ボタン（レースページ以外：コラム・重賞ページ用）。"""
+    return (f"<div class='share'><a href='https://twitter.com/intent/tweet?text={quote(text[:110])}&url={quote(url)}&hashtags={quote(tags)}' target='_blank' rel='noopener'>Xでシェア</a>"
+            f"<a href='https://social-plugins.line.me/lineit/share?url={quote(url)}' target='_blank' rel='noopener'>LINEで送る</a>"
+            f"<a href='{X_URL}' target='_blank' rel='noopener me'>Xでフォロー（重賞予想と大きな的中を配信）</a></div>")
 
 
 def aff_saikyo() -> str:
@@ -1926,7 +1969,7 @@ table{border-collapse:collapse;width:100%;font-size:14px;background:var(--panel)
 .hr small{display:block;color:var(--mut);font-size:12px;font-weight:400}.hr.hd{font-size:12px;color:var(--mut);font-weight:700;border-bottom:2px solid var(--rule)}
 .hr.mk{background:var(--acc-soft)}.hr.top .c-fn{color:var(--hit);font-weight:700}.c-cm{color:var(--fg);font-size:13px;line-height:1.6}.c-mk{font-size:18px;color:var(--acc);font-weight:700;line-height:1}
 .fr{display:inline-block;min-width:28px;text-align:center;border-radius:2px;border:1px solid var(--line);padding:1px 4px;font-weight:700}
-.f1{background:#fff;color:#111}.f2{background:#222;color:#fff}.f3{background:#d33;color:#fff}.f4{background:#2a5bd7;color:#fff}.f5{background:#f2c200;color:#111}.f6{background:#1f8f4a;color:#fff}.f7{background:#f08a24;color:#111}.f8{background:#f4a6c6;color:#111}
+.f1{background:#fff;color:#111}.f2{background:#222;color:#fff}.f3{background:#d33;color:#fff}.f4{background:#2a5bd7;color:#fff}.f5{background:#f2c200;color:#111}.f6{background:#197a3f;color:#fff}.f7{background:#f08a24;color:#111}.f8{background:#f4a6c6;color:#111}
 .tag{display:inline-block;margin-left:4px;font-size:11px;border-radius:2px;padding:0 4px}.tag.good{background:var(--acc);color:#fff}.tag.bad{background:var(--line);color:var(--fg)}
 .bias .conf{margin-left:8px;vertical-align:middle}
 @media (max-width:720px){h1{font-size:24px}.roi-badge{border:0;padding:0;font-size:12px;flex-basis:100%;margin:0}.roi-badge b{font-size:16px}.logo b{font-size:20px}.logo small{font-size:11px}.hr.hd{display:none}.hr{grid-template-columns:40px 22px 1fr 1fr 1fr;grid-template-areas:"no mk nm nm fn" "no mk od sc vl" "cm cm cm cm cm";padding:10px 4px;gap:4px 8px}
@@ -2164,17 +2207,17 @@ def build() -> None:
     if OUT.exists():
         shutil.rmtree(OUT)
     OUT.mkdir()
-    (OUT / "style.css").write_text(CSS, encoding="utf-8")
+    (OUT / "style.css").write_text(CSS + EXTRA_CSS, encoding="utf-8")
     (OUT / "manifest.webmanifest").write_text(json.dumps({
         "name": SITE_NAME, "short_name": SITE_NAME, "start_url": "/", "display": "standalone", "background_color": "#f2f3f0", "theme_color": "#146b45", "lang": "ja",
-        "icons": [{"src": "/assets/logo-mark.png", "sizes": "512x512", "type": "image/png"}, {"src": "/assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png"}]},
+        "icons": [{"src": "/assets/logo-mark.png", "sizes": "512x512", "type": "image/png"}, {"src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png"}, {"src": "/assets/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}, {"src": "/assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png"}]},
         ensure_ascii=False), encoding="utf-8")
     (OUT / "ads.txt").write_text(f"google.com, {ADSENSE_PUB.replace('ca-', '')}, DIRECT, f08c47fec0942fa0\n", encoding="utf-8")
     # 全頭くんのサイト案内：月間ランキングを公開している間は、その紹介を1枚足す
     _vs_step = ("{f:'trophy',h:'僕と勝負しませんか',b:'<p>各レースページの下にある<b>「AI vs あなた」</b>で、あなたの◎を1頭選ぶと、僕の◎と勝負できます。</p>"
                 "<p>名前を決めて参加すると、<b>月間ランキング</b>に載ります。順位は◎の単勝の回収率。参加は無料です。</p>"
                 "<div class=\"links\"><a href=\"/vs/guide/\">遊び方</a><a href=\"/vs/\">ランキングを見る</a></div>'},") if LEAGUE_URL and VS_PUBLIC else ""
-    (OUT / "app.js").write_text(JS.replace("/*VS_STEP*/", _vs_step), encoding="utf-8")
+    (OUT / "app.js").write_text(JS.replace("/*VS_STEP*/", _vs_step) + EXTRA_JS, encoding="utf-8")
     (OUT / "racesim.js").write_text(RACESIM_JS, encoding="utf-8")
     (OUT / "racesim3d.js").write_bytes(RACESIM3D_JS)
     (OUT / "racehorse.glb").write_bytes(RACEHORSE_GLB)

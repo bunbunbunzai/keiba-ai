@@ -267,7 +267,8 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
                 f"<h1>{esc(name)} AI予想と傾向（{esc(g)}）</h1>{B.banner(_pic_banner(B, p0, d0), name)}<p class='answer'>{esc(lead)}</p>"
                 + feature_notice(esc, name, feats) + gdata_notice(esc, slug) + race_guide_html(B, slug) +
                 f"<section class='card'><h2>年ごとのAI予想と結果</h2><ul class='days'>{''.join(lis)}</ul></section>"
-                f"<p class='meta'>毎年このページに追加される。最新の予想はレース当日の昼（重賞は前日夜にも）公開。</p>")
+                f"<p class='meta'>毎年このページに追加される。最新の予想はレース当日の昼（重賞は前日夜にも）公開。</p>"
+                + B.share_links(B.BASE_URL + path, f"{name}のAI予想と傾向（{g}）", f"競馬全頭ログ,{name.replace('(', '').replace(')', '')}"))
         ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": B.SITE_NAME, "item": B.BASE_URL + "/"},
             {"@type": "ListItem", "position": 2, "name": "重賞", "item": B.BASE_URL + "/graded/"},
@@ -287,6 +288,7 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
                 f"<h1>{esc(name)}の傾向とレースガイド（{esc(g)}）</h1><p class='answer'>{esc(gd.get('lead', ''))}</p>"
                 + feature_notice(esc, name, feats) + gdata_notice(esc, slug) + race_guide_html(B, slug, show_lead=not gd.get("lead"))
                 + "<p class='meta'>このレースのAI予想（全頭の評価点・印・買い目）は、レースの前日夜または当日昼にこのページに追加される。</p>")
+        body += B.share_links(B.BASE_URL + path, f"{name}の傾向とレースガイド（{g}）", f"競馬全頭ログ,{name.replace('(', '').replace(')', '')}")
         ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": B.SITE_NAME, "item": B.BASE_URL + "/"},
             {"@type": "ListItem", "position": 2, "name": "重賞", "item": B.BASE_URL + "/graded/"},
