@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261118",
  "race_id": "202611182726180412",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "ラガークイン",
    "time": "1:30.8",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 39.2,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "タオロマイ",
    "time": "1:31.6",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 40.4,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "グロリアスアポイ",
    "time": "1:31.8",
    "margin": "１ １／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 10,
+   "last3f": 38.5,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "ゼンダンスバシリ",
    "time": "1:31.9",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 39.8,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "ギユウ",
    "time": "1:32.0",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 40.1,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "エイシンビルボード",
    "time": "1:32.2",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 40.9,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "フェゲフォイア",
    "time": "1:32.5",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 40.8,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "リリーオブザハート",
    "time": "1:32.7",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 41.2,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "ピンクマルガリータ",
    "time": "1:32.9",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 41.8,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "モノクロームスター",
    "time": "1:33.2",
    "margin": "１ ３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 10,
+   "last3f": 40.6,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "ルヴァンヴェール",
    "time": "1:33.3",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 41.6,
    "popularity": null
   },
   {
@@ -198,8 +198,8 @@
    "name": "エスオーライジング",
    "time": "1:34.5",
    "margin": "７",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 12,
+   "last3f": 42.8,
    "popularity": null
   }
  ]
