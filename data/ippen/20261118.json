@@ -1,6 +1,6 @@
 {
  "date": "20261118",
- "updated": "2026-11-18 14:24",
+ "updated": "2026-11-18 14:29",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -913,8 +913,8 @@
     "field": 12,
     "popularity": 4
    },
-   "odds": 8.5,
-   "popularity": 4
+   "odds": 10.0,
+   "popularity": 3
   },
   {
    "race_id": "202611182726180411",
@@ -934,8 +934,8 @@
     "field": 9,
     "popularity": 3
    },
-   "odds": 7.8,
-   "popularity": 3
+   "odds": 3.2,
+   "popularity": 2
   },
   {
    "race_id": "202611182726180411",
@@ -955,8 +955,8 @@
     "field": 10,
     "popularity": 9
    },
-   "odds": 14.4,
-   "popularity": 5
+   "odds": 12.8,
+   "popularity": 4
   },
   {
    "race_id": "202611182726180411",
@@ -968,7 +968,8 @@
    "name": "アストラッド",
    "types": [
     "layoff",
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 112,
    "last": {
@@ -977,8 +978,8 @@
     "field": 10,
     "popularity": 3
    },
-   "odds": 6.7,
-   "popularity": 2
+   "odds": 16.7,
+   "popularity": 5
   },
   {
    "race_id": "202611182015120304",
