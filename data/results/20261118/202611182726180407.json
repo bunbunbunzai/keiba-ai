@@ -2,7 +2,155 @@
  "source": "rakuten",
  "date": "20261118",
  "race_id": "202611182726180407",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "8",
+    "yen": 130
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "8-1",
+    "yen": 610
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "8",
+    "yen": 100
+   },
+   {
+    "combo": "1",
+    "yen": 220
+   },
+   {
+    "combo": "7",
+    "yen": 190
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-8",
+    "yen": 200
+   },
+   {
+    "combo": "7-8",
+    "yen": 150
+   },
+   {
+    "combo": "1-7",
+    "yen": 550
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-7-8",
+    "yen": 660
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "8-1-7",
+    "yen": 1980
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-8",
+    "yen": 670
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 8,
+   "name": "スマッシュヒット",
+   "time": "50.0",
+   "margin": "",
+   "pos4": null,
+   "last3f": 36.1,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 1,
+   "number": 1,
+   "name": "アングラー",
+   "time": "50.9",
+   "margin": "５",
+   "pos4": null,
+   "last3f": 36.8,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 7,
+   "name": "コモリボルダー",
+   "time": "50.9",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": 36.8,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 3,
+   "name": "アッケシ",
+   "time": "51.0",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": 36.6,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 2,
+   "number": 2,
+   "name": "ジューンコメット",
+   "time": "51.3",
+   "margin": "１ ３／４",
+   "pos4": null,
+   "last3f": 37.1,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 5,
+   "name": "ナムラマイケル",
+   "time": "51.6",
+   "margin": "２",
+   "pos4": null,
+   "last3f": 36.5,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 4,
+   "name": "モノノフイエロー",
+   "time": "51.6",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": 37.0,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 6,
+   "number": 6,
+   "name": "ミストルティン",
+   "time": "51.7",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": 37.1,
+   "popularity": null
+  }
+ ]
 }
