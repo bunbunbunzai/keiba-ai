@@ -1,6 +1,6 @@
 {
  "date": "20261118",
- "updated": "2026-11-18 16:31",
+ "updated": "2026-11-18 16:46",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1372,7 +1372,7 @@
     "field": 13,
     "popularity": null
    },
-   "odds": 10.5,
+   "odds": 13.4,
    "popularity": 4
   },
   {
@@ -1393,8 +1393,8 @@
     "field": 14,
     "popularity": null
    },
-   "odds": 28.6,
-   "popularity": 11
+   "odds": 26.9,
+   "popularity": 9
   },
   {
    "race_id": "202611182015120307",
@@ -1414,8 +1414,22 @@
     "field": 14,
     "popularity": null
    },
-   "odds": 10.7,
-   "popularity": 6
+   "odds": 19.4,
+   "popularity": 7
+  },
+  {
+   "race_id": "202611182015120307",
+   "results_key": "202611182015120307",
+   "venue": "大井",
+   "race_no": 7,
+   "post_time": "17:45",
+   "number": 6,
+   "name": "コトリノサエズリ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 5.0,
+   "popularity": 2
   },
   {
    "race_id": "202611182015120307",
@@ -1435,7 +1449,7 @@
     "field": 11,
     "popularity": null
    },
-   "odds": 50.0,
+   "odds": 86.8,
    "popularity": 14
   },
   {
@@ -1456,8 +1470,8 @@
     "field": 12,
     "popularity": null
    },
-   "odds": 6.4,
-   "popularity": 3
+   "odds": 2.2,
+   "popularity": 1
   },
   {
    "race_id": "202611182015120307",
@@ -1477,8 +1491,8 @@
     "field": 14,
     "popularity": null
    },
-   "odds": 24.6,
-   "popularity": 10
+   "odds": 39.1,
+   "popularity": 12
   },
   {
    "race_id": "202611182015120308",
