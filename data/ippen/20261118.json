@@ -93,6 +93,20 @@
    "popularity": null
   },
   {
+   "race_id": "202611182320130103",
+   "results_key": "202611182320130103",
+   "venue": "笠松",
+   "race_no": 3,
+   "post_time": "11:25",
+   "number": 11,
+   "name": "ドロンパ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 4.3,
+   "popularity": 2
+  },
+  {
    "race_id": "202611182726180403",
    "results_key": "202611182726180403",
    "venue": "園田",
@@ -101,7 +115,8 @@
    "number": 7,
    "name": "ピエスダルジャン",
    "types": [
-    "rebound"
+    "rebound",
+    "aitop"
    ],
    "gap_days": 20,
    "last": {
@@ -112,6 +127,20 @@
    },
    "odds": 4.9,
    "popularity": 2
+  },
+  {
+   "race_id": "202611182320130104",
+   "results_key": "202611182320130104",
+   "venue": "笠松",
+   "race_no": 4,
+   "post_time": "11:55",
+   "number": 2,
+   "name": "パルストリス",
+   "types": [
+    "aitop"
+   ],
+   "odds": 18.2,
+   "popularity": 7
   },
   {
    "race_id": "202611182320130104",
@@ -155,6 +184,20 @@
    },
    "odds": 9.1,
    "popularity": 5
+  },
+  {
+   "race_id": "202611182726180404",
+   "results_key": "202611182726180404",
+   "venue": "園田",
+   "race_no": 4,
+   "post_time": "12:10",
+   "number": 6,
+   "name": "エイシンジコクテン",
+   "types": [
+    "aitop"
+   ],
+   "odds": 28.3,
+   "popularity": 7
   },
   {
    "race_id": "202611182726180404",
