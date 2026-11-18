@@ -1,6 +1,6 @@
 {
  "date": "20261118",
- "updated": "2026-11-18 14:44",
+ "updated": "2026-11-18 14:49",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1054,8 +1054,7 @@
    "number": 1,
    "name": "リュクスウォリアー",
    "types": [
-    "layoff",
-    "aitop"
+    "layoff"
    ],
    "gap_days": 121,
    "last": {
@@ -1064,8 +1063,8 @@
     "field": 8,
     "popularity": 1
    },
-   "odds": 4.8,
-   "popularity": 3
+   "odds": 4.9,
+   "popularity": 2
   },
   {
    "race_id": "202611182320130112",
@@ -1085,8 +1084,8 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": 3.2,
-   "popularity": 1
+   "odds": 10.0,
+   "popularity": 6
   },
   {
    "race_id": "202611182320130112",
@@ -1106,8 +1105,8 @@
     "field": 10,
     "popularity": 4
    },
-   "odds": 38.8,
-   "popularity": 11
+   "odds": 10.3,
+   "popularity": 8
   },
   {
    "race_id": "202611182320130112",
@@ -1127,8 +1126,8 @@
     "field": 9,
     "popularity": 7
    },
-   "odds": 25.8,
-   "popularity": 6
+   "odds": 12.3,
+   "popularity": 9
   },
   {
    "race_id": "202611182320130112",
@@ -1148,8 +1147,8 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": 25.8,
-   "popularity": 6
+   "odds": 22.3,
+   "popularity": 10
   },
   {
    "race_id": "202611182320130112",
@@ -1169,8 +1168,8 @@
     "field": 10,
     "popularity": 9
    },
-   "odds": 25.8,
-   "popularity": 6
+   "odds": 35.8,
+   "popularity": 12
   },
   {
    "race_id": "202611182726180412",
