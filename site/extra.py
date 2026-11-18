@@ -183,6 +183,34 @@ def grade_of(race: dict, name: str = "") -> str | None:
     return "重賞" if PLAIN_GRADED_RE.search(text) else None
 
 
+_JOCKEYS: dict | None = None
+_MARKS_RE = re.compile(r"^[\s☆★▲△◇◆]+")
+
+
+def jockey_name(name, jockey_id=None) -> str:
+    """騎手名の表示用：見習いの印（▲☆など）を外し、地方の3文字の略称は正式な氏名に直す（data/jockeys.json に入っている分だけ）。
+
+    略称が同じ騎手が2人以上いるときは、騎手の番号（jockey_id）が分かる場合だけ直す。
+    """
+    global _JOCKEYS
+    n = _MARKS_RE.sub("", str(name or "")).strip()
+    if not n:
+        return n
+    if _JOCKEYS is None:
+        import json
+        f = Path(__file__).resolve().parent.parent / "data" / "jockeys.json"
+        by_id = (json.loads(f.read_text(encoding="utf-8")).get("by_id") or {}) if f.exists() else {}
+        by_abbr: dict = defaultdict(set)
+        for v in by_id.values():
+            if v.get("name") and v.get("abbr"):
+                by_abbr[v["abbr"]].add(v["name"])
+        _JOCKEYS = {"id": by_id, "abbr": {k: next(iter(v)) for k, v in by_abbr.items() if len(v) == 1}}
+    hit = _JOCKEYS["id"].get(str(jockey_id)) if jockey_id else None
+    if hit and hit.get("name"):
+        return hit["name"]
+    return _JOCKEYS["abbr"].get(n, n)
+
+
 def clean_name(name: str) -> str:
     """「第174回 天皇賞(秋) 3歳以上…」→「天皇賞(秋)」。地方の（Ｓ２）等や条件も外す。"""
     n = nfkc(name)

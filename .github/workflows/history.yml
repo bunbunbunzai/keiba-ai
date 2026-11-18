@@ -38,6 +38,11 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
+      # 地方の騎手の正式な氏名（出馬表は3文字の略称）。未取得の騎手だけ、過去成績の取得の前に続けて読む（1ページ60秒）
+      - name: 騎手の氏名
+        if: ${{ (inputs.src || ((github.event.schedule == '31 15 * * *' || github.event.schedule == '31 18 * * *') && 'local' || 'jra')) == 'local' }}
+        run: cd scraper && python -u jockeys.py --max-minutes 50
+        continue-on-error: true
       - name: 取得
         env:
           SRC: ${{ inputs.src || ((github.event.schedule == '31 15 * * *' || github.event.schedule == '31 18 * * *') && 'local' || 'jra') }}
@@ -53,6 +58,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/history
+          git add data/jockeys.json 2>/dev/null || true
           git diff --cached --quiet && exit 0
           git commit -m "過去のレース結果を追加（${{ inputs.src || 'scheduled' }}）"
           for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && break; sleep 20; done

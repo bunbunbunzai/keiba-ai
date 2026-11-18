@@ -152,6 +152,7 @@ def parse_card(html: str, race_id: str) -> dict:
             "sex_age": prof[0] if prof else None,
             "weight": _num(prof[2]) if len(prof) > 2 else None,
             "jockey": prof[3] if len(prof) > 3 else None,
+            "jockey_id": (re.search(r"JOCKEYID/(\d+)", str(tr)) or [None, None])[1],
             "trainer": prof[-1] if prof else None,
             "body_weight_change": tr.find("td", class_="weightDistance").get_text(strip=True) if tr.find("td", class_="weightDistance") else None,
             "past": [p for p in (parse_past(td) for td in tr.find_all("td", class_="race")) if p],

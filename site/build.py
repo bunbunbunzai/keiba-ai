@@ -410,6 +410,9 @@ def predictions(date: str) -> list[dict]:
         if not p:
             continue
         p["_race"] = load_json(ROOT / "data" / "races" / date / f"{p['race_id']}.json") or {}
+        for h_ in p["_race"].get("horses") or []:  # 騎手名：見習いの印を外し、地方の略称は正式な氏名に（分かる分だけ）
+            if h_.get("jockey"):
+                h_["jockey"] = extra.jockey_name(h_["jockey"], h_.get("jockey_id"))
         p["_score"] = sc_by.get(p["race_id"])
         p["_result"] = load_json(ROOT / "data" / "results" / date / f"{p.get('results_key') or p['race_id']}.json") or {}
         out.append(p)
@@ -814,7 +817,10 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
                      f"（{esc(b['updated'])}時点。予想を出したときの判定はこのページの更新履歴にある）。"
                      + ("<a href='/column/track-bias/'>トラックバイアスとは</a>" if HAS_COLUMN else "") + "</p></section>")
     ask_html = ""
-    if ASK_URL and p.get("confidence") != "見送り" and date >= TODAY and horses:
+    # 全頭くんへの質問：発走前に加えて、結果が出たあと7日間は「なぜ外れた？」などの振り返りも聞ける（結果を渡す）
+    _res_rows = (p.get("_result") or {}).get("rows") or []
+    ask_done = bool(_res_rows) and date >= (datetime.now(JST) - timedelta(days=7)).strftime("%Y%m%d")
+    if ASK_URL and p.get("confidence") != "見送り" and (date >= TODAY or ask_done) and horses:
         post_ = f"{date}{(r.get('post_time') or '23:59').replace(':', '')}"
         try:
             post_dt = datetime.strptime(post_, "%Y%m%d%H%M").replace(tzinfo=JST) - timedelta(minutes=5)  # 質問は発走5分前まで（予想の書き換えは20分前までのまま）
@@ -822,14 +828,24 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
         except ValueError:
             post_key = post_
         ctx = ask_context(date, p)
+        if ask_done:
+            _pay = (p.get("_result") or {}).get("payouts") or {}
+            _fin = "、".join(f"{x.get('finish')}着 {x.get('number')}番{(horses.get(x.get('number')) or {}).get('name') or ''}" for x in _res_rows if str(x.get("finish")).isdigit())
+            _out = "、".join(f"{x.get('number')}番（{x.get('finish')}）" for x in _res_rows if not str(x.get("finish")).isdigit() and x.get("finish") not in (None, "", "-"))
+            _sc = scored(p)
+            _rv = load_json(ROOT / "data" / "reviews" / date / f"{p['race_id']}.json") or {}
+            ctx += ("\n\n【結果】このレースは確定している。着順：" + _fin + ("。取消・除外など：" + _out if _out else "")
+                    + "。払戻（100円あたり）：" + "／".join(f"{k} " + "・".join(f"{y.get('combo')} {y.get('yen')}円" for y in v) for k, v in _pay.items() if not k.startswith("_") and k in ("単勝", "複勝", "馬連", "馬単", "ワイド", "3連複", "3連単"))
+                    + (f"。このサイトの買い目の結果：購入{_sc['stake']}円・払戻{_sc['return']}円（{'・'.join(_sc.get('hits') or []) or '的中なし'}）" if _sc and _sc.get("stake") else "。このサイトは買い目なし（印だけ）")
+                    + (f"。全頭くんの回顧：{_rv.get('text')}" if _rv.get("text") else ""))
         (OUT / "askdata" / date).mkdir(parents=True, exist_ok=True)
         (OUT / "askdata" / date / f"{VENUE_SLUG.get(venue_of(p), 'venue')}-{race_no(p):02d}.json").write_text(
-            json.dumps({"label": race_label(p), "post": post_key, "context": ctx}, ensure_ascii=False), encoding="utf-8")
-        ask_html = (f"<section class='card zkteaser'>{zk('normal', 48)}<p>このレースのことを<b>全頭くん</b>に聞ける。<br><span class='meta'>画面右下のボタンからも開けます</span></p><button type='button' class='zkopen'>質問する</button></section>"
+            json.dumps({"label": race_label(p), "post": post_key, "context": ctx, **({"done": True} if ask_done else {})}, ensure_ascii=False), encoding="utf-8")
+        ask_html = (f"<section class='card zkteaser'>{zk('normal', 48)}<p>{'このレースの結果と予想の振り返りを' if ask_done else 'このレースのことを'}<b>全頭くん</b>に聞ける。<br><span class='meta'>画面右下のボタンからも開けます</span></p><button type='button' class='zkopen'>質問する</button></section>"
                     f"<button type='button' class='zkfab' aria-label='全頭くんに質問できるよ' aria-expanded='false' aria-controls='askpop'>{zk('normal', 56) or '?'}<span class='zktip'>質問できるよ</span></button>"
-                    f"<section id='askpop' class='card ask askpop' role='dialog' aria-label='全頭くんに質問' data-page='{race_path(date, p)}' data-post='{post_key}' data-url='{ASK_URL}'{" data-zk='1'" if HAS_ZK else ''}>"
+                    f"<section id='askpop' class='card ask askpop' role='dialog' aria-label='全頭くんに質問' data-page='{race_path(date, p)}' data-post='{post_key}' data-url='{ASK_URL}'{" data-zk='1'" if HAS_ZK else ''}{" data-done='1'" if ask_done else ''}>"
                     f"<h2 class='zkh'>{zk('normal', 48)}<span>全頭くんに質問<small>{esc(race_label(p))}について答えます</small></span><button type='button' class='zkclose' aria-label='閉じる'>×</button></h2><p class='meta'>出走馬の近走やAIの評価、これまでの予想の記録をもとに、短く答えます。たとえば「◎を選んだ理由は？」「3連単で△を2着まで入れるべき？」「このコースの3連単の配当はどれくらい？」。質問できるのは発走5分前まで、1日30回までです（予想そのものは発走20分前以降は変わりません）（混み合う日は早めに受付を終えることがあります）。</p>"
-                    f"<div class='pick'><input type='text' maxlength='200' placeholder='このレースについて質問' aria-label='質問'> <button type='button' class='go'>聞く</button></div>"
+                    f"<div class='pick'><input type='text' maxlength='200' placeholder='{'「なぜ外れた？」など、結果について質問' if ask_done else 'このレースについて質問'}' aria-label='質問'> <button type='button' class='go'>聞く</button></div>"
                     f"<div class='alog'></div><p class='meta'>答えはAIの見立てで、的中を保証するものではありません。サイトの記録に無いことはWebで調べて答えることがあり、そのときは出典を表示します。質問の内容は回答にだけ使い、保存しません。</p></section>")
     updates = "".join(f"<li><b>{esc(u.get('at'))}</b> {esc(u.get('text'))}</li>" for u in p.get("updates", []))
     meta = "・".join(x for x in [
@@ -2099,7 +2115,7 @@ document.querySelectorAll('.zkopen').forEach(function(b){b.addEventListener('cli
 var cl=s.querySelector('.zkclose');if(cl)cl.addEventListener('click',function(){open(false);if(fab)fab.focus();});
 document.addEventListener('keydown',function(e){if(e.key==='Escape'&&s.classList.contains('open')){open(false);if(fab)fab.focus();}});
 btn.addEventListener('click',go);inp.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();go();}});
-var post=s.dataset.post,now=new Date(Date.now()+9*3600*1000),k=now.toISOString().slice(0,10).replace(/-/g,'')+now.toISOString().slice(11,16).replace(':','');if(post&&k>=post){inp.disabled=true;btn.disabled=true;inp.placeholder='発走5分前を過ぎたので、質問の受付は終わりました';}})();
+var post=s.dataset.post,now=new Date(Date.now()+9*3600*1000),k=now.toISOString().slice(0,10).replace(/-/g,'')+now.toISOString().slice(11,16).replace(':','');if(post&&k>=post&&!s.dataset.done){inp.disabled=true;btn.disabled=true;inp.placeholder='発走5分前を過ぎたので、質問の受付は終わりました';}})();
 (function(){
 function ga(n,p){try{if(window.gtag)gtag('event',n,p||{})}catch(e){}}
 document.addEventListener('click',function(e){var a=e.target.closest('a');if(!a)return;var h=a.href||'';
