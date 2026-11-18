@@ -1,6 +1,6 @@
 {
  "date": "20261118",
- "updated": "2026-11-18 13:13",
+ "updated": "2026-11-18 13:18",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -646,20 +646,6 @@
    "venue": "園田",
    "race_no": 9,
    "post_time": "14:45",
-   "number": 4,
-   "name": "シンショク",
-   "types": [
-    "aitop"
-   ],
-   "odds": 5.1,
-   "popularity": 3
-  },
-  {
-   "race_id": "202611182726180409",
-   "results_key": "202611182726180409",
-   "venue": "園田",
-   "race_no": 9,
-   "post_time": "14:45",
    "number": 10,
    "name": "ガトー",
    "types": [
@@ -672,7 +658,7 @@
     "field": 11,
     "popularity": 1
    },
-   "odds": 7.0,
+   "odds": 7.2,
    "popularity": 4
   },
   {
