@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261118",
  "race_id": "202611182015120311",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 1,
+   "number": 1,
+   "name": "ケテンパッション",
+   "time": "1:41.3",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 11,
+   "name": "ブラフキャッチ",
+   "time": "1:41.3",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 12,
+   "name": "ケンシリウス",
+   "time": "1:41.9",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 4,
+   "name": "オジャルゴン",
+   "time": "1:42.2",
+   "margin": "１ ３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 6,
+   "name": "タルガフローリオ",
+   "time": "1:42.4",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 3,
+   "number": 3,
+   "name": "ノーブルモーション",
+   "time": "1:42.8",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 9,
+   "name": "ケンブラック",
+   "time": "1:42.9",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 10,
+   "name": "ユウユウヴィオラ",
+   "time": "1:43.2",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "アンタレステソーロ",
+   "time": "1:44.1",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 5,
+   "name": "オレンジルシファー",
+   "time": "1:44.5",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 6,
+   "number": 7,
+   "name": "リアンズレーヴ",
+   "time": "1:46.5",
+   "margin": "１０",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 6,
+   "number": 8,
+   "name": "シゲキング",
+   "time": "1:46.6",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
