@@ -2,7 +2,183 @@
  "source": "rakuten",
  "date": "20261118",
  "race_id": "202611182320130101",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 4,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "1",
+    "yen": 150
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "1-7",
+    "yen": 610
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "1",
+    "yen": 110
+   },
+   {
+    "combo": "7",
+    "yen": 130
+   },
+   {
+    "combo": "9",
+    "yen": 450
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-7",
+    "yen": 160
+   },
+   {
+    "combo": "1-9",
+    "yen": 1350
+   },
+   {
+    "combo": "7-9",
+    "yen": 1490
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-7",
+    "yen": 350
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-7-9",
+    "yen": 4820
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "1-7-9",
+    "yen": 9200
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-7",
+    "yen": 360
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 1,
+   "number": 1,
+   "name": "ミラージュノワール",
+   "time": "48.9",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 7,
+   "name": "カヴァティーナ",
+   "time": "49.3",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 9,
+   "name": "ファンシーシェイプ",
+   "time": "50.4",
+   "margin": "５",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 3,
+   "name": "ファナティカル",
+   "time": "50.6",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 4,
+   "name": "カムバックトゥミー",
+   "time": "51.1",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 10,
+   "name": "ルクリリ",
+   "time": "51.6",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 2,
+   "number": 2,
+   "name": "モナート",
+   "time": "51.6",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 8,
+   "name": "スティルアイライズ",
+   "time": "52.0",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 5,
+   "name": "リアルスティンガー",
+   "time": "52.2",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 6,
+   "number": 6,
+   "name": "アスターシャウルス",
+   "time": "52.3",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
