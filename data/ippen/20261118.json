@@ -1,6 +1,6 @@
 {
  "date": "20261118",
- "updated": "2026-11-18 12:27",
+ "updated": "2026-11-18 12:34",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -492,20 +492,13 @@
    "venue": "笠松",
    "race_no": 8,
    "post_time": "14:00",
-   "number": 1,
-   "name": "リオサラ",
+   "number": 4,
+   "name": "セイカユウヒ",
    "types": [
-    "letdown"
+    "aitop"
    ],
-   "gap_days": 16,
-   "last": {
-    "date": "2026-11-02",
-    "finish": 6,
-    "field": 9,
-    "popularity": 3
-   },
-   "odds": 7.8,
-   "popularity": 4
+   "odds": 6.5,
+   "popularity": 3
   },
   {
    "race_id": "202611182726180408",
