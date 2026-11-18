@@ -5,6 +5,7 @@
  * 一般公開前（LEAGUE_PUBLIC が "1" でない間）は、PREVIEW_CODE を知っている人と管理者だけが使える。
  */
 import { League, LeagueError } from "./core.js";
+import { Versus, MIN_PICKS } from "./versus.js";
 
 const JSON_HEADERS = { "content-type": "application/json; charset=utf-8", "cache-control": "no-store" };
 
@@ -23,7 +24,15 @@ export class LeagueDO {
   constructor(state, env) {
     this.env = env;
     this.lg = new League(state.storage.sql);
+    // 「AI vs あなた」月間ランキング：レースと結果は、サイトが公開している /vsgame/<日付>.json だけを使う
+    const origin = (env.VS_DATA_ORIGIN || env.SITE_ORIGIN || "").replace(/\/$/, "");
+    this.vs = new Versus(state.storage.sql, () => Date.now(), async (date) => {
+      if (!/^\d{8}$/.test(date)) return null;
+      const r = await fetch(`${origin}/vsgame/${date}.json`, { cf: { cacheTtl: 60 } });
+      return r.ok ? r.json() : null;
+    });
   }
+  vsMin() { const n = parseInt(this.env.VS_MIN_PICKS || "", 10); return n > 0 ? n : MIN_PICKS; }
   async fetch(req) {
     const { op, args, token, admin, ip } = await req.json();
     const lg = this.lg;
@@ -49,6 +58,19 @@ export class LeagueDO {
           const ym = args.ym || (lg.currentRound() || {}).ym || new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 7);
           out = { ...lg.ranking(ym, flags), months: lg.months(), flags };
           if (token) { try { out.me = await uid(); } catch { /* 未登録 */ } }
+          break;
+        }
+        // AI vs あなた（月間ランキング）
+        case "vs.me": { const u = await uid(); out = { name: (this.vs.player(u) || {}).name || null, min_picks: this.vsMin() }; break; }
+        case "vs.name": out = this.vs.saveName(await uid(), args.name); break;
+        case "vs.pick": out = await this.vs.pick(await uid(), args.path, args.number); break;
+        case "vs.mypick": out = this.vs.myPick(await uid(), args.path); break;
+        case "vs.history": out = { picks: this.vs.history(await uid()) }; break;
+        case "vs.ranking": {
+          const ym = args.ym || new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 7);
+          let u = null;
+          if (token) { try { u = await uid(); } catch { /* 未登録 */ } }
+          out = await this.vs.ranking(ym, u, this.vsMin());
           break;
         }
         // 管理
@@ -92,6 +114,8 @@ const ROUTES = {
   "POST /api/admin/scratch": "admin.scratch", "POST /api/admin/result": "admin.result", "POST /api/admin/finalize": "admin.finalize",
   "POST /api/admin/reopen": "admin.reopen", "POST /api/admin/approve": "admin.approve", "POST /api/admin/month_prize": "admin.month_prize",
   "POST /api/admin/settings": "admin.settings",
+  "GET /api/vs/me": "vs.me", "POST /api/vs/name": "vs.name", "POST /api/vs/pick": "vs.pick", "GET /api/vs/pick": "vs.mypick",
+  "GET /api/vs/history": "vs.history", "GET /api/vs/ranking": "vs.ranking",
 };
 
 function safeEqual(a, b) {
@@ -116,7 +140,7 @@ export default {
     const pv = req.headers.get("x-league-preview") || "";
     const isPublic = env.LEAGUE_PUBLIC === "1";
     if (!isPublic && !admin && !safeEqual(pv, env.PREVIEW_CODE || "")) {
-      return reply(403, { ok: false, error: "オーナーズリーグは準備中です（関係者プレビューのみ）。", preview_required: true });
+      return reply(403, { ok: false, error: "この機能は準備中です（関係者プレビューのみ）。", preview_required: true });
     }
     let args = {};
     if (req.method === "POST") {

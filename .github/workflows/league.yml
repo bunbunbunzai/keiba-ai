@@ -1,11 +1,11 @@
-name: league (オーナーズリーグ：テストと Workers への配備)
+name: league (AI vs あなた 月間ランキング・オーナーズリーグ：テストと Workers への配備)
 
 # push：league/ が変わったらテストだけ。
 # 手動実行（deploy=yes）：テストが通ったら keiba-league の Worker を配備する（「全頭くんに質問」の keiba-ask とは別物）。
 # 必要な Secrets：CLOUDFLARE_API_TOKEN、CLOUDFLARE_ACCOUNT_ID（既存）、LEAGUE_ADMIN_TOKEN、LEAGUE_PREVIEW_CODE（新規）
 on:
   push:
-    paths: ["league/**", "site/league.py", ".github/workflows/league.yml"]
+    paths: ["league/**", "site/league.py", "site/versus.py", ".github/workflows/league.yml"]
   workflow_dispatch:
     inputs:
       deploy:

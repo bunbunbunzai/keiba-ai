@@ -611,7 +611,7 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
 def _league_link(c: dict) -> str:
     """全頭診断（重賞の自動記事）からオーナーズリーグの出走画面へ。LEAGUE_URL があるときだけ。"""
     import os
-    if not os.environ.get("LEAGUE_URL") or not c.get("race_id"):
+    if not os.environ.get("LEAGUE_URL") or os.environ.get("LEAGUE_OWNERS") != "1" or not c.get("race_id"):
         return ""
     import league
     return league.article_link(str(c["race_id"]))

@@ -26,6 +26,7 @@ import column
 import racesim
 from imgutil import webp_variants
 import league
+import versus
 import extra
 import og
 import strategy
@@ -58,7 +59,9 @@ AFF_RAKUTEN_IMG = "https://srv2.trafficgate.net/t/b/{id}/1958/319633_399587"
 
 
 ASK_URL = __import__("os").environ.get("ASK_URL", "").rstrip("/")  # 「AIに質問」の Workers のURL（空なら機能を出さない）
-LEAGUE_URL = os.environ.get("LEAGUE_URL", "").rstrip("/")  # オーナーズリーグのAPI。空ならページを作らない
+LEAGUE_URL = os.environ.get("LEAGUE_URL", "").rstrip("/")  # 「AI vs あなた」月間ランキング（とオーナーズリーグ）のAPI。空なら何も作らない
+VS_PUBLIC = os.environ.get("VS_PUBLIC") == "1"  # 月間ランキングを一般公開するか（それまでは noindex・プレビューのコードを入れた人だけ）
+LEAGUE_OWNERS = os.environ.get("LEAGUE_OWNERS") == "1"  # オーナーズリーグ（仮想馬）の画面も作るか。いまは出さない
 AFF_SAIKYO_URL = "https://px.a8.net/svt/ejp?a8mat=4BE9CR+9T22IA+47AY+601S1"
 AFF_SAIKYO_IMG = "https://www20.a8.net/svt/bgt?aid=261005787593&wid=001&eno=01&mid=s00000019609001008000&mc=1"
 AFF_SAIKYO_PX = "https://www10.a8.net/0.gif?a8mat=4BE9CR+9T22IA+47AY+601S1"
@@ -744,10 +747,10 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
         opts = "".join(f"<option value='{n}'>{n} {esc(h.get('name'))}</option>" for n, h in sorted(horses.items(), key=lambda kv: (kv[0] is None, kv[0])) if n is not None)
         post = f"{date}{(r.get('post_time') or '23:59').replace(':', '')}"
         vs_html = (f"<section class='card vs' data-key='vs:{date}:{race_path(date, p)}' data-post='{post}' data-ai='{esc(hon)}' "
-                   f"data-fin='{esc(json.dumps(fin_map))}' data-url='{esc(url)}' data-label='{esc(race_label(p))}'>"
+                   f"data-fin='{esc(json.dumps(fin_map))}' data-url='{esc(url)}' data-label='{esc(race_label(p))}'{versus.race_attrs(LEAGUE_URL, VS_PUBLIC)}>"
                    f"<h2>AI vs あなた</h2><p class='meta'>あなたの◎を1頭選んで、AIの◎（{esc(hon)}番）と勝負。発走前まで選べる（選んだ馬は、いまお使いのブラウザにだけ保存されます）。</p>"
                    f"<div class='pick'><select aria-label='あなたの◎にする馬'><option value=''>馬を選ぶ</option>{opts}</select> <button type='button' class='go'>この馬に決める</button></div>"
-                   f"<p class='r'></p><p class='meta'><a href='/me/'>あなたの成績（累計）を見る</a></p></section>")
+                   f"<p class='r'></p><p class='meta'><a href='/me/'>あなたの成績（累計）を見る</a></p></section>" + (versus.SCRIPT if LEAGUE_URL else ""))
     bias_html = ""
     bz = bias_for(date, p)
     if bz:
@@ -2368,8 +2371,15 @@ def build() -> None:
     write("/privacy/", page(f"プライバシーポリシー | {SITE_NAME}", PRIVACY, "/privacy/", desc=f"{SITE_NAME}のプライバシーポリシー。アクセス解析・広告（Google AdSense）・アフィリエイト・お問い合わせ・全頭くんへの質問で扱う情報と、その使い方。"))
     today_iso = now.strftime("%Y-%m-%d")
     lastmod.update(column.build(write, page, jsonld, BASE_URL, SITE_NAME, STATS_FROM, today_iso))
-    if LEAGUE_URL:  # オーナーズリーグ（一般公開までは noindex・ナビに載せない）
-        league.build(write, page, OUT, LEAGUE_URL, SITE_NAME)
+    if LEAGUE_URL:  # 「AI vs あなた」月間ランキング（一般公開までは noindex・ナビに載せない）
+        versus.build(write, page, OUT, LEAGUE_URL, SITE_NAME, VS_PUBLIC)
+        _days, _ai = versus.game_data(
+            by_date, race_path, race_label,
+            lambda d_, p_: (d_ + p_["_race"]["post_time"].replace(":", "")) if re.fullmatch(r"\d{2}:\d{2}", str(p_["_race"].get("post_time") or "")) else "",
+            lambda p_: sorted(h.get("number") for h in (p_["_race"].get("horses") or []) if isinstance(h.get("number"), int)))
+        versus.write_game_data(OUT, _days, _ai)
+        if LEAGUE_OWNERS:
+            league.build(write, page, OUT, LEAGUE_URL, SITE_NAME)
     for old, new in (("/graded/kyoto-5c5158c3/", "/graded/kyoto-jump-stakes/"), ("/column/kyoto-5c5158c3-2026/", "/column/kyoto-jump-stakes-2026/")):
         write(old, redirect_page(new))  # 重賞ページの名前を付け直した分
     # 名前に「重賞」の文字があるだけで重賞扱いになっていたレース（準重賞・「重賞開催日は…」という名前の条件戦）の重賞ページは、レースのページへ移す
@@ -2411,7 +2421,7 @@ def build() -> None:
     if (ROOT / "results_ledger.csv").exists():
         shutil.copy(ROOT / "results_ledger.csv", OUT / "data" / "results_ledger.csv")
     (OUT / "CNAME").write_text(DOMAIN + "\n", encoding="utf-8")
-    (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n" + ("Disallow: /league/\n" if LEAGUE_URL and os.environ.get("LEAGUE_PUBLIC") != "1" else "")
+    (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n" + ("Disallow: /league/\n" if LEAGUE_URL and LEAGUE_OWNERS and os.environ.get("LEAGUE_PUBLIC") != "1" else "") + ("Disallow: /vs/\n" if LEAGUE_URL and not VS_PUBLIC else "")
                                     + f"Sitemap: {BASE_URL}/sitemap.xml\n", encoding="utf-8")
     (OUT / "llms.txt").write_text(
         f"# {SITE_NAME}\n\n> AI（Claude）が日本の競馬（JRA・地方）の全レースを毎日予想し、外れも含めた全予想の回収率を公開するサイト。\n\n"
