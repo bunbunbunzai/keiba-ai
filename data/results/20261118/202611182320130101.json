@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261118",
  "race_id": "202611182320130101",
- "tries": 4,
+ "tries": 5,
  "payouts": {
   "単勝": [
    {
@@ -77,7 +77,7 @@
    "name": "ミラージュノワール",
    "time": "48.9",
    "margin": "",
-   "pos4": null,
+   "pos4": 1,
    "last3f": null,
    "popularity": null
   },
@@ -88,7 +88,7 @@
    "name": "カヴァティーナ",
    "time": "49.3",
    "margin": "２",
-   "pos4": null,
+   "pos4": 2,
    "last3f": null,
    "popularity": null
   },
@@ -99,7 +99,7 @@
    "name": "ファンシーシェイプ",
    "time": "50.4",
    "margin": "５",
-   "pos4": null,
+   "pos4": 4,
    "last3f": null,
    "popularity": null
   },
@@ -110,7 +110,7 @@
    "name": "ファナティカル",
    "time": "50.6",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 6,
    "last3f": null,
    "popularity": null
   },
@@ -121,7 +121,7 @@
    "name": "カムバックトゥミー",
    "time": "51.1",
    "margin": "２ １／２",
-   "pos4": null,
+   "pos4": 3,
    "last3f": null,
    "popularity": null
   },
@@ -132,7 +132,7 @@
    "name": "ルクリリ",
    "time": "51.6",
    "margin": "２ １／２",
-   "pos4": null,
+   "pos4": 7,
    "last3f": null,
    "popularity": null
   },
@@ -143,7 +143,7 @@
    "name": "モナート",
    "time": "51.6",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 4,
    "last3f": null,
    "popularity": null
   },
@@ -154,7 +154,7 @@
    "name": "スティルアイライズ",
    "time": "52.0",
    "margin": "２",
-   "pos4": null,
+   "pos4": 9,
    "last3f": null,
    "popularity": null
   },
@@ -165,7 +165,7 @@
    "name": "リアルスティンガー",
    "time": "52.2",
    "margin": "１",
-   "pos4": null,
+   "pos4": 9,
    "last3f": null,
    "popularity": null
   },
@@ -176,7 +176,7 @@
    "name": "アスターシャウルス",
    "time": "52.3",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 8,
    "last3f": null,
    "popularity": null
   }
