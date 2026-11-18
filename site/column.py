@@ -537,6 +537,7 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
                  "<a href='/'>今日の予想</a>・<a href='/results/'>成績</a>・<a href='/about/'>予想の方法</a></p>"
                  + ("</div>" if (ROOT / "site" / "assets" / "zk-normal.png").exists() else "")
                  + "<p class='meta'>馬券の購入は20歳から。予想は的中や利益を保証するものではない。</p></section>"
+                 + (_league_link(c) if auto_c else "")
                  + related)
         hero = hero_c(c)
         og_img = f"/assets/{hero}.jpg" if hero else "/og/default.jpg"
@@ -605,3 +606,12 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
     if pub:
         lastmod["/column/"] = today_iso
     return lastmod
+
+
+def _league_link(c: dict) -> str:
+    """全頭診断（重賞の自動記事）からオーナーズリーグの出走画面へ。LEAGUE_URL があるときだけ。"""
+    import os
+    if not os.environ.get("LEAGUE_URL") or not c.get("race_id"):
+        return ""
+    import league
+    return league.article_link(str(c["race_id"]))
