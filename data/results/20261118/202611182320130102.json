@@ -2,7 +2,183 @@
  "source": "rakuten",
  "date": "20261118",
  "race_id": "202611182320130102",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "3",
+    "yen": 560
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "3-5",
+    "yen": 5870
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "3",
+    "yen": 190
+   },
+   {
+    "combo": "5",
+    "yen": 400
+   },
+   {
+    "combo": "8",
+    "yen": 700
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-5",
+    "yen": 1020
+   },
+   {
+    "combo": "3-8",
+    "yen": 3610
+   },
+   {
+    "combo": "5-8",
+    "yen": 3670
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-5",
+    "yen": 4100
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-5-8",
+    "yen": 54770
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "3-5-8",
+    "yen": 184230
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-5",
+    "yen": 3400
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 3,
+   "number": 3,
+   "name": "シンプウミホノ",
+   "time": "1:35.3",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "シファル",
+   "time": "1:36.0",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 8,
+   "name": "ミスフレンド",
+   "time": "1:36.8",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 7,
+   "name": "クリノジルバ",
+   "time": "1:36.8",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 10,
+   "name": "スマイリングキング",
+   "time": "1:37.0",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 6,
+   "name": "アルミーラ",
+   "time": "1:37.7",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 9,
+   "name": "プリンセスリッカ",
+   "time": "1:38.2",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "サンマルオブウォー",
+   "time": "1:38.3",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "ケンヴァルト",
+   "time": "1:38.5",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 4,
+   "number": 4,
+   "name": "ハナノクロコ",
+   "time": "1:48.1",
+   "margin": "大差",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
