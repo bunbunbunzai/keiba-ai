@@ -1,6 +1,6 @@
 {
  "date": "20261118",
- "updated": "2026-11-18 15:08",
+ "updated": "2026-11-18 15:15",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1063,7 +1063,7 @@
     "field": 8,
     "popularity": 1
    },
-   "odds": 4.9,
+   "odds": 5.4,
    "popularity": 2
   },
   {
@@ -1084,8 +1084,8 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": 10.0,
-   "popularity": 6
+   "odds": 7.7,
+   "popularity": 4
   },
   {
    "race_id": "202611182320130112",
@@ -1105,8 +1105,8 @@
     "field": 10,
     "popularity": 4
    },
-   "odds": 10.3,
-   "popularity": 8
+   "odds": 13.2,
+   "popularity": 9
   },
   {
    "race_id": "202611182320130112",
@@ -1126,8 +1126,8 @@
     "field": 9,
     "popularity": 7
    },
-   "odds": 12.3,
-   "popularity": 9
+   "odds": 12.9,
+   "popularity": 8
   },
   {
    "race_id": "202611182320130112",
@@ -1147,7 +1147,7 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": 22.3,
+   "odds": 29.3,
    "popularity": 10
   },
   {
@@ -1168,8 +1168,8 @@
     "field": 10,
     "popularity": 9
    },
-   "odds": 35.8,
-   "popularity": 12
+   "odds": 31.9,
+   "popularity": 11
   },
   {
    "race_id": "202611182726180412",
@@ -1233,6 +1233,27 @@
    "venue": "大井",
    "race_no": 5,
    "post_time": "16:40",
+   "number": 1,
+   "name": "マクローリン",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 63,
+   "last": {
+    "date": "2026-09-16",
+    "finish": 6,
+    "field": 11,
+    "popularity": 2
+   },
+   "odds": 43.5,
+   "popularity": 10
+  },
+  {
+   "race_id": "202611182015120305",
+   "results_key": "202611182015120305",
+   "venue": "大井",
+   "race_no": 5,
+   "post_time": "16:40",
    "number": 2,
    "name": "ファサード",
    "types": [
@@ -1245,8 +1266,8 @@
     "field": 14,
     "popularity": null
    },
-   "odds": null,
-   "popularity": null
+   "odds": 7.4,
+   "popularity": 3
   },
   {
    "race_id": "202611182015120305",
@@ -1266,8 +1287,8 @@
     "field": 8,
     "popularity": null
    },
-   "odds": null,
-   "popularity": null
+   "odds": 2.6,
+   "popularity": 1
   },
   {
    "race_id": "202611182015120306",
