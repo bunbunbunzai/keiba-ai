@@ -57,6 +57,9 @@ def nfkc(s) -> str:
 
 # ---------------- 重賞の判定 ----------------
 GRADE_RE = re.compile(r"\((G|Jpn|JPN|S|SP|M|H|BG|重賞)\s*([1-3ⅠⅡⅢ])\)")
+# 記号が無いレースを「重賞」と見なすのは、区分として「重賞」と書かれているときだけ（site/extra.py と同じ決まり）。
+# 「準重賞」と、「重賞開催日は…」のようにレース名の文の中に出てくるだけのものは重賞ではない。
+PLAIN_GRADED_RE = re.compile(r"(?<!準)重賞(?:競走)?(?![ぁ-んァ-ヶ一-龥])")
 
 
 def grade_of(race: dict) -> str | None:
@@ -68,7 +71,7 @@ def grade_of(race: dict) -> str | None:
     if m:
         lvl = {"Ⅰ": "1", "Ⅱ": "2", "Ⅲ": "3"}.get(m.group(2), m.group(2))
         return f"{m.group(1)}{lvl}"
-    if "重賞" in text:
+    if PLAIN_GRADED_RE.search(text):
         return "重賞"
     return None
 

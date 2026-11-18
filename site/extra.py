@@ -161,6 +161,11 @@ def nfkc(s) -> str:
     return unicodedata.normalize("NFKC", s or "")
 
 
+# 格付けの記号が無いレースを「重賞」と見なすのは、名前に区分として「重賞」と書かれているときだけ。
+# 「準重賞」と、「重賞開催日は…」のようにレース名の文の中に出てくるだけのものは重賞ではない。
+PLAIN_GRADED_RE = re.compile(r"(?<!準)重賞(?:競走)?(?![ぁ-んァ-ヶ一-龥])")
+
+
 def grade_of(race: dict, name: str = "") -> str | None:
     g = race.get("grade")
     if g and str(g).upper().startswith(("G", "J・G")):
@@ -169,7 +174,7 @@ def grade_of(race: dict, name: str = "") -> str | None:
     m = GRADE_RE.search(text)
     if m:
         return f"{m.group(1)}{ {'Ⅰ': '1', 'Ⅱ': '2', 'Ⅲ': '3'}.get(m.group(2), m.group(2)) }"
-    return "重賞" if "重賞" in text else None
+    return "重賞" if PLAIN_GRADED_RE.search(text) else None
 
 
 def clean_name(name: str) -> str:
