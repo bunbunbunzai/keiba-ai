@@ -1,6 +1,6 @@
 {
  "date": "20261119",
- "updated": "2026-11-18 04:25",
+ "updated": "2026-11-18 17:52",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -109,27 +109,6 @@
     "finish": 6,
     "field": 8,
     "popularity": 2
-   },
-   "odds": null,
-   "popularity": null
-  },
-  {
-   "race_id": "202611192320130203",
-   "results_key": "202611192320130203",
-   "venue": "笠松",
-   "race_no": 3,
-   "post_time": "11:25",
-   "number": 4,
-   "name": "ケイツーキップ",
-   "types": [
-    "rebound"
-   ],
-   "gap_days": 14,
-   "last": {
-    "date": "2026-11-05",
-    "finish": 7,
-    "field": 9,
-    "popularity": 7
    },
    "odds": null,
    "popularity": null
