@@ -14,11 +14,17 @@ import unicodedata
 from collections import defaultdict
 from pathlib import Path
 
-GRADE_RE = re.compile(r"\((G|Jpn|JPN|S|SP|M|H|BG|重賞)\s*([1-3ⅠⅡⅢ])\)")
+GRADE_RE = re.compile(r"\((G|Jpn|JPN|S|SP|M|H|BG|重賞)\s*([1-3ⅠⅡⅢ]|I{1,3})\)")
+GRADE_NUM = {"Ⅰ": "1", "Ⅱ": "2", "Ⅲ": "3", "I": "1", "II": "2", "III": "3"}
 
 # 主な重賞の英語スラッグ（年をまたいで同じURLにするため）。無いものは名前から作る
 GRADED_SLUG = {
     "フェブラリーステークス": "february-stakes", "高松宮記念": "takamatsunomiya-kinen", "大阪杯": "osaka-hai",
+    # 中央の重賞名を含む地方の重賞（中央のページと混ざらないよう、先に専用の名前を決めておく）
+    "東海菊花賞": "tokai-kikka-sho", "ばんえい菊花賞": "banei-kikka-sho", "黒潮菊花賞": "kuroshio-kikka-sho", "姫山菊花賞": "himeyama-kikka-sho",
+    "兵庫クイーンカップ": "hyogo-queen-cup", "ノースクイーンカップ": "north-queen-cup", "兵庫サマークイーン賞": "hyogo-summer-queen-sho",
+    "ばんえいオークス": "banei-oaks", "関東オークス": "kanto-oaks", "東海桜花賞": "tokai-oka-sho", "浦和桜花賞": "urawa-oka-sho",
+    "西日本ダービー": "nishinihon-derby", "ばんえいダービー": "banei-derby", "黒潮マイルチャンピオンシップ": "kuroshio-mile-championship",
     "桜花賞": "oka-sho", "皐月賞": "satsuki-sho", "天皇賞(春)": "tenno-sho-spring", "NHKマイルカップ": "nhk-mile-cup",
     "ヴィクトリアマイル": "victoria-mile", "優駿牝馬": "oaks", "オークス": "oaks", "東京優駿": "derby", "日本ダービー": "derby",
     "安田記念": "yasuda-kinen", "宝塚記念": "takarazuka-kinen", "スプリンターズステークス": "sprinters-stakes",
@@ -173,7 +179,7 @@ def grade_of(race: dict, name: str = "") -> str | None:
     text = nfkc(" ".join(str(x or "") for x in (name, race.get("race_name"), race.get("title_text"))))
     m = GRADE_RE.search(text)
     if m:
-        return f"{m.group(1)}{ {'Ⅰ': '1', 'Ⅱ': '2', 'Ⅲ': '3'}.get(m.group(2), m.group(2)) }"
+        return f"{m.group(1)}{GRADE_NUM.get(m.group(2), m.group(2))}"
     return "重賞" if PLAIN_GRADED_RE.search(text) else None
 
 
@@ -188,12 +194,22 @@ def clean_name(name: str) -> str:
     return n
 
 
+JRA_VENUE_SLUGS = {"sapporo", "hakodate", "fukushima", "niigata", "tokyo", "nakayama", "chukyo", "kyoto", "hanshin", "kokura"}
+
+
 def graded_slug(name: str, venue_slug: str) -> str:
+    """重賞ページの名前（URL）。venue_slug が "x" のときは中央の成績ページの名前として扱う。
+
+    名前の一部が一致するだけで同じレースと見なすのは中央の競馬場だけ（「サウジアラビアロイヤルカップ富士ステークス」の
+    ような冠名つきの正式名のため）。地方には「東海菊花賞」「兵庫クイーンカップ」「関東オークス」のように中央の重賞名を
+    含む別のレースが多いので、区切りのあとに重賞名がそのまま続いて終わるとき（「○○賞典 川崎記念」）だけ同じレースと見なす。
+    """
     n = clean_name(name)
     if n in GRADED_SLUG:
         return GRADED_SLUG[n]
+    central = venue_slug in JRA_VENUE_SLUGS or venue_slug == "x"
     for k, v in GRADED_SLUG.items():
-        if k in n:
+        if (k in n) if central else bool(re.search(r"(?:^|[\s)])" + re.escape(k) + "$", n)):
             return v
     return f"{venue_slug}-{hashlib.md5(n.encode()).hexdigest()[:8]}"
 

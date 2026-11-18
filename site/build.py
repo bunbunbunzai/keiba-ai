@@ -1757,7 +1757,7 @@ def limits_page(t: dict, worst_venue: tuple[str, str] | None) -> str:
 
 
 SITE_CHANGES = [
-    ("2026-11-19", "重賞の判定を直した。レース名に「重賞」の文字があるだけの条件戦と準重賞が、重賞として表示・投稿されていた（11月3日・5日・19日の4レース）。"),
+    ("2026-11-19", "重賞の判定を直した。レース名に「重賞」の文字があるだけの条件戦と準重賞が、重賞として表示・投稿されていた（11月3日・5日・19日の4レース）。また、東海菊花賞・ばんえい菊花賞・兵庫クイーンカップが、中央の菊花賞・クイーンカップの重賞ページに混ざっていたので、それぞれ別のページに分けた。"),
     ("2026-10-26", "毎日の自動予想を開始。全レースの予想・結果・回収率の公開を始めた。"),
     ("2026-10-30", "レースごとの的中・回収率を、確定のたびに更新するようにした。初心者向けコラムの準備。"),
     ("2026-11-01", "サイト名を「競馬全頭ログ」に変更。XとInstagramへの自動投稿（的中・重賞・毎晩の全成績）を開始。コラム4本を公開。買い方別の回収率、週次の重賞回顧、馬別ページを追加。"),
@@ -2373,6 +2373,9 @@ def build() -> None:
         if not (OUT / old.strip("/") / "index.html").exists() and (OUT / new.strip("/") / "index.html").exists():
             write(old, redirect_page(new))
     _cs = {c["slug"] for c in column.columns() if not c["draft"]}
+    # ばんえい菊花賞の診断記事は、中央の菊花賞と同じ記事名（kikka-sho-2026）で作られていた。記事名を直し、古いURLから移す
+    if "kikka-sho-2026" not in _cs and "banei-kikka-sho-2026" in _cs:
+        write("/column/kikka-sho-2026/", redirect_page("/column/banei-kikka-sho-2026/"))
     for sl in _cs:  # 重賞の結果一覧は、20年分にしたときに記事名を変えた（古いURLから移す）
         if sl.endswith("-kako-kekka") and sl[:-11] + "-kako10nen" not in _cs:
             write(f"/column/{sl[:-11]}-kako10nen/", redirect_page(f"/column/{sl}/"))
