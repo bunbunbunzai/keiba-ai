@@ -126,11 +126,11 @@ function histCard(h){var c=el('section',{cls:'card'},[el('h2',{text:'最近選�
   ul.appendChild(el('li',{},[el('a',{href:x.path,text:x.post.slice(4,6)+'/'+x.post.slice(6,8)+' '+x.label}),el('br'),el('span',{cls:x.hit?'w':'',text:'◎'+x.number+'番：'+t})]));});
  if(!h.length)return null;c.appendChild(ul);return c;}
 function load(){
- if(!PUB&&!ls('vs_pv')){gate('');return;}
+ /* 公開かどうかは、ページに書かれた値ではなくサーバーの返事で決める（ブラウザに古いページが残っていても、コード欄を出さない） */
  /* 成績の取り込みはランキングを読むときに行われるので、履歴はそのあとに読む */
  Promise.all([api('GET','/api/vs/ranking?ym='+ym).then(function(j){return (ls('vs_token')&&j.ok?api('GET','/api/vs/history'):Promise.resolve({ok:true,data:{picks:[]}})).then(function(h){return [j,h];});}),
   fetch('/vsgame/ai-'+ym.replace('-','')+'.json').then(function(r){return r.ok?r.json():null}).catch(function(){return null})]).then(function(x){var a=[x[0][0],x[1],x[0][1]];
-  var j=a[0];if(!j.ok){if(j.preview_required){ls('vs_pv',null);gate('コードが正しくないようです。');return;}app.textContent='';app.appendChild(el('p',{cls:'vs-msg',text:j.error}));return;}
+  var j=a[0];if(!j.ok){if(j.preview_required){var had=ls('vs_pv');ls('vs_pv',null);gate(had?'コードが正しくないようです。':'');return;}app.textContent='';app.appendChild(el('p',{cls:'vs-msg',text:j.error}));return;}
   app.textContent='';app.appendChild(meCard(j.data));app.appendChild(rankCard(j.data,a[1]));
   var h=a[2].ok?histCard(a[2].data.picks):null;if(h)app.appendChild(h);});}
 load();
