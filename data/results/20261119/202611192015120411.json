@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261119",
  "race_id": "202611192015120411",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,105 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 8,
+   "name": "ホーリーグレイル",
+   "time": "1:41.0",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.9,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 9,
+   "name": "ベルグラシアス",
+   "time": "1:41.3",
+   "margin": "１ １／２",
+   "pos4": 3,
+   "last3f": 39.8,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 5,
+   "name": "コアリオ",
+   "time": "1:41.3",
+   "margin": "クビ",
+   "pos4": 7,
+   "last3f": 38.8,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 6,
+   "name": "リフレクトザムーン",
+   "time": "1:42.2",
+   "margin": "４",
+   "pos4": 8,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 2,
+   "number": 2,
+   "name": "メランポジューム",
+   "time": "1:42.5",
+   "margin": "１ １／２",
+   "pos4": 8,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 7,
+   "name": "マーブルマカロン",
+   "time": "1:42.6",
+   "margin": "１／２",
+   "pos4": 5,
+   "last3f": 40.9,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 3,
+   "name": "ジュンウィンダム",
+   "time": "1:43.3",
+   "margin": "３ １／２",
+   "pos4": 3,
+   "last3f": 42.1,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 4,
+   "number": 4,
+   "name": "ペレグリン",
+   "time": "1:43.7",
+   "margin": "２",
+   "pos4": 1,
+   "last3f": 42.5,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 1,
+   "number": 1,
+   "name": "イナダヒメ",
+   "time": "1:43.9",
+   "margin": "１",
+   "pos4": 5,
+   "last3f": 42.0,
+   "popularity": null
+  }
+ ]
 }
