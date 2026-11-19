@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import contextlib
 import io
+import re
 import sys
 from datetime import datetime, timedelta
 
@@ -30,6 +31,10 @@ SCHED_BY_SLUG: dict[str, list[dict]] = {}
 PREDS: dict[str, list[tuple]] = {}  # 重賞の slug → [(日付, 予想)]（古い順）
 FEAT: dict[str, list[dict]] = {}   # 重賞の slug → 特集の記事（order 順）
 GDATA: dict[str, list[dict]] = {}  # 重賞の slug → 過去20年データ記事
+ENTRIES: dict[str, dict] = {}       # 重賞の slug → 出走予定馬（JRA発表のプレレーティング。これから行われるレースだけ）
+ENTRY_BY_HORSE: dict[str, dict] = {}  # 馬名 → {date, slug, name}（出走予定馬に載っている、これからのG1）
+LAST_RUN: dict[str, dict] = {}      # 馬名 → このサイトで予想したレースでの直近の結果（出走予定馬の分だけ）
+GRADED_YEAR: dict[str, list] = {}   # 馬名 → 今年のJRA重賞の出走（data/graded_hist。出走予定馬の分だけ）
 
 
 def _schedule(root, today: str) -> list[dict]:
@@ -85,6 +90,128 @@ def prepare(B, by_date: dict, today: str) -> None:
             GDATA.setdefault(c["race"], []).append(c)
     for v in list(FEAT.values()) + list(GDATA.values()):
         v.sort(key=lambda c: int(c.get("order") or 0))
+    _load_entries(B, by_date)
+
+
+def _load_entries(B, by_date: dict) -> None:
+    """data/entries（scraper/jra_entries.py が JRA のプレレーティングから作る）を読み、出走予定馬の前走と今年の重賞成績を添える。"""
+    import unicodedata  # noqa: PLC0415
+    nf = lambda x: unicodedata.normalize("NFKC", str(x or "")).replace(" ", "").replace("\u3000", "")
+    ENTRIES.clear(); ENTRY_BY_HORSE.clear(); LAST_RUN.clear(); GRADED_YEAR.clear()
+    for f in sorted((B.ROOT / "data" / "entries").glob("*.json")):
+        d = B.load_json(f) or {}
+        if not d.get("horses") or d.get("date", "") < TODAY:
+            continue
+        if d["slug"] in ENTRIES and ENTRIES[d["slug"]]["date"] <= d["date"]:
+            continue
+        sch = SCHED_BY_SLUG.get(d["slug"]) or []
+        d["name"] = next((r["name"] for r in sch if r["date"] == d["date"]), "") or d.get("race", "")
+        d["course"] = next((r["course"] for r in sch if r["date"] == d["date"]), "")
+        ENTRIES[d["slug"]] = d
+    for slug, d in ENTRIES.items():
+        for h in d["horses"]:
+            ENTRY_BY_HORSE.setdefault(nf(h["name"]), {"date": d["date"], "slug": slug, "name": d["name"]})
+    if not ENTRY_BY_HORSE:
+        return
+    for d in sorted(by_date):
+        if d > TODAY:
+            continue
+        for p in by_date[d]:
+            rows = (p.get("_result") or {}).get("rows") or []
+            if not rows:
+                continue
+            fin = {x.get("number"): x.get("finish") for x in rows}
+            for h in p["_race"].get("horses") or []:
+                nm = nf(h.get("name"))
+                if nm in ENTRY_BY_HORSE and fin.get(h.get("number")) not in (None, ""):
+                    LAST_RUN[nm] = {"date": d, "path": B.race_path(d, p), "label": B.race_label(p), "finish": str(fin.get(h.get("number"))),
+                                    "pop": h.get("popularity")}
+    try:
+        import graded_cols as G  # noqa: PLC0415
+        with contextlib.redirect_stdout(io.StringIO()):
+            all_ = G.load_all()
+        for r in all_.get(int(TODAY[:4]), []):
+            for x in r.get("rows") or []:
+                nm = nf(x.get("name"))
+                if nm in ENTRY_BY_HORSE:
+                    GRADED_YEAR.setdefault(nm, []).append({"date": r["date"], "race": r.get("abbr", ""), "grade": r.get("grade", ""),
+                                                           "fin": x.get("fin"), "pop": x.get("pop")})
+        for v in GRADED_YEAR.values():
+            v.sort(key=lambda a: a["date"])
+    except Exception:  # noqa: BLE001
+        pass
+
+
+def _rating_num(h: dict) -> int:
+    m = re.match(r"\d+", h.get("rating") or "")
+    return int(m.group(0)) if m else 0
+
+
+def entries_section(slug: str) -> str:
+    """重賞ページに出す「出走予定馬」の表（JRA発表）。これから行われるレースで、発表済みのときだけ。"""
+    d = ENTRIES.get(slug)
+    if not d or _B is None:
+        return ""
+    B, esc = _B, _B.esc
+    import unicodedata  # noqa: PLC0415
+    nf = lambda x: unicodedata.normalize("NFKC", str(x or "")).replace(" ", "").replace("\u3000", "")
+    md_ = lambda x: f"{int(x[4:6])}/{int(x[6:8])}"
+    rows = ""
+    for h in sorted(d["horses"], key=lambda h: (-_rating_num(h), h["name"])):
+        nm = nf(h["name"])
+        gy = [a for a in GRADED_YEAR.get(nm, []) if a["date"] < d["date"]]
+        lr = LAST_RUN.get(nm)
+        gl = gy[-1] if gy else None
+        last = ""
+        if lr and (not gl or lr["date"] >= gl["date"]):
+            last = (f"<a href='{lr['path']}'>{esc(md_(lr['date']))} {esc(lr['label'].split(' ', 1)[-1])}</a> {esc(lr['finish'])}"
+                    + ("着" if lr["finish"].isdigit() else "") + (f"（{esc(lr['pop'])}人気）" if lr.get("pop") else ""))
+        elif gl:
+            f_ = gl["fin"]
+            last = (f"{esc(md_(gl['date']))} {esc(gl['race'])} {esc(f_)}{'着' if isinstance(f_, int) else ''}"
+                    + (f"（{esc(gl['pop'])}人気）" if gl.get("pop") else ""))
+        ran = [a for a in gy if isinstance(a["fin"], int)]
+        rec = f"{len(ran)}戦{sum(a['fin'] == 1 for a in ran)}勝" if ran else "-"
+        tag = (f"<small>（{esc(h.get('country') or '外国')}の馬）</small>" if h.get("foreign")
+               else (f"<small>（{esc(h['origin'])}）</small>" if h.get("origin") else ""))
+        rows += (f"<tr><td class='nm'>{B.link_horse(h['name'])}{tag}</td><td class='nw'>{esc(h.get('sex', ''))}{esc(h.get('age', ''))}</td>"
+                 f"<td>{esc(h.get('trainer', ''))}</td><td>{last or '-'}</td><td class='nw'>{esc(rec)}</td>"
+                 f"<td>{esc(h.get('rating') or '-')}<small>{('　' + esc(h['rating_race'])) if h.get('rating_race') else ''}</small></td></tr>")
+    n = len(d["horses"])
+    reg = (f"特別登録{d['registered']}頭" + (f"と外国馬{d['registered_foreign']}頭" if d.get("registered_foreign") else "")) if d.get("registered") else f"{n}頭"
+    pub = d.get("published") or ""
+    pub_t = f"{int(pub[5:7])}月{int(pub[8:10])}日" if len(pub) == 10 else ""
+    mx = f"出走できるのは最大{d['max_runners']}頭で、" if d.get("max_runners") else ""
+    pred = next((p for dd, p, *_ in PREDS.get(slug) or [] if dd == d["date"]), None)
+    when = ("AI予想を公開中：<a href='" + B.race_path(d["date"], pred) + "'>全頭の評価と買い目を見る</a>" if pred
+            else f"このサイトのAI予想は{esc(publish_when(d['date']))}（枠順の確定後）。")
+    return (f"<section class='card' id='entries'><h2>{esc(d['name'])}{d['date'][:4]}の出走予定馬（{esc(reg)}）</h2>"
+            f"<p>{esc(day_jp(d['date']))}の{esc(d['name'])}に登録した馬の一覧（JRAが{esc(pub_t)}に発表した、出走予定馬のプレレーティング）。"
+            f"{esc(mx)}登録がそれより多いときは、JRAの決まりで出走できる馬が決まる。下の表はレーティングの高い順。{when}</p>"
+            "<div class='scroll'><table class='ent'><thead><tr><th>馬名</th><th>性齢</th><th>調教師</th><th>直近の出走（わかる範囲）</th><th>今年のJRA重賞</th><th>レーティング（今年の最高値）</th></tr></thead>"
+            f"<tbody>{rows}</tbody></table></div>"
+            f"<p class='meta'>出典：JRA「<a href='{esc(d['source'])}' target='_blank' rel='noopener'>{esc(d['name'])} プレレーティング</a>」。"
+            "直近の出走は、このサイトが予想したレース（10月26日から）とJRAの重賞の成績のうち新しいもの。オープン特別や海外のレースなどは入らないことがある。今年のJRA重賞は1月からの重賞だけの成績（海外・地方・重賞以外は含まない）。"
+            "回避・除外などで変わることがあるので、正式な出走馬は枠順の確定（JRAの発表）で確認してほしい。</p></section>")
+
+
+def entries_date(slug: str) -> str:
+    """出走予定馬を取り込んだ日（YYYY-MM-DD）。サイトマップの更新日に使う。無ければ空。"""
+    d = ENTRIES.get(slug)
+    return (d.get("fetched") or d.get("published") or "")[:10] if d else ""
+
+
+def entries_title(slug: str) -> tuple[str, str] | None:
+    """出走予定馬が出ていて、そのレースの予想がまだのときの (題名の頭, 説明文)。"""
+    d = ENTRIES.get(slug)
+    if not d or any(dd == d["date"] for dd, *_ in PREDS.get(slug) or []):
+        return None
+    n = len(d["horses"])
+    names = "、".join(h["name"] for h in sorted(d["horses"], key=lambda h: -_rating_num(h))[:3])
+    prev = (_dt(d["date"]) - timedelta(days=1)).strftime("%Y%m%d")
+    desc = (f"{d['name']}{d['date'][:4]}（{day_jp(d['date'])}・{d.get('venue', '')}{d.get('course', '')}）の出走予定馬{n}頭。"
+            f"{names}など、直近の出走・今年の重賞成績・レーティングつき。AI予想は{day_jp(prev)}の夜までに公開。")
+    return f"{d['name']}{d['date'][:4]}の出走予定馬（{n}頭）", desc
 
 
 # ---------- 日付の言い方 ----------
@@ -180,7 +307,10 @@ def next_card(where: str, slug: str | None = None, race: tuple | None = None, he
                     + _weekend_btn(where))
         else:
             note = f"<p class='meta'>{esc(day_jp(d))}の{esc(name)}のAI予想は、{esc(publish_when(d))}（枠順の確定後）。公開したら下のまとめページにも載ります。</p>"
-            btns = _weekend_btn(where, main=True)
+            btns = ""
+            if slug in ENTRIES and ENTRIES[slug]["date"] == d:
+                btns = _a(f"/graded/{slug}/#entries", f"{name}の出走予定馬{len(ENTRIES[slug]['horses'])}頭", "JRA発表の登録馬。直近の出走・今年の重賞成績つき", where, "entries", True)
+            btns += _weekend_btn(where, main=not btns)
             if not here_graded and _has_graded(slug):
                 btns += _a(f"/graded/{slug}/", f"{name}の傾向と過去のAI予想", "予想を公開したらこのページにも追加", where, "graded")
     if not btns:
@@ -202,6 +332,11 @@ def next_mini(where: str, slug: str) -> str:
     if kind == "done":
         return (f"<p class='notice nmini'>{esc(day_jp(d))}の{esc(name)}は確定：<a href='{B.race_path(d, obj)}' data-ns='{esc(where)}-top' data-ns-to='race'>"
                 f"結果とAIの予想を見る</a></p>")
+    if slug in ENTRIES and ENTRIES[slug]["date"] == d:
+        e = ENTRIES[slug]
+        return (f"<p class='notice nmini'><b>{esc(name)}の出走予定馬{len(e['horses'])}頭</b>（JRA発表）："
+                f"<a href='/graded/{slug}/#entries' data-ns='{esc(where)}-top' data-ns-to='entries'>直近の出走・今年の成績つきの一覧を見る</a>"
+                f"　AI予想は{esc(publish_when(d))}</p>")
     return (f"<p class='notice nmini'>{esc(name)}（{esc(day_jp(d))}）のAI予想は{esc(publish_when(d))}。"
             f"<a href='/weekend/' data-ns='{esc(where)}-top' data-ns-to='weekend'>今週末の競馬まとめ（毎週更新）</a></p>")
 
@@ -252,6 +387,8 @@ def _race_card(r: dict) -> str:
     else:
         status = f"<p class='wk-st'>AI予想は{esc(publish_when(d))}（枠順の確定後）</p>"
     links = []
+    if slug in ENTRIES and ENTRIES[slug]["date"] == d:
+        links.append(f"<a href='/graded/{slug}/#entries'><b>出走予定馬{len(ENTRIES[slug]['horses'])}頭</b></a>")
     for href, t in _feat_links(slug):
         links.append(f"<a href='{href}'>{esc(t)}</a>")
     if slug in GDATA:
@@ -369,7 +506,8 @@ CSS = """
 .wk-r h3{margin:0 0 2px;font-size:17px}.wk-g{display:inline-block;font-size:12px;padding:1px 6px;margin-right:6px;border:1px solid var(--line);vertical-align:2px}
 .wk-g.gG1,.wk-g.gJG1{background:var(--acc);color:var(--bg);border-color:var(--acc)}
 .wk-st{margin:6px 0}.wk-st.on{font-weight:700}.wk-l{font-size:13px;margin:4px 0 0;line-height:1.9}
-.bm{border-left:4px solid var(--acc)}.bm details{margin:6px 0}.bm summary{cursor:pointer;color:var(--acc)}
+.bm{border-left:4px solid var(--acc)}
+.ent td,.ent th{vertical-align:top}.ent td.nm{white-space:nowrap}.ent small{color:var(--mut);font-size:12px}.bm details{margin:6px 0}.bm summary{cursor:pointer;color:var(--acc)}
 """
 
 JS = r"""

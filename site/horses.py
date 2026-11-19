@@ -86,8 +86,11 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
         last_run = runs[0] if runs else None
         jra = any(B.venue_of(x["p"]) in ("札幌", "函館", "福島", "新潟", "東京", "中山", "中京", "京都", "阪神", "小倉") for x in items)
         sa = latest.get("sex_age") or ""
+        import weekly  # noqa: PLC0415
+        ent = None if nxt else weekly.ENTRY_BY_HORSE.get(name)  # JRA発表のG1出走予定馬に載っている（予想はまだ）
         lead = (f"{name}{'（' + prof + '）' if prof else ''}の成績とAI評価。"
                 + (f"次走は{B.md(nxt[0]['d'])}の{B.race_label(nxt[0]['p'])}（AIの印は{nxt[0]['mark'] or '無印'}）。" if nxt else "")
+                + (f"次走予定は{weekly.day_jp(ent['date'])}の{ent['name']}（JRA発表の出走予定馬）。" if ent else "")
                 + (f"直近は{B.md(last_run['d'])}の{B.race_label(last_run['p'])}で{last_run['finish']}着"
                    + (f"（{last_run['pop']}番人気）" if last_run.get("pop") else "") + "。" if last_run else "")
                 + f"このサイトのAI予想では{len(items)}回評価し、◎は{n_hon}回。"
@@ -103,9 +106,13 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
             x = nxt[0]
             next_html = (f"<p class='notice'>次走：<a href='{B.race_path(x['d'], x['p'])}'>{esc(B.md(x['d']))} {esc(B.race_label(x['p']))}</a>"
                          f"（AIの印：{esc(x['mark'] or '無印')}{'・想定勝率' + str(x['win_pct']) + '%' if x['win_pct'] is not None else ''}）→ 全頭の評価と買い目を見る</p>")
-        # 馬名で調べた人の次の1クリック：次走があればそのレースの予想と対戦、無ければ直近のレースの結果・今週末のまとめ
-        import weekly  # noqa: PLC0415
-        nstep = weekly.next_card("horse", race=(nxt[0]["d"], nxt[0]["p"]) if nxt else ((items[0]["d"], items[0]["p"]) if items[0]["d"] >= B.TODAY else None))
+        # 馬名で調べた人の次の1クリック：次走があればそのレースの予想と対戦、G1の出走予定馬ならその一覧、無ければ今週末のまとめ
+        if ent:
+            next_html = (f"<p class='notice'>次走予定：<a href='/graded/{ent['slug']}/#entries'>{esc(weekly.day_jp(ent['date']))} {esc(ent['name'])}</a>"
+                         "（JRA発表の出走予定馬に掲載）→ ほかの登録馬と、直近の出走・今年の成績の一覧を見る</p>")
+            nstep = weekly.next_card("horse", slug=ent["slug"])
+        else:
+            nstep = weekly.next_card("horse", race=(nxt[0]["d"], nxt[0]["p"]) if nxt else ((items[0]["d"], items[0]["p"]) if items[0]["d"] >= B.TODAY else None))
         rows = []
         for x in items:
             p = x["p"]
@@ -131,7 +138,7 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
             {"@type": "ListItem", "position": 1, "name": B.SITE_NAME, "item": B.BASE_URL + "/"},
             {"@type": "ListItem", "position": 2, "name": "馬別", "item": B.BASE_URL + "/horse/"},
             {"@type": "ListItem", "position": 3, "name": name, "item": B.BASE_URL + path}]}
-        title = (f"{name}{'（' + sa + '）' if sa else ''}の成績・{'次走と' if nxt else '近走と'}AI評価｜{B.SITE_NAME}")
+        title = (f"{name}{'（' + sa + '）' if sa else ''}の成績・{'次走と' if nxt or ent else '近走と'}AI評価｜{B.SITE_NAME}")
         write(path, page(title, body, path, desc=lead[:120], head_extra=jsonld(ld)))
         lastmod[path] = f"{latest['d'][:4]}-{latest['d'][4:6]}-{latest['d'][6:8]}"
         index_rows.append((latest["d"], name, path, len(items), n_hon))

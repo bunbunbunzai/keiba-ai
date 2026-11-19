@@ -130,6 +130,23 @@ def _header(tbl) -> tuple[list[str], int]:
     return names, len(hdr)
 
 
+def _clean(h: dict) -> None:
+    """馬名の「（イギリス産）」「Erdenali」、調教師の「（フランス）」、レーティングの空白や字形のゆれを整える。"""
+    m = re.match(r"^(.*?)[(（]([^()（）]+?産)[)）]$", h["name"])
+    if m:
+        h["name"], h["origin"] = m.group(1), m.group(2)
+    m = re.match(r"^([ァ-ヶー・ヴ]+)([A-Za-z][A-Za-z' .\-]*)$", h["name"])
+    if m:
+        h["name"], h["name_en"] = m.group(1), m.group(2).strip()
+    m = re.match(r"^(.*?)[(（]([^()（）]+)[)）]$", h.get("trainer", ""))
+    if m:
+        h["trainer"], h["country"] = m.group(1), m.group(2)
+    if h.get("rating"):
+        h["rating"] = re.sub(r"\s+", "", h["rating"]).replace("М", "M").replace("Ｍ", "M")
+    if h.get("country") and h.get("country") != "日本":
+        h["foreign"] = True
+
+
 def parse_prerating(html: str) -> dict | None:
     """表があれば {published, max_runners, horses:[...]}。発表前（表が無い）なら None。"""
     soup = BeautifulSoup(html, "html.parser")
@@ -169,13 +186,17 @@ def parse_prerating(html: str) -> dict | None:
                     h["rating"] = "" if v in ("-", "－", "―", "") else v
                 else:
                     h.setdefault("extra", {})[k] = v
+            _clean(h)
             horses.append(h)
     if not horses:
         return None
     m = re.search(r"(\d{4})年(\d{1,2})月(\d{1,2})日", text)
     pub = f"{m.group(1)}-{int(m.group(2)):02d}-{int(m.group(3)):02d}" if m else ""
     g = re.search(r"出走可能頭数\s*(\d+)\s*頭", text)
-    return {"published": pub, "max_runners": int(g.group(1)) if g else None, "horses": horses}
+    t = re.search(r"特別登録頭数\s*(\d+)\s*頭(?:\s*および外国馬\s*(\d+)\s*頭)?", text)
+    return {"published": pub, "max_runners": int(g.group(1)) if g else None,
+            "registered": int(t.group(1)) if t else None, "registered_foreign": int(t.group(2)) if t and t.group(2) else 0,
+            "horses": horses}
 
 
 def run(today: str, days: int, only_slug: str = "", only_date: str = "", probe: bool = False) -> int:
