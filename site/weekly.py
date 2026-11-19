@@ -241,12 +241,12 @@ def _race_card(r: dict) -> str:
         if sc and sc.get("stake"):
             res = "的中" if sc["return"] else "不的中"
             fin = sc.get("honmei_finish") or "-"
-            status = (f"<p class='wk-st done'>確定：AIの◎{esc(hon)} {esc(B.horse_name(p, hon))}は{esc(fin)}着（{res}・このレースの回収率{B.roi_txt(sc['stake'], sc['return'])}）"
+            status = (f"<p class='wk-st done'>確定：AIの◎{esc(hon)} {B.link_horse(B.horse_name(p, hon))}は{esc(fin)}着（{res}・このレースの回収率{B.roi_txt(sc['stake'], sc['return'])}）"
                       f"　<a href='{path}' data-ns='weekend' data-ns-to='race'>結果と回顧</a></p>")
         elif p.get("confidence") == "見送り":
             status = f"<p class='wk-st'>AIは見送り（自信度が低い）。<a href='{path}' data-ns='weekend' data-ns-to='race'>全頭の評価を見る</a></p>"
         else:
-            status = (f"<p class='wk-st on'>AI予想を公開中：◎{esc(hon)} {esc(B.horse_name(p, hon))}（自信度{esc(p.get('confidence') or '-')}）</p>"
+            status = (f"<p class='wk-st on'>AI予想を公開中：◎{esc(hon)} {B.link_horse(B.horse_name(p, hon))}（自信度{esc(p.get('confidence') or '-')}）</p>"
                       f"<div class='nbtns'>{_a(path, '全頭の評価と買い目', '評価点・印・想定勝率', 'weekend', 'race', True)}"
                       + (_a(path + '#vs', 'AIと単勝勝負', '◎を1頭選ぶだけ', 'weekend', 'vs') if _vs_ok() and B.before_post(d, p) else "") + "</div>")
     else:
@@ -338,7 +338,7 @@ def build_page(by_date: dict) -> dict[str, str]:
             sc = B.scored(p)
             hon = (p.get("marks") or {}).get("◎")
             rows += (f"<tr><td class='nw'>{esc(day_jp(d))}</td><td><a href='{B.race_path(d, p)}'>{esc(name)}</a>（{esc(g)}）</td>"
-                     f"<td>◎{esc(hon)} {esc(B.horse_name(p, hon))}</td><td>{esc(sc.get('honmei_finish') or '-')}着</td>"
+                     f"<td>◎{esc(hon)} {B.link_horse(B.horse_name(p, hon))}</td><td>{esc(sc.get('honmei_finish') or '-')}着</td>"
                      f"<td>{'的中' if sc['return'] else '不的中'}</td></tr>")
         hits = sum(1 for x in last if B.scored(x[1])["return"])
         body += (f"<section class='card'><h2>この1週間の重賞の結果（AIの◎）</h2><p>{len(last)}レース中{hits}レースで的中。外れも含めてすべて載せています。</p>"

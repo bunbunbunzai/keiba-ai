@@ -78,6 +78,7 @@ def stats(stats_from: str) -> tuple[dict, dict]:
                 bt[b["type"]][2] += k in hit
     v.update(races=f"{n_races:,}", roi=pct(ret, stake), stake=f"{stake:,}円", ret=f"{ret:,}円",
              asof=f"{int(last[4:6])}月{int(last[6:8])}日" if last else "―",
+             asof_iso=f"{last[:4]}-{last[4:6]}-{last[6:8]}" if last else "",
              since=f"{int(stats_from[4:6])}月{int(stats_from[6:8])}日")
     total_pts = sum(x[0] for x in bt.values())
     v["bet_points"] = f"{total_pts:,}"
@@ -408,6 +409,79 @@ def hero_of(c: dict) -> str:
         return ""
 
 
+# ---------- 本文の馬名を馬のページへ ----------
+# 検索から来る人の入口は G1特集と馬のページが多い（2026-11-20、GA4）。記事に出てくる馬から、その馬の成績とAI評価へ進めるようにする。
+# 馬のページがある馬（2回以上評価した馬）だけ、記事ごとに最初の1回だけリンクする。見出し・表の見出し・既存のリンクの中は触らない。
+# 片仮名が前後に続く所は別の言葉の一部なので外す（例：「スター」という馬がいても「スターアニス」には付けない）。
+_KANA = "ァ-ヶーｦ-ﾟA-Za-zＡ-Ｚａ-ｚ・"
+HORSE_NAMES: set = set()  # build.py が馬のページを作る馬名を入れる（build を別名で import すると中身が空のため、直接渡す）
+_HRX = None
+_SKIP_TAGS = ("a", "h1", "h2", "h3", "h4", "th", "code", "pre", "script", "style", "summary")
+
+
+def _horse_rx(names):
+    global _HRX
+    if _HRX is None or _HRX[0] != len(names):
+        cand = sorted((n for n in names if len(n) >= 3), key=len, reverse=True)
+        _HRX = (len(names), re.compile(r"(?<![%s])(%s)(?![%s])" % (_KANA, "|".join(map(re.escape, cand)), _KANA)) if cand else None)
+    return _HRX[1]
+
+
+def link_horses(body_html: str, names, href, limit: int = 40) -> str:
+    """names：馬のページがある馬名の集合、href(name)：その馬のページのURL。"""
+    rx = _horse_rx(names) if names else None
+    if not rx:
+        return body_html
+    done = set(re.findall(r"href='/horse/([0-9a-f]+)/'", body_html))
+    out, depth, n = [], 0, 0
+    for part in re.split(r"(<[^>]+>)", body_html):
+        if part.startswith("<"):
+            m = re.match(r"<(/?)([a-zA-Z0-9]+)", part)
+            if m and m.group(2).lower() in _SKIP_TAGS:
+                depth += -1 if m.group(1) else (0 if part.endswith("/>") else 1)
+                depth = max(depth, 0)
+            out.append(part)
+            continue
+        if depth or n >= limit or not part.strip():
+            out.append(part)
+            continue
+
+        def sub(m):
+            nonlocal n
+            name = m.group(1)
+            h = href(name)
+            hid = h.rstrip("/").split("/")[-1]
+            if hid in done or n >= limit:
+                return name
+            done.add(hid)
+            n += 1
+            return f"<a class='hname' href='{h}'>{name}</a>"
+        out.append(rx.sub(sub, part))
+    return "".join(out)
+
+
+def _iso(x) -> str:
+    d = re.sub(r"\D", "", str(x or ""))[:8]
+    return f"{d[:4]}-{d[4:6]}-{d[6:8]}" if len(d) == 8 else ""
+
+
+_DYN = re.compile(r"\{\{(?!aff_)[^{}\n]+?\}\}")
+
+
+def modified(c: dict, v: dict, today_iso: str) -> tuple[str, bool]:
+    """記事の更新日と、数字が自動で変わる記事か。
+    サイトマップの更新日を毎日「今日」にしていたのを、中身が変わった日にする（変わらない記事まで毎日更新と申告すると、
+    検索エンジンがサイトマップの日付を信用しなくなり、新しいページを見つけるのが遅れる）。
+    - 数字を差し込む記事（{{...}}）：データの最終日
+    - それ以外：公開日・updated・レースの日のうち新しいもの"""
+    dyn = bool(_DYN.search(" ".join(str(c.get(k, "")) for k in ("body", "title", "lead", "description"))))
+    cands = [_iso(c.get("date")), _iso(c.get("updated")), _iso(c.get("race_date")) if c.get("auto") == "true" else ""]
+    if dyn:
+        cands.append(v.get("asof_iso", ""))
+    d = max((x for x in cands if x), default="")
+    return (min(d, today_iso) if d else today_iso), dyn
+
+
 def subst(s: str, v: dict) -> str:
     return re.sub(r"\{\{([^{}\n]+?)\}\}", lambda m: v.get(m.group(1).strip(), m.group(0)), s)
 
@@ -501,6 +575,7 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
         title, lead = subst(c.get("title", ""), v), subst(c.get("lead", ""), v)
         desc = subst(c.get("description", ""), v)
         body_html = add_toc(render(subst(c["body"], v), tables))
+        body_html = link_horses(body_html, HORSE_NAMES, lambda nm: f"/horse/{_B.extra.short_id(nm)}/")
         auto_c = c.get("auto") == "true"
         # 記事の下の関連リスト：以前は全記事の題名を並べていた（80本近く）。読む人が選びやすいように絞る
         if auto_c:
@@ -520,8 +595,9 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
             related = rel_block("関連するコラム", similar(c, 6), True) + rel_block("最近の重賞の全頭診断", autos_new[:3], False)
         if related:
             related += "<p class='morelink'><a href='/column/'>コラムの一覧へ →</a></p>"
+        mod_iso, dyn = modified(c, v, today_iso)
         ld = {"@context": "https://schema.org", "@type": "Article", "headline": title, "description": desc,
-              "datePublished": c.get("date"), "dateModified": today_iso, "inLanguage": "ja",
+              "datePublished": _iso(c.get("date")) or c.get("date"), "dateModified": mod_iso, "inLanguage": "ja",
               "author": {"@type": "Organization", "name": site_name, "url": base_url + "/operator/"},
               "publisher": {"@type": "Organization", "name": site_name}, "mainEntityOfPage": base_url + path}
         crumb = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
@@ -536,7 +612,8 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
         ns_box = "" if auto_c else weekly.next_card(ns_where, slug=rslug)
         html_ = (("<p class='draft'>下書き（検索エンジンには出ず、一覧にも載らない）</p>" if c["draft"] else "")
                  + f"<p class='crumb'><a href='/'>トップ</a> › <a href='/column/'>コラム</a></p><article class='col'>"
-                 f"<h1>{esc(title)}</h1><p class='meta'>公開 {esc(c.get('date'))}・データは{esc(v['asof'])}までの記録で自動更新</p>"
+                 f"<h1>{esc(title)}</h1><p class='meta'>公開 {esc(c.get('date'))}"
+                 + (f"・データは{esc(v['asof'])}までの記録で自動更新" if dyn else (f"・更新 {esc(mod_iso)}" if mod_iso > (_iso(c.get('date')) or mod_iso) else "")) + "</p>"
                  + (f"<p class='answer'>{inline(lead)}</p>" if lead else "") + ns_top + body_html + "</article>" + ns_box
                  + "<section class='card'><h2>このサイトについて</h2>"
                  + ("<div class='zkfoot'><img class='zk' src='/assets/zk-normal.png' alt='全頭くん' width='64' height='64' loading='lazy'><p>" if (ROOT / "site" / "assets" / "zk-normal.png").exists() else "<p>")
@@ -561,7 +638,7 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
         write(path, page(f"{title} | {site_name}", html_, path, desc=desc, noindex=c["draft"],
                          head_extra=jsonld(ld) + jsonld(crumb), og_image=og_img))
         if not c["draft"]:
-            lastmod[path] = today_iso
+            lastmod[path] = mod_iso
     def clip(lis: list, n: int = 6) -> str:
         """一覧が長くなりすぎないよう、最初の n 本だけ見せて残りは畳む（スマホで1ページが長すぎたため）。"""
         if len(lis) <= n + 2:

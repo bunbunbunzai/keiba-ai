@@ -3,6 +3,7 @@ title: マイルCS2026の有力馬：安田記念馬シックスペンス、VM�
 description: 2026年のマイルチャンピオンシップに登録している主な馬の今年の成績を、JRA公式の成績から整理した。春のマイルG1を勝った3頭に、安田記念で2着に同着したガイアフォースとワールズエンド、NHKマイルC馬ロデオドライブを加え、過去10年の傾向と照らし合わせる。
 lead: 2026年のマイルチャンピオンシップには、春のマイルG1を勝った3頭がそろって登録している。安田記念を8番人気で勝ったシックスペンス、ヴィクトリアマイルを1番人気で勝ったエンブロイダリー、桜花賞を1番人気で勝った3歳のスターアニスである。安田記念で2着に同着したガイアフォースとワールズエンド、NHKマイルCを勝った3歳のロデオドライブも登録している。
 date: 2026-11-13
+updated: 2026-11-20
 draft: false
 order: 5
 series: mile2026
@@ -64,4 +65,4 @@ NHKマイルC（5月10日・東京）はロデオドライブが勝った。
 
 - JRA公式「[安田記念 2026年の成績](https://www.jra.go.jp/datafile/seiseki/g1/yasuda/result/yasuda2026.html)」「[ヴィクトリアマイル 2026年の成績](https://www.jra.go.jp/datafile/seiseki/g1/victoria/result/victoria2026.html)」「[桜花賞 2026年の成績](https://www.jra.go.jp/datafile/seiseki/g1/ouka/result/ouka2026.html)」
 - NHKマイルC・ニュージーランドT・京王杯SC・阪神牝馬S・スワンS・まほろばSの結果：JRA出馬表の過去走（このサイトが毎日集めているデータ）
-- 過去10年の傾向：[マイルCS過去10年の結果一覧](/column/mile-championship-kako-kekka/)、[年齢・性別・騎手](/column/mile-championship-nenrei-kishu/)
+- 過去の傾向：[マイルCS過去20年の結果一覧](/column/mile-championship-kako-kekka/)、[年齢・性別・騎手](/column/mile-championship-nenrei-kishu/)

@@ -14,7 +14,8 @@ from collections import defaultdict
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 YEAR = 2026
-TODAY = "2026-11-19"
+PUBLISHED = "2026-11-19"  # 最初に公開した日（記事の「公開」）。作り直した日は updated に入れる（サイトマップの更新日になる）
+TODAY = __import__("datetime").datetime.now(__import__("datetime").timezone(__import__("datetime").timedelta(hours=9))).strftime("%Y-%m-%d")
 # 2025年のファン投票 最終結果の上位20頭（JRA発表）
 VOTE_2025 = [("レガレイラ", 612771), ("クロワデュノール", 566330), ("マスカレードボール", 424952), ("メイショウタバル", 415575),
              ("ベラジオオペラ", 409745), ("ジャスティンパレス", 371556), ("ミュージアムマイル", 340383), ("ダノンデサイル", 334627),
@@ -125,7 +126,8 @@ SRC = """## 出典
 
 
 def write(slug, title, desc, lead, order, body):
-    fm = f"---\ntitle: {title}\ndescription: {desc}\nlead: {lead}\ndate: {TODAY}\ndraft: false\norder: {order}\nseries: arima2026\nhero: g-turf-winter\n---\n"
+    fm = (f"---\ntitle: {title}\ndescription: {desc}\nlead: {lead}\ndate: {PUBLISHED}\n" + (f"updated: {TODAY}\n" if TODAY > PUBLISHED else "")
+          + f"draft: false\norder: {order}\nseries: arima2026\nhero: g-turf-winter\n---\n")
     links = "\n".join(l for l in LINKS.splitlines() if f"/column/{slug}/" not in l)
     (ROOT / "columns" / f"{slug}.md").write_text(fm + body.rstrip() + "\n\n" + links + "\n\n" + SRC, encoding="utf-8")
     print(slug, len(body))

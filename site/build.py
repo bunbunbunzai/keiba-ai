@@ -47,8 +47,24 @@ CONTACT_MAIL = "keibalog.kouho@gmail.com"
 GA_ID = "G-MFLTSL1RVP"
 ADSENSE_PUB = "ca-pub-2715397557499691"
 ADSENSE_TAG = f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADSENSE_PUB}" crossorigin="anonymous"></script>'
-GA_TAG = (f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>'
-          f"<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','{GA_ID}');</script>")
+# GA4 の計測。数字に混ざっていたものを外す（2026-11-20。28日分のうち約3割が機械的なアクセス、閲覧数の約半分が運営側の確認だった）
+# - 自動操作のブラウザ（navigator.webdriver）、端末の種類を名乗らないもの、今は使われていない端末名を名乗るもの、
+#   10年以上前の版のブラウザ（Chrome・Firefox 80より前、Safari 12より前、旧Edge、IE）、800×600の画面は計測しない
+#   （米国のデータセンターから英語の環境で1ページだけ開くアクセスが約3割あり、その多くがこの形だった。
+#    日本語の環境でも Chrome 109〜110 の人はいるので、版の線引きはそれより十分古いところにする）
+# - 運営者の端末は、一度 https://www.ai-keiba-log.com/?zk_internal=1 を開くと、以後 traffic_type=internal を付けて送る
+#   （GA4 の「内部トラフィック」データフィルタで外せる。?zk_internal=0 で解除）
+GA_TAG = ("<script>(function(){var w=window,n=navigator,ua=n.userAgent||'';"
+          "var sc=w.screen||{},v=/(?:Chrome|CriOS|Firefox|FxiOS)\\/(\\d+)/.exec(ua),sv=/Version\\/(\\d+)[.\\d]* (?:Mobile\\/\\S+ )?Safari/.exec(ua);"
+          "if(n.webdriver||!/Windows|Mac OS X|Macintosh|Android|iPhone|iPad|iPod|Linux|CrOS/.test(ua)||!/AppleWebKit|Gecko\\//.test(ua)"
+          "||/HeadlessChrome|PhantomJS|Konqueror|PalmOS|Blazer|NetFront|SymbianOS|Series ?60|SeaMonkey|MSIE |Trident\\/|Edge\\/1\\d\\.|\\((Mobile|Tablet); rv:/i.test(ua)"
+          "||(v&&+v[1]<80)||(sv&&+sv[1]<12)||(sc.width===800&&sc.height===600)){w.gtag=function(){};return;}"
+          "var it=false;try{var q=/[?&]zk_internal=([01])/.exec(location.search);if(q){if(q[1]==='1')localStorage.setItem('zk_internal','1');else localStorage.removeItem('zk_internal');}"
+          "it=localStorage.getItem('zk_internal')==='1';}catch(e){}"
+          "w.dataLayer=w.dataLayer||[];w.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());"
+          f"gtag('config','{GA_ID}',it?{{traffic_type:'internal'}}:{{}});"
+          f"var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id={GA_ID}';document.head.appendChild(s);"
+          "})();</script>")
 SITE_SUB = "中央・地方の全レースを毎日予想。外れも含めて、全部記録する。"
 DOMAIN = "www.ai-keiba-log.com"
 BASE_URL = f"https://{DOMAIN}"
@@ -338,7 +354,7 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(d)}">
 <link rel="canonical" href="{BASE_URL}{path}">
-{'<meta name="robots" content="noindex">' if noindex else ''}
+{'<meta name="robots" content="noindex">' if noindex else '<meta name="robots" content="max-image-preview:large">'}
 <meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(d)}">
 <meta property="og:url" content="{BASE_URL}{path}"><meta property="og:type" content="website"><meta property="og:site_name" content="{SITE_NAME}">
 <meta property="og:image" content="{BASE_URL}{og_image}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
@@ -1838,6 +1854,7 @@ def limits_page(t: dict, worst_venue: tuple[str, str] | None) -> str:
 
 
 SITE_CHANGES = [
+    ("2026-11-20", "コラム本文に出てくる馬の名前から、その馬の成績とAI評価のページへ進めるようにした。サイトマップの更新日を、記事の中身が変わった日に直した（これまでは毎日すべての記事を更新扱いにしていた）。初めての人への案内の帯は、記事を読みに来た最初のページでは出さないようにした。"),
     ("2026-11-20", "「今週末の競馬まとめ」ページを追加。その週の重賞とAI予想の公開予定・特集・この1週間の結果を毎週自動で入れ替える。馬・重賞・特集・用語のページの下に、そのレースのAI予想と「AI vs あなた」へ進む「次に見る」を追加。"),
     ("2026-11-19", "「AI vs あなた」に月間ランキングを追加。名前を決めて各レースで◎を選ぶと、◎の単勝の回収率で順位が出る。AIの◎との対戦成績も並ぶ（参加無料）。"),
     ("2026-11-19", "重賞の判定を直した。レース名に「重賞」の文字があるだけの条件戦と準重賞が、重賞として表示・投稿されていた（11月3日・5日・19日の4レース）。また、東海菊花賞・ばんえい菊花賞・兵庫クイーンカップが、中央の菊花賞・クイーンカップの重賞ページに混ざっていたので、それぞれ別のページに分けた。"),
@@ -2222,7 +2239,13 @@ function render(i){var d=bg.querySelector('.zkw');bg.dataset.step=String(i);
 function show(i){if(bg)return;last=document.activeElement;bg=document.createElement('div');bg.className='zkw-bg';bg.innerHTML='<div class="zkw" role="dialog" aria-modal="true" aria-labelledby="zkw-h"></div>';
  bg.addEventListener('click',function(e){if(e.target===bg)close(bg.dataset.step==='0'?'skip':'close',+bg.dataset.step);});document.body.appendChild(bg);document.addEventListener('keydown',kd,true);render(i);}
 var fb=document.querySelector('.prefs');if(fb){var gb=document.createElement('button');gb.type='button';gb.className='zkguide';gb.textContent='全頭くんのサイト案内';gb.onclick=function(){ga('welcome_reopen');show(1);};fb.appendChild(gb);}
+/* 検索から記事（コラム・馬・重賞・用語など）を読みに来た人には、最初のページでは出さない。
+   案内を始めた人は表示した人の2%だけで、読みに来たページの下を帯がふさいでいた（2026-11-20）。
+   トップ・レースページ・今週末のまとめなどサイトの中心のページか、2ページ目からは出す */
+var pv=0;try{pv=+(sessionStorage.getItem('zkpv')||0)+1;sessionStorage.setItem('zkpv',String(pv));}catch(e){}
+var core=/^[/]($|[0-9]{4}[/][0-9]{2}[/][0-9]{2}[/]|weekend[/]|results[/]|about[/]|vs[/])/.test(location.pathname);
 if(seen()||navigator.webdriver||/bot|crawl|spider|lighthouse|headless/i.test(navigator.userAgent)||SK.some(function(p){return location.pathname.indexOf(p)===0;}))return;
+if(!core&&pv<2)return;
 /* 初めての人への案内は、画面をふさがない小さな帯で出す（中央に出していた案内は7割の人が閉じていた）。3回見せたら出さない */
 var n=0;try{n=+(localStorage.getItem(K+'_n')||0);}catch(e){}
 if(n>=3){seen('auto');return;}
@@ -2468,6 +2491,7 @@ def build() -> None:
     write("/operator/", page(f"運営者情報 | {SITE_NAME}", OPERATOR, "/operator/", desc=f"{SITE_NAME}の運営者・連絡先・SNS・運営の支援についての情報。"))
     write("/privacy/", page(f"プライバシーポリシー | {SITE_NAME}", PRIVACY, "/privacy/", desc=f"{SITE_NAME}のプライバシーポリシー。アクセス解析・広告（Google AdSense）・アフィリエイト・お問い合わせ・全頭くんへの質問で扱う情報と、その使い方。"))
     today_iso = now.strftime("%Y-%m-%d")
+    column.HORSE_NAMES = LINK_HORSES
     lastmod.update(column.build(write, page, jsonld, BASE_URL, SITE_NAME, STATS_FROM, today_iso))
     lastmod.update(weekly.build_page(by_date))
     if LEAGUE_URL:  # 「AI vs あなた」月間ランキング（一般公開までは noindex・ナビに載せない）
@@ -2536,7 +2560,8 @@ def build() -> None:
                                     + f"Sitemap: {BASE_URL}/sitemap.xml\n", encoding="utf-8")
     (OUT / "llms.txt").write_text(
         f"# {SITE_NAME}\n\n> AI（Claude）が日本の競馬（JRA・地方）の全レースを毎日予想し、外れも含めた全予想の回収率を公開するサイト。\n\n"
-        f"- [今日の予想]({BASE_URL}/)\n- [成績・回収率]({BASE_URL}/results/)：累計{t['n']}レース・回収率{t['roi']}\n"
+        f"- [今日の予想]({BASE_URL}/)\n- [今週末の競馬まとめ]({BASE_URL}/weekend/)：今週の重賞とAI予想の公開状況・G1特集・この1週間の重賞の結果（毎週更新）\n"
+        f"- [重賞のAI予想一覧]({BASE_URL}/graded/)\n- [成績・回収率]({BASE_URL}/results/)：累計{t['n']}レース・回収率{t['roi']}\n"
         f"- [買い方別の回収率]({BASE_URL}/strategy/)\n- [重賞回顧]({BASE_URL}/review/)\n- [馬別のAI評価履歴]({BASE_URL}/horse/)\n- [予想の方法]({BASE_URL}/about/)\n" + (f"- [初心者向けコラム]({BASE_URL}/column/)：馬券の種類・回収率・人気と勝率などを実データで解説\n" if HAS_COLUMN else "") + f"- [全予想の記録CSV]({REPO}/blob/main/results_ledger.csv)\n", encoding="utf-8")
     fixed = {"/": today_iso, "/results/": today_iso, "/strategy/": today_iso, "/ippen/": today_iso, "/about/": None, "/contact/": None, "/glossary/": None, "/limits/": today_iso, "/changelog/": today_iso, "/operator/": None, "/privacy/": None}
     sm = "".join(f"<url><loc>{BASE_URL}{u}</loc>{f'<lastmod>{m}</lastmod>' if m else ''}</url>"
