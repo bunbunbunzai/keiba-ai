@@ -11,7 +11,9 @@
 1. publish：画像が公開URLで見られる「ready」の投稿を X・Instagram に出す（鍵が無ければ draft のまま）
 2. prepare：新しく条件を満たした投稿の画像と文面を social/<日付>/ に作る（→ commit・push・サイト再公開 → 次の回で publish）
 
-設定 social/config.json：{"x": true, "instagram": true, "x_url": "none" | "graded" | "key" | "all"}
+設定 social/config.json：{"x": true, "instagram": true, "x_url": "none" | "graded" | "key" | "all", "x_kinds": [...]}
+  x_kinds: X に出す投稿の種類（無ければ全部）。2026-11-20から重賞（grade_pre・grade_res）と大きな的中（hit）だけ
+  （Xの投稿238件でサイトへの流入が2回だったため、流入は期待せず費用を抑える。全成績・厳選・勝負レースはサイトで公開を続ける）
   x_url: X の本文にサイトのURLを入れる投稿の範囲。none=入れない、graded=重賞のみ、key=重賞・勝負レース・全成績、all=全部
   （X API の従量課金はURL付き投稿が約0.20ドル、URL無しが約0.015ドルと差が大きいため範囲を選べる）
 鍵（GitHub Secrets → 環境変数）：X_API_KEY X_API_SECRET X_ACCESS_TOKEN X_ACCESS_SECRET / IG_USER_ID IG_ACCESS_TOKEN
@@ -520,7 +522,7 @@ def prepare(date: str, cfg: dict) -> int:
         t = texts(date, c, cfg)
         st["posts"][c["id"]] = {"kind": c["kind"], "image": images[0], "images": images, "x_text": t["x"], "x_thread": thread_texts(date, c),
                                 "ig_caption": t["instagram"], "url": t["url"], "created": now().strftime("%Y-%m-%d %H:%M"),
-                                "x": "pending" if cfg.get("x", True) else "off",
+                                "x": "pending" if cfg.get("x", True) and (not cfg.get("x_kinds") or c["kind"] in cfg["x_kinds"]) else "off",
                                 "instagram": "pending" if cfg.get("instagram", True) else "off"}
         n += 1
     save_state(date, st)
@@ -675,7 +677,9 @@ def publish(date: str, dry: bool = False, only: str = "") -> int:
     st = load_state(date)
     n = 0
     # Instagram側でAPIが止められている間は送らない（失敗を重ねない）。毎回の確認で解除されたら自動で再開する
-    ig_on = (load(SOCIAL / "config.json", {}) or {}).get("instagram", True)
+    cfg_ = load(SOCIAL / "config.json", {}) or {}
+    ig_on = cfg_.get("instagram", True)
+    x_kinds = cfg_.get("x_kinds") or []  # 設定を変える前に作った下書きも、対象外の種類は X に出さない
     ig_blocked = (not only) and "API access blocked" in " ".join((load(SOCIAL / "status.json", {}) or {}).get("ig_probe") or [])  # 投稿IDを指定した手動テストでは送る
     for pid, e in st["posts"].items():
         if only and pid != only:
@@ -695,6 +699,9 @@ def publish(date: str, dry: bool = False, only: str = "") -> int:
             continue  # まだサイトに出ていない（次の公開後に出す）
         for k in todo:
             if k == "instagram" and not ig_on and not only:
+                e[k] = "off"
+                continue
+            if k == "x" and x_kinds and e.get("kind") not in x_kinds and not only:
                 e[k] = "off"
                 continue
             if k == "instagram" and ig_blocked and not dry:
