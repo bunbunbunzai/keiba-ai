@@ -1,6 +1,6 @@
 {
  "date": "20261119",
- "updated": "2026-11-19 11:11",
+ "updated": "2026-11-19 11:27",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -187,8 +187,8 @@
     "field": 9,
     "popularity": 3
    },
-   "odds": 2.6,
-   "popularity": 2
+   "odds": 1.4,
+   "popularity": 1
   },
   {
    "race_id": "202611192726180504",
@@ -259,20 +259,6 @@
    "venue": "笠松",
    "race_no": 5,
    "post_time": "12:25",
-   "number": 1,
-   "name": "リュクスレオン",
-   "types": [
-    "aitop"
-   ],
-   "odds": 7.8,
-   "popularity": 3
-  },
-  {
-   "race_id": "202611192320130205",
-   "results_key": "202611192320130205",
-   "venue": "笠松",
-   "race_no": 5,
-   "post_time": "12:25",
    "number": 2,
    "name": "スカリーワグ",
    "types": [
@@ -285,7 +271,7 @@
     "field": 10,
     "popularity": 10
    },
-   "odds": 63.8,
+   "odds": 63.2,
    "popularity": 9
   },
   {
@@ -307,7 +293,7 @@
     "field": 10,
     "popularity": 6
    },
-   "odds": 11.6,
+   "odds": 10.5,
    "popularity": 4
   },
   {
