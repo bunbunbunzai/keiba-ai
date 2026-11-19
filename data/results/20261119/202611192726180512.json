@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261119",
  "race_id": "202611192726180512",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 8,
+   "name": "サンオブザサン",
+   "time": "1:54.2",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 10,
+   "name": "エーピーポエティス",
+   "time": "1:54.9",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "レジェルテ",
+   "time": "1:55.3",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 1,
+   "number": 1,
+   "name": "メイショウノヴァス",
+   "time": "1:55.3",
+   "margin": "ハナ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 5,
+   "name": "シギーコルエンド",
+   "time": "1:55.8",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 4,
+   "number": 4,
+   "name": "ナムラオットー",
+   "time": "1:56.3",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 9,
+   "name": "ジュンオーズ",
+   "time": "1:56.4",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 2,
+   "number": 2,
+   "name": "エイシンビクーニャ",
+   "time": "1:56.8",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 11,
+   "name": "マイトリックスター",
+   "time": "1:56.8",
+   "margin": "ハナ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 6,
+   "name": "ワンダーゾルダート",
+   "time": "1:59.0",
+   "margin": "大差",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 6,
+   "number": 7,
+   "name": "ザムーン",
+   "time": "1:59.3",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 8,
+   "number": 12,
+   "name": "エナアスコット",
+   "time": "-",
+   "margin": "中止",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
