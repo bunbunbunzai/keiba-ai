@@ -1,6 +1,6 @@
 {
  "date": "20261119",
- "updated": "2026-11-19 16:13",
+ "updated": "2026-11-19 16:21",
  "bias": {
   "大井ダ": {
    "judgement": "内先行",
@@ -8,7 +8,8 @@
    "races": [
     1,
     2,
-    3
+    3,
+    4
    ],
    "front_share": 1.0,
    "inner_share": 0.67,
@@ -31,10 +32,10 @@
     10,
     11
    ],
-   "front_share": 0.85,
-   "inner_share": 0.35,
-   "outer_share": 0.4,
-   "horses": 20
+   "front_share": 0.86,
+   "inner_share": 0.36,
+   "outer_share": 0.41,
+   "horses": 22
   },
   "園田ダ": {
    "judgement": "先行有利・外",
@@ -53,9 +54,9 @@
     11
    ],
    "front_share": 1.0,
-   "inner_share": 0.15,
+   "inner_share": 0.14,
    "outer_share": 0.45,
-   "horses": 20
+   "horses": 22
   }
  }
 }

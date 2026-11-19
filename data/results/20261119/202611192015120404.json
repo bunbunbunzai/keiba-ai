@@ -2,7 +2,227 @@
  "source": "rakuten",
  "date": "20261119",
  "race_id": "202611192015120404",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "8",
+    "yen": 400
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "8-10",
+    "yen": 6950
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "8",
+    "yen": 110
+   },
+   {
+    "combo": "10",
+    "yen": 200
+   },
+   {
+    "combo": "14",
+    "yen": 100
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "8-10",
+    "yen": 350
+   },
+   {
+    "combo": "8-14",
+    "yen": 130
+   },
+   {
+    "combo": "10-14",
+    "yen": 210
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-6",
+    "yen": 2280
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "8-10-14",
+    "yen": 360
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "8-10-14",
+    "yen": 10400
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "8-10",
+    "yen": 3590
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 8,
+   "name": "チミモウリョウ",
+   "time": "1:13.5",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 10,
+   "name": "アルフォンシーナ",
+   "time": "1:13.7",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 14,
+   "name": "ナナラ",
+   "time": "1:13.9",
+   "margin": "１ １／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 1,
+   "number": 1,
+   "name": "トーケンリッキー",
+   "time": "1:14.9",
+   "margin": "５",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 12,
+   "name": "クレイファントム",
+   "time": "1:15.2",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 4,
+   "number": 6,
+   "name": "ヤマノリッキー",
+   "time": "1:16.0",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 3,
+   "name": "ユウユウメルツェン",
+   "time": "1:16.1",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 5,
+   "number": 7,
+   "name": "ゴートゥービッツン",
+   "time": "1:16.9",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 3,
+   "number": 4,
+   "name": "デストロイヤー",
+   "time": "1:16.9",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 2,
+   "number": 2,
+   "name": "カミコ",
+   "time": "1:17.2",
+   "margin": "１ ３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 8,
+   "number": 13,
+   "name": "ルナベレッツァ",
+   "time": "1:17.5",
+   "margin": "１ ３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 7,
+   "number": 11,
+   "name": "オルッス",
+   "time": "1:17.8",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "13",
+   "frame": 6,
+   "number": 9,
+   "name": "ソレイユダーム",
+   "time": "1:18.6",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 4,
+   "number": 5,
+   "name": "コードイレヴン",
+   "time": "-",
+   "margin": "取消",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
