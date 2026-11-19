@@ -155,7 +155,7 @@ def parse_horse(html: str) -> dict:
     prof = {}
     for dt in s.find_all(["dt", "th"]):
         k = text(dt)
-        if k in ("父", "母", "母の父", "生年月日", "調教師名", "馬主名", "生産牧場", "性別", "馬齢"):
+        if k in ("父", "母", "母の父", "生年月日", "調教師名", "馬主名", "生産牧場", "性別", "馬齢", "毛色", "馬名意味", "取引市場"):
             dd = dt.find_next_sibling(["dd", "td"])
             if dd:
                 prof[k] = text(dd)

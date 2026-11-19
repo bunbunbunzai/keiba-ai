@@ -1,0 +1,64 @@
+name: horse_info (JRAの馬ページの詳しい情報)
+
+# 手動で動かす：JRAの馬ページから毛色・馬名の意味・取引市場・賞金・全成績を取り、data/horse_info に保存する。
+# コラム（有馬記念のファン投票の馬の紹介など）の事実確認に使う。AIは呼ばない。JRAは1ページごとに5秒あける。
+on:
+  workflow_dispatch:
+    inputs:
+      names:
+        description: "馬名（カンマ区切り）。空なら from の日以降の出馬表に出た馬すべて"
+        required: false
+        default: ""
+      from:
+        description: "この日以降の出馬表に出た馬（YYYYMMDD）"
+        required: false
+        default: ""
+      min_age:
+        description: "この年齢以上だけ（from と一緒に使う）"
+        required: false
+        default: "3"
+      fresh:
+        description: "この日数以内に取った馬は取り直さない"
+        required: false
+        default: "7"
+      limit:
+        description: "最大何頭まで（0で制限なし）"
+        required: false
+        default: "0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: horse_info
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q -r requirements.txt
+      - name: 取得
+        working-directory: scraper
+        timeout-minutes: 270
+        env:
+          NAMES: ${{ inputs.names }}
+          FROM: ${{ inputs.from }}
+          MIN_AGE: ${{ inputs.min_age }}
+          FRESH: ${{ inputs.fresh }}
+          LIMIT: ${{ inputs.limit }}
+        run: python -u horse_info.py ${NAMES:+--names "$NAMES"} ${FROM:+--from "$FROM"} --min-age "$MIN_AGE" --fresh "$FRESH" --limit "$LIMIT"
+      - name: 保存（途中で止まっても、取れた分は保存する）
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          [ -d data/horse_info ] && git add data/horse_info
+          if git diff --cached --quiet; then echo "変更なし"; exit 0; fi
+          git commit -q -m "horse_info: JRAの馬ページの情報を更新"
+          for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && break; sleep 7; done
