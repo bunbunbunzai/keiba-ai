@@ -48,6 +48,10 @@ hero: g-turf-winter
 ## 特集の記事
 
 - [ファン投票2026：日程・投票方法と、過去10年の1位馬の成績](/column/arima2026-fan-vote/)
+- [投票する馬を選ぶ①：4歳以上の有力馬](/column/arima2026-vote-koba/)
+- [投票する馬を選ぶ②：3歳の有力馬](/column/arima2026-vote-3sai/)
+- [投票する馬を選ぶ③：昨年の投票上位20頭の今年](/column/arima2026-vote-kyonen/)
+- [投票する馬を選ぶ④：中山の重賞で成績の良い馬](/column/arima2026-vote-nakayama/)
 - [過去10年の結果一覧（2016〜2025年）](/column/arima-kinen-kako-kekka/)
 - [人気と枠順：1番人気は5勝だが直近3年は全敗](/column/arima-kinen-ninki-waku/)
 - [年齢・性別・騎手：3歳が6勝・勝率24%](/column/arima-kinen-nenrei-kishu/)
