@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261119",
  "race_id": "202611192320130208",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 3,
+   "number": 3,
+   "name": "アーリドラータ",
+   "time": "1:30.6",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 8,
+   "name": "ドロップオブレイ",
+   "time": "1:32.0",
+   "margin": "７",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 10,
+   "name": "ビービーラフター",
+   "time": "1:32.1",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "オレオス",
+   "time": "1:32.1",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 6,
+   "name": "オータムメモリー",
+   "time": "1:32.7",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 7,
+   "name": "オガル",
+   "time": "1:32.9",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 12,
+   "name": "ルベライトテソーロ",
+   "time": "1:32.9",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 5,
+   "number": 5,
+   "name": "カサナルキセキ",
+   "time": "1:33.7",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 9,
+   "name": "ウインフランシーズ",
+   "time": "1:33.9",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 4,
+   "number": 4,
+   "name": "シホノソルジェンテ",
+   "time": "1:33.9",
+   "margin": "ハナ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 1,
+   "number": 1,
+   "name": "テルケンレングレー",
+   "time": "1:34.0",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 8,
+   "number": 11,
+   "name": "ネバーランドリーム",
+   "time": "1:34.5",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
