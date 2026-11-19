@@ -2,7 +2,183 @@
  "source": "rakuten",
  "date": "20261119",
  "race_id": "202611192320130201",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 4,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "8",
+    "yen": 410
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "8-2",
+    "yen": 1840
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "8",
+    "yen": 180
+   },
+   {
+    "combo": "2",
+    "yen": 180
+   },
+   {
+    "combo": "5",
+    "yen": 520
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-8",
+    "yen": 400
+   },
+   {
+    "combo": "5-8",
+    "yen": 1160
+   },
+   {
+    "combo": "2-5",
+    "yen": 1710
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-7",
+    "yen": 690
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-5-8",
+    "yen": 5970
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "8-2-5",
+    "yen": 19240
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-8",
+    "yen": 950
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 8,
+   "name": "スマートエトワール",
+   "time": "1:46.6",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 2,
+   "number": 2,
+   "name": "アドバンスモダン",
+   "time": "1:47.5",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 5,
+   "name": "フォーエバーラブ",
+   "time": "1:47.9",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 4,
+   "name": "サツキジュエル",
+   "time": "1:48.1",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 9,
+   "name": "ミスマリーゴールド",
+   "time": "1:48.9",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 7,
+   "name": "サンダーエフェクト",
+   "time": "1:50.1",
+   "margin": "６",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 6,
+   "name": "レジオンポレール",
+   "time": "1:50.2",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "マウンテンドーター",
+   "time": "1:50.2",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 10,
+   "name": "リトルエース",
+   "time": "1:53.1",
+   "margin": "大差",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 3,
+   "number": 3,
+   "name": "ガケップチー",
+   "time": "1:53.5",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
