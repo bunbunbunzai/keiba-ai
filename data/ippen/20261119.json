@@ -1,6 +1,6 @@
 {
  "date": "20261119",
- "updated": "2026-11-19 13:07",
+ "updated": "2026-11-19 13:17",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -522,20 +522,6 @@
    "popularity": 12
   },
   {
-   "race_id": "202611192726180507",
-   "results_key": "202611192726180507",
-   "venue": "園田",
-   "race_no": 7,
-   "post_time": "13:40",
-   "number": 8,
-   "name": "アオイノイコロ",
-   "types": [
-    "aitop"
-   ],
-   "odds": 6.7,
-   "popularity": 5
-  },
-  {
    "race_id": "202611192320130208",
    "results_key": "202611192320130208",
    "venue": "笠松",
@@ -835,8 +821,8 @@
     "field": 10,
     "popularity": 1
    },
-   "odds": 21.0,
-   "popularity": 6
+   "odds": 22.9,
+   "popularity": 7
   },
   {
    "race_id": "202611192015120402",
