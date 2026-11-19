@@ -1,6 +1,6 @@
 {
  "date": "20261119",
- "updated": "2026-11-19 12:21",
+ "updated": "2026-11-19 12:28",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -476,7 +476,7 @@
     "field": 10,
     "popularity": 9
    },
-   "odds": 4.3,
+   "odds": 8.2,
    "popularity": 3
   },
   {
@@ -497,8 +497,8 @@
     "field": 12,
     "popularity": 1
    },
-   "odds": 3.8,
-   "popularity": 2
+   "odds": 1.7,
+   "popularity": 1
   },
   {
    "race_id": "202611192726180506",
@@ -518,8 +518,22 @@
     "field": 9,
     "popularity": 7
    },
-   "odds": 56.5,
-   "popularity": 9
+   "odds": 91.2,
+   "popularity": 12
+  },
+  {
+   "race_id": "202611192726180507",
+   "results_key": "202611192726180507",
+   "venue": "園田",
+   "race_no": 7,
+   "post_time": "13:40",
+   "number": 8,
+   "name": "アオイノイコロ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 18.0,
+   "popularity": 7
   },
   {
    "race_id": "202611192320130208",
@@ -901,6 +915,20 @@
    },
    "odds": 4.5,
    "popularity": 2
+  },
+  {
+   "race_id": "202611192320130210",
+   "results_key": "202611192320130210",
+   "venue": "笠松",
+   "race_no": 10,
+   "post_time": "15:10",
+   "number": 7,
+   "name": "スカイオージ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 7.9,
+   "popularity": 3
   },
   {
    "race_id": "202611192320130211",
