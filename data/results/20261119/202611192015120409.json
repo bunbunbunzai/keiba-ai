@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261119",
  "race_id": "202611192015120409",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,171 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 8,
+   "name": "イマーシブ",
+   "time": "1:14.7",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 13,
+   "name": "インペリオ",
+   "time": "1:15.4",
+   "margin": "３ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 4,
+   "name": "スマイルケイ",
+   "time": "1:15.5",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 5,
+   "name": "コブラツイスト",
+   "time": "1:15.5",
+   "margin": "ハナ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 14,
+   "name": "チェイスザファイア",
+   "time": "1:15.6",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 4,
+   "number": 6,
+   "name": "オレンジマン",
+   "time": "1:15.8",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 9,
+   "name": "アヤサンジョリーン",
+   "time": "1:15.8",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 12,
+   "name": "マロンカラノテガミ",
+   "time": "1:16.0",
+   "margin": "１ １／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 4,
+   "number": 7,
+   "name": "インサイダー",
+   "time": "1:16.6",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 2,
+   "number": 2,
+   "name": "ブライトイメル",
+   "time": "1:16.6",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 8,
+   "number": 15,
+   "name": "ピオニー",
+   "time": "1:16.6",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 6,
+   "number": 11,
+   "name": "モンサンヴデット",
+   "time": "1:16.7",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "13",
+   "frame": 6,
+   "number": 10,
+   "name": "コンサントレ",
+   "time": "1:16.9",
+   "margin": "１ １／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "14",
+   "frame": 2,
+   "number": 3,
+   "name": "ロンフォン",
+   "time": "1:17.1",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "15",
+   "frame": 1,
+   "number": 1,
+   "name": "セントリアン",
+   "time": "1:17.3",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
