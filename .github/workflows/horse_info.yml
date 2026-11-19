@@ -28,6 +28,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: horse_info
@@ -53,12 +54,19 @@ jobs:
           FRESH: ${{ inputs.fresh }}
           LIMIT: ${{ inputs.limit }}
         run: python -u horse_info.py ${NAMES:+--names "$NAMES"} ${FROM:+--from "$FROM"} --min-age "$MIN_AGE" --fresh "$FRESH" --limit "$LIMIT"
+      - name: データ記事（毛色・馬名の意味・セリ）を作り直す
+        if: always()
+        working-directory: scraper
+        run: python -u horse_info_cols.py
       - name: 保存（途中で止まっても、取れた分は保存する）
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          [ -d data/horse_info ] && git add data/horse_info
+          for d in data/horse_info columns; do [ -e "$d" ] && git add "$d"; done
           if git diff --cached --quiet; then echo "変更なし"; exit 0; fi
-          git commit -q -m "horse_info: JRAの馬ページの情報を更新"
+          git commit -q -m "horse_info: JRAの馬ページの情報とデータ記事を更新"
           for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && break; sleep 7; done
+          gh workflow run pages.yml --ref main || true
+        env:
+          GH_TOKEN: ${{ github.token }}
