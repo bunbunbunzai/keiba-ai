@@ -103,6 +103,9 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
             x = nxt[0]
             next_html = (f"<p class='notice'>次走：<a href='{B.race_path(x['d'], x['p'])}'>{esc(B.md(x['d']))} {esc(B.race_label(x['p']))}</a>"
                          f"（AIの印：{esc(x['mark'] or '無印')}{'・想定勝率' + str(x['win_pct']) + '%' if x['win_pct'] is not None else ''}）→ 全頭の評価と買い目を見る</p>")
+        # 馬名で調べた人の次の1クリック：次走があればそのレースの予想と対戦、無ければ直近のレースの結果・今週末のまとめ
+        import weekly  # noqa: PLC0415
+        nstep = weekly.next_card("horse", race=(nxt[0]["d"], nxt[0]["p"]) if nxt else ((items[0]["d"], items[0]["p"]) if items[0]["d"] >= B.TODAY else None))
         rows = []
         for x in items:
             p = x["p"]
@@ -121,7 +124,7 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
                 f"<tbody>{''.join(rows)}</tbody></table></div></section>"
                 + (f"<section class='card'><h2>AIの見立て</h2><div class='kaiko'>{B.zk('normal', 48)}<p><b>全頭くん</b>{esc(note['text'])}</p></div>"
                    f"<p class='meta'>近走と、このサイトのAIの評価をもとにAIが書いた寸評（{esc(B.md(note['updated']))}時点）。</p></section>" if note else "")
-                + _past_html(latest.get("past") or [], esc) + prof_html
+                + nstep + _past_html(latest.get("past") or [], esc) + prof_html
                 + (f"<section class='card'><h2>レースごとのAIの短評</h2><ul>{comments}</ul></section>" if comments else "")
                 + "<p class='meta'>評価点はAIが5軸で採点した合計、想定勝率はAIの見立て。単勝は予想時点のオッズ。着順は主催者の発表が正。</p>")
         ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [

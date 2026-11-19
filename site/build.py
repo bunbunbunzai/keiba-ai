@@ -34,6 +34,7 @@ import strategy
 import review
 import horses
 import monthly
+import weekly
 import ippen as IPPEN  # scraper/（strategy が sys.path に入れる）
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -353,7 +354,7 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False
 <header class="top"><div class="wrap">
 <div class="bar"><a class="logo" href="/">{'<img src="/assets/logo-mark-96.png" alt="" width="44" height="44">' if LOGO else ''}<span><b>{SITE_NAME}</b><small>{SITE_SUB}</small></span></a>{HEADER_ROI}</div>
 <form class="srch" action="/search/" role="search"><input type="search" name="q" placeholder="馬名・レース名で検索" aria-label="サイト内検索" autocomplete="off"><div class="sres" hidden></div></form>
-<nav><a href="/">今日の予想</a><a href="/graded/">重賞</a><a href="/results/">成績</a><a href="/strategy/">買い方別</a><a href="/venue/">競馬場</a>{'<a href="/column/">コラム</a>' if HAS_COLUMN else ''}<a href="/about/">予想の方法</a></nav>
+<nav><a href="/">今日の予想</a><a href="/weekend/">今週末</a><a href="/graded/">重賞</a><a href="/results/">成績</a><a href="/strategy/">買い方別</a><a href="/venue/">競馬場</a>{'<a href="/column/">コラム</a>' if HAS_COLUMN else ''}<a href="/about/">予想の方法</a></nav>
 </div></header>
 <main class="wrap" id="main">{body}</main>
 <a class="totop" href="#main" hidden aria-label="ページの先頭へ">↑</a>
@@ -801,7 +802,7 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
         fin_map = {str(x.get("number")): str(x.get("finish")) for x in (p.get("_result") or {}).get("rows", []) or [] if x.get("number") is not None}
         opts = "".join(f"<option value='{n}'>{n} {esc(h.get('name'))}</option>" for n, h in sorted(horses.items(), key=lambda kv: (kv[0] is None, kv[0])) if n is not None)
         post = f"{date}{(r.get('post_time') or '23:59').replace(':', '')}"
-        vs_html = (f"<section class='card vs' data-key='vs:{date}:{race_path(date, p)}' data-post='{post}' data-ai='{esc(hon)}' "
+        vs_html = (f"<section class='card vs' id='vs' data-key='vs:{date}:{race_path(date, p)}' data-post='{post}' data-ai='{esc(hon)}' "
                    f"data-fin='{esc(json.dumps(fin_map))}' data-url='{esc(url)}' data-label='{esc(race_label(p))}'{versus.race_attrs(LEAGUE_URL, VS_PUBLIC)}>"
                    f"<h2>AI vs あなた</h2><p class='meta'>あなたの◎を1頭選んで、AIの◎（{esc(hon)}番）と勝負。発走前まで選べる（選んだ馬は、いまお使いのブラウザにだけ保存されます）。</p>"
                    f"<div class='pick'><select aria-label='あなたの◎にする馬'><option value=''>馬を選ぶ</option>{opts}</select> <button type='button' class='go'>この馬に決める</button></div>"
@@ -1809,7 +1810,8 @@ def glossary_term_pages() -> dict[str, str]:
                 + col_html
                 + (f"<section class='card'><h2>関連する用語</h2><ul>{rel}</ul></section>" if rel else "")
                 + (f"<section class='card'><h2>「{esc(x.get('category', ''))}」のほかの用語</h2><p>" + "　".join(f"<a href='/glossary/{y['slug']}/'>{esc(y['term'])}</a>" for y in same) + "</p></section>" if same else "")
-                + f"<p class='meta'>AIが書いた説明を、{esc(x.get('updated', ''))}時点で掲載。ルールの正式な内容は主催者の発表を確認してほしい。</p>")
+                + f"<p class='meta'>AIが書いた説明を、{esc(x.get('updated', ''))}時点で掲載。ルールの正式な内容は主催者の発表を確認してほしい。</p>"
+                + weekly.next_card("glossary"))
         # 題名に答えの要点を入れる（検索では5〜7位に出ているのに押されていなかった。「とは｜用語集」だけでは中身が伝わらない）
         gist = re.sub(r"(である|のこと|こと|をいう|を指す|を表す)?。$", "", x["short"].strip())
         gist = gist if len(gist) <= 30 else ""
@@ -1836,6 +1838,7 @@ def limits_page(t: dict, worst_venue: tuple[str, str] | None) -> str:
 
 
 SITE_CHANGES = [
+    ("2026-11-20", "「今週末の競馬まとめ」ページを追加。その週の重賞とAI予想の公開予定・特集・この1週間の結果を毎週自動で入れ替える。馬・重賞・特集・用語のページの下に、そのレースのAI予想と「AI vs あなた」へ進む「次に見る」を追加。"),
     ("2026-11-19", "「AI vs あなた」に月間ランキングを追加。名前を決めて各レースで◎を選ぶと、◎の単勝の回収率で順位が出る。AIの◎との対戦成績も並ぶ（参加無料）。"),
     ("2026-11-19", "重賞の判定を直した。レース名に「重賞」の文字があるだけの条件戦と準重賞が、重賞として表示・投稿されていた（11月3日・5日・19日の4レース）。また、東海菊花賞・ばんえい菊花賞・兵庫クイーンカップが、中央の菊花賞・クイーンカップの重賞ページに混ざっていたので、それぞれ別のページに分けた。"),
     ("2026-10-26", "毎日の自動予想を開始。全レースの予想・結果・回収率の公開を始めた。"),
@@ -2241,14 +2244,14 @@ RACESIM_V = _hashlib.md5(RACESIM_JS.encode("utf-8")).hexdigest()[:8]
 RACESIM3D_JS = (Path(__file__).resolve().parent / "racesim3d.js").read_bytes()  # 重賞の3D表示（site/3d で three.js から作る）
 RACEHORSE_GLB = (Path(__file__).resolve().parent / "3d" / "racehorse.glb").read_bytes()  # 馬と騎手の3Dモデル
 RACESIM3D_V = _hashlib.md5(RACESIM3D_JS + RACEHORSE_GLB).hexdigest()[:8]
-ASSET_V = _hashlib.md5((CSS + JS).encode("utf-8")).hexdigest()[:8]
+ASSET_V = _hashlib.md5((CSS + JS + EXTRA_CSS + EXTRA_JS + weekly.CSS + weekly.JS).encode("utf-8")).hexdigest()[:8]  # 追加分の見た目を変えたときも古いCSSが残らないように
 
 
 def build() -> None:
     if OUT.exists():
         shutil.rmtree(OUT)
     OUT.mkdir()
-    (OUT / "style.css").write_text(CSS + EXTRA_CSS, encoding="utf-8")
+    (OUT / "style.css").write_text(CSS + EXTRA_CSS + weekly.CSS, encoding="utf-8")
     (OUT / "manifest.webmanifest").write_text(json.dumps({
         "name": SITE_NAME, "short_name": SITE_NAME, "start_url": "/", "display": "standalone", "background_color": "#f2f3f0", "theme_color": "#146b45", "lang": "ja",
         "icons": [{"src": "/assets/logo-mark.png", "sizes": "512x512", "type": "image/png"}, {"src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png"}, {"src": "/assets/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}, {"src": "/assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png"}]},
@@ -2258,7 +2261,7 @@ def build() -> None:
     _vs_step = ("{f:'trophy',h:'僕と勝負しませんか',b:'<p>各レースページの下にある<b>「AI vs あなた」</b>で、あなたの◎を1頭選ぶと、僕の◎と勝負できます。</p>"
                 "<p>名前を決めて参加すると、<b>月間ランキング</b>に載ります。順位は◎の単勝の回収率。参加は無料です。</p>"
                 "<div class=\"links\"><a href=\"/vs/guide/\">遊び方</a><a href=\"/vs/\">ランキングを見る</a></div>'},") if LEAGUE_URL and VS_PUBLIC else ""
-    (OUT / "app.js").write_text(JS.replace("/*VS_STEP*/", _vs_step) + EXTRA_JS, encoding="utf-8")
+    (OUT / "app.js").write_text(JS.replace("/*VS_STEP*/", _vs_step) + EXTRA_JS + weekly.JS, encoding="utf-8")
     (OUT / "racesim.js").write_text(RACESIM_JS, encoding="utf-8")
     (OUT / "racesim3d.js").write_bytes(RACESIM3D_JS)
     (OUT / "racehorse.glb").write_bytes(RACEHORSE_GLB)
@@ -2376,6 +2379,7 @@ def build() -> None:
             + (f"今のルール（{rule_label()}、買い目は◎の単勝か複勝1点）では{tn_['roi']}（{tn_['n']}レース）。" if tn_["n"] else "")
             + f"<a href='/results/'>成績の詳細</a>　<span class='meta'>最終更新 {now.strftime('%m/%d %H:%M')}</span></p>"
             + feature_banner()
+            + "<p class='notice'><a href='/weekend/' data-ns='top' data-ns-to='weekend'><b>今週末の競馬まとめ</b></a>　重賞のAI予想の公開状況・特集・先週の結果を毎週入れ替えています（ブックマーク推奨）。</p>"
             + top_list + (f"<section id='past'><h2>過去の予想</h2><ul class='days'>{past}</ul></section>" if past else ""))
     site_ld = [{"@context": "https://schema.org", "@type": "Organization", "name": SITE_NAME, "url": BASE_URL + "/", "logo": BASE_URL + "/assets/logo-mark.png",
                 "sameAs": [X_URL, IG_URL], "contactPoint": {"@type": "ContactPoint", "contactType": "customer support", "url": BASE_URL + "/contact/"}},
@@ -2397,6 +2401,7 @@ def build() -> None:
                              "/strategy/", desc=f"同じAI予想でも買い方で回収率はどう変わるか。◎の単勝だけ、自信度別、期待値別、人気別、券種別の回収率を全レースの実データで比較。{s_best}"))
     lastmod.update(venue_pages(by_date, led, venue_of_race))
     import sys as _sys
+    weekly.prepare(_sys.modules[__name__], by_date, today)
     lastmod.update(extra.build_pages(_sys.modules[__name__], by_date, today))
     lastmod.update(review.build_pages(_sys.modules[__name__], by_date, today))
     lastmod.update(horses.build_pages(_sys.modules[__name__], by_date, today))
@@ -2464,6 +2469,7 @@ def build() -> None:
     write("/privacy/", page(f"プライバシーポリシー | {SITE_NAME}", PRIVACY, "/privacy/", desc=f"{SITE_NAME}のプライバシーポリシー。アクセス解析・広告（Google AdSense）・アフィリエイト・お問い合わせ・全頭くんへの質問で扱う情報と、その使い方。"))
     today_iso = now.strftime("%Y-%m-%d")
     lastmod.update(column.build(write, page, jsonld, BASE_URL, SITE_NAME, STATS_FROM, today_iso))
+    lastmod.update(weekly.build_page(by_date))
     if LEAGUE_URL:  # 「AI vs あなた」月間ランキング（一般公開までは noindex・ナビに載せない）
         versus.build(write, page, OUT, LEAGUE_URL, SITE_NAME, VS_PUBLIC, jsonld=jsonld, zk_art=zk_art, base_url=BASE_URL)
         _days, _ai = versus.game_data(

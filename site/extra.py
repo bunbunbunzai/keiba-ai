@@ -149,6 +149,12 @@ def gdata_notice(esc, slug: str) -> str:
             + "</ul><p class='meta'>JRA公式の全着順から集計した記事。</p></section>")
 
 
+def _next(slug: str) -> str:
+    """重賞ページの冒頭：今年のこのレースのAI予想と「AI vs あなた」へ（予想がまだなら公開予定と今週末のまとめへ）。"""
+    import weekly  # noqa: PLC0415
+    return weekly.next_card("graded", slug=slug, here_graded=True)
+
+
 def feature_notice(esc, name: str, links: dict) -> str:
     hit = links.get(name)
     if not hit:
@@ -293,7 +299,7 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
                 f"（{B.fmt_date(latest[0])}）。全頭の評価点・印・買い目と、確定後の的中・回収率を年ごとに記録している。")
         body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/graded/'>重賞</a> › {esc(name)}</p>"
                 f"<h1>{esc(name)} AI予想と傾向（{esc(g)}）</h1>{B.banner(_pic_banner(B, p0, d0), name)}<p class='answer'>{esc(lead)}</p>"
-                + feature_notice(esc, name, feats) + gdata_notice(esc, slug) + race_guide_html(B, slug) +
+                + _next(slug) + feature_notice(esc, name, feats) + gdata_notice(esc, slug) + race_guide_html(B, slug) +
                 f"<section class='card'><h2>年ごとのAI予想と結果</h2><ul class='days'>{''.join(lis)}</ul></section>"
                 f"<p class='meta'>毎年このページに追加される。最新の予想はレース当日の昼（重賞は前日夜にも）公開。</p>"
                 + B.share_links(B.BASE_URL + path, f"{name}のAI予想と傾向（{g}）", f"競馬全頭ログ,{name.replace('(', '').replace(')', '')}"))
@@ -314,7 +320,7 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
         path = f"/graded/{slug}/"
         body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/graded/'>重賞</a> › {esc(name)}</p>"
                 f"<h1>{esc(name)}の傾向とレースガイド（{esc(g)}）</h1><p class='answer'>{esc(gd.get('lead', ''))}</p>"
-                + feature_notice(esc, name, feats) + gdata_notice(esc, slug) + race_guide_html(B, slug, show_lead=not gd.get("lead"))
+                + _next(slug) + feature_notice(esc, name, feats) + gdata_notice(esc, slug) + race_guide_html(B, slug, show_lead=not gd.get("lead"))
                 + "<p class='meta'>このレースのAI予想（全頭の評価点・印・買い目）は、レースの前日夜または当日昼にこのページに追加される。</p>")
         body += B.share_links(B.BASE_URL + path, f"{name}の傾向とレースガイド（{g}）", f"競馬全頭ログ,{name.replace('(', '').replace(')', '')}")
         ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
@@ -336,6 +342,7 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
             for r in rows) + "</ul>"
     body = ("<p class='crumb'><a href='/'>トップ</a> › 重賞</p><h1>今週の重賞 AI予想一覧</h1>" + B.banner("graded") +
             "<p class='answer'>中央（GⅠ〜GⅢ）と地方（Jpn・S格付け）の重賞のAI予想をまとめている。レース名をクリックすると、そのレースの毎年の予想と結果をまとめたページが開く。</p>"
+            "<p class='notice'><a href='/weekend/' data-ns='graded-index' data-ns-to='weekend'><b>今週末の競馬まとめ</b></a>　今週の重賞のAI予想の公開予定・特集・先週の結果を1ページで（毎週更新）。</p>"
             + (f"<section class='card'><h2>これからの重賞</h2>{glist(upcoming)}</section>" if upcoming else "")
             + (f"<section class='card'><h2>最近の重賞</h2>{glist(past)}</section>" if past else "<p>まだありません。</p>")
             + (("<section class='card'><h2>重賞のレースガイド（傾向・前哨戦・予想のポイント）</h2><ul class='days'>"

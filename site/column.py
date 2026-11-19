@@ -528,11 +528,17 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
             {"@type": "ListItem", "position": 1, "name": site_name, "item": base_url + "/"},
             {"@type": "ListItem", "position": 2, "name": "コラム", "item": base_url + "/column/"},
             {"@type": "ListItem", "position": 3, "name": title, "item": base_url + path}]}
+        # 次の1クリック：特集・データ記事はそのレースのAI予想へ（冒頭に1行、記事の下に箱）。ほかの記事は今日の予想・今週末のまとめへ
+        import weekly  # noqa: PLC0415
+        rslug = weekly.FEATURE_RACE.get(c.get("series")) or (c.get("race") if c.get("series") == "gdata" else None)
+        ns_where = "feature" if c.get("series") in FEATURE_IDS else "gdata" if c.get("series") == "gdata" else "column"
+        ns_top = weekly.next_mini(ns_where, rslug) if rslug else ""
+        ns_box = "" if auto_c else weekly.next_card(ns_where, slug=rslug)
         html_ = (("<p class='draft'>下書き（検索エンジンには出ず、一覧にも載らない）</p>" if c["draft"] else "")
                  + f"<p class='crumb'><a href='/'>トップ</a> › <a href='/column/'>コラム</a></p><article class='col'>"
                  f"<h1>{esc(title)}</h1><p class='meta'>公開 {esc(c.get('date'))}・データは{esc(v['asof'])}までの記録で自動更新</p>"
-                 + (f"<p class='answer'>{inline(lead)}</p>" if lead else "") + body_html + "</article>"
-                 "<section class='card'><h2>このサイトについて</h2>"
+                 + (f"<p class='answer'>{inline(lead)}</p>" if lead else "") + ns_top + body_html + "</article>" + ns_box
+                 + "<section class='card'><h2>このサイトについて</h2>"
                  + ("<div class='zkfoot'><img class='zk' src='/assets/zk-normal.png' alt='全頭くん' width='64' height='64' loading='lazy'><p>" if (ROOT / "site" / "assets" / "zk-normal.png").exists() else "<p>")
                  + "AIが中央・地方の全レースを毎日予想し、外れも含めた全成績を公開している。案内役は公式キャラの全頭くん。"
                  "<a href='/'>今日の予想</a>・<a href='/results/'>成績</a>・<a href='/about/'>予想の方法</a></p>"
