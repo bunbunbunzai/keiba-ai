@@ -1,0 +1,190 @@
+{
+ "profile": {
+  "父": "アジアエクスプレス",
+  "性別": "牡",
+  "馬主名": "山田 貢一",
+  "母": "ハギノウィッシュ",
+  "馬齢": "4歳",
+  "調教師名": "今野 貞一 （栗東）",
+  "母の父": "アグネスタキオン",
+  "生年月日": "2022年5月7日",
+  "生産牧場": "松本 信行",
+  "母の母": "アヴェニューズレディ",
+  "毛色": "黒鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "冠名+曲名",
+  "取引市場": "2023年 北海道サマーセール",
+  "総賞金": "147,388,400 円",
+  "内付加賞": "1,586,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "15,702,400 円",
+  "収得賞金（平地）": "53,500,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 14,
+  "wins": 5,
+  "second": 2,
+  "third": 3
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "東京",
+   "race_name": "武蔵野S",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "15",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2026年7月26日",
+   "venue": "中京",
+   "race_name": "東海S",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "東京",
+   "race_name": "欅ステークス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2026年4月26日",
+   "venue": "東京",
+   "race_name": "オアシスS",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2026年2月15日",
+   "venue": "東京",
+   "race_name": "バレンタイン",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2025年12月21日",
+   "venue": "中京",
+   "race_name": "コールドS",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2025年10月8日",
+   "venue": "大井",
+   "race_name": "ジャパンDC",
+   "surface": "ダ",
+   "distance": 2000,
+   "field": 16,
+   "popularity": null,
+   "finish": "11",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年8月10日",
+   "venue": "新潟",
+   "race_name": "レパードS",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年6月22日",
+   "venue": "阪神",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 1,
+   "finish": "6",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年4月5日",
+   "venue": "ア首",
+   "race_name": "UAダービー",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 9,
+   "popularity": null,
+   "finish": "3",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年2月23日",
+   "venue": "東京",
+   "race_name": "ヒヤシンスS",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 10,
+   "popularity": 9,
+   "finish": "3",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2025年1月6日",
+   "venue": "中京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 8,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2024年11月3日",
+   "venue": "京都",
+   "race_name": "もちの木賞",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2024年10月12日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 7,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  }
+ ],
+ "name": "ドンインザムード",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022106942/4F",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 03:39"
+}

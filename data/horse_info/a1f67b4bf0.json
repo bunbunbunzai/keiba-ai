@@ -1,0 +1,102 @@
+{
+ "profile": {
+  "父": "エピファネイア",
+  "性別": "牝",
+  "馬主名": "(有)サンデーレーシング",
+  "母": "フォエヴァーダーリング",
+  "馬齢": "3歳",
+  "調教師名": "宮田 敬介 （美浦）",
+  "母の父": "Congrats",
+  "生年月日": "2023年4月11日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "Darling My Darling",
+  "毛色": "栗毛",
+  "産地": "安平町",
+  "馬名意味": "オーストラリアのシドニーにある地区名",
+  "取引市場": "",
+  "総賞金": "11,100,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 6,
+  "wins": 1,
+  "second": 1,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 3,
+   "finish": "10",
+   "jockey": "T.マーカンド"
+  },
+  {
+   "date": "2026年8月30日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年6月20日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 4,
+   "finish": "7",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2026年4月12日",
+   "venue": "阪神",
+   "race_name": "忘れな草賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 1,
+   "finish": "9",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2026年2月14日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "R.キング"
+  },
+  {
+   "date": "2025年6月22日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "D.レーン"
+  }
+ ],
+ "name": "ダーリングハースト",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023107179/97",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 03:41"
+}

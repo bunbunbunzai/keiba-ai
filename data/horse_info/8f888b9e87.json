@@ -1,0 +1,212 @@
+{
+ "profile": {
+  "父": "ドゥラメンテ",
+  "性別": "せん",
+  "馬主名": "吉田 勝己",
+  "母": "ロカ",
+  "馬齢": "7歳",
+  "調教師名": "宮田 敬介 （美浦）",
+  "母の父": "ハービンジャー",
+  "生年月日": "2019年2月23日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "ランズエッジ",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "ポルトガルの地名",
+  "取引市場": "",
+  "総賞金": "212,777,000 円",
+  "内付加賞": "1,977,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "79,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 16,
+  "wins": 5,
+  "second": 4,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "東京",
+   "race_name": "アルゼンチン",
+   "surface": "芝",
+   "distance": 2500,
+   "field": 18,
+   "popularity": 4,
+   "finish": "7",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2026年5月16日",
+   "venue": "新潟",
+   "race_name": "新潟大賞典",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2026年3月15日",
+   "venue": "中京",
+   "race_name": "金鯱賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 2,
+   "finish": "5",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2026年1月25日",
+   "venue": "中山",
+   "race_name": "AJCC",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年9月21日",
+   "venue": "中山",
+   "race_name": "オールカマー",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 11,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年7月13日",
+   "venue": "福島",
+   "race_name": "七夕賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2025年5月10日",
+   "venue": "東京",
+   "race_name": "エプソムC",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 18,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年2月9日",
+   "venue": "小倉",
+   "race_name": "小倉日経賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2024年10月13日",
+   "venue": "東京",
+   "race_name": "オクトーバー",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 2,
+   "finish": "11",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2023年6月24日",
+   "venue": "東京",
+   "race_name": "江の島S",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2022年10月23日",
+   "venue": "阪神",
+   "race_name": "菊花賞",
+   "surface": "芝",
+   "distance": 3000,
+   "field": 18,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2022年8月14日",
+   "venue": "札幌",
+   "race_name": "藻岩山特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 13,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2022年6月5日",
+   "venue": "東京",
+   "race_name": "ホンコンJT",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 7,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "福永 祐一"
+  },
+  {
+   "date": "2022年3月26日",
+   "venue": "阪神",
+   "race_name": "毎日杯",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2022年1月30日",
+   "venue": "東京",
+   "race_name": "セントポーリ",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 8,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2021年11月7日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "丸山 元気"
+  }
+ ],
+ "name": "ドゥラドーレス",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002019105556/E1",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 03:40"
+}

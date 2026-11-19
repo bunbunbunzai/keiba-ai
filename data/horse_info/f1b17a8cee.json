@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "キタサンブラック",
+  "性別": "牡",
+  "馬主名": "(有)サンデーレーシング",
+  "母": "ライジングクロス",
+  "馬齢": "3歳",
+  "調教師名": "奥村 武 （美浦）",
+  "母の父": "Cape Cross",
+  "生年月日": "2023年4月13日",
+  "生産牧場": "坂東牧場",
+  "母の母": "Woodrising",
+  "毛色": "青鹿毛",
+  "産地": "平取町",
+  "馬名意味": "英国の首都ロンドン中心部、ウエストミンスターにある交差点",
+  "取引市場": "",
+  "総賞金": "36,432,000 円",
+  "内付加賞": "392,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 3,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "京都",
+   "race_name": "菊花賞",
+   "surface": "芝",
+   "distance": 3000,
+   "field": 18,
+   "popularity": 15,
+   "finish": "11",
+   "jockey": "石川 裕紀人"
+  },
+  {
+   "date": "2026年8月30日",
+   "venue": "新潟",
+   "race_name": "日本海S",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 12,
+   "popularity": 1,
+   "finish": "7",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2026年6月20日",
+   "venue": "東京",
+   "race_name": "町田特別",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 10,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2026年4月11日",
+   "venue": "中山",
+   "race_name": "山藤賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 7,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年2月21日",
+   "venue": "東京",
+   "race_name": "フリージア賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 7,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2026年1月5日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "内田 博幸"
+  },
+  {
+   "date": "2025年10月12日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "内田 博幸"
+  },
+  {
+   "date": "2025年6月21日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 2,
+   "finish": "9",
+   "jockey": "川田 将雅"
+  }
+ ],
+ "name": "チャリングクロス",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023107389/09",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 03:42"
+}

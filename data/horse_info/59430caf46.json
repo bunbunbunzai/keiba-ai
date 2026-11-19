@@ -1,0 +1,189 @@
+{
+ "profile": {
+  "父": "Speightstown",
+  "性別": "牝",
+  "馬主名": "(株)ミキハウスHKサービス",
+  "母": "Mylady Curlin",
+  "馬齢": "4歳",
+  "調教師名": "森 秀行 （栗東）",
+  "母の父": "Curlin",
+  "生年月日": "2022年2月26日",
+  "母の母": "Ladyledue",
+  "毛色": "鹿毛",
+  "産地": "米",
+  "馬名意味": "乙女な+冠名",
+  "取引市場": "",
+  "総賞金": "25,358,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "3,480,000 円",
+  "内海外賞金": "2,828,000 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 14,
+  "wins": 2,
+  "second": 2,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 9,
+   "popularity": 8,
+   "finish": "8",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2026年9月13日",
+   "venue": "阪神",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 10,
+   "finish": "14",
+   "jockey": "松本 大輝"
+  },
+  {
+   "date": "2026年6月13日",
+   "venue": "阪神",
+   "race_name": "安芸特別",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 7,
+   "finish": "14",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年5月21日",
+   "venue": "大井",
+   "race_name": "MメイC",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 13,
+   "popularity": null,
+   "finish": "2",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2026年3月1日",
+   "venue": "中山",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 7,
+   "finish": "15",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年11月22日",
+   "venue": "福島",
+   "race_name": "福島放送賞",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 16,
+   "popularity": 4,
+   "finish": "5",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2025年10月26日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2025年9月25日",
+   "venue": "浦和",
+   "race_name": "Mヒーロ特別",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 11,
+   "popularity": null,
+   "finish": "4",
+   "jockey": "笹川 翼"
+  },
+  {
+   "date": "2025年5月10日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 6,
+   "finish": "11",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2025年2月1日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 8,
+   "popularity": 2,
+   "finish": "6",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2024年11月1日",
+   "venue": "米",
+   "race_name": "BCJF",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 9,
+   "popularity": null,
+   "finish": "7",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2024年9月15日",
+   "venue": "中京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 9,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2024年7月13日",
+   "venue": "小倉",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 7,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2024年6月29日",
+   "venue": "小倉",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 8,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "松山 弘平"
+  }
+ ],
+ "name": "オトメナシャチョウ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022110088/BC",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:38"
+}
