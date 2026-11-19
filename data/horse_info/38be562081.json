@@ -1,0 +1,212 @@
+{
+ "profile": {
+  "父": "マインドユアビスケッツ",
+  "性別": "牡",
+  "馬主名": "(有)キャロットファーム",
+  "母": "リチュアルローズ",
+  "馬齢": "4歳",
+  "調教師名": "坂口 智康 （栗東）",
+  "母の父": "ゴールドアリュール",
+  "生年月日": "2022年3月10日",
+  "生産牧場": "レイクヴィラファーム",
+  "母の母": "マイワイルドローズ",
+  "毛色": "栗毛",
+  "産地": "洞爺湖町",
+  "馬名意味": "純真な心。父名より連想",
+  "取引市場": "",
+  "総賞金": "35,098,000 円",
+  "内付加賞": "48,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 2,
+  "second": 4,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "京都",
+   "race_name": "花背特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 9,
+   "popularity": null,
+   "finish": "取消",
+   "jockey": "C.デムーロ"
+  },
+  {
+   "date": "2026年9月20日",
+   "venue": "阪神",
+   "race_name": "鳥取特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 6,
+   "finish": "4",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2025年12月28日",
+   "venue": "中山",
+   "race_name": "ハッピーエン",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "C.デムーロ"
+  },
+  {
+   "date": "2025年12月13日",
+   "venue": "阪神",
+   "race_name": "赤穂特別",
+   "surface": "ダ",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "C.デムーロ"
+  },
+  {
+   "date": "2025年11月15日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "C.デムーロ"
+  },
+  {
+   "date": "2025年9月27日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "J.モレイラ"
+  },
+  {
+   "date": "2025年7月19日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 16,
+   "popularity": 7,
+   "finish": "6",
+   "jockey": "亀田 温心"
+  },
+  {
+   "date": "2025年6月8日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 4,
+   "finish": "4",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2025年5月18日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 6,
+   "finish": "4",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2025年3月30日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年3月15日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2025年2月23日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2024年10月20日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 8,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2024年10月5日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2024年9月7日",
+   "venue": "中京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 10,
+   "popularity": 3,
+   "finish": "6",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2024年7月27日",
+   "venue": "新潟",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 4,
+   "finish": "8",
+   "jockey": "松山 弘平"
+  }
+ ],
+ "name": "アートレスマインド",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022105987/DF",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:50"
+}

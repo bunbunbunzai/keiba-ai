@@ -1,0 +1,102 @@
+{
+ "profile": {
+  "父": "シニスターミニスター",
+  "性別": "牡",
+  "馬主名": "平井 裕",
+  "母": "スイングサンデー",
+  "馬齢": "3歳",
+  "調教師名": "浜田 多実雄 （栗東）",
+  "母の父": "スペシャルウィーク",
+  "生年月日": "2023年3月2日",
+  "生産牧場": "静内山田牧場",
+  "母の母": "スイングバイ",
+  "毛色": "栗毛",
+  "産地": "新ひだか町",
+  "馬名意味": "王道",
+  "取引市場": "",
+  "総賞金": "10,740,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 6,
+  "wins": 1,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年10月31日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 4,
+   "finish": "7",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2026年10月11日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 7,
+   "finish": "2",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2026年5月16日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2026年3月21日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 2,
+   "finish": "6",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2026年1月18日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 6,
+   "finish": "4",
+   "jockey": "国分 優作"
+  },
+  {
+   "date": "2026年1月4日",
+   "venue": "京都",
+   "race_name": "3歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 2,
+   "finish": "5",
+   "jockey": "国分 優作"
+  }
+ ],
+ "name": "ハイロード",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023102761/6A",
+ "last_card": "20261031",
+ "fetched": "2026-11-20 05:34"
+}

@@ -1,0 +1,135 @@
+{
+ "profile": {
+  "父": "サトノジェネシス",
+  "性別": "牡",
+  "馬主名": "里見 治",
+  "母": "バシマー",
+  "馬齢": "3歳",
+  "調教師名": "高橋 康之 （栗東）",
+  "母の父": "Grand Lodge",
+  "生年月日": "2023年2月23日",
+  "生産牧場": "新冠橋本牧場",
+  "母の母": "Bella Vitessa",
+  "毛色": "鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "冠名+始まり(アラビア語)。父名より",
+  "取引市場": "2024年 北海道オータムセール",
+  "総賞金": "7,100,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 9,
+  "wins": 1,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月1日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 14,
+   "popularity": 11,
+   "finish": "11",
+   "jockey": "酒井 学"
+  },
+  {
+   "date": "2026年9月19日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 12,
+   "popularity": 8,
+   "finish": "12",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2026年8月22日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 8,
+   "popularity": 6,
+   "finish": "4",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2026年6月20日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 16,
+   "popularity": 12,
+   "finish": "12",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2026年5月16日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 10,
+   "popularity": 10,
+   "finish": "1",
+   "jockey": "酒井 学"
+  },
+  {
+   "date": "2026年3月14日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 11,
+   "finish": "11",
+   "jockey": "永島 まなみ"
+  },
+  {
+   "date": "2026年1月14日",
+   "venue": "園田",
+   "race_name": "多紀連山特別",
+   "surface": "ダ",
+   "distance": 1870,
+   "field": 11,
+   "popularity": null,
+   "finish": "8",
+   "jockey": "永島 まなみ"
+  },
+  {
+   "date": "2025年12月14日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 10,
+   "finish": "8",
+   "jockey": "酒井 学"
+  },
+  {
+   "date": "2025年11月23日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 11,
+   "finish": "10",
+   "jockey": "永島 まなみ"
+  }
+ ],
+ "name": "サトノビダーヤ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023107379/F9",
+ "last_card": "20261101",
+ "fetched": "2026-11-20 05:20"
+}

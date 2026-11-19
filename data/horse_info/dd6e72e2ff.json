@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "キタサンブラック",
+  "性別": "牝",
+  "馬主名": "(株)社台レースホース",
+  "母": "キトゥンズダンプリングス",
+  "馬齢": "3歳",
+  "調教師名": "藤岡 健一 （栗東）",
+  "母の父": "Kitten's Joy",
+  "生年月日": "2023年3月12日",
+  "生産牧場": "社台ファーム",
+  "母の母": "Granny Franny",
+  "毛色": "黒鹿毛",
+  "産地": "千歳市",
+  "馬名意味": "猫のひげ袋",
+  "取引市場": "",
+  "総賞金": "7,250,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "0 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 0,
+  "second": 1,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 17,
+   "popularity": 9,
+   "finish": "17",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年8月22日",
+   "venue": "札幌",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 3,
+   "finish": "9",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年8月8日",
+   "venue": "札幌",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年7月5日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2026年6月7日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 7,
+   "finish": "3",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2026年3月22日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 1,
+   "finish": "8",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年3月1日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2026年1月4日",
+   "venue": "京都",
+   "race_name": "3歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 18,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "高杉 吏麒"
+  }
+ ],
+ "name": "ウィスカーパッド",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023103380/42",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:02"
+}

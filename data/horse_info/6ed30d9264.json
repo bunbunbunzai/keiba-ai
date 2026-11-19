@@ -1,0 +1,135 @@
+{
+ "profile": {
+  "父": "キズナ",
+  "性別": "せん",
+  "馬主名": "前田 幸貴",
+  "母": "キトゥンズダンプリングス",
+  "馬齢": "5歳",
+  "調教師名": "蛯名 正義 （美浦）",
+  "母の父": "Kitten's Joy",
+  "生年月日": "2021年4月23日",
+  "生産牧場": "社台ファーム",
+  "母の母": "Granny Franny",
+  "毛色": "黒鹿毛",
+  "産地": "千歳市",
+  "馬名意味": "明るい+人。明るい未来を創造する",
+  "取引市場": "2022年 セレクトセール",
+  "総賞金": "31,652,000 円",
+  "内付加賞": "32,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "10,000,000 円"
+ },
+ "record": {
+  "starts": 9,
+  "wins": 3,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "東京",
+   "race_name": "秋陽ジャンプ",
+   "surface": "芝",
+   "distance": 3110,
+   "field": 13,
+   "popularity": 1,
+   "finish": "8",
+   "jockey": "大江原 圭"
+  },
+  {
+   "date": "2026年10月3日",
+   "venue": "東京",
+   "race_name": "障害3歳上オープン",
+   "surface": "芝",
+   "distance": 3100,
+   "field": 12,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "大江原 圭"
+  },
+  {
+   "date": "2026年6月21日",
+   "venue": "東京",
+   "race_name": "障害3歳上未勝利",
+   "surface": "芝",
+   "distance": 3000,
+   "field": 14,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "大江原 圭"
+  },
+  {
+   "date": "2026年4月12日",
+   "venue": "中山",
+   "race_name": "障害4歳上未勝利",
+   "surface": "芝",
+   "distance": 2880,
+   "field": 14,
+   "popularity": 8,
+   "finish": "10",
+   "jockey": "大江原 圭"
+  },
+  {
+   "date": "2024年4月6日",
+   "venue": "中山",
+   "race_name": "NZT",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 7,
+   "finish": "15",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2024年2月17日",
+   "venue": "東京",
+   "race_name": "フリージア賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 4,
+   "finish": "6",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2024年1月28日",
+   "venue": "東京",
+   "race_name": "セントポーリ",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2023年11月18日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2023年10月28日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "松山 弘平"
+  }
+ ],
+ "name": "ブライトマン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021105007/1A",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:18"
+}

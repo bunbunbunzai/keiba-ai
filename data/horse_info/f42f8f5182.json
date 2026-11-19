@@ -1,0 +1,201 @@
+{
+ "profile": {
+  "父": "ニューイヤーズデイ",
+  "性別": "牡",
+  "馬主名": "山元 哲二",
+  "母": "ダブルファンタジー",
+  "馬齢": "4歳",
+  "調教師名": "蛯名 正義 （美浦）",
+  "母の父": "ジャイアントレッカー",
+  "生年月日": "2022年3月12日",
+  "生産牧場": "辻 牧場",
+  "母の母": "ガーデンローズ",
+  "毛色": "栗毛",
+  "産地": "浦河町",
+  "馬名意味": "冠名+戦う人",
+  "取引市場": "2023年 北海道セレクションセール",
+  "総賞金": "58,001,000 円",
+  "内付加賞": "531,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 3,
+  "second": 2,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "東京",
+   "race_name": "ノベンバーS",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 8,
+   "finish": "4",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2026年10月24日",
+   "venue": "東京",
+   "race_name": "日本農業新聞",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 10,
+   "finish": "7",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2026年9月12日",
+   "venue": "中山",
+   "race_name": "レインボーS",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 2,
+   "finish": "11",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2026年7月11日",
+   "venue": "函館",
+   "race_name": "五稜郭S",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年5月31日",
+   "venue": "東京",
+   "race_name": "むらさき賞",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 17,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2026年4月5日",
+   "venue": "中山",
+   "race_name": "美浦S",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 9,
+   "finish": "5",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2026年1月5日",
+   "venue": "中山",
+   "race_name": "初日の出賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2025年12月14日",
+   "venue": "中山",
+   "race_name": "霞ヶ浦特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 6,
+   "finish": "2",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2025年11月2日",
+   "venue": "東京",
+   "race_name": "清里特別",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2025年8月17日",
+   "venue": "札幌",
+   "race_name": "阿寒湖特別",
+   "surface": "芝",
+   "distance": 2600,
+   "field": 14,
+   "popularity": 4,
+   "finish": "11",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年6月15日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2025年4月26日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 6,
+   "finish": "12",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2025年1月25日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 6,
+   "popularity": 4,
+   "finish": "4",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2024年11月24日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "T.マーカンド"
+  },
+  {
+   "date": "2024年9月8日",
+   "venue": "中山",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 7,
+   "finish": "6",
+   "jockey": "三浦 皇成"
+  }
+ ],
+ "name": "ダンツファイター",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022102982/D3",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:06"
+}

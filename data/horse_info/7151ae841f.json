@@ -1,0 +1,102 @@
+{
+ "profile": {
+  "父": "リアルスティール",
+  "性別": "牝",
+  "馬主名": "(有)キャロットファーム",
+  "母": "アトミカオロ",
+  "馬齢": "3歳",
+  "調教師名": "上原 佑紀 （美浦）",
+  "母の父": "Orpen",
+  "生年月日": "2023年3月13日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "Stormy Atorranta",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "ギリシャ神話の「レダと白鳥」を題材にした絵画。母名より連想",
+  "取引市場": "",
+  "総賞金": "13,143,000 円",
+  "内付加賞": "43,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 6,
+  "wins": 1,
+  "second": 0,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "福島",
+   "race_name": "三春駒特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 5,
+   "finish": "14",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2026年8月16日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 7,
+   "finish": "7",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2026年6月21日",
+   "venue": "函館",
+   "race_name": "遊楽部特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 12,
+   "popularity": 3,
+   "finish": "12",
+   "jockey": "舟山 瑠泉"
+  },
+  {
+   "date": "2026年4月12日",
+   "venue": "阪神",
+   "race_name": "忘れな草賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 8,
+   "finish": "3",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2026年1月17日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2025年10月26日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "津村 明秀"
+  }
+ ],
+ "name": "レダアトミカ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023106835/F3",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:12"
+}

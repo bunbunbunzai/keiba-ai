@@ -1,0 +1,168 @@
+{
+ "profile": {
+  "父": "レイデオロ",
+  "性別": "せん",
+  "馬主名": "吉田 勝己",
+  "母": "サンティール",
+  "馬齢": "4歳",
+  "調教師名": "鹿戸 雄一 （美浦）",
+  "母の父": "ハービンジャー",
+  "生年月日": "2022年1月28日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "サンヴィクトワール",
+  "毛色": "青鹿毛",
+  "産地": "安平町",
+  "馬名意味": "サンヴィクトワール山の最高点",
+  "取引市場": "",
+  "総賞金": "56,807,000 円",
+  "内付加賞": "347,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 12,
+  "wins": 2,
+  "second": 5,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月1日",
+   "venue": "東京",
+   "race_name": "本栖湖特別",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 8,
+   "popularity": 5,
+   "finish": "5",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2026年6月20日",
+   "venue": "東京",
+   "race_name": "町田特別",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 10,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2026年4月26日",
+   "venue": "京都",
+   "race_name": "比良山特別",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 11,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2026年3月7日",
+   "venue": "中山",
+   "race_name": "潮来特別",
+   "surface": "芝",
+   "distance": 2500,
+   "field": 13,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年12月28日",
+   "venue": "中山",
+   "race_name": "グッドラック",
+   "surface": "芝",
+   "distance": 2500,
+   "field": 14,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年11月9日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 7,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年9月15日",
+   "venue": "中山",
+   "race_name": "セントライト",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 12,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年6月21日",
+   "venue": "東京",
+   "race_name": "町田特別",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 9,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年4月5日",
+   "venue": "中山",
+   "race_name": "山吹賞",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 7,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "J.モレイラ"
+  },
+  {
+   "date": "2025年1月26日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 18,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2024年11月16日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2024年9月29日",
+   "venue": "中山",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 17,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "北村 宏司"
+  }
+ ],
+ "name": "ピックデムッシュ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022104799/84",
+ "last_card": "20261101",
+ "fetched": "2026-11-20 05:27"
+}

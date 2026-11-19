@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "リオンディーズ",
+  "性別": "せん",
+  "馬主名": "(株)ウイン",
+  "母": "ウインファビラス",
+  "馬齢": "4歳",
+  "調教師名": "松尾 卓哉 （美浦）",
+  "母の父": "ステイゴールド",
+  "生年月日": "2022年4月24日",
+  "生産牧場": "コスモヴューファーム",
+  "母の母": "サマーエタニティ",
+  "毛色": "青鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "冠名+本命、優勝候補(仏)",
+  "取引市場": "",
+  "総賞金": "9,300,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 1,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 9,
+   "finish": "9",
+   "jockey": "原田 和真"
+  },
+  {
+   "date": "2026年10月24日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 13,
+   "popularity": 10,
+   "finish": "9",
+   "jockey": "原田 和真"
+  },
+  {
+   "date": "2026年10月4日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 17,
+   "popularity": 10,
+   "finish": "7",
+   "jockey": "原田 和真"
+  },
+  {
+   "date": "2026年5月17日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 9,
+   "finish": "3",
+   "jockey": "原田 和真"
+  },
+  {
+   "date": "2026年4月4日",
+   "venue": "中山",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 12,
+   "popularity": 10,
+   "finish": "7",
+   "jockey": "原田 和真"
+  },
+  {
+   "date": "2026年1月10日",
+   "venue": "中山",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 10,
+   "finish": "16",
+   "jockey": "原田 和真"
+  },
+  {
+   "date": "2025年10月26日",
+   "venue": "新潟",
+   "race_name": "柏崎特別",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 12,
+   "finish": "14",
+   "jockey": "黛 弘人"
+  },
+  {
+   "date": "2024年11月17日",
+   "venue": "福島",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "H.ドイル"
+  }
+ ],
+ "name": "ウインファヴォリ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022106218/7A",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 04:08"
+}

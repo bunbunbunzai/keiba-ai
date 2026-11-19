@@ -1,0 +1,179 @@
+{
+ "profile": {
+  "父": "ゴールドドリーム",
+  "性別": "牡",
+  "馬主名": "鈴木 紋菜",
+  "母": "ジュエルド",
+  "馬齢": "4歳",
+  "調教師名": "千田 輝彦 （栗東）",
+  "母の父": "ストーミングホーム",
+  "生年月日": "2022年2月9日",
+  "生産牧場": "米田牧場",
+  "母の母": "ルビーズアンドダイアモンズ",
+  "毛色": "栗毛",
+  "産地": "新ひだか町",
+  "馬名意味": "冠名+人名より",
+  "取引市場": "2023年 北海道サマーセール",
+  "総賞金": "44,143,000 円",
+  "内付加賞": "43,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 13,
+  "wins": 3,
+  "second": 1,
+  "third": 3
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "京都",
+   "race_name": "貴船S",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 5,
+   "finish": "3",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年9月13日",
+   "venue": "阪神",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "京都",
+   "race_name": "オーストラT",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 5,
+   "finish": "6",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年5月10日",
+   "venue": "京都",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年4月18日",
+   "venue": "阪神",
+   "race_name": "吹田特別",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 3,
+   "finish": "8",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年1月31日",
+   "venue": "京都",
+   "race_name": "長浜特別",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 13,
+   "popularity": 4,
+   "finish": "4",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2026年1月11日",
+   "venue": "京都",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2025年11月2日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 2,
+   "finish": "9",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2025年10月12日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1300,
+   "field": 16,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2025年5月24日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 9,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2025年5月4日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 7,
+   "finish": "2",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2025年2月23日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2024年11月23日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 6,
+   "finish": "3",
+   "jockey": "吉村 誠之助"
+  }
+ ],
+ "name": "ユウトザレン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022101016/87",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 04:59"
+}

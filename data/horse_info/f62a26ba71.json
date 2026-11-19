@@ -1,0 +1,212 @@
+{
+ "profile": {
+  "父": "ロードカナロア",
+  "性別": "牡",
+  "馬主名": "草間 庸文",
+  "母": "カラズマッチポイント",
+  "馬齢": "6歳",
+  "調教師名": "杉山 晴紀 （栗東）",
+  "母の父": "Curlin",
+  "生年月日": "2020年5月2日",
+  "生産牧場": "下河辺牧場",
+  "母の母": "Home Court",
+  "毛色": "鹿毛",
+  "産地": "日高町",
+  "馬名意味": "皇帝+ハワイの神様の一人",
+  "取引市場": "2021年 セレクトセール",
+  "総賞金": "210,981,000 円",
+  "内付加賞": "2,181,000 円",
+  "内地方賞金": "31,600,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "82,800,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 16,
+  "wins": 7,
+  "second": 3,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "東京",
+   "race_name": "武蔵野S",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 6,
+   "finish": "16",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年2月1日",
+   "venue": "東京",
+   "race_name": "根岸S",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 2,
+   "finish": "6",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2025年9月4日",
+   "venue": "佐賀",
+   "race_name": "サマーチャン",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 10,
+   "popularity": null,
+   "finish": "2",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年6月25日",
+   "venue": "浦和",
+   "race_name": "さきたま杯",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 12,
+   "popularity": null,
+   "finish": "3",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年3月25日",
+   "venue": "高知",
+   "race_name": "黒船賞",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 12,
+   "popularity": null,
+   "finish": "3",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年2月23日",
+   "venue": "東京",
+   "race_name": "フェブラリー",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2024年11月9日",
+   "venue": "東京",
+   "race_name": "武蔵野S",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2024年9月7日",
+   "venue": "中京",
+   "race_name": "エニフS",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 10,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2024年5月25日",
+   "venue": "東京",
+   "race_name": "欅ステークス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2024年1月28日",
+   "venue": "東京",
+   "race_name": "根岸S",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2023年12月17日",
+   "venue": "阪神",
+   "race_name": "御影S",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2023年11月12日",
+   "venue": "京都",
+   "race_name": "ドンカスター",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2023年9月17日",
+   "venue": "阪神",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2023年7月8日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2022年11月12日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2022年10月15日",
+   "venue": "阪神",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 10,
+   "popularity": 2,
+   "finish": "5",
+   "jockey": "松山 弘平"
+  }
+ ],
+ "name": "エンペラーワケア",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002020101547/07",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:21"
+}

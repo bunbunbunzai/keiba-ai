@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "ミッキーアイル",
+  "性別": "牡",
+  "馬主名": "吉川 潤",
+  "母": "ジューンアクア",
+  "馬齢": "3歳",
+  "調教師名": "飯田 祐史 （栗東）",
+  "母の父": "クロフネ",
+  "生年月日": "2023年4月18日",
+  "生産牧場": "高昭牧場",
+  "母の母": "アグネスナチュラル",
+  "毛色": "鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "冠名+オアシス",
+  "取引市場": "",
+  "総賞金": "4,570,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "1,500,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 1,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 7,
+   "finish": "8",
+   "jockey": "吉田 隼人"
+  },
+  {
+   "date": "2026年7月12日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 17,
+   "popularity": 9,
+   "finish": "4",
+   "jockey": "富田 暁"
+  },
+  {
+   "date": "2026年6月24日",
+   "venue": "園田",
+   "race_name": "笠形山特別",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 11,
+   "popularity": null,
+   "finish": "1",
+   "jockey": "富田 暁"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 11,
+   "finish": "10",
+   "jockey": "菱田 裕二"
+  },
+  {
+   "date": "2026年3月21日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 5,
+   "finish": "9",
+   "jockey": "富田 暁"
+  },
+  {
+   "date": "2026年2月22日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 9,
+   "finish": "4",
+   "jockey": "吉田 隼人"
+  },
+  {
+   "date": "2026年1月25日",
+   "venue": "小倉",
+   "race_name": "3歳新馬",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "吉田 隼人"
+  }
+ ],
+ "name": "ジューンオアシス",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023101722/AE",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:55"
+}

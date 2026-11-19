@@ -1,0 +1,179 @@
+{
+ "profile": {
+  "父": "コントレイル",
+  "性別": "牡",
+  "馬主名": "前田 晋二",
+  "母": "バイバイベイビー",
+  "馬齢": "3歳",
+  "調教師名": "矢作 芳人 （栗東）",
+  "母の父": "Galileo",
+  "生年月日": "2023年2月26日",
+  "生産牧場": "グランド牧場",
+  "母の母": "Remember When",
+  "毛色": "黒鹿毛",
+  "産地": "新ひだか町",
+  "馬名意味": "良家の子。母名より",
+  "取引市場": "2023年 セレクトセール",
+  "総賞金": "14,535,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "375,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 13,
+  "wins": 1,
+  "second": 2,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2600,
+   "field": 16,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "古川 奈穂"
+  },
+  {
+   "date": "2026年10月11日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 17,
+   "popularity": 9,
+   "finish": "3",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年9月26日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 11,
+   "popularity": 4,
+   "finish": "7",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年7月4日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2600,
+   "field": 16,
+   "popularity": 7,
+   "finish": "1",
+   "jockey": "吉田 豊"
+  },
+  {
+   "date": "2026年6月14日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 17,
+   "popularity": 6,
+   "finish": "8",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年5月9日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 12,
+   "popularity": 7,
+   "finish": "2",
+   "jockey": "M.ディー"
+  },
+  {
+   "date": "2026年4月26日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 10,
+   "popularity": 6,
+   "finish": "8",
+   "jockey": "M.ディー"
+  },
+  {
+   "date": "2026年4月8日",
+   "venue": "園田",
+   "race_name": "神鍋山特別",
+   "surface": "ダ",
+   "distance": 1870,
+   "field": 8,
+   "popularity": null,
+   "finish": "3",
+   "jockey": "吉村 智洋"
+  },
+  {
+   "date": "2026年2月10日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 2100,
+   "field": 13,
+   "popularity": 4,
+   "finish": "6",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2026年1月25日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 16,
+   "popularity": 7,
+   "finish": "9",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2026年1月10日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 18,
+   "popularity": 7,
+   "finish": "8",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2025年10月19日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 6,
+   "popularity": 4,
+   "finish": "5",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2025年10月12日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 13,
+   "popularity": 3,
+   "finish": "8",
+   "jockey": "坂井 瑠星"
+  }
+ ],
+ "name": "ボンボンベイビー",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023105371/83",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:10"
+}

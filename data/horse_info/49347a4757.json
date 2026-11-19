@@ -1,0 +1,212 @@
+{
+ "profile": {
+  "父": "モーニン",
+  "性別": "牡",
+  "馬主名": "奥 雅哉",
+  "母": "レイズアスマイル",
+  "馬齢": "4歳",
+  "調教師名": "大根田 裕之 （栗東）",
+  "母の父": "ベーカバド",
+  "生年月日": "2022年3月27日",
+  "生産牧場": "三輪牧場",
+  "母の母": "ダノンスイショウ",
+  "毛色": "栗毛",
+  "産地": "日高町",
+  "馬名意味": "ポーランドの軍艦名",
+  "取引市場": "2023年 北海道サマーセール",
+  "総賞金": "64,217,000 円",
+  "内付加賞": "717,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "24,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 16,
+  "wins": 4,
+  "second": 1,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "福島",
+   "race_name": "福島民友C",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 1,
+   "finish": "7",
+   "jockey": "国分 優作"
+  },
+  {
+   "date": "2026年10月31日",
+   "venue": "東京",
+   "race_name": "ペルセウスS",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 5,
+   "finish": "7",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2026年10月11日",
+   "venue": "京都",
+   "race_name": "太秦S",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 6,
+   "finish": "2",
+   "jockey": "古川 吉洋"
+  },
+  {
+   "date": "2026年7月12日",
+   "venue": "小倉",
+   "race_name": "阿蘇S",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 11,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "京都",
+   "race_name": "平安S",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 16,
+   "popularity": 11,
+   "finish": "10",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2026年4月18日",
+   "venue": "阪神",
+   "race_name": "アンタレスS",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 16,
+   "finish": "8",
+   "jockey": "古川 吉洋"
+  },
+  {
+   "date": "2026年3月22日",
+   "venue": "阪神",
+   "race_name": "レグルスS",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 12,
+   "finish": "10",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2025年9月28日",
+   "venue": "阪神",
+   "race_name": "堺ステークス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "古川 吉洋"
+  },
+  {
+   "date": "2025年8月31日",
+   "venue": "新潟",
+   "race_name": "両津湾特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "古川 吉洋"
+  },
+  {
+   "date": "2025年5月10日",
+   "venue": "東京",
+   "race_name": "青竜S",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 7,
+   "finish": "6",
+   "jockey": "古川 吉洋"
+  },
+  {
+   "date": "2025年3月29日",
+   "venue": "中山",
+   "race_name": "伏竜S",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 9,
+   "finish": "5",
+   "jockey": "古川 吉洋"
+  },
+  {
+   "date": "2025年2月2日",
+   "venue": "小倉",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 8,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "古川 吉洋"
+  },
+  {
+   "date": "2025年1月18日",
+   "venue": "中京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 15,
+   "finish": "12",
+   "jockey": "菱田 裕二"
+  },
+  {
+   "date": "2025年1月6日",
+   "venue": "中京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 11,
+   "finish": "8",
+   "jockey": "古川 吉洋"
+  },
+  {
+   "date": "2024年10月5日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2024年7月14日",
+   "venue": "小倉",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 8,
+   "popularity": 7,
+   "finish": "6",
+   "jockey": "国分 優作"
+  }
+ ],
+ "name": "シュラザック",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022102117/1A",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:46"
+}

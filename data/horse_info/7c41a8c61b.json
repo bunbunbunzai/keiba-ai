@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "キタサンブラック",
+  "性別": "牝",
+  "馬主名": "長谷川 守正",
+  "母": "メジロジェニファー",
+  "馬齢": "3歳",
+  "調教師名": "新谷 功一 （栗東）",
+  "母の父": "ホワイトマズル",
+  "生年月日": "2023年1月27日",
+  "生産牧場": "レイクヴィラファーム",
+  "母の母": "カンパナ",
+  "毛色": "鹿毛",
+  "産地": "洞爺湖町",
+  "馬名意味": "クラシック競走を積み上げて欲しい",
+  "取引市場": "2024年 セレクトセール",
+  "総賞金": "44,758,000 円",
+  "内付加賞": "58,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 2,
+  "second": 2,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "京都",
+   "race_name": "エリザベス杯",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 18,
+   "popularity": 16,
+   "finish": "4",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年9月13日",
+   "venue": "阪神",
+   "race_name": "ローズS",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 7,
+   "finish": "10",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年8月8日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 8,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年5月24日",
+   "venue": "東京",
+   "race_name": "優駿牝馬",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 18,
+   "popularity": 12,
+   "finish": "6",
+   "jockey": "M.ディー"
+  },
+  {
+   "date": "2026年5月2日",
+   "venue": "京都",
+   "race_name": "矢車賞",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 9,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年3月21日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年1月17日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 1,
+   "finish": "8",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2025年12月13日",
+   "venue": "中京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 12,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "鮫島 克駿"
+  }
+ ],
+ "name": "レイクラシック",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023103906/9A",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:51"
+}

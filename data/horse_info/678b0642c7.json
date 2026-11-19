@@ -1,0 +1,157 @@
+{
+ "profile": {
+  "父": "ジョーカプチーノ",
+  "性別": "牝",
+  "馬主名": "奈村 睦弘",
+  "母": "ナムラテンゲル",
+  "馬齢": "3歳",
+  "調教師名": "牧田 和弥 （栗東）",
+  "母の父": "トゥザグローリー",
+  "生年月日": "2023年4月17日",
+  "生産牧場": "森 政巳",
+  "母の母": "ドリームティアラ",
+  "毛色": "芦毛",
+  "産地": "新ひだか町",
+  "馬名意味": "冠名+女性用の冠型頭飾り",
+  "取引市場": "",
+  "総賞金": "4,650,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "850,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 11,
+  "wins": 1,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 7,
+   "finish": "4",
+   "jockey": "岩田 康誠"
+  },
+  {
+   "date": "2026年10月18日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 12,
+   "finish": "6",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2026年8月15日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 10,
+   "finish": "8",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2026年7月25日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 11,
+   "finish": "4",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2026年4月26日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 11,
+   "popularity": 10,
+   "finish": "7",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2026年4月19日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 15,
+   "finish": "11",
+   "jockey": "中井 裕二"
+  },
+  {
+   "date": "2026年3月24日",
+   "venue": "金沢",
+   "race_name": "能登千里浜賞",
+   "surface": "ダ",
+   "distance": 1500,
+   "field": 10,
+   "popularity": null,
+   "finish": "1",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2025年12月13日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 6,
+   "finish": "13",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2025年10月19日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2025年9月28日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 7,
+   "finish": "13",
+   "jockey": "菱田 裕二"
+  },
+  {
+   "date": "2025年9月15日",
+   "venue": "阪神",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 10,
+   "popularity": 9,
+   "finish": "6",
+   "jockey": "松若 風馬"
+  }
+ ],
+ "name": "ナムラティアラ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023106228/16",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:04"
+}

@@ -1,0 +1,223 @@
+{
+ "profile": {
+  "父": "ホッコータルマエ",
+  "性別": "牡",
+  "馬主名": "中村 時子",
+  "母": "モエレカバーガール",
+  "馬齢": "3歳",
+  "調教師名": "小島 茂之 （美浦）",
+  "母の父": "フレンチデピュティ",
+  "生年月日": "2023年4月2日",
+  "生産牧場": "守矢牧場",
+  "母の母": "マイライフスタイル",
+  "毛色": "鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "冠名+左腕+人名より",
+  "取引市場": "",
+  "総賞金": "24,714,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "24,714,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "7,600,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 16,
+  "wins": 2,
+  "second": 3,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "東京",
+   "race_name": "神奈川新聞杯",
+   "surface": "ダ",
+   "distance": 2100,
+   "field": 15,
+   "popularity": 9,
+   "finish": "9",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2026年10月10日",
+   "venue": "",
+   "race_name": "JRAへ転入",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2026年9月9日",
+   "venue": "川崎",
+   "race_name": "戸塚記念(S1)",
+   "surface": "ダ",
+   "distance": 2100,
+   "field": 14,
+   "popularity": 6,
+   "finish": "5",
+   "jockey": "本橋 孝太"
+  },
+  {
+   "date": "2026年8月13日",
+   "venue": "大井",
+   "race_name": "黒潮盃競走(S3)",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 11,
+   "finish": "4",
+   "jockey": "本橋 孝太"
+  },
+  {
+   "date": "2026年6月10日",
+   "venue": "大井",
+   "race_name": "東京ダービー",
+   "surface": "ダ",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 14,
+   "finish": "16",
+   "jockey": "本橋 孝太"
+  },
+  {
+   "date": "2026年5月6日",
+   "venue": "船橋",
+   "race_name": "東京湾カップ(S2)",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 14,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "本橋 孝太"
+  },
+  {
+   "date": "2026年3月13日",
+   "venue": "船橋",
+   "race_name": "アクアマリンカップ(",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 9,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "本橋 孝太"
+  },
+  {
+   "date": "2026年2月12日",
+   "venue": "船橋",
+   "race_name": "如月賞",
+   "surface": "ダ",
+   "distance": 1500,
+   "field": 11,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "石川 倭"
+  },
+  {
+   "date": "2025年12月26日",
+   "venue": "大井",
+   "race_name": "'25セラフィナイト",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 2,
+   "finish": "6",
+   "jockey": "本橋 孝太"
+  },
+  {
+   "date": "2025年11月5日",
+   "venue": "船橋",
+   "race_name": "平和賞(S2)(地方",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 9,
+   "popularity": 8,
+   "finish": "2",
+   "jockey": "本橋 孝太"
+  },
+  {
+   "date": "2025年10月1日",
+   "venue": "門別",
+   "race_name": "サンライズカップ〔H",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 10,
+   "finish": "5",
+   "jockey": "松井 伸也"
+  },
+  {
+   "date": "2025年9月11日",
+   "venue": "門別",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 8,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "石川 倭"
+  },
+  {
+   "date": "2025年8月28日",
+   "venue": "門別",
+   "race_name": "JRA認定競走アタッ",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 8,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "及川 烈"
+  },
+  {
+   "date": "2025年8月13日",
+   "venue": "門別",
+   "race_name": "JRA認定競走アタッ",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 9,
+   "popularity": 5,
+   "finish": "3",
+   "jockey": "阿部 龍"
+  },
+  {
+   "date": "2025年7月16日",
+   "venue": "門別",
+   "race_name": "JRA認定競走アタッ",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "阿部 龍"
+  },
+  {
+   "date": "2025年7月3日",
+   "venue": "門別",
+   "race_name": "JRA認定競走アタッ",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 8,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "桑村 真明"
+  },
+  {
+   "date": "2025年6月19日",
+   "venue": "門別",
+   "race_name": "JRA認定競走フレッ",
+   "surface": "ダ",
+   "distance": 1100,
+   "field": 11,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "桑村 真明"
+  }
+ ],
+ "name": "モエレサワンミヤギ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023104730/A5",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:05"
+}

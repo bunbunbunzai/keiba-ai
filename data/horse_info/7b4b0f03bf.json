@@ -1,0 +1,212 @@
+{
+ "profile": {
+  "父": "ファインニードル",
+  "性別": "牝",
+  "馬主名": "豊井 義次",
+  "母": "モリトシラユリ",
+  "馬齢": "4歳",
+  "調教師名": "堀内 岳志 （美浦）",
+  "母の父": "クロフネ",
+  "生年月日": "2022年2月5日",
+  "生産牧場": "浜本牧場",
+  "母の母": "サイレントラヴ",
+  "毛色": "芦毛",
+  "産地": "日高町",
+  "馬名意味": "勝利を祈りながら、楽しくシンガソング",
+  "取引市場": "",
+  "総賞金": "12,240,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 16,
+  "wins": 1,
+  "second": 2,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 15,
+   "popularity": 12,
+   "finish": "15",
+   "jockey": "石田 拓郎"
+  },
+  {
+   "date": "2026年10月4日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 16,
+   "finish": "14",
+   "jockey": "松岡 正海"
+  },
+  {
+   "date": "2026年2月15日",
+   "venue": "小倉",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 14,
+   "popularity": 12,
+   "finish": "14",
+   "jockey": "酒井 学"
+  },
+  {
+   "date": "2026年1月4日",
+   "venue": "中山",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 12,
+   "finish": "13",
+   "jockey": "舟山 瑠泉"
+  },
+  {
+   "date": "2025年10月26日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 13,
+   "popularity": 8,
+   "finish": "10",
+   "jockey": "石神 深道"
+  },
+  {
+   "date": "2025年10月12日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 11,
+   "finish": "14",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2025年9月15日",
+   "venue": "中山",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 5,
+   "finish": "8",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年5月17日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1300,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "D.レーン"
+  },
+  {
+   "date": "2025年4月19日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2025年3月29日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 7,
+   "finish": "2",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2025年3月16日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 7,
+   "finish": "3",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2025年1月26日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 8,
+   "finish": "6",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2024年12月22日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 10,
+   "finish": "10",
+   "jockey": "木幡 巧也"
+  },
+  {
+   "date": "2024年10月14日",
+   "venue": "新潟",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 6,
+   "finish": "12",
+   "jockey": "石神 深道"
+  },
+  {
+   "date": "2024年9月22日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 10,
+   "popularity": 6,
+   "finish": "2",
+   "jockey": "木幡 巧也"
+  },
+  {
+   "date": "2024年8月10日",
+   "venue": "新潟",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 12,
+   "finish": "10",
+   "jockey": "石橋 脩"
+  }
+ ],
+ "name": "シンガソング",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022107300/F2",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 04:05"
+}

@@ -1,0 +1,190 @@
+{
+ "profile": {
+  "父": "パイロ",
+  "性別": "牡",
+  "馬主名": "山元 哲二",
+  "母": "マリスレーン",
+  "馬齢": "3歳",
+  "調教師名": "本田 優 （栗東）",
+  "母の父": "ストリートセンス",
+  "生年月日": "2023年5月14日",
+  "生産牧場": "川越ファーム",
+  "母の母": "プリムローズレーン",
+  "毛色": "青鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "冠名+紫檀",
+  "取引市場": "2024年 北海道セレクションセール",
+  "総賞金": "60,118,000 円",
+  "内付加賞": "468,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 14,
+  "wins": 3,
+  "second": 4,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "京都",
+   "race_name": "天橋立S",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年10月10日",
+   "venue": "京都",
+   "race_name": "御陵S",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年9月27日",
+   "venue": "阪神",
+   "race_name": "堺ステークス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 2,
+   "finish": "7",
+   "jockey": "太宰 啓介"
+  },
+  {
+   "date": "2026年8月30日",
+   "venue": "中京",
+   "race_name": "白川郷S",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 16,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "太宰 啓介"
+  },
+  {
+   "date": "2026年7月26日",
+   "venue": "中京",
+   "race_name": "遠州灘特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "太宰 啓介"
+  },
+  {
+   "date": "2026年6月13日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 6,
+   "finish": "1",
+   "jockey": "太宰 啓介"
+  },
+  {
+   "date": "2026年3月14日",
+   "venue": "中京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 3,
+   "finish": "9",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2026年3月1日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 8,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2026年1月31日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 5,
+   "finish": "3",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2026年1月10日",
+   "venue": "中山",
+   "race_name": "黒竹賞",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "石橋 脩"
+  },
+  {
+   "date": "2025年12月14日",
+   "venue": "中山",
+   "race_name": "2歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 14,
+   "finish": "2",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2025年11月2日",
+   "venue": "京都",
+   "race_name": "もちの木賞",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 14,
+   "finish": "10",
+   "jockey": "太宰 啓介"
+  },
+  {
+   "date": "2025年8月30日",
+   "venue": "中京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2025年8月3日",
+   "venue": "中京",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 2,
+   "finish": "5",
+   "jockey": "和田 竜二"
+  }
+ ],
+ "name": "ダンツシタン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023104848/7E",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:14"
+}

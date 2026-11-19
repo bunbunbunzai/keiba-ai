@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "アルアイン",
+  "性別": "牝",
+  "馬主名": "��瀬 真尚",
+  "母": "アミカブルナンバー",
+  "馬齢": "3歳",
+  "調教師名": "斎藤 誠 （美浦）",
+  "母の父": "ダイワメジャー",
+  "生年月日": "2023年3月7日",
+  "生産牧場": "上水牧場",
+  "母の母": "ヒシシルバーメイド",
+  "毛色": "鹿毛",
+  "産地": "むかわ町",
+  "馬名意味": "関数",
+  "取引市場": "",
+  "総賞金": "19,152,000 円",
+  "内付加賞": "52,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 1,
+  "second": 1,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "福島",
+   "race_name": "土湯温泉特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 6,
+   "finish": "4",
+   "jockey": "横山 琉人"
+  },
+  {
+   "date": "2026年9月13日",
+   "venue": "中山",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 5,
+   "finish": "6",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年8月30日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1500,
+   "field": 14,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "東京",
+   "race_name": "カーネーショ",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 6,
+   "finish": "11",
+   "jockey": "原 優介"
+  },
+  {
+   "date": "2026年4月4日",
+   "venue": "阪神",
+   "race_name": "チャーチルC",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 10,
+   "finish": "14",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2026年3月14日",
+   "venue": "中山",
+   "race_name": "アネモネS",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2026年1月17日",
+   "venue": "中山",
+   "race_name": "菜の花賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2025年11月24日",
+   "venue": "福島",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 7,
+   "finish": "1",
+   "jockey": "斎藤 新"
+  }
+ ],
+ "name": "ファンクション",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023103648/2D",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:27"
+}

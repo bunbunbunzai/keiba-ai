@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "ゴールドアクター",
+  "性別": "牡",
+  "馬主名": "居城 寿与",
+  "母": "ゴールドエルフ",
+  "馬齢": "3歳",
+  "調教師名": "寺島 良 （栗東）",
+  "母の父": "キングヘイロー",
+  "生年月日": "2023年4月6日",
+  "生産牧場": "北勝ファーム",
+  "母の母": "グローバルリーダー",
+  "毛色": "黒鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "冠名+周辺への接続",
+  "取引市場": "",
+  "総賞金": "10,390,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 1,
+  "second": 0,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月1日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 14,
+   "popularity": 7,
+   "finish": "9",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2026年9月19日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 12,
+   "popularity": 3,
+   "finish": "6",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年7月18日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 6,
+   "finish": "3",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2026年6月6日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 9,
+   "popularity": 6,
+   "finish": "8",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年3月22日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 17,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年2月1日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 4,
+   "finish": "7",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2026年1月10日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 18,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年11月9日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 8,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "武 豊"
+  }
+ ],
+ "name": "ゴールドアクセス",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023104506/C5",
+ "last_card": "20261101",
+ "fetched": "2026-11-20 05:21"
+}

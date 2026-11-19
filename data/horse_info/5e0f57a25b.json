@@ -1,0 +1,135 @@
+{
+ "profile": {
+  "父": "Ulysses",
+  "性別": "牝",
+  "馬主名": "山本 又一郎",
+  "母": "オアシスミラージュ",
+  "馬齢": "4歳",
+  "調教師名": "加藤 征弘 （美浦）",
+  "母の父": "Oasis Dream",
+  "生年月日": "2022年3月27日",
+  "生産牧場": "Blooming Farm",
+  "母の母": "Canda",
+  "毛色": "鹿毛",
+  "産地": "平取町",
+  "馬名意味": "幸せな馬(仏)",
+  "取引市場": "2023年 北海道サマーセール",
+  "総賞金": "35,153,000 円",
+  "内付加賞": "53,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 9,
+  "wins": 3,
+  "second": 1,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "京都",
+   "race_name": "貴船S",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 6,
+   "finish": "8",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年6月6日",
+   "venue": "東京",
+   "race_name": "麦秋S",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 10,
+   "finish": "13",
+   "jockey": "F.ゴンサルベス"
+  },
+  {
+   "date": "2026年3月28日",
+   "venue": "中山",
+   "race_name": "ブラッドスト",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "6",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年12月13日",
+   "venue": "中山",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 13,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "A.プーシャン"
+  },
+  {
+   "date": "2025年11月22日",
+   "venue": "福島",
+   "race_name": "福島放送賞",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 16,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2025年9月20日",
+   "venue": "中山",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2025年7月6日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2025年2月15日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 6,
+   "finish": "10",
+   "jockey": "笹川 翼"
+  },
+  {
+   "date": "2024年12月22日",
+   "venue": "中山",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  }
+ ],
+ "name": "シュヴァルボヌール",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022102315/96",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 04:59"
+}

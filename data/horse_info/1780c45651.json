@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "ディーマジェスティ",
+  "性別": "牡",
+  "馬主名": "中村 勝重",
+  "母": "シュンラン",
+  "馬齢": "3歳",
+  "調教師名": "高橋 文雅 （美浦）",
+  "母の父": "アルデバラン2",
+  "生年月日": "2023年2月6日",
+  "生産牧場": "松浦牧場",
+  "母の母": "ハナガスミ",
+  "毛色": "鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "豊栄",
+  "取引市場": "",
+  "総賞金": "51,354,000 円",
+  "内付加賞": "364,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "24,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 4,
+  "second": 1,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "東京",
+   "race_name": "銀嶺S",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "吉田 豊"
+  },
+  {
+   "date": "2026年10月24日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 11,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "吉田 豊"
+  },
+  {
+   "date": "2026年9月26日",
+   "venue": "中山",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "5",
+   "jockey": "吉田 豊"
+  },
+  {
+   "date": "2026年5月31日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 13,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "吉田 豊"
+  },
+  {
+   "date": "2026年5月3日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "吉田 豊"
+  },
+  {
+   "date": "2026年3月7日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "吉田 豊"
+  },
+  {
+   "date": "2026年2月15日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1300,
+   "field": 16,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "吉田 豊"
+  },
+  {
+   "date": "2026年1月25日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 9,
+   "finish": "3",
+   "jockey": "吉田 豊"
+  }
+ ],
+ "name": "トヨサカエ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023104545/92",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:56"
+}

@@ -1,0 +1,190 @@
+{
+ "profile": {
+  "父": "ロードカナロア",
+  "性別": "牝",
+  "馬主名": "(有)シルクレーシング",
+  "母": "プチノワール",
+  "馬齢": "5歳",
+  "調教師名": "浅利 英明 （美浦）",
+  "母の父": "Singspiel",
+  "生年月日": "2021年4月24日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "リッチアフェアー",
+  "毛色": "黒鹿毛",
+  "産地": "安平町",
+  "馬名意味": "より黒い(仏)。母名より連想",
+  "取引市場": "",
+  "総賞金": "13,620,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 14,
+  "wins": 1,
+  "second": 1,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 8,
+   "finish": "6",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2026年11月7日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 9,
+   "finish": "5",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2026年8月29日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 10,
+   "finish": "12",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年7月4日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 9,
+   "finish": "2",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年4月11日",
+   "venue": "福島",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 5,
+   "finish": "10",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年2月1日",
+   "venue": "小倉",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 4,
+   "finish": "6",
+   "jockey": "舟山 瑠泉"
+  },
+  {
+   "date": "2025年11月15日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2025年7月5日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 7,
+   "finish": "3",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2025年6月14日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 14,
+   "finish": "11",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2025年4月13日",
+   "venue": "福島",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 3,
+   "finish": "11",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2025年1月11日",
+   "venue": "中山",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年11月9日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "6",
+   "jockey": "H.ドイル"
+  },
+  {
+   "date": "2024年7月14日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年5月18日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 5,
+   "finish": "11",
+   "jockey": "荻野 極"
+  }
+ ],
+ "name": "プリュノワール",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021105747/B1",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:12"
+}

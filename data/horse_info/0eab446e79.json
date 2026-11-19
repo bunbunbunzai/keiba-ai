@@ -1,0 +1,190 @@
+{
+ "profile": {
+  "父": "モズアスコット",
+  "性別": "牝",
+  "馬主名": "(株)ローレルレーシング",
+  "母": "ヘイローフジ",
+  "馬齢": "4歳",
+  "調教師名": "笹田 和秀 （栗東）",
+  "母の父": "キングヘイロー",
+  "生年月日": "2022年5月13日",
+  "生産牧場": "協和牧場",
+  "母の母": "アサカフジ",
+  "毛色": "栗毛",
+  "産地": "新冠町",
+  "馬名意味": "二刀流。父や兄のような活躍を期待して",
+  "取引市場": "",
+  "総賞金": "10,380,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 14,
+  "wins": 1,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月1日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 8,
+   "finish": "4",
+   "jockey": "中井 裕二"
+  },
+  {
+   "date": "2026年10月10日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 12,
+   "finish": "4",
+   "jockey": "中井 裕二"
+  },
+  {
+   "date": "2026年7月18日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 14,
+   "popularity": 13,
+   "finish": "10",
+   "jockey": "中井 裕二"
+  },
+  {
+   "date": "2026年6月27日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 16,
+   "popularity": 14,
+   "finish": "5",
+   "jockey": "中井 裕二"
+  },
+  {
+   "date": "2026年5月9日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 16,
+   "finish": "9",
+   "jockey": "中井 裕二"
+  },
+  {
+   "date": "2026年4月18日",
+   "venue": "阪神",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 15,
+   "finish": "13",
+   "jockey": "柴田 裕一郎"
+  },
+  {
+   "date": "2025年11月23日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 16,
+   "finish": "14",
+   "jockey": "和田 陽希"
+  },
+  {
+   "date": "2025年10月26日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 11,
+   "popularity": 10,
+   "finish": "11",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2025年10月13日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 7,
+   "finish": "13",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2025年3月9日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 6,
+   "finish": "9",
+   "jockey": "M.デムーロ"
+  },
+  {
+   "date": "2024年11月23日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "M.デムーロ"
+  },
+  {
+   "date": "2024年10月26日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 13,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "富田 暁"
+  },
+  {
+   "date": "2024年10月12日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 8,
+   "finish": "4",
+   "jockey": "富田 暁"
+  },
+  {
+   "date": "2024年9月16日",
+   "venue": "中京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 6,
+   "finish": "9",
+   "jockey": "富田 暁"
+  }
+ ],
+ "name": "デュアルロール",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022106189/2C",
+ "last_card": "20261101",
+ "fetched": "2026-11-20 05:19"
+}

@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "アジアエクスプレス",
+  "性別": "せん",
+  "馬主名": "(株)京都ホースレーシング",
+  "母": "アーベントロート",
+  "馬齢": "3歳",
+  "調教師名": "中川 公成 （美浦）",
+  "母の父": "フジキセキ",
+  "生年月日": "2023年5月17日",
+  "生産牧場": "イワミ牧場",
+  "母の母": "ビルアンドクー",
+  "毛色": "栗毛",
+  "産地": "新冠町",
+  "馬名意味": "黄昏時の眺め。父名と母名から連想して",
+  "取引市場": "",
+  "総賞金": "11,350,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 1,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月1日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 9,
+   "finish": "3",
+   "jockey": "原 優介"
+  },
+  {
+   "date": "2026年10月18日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 11,
+   "finish": "7",
+   "jockey": "原 優介"
+  },
+  {
+   "date": "2026年5月31日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "原 優介"
+  },
+  {
+   "date": "2026年5月3日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 12,
+   "popularity": 6,
+   "finish": "4",
+   "jockey": "原 優介"
+  },
+  {
+   "date": "2026年4月18日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 7,
+   "finish": "5",
+   "jockey": "原 優介"
+  },
+  {
+   "date": "2025年11月15日",
+   "venue": "福島",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 4,
+   "finish": "5",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2025年10月25日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 8,
+   "finish": "5",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2025年8月17日",
+   "venue": "中京",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 11,
+   "finish": "5",
+   "jockey": "田山 旺佑"
+  }
+ ],
+ "name": "トワイライトビュー",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023105474/0D",
+ "last_card": "20261101",
+ "fetched": "2026-11-20 05:25"
+}

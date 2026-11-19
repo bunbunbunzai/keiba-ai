@@ -1,0 +1,200 @@
+{
+ "profile": {
+  "父": "American Pharoah",
+  "性別": "牝",
+  "馬主名": "(株)ノースヒルズ",
+  "母": "Fiducia",
+  "馬齢": "5歳",
+  "調教師名": "松永 幹夫 （栗東）",
+  "母の父": "Medaglia d'Oro",
+  "生年月日": "2021年1月28日",
+  "母の母": "Believe",
+  "毛色": "鹿毛",
+  "産地": "米",
+  "馬名意味": "芸術的な手仕事(仏)",
+  "取引市場": "",
+  "総賞金": "23,120,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 14,
+  "wins": 1,
+  "second": 3,
+  "third": 4
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 4,
+   "finish": "4",
+   "jockey": "小崎 綾也"
+  },
+  {
+   "date": "2026年10月18日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 5,
+   "finish": "11",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年9月27日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 6,
+   "finish": "5",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年11月23日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 8,
+   "finish": "3",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年7月27日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 6,
+   "finish": "5",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年6月22日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 5,
+   "finish": "14",
+   "jockey": "M.デムーロ"
+  },
+  {
+   "date": "2025年3月15日",
+   "venue": "阪神",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "12",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年1月6日",
+   "venue": "中京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2024年12月21日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2024年5月18日",
+   "venue": "京都",
+   "race_name": "メルボルンT",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 6,
+   "finish": "中止",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2024年4月28日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "石橋 脩"
+  },
+  {
+   "date": "2024年1月14日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 17,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2023年12月24日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2023年10月29日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 12,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2023年10月9日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 5,
+   "finish": "3",
+   "jockey": "鮫島 克駿"
+  }
+ ],
+ "name": "メティエダール",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021110072/6E",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 04:02"
+}

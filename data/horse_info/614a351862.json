@@ -1,0 +1,190 @@
+{
+ "profile": {
+  "父": "ドゥラメンテ",
+  "性別": "牡",
+  "馬主名": "(有)サンデーレーシング",
+  "母": "ドバイマジェスティ",
+  "馬齢": "5歳",
+  "調教師名": "藤原 英昭 （栗東）",
+  "母の父": "Essence of Dubai",
+  "生年月日": "2021年4月1日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "Great Majesty",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "千夜一夜物語に登場するシャフリヤールの弟",
+  "取引市場": "",
+  "総賞金": "47,984,000 円",
+  "内付加賞": "234,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "16,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 14,
+  "wins": 3,
+  "second": 4,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "東京",
+   "race_name": "ノベンバーS",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 4,
+   "finish": "9",
+   "jockey": "C.デムーロ"
+  },
+  {
+   "date": "2025年8月10日",
+   "venue": "中京",
+   "race_name": "浜名湖特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 9,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "A.バデル"
+  },
+  {
+   "date": "2025年7月27日",
+   "venue": "中京",
+   "race_name": "木曽川特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年5月24日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年5月10日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 8,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年3月23日",
+   "venue": "中京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2025年2月23日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2025年1月11日",
+   "venue": "中京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "7",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2024年12月15日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 15,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2024年10月27日",
+   "venue": "新潟",
+   "race_name": "湯沢特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 6,
+   "finish": "8",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2024年8月10日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 18,
+   "popularity": 3,
+   "finish": "12",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2024年6月23日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 17,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2024年5月25日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 12,
+   "popularity": 2,
+   "finish": "10",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2024年5月4日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "5",
+   "jockey": "松山 弘平"
+  }
+ ],
+ "name": "シャハザマーン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021105680/9B",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:06"
+}

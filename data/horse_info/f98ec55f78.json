@@ -1,0 +1,223 @@
+{
+ "profile": {
+  "父": "ドゥラメンテ",
+  "性別": "牡",
+  "馬主名": "DMMドリームクラブ(株)",
+  "母": "レインオンザデューン",
+  "馬齢": "4歳",
+  "調教師名": "矢作 芳人 （栗東）",
+  "母の父": "Frankel",
+  "生年月日": "2022年3月2日",
+  "生産牧場": "飛野牧場",
+  "母の母": "Hurry Home Hillary",
+  "毛色": "黒鹿毛",
+  "産地": "新ひだか町",
+  "馬名意味": "王+雨を伴う激しい突風。父父名、両親の名前より連想",
+  "取引市場": "2022年 セレクトセール",
+  "総賞金": "84,896,000 円",
+  "内付加賞": "696,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "24,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 17,
+  "wins": 4,
+  "second": 2,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "東京",
+   "race_name": "アルゼンチン",
+   "surface": "芝",
+   "distance": 2500,
+   "field": 18,
+   "popularity": 10,
+   "finish": "12",
+   "jockey": "吉田 豊"
+  },
+  {
+   "date": "2026年10月4日",
+   "venue": "京都",
+   "race_name": "京都大賞典",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 18,
+   "popularity": 12,
+   "finish": "16",
+   "jockey": "吉田 豊"
+  },
+  {
+   "date": "2026年5月31日",
+   "venue": "東京",
+   "race_name": "目黒記念",
+   "surface": "芝",
+   "distance": 2500,
+   "field": 14,
+   "popularity": 7,
+   "finish": "5",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年5月16日",
+   "venue": "東京",
+   "race_name": "六社S",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 15,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "吉田 豊"
+  },
+  {
+   "date": "2026年4月12日",
+   "venue": "阪神",
+   "race_name": "京橋S",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 3,
+   "finish": "12",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年3月29日",
+   "venue": "阪神",
+   "race_name": "御堂筋S",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 11,
+   "popularity": 3,
+   "finish": "11",
+   "jockey": "松本 大輝"
+  },
+  {
+   "date": "2026年2月28日",
+   "venue": "阪神",
+   "race_name": "松籟S",
+   "surface": "芝",
+   "distance": 3000,
+   "field": 9,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年1月24日",
+   "venue": "小倉",
+   "race_name": "海の中道特別",
+   "surface": "芝",
+   "distance": 2600,
+   "field": 9,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年1月12日",
+   "venue": "京都",
+   "race_name": "琵琶湖特別",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 12,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年10月25日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "藤岡 佑介"
+  },
+  {
+   "date": "2025年10月4日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 12,
+   "popularity": 1,
+   "finish": "8",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年8月9日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "藤岡 佑介"
+  },
+  {
+   "date": "2025年7月26日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 5,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "藤岡 佑介"
+  },
+  {
+   "date": "2025年5月10日",
+   "venue": "京都",
+   "race_name": "京都新聞杯",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 10,
+   "popularity": 2,
+   "finish": "9",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年4月20日",
+   "venue": "中山",
+   "race_name": "皐月賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 9,
+   "finish": "7",
+   "jockey": "藤岡 佑介"
+  },
+  {
+   "date": "2025年3月16日",
+   "venue": "中山",
+   "race_name": "スプリングS",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "藤岡 佑介"
+  },
+  {
+   "date": "2024年7月21日",
+   "venue": "札幌",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 8,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "藤岡 佑介"
+  }
+ ],
+ "name": "キングスコール",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022104207/19",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:44"
+}

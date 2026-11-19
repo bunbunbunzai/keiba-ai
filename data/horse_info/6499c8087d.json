@@ -1,0 +1,135 @@
+{
+ "profile": {
+  "父": "ホッコータルマエ",
+  "性別": "牡",
+  "馬主名": "宮本 孝一",
+  "母": "ダイメイムーン",
+  "馬齢": "3歳",
+  "調教師名": "秋山 真一郎 （栗東）",
+  "母の父": "アドマイヤムーン",
+  "生年月日": "2023年2月20日",
+  "生産牧場": "横井 哲",
+  "母の母": "ダイメイダーク",
+  "毛色": "鹿毛",
+  "産地": "日高町",
+  "馬名意味": "冠名+熊本県",
+  "取引市場": "",
+  "総賞金": "14,230,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 9,
+  "wins": 1,
+  "second": 2,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "大久保 友雅"
+  },
+  {
+   "date": "2026年10月25日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 4,
+   "finish": "5",
+   "jockey": "太宰 啓介"
+  },
+  {
+   "date": "2026年10月11日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 11,
+   "finish": "7",
+   "jockey": "太宰 啓介"
+  },
+  {
+   "date": "2026年7月11日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "太宰 啓介"
+  },
+  {
+   "date": "2026年6月7日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "太宰 啓介"
+  },
+  {
+   "date": "2026年5月16日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "太宰 啓介"
+  },
+  {
+   "date": "2026年1月31日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "太宰 啓介"
+  },
+  {
+   "date": "2026年1月18日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 7,
+   "finish": "5",
+   "jockey": "太宰 啓介"
+  },
+  {
+   "date": "2025年11月9日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 5,
+   "finish": "9",
+   "jockey": "菱田 裕二"
+  }
+ ],
+ "name": "ダイメイクマモト",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023101607/9C",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:09"
+}

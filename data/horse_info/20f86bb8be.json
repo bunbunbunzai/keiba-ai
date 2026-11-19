@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "キタサンブラック",
+  "性別": "牡",
+  "馬主名": "猪熊 広次",
+  "母": "ターフウォー",
+  "馬齢": "3歳",
+  "調教師名": "清水 久詞 （栗東）",
+  "母の父": "War Front",
+  "生年月日": "2023年3月6日",
+  "生産牧場": "下河辺牧場",
+  "母の母": "Starstruck",
+  "毛色": "鹿毛",
+  "産地": "日高町",
+  "馬名意味": "山のように高く+冠名",
+  "取引市場": "",
+  "総賞金": "23,212,000 円",
+  "内付加賞": "112,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 2,
+  "second": 1,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "京都",
+   "race_name": "壬生特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年10月4日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年7月19日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 8,
+   "finish": "3",
+   "jockey": "J.コレット"
+  },
+  {
+   "date": "2026年7月4日",
+   "venue": "小倉",
+   "race_name": "小郡特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 5,
+   "finish": "6",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年6月14日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 4,
+   "finish": "11",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年4月5日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 7,
+   "finish": "6",
+   "jockey": "石橋 脩"
+  },
+  {
+   "date": "2026年3月15日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 3,
+   "finish": "6",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年2月10日",
+   "venue": "東京",
+   "race_name": "3歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "R.キング"
+  }
+ ],
+ "name": "マウンテンバローズ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023100942/41",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:46"
+}

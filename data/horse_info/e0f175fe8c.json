@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "キズナ",
+  "性別": "牝",
+  "馬主名": "Viridian Keiba Club",
+  "母": "ボンオムトゥック",
+  "馬齢": "3歳",
+  "調教師名": "藤原 英昭 （栗東）",
+  "母の父": "クロフネ",
+  "生年月日": "2023年3月7日",
+  "生産牧場": "グランド牧場",
+  "母の母": "ガラアフェアー",
+  "毛色": "芦毛",
+  "産地": "新ひだか町",
+  "馬名意味": "白い蘭",
+  "取引市場": "",
+  "総賞金": "7,500,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 1,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 12,
+   "finish": "7",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2026年8月22日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 10,
+   "popularity": 8,
+   "finish": "9",
+   "jockey": "小林 美駒"
+  },
+  {
+   "date": "2026年8月1日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1500,
+   "field": 14,
+   "popularity": 8,
+   "finish": "9",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2026年3月14日",
+   "venue": "中山",
+   "race_name": "アネモネS",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 11,
+   "finish": "16",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2026年3月1日",
+   "venue": "阪神",
+   "race_name": "チューリップ",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 7,
+   "finish": "15",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年12月21日",
+   "venue": "阪神",
+   "race_name": "朝日杯FS",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 11,
+   "finish": "7",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2025年9月27日",
+   "venue": "阪神",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "西塚 洸二"
+  }
+ ],
+ "name": "ホワイトオーキッド",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023102615/B5",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:50"
+}

@@ -1,0 +1,135 @@
+{
+ "profile": {
+  "父": "ルヴァンスレーヴ",
+  "性別": "せん",
+  "馬主名": "(株)東京ホースレーシング",
+  "母": "レッドパラス",
+  "馬齢": "4歳",
+  "調教師名": "田中 博康 （美浦）",
+  "母の父": "クロフネ",
+  "生年月日": "2022年2月1日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "レッドソンブレロ",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "冠名+ギリシャ神話に登場する風神の名。父名より連想",
+  "取引市場": "",
+  "総賞金": "13,500,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "400,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 9,
+  "wins": 1,
+  "second": 0,
+  "third": 3
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 4,
+   "finish": "9",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2026年10月15日",
+   "venue": "川崎",
+   "race_name": "オクトーS賞",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 11,
+   "popularity": null,
+   "finish": "5",
+   "jockey": "野中 悠太郎"
+  },
+  {
+   "date": "2026年3月15日",
+   "venue": "中京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 5,
+   "finish": "3",
+   "jockey": "舟山 瑠泉"
+  },
+  {
+   "date": "2026年2月1日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 2,
+   "finish": "7",
+   "jockey": "原 優介"
+  },
+  {
+   "date": "2025年11月16日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "A.プーシャン"
+  },
+  {
+   "date": "2025年10月18日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "原 優介"
+  },
+  {
+   "date": "2025年7月12日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 1,
+   "finish": "11",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2025年6月21日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2025年2月22日",
+   "venue": "東京",
+   "race_name": "3歳新馬",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "原 優介"
+  }
+ ],
+ "name": "レッドエウロス",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022105160/12",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 06:01"
+}

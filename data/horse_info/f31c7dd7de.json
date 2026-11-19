@@ -1,0 +1,102 @@
+{
+ "profile": {
+  "父": "モーリス",
+  "性別": "牝",
+  "馬主名": "吉田 勝己",
+  "母": "グレイシア",
+  "馬齢": "3歳",
+  "調教師名": "栗田 徹 （美浦）",
+  "母の父": "ダイワメジャー",
+  "生年月日": "2023年2月10日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "クーデグレイス",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "氷期",
+  "取引市場": "",
+  "総賞金": "12,320,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 6,
+  "wins": 1,
+  "second": 2,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年11月7日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年7月4日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年4月12日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年1月18日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "6",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2025年11月2日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 4,
+   "finish": "6",
+   "jockey": "D.レーン"
+  }
+ ],
+ "name": "グレイシエーション",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023106991/B8",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:12"
+}

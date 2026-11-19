@@ -1,0 +1,102 @@
+{
+ "profile": {
+  "父": "キタサンブラック",
+  "性別": "牡",
+  "馬主名": "KRジャパン",
+  "母": "フォークレジェンド",
+  "馬齢": "3歳",
+  "調教師名": "杉山 晴紀 （栗東）",
+  "母の父": "Tapizar",
+  "生年月日": "2023年4月29日",
+  "生産牧場": "前谷牧場",
+  "母の母": "Folklore",
+  "毛色": "鹿毛",
+  "産地": "新ひだか町",
+  "馬名意味": "父名の一部+愛の宮殿(サンスクリット)",
+  "取引市場": "",
+  "総賞金": "18,306,000 円",
+  "内付加賞": "106,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 6,
+  "wins": 1,
+  "second": 2,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年7月25日",
+   "venue": "中京",
+   "race_name": "香嵐渓特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 8,
+   "popularity": 3,
+   "finish": "7",
+   "jockey": "J.コレット"
+  },
+  {
+   "date": "2026年6月6日",
+   "venue": "阪神",
+   "race_name": "城崎特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年4月25日",
+   "venue": "京都",
+   "race_name": "あやめ賞",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 6,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年2月14日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 17,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2025年12月14日",
+   "venue": "阪神",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 6,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "西村 淳也"
+  }
+ ],
+ "name": "ブラックシャリマー",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023103246/83",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:45"
+}

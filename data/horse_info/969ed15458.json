@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "Justify",
+  "性別": "牡",
+  "馬主名": "(株)ダノックス",
+  "母": "ストラティフィケーション",
+  "馬齢": "5歳",
+  "調教師名": "茶木 太樹 （栗東）",
+  "母の父": "Australia",
+  "生年月日": "2021年3月19日",
+  "生産牧場": "追分ファーム",
+  "母の母": "Rags to Riches",
+  "毛色": "栗毛",
+  "産地": "安平町",
+  "馬名意味": "冠名+道(伊)",
+  "取引市場": "",
+  "総賞金": "10,630,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 1,
+  "second": 1,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 10,
+   "finish": "12",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2025年7月12日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 9,
+   "finish": "13",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2025年6月7日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 4,
+   "finish": "13",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2024年8月10日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2024年7月13日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2024年6月16日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "T.オシェア"
+  },
+  {
+   "date": "2023年11月19日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "菅原 明良"
+  }
+ ],
+ "name": "ダノンストラーダ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021104763/16",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:33"
+}

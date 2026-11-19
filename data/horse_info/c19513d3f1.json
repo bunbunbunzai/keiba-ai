@@ -1,0 +1,212 @@
+{
+ "profile": {
+  "父": "エピファネイア",
+  "性別": "牡",
+  "馬主名": "��松 悟",
+  "母": "エッグドロップ",
+  "馬齢": "4歳",
+  "調教師名": "上原 博之 （美浦）",
+  "母の父": "Alphabet Soup",
+  "生年月日": "2022年4月12日",
+  "生産牧場": "社台ファーム",
+  "母の母": "Rehocracy",
+  "毛色": "芦毛",
+  "産地": "千歳市",
+  "馬名意味": "たまごのたまご(仏)",
+  "取引市場": "2023年 セレクトセール",
+  "総賞金": "57,702,000 円",
+  "内付加賞": "442,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 16,
+  "wins": 3,
+  "second": 6,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月1日",
+   "venue": "東京",
+   "race_name": "紅葉S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2026年10月4日",
+   "venue": "東京",
+   "race_name": "tvk賞",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2026年8月15日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2026年6月14日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "原 優介"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2026年4月26日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2026年3月21日",
+   "venue": "中京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 8,
+   "finish": "2",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2025年8月30日",
+   "venue": "新潟",
+   "race_name": "新発田城特別",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 4,
+   "finish": "7",
+   "jockey": "木幡 巧也"
+  },
+  {
+   "date": "2025年8月10日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 5,
+   "finish": "3",
+   "jockey": "木幡 巧也"
+  },
+  {
+   "date": "2025年6月8日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "9",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2025年5月24日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2025年5月4日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2025年3月2日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2025年2月9日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2024年11月16日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 3,
+   "finish": "7",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2024年10月20日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "田辺 裕信"
+  }
+ ],
+ "name": "ウフドゥウフ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022105257/58",
+ "last_card": "20261101",
+ "fetched": "2026-11-20 05:28"
+}

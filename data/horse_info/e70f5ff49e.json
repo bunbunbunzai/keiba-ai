@@ -1,0 +1,201 @@
+{
+ "profile": {
+  "父": "ダノンレジェンド",
+  "性別": "牡",
+  "馬主名": "辻子 依旦",
+  "母": "ストリーク",
+  "馬齢": "4歳",
+  "調教師名": "奥村 豊 （栗東）",
+  "母の父": "エイシンフラッシュ",
+  "生年月日": "2022年5月22日",
+  "生産牧場": "ヤナガワ牧場",
+  "母の母": "メイショウセイカ",
+  "毛色": "黒鹿毛",
+  "産地": "日高町",
+  "馬名意味": "冠名+伝説",
+  "取引市場": "",
+  "総賞金": "70,875,000 円",
+  "内付加賞": "705,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "24,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 4,
+  "second": 1,
+  "third": 3
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "東京",
+   "race_name": "神無月S",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "4",
+   "jockey": "M.デムーロ"
+  },
+  {
+   "date": "2026年9月6日",
+   "venue": "阪神",
+   "race_name": "オークランド",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 13,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年8月22日",
+   "venue": "中京",
+   "race_name": "伊賀S",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "京都",
+   "race_name": "オーストラT",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2026年4月18日",
+   "venue": "阪神",
+   "race_name": "吹田特別",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2026年3月22日",
+   "venue": "阪神",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年2月28日",
+   "venue": "阪神",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2026年1月11日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2025年12月21日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2025年12月6日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 1,
+   "finish": "8",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年9月27日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年7月12日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 16,
+   "popularity": 6,
+   "finish": "3",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年4月26日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 13,
+   "finish": "5",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年3月30日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 7,
+   "finish": "8",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年1月13日",
+   "venue": "中京",
+   "race_name": "3歳新馬",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  }
+ ],
+ "name": "ヨリノレジェンド",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022102202/FC",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 06:00"
+}

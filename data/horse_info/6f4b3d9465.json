@@ -1,0 +1,146 @@
+{
+ "profile": {
+  "父": "サトノダイヤモンド",
+  "性別": "牡",
+  "馬主名": "渡邊 英俊",
+  "母": "フレンチボウ",
+  "馬齢": "3歳",
+  "調教師名": "牧田 和弥 （栗東）",
+  "母の父": "ホワイトマズル",
+  "生年月日": "2023年4月15日",
+  "生産牧場": "鮫川フアーム",
+  "母の母": "マニフィカート",
+  "毛色": "鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "幸運+ダイヤモンド、父名より",
+  "取引市場": "2024年 北海道セレクションセール",
+  "総賞金": "2,090,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "0 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 10,
+  "wins": 0,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年10月31日",
+   "venue": "京都",
+   "race_name": "障害3歳上未勝利",
+   "surface": "芝",
+   "distance": 2910,
+   "field": 10,
+   "popularity": 6,
+   "finish": "7",
+   "jockey": "黒岩 悠"
+  },
+  {
+   "date": "2026年10月11日",
+   "venue": "京都",
+   "race_name": "障害3歳上未勝利",
+   "surface": "芝",
+   "distance": 2910,
+   "field": 9,
+   "popularity": 9,
+   "finish": "8",
+   "jockey": "黒岩 悠"
+  },
+  {
+   "date": "2026年9月5日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 11,
+   "finish": "8",
+   "jockey": "酒井 学"
+  },
+  {
+   "date": "2026年7月11日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 16,
+   "popularity": 10,
+   "finish": "11",
+   "jockey": "森田 誠也"
+  },
+  {
+   "date": "2026年5月31日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 16,
+   "popularity": 6,
+   "finish": "9",
+   "jockey": "酒井 学"
+  },
+  {
+   "date": "2026年5月10日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 12,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "酒井 学"
+  },
+  {
+   "date": "2026年3月14日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 13,
+   "popularity": 8,
+   "finish": "7",
+   "jockey": "森田 誠也"
+  },
+  {
+   "date": "2026年3月8日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 11,
+   "finish": "5",
+   "jockey": "森田 誠也"
+  },
+  {
+   "date": "2026年1月10日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 18,
+   "popularity": 11,
+   "finish": "18",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2025年11月29日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 10,
+   "finish": "7",
+   "jockey": "松若 風馬"
+  }
+ ],
+ "name": "ラッキーダイヤ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023101781/9B",
+ "last_card": "20261031",
+ "fetched": "2026-11-20 05:33"
+}

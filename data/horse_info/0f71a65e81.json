@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "バゴ",
+  "性別": "せん",
+  "馬主名": "吉田 勝己",
+  "母": "ノチェブランカ",
+  "馬齢": "4歳",
+  "調教師名": "木村 哲也 （美浦）",
+  "母の父": "ディープインパクト",
+  "生年月日": "2022年1月18日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "ナイトマジック",
+  "毛色": "芦毛",
+  "産地": "安平町",
+  "馬名意味": "冬を告げる鐘",
+  "取引市場": "",
+  "総賞金": "20,186,000 円",
+  "内付加賞": "26,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 2,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 7,
+   "finish": "8",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2026年5月3日",
+   "venue": "東京",
+   "race_name": "4歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 9,
+   "popularity": 2,
+   "finish": "6",
+   "jockey": "M.ディー"
+  },
+  {
+   "date": "2026年2月28日",
+   "venue": "中山",
+   "race_name": "4歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年12月14日",
+   "venue": "中山",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 10,
+   "finish": "1",
+   "jockey": "舟山 瑠泉"
+  },
+  {
+   "date": "2025年1月26日",
+   "venue": "中山",
+   "race_name": "若竹賞",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 5,
+   "finish": "7",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年11月24日",
+   "venue": "東京",
+   "race_name": "ベゴニア賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 10,
+   "popularity": 6,
+   "finish": "5",
+   "jockey": "W.ビュイック"
+  },
+  {
+   "date": "2024年9月7日",
+   "venue": "中山",
+   "race_name": "アスター賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2024年6月1日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 9,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  }
+ ],
+ "name": "ウィンターベル",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022104939/86",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:22"
+}

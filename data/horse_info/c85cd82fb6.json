@@ -1,0 +1,201 @@
+{
+ "profile": {
+  "父": "ロードカナロア",
+  "性別": "牡",
+  "馬主名": "TNレーシング",
+  "母": "ルルパンブルー",
+  "馬齢": "5歳",
+  "調教師名": "四位 洋文 （栗東）",
+  "母の父": "ジャングルポケット",
+  "生年月日": "2021年4月28日",
+  "生産牧場": "千代田牧場",
+  "母の母": "ガトーショコラ",
+  "毛色": "黒鹿毛",
+  "産地": "新ひだか町",
+  "馬名意味": "蒼き王",
+  "取引市場": "",
+  "総賞金": "45,008,000 円",
+  "内付加賞": "368,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 3,
+  "second": 2,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "京都",
+   "race_name": "天橋立S",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 8,
+   "finish": "9",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年5月30日",
+   "venue": "京都",
+   "race_name": "桃山S",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 9,
+   "finish": "11",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年2月1日",
+   "venue": "京都",
+   "race_name": "衣笠特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年1月18日",
+   "venue": "京都",
+   "race_name": "大津特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 6,
+   "finish": "4",
+   "jockey": "藤岡 佑介"
+  },
+  {
+   "date": "2025年12月13日",
+   "venue": "中京",
+   "race_name": "鳴海特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "藤岡 佑介"
+  },
+  {
+   "date": "2025年9月13日",
+   "venue": "阪神",
+   "race_name": "鳥取特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 6,
+   "finish": "4",
+   "jockey": "藤岡 佑介"
+  },
+  {
+   "date": "2025年8月24日",
+   "venue": "中京",
+   "race_name": "大府特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "6",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年3月22日",
+   "venue": "阪神",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "富田 暁"
+  },
+  {
+   "date": "2024年11月24日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "藤岡 佑介"
+  },
+  {
+   "date": "2024年8月31日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 14,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "藤岡 佑介"
+  },
+  {
+   "date": "2024年8月11日",
+   "venue": "札幌",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 14,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "藤岡 佑介"
+  },
+  {
+   "date": "2024年7月20日",
+   "venue": "札幌",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 8,
+   "finish": "8",
+   "jockey": "菱田 裕二"
+  },
+  {
+   "date": "2024年6月23日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 8,
+   "finish": "10",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2024年3月30日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 18,
+   "popularity": 1,
+   "finish": "10",
+   "jockey": "藤岡 佑介"
+  },
+  {
+   "date": "2024年2月4日",
+   "venue": "東京",
+   "race_name": "3歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "藤岡 佑介"
+  }
+ ],
+ "name": "キングブルー",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021104176/59",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:14"
+}

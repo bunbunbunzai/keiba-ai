@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "キタサンブラック",
+  "性別": "牡",
+  "馬主名": "(有)サンデーレーシング",
+  "母": "トゥーピー",
+  "馬齢": "4歳",
+  "調教師名": "黒岩 陽一 （美浦）",
+  "母の父": "Intikhab",
+  "生年月日": "2022年3月27日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "Turpitude",
+  "毛色": "青鹿毛",
+  "産地": "安平町",
+  "馬名意味": "スノーボード、ハーフパイプ競技の大技名",
+  "取引市場": "",
+  "総賞金": "51,528,000 円",
+  "内付加賞": "628,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 3,
+  "second": 2,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "東京",
+   "race_name": "ノベンバーS",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "A.プーシャン"
+  },
+  {
+   "date": "2026年5月16日",
+   "venue": "東京",
+   "race_name": "六社S",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 15,
+   "popularity": 1,
+   "finish": "14",
+   "jockey": "D.レーン"
+  },
+  {
+   "date": "2026年3月8日",
+   "venue": "中山",
+   "race_name": "湾岸S",
+   "surface": "芝",
+   "distance": 2500,
+   "field": 16,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年11月1日",
+   "venue": "東京",
+   "race_name": "本栖湖特別",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 8,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年8月31日",
+   "venue": "新潟",
+   "race_name": "瓢湖特別",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 11,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年6月15日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2025年2月22日",
+   "venue": "東京",
+   "race_name": "フリージア賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 9,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年12月14日",
+   "venue": "中山",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  }
+ ],
+ "name": "トリプルコーク",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022104925/AA",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:06"
+}

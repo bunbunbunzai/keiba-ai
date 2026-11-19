@@ -1,0 +1,223 @@
+{
+ "profile": {
+  "父": "ロードカナロア",
+  "性別": "牡",
+  "馬主名": "吉田 千津",
+  "母": "クラリスピンク",
+  "馬齢": "4歳",
+  "調教師名": "千田 輝彦 （栗東）",
+  "母の父": "ネオユニヴァース",
+  "生年月日": "2022年4月18日",
+  "生産牧場": "社台ファーム",
+  "母の母": "チャーミングクリス",
+  "毛色": "鹿毛",
+  "産地": "千歳市",
+  "馬名意味": "ヒンドゥー教の雷神インドラの異名",
+  "取引市場": "",
+  "総賞金": "43,589,000 円",
+  "内付加賞": "49,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 17,
+  "wins": 2,
+  "second": 3,
+  "third": 3
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 11,
+   "popularity": 6,
+   "finish": "3",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年9月6日",
+   "venue": "阪神",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 7,
+   "finish": "16",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年6月13日",
+   "venue": "阪神",
+   "race_name": "安芸特別",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "京都",
+   "race_name": "オーストラT",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年5月2日",
+   "venue": "京都",
+   "race_name": "京極特別",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年2月10日",
+   "venue": "京都",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年1月24日",
+   "venue": "京都",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2026年1月5日",
+   "venue": "京都",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2025年11月1日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2025年10月13日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2025年6月22日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 2,
+   "finish": "5",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年6月1日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 10,
+   "finish": "2",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2025年4月19日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2025年3月29日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 11,
+   "finish": "4",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2024年12月22日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 17,
+   "finish": "18",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2024年9月22日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 10,
+   "popularity": 4,
+   "finish": "9",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2024年7月21日",
+   "venue": "小倉",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "団野 大成"
+  }
+ ],
+ "name": "ヴリトラハン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022105302/FA",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 04:57"
+}

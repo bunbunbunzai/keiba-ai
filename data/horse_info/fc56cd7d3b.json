@@ -1,0 +1,135 @@
+{
+ "profile": {
+  "父": "ダノンキングリー",
+  "性別": "牡",
+  "馬主名": "今中 俊平",
+  "母": "レローヴ",
+  "馬齢": "3歳",
+  "調教師名": "黒岩 陽一 （美浦）",
+  "母の父": "ヴィクトワールピサ",
+  "生年月日": "2023年3月29日",
+  "生産牧場": "小倉スタッド",
+  "母の母": "アイアムラヴィング",
+  "毛色": "鹿毛",
+  "産地": "新ひだか町",
+  "馬名意味": "レローヴの情景(仏)より。母名より",
+  "取引市場": "",
+  "総賞金": "9,790,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 9,
+  "wins": 1,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年10月31日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 10,
+   "finish": "7",
+   "jockey": "石川 裕紀人"
+  },
+  {
+   "date": "2026年8月2日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 18,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "石川 裕紀人"
+  },
+  {
+   "date": "2026年7月11日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 6,
+   "finish": "2",
+   "jockey": "石川 裕紀人"
+  },
+  {
+   "date": "2026年5月17日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 6,
+   "finish": "11",
+   "jockey": "石田 拓郎"
+  },
+  {
+   "date": "2026年4月26日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 18,
+   "popularity": 9,
+   "finish": "6",
+   "jockey": "原 優介"
+  },
+  {
+   "date": "2026年4月4日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 7,
+   "finish": "13",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2026年2月1日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 10,
+   "finish": "9",
+   "jockey": "遠藤 汰月"
+  },
+  {
+   "date": "2026年1月10日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 6,
+   "finish": "5",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2025年12月21日",
+   "venue": "中山",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 11,
+   "finish": "4",
+   "jockey": "佐々木 大輔"
+  }
+ ],
+ "name": "セーヌデローヴ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023102504/01",
+ "last_card": "20261031",
+ "fetched": "2026-11-20 05:44"
+}

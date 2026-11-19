@@ -1,0 +1,146 @@
+{
+ "profile": {
+  "父": "ロードカナロア",
+  "性別": "牡",
+  "馬主名": "山下 裕司",
+  "母": "ティズウインディ",
+  "馬齢": "3歳",
+  "調教師名": "本間 忍 （美浦）",
+  "母の父": "Tiznow",
+  "生年月日": "2023年3月15日",
+  "生産牧場": "酒井牧場",
+  "母の母": "Windyindy",
+  "毛色": "黒鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "父名の一部+レース用マシンを公道用にアレンジしたモデル",
+  "取引市場": "2025年 JRAブリーズアップセール",
+  "総賞金": "8,560,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 10,
+  "wins": 1,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 16,
+   "popularity": 9,
+   "finish": "16",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2026年10月17日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 10,
+   "finish": "15",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2026年9月22日",
+   "venue": "中山",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 10,
+   "finish": "4",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2026年8月1日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 17,
+   "popularity": 8,
+   "finish": "17",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2026年4月19日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 13,
+   "finish": "14",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2026年3月29日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 13,
+   "popularity": 11,
+   "finish": "4",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2026年3月7日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 12,
+   "finish": "15",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2025年11月23日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1300,
+   "field": 16,
+   "popularity": 7,
+   "finish": "1",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2025年10月26日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 7,
+   "finish": "5",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2025年10月11日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 7,
+   "finish": "12",
+   "jockey": "横山 琉人"
+  }
+ ],
+ "name": "ロードストラダーレ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023104886/D8",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:23"
+}

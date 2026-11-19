@@ -1,0 +1,212 @@
+{
+ "profile": {
+  "父": "ディーマジェスティ",
+  "性別": "牝",
+  "馬主名": "冨沢 敦子",
+  "母": "パッションチカ",
+  "馬齢": "4歳",
+  "調教師名": "伊藤 伸一 （美浦）",
+  "母の父": "ナカヤマフェスタ",
+  "生年月日": "2022年3月11日",
+  "生産牧場": "浦河小林牧場",
+  "母の母": "コルチカ",
+  "毛色": "栗毛",
+  "産地": "浦河町",
+  "馬名意味": "幸せな(西)+母名の一部",
+  "取引市場": "",
+  "総賞金": "1,575,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "1,575,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "800,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 14,
+  "wins": 2,
+  "second": 1,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 16,
+   "finish": "14",
+   "jockey": "上里 直汰"
+  },
+  {
+   "date": "2026年8月8日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1000,
+   "field": 18,
+   "popularity": 16,
+   "finish": "17",
+   "jockey": "佐藤 翔馬"
+  },
+  {
+   "date": "2026年6月13日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 18,
+   "finish": "15",
+   "jockey": "上里 直汰"
+  },
+  {
+   "date": "2026年5月10日",
+   "venue": "新潟",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 15,
+   "finish": "15",
+   "jockey": "遠藤 汰月"
+  },
+  {
+   "date": "2026年3月15日",
+   "venue": "中山",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 15,
+   "finish": "15",
+   "jockey": "小林 脩斗"
+  },
+  {
+   "date": "2026年1月17日",
+   "venue": "",
+   "race_name": "JRAへ転入",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2025年12月15日",
+   "venue": "金沢",
+   "race_name": "箱乃なかみデビュー3",
+   "surface": "ダ",
+   "distance": 1500,
+   "field": 11,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "栗原 大河"
+  },
+  {
+   "date": "2025年12月1日",
+   "venue": "金沢",
+   "race_name": "普通C2",
+   "surface": "ダ",
+   "distance": 1500,
+   "field": 8,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "栗原 大河"
+  },
+  {
+   "date": "2025年10月21日",
+   "venue": "金沢",
+   "race_name": "普通C27",
+   "surface": "ダ",
+   "distance": 1500,
+   "field": 8,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "吉田 晃浩"
+  },
+  {
+   "date": "2025年8月15日",
+   "venue": "",
+   "race_name": "JRAより転出",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2025年7月29日",
+   "venue": "金沢",
+   "race_name": "加賀山代賞",
+   "surface": "ダ",
+   "distance": 1500,
+   "field": 10,
+   "popularity": null,
+   "finish": "2",
+   "jockey": "吉田 晃浩"
+  },
+  {
+   "date": "2025年6月21日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 15,
+   "finish": "7",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2025年4月8日",
+   "venue": "川崎",
+   "race_name": "エイプリルF",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 12,
+   "popularity": null,
+   "finish": "4",
+   "jockey": "舟山 瑠泉"
+  },
+  {
+   "date": "2025年2月1日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 13,
+   "popularity": 13,
+   "finish": "10",
+   "jockey": "酒井 学"
+  },
+  {
+   "date": "2024年12月7日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 12,
+   "finish": "12",
+   "jockey": "菱田 裕二"
+  },
+  {
+   "date": "2024年9月29日",
+   "venue": "中山",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 14,
+   "finish": "16",
+   "jockey": "国分 恭介"
+  }
+ ],
+ "name": "フェリスチカ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022102602/C0",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:49"
+}

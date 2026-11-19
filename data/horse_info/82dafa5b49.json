@@ -1,0 +1,190 @@
+{
+ "profile": {
+  "父": "モーリス",
+  "性別": "牝",
+  "馬主名": "ライオンレースホース(株)",
+  "母": "レーヴルシード",
+  "馬齢": "4歳",
+  "調教師名": "加藤 士津八 （美浦）",
+  "母の父": "ディープインパクト",
+  "生年月日": "2022年3月12日",
+  "生産牧場": "ハシモトフアーム",
+  "母の母": "レーヴディマン",
+  "毛色": "鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "オペラ座の夢(仏)。母名から夢、父名からオペラ座を連想",
+  "取引市場": "2022年 セレクトセール",
+  "総賞金": "40,888,000 円",
+  "内付加賞": "608,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 14,
+  "wins": 2,
+  "second": 2,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "福島",
+   "race_name": "三陸特別",
+   "surface": "芝",
+   "distance": 2600,
+   "field": 16,
+   "popularity": 6,
+   "finish": "9",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2026年8月8日",
+   "venue": "札幌",
+   "race_name": "藻岩山特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 8,
+   "popularity": 4,
+   "finish": "5",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年7月19日",
+   "venue": "函館",
+   "race_name": "かもめ島特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2026年6月20日",
+   "venue": "東京",
+   "race_name": "町田特別",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 10,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "F.ゴンサルベス"
+  },
+  {
+   "date": "2026年3月7日",
+   "venue": "中山",
+   "race_name": "潮来特別",
+   "surface": "芝",
+   "distance": 2500,
+   "field": 13,
+   "popularity": 2,
+   "finish": "9",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2025年11月16日",
+   "venue": "福島",
+   "race_name": "三陸特別",
+   "surface": "芝",
+   "distance": 2600,
+   "field": 16,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "吉田 隼人"
+  },
+  {
+   "date": "2025年10月18日",
+   "venue": "新潟",
+   "race_name": "岩船特別",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 15,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "吉田 隼人"
+  },
+  {
+   "date": "2025年5月25日",
+   "venue": "東京",
+   "race_name": "優駿牝馬",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 18,
+   "popularity": 17,
+   "finish": "14",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2025年3月22日",
+   "venue": "中山",
+   "race_name": "フラワーC",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 6,
+   "finish": "7",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2024年12月28日",
+   "venue": "中山",
+   "race_name": "ホープフルS",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 16,
+   "finish": "8",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2024年9月28日",
+   "venue": "中山",
+   "race_name": "芙蓉S",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 9,
+   "popularity": 7,
+   "finish": "2",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2024年8月31日",
+   "venue": "札幌",
+   "race_name": "札幌2歳S",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 11,
+   "finish": "5",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2024年6月23日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 10,
+   "popularity": 10,
+   "finish": "1",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2024年6月2日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 9,
+   "popularity": 4,
+   "finish": "9",
+   "jockey": "津村 明秀"
+  }
+ ],
+ "name": "レーヴドロペラ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022106709/D2",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 04:06"
+}

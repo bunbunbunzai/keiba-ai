@@ -1,0 +1,91 @@
+{
+ "profile": {
+  "父": "モズアスコット",
+  "性別": "牝",
+  "馬主名": "北側 雅司",
+  "母": "ジークイーン",
+  "馬齢": "3歳",
+  "調教師名": "松下 武士 （栗東）",
+  "母の父": "Cape Blanco",
+  "生年月日": "2023年3月8日",
+  "生産牧場": "惣田 英幸",
+  "母の母": "Vivalita",
+  "毛色": "栗毛",
+  "産地": "浦河町",
+  "馬名意味": "冠名+オウンゴール",
+  "取引市場": "",
+  "総賞金": "17,150,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 5,
+  "wins": 2,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "永島 まなみ"
+  },
+  {
+   "date": "2026年4月26日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "永島 まなみ"
+  },
+  {
+   "date": "2026年2月28日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "7",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年2月10日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 7,
+   "finish": "2",
+   "jockey": "T.ハマーハンセン"
+  },
+  {
+   "date": "2026年1月17日",
+   "venue": "京都",
+   "race_name": "3歳新馬",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 5,
+   "finish": "5",
+   "jockey": "松山 弘平"
+  }
+ ],
+ "name": "モズオウンゴール",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023105729/8F",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:12"
+}

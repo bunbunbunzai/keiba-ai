@@ -1,0 +1,179 @@
+{
+ "profile": {
+  "父": "シルバーステート",
+  "性別": "牡",
+  "馬主名": "山下 新一",
+  "母": "ウインアンジェラス",
+  "馬齢": "3歳",
+  "調教師名": "中竹 和也 （栗東）",
+  "母の父": "Bertolini",
+  "生年月日": "2023年3月23日",
+  "生産牧場": "川島牧場",
+  "母の母": "エシュクアルバー",
+  "毛色": "鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "冠名+黄金のように価値のある",
+  "取引市場": "",
+  "総賞金": "30,480,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 13,
+  "wins": 2,
+  "second": 2,
+  "third": 3
+ },
+ "runs": [
+  {
+   "date": "2026年10月31日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 5,
+   "finish": "3",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2026年10月4日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 6,
+   "finish": "8",
+   "jockey": "柴田 裕一郎"
+  },
+  {
+   "date": "2026年8月15日",
+   "venue": "中京",
+   "race_name": "知多特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 11,
+   "popularity": 7,
+   "finish": "5",
+   "jockey": "柴田 裕一郎"
+  },
+  {
+   "date": "2026年6月20日",
+   "venue": "函館",
+   "race_name": "STV杯",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 3,
+   "finish": "12",
+   "jockey": "柴田 裕一郎"
+  },
+  {
+   "date": "2026年5月24日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 9,
+   "popularity": 6,
+   "finish": "1",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2026年4月19日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "柴田 裕一郎"
+  },
+  {
+   "date": "2026年3月29日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 10,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2026年3月7日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2026年1月11日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 3,
+   "finish": "8",
+   "jockey": "柴田 裕一郎"
+  },
+  {
+   "date": "2025年12月14日",
+   "venue": "阪神",
+   "race_name": "2歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 7,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年10月19日",
+   "venue": "新潟",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "柴田 裕一郎"
+  },
+  {
+   "date": "2025年9月21日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 13,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2025年8月23日",
+   "venue": "中京",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "池添 謙一"
+  }
+ ],
+ "name": "モンサンゴールデン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023104044/2A",
+ "last_card": "20261031",
+ "fetched": "2026-11-20 05:35"
+}

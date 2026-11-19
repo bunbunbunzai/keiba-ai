@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "ナダル",
+  "性別": "牝",
+  "馬主名": "大和屋 暁",
+  "母": "マダムジェニファー",
+  "馬齢": "4歳",
+  "調教師名": "戸田 博文 （美浦）",
+  "母の父": "ヘニーヒューズ",
+  "生年月日": "2022年4月15日",
+  "生産牧場": "辻 牧場",
+  "母の母": "カールファターレ",
+  "毛色": "栗毛",
+  "産地": "浦河町",
+  "馬名意味": "人名より+人名より",
+  "取引市場": "",
+  "総賞金": "800,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "800,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "800,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 6,
+  "wins": 2,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 16,
+   "finish": "15",
+   "jockey": "古川 奈穂"
+  },
+  {
+   "date": "2026年7月5日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 16,
+   "popularity": 16,
+   "finish": "15",
+   "jockey": "富田 暁"
+  },
+  {
+   "date": "2026年3月28日",
+   "venue": "阪神",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 9,
+   "finish": "11",
+   "jockey": "森田 誠也"
+  },
+  {
+   "date": "2025年12月24日",
+   "venue": "",
+   "race_name": "JRAへ転入",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2025年12月1日",
+   "venue": "水沢",
+   "race_name": "C2六組",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 9,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "村上 忍"
+  },
+  {
+   "date": "2025年11月16日",
+   "venue": "盛岡",
+   "race_name": "C2十組",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 9,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "村上 忍"
+  },
+  {
+   "date": "2025年8月21日",
+   "venue": "",
+   "race_name": "JRAより転出",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2025年8月17日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 14,
+   "finish": "16",
+   "jockey": "西塚 洸二"
+  }
+ ],
+ "name": "アーブルラーブル",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022102998/95",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:31"
+}

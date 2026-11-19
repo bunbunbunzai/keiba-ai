@@ -1,0 +1,201 @@
+{
+ "profile": {
+  "父": "シルバーステート",
+  "性別": "牡",
+  "馬主名": "(有)フォーレスト",
+  "母": "ゼットイーリス",
+  "馬齢": "4歳",
+  "調教師名": "宮地 貴稔 （栗東）",
+  "母の父": "ハードスパン",
+  "生年月日": "2022年3月2日",
+  "生産牧場": "ノースガーデン",
+  "母の母": "タイキアプローズ",
+  "毛色": "黒鹿毛",
+  "産地": "日高町",
+  "馬名意味": "冠名+8",
+  "取引市場": "",
+  "総賞金": "13,030,000 円",
+  "内付加賞": "150,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 1,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "福島",
+   "race_name": "三春駒特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 14,
+   "finish": "2",
+   "jockey": "城戸 義政"
+  },
+  {
+   "date": "2026年10月17日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 16,
+   "finish": "10",
+   "jockey": "小崎 綾也"
+  },
+  {
+   "date": "2026年7月19日",
+   "venue": "小倉",
+   "race_name": "筑紫特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 8,
+   "finish": "5",
+   "jockey": "森田 誠也"
+  },
+  {
+   "date": "2026年7月11日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 12,
+   "finish": "5",
+   "jockey": "森田 誠也"
+  },
+  {
+   "date": "2026年4月11日",
+   "venue": "福島",
+   "race_name": "浄土平特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 10,
+   "finish": "10",
+   "jockey": "国分 恭介"
+  },
+  {
+   "date": "2026年2月22日",
+   "venue": "小倉",
+   "race_name": "高千穂特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 10,
+   "finish": "9",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2026年2月15日",
+   "venue": "小倉",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 10,
+   "finish": "10",
+   "jockey": "富田 暁"
+  },
+  {
+   "date": "2025年12月14日",
+   "venue": "中京",
+   "race_name": "大須特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 7,
+   "finish": "7",
+   "jockey": "富田 暁"
+  },
+  {
+   "date": "2025年11月22日",
+   "venue": "福島",
+   "race_name": "高湯温泉特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 11,
+   "finish": "10",
+   "jockey": "富田 暁"
+  },
+  {
+   "date": "2025年7月5日",
+   "venue": "函館",
+   "race_name": "恵山特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 8,
+   "popularity": 7,
+   "finish": "6",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2025年6月22日",
+   "venue": "函館",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 10,
+   "finish": "1",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2025年3月16日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 12,
+   "finish": "15",
+   "jockey": "菱田 裕二"
+  },
+  {
+   "date": "2025年2月15日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 13,
+   "finish": "6",
+   "jockey": "国分 恭介"
+  },
+  {
+   "date": "2024年9月22日",
+   "venue": "中京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 14,
+   "finish": "10",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2024年9月1日",
+   "venue": "中京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 11,
+   "popularity": 8,
+   "finish": "5",
+   "jockey": "吉村 誠之助"
+  }
+ ],
+ "name": "ゼットエイト",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022101889/D8",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:13"
+}

@@ -1,0 +1,179 @@
+{
+ "profile": {
+  "父": "フィエールマン",
+  "性別": "牝",
+  "馬主名": "丸山 担",
+  "母": "ランウェイデビュー",
+  "馬齢": "4歳",
+  "調教師名": "小島 茂之 （美浦）",
+  "母の父": "ストロングリターン",
+  "生年月日": "2022年2月28日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "デビュートウショウ",
+  "毛色": "黒鹿毛",
+  "産地": "安平町",
+  "馬名意味": "初飛行",
+  "取引市場": "2022年 セレクトセール",
+  "総賞金": "5,660,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "0 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 13,
+  "wins": 0,
+  "second": 2,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "新潟",
+   "race_name": "柏崎特別",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 14,
+   "finish": "14",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年5月17日",
+   "venue": "新潟",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 13,
+   "popularity": 11,
+   "finish": "11",
+   "jockey": "遠藤 汰月"
+  },
+  {
+   "date": "2026年5月9日",
+   "venue": "新潟",
+   "race_name": "粟島特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 9,
+   "finish": "13",
+   "jockey": "石田 拓郎"
+  },
+  {
+   "date": "2026年2月15日",
+   "venue": "小倉",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 5,
+   "finish": "12",
+   "jockey": "石田 拓郎"
+  },
+  {
+   "date": "2026年1月31日",
+   "venue": "小倉",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 13,
+   "finish": "6",
+   "jockey": "石田 拓郎"
+  },
+  {
+   "date": "2026年1月18日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 7,
+   "finish": "6",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2025年12月6日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 10,
+   "finish": "13",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2025年10月25日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 7,
+   "finish": "14",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2025年10月19日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 4,
+   "finish": "7",
+   "jockey": "横山 琉人"
+  },
+  {
+   "date": "2025年8月23日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2025年8月2日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 17,
+   "popularity": 6,
+   "finish": "2",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2024年11月24日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 12,
+   "popularity": 4,
+   "finish": "7",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2024年11月9日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "M.デムーロ"
+  }
+ ],
+ "name": "デビューフライト",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022105123/2B",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:53"
+}

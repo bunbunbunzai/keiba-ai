@@ -1,0 +1,201 @@
+{
+ "profile": {
+  "父": "シルバーステート",
+  "性別": "牡",
+  "馬主名": "廣崎 智子",
+  "母": "アンシャンテルール",
+  "馬齢": "4歳",
+  "調教師名": "三樹 祐輔 （美浦）",
+  "母の父": "キングヘイロー",
+  "生年月日": "2022年5月6日",
+  "生産牧場": "マリオステーブル",
+  "母の母": "エリモシユーテング",
+  "毛色": "黒鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "人名より+一番の(仏)",
+  "取引市場": "",
+  "総賞金": "19,800,000 円",
+  "内付加賞": "40,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 2,
+  "second": 0,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "東京",
+   "race_name": "三浦特別",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 9,
+   "finish": "10",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2026年10月25日",
+   "venue": "東京",
+   "race_name": "三鷹特別",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 9,
+   "finish": "3",
+   "jockey": "石橋 脩"
+  },
+  {
+   "date": "2026年9月13日",
+   "venue": "中山",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 7,
+   "finish": "8",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2026年8月2日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 9,
+   "finish": "1",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2026年7月11日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 8,
+   "finish": "6",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2026年1月25日",
+   "venue": "中山",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 3,
+   "finish": "14",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2026年1月4日",
+   "venue": "中山",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 3,
+   "finish": "7",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2025年9月14日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 10,
+   "finish": "1",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2025年8月31日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 5,
+   "finish": "5",
+   "jockey": "江田 照男"
+  },
+  {
+   "date": "2025年8月9日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 12,
+   "finish": "3",
+   "jockey": "江田 照男"
+  },
+  {
+   "date": "2025年6月29日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 14,
+   "finish": "8",
+   "jockey": "江田 照男"
+  },
+  {
+   "date": "2025年5月25日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 12,
+   "finish": "14",
+   "jockey": "内田 博幸"
+  },
+  {
+   "date": "2025年5月3日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 11,
+   "finish": "11",
+   "jockey": "酒井 学"
+  },
+  {
+   "date": "2025年2月10日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 4,
+   "finish": "7",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2025年1月11日",
+   "venue": "中山",
+   "race_name": "3歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 3,
+   "finish": "13",
+   "jockey": "田辺 裕信"
+  }
+ ],
+ "name": "ブレゲアン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022106951/EC",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:10"
+}

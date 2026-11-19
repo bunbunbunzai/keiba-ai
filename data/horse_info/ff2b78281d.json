@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "フィレンツェファイア",
+  "性別": "牝",
+  "馬主名": "(株)カナヤマホールディングス",
+  "母": "ミスティック",
+  "馬齢": "3歳",
+  "調教師名": "高橋 亮 （栗東）",
+  "母の父": "キンシャサノキセキ",
+  "生年月日": "2023年3月12日",
+  "生産牧場": "木田牧場",
+  "母の母": "ケイティーズミスト",
+  "毛色": "黒鹿毛",
+  "産地": "新ひだか町",
+  "馬名意味": "不知火",
+  "取引市場": "",
+  "総賞金": "17,280,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 2,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "福島",
+   "race_name": "飯坂温泉特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 12,
+   "finish": "5",
+   "jockey": "川又 賢治"
+  },
+  {
+   "date": "2026年8月15日",
+   "venue": "中京",
+   "race_name": "知多特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 11,
+   "popularity": 3,
+   "finish": "7",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年5月30日",
+   "venue": "京都",
+   "race_name": "葵ステークス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 11,
+   "finish": "9",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年3月22日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 11,
+   "popularity": 6,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年12月14日",
+   "venue": "阪神",
+   "race_name": "2歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 7,
+   "popularity": 4,
+   "finish": "6",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2025年11月1日",
+   "venue": "京都",
+   "race_name": "ファンタジー",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 9,
+   "finish": "11",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2025年9月13日",
+   "venue": "阪神",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 11,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "吉村 誠之助"
+  }
+ ],
+ "name": "シラヌイ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023105668/2B",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:14"
+}

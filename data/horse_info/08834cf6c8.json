@@ -1,0 +1,146 @@
+{
+ "profile": {
+  "父": "ゴールドドリーム",
+  "性別": "牡",
+  "馬主名": "田中 成奉",
+  "母": "マイネレーヌ",
+  "馬齢": "3歳",
+  "調教師名": "栗田 徹 （美浦）",
+  "母の父": "マイネルラヴ",
+  "生年月日": "2023年4月20日",
+  "生産牧場": "荒井ファーム",
+  "母の母": "グレースマリヤ",
+  "毛色": "鹿毛",
+  "産地": "日高町",
+  "馬名意味": "冠名+巨大な一枚岩",
+  "取引市場": "2024年 北海道サマーセール",
+  "総賞金": "9,320,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 10,
+  "wins": 1,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 7,
+   "finish": "5",
+   "jockey": "岩田 康誠"
+  },
+  {
+   "date": "2026年10月4日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 11,
+   "finish": "6",
+   "jockey": "長浜 鴻緒"
+  },
+  {
+   "date": "2026年7月19日",
+   "venue": "函館",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 10,
+   "popularity": 7,
+   "finish": "10",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年7月11日",
+   "venue": "函館",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 12,
+   "popularity": 6,
+   "finish": "9",
+   "jockey": "岩田 康誠"
+  },
+  {
+   "date": "2026年5月3日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 8,
+   "finish": "14",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2026年3月15日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年2月22日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2025年11月30日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "9",
+   "jockey": "T.マーカンド"
+  },
+  {
+   "date": "2025年9月28日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 5,
+   "finish": "9",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年8月30日",
+   "venue": "札幌",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 13,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "横山 和生"
+  }
+ ],
+ "name": "タイセイモノリス",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023100655/17",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:17"
+}

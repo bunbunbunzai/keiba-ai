@@ -1,0 +1,201 @@
+{
+ "profile": {
+  "父": "ルヴァンスレーヴ",
+  "性別": "牡",
+  "馬主名": "(株)G1レーシング",
+  "母": "ソロダンサー",
+  "馬齢": "4歳",
+  "調教師名": "久保田 貴士 （美浦）",
+  "母の父": "ゴールドアリュール",
+  "生年月日": "2022年5月8日",
+  "生産牧場": "追分ファーム",
+  "母の母": "ドリーボンズレガシー",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "効率的に風を取り入れるための建築様式。父名より連想",
+  "取引市場": "",
+  "総賞金": "10,698,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "1,778,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "1,400,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 13,
+  "wins": 2,
+  "second": 3,
+  "third": 4
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1300,
+   "field": 15,
+   "popularity": 10,
+   "finish": "5",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2026年8月23日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 7,
+   "finish": "3",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "新潟",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 5,
+   "finish": "9",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2026年5月3日",
+   "venue": "新潟",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 5,
+   "finish": "3",
+   "jockey": "吉田 隼人"
+  },
+  {
+   "date": "2026年4月11日",
+   "venue": "福島",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 16,
+   "popularity": 8,
+   "finish": "3",
+   "jockey": "吉田 隼人"
+  },
+  {
+   "date": "2026年1月10日",
+   "venue": "中山",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "14",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2025年12月20日",
+   "venue": "",
+   "race_name": "JRAへ転入",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2025年12月10日",
+   "venue": "船橋",
+   "race_name": "馬い!熊本菊池生ごぼ",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "矢野 貴之"
+  },
+  {
+   "date": "2025年11月11日",
+   "venue": "門別",
+   "race_name": "グランシャリオドリー",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "落合 玄太"
+  },
+  {
+   "date": "2025年10月23日",
+   "venue": "門別",
+   "race_name": "3歳以上C3-2C4",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 11,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "服部 茂史"
+  },
+  {
+   "date": "2025年10月9日",
+   "venue": "門別",
+   "race_name": "がんばれ!Aiba浦",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 11,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "服部 茂史"
+  },
+  {
+   "date": "2025年9月24日",
+   "venue": "門別",
+   "race_name": "3歳以上C3-2C4",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 7,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "服部 茂史"
+  },
+  {
+   "date": "2025年8月15日",
+   "venue": "",
+   "race_name": "JRAより転出",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2025年6月15日",
+   "venue": "函館",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 14,
+   "popularity": 4,
+   "finish": "14",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2024年11月10日",
+   "venue": "福島",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "大野 拓弥"
+  }
+ ],
+ "name": "バルジール",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022105705/17",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:40"
+}

@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "ベンバトル",
+  "性別": "牡",
+  "馬主名": "(株)グリーンファーム",
+  "母": "ナスノフォルテ",
+  "馬齢": "3歳",
+  "調教師名": "武井 亮 （美浦）",
+  "母の父": "ジャスタウェイ",
+  "生年月日": "2023年2月21日",
+  "生産牧場": "(株)那須野",
+  "母の母": "ナスノシベリウス",
+  "毛色": "鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "大合奏。母名より連想",
+  "取引市場": "",
+  "総賞金": "27,587,000 円",
+  "内付加賞": "147,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "16,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 2,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "京都",
+   "race_name": "菊花賞",
+   "surface": "芝",
+   "distance": 3000,
+   "field": 18,
+   "popularity": 16,
+   "finish": "12",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年9月13日",
+   "venue": "中山",
+   "race_name": "セントライト",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 16,
+   "popularity": 8,
+   "finish": "7",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年4月19日",
+   "venue": "中山",
+   "race_name": "皐月賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 18,
+   "finish": "8",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2026年2月21日",
+   "venue": "阪神",
+   "race_name": "すみれS",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 7,
+   "popularity": 6,
+   "finish": "1",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年1月24日",
+   "venue": "京都",
+   "race_name": "若駒S",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 13,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年12月14日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2025年10月12日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 9,
+   "popularity": 6,
+   "finish": "4",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2025年9月27日",
+   "venue": "中山",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 12,
+   "finish": "7",
+   "jockey": "内田 博幸"
+  }
+ ],
+ "name": "ラージアンサンブル",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023105560/62",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:48"
+}

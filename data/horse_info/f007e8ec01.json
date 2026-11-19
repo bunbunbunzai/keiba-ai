@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "グレーターロンドン",
+  "性別": "牡",
+  "馬主名": "(有)坂東牧場",
+  "母": "ハッピーベリンダ",
+  "馬齢": "3歳",
+  "調教師名": "野中 賢二 （栗東）",
+  "母の父": "アグネスデジタル",
+  "生年月日": "2023年4月9日",
+  "生産牧場": "坂東牧場",
+  "母の母": "エイシンベリンダ",
+  "毛色": "鹿毛",
+  "産地": "平取町",
+  "馬名意味": "冠名+曲名",
+  "取引市場": "",
+  "総賞金": "68,869,000 円",
+  "内付加賞": "769,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "24,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 4,
+  "second": 3,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "京都",
+   "race_name": "みやこS",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "6",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年8月30日",
+   "venue": "中京",
+   "race_name": "白川郷S",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年8月1日",
+   "venue": "中京",
+   "race_name": "日進特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年5月30日",
+   "venue": "京都",
+   "race_name": "鳳雛S",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年4月25日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年4月5日",
+   "venue": "阪神",
+   "race_name": "バイオレット",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 7,
+   "finish": "2",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年1月31日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年1月10日",
+   "venue": "京都",
+   "race_name": "3歳新馬",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "坂井 瑠星"
+  }
+ ],
+ "name": "ビービークローサー",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023100547/BC",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:37"
+}

@@ -1,0 +1,145 @@
+{
+ "profile": {
+  "父": "Caravaggio",
+  "性別": "牡",
+  "馬主名": "(同)小林英一ホールディングス",
+  "母": "Queen's Turf",
+  "馬齢": "3歳",
+  "調教師名": "吉岡 辰弥 （栗東）",
+  "母の父": "Deep Impact",
+  "生年月日": "2023年3月29日",
+  "母の母": "Fratte Rosa",
+  "毛色": "芦毛",
+  "産地": "米",
+  "馬名意味": "ギリシャ神話に登場する美少年",
+  "取引市場": "",
+  "総賞金": "28,250,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 10,
+  "wins": 2,
+  "second": 2,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 17,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "酒井 学"
+  },
+  {
+   "date": "2026年11月1日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 13,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "酒井 学"
+  },
+  {
+   "date": "2026年8月23日",
+   "venue": "新潟",
+   "race_name": "飯豊特別",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "J.コレット"
+  },
+  {
+   "date": "2026年7月26日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "酒井 学"
+  },
+  {
+   "date": "2026年6月7日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 17,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "京都",
+   "race_name": "メルボルンT",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 7,
+   "finish": "7",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2026年3月15日",
+   "venue": "中京",
+   "race_name": "昇竜S",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 8,
+   "finish": "11",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年2月15日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "T.ハマーハンセン"
+  },
+  {
+   "date": "2025年12月27日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "F.ジェルー"
+  },
+  {
+   "date": "2025年12月6日",
+   "venue": "阪神",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 10,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "松山 弘平"
+  }
+ ],
+ "name": "ナルキッソス",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023110085/EF",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:11"
+}

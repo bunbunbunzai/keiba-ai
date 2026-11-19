@@ -1,0 +1,135 @@
+{
+ "profile": {
+  "父": "ナダル",
+  "性別": "牝",
+  "馬主名": "猪熊 広次",
+  "母": "フェアリーバローズ",
+  "馬齢": "3歳",
+  "調教師名": "佐藤 悠太 （栗東）",
+  "母の父": "ロードカナロア",
+  "生年月日": "2023年5月31日",
+  "生産牧場": "小島牧場",
+  "母の母": "パローマ",
+  "毛色": "鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "人名より+冠名",
+  "取引市場": "",
+  "総賞金": "19,820,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 9,
+  "wins": 1,
+  "second": 4,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月1日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "10",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2026年10月17日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "小林 美駒"
+  },
+  {
+   "date": "2026年6月20日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2026年5月31日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2026年5月17日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2026年4月18日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年3月28日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年1月17日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2025年12月28日",
+   "venue": "阪神",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "吉村 誠之助"
+  }
+ ],
+ "name": "マリリンバローズ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023105466/E3",
+ "last_card": "20261101",
+ "fetched": "2026-11-20 05:19"
+}

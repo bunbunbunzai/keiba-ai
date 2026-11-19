@@ -1,0 +1,212 @@
+{
+ "profile": {
+  "父": "レッドファルクス",
+  "性別": "牡",
+  "馬主名": "矢野 まり子",
+  "母": "クラウンシトラス",
+  "馬齢": "4歳",
+  "調教師名": "菊川 正達 （美浦）",
+  "母の父": "スニッツェル",
+  "生年月日": "2022年3月17日",
+  "生産牧場": "クラウン日高牧場",
+  "母の母": "ファンシーオレンジ",
+  "毛色": "芦毛",
+  "産地": "日高町",
+  "馬名意味": "冠名+オーストラリアの一枚岩",
+  "取引市場": "",
+  "総賞金": "6,150,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 16,
+  "wins": 1,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "福島",
+   "race_name": "障害3歳上未勝利",
+   "surface": "芝",
+   "distance": 2750,
+   "field": 12,
+   "popularity": 11,
+   "finish": "9",
+   "jockey": "小林 凌大"
+  },
+  {
+   "date": "2026年7月12日",
+   "venue": "福島",
+   "race_name": "障害3歳上未勝利",
+   "surface": "芝",
+   "distance": 2770,
+   "field": 14,
+   "popularity": 11,
+   "finish": "12",
+   "jockey": "土田 真翔"
+  },
+  {
+   "date": "2026年5月24日",
+   "venue": "新潟",
+   "race_name": "障害4歳上未勝利",
+   "surface": "芝",
+   "distance": 2890,
+   "field": 13,
+   "popularity": 12,
+   "finish": "7",
+   "jockey": "小林 凌大"
+  },
+  {
+   "date": "2026年3月22日",
+   "venue": "中山",
+   "race_name": "障害4歳上未勝利",
+   "surface": "芝",
+   "distance": 2880,
+   "field": 14,
+   "popularity": 13,
+   "finish": "14",
+   "jockey": "小野寺 祐太"
+  },
+  {
+   "date": "2025年11月24日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 15,
+   "finish": "11",
+   "jockey": "遠藤 汰月"
+  },
+  {
+   "date": "2025年11月2日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 13,
+   "finish": "14",
+   "jockey": "吉田 隼人"
+  },
+  {
+   "date": "2025年9月7日",
+   "venue": "中山",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 10,
+   "finish": "15",
+   "jockey": "上里 直汰"
+  },
+  {
+   "date": "2025年8月30日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 11,
+   "popularity": 9,
+   "finish": "10",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2025年8月17日",
+   "venue": "札幌",
+   "race_name": "小樽特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 10,
+   "finish": "12",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2025年4月20日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 11,
+   "popularity": 7,
+   "finish": "6",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2025年3月29日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 10,
+   "popularity": 8,
+   "finish": "6",
+   "jockey": "小林 美駒"
+  },
+  {
+   "date": "2025年3月9日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 10,
+   "finish": "15",
+   "jockey": "原 優介"
+  },
+  {
+   "date": "2025年1月12日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 7,
+   "finish": "1",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2024年11月3日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 9,
+   "finish": "13",
+   "jockey": "小林 脩斗"
+  },
+  {
+   "date": "2024年10月13日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 12,
+   "popularity": 7,
+   "finish": "5",
+   "jockey": "小林 脩斗"
+  },
+  {
+   "date": "2024年9月29日",
+   "venue": "中山",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 8,
+   "finish": "10",
+   "jockey": "丹内 祐次"
+  }
+ ],
+ "name": "クラウンウルル",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022101278/2F",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 04:02"
+}

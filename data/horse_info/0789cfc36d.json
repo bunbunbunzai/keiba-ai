@@ -1,0 +1,212 @@
+{
+ "profile": {
+  "父": "マテラスカイ",
+  "性別": "牡",
+  "馬主名": "水谷 光太郎",
+  "母": "サンコロネット",
+  "馬齢": "3歳",
+  "調教師名": "大橋 勇樹 （栗東）",
+  "母の父": "スペシャルウィーク",
+  "生年月日": "2023年4月14日",
+  "生産牧場": "高山 博",
+  "母の母": "スギノシャーロット",
+  "毛色": "鹿毛",
+  "産地": "日高町",
+  "馬名意味": "冠名+夜明け(伊)",
+  "取引市場": "",
+  "総賞金": "25,800,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 16,
+  "wins": 2,
+  "second": 3,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 9,
+   "popularity": 7,
+   "finish": "2",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2026年10月24日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 8,
+   "finish": "1",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2026年10月10日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 14,
+   "finish": "9",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2026年10月4日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 14,
+   "finish": "13",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2026年7月12日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 17,
+   "popularity": 16,
+   "finish": "16",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2026年7月4日",
+   "venue": "小倉",
+   "race_name": "小郡特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 11,
+   "finish": "10",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2026年6月28日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 10,
+   "popularity": 8,
+   "finish": "8",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2026年6月13日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 9,
+   "finish": "11",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 14,
+   "finish": "16",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2026年1月24日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2026年1月12日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "11",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2025年11月16日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2025年11月1日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 13,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2025年10月11日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 10,
+   "finish": "2",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2025年7月13日",
+   "venue": "函館",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 12,
+   "popularity": 9,
+   "finish": "5",
+   "jockey": "森田 誠也"
+  },
+  {
+   "date": "2025年7月5日",
+   "venue": "函館",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 7,
+   "popularity": 6,
+   "finish": "4",
+   "jockey": "森田 誠也"
+  }
+ ],
+ "name": "リアルアルバ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023101065/F0",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:50"
+}

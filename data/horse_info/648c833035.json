@@ -1,0 +1,90 @@
+{
+ "profile": {
+  "父": "Not This Time",
+  "性別": "牡",
+  "馬主名": "前田 葉子",
+  "母": "Spring Storm",
+  "馬齢": "3歳",
+  "調教師名": "小崎 憲 （栗東）",
+  "母の父": "Unbridled's Song",
+  "生年月日": "2023年2月10日",
+  "母の母": "Kelli Cat",
+  "毛色": "芦毛",
+  "産地": "米",
+  "馬名意味": "オオカミ(伊)",
+  "取引市場": "",
+  "総賞金": "6,600,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "2,500,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 5,
+  "wins": 1,
+  "second": 1,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 10,
+   "finish": "11",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年6月16日",
+   "venue": "川崎",
+   "race_name": "ジューンF賞",
+   "surface": "ダ",
+   "distance": 1500,
+   "field": 11,
+   "popularity": null,
+   "finish": "1",
+   "jockey": "笹川 翼"
+  },
+  {
+   "date": "2026年5月10日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "8",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年3月8日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年2月21日",
+   "venue": "東京",
+   "race_name": "3歳新馬",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  }
+ ],
+ "name": "ルーポ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023110099/CB",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:13"
+}

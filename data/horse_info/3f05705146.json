@@ -1,0 +1,201 @@
+{
+ "profile": {
+  "父": "ホッコータルマエ",
+  "性別": "牝",
+  "馬主名": "ウエスト.フォレスト.ステイブル(株)",
+  "母": "パイクーニャン",
+  "馬齢": "4歳",
+  "調教師名": "鈴木 伸尋 （美浦）",
+  "母の父": "フレンチデピュティ",
+  "生年月日": "2022年3月10日",
+  "生産牧場": "山春牧場",
+  "母の母": "パイアン",
+  "毛色": "鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "母名の一部+中国の焼餅",
+  "取引市場": "",
+  "総賞金": "44,180,000 円",
+  "内付加賞": "80,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 2,
+  "second": 4,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "東京",
+   "race_name": "三鷹特別",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年10月4日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 5,
+   "finish": "3",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年7月26日",
+   "venue": "新潟",
+   "race_name": "麒麟山特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 2,
+   "finish": "13",
+   "jockey": "横山 典弘"
+  },
+  {
+   "date": "2026年6月7日",
+   "venue": "東京",
+   "race_name": "小金井特別",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "東京",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年3月22日",
+   "venue": "中山",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2026年2月28日",
+   "venue": "中山",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年1月10日",
+   "venue": "中山",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年12月13日",
+   "venue": "中山",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 6,
+   "finish": "2",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年10月11日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年9月27日",
+   "venue": "中山",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "小林 美駒"
+  },
+  {
+   "date": "2025年6月7日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年5月18日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 6,
+   "finish": "2",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年5月4日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年1月25日",
+   "venue": "中山",
+   "race_name": "3歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 4,
+   "finish": "6",
+   "jockey": "横山 琉人"
+  }
+ ],
+ "name": "パイシャオピン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022103371/19",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:59"
+}

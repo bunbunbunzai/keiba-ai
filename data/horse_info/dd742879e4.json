@@ -1,0 +1,91 @@
+{
+ "profile": {
+  "父": "American Pharoah",
+  "性別": "牡",
+  "馬主名": "田中 成奉",
+  "母": "ミスベジル",
+  "馬齢": "4歳",
+  "調教師名": "杉山 晴紀 （栗東）",
+  "母の父": "Medaglia d'Oro",
+  "生年月日": "2022年4月24日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "Quiet Dance",
+  "毛色": "黒鹿毛",
+  "産地": "安平町",
+  "馬名意味": "冠名+黄金(西)",
+  "取引市場": "2022年 ノーザンファームミックスセール",
+  "総賞金": "31,445,000 円",
+  "内付加賞": "245,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 5,
+  "wins": 3,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "京都",
+   "race_name": "花背特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年10月25日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年8月15日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "12",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2025年2月23日",
+   "venue": "東京",
+   "race_name": "ヒヤシンスS",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 10,
+   "popularity": 3,
+   "finish": "7",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2024年12月22日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "西村 淳也"
+  }
+ ],
+ "name": "タイセイドラード",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022105075/30",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:44"
+}

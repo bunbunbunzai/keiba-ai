@@ -1,0 +1,189 @@
+{
+ "profile": {
+  "父": "Collected",
+  "性別": "牝",
+  "馬主名": "岡田 牧雄",
+  "母": "Kylers Song",
+  "馬齢": "4歳",
+  "調教師名": "加藤 公太 （栗東）",
+  "母の父": "El Corredor",
+  "生年月日": "2022年5月18日",
+  "母の母": "Summer Song",
+  "毛色": "栗毛",
+  "産地": "米",
+  "馬名意味": "歌の収集家",
+  "取引市場": "",
+  "総賞金": "15,700,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 14,
+  "wins": 1,
+  "second": 2,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 8,
+   "finish": "10",
+   "jockey": "富田 暁"
+  },
+  {
+   "date": "2026年5月2日",
+   "venue": "新潟",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "富田 暁"
+  },
+  {
+   "date": "2026年4月26日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 9,
+   "finish": "14",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2026年4月12日",
+   "venue": "阪神",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 7,
+   "finish": "4",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2025年12月20日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 16,
+   "finish": "9",
+   "jockey": "加藤 祥太"
+  },
+  {
+   "date": "2025年12月7日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 10,
+   "finish": "12",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2025年9月20日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 8,
+   "finish": "11",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2025年8月23日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 7,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2025年6月8日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 9,
+   "finish": "12",
+   "jockey": "酒井 学"
+  },
+  {
+   "date": "2025年4月26日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 11,
+   "finish": "11",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2025年3月1日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年2月2日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年1月19日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2024年10月6日",
+   "venue": "新潟",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 3,
+   "finish": "9",
+   "jockey": "永島 まなみ"
+  }
+ ],
+ "name": "ソングコレクター",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022110143/6E",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 04:01"
+}

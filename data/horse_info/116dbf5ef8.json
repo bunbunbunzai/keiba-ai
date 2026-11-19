@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "キタサンブラック",
+  "性別": "牡",
+  "馬主名": "(有)シルクレーシング",
+  "母": "マンビア",
+  "馬齢": "3歳",
+  "調教師名": "斉藤 崇史 （栗東）",
+  "母の父": "Aldebaran",
+  "生年月日": "2023年3月28日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "Algoa",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "グアドループの都市名。母名より連想",
+  "取引市場": "",
+  "総賞金": "230,240,000 円",
+  "内付加賞": "12,640,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "71,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 2,
+  "second": 2,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "京都",
+   "race_name": "菊花賞",
+   "surface": "芝",
+   "distance": 3000,
+   "field": 18,
+   "popularity": 8,
+   "finish": "2",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年9月13日",
+   "venue": "中山",
+   "race_name": "セントライト",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 16,
+   "popularity": 4,
+   "finish": "13",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年5月31日",
+   "venue": "東京",
+   "race_name": "東京優駿",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 18,
+   "popularity": 11,
+   "finish": "3",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年4月19日",
+   "venue": "中山",
+   "race_name": "皐月賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 6,
+   "finish": "11",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年3月8日",
+   "venue": "中山",
+   "race_name": "ディープ記念",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年12月20日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "C.デムーロ"
+  },
+  {
+   "date": "2025年11月30日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "C.デムーロ"
+  }
+ ],
+ "name": "バステール",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023107247/B2",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:48"
+}

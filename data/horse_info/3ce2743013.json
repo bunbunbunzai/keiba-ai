@@ -1,0 +1,190 @@
+{
+ "profile": {
+  "父": "アルアイン",
+  "性別": "牝",
+  "馬主名": "(株)ラッキーフィールド",
+  "母": "エアベルヘザー",
+  "馬齢": "4歳",
+  "調教師名": "池添 学 （栗東）",
+  "母の父": "Empire Maker",
+  "生年月日": "2022年3月2日",
+  "生産牧場": "稲原牧場",
+  "母の母": "Macarena Macarena",
+  "毛色": "鹿毛",
+  "産地": "平取町",
+  "馬名意味": "冠名+花の名前",
+  "取引市場": "",
+  "総賞金": "37,569,000 円",
+  "内付加賞": "89,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "10,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 13,
+  "wins": 2,
+  "second": 3,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 2,
+   "finish": "10",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年10月11日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年8月1日",
+   "venue": "札幌",
+   "race_name": "大倉山特別",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 8,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "舟山 瑠泉"
+  },
+  {
+   "date": "2026年7月4日",
+   "venue": "函館",
+   "race_name": "竜飛崎特別",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 14,
+   "popularity": 7,
+   "finish": "5",
+   "jockey": "舟山 瑠泉"
+  },
+  {
+   "date": "2026年6月14日",
+   "venue": "函館",
+   "race_name": "津軽海峡特別",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 12,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "舟山 瑠泉"
+  },
+  {
+   "date": "2026年4月11日",
+   "venue": "阪神",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年3月14日",
+   "venue": "阪神",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年2月15日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 7,
+   "finish": "12",
+   "jockey": "永島 まなみ"
+  },
+  {
+   "date": "2025年12月6日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 5,
+   "finish": "5",
+   "jockey": "亀田 温心"
+  },
+  {
+   "date": "2025年11月15日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 7,
+   "popularity": 7,
+   "finish": "6",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2025年8月31日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2025年8月9日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 9,
+   "finish": "3",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2025年5月31日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 9,
+   "finish": "10",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年5月3日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": null,
+   "finish": "取消",
+   "jockey": "吉村 誠之助"
+  }
+ ],
+ "name": "エアニゲラ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022102308/DF",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:35"
+}

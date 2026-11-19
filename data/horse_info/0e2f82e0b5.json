@@ -1,0 +1,223 @@
+{
+ "profile": {
+  "父": "エピファネイア",
+  "性別": "牝",
+  "馬主名": "吉田 勝己",
+  "母": "ブルークランズ",
+  "馬齢": "5歳",
+  "調教師名": "宮田 敬介 （美浦）",
+  "母の父": "ルーラーシップ",
+  "生年月日": "2021年2月12日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "ランズエッジ",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "南アフリカの都市名",
+  "取引市場": "",
+  "総賞金": "378,904,600 円",
+  "内付加賞": "35,740,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "49,964,600 円",
+  "収得賞金（平地）": "130,500,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 17,
+  "wins": 3,
+  "second": 4,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "京都",
+   "race_name": "エリザベス杯",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 18,
+   "popularity": 18,
+   "finish": "17",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2026年8月30日",
+   "venue": "新潟",
+   "race_name": "新潟記念",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 5,
+   "finish": "11",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2026年6月7日",
+   "venue": "東京",
+   "race_name": "安田記念",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 17,
+   "popularity": 5,
+   "finish": "10",
+   "jockey": "D.レーン"
+  },
+  {
+   "date": "2026年5月9日",
+   "venue": "東京",
+   "race_name": "エプソムC",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 17,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2026年3月7日",
+   "venue": "中山",
+   "race_name": "中山牝馬S",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 9,
+   "finish": "7",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年11月16日",
+   "venue": "京都",
+   "race_name": "エリザベス杯",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 16,
+   "popularity": 6,
+   "finish": "10",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年8月17日",
+   "venue": "札幌",
+   "race_name": "札幌記念",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 3,
+   "finish": "15",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2025年5月18日",
+   "venue": "東京",
+   "race_name": "ヴィクトリア",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 17,
+   "popularity": 3,
+   "finish": "8",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2025年4月6日",
+   "venue": "阪神",
+   "race_name": "大阪杯",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 3,
+   "finish": "13",
+   "jockey": "J.モレイラ"
+  },
+  {
+   "date": "2024年12月8日",
+   "venue": "香港",
+   "race_name": "香港ヴァーズ",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 13,
+   "popularity": null,
+   "finish": "3",
+   "jockey": "J.モレイラ"
+  },
+  {
+   "date": "2024年10月13日",
+   "venue": "京都",
+   "race_name": "秋華賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年5月19日",
+   "venue": "東京",
+   "race_name": "優駿牝馬",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 18,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年4月7日",
+   "venue": "阪神",
+   "race_name": "桜花賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "J.モレイラ"
+  },
+  {
+   "date": "2023年12月10日",
+   "venue": "阪神",
+   "race_name": "阪神JF",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2023年11月19日",
+   "venue": "東京",
+   "race_name": "赤松賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 9,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "T.マーカンド"
+  },
+  {
+   "date": "2023年10月1日",
+   "venue": "中山",
+   "race_name": "サフラン賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 7,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2023年7月23日",
+   "venue": "札幌",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 6,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "横山 武史"
+  }
+ ],
+ "name": "ステレンボッシュ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021105743/E5",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:51"
+}

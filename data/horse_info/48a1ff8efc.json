@@ -1,0 +1,223 @@
+{
+ "profile": {
+  "父": "サンダースノー",
+  "性別": "牡",
+  "馬主名": "ゴドルフィン",
+  "母": "アプト",
+  "馬齢": "4歳",
+  "調教師名": "鈴木 慎太郎 （美浦）",
+  "母の父": "アドマイヤムーン",
+  "生年月日": "2022年4月18日",
+  "生産牧場": "ダーレー・ジャパン・ファーム(有)",
+  "母の母": "フェリシタス",
+  "毛色": "鹿毛",
+  "産地": "日高町",
+  "馬名意味": "風雪。父名より連想",
+  "取引市場": "",
+  "総賞金": "51,744,000 円",
+  "内付加賞": "244,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 17,
+  "wins": 3,
+  "second": 3,
+  "third": 4
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "新潟",
+   "race_name": "ルミエAD",
+   "surface": "芝",
+   "distance": 1000,
+   "field": 17,
+   "popularity": 11,
+   "finish": "13",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2026年10月11日",
+   "venue": "東京",
+   "race_name": "テレビ静岡賞",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "14",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2026年8月15日",
+   "venue": "新潟",
+   "race_name": "上越S",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 9,
+   "finish": "3",
+   "jockey": "武藤 雅"
+  },
+  {
+   "date": "2026年5月17日",
+   "venue": "東京",
+   "race_name": "BSイレブン",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 8,
+   "finish": "9",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2026年4月25日",
+   "venue": "東京",
+   "race_name": "鎌倉S",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 9,
+   "finish": "3",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2026年1月25日",
+   "venue": "中山",
+   "race_name": "江戸川S",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 4,
+   "finish": "15",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2025年11月16日",
+   "venue": "東京",
+   "race_name": "銀嶺S",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 3,
+   "finish": "7",
+   "jockey": "T.マーカンド"
+  },
+  {
+   "date": "2025年10月25日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 13,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2025年10月4日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2025年6月22日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2025年5月24日",
+   "venue": "新潟",
+   "race_name": "はやぶさ賞",
+   "surface": "芝",
+   "distance": 1000,
+   "field": 15,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2025年4月26日",
+   "venue": "福島",
+   "race_name": "雪うさぎ賞",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2025年2月9日",
+   "venue": "小倉",
+   "race_name": "かささぎ賞",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2025年1月26日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 17,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2024年12月8日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2024年11月17日",
+   "venue": "福島",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 6,
+   "finish": "3",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2024年9月15日",
+   "venue": "中山",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 5,
+   "finish": "6",
+   "jockey": "津村 明秀"
+  }
+ ],
+ "name": "フウセツ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022101626/BD",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:54"
+}

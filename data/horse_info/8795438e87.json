@@ -1,0 +1,112 @@
+{
+ "profile": {
+  "父": "Authentic",
+  "性別": "牡",
+  "馬主名": "(株)吉澤ホールディングス",
+  "母": "Crescentcitypretty",
+  "馬齢": "3歳",
+  "調教師名": "池江 泰寿 （栗東）",
+  "母の父": "Bernardini",
+  "生年月日": "2023年2月1日",
+  "母の母": "Penelope Plum",
+  "毛色": "鹿毛",
+  "産地": "米",
+  "馬名意味": "冠名+主義",
+  "取引市場": "",
+  "総賞金": "12,120,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 1,
+  "second": 2,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 5,
+   "finish": "11",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2026年10月18日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2026年8月2日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 14,
+   "popularity": 2,
+   "finish": "9",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年5月30日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年3月8日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年12月7日",
+   "venue": "中京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 1,
+   "finish": "7",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年11月16日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "D.レーン"
+  }
+ ],
+ "name": "アメリカンイズム",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023110081/23",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:33"
+}

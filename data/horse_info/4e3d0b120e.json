@@ -1,0 +1,134 @@
+{
+ "profile": {
+  "父": "Charlatan",
+  "性別": "牡",
+  "馬主名": "(株)ノースヒルズ",
+  "母": "Streetwithnoname",
+  "馬齢": "3歳",
+  "調教師名": "河嶋 宏樹 （栗東）",
+  "母の父": "Street Sense",
+  "生年月日": "2023年4月29日",
+  "母の母": "Frost Fire",
+  "毛色": "鹿毛",
+  "産地": "米",
+  "馬名意味": "歓迎の歌",
+  "取引市場": "",
+  "総賞金": "20,300,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 9,
+  "wins": 2,
+  "second": 2,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "河原田 菜々"
+  },
+  {
+   "date": "2026年10月12日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "8",
+   "jockey": "河原田 菜々"
+  },
+  {
+   "date": "2026年8月9日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 17,
+   "popularity": 2,
+   "finish": "11",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年7月19日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2026年5月9日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "9",
+   "jockey": "原 優介"
+  },
+  {
+   "date": "2026年4月18日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年3月28日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年2月1日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 1,
+   "finish": "8",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年1月5日",
+   "venue": "京都",
+   "race_name": "3歳新馬",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "岩田 望来"
+  }
+ ],
+ "name": "ウェルカムソング",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023107545/5F",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:24"
+}

@@ -1,0 +1,146 @@
+{
+ "profile": {
+  "父": "ファインニードル",
+  "性別": "牡",
+  "馬主名": "(株)栄進堂",
+  "母": "エーシンエムディー",
+  "馬齢": "3歳",
+  "調教師名": "大久保 龍志 （栗東）",
+  "母の父": "キングカメハメハ",
+  "生年月日": "2023年5月8日",
+  "生産牧場": "山田 昇史",
+  "母の母": "エイシンルーデンス",
+  "毛色": "黒鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "冠名+証書",
+  "取引市場": "",
+  "総賞金": "55,217,000 円",
+  "内付加賞": "617,000 円",
+  "内地方賞金": "1,900,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "25,200,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 9,
+  "wins": 2,
+  "second": 2,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "東京",
+   "race_name": "オーロカップ",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 10,
+   "finish": "16",
+   "jockey": "川又 賢治"
+  },
+  {
+   "date": "2026年9月27日",
+   "venue": "阪神",
+   "race_name": "ポートアイS",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 3,
+   "finish": "6",
+   "jockey": "川又 賢治"
+  },
+  {
+   "date": "2026年8月23日",
+   "venue": "札幌",
+   "race_name": "キーンランド",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 6,
+   "finish": "15",
+   "jockey": "川又 賢治"
+  },
+  {
+   "date": "2026年5月30日",
+   "venue": "京都",
+   "race_name": "葵ステークス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "6",
+   "jockey": "川又 賢治"
+  },
+  {
+   "date": "2026年3月21日",
+   "venue": "中京",
+   "race_name": "ファルコンS",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 17,
+   "popularity": 8,
+   "finish": "2",
+   "jockey": "川又 賢治"
+  },
+  {
+   "date": "2025年11月15日",
+   "venue": "京都",
+   "race_name": "デイリー2S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 6,
+   "finish": "4",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2025年7月20日",
+   "venue": "函館",
+   "race_name": "函館2歳S",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 9,
+   "finish": "1",
+   "jockey": "R.キング"
+  },
+  {
+   "date": "2025年6月26日",
+   "venue": "",
+   "race_name": "JRAへ転入",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2025年6月18日",
+   "venue": "門別",
+   "race_name": "JRA認定競走アタッ",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 12,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "落合 玄太"
+  },
+  {
+   "date": "2025年5月29日",
+   "venue": "門別",
+   "race_name": "JRA認定競走フレッ",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 9,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "黒澤 愛斗"
+  }
+ ],
+ "name": "エイシンディード",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023105505/41",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:58"
+}

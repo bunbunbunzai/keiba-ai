@@ -1,0 +1,168 @@
+{
+ "profile": {
+  "父": "リアルスティール",
+  "性別": "せん",
+  "馬主名": "TNレースホース",
+  "母": "マニクール",
+  "馬齢": "3歳",
+  "調教師名": "嘉藤 貴行 （美浦）",
+  "母の父": "ヘニーヒューズ",
+  "生年月日": "2023年2月11日",
+  "生産牧場": "千代田牧場",
+  "母の母": "フェミニンガール",
+  "毛色": "鹿毛",
+  "産地": "新ひだか町",
+  "馬名意味": "見せ場(Highlight)+稲光(Lightning)",
+  "取引市場": "2023年 セレクトセール",
+  "総賞金": "19,320,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 12,
+  "wins": 2,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "東京",
+   "race_name": "三浦特別",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 4,
+   "finish": "6",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年10月25日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年9月5日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 12,
+   "popularity": 5,
+   "finish": "5",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年8月15日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 11,
+   "popularity": 6,
+   "finish": "2",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年7月25日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 12,
+   "popularity": 9,
+   "finish": "8",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2026年3月14日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 15,
+   "finish": "10",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2026年1月10日",
+   "venue": "中山",
+   "race_name": "黒竹賞",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 7,
+   "finish": "7",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年12月14日",
+   "venue": "中山",
+   "race_name": "2歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 8,
+   "finish": "12",
+   "jockey": "吉田 豊"
+  },
+  {
+   "date": "2025年9月28日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2025年9月7日",
+   "venue": "札幌",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 4,
+   "finish": "5",
+   "jockey": "舟山 瑠泉"
+  },
+  {
+   "date": "2025年8月16日",
+   "venue": "札幌",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 7,
+   "popularity": 4,
+   "finish": "4",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年6月21日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 11,
+   "finish": "6",
+   "jockey": "大野 拓弥"
+  }
+ ],
+ "name": "ハイライトニング",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023105381/93",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:09"
+}

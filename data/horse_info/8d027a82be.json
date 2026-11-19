@@ -1,0 +1,91 @@
+{
+ "profile": {
+  "父": "エピファネイア",
+  "性別": "牝",
+  "馬主名": "野田 みづき",
+  "母": "エンタイスド",
+  "馬齢": "3歳",
+  "調教師名": "福永 祐一 （栗東）",
+  "母の父": "Galileo",
+  "生年月日": "2023年4月1日",
+  "生産牧場": "三嶋牧場",
+  "母の母": "Dialafara",
+  "毛色": "鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "冠名+人魚",
+  "取引市場": "",
+  "総賞金": "8,310,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 5,
+  "wins": 1,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年10月31日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 6,
+   "finish": "11",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2026年7月12日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年2月1日",
+   "venue": "東京",
+   "race_name": "セントポーリ",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 5,
+   "finish": "5",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年10月4日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 9,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年7月12日",
+   "venue": "小倉",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "川田 将雅"
+  }
+ ],
+ "name": "ミッキーマーメイド",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023105002/F3",
+ "last_card": "20261031",
+ "fetched": "2026-11-20 05:40"
+}

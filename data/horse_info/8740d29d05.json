@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "ナダル",
+  "性別": "牡",
+  "馬主名": "(有)シルクレーシング",
+  "母": "クインアマランサス",
+  "馬齢": "4歳",
+  "調教師名": "中舘 英二 （美浦）",
+  "母の父": "キングカメハメハ",
+  "生年月日": "2022年1月20日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "ヒカルアマランサス",
+  "毛色": "栗毛",
+  "産地": "安平町",
+  "馬名意味": "赤土の王者。父名、母名より連想",
+  "取引市場": "",
+  "総賞金": "83,614,000 円",
+  "内付加賞": "314,000 円",
+  "内地方賞金": "38,500,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "34,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 2,
+  "second": 3,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年10月31日",
+   "venue": "東京",
+   "race_name": "ペルセウスS",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年10月8日",
+   "venue": "大井",
+   "race_name": "ジャパンDC",
+   "surface": "ダ",
+   "distance": 2000,
+   "field": 16,
+   "popularity": null,
+   "finish": "5",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年6月11日",
+   "venue": "大井",
+   "race_name": "東京ダービー",
+   "surface": "ダ",
+   "distance": 2000,
+   "field": 16,
+   "popularity": null,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年5月3日",
+   "venue": "京都",
+   "race_name": "ユニコーンS",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 13,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "D.レーン"
+  },
+  {
+   "date": "2025年1月25日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 6,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2024年11月23日",
+   "venue": "東京",
+   "race_name": "カトレアS",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2024年9月28日",
+   "venue": "中京",
+   "race_name": "ヤマボウシ賞",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 10,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "岩田 康誠"
+  },
+  {
+   "date": "2024年6月15日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "岩田 康誠"
+  }
+ ],
+ "name": "クレーキング",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022104743/82",
+ "last_card": "20261031",
+ "fetched": "2026-11-20 05:43"
+}

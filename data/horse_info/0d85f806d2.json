@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "ヘニーヒューズ",
+  "性別": "牡",
+  "馬主名": "林 正道",
+  "母": "スミレ",
+  "馬齢": "4歳",
+  "調教師名": "加藤 征弘 （美浦）",
+  "母の父": "ダイワメジャー",
+  "生年月日": "2022年4月16日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "ラリズ",
+  "毛色": "栗毛",
+  "産地": "安平町",
+  "馬名意味": "父名の一部+精神(独)",
+  "取引市場": "",
+  "総賞金": "67,205,000 円",
+  "内付加賞": "705,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "24,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 4,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "東京",
+   "race_name": "武蔵野S",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年10月3日",
+   "venue": "東京",
+   "race_name": "グリーンCC",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年8月2日",
+   "venue": "札幌",
+   "race_name": "ポプラS",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 10,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年5月24日",
+   "venue": "東京",
+   "race_name": "三峰山特別",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年2月1日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年1月12日",
+   "venue": "中京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2024年11月23日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "T.マーカンド"
+  }
+ ],
+ "name": "ヘニーガイスト",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022104865/B9",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:21"
+}

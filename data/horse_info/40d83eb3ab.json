@@ -1,0 +1,201 @@
+{
+ "profile": {
+  "父": "ブリックスアンドモルタル",
+  "性別": "牡",
+  "馬主名": "廣崎利洋HD(株)",
+  "母": "マキシマムドパリ",
+  "馬齢": "5歳",
+  "調教師名": "藤原 英昭 （栗東）",
+  "母の父": "キングカメハメハ",
+  "生年月日": "2021年4月3日",
+  "生産牧場": "社台ファーム",
+  "母の母": "マドモアゼルドパリ",
+  "毛色": "芦毛",
+  "産地": "千歳市",
+  "馬名意味": "冠名+もっと進化し発展を",
+  "取引市場": "2022年 セレクトセール",
+  "総賞金": "67,233,000 円",
+  "内付加賞": "633,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "24,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 4,
+  "second": 2,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "京都",
+   "race_name": "アンドロメダ",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 9,
+   "finish": "6",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年10月24日",
+   "venue": "京都",
+   "race_name": "カシオペアS",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 11,
+   "finish": "7",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2025年9月13日",
+   "venue": "阪神",
+   "race_name": "チャレンジC",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 8,
+   "finish": "7",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2025年8月31日",
+   "venue": "新潟",
+   "race_name": "新潟記念",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 6,
+   "finish": "12",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2025年5月4日",
+   "venue": "東京",
+   "race_name": "府中S",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 13,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "M.ディー"
+  },
+  {
+   "date": "2025年4月12日",
+   "venue": "阪神",
+   "race_name": "京橋S",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "A.シュタルケ"
+  },
+  {
+   "date": "2025年2月23日",
+   "venue": "東京",
+   "race_name": "アメジストS",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 12,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2024年10月20日",
+   "venue": "京都",
+   "race_name": "菊花賞",
+   "surface": "芝",
+   "distance": 3000,
+   "field": 18,
+   "popularity": 16,
+   "finish": "17",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2024年10月5日",
+   "venue": "東京",
+   "race_name": "tvk賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 7,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2024年9月16日",
+   "venue": "中山",
+   "race_name": "セントライト",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 14,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年6月23日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2024年5月4日",
+   "venue": "東京",
+   "race_name": "プリンシパル",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 13,
+   "popularity": 7,
+   "finish": "3",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2024年3月24日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2024年3月10日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 11,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2024年2月24日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 13,
+   "popularity": 7,
+   "finish": "6",
+   "jockey": "北村 友一"
+  }
+ ],
+ "name": "アスクカムオンモア",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021105236/39",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:15"
+}

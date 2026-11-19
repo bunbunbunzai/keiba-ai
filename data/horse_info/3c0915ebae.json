@@ -1,0 +1,135 @@
+{
+ "profile": {
+  "父": "ルーラーシップ",
+  "性別": "牡",
+  "馬主名": "田畑 利彦",
+  "母": "レジーナファースト",
+  "馬齢": "3歳",
+  "調教師名": "緒方 努 （栗東）",
+  "母の父": "キンシャサノキセキ",
+  "生年月日": "2023年2月25日",
+  "生産牧場": "坂東牧場",
+  "母の母": "バーミスキャット",
+  "毛色": "鹿毛",
+  "産地": "平取町",
+  "馬名意味": "冠名+父名より",
+  "取引市場": "",
+  "総賞金": "1,540,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "700,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 9,
+  "wins": 1,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 15,
+   "finish": "15",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2026年10月3日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 14,
+   "finish": "14",
+   "jockey": "国分 恭介"
+  },
+  {
+   "date": "2026年5月17日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 13,
+   "finish": "12",
+   "jockey": "国分 恭介"
+  },
+  {
+   "date": "2026年4月30日",
+   "venue": "笠松",
+   "race_name": "赤坂宿特別",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 10,
+   "popularity": null,
+   "finish": "1",
+   "jockey": "筒井 勇介"
+  },
+  {
+   "date": "2026年3月15日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 10,
+   "finish": "8",
+   "jockey": "国分 優作"
+  },
+  {
+   "date": "2026年2月21日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 11,
+   "finish": "9",
+   "jockey": "吉田 隼人"
+  },
+  {
+   "date": "2025年11月24日",
+   "venue": "福島",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 9,
+   "finish": "13",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2025年10月25日",
+   "venue": "新潟",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 7,
+   "finish": "4",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2025年10月5日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 7,
+   "finish": "8",
+   "jockey": "鮫島 克駿"
+  }
+ ],
+ "name": "ジーティーシップ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023106054/18",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:49"
+}

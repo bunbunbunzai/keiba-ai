@@ -1,0 +1,146 @@
+{
+ "profile": {
+  "父": "ゴールドドリーム",
+  "性別": "牝",
+  "馬主名": "小笹 公也",
+  "母": "クローバーリーフ",
+  "馬齢": "3歳",
+  "調教師名": "梅田 智之 （栗東）",
+  "母の父": "タニノギムレット",
+  "生年月日": "2023年3月30日",
+  "生産牧場": "新冠橋本牧場",
+  "母の母": "レースウィング",
+  "毛色": "鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "冠名+天使に由来する女性名より",
+  "取引市場": "2024年 セレクトセール",
+  "総賞金": "4,040,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "700,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 10,
+  "wins": 1,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年10月31日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 10,
+   "finish": "11",
+   "jockey": "河原田 菜々"
+  },
+  {
+   "date": "2026年10月3日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 16,
+   "finish": "9",
+   "jockey": "柴田 裕一郎"
+  },
+  {
+   "date": "2026年7月25日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 14,
+   "finish": "13",
+   "jockey": "国分 優作"
+  },
+  {
+   "date": "2026年5月2日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 12,
+   "finish": "12",
+   "jockey": "川須 栄彦"
+  },
+  {
+   "date": "2026年4月15日",
+   "venue": "笠松",
+   "race_name": "鵜沼宿特別",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 9,
+   "popularity": null,
+   "finish": "1",
+   "jockey": "藤懸 貴志"
+  },
+  {
+   "date": "2026年1月25日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 16,
+   "popularity": 5,
+   "finish": "10",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2026年1月4日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 3,
+   "finish": "7",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2025年10月5日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2025年9月15日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 6,
+   "finish": "4",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2025年8月30日",
+   "venue": "中京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 10,
+   "popularity": 9,
+   "finish": "4",
+   "jockey": "松若 風馬"
+  }
+ ],
+ "name": "テーオーアンジェラ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023107378/86",
+ "last_card": "20261031",
+ "fetched": "2026-11-20 05:34"
+}

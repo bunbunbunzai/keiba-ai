@@ -1,0 +1,179 @@
+{
+ "profile": {
+  "父": "サトノクラウン",
+  "性別": "牝",
+  "馬主名": "小林 竜太郎",
+  "母": "プティシュシュ",
+  "馬齢": "3歳",
+  "調教師名": "高橋 康之 （栗東）",
+  "母の父": "エピファネイア",
+  "生年月日": "2023年4月10日",
+  "生産牧場": "岩見牧場",
+  "母の母": "ラブフール",
+  "毛色": "黒鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "かわいい子",
+  "取引市場": "",
+  "総賞金": "33,248,000 円",
+  "内付加賞": "48,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 13,
+  "wins": 3,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月1日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 13,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "永島 まなみ"
+  },
+  {
+   "date": "2026年10月11日",
+   "venue": "東京",
+   "race_name": "鷹巣山特別",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 12,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "永島 まなみ"
+  },
+  {
+   "date": "2026年8月22日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "永島 まなみ"
+  },
+  {
+   "date": "2026年7月26日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 9,
+   "finish": "6",
+   "jockey": "永島 まなみ"
+  },
+  {
+   "date": "2026年6月13日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 11,
+   "finish": "4",
+   "jockey": "永島 まなみ"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "京都",
+   "race_name": "メルボルンT",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 5,
+   "finish": "11",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2026年3月8日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 5,
+   "finish": "8",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2026年2月8日",
+   "venue": "小倉",
+   "race_name": "かささぎ賞",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 2,
+   "finish": "9",
+   "jockey": "古川 吉洋"
+  },
+  {
+   "date": "2026年1月17日",
+   "venue": "中山",
+   "race_name": "菜の花賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 1,
+   "finish": "7",
+   "jockey": "横山 典弘"
+  },
+  {
+   "date": "2025年11月23日",
+   "venue": "東京",
+   "race_name": "赤松賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "横山 典弘"
+  },
+  {
+   "date": "2025年11月1日",
+   "venue": "京都",
+   "race_name": "ファンタジー",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 5,
+   "finish": "6",
+   "jockey": "横山 典弘"
+  },
+  {
+   "date": "2025年9月6日",
+   "venue": "札幌",
+   "race_name": "札幌2歳S",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 5,
+   "finish": "9",
+   "jockey": "橋木 太希"
+  },
+  {
+   "date": "2025年8月2日",
+   "venue": "札幌",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1500,
+   "field": 11,
+   "popularity": 7,
+   "finish": "1",
+   "jockey": "橋木 太希"
+  }
+ ],
+ "name": "ポペット",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023103980/68",
+ "last_card": "20261101",
+ "fetched": "2026-11-20 05:24"
+}

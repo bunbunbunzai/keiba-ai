@@ -1,0 +1,190 @@
+{
+ "profile": {
+  "父": "ブリックスアンドモルタル",
+  "性別": "牝",
+  "馬主名": "村田 能光",
+  "母": "メジャーフォルム",
+  "馬齢": "4歳",
+  "調教師名": "松下 武士 （栗東）",
+  "母の父": "ダイワメジャー",
+  "生年月日": "2022年2月7日",
+  "生産牧場": "社台ファーム",
+  "母の母": "ビルアンドクー",
+  "毛色": "栗毛",
+  "産地": "千歳市",
+  "馬名意味": "誕生日の2月7日より+梅+六花(雪の異称)",
+  "取引市場": "2022年 セレクトセール",
+  "総賞金": "1,885,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "1,325,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "1,200,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 12,
+  "wins": 3,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 12,
+   "finish": "14",
+   "jockey": "永島 まなみ"
+  },
+  {
+   "date": "2026年9月20日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 15,
+   "finish": "14",
+   "jockey": "永島 まなみ"
+  },
+  {
+   "date": "2026年7月25日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 12,
+   "finish": "10",
+   "jockey": "永島 まなみ"
+  },
+  {
+   "date": "2026年7月4日",
+   "venue": "",
+   "race_name": "JRAへ転入",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2026年4月14日",
+   "venue": "笠松",
+   "race_name": "C16組",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 10,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "望月 洵輝"
+  },
+  {
+   "date": "2025年12月30日",
+   "venue": "笠松",
+   "race_name": "第8回河内一秀記念",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 9,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "望月 洵輝"
+  },
+  {
+   "date": "2025年12月12日",
+   "venue": "笠松",
+   "race_name": "ポインセチア特別",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 10,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "松本 一心"
+  },
+  {
+   "date": "2025年11月27日",
+   "venue": "笠松",
+   "race_name": "カサオク・サンクス賞",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 8,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "望月 洵輝"
+  },
+  {
+   "date": "2025年9月18日",
+   "venue": "",
+   "race_name": "JRAより転出",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2025年9月14日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 14,
+   "finish": "8",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2025年8月17日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 9,
+   "finish": "5",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2025年6月29日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 17,
+   "popularity": 11,
+   "finish": "7",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2025年5月31日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 9,
+   "finish": "13",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2025年2月15日",
+   "venue": "京都",
+   "race_name": "3歳新馬",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 4,
+   "finish": "7",
+   "jockey": "幸 英明"
+  }
+ ],
+ "name": "ニーナバイリッカ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022105533/FF",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 04:02"
+}

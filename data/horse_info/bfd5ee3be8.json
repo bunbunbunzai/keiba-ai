@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "コントレイル",
+  "性別": "牡",
+  "馬主名": "(有)キャロットファーム",
+  "母": "ポジティブマインド",
+  "馬齢": "3歳",
+  "調教師名": "安田 翔伍 （栗東）",
+  "母の父": "Equal Stripes",
+  "生年月日": "2023年3月22日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "Paula Sexy",
+  "毛色": "黒鹿毛",
+  "産地": "安平町",
+  "馬名意味": "空に伸びる美しい縞模様。父名、母父名より連想",
+  "取引市場": "",
+  "総賞金": "21,140,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 2,
+  "second": 0,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年10月31日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "C.デムーロ"
+  },
+  {
+   "date": "2026年6月13日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 3,
+   "finish": "16",
+   "jockey": "M.デムーロ"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2026年4月5日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2026年1月5日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年12月13日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "C.デムーロ"
+  },
+  {
+   "date": "2025年10月4日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 9,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "横山 典弘"
+  },
+  {
+   "date": "2025年8月10日",
+   "venue": "中京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 13,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "北村 友一"
+  }
+ ],
+ "name": "スカイストライプス",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023107229/78",
+ "last_card": "20261031",
+ "fetched": "2026-11-20 05:33"
+}

@@ -1,0 +1,201 @@
+{
+ "profile": {
+  "父": "ロードカナロア",
+  "性別": "牡",
+  "馬主名": "大川 徹",
+  "母": "スマートレイアー",
+  "馬齢": "5歳",
+  "調教師名": "大久保 龍志 （栗東）",
+  "母の父": "ディープインパクト",
+  "生年月日": "2021年3月9日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "スノースタイル",
+  "毛色": "芦毛",
+  "産地": "安平町",
+  "馬名意味": "冠名+白い(独)の英語読み",
+  "取引市場": "",
+  "総賞金": "97,051,000 円",
+  "内付加賞": "1,251,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "24,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 4,
+  "second": 5,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月1日",
+   "venue": "京都",
+   "race_name": "まほろばS",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年6月21日",
+   "venue": "阪神",
+   "race_name": "しらさぎS",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 8,
+   "finish": "16",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年5月31日",
+   "venue": "京都",
+   "race_name": "渡月橋S",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2026年3月8日",
+   "venue": "阪神",
+   "race_name": "岸和田S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 3,
+   "finish": "10",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年2月1日",
+   "venue": "東京",
+   "race_name": "節分S",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年12月21日",
+   "venue": "阪神",
+   "race_name": "六甲アイラS",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年10月25日",
+   "venue": "京都",
+   "race_name": "長岡京S",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 13,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年9月27日",
+   "venue": "中山",
+   "race_name": "秋風S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 3,
+   "finish": "14",
+   "jockey": "K.リョン"
+  },
+  {
+   "date": "2025年6月22日",
+   "venue": "東京",
+   "race_name": "多摩川S",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2024年10月20日",
+   "venue": "京都",
+   "race_name": "キセキC",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 17,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2024年6月16日",
+   "venue": "京都",
+   "race_name": "皆生特別",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2024年5月18日",
+   "venue": "京都",
+   "race_name": "メルボルンT",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2024年3月23日",
+   "venue": "阪神",
+   "race_name": "毎日杯",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 8,
+   "finish": "5",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2024年1月27日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2024年1月8日",
+   "venue": "京都",
+   "race_name": "3歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 18,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "武 豊"
+  }
+ ],
+ "name": "スマートワイス",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021105618/C3",
+ "last_card": "20261101",
+ "fetched": "2026-11-20 05:23"
+}

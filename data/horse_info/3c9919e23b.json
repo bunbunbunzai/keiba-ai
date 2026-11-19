@@ -1,0 +1,101 @@
+{
+ "profile": {
+  "父": "Lucky Vega",
+  "性別": "牡",
+  "馬主名": "張 月勝",
+  "母": "Sapphire Ring",
+  "馬齢": "3歳",
+  "調教師名": "高柳 大輔 （栗東）",
+  "母の父": "Galileo",
+  "生年月日": "2023年3月20日",
+  "母の母": "Words",
+  "毛色": "黒鹿毛",
+  "産地": "愛",
+  "馬名意味": "幸運な石",
+  "取引市場": "",
+  "総賞金": "8,120,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 6,
+  "wins": 1,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年10月31日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 5,
+   "finish": "5",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2026年9月12日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 18,
+   "popularity": 11,
+   "finish": "1",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2026年7月4日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 16,
+   "popularity": 7,
+   "finish": "12",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2026年6月14日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 9,
+   "finish": "3",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2026年4月5日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 5,
+   "finish": "7",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2026年3月22日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 8,
+   "finish": "8",
+   "jockey": "田口 貫太"
+  }
+ ],
+ "name": "ラッキーストーン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023110018/D8",
+ "last_card": "20261031",
+ "fetched": "2026-11-20 05:44"
+}

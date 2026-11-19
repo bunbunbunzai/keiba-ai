@@ -1,0 +1,223 @@
+{
+ "profile": {
+  "父": "ナダル",
+  "性別": "牡",
+  "馬主名": "寺田 千代乃",
+  "母": "プリモンディアル",
+  "馬齢": "4歳",
+  "調教師名": "高橋 亮 （栗東）",
+  "母の父": "ディープインパクト",
+  "生年月日": "2022年4月13日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "フレンチバレリーナ",
+  "毛色": "黒鹿毛",
+  "産地": "安平町",
+  "馬名意味": "冠名+勇者",
+  "取引市場": "",
+  "総賞金": "48,494,000 円",
+  "内付加賞": "114,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 17,
+  "wins": 3,
+  "second": 2,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年10月31日",
+   "venue": "京都",
+   "race_name": "ハロウィンS",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 16,
+   "popularity": 2,
+   "finish": "7",
+   "jockey": "横山 典弘"
+  },
+  {
+   "date": "2026年9月27日",
+   "venue": "阪神",
+   "race_name": "堺ステークス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "横山 典弘"
+  },
+  {
+   "date": "2026年9月12日",
+   "venue": "阪神",
+   "race_name": "竹田城S",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 2,
+   "finish": "9",
+   "jockey": "横山 典弘"
+  },
+  {
+   "date": "2026年5月30日",
+   "venue": "京都",
+   "race_name": "桃山S",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "横山 典弘"
+  },
+  {
+   "date": "2026年4月5日",
+   "venue": "阪神",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "横山 典弘"
+  },
+  {
+   "date": "2026年2月22日",
+   "venue": "小倉",
+   "race_name": "和布刈特別",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 16,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "太宰 啓介"
+  },
+  {
+   "date": "2026年1月25日",
+   "venue": "小倉",
+   "race_name": "響灘特別",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 16,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "太宰 啓介"
+  },
+  {
+   "date": "2025年11月22日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "横山 典弘"
+  },
+  {
+   "date": "2025年10月25日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "太宰 啓介"
+  },
+  {
+   "date": "2025年10月5日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 1,
+   "finish": "8",
+   "jockey": "太宰 啓介"
+  },
+  {
+   "date": "2025年7月20日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "太宰 啓介"
+  },
+  {
+   "date": "2025年5月31日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 10,
+   "popularity": 2,
+   "finish": "6",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年2月16日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 2,
+   "finish": "5",
+   "jockey": "横山 典弘"
+  },
+  {
+   "date": "2025年1月18日",
+   "venue": "中京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "6",
+   "jockey": "横山 典弘"
+  },
+  {
+   "date": "2024年11月3日",
+   "venue": "京都",
+   "race_name": "もちの木賞",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "藤岡 佑介"
+  },
+  {
+   "date": "2024年10月13日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "横山 典弘"
+  },
+  {
+   "date": "2024年9月21日",
+   "venue": "中京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 4,
+   "finish": "9",
+   "jockey": "横山 典弘"
+  }
+ ],
+ "name": "マテンロウブレイブ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022105021/14",
+ "last_card": "20261031",
+ "fetched": "2026-11-20 05:37"
+}

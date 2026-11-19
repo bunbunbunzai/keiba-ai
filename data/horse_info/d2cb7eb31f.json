@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "シルバーステート",
+  "性別": "牝",
+  "馬主名": "西山 茂行",
+  "母": "ハイノリッジ",
+  "馬齢": "3歳",
+  "調教師名": "橋口 慎介 （栗東）",
+  "母の父": "マンハッタンカフェ",
+  "生年月日": "2023年4月10日",
+  "生産牧場": "鮫川 啓一",
+  "母の母": "ゴールドグレース",
+  "毛色": "黒鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "冠名+人名より",
+  "取引市場": "",
+  "総賞金": "11,900,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 1,
+  "second": 1,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 3,
+   "finish": "14",
+   "jockey": "小林 美駒"
+  },
+  {
+   "date": "2026年8月9日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "16",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2026年7月25日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2026年6月7日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2026年4月12日",
+   "venue": "阪神",
+   "race_name": "忘れな草賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 6,
+   "finish": "12",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2026年2月14日",
+   "venue": "東京",
+   "race_name": "クイーンC",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 6,
+   "finish": "15",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2026年1月12日",
+   "venue": "京都",
+   "race_name": "3歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "池添 謙一"
+  }
+ ],
+ "name": "ニシノサリーナ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023105141/F1",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:30"
+}

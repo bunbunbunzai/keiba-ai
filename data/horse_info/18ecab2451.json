@@ -1,0 +1,201 @@
+{
+ "profile": {
+  "父": "キズナ",
+  "性別": "せん",
+  "馬主名": "前田 幸貴",
+  "母": "エディン",
+  "馬齢": "4歳",
+  "調教師名": "栗田 徹 （美浦）",
+  "母の父": "ジャングルポケット",
+  "生年月日": "2022年4月2日",
+  "生産牧場": "(株)ノースヒルズ",
+  "母の母": "ナインミューズ",
+  "毛色": "黒鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "絆、つながり(エスペラント)",
+  "取引市場": "",
+  "総賞金": "23,774,000 円",
+  "内付加賞": "34,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 2,
+  "second": 1,
+  "third": 3
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "福島",
+   "race_name": "三陸特別",
+   "surface": "芝",
+   "distance": 2600,
+   "field": 16,
+   "popularity": 13,
+   "finish": "13",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2026年7月25日",
+   "venue": "札幌",
+   "race_name": "ライラック賞",
+   "surface": "芝",
+   "distance": 2600,
+   "field": 11,
+   "popularity": 6,
+   "finish": "8",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2026年7月5日",
+   "venue": "函館",
+   "race_name": "横津岳特別",
+   "surface": "芝",
+   "distance": 2600,
+   "field": 11,
+   "popularity": 6,
+   "finish": "9",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2026年4月5日",
+   "venue": "中山",
+   "race_name": "安房特別",
+   "surface": "芝",
+   "distance": 2500,
+   "field": 8,
+   "popularity": 4,
+   "finish": "7",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2025年12月28日",
+   "venue": "中山",
+   "race_name": "グッドラック",
+   "surface": "芝",
+   "distance": 2500,
+   "field": 14,
+   "popularity": 6,
+   "finish": "10",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2025年10月18日",
+   "venue": "京都",
+   "race_name": "清滝特別",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 9,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2025年9月15日",
+   "venue": "中山",
+   "race_name": "セントライト",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 12,
+   "popularity": 9,
+   "finish": "7",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2025年7月5日",
+   "venue": "函館",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2600,
+   "field": 12,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2025年6月15日",
+   "venue": "函館",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2600,
+   "field": 10,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2025年5月25日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 16,
+   "popularity": 5,
+   "finish": "3",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2025年4月27日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 13,
+   "popularity": 4,
+   "finish": "4",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2025年2月22日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 18,
+   "popularity": 3,
+   "finish": "11",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2024年12月28日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "12",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2024年12月7日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2024年10月14日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 8,
+   "finish": "3",
+   "jockey": "鮫島 克駿"
+  }
+ ],
+ "name": "リギーロ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022106624/82",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 04:06"
+}

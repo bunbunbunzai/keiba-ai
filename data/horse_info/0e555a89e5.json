@@ -1,0 +1,91 @@
+{
+ "profile": {
+  "父": "Frankel",
+  "性別": "牝",
+  "馬主名": "(有)サンデーレーシング",
+  "母": "クールサンバ",
+  "馬齢": "3歳",
+  "調教師名": "池添 学 （栗東）",
+  "母の父": "The Wow Signal",
+  "生年月日": "2023年3月6日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "Marechale",
+  "毛色": "黒鹿毛",
+  "産地": "安平町",
+  "馬名意味": "誠実な心(仏)",
+  "取引市場": "",
+  "総賞金": "7,500,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 5,
+  "wins": 1,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 15,
+   "finish": "18",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2026年9月5日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 9,
+   "finish": "12",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年12月27日",
+   "venue": "阪神",
+   "race_name": "万両賞",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 10,
+   "popularity": 5,
+   "finish": "10",
+   "jockey": "C.デムーロ"
+  },
+  {
+   "date": "2025年9月28日",
+   "venue": "中山",
+   "race_name": "サフラン賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 4,
+   "finish": "6",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年7月12日",
+   "venue": "小倉",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  }
+ ],
+ "name": "クールフラン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023106985/74",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:38"
+}

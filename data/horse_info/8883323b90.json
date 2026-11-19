@@ -1,0 +1,146 @@
+{
+ "profile": {
+  "父": "グレーターロンドン",
+  "性別": "牝",
+  "馬主名": "本田 土寿",
+  "母": "ミラノリッチ",
+  "馬齢": "3歳",
+  "調教師名": "畑端 省吾 （栗東）",
+  "母の父": "キングカメハメハ",
+  "生年月日": "2023年4月24日",
+  "生産牧場": "本田 土寿",
+  "母の母": "ファイヤーチェリー",
+  "毛色": "栗毛",
+  "産地": "熊本県",
+  "馬名意味": "冠名+ナポリ",
+  "取引市場": "",
+  "総賞金": "32,702,000 円",
+  "内付加賞": "172,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 10,
+  "wins": 1,
+  "second": 5,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "高倉 稜"
+  },
+  {
+   "date": "2026年10月11日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "高倉 稜"
+  },
+  {
+   "date": "2026年5月31日",
+   "venue": "京都",
+   "race_name": "白百合S",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "高倉 稜"
+  },
+  {
+   "date": "2026年4月25日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 7,
+   "finish": "1",
+   "jockey": "高倉 稜"
+  },
+  {
+   "date": "2026年2月21日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 8,
+   "finish": "4",
+   "jockey": "高倉 稜"
+  },
+  {
+   "date": "2026年1月31日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 11,
+   "finish": "2",
+   "jockey": "高倉 稜"
+  },
+  {
+   "date": "2026年1月4日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 6,
+   "finish": "10",
+   "jockey": "太宰 啓介"
+  },
+  {
+   "date": "2025年7月19日",
+   "venue": "小倉",
+   "race_name": "ひまわり賞",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "太宰 啓介"
+  },
+  {
+   "date": "2025年7月6日",
+   "venue": "小倉",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "太宰 啓介"
+  },
+  {
+   "date": "2025年6月28日",
+   "venue": "小倉",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 5,
+   "finish": "3",
+   "jockey": "太宰 啓介"
+  }
+ ],
+ "name": "ダイチノナポリ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023109106/AC",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:45"
+}

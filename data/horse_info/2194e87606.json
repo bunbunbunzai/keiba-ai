@@ -1,0 +1,91 @@
+{
+ "profile": {
+  "父": "シルバーステート",
+  "性別": "牝",
+  "馬主名": "大川 徹",
+  "母": "スマートオーシャン",
+  "馬齢": "3歳",
+  "調教師名": "石橋 守 （栗東）",
+  "母の父": "Mr. Greeley",
+  "生年月日": "2023年3月6日",
+  "生産牧場": "三嶋牧場",
+  "母の母": "Ocean Queen",
+  "毛色": "青鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "冠名+ネイティブアメリカンの言葉で夜明け",
+  "取引市場": "",
+  "総賞金": "9,220,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 5,
+  "wins": 1,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年10月31日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年8月15日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 1,
+   "finish": "6",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年6月21日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年3月7日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 2,
+   "finish": "6",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2026年2月10日",
+   "venue": "京都",
+   "race_name": "3歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "浜中 俊"
+  }
+ ],
+ "name": "スマートティアナ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023102225/01",
+ "last_card": "20261031",
+ "fetched": "2026-11-20 05:37"
+}

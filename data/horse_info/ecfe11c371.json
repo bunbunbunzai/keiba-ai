@@ -1,0 +1,201 @@
+{
+ "profile": {
+  "父": "ドレフォン",
+  "性別": "牡",
+  "馬主名": "前迫 義幸",
+  "母": "ハピネスダンサー",
+  "馬齢": "5歳",
+  "調教師名": "千葉 直人 （美浦）",
+  "母の父": "メイショウサムソン",
+  "生年月日": "2021年4月10日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "クロノロジスト",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "冠名+巨匠(独)",
+  "取引市場": "",
+  "総賞金": "26,200,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 2,
+  "second": 3,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "東京",
+   "race_name": "三浦特別",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 6,
+   "finish": "12",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2026年9月22日",
+   "venue": "中山",
+   "race_name": "Mディープイ",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 6,
+   "finish": "7",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2026年8月23日",
+   "venue": "中京",
+   "race_name": "有松特別",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 6,
+   "finish": "10",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2026年6月14日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 12,
+   "popularity": 3,
+   "finish": "8",
+   "jockey": "M.ディー"
+  },
+  {
+   "date": "2026年4月26日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2026年2月1日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "長浜 鴻緒"
+  },
+  {
+   "date": "2025年10月26日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年3月29日",
+   "venue": "中京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2024年11月16日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 6,
+   "finish": "5",
+   "jockey": "北村 宏司"
+  },
+  {
+   "date": "2024年10月20日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 12,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "北村 宏司"
+  },
+  {
+   "date": "2024年7月27日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 4,
+   "finish": "7",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2024年5月12日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 6,
+   "finish": "9",
+   "jockey": "北村 宏司"
+  },
+  {
+   "date": "2024年1月21日",
+   "venue": "中山",
+   "race_name": "若竹賞",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 5,
+   "finish": "11",
+   "jockey": "石川 裕紀人"
+  },
+  {
+   "date": "2023年8月26日",
+   "venue": "新潟",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "北村 宏司"
+  },
+  {
+   "date": "2023年6月25日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "北村 宏司"
+  }
+ ],
+ "name": "セブンマイスター",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021105688/33",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:19"
+}

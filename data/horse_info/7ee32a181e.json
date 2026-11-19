@@ -1,0 +1,157 @@
+{
+ "profile": {
+  "父": "ベンバトル",
+  "性別": "牡",
+  "馬主名": "(株)ウイン",
+  "母": "ウインファビラス",
+  "馬齢": "3歳",
+  "調教師名": "鈴木 慎太郎 （美浦）",
+  "母の父": "ステイゴールド",
+  "生年月日": "2023年5月10日",
+  "生産牧場": "コスモヴューファーム",
+  "母の母": "サマーエタニティ",
+  "毛色": "芦毛",
+  "産地": "新冠町",
+  "馬名意味": "冠名+素晴らしい(仏)",
+  "取引市場": "",
+  "総賞金": "13,000,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 11,
+  "wins": 1,
+  "second": 3,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "福島",
+   "race_name": "三春駒特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 7,
+   "finish": "11",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2026年6月27日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2026年5月9日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "石神 深道"
+  },
+  {
+   "date": "2026年4月18日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "石神 深道"
+  },
+  {
+   "date": "2026年2月28日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 3,
+   "finish": "7",
+   "jockey": "武藤 雅"
+  },
+  {
+   "date": "2026年2月14日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 8,
+   "finish": "2",
+   "jockey": "石神 深道"
+  },
+  {
+   "date": "2026年1月31日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 7,
+   "finish": "6",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2025年11月24日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 8,
+   "finish": "8",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2025年11月9日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 9,
+   "finish": "6",
+   "jockey": "松岡 正海"
+  },
+  {
+   "date": "2025年9月27日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 8,
+   "finish": "8",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2025年7月26日",
+   "venue": "新潟",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 7,
+   "finish": "6",
+   "jockey": "三浦 皇成"
+  }
+ ],
+ "name": "ウインマニフィーク",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023105862/DB",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:13"
+}

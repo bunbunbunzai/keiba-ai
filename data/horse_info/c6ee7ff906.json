@@ -1,0 +1,168 @@
+{
+ "profile": {
+  "父": "ディーマジェスティ",
+  "性別": "牝",
+  "馬主名": "(株)ノルマンディーサラブレッドレーシング",
+  "母": "テルヌーヴ",
+  "馬齢": "3歳",
+  "調教師名": "千葉 直人 （美浦）",
+  "母の父": "Henrythenavigator",
+  "生年月日": "2023年2月28日",
+  "生産牧場": "岡田スタツド",
+  "母の母": "Ms Louisett",
+  "毛色": "鹿毛",
+  "産地": "新ひだか町",
+  "馬名意味": "威厳(マジェスティ)とラテン語の大地(テラ)の組合せ。両親名より",
+  "取引市場": "",
+  "総賞金": "13,500,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 12,
+  "wins": 1,
+  "second": 2,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 16,
+   "popularity": 11,
+   "finish": "11",
+   "jockey": "石神 深道"
+  },
+  {
+   "date": "2026年10月18日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 15,
+   "finish": "2",
+   "jockey": "松本 大輝"
+  },
+  {
+   "date": "2026年9月20日",
+   "venue": "中山",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 6,
+   "finish": "15",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2026年6月27日",
+   "venue": "函館",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 11,
+   "popularity": 4,
+   "finish": "6",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2026年6月14日",
+   "venue": "函館",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 13,
+   "popularity": 4,
+   "finish": "10",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2026年5月31日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 13,
+   "popularity": 8,
+   "finish": "9",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年3月28日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "M.ディー"
+  },
+  {
+   "date": "2026年3月14日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 7,
+   "finish": "2",
+   "jockey": "M.ディー"
+  },
+  {
+   "date": "2026年2月21日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 9,
+   "finish": "8",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2025年12月7日",
+   "venue": "中京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 9,
+   "finish": "13",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2025年11月23日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1300,
+   "field": 16,
+   "popularity": 2,
+   "finish": "6",
+   "jockey": "A.プーシャン"
+  },
+  {
+   "date": "2025年11月8日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 13,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "木幡 巧也"
+  }
+ ],
+ "name": "マジェステラ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023102390/63",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:11"
+}

@@ -1,0 +1,212 @@
+{
+ "profile": {
+  "父": "ドゥラメンテ",
+  "性別": "牝",
+  "馬主名": "宇田 豊",
+  "母": "ベアインマインド",
+  "馬齢": "4歳",
+  "調教師名": "藤岡 健一 （栗東）",
+  "母の父": "ディープインパクト",
+  "生年月日": "2022年1月24日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "ウルトラブレンド",
+  "毛色": "黒鹿毛",
+  "産地": "安平町",
+  "馬名意味": "冠名+父母名の一部",
+  "取引市場": "",
+  "総賞金": "40,312,000 円",
+  "内付加賞": "82,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 16,
+  "wins": 2,
+  "second": 2,
+  "third": 3
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 8,
+   "popularity": 6,
+   "finish": "5",
+   "jockey": "古川 吉洋"
+  },
+  {
+   "date": "2026年10月25日",
+   "venue": "東京",
+   "race_name": "山中湖特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 7,
+   "finish": "2",
+   "jockey": "古川 吉洋"
+  },
+  {
+   "date": "2026年9月20日",
+   "venue": "阪神",
+   "race_name": "夕月特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 3,
+   "finish": "9",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年6月28日",
+   "venue": "福島",
+   "race_name": "松島特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 13,
+   "popularity": 8,
+   "finish": "5",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2026年6月7日",
+   "venue": "阪神",
+   "race_name": "三木特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 2,
+   "finish": "5",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年3月29日",
+   "venue": "阪神",
+   "race_name": "四国新聞杯",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 7,
+   "popularity": 4,
+   "finish": "4",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2026年3月1日",
+   "venue": "阪神",
+   "race_name": "山陽特別",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 9,
+   "popularity": 5,
+   "finish": "5",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2026年2月10日",
+   "venue": "東京",
+   "race_name": "4歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 5,
+   "finish": "7",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2025年11月22日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2025年10月4日",
+   "venue": "東京",
+   "race_name": "八ヶ岳特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 2,
+   "finish": "7",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2025年9月15日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 8,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年7月6日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年5月3日",
+   "venue": "京都",
+   "race_name": "矢車賞",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 6,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2025年3月29日",
+   "venue": "阪神",
+   "race_name": "君子蘭賞",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2025年3月2日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 18,
+   "popularity": 10,
+   "finish": "1",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2025年2月1日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "高杉 吏麒"
+  }
+ ],
+ "name": "エバーグルーヴ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022105032/97",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:10"
+}

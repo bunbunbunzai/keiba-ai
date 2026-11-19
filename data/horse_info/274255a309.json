@@ -1,0 +1,146 @@
+{
+ "profile": {
+  "父": "コントレイル",
+  "性別": "牝",
+  "馬主名": "矢野 悦三",
+  "母": "プレイスオブアーナー",
+  "馬齢": "3歳",
+  "調教師名": "中竹 和也 （栗東）",
+  "母の父": "First Samurai",
+  "生年月日": "2023年2月23日",
+  "生産牧場": "クラウン日高牧場",
+  "母の母": "My Flag",
+  "毛色": "青鹿毛",
+  "産地": "日高町",
+  "馬名意味": "冠名+航跡、飛行機雲(西)",
+  "取引市場": "",
+  "総賞金": "2,690,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "2,100,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 10,
+  "wins": 1,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 16,
+   "finish": "12",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2026年10月31日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 12,
+   "finish": "10",
+   "jockey": "柴田 裕一郎"
+  },
+  {
+   "date": "2026年7月23日",
+   "venue": "園田",
+   "race_name": "六甲山特別",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 9,
+   "popularity": null,
+   "finish": "1",
+   "jockey": "柴田 裕一郎"
+  },
+  {
+   "date": "2026年6月20日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 9,
+   "finish": "10",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2026年5月31日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 12,
+   "finish": "5",
+   "jockey": "柴田 裕一郎"
+  },
+  {
+   "date": "2026年4月8日",
+   "venue": "園田",
+   "race_name": "神鍋山特別",
+   "surface": "ダ",
+   "distance": 1870,
+   "field": 8,
+   "popularity": null,
+   "finish": "2",
+   "jockey": "柴田 裕一郎"
+  },
+  {
+   "date": "2026年2月1日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 12,
+   "finish": "6",
+   "jockey": "酒井 学"
+  },
+  {
+   "date": "2026年1月11日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 16,
+   "finish": "11",
+   "jockey": "橋木 太希"
+  },
+  {
+   "date": "2025年12月21日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 18,
+   "popularity": 16,
+   "finish": "16",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2025年9月20日",
+   "venue": "阪神",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 8,
+   "finish": "11",
+   "jockey": "池添 謙一"
+  }
+ ],
+ "name": "マリノエステーラ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023100804/B6",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:46"
+}

@@ -1,0 +1,79 @@
+{
+ "profile": {
+  "父": "Not This Time",
+  "性別": "牡",
+  "馬主名": "(株)ダノックス",
+  "母": "In a Jif",
+  "馬齢": "3歳",
+  "調教師名": "田中 博康 （美浦）",
+  "母の父": "Saintly Look",
+  "生年月日": "2023年4月21日",
+  "母の母": "Damie's Peanut",
+  "毛色": "栗毛",
+  "産地": "米",
+  "馬名意味": "冠名+動物名",
+  "取引市場": "",
+  "総賞金": "10,000,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "2,500,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 4,
+  "wins": 1,
+  "second": 2,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2026年8月26日",
+   "venue": "船橋",
+   "race_name": "NTブーツ特",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 13,
+   "popularity": null,
+   "finish": "1",
+   "jockey": "矢野 貴之"
+  },
+  {
+   "date": "2026年6月21日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年11月16日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 12,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "A.プーシャン"
+  }
+ ],
+ "name": "ダノンマスタング",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023110093/19",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:41"
+}

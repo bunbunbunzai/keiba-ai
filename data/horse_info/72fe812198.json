@@ -1,0 +1,190 @@
+{
+ "profile": {
+  "父": "ロードカナロア",
+  "性別": "牝",
+  "馬主名": "中村 祐子",
+  "母": "キープセイク",
+  "馬齢": "4歳",
+  "調教師名": "中舘 英二 （美浦）",
+  "母の父": "Sea The Stars",
+  "生年月日": "2022年2月14日",
+  "生産牧場": "ケイアイファーム",
+  "母の母": "Suisun",
+  "毛色": "鹿毛",
+  "産地": "新ひだか町",
+  "馬名意味": "黄花九輪桜",
+  "取引市場": "",
+  "総賞金": "79,115,000 円",
+  "内付加賞": "995,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "24,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 14,
+  "wins": 4,
+  "second": 1,
+  "third": 4
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "新潟",
+   "race_name": "ルミエAD",
+   "surface": "芝",
+   "distance": 1000,
+   "field": 17,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年8月16日",
+   "venue": "新潟",
+   "race_name": "稲妻S",
+   "surface": "芝",
+   "distance": 1000,
+   "field": 13,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2026年8月2日",
+   "venue": "新潟",
+   "race_name": "アイビスSD",
+   "surface": "芝",
+   "distance": 1000,
+   "field": 17,
+   "popularity": 10,
+   "finish": "3",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2026年5月9日",
+   "venue": "新潟",
+   "race_name": "駿風S",
+   "surface": "芝",
+   "distance": 1000,
+   "field": 16,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "F.ゴンサルベス"
+  },
+  {
+   "date": "2026年4月25日",
+   "venue": "福島",
+   "race_name": "福島中央TV",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 11,
+   "popularity": 9,
+   "finish": "5",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2025年12月28日",
+   "venue": "中山",
+   "race_name": "フェアウェル",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 6,
+   "finish": "10",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年9月28日",
+   "venue": "中山",
+   "race_name": "外房S",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "9",
+   "jockey": "横山 典弘"
+  },
+  {
+   "date": "2025年8月17日",
+   "venue": "札幌",
+   "race_name": "大通公園特別",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 11,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年7月6日",
+   "venue": "函館",
+   "race_name": "立待岬特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 11,
+   "popularity": 5,
+   "finish": "6",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年6月21日",
+   "venue": "函館",
+   "race_name": "下北半島特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 10,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年4月13日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年1月13日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2024年12月22日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2024年11月30日",
+   "venue": "中山",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 5,
+   "finish": "3",
+   "jockey": "西村 淳也"
+  }
+ ],
+ "name": "カウスリップ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022100627/41",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:55"
+}

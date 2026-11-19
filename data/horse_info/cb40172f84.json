@@ -1,0 +1,201 @@
+{
+ "profile": {
+  "父": "キズナ",
+  "性別": "牡",
+  "馬主名": "国本 哲秀",
+  "母": "エセンテペ",
+  "馬齢": "6歳",
+  "調教師名": "清水 久詞 （栗東）",
+  "母の父": "Oratorio",
+  "生年月日": "2020年2月29日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "Mythie",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "冠名+人名より",
+  "取引市場": "2020年 セレクトセール",
+  "総賞金": "60,571,000 円",
+  "内付加賞": "771,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 3,
+  "second": 4,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月1日",
+   "venue": "東京",
+   "race_name": "紅葉S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 13,
+   "finish": "14",
+   "jockey": "石橋 脩"
+  },
+  {
+   "date": "2025年2月9日",
+   "venue": "京都",
+   "race_name": "斑鳩S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 7,
+   "finish": "2",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2025年1月12日",
+   "venue": "中京",
+   "race_name": "新春S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 7,
+   "finish": "10",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2024年2月18日",
+   "venue": "京都",
+   "race_name": "斑鳩S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 12,
+   "popularity": 3,
+   "finish": "8",
+   "jockey": "A.ルメートル"
+  },
+  {
+   "date": "2023年11月26日",
+   "venue": "京都",
+   "race_name": "清水S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 1,
+   "finish": "9",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2023年10月22日",
+   "venue": "京都",
+   "race_name": "三年坂S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2023年9月17日",
+   "venue": "阪神",
+   "race_name": "仲秋S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2023年7月23日",
+   "venue": "中京",
+   "race_name": "有松特別",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 10,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2023年6月25日",
+   "venue": "阪神",
+   "race_name": "城崎特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2023年2月18日",
+   "venue": "阪神",
+   "race_name": "つばき賞",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 3,
+   "finish": "6",
+   "jockey": "岩田 康誠"
+  },
+  {
+   "date": "2023年1月22日",
+   "venue": "中山",
+   "race_name": "若竹賞",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "岩田 康誠"
+  },
+  {
+   "date": "2022年11月12日",
+   "venue": "阪神",
+   "race_name": "デイリー2S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 10,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2022年10月15日",
+   "venue": "阪神",
+   "race_name": "紫菊賞",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 7,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2022年9月17日",
+   "venue": "中京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "岩田 康誠"
+  },
+  {
+   "date": "2022年8月13日",
+   "venue": "新潟",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 17,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "岩田 康誠"
+  }
+ ],
+ "name": "ショウナンアレクサ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002020103271/D0",
+ "last_card": "20261101",
+ "fetched": "2026-11-20 05:28"
+}

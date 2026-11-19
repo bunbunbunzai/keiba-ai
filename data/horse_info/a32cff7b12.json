@@ -1,0 +1,146 @@
+{
+ "profile": {
+  "父": "サートゥルナーリア",
+  "性別": "牝",
+  "馬主名": "山岡 正人",
+  "母": "ウォーターラボ",
+  "馬齢": "4歳",
+  "調教師名": "高柳 大輔 （栗東）",
+  "母の父": "マンハッタンカフェ",
+  "生年月日": "2022年3月18日",
+  "生産牧場": "伏木田牧場",
+  "母の母": "クライウィズジョイ",
+  "毛色": "黒鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "冠名+空気のように軽い、軽快なさま",
+  "取引市場": "",
+  "総賞金": "9,600,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 10,
+  "wins": 1,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 7,
+   "finish": "6",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2026年10月17日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 10,
+   "finish": "10",
+   "jockey": "柴田 裕一郎"
+  },
+  {
+   "date": "2026年7月26日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 12,
+   "finish": "11",
+   "jockey": "亀田 温心"
+  },
+  {
+   "date": "2026年6月13日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 6,
+   "finish": "9",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2026年5月24日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2026年4月25日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 8,
+   "finish": "11",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2025年3月8日",
+   "venue": "阪神",
+   "race_name": "Fレビュー",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 9,
+   "finish": "9",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2024年11月2日",
+   "venue": "京都",
+   "race_name": "ファンタジー",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 5,
+   "finish": "8",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2024年8月25日",
+   "venue": "札幌",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1500,
+   "field": 7,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2024年8月10日",
+   "venue": "札幌",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1500,
+   "field": 7,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "武 豊"
+  }
+ ],
+ "name": "ウォーターエアリー",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022100404/66",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:45"
+}

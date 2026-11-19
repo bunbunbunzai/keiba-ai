@@ -1,0 +1,168 @@
+{
+ "profile": {
+  "父": "ドレフォン",
+  "性別": "牝",
+  "馬主名": "(有)キャロットファーム",
+  "母": "マスターワーク",
+  "馬齢": "4歳",
+  "調教師名": "勢司 和浩 （美浦）",
+  "母の父": "ダイワメジャー",
+  "生年月日": "2022年4月20日",
+  "生産牧場": "(有)社台コーポレーション白老ファーム",
+  "母の母": "イグジビットワン",
+  "毛色": "栗毛",
+  "産地": "白老町",
+  "馬名意味": "傑作(独)。母名より連想",
+  "取引市場": "",
+  "総賞金": "34,196,000 円",
+  "内付加賞": "126,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 12,
+  "wins": 2,
+  "second": 1,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "東京",
+   "race_name": "山中湖特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2026年7月19日",
+   "venue": "函館",
+   "race_name": "かもめ島特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年6月13日",
+   "venue": "函館",
+   "race_name": "松前特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年3月22日",
+   "venue": "中山",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 6,
+   "finish": "12",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2026年2月10日",
+   "venue": "東京",
+   "race_name": "4歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 4,
+   "finish": "5",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2025年11月24日",
+   "venue": "福島",
+   "race_name": "五色沼特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "6",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年9月7日",
+   "venue": "中山",
+   "race_name": "紫苑S",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 13,
+   "popularity": 8,
+   "finish": "10",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年6月28日",
+   "venue": "函館",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年4月27日",
+   "venue": "東京",
+   "race_name": "フローラS",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 11,
+   "finish": "18",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2025年1月12日",
+   "venue": "中山",
+   "race_name": "フェアリーS",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "T.マーカンド"
+  },
+  {
+   "date": "2024年10月26日",
+   "venue": "新潟",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2024年9月8日",
+   "venue": "中山",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 10,
+   "finish": "3",
+   "jockey": "荻野 極"
+  }
+ ],
+ "name": "マイスターヴェルク",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022105849/54",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:59"
+}

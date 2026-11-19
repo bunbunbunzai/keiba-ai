@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "コントレイル",
+  "性別": "牡",
+  "馬主名": "(株)ノースヒルズ",
+  "母": "ゲットリッドオブワットアイレスユー",
+  "馬齢": "3歳",
+  "調教師名": "矢作 芳人 （栗東）",
+  "母の父": "Ghostzapper",
+  "生年月日": "2023年2月27日",
+  "生産牧場": "(株)ノースヒルズ",
+  "母の母": "Autobahn Girl",
+  "毛色": "黒鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "飛行士(独)",
+  "取引市場": "",
+  "総賞金": "7,500,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 1,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 12,
+   "finish": "14",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2026年10月31日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 11,
+   "finish": "12",
+   "jockey": "岩田 康誠"
+  },
+  {
+   "date": "2026年9月5日",
+   "venue": "札幌",
+   "race_name": "Fビレッジ特",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 12,
+   "finish": "7",
+   "jockey": "古川 奈穂"
+  },
+  {
+   "date": "2026年7月26日",
+   "venue": "札幌",
+   "race_name": "厚岸特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 9,
+   "popularity": 4,
+   "finish": "9",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年7月11日",
+   "venue": "小倉",
+   "race_name": "英彦山特別",
+   "surface": "芝",
+   "distance": 2600,
+   "field": 11,
+   "popularity": 8,
+   "finish": "6",
+   "jockey": "J.コレット"
+  },
+  {
+   "date": "2025年12月13日",
+   "venue": "阪神",
+   "race_name": "エリカ賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 9,
+   "popularity": 5,
+   "finish": "8",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年11月29日",
+   "venue": "京都",
+   "race_name": "京都2歳S",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 8,
+   "finish": "8",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年9月27日",
+   "venue": "阪神",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "坂井 瑠星"
+  }
+ ],
+ "name": "フリーガー",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023104389/3C",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:47"
+}

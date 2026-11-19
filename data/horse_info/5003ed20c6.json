@@ -1,0 +1,201 @@
+{
+ "profile": {
+  "父": "ブリックスアンドモルタル",
+  "性別": "牝",
+  "馬主名": "(株)インゼルレーシング",
+  "母": "サラス",
+  "馬齢": "4歳",
+  "調教師名": "蛯名 正義 （美浦）",
+  "母の父": "オルフェーヴル",
+  "生年月日": "2022年2月10日",
+  "生産牧場": "社台ファーム",
+  "母の母": "ララア",
+  "毛色": "栗毛",
+  "産地": "千歳市",
+  "馬名意味": "安らかな(伊)",
+  "取引市場": "",
+  "総賞金": "43,911,000 円",
+  "内付加賞": "51,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 2,
+  "second": 7,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2026年10月17日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 9,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2026年8月23日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 12,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2026年8月2日",
+   "venue": "新潟",
+   "race_name": "五頭連峰特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2026年5月2日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 7,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年4月18日",
+   "venue": "中山",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "岩田 康誠"
+  },
+  {
+   "date": "2026年3月21日",
+   "venue": "中京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 13,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年2月22日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年11月15日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "11",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2025年10月25日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 8,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年10月4日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年5月17日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年4月26日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 18,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年2月23日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 6,
+   "finish": "4",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2024年12月7日",
+   "venue": "中山",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 6,
+   "finish": "2",
+   "jockey": "横山 和生"
+  }
+ ],
+ "name": "リポサンテ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022105338/DC",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:04"
+}

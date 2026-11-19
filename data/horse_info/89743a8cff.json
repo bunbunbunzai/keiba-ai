@@ -1,0 +1,190 @@
+{
+ "profile": {
+  "父": "アドマイヤマーズ",
+  "性別": "牡",
+  "馬主名": "村上 憲政",
+  "母": "オアシスクイーン",
+  "馬齢": "4歳",
+  "調教師名": "高柳 大輔 （栗東）",
+  "母の父": "シニスターミニスター",
+  "生年月日": "2022年2月26日",
+  "生産牧場": "岡田牧場",
+  "母の母": "リッピアピンク",
+  "毛色": "栗毛",
+  "産地": "新ひだか町",
+  "馬名意味": "蘭の名(花言葉は優雅)+父名の一部",
+  "取引市場": "",
+  "総賞金": "25,790,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "2,800,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 14,
+  "wins": 2,
+  "second": 2,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 9,
+   "popularity": 6,
+   "finish": "9",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年10月20日",
+   "venue": "浦和",
+   "race_name": "ミズナラ盃",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 11,
+   "popularity": null,
+   "finish": "2",
+   "jockey": "和田 譲治"
+  },
+  {
+   "date": "2026年9月6日",
+   "venue": "阪神",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 12,
+   "finish": "14",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年6月13日",
+   "venue": "阪神",
+   "race_name": "安芸特別",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 5,
+   "finish": "7",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年3月1日",
+   "venue": "阪神",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 5,
+   "finish": "5",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年2月7日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年1月10日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年7月27日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 3,
+   "finish": "11",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年5月24日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 5,
+   "finish": "8",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2025年3月16日",
+   "venue": "中京",
+   "race_name": "昇竜S",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 11,
+   "finish": "7",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2025年2月8日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 6,
+   "finish": "2",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年12月8日",
+   "venue": "京都",
+   "race_name": "2歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 10,
+   "popularity": 8,
+   "finish": "3",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2024年10月20日",
+   "venue": "京都",
+   "race_name": "なでしこ賞",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 11,
+   "popularity": 6,
+   "finish": "11",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2024年8月24日",
+   "venue": "新潟",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "横山 武史"
+  }
+ ],
+ "name": "モカラマーズ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022103609/D4",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:50"
+}

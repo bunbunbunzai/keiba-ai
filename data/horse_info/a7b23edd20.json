@@ -1,0 +1,179 @@
+{
+ "profile": {
+  "父": "レイデオロ",
+  "性別": "牡",
+  "馬主名": "長谷川 祐司",
+  "母": "ラユロット",
+  "馬齢": "5歳",
+  "調教師名": "池江 泰寿 （栗東）",
+  "母の父": "エンパイアメーカー",
+  "生年月日": "2021年3月5日",
+  "生産牧場": "辻 牧場",
+  "母の母": "ユメノオーラ",
+  "毛色": "鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "フランスの地名",
+  "取引市場": "",
+  "総賞金": "162,218,000 円",
+  "内付加賞": "1,918,000 円",
+  "内地方賞金": "10,500,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "72,200,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 13,
+  "wins": 7,
+  "second": 2,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "京都",
+   "race_name": "みやこS",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 4,
+   "finish": "5",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年7月20日",
+   "venue": "盛岡",
+   "race_name": "マーキュリC",
+   "surface": "ダ",
+   "distance": 2000,
+   "field": 14,
+   "popularity": null,
+   "finish": "2",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年4月18日",
+   "venue": "阪神",
+   "race_name": "アンタレスS",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年2月28日",
+   "venue": "阪神",
+   "race_name": "仁川S",
+   "surface": "ダ",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年11月22日",
+   "venue": "京都",
+   "race_name": "シトリンS",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年9月20日",
+   "venue": "中山",
+   "race_name": "イサ殿下来場",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年3月9日",
+   "venue": "中山",
+   "race_name": "総武S",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2024年12月8日",
+   "venue": "京都",
+   "race_name": "ブエナビスC",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 10,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2024年9月8日",
+   "venue": "中京",
+   "race_name": "天竜川特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年4月27日",
+   "venue": "京都",
+   "race_name": "ユニコーンS",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 16,
+   "popularity": 2,
+   "finish": "5",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2024年4月6日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2024年2月18日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 15,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2024年1月20日",
+   "venue": "京都",
+   "race_name": "3歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 13,
+   "popularity": 2,
+   "finish": "10",
+   "jockey": "A.ルメートル"
+  }
+ ],
+ "name": "ムルソー",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021103020/37",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:37"
+}

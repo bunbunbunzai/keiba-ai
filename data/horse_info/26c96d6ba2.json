@@ -1,0 +1,135 @@
+{
+ "profile": {
+  "父": "リオンディーズ",
+  "性別": "牡",
+  "馬主名": "杉山 忠国",
+  "母": "リヴァイバル",
+  "馬齢": "3歳",
+  "調教師名": "岡田 稲男 （栗東）",
+  "母の父": "ワイルドラッシュ",
+  "生年月日": "2023年4月5日",
+  "生産牧場": "明治牧場",
+  "母の母": "ショウナンアクト",
+  "毛色": "青毛",
+  "産地": "新ひだか町",
+  "馬名意味": "蘇生",
+  "取引市場": "",
+  "総賞金": "58,953,000 円",
+  "内付加賞": "803,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "24,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 9,
+  "wins": 4,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年10月31日",
+   "venue": "東京",
+   "race_name": "ペルセウスS",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 7,
+   "finish": "2",
+   "jockey": "菱田 裕二"
+  },
+  {
+   "date": "2026年9月19日",
+   "venue": "阪神",
+   "race_name": "大阪スポ杯",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "菱田 裕二"
+  },
+  {
+   "date": "2026年8月1日",
+   "venue": "中京",
+   "race_name": "桶狭間S",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "8",
+   "jockey": "菱田 裕二"
+  },
+  {
+   "date": "2026年6月7日",
+   "venue": "阪神",
+   "race_name": "洲本特別",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "菱田 裕二"
+  },
+  {
+   "date": "2026年4月12日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 8,
+   "finish": "1",
+   "jockey": "菱田 裕二"
+  },
+  {
+   "date": "2026年3月28日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 8,
+   "finish": "1",
+   "jockey": "柴田 裕一郎"
+  },
+  {
+   "date": "2026年1月18日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 16,
+   "finish": "13",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2025年12月28日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 17,
+   "popularity": 14,
+   "finish": "8",
+   "jockey": "菱田 裕二"
+  },
+  {
+   "date": "2025年12月13日",
+   "venue": "阪神",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 7,
+   "popularity": 5,
+   "finish": "5",
+   "jockey": "菱田 裕二"
+  }
+ ],
+ "name": "リサシテーション",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023106651/E5",
+ "last_card": "20261031",
+ "fetched": "2026-11-20 05:43"
+}

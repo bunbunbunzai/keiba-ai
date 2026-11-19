@@ -1,0 +1,190 @@
+{
+ "profile": {
+  "父": "マクフィ",
+  "性別": "せん",
+  "馬主名": "国本 哲秀",
+  "母": "ショウナンカサロ",
+  "馬齢": "4歳",
+  "調教師名": "古賀 大生 （美浦）",
+  "母の父": "キングカメハメハ",
+  "生年月日": "2022年3月28日",
+  "生産牧場": "木村牧場",
+  "母の母": "ショウナンアルス",
+  "毛色": "黒鹿毛",
+  "産地": "日高町",
+  "馬名意味": "冠名+勝鬨を上げる",
+  "取引市場": "",
+  "総賞金": "15,790,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "8,600,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "8,600,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 12,
+  "wins": 3,
+  "second": 2,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1300,
+   "field": 14,
+   "popularity": 9,
+   "finish": "11",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年10月11日",
+   "venue": "",
+   "race_name": "JRAへ転入",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2026年9月1日",
+   "venue": "大井",
+   "race_name": "貴船坂賞競走",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "本田 正重"
+  },
+  {
+   "date": "2026年7月1日",
+   "venue": "大井",
+   "race_name": "タイタン賞",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "本田 正重"
+  },
+  {
+   "date": "2026年4月15日",
+   "venue": "大井",
+   "race_name": "普通C1六七",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "石川 倭"
+  },
+  {
+   "date": "2026年1月29日",
+   "venue": "大井",
+   "race_name": "普通C1六七",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 4,
+   "finish": "11",
+   "jockey": "野畑 凌"
+  },
+  {
+   "date": "2026年1月15日",
+   "venue": "大井",
+   "race_name": "普通C1五六",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 1,
+   "finish": "9",
+   "jockey": "本田 正重"
+  },
+  {
+   "date": "2025年3月26日",
+   "venue": "",
+   "race_name": "JRAより転出",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2025年1月6日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年12月15日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年11月24日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "柴田 善臣"
+  },
+  {
+   "date": "2024年11月9日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 9,
+   "finish": "2",
+   "jockey": "柴田 善臣"
+  },
+  {
+   "date": "2024年10月19日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 10,
+   "finish": "4",
+   "jockey": "柴田 善臣"
+  },
+  {
+   "date": "2024年9月29日",
+   "venue": "中山",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 17,
+   "popularity": 13,
+   "finish": "15",
+   "jockey": "佐々木 大輔"
+  }
+ ],
+ "name": "ショウナンカチドキ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022101258/0F",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:41"
+}

@@ -1,0 +1,123 @@
+{
+ "profile": {
+  "父": "Blame",
+  "性別": "牡",
+  "馬主名": "(株)ノースヒルズ",
+  "母": "Tizdaria",
+  "馬齢": "3歳",
+  "調教師名": "新谷 功一 （栗東）",
+  "母の父": "Tiznow",
+  "生年月日": "2023年3月2日",
+  "母の母": "Bridaria",
+  "毛色": "鹿毛",
+  "産地": "米",
+  "馬名意味": "サイは投げられた、やるしかない",
+  "取引市場": "",
+  "総賞金": "3,700,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "1,000,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 1,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 16,
+   "popularity": 10,
+   "finish": "4",
+   "jockey": "河原田 菜々"
+  },
+  {
+   "date": "2026年10月4日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 12,
+   "finish": "11",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2026年8月8日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1000,
+   "field": 18,
+   "popularity": 10,
+   "finish": "9",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2026年6月24日",
+   "venue": "門別",
+   "race_name": "アルキバ特別",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 7,
+   "popularity": null,
+   "finish": "1",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2026年5月10日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 5,
+   "finish": "6",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2026年4月19日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 16,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2026年2月15日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "8",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年1月24日",
+   "venue": "京都",
+   "race_name": "3歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 4,
+   "finish": "8",
+   "jockey": "横山 武史"
+  }
+ ],
+ "name": "ダイイズキャスト",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023107539/1B",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:50"
+}

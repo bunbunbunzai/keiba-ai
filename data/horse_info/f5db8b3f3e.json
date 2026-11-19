@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "ダノンキングリー",
+  "性別": "牝",
+  "馬主名": "ライオンレースホース(株)",
+  "母": "アナスタシアブルー",
+  "馬齢": "3歳",
+  "調教師名": "森 一誠 （美浦）",
+  "母の父": "ファルブラヴ",
+  "生年月日": "2023年4月28日",
+  "生産牧場": "坂東牧場",
+  "母の母": "ライラプス",
+  "毛色": "青鹿毛",
+  "産地": "平取町",
+  "馬名意味": "青い日(ポルトガル語)。幸せな気持ちを表す。母名より連想",
+  "取引市場": "",
+  "総賞金": "16,550,000 円",
+  "内付加賞": "150,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 1,
+  "second": 1,
+  "third": 3
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "福島",
+   "race_name": "三春駒特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 2,
+   "finish": "12",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2026年10月17日",
+   "venue": "新潟",
+   "race_name": "岩船特別",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 14,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2026年8月1日",
+   "venue": "新潟",
+   "race_name": "燕特別",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 12,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2026年5月24日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2026年5月2日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 14,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2026年4月12日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 18,
+   "popularity": 10,
+   "finish": "3",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2025年12月20日",
+   "venue": "中山",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 8,
+   "finish": "6",
+   "jockey": "石橋 脩"
+  }
+ ],
+ "name": "ディアアズール",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023107381/71",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:13"
+}

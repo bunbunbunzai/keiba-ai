@@ -1,0 +1,146 @@
+{
+ "profile": {
+  "父": "キズナ",
+  "性別": "牝",
+  "馬主名": "吉田 勝己",
+  "母": "スターアイル",
+  "馬齢": "5歳",
+  "調教師名": "井上 智史 （栗東）",
+  "母の父": "Rock of Gibraltar",
+  "生年月日": "2021年3月16日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "Isle de France",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "絆の島(仏)",
+  "取引市場": "",
+  "総賞金": "28,549,000 円",
+  "内付加賞": "149,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 10,
+  "wins": 2,
+  "second": 1,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "福島",
+   "race_name": "飯坂温泉特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2026年10月10日",
+   "venue": "京都",
+   "race_name": "宇治川特別",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 10,
+   "finish": "2",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2025年4月13日",
+   "venue": "福島",
+   "race_name": "花見山特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 10,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "亀田 温心"
+  },
+  {
+   "date": "2025年3月1日",
+   "venue": "小倉",
+   "race_name": "西日本新聞杯",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 8,
+   "finish": "4",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2025年1月5日",
+   "venue": "中山",
+   "race_name": "4歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 8,
+   "finish": "15",
+   "jockey": "H.ドイル"
+  },
+  {
+   "date": "2024年12月7日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "H.ドイル"
+  },
+  {
+   "date": "2024年8月10日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2024年6月15日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 8,
+   "finish": "9",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2024年3月23日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "15",
+   "jockey": "B.ムルザバエフ"
+  },
+  {
+   "date": "2024年1月14日",
+   "venue": "京都",
+   "race_name": "3歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 3,
+   "finish": "10",
+   "jockey": "酒井 学"
+  }
+ ],
+ "name": "アイルドリアン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021105605/5A",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:15"
+}

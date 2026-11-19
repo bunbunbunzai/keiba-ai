@@ -1,0 +1,179 @@
+{
+ "profile": {
+  "父": "ホッコータルマエ",
+  "性別": "牡",
+  "馬主名": "(有)住宅データ",
+  "母": "シントーアサヒ",
+  "馬齢": "4歳",
+  "調教師名": "水野 貴広 （美浦）",
+  "母の父": "ストロングリターン",
+  "生年月日": "2022年2月28日",
+  "生産牧場": "静内山田牧場",
+  "母の母": "ケセラセラ",
+  "毛色": "鹿毛",
+  "産地": "新ひだか町",
+  "馬名意味": "昇る(仏)+宇宙(仏)",
+  "取引市場": "",
+  "総賞金": "49,105,000 円",
+  "内付加賞": "205,000 円",
+  "内地方賞金": "2,800,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "16,500,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 13,
+  "wins": 2,
+  "second": 2,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "京都",
+   "race_name": "カノープスS",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 13,
+   "finish": "15",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2026年6月20日",
+   "venue": "東京",
+   "race_name": "スレイプニル",
+   "surface": "ダ",
+   "distance": 2100,
+   "field": 15,
+   "popularity": 2,
+   "finish": "11",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2026年5月10日",
+   "venue": "京都",
+   "race_name": "平城京S",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 5,
+   "finish": "3",
+   "jockey": "渡辺 竜也"
+  },
+  {
+   "date": "2026年3月8日",
+   "venue": "中山",
+   "race_name": "総武S",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 9,
+   "finish": "6",
+   "jockey": "矢野 貴之"
+  },
+  {
+   "date": "2025年10月12日",
+   "venue": "京都",
+   "race_name": "太秦S",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 2,
+   "finish": "6",
+   "jockey": "和田 竜二"
+  },
+  {
+   "date": "2025年9月2日",
+   "venue": "盛岡",
+   "race_name": "不来方賞",
+   "surface": "ダ",
+   "distance": 2000,
+   "field": 12,
+   "popularity": null,
+   "finish": "5",
+   "jockey": "内田 博幸"
+  },
+  {
+   "date": "2025年8月10日",
+   "venue": "新潟",
+   "race_name": "レパードS",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 12,
+   "finish": "2",
+   "jockey": "内田 博幸"
+  },
+  {
+   "date": "2025年6月22日",
+   "venue": "阪神",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "高倉 稜"
+  },
+  {
+   "date": "2025年5月31日",
+   "venue": "京都",
+   "race_name": "鳳雛S",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "高倉 稜"
+  },
+  {
+   "date": "2025年3月29日",
+   "venue": "中山",
+   "race_name": "伏竜S",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 7,
+   "finish": "4",
+   "jockey": "高倉 稜"
+  },
+  {
+   "date": "2025年2月23日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 10,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "高倉 稜"
+  },
+  {
+   "date": "2025年1月5日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "高倉 稜"
+  },
+  {
+   "date": "2024年12月15日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 10,
+   "finish": "3",
+   "jockey": "高倉 稜"
+  }
+ ],
+ "name": "ルヴァンユニベール",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022103941/0F",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:46"
+}

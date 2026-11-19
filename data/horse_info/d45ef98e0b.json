@@ -1,0 +1,102 @@
+{
+ "profile": {
+  "父": "モズアスコット",
+  "性別": "牝",
+  "馬主名": "北側 雅司",
+  "母": "モズレディーモー",
+  "馬齢": "3歳",
+  "調教師名": "杉山 佳明 （栗東）",
+  "母の父": "Uncle Mo",
+  "生年月日": "2023年4月18日",
+  "生産牧場": "(株)目黒牧場",
+  "母の母": "Czarina",
+  "毛色": "栗毛",
+  "産地": "日高町",
+  "馬名意味": "冠名+お先に",
+  "取引市場": "",
+  "総賞金": "8,100,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 6,
+  "wins": 1,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 13,
+   "popularity": 7,
+   "finish": "7",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年8月8日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年7月18日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 14,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 8,
+   "finish": "9",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2026年4月5日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 8,
+   "finish": "7",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2026年2月10日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 11,
+   "finish": "10",
+   "jockey": "団野 大成"
+  }
+ ],
+ "name": "モズオサキニ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023101523/BF",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:50"
+}

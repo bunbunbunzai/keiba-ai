@@ -1,0 +1,179 @@
+{
+ "profile": {
+  "父": "ルヴァンスレーヴ",
+  "性別": "牡",
+  "馬主名": "中村 時子",
+  "母": "モエレカバーガール",
+  "馬齢": "4歳",
+  "調教師名": "小島 茂之 （美浦）",
+  "母の父": "フレンチデピュティ",
+  "生年月日": "2022年2月6日",
+  "生産牧場": "守矢牧場",
+  "母の母": "マイライフスタイル",
+  "毛色": "鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "冠名+ユニコーン。人々が夢見るような現実離れした存在",
+  "取引市場": "",
+  "総賞金": "37,534,000 円",
+  "内付加賞": "94,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 13,
+  "wins": 2,
+  "second": 3,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 10,
+   "finish": "10",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2026年10月24日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 11,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2026年10月11日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1300,
+   "field": 16,
+   "popularity": 5,
+   "finish": "6",
+   "jockey": "M.デムーロ"
+  },
+  {
+   "date": "2026年4月26日",
+   "venue": "東京",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "7",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2026年3月22日",
+   "venue": "中山",
+   "race_name": "鎌ケ谷特別",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "横山 琉人"
+  },
+  {
+   "date": "2026年2月22日",
+   "venue": "東京",
+   "race_name": "大島特別",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 6,
+   "finish": "4",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2025年11月29日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年10月25日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 13,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2025年10月12日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1300,
+   "field": 16,
+   "popularity": 2,
+   "finish": "8",
+   "jockey": "横山 琉人"
+  },
+  {
+   "date": "2025年4月6日",
+   "venue": "阪神",
+   "race_name": "バイオレット",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 6,
+   "finish": "2",
+   "jockey": "横山 琉人"
+  },
+  {
+   "date": "2025年3月9日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 9,
+   "finish": "1",
+   "jockey": "横山 琉人"
+  },
+  {
+   "date": "2025年2月16日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1300,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "横山 琉人"
+  },
+  {
+   "date": "2025年2月1日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 11,
+   "finish": "4",
+   "jockey": "横山 琉人"
+  }
+ ],
+ "name": "マサノユニコーン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022107130/C0",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:22"
+}

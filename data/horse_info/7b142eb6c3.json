@@ -1,0 +1,190 @@
+{
+ "profile": {
+  "父": "キズナ",
+  "性別": "牝",
+  "馬主名": "吉田 和美",
+  "母": "コーラルプリンセス",
+  "馬齢": "4歳",
+  "調教師名": "柴田 卓 （栗東）",
+  "母の父": "クロフネ",
+  "生年月日": "2022年2月27日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "ホーリーブラウン",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "イチゴの品種",
+  "取引市場": "",
+  "総賞金": "9,420,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 14,
+  "wins": 1,
+  "second": 0,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月1日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 14,
+   "popularity": 12,
+   "finish": "13",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年10月12日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 11,
+   "finish": "5",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2026年8月8日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 8,
+   "popularity": 5,
+   "finish": "7",
+   "jockey": "川端 海翼"
+  },
+  {
+   "date": "2026年7月26日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 15,
+   "finish": "13",
+   "jockey": "川端 海翼"
+  },
+  {
+   "date": "2026年5月30日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 11,
+   "finish": "7",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2026年4月11日",
+   "venue": "福島",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 8,
+   "finish": "13",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2026年3月14日",
+   "venue": "中京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 5,
+   "finish": "13",
+   "jockey": "亀田 温心"
+  },
+  {
+   "date": "2025年12月28日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 13,
+   "finish": "7",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2025年11月8日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 6,
+   "finish": "14",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2025年8月17日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 7,
+   "finish": "10",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年5月24日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 9,
+   "popularity": 2,
+   "finish": "6",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年3月29日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年3月16日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2025年1月6日",
+   "venue": "中京",
+   "race_name": "3歳新馬",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 9,
+   "finish": "3",
+   "jockey": "吉村 誠之助"
+  }
+ ],
+ "name": "リトルスカーレット",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022104779/64",
+ "last_card": "20261101",
+ "fetched": "2026-11-20 05:20"
+}

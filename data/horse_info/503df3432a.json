@@ -1,0 +1,102 @@
+{
+ "profile": {
+  "父": "モーリス",
+  "性別": "牝",
+  "馬主名": "山本 益臣",
+  "母": "ドリームライター",
+  "馬齢": "3歳",
+  "調教師名": "伊藤 圭三 （美浦）",
+  "母の父": "Tale of the Cat",
+  "生年月日": "2023年3月19日",
+  "生産牧場": "グランド牧場",
+  "母の母": "Rebridled Dreams",
+  "毛色": "栗毛",
+  "産地": "新ひだか町",
+  "馬名意味": "冠名+逃げる",
+  "取引市場": "",
+  "総賞金": "21,540,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 6,
+  "wins": 2,
+  "second": 1,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年10月3日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 7,
+   "finish": "2",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2026年5月2日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年10月18日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 9,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年8月24日",
+   "venue": "札幌",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 14,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年7月26日",
+   "venue": "札幌",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 13,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "横山 武史"
+  }
+ ],
+ "name": "ミヤエスケープ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023102592/AB",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:57"
+}

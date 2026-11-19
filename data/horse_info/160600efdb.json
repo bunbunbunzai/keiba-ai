@@ -1,0 +1,189 @@
+{
+ "profile": {
+  "父": "Lope de Vega",
+  "性別": "牝",
+  "馬主名": "ゴドルフィン",
+  "母": "Missunited",
+  "馬齢": "6歳",
+  "調教師名": "藤原 英昭 （栗東）",
+  "母の父": "Golan",
+  "生年月日": "2020年4月30日",
+  "母の母": "Lets Clic Together",
+  "毛色": "黒鹿毛",
+  "産地": "愛",
+  "馬名意味": "欠けたものがなく完全なさま",
+  "取引市場": "",
+  "総賞金": "112,892,000 円",
+  "内付加賞": "1,192,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "29,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 14,
+  "wins": 4,
+  "second": 2,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "京都",
+   "race_name": "アンドロメダ",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 7,
+   "finish": "7",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2026年9月6日",
+   "venue": "札幌",
+   "race_name": "丹頂S",
+   "surface": "芝",
+   "distance": 2600,
+   "field": 14,
+   "popularity": 3,
+   "finish": "7",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2026年7月26日",
+   "venue": "札幌",
+   "race_name": "札幌日経賞",
+   "surface": "芝",
+   "distance": 2600,
+   "field": 13,
+   "popularity": 8,
+   "finish": "2",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2026年6月21日",
+   "venue": "東京",
+   "race_name": "府中牝馬S",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 12,
+   "finish": "6",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2026年5月16日",
+   "venue": "新潟",
+   "race_name": "新潟大賞典",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 10,
+   "finish": "8",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2026年3月28日",
+   "venue": "中山",
+   "race_name": "日経賞",
+   "surface": "芝",
+   "distance": 2500,
+   "field": 15,
+   "popularity": 14,
+   "finish": "9",
+   "jockey": "M.ディー"
+  },
+  {
+   "date": "2025年1月19日",
+   "venue": "中京",
+   "race_name": "日経新春杯",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 16,
+   "popularity": 5,
+   "finish": "14",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2024年11月10日",
+   "venue": "京都",
+   "race_name": "エリザベス杯",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 17,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2024年10月20日",
+   "venue": "新潟",
+   "race_name": "新潟牝馬S",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 13,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2024年6月16日",
+   "venue": "京都",
+   "race_name": "マーメイドS",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 6,
+   "finish": "3",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2024年3月23日",
+   "venue": "中京",
+   "race_name": "熊野特別",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 10,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2023年12月2日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 17,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2023年5月13日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 13,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2023年4月16日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 18,
+   "popularity": 11,
+   "finish": "2",
+   "jockey": "西塚 洸二"
+  }
+ ],
+ "name": "ホールネス",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002020110060/EC",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:15"
+}

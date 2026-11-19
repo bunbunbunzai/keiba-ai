@@ -1,0 +1,179 @@
+{
+ "profile": {
+  "父": "ドレフォン",
+  "性別": "せん",
+  "馬主名": "(有)シルクレーシング",
+  "母": "メリーウィドウ",
+  "馬齢": "5歳",
+  "調教師名": "浅利 英明 （美浦）",
+  "母の父": "ゴールドアリュール",
+  "生年月日": "2021年2月28日",
+  "生産牧場": "(有)社台コーポレーション白老ファーム",
+  "母の母": "ウエディングメリー",
+  "毛色": "栗毛",
+  "産地": "白老町",
+  "馬名意味": "オペラの先駆けとなった幕間劇。母名より連想",
+  "取引市場": "",
+  "総賞金": "25,100,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 13,
+  "wins": 2,
+  "second": 2,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月1日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "A.プーシャン"
+  },
+  {
+   "date": "2026年4月4日",
+   "venue": "中山",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 1,
+   "finish": "8",
+   "jockey": "岩田 康誠"
+  },
+  {
+   "date": "2026年1月4日",
+   "venue": "中山",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 8,
+   "finish": "2",
+   "jockey": "岩田 康誠"
+  },
+  {
+   "date": "2025年4月27日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 3,
+   "finish": "9",
+   "jockey": "M.ディー"
+  },
+  {
+   "date": "2025年1月26日",
+   "venue": "中山",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 6,
+   "finish": "8",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2025年1月6日",
+   "venue": "中山",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "13",
+   "jockey": "T.マーカンド"
+  },
+  {
+   "date": "2024年11月2日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 2,
+   "finish": "5",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年10月13日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 12,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "岩田 康誠"
+  },
+  {
+   "date": "2024年6月22日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2024年4月28日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "T.オシェア"
+  },
+  {
+   "date": "2024年3月10日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 3,
+   "finish": "14",
+   "jockey": "北村 宏司"
+  },
+  {
+   "date": "2023年12月24日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "T.マーカンド"
+  },
+  {
+   "date": "2023年11月4日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "北村 宏司"
+  }
+ ],
+ "name": "インテルメディオ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021104922/C5",
+ "last_card": "20261101",
+ "fetched": "2026-11-20 05:26"
+}

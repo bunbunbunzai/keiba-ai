@@ -1,0 +1,212 @@
+{
+ "profile": {
+  "父": "キズナ",
+  "性別": "牝",
+  "馬主名": "(有)サンデーレーシング",
+  "母": "ウェイヴェルアベニュー",
+  "馬齢": "5歳",
+  "調教師名": "中内田 充正 （栗東）",
+  "母の父": "Harlington",
+  "生年月日": "2021年3月14日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "Lucas Street",
+  "毛色": "黒鹿毛",
+  "産地": "安平町",
+  "馬名意味": "ロンドンのランベスブリッジとタワーブリッジ間の遊歩道",
+  "取引市場": "",
+  "総賞金": "299,400,000 円",
+  "内付加賞": "4,000,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "108,500,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 4,
+  "second": 2,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "京都",
+   "race_name": "エリザベス杯",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 18,
+   "popularity": 4,
+   "finish": "8",
+   "jockey": "C.デムーロ"
+  },
+  {
+   "date": "2026年10月11日",
+   "venue": "東京",
+   "race_name": "アイルランド",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 3,
+   "finish": "8",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年5月17日",
+   "venue": "東京",
+   "race_name": "ヴィクトリア",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年3月15日",
+   "venue": "中京",
+   "race_name": "金鯱賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年11月2日",
+   "venue": "東京",
+   "race_name": "天皇賞(秋)",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 9,
+   "finish": "9",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年8月31日",
+   "venue": "新潟",
+   "race_name": "新潟記念",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": null,
+   "finish": "除外",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年5月18日",
+   "venue": "東京",
+   "race_name": "ヴィクトリア",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 17,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年3月16日",
+   "venue": "中京",
+   "race_name": "金鯱賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年1月25日",
+   "venue": "小倉",
+   "race_name": "小倉牝馬S",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 1,
+   "finish": "6",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2024年10月13日",
+   "venue": "京都",
+   "race_name": "秋華賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 3,
+   "finish": "15",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2024年9月15日",
+   "venue": "中京",
+   "race_name": "ローズS",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2024年5月19日",
+   "venue": "東京",
+   "race_name": "優駿牝馬",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 18,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2024年4月7日",
+   "venue": "阪神",
+   "race_name": "桜花賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 3,
+   "finish": "8",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2024年2月10日",
+   "venue": "東京",
+   "race_name": "クイーンC",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2023年12月23日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2023年11月11日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "川田 将雅"
+  }
+ ],
+ "name": "クイーンズウォーク",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021105414/95",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:51"
+}

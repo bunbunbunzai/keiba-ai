@@ -1,0 +1,179 @@
+{
+ "profile": {
+  "父": "ブリックスアンドモルタル",
+  "性別": "牡",
+  "馬主名": "(有)シルクレーシング",
+  "母": "スナッチマインド",
+  "馬齢": "4歳",
+  "調教師名": "武市 康男 （美浦）",
+  "母の父": "ディープインパクト",
+  "生年月日": "2022年3月27日",
+  "生産牧場": "(有)社台コーポレーション白老ファーム",
+  "母の母": "スナッチド",
+  "毛色": "鹿毛",
+  "産地": "白老町",
+  "馬名意味": "ウエイトリフティング種目名。母名より連想",
+  "取引市場": "",
+  "総賞金": "30,350,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 13,
+  "wins": 2,
+  "second": 1,
+  "third": 4
+ },
+ "runs": [
+  {
+   "date": "2026年10月31日",
+   "venue": "東京",
+   "race_name": "国立特別",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 10,
+   "popularity": 6,
+   "finish": "8",
+   "jockey": "岩田 康誠"
+  },
+  {
+   "date": "2026年8月23日",
+   "venue": "新潟",
+   "race_name": "飯豊特別",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 5,
+   "finish": "6",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "東京",
+   "race_name": "高尾特別",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "10",
+   "jockey": "D.レーン"
+  },
+  {
+   "date": "2026年4月5日",
+   "venue": "中山",
+   "race_name": "4歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 12,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年2月28日",
+   "venue": "中山",
+   "race_name": "4歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "岩田 康誠"
+  },
+  {
+   "date": "2025年12月21日",
+   "venue": "中山",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 9,
+   "finish": "3",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2025年10月5日",
+   "venue": "東京",
+   "race_name": "tvk賞",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 17,
+   "popularity": 3,
+   "finish": "17",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2025年8月23日",
+   "venue": "新潟",
+   "race_name": "飯豊特別",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 17,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2025年5月31日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 11,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年4月6日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 9,
+   "popularity": 2,
+   "finish": "5",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2025年2月15日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2024年11月17日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "T.マーカンド"
+  },
+  {
+   "date": "2024年9月21日",
+   "venue": "中山",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "津村 明秀"
+  }
+ ],
+ "name": "パワースナッチ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022105807/2E",
+ "last_card": "20261031",
+ "fetched": "2026-11-20 05:42"
+}

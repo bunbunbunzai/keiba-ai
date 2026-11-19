@@ -1,0 +1,146 @@
+{
+ "profile": {
+  "父": "ルヴァンスレーヴ",
+  "性別": "せん",
+  "馬主名": "吉田 晴哉",
+  "母": "アルマユディト",
+  "馬齢": "4歳",
+  "調教師名": "手塚 貴徳 （美浦）",
+  "母の父": "ヨハネスブルグ",
+  "生年月日": "2022年3月22日",
+  "生産牧場": "山際牧場",
+  "母の母": "ミルクトーレル",
+  "毛色": "鹿毛",
+  "産地": "新ひだか町",
+  "馬名意味": "ハートのジャック(仏)。父名および母名より連想",
+  "取引市場": "",
+  "総賞金": "98,407,000 円",
+  "内付加賞": "1,007,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "44,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 10,
+  "wins": 5,
+  "second": 1,
+  "third": 3
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "東京",
+   "race_name": "武蔵野S",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年10月3日",
+   "venue": "東京",
+   "race_name": "グリーンCC",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 5,
+   "finish": "3",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年6月13日",
+   "venue": "東京",
+   "race_name": "夏至S",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "M.ディー"
+  },
+  {
+   "date": "2026年5月2日",
+   "venue": "東京",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年2月21日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年11月29日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年11月2日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年2月2日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2024年11月9日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 2,
+   "finish": "6",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2024年8月17日",
+   "venue": "新潟",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "菅原 明良"
+  }
+ ],
+ "name": "ルヴァレドクール",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022100994/EB",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:22"
+}

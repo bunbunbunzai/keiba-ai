@@ -1,0 +1,212 @@
+{
+ "profile": {
+  "父": "ロードカナロア",
+  "性別": "牝",
+  "馬主名": "DMMドリームクラブ(株)",
+  "母": "サマーハ",
+  "馬齢": "4歳",
+  "調教師名": "池添 学 （栗東）",
+  "母の父": "Singspiel",
+  "生年月日": "2022年3月17日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "Genovefa",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "アラビアンナイトに登場する海から生まれた美女。父名、母名から連想",
+  "取引市場": "2023年 セレクトセール",
+  "総賞金": "20,040,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 16,
+  "wins": 2,
+  "second": 1,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "京都",
+   "race_name": "嵯峨野特別",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 8,
+   "finish": "6",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2026年10月4日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 7,
+   "finish": "15",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2026年8月16日",
+   "venue": "中京",
+   "race_name": "大垣特別",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 8,
+   "finish": "11",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2026年6月7日",
+   "venue": "阪神",
+   "race_name": "洲本特別",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 6,
+   "finish": "11",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2026年5月24日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2026年3月15日",
+   "venue": "中京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "10",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2026年1月25日",
+   "venue": "小倉",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 7,
+   "finish": "11",
+   "jockey": "亀田 温心"
+  },
+  {
+   "date": "2026年1月12日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 1,
+   "finish": "8",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年11月16日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 1,
+   "finish": "9",
+   "jockey": "永島 まなみ"
+  },
+  {
+   "date": "2025年10月26日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年6月7日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年5月25日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年3月1日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "吉田 隼人"
+  },
+  {
+   "date": "2025年2月15日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 5,
+   "finish": "3",
+   "jockey": "吉田 隼人"
+  },
+  {
+   "date": "2024年12月15日",
+   "venue": "中京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 8,
+   "finish": "8",
+   "jockey": "亀田 温心"
+  },
+  {
+   "date": "2024年10月20日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 17,
+   "popularity": 5,
+   "finish": "15",
+   "jockey": "鮫島 克駿"
+  }
+ ],
+ "name": "ジュルナール",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022104788/01",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:49"
+}

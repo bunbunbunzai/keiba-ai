@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "ハクサンムーン",
+  "性別": "牝",
+  "馬主名": "(有)サンライズ",
+  "母": "ミッキーアップル",
+  "馬齢": "3歳",
+  "調教師名": "高橋 義忠 （栗東）",
+  "母の父": "クロフネ",
+  "生年月日": "2023年3月23日",
+  "生産牧場": "白井牧場",
+  "母の母": "エリモジェンヌ",
+  "毛色": "鹿毛",
+  "産地": "日高町",
+  "馬名意味": "天然記念物オオサンショウウオの別名",
+  "取引市場": "2024年 北海道セプテンバーセール",
+  "総賞金": "7,350,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 1,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 13,
+   "popularity": 5,
+   "finish": "10",
+   "jockey": "永島 まなみ"
+  },
+  {
+   "date": "2026年8月29日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 13,
+   "finish": "6",
+   "jockey": "永島 まなみ"
+  },
+  {
+   "date": "2026年3月21日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 12,
+   "finish": "9",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2026年1月25日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "T.ハマーハンセン"
+  },
+  {
+   "date": "2026年1月12日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 8,
+   "finish": "4",
+   "jockey": "秋山 稔樹"
+  },
+  {
+   "date": "2025年12月7日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 12,
+   "finish": "6",
+   "jockey": "小崎 綾也"
+  },
+  {
+   "date": "2025年10月25日",
+   "venue": "新潟",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 8,
+   "finish": "5",
+   "jockey": "舟山 瑠泉"
+  },
+  {
+   "date": "2025年10月5日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 6,
+   "finish": "7",
+   "jockey": "藤懸 貴志"
+  }
+ ],
+ "name": "ハンザキ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023101004/1D",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:50"
+}

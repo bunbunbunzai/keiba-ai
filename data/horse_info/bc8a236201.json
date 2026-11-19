@@ -1,0 +1,102 @@
+{
+ "profile": {
+  "父": "Night of Thunder",
+  "性別": "牝",
+  "馬主名": "KRジャパン",
+  "母": "シヴォリエール",
+  "馬齢": "3歳",
+  "調教師名": "岡田 稲男 （栗東）",
+  "母の父": "Sea The Stars",
+  "生年月日": "2023年4月30日",
+  "生産牧場": "門別山際牧場",
+  "母の母": "Sefroua",
+  "毛色": "鹿毛",
+  "産地": "日高町",
+  "馬名意味": "飛行機(仏)",
+  "取引市場": "",
+  "総賞金": "59,266,000 円",
+  "内付加賞": "566,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "24,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 6,
+  "wins": 4,
+  "second": 2,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "京都",
+   "race_name": "清水S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 10,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年10月11日",
+   "venue": "京都",
+   "race_name": "三年坂S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 17,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "菱田 裕二"
+  },
+  {
+   "date": "2026年6月20日",
+   "venue": "阪神",
+   "race_name": "舞子特別",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 9,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "菱田 裕二"
+  },
+  {
+   "date": "2026年4月19日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "菱田 裕二"
+  },
+  {
+   "date": "2026年2月15日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "菱田 裕二"
+  },
+  {
+   "date": "2026年1月25日",
+   "venue": "京都",
+   "race_name": "3歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 7,
+   "finish": "2",
+   "jockey": "長岡 禎仁"
+  }
+ ],
+ "name": "アヴィオン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023105847/FA",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:36"
+}

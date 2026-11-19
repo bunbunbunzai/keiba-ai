@@ -1,0 +1,201 @@
+{
+ "profile": {
+  "父": "エピファネイア",
+  "性別": "牝",
+  "馬主名": "谷掛 龍夫",
+  "母": "オメガセニョリーナ",
+  "馬齢": "5歳",
+  "調教師名": "牧浦 充徳 （栗東）",
+  "母の父": "アグネスタキオン",
+  "生年月日": "2021年4月25日",
+  "生産牧場": "社台ファーム",
+  "母の母": "ショーコ",
+  "毛色": "鹿毛",
+  "産地": "千歳市",
+  "馬名意味": "大波小波",
+  "取引市場": "2022年 セレクトセール",
+  "総賞金": "29,510,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 2,
+  "second": 3,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "福島",
+   "race_name": "飯坂温泉特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 9,
+   "finish": "9",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2026年7月11日",
+   "venue": "小倉",
+   "race_name": "耶馬渓特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 8,
+   "finish": "4",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2026年6月27日",
+   "venue": "小倉",
+   "race_name": "宗像特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 13,
+   "popularity": 7,
+   "finish": "7",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年2月28日",
+   "venue": "中山",
+   "race_name": "4歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 7,
+   "finish": "6",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2026年2月7日",
+   "venue": "小倉",
+   "race_name": "RKB賞",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2025年5月3日",
+   "venue": "新潟",
+   "race_name": "胎内川特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 4,
+   "finish": "7",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2025年3月1日",
+   "venue": "小倉",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2025年2月16日",
+   "venue": "小倉",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2024年11月16日",
+   "venue": "福島",
+   "race_name": "高湯温泉特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "5",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2024年10月26日",
+   "venue": "新潟",
+   "race_name": "柏崎特別",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 3,
+   "finish": "6",
+   "jockey": "M.デムーロ"
+  },
+  {
+   "date": "2024年7月21日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2024年7月6日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2024年4月7日",
+   "venue": "阪神",
+   "race_name": "忘れな草賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 8,
+   "popularity": 6,
+   "finish": "8",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2024年2月3日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2024年1月14日",
+   "venue": "京都",
+   "race_name": "3歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "池添 謙一"
+  }
+ ],
+ "name": "オオナミコナミ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021107173/CD",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:14"
+}

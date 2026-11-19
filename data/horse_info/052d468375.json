@@ -1,0 +1,146 @@
+{
+ "profile": {
+  "父": "ベンバトル",
+  "性別": "牝",
+  "馬主名": "(株)サラブレッドクラブ・ラフィアン",
+  "母": "マイネサヴァラン",
+  "馬齢": "3歳",
+  "調教師名": "清水 英克 （美浦）",
+  "母の父": "マンハッタンカフェ",
+  "生年月日": "2023年4月28日",
+  "生産牧場": "ビッグレッドファーム",
+  "母の母": "マイネデセール",
+  "毛色": "黒鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "ベレー帽を意味するチョコレート菓子。母名より連想",
+  "取引市場": "",
+  "総賞金": "16,492,000 円",
+  "内付加賞": "52,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 10,
+  "wins": 1,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 3,
+   "finish": "8",
+   "jockey": "石神 深道"
+  },
+  {
+   "date": "2026年8月29日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 4,
+   "finish": "11",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2026年8月15日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 4,
+   "finish": "5",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2026年4月5日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 3,
+   "finish": "8",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2026年3月8日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 7,
+   "finish": "5",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2026年2月14日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "8",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年12月13日",
+   "venue": "中京",
+   "race_name": "つわぶき賞",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 11,
+   "popularity": 2,
+   "finish": "9",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2025年11月1日",
+   "venue": "京都",
+   "race_name": "ファンタジー",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 4,
+   "finish": "5",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2025年9月28日",
+   "venue": "中山",
+   "race_name": "サフラン賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2025年8月16日",
+   "venue": "新潟",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 17,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "石神 深道"
+  }
+ ],
+ "name": "ベレーバスク",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023106477/55",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:10"
+}

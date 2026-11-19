@@ -1,0 +1,91 @@
+{
+ "profile": {
+  "父": "キズナ",
+  "性別": "牝",
+  "馬主名": "岩�ｱ 伸道",
+  "母": "ストリートバンド",
+  "馬齢": "3歳",
+  "調教師名": "佐藤 悠太 （栗東）",
+  "母の父": "Istan",
+  "生年月日": "2023年1月16日",
+  "生産牧場": "レイクヴィラファーム",
+  "母の母": "Street Minstrel",
+  "毛色": "黒鹿毛",
+  "産地": "洞爺湖町",
+  "馬名意味": "心の絆(仏)",
+  "取引市場": "",
+  "総賞金": "34,193,000 円",
+  "内付加賞": "273,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 5,
+  "wins": 3,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "C.デムーロ"
+  },
+  {
+   "date": "2026年8月8日",
+   "venue": "中京",
+   "race_name": "恵那特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年6月7日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年4月18日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "D.レーン"
+  },
+  {
+   "date": "2026年2月14日",
+   "venue": "京都",
+   "race_name": "3歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "T.ハマーハンセン"
+  }
+ ],
+ "name": "リアンドゥクール",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023103893/A0",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:34"
+}

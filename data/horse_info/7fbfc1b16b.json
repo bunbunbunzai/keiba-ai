@@ -1,0 +1,102 @@
+{
+ "profile": {
+  "父": "シルバーステート",
+  "性別": "牝",
+  "馬主名": "(株)CHEVAL ATTACHE",
+  "母": "トーセンハーディ",
+  "馬齢": "3歳",
+  "調教師名": "西田 雄一郎 （美浦）",
+  "母の父": "Compton Place",
+  "生年月日": "2023年2月14日",
+  "生産牧場": "村上 欽哉",
+  "母の母": "Penang Cry",
+  "毛色": "鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "母名の一部+女性(ブルガリア語)",
+  "取引市場": "2024年 北海道サマーセール",
+  "総賞金": "7,520,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 6,
+  "wins": 1,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年10月31日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 10,
+   "finish": "10",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "東京",
+   "race_name": "カーネーショ",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 10,
+   "finish": "9",
+   "jockey": "M.ディー"
+  },
+  {
+   "date": "2026年3月28日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 4,
+   "finish": "5",
+   "jockey": "上里 直汰"
+  },
+  {
+   "date": "2026年1月11日",
+   "venue": "中山",
+   "race_name": "フェアリーS",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 12,
+   "finish": "15",
+   "jockey": "上里 直汰"
+  },
+  {
+   "date": "2025年11月8日",
+   "venue": "福島",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "上里 直汰"
+  },
+  {
+   "date": "2025年9月7日",
+   "venue": "中山",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 11,
+   "finish": "4",
+   "jockey": "上里 直汰"
+  }
+ ],
+ "name": "ハーディジェナー",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023104628/FC",
+ "last_card": "20261031",
+ "fetched": "2026-11-20 05:40"
+}

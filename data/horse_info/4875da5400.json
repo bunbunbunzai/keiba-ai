@@ -1,0 +1,91 @@
+{
+ "profile": {
+  "父": "ダノンバラード",
+  "性別": "牡",
+  "馬主名": "(株)サラブレッドクラブ・ラフィアン",
+  "母": "オーサムボス",
+  "馬齢": "3歳",
+  "調教師名": "鹿戸 雄一 （美浦）",
+  "母の父": "Street Boss",
+  "生年月日": "2023年2月13日",
+  "生産牧場": "ビッグレッドファーム",
+  "母の母": "Caftan",
+  "毛色": "黒鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "冠名+素晴らしい、偉大な",
+  "取引市場": "",
+  "総賞金": "9,050,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 5,
+  "wins": 1,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年10月31日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 6,
+   "finish": "11",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2026年2月22日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2026年2月1日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 8,
+   "finish": "2",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2025年12月14日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 10,
+   "finish": "11",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2025年11月23日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 9,
+   "finish": "5",
+   "jockey": "丹内 祐次"
+  }
+ ],
+ "name": "マイネルグレート",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023106432/D6",
+ "last_card": "20261031",
+ "fetched": "2026-11-20 05:43"
+}

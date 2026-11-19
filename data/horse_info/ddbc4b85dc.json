@@ -1,0 +1,201 @@
+{
+ "profile": {
+  "父": "ノヴェリスト",
+  "性別": "せん",
+  "馬主名": "岡田 牧雄",
+  "母": "レットイットスノー",
+  "馬齢": "4歳",
+  "調教師名": "天間 昭一 （美浦）",
+  "母の父": "ハーツクライ",
+  "生年月日": "2022年2月12日",
+  "生産牧場": "岡田スタツド",
+  "母の母": "アスピリンスノー",
+  "毛色": "黒鹿毛",
+  "産地": "新ひだか町",
+  "馬名意味": "母名の一部+人名愛称",
+  "取引市場": "",
+  "総賞金": "1,100,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "0 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 0,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "福島",
+   "race_name": "障害3歳上未勝利",
+   "surface": "芝",
+   "distance": 2750,
+   "field": 11,
+   "popularity": 11,
+   "finish": "6",
+   "jockey": "水沼 元輝"
+  },
+  {
+   "date": "2026年9月13日",
+   "venue": "中山",
+   "race_name": "障害3歳上未勝利",
+   "surface": "芝",
+   "distance": 2880,
+   "field": 10,
+   "popularity": 10,
+   "finish": "9",
+   "jockey": "土田 真翔"
+  },
+  {
+   "date": "2026年8月30日",
+   "venue": "新潟",
+   "race_name": "障害3歳上未勝利",
+   "surface": "芝",
+   "distance": 2850,
+   "field": 12,
+   "popularity": 12,
+   "finish": "11",
+   "jockey": "江田 勇亮"
+  },
+  {
+   "date": "2026年7月12日",
+   "venue": "福島",
+   "race_name": "障害3歳上未勝利",
+   "surface": "芝",
+   "distance": 2770,
+   "field": 14,
+   "popularity": 14,
+   "finish": "10",
+   "jockey": "江田 勇亮"
+  },
+  {
+   "date": "2026年5月24日",
+   "venue": "新潟",
+   "race_name": "障害4歳上未勝利",
+   "surface": "芝",
+   "distance": 2890,
+   "field": 13,
+   "popularity": 13,
+   "finish": "8",
+   "jockey": "土田 真翔"
+  },
+  {
+   "date": "2026年4月26日",
+   "venue": "京都",
+   "race_name": "障害4歳上未勝利",
+   "surface": "芝",
+   "distance": 2910,
+   "field": 14,
+   "popularity": 14,
+   "finish": "11",
+   "jockey": "土田 真翔"
+  },
+  {
+   "date": "2026年3月15日",
+   "venue": "阪神",
+   "race_name": "障害4歳上未勝利",
+   "surface": "芝",
+   "distance": 2970,
+   "field": 14,
+   "popularity": 14,
+   "finish": "13",
+   "jockey": "五十嵐 雄祐"
+  },
+  {
+   "date": "2025年7月20日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 7,
+   "finish": "9",
+   "jockey": "原 優介"
+  },
+  {
+   "date": "2025年7月6日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 11,
+   "finish": "8",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2025年4月27日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 13,
+   "finish": "13",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2025年3月29日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 11,
+   "finish": "12",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2024年11月16日",
+   "venue": "福島",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 14,
+   "finish": "8",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2024年10月20日",
+   "venue": "新潟",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 8,
+   "finish": "8",
+   "jockey": "小林 脩斗"
+  },
+  {
+   "date": "2024年8月10日",
+   "venue": "新潟",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 5,
+   "finish": "6",
+   "jockey": "小林 脩斗"
+  },
+  {
+   "date": "2024年7月21日",
+   "venue": "福島",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 11,
+   "finish": "4",
+   "jockey": "小林 脩斗"
+  }
+ ],
+ "name": "スノーリン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022103588/B0",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:47"
+}

@@ -1,0 +1,135 @@
+{
+ "profile": {
+  "父": "タワーオブロンドン",
+  "性別": "牝",
+  "馬主名": "窪田 芳郎",
+  "母": "キャノピーウォーク",
+  "馬齢": "3歳",
+  "調教師名": "坂口 智康 （栗東）",
+  "母の父": "ロードカナロア",
+  "生年月日": "2023年3月27日",
+  "生産牧場": "ゼットステーブル",
+  "母の母": "ロンドンブリッジ",
+  "毛色": "栗毛",
+  "産地": "安平町",
+  "馬名意味": "ロンドンタワーの守護神",
+  "取引市場": "",
+  "総賞金": "28,020,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 9,
+  "wins": 2,
+  "second": 3,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2026年9月5日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年8月9日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 17,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年5月2日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年3月15日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2025年12月27日",
+   "venue": "阪神",
+   "race_name": "万両賞",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 10,
+   "popularity": 9,
+   "finish": "4",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年12月14日",
+   "venue": "阪神",
+   "race_name": "阪神JF",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 14,
+   "finish": "17",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2025年10月25日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年8月30日",
+   "venue": "中京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 10,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "川田 将雅"
+  }
+ ],
+ "name": "フロムレイブン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023103836/99",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:10"
+}

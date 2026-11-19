@@ -1,0 +1,135 @@
+{
+ "profile": {
+  "父": "タリスマニック",
+  "性別": "牝",
+  "馬主名": "川崎 賢二",
+  "母": "パティシエール",
+  "馬齢": "3歳",
+  "調教師名": "岩戸 孝樹 （美浦）",
+  "母の父": "タニノギムレット",
+  "生年月日": "2023年5月5日",
+  "生産牧場": "パカパカファーム",
+  "母の母": "ラドルチェ",
+  "毛色": "鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "こと座の1番明るい星",
+  "取引市場": "2024年 北海道サマーセール",
+  "総賞金": "12,620,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 9,
+  "wins": 1,
+  "second": 1,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 9,
+   "finish": "15",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2026年8月29日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 8,
+   "finish": "2",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2026年7月25日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 17,
+   "popularity": 12,
+   "finish": "8",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2026年7月4日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2026年4月19日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2026年2月14日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 3,
+   "finish": "7",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2026年2月1日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2025年11月24日",
+   "venue": "福島",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "9",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年11月8日",
+   "venue": "福島",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 8,
+   "finish": "4",
+   "jockey": "石田 拓郎"
+  }
+ ],
+ "name": "リラベガ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023106372/E5",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:58"
+}

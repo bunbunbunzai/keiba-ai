@@ -1,0 +1,223 @@
+{
+ "profile": {
+  "父": "ミスターメロディ",
+  "性別": "牝",
+  "馬主名": "吉田 智",
+  "母": "ビオレイメル",
+  "馬齢": "4歳",
+  "調教師名": "鈴木 孝志 （栗東）",
+  "母の父": "ワイルドラッシュ",
+  "生年月日": "2022年3月8日",
+  "生産牧場": "前谷牧場",
+  "母の母": "ホーマンピクシー",
+  "毛色": "鹿毛",
+  "産地": "新ひだか町",
+  "馬名意味": "パリコレクションより+パリジェンヌより",
+  "取引市場": "",
+  "総賞金": "19,960,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 17,
+  "wins": 2,
+  "second": 0,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "京都",
+   "race_name": "壬生特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 10,
+   "finish": "10",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2026年8月15日",
+   "venue": "中京",
+   "race_name": "知多特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 11,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2026年8月9日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 17,
+   "popularity": 11,
+   "finish": "1",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2026年5月10日",
+   "venue": "新潟",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 13,
+   "popularity": 10,
+   "finish": "11",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2026年3月15日",
+   "venue": "中京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 13,
+   "finish": "12",
+   "jockey": "吉田 隼人"
+  },
+  {
+   "date": "2026年2月8日",
+   "venue": "小倉",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 7,
+   "finish": "12",
+   "jockey": "古川 吉洋"
+  },
+  {
+   "date": "2025年12月20日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 12,
+   "finish": "8",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2025年10月4日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 6,
+   "finish": "18",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2025年8月2日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 8,
+   "finish": "1",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2025年7月20日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 11,
+   "finish": "5",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2025年6月15日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 8,
+   "finish": "13",
+   "jockey": "和田 竜二"
+  },
+  {
+   "date": "2025年4月26日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 9,
+   "finish": "7",
+   "jockey": "和田 竜二"
+  },
+  {
+   "date": "2025年4月13日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 4,
+   "finish": "6",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2024年11月30日",
+   "venue": "中京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 17,
+   "popularity": 5,
+   "finish": "10",
+   "jockey": "藤岡 佑介"
+  },
+  {
+   "date": "2024年10月12日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 2,
+   "finish": "14",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2024年9月15日",
+   "venue": "中京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 8,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "和田 竜二"
+  },
+  {
+   "date": "2024年8月17日",
+   "venue": "中京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 6,
+   "finish": "3",
+   "jockey": "和田 竜二"
+  }
+ ],
+ "name": "パリコレジェンヌ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022104501/FA",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:46"
+}

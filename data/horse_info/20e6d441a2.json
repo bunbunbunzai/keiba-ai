@@ -1,0 +1,168 @@
+{
+ "profile": {
+  "父": "ディスクリートキャット",
+  "性別": "牡",
+  "馬主名": "ゴドルフィン",
+  "母": "ハウリング",
+  "馬齢": "3歳",
+  "調教師名": "岩戸 孝樹 （美浦）",
+  "母の父": "ハードスパン",
+  "生年月日": "2023年4月16日",
+  "生産牧場": "ダーレー・ジャパン・ファーム(有)",
+  "母の母": "アースソング",
+  "毛色": "栗毛",
+  "産地": "日高町",
+  "馬名意味": "テンションを上げる",
+  "取引市場": "",
+  "総賞金": "14,600,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 12,
+  "wins": 1,
+  "second": 2,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月1日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 4,
+   "finish": "13",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2026年10月12日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1300,
+   "field": 16,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2026年9月5日",
+   "venue": "中山",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 13,
+   "popularity": 2,
+   "finish": "7",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年7月18日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 16,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2026年5月16日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 10,
+   "finish": "16",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2026年4月12日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 14,
+   "finish": "13",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2026年3月7日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 9,
+   "finish": "7",
+   "jockey": "富田 暁"
+  },
+  {
+   "date": "2026年2月21日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 7,
+   "finish": "15",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2026年1月25日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年1月11日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2025年10月5日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "12",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2025年9月15日",
+   "venue": "中山",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 11,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "丹内 祐次"
+  }
+ ],
+ "name": "アンプイットアップ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023101146/74",
+ "last_card": "20261101",
+ "fetched": "2026-11-20 05:25"
+}

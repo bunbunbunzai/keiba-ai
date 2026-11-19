@@ -1,0 +1,222 @@
+{
+ "profile": {
+  "父": "Frankel",
+  "性別": "牡",
+  "馬主名": "前田 幸治",
+  "母": "Amour Briller",
+  "馬齢": "4歳",
+  "調教師名": "松永 幹夫 （栗東）",
+  "母の父": "Smart Strike",
+  "生年月日": "2022年3月6日",
+  "母の母": "Heavenly Romance",
+  "毛色": "鹿毛",
+  "産地": "米",
+  "馬名意味": "勇者、勇敢な(アラビア語)",
+  "取引市場": "",
+  "総賞金": "71,379,000 円",
+  "内付加賞": "379,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 17,
+  "wins": 3,
+  "second": 1,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "京都",
+   "race_name": "ドンカスター",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 3,
+   "finish": "10",
+   "jockey": "T.マーカンド"
+  },
+  {
+   "date": "2026年9月12日",
+   "venue": "中山",
+   "race_name": "レインボーS",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 1,
+   "finish": "7",
+   "jockey": "石橋 脩"
+  },
+  {
+   "date": "2026年8月9日",
+   "venue": "新潟",
+   "race_name": "佐渡S",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年4月25日",
+   "venue": "京都",
+   "race_name": "観月橋S",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 3,
+   "finish": "6",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年4月5日",
+   "venue": "中山",
+   "race_name": "アリエスS",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2026年1月12日",
+   "venue": "京都",
+   "race_name": "雅ステークス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "8",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年12月21日",
+   "venue": "阪神",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年11月30日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 8,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年10月4日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 12,
+   "popularity": 3,
+   "finish": "6",
+   "jockey": "角田 大和"
+  },
+  {
+   "date": "2025年9月21日",
+   "venue": "阪神",
+   "race_name": "神戸新聞杯",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 10,
+   "popularity": 7,
+   "finish": "4",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2025年5月10日",
+   "venue": "京都",
+   "race_name": "京都新聞杯",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 10,
+   "popularity": 6,
+   "finish": "3",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2025年4月19日",
+   "venue": "福島",
+   "race_name": "ひめさゆり賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2025年3月22日",
+   "venue": "阪神",
+   "race_name": "若葉S",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 9,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年1月5日",
+   "venue": "中京",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 9,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2024年12月28日",
+   "venue": "中山",
+   "race_name": "ホープフルS",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 9,
+   "finish": "9",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2024年11月16日",
+   "venue": "東京",
+   "race_name": "東スポ2歳S",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 5,
+   "finish": "5",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2024年6月30日",
+   "venue": "福島",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "三浦 皇成"
+  }
+ ],
+ "name": "デルアヴァー",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022110054/C0",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:53"
+}

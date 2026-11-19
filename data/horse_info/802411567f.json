@@ -1,0 +1,201 @@
+{
+ "profile": {
+  "父": "リオンディーズ",
+  "性別": "牡",
+  "馬主名": "田中 昇",
+  "母": "ティアップブロンド",
+  "馬齢": "4歳",
+  "調教師名": "奥平 雅士 （美浦）",
+  "母の父": "ゴールドアリュール",
+  "生年月日": "2022年3月29日",
+  "生産牧場": "高昭牧場",
+  "母の母": "フォーティエース",
+  "毛色": "鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "冠名+ドライブのように楽しく",
+  "取引市場": "",
+  "総賞金": "8,680,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 1,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 11,
+   "finish": "12",
+   "jockey": "河原田 菜々"
+  },
+  {
+   "date": "2026年6月20日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 15,
+   "finish": "7",
+   "jockey": "木幡 巧也"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 10,
+   "finish": "8",
+   "jockey": "江田 照男"
+  },
+  {
+   "date": "2026年3月28日",
+   "venue": "中京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 10,
+   "finish": "9",
+   "jockey": "古川 吉洋"
+  },
+  {
+   "date": "2026年2月10日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1300,
+   "field": 16,
+   "popularity": 11,
+   "finish": "8",
+   "jockey": "遠藤 汰月"
+  },
+  {
+   "date": "2026年1月25日",
+   "venue": "中山",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 8,
+   "finish": "11",
+   "jockey": "遠藤 汰月"
+  },
+  {
+   "date": "2025年11月23日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 2100,
+   "field": 16,
+   "popularity": 8,
+   "finish": "10",
+   "jockey": "遠藤 汰月"
+  },
+  {
+   "date": "2025年10月26日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 14,
+   "finish": "8",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2025年9月28日",
+   "venue": "中山",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 11,
+   "finish": "12",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2025年4月27日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2025年4月6日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2025年3月16日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2025年2月23日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 2100,
+   "field": 16,
+   "popularity": 10,
+   "finish": "4",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2024年10月26日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 13,
+   "finish": "10",
+   "jockey": "佐藤 翔馬"
+  },
+  {
+   "date": "2024年10月6日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 16,
+   "finish": "15",
+   "jockey": "江田 照男"
+  }
+ ],
+ "name": "ティアップドライブ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022100182/6D",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 04:02"
+}

@@ -1,0 +1,190 @@
+{
+ "profile": {
+  "父": "ブリックスアンドモルタル",
+  "性別": "牡",
+  "馬主名": "吉田 照哉",
+  "母": "コンテスティッド",
+  "馬齢": "4歳",
+  "調教師名": "杉浦 宏昭 （美浦）",
+  "母の父": "Ghostzapper",
+  "生年月日": "2022年3月3日",
+  "生産牧場": "社台ファーム",
+  "母の母": "Gold Vault",
+  "毛色": "黒鹿毛",
+  "産地": "千歳市",
+  "馬名意味": "風鳴り",
+  "取引市場": "",
+  "総賞金": "11,000,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 13,
+  "wins": 1,
+  "second": 0,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1300,
+   "field": 15,
+   "popularity": 11,
+   "finish": "8",
+   "jockey": "岡田 祥嗣"
+  },
+  {
+   "date": "2026年8月1日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 3,
+   "finish": "10",
+   "jockey": "岡田 祥嗣"
+  },
+  {
+   "date": "2026年4月18日",
+   "venue": "阪神",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "岡田 祥嗣"
+  },
+  {
+   "date": "2026年3月21日",
+   "venue": "中京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "6",
+   "jockey": "岡田 祥嗣"
+  },
+  {
+   "date": "2026年3月14日",
+   "venue": "阪神",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 6,
+   "finish": "3",
+   "jockey": "岡田 祥嗣"
+  },
+  {
+   "date": "2026年2月21日",
+   "venue": "阪神",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 9,
+   "finish": "3",
+   "jockey": "岡田 祥嗣"
+  },
+  {
+   "date": "2025年12月13日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 7,
+   "finish": "10",
+   "jockey": "松本 大輝"
+  },
+  {
+   "date": "2025年10月26日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 10,
+   "finish": "9",
+   "jockey": "松岡 正海"
+  },
+  {
+   "date": "2025年8月9日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": null,
+   "finish": "取消",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2025年5月17日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 6,
+   "finish": "11",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年3月23日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 8,
+   "finish": "1",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2025年1月5日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 16,
+   "popularity": 10,
+   "finish": "9",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2024年12月8日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 10,
+   "popularity": 7,
+   "finish": "9",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2024年10月6日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 17,
+   "popularity": 4,
+   "finish": "16",
+   "jockey": "戸崎 圭太"
+  }
+ ],
+ "name": "ハウリングウィンド",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022105321/A7",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:39"
+}

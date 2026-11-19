@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "ロードカナロア",
+  "性別": "牡",
+  "馬主名": "(有)キャロットファーム",
+  "母": "クルミネイト",
+  "馬齢": "3歳",
+  "調教師名": "奥村 豊 （栗東）",
+  "母の父": "ディープインパクト",
+  "生年月日": "2023年2月8日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "クルソラ",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "頂点位相。母名より連想",
+  "取引市場": "2024年 セレクトセール",
+  "総賞金": "49,473,000 円",
+  "内付加賞": "473,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 2,
+  "second": 3,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "C.デムーロ"
+  },
+  {
+   "date": "2026年10月3日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年7月5日",
+   "venue": "小倉",
+   "race_name": "青島特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 8,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年4月19日",
+   "venue": "中山",
+   "race_name": "皐月賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 16,
+   "finish": "16",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年3月15日",
+   "venue": "中山",
+   "race_name": "スプリングS",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 7,
+   "finish": "3",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年1月24日",
+   "venue": "京都",
+   "race_name": "若駒S",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 13,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2025年12月6日",
+   "venue": "中京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "亀田 温心"
+  },
+  {
+   "date": "2025年10月5日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 3,
+   "finish": "8",
+   "jockey": "吉村 誠之助"
+  }
+ ],
+ "name": "アクロフェイズ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023106978/BD",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:04"
+}

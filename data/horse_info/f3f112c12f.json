@@ -1,0 +1,190 @@
+{
+ "profile": {
+  "父": "リオンディーズ",
+  "性別": "牡",
+  "馬主名": "西山 茂行",
+  "母": "ニシノリコルディ",
+  "馬齢": "4歳",
+  "調教師名": "古賀 慎明 （美浦）",
+  "母の父": "ハーツクライ",
+  "生年月日": "2022年4月18日",
+  "生産牧場": "ガーベラパークスタツド",
+  "母の母": "ニシノブルームーン",
+  "毛色": "黒鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "冠名+新月(ポルトガル語)",
+  "取引市場": "",
+  "総賞金": "13,900,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "4,000,000 円"
+ },
+ "record": {
+  "starts": 13,
+  "wins": 2,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "東京",
+   "race_name": "秋陽ジャンプ",
+   "surface": "芝",
+   "distance": 3110,
+   "field": 13,
+   "popularity": 8,
+   "finish": "12",
+   "jockey": "水沼 元輝"
+  },
+  {
+   "date": "2026年8月8日",
+   "venue": "中京",
+   "race_name": "障害3歳上オープン",
+   "surface": "芝",
+   "distance": 3000,
+   "field": 10,
+   "popularity": 5,
+   "finish": "中止",
+   "jockey": "伴 啓太"
+  },
+  {
+   "date": "2026年5月10日",
+   "venue": "新潟",
+   "race_name": "障害4歳上未勝利",
+   "surface": "芝",
+   "distance": 2890,
+   "field": 12,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "伴 啓太"
+  },
+  {
+   "date": "2026年3月8日",
+   "venue": "中山",
+   "race_name": "障害4歳上未勝利",
+   "surface": "芝",
+   "distance": 2880,
+   "field": 14,
+   "popularity": 9,
+   "finish": "8",
+   "jockey": "伴 啓太"
+  },
+  {
+   "date": "2026年1月12日",
+   "venue": "中山",
+   "race_name": "障害4歳上未勝利",
+   "surface": "芝",
+   "distance": 2880,
+   "field": 14,
+   "popularity": 11,
+   "finish": "10",
+   "jockey": "伴 啓太"
+  },
+  {
+   "date": "2025年9月6日",
+   "venue": "札幌",
+   "race_name": "富良野特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 14,
+   "finish": "13",
+   "jockey": "古川 吉洋"
+  },
+  {
+   "date": "2025年8月23日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1500,
+   "field": 14,
+   "popularity": 11,
+   "finish": "12",
+   "jockey": "落合 玄太"
+  },
+  {
+   "date": "2025年7月6日",
+   "venue": "函館",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 13,
+   "popularity": 10,
+   "finish": "13",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2025年4月27日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 9,
+   "popularity": 8,
+   "finish": "8",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2025年1月5日",
+   "venue": "中山",
+   "race_name": "ジュニアC",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 13,
+   "finish": "13",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2024年11月24日",
+   "venue": "東京",
+   "race_name": "ベゴニア賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 10,
+   "popularity": 9,
+   "finish": "8",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2024年10月5日",
+   "venue": "東京",
+   "race_name": "サウジRC",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 7,
+   "popularity": 7,
+   "finish": "6",
+   "jockey": "永野 猛蔵"
+  },
+  {
+   "date": "2024年9月7日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 12,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "永野 猛蔵"
+  },
+  {
+   "date": "2024年8月11日",
+   "venue": "新潟",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 4,
+   "finish": "7",
+   "jockey": "永野 猛蔵"
+  }
+ ],
+ "name": "ニシノルアノーヴァ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022102709/16",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:18"
+}

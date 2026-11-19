@@ -1,0 +1,212 @@
+{
+ "profile": {
+  "父": "ヘニーヒューズ",
+  "性別": "牝",
+  "馬主名": "(株)ローレルレーシング",
+  "母": "アーデルハイト",
+  "馬齢": "4歳",
+  "調教師名": "斉藤 崇史 （栗東）",
+  "母の父": "アグネスタキオン",
+  "生年月日": "2022年3月26日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "ビワハイジ",
+  "毛色": "栗毛",
+  "産地": "安平町",
+  "馬名意味": "高貴な愛(独)。沢山の人に愛される名牝になるように。母名より連想",
+  "取引市場": "2023年 セレクトセール",
+  "総賞金": "21,600,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "4,000,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 16,
+  "wins": 1,
+  "second": 2,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2026年10月10日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 11,
+   "finish": "6",
+   "jockey": "亀田 温心"
+  },
+  {
+   "date": "2026年8月16日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 12,
+   "finish": "6",
+   "jockey": "亀田 温心"
+  },
+  {
+   "date": "2026年8月2日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 7,
+   "finish": "4",
+   "jockey": "亀田 温心"
+  },
+  {
+   "date": "2026年6月16日",
+   "venue": "川崎",
+   "race_name": "ジューンS賞",
+   "surface": "ダ",
+   "distance": 1500,
+   "field": 11,
+   "popularity": null,
+   "finish": "10",
+   "jockey": "笹川 翼"
+  },
+  {
+   "date": "2026年4月26日",
+   "venue": "福島",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 9,
+   "finish": "6",
+   "jockey": "亀田 温心"
+  },
+  {
+   "date": "2026年1月4日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 7,
+   "finish": "10",
+   "jockey": "森田 誠也"
+  },
+  {
+   "date": "2025年10月18日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 9,
+   "finish": "14",
+   "jockey": "古川 吉洋"
+  },
+  {
+   "date": "2025年10月13日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 3,
+   "finish": "14",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2025年8月3日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2025年6月14日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2025年2月2日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 7,
+   "popularity": 4,
+   "finish": "5",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2024年10月31日",
+   "venue": "門別",
+   "race_name": "エーデルワイ",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 12,
+   "popularity": null,
+   "finish": "3",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2024年10月20日",
+   "venue": "京都",
+   "race_name": "なでしこ賞",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 11,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2024年8月10日",
+   "venue": "中京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2024年6月29日",
+   "venue": "小倉",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 8,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "幸 英明"
+  }
+ ],
+ "name": "アーデルリーベ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022104633/41",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:49"
+}

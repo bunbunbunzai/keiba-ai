@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "レイデオロ",
+  "性別": "牡",
+  "馬主名": "近藤 英子",
+  "母": "グラディーヴァ",
+  "馬齢": "3歳",
+  "調教師名": "上村 洋行 （栗東）",
+  "母の父": "ハービンジャー",
+  "生年月日": "2023年3月22日",
+  "生産牧場": "レイクヴィラファーム",
+  "母の母": "カノーロ",
+  "毛色": "栗毛",
+  "産地": "洞爺湖町",
+  "馬名意味": "人名より",
+  "取引市場": "",
+  "総賞金": "12,300,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 1,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月1日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 14,
+   "popularity": 5,
+   "finish": "8",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2026年10月3日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 17,
+   "popularity": 2,
+   "finish": "9",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年6月20日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 16,
+   "popularity": 2,
+   "finish": "6",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年6月6日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 9,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年2月21日",
+   "venue": "阪神",
+   "race_name": "すみれS",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 7,
+   "popularity": 7,
+   "finish": "4",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年1月10日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 18,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年11月1日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 9,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "岩田 望来"
+  }
+ ],
+ "name": "ガウディ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023105897/4A",
+ "last_card": "20261101",
+ "fetched": "2026-11-20 05:21"
+}

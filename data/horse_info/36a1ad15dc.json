@@ -1,0 +1,157 @@
+{
+ "profile": {
+  "父": "ヘニーヒューズ",
+  "性別": "牝",
+  "馬主名": "サイプレスホールディングス(同)",
+  "母": "ミスパッション",
+  "馬齢": "3歳",
+  "調教師名": "羽月 友彦 （栗東）",
+  "母の父": "ディープブリランテ",
+  "生年月日": "2023年5月15日",
+  "生産牧場": "いとう牧場",
+  "母の母": "ウィルパワー",
+  "毛色": "栗毛",
+  "産地": "日高町",
+  "馬名意味": "敬称+人名より。父名と母名から連想",
+  "取引市場": "2024年 北海道オータムセール",
+  "総賞金": "10,310,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 11,
+  "wins": 1,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 15,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "柴田 裕一郎"
+  },
+  {
+   "date": "2026年10月18日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 14,
+   "finish": "5",
+   "jockey": "柴田 裕一郎"
+  },
+  {
+   "date": "2026年8月30日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 10,
+   "finish": "6",
+   "jockey": "柴田 裕一郎"
+  },
+  {
+   "date": "2026年7月25日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 10,
+   "finish": "9",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2026年5月9日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 14,
+   "finish": "13",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2026年4月12日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2026年3月15日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 7,
+   "finish": "4",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2026年2月14日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 5,
+   "finish": "3",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2026年1月24日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 14,
+   "popularity": 6,
+   "finish": "7",
+   "jockey": "柴田 裕一郎"
+  },
+  {
+   "date": "2025年11月16日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 11,
+   "finish": "8",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2025年10月25日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 8,
+   "finish": "9",
+   "jockey": "長岡 禎仁"
+  }
+ ],
+ "name": "ミスヘンリー",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023100676/AA",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 04:04"
+}

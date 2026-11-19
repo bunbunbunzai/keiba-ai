@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "ロードカナロア",
+  "性別": "牡",
+  "馬主名": "田畑 利彦",
+  "母": "キャリコ",
+  "馬齢": "3歳",
+  "調教師名": "吉岡 辰弥 （栗東）",
+  "母の父": "ディープインパクト",
+  "生年月日": "2023年1月30日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "モシーン",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "騎士団の長",
+  "取引市場": "2024年 セレクトセール",
+  "総賞金": "24,001,000 円",
+  "内付加賞": "21,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 2,
+  "second": 0,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年10月31日",
+   "venue": "東京",
+   "race_name": "国立特別",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 10,
+   "popularity": 3,
+   "finish": "7",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2026年10月12日",
+   "venue": "京都",
+   "race_name": "堀川特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 4,
+   "finish": "5",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2026年8月16日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2026年7月25日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "石川 裕紀人"
+  },
+  {
+   "date": "2026年4月25日",
+   "venue": "京都",
+   "race_name": "あやめ賞",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 6,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2026年3月15日",
+   "venue": "阪神",
+   "race_name": "ゆきやなぎ賞",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 7,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2025年12月28日",
+   "venue": "阪神",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "高杉 吏麒"
+  }
+ ],
+ "name": "キシダンチョウ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023106960/15",
+ "last_card": "20261031",
+ "fetched": "2026-11-20 05:42"
+}

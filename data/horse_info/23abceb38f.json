@@ -1,0 +1,179 @@
+{
+ "profile": {
+  "父": "ブリックスアンドモルタル",
+  "性別": "せん",
+  "馬主名": "(有)シルクレーシング",
+  "母": "ヴァイスハイト",
+  "馬齢": "5歳",
+  "調教師名": "池上 昌和 （美浦）",
+  "母の父": "アドマイヤベガ",
+  "生年月日": "2021年5月6日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "ソニンク",
+  "毛色": "黒鹿毛",
+  "産地": "安平町",
+  "馬名意味": "知的な視点(独)。母名より連想",
+  "取引市場": "",
+  "総賞金": "26,272,000 円",
+  "内付加賞": "112,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 13,
+  "wins": 2,
+  "second": 2,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 9,
+   "finish": "6",
+   "jockey": "内田 博幸"
+  },
+  {
+   "date": "2026年2月21日",
+   "venue": "東京",
+   "race_name": "4歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2025年11月16日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 8,
+   "finish": "8",
+   "jockey": "T.マーカンド"
+  },
+  {
+   "date": "2025年6月8日",
+   "venue": "東京",
+   "race_name": "香港JT",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 12,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "M.ディー"
+  },
+  {
+   "date": "2025年3月29日",
+   "venue": "中山",
+   "race_name": "4歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 4,
+   "finish": "12",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年2月22日",
+   "venue": "東京",
+   "race_name": "4歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年11月10日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "A.シュタルケ"
+  },
+  {
+   "date": "2024年10月19日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2024年8月24日",
+   "venue": "新潟",
+   "race_name": "中郷特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2024年5月19日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年4月21日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年2月4日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 5,
+   "finish": "3",
+   "jockey": "R.キングスコート"
+  },
+  {
+   "date": "2024年1月14日",
+   "venue": "中山",
+   "race_name": "3歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 5,
+   "finish": "5",
+   "jockey": "R.キングスコート"
+  }
+ ],
+ "name": "ヴァイザーブリック",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021105417/EE",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:55"
+}

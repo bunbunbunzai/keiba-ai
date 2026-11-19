@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "ルヴァンスレーヴ",
+  "性別": "牡",
+  "馬主名": "(株)G1レーシング",
+  "母": "ヌチバナ",
+  "馬齢": "3歳",
+  "調教師名": "古賀 大生 （美浦）",
+  "母の父": "キングカメハメハ",
+  "生年月日": "2023年4月14日",
+  "生産牧場": "追分ファーム",
+  "母の母": "ラバヤデール",
+  "毛色": "栗毛",
+  "産地": "安平町",
+  "馬名意味": "沖縄の季節風。母名、父名より連想",
+  "取引市場": "",
+  "総賞金": "26,980,000 円",
+  "内付加賞": "100,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 2,
+  "second": 2,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "東京",
+   "race_name": "三浦特別",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2026年9月20日",
+   "venue": "中山",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2026年8月2日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2026年4月5日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 6,
+   "finish": "5",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年1月17日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年11月1日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 2,
+   "finish": "5",
+   "jockey": "岩田 康誠"
+  },
+  {
+   "date": "2025年10月11日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "岩田 康誠"
+  }
+ ],
+ "name": "ウリズンベー",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023103709/91",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:19"
+}

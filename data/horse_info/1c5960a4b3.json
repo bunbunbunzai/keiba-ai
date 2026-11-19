@@ -1,0 +1,156 @@
+{
+ "profile": {
+  "父": "Tiz the Law",
+  "性別": "牡",
+  "馬主名": "原村 正紀",
+  "母": "Saucy Symphony",
+  "馬齢": "3歳",
+  "調教師名": "森 秀行 （栗東）",
+  "母の父": "First Samurai",
+  "生年月日": "2023年4月15日",
+  "母の母": "Celtic Chant",
+  "毛色": "鹿毛",
+  "産地": "米",
+  "馬名意味": "冠名+夢(仏)",
+  "取引市場": "",
+  "総賞金": "80,366,000 円",
+  "内付加賞": "666,000 円",
+  "内地方賞金": "19,900,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "35,200,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 11,
+  "wins": 4,
+  "second": 2,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "京都",
+   "race_name": "室町S",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年10月8日",
+   "venue": "大井",
+   "race_name": "東京盃",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 14,
+   "popularity": null,
+   "finish": "4",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年8月13日",
+   "venue": "門別",
+   "race_name": "北海道SC",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 10,
+   "popularity": null,
+   "finish": "2",
+   "jockey": "阿部 龍"
+  },
+  {
+   "date": "2026年5月6日",
+   "venue": "園田",
+   "race_name": "兵庫CS",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 11,
+   "popularity": null,
+   "finish": "4",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2026年4月5日",
+   "venue": "阪神",
+   "race_name": "バイオレット",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2026年3月22日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2025年11月27日",
+   "venue": "園田",
+   "race_name": "兵庫JGP",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 12,
+   "popularity": null,
+   "finish": "6",
+   "jockey": "吉村 智洋"
+  },
+  {
+   "date": "2025年11月9日",
+   "venue": "東京",
+   "race_name": "オキザリス賞",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 8,
+   "finish": "3",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2025年9月20日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年9月7日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 7,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2025年7月27日",
+   "venue": "中京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 6,
+   "popularity": 5,
+   "finish": "6",
+   "jockey": "団野 大成"
+  }
+ ],
+ "name": "エコロレーヴ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023110090/C0",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:00"
+}

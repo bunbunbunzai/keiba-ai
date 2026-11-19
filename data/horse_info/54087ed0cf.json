@@ -1,0 +1,135 @@
+{
+ "profile": {
+  "父": "ポエティックフレア",
+  "性別": "牝",
+  "馬主名": "(株)東京ホースレーシング",
+  "母": "ベアトリッツ",
+  "馬齢": "3歳",
+  "調教師名": "上原 佑紀 （美浦）",
+  "母の父": "ディープインパクト",
+  "生年月日": "2023年4月16日",
+  "生産牧場": "社台ファーム",
+  "母の母": "バルドウィナ",
+  "毛色": "鹿毛",
+  "産地": "千歳市",
+  "馬名意味": "冠名+叙情詩、抒情詩。父名、母名より連想",
+  "取引市場": "",
+  "総賞金": "16,624,000 円",
+  "内付加賞": "94,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 9,
+  "wins": 1,
+  "second": 0,
+  "third": 4
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "新潟",
+   "race_name": "柏崎特別",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 8,
+   "finish": "3",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2026年10月4日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 17,
+   "popularity": 4,
+   "finish": "13",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2026年7月12日",
+   "venue": "福島",
+   "race_name": "織姫賞",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 1,
+   "finish": "9",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "東京",
+   "race_name": "カーネーショ",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2026年3月14日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "舟山 瑠泉"
+  },
+  {
+   "date": "2026年2月14日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 2,
+   "finish": "5",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2026年2月1日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2025年10月18日",
+   "venue": "新潟",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2025年7月19日",
+   "venue": "福島",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "石川 裕紀人"
+  }
+ ],
+ "name": "ルージュリリック",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023103543/BD",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:53"
+}

@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "ウインブライト",
+  "性別": "牡",
+  "馬主名": "小笹 芳央",
+  "母": "ローゼンタール",
+  "馬齢": "3歳",
+  "調教師名": "田島 俊明 （美浦）",
+  "母の父": "ロージズインメイ",
+  "生年月日": "2023年5月15日",
+  "生産牧場": "岡田スタツド",
+  "母の母": "タニノエクセレント",
+  "毛色": "芦毛",
+  "産地": "新ひだか町",
+  "馬名意味": "冠名+ドイツの地名",
+  "取引市場": "",
+  "総賞金": "13,800,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 2,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "福島",
+   "race_name": "飯坂温泉特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 13,
+   "finish": "13",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2026年8月22日",
+   "venue": "札幌",
+   "race_name": "WASJ1",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 10,
+   "finish": "6",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年8月2日",
+   "venue": "札幌",
+   "race_name": "苫小牧特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 7,
+   "finish": "14",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年7月19日",
+   "venue": "函館",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年5月9日",
+   "venue": "新潟",
+   "race_name": "ゆきつばき賞",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 5,
+   "finish": "8",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2026年3月15日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 4,
+   "finish": "9",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2025年12月21日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2025年10月26日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 2,
+   "finish": "6",
+   "jockey": "浜中 俊"
+  }
+ ],
+ "name": "ホウオウヘッセン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023102440/44",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:14"
+}

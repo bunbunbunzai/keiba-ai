@@ -1,0 +1,223 @@
+{
+ "profile": {
+  "父": "デクラレーションオブウォー",
+  "性別": "牡",
+  "馬主名": "平井 裕",
+  "母": "イチリュウ",
+  "馬齢": "4歳",
+  "調教師名": "橋田 宜長 （栗東）",
+  "母の父": "キングヘイロー",
+  "生年月日": "2022年3月24日",
+  "生産牧場": "グランド牧場",
+  "母の母": "キハク",
+  "毛色": "栗毛",
+  "産地": "新ひだか町",
+  "馬名意味": "超一流",
+  "取引市場": "2023年 北海道セレクションセール",
+  "総賞金": "28,420,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 17,
+  "wins": 2,
+  "second": 1,
+  "third": 3
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "京都",
+   "race_name": "嵯峨野特別",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 5,
+   "finish": "7",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2026年9月6日",
+   "venue": "阪神",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 14,
+   "finish": "7",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2026年7月25日",
+   "venue": "中京",
+   "race_name": "四日市特別",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 13,
+   "finish": "10",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2026年4月25日",
+   "venue": "東京",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 7,
+   "finish": "8",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2026年4月5日",
+   "venue": "阪神",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 7,
+   "finish": "10",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年2月22日",
+   "venue": "小倉",
+   "race_name": "和布刈特別",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 16,
+   "popularity": 4,
+   "finish": "16",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2026年1月25日",
+   "venue": "京都",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2026年1月4日",
+   "venue": "京都",
+   "race_name": "天ケ瀬特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2025年10月13日",
+   "venue": "京都",
+   "race_name": "蹴上特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 4,
+   "finish": "4",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2025年8月31日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2025年8月2日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 6,
+   "finish": "3",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2025年6月21日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 4,
+   "finish": "7",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2025年3月8日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 7,
+   "finish": "3",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2025年2月10日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2024年12月7日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 7,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2024年11月9日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2024年10月19日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "北村 友一"
+  }
+ ],
+ "name": "スーパージョック",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022103733/83",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:49"
+}

@@ -1,0 +1,135 @@
+{
+ "profile": {
+  "父": "ドレフォン",
+  "性別": "牡",
+  "馬主名": "(株)G1レーシング",
+  "母": "レインボーダリア",
+  "馬齢": "3歳",
+  "調教師名": "戸田 博文 （美浦）",
+  "母の父": "ブライアンズタイム",
+  "生年月日": "2023年3月20日",
+  "生産牧場": "追分ファーム",
+  "母の母": "アローム",
+  "毛色": "栗毛",
+  "産地": "安平町",
+  "馬名意味": "強風。父名より連想",
+  "取引市場": "",
+  "総賞金": "13,250,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 9,
+  "wins": 1,
+  "second": 2,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年10月31日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 2100,
+   "field": 15,
+   "popularity": 7,
+   "finish": "4",
+   "jockey": "吉田 豊"
+  },
+  {
+   "date": "2026年6月14日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 2100,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "吉田 豊"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 2100,
+   "field": 13,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "吉田 豊"
+  },
+  {
+   "date": "2026年4月25日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 2100,
+   "field": 13,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "吉田 豊"
+  },
+  {
+   "date": "2026年3月29日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 13,
+   "popularity": 4,
+   "finish": "6",
+   "jockey": "吉田 豊"
+  },
+  {
+   "date": "2026年1月24日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 18,
+   "popularity": 8,
+   "finish": "4",
+   "jockey": "吉田 豊"
+  },
+  {
+   "date": "2025年11月24日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 7,
+   "finish": "5",
+   "jockey": "吉田 豊"
+  },
+  {
+   "date": "2025年11月1日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 6,
+   "finish": "7",
+   "jockey": "吉田 豊"
+  },
+  {
+   "date": "2025年10月19日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 18,
+   "popularity": 5,
+   "finish": "12",
+   "jockey": "吉田 豊"
+  }
+ ],
+ "name": "モデレートゲイル",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023103731/29",
+ "last_card": "20261031",
+ "fetched": "2026-11-20 05:40"
+}

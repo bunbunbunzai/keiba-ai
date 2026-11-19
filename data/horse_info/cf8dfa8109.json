@@ -1,0 +1,168 @@
+{
+ "profile": {
+  "父": "レイデオロ",
+  "性別": "牡",
+  "馬主名": "林 瑛子",
+  "母": "ハナソメイ",
+  "馬齢": "3歳",
+  "調教師名": "斎藤 誠 （美浦）",
+  "母の父": "タートルボウル",
+  "生年月日": "2023年2月15日",
+  "生産牧場": "藤本ファーム",
+  "母の母": "エポキシ",
+  "毛色": "鹿毛",
+  "産地": "日高町",
+  "馬名意味": "ハナミズキ。母名より連想",
+  "取引市場": "",
+  "総賞金": "43,263,000 円",
+  "内付加賞": "543,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 11,
+  "wins": 2,
+  "second": 4,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 2,
+   "finish": "5",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2026年10月3日",
+   "venue": "東京",
+   "race_name": "八ヶ岳特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 6,
+   "finish": "2",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2026年9月6日",
+   "venue": "札幌",
+   "race_name": "HTB賞",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 2,
+   "finish": "5",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2026年7月18日",
+   "venue": "函館",
+   "race_name": "湯浜特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2026年6月28日",
+   "venue": "函館",
+   "race_name": "臥牛山特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2026年6月14日",
+   "venue": "函館",
+   "race_name": "八雲特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2026年4月4日",
+   "venue": "中山",
+   "race_name": "山吹賞",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 12,
+   "popularity": null,
+   "finish": "除外",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年3月1日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 8,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年2月14日",
+   "venue": "小倉",
+   "race_name": "あすなろ賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2026年1月25日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2025年12月20日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 9,
+   "finish": "3",
+   "jockey": "T.マーカンド"
+  },
+  {
+   "date": "2025年12月6日",
+   "venue": "中山",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 14,
+   "finish": "5",
+   "jockey": "T.マーカンド"
+  }
+ ],
+ "name": "ドッグウッド",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023101382/4A",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:55"
+}

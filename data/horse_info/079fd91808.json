@@ -1,0 +1,223 @@
+{
+ "profile": {
+  "父": "シニスターミニスター",
+  "性別": "牡",
+  "馬主名": "(株)京都ホースレーシング",
+  "母": "コテキタイ",
+  "馬齢": "4歳",
+  "調教師名": "西村 真幸 （栗東）",
+  "母の父": "サウスヴィグラス",
+  "生年月日": "2022年2月21日",
+  "生産牧場": "高橋フアーム",
+  "母の母": "チアリーダー",
+  "毛色": "鹿毛",
+  "産地": "新ひだか町",
+  "馬名意味": "旅する楽隊。世界を股にかけて活躍することを願って。母名より連想",
+  "取引市場": "",
+  "総賞金": "40,088,000 円",
+  "内付加賞": "98,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 17,
+  "wins": 2,
+  "second": 4,
+  "third": 4
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年10月24日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 11,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年10月3日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 7,
+   "finish": "5",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2026年6月7日",
+   "venue": "東京",
+   "race_name": "小金井特別",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 9,
+   "finish": "9",
+   "jockey": "F.ゴンサルベス"
+  },
+  {
+   "date": "2026年5月17日",
+   "venue": "東京",
+   "race_name": "青梅特別",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "F.ゴンサルベス"
+  },
+  {
+   "date": "2026年4月26日",
+   "venue": "京都",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 11,
+   "finish": "13",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2026年2月22日",
+   "venue": "東京",
+   "race_name": "大島特別",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 9,
+   "finish": "11",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年11月1日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 5,
+   "finish": "6",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2025年10月11日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 6,
+   "finish": "1",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2025年9月20日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 8,
+   "finish": "5",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2025年6月14日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 3,
+   "finish": "11",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年3月22日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2025年3月1日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年2月2日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2024年10月14日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1300,
+   "field": 16,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2024年9月21日",
+   "venue": "中京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2024年8月31日",
+   "venue": "中京",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "岩田 望来"
+  }
+ ],
+ "name": "トラヴェリンバンド",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022104009/9D",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:55"
+}

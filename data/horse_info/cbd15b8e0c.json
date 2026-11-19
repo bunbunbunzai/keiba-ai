@@ -1,0 +1,212 @@
+{
+ "profile": {
+  "父": "スワーヴリチャード",
+  "性別": "牡",
+  "馬主名": "(株)NICKS",
+  "母": "プレリュードフィズ",
+  "馬齢": "4歳",
+  "調教師名": "須貝 尚介 （栗東）",
+  "母の父": "キングカメハメハ",
+  "生年月日": "2022年5月4日",
+  "生産牧場": "杵臼牧場",
+  "母の母": "マンハッタンフィズ",
+  "毛色": "鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "大きな影響力を持つ人物",
+  "取引市場": "",
+  "総賞金": "42,583,000 円",
+  "内付加賞": "513,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 16,
+  "wins": 3,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "京都",
+   "race_name": "ドンカスター",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 13,
+   "finish": "8",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2026年10月11日",
+   "venue": "京都",
+   "race_name": "三年坂S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 17,
+   "popularity": 11,
+   "finish": "9",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年8月1日",
+   "venue": "中京",
+   "race_name": "豊橋S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 5,
+   "finish": "11",
+   "jockey": "M.デムーロ"
+  },
+  {
+   "date": "2026年5月31日",
+   "venue": "東京",
+   "race_name": "むらさき賞",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 17,
+   "popularity": 7,
+   "finish": "13",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年5月17日",
+   "venue": "京都",
+   "race_name": "錦ステークス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 5,
+   "finish": "3",
+   "jockey": "M.デムーロ"
+  },
+  {
+   "date": "2026年4月26日",
+   "venue": "京都",
+   "race_name": "センテニアル",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 18,
+   "popularity": 9,
+   "finish": "6",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年2月10日",
+   "venue": "京都",
+   "race_name": "石清水S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 2,
+   "finish": "9",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年1月11日",
+   "venue": "京都",
+   "race_name": "新春S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 5,
+   "finish": "5",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年12月7日",
+   "venue": "中京",
+   "race_name": "志摩特別",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年8月24日",
+   "venue": "札幌",
+   "race_name": "WASJ4",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 7,
+   "finish": "8",
+   "jockey": "C.トーレス"
+  },
+  {
+   "date": "2025年8月10日",
+   "venue": "札幌",
+   "race_name": "摩周湖特別",
+   "surface": "芝",
+   "distance": 1500,
+   "field": 14,
+   "popularity": 1,
+   "finish": "9",
+   "jockey": "R.キング"
+  },
+  {
+   "date": "2025年6月1日",
+   "venue": "京都",
+   "race_name": "白百合S",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 2,
+   "finish": "7",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2025年4月26日",
+   "venue": "京都",
+   "race_name": "あやめ賞",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 7,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年3月15日",
+   "venue": "阪神",
+   "race_name": "ゆきやなぎ賞",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 12,
+   "popularity": 4,
+   "finish": "10",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年2月2日",
+   "venue": "東京",
+   "race_name": "セントポーリ",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "M.デムーロ"
+  },
+  {
+   "date": "2024年11月17日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  }
+ ],
+ "name": "キングメーカー",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022102744/17",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:53"
+}

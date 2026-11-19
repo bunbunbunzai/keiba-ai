@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "ダンカーク",
+  "性別": "牝",
+  "馬主名": "(有)ミルファーム",
+  "母": "カブリオレ",
+  "馬齢": "3歳",
+  "調教師名": "千葉 直人 （美浦）",
+  "母の父": "Dansili",
+  "生年月日": "2023年3月20日",
+  "生産牧場": "T.Mファーム(同)",
+  "母の母": "Arabesque",
+  "毛色": "芦毛",
+  "産地": "浦河町",
+  "馬名意味": "宝石名",
+  "取引市場": "",
+  "総賞金": "8,500,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 1,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 5,
+   "finish": "6",
+   "jockey": "小林 脩斗"
+  },
+  {
+   "date": "2026年11月8日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 6,
+   "finish": "4",
+   "jockey": "江田 照男"
+  },
+  {
+   "date": "2026年8月9日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 6,
+   "finish": "1",
+   "jockey": "江田 照男"
+  },
+  {
+   "date": "2026年7月12日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 16,
+   "popularity": 9,
+   "finish": "3",
+   "jockey": "江田 照男"
+  },
+  {
+   "date": "2026年5月30日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 7,
+   "finish": "7",
+   "jockey": "小林 脩斗"
+  },
+  {
+   "date": "2026年5月24日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 11,
+   "finish": "7",
+   "jockey": "小林 脩斗"
+  },
+  {
+   "date": "2026年4月11日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 9,
+   "finish": "16",
+   "jockey": "小林 脩斗"
+  }
+ ],
+ "name": "ジェムシリカ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023106130/5D",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:48"
+}

@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "ワールドプレミア",
+  "性別": "牡",
+  "馬主名": "フォレストレーシング",
+  "母": "ソングライティング",
+  "馬齢": "3歳",
+  "調教師名": "杉山 晴紀 （栗東）",
+  "母の父": "Giant's Causeway",
+  "生年月日": "2023年4月9日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "Embur's Song",
+  "毛色": "黒鹿毛",
+  "産地": "安平町",
+  "馬名意味": "モンテネグロの山名",
+  "取引市場": "2023年 ノーザンファームミックスセール",
+  "総賞金": "695,132,000 円",
+  "内付加賞": "53,632,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "316,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 5,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "京都",
+   "race_name": "菊花賞",
+   "surface": "芝",
+   "distance": 3000,
+   "field": 18,
+   "popularity": 1,
+   "finish": "14",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年9月21日",
+   "venue": "阪神",
+   "race_name": "神戸新聞杯",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 11,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年5月31日",
+   "venue": "東京",
+   "race_name": "東京優駿",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 18,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年4月19日",
+   "venue": "中山",
+   "race_name": "皐月賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年2月15日",
+   "venue": "東京",
+   "race_name": "共同通信杯",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年12月27日",
+   "venue": "中山",
+   "race_name": "ホープフルS",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 7,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年11月9日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 8,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  }
+ ],
+ "name": "ロブチェン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023107089/76",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:48"
+}

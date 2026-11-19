@@ -1,0 +1,189 @@
+{
+ "profile": {
+  "父": "Maximum Security",
+  "性別": "牝",
+  "馬主名": "(株)ノースヒルズ",
+  "母": "Tiz Midnight",
+  "馬齢": "4歳",
+  "調教師名": "河嶋 宏樹 （栗東）",
+  "母の父": "Midnight Lute",
+  "生年月日": "2022年5月27日",
+  "母の母": "Tough Tiz's Sis",
+  "毛色": "鹿毛",
+  "産地": "米",
+  "馬名意味": "天使の夢(仏)",
+  "取引市場": "",
+  "総賞金": "3,490,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "2,310,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 14,
+  "wins": 1,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 8,
+   "finish": "7",
+   "jockey": "柴田 裕一郎"
+  },
+  {
+   "date": "2026年9月15日",
+   "venue": "金沢",
+   "race_name": "金沢城賞",
+   "surface": "ダ",
+   "distance": 1500,
+   "field": 8,
+   "popularity": null,
+   "finish": "6",
+   "jockey": "加藤 翔馬"
+  },
+  {
+   "date": "2026年8月15日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 16,
+   "finish": "6",
+   "jockey": "柴田 裕一郎"
+  },
+  {
+   "date": "2026年6月3日",
+   "venue": "名古",
+   "race_name": "ネプチューン",
+   "surface": "ダ",
+   "distance": 1500,
+   "field": 12,
+   "popularity": null,
+   "finish": "2",
+   "jockey": "塚本 征吾"
+  },
+  {
+   "date": "2026年4月12日",
+   "venue": "阪神",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 9,
+   "finish": "9",
+   "jockey": "柴田 裕一郎"
+  },
+  {
+   "date": "2026年3月29日",
+   "venue": "中京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 13,
+   "finish": "10",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2026年2月14日",
+   "venue": "小倉",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 17,
+   "finish": "15",
+   "jockey": "横山 琉人"
+  },
+  {
+   "date": "2025年12月7日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 12,
+   "finish": "12",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2025年10月11日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 12,
+   "finish": "8",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2025年6月17日",
+   "venue": "名古",
+   "race_name": "ピーチ賞",
+   "surface": "ダ",
+   "distance": 1500,
+   "field": 12,
+   "popularity": null,
+   "finish": "1",
+   "jockey": "塚本 征吾"
+  },
+  {
+   "date": "2025年4月19日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 7,
+   "finish": "11",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2025年3月30日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 9,
+   "finish": "5",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2025年3月9日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2025年1月26日",
+   "venue": "中山",
+   "race_name": "3歳新馬",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 4,
+   "finish": "5",
+   "jockey": "R.キング"
+  }
+ ],
+ "name": "レーヴドアンジュ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022110157/4A",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:55"
+}

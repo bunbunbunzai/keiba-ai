@@ -1,0 +1,135 @@
+{
+ "profile": {
+  "父": "モズアスコット",
+  "性別": "牡",
+  "馬主名": "八木 昌司",
+  "母": "タガノディーバ",
+  "馬齢": "3歳",
+  "調教師名": "角田 晃一 （栗東）",
+  "母の父": "フジキセキ",
+  "生年月日": "2023年5月11日",
+  "生産牧場": "八木牧場",
+  "母の母": "ディーバ",
+  "毛色": "栗毛",
+  "産地": "新冠町",
+  "馬名意味": "冠名+感情のおもむくままに(仏)",
+  "取引市場": "",
+  "総賞金": "34,200,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 9,
+  "wins": 3,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "京都",
+   "race_name": "天橋立S",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年8月9日",
+   "venue": "新潟",
+   "race_name": "レパードS",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 7,
+   "finish": "7",
+   "jockey": "菱田 裕二"
+  },
+  {
+   "date": "2026年6月21日",
+   "venue": "阪神",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年5月30日",
+   "venue": "京都",
+   "race_name": "鳳雛S",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年1月10日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年12月14日",
+   "venue": "中山",
+   "race_name": "2歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2025年11月2日",
+   "venue": "京都",
+   "race_name": "もちの木賞",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 8,
+   "finish": "4",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2025年9月21日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2025年6月22日",
+   "venue": "阪神",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 10,
+   "popularity": 6,
+   "finish": "9",
+   "jockey": "角田 大和"
+  }
+ ],
+ "name": "タガノアバンドーネ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023104733/FE",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:14"
+}

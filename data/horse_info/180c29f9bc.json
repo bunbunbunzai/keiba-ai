@@ -1,0 +1,146 @@
+{
+ "profile": {
+  "父": "サンダースノー",
+  "性別": "牡",
+  "馬主名": "(有)フォーレスト",
+  "母": "ゼットガガ",
+  "馬齢": "4歳",
+  "調教師名": "吉田 直弘 （栗東）",
+  "母の父": "バゴ",
+  "生年月日": "2022年4月1日",
+  "生産牧場": "ノースガーデン",
+  "母の母": "ネオシルヴィア",
+  "毛色": "鹿毛",
+  "産地": "日高町",
+  "馬名意味": "冠名+エール",
+  "取引市場": "",
+  "総賞金": "81,784,000 円",
+  "内付加賞": "1,044,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "36,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 10,
+  "wins": 5,
+  "second": 2,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "京都",
+   "race_name": "室町S",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "9",
+   "jockey": "松本 大輝"
+  },
+  {
+   "date": "2026年10月4日",
+   "venue": "京都",
+   "race_name": "藤森S",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "松本 大輝"
+  },
+  {
+   "date": "2026年4月19日",
+   "venue": "阪神",
+   "race_name": "陽春S",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 13,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "松本 大輝"
+  },
+  {
+   "date": "2026年1月5日",
+   "venue": "京都",
+   "race_name": "門松S",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "松本 大輝"
+  },
+  {
+   "date": "2025年12月6日",
+   "venue": "中京",
+   "race_name": "中京日経賞",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 13,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "松本 大輝"
+  },
+  {
+   "date": "2025年9月14日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2025年8月16日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2025年5月24日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "松本 大輝"
+  },
+  {
+   "date": "2025年5月4日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2025年4月19日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 11,
+   "finish": "4",
+   "jockey": "西塚 洸二"
+  }
+ ],
+ "name": "ゼットエール",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022107278/C9",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:00"
+}

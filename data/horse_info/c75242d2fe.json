@@ -1,0 +1,102 @@
+{
+ "profile": {
+  "父": "クリソベリル",
+  "性別": "牡",
+  "馬主名": "染谷 幸雄",
+  "母": "レユシット",
+  "馬齢": "3歳",
+  "調教師名": "河嶋 宏樹 （栗東）",
+  "母の父": "ルーラーシップ",
+  "生年月日": "2023年4月2日",
+  "生産牧場": "川島牧場",
+  "母の母": "タッソーニー",
+  "毛色": "鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "冠名+父父名の一部",
+  "取引市場": "",
+  "総賞金": "8,190,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 6,
+  "wins": 1,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 2400,
+   "field": 16,
+   "popularity": 6,
+   "finish": "13",
+   "jockey": "秋山 稔樹"
+  },
+  {
+   "date": "2026年10月12日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 16,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "秋山 稔樹"
+  },
+  {
+   "date": "2026年8月8日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "秋山 稔樹"
+  },
+  {
+   "date": "2026年6月13日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 6,
+   "finish": "3",
+   "jockey": "秋山 稔樹"
+  },
+  {
+   "date": "2026年5月31日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 16,
+   "popularity": 8,
+   "finish": "4",
+   "jockey": "秋山 稔樹"
+  },
+  {
+   "date": "2026年1月12日",
+   "venue": "京都",
+   "race_name": "3歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 14,
+   "finish": "6",
+   "jockey": "秋山 稔樹"
+  }
+ ],
+ "name": "タニセンゴールド",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023104057/93",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:09"
+}

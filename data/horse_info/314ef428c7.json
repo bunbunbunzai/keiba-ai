@@ -1,0 +1,168 @@
+{
+ "profile": {
+  "父": "ディーマジェスティ",
+  "性別": "牡",
+  "馬主名": "(株)ノルマンディーサラブレッドレーシング",
+  "母": "ウォータームージカ",
+  "馬齢": "4歳",
+  "調教師名": "辻野 泰之 （栗東）",
+  "母の父": "フレンチデピュティ",
+  "生年月日": "2022年3月2日",
+  "生産牧場": "高橋フアーム",
+  "母の母": "カパルアベイ",
+  "毛色": "栗毛",
+  "産地": "新ひだか町",
+  "馬名意味": "威厳を持って(音楽用語)。母名、父名より連想",
+  "取引市場": "2023年 北海道サマーセール",
+  "総賞金": "28,200,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "700,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 12,
+  "wins": 3,
+  "second": 0,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "東京",
+   "race_name": "銀嶺S",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 11,
+   "finish": "9",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2026年10月3日",
+   "venue": "京都",
+   "race_name": "大山崎S",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 15,
+   "finish": "7",
+   "jockey": "長岡 禎仁"
+  },
+  {
+   "date": "2026年6月14日",
+   "venue": "阪神",
+   "race_name": "リボン賞",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 12,
+   "finish": "12",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年4月19日",
+   "venue": "阪神",
+   "race_name": "陽春S",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 13,
+   "popularity": 11,
+   "finish": "9",
+   "jockey": "長岡 禎仁"
+  },
+  {
+   "date": "2026年2月28日",
+   "venue": "中山",
+   "race_name": "春風S",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 13,
+   "finish": "10",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年2月10日",
+   "venue": "京都",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 9,
+   "finish": "1",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2025年11月16日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2025年10月18日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 1,
+   "finish": "9",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2025年8月24日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 11,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "小林 美駒"
+  },
+  {
+   "date": "2025年8月16日",
+   "venue": "札幌",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 12,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "舟山 瑠泉"
+  },
+  {
+   "date": "2025年7月17日",
+   "venue": "大井",
+   "race_name": "FNひまわり",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 14,
+   "popularity": null,
+   "finish": "3",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2025年6月14日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 8,
+   "finish": "9",
+   "jockey": "永島 まなみ"
+  }
+ ],
+ "name": "ディニトーソ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022104004/5E",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:56"
+}

@@ -1,0 +1,157 @@
+{
+ "profile": {
+  "父": "リーチザクラウン",
+  "性別": "せん",
+  "馬主名": "ライフエンタープライズ(株)",
+  "母": "ミヤジサクラコ",
+  "馬齢": "3歳",
+  "調教師名": "菊川 正達 （美浦）",
+  "母の父": "ロードカナロア",
+  "生年月日": "2023年4月23日",
+  "生産牧場": "柏木 一則",
+  "母の母": "ミヤジプロスパー",
+  "毛色": "黒鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "強い絆",
+  "取引市場": "2024年 北海道オータムセール",
+  "総賞金": "7,550,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "7,550,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "7,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 10,
+  "wins": 2,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "京都",
+   "race_name": "壬生特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 18,
+   "finish": "15",
+   "jockey": "藤懸 貴志"
+  },
+  {
+   "date": "2026年9月26日",
+   "venue": "阪神",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 16,
+   "finish": "15",
+   "jockey": "吉田 隼人"
+  },
+  {
+   "date": "2026年8月16日",
+   "venue": "札幌",
+   "race_name": "大通公園特別",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 12,
+   "popularity": 12,
+   "finish": "11",
+   "jockey": "長浜 鴻緒"
+  },
+  {
+   "date": "2026年8月2日",
+   "venue": "札幌",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 12,
+   "popularity": 11,
+   "finish": "11",
+   "jockey": "石川 倭"
+  },
+  {
+   "date": "2026年7月12日",
+   "venue": "函館",
+   "race_name": "噴火湾特別",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 12,
+   "popularity": 12,
+   "finish": "8",
+   "jockey": "吉田 隼人"
+  },
+  {
+   "date": "2025年11月27日",
+   "venue": "園田",
+   "race_name": "兵庫JGP",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 12,
+   "popularity": null,
+   "finish": "12",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2025年11月16日",
+   "venue": "福島",
+   "race_name": "福島2歳S",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 16,
+   "finish": "16",
+   "jockey": "黛 弘人"
+  },
+  {
+   "date": "2025年10月29日",
+   "venue": "",
+   "race_name": "JRAへ転入",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2025年10月3日",
+   "venue": "船橋",
+   "race_name": "フューチュリティスプ",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 7,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "笠野 雄大"
+  },
+  {
+   "date": "2025年6月30日",
+   "venue": "船橋",
+   "race_name": "黄雀風スプリント",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 5,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "笠野 雄大"
+  },
+  {
+   "date": "2025年6月6日",
+   "venue": "船橋",
+   "race_name": "ライラックデビュー",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 6,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "笠野 雄大"
+  }
+ ],
+ "name": "ストロングボンド",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023105661/06",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:46"
+}

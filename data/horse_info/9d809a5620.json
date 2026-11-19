@@ -1,0 +1,212 @@
+{
+ "profile": {
+  "父": "ダノンレジェンド",
+  "性別": "牝",
+  "馬主名": "(株)ノルマンディーサラブレッドレーシング",
+  "母": "サトノフリージア",
+  "馬齢": "5歳",
+  "調教師名": "加藤 和宏 （美浦）",
+  "母の父": "ハービンジャー",
+  "生年月日": "2021年2月15日",
+  "生産牧場": "谷口牧場",
+  "母の母": "サトノフローラ",
+  "毛色": "黒鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "親愛なるフリーゼ(フリージアの名前の由来)へ。母名より",
+  "取引市場": "2022年 北海道サマーセール",
+  "総賞金": "5,285,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "5,285,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "3,300,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 14,
+  "wins": 3,
+  "second": 2,
+  "third": 3
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 16,
+   "popularity": 15,
+   "finish": "9",
+   "jockey": "古川 奈穂"
+  },
+  {
+   "date": "2026年10月18日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 13,
+   "finish": "15",
+   "jockey": "長浜 鴻緒"
+  },
+  {
+   "date": "2026年9月6日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 12,
+   "popularity": 12,
+   "finish": "6",
+   "jockey": "大久保 友雅"
+  },
+  {
+   "date": "2026年7月23日",
+   "venue": "",
+   "race_name": "JRAへ転入",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2026年6月2日",
+   "venue": "船橋",
+   "race_name": "ムササビダッシュ",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 14,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "笠野 雄大"
+  },
+  {
+   "date": "2026年5月6日",
+   "venue": "船橋",
+   "race_name": "五月雨ダッシュ",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 14,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "笠野 雄大"
+  },
+  {
+   "date": "2025年4月4日",
+   "venue": "船橋",
+   "race_name": "エイプリルダッシュ",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 14,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "本田 正重"
+  },
+  {
+   "date": "2025年3月10日",
+   "venue": "船橋",
+   "race_name": "陽炎ダッシュ",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 14,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "本田 正重"
+  },
+  {
+   "date": "2025年2月13日",
+   "venue": "船橋",
+   "race_name": "普通C2九十",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "矢野 貴之"
+  },
+  {
+   "date": "2025年1月22日",
+   "venue": "船橋",
+   "race_name": "普通C2九十",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 9,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "本田 正重"
+  },
+  {
+   "date": "2024年12月17日",
+   "venue": "園田",
+   "race_name": "エリカ賞C1",
+   "surface": "ダ",
+   "distance": 820,
+   "field": 12,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "土方 颯太"
+  },
+  {
+   "date": "2024年12月4日",
+   "venue": "園田",
+   "race_name": "C1",
+   "surface": "ダ",
+   "distance": 820,
+   "field": 10,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "土方 颯太"
+  },
+  {
+   "date": "2024年11月20日",
+   "venue": "園田",
+   "race_name": "サザンカ賞C1",
+   "surface": "ダ",
+   "distance": 820,
+   "field": 12,
+   "popularity": 6,
+   "finish": "2",
+   "jockey": "新庄 海誠"
+  },
+  {
+   "date": "2024年10月30日",
+   "venue": "園田",
+   "race_name": "夏梅(なつめ)7ハロ",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 10,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "土方 颯太"
+  },
+  {
+   "date": "2024年9月4日",
+   "venue": "",
+   "race_name": "JRAより転出",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2024年9月1日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 8,
+   "finish": "15",
+   "jockey": "原田 和真"
+  }
+ ],
+ "name": "ディアフリーゼ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021102928/99",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:23"
+}

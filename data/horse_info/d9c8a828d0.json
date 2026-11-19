@@ -1,0 +1,157 @@
+{
+ "profile": {
+  "父": "ドゥラメンテ",
+  "性別": "牡",
+  "馬主名": "(株)社台レースホース",
+  "母": "マスクオフ",
+  "馬齢": "4歳",
+  "調教師名": "手塚 貴久 （美浦）",
+  "母の父": "ディープインパクト",
+  "生年月日": "2022年3月2日",
+  "生産牧場": "社台ファーム",
+  "母の母": "ビハインドザマスク",
+  "毛色": "黒鹿毛",
+  "産地": "千歳市",
+  "馬名意味": "仮面舞踏会",
+  "取引市場": "",
+  "総賞金": "878,536,900 円",
+  "内付加賞": "16,490,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "126,846,900 円",
+  "収得賞金（平地）": "405,900,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 11,
+  "wins": 4,
+  "second": 3,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月1日",
+   "venue": "東京",
+   "race_name": "天皇賞(秋)",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 17,
+   "popularity": 2,
+   "finish": "11",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2026年7月25日",
+   "venue": "英",
+   "race_name": "キングジョー",
+   "surface": "芝",
+   "distance": 2390,
+   "field": 9,
+   "popularity": null,
+   "finish": "7",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2026年4月26日",
+   "venue": "香港",
+   "race_name": "QE2世C",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 8,
+   "popularity": null,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年11月30日",
+   "venue": "東京",
+   "race_name": "ジャパンC",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 17,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年11月2日",
+   "venue": "東京",
+   "race_name": "天皇賞(秋)",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年6月1日",
+   "venue": "東京",
+   "race_name": "東京優駿",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 18,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年4月20日",
+   "venue": "中山",
+   "race_name": "皐月賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年2月16日",
+   "venue": "東京",
+   "race_name": "共同通信杯",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2024年12月28日",
+   "venue": "中山",
+   "race_name": "ホープフルS",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 4,
+   "finish": "11",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年10月19日",
+   "venue": "東京",
+   "race_name": "アイビーS",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 8,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年8月11日",
+   "venue": "新潟",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "戸崎 圭太"
+  }
+ ],
+ "name": "マスカレードボール",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022105519/91",
+ "last_card": "20261101",
+ "fetched": "2026-11-20 05:30"
+}

@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "クリソベリル",
+  "性別": "牡",
+  "馬主名": "(株)ヒダカ・ブリーダーズ・ユニオン",
+  "母": "エイシンピカデリー",
+  "馬齢": "3歳",
+  "調教師名": "田中 克典 （栗東）",
+  "母の父": "Hard Spun",
+  "生年月日": "2023年4月19日",
+  "生産牧場": "佐藤牧場",
+  "母の母": "Lady's Laughter",
+  "毛色": "鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "ロンドン中心部にある緑の美しい公園。母名より連想",
+  "取引市場": "2024年 北海道セレクションセール",
+  "総賞金": "8,710,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 1,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 2400,
+   "field": 16,
+   "popularity": 12,
+   "finish": "5",
+   "jockey": "国分 恭介"
+  },
+  {
+   "date": "2026年7月12日",
+   "venue": "函館",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 2400,
+   "field": 11,
+   "popularity": 3,
+   "finish": "11",
+   "jockey": "舟山 瑠泉"
+  },
+  {
+   "date": "2026年6月21日",
+   "venue": "函館",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 2400,
+   "field": 11,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "国分 恭介"
+  },
+  {
+   "date": "2026年5月10日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 12,
+   "popularity": 2,
+   "finish": "6",
+   "jockey": "藤懸 貴志"
+  },
+  {
+   "date": "2026年3月21日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 5,
+   "finish": "5",
+   "jockey": "藤懸 貴志"
+  },
+  {
+   "date": "2026年3月7日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 2000,
+   "field": 13,
+   "popularity": 6,
+   "finish": "3",
+   "jockey": "藤懸 貴志"
+  },
+  {
+   "date": "2026年1月25日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 16,
+   "popularity": 13,
+   "finish": "6",
+   "jockey": "藤懸 貴志"
+  },
+  {
+   "date": "2026年1月12日",
+   "venue": "京都",
+   "race_name": "3歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 13,
+   "finish": "11",
+   "jockey": "国分 恭介"
+  }
+ ],
+ "name": "ハイドパーク",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023104100/4F",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:08"
+}

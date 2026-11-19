@@ -1,0 +1,212 @@
+{
+ "profile": {
+  "父": "スクリーンヒーロー",
+  "性別": "牡",
+  "馬主名": "(有)木村牧場",
+  "母": "リボンティアラ",
+  "馬齢": "6歳",
+  "調教師名": "堀内 岳志 （美浦）",
+  "母の父": "アドマイヤムーン",
+  "生年月日": "2020年3月8日",
+  "生産牧場": "木村牧場",
+  "母の母": "ハートオブクィーン",
+  "毛色": "栗毛",
+  "産地": "日高町",
+  "馬名意味": "紫の騎士",
+  "取引市場": "",
+  "総賞金": "28,600,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 16,
+  "wins": 2,
+  "second": 2,
+  "third": 4
+ },
+ "runs": [
+  {
+   "date": "2026年10月31日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 13,
+   "popularity": 10,
+   "finish": "6",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2025年10月26日",
+   "venue": "東京",
+   "race_name": "三鷹特別",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 7,
+   "finish": "7",
+   "jockey": "松岡 正海"
+  },
+  {
+   "date": "2025年9月28日",
+   "venue": "中山",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 13,
+   "finish": "6",
+   "jockey": "遠藤 汰月"
+  },
+  {
+   "date": "2025年7月26日",
+   "venue": "新潟",
+   "race_name": "麒麟山特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 13,
+   "finish": "8",
+   "jockey": "遠藤 汰月"
+  },
+  {
+   "date": "2025年4月20日",
+   "venue": "福島",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 6,
+   "finish": "1",
+   "jockey": "遠藤 汰月"
+  },
+  {
+   "date": "2025年2月9日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 4,
+   "finish": "13",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2024年11月9日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "7",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2024年10月13日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 12,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2024年9月21日",
+   "venue": "中山",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 2,
+   "finish": "9",
+   "jockey": "黛 弘人"
+  },
+  {
+   "date": "2023年11月4日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 13,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "西村 太一"
+  },
+  {
+   "date": "2023年10月22日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "西村 太一"
+  },
+  {
+   "date": "2023年6月17日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "西村 太一"
+  },
+  {
+   "date": "2023年6月4日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "西村 太一"
+  },
+  {
+   "date": "2023年4月9日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "西村 太一"
+  },
+  {
+   "date": "2023年3月19日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "西村 太一"
+  },
+  {
+   "date": "2023年2月19日",
+   "venue": "東京",
+   "race_name": "3歳新馬",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 6,
+   "finish": "3",
+   "jockey": "西村 太一"
+  }
+ ],
+ "name": "パープルナイト",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002020101412/67",
+ "last_card": "20261031",
+ "fetched": "2026-11-20 05:41"
+}

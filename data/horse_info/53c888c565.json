@@ -1,0 +1,146 @@
+{
+ "profile": {
+  "父": "パイロ",
+  "性別": "牝",
+  "馬主名": "(株)CHEVAL ATTACHE",
+  "母": "ノーブルライラック",
+  "馬齢": "3歳",
+  "調教師名": "栗田 徹 （美浦）",
+  "母の父": "キンシャサノキセキ",
+  "生年月日": "2023年4月5日",
+  "生産牧場": "ガーベラパークスタツド",
+  "母の母": "シルククインビー",
+  "毛色": "鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "太陽のような貴婦人",
+  "取引市場": "2024年 北海道サマーセール",
+  "総賞金": "22,750,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 10,
+  "wins": 2,
+  "second": 2,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年10月31日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 13,
+   "popularity": 9,
+   "finish": "2",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年10月11日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1300,
+   "field": 16,
+   "popularity": 16,
+   "finish": "8",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年8月22日",
+   "venue": "新潟",
+   "race_name": "岩室温泉特別",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 9,
+   "finish": "14",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年8月2日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年4月11日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 8,
+   "finish": "13",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2026年2月1日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 7,
+   "finish": "13",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年1月11日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 6,
+   "finish": "4",
+   "jockey": "小林 美駒"
+  },
+  {
+   "date": "2025年10月25日",
+   "venue": "新潟",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2025年9月27日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2025年8月10日",
+   "venue": "新潟",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 6,
+   "finish": "5",
+   "jockey": "戸崎 圭太"
+  }
+ ],
+ "name": "レディサン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023104852/DC",
+ "last_card": "20261031",
+ "fetched": "2026-11-20 05:41"
+}

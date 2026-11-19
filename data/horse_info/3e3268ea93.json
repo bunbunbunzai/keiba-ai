@@ -1,0 +1,200 @@
+{
+ "profile": {
+  "父": "Harry Angel",
+  "性別": "牡",
+  "馬主名": "H.H.シェイク・ハムダン",
+  "母": "Nonchalance",
+  "馬齢": "4歳",
+  "調教師名": "西園 翔太 （栗東）",
+  "母の父": "Dubawi",
+  "生年月日": "2022年2月7日",
+  "母の母": "Tearless",
+  "毛色": "鹿毛",
+  "産地": "愛",
+  "馬名意味": "光跡。光の通った跡が残像としてつながって見える筋のこと",
+  "取引市場": "",
+  "総賞金": "76,557,000 円",
+  "内付加賞": "917,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "24,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 4,
+  "second": 2,
+  "third": 3
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "京都",
+   "race_name": "室町S",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 12,
+   "finish": "16",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年8月9日",
+   "venue": "中京",
+   "race_name": "CBC賞",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 8,
+   "finish": "18",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年7月18日",
+   "venue": "小倉",
+   "race_name": "テレQ杯",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年5月3日",
+   "venue": "京都",
+   "race_name": "朱雀S",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 2,
+   "finish": "9",
+   "jockey": "D.レーン"
+  },
+  {
+   "date": "2026年2月14日",
+   "venue": "小倉",
+   "race_name": "下関S",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2026年2月1日",
+   "venue": "小倉",
+   "race_name": "周防灘特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2026年1月10日",
+   "venue": "京都",
+   "race_name": "鹿ケ谷特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 5,
+   "finish": "3",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年11月8日",
+   "venue": "福島",
+   "race_name": "飯坂温泉特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "13",
+   "jockey": "石川 裕紀人"
+  },
+  {
+   "date": "2025年10月26日",
+   "venue": "京都",
+   "race_name": "壬生特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年9月27日",
+   "venue": "中山",
+   "race_name": "勝浦特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "石橋 脩"
+  },
+  {
+   "date": "2025年9月13日",
+   "venue": "中山",
+   "race_name": "汐留特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 11,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "石橋 脩"
+  },
+  {
+   "date": "2025年7月20日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年7月6日",
+   "venue": "小倉",
+   "race_name": "小郡特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 8,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年6月7日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年5月25日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "佐々木 大輔"
+  }
+ ],
+ "name": "コウセキ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022110026/76",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:00"
+}

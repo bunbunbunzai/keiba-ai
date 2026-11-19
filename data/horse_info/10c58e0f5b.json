@@ -1,0 +1,135 @@
+{
+ "profile": {
+  "父": "ディスクリートキャット",
+  "性別": "牡",
+  "馬主名": "松本 好��",
+  "母": "メイショウツバキ",
+  "馬齢": "3歳",
+  "調教師名": "安達 昭夫 （栗東）",
+  "母の父": "メイショウサムソン",
+  "生年月日": "2023年4月22日",
+  "生産牧場": "赤田牧場",
+  "母の母": "メイショウラグーナ",
+  "毛色": "鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "冠名+力強さ、バルクアップより",
+  "取引市場": "",
+  "総賞金": "40,292,000 円",
+  "内付加賞": "392,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 9,
+  "wins": 3,
+  "second": 1,
+  "third": 3
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "京都",
+   "race_name": "貴船S",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年10月11日",
+   "venue": "京都",
+   "race_name": "円山特別",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2026年5月9日",
+   "venue": "東京",
+   "race_name": "青竜S",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 9,
+   "finish": "10",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年3月7日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2026年2月14日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年1月18日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年1月4日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年12月21日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "和田 竜二"
+  },
+  {
+   "date": "2025年12月6日",
+   "venue": "阪神",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 10,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "和田 竜二"
+  }
+ ],
+ "name": "メイショウバルク",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023101951/CD",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 04:58"
+}

@@ -1,0 +1,212 @@
+{
+ "profile": {
+  "父": "エピファネイア",
+  "性別": "牝",
+  "馬主名": "(有)サンデーレーシング",
+  "母": "アドマイヤセプター",
+  "馬齢": "5歳",
+  "調教師名": "宮田 敬介 （美浦）",
+  "母の父": "キングカメハメハ",
+  "生年月日": "2021年1月16日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "アドマイヤグルーヴ",
+  "毛色": "青鹿毛",
+  "産地": "安平町",
+  "馬名意味": "柔らかく、優美に(音楽用語)",
+  "取引市場": "",
+  "総賞金": "35,440,000 円",
+  "内付加賞": "80,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 16,
+  "wins": 2,
+  "second": 3,
+  "third": 3
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 8,
+   "finish": "11",
+   "jockey": "T.マーカンド"
+  },
+  {
+   "date": "2026年10月18日",
+   "venue": "京都",
+   "race_name": "宝ケ池特別",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 7,
+   "popularity": 5,
+   "finish": "5",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年8月23日",
+   "venue": "新潟",
+   "race_name": "飯豊特別",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 8,
+   "finish": "5",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年6月20日",
+   "venue": "東京",
+   "race_name": "相模湖特別",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 7,
+   "finish": "13",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2026年5月3日",
+   "venue": "東京",
+   "race_name": "4歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 9,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2026年2月15日",
+   "venue": "東京",
+   "race_name": "4歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 8,
+   "finish": "7",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2025年11月9日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 3,
+   "finish": "15",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2025年6月21日",
+   "venue": "東京",
+   "race_name": "相模湖特別",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年5月18日",
+   "venue": "東京",
+   "race_name": "テレ玉杯",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 9,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2025年4月5日",
+   "venue": "中山",
+   "race_name": "4歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 1,
+   "finish": "6",
+   "jockey": "J.モレイラ"
+  },
+  {
+   "date": "2025年2月9日",
+   "venue": "東京",
+   "race_name": "4歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 1,
+   "finish": "11",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2024年10月14日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 17,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2024年8月17日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2024年5月25日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "J.モレイラ"
+  },
+  {
+   "date": "2024年2月17日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2023年11月25日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  }
+ ],
+ "name": "コンテネレッツア",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021105367/0D",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:22"
+}

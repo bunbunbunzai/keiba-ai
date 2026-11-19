@@ -1,0 +1,212 @@
+{
+ "profile": {
+  "父": "ブリックスアンドモルタル",
+  "性別": "せん",
+  "馬主名": "山口 謙太郎",
+  "母": "サイモンミラベル",
+  "馬齢": "4歳",
+  "調教師名": "加藤 和宏 （美浦）",
+  "母の父": "ダイワメジャー",
+  "生年月日": "2022年3月12日",
+  "生産牧場": "追分ファーム",
+  "母の母": "ミリアム",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "確固たる基盤。父名より連想",
+  "取引市場": "",
+  "総賞金": "2,150,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "950,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "900,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 13,
+  "wins": 2,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 13,
+   "finish": "14",
+   "jockey": "原 優介"
+  },
+  {
+   "date": "2026年11月1日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": null,
+   "finish": "取消",
+   "jockey": "大久保 友雅"
+  },
+  {
+   "date": "2026年10月18日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 15,
+   "finish": "4",
+   "jockey": "大久保 友雅"
+  },
+  {
+   "date": "2026年8月15日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 16,
+   "finish": "11",
+   "jockey": "秋山 稔樹"
+  },
+  {
+   "date": "2026年8月9日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 14,
+   "finish": "13",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年5月17日",
+   "venue": "新潟",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 13,
+   "popularity": 10,
+   "finish": "13",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2026年3月15日",
+   "venue": "中京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 14,
+   "finish": "12",
+   "jockey": "野中 悠太郎"
+  },
+  {
+   "date": "2026年2月28日",
+   "venue": "中山",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 16,
+   "finish": "10",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年2月14日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 2100,
+   "field": 16,
+   "popularity": 12,
+   "finish": "15",
+   "jockey": "木幡 巧也"
+  },
+  {
+   "date": "2025年12月13日",
+   "venue": "",
+   "race_name": "JRAへ転入",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2025年10月9日",
+   "venue": "門別",
+   "race_name": "グランシャリオドリー",
+   "surface": "ダ",
+   "distance": 2000,
+   "field": 8,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "亀井 洋司"
+  },
+  {
+   "date": "2025年9月24日",
+   "venue": "門別",
+   "race_name": "3歳以上C4-2",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 6,
+   "finish": "1",
+   "jockey": "亀井 洋司"
+  },
+  {
+   "date": "2025年8月20日",
+   "venue": "",
+   "race_name": "JRAより転出",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2025年8月10日",
+   "venue": "札幌",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2600,
+   "field": 14,
+   "popularity": 12,
+   "finish": "14",
+   "jockey": "松本 大輝"
+  },
+  {
+   "date": "2025年6月29日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2600,
+   "field": 16,
+   "popularity": 14,
+   "finish": "13",
+   "jockey": "岡田 祥嗣"
+  },
+  {
+   "date": "2025年2月9日",
+   "venue": "小倉",
+   "race_name": "3歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 12,
+   "popularity": 6,
+   "finish": "12",
+   "jockey": "荻野 極"
+  }
+ ],
+ "name": "ソリッドベーシス",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022105697/5C",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:12"
+}

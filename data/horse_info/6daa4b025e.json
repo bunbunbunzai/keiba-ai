@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "ダノンキングリー",
+  "性別": "牡",
+  "馬主名": "SSレーシング",
+  "母": "サラーバ",
+  "馬齢": "3歳",
+  "調教師名": "田中 克典 （栗東）",
+  "母の父": "New Approach",
+  "生年月日": "2023年4月22日",
+  "生産牧場": "三嶋牧場",
+  "母の母": "Thamarat",
+  "毛色": "黒鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "よっしゃ、こい",
+  "取引市場": "",
+  "総賞金": "8,700,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 1,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 3,
+   "finish": "6",
+   "jockey": "松本 大輝"
+  },
+  {
+   "date": "2026年10月3日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 6,
+   "finish": "7",
+   "jockey": "亀田 温心"
+  },
+  {
+   "date": "2026年8月8日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 12,
+   "popularity": 4,
+   "finish": "11",
+   "jockey": "角田 大和"
+  },
+  {
+   "date": "2026年4月19日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 4,
+   "finish": "4",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2026年1月24日",
+   "venue": "京都",
+   "race_name": "若駒S",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 13,
+   "popularity": 12,
+   "finish": "12",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2026年1月4日",
+   "venue": "中山",
+   "race_name": "ジュニアC",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 5,
+   "finish": "6",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年12月6日",
+   "venue": "中京",
+   "race_name": "こうやまき賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 5,
+   "finish": "6",
+   "jockey": "亀田 温心"
+  },
+  {
+   "date": "2025年10月26日",
+   "venue": "新潟",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 7,
+   "finish": "1",
+   "jockey": "亀田 温心"
+  }
+ ],
+ "name": "オーライカモン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023105011/90",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 04:01"
+}

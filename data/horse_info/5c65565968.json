@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "サートゥルナーリア",
+  "性別": "牡",
+  "馬主名": "吉田 和美",
+  "母": "ローザフェリーチェ",
+  "馬齢": "4歳",
+  "調教師名": "黒岩 陽一 （美浦）",
+  "母の父": "エンパイアメーカー",
+  "生年月日": "2022年4月7日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "ローズバド",
+  "毛色": "黒鹿毛",
+  "産地": "安平町",
+  "馬名意味": "憂鬱な達人",
+  "取引市場": "",
+  "総賞金": "53,245,000 円",
+  "内付加賞": "545,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 3,
+  "second": 3,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "京都",
+   "race_name": "清水S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 10,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年9月13日",
+   "venue": "中山",
+   "race_name": "習志野特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年11月23日",
+   "venue": "京都",
+   "race_name": "花見小路特別",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年9月15日",
+   "venue": "中山",
+   "race_name": "Mディープイ",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年6月21日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年4月12日",
+   "venue": "中山",
+   "race_name": "山藤賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 9,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2025年1月25日",
+   "venue": "中山",
+   "race_name": "3歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  }
+ ],
+ "name": "ブルーマエストロ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022105189/3D",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:36"
+}

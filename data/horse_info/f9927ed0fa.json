@@ -1,0 +1,168 @@
+{
+ "profile": {
+  "父": "ドレフォン",
+  "性別": "牡",
+  "馬主名": "(有)サンデーレーシング",
+  "母": "アルミレーナ",
+  "馬齢": "4歳",
+  "調教師名": "金成 貴史 （美浦）",
+  "母の父": "ディープインパクト",
+  "生年月日": "2022年2月13日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "ナイトマジック",
+  "毛色": "芦毛",
+  "産地": "安平町",
+  "馬名意味": "ペガスス座51番星。ヘルウェティア(ケルト系民族)のラテン語",
+  "取引市場": "",
+  "総賞金": "17,040,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 12,
+  "wins": 1,
+  "second": 1,
+  "third": 3
+ },
+ "runs": [
+  {
+   "date": "2026年11月1日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 6,
+   "finish": "8",
+   "jockey": "A.プーシャン"
+  },
+  {
+   "date": "2026年10月4日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年7月19日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "6",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2026年3月29日",
+   "venue": "中山",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "5",
+   "jockey": "M.ディー"
+  },
+  {
+   "date": "2026年3月1日",
+   "venue": "中山",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年12月13日",
+   "venue": "中山",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "T.マーカンド"
+  },
+  {
+   "date": "2025年2月22日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 9,
+   "finish": "7",
+   "jockey": "北村 宏司"
+  },
+  {
+   "date": "2025年1月13日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 11,
+   "popularity": 5,
+   "finish": "6",
+   "jockey": "T.マーカンド"
+  },
+  {
+   "date": "2024年11月24日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "W.ビュイック"
+  },
+  {
+   "date": "2024年10月26日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "岩田 康誠"
+  },
+  {
+   "date": "2024年9月14日",
+   "venue": "中京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 11,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "C.ルメール"
+  }
+ ],
+ "name": "ヘルヴェティオス",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022104619/D3",
+ "last_card": "20261101",
+ "fetched": "2026-11-20 05:25"
+}

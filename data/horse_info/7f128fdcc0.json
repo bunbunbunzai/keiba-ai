@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "キズナ",
+  "性別": "牡",
+  "馬主名": "村島 聡乃",
+  "母": "ヴァラナシ",
+  "馬齢": "3歳",
+  "調教師名": "森田 直行 （栗東）",
+  "母の父": "Jimmy Creed",
+  "生年月日": "2023年3月24日",
+  "生産牧場": "三嶋牧場",
+  "母の母": "Yearly Report",
+  "毛色": "黒鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "インドにある寺院名より。黄金の寺院とも言われる。母名からの連想",
+  "取引市場": "2024年 北海道セプテンバーセール",
+  "総賞金": "525,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "525,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "0 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 0,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "福島",
+   "race_name": "障害3歳上未勝利",
+   "surface": "芝",
+   "distance": 2750,
+   "field": 9,
+   "popularity": 9,
+   "finish": "9",
+   "jockey": "田村 太雅"
+  },
+  {
+   "date": "2026年9月3日",
+   "venue": "園田",
+   "race_name": "妙見山特別",
+   "surface": "ダ",
+   "distance": 1870,
+   "field": 9,
+   "popularity": null,
+   "finish": "5",
+   "jockey": "中井 裕二"
+  },
+  {
+   "date": "2026年4月25日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 11,
+   "finish": "13",
+   "jockey": "藤懸 貴志"
+  },
+  {
+   "date": "2026年3月25日",
+   "venue": "園田",
+   "race_name": "諭鶴羽山特別",
+   "surface": "ダ",
+   "distance": 1870,
+   "field": 9,
+   "popularity": null,
+   "finish": "3",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2025年12月27日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 14,
+   "finish": "14",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2025年12月6日",
+   "venue": "中京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 15,
+   "finish": "15",
+   "jockey": "柴田 裕一郎"
+  },
+  {
+   "date": "2025年8月31日",
+   "venue": "中京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 12,
+   "finish": "14",
+   "jockey": "団野 大成"
+  }
+ ],
+ "name": "ヴィシュヴァナート",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023102218/4A",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 04:03"
+}

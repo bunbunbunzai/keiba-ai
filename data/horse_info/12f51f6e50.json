@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "モーリス",
+  "性別": "牝",
+  "馬主名": "坂本 浩一",
+  "母": "パセンジャーシップ",
+  "馬齢": "3歳",
+  "調教師名": "竹内 正洋 （美浦）",
+  "母の父": "ダイワメジャー",
+  "生年月日": "2023年3月9日",
+  "生産牧場": "社台ファーム",
+  "母の母": "パナマックス",
+  "毛色": "芦毛",
+  "産地": "千歳市",
+  "馬名意味": "冠名+女性名より",
+  "取引市場": "2023年 セレクトセール",
+  "総賞金": "26,690,000 円",
+  "内付加賞": "190,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "11,500,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 1,
+  "second": 2,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "東京",
+   "race_name": "ユートピアS",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 9,
+   "finish": "11",
+   "jockey": "吉田 豊"
+  },
+  {
+   "date": "2026年10月18日",
+   "venue": "東京",
+   "race_name": "甲斐路S",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 8,
+   "finish": "11",
+   "jockey": "吉田 豊"
+  },
+  {
+   "date": "2026年5月24日",
+   "venue": "東京",
+   "race_name": "優駿牝馬",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 18,
+   "popularity": 16,
+   "finish": "17",
+   "jockey": "石橋 脩"
+  },
+  {
+   "date": "2026年4月12日",
+   "venue": "阪神",
+   "race_name": "桜花賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 16,
+   "finish": "18",
+   "jockey": "石橋 脩"
+  },
+  {
+   "date": "2026年3月21日",
+   "venue": "中山",
+   "race_name": "フラワーC",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 9,
+   "finish": "2",
+   "jockey": "石橋 脩"
+  },
+  {
+   "date": "2026年1月17日",
+   "venue": "中山",
+   "race_name": "菜の花賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年12月21日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年11月29日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "横山 和生"
+  }
+ ],
+ "name": "ロンギングセリーヌ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023105246/61",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:57"
+}

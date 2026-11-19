@@ -1,0 +1,102 @@
+{
+ "profile": {
+  "父": "シャンハイボビー",
+  "性別": "牡",
+  "馬主名": "大迫 久美子",
+  "母": "クーファエラン",
+  "馬齢": "3歳",
+  "調教師名": "茶木 太樹 （栗東）",
+  "母の父": "オルフェーヴル",
+  "生年月日": "2023年5月16日",
+  "生産牧場": "川島牧場",
+  "母の母": "ウインアンジェラス",
+  "毛色": "鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "冠名+光子、光の粒子",
+  "取引市場": "",
+  "総賞金": "8,000,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 6,
+  "wins": 1,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 16,
+   "popularity": 6,
+   "finish": "3",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2026年10月25日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 6,
+   "finish": "8",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2026年8月23日",
+   "venue": "中京",
+   "race_name": "豊川特別",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 5,
+   "finish": "12",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年4月19日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 2,
+   "finish": "9",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2026年2月22日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2025年12月27日",
+   "venue": "中山",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 6,
+   "finish": "7",
+   "jockey": "松山 弘平"
+  }
+ ],
+ "name": "ゼンノフォトン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023104050/6E",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:10"
+}

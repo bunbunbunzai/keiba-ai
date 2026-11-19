@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "シルバーステート",
+  "性別": "牝",
+  "馬主名": "(株)ノルマンディーサラブレッドレーシング",
+  "母": "ハーランズルビー",
+  "馬齢": "3歳",
+  "調教師名": "昆 貢 （栗東）",
+  "母の父": "Harlan's Holiday",
+  "生年月日": "2023年4月13日",
+  "生産牧場": "村田牧場",
+  "母の母": "Smiling Eyes",
+  "毛色": "青鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "ルビーの和名。母名より連想",
+  "取引市場": "2024年 北海道セプテンバーセール",
+  "総賞金": "12,000,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 1,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "新潟",
+   "race_name": "柏崎特別",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 2,
+   "finish": "8",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2026年9月27日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年8月16日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 4,
+   "finish": "4",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年7月18日",
+   "venue": "函館",
+   "race_name": "湯浜特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 8,
+   "finish": "6",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年4月26日",
+   "venue": "東京",
+   "race_name": "フローラS",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 12,
+   "popularity": 11,
+   "finish": "12",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年2月28日",
+   "venue": "中山",
+   "race_name": "水仙賞",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 8,
+   "popularity": 4,
+   "finish": "8",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年10月5日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "横山 和生"
+  }
+ ],
+ "name": "コウギョク",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023104678/4C",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:52"
+}

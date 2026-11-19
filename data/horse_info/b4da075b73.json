@@ -1,0 +1,168 @@
+{
+ "profile": {
+  "父": "パイロ",
+  "性別": "牝",
+  "馬主名": "ゴドルフィン",
+  "母": "エンジェヌー",
+  "馬齢": "3歳",
+  "調教師名": "岡田 稲男 （栗東）",
+  "母の父": "コマンズ",
+  "生年月日": "2023年1月18日",
+  "生産牧場": "ダーレー・ジャパン・ファーム(有)",
+  "母の母": "ステージスクール",
+  "毛色": "青鹿毛",
+  "産地": "日高町",
+  "馬名意味": "晴れ着",
+  "取引市場": "",
+  "総賞金": "23,390,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 12,
+  "wins": 2,
+  "second": 2,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "京都",
+   "race_name": "嵯峨野特別",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 6,
+   "finish": "8",
+   "jockey": "酒井 学"
+  },
+  {
+   "date": "2026年10月4日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 9,
+   "finish": "8",
+   "jockey": "菱田 裕二"
+  },
+  {
+   "date": "2026年9月6日",
+   "venue": "阪神",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 5,
+   "finish": "10",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2026年6月6日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年4月26日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 11,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年2月1日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 11,
+   "finish": "2",
+   "jockey": "酒井 学"
+  },
+  {
+   "date": "2026年1月12日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2025年12月20日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2025年9月14日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 13,
+   "popularity": 6,
+   "finish": "2",
+   "jockey": "菱田 裕二"
+  },
+  {
+   "date": "2025年8月23日",
+   "venue": "中京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 9,
+   "popularity": 6,
+   "finish": "7",
+   "jockey": "菱田 裕二"
+  },
+  {
+   "date": "2025年8月2日",
+   "venue": "中京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 7,
+   "popularity": 5,
+   "finish": "5",
+   "jockey": "幸 英明"
+  }
+ ],
+ "name": "フェスティヴドレス",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023101113/EB",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:49"
+}

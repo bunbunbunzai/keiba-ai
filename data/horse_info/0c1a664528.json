@@ -1,0 +1,223 @@
+{
+ "profile": {
+  "父": "ゴールドシップ",
+  "性別": "牝",
+  "馬主名": "(株)ノルマンディーサラブレッドレーシング",
+  "母": "シュエットヌーベル",
+  "馬齢": "4歳",
+  "調教師名": "加藤 和宏 （美浦）",
+  "母の父": "スマートファルコン",
+  "生年月日": "2022年5月12日",
+  "生産牧場": "岡田スタツド",
+  "母の母": "クイックメール",
+  "毛色": "栗毛",
+  "産地": "新ひだか町",
+  "馬名意味": "素敵な愛(仏)。母名より連想",
+  "取引市場": "",
+  "総賞金": "1,400,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "0 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 16,
+  "wins": 0,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "福島",
+   "race_name": "障害3歳上未勝利",
+   "surface": "芝",
+   "distance": 2750,
+   "field": 9,
+   "popularity": 9,
+   "finish": "5",
+   "jockey": "中村 将之"
+  },
+  {
+   "date": "2026年9月12日",
+   "venue": "阪神",
+   "race_name": "障害3歳上未勝利",
+   "surface": "芝",
+   "distance": 2970,
+   "field": 8,
+   "popularity": 8,
+   "finish": "中止",
+   "jockey": "水沼 元輝"
+  },
+  {
+   "date": "2026年8月30日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 10,
+   "finish": "9",
+   "jockey": "角田 大和"
+  },
+  {
+   "date": "2026年7月19日",
+   "venue": "小倉",
+   "race_name": "障害3歳上未勝利",
+   "surface": "芝",
+   "distance": 2860,
+   "field": 11,
+   "popularity": 11,
+   "finish": "6",
+   "jockey": "土田 真翔"
+  },
+  {
+   "date": "2026年7月4日",
+   "venue": "小倉",
+   "race_name": "障害3歳上未勝利",
+   "surface": "芝",
+   "distance": 2860,
+   "field": 12,
+   "popularity": 11,
+   "finish": "12",
+   "jockey": "水沼 元輝"
+  },
+  {
+   "date": "2026年5月9日",
+   "venue": "新潟",
+   "race_name": "障害4歳上未勝利",
+   "surface": "芝",
+   "distance": 2890,
+   "field": 13,
+   "popularity": 13,
+   "finish": "12",
+   "jockey": "水沼 元輝"
+  },
+  {
+   "date": "2025年11月9日",
+   "venue": "福島",
+   "race_name": "二本松特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 16,
+   "finish": "12",
+   "jockey": "藤懸 貴志"
+  },
+  {
+   "date": "2025年10月19日",
+   "venue": "新潟",
+   "race_name": "松浜特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 13,
+   "finish": "14",
+   "jockey": "亀田 温心"
+  },
+  {
+   "date": "2025年8月24日",
+   "venue": "札幌",
+   "race_name": "ルスツ特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 13,
+   "popularity": 11,
+   "finish": "8",
+   "jockey": "黛 弘人"
+  },
+  {
+   "date": "2025年8月10日",
+   "venue": "札幌",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 8,
+   "finish": "7",
+   "jockey": "小林 美駒"
+  },
+  {
+   "date": "2025年7月13日",
+   "venue": "函館",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 6,
+   "finish": "5",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年7月5日",
+   "venue": "函館",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 3,
+   "finish": "6",
+   "jockey": "小林 美駒"
+  },
+  {
+   "date": "2025年5月11日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 13,
+   "finish": "6",
+   "jockey": "小林 脩斗"
+  },
+  {
+   "date": "2025年3月2日",
+   "venue": "小倉",
+   "race_name": "あざみ賞",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 15,
+   "finish": "13",
+   "jockey": "小林 脩斗"
+  },
+  {
+   "date": "2025年1月26日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 12,
+   "finish": "8",
+   "jockey": "小林 脩斗"
+  },
+  {
+   "date": "2024年12月21日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 13,
+   "finish": "14",
+   "jockey": "黛 弘人"
+  },
+  {
+   "date": "2024年10月12日",
+   "venue": "新潟",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 16,
+   "finish": "11",
+   "jockey": "小林 脩斗"
+  }
+ ],
+ "name": "シュエットアムール",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022103517/CD",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:48"
+}

@@ -1,0 +1,135 @@
+{
+ "profile": {
+  "父": "モーリス",
+  "性別": "牡",
+  "馬主名": "西山 茂行",
+  "母": "ドリームアンドホープ",
+  "馬齢": "3歳",
+  "調教師名": "新谷 功一 （栗東）",
+  "母の父": "Royal Applause",
+  "生年月日": "2023年3月31日",
+  "生産牧場": "メイタイファーム",
+  "母の母": "Senta's Dream",
+  "毛色": "鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "冠名+贈り物",
+  "取引市場": "",
+  "総賞金": "8,100,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "280,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 9,
+  "wins": 1,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 5,
+   "finish": "6",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2026年10月4日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 9,
+   "finish": "6",
+   "jockey": "M.デムーロ"
+  },
+  {
+   "date": "2026年9月5日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 7,
+   "finish": "5",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2026年7月25日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 8,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2026年7月4日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 8,
+   "finish": "1",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2026年4月15日",
+   "venue": "笠松",
+   "race_name": "鵜沼宿特別",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 9,
+   "popularity": null,
+   "finish": "2",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2026年2月7日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 8,
+   "finish": "15",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2025年12月13日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 5,
+   "finish": "9",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2025年11月23日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 8,
+   "finish": "8",
+   "jockey": "岩田 望来"
+  }
+ ],
+ "name": "ニシノトリビュート",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023104703/CE",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:38"
+}

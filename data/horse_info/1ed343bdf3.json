@@ -1,0 +1,157 @@
+{
+ "profile": {
+  "父": "パイロ",
+  "性別": "牡",
+  "馬主名": "(株)ワイズマン",
+  "母": "アイアムネフライト",
+  "馬齢": "4歳",
+  "調教師名": "奥平 雅士 （美浦）",
+  "母の父": "アグネスタキオン",
+  "生年月日": "2022年3月10日",
+  "生産牧場": "まるとみ冨岡牧場",
+  "母の母": "アイアムアドーター",
+  "毛色": "黒鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "冠名+一番",
+  "取引市場": "",
+  "総賞金": "31,820,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 11,
+  "wins": 3,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "福島",
+   "race_name": "フルーツライ",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 16,
+   "popularity": 13,
+   "finish": "13",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2026年8月2日",
+   "venue": "札幌",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 12,
+   "popularity": 7,
+   "finish": "1",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2026年5月24日",
+   "venue": "新潟",
+   "race_name": "火打山特別",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 5,
+   "finish": "15",
+   "jockey": "石川 裕紀人"
+  },
+  {
+   "date": "2026年5月3日",
+   "venue": "東京",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1300,
+   "field": 13,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年4月12日",
+   "venue": "福島",
+   "race_name": "喜多方特別",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 16,
+   "popularity": 4,
+   "finish": "4",
+   "jockey": "柴田 善臣"
+  },
+  {
+   "date": "2026年3月14日",
+   "venue": "中山",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 10,
+   "finish": "1",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2026年2月1日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 8,
+   "finish": "10",
+   "jockey": "安藤 洋一"
+  },
+  {
+   "date": "2025年4月26日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 7,
+   "finish": "1",
+   "jockey": "松岡 正海"
+  },
+  {
+   "date": "2025年3月29日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 4,
+   "finish": "9",
+   "jockey": "松岡 正海"
+  },
+  {
+   "date": "2024年11月24日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "10",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年11月2日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "戸崎 圭太"
+  }
+ ],
+ "name": "アイアムイチバン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022103183/AD",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:30"
+}

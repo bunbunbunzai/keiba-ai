@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "ゴールドドリーム",
+  "性別": "牝",
+  "馬主名": "(株)ノルマンディーサラブレッドレーシング",
+  "母": "ラタンドレス",
+  "馬齢": "3歳",
+  "調教師名": "中川 公成 （美浦）",
+  "母の父": "エンパイアメーカー",
+  "生年月日": "2023年4月1日",
+  "生産牧場": "岡田スタツド",
+  "母の母": "タニノカリス",
+  "毛色": "鹿毛",
+  "産地": "新ひだか町",
+  "馬名意味": "金の鏡台。父名、母名より連想",
+  "取引市場": "",
+  "総賞金": "10,700,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 1,
+  "second": 0,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 10,
+   "finish": "11",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2026年10月18日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 6,
+   "finish": "8",
+   "jockey": "石田 拓郎"
+  },
+  {
+   "date": "2026年7月19日",
+   "venue": "函館",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 14,
+   "popularity": 7,
+   "finish": "3",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年7月5日",
+   "venue": "函館",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 8,
+   "popularity": 4,
+   "finish": "4",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年4月25日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "石田 拓郎"
+  },
+  {
+   "date": "2026年4月4日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 9,
+   "finish": "3",
+   "jockey": "石田 拓郎"
+  },
+  {
+   "date": "2026年3月21日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 6,
+   "finish": "13",
+   "jockey": "長浜 鴻緒"
+  }
+ ],
+ "name": "ゴールドドレッサ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023102432/1A",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:03"
+}

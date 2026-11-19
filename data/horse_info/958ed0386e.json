@@ -1,0 +1,223 @@
+{
+ "profile": {
+  "父": "ナダル",
+  "性別": "牝",
+  "馬主名": "タマモ(株)",
+  "母": "タマモボレロ",
+  "馬齢": "4歳",
+  "調教師名": "伊藤 圭三 （美浦）",
+  "母の父": "ハーツクライ",
+  "生年月日": "2022年5月25日",
+  "生産牧場": "前田牧場",
+  "母の母": "チャームダンス",
+  "毛色": "鹿毛",
+  "産地": "新ひだか町",
+  "馬名意味": "冠名+鐘(伊)",
+  "取引市場": "",
+  "総賞金": "29,880,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 17,
+  "wins": 2,
+  "second": 3,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月1日",
+   "venue": "東京",
+   "race_name": "清里特別",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 4,
+   "finish": "5",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2026年10月4日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 14,
+   "finish": "6",
+   "jockey": "佐藤 翔馬"
+  },
+  {
+   "date": "2026年8月1日",
+   "venue": "札幌",
+   "race_name": "大倉山特別",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 8,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "黛 弘人"
+  },
+  {
+   "date": "2026年6月28日",
+   "venue": "函館",
+   "race_name": "渡島特別",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 11,
+   "popularity": 5,
+   "finish": "8",
+   "jockey": "原 優介"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "東京",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 6,
+   "finish": "8",
+   "jockey": "谷原 柚希"
+  },
+  {
+   "date": "2026年4月25日",
+   "venue": "東京",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年3月28日",
+   "venue": "中山",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年2月7日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年11月23日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "6",
+   "jockey": "谷原 柚希"
+  },
+  {
+   "date": "2025年10月26日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "谷原 柚希"
+  },
+  {
+   "date": "2025年10月11日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "谷原 柚希"
+  },
+  {
+   "date": "2025年7月19日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 14,
+   "popularity": 5,
+   "finish": "11",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2025年6月22日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 8,
+   "finish": "2",
+   "jockey": "谷原 柚希"
+  },
+  {
+   "date": "2025年5月11日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 5,
+   "finish": "7",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2025年4月19日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 8,
+   "popularity": 7,
+   "finish": "3",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2025年3月15日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 8,
+   "finish": "11",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年12月7日",
+   "venue": "中山",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "戸崎 圭太"
+  }
+ ],
+ "name": "タマモカンパネラ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022104512/7D",
+ "last_card": "20261101",
+ "fetched": "2026-11-20 05:32"
+}

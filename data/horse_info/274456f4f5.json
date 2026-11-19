@@ -1,0 +1,201 @@
+{
+ "profile": {
+  "父": "リアルスティール",
+  "性別": "牝",
+  "馬主名": "(有)木村牧場",
+  "母": "ラバーズケープ",
+  "馬齢": "4歳",
+  "調教師名": "金成 貴史 （美浦）",
+  "母の父": "ダイワメジャー",
+  "生年月日": "2022年4月27日",
+  "生産牧場": "木村牧場",
+  "母の母": "ヒカルアモーレ",
+  "毛色": "鹿毛",
+  "産地": "日高町",
+  "馬名意味": "絶景。母名から連想",
+  "取引市場": "",
+  "総賞金": "25,736,000 円",
+  "内付加賞": "336,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "10,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 2,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 11,
+   "finish": "9",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2026年10月25日",
+   "venue": "東京",
+   "race_name": "山中湖特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2026年9月5日",
+   "venue": "中山",
+   "race_name": "古作特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2026年8月8日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 8,
+   "finish": "5",
+   "jockey": "伊藤 工真"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 7,
+   "finish": "9",
+   "jockey": "佐藤 翔馬"
+  },
+  {
+   "date": "2026年4月25日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 7,
+   "finish": "1",
+   "jockey": "佐藤 翔馬"
+  },
+  {
+   "date": "2026年4月12日",
+   "venue": "福島",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 9,
+   "finish": "5",
+   "jockey": "佐藤 翔馬"
+  },
+  {
+   "date": "2025年11月16日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 9,
+   "finish": "12",
+   "jockey": "伊藤 工真"
+  },
+  {
+   "date": "2025年9月6日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "伊藤 工真"
+  },
+  {
+   "date": "2025年8月23日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "伊藤 工真"
+  },
+  {
+   "date": "2025年7月26日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 18,
+   "popularity": 6,
+   "finish": "5",
+   "jockey": "伊藤 工真"
+  },
+  {
+   "date": "2025年6月7日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 5,
+   "finish": "8",
+   "jockey": "伊藤 工真"
+  },
+  {
+   "date": "2025年5月25日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 17,
+   "popularity": 12,
+   "finish": "5",
+   "jockey": "伊藤 工真"
+  },
+  {
+   "date": "2025年2月16日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 16,
+   "popularity": 16,
+   "finish": "9",
+   "jockey": "小林 脩斗"
+  },
+  {
+   "date": "2025年2月2日",
+   "venue": "小倉",
+   "race_name": "3歳新馬",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 17,
+   "popularity": 17,
+   "finish": "15",
+   "jockey": "小林 脩斗"
+  }
+ ],
+ "name": "スタニングヴュー",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022101272/7D",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:11"
+}

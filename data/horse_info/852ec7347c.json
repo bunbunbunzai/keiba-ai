@@ -1,0 +1,223 @@
+{
+ "profile": {
+  "父": "リアルスティール",
+  "性別": "牝",
+  "馬主名": "長澤 稔",
+  "母": "アルボナンザ",
+  "馬齢": "4歳",
+  "調教師名": "奥村 豊 （栗東）",
+  "母の父": "キングカメハメハ",
+  "生年月日": "2022年3月26日",
+  "生産牧場": "辻 牧場",
+  "母の母": "エスジーボナンザ",
+  "毛色": "鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "人名愛称",
+  "取引市場": "",
+  "総賞金": "27,954,000 円",
+  "内付加賞": "34,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 17,
+  "wins": 2,
+  "second": 1,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "福島",
+   "race_name": "西郷特別",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 13,
+   "finish": "12",
+   "jockey": "柴田 裕一郎"
+  },
+  {
+   "date": "2026年9月6日",
+   "venue": "札幌",
+   "race_name": "旭川特別",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 14,
+   "popularity": 8,
+   "finish": "13",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2026年8月1日",
+   "venue": "札幌",
+   "race_name": "大倉山特別",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 8,
+   "popularity": 2,
+   "finish": "8",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年6月28日",
+   "venue": "函館",
+   "race_name": "渡島特別",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 11,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年4月26日",
+   "venue": "福島",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "舟山 瑠泉"
+  },
+  {
+   "date": "2026年3月28日",
+   "venue": "阪神",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 4,
+   "finish": "4",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年3月21日",
+   "venue": "中京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 12,
+   "finish": "4",
+   "jockey": "柴田 裕一郎"
+  },
+  {
+   "date": "2025年12月20日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 6,
+   "finish": "11",
+   "jockey": "亀田 温心"
+  },
+  {
+   "date": "2025年12月7日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 9,
+   "finish": "5",
+   "jockey": "亀田 温心"
+  },
+  {
+   "date": "2025年11月24日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 8,
+   "finish": "8",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2025年8月31日",
+   "venue": "札幌",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 14,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2025年8月16日",
+   "venue": "札幌",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 14,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2025年7月27日",
+   "venue": "札幌",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 14,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2025年7月13日",
+   "venue": "函館",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 13,
+   "popularity": 5,
+   "finish": "5",
+   "jockey": "藤岡 佑介"
+  },
+  {
+   "date": "2024年11月30日",
+   "venue": "中京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2024年11月16日",
+   "venue": "福島",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 4,
+   "finish": "4",
+   "jockey": "H.ドイル"
+  },
+  {
+   "date": "2024年10月27日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 12,
+   "finish": "4",
+   "jockey": "柴田 裕一郎"
+  }
+ ],
+ "name": "ユージュアーナ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022102952/A3",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:28"
+}

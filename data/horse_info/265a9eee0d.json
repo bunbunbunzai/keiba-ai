@@ -1,0 +1,102 @@
+{
+ "profile": {
+  "父": "エピファネイア",
+  "性別": "牡",
+  "馬主名": "野田 みづき",
+  "母": "マダムダンスアロット",
+  "馬齢": "4歳",
+  "調教師名": "菊沢 隆徳 （美浦）",
+  "母の父": "Sir Prancealot",
+  "生年月日": "2022年5月9日",
+  "生産牧場": "社台ファーム",
+  "母の母": "Sisal",
+  "毛色": "鹿毛",
+  "産地": "千歳市",
+  "馬名意味": "冠名+兵士",
+  "取引市場": "2023年 セレクトセール",
+  "総賞金": "56,275,000 円",
+  "内付加賞": "675,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "24,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 6,
+  "wins": 4,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月1日",
+   "venue": "東京",
+   "race_name": "紅葉S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "横山 典弘"
+  },
+  {
+   "date": "2026年8月22日",
+   "venue": "新潟",
+   "race_name": "長岡S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2026年5月30日",
+   "venue": "東京",
+   "race_name": "葉山特別",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2025年11月16日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 1,
+   "finish": "13",
+   "jockey": "横山 典弘"
+  },
+  {
+   "date": "2025年10月19日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "横山 典弘"
+  },
+  {
+   "date": "2025年8月23日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "菊沢 一樹"
+  }
+ ],
+ "name": "ミッキーソルジャー",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022105520/96",
+ "last_card": "20261101",
+ "fetched": "2026-11-20 05:27"
+}

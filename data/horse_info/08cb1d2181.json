@@ -1,0 +1,102 @@
+{
+ "profile": {
+  "父": "デクラレーションオブウォー",
+  "性別": "牡",
+  "馬主名": "水上 行雄",
+  "母": "モエレヒストリー",
+  "馬齢": "3歳",
+  "調教師名": "牧 光二 （美浦）",
+  "母の父": "ファルブラヴ",
+  "生年月日": "2023年5月7日",
+  "生産牧場": "静内フジカワ牧場",
+  "母の母": "ユーザーヒストリー",
+  "毛色": "鹿毛",
+  "産地": "新ひだか町",
+  "馬名意味": "戦略地政学",
+  "取引市場": "",
+  "総賞金": "7,000,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 6,
+  "wins": 1,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年10月31日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 2100,
+   "field": 15,
+   "popularity": 12,
+   "finish": "15",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2026年4月5日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 15,
+   "finish": "13",
+   "jockey": "木幡 巧也"
+  },
+  {
+   "date": "2026年3月7日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "木幡 巧也"
+  },
+  {
+   "date": "2026年2月15日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2026年1月24日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 8,
+   "finish": "10",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2025年12月28日",
+   "venue": "中山",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 4,
+   "finish": "4",
+   "jockey": "戸崎 圭太"
+  }
+ ],
+ "name": "ジオストラテジー",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023105654/4F",
+ "last_card": "20261031",
+ "fetched": "2026-11-20 05:39"
+}

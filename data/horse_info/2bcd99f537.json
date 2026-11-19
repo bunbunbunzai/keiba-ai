@@ -1,0 +1,146 @@
+{
+ "profile": {
+  "父": "ミッキーグローリー",
+  "性別": "牡",
+  "馬主名": "柳橋 俊昭",
+  "母": "アマレット",
+  "馬齢": "3歳",
+  "調教師名": "伊藤 伸一 （美浦）",
+  "母の父": "スウェプトオーヴァーボード",
+  "生年月日": "2023年4月5日",
+  "生産牧場": "村上牧場",
+  "母の母": "アドベンチャーオン",
+  "毛色": "青鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "昇藤",
+  "取引市場": "2025年 北海道トレーニングセール",
+  "総賞金": "7,200,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "700,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 10,
+  "wins": 1,
+  "second": 1,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1300,
+   "field": 15,
+   "popularity": 9,
+   "finish": "2",
+   "jockey": "遠藤 汰月"
+  },
+  {
+   "date": "2026年10月12日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1300,
+   "field": 16,
+   "popularity": 15,
+   "finish": "3",
+   "jockey": "遠藤 汰月"
+  },
+  {
+   "date": "2026年6月14日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 14,
+   "finish": "15",
+   "jockey": "北村 宏司"
+  },
+  {
+   "date": "2026年5月2日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 18,
+   "finish": "15",
+   "jockey": "松岡 正海"
+  },
+  {
+   "date": "2026年3月29日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 13,
+   "popularity": 13,
+   "finish": "11",
+   "jockey": "遠藤 汰月"
+  },
+  {
+   "date": "2026年3月4日",
+   "venue": "笠松",
+   "race_name": "河渡宿特別",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 9,
+   "popularity": null,
+   "finish": "1",
+   "jockey": "遠藤 汰月"
+  },
+  {
+   "date": "2026年1月12日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 5,
+   "finish": "7",
+   "jockey": "遠藤 汰月"
+  },
+  {
+   "date": "2025年12月21日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 5,
+   "finish": "12",
+   "jockey": "遠藤 汰月"
+  },
+  {
+   "date": "2025年11月24日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "遠藤 汰月"
+  },
+  {
+   "date": "2025年10月25日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 16,
+   "finish": "4",
+   "jockey": "遠藤 汰月"
+  }
+ ],
+ "name": "ノボリフジ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023106626/F4",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:39"
+}

@@ -1,0 +1,179 @@
+{
+ "profile": {
+  "父": "エピファネイア",
+  "性別": "牡",
+  "馬主名": "池谷 誠一",
+  "母": "ノームコア",
+  "馬齢": "4歳",
+  "調教師名": "古賀 大生 （美浦）",
+  "母の父": "ハービンジャー",
+  "生年月日": "2022年2月1日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "クロノロジスト",
+  "毛色": "芦毛",
+  "産地": "安平町",
+  "馬名意味": "銀の雨。曲名より",
+  "取引市場": "",
+  "総賞金": "21,227,000 円",
+  "内付加賞": "27,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 13,
+  "wins": 2,
+  "second": 0,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "東京",
+   "race_name": "三鷹特別",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 6,
+   "finish": "11",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2026年8月23日",
+   "venue": "新潟",
+   "race_name": "飯豊特別",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 7,
+   "finish": "8",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2026年5月17日",
+   "venue": "東京",
+   "race_name": "テレ玉杯",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 12,
+   "popularity": 3,
+   "finish": "9",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2026年2月28日",
+   "venue": "中山",
+   "race_name": "4歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 8,
+   "finish": "10",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2026年1月10日",
+   "venue": "中山",
+   "race_name": "初凪賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 6,
+   "finish": "12",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2025年11月9日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 5,
+   "finish": "10",
+   "jockey": "A.プーシャン"
+  },
+  {
+   "date": "2025年9月21日",
+   "venue": "中山",
+   "race_name": "木更津特別",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 9,
+   "popularity": 2,
+   "finish": "6",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年3月22日",
+   "venue": "中京",
+   "race_name": "ファルコンS",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 2,
+   "finish": "6",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年2月15日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2024年12月1日",
+   "venue": "中京",
+   "race_name": "こうやまき賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 7,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2024年10月19日",
+   "venue": "東京",
+   "race_name": "アイビーS",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 8,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2024年8月18日",
+   "venue": "新潟",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2024年6月15日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "C.ルメール"
+  }
+ ],
+ "name": "シルバーレイン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022104942/71",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:59"
+}

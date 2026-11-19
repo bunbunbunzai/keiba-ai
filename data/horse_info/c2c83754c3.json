@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "キズナ",
+  "性別": "牡",
+  "馬主名": "(株)社台レースホース",
+  "母": "ハーレムライン",
+  "馬齢": "3歳",
+  "調教師名": "嘉藤 貴行 （美浦）",
+  "母の父": "マンハッタンカフェ",
+  "生年月日": "2023年2月19日",
+  "生産牧場": "社台ファーム",
+  "母の母": "マクリス",
+  "毛色": "鹿毛",
+  "産地": "千歳市",
+  "馬名意味": "マンハッタンの鉄道路線ハーレムラインの駅名",
+  "取引市場": "",
+  "総賞金": "18,791,000 円",
+  "内付加賞": "301,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 2,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 4,
+   "finish": "5",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2026年9月13日",
+   "venue": "中山",
+   "race_name": "セントライト",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 16,
+   "popularity": 13,
+   "finish": "14",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年7月25日",
+   "venue": "札幌",
+   "race_name": "ライラック賞",
+   "surface": "芝",
+   "distance": 2600,
+   "field": 11,
+   "popularity": 1,
+   "finish": "10",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年6月13日",
+   "venue": "函館",
+   "race_name": "奥尻特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年4月19日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年1月24日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 18,
+   "popularity": 3,
+   "finish": "6",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2025年12月6日",
+   "venue": "中京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 5,
+   "finish": "8",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2025年11月24日",
+   "venue": "福島",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 4,
+   "finish": "8",
+   "jockey": "高杉 吏麒"
+  }
+ ],
+ "name": "ウェイクフィールド",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023103500/24",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:05"
+}

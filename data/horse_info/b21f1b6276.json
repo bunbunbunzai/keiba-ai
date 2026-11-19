@@ -1,0 +1,190 @@
+{
+ "profile": {
+  "父": "サートゥルナーリア",
+  "性別": "牝",
+  "馬主名": "大友 靖岐",
+  "母": "クールアンフルール",
+  "馬齢": "3歳",
+  "調教師名": "松永 康利 （美浦）",
+  "母の父": "サクラバクシンオー",
+  "生年月日": "2023年1月30日",
+  "生産牧場": "上山牧場",
+  "母の母": "フレッシュミドリ",
+  "毛色": "鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "冠名+突風(ラテン語)",
+  "取引市場": "2024年 北海道セレクションセール",
+  "総賞金": "9,790,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 14,
+  "wins": 1,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 11,
+   "finish": "15",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2026年9月6日",
+   "venue": "中山",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 9,
+   "finish": "4",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2026年8月15日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1000,
+   "field": 18,
+   "popularity": 10,
+   "finish": "1",
+   "jockey": "石田 拓郎"
+  },
+  {
+   "date": "2026年6月6日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 11,
+   "finish": "15",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2026年5月16日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 13,
+   "popularity": 8,
+   "finish": "12",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2026年5月3日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 7,
+   "finish": "9",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2026年4月11日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 11,
+   "finish": "5",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2026年3月14日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 9,
+   "finish": "12",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2026年2月15日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 10,
+   "finish": "7",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2026年1月31日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 7,
+   "finish": "8",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2025年11月23日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 17,
+   "popularity": 7,
+   "finish": "6",
+   "jockey": "内田 博幸"
+  },
+  {
+   "date": "2025年10月25日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 10,
+   "popularity": 6,
+   "finish": "2",
+   "jockey": "内田 博幸"
+  },
+  {
+   "date": "2025年10月11日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 10,
+   "popularity": 5,
+   "finish": "6",
+   "jockey": "内田 博幸"
+  },
+  {
+   "date": "2025年9月20日",
+   "venue": "中山",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 10,
+   "finish": "8",
+   "jockey": "内田 博幸"
+  }
+ ],
+ "name": "ダイユウヴェンティ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023105102/24",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:11"
+}

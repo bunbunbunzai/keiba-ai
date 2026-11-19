@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "アドマイヤマーズ",
+  "性別": "牝",
+  "馬主名": "(有)サンデーレーシング",
+  "母": "ロサグラウカ",
+  "馬齢": "3歳",
+  "調教師名": "尾関 知人 （美浦）",
+  "母の父": "ルーラーシップ",
+  "生年月日": "2023年3月2日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "ローザブランカ",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "色の種類",
+  "取引市場": "",
+  "総賞金": "13,985,000 円",
+  "内付加賞": "75,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 1,
+  "second": 1,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "福島",
+   "race_name": "三春駒特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 8,
+   "finish": "3",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年7月18日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2026年6月6日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "D.レーン"
+  },
+  {
+   "date": "2026年4月19日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年1月11日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "12",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年10月25日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年8月10日",
+   "venue": "新潟",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "戸崎 圭太"
+  }
+ ],
+ "name": "アッシズオブローズ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023107360/DE",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:13"
+}

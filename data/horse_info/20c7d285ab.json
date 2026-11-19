@@ -1,0 +1,102 @@
+{
+ "profile": {
+  "父": "エピファネイア",
+  "性別": "牡",
+  "馬主名": "エムズレーシング",
+  "母": "ディヴィニティ",
+  "馬齢": "3歳",
+  "調教師名": "小栗 実 （栗東）",
+  "母の父": "リアルインパクト",
+  "生年月日": "2023年1月13日",
+  "生産牧場": "高橋フアーム",
+  "母の母": "セルキス",
+  "毛色": "鹿毛",
+  "産地": "新ひだか町",
+  "馬名意味": "勝利者たち+9",
+  "取引市場": "",
+  "総賞金": "26,496,000 円",
+  "内付加賞": "196,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "10,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 6,
+  "wins": 2,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月1日",
+   "venue": "京都",
+   "race_name": "古都S",
+   "surface": "芝",
+   "distance": 3000,
+   "field": 9,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2026年9月19日",
+   "venue": "中山",
+   "race_name": "九十九里特別",
+   "surface": "芝",
+   "distance": 2500,
+   "field": 12,
+   "popularity": 7,
+   "finish": "7",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年12月27日",
+   "venue": "中山",
+   "race_name": "ホープフルS",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 12,
+   "finish": "13",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2025年11月29日",
+   "venue": "京都",
+   "race_name": "京都2歳S",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 2,
+   "finish": "6",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2025年9月27日",
+   "venue": "中山",
+   "race_name": "芙蓉S",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 9,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年7月13日",
+   "venue": "小倉",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 8,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  }
+ ],
+ "name": "ウイナーズナイン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023102820/E8",
+ "last_card": "20261101",
+ "fetched": "2026-11-20 05:22"
+}

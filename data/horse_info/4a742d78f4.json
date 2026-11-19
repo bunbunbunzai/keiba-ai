@@ -1,0 +1,179 @@
+{
+ "profile": {
+  "父": "Nyquist",
+  "性別": "牡",
+  "馬主名": "(株)インゼルレーシング",
+  "母": "メイディーン",
+  "馬齢": "4歳",
+  "調教師名": "大久保 龍志 （栗東）",
+  "母の父": "Tapit",
+  "生年月日": "2022年3月19日",
+  "生産牧場": "三嶋牧場",
+  "母の母": "Summer Solo",
+  "毛色": "芦毛",
+  "産地": "浦河町",
+  "馬名意味": "神話に登場するスウェーデン最古の国王の名。父名より連想",
+  "取引市場": "",
+  "総賞金": "75,946,000 円",
+  "内付加賞": "446,000 円",
+  "内地方賞金": "6,000,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "24,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 13,
+  "wins": 4,
+  "second": 5,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "京都",
+   "race_name": "カノープスS",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 2,
+   "finish": "9",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年9月26日",
+   "venue": "阪神",
+   "race_name": "シリウスS",
+   "surface": "ダ",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 2,
+   "finish": "5",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年7月20日",
+   "venue": "盛岡",
+   "race_name": "マーキュリC",
+   "surface": "ダ",
+   "distance": 2000,
+   "field": 14,
+   "popularity": null,
+   "finish": "3",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年5月24日",
+   "venue": "東京",
+   "race_name": "丹沢S",
+   "surface": "ダ",
+   "distance": 2100,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年5月2日",
+   "venue": "東京",
+   "race_name": "是政S",
+   "surface": "ダ",
+   "distance": 2100,
+   "field": 16,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年3月28日",
+   "venue": "阪神",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年12月13日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 12,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年11月15日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年10月19日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年9月20日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年7月12日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 16,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "M.デムーロ"
+  },
+  {
+   "date": "2025年4月12日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年3月22日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "武 豊"
+  }
+ ],
+ "name": "ギュルヴィ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022103267/8A",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:47"
+}

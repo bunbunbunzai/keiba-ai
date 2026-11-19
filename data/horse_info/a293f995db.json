@@ -1,0 +1,223 @@
+{
+ "profile": {
+  "父": "ジャスタウェイ",
+  "性別": "せん",
+  "馬主名": "エムズレーシング",
+  "母": "キラーグレイシス",
+  "馬齢": "6歳",
+  "調教師名": "堀 宣行 （美浦）",
+  "母の父": "Congaree",
+  "生年月日": "2020年1月29日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "Heatherdoesntbluff",
+  "毛色": "黒鹿毛",
+  "産地": "安平町",
+  "馬名意味": "J+手のひら",
+  "取引市場": "2021年 セレクトセール",
+  "総賞金": "101,854,000 円",
+  "内付加賞": "1,184,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "48,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 17,
+  "wins": 6,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "東京",
+   "race_name": "武蔵野S",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 4,
+   "finish": "5",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2026年10月31日",
+   "venue": "東京",
+   "race_name": "ペルセウスS",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2026年5月30日",
+   "venue": "東京",
+   "race_name": "アハルテケS",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 2,
+   "finish": "7",
+   "jockey": "D.レーン"
+  },
+  {
+   "date": "2026年4月18日",
+   "venue": "阪神",
+   "race_name": "アンタレスS",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 4,
+   "finish": "10",
+   "jockey": "D.レーン"
+  },
+  {
+   "date": "2026年1月25日",
+   "venue": "京都",
+   "race_name": "プロキオンS",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 3,
+   "finish": "7",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2025年11月1日",
+   "venue": "東京",
+   "race_name": "ペルセウスS",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 8,
+   "finish": "1",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2025年10月5日",
+   "venue": "東京",
+   "race_name": "毎日王冠",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 10,
+   "finish": "6",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2025年1月5日",
+   "venue": "中山",
+   "race_name": "日刊中山金杯",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 11,
+   "finish": "14",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2024年12月7日",
+   "venue": "中京",
+   "race_name": "中日新聞杯",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 8,
+   "finish": "8",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2024年10月19日",
+   "venue": "東京",
+   "race_name": "富士S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 17,
+   "popularity": 6,
+   "finish": "12",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2024年5月26日",
+   "venue": "東京",
+   "race_name": "むらさき賞",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "J.モレイラ"
+  },
+  {
+   "date": "2024年4月21日",
+   "venue": "東京",
+   "race_name": "石和特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 8,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2023年11月12日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "J.モレイラ"
+  },
+  {
+   "date": "2023年2月18日",
+   "venue": "東京",
+   "race_name": "フリージア賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "J.モレイラ"
+  },
+  {
+   "date": "2023年1月29日",
+   "venue": "東京",
+   "race_name": "セントポーリ",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 8,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2022年12月28日",
+   "venue": "中山",
+   "race_name": "ホープフルS",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 10,
+   "finish": "10",
+   "jockey": "D.イーガン"
+  },
+  {
+   "date": "2022年11月5日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  }
+ ],
+ "name": "ジェイパームス",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002020103331/C1",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:11"
+}

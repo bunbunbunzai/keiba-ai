@@ -1,0 +1,146 @@
+{
+ "profile": {
+  "父": "ゴールドシップ",
+  "性別": "牡",
+  "馬主名": "(有)ビッグレッドファーム",
+  "母": "コスモピーコック",
+  "馬齢": "3歳",
+  "調教師名": "吉田 直弘 （栗東）",
+  "母の父": "Medicean",
+  "生年月日": "2023年3月28日",
+  "生産牧場": "ビッグレッドファーム",
+  "母の母": "レッドピオニー",
+  "毛色": "芦毛",
+  "産地": "新冠町",
+  "馬名意味": "くじゃく座。母名より連想",
+  "取引市場": "",
+  "総賞金": "14,330,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 10,
+  "wins": 1,
+  "second": 2,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月1日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 14,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2026年10月11日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 17,
+   "popularity": 7,
+   "finish": "6",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2026年5月3日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 11,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2026年4月5日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 15,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年1月10日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 18,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "和田 竜二"
+  },
+  {
+   "date": "2025年12月13日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 8,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "和田 竜二"
+  },
+  {
+   "date": "2025年11月15日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 12,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "和田 竜二"
+  },
+  {
+   "date": "2025年10月26日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "和田 竜二"
+  },
+  {
+   "date": "2025年10月4日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 10,
+   "finish": "4",
+   "jockey": "和田 竜二"
+  }
+ ],
+ "name": "パーヴォ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023106440/00",
+ "last_card": "20261101",
+ "fetched": "2026-11-20 05:20"
+}

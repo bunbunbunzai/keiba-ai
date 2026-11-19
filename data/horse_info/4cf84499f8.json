@@ -1,0 +1,179 @@
+{
+ "profile": {
+  "父": "モズアスコット",
+  "性別": "牝",
+  "馬主名": "(株)ノースヒルズ",
+  "母": "ユースティティア",
+  "馬齢": "4歳",
+  "調教師名": "宮本 博 （栗東）",
+  "母の父": "フジキセキ",
+  "生年月日": "2022年4月26日",
+  "生産牧場": "平山牧場",
+  "母の母": "ソブストーリー",
+  "毛色": "黒鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "空色縞メノウ。チベットでは神の石と呼ばれる。心からの平和と安らぎ",
+  "取引市場": "",
+  "総賞金": "23,600,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 13,
+  "wins": 1,
+  "second": 2,
+  "third": 3
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 15,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "酒井 学"
+  },
+  {
+   "date": "2026年10月24日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "酒井 学"
+  },
+  {
+   "date": "2026年10月4日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 5,
+   "finish": "10",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年5月24日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2026年5月10日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2025年12月13日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 2,
+   "finish": "17",
+   "jockey": "永島 まなみ"
+  },
+  {
+   "date": "2025年11月15日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "永島 まなみ"
+  },
+  {
+   "date": "2025年7月20日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2025年7月5日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 9,
+   "popularity": 3,
+   "finish": "6",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2025年4月12日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 11,
+   "popularity": 8,
+   "finish": "5",
+   "jockey": "A.シュタルケ"
+  },
+  {
+   "date": "2025年3月23日",
+   "venue": "中京",
+   "race_name": "Fウォーク賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 10,
+   "popularity": 9,
+   "finish": "6",
+   "jockey": "和田 竜二"
+  },
+  {
+   "date": "2024年9月14日",
+   "venue": "中京",
+   "race_name": "ききょうS",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 5,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2024年7月21日",
+   "venue": "小倉",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "坂井 瑠星"
+  }
+ ],
+ "name": "ブルーレース",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022106756/C9",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 04:05"
+}

@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "オルフェーヴル",
+  "性別": "牝",
+  "馬主名": "近藤 健介",
+  "母": "ハッピーヴァリュー",
+  "馬齢": "3歳",
+  "調教師名": "寺島 良 （栗東）",
+  "母の父": "ゼンノロブロイ",
+  "生年月日": "2023年2月26日",
+  "生産牧場": "飛野牧場",
+  "母の母": "ネームヴァリュー",
+  "毛色": "栗毛",
+  "産地": "新ひだか町",
+  "馬名意味": "重力+ピエロ",
+  "取引市場": "",
+  "総賞金": "213,370,000 円",
+  "内付加賞": "26,670,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "96,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 4,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "京都",
+   "race_name": "エリザベス杯",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 18,
+   "popularity": 2,
+   "finish": "11",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2026年5月24日",
+   "venue": "東京",
+   "race_name": "優駿牝馬",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 18,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2026年4月12日",
+   "venue": "阪神",
+   "race_name": "忘れな草賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 7,
+   "finish": "1",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2026年1月4日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 7,
+   "popularity": 7,
+   "finish": "1",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2025年12月20日",
+   "venue": "阪神",
+   "race_name": "ポインセチア",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 7,
+   "finish": "7",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2025年11月3日",
+   "venue": "門別",
+   "race_name": "JBC2歳優",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 11,
+   "popularity": null,
+   "finish": "7",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2025年9月28日",
+   "venue": "阪神",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "今村 聖奈"
+  }
+ ],
+ "name": "ジュウリョクピエロ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023102979/74",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:52"
+}

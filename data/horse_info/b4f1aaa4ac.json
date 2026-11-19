@@ -1,0 +1,190 @@
+{
+ "profile": {
+  "父": "シャンハイボビー",
+  "性別": "牝",
+  "馬主名": "山岡 正人",
+  "母": "ダブルアクセル",
+  "馬齢": "4歳",
+  "調教師名": "藤野 健太 （栗東）",
+  "母の父": "アグネスタキオン",
+  "生年月日": "2022年5月26日",
+  "生産牧場": "酒井牧場",
+  "母の母": "ホクトペンダント",
+  "毛色": "青鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "冠名+希望(古代ギリシャ語)",
+  "取引市場": "2023年 北海道サマーセール",
+  "総賞金": "6,320,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 14,
+  "wins": 1,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 14,
+   "finish": "9",
+   "jockey": "中井 裕二"
+  },
+  {
+   "date": "2026年9月26日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 13,
+   "finish": "13",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2026年7月26日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 14,
+   "finish": "12",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2026年7月7日",
+   "venue": "川崎",
+   "race_name": "ジュライS賞",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 9,
+   "popularity": null,
+   "finish": "8",
+   "jockey": "野畑 凌"
+  },
+  {
+   "date": "2026年2月7日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 8,
+   "finish": "14",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年1月25日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 7,
+   "finish": "5",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2025年10月18日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 11,
+   "finish": "11",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2025年10月4日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 9,
+   "finish": "13",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2025年5月24日",
+   "venue": "京都",
+   "race_name": "メルボルンT",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 12,
+   "finish": "7",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2025年3月30日",
+   "venue": "中京",
+   "race_name": "大寒桜賞",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 7,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2025年2月22日",
+   "venue": "東京",
+   "race_name": "フリージア賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 9,
+   "popularity": 6,
+   "finish": "7",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2025年1月18日",
+   "venue": "中京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 14,
+   "finish": "10",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2024年11月9日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2024年10月12日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 5,
+   "finish": "8",
+   "jockey": "鮫島 克駿"
+  }
+ ],
+ "name": "ウォーターエルピス",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022102796/4D",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:48"
+}

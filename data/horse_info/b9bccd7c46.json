@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "ルヴァンスレーヴ",
+  "性別": "牝",
+  "馬主名": "(株)G1レーシング",
+  "母": "アルスフェルト",
+  "馬齢": "4歳",
+  "調教師名": "尾関 知人 （美浦）",
+  "母の父": "キングカメハメハ",
+  "生年月日": "2022年1月26日",
+  "生産牧場": "(有)社台コーポレーション白老ファーム",
+  "母の母": "アルスノヴァ",
+  "毛色": "黒鹿毛",
+  "産地": "白老町",
+  "馬名意味": "ドイツを流れる川の名前。母名より連想",
+  "取引市場": "",
+  "総賞金": "7,020,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 1,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 15,
+   "popularity": 6,
+   "finish": "7",
+   "jockey": "小林 美駒"
+  },
+  {
+   "date": "2026年9月20日",
+   "venue": "中山",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 15,
+   "finish": "5",
+   "jockey": "長浜 鴻緒"
+  },
+  {
+   "date": "2026年5月31日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 12,
+   "finish": "15",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2026年3月28日",
+   "venue": "中京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 12,
+   "finish": "11",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2025年9月20日",
+   "venue": "中山",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 10,
+   "finish": "11",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年6月22日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 7,
+   "finish": "16",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2025年4月19日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 8,
+   "popularity": 2,
+   "finish": "6",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年2月9日",
+   "venue": "東京",
+   "race_name": "3歳新馬",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 6,
+   "finish": "1",
+   "jockey": "丸田 恭介"
+  }
+ ],
+ "name": "シュヴァルム",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022105761/AB",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 04:05"
+}

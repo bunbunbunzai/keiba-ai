@@ -1,0 +1,201 @@
+{
+ "profile": {
+  "父": "ダノンバラード",
+  "性別": "牡",
+  "馬主名": "(株)サラブレッドクラブ・ラフィアン",
+  "母": "ショウナンアオバ",
+  "馬齢": "4歳",
+  "調教師名": "鹿戸 雄一 （美浦）",
+  "母の父": "キングカメハメハ",
+  "生年月日": "2022年4月30日",
+  "生産牧場": "大北牧場",
+  "母の母": "ショウナンタイム",
+  "毛色": "鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "冠名+青(伊)。母名から連想",
+  "取引市場": "2023年 北海道サマーセール",
+  "総賞金": "41,723,000 円",
+  "内付加賞": "593,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 2,
+  "second": 3,
+  "third": 3
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "M.デムーロ"
+  },
+  {
+   "date": "2026年10月25日",
+   "venue": "新潟",
+   "race_name": "村上特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 12,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2026年8月29日",
+   "venue": "新潟",
+   "race_name": "赤倉特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 17,
+   "popularity": 4,
+   "finish": "4",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "新潟",
+   "race_name": "尖閣湾特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年4月26日",
+   "venue": "福島",
+   "race_name": "飯盛山特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 13,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2026年3月29日",
+   "venue": "中京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 13,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2026年3月14日",
+   "venue": "中京",
+   "race_name": "鶴舞特別",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 10,
+   "popularity": 6,
+   "finish": "2",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2025年8月10日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 18,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2025年7月20日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2025年6月22日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2025年6月8日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 17,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2025年5月17日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 10,
+   "finish": "6",
+   "jockey": "舟山 瑠泉"
+  },
+  {
+   "date": "2025年1月6日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 11,
+   "finish": "12",
+   "jockey": "H.ドイル"
+  },
+  {
+   "date": "2024年12月7日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 11,
+   "finish": "4",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2024年11月17日",
+   "venue": "福島",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 5,
+   "finish": "6",
+   "jockey": "杉原 誠人"
+  }
+ ],
+ "name": "マイネルアズーロ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022100274/74",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:45"
+}

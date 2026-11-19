@@ -1,0 +1,135 @@
+{
+ "profile": {
+  "父": "ナダル",
+  "性別": "牝",
+  "馬主名": "吉木 伸彦",
+  "母": "ビキニスタイル",
+  "馬齢": "3歳",
+  "調教師名": "宮本 博 （栗東）",
+  "母の父": "ディープインパクト",
+  "生年月日": "2023年2月16日",
+  "生産牧場": "橋本牧場",
+  "母の母": "フィバリッシュ",
+  "毛色": "黒鹿毛",
+  "産地": "新ひだか町",
+  "馬名意味": "冠名+女王の地位",
+  "取引市場": "",
+  "総賞金": "1,710,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "1,710,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "1,500,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 3,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 11,
+   "finish": "12",
+   "jockey": "国分 恭介"
+  },
+  {
+   "date": "2026年10月23日",
+   "venue": "",
+   "race_name": "JRAへ転入",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2026年10月1日",
+   "venue": "名古",
+   "race_name": "3歳3組",
+   "surface": "ダ",
+   "distance": 1500,
+   "field": 11,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "大畑 慧悟"
+  },
+  {
+   "date": "2026年9月7日",
+   "venue": "名古",
+   "race_name": "3歳8a組",
+   "surface": "ダ",
+   "distance": 1500,
+   "field": 9,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "大畑 慧悟"
+  },
+  {
+   "date": "2026年8月18日",
+   "venue": "名古",
+   "race_name": "ひろっちゃん85歳お",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "大畑 慧悟"
+  },
+  {
+   "date": "2026年7月30日",
+   "venue": "",
+   "race_name": "JRAより転出",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2026年7月25日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 13,
+   "finish": "12",
+   "jockey": "国分 恭介"
+  },
+  {
+   "date": "2026年5月17日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 4,
+   "finish": "9",
+   "jockey": "国分 恭介"
+  },
+  {
+   "date": "2026年3月22日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 15,
+   "finish": "8",
+   "jockey": "国分 恭介"
+  }
+ ],
+ "name": "ノーブルクインダム",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023106705/92",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:45"
+}

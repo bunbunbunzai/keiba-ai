@@ -1,0 +1,135 @@
+{
+ "profile": {
+  "父": "シスキン",
+  "性別": "牝",
+  "馬主名": "(株)東京ホースレーシング",
+  "母": "レッドアネモス",
+  "馬齢": "3歳",
+  "調教師名": "加藤 征弘 （美浦）",
+  "母の父": "ヴィクトワールピサ",
+  "生年月日": "2023年3月8日",
+  "生産牧場": "社台ファーム",
+  "母の母": "マチカネハヤテ",
+  "毛色": "黒鹿毛",
+  "産地": "千歳市",
+  "馬名意味": "冠名+ローマ神話における風の女神。母名より連想",
+  "取引市場": "",
+  "総賞金": "10,360,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 9,
+  "wins": 1,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 5,
+   "finish": "16",
+   "jockey": "A.プーシャン"
+  },
+  {
+   "date": "2026年8月8日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 5,
+   "finish": "10",
+   "jockey": "小崎 綾也"
+  },
+  {
+   "date": "2026年6月6日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 11,
+   "finish": "6",
+   "jockey": "原 優介"
+  },
+  {
+   "date": "2026年5月17日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 6,
+   "finish": "5",
+   "jockey": "F.ゴンサルベス"
+  },
+  {
+   "date": "2026年1月25日",
+   "venue": "中山",
+   "race_name": "若竹賞",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 10,
+   "finish": "5",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2025年10月18日",
+   "venue": "東京",
+   "race_name": "アイビーS",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 7,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年9月28日",
+   "venue": "中山",
+   "race_name": "サフラン賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 6,
+   "finish": "4",
+   "jockey": "横山 典弘"
+  },
+  {
+   "date": "2025年7月5日",
+   "venue": "福島",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "横山 典弘"
+  },
+  {
+   "date": "2025年6月14日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "津村 明秀"
+  }
+ ],
+ "name": "ルージュカルデア",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023103595/F3",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:04"
+}

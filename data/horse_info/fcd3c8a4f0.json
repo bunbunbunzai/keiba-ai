@@ -1,0 +1,223 @@
+{
+ "profile": {
+  "父": "ドゥラメンテ",
+  "性別": "牝",
+  "馬主名": "西山 茂行",
+  "母": "ニシノアモーレ",
+  "馬齢": "5歳",
+  "調教師名": "上原 佑紀 （美浦）",
+  "母の父": "コンデュイット",
+  "生年月日": "2021年3月12日",
+  "生産牧場": "タツヤファーム",
+  "母の母": "ニシノマナムスメ",
+  "毛色": "鹿毛",
+  "産地": "新ひだか町",
+  "馬名意味": "冠名+愛している(伊)",
+  "取引市場": "",
+  "総賞金": "117,737,000 円",
+  "内付加賞": "1,467,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "45,500,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 17,
+  "wins": 5,
+  "second": 3,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "京都",
+   "race_name": "エリザベス杯",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 18,
+   "popularity": 15,
+   "finish": "18",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2026年10月11日",
+   "venue": "東京",
+   "race_name": "アイルランド",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 7,
+   "finish": "7",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2026年6月21日",
+   "venue": "東京",
+   "race_name": "府中牝馬S",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "10",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2026年5月17日",
+   "venue": "東京",
+   "race_name": "ヴィクトリア",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 4,
+   "finish": "6",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2026年3月7日",
+   "venue": "中山",
+   "race_name": "中山牝馬S",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "5",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2025年11月22日",
+   "venue": "福島",
+   "race_name": "福島記念",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2025年10月19日",
+   "venue": "東京",
+   "race_name": "甲斐路S",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 18,
+   "popularity": 6,
+   "finish": "1",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2025年7月6日",
+   "venue": "福島",
+   "race_name": "白河特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2025年6月1日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2024年10月19日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2024年10月5日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年4月28日",
+   "venue": "東京",
+   "race_name": "スイートピー",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2024年3月24日",
+   "venue": "中山",
+   "race_name": "ミモザ賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 7,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2024年2月17日",
+   "venue": "東京",
+   "race_name": "フリージア賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 5,
+   "finish": "5",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2024年1月7日",
+   "venue": "中山",
+   "race_name": "フェアリーS",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 10,
+   "finish": "5",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2023年11月5日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2023年10月15日",
+   "venue": "新潟",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "丹内 祐次"
+  }
+ ],
+ "name": "ニシノティアモ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021100244/B8",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:51"
+}

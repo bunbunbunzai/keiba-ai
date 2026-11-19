@@ -1,0 +1,190 @@
+{
+ "profile": {
+  "父": "タワーオブロンドン",
+  "性別": "牝",
+  "馬主名": "森田 至昭",
+  "母": "オトヒメ2",
+  "馬齢": "3歳",
+  "調教師名": "小椋 研介 （栗東）",
+  "母の父": "Pivotal",
+  "生年月日": "2023年5月19日",
+  "生産牧場": "恵比寿牧場",
+  "母の母": "Rub a Dub Dub",
+  "毛色": "栗毛",
+  "産地": "浦河町",
+  "馬名意味": "続く(仏)",
+  "取引市場": "2024年 北海道サマーセール",
+  "総賞金": "17,000,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 14,
+  "wins": 1,
+  "second": 2,
+  "third": 4
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 16,
+   "popularity": 6,
+   "finish": "3",
+   "jockey": "和田 陽希"
+  },
+  {
+   "date": "2026年10月17日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 7,
+   "finish": "12",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2026年8月9日",
+   "venue": "札幌",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 11,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2026年7月12日",
+   "venue": "函館",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 12,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年6月27日",
+   "venue": "函館",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 12,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年6月13日",
+   "venue": "函館",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 12,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "長岡 禎仁"
+  },
+  {
+   "date": "2026年4月19日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 16,
+   "popularity": 4,
+   "finish": "6",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2026年3月1日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 14,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "藤懸 貴志"
+  },
+  {
+   "date": "2026年2月14日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 14,
+   "popularity": 10,
+   "finish": "3",
+   "jockey": "長岡 禎仁"
+  },
+  {
+   "date": "2026年1月31日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 14,
+   "popularity": 13,
+   "finish": "6",
+   "jockey": "長岡 禎仁"
+  },
+  {
+   "date": "2025年12月20日",
+   "venue": "中京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 14,
+   "finish": "11",
+   "jockey": "長岡 禎仁"
+  },
+  {
+   "date": "2025年10月19日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 8,
+   "finish": "11",
+   "jockey": "加藤 祥太"
+  },
+  {
+   "date": "2025年9月27日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 9,
+   "finish": "10",
+   "jockey": "川須 栄彦"
+  },
+  {
+   "date": "2025年7月13日",
+   "venue": "函館",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 7,
+   "popularity": 7,
+   "finish": "7",
+   "jockey": "荻野 琢真"
+  }
+ ],
+ "name": "スイーヴル",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023101660/D7",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:11"
+}

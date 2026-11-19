@@ -1,0 +1,223 @@
+{
+ "profile": {
+  "父": "レイデオロ",
+  "性別": "せん",
+  "馬主名": "犬飼 優",
+  "母": "メロディーオブラブ",
+  "馬齢": "4歳",
+  "調教師名": "矢嶋 大樹 （美浦）",
+  "母の父": "ディープインパクト",
+  "生年月日": "2022年4月26日",
+  "生産牧場": "森永牧場",
+  "母の母": "アナバシュドチャーム",
+  "毛色": "黒鹿毛",
+  "産地": "日高町",
+  "馬名意味": "朝日(独)",
+  "取引市場": "",
+  "総賞金": "3,205,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "3,205,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "2,900,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 7,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年10月31日",
+   "venue": "京都",
+   "race_name": "障害3歳上未勝利",
+   "surface": "芝",
+   "distance": 2910,
+   "field": 10,
+   "popularity": 9,
+   "finish": "8",
+   "jockey": "草野 太郎"
+  },
+  {
+   "date": "2026年8月23日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 12,
+   "popularity": 11,
+   "finish": "12",
+   "jockey": "上里 直汰"
+  },
+  {
+   "date": "2026年7月30日",
+   "venue": "",
+   "race_name": "JRAへ転入",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2026年7月5日",
+   "venue": "金沢",
+   "race_name": "さわやかさやか賞",
+   "surface": "ダ",
+   "distance": 1500,
+   "field": 9,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "中島 龍也"
+  },
+  {
+   "date": "2026年6月28日",
+   "venue": "金沢",
+   "race_name": "楽天競馬で馬券を買お",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "中島 龍也"
+  },
+  {
+   "date": "2026年6月2日",
+   "venue": "金沢",
+   "race_name": "信じてるよお馬ら杯",
+   "surface": "ダ",
+   "distance": 1500,
+   "field": 10,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "栗原 大河"
+  },
+  {
+   "date": "2026年1月15日",
+   "venue": "大井",
+   "race_name": "普通C3一",
+   "surface": "ダ",
+   "distance": 2000,
+   "field": 12,
+   "popularity": 1,
+   "finish": "6",
+   "jockey": "矢野 貴之"
+  },
+  {
+   "date": "2025年12月19日",
+   "venue": "金沢",
+   "race_name": "普通C15",
+   "surface": "ダ",
+   "distance": 1500,
+   "field": 8,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "中島 龍也"
+  },
+  {
+   "date": "2025年10月27日",
+   "venue": "金沢",
+   "race_name": "普通C17",
+   "surface": "ダ",
+   "distance": 1500,
+   "field": 7,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "中島 龍也"
+  },
+  {
+   "date": "2025年10月14日",
+   "venue": "金沢",
+   "race_name": "金沢競馬C1プレミア",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 8,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "中島 龍也"
+  },
+  {
+   "date": "2025年9月20日",
+   "venue": "金沢",
+   "race_name": "祝☆竹原家&神戸家結",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 10,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "中島 龍也"
+  },
+  {
+   "date": "2025年9月8日",
+   "venue": "金沢",
+   "race_name": "普通3歳B9",
+   "surface": "ダ",
+   "distance": 1500,
+   "field": 10,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "中島 龍也"
+  },
+  {
+   "date": "2025年8月13日",
+   "venue": "",
+   "race_name": "JRAより転出",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2025年8月10日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 13,
+   "finish": "9",
+   "jockey": "国分 優作"
+  },
+  {
+   "date": "2025年6月15日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 15,
+   "popularity": 10,
+   "finish": "12",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2025年6月1日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 13,
+   "popularity": 9,
+   "finish": "6",
+   "jockey": "松本 大輝"
+  },
+  {
+   "date": "2025年5月11日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 12,
+   "popularity": 12,
+   "finish": "7",
+   "jockey": "松本 大輝"
+  }
+ ],
+ "name": "モルゲンゾンネ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022102141/98",
+ "last_card": "20261031",
+ "fetched": "2026-11-20 05:32"
+}

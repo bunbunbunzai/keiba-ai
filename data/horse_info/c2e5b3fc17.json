@@ -1,0 +1,157 @@
+{
+ "profile": {
+  "父": "モーリス",
+  "性別": "牝",
+  "馬主名": "(株)ナハト",
+  "母": "メモリーズ",
+  "馬齢": "3歳",
+  "調教師名": "矢嶋 大樹 （美浦）",
+  "母の父": "ディープインパクト",
+  "生年月日": "2023年2月23日",
+  "生産牧場": "グランド牧場",
+  "母の母": "フレンチリヴィエラ",
+  "毛色": "栗毛",
+  "産地": "新ひだか町",
+  "馬名意味": "馬主名より+人名愛称",
+  "取引市場": "2025年 JRAブリーズアップセール",
+  "総賞金": "23,290,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 11,
+  "wins": 2,
+  "second": 1,
+  "third": 3
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 9,
+   "finish": "7",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2026年10月17日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 7,
+   "finish": "1",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2026年9月27日",
+   "venue": "中山",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 3,
+   "finish": "16",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年9月13日",
+   "venue": "中山",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年7月26日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1500,
+   "field": 12,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2026年3月28日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2026年3月1日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 5,
+   "finish": "3",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2026年1月31日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 7,
+   "finish": "4",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年1月5日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 11,
+   "finish": "14",
+   "jockey": "内田 博幸"
+  },
+  {
+   "date": "2025年10月5日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 5,
+   "finish": "3",
+   "jockey": "長浜 鴻緒"
+  },
+  {
+   "date": "2025年6月8日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 17,
+   "popularity": 11,
+   "finish": "7",
+   "jockey": "長浜 鴻緒"
+  }
+ ],
+ "name": "ナハトナナレオン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023102619/81",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:22"
+}

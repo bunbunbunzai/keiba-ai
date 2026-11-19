@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "ロードカナロア",
+  "性別": "牡",
+  "馬主名": "(有)シルクレーシング",
+  "母": "アイリッシュシー",
+  "馬齢": "3歳",
+  "調教師名": "手塚 貴久 （美浦）",
+  "母の父": "Galileo",
+  "生年月日": "2023年1月31日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "Fire Lily",
+  "毛色": "黒鹿毛",
+  "産地": "安平町",
+  "馬名意味": "アイルランド神話における海の神。母名より連想",
+  "取引市場": "",
+  "総賞金": "51,685,000 円",
+  "内付加賞": "685,000 円",
+  "内地方賞金": "4,800,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 3,
+  "second": 2,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月1日",
+   "venue": "東京",
+   "race_name": "紅葉S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 6,
+   "finish": "4",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年8月9日",
+   "venue": "新潟",
+   "race_name": "レパードS",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 5,
+   "finish": "9",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2026年6月7日",
+   "venue": "東京",
+   "race_name": "小金井特別",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2026年5月9日",
+   "venue": "東京",
+   "race_name": "青竜S",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2026年2月18日",
+   "venue": "大井",
+   "race_name": "雲取賞",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": null,
+   "finish": "3",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2026年1月10日",
+   "venue": "中山",
+   "race_name": "黒竹賞",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年11月24日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年10月25日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  }
+ ],
+ "name": "マクリール",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023106821/17",
+ "last_card": "20261101",
+ "fetched": "2026-11-20 05:28"
+}

@@ -1,0 +1,157 @@
+{
+ "profile": {
+  "父": "モーリス",
+  "性別": "せん",
+  "馬主名": "(有)サンデーレーシング",
+  "母": "フロールデセレッソ",
+  "馬齢": "5歳",
+  "調教師名": "高木 登 （美浦）",
+  "母の父": "スウェプトオーヴァーボード",
+  "生年月日": "2021年5月4日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "フローリッドコート",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "ワシントンDCの桜の名所",
+  "取引市場": "",
+  "総賞金": "19,700,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 11,
+  "wins": 1,
+  "second": 4,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "A.プーシャン"
+  },
+  {
+   "date": "2026年10月18日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "10",
+   "jockey": "石川 裕紀人"
+  },
+  {
+   "date": "2026年5月31日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 2,
+   "finish": "10",
+   "jockey": "D.レーン"
+  },
+  {
+   "date": "2026年2月21日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2025年11月29日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 2,
+   "finish": "8",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年11月2日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年8月10日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 2,
+   "finish": "13",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2025年7月12日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2024年7月7日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年6月16日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2024年4月27日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "内田 博幸"
+  }
+ ],
+ "name": "ヘインズポイント",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021105734/48",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:17"
+}

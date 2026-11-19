@@ -1,0 +1,201 @@
+{
+ "profile": {
+  "父": "マインドユアビスケッツ",
+  "性別": "せん",
+  "馬主名": "(有)キャロットファーム",
+  "母": "ケアレスウィスパー",
+  "馬齢": "4歳",
+  "調教師名": "中舘 英二 （美浦）",
+  "母の父": "フジキセキ",
+  "生年月日": "2022年3月10日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "エヴリウィスパー",
+  "毛色": "栗毛",
+  "産地": "安平町",
+  "馬名意味": "心を鍛える。父名より連想",
+  "取引市場": "",
+  "総賞金": "17,215,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "10,275,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 2,
+  "second": 2,
+  "third": 3
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "東京",
+   "race_name": "神奈川新聞杯",
+   "surface": "ダ",
+   "distance": 2100,
+   "field": 15,
+   "popularity": 11,
+   "finish": "8",
+   "jockey": "内田 博幸"
+  },
+  {
+   "date": "2026年9月1日",
+   "venue": "盛岡",
+   "race_name": "けやき賞",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 9,
+   "popularity": null,
+   "finish": "2",
+   "jockey": "吉原 寛人"
+  },
+  {
+   "date": "2026年6月13日",
+   "venue": "東京",
+   "race_name": "日野特別",
+   "surface": "ダ",
+   "distance": 2100,
+   "field": 14,
+   "popularity": 7,
+   "finish": "8",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2026年4月16日",
+   "venue": "大井",
+   "race_name": "US卯月賞",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": null,
+   "finish": "1",
+   "jockey": "御神本 訓史"
+  },
+  {
+   "date": "2026年2月14日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 2100,
+   "field": 16,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2025年12月11日",
+   "venue": "船橋",
+   "race_name": "FFブーツ",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": null,
+   "finish": "2",
+   "jockey": "御神本 訓史"
+  },
+  {
+   "date": "2025年11月1日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 2100,
+   "field": 16,
+   "popularity": 10,
+   "finish": "5",
+   "jockey": "横山 琉人"
+  },
+  {
+   "date": "2025年9月3日",
+   "venue": "大井",
+   "race_name": "FNむくげ特",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": null,
+   "finish": "1",
+   "jockey": "御神本 訓史"
+  },
+  {
+   "date": "2025年7月13日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 4,
+   "finish": "4",
+   "jockey": "横山 琉人"
+  },
+  {
+   "date": "2025年5月24日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 2100,
+   "field": 16,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "内田 博幸"
+  },
+  {
+   "date": "2025年4月13日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "7",
+   "jockey": "内田 博幸"
+  },
+  {
+   "date": "2025年3月22日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "内田 博幸"
+  },
+  {
+   "date": "2024年11月30日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 2,
+   "finish": "11",
+   "jockey": "W.ビュイック"
+  },
+  {
+   "date": "2024年10月14日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 12,
+   "popularity": 2,
+   "finish": "6",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2024年9月8日",
+   "venue": "中山",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "内田 博幸"
+  }
+ ],
+ "name": "トレインザマインド",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022104766/FB",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:05"
+}

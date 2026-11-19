@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "フォーウィールドライブ",
+  "性別": "牡",
+  "馬主名": "土井 久美子",
+  "母": "ジョリーダンス",
+  "馬齢": "3歳",
+  "調教師名": "斉藤 崇史 （栗東）",
+  "母の父": "ダンスインザダーク",
+  "生年月日": "2023年2月28日",
+  "生産牧場": "錦岡牧場",
+  "母の母": "ピーターホフズパティア",
+  "毛色": "芦毛",
+  "産地": "新冠町",
+  "馬名意味": "乾杯(エストニア語)",
+  "取引市場": "",
+  "総賞金": "19,017,000 円",
+  "内付加賞": "357,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 2,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "新潟",
+   "race_name": "柏崎特別",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 9,
+   "finish": "1",
+   "jockey": "亀田 温心"
+  },
+  {
+   "date": "2026年7月26日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 7,
+   "finish": "11",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2026年7月12日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 17,
+   "popularity": 4,
+   "finish": "7",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2026年4月11日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 7,
+   "finish": "7",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2026年3月21日",
+   "venue": "中京",
+   "race_name": "ファルコンS",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 17,
+   "popularity": 11,
+   "finish": "14",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2025年12月21日",
+   "venue": "中京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 17,
+   "popularity": 7,
+   "finish": "1",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2025年11月30日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2025年10月11日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 11,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "団野 大成"
+  }
+ ],
+ "name": "テルヴィセクス",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023104355/40",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:52"
+}

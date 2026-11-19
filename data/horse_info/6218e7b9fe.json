@@ -1,0 +1,201 @@
+{
+ "profile": {
+  "父": "アドマイヤマーズ",
+  "性別": "牡",
+  "馬主名": "松本 好��",
+  "母": "メイショウヒサカタ",
+  "馬齢": "4歳",
+  "調教師名": "飯田 祐史 （栗東）",
+  "母の父": "シニスターミニスター",
+  "生年月日": "2022年3月31日",
+  "生産牧場": "三嶋牧場",
+  "母の母": "メイショウマンテン",
+  "毛色": "栗毛",
+  "産地": "浦河町",
+  "馬名意味": "冠名+強気",
+  "取引市場": "",
+  "総賞金": "37,500,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 3,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月1日",
+   "venue": "東京",
+   "race_name": "秋嶺S",
+   "surface": "ダ",
+   "distance": 1300,
+   "field": 16,
+   "popularity": 4,
+   "finish": "4",
+   "jockey": "吉田 隼人"
+  },
+  {
+   "date": "2026年9月19日",
+   "venue": "阪神",
+   "race_name": "大阪スポ杯",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "13",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年6月6日",
+   "venue": "東京",
+   "race_name": "麦秋S",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 9,
+   "finish": "4",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年4月5日",
+   "venue": "阪神",
+   "race_name": "心斎橋S",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 6,
+   "finish": "18",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年12月6日",
+   "venue": "阪神",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 10,
+   "finish": "1",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年11月1日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 5,
+   "finish": "12",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年10月4日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 3,
+   "finish": "6",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年9月6日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 14,
+   "popularity": 7,
+   "finish": "1",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2025年4月12日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 11,
+   "popularity": 10,
+   "finish": "8",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2025年3月23日",
+   "venue": "中京",
+   "race_name": "Fウォーク賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 10,
+   "popularity": 4,
+   "finish": "8",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2025年2月15日",
+   "venue": "京都",
+   "race_name": "こぶし賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 6,
+   "popularity": 4,
+   "finish": "4",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2025年1月13日",
+   "venue": "中京",
+   "race_name": "シンザン記念",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 13,
+   "finish": "14",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2024年9月14日",
+   "venue": "中京",
+   "race_name": "ききょうS",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 5,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2024年8月11日",
+   "venue": "中京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2024年7月20日",
+   "venue": "小倉",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "坂井 瑠星"
+  }
+ ],
+ "name": "メイショウツヨキ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022103262/4B",
+ "last_card": "20261101",
+ "fetched": "2026-11-20 05:29"
+}

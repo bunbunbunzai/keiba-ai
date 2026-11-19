@@ -1,0 +1,134 @@
+{
+ "profile": {
+  "父": "Nyquist",
+  "性別": "牝",
+  "馬主名": "前田 幸貴",
+  "母": "My Sweet Girl",
+  "馬齢": "3歳",
+  "調教師名": "橋口 慎介 （栗東）",
+  "母の父": "Bernardini",
+  "生年月日": "2023年4月28日",
+  "母の母": "Bit of Whimsy",
+  "毛色": "栗毛",
+  "産地": "米",
+  "馬名意味": "愛ある行動",
+  "取引市場": "",
+  "総賞金": "24,740,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 9,
+  "wins": 2,
+  "second": 2,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2026年10月18日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2026年7月26日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "酒井 学"
+  },
+  {
+   "date": "2026年7月12日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2026年5月17日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 7,
+   "finish": "6",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2026年3月22日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 7,
+   "finish": "10",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2026年2月1日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 16,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2025年11月9日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年10月13日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "坂井 瑠星"
+  }
+ ],
+ "name": "ラブインアクション",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023110043/C9",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 04:01"
+}

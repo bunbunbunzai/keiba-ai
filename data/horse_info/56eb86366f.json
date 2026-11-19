@@ -1,0 +1,201 @@
+{
+ "profile": {
+  "父": "モーニン",
+  "性別": "牡",
+  "馬主名": "マブレーシング",
+  "母": "オスカークイーン",
+  "馬齢": "4歳",
+  "調教師名": "四位 洋文 （栗東）",
+  "母の父": "シニスターミニスター",
+  "生年月日": "2022年4月25日",
+  "生産牧場": "中村 雅明",
+  "母の母": "カリビアンセレブ",
+  "毛色": "鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "嘆き(伊)",
+  "取引市場": "",
+  "総賞金": "22,770,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 2,
+  "second": 1,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 10,
+   "finish": "10",
+   "jockey": "木幡 巧也"
+  },
+  {
+   "date": "2026年10月24日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 11,
+   "popularity": 8,
+   "finish": "10",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2026年7月25日",
+   "venue": "中京",
+   "race_name": "四日市特別",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 10,
+   "finish": "13",
+   "jockey": "角田 大和"
+  },
+  {
+   "date": "2026年5月30日",
+   "venue": "東京",
+   "race_name": "富嶽賞",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "9",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年3月21日",
+   "venue": "中京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "舟山 瑠泉"
+  },
+  {
+   "date": "2026年1月12日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "8",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年12月13日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年11月23日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 7,
+   "finish": "2",
+   "jockey": "富田 暁"
+  },
+  {
+   "date": "2025年9月20日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "富田 暁"
+  },
+  {
+   "date": "2025年6月22日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "10",
+   "jockey": "岩田 康誠"
+  },
+  {
+   "date": "2025年6月1日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "岩田 康誠"
+  },
+  {
+   "date": "2025年4月13日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 10,
+   "finish": "13",
+   "jockey": "岩田 康誠"
+  },
+  {
+   "date": "2025年3月29日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "富田 暁"
+  },
+  {
+   "date": "2025年3月16日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "4",
+   "jockey": "岩田 康誠"
+  },
+  {
+   "date": "2025年2月22日",
+   "venue": "京都",
+   "race_name": "3歳新馬",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 6,
+   "finish": "4",
+   "jockey": "岩田 康誠"
+  }
+ ],
+ "name": "ジェミート",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022100327/AE",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:55"
+}

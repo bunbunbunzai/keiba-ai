@@ -1,0 +1,134 @@
+{
+ "profile": {
+  "父": "Practical Joke",
+  "性別": "せん",
+  "馬主名": "原村 正紀",
+  "母": "In My Time",
+  "馬齢": "3歳",
+  "調教師名": "森 秀行 （栗東）",
+  "母の父": "Scat Daddy",
+  "生年月日": "2023年3月5日",
+  "母の母": "Irish Starlet",
+  "毛色": "栗毛",
+  "産地": "米",
+  "馬名意味": "冠名+人名より",
+  "取引市場": "",
+  "総賞金": "12,690,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "2,000,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 9,
+  "wins": 2,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1300,
+   "field": 14,
+   "popularity": 8,
+   "finish": "4",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2026年10月4日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 10,
+   "finish": "12",
+   "jockey": "松本 大輝"
+  },
+  {
+   "date": "2026年8月20日",
+   "venue": "園田",
+   "race_name": "淀川特別",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 11,
+   "popularity": null,
+   "finish": "1",
+   "jockey": "吉村 智洋"
+  },
+  {
+   "date": "2026年5月31日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 9,
+   "finish": "12",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2026年5月3日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2026年4月12日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年3月22日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 7,
+   "finish": "5",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2025年11月9日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 6,
+   "finish": "15",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2025年6月22日",
+   "venue": "阪神",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 10,
+   "popularity": 5,
+   "finish": "8",
+   "jockey": "吉村 誠之助"
+  }
+ ],
+ "name": "エコロボルト",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023110063/E9",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:42"
+}

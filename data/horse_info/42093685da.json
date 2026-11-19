@@ -1,0 +1,146 @@
+{
+ "profile": {
+  "父": "ドレフォン",
+  "性別": "牝",
+  "馬主名": "辻子 依旦",
+  "母": "カフジビーナス",
+  "馬齢": "3歳",
+  "調教師名": "杉山 佳明 （栗東）",
+  "母の父": "ディープインパクト",
+  "生年月日": "2023年4月27日",
+  "生産牧場": "川島牧場",
+  "母の母": "タッソーニー",
+  "毛色": "黒鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "黒(仏)+母名の一部",
+  "取引市場": "",
+  "総賞金": "17,406,000 円",
+  "内付加賞": "106,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 10,
+  "wins": 1,
+  "second": 2,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 6,
+   "finish": "14",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2026年10月24日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 5,
+   "finish": "10",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2026年8月16日",
+   "venue": "札幌",
+   "race_name": "小樽特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 10,
+   "finish": "2",
+   "jockey": "舟山 瑠泉"
+  },
+  {
+   "date": "2026年8月9日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 6,
+   "finish": "7",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2025年12月20日",
+   "venue": "中京",
+   "race_name": "報知杯CRS",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 9,
+   "popularity": 8,
+   "finish": "4",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2025年12月13日",
+   "venue": "中京",
+   "race_name": "つわぶき賞",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 11,
+   "popularity": 9,
+   "finish": "4",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2025年9月28日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2025年8月30日",
+   "venue": "札幌",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1500,
+   "field": 8,
+   "popularity": 3,
+   "finish": "6",
+   "jockey": "川又 賢治"
+  },
+  {
+   "date": "2025年7月20日",
+   "venue": "函館",
+   "race_name": "函館2歳S",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 11,
+   "finish": "8",
+   "jockey": "川又 賢治"
+  },
+  {
+   "date": "2025年7月13日",
+   "venue": "函館",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 7,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "川又 賢治"
+  }
+ ],
+ "name": "ノアールビーナス",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023104047/83",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 04:04"
+}

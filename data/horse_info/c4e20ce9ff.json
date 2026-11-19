@@ -1,0 +1,211 @@
+{
+ "profile": {
+  "父": "Preservationist",
+  "性別": "牡",
+  "馬主名": "鈴木 紋菜",
+  "母": "Officer Leah",
+  "馬齢": "4歳",
+  "調教師名": "小崎 憲 （栗東）",
+  "母の父": "Officer",
+  "生年月日": "2022年2月8日",
+  "母の母": "Spanish Hound",
+  "毛色": "栗毛",
+  "産地": "米",
+  "馬名意味": "冠名+人名より",
+  "取引市場": "",
+  "総賞金": "40,891,000 円",
+  "内付加賞": "251,000 円",
+  "内地方賞金": "4,000,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 16,
+  "wins": 2,
+  "second": 4,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "東京",
+   "race_name": "神奈川新聞杯",
+   "surface": "ダ",
+   "distance": 2100,
+   "field": 15,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年10月10日",
+   "venue": "東京",
+   "race_name": "JRA電話",
+   "surface": "ダ",
+   "distance": 2100,
+   "field": 16,
+   "popularity": 7,
+   "finish": "2",
+   "jockey": "小崎 綾也"
+  },
+  {
+   "date": "2026年8月8日",
+   "venue": "中京",
+   "race_name": "三河S",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 8,
+   "popularity": 8,
+   "finish": "2",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2026年7月26日",
+   "venue": "中京",
+   "race_name": "遠州灘特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 5,
+   "finish": "12",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年4月12日",
+   "venue": "阪神",
+   "race_name": "川西特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 2,
+   "finish": "7",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年3月28日",
+   "venue": "阪神",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年2月28日",
+   "venue": "中山",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "12",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年11月16日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "5",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年9月30日",
+   "venue": "船橋",
+   "race_name": "FDサドル特",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": null,
+   "finish": "1",
+   "jockey": "笹川 翼"
+  },
+  {
+   "date": "2025年9月20日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 4,
+   "finish": "11",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2025年4月27日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 10,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2025年1月12日",
+   "venue": "中京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "9",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2024年12月15日",
+   "venue": "中京",
+   "race_name": "寒椿賞",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 7,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2024年11月9日",
+   "venue": "東京",
+   "race_name": "オキザリス賞",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2024年9月21日",
+   "venue": "中京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2024年8月31日",
+   "venue": "中京",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 2,
+   "finish": "11",
+   "jockey": "川田 将雅"
+  }
+ ],
+ "name": "ユウトザユウト",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022110118/7D",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:05"
+}

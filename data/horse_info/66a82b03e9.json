@@ -1,0 +1,223 @@
+{
+ "profile": {
+  "父": "カレンブラックヒル",
+  "性別": "牝",
+  "馬主名": "小林 昌志",
+  "母": "ブライティアパルス",
+  "馬齢": "4歳",
+  "調教師名": "松尾 卓哉 （美浦）",
+  "母の父": "ダイタクリーヴァ",
+  "生年月日": "2022年4月11日",
+  "生産牧場": "雅 牧場",
+  "母の母": "ストームサンデー",
+  "毛色": "栗毛",
+  "産地": "平取町",
+  "馬名意味": "冠名+ブーケ",
+  "取引市場": "",
+  "総賞金": "17,500,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 17,
+  "wins": 1,
+  "second": 2,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 7,
+   "finish": "12",
+   "jockey": "石神 深道"
+  },
+  {
+   "date": "2026年10月24日",
+   "venue": "新潟",
+   "race_name": "稲光特別",
+   "surface": "芝",
+   "distance": 1000,
+   "field": 16,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2026年9月6日",
+   "venue": "中山",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 7,
+   "finish": "13",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2026年8月8日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1000,
+   "field": 18,
+   "popularity": 6,
+   "finish": "3",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2026年7月18日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 6,
+   "finish": "2",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2026年4月12日",
+   "venue": "福島",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 11,
+   "finish": "7",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年2月8日",
+   "venue": "小倉",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 8,
+   "finish": "9",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年1月31日",
+   "venue": "小倉",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 11,
+   "finish": "13",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2025年11月16日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 11,
+   "finish": "12",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2025年10月4日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 8,
+   "finish": "11",
+   "jockey": "城戸 義政"
+  },
+  {
+   "date": "2025年9月7日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 13,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "城戸 義政"
+  },
+  {
+   "date": "2025年5月18日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 6,
+   "finish": "1",
+   "jockey": "荻野 琢真"
+  },
+  {
+   "date": "2025年4月27日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "荻野 琢真"
+  },
+  {
+   "date": "2025年3月15日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "11",
+   "jockey": "荻野 琢真"
+  },
+  {
+   "date": "2025年1月12日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 6,
+   "finish": "5",
+   "jockey": "荻野 琢真"
+  },
+  {
+   "date": "2024年12月14日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 12,
+   "finish": "2",
+   "jockey": "荻野 琢真"
+  },
+  {
+   "date": "2024年11月3日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 5,
+   "finish": "14",
+   "jockey": "松山 弘平"
+  }
+ ],
+ "name": "ブライティアブーケ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022102465/17",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 04:04"
+}

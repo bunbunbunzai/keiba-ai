@@ -1,0 +1,212 @@
+{
+ "profile": {
+  "父": "ロードカナロア",
+  "性別": "牝",
+  "馬主名": "前田 葉子",
+  "母": "ルシュクル",
+  "馬齢": "4歳",
+  "調教師名": "中竹 和也 （栗東）",
+  "母の父": "サクラバクシンオー",
+  "生年月日": "2022年5月14日",
+  "生産牧場": "(株)ノースヒルズ",
+  "母の母": "アジアンミーティア",
+  "毛色": "鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "甘い愛(仏)。母名より連想。愛される馬になる事を願って",
+  "取引市場": "",
+  "総賞金": "53,516,000 円",
+  "内付加賞": "746,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 16,
+  "wins": 3,
+  "second": 2,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "福島",
+   "race_name": "キビタキS",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 14,
+   "finish": "14",
+   "jockey": "吉田 隼人"
+  },
+  {
+   "date": "2026年7月4日",
+   "venue": "函館",
+   "race_name": "TVh杯",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 9,
+   "finish": "16",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2026年6月21日",
+   "venue": "函館",
+   "race_name": "UHB杯",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 1,
+   "finish": "11",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2026年5月3日",
+   "venue": "京都",
+   "race_name": "朱雀S",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 11,
+   "finish": "4",
+   "jockey": "角田 大和"
+  },
+  {
+   "date": "2026年3月21日",
+   "venue": "阪神",
+   "race_name": "淀屋橋S",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 14,
+   "finish": "5",
+   "jockey": "角田 大和"
+  },
+  {
+   "date": "2025年11月23日",
+   "venue": "京都",
+   "race_name": "醍醐S",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 10,
+   "finish": "15",
+   "jockey": "藤岡 佑介"
+  },
+  {
+   "date": "2025年7月5日",
+   "venue": "函館",
+   "race_name": "TVh杯",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 1,
+   "finish": "13",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2025年6月15日",
+   "venue": "函館",
+   "race_name": "函館日刊S杯",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2025年5月11日",
+   "venue": "京都",
+   "race_name": "橘ステークス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 11,
+   "popularity": 9,
+   "finish": "2",
+   "jockey": "藤岡 佑介"
+  },
+  {
+   "date": "2025年3月8日",
+   "venue": "阪神",
+   "race_name": "Fレビュー",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 13,
+   "finish": "13",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2025年2月9日",
+   "venue": "小倉",
+   "race_name": "かささぎ賞",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 6,
+   "finish": "1",
+   "jockey": "藤岡 佑介"
+  },
+  {
+   "date": "2025年1月11日",
+   "venue": "中京",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 7,
+   "popularity": 5,
+   "finish": "6",
+   "jockey": "柴田 裕一郎"
+  },
+  {
+   "date": "2024年12月14日",
+   "venue": "中京",
+   "race_name": "中京2歳S",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 11,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2024年7月14日",
+   "venue": "函館",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 10,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2024年6月29日",
+   "venue": "函館",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 5,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2024年6月15日",
+   "venue": "函館",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 7,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "横山 和生"
+  }
+ ],
+ "name": "ドゥアムール",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022106666/A8",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:15"
+}

@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "レイデオロ",
+  "性別": "牡",
+  "馬主名": "広尾レース(株)",
+  "母": "ステラリード",
+  "馬齢": "3歳",
+  "調教師名": "高柳 大輔 （栗東）",
+  "母の父": "スペシャルウィーク",
+  "生年月日": "2023年1月20日",
+  "生産牧場": "木村 秀則",
+  "母の母": "ウェルシュステラ",
+  "毛色": "栗毛",
+  "産地": "新ひだか町",
+  "馬名意味": "都市の安全を守るとされたアテナの木彫神像",
+  "取引市場": "",
+  "総賞金": "8,320,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 1,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 17,
+   "popularity": 8,
+   "finish": "11",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2026年10月3日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 17,
+   "popularity": 13,
+   "finish": "12",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2026年8月22日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 8,
+   "popularity": 5,
+   "finish": "5",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2026年7月18日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 5,
+   "finish": "6",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年4月25日",
+   "venue": "東京",
+   "race_name": "青葉賞",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 18,
+   "popularity": 14,
+   "finish": "12",
+   "jockey": "吉田 豊"
+  },
+  {
+   "date": "2026年1月18日",
+   "venue": "中山",
+   "race_name": "京成杯",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 11,
+   "finish": "14",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2025年11月30日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 8,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "高杉 吏麒"
+  }
+ ],
+ "name": "パラディオン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023106392/05",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:01"
+}

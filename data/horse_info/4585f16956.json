@@ -1,0 +1,102 @@
+{
+ "profile": {
+  "父": "スワーヴリチャード",
+  "性別": "せん",
+  "馬主名": "前田 良平",
+  "母": "ミスティックリップス",
+  "馬齢": "3歳",
+  "調教師名": "伊坂 重信 （美浦）",
+  "母の父": "Generous",
+  "生年月日": "2023年2月1日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "Majorata",
+  "毛色": "栗毛",
+  "産地": "安平町",
+  "馬名意味": "冠名+乾いた",
+  "取引市場": "2023年 ノーザンファームミックスセール",
+  "総賞金": "13,650,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 6,
+  "wins": 1,
+  "second": 2,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2600,
+   "field": 16,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2026年9月12日",
+   "venue": "中山",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2500,
+   "field": 14,
+   "popularity": 6,
+   "finish": "4",
+   "jockey": "木幡 巧也"
+  },
+  {
+   "date": "2026年7月5日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "木幡 巧也"
+  },
+  {
+   "date": "2026年4月26日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 10,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "木幡 巧也"
+  },
+  {
+   "date": "2026年4月5日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "木幡 巧也"
+  },
+  {
+   "date": "2026年1月31日",
+   "venue": "東京",
+   "race_name": "3歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "木幡 巧也"
+  }
+ ],
+ "name": "マーゴットドライ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023107254/69",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:09"
+}

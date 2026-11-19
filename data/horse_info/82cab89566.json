@@ -1,0 +1,201 @@
+{
+ "profile": {
+  "父": "リアルスティール",
+  "性別": "せん",
+  "馬主名": "杉本 豊",
+  "母": "シンコームーン",
+  "馬齢": "5歳",
+  "調教師名": "野中 賢二 （栗東）",
+  "母の父": "フォーティナイナーズサン",
+  "生年月日": "2021年4月15日",
+  "生産牧場": "高橋フアーム",
+  "母の母": "シンコールビー",
+  "毛色": "鹿毛",
+  "産地": "新ひだか町",
+  "馬名意味": "冠名+人名より",
+  "取引市場": "2022年 北海道セレクションセール",
+  "総賞金": "76,193,000 円",
+  "内付加賞": "993,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "24,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 4,
+  "second": 1,
+  "third": 3
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "福島",
+   "race_name": "福島民友C",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 6,
+   "finish": "3",
+   "jockey": "富田 暁"
+  },
+  {
+   "date": "2026年8月23日",
+   "venue": "中京",
+   "race_name": "名古屋城S",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "16",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2026年7月12日",
+   "venue": "小倉",
+   "race_name": "阿蘇S",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 11,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2026年6月20日",
+   "venue": "東京",
+   "race_name": "スレイプニル",
+   "surface": "ダ",
+   "distance": 2100,
+   "field": 15,
+   "popularity": 8,
+   "finish": "5",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年5月30日",
+   "venue": "東京",
+   "race_name": "アハルテケS",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 8,
+   "finish": "14",
+   "jockey": "小崎 綾也"
+  },
+  {
+   "date": "2026年4月11日",
+   "venue": "福島",
+   "race_name": "吾妻小富士S",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "小崎 綾也"
+  },
+  {
+   "date": "2026年2月1日",
+   "venue": "小倉",
+   "race_name": "門司S",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 1,
+   "finish": "8",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2025年11月22日",
+   "venue": "京都",
+   "race_name": "シトリンS",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 16,
+   "popularity": 3,
+   "finish": "14",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2025年10月26日",
+   "venue": "京都",
+   "race_name": "カノープスS",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 5,
+   "finish": "3",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2025年1月13日",
+   "venue": "中京",
+   "race_name": "雅ステークス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2024年12月7日",
+   "venue": "中京",
+   "race_name": "鳴海特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2024年4月27日",
+   "venue": "京都",
+   "race_name": "ユニコーンS",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 16,
+   "popularity": 10,
+   "finish": "10",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2024年3月9日",
+   "venue": "中京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 6,
+   "finish": "1",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2024年2月18日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 16,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2024年1月14日",
+   "venue": "小倉",
+   "race_name": "3歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 8,
+   "finish": "10",
+   "jockey": "富田 暁"
+  }
+ ],
+ "name": "スナークラファエロ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021103987/75",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 04:07"
+}

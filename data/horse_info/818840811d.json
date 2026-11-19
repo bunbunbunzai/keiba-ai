@@ -1,0 +1,179 @@
+{
+ "profile": {
+  "父": "ブリックスアンドモルタル",
+  "性別": "せん",
+  "馬主名": "フィールドレーシング",
+  "母": "アディクション",
+  "馬齢": "3歳",
+  "調教師名": "武井 亮 （美浦）",
+  "母の父": "ハーツクライ",
+  "生年月日": "2023年4月5日",
+  "生産牧場": "オリオンファーム",
+  "母の母": "アディクティド",
+  "毛色": "芦毛",
+  "産地": "日高町",
+  "馬名意味": "ギリシャ神話の守護神+冒険心、生きる道",
+  "取引市場": "2023年 セレクトセール",
+  "総賞金": "6,800,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 13,
+  "wins": 1,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "福島",
+   "race_name": "障害3歳上未勝利",
+   "surface": "芝",
+   "distance": 2750,
+   "field": 9,
+   "popularity": 6,
+   "finish": "8",
+   "jockey": "上野 翔"
+  },
+  {
+   "date": "2026年8月2日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 13,
+   "finish": "10",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2026年7月11日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 10,
+   "finish": "11",
+   "jockey": "石田 拓郎"
+  },
+  {
+   "date": "2026年6月20日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 9,
+   "finish": "11",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2026年4月4日",
+   "venue": "阪神",
+   "race_name": "アザレア賞",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 9,
+   "popularity": 9,
+   "finish": "8",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2026年3月22日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 8,
+   "popularity": 7,
+   "finish": "7",
+   "jockey": "長浜 鴻緒"
+  },
+  {
+   "date": "2026年3月1日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 8,
+   "popularity": 4,
+   "finish": "4",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2026年2月15日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 9,
+   "popularity": 9,
+   "finish": "7",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2026年1月21日",
+   "venue": "船橋",
+   "race_name": "ブルーバード",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": null,
+   "finish": "7",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2026年1月5日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 9,
+   "finish": "8",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2025年12月21日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 10,
+   "finish": "1",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2025年11月22日",
+   "venue": "福島",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 13,
+   "finish": "6",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2025年9月21日",
+   "venue": "中山",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 15,
+   "finish": "10",
+   "jockey": "今村 聖奈"
+  }
+ ],
+ "name": "ヘルメスギャング",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023100729/E4",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 04:03"
+}

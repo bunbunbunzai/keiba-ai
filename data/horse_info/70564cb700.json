@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "エピファネイア",
+  "性別": "牝",
+  "馬主名": "(株)G1レーシング",
+  "母": "クィーンチャーム",
+  "馬齢": "3歳",
+  "調教師名": "林 徹 （美浦）",
+  "母の父": "キングカメハメハ",
+  "生年月日": "2023年4月30日",
+  "生産牧場": "追分ファーム",
+  "母の母": "オリエントチャーム",
+  "毛色": "青鹿毛",
+  "産地": "安平町",
+  "馬名意味": "女王の治世。母名より連想",
+  "取引市場": "",
+  "総賞金": "8,970,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 1,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "福島",
+   "race_name": "三春駒特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 4,
+   "finish": "6",
+   "jockey": "石神 深道"
+  },
+  {
+   "date": "2026年8月2日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 14,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "石神 深道"
+  },
+  {
+   "date": "2026年7月4日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2600,
+   "field": 16,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "石神 深道"
+  },
+  {
+   "date": "2026年6月13日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 18,
+   "popularity": 9,
+   "finish": "4",
+   "jockey": "石神 深道"
+  },
+  {
+   "date": "2026年3月14日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 7,
+   "finish": "10",
+   "jockey": "永島 まなみ"
+  },
+  {
+   "date": "2026年2月14日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 4,
+   "finish": "7",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2025年11月15日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 5,
+   "finish": "6",
+   "jockey": "津村 明秀"
+  }
+ ],
+ "name": "クイーンズレイン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023103686/87",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:13"
+}

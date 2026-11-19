@@ -1,0 +1,146 @@
+{
+ "profile": {
+  "父": "ドレフォン",
+  "性別": "牝",
+  "馬主名": "(有)シルクレーシング",
+  "母": "ディライトプロミス",
+  "馬齢": "4歳",
+  "調教師名": "茶木 太樹 （栗東）",
+  "母の父": "Lemon Drop Kid",
+  "生年月日": "2022年1月28日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "Teddy's Promise",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "永遠の約束。母名より連想",
+  "取引市場": "",
+  "総賞金": "18,400,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 10,
+  "wins": 2,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 6,
+   "finish": "4",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2026年10月11日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 6,
+   "finish": "3",
+   "jockey": "亀田 温心"
+  },
+  {
+   "date": "2026年7月26日",
+   "venue": "新潟",
+   "race_name": "麒麟山特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 11,
+   "finish": "7",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "東京",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 12,
+   "finish": "6",
+   "jockey": "国分 優作"
+  },
+  {
+   "date": "2026年3月15日",
+   "venue": "阪神",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 13,
+   "popularity": 10,
+   "finish": "12",
+   "jockey": "鷲頭 虎太"
+  },
+  {
+   "date": "2025年12月7日",
+   "venue": "中京",
+   "race_name": "犬山特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 4,
+   "finish": "14",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2025年9月21日",
+   "venue": "中山",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "16",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2025年7月27日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2025年4月5日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2025年1月11日",
+   "venue": "中京",
+   "race_name": "3歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "8",
+   "jockey": "松山 弘平"
+  }
+ ],
+ "name": "エターナルプロミス",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022104917/80",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:34"
+}

@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "ホッコータルマエ",
+  "性別": "牝",
+  "馬主名": "蓑島 竜一",
+  "母": "ピエールナオチャン",
+  "馬齢": "3歳",
+  "調教師名": "四位 洋文 （栗東）",
+  "母の父": "ケイムホーム",
+  "生年月日": "2023年2月11日",
+  "生産牧場": "上山牧場",
+  "母の母": "ピアソニック",
+  "毛色": "黒鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "冠名+飛行",
+  "取引市場": "",
+  "総賞金": "35,000,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "35,000,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "21,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 6,
+  "wins": 4,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "東京",
+   "race_name": "神無月S",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 12,
+   "finish": "10",
+   "jockey": "古川 吉洋"
+  },
+  {
+   "date": "2026年1月8日",
+   "venue": "",
+   "race_name": "JRAへ転入",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2025年12月31日",
+   "venue": "大井",
+   "race_name": "東京2歳優駿牝馬競走",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "矢野 貴之"
+  },
+  {
+   "date": "2025年10月30日",
+   "venue": "門別",
+   "race_name": "エーデルワイス賞",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 11,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "小野 楓馬"
+  },
+  {
+   "date": "2025年8月20日",
+   "venue": "門別",
+   "race_name": "フルールカップ〔H3",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "小野 楓馬"
+  },
+  {
+   "date": "2025年7月23日",
+   "venue": "門別",
+   "race_name": "リリーカップ〔H3〕",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 8,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "宮内 勇樹"
+  },
+  {
+   "date": "2025年5月21日",
+   "venue": "門別",
+   "race_name": "JRA認定競走フレッ",
+   "surface": "ダ",
+   "distance": 1100,
+   "field": 12,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "宮内 勇樹"
+  }
+ ],
+ "name": "リュウノフライト",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023105105/7D",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 06:01"
+}

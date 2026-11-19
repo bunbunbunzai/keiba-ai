@@ -1,0 +1,190 @@
+{
+ "profile": {
+  "父": "ニューイヤーズデイ",
+  "性別": "牡",
+  "馬主名": "前田 幸治",
+  "母": "アップトゥユー",
+  "馬齢": "5歳",
+  "調教師名": "河嶋 宏樹 （栗東）",
+  "母の父": "サウスヴィグラス",
+  "生年月日": "2021年2月17日",
+  "生産牧場": "グランド牧場",
+  "母の母": "ファーストレディ",
+  "毛色": "鹿毛",
+  "産地": "新ひだか町",
+  "馬名意味": "偉大で強大である",
+  "取引市場": "2022年 北海道セレクションセール",
+  "総賞金": "39,648,000 円",
+  "内付加賞": "298,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 14,
+  "wins": 2,
+  "second": 5,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 11,
+   "popularity": 3,
+   "finish": "8",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年6月7日",
+   "venue": "阪神",
+   "race_name": "洲本特別",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "京都",
+   "race_name": "オーストラT",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年3月21日",
+   "venue": "阪神",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 3,
+   "finish": "12",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2026年2月14日",
+   "venue": "東京",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 3,
+   "finish": "9",
+   "jockey": "R.キング"
+  },
+  {
+   "date": "2026年1月18日",
+   "venue": "京都",
+   "race_name": "大津特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 7,
+   "finish": "2",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2025年12月27日",
+   "venue": "阪神",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 6,
+   "finish": "8",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年10月5日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "15",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年8月17日",
+   "venue": "中京",
+   "race_name": "大垣特別",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 2,
+   "finish": "7",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2025年5月24日",
+   "venue": "京都",
+   "race_name": "オーストラT",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 13,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年4月19日",
+   "venue": "阪神",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年3月30日",
+   "venue": "中京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 13,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2024年3月3日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2024年2月17日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "坂井 瑠星"
+  }
+ ],
+ "name": "マイティマイティー",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021103708/06",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 04:57"
+}

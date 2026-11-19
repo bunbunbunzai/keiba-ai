@@ -1,0 +1,90 @@
+{
+ "profile": {
+  "父": "Into Mischief",
+  "性別": "牡",
+  "馬主名": "西川 光一",
+  "母": "Mary's Follies",
+  "馬齢": "3歳",
+  "調教師名": "堀 宣行 （美浦）",
+  "母の父": "More Than Ready",
+  "生年月日": "2023年4月21日",
+  "母の母": "Catch the Queen",
+  "毛色": "鹿毛",
+  "産地": "米",
+  "馬名意味": "桃源郷+冠名",
+  "取引市場": "",
+  "総賞金": "20,836,000 円",
+  "内付加賞": "36,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 5,
+  "wins": 2,
+  "second": 1,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2026年2月22日",
+   "venue": "東京",
+   "race_name": "ヒヤシンスS",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 10,
+   "popularity": 1,
+   "finish": "6",
+   "jockey": "R.キング"
+  },
+  {
+   "date": "2025年11月29日",
+   "venue": "東京",
+   "race_name": "カトレアS",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 12,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "D.レーン"
+  },
+  {
+   "date": "2025年11月1日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "D.レーン"
+  },
+  {
+   "date": "2025年6月21日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "D.レーン"
+  }
+ ],
+ "name": "アルカディアカフェ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023110061/03",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:16"
+}

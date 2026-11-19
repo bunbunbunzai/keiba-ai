@@ -1,0 +1,211 @@
+{
+ "profile": {
+  "父": "American Pharoah",
+  "性別": "牝",
+  "馬主名": "篁 真一郎",
+  "母": "Rubina",
+  "馬齢": "4歳",
+  "調教師名": "小島 茂之 （美浦）",
+  "母の父": "Invincible Spirit",
+  "生年月日": "2022年4月4日",
+  "母の母": "Riyafa",
+  "毛色": "鹿毛",
+  "産地": "米",
+  "馬名意味": "謎かけの引き金。父名よりスフィンクスを連想",
+  "取引市場": "",
+  "総賞金": "3,500,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "1,300,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "1,300,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 14,
+  "wins": 3,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 6,
+   "finish": "11",
+   "jockey": "長浜 鴻緒"
+  },
+  {
+   "date": "2026年10月4日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 7,
+   "finish": "11",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2026年5月13日",
+   "venue": "",
+   "race_name": "JRAへ転入",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2026年4月26日",
+   "venue": "佐賀",
+   "race_name": "おとめ座特選",
+   "surface": "ダ",
+   "distance": 1300,
+   "field": 10,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "石川 慎将"
+  },
+  {
+   "date": "2026年3月29日",
+   "venue": "佐賀",
+   "race_name": "C2-6組",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 9,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "石川 慎将"
+  },
+  {
+   "date": "2026年3月7日",
+   "venue": "佐賀",
+   "race_name": "C2-14組",
+   "surface": "ダ",
+   "distance": 1300,
+   "field": 11,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "石川 慎将"
+  },
+  {
+   "date": "2026年2月14日",
+   "venue": "",
+   "race_name": "JRAより転出",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2026年2月7日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 14,
+   "finish": "6",
+   "jockey": "藤懸 貴志"
+  },
+  {
+   "date": "2026年1月25日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 8,
+   "finish": "9",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2025年12月7日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 6,
+   "finish": "14",
+   "jockey": "岩田 康誠"
+  },
+  {
+   "date": "2025年11月8日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1300,
+   "field": 16,
+   "popularity": 10,
+   "finish": "7",
+   "jockey": "木幡 巧也"
+  },
+  {
+   "date": "2025年9月7日",
+   "venue": "札幌",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 14,
+   "popularity": 2,
+   "finish": "9",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2025年8月23日",
+   "venue": "札幌",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 14,
+   "popularity": 7,
+   "finish": "2",
+   "jockey": "本田 正重"
+  },
+  {
+   "date": "2025年7月20日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 10,
+   "finish": "7",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2025年4月13日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 13,
+   "finish": "9",
+   "jockey": "石田 拓郎"
+  },
+  {
+   "date": "2024年12月21日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 13,
+   "finish": "13",
+   "jockey": "吉田 隼人"
+  }
+ ],
+ "name": "リドルトリガー",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022110068/9C",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:17"
+}

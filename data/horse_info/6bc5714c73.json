@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "エピファネイア",
+  "性別": "牝",
+  "馬主名": "(有)サンデーレーシング",
+  "母": "ルフォール",
+  "馬齢": "3歳",
+  "調教師名": "藤原 英昭 （栗東）",
+  "母の父": "キングカメハメハ",
+  "生年月日": "2023年2月12日",
+  "生産牧場": "(有)社台コーポレーション白老ファーム",
+  "母の母": "レクレドール",
+  "毛色": "鹿毛",
+  "産地": "白老町",
+  "馬名意味": "金の花(仏)",
+  "取引市場": "",
+  "総賞金": "18,950,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "12,250,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "10,100,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 1,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "東京",
+   "race_name": "ユートピアS",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 11,
+   "finish": "10",
+   "jockey": "内田 博幸"
+  },
+  {
+   "date": "2026年8月2日",
+   "venue": "札幌",
+   "race_name": "ポプラS",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 10,
+   "popularity": 8,
+   "finish": "9",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2026年6月17日",
+   "venue": "川崎",
+   "race_name": "関東オークス",
+   "surface": "ダ",
+   "distance": 2100,
+   "field": 14,
+   "popularity": null,
+   "finish": "7",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年4月12日",
+   "venue": "阪神",
+   "race_name": "忘れな草賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 11,
+   "finish": "11",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年12月17日",
+   "venue": "川崎",
+   "race_name": "全日本2歳優",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 9,
+   "popularity": null,
+   "finish": "7",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年11月3日",
+   "venue": "門別",
+   "race_name": "JBC2歳優",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 11,
+   "popularity": null,
+   "finish": "2",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2025年10月4日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年8月3日",
+   "venue": "中京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 7,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "坂井 瑠星"
+  }
+ ],
+ "name": "フルールドール",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023103822/BD",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:58"
+}

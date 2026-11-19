@@ -1,0 +1,190 @@
+{
+ "profile": {
+  "父": "ルヴァンスレーヴ",
+  "性別": "牝",
+  "馬主名": "川崎 賢二",
+  "母": "カヒリ",
+  "馬齢": "4歳",
+  "調教師名": "小崎 憲 （栗東）",
+  "母の父": "キングカメハメハ",
+  "生年月日": "2022年4月5日",
+  "生産牧場": "北星村田牧場",
+  "母の母": "エイグレット",
+  "毛色": "栗毛",
+  "産地": "新冠町",
+  "馬名意味": "女性+人名より",
+  "取引市場": "",
+  "総賞金": "18,560,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 14,
+  "wins": 2,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月1日",
+   "venue": "東京",
+   "race_name": "清里特別",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 9,
+   "finish": "4",
+   "jockey": "石川 裕紀人"
+  },
+  {
+   "date": "2026年8月29日",
+   "venue": "札幌",
+   "race_name": "千歳特別",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 12,
+   "popularity": 12,
+   "finish": "6",
+   "jockey": "石川 倭"
+  },
+  {
+   "date": "2026年8月9日",
+   "venue": "札幌",
+   "race_name": "富良野特別",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 14,
+   "popularity": 12,
+   "finish": "8",
+   "jockey": "川又 賢治"
+  },
+  {
+   "date": "2026年5月9日",
+   "venue": "東京",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 15,
+   "finish": "11",
+   "jockey": "石橋 脩"
+  },
+  {
+   "date": "2026年4月19日",
+   "venue": "阪神",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 7,
+   "finish": "10",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年1月31日",
+   "venue": "小倉",
+   "race_name": "平尾台特別",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 16,
+   "popularity": 12,
+   "finish": "7",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2026年1月12日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2025年9月6日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 14,
+   "popularity": 6,
+   "finish": "5",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2025年8月24日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 11,
+   "popularity": 2,
+   "finish": "6",
+   "jockey": "A.バデル"
+  },
+  {
+   "date": "2025年8月3日",
+   "venue": "札幌",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 14,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2025年6月28日",
+   "venue": "函館",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 14,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2025年6月22日",
+   "venue": "函館",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 14,
+   "popularity": 8,
+   "finish": "7",
+   "jockey": "長浜 鴻緒"
+  },
+  {
+   "date": "2025年5月31日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 10,
+   "finish": "15",
+   "jockey": "小崎 綾也"
+  },
+  {
+   "date": "2024年8月24日",
+   "venue": "札幌",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 12,
+   "popularity": 10,
+   "finish": "5",
+   "jockey": "吉村 智洋"
+  }
+ ],
+ "name": "レディゴディヴァ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022106851/BB",
+ "last_card": "20261101",
+ "fetched": "2026-11-20 05:32"
+}

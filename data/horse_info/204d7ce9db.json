@@ -1,0 +1,157 @@
+{
+ "profile": {
+  "父": "カリフォルニアクローム",
+  "性別": "牡",
+  "馬主名": "(株)ヒダカ・ブリーダーズ・ユニオン",
+  "母": "ラッキーナンバー",
+  "馬齢": "4歳",
+  "調教師名": "小崎 憲 （栗東）",
+  "母の父": "Smart Strike",
+  "生年月日": "2022年5月19日",
+  "生産牧場": "浜本牧場",
+  "母の母": "Malka",
+  "毛色": "鹿毛",
+  "産地": "日高町",
+  "馬名意味": "超限順序数の一つ。歴史に残る活躍を願って。母名より連想",
+  "取引市場": "",
+  "総賞金": "21,195,000 円",
+  "内付加賞": "95,000 円",
+  "内地方賞金": "2,500,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "6,900,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 9,
+  "wins": 3,
+  "second": 1,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "東京",
+   "race_name": "神奈川新聞杯",
+   "surface": "ダ",
+   "distance": 2100,
+   "field": 15,
+   "popularity": 7,
+   "finish": "15",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2026年10月12日",
+   "venue": "京都",
+   "race_name": "蹴上特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 7,
+   "finish": "4",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2026年4月12日",
+   "venue": "中山",
+   "race_name": "印西特別",
+   "surface": "ダ",
+   "distance": 2400,
+   "field": 12,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2026年3月22日",
+   "venue": "中京",
+   "race_name": "弥富特別",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 16,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2026年2月15日",
+   "venue": "小倉",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 2400,
+   "field": 15,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2026年1月16日",
+   "venue": "",
+   "race_name": "JRAへ転入",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2025年12月31日",
+   "venue": "園田",
+   "race_name": "C1二",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 10,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "下原 理"
+  },
+  {
+   "date": "2025年12月17日",
+   "venue": "園田",
+   "race_name": "C2",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 12,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "下原 理"
+  },
+  {
+   "date": "2025年9月23日",
+   "venue": "",
+   "race_name": "JRAより転出",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2025年9月17日",
+   "venue": "園田",
+   "race_name": "摩耶山特別",
+   "surface": "ダ",
+   "distance": 1870,
+   "field": 8,
+   "popularity": null,
+   "finish": "2",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2025年8月16日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 13,
+   "finish": "11",
+   "jockey": "松若 風馬"
+  }
+ ],
+ "name": "イプシロンナンバー",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022107301/65",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:05"
+}

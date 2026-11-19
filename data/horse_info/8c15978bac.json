@@ -1,0 +1,157 @@
+{
+ "profile": {
+  "父": "カリフォルニアクローム",
+  "性別": "牝",
+  "馬主名": "水谷 光太郎",
+  "母": "シェーンリート",
+  "馬齢": "3歳",
+  "調教師名": "大橋 勇樹 （栗東）",
+  "母の父": "ヘニーヒューズ",
+  "生年月日": "2023年4月12日",
+  "生産牧場": "友田牧場",
+  "母の母": "ジュリエットソング",
+  "毛色": "黒鹿毛",
+  "産地": "新ひだか町",
+  "馬名意味": "冠名(バラ)+ギリシャ神話に登場する優雅、優美さの女神",
+  "取引市場": "",
+  "総賞金": "49,038,000 円",
+  "内付加賞": "538,000 円",
+  "内地方賞金": "3,000,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 11,
+  "wins": 3,
+  "second": 1,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "福島",
+   "race_name": "フルーツライ",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 16,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "吉田 隼人"
+  },
+  {
+   "date": "2026年9月27日",
+   "venue": "中山",
+   "race_name": "外房S",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "小林 美駒"
+  },
+  {
+   "date": "2026年7月4日",
+   "venue": "小倉",
+   "race_name": "雲仙特別",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 12,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2026年4月5日",
+   "venue": "阪神",
+   "race_name": "バイオレット",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 11,
+   "finish": "10",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2026年3月7日",
+   "venue": "阪神",
+   "race_name": "Fレビュー",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 11,
+   "finish": "16",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2025年12月14日",
+   "venue": "阪神",
+   "race_name": "阪神JF",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 17,
+   "finish": "13",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2025年11月27日",
+   "venue": "園田",
+   "race_name": "兵庫JGP",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 12,
+   "popularity": null,
+   "finish": "5",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2025年10月18日",
+   "venue": "京都",
+   "race_name": "なでしこ賞",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 7,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2025年9月27日",
+   "venue": "阪神",
+   "race_name": "ヤマボウシ賞",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 8,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2025年7月20日",
+   "venue": "小倉",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 11,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2025年7月5日",
+   "venue": "小倉",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 8,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "田口 貫太"
+  }
+ ],
+ "name": "ローズカリス",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023102991/FC",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:29"
+}

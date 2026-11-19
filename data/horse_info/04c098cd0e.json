@@ -1,0 +1,157 @@
+{
+ "profile": {
+  "父": "マジェスティックウォリアー",
+  "性別": "牡",
+  "馬主名": "大川 徹",
+  "母": "スマートアテナ",
+  "馬齢": "4歳",
+  "調教師名": "中村 直也 （栗東）",
+  "母の父": "ゴールドアリュール",
+  "生年月日": "2022年3月31日",
+  "生産牧場": "静内山田牧場",
+  "母の母": "スマートバベル",
+  "毛色": "鹿毛",
+  "産地": "新ひだか町",
+  "馬名意味": "冠名+タイのリゾート名",
+  "取引市場": "",
+  "総賞金": "9,520,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "1,000,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 11,
+  "wins": 2,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "福島",
+   "race_name": "河北新報杯",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 13,
+   "finish": "11",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2026年9月15日",
+   "venue": "金沢",
+   "race_name": "金沢城賞",
+   "surface": "ダ",
+   "distance": 1500,
+   "field": 8,
+   "popularity": null,
+   "finish": "1",
+   "jockey": "中島 龍也"
+  },
+  {
+   "date": "2026年7月18日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 14,
+   "popularity": 14,
+   "finish": "13",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年3月1日",
+   "venue": "小倉",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 16,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2026年2月15日",
+   "venue": "小倉",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 13,
+   "popularity": 7,
+   "finish": "3",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2025年11月22日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 10,
+   "finish": "6",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2025年10月18日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 8,
+   "finish": "13",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2025年6月15日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 10,
+   "finish": "8",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2025年4月5日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2025年1月5日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 13,
+   "finish": "8",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2024年12月7日",
+   "venue": "中京",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 11,
+   "finish": "11",
+   "jockey": "小沢 大仁"
+  }
+ ],
+ "name": "スマートクラビ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022103946/4E",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:53"
+}

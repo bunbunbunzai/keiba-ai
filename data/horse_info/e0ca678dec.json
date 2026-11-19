@@ -1,0 +1,179 @@
+{
+ "profile": {
+  "父": "ドレフォン",
+  "性別": "せん",
+  "馬主名": "金子真人ホールディングス(株)",
+  "母": "マローブルー",
+  "馬齢": "5歳",
+  "調教師名": "堀 宣行 （美浦）",
+  "母の父": "ディープインパクト",
+  "生年月日": "2021年4月28日",
+  "生産牧場": "日高大洋牧場",
+  "母の母": "リラックススマイル",
+  "毛色": "黒鹿毛",
+  "産地": "日高町",
+  "馬名意味": "ドイツとスイス間を運行していた国際特急の愛称",
+  "取引市場": "",
+  "総賞金": "32,400,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 13,
+  "wins": 2,
+  "second": 5,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "東京",
+   "race_name": "三鷹特別",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 3,
+   "finish": "7",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2026年8月9日",
+   "venue": "札幌",
+   "race_name": "富良野特別",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 14,
+   "popularity": 6,
+   "finish": "10",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2025年7月26日",
+   "venue": "新潟",
+   "race_name": "麒麟山特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 3,
+   "finish": "15",
+   "jockey": "R.キング"
+  },
+  {
+   "date": "2025年6月21日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "D.レーン"
+  },
+  {
+   "date": "2025年5月31日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "D.レーン"
+  },
+  {
+   "date": "2025年2月2日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "R.キング"
+  },
+  {
+   "date": "2024年12月22日",
+   "venue": "中山",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "R.ムーア"
+  },
+  {
+   "date": "2024年12月14日",
+   "venue": "中山",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "R.ムーア"
+  },
+  {
+   "date": "2024年11月23日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 7,
+   "finish": "2",
+   "jockey": "R.ムーア"
+  },
+  {
+   "date": "2024年3月10日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 6,
+   "finish": "11",
+   "jockey": "岩田 康誠"
+  },
+  {
+   "date": "2024年2月25日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "R.キング"
+  },
+  {
+   "date": "2024年1月6日",
+   "venue": "中山",
+   "race_name": "ジュニアC",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 10,
+   "popularity": 9,
+   "finish": "8",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2023年12月24日",
+   "venue": "中山",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "R.ムーア"
+  }
+ ],
+ "name": "チザルピーノ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021101928/AA",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:59"
+}

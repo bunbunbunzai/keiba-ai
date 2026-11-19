@@ -1,0 +1,212 @@
+{
+ "profile": {
+  "父": "モーリス",
+  "性別": "牝",
+  "馬主名": "(有)キャロットファーム",
+  "母": "フィニフティ",
+  "馬齢": "4歳",
+  "調教師名": "藤原 英昭 （栗東）",
+  "母の父": "ディープインパクト",
+  "生年月日": "2022年1月30日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "ココシュニック",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "金などの立体像の表面全体にエナメルを施す技法。母名より連想",
+  "取引市場": "",
+  "総賞金": "50,959,000 円",
+  "内付加賞": "119,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 16,
+  "wins": 3,
+  "second": 2,
+  "third": 4
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 17,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "C.デムーロ"
+  },
+  {
+   "date": "2026年9月12日",
+   "venue": "阪神",
+   "race_name": "瀬戸内海特別",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 13,
+   "popularity": 3,
+   "finish": "11",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2026年8月2日",
+   "venue": "中京",
+   "race_name": "中京スポニチ",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 9,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2026年6月20日",
+   "venue": "阪神",
+   "race_name": "舞子特別",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 9,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2026年5月30日",
+   "venue": "京都",
+   "race_name": "4歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 5,
+   "finish": "3",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2026年4月12日",
+   "venue": "阪神",
+   "race_name": "4歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 2,
+   "finish": "6",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年3月28日",
+   "venue": "中京",
+   "race_name": "フィリピンT",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "6",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2025年11月16日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 3,
+   "finish": "7",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年11月2日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2025年10月19日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 10,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年9月14日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年8月31日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 9,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2025年4月27日",
+   "venue": "東京",
+   "race_name": "フローラS",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 17,
+   "finish": "9",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2025年2月15日",
+   "venue": "東京",
+   "race_name": "クイーンC",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 10,
+   "finish": "10",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年11月17日",
+   "venue": "東京",
+   "race_name": "赤松賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 7,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2024年10月5日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "戸崎 圭太"
+  }
+ ],
+ "name": "ロンドボス",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022104988/63",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:16"
+}

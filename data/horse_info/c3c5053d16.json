@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "コントレイル",
+  "性別": "牡",
+  "馬主名": "藤田 晋",
+  "母": "スルターナ",
+  "馬齢": "3歳",
+  "調教師名": "矢作 芳人 （栗東）",
+  "母の父": "キングヘイロー",
+  "生年月日": "2023年4月1日",
+  "生産牧場": "村田牧場",
+  "母の母": "ラヴァーズレーン",
+  "毛色": "青鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "滑走路から連想",
+  "取引市場": "2023年 セレクトセール",
+  "総賞金": "12,927,000 円",
+  "内付加賞": "27,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 1,
+  "second": 1,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2600,
+   "field": 16,
+   "popularity": 7,
+   "finish": "6",
+   "jockey": "古川 奈穂"
+  },
+  {
+   "date": "2026年10月3日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 17,
+   "popularity": 10,
+   "finish": "16",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年4月25日",
+   "venue": "東京",
+   "race_name": "青葉賞",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 18,
+   "popularity": 11,
+   "finish": "9",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2026年4月4日",
+   "venue": "阪神",
+   "race_name": "アザレア賞",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 9,
+   "popularity": 5,
+   "finish": "3",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年3月7日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 13,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年2月21日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 11,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年2月7日",
+   "venue": "東京",
+   "race_name": "3歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "横山 武史"
+  }
+ ],
+ "name": "カットソロ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023105404/9D",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:26"
+}

@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "シルバーステート",
+  "性別": "牝",
+  "馬主名": "(株)ロードホースクラブ",
+  "母": "パーフェクトトリビュート",
+  "馬齢": "3歳",
+  "調教師名": "長谷川 浩大 （栗東）",
+  "母の父": "Dubawi",
+  "生年月日": "2023年2月15日",
+  "生産牧場": "ケイアイファーム",
+  "母の母": "Perfect Spirit",
+  "毛色": "鹿毛",
+  "産地": "新ひだか町",
+  "馬名意味": "ラスベガスにある看板",
+  "取引市場": "",
+  "総賞金": "9,700,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 1,
+  "second": 1,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 14,
+   "finish": "16",
+   "jockey": "横山 琉人"
+  },
+  {
+   "date": "2026年8月30日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 12,
+   "popularity": 8,
+   "finish": "11",
+   "jockey": "横山 琉人"
+  },
+  {
+   "date": "2026年8月16日",
+   "venue": "札幌",
+   "race_name": "小樽特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 11,
+   "finish": "13",
+   "jockey": "横山 琉人"
+  },
+  {
+   "date": "2026年2月8日",
+   "venue": "小倉",
+   "race_name": "かささぎ賞",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 7,
+   "finish": "11",
+   "jockey": "小林 美駒"
+  },
+  {
+   "date": "2025年12月13日",
+   "venue": "中京",
+   "race_name": "つわぶき賞",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 11,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年9月6日",
+   "venue": "札幌",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 11,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "小林 美駒"
+  },
+  {
+   "date": "2025年8月31日",
+   "venue": "札幌",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 10,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "小林 美駒"
+  },
+  {
+   "date": "2025年8月16日",
+   "venue": "札幌",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 11,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "横山 武史"
+  }
+ ],
+ "name": "ラスベガスサイン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023105812/8B",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:11"
+}

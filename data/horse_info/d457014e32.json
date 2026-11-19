@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "ベンバトル",
+  "性別": "牝",
+  "馬主名": "(株)サラブレッドクラブ・ラフィアン",
+  "母": "キューンハイト",
+  "馬齢": "3歳",
+  "調教師名": "黒岩 陽一 （美浦）",
+  "母の父": "ディープインパクト",
+  "生年月日": "2023年2月19日",
+  "生産牧場": "ビッグレッドファーム",
+  "母の母": "マイネアクティース",
+  "毛色": "鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "勇敢な女性(仏)。母名から連想",
+  "取引市場": "",
+  "総賞金": "35,643,000 円",
+  "内付加賞": "413,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 3,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "東京",
+   "race_name": "ユートピアS",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年10月3日",
+   "venue": "東京",
+   "race_name": "八ヶ岳特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2026年9月6日",
+   "venue": "中山",
+   "race_name": "紫苑S",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 8,
+   "finish": "8",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2026年4月26日",
+   "venue": "東京",
+   "race_name": "フローラS",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 12,
+   "popularity": 5,
+   "finish": "10",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年2月21日",
+   "venue": "東京",
+   "race_name": "フリージア賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 7,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "R.キング"
+  },
+  {
+   "date": "2025年11月30日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 13,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年11月1日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 7,
+   "finish": "5",
+   "jockey": "石神 深道"
+  },
+  {
+   "date": "2025年10月4日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 17,
+   "popularity": 11,
+   "finish": "7",
+   "jockey": "石神 深道"
+  }
+ ],
+ "name": "ファムクラジューズ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023106433/49",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:58"
+}

@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "リアルスティール",
+  "性別": "牡",
+  "馬主名": "越村 哲男",
+  "母": "オリオンムーン",
+  "馬齢": "3歳",
+  "調教師名": "久保田 貴士 （美浦）",
+  "母の父": "Manduro",
+  "生年月日": "2023年4月24日",
+  "生産牧場": "社台ファーム",
+  "母の母": "Okocha",
+  "毛色": "鹿毛",
+  "産地": "千歳市",
+  "馬名意味": "冠名+一家、一華",
+  "取引市場": "2024年 セレクトセール",
+  "総賞金": "14,190,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 1,
+  "second": 1,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2026年10月17日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 6,
+   "finish": "3",
+   "jockey": "今村 聖奈"
+  },
+  {
+   "date": "2026年7月25日",
+   "venue": "札幌",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 10,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2026年7月11日",
+   "venue": "函館",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 10,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2026年6月28日",
+   "venue": "函館",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 14,
+   "popularity": 5,
+   "finish": "5",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2026年1月11日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 3,
+   "finish": "14",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2025年11月24日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2025年10月25日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 12,
+   "finish": "5",
+   "jockey": "佐々木 大輔"
+  }
+ ],
+ "name": "ヤマメイッカ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023103360/22",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:25"
+}

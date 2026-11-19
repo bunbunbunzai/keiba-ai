@@ -1,0 +1,157 @@
+{
+ "profile": {
+  "父": "ロードカナロア",
+  "性別": "牝",
+  "馬主名": "(有)シルクレーシング",
+  "母": "ファイナルディシジョン",
+  "馬齢": "4歳",
+  "調教師名": "平岩 大典 （美浦）",
+  "母の父": "Super Saver",
+  "生年月日": "2022年4月17日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "Palangana",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "判決(ラテン語)。母名より連想",
+  "取引市場": "",
+  "総賞金": "7,850,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 11,
+  "wins": 1,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 10,
+   "finish": "13",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2026年10月17日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 9,
+   "finish": "10",
+   "jockey": "長浜 鴻緒"
+  },
+  {
+   "date": "2026年6月14日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 8,
+   "popularity": 7,
+   "finish": "8",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2026年5月16日",
+   "venue": "新潟",
+   "race_name": "石打特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 13,
+   "finish": "4",
+   "jockey": "長浜 鴻緒"
+  },
+  {
+   "date": "2026年2月21日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 11,
+   "finish": "16",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2025年11月16日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 13,
+   "popularity": 8,
+   "finish": "8",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2025年7月12日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 8,
+   "finish": "13",
+   "jockey": "原 優介"
+  },
+  {
+   "date": "2025年5月18日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 7,
+   "finish": "11",
+   "jockey": "木幡 巧也"
+  },
+  {
+   "date": "2025年2月1日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "木幡 巧也"
+  },
+  {
+   "date": "2024年11月10日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 5,
+   "finish": "5",
+   "jockey": "北村 宏司"
+  },
+  {
+   "date": "2024年8月25日",
+   "venue": "新潟",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 3,
+   "finish": "9",
+   "jockey": "三浦 皇成"
+  }
+ ],
+ "name": "ユーディキウム",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022104981/3E",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 04:01"
+}

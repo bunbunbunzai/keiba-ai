@@ -1,0 +1,135 @@
+{
+ "profile": {
+  "父": "コントレイル",
+  "性別": "牝",
+  "馬主名": "DMMドリームクラブ(株)",
+  "母": "スウィッチインタイム",
+  "馬齢": "3歳",
+  "調教師名": "矢作 芳人 （栗東）",
+  "母の父": "Galileo",
+  "生年月日": "2023年3月23日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "Switch",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "母名の一部+恋をする。ファンに愛されることを願って。母名より連想",
+  "取引市場": "2023年 セレクトセール",
+  "総賞金": "18,380,000 円",
+  "内付加賞": "40,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 9,
+  "wins": 1,
+  "second": 2,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 7,
+   "finish": "10",
+   "jockey": "菱田 裕二"
+  },
+  {
+   "date": "2026年8月16日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 2,
+   "finish": "7",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年7月26日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 4,
+   "finish": "6",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "京都",
+   "race_name": "メルボルンT",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2026年5月2日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 8,
+   "finish": "2",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2026年1月17日",
+   "venue": "京都",
+   "race_name": "紅梅S",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 9,
+   "popularity": 5,
+   "finish": "9",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年10月31日",
+   "venue": "米",
+   "race_name": "BCJFT",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 12,
+   "popularity": null,
+   "finish": "11",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年9月20日",
+   "venue": "阪神",
+   "race_name": "野路菊S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 6,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年8月17日",
+   "venue": "中京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 9,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "坂井 瑠星"
+  }
+ ],
+ "name": "スウィッチインラヴ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023105300/A0",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:38"
+}

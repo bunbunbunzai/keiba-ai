@@ -1,0 +1,201 @@
+{
+ "profile": {
+  "父": "ウインブライト",
+  "性別": "牡",
+  "馬主名": "(有)ビッグレッドファーム",
+  "母": "ケイティラブ",
+  "馬齢": "3歳",
+  "調教師名": "奥平 雅士 （美浦）",
+  "母の父": "スキャン",
+  "生年月日": "2023年5月31日",
+  "生産牧場": "ビッグレッドファーム",
+  "母の母": "ウイニングリバー",
+  "毛色": "芦毛",
+  "産地": "新冠町",
+  "馬名意味": "流星光底。流星のように一瞬の間に光り輝くこと。父名より連想",
+  "取引市場": "",
+  "総賞金": "4,840,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "850,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "800,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 13,
+  "wins": 2,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 14,
+   "finish": "14",
+   "jockey": "横山 琉人"
+  },
+  {
+   "date": "2026年10月16日",
+   "venue": "",
+   "race_name": "JRAへ転入",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2026年10月9日",
+   "venue": "笠松",
+   "race_name": "神谷美紗都☆誕生6か",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 8,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "渡邊 竜也"
+  },
+  {
+   "date": "2026年9月23日",
+   "venue": "笠松",
+   "race_name": "3歳2組",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 8,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "渡邊 竜也"
+  },
+  {
+   "date": "2026年9月9日",
+   "venue": "笠松",
+   "race_name": "細久手宿特別",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 10,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "阿部 基嗣"
+  },
+  {
+   "date": "2026年8月19日",
+   "venue": "",
+   "race_name": "JRAより転出",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2026年8月15日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1000,
+   "field": 18,
+   "popularity": 7,
+   "finish": "8",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2026年5月24日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2026年5月16日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1000,
+   "field": 16,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2026年2月28日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 12,
+   "finish": "8",
+   "jockey": "舟山 瑠泉"
+  },
+  {
+   "date": "2025年12月28日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 8,
+   "finish": "7",
+   "jockey": "石神 深道"
+  },
+  {
+   "date": "2025年10月5日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 17,
+   "popularity": 6,
+   "finish": "14",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2025年9月14日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 12,
+   "finish": "4",
+   "jockey": "野中 悠太郎"
+  },
+  {
+   "date": "2025年8月10日",
+   "venue": "新潟",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 17,
+   "finish": "16",
+   "jockey": "野中 悠太郎"
+  },
+  {
+   "date": "2025年7月19日",
+   "venue": "福島",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 10,
+   "finish": "5",
+   "jockey": "野中 悠太郎"
+  }
+ ],
+ "name": "リュウセイコウテイ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023106437/15",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:55"
+}

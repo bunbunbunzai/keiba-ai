@@ -1,0 +1,212 @@
+{
+ "profile": {
+  "父": "エスポワールシチー",
+  "性別": "牡",
+  "馬主名": "松本 好��",
+  "母": "キンゲショウ",
+  "馬齢": "5歳",
+  "調教師名": "安達 昭夫 （栗東）",
+  "母の父": "ハードスパン",
+  "生年月日": "2021年2月2日",
+  "生産牧場": "グランド牧場",
+  "母の母": "ダガーズアラベスク",
+  "毛色": "栗毛",
+  "産地": "新ひだか町",
+  "馬名意味": "冠名+鳳輦、鳳凰の飾りがある神輿",
+  "取引市場": "2022年 北海道セレクションセール",
+  "総賞金": "92,033,000 円",
+  "内付加賞": "833,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "36,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 16,
+  "wins": 5,
+  "second": 1,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "京都",
+   "race_name": "室町S",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 4,
+   "finish": "12",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2026年10月4日",
+   "venue": "京都",
+   "race_name": "藤森S",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2026年7月19日",
+   "venue": "福島",
+   "race_name": "福島テレビ賞",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 16,
+   "popularity": 6,
+   "finish": "4",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年4月25日",
+   "venue": "京都",
+   "race_name": "天王山S",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 4,
+   "finish": "5",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2026年3月22日",
+   "venue": "中山",
+   "race_name": "千葉S",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 6,
+   "finish": "12",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2025年12月7日",
+   "venue": "阪神",
+   "race_name": "りんくうS",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2025年11月8日",
+   "venue": "京都",
+   "race_name": "室町S",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2025年10月4日",
+   "venue": "京都",
+   "race_name": "大山崎S",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2025年5月4日",
+   "venue": "京都",
+   "race_name": "巨椋池S",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "8",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年4月12日",
+   "venue": "阪神",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2024年10月6日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "幸 英明"
+  },
+  {
+   "date": "2024年9月7日",
+   "venue": "中京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 11,
+   "popularity": 4,
+   "finish": "4",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2024年1月27日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 7,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2024年1月14日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 11,
+   "popularity": 4,
+   "finish": "6",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2023年10月22日",
+   "venue": "京都",
+   "race_name": "なでしこ賞",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 8,
+   "popularity": 4,
+   "finish": "6",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2023年10月1日",
+   "venue": "阪神",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 13,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "吉田 隼人"
+  }
+ ],
+ "name": "メイショウホウレン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021103716/30",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:00"
+}

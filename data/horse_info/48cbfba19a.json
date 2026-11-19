@@ -1,0 +1,223 @@
+{
+ "profile": {
+  "父": "サトノアラジン",
+  "性別": "牡",
+  "馬主名": "タマモ(株)",
+  "母": "タマモピアス",
+  "馬齢": "5歳",
+  "調教師名": "池添 学 （栗東）",
+  "母の父": "キングカメハメハ",
+  "生年月日": "2021年2月6日",
+  "生産牧場": "スマイルファーム",
+  "母の母": "ダイヤモンドピアス",
+  "毛色": "黒鹿毛",
+  "産地": "日高町",
+  "馬名意味": "冠名+ランプ。父名(サトノアラジン)と魔法のランプから連想",
+  "取引市場": "",
+  "総賞金": "25,053,000 円",
+  "内付加賞": "133,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 17,
+  "wins": 1,
+  "second": 3,
+  "third": 3
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 6,
+   "finish": "2",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "新潟",
+   "race_name": "尖閣湾特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 7,
+   "finish": "11",
+   "jockey": "舟山 瑠泉"
+  },
+  {
+   "date": "2026年5月10日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 10,
+   "popularity": 3,
+   "finish": "6",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2026年3月28日",
+   "venue": "中京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2026年1月11日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年12月20日",
+   "venue": "中京",
+   "race_name": "YJSF名1",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "佐野 遥久"
+  },
+  {
+   "date": "2025年8月17日",
+   "venue": "中京",
+   "race_name": "常滑特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 6,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2025年6月15日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 4,
+   "finish": "7",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2025年6月1日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 12,
+   "popularity": 8,
+   "finish": "5",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2025年5月10日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 5,
+   "finish": "9",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2025年2月16日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 9,
+   "finish": "6",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2025年2月1日",
+   "venue": "小倉",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "9",
+   "jockey": "河原田 菜々"
+  },
+  {
+   "date": "2024年11月24日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 18,
+   "popularity": 8,
+   "finish": "10",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2024年5月11日",
+   "venue": "京都",
+   "race_name": "あずさ賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2024年4月21日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2024年3月2日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 12,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "池添 謙一"
+  },
+  {
+   "date": "2024年2月10日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 12,
+   "popularity": 6,
+   "finish": "3",
+   "jockey": "池添 謙一"
+  }
+ ],
+ "name": "タマモランプ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021101557/A3",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:44"
+}

@@ -1,0 +1,178 @@
+{
+ "profile": {
+  "父": "Cloud Computing",
+  "性別": "牡",
+  "馬主名": "(有)シルクレーシング",
+  "母": "Seoul Gold",
+  "馬齢": "4歳",
+  "調教師名": "小林 真也 （栗東）",
+  "母の父": "Medaglia d'Oro",
+  "生年月日": "2022年3月4日",
+  "母の母": "Taegu",
+  "毛色": "黒鹿毛",
+  "産地": "米",
+  "馬名意味": "黄金雲。父名、母名より連想",
+  "取引市場": "",
+  "総賞金": "75,763,000 円",
+  "内付加賞": "463,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "24,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 13,
+  "wins": 4,
+  "second": 2,
+  "third": 5
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "京都",
+   "race_name": "カノープスS",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2026年9月19日",
+   "venue": "中山",
+   "race_name": "ながつきS",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2026年6月13日",
+   "venue": "阪神",
+   "race_name": "三宮S",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 5,
+   "finish": "6",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年3月29日",
+   "venue": "中京",
+   "race_name": "伊勢S",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年2月15日",
+   "venue": "京都",
+   "race_name": "北山S",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2025年11月16日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "C.デムーロ"
+  },
+  {
+   "date": "2025年10月18日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年6月21日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2025年4月26日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2025年3月29日",
+   "venue": "中山",
+   "race_name": "伏竜S",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 6,
+   "finish": "3",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2025年1月26日",
+   "venue": "中京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 8,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2025年1月6日",
+   "venue": "中京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2024年10月27日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "鮫島 克駿"
+  }
+ ],
+ "name": "ゴールデンクラウド",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022110121/68",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:47"
+}

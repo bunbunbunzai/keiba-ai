@@ -1,0 +1,135 @@
+{
+ "profile": {
+  "父": "クラウンレガーロ",
+  "性別": "牝",
+  "馬主名": "和田 志保",
+  "母": "マリノルシアーナ",
+  "馬齢": "3歳",
+  "調教師名": "西田 雄一郎 （美浦）",
+  "母の父": "エピファネイア",
+  "生年月日": "2023年4月1日",
+  "生産牧場": "クラウン日高牧場",
+  "母の母": "クラウンフォルテ",
+  "毛色": "栗毛",
+  "産地": "日高町",
+  "馬名意味": "神からの贈り物(仏)",
+  "取引市場": "",
+  "総賞金": "9,600,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 9,
+  "wins": 1,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2600,
+   "field": 16,
+   "popularity": 10,
+   "finish": "5",
+   "jockey": "上里 直汰"
+  },
+  {
+   "date": "2026年10月17日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 7,
+   "finish": "6",
+   "jockey": "上里 直汰"
+  },
+  {
+   "date": "2026年8月15日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "上里 直汰"
+  },
+  {
+   "date": "2026年6月20日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 7,
+   "finish": "9",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2026年4月18日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 3,
+   "finish": "6",
+   "jockey": "遠藤 汰月"
+  },
+  {
+   "date": "2026年4月5日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 8,
+   "finish": "3",
+   "jockey": "遠藤 汰月"
+  },
+  {
+   "date": "2026年1月25日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 4,
+   "finish": "5",
+   "jockey": "遠藤 汰月"
+  },
+  {
+   "date": "2026年1月10日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 13,
+   "finish": "4",
+   "jockey": "遠藤 汰月"
+  },
+  {
+   "date": "2025年10月18日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 16,
+   "finish": "9",
+   "jockey": "遠藤 汰月"
+  }
+ ],
+ "name": "カドドゥディエ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023100812/E0",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:09"
+}

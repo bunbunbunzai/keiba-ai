@@ -1,0 +1,223 @@
+{
+ "profile": {
+  "父": "コパノリッキー",
+  "性別": "牝",
+  "馬主名": "片岡 正雄",
+  "母": "メイショウアンデス",
+  "馬齢": "4歳",
+  "調教師名": "佐藤 吉勝 （美浦）",
+  "母の父": "ダンスインザダーク",
+  "生年月日": "2022年4月4日",
+  "生産牧場": "中神牧場",
+  "母の母": "クィーンズダガー",
+  "毛色": "鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "冠名+百日草",
+  "取引市場": "2024年 北海道トレーニングセール",
+  "総賞金": "3,500,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "3,500,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 17,
+  "wins": 1,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月1日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 14,
+   "finish": "11",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2026年9月5日",
+   "venue": "中山",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 16,
+   "finish": "15",
+   "jockey": "小崎 綾也"
+  },
+  {
+   "date": "2026年8月9日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 15,
+   "finish": "9",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2026年6月6日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 16,
+   "finish": "14",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2026年5月10日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1300,
+   "field": 16,
+   "popularity": 14,
+   "finish": "13",
+   "jockey": "秋山 稔樹"
+  },
+  {
+   "date": "2026年3月15日",
+   "venue": "中山",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 12,
+   "finish": "7",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2026年1月4日",
+   "venue": "中山",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 15,
+   "finish": "7",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2025年11月23日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 15,
+   "finish": "12",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2025年11月16日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 15,
+   "finish": "14",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2025年8月30日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 9,
+   "finish": "13",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2025年5月13日",
+   "venue": "川崎",
+   "race_name": "メイフラワー",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 12,
+   "popularity": null,
+   "finish": "1",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2025年4月13日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 4,
+   "finish": "6",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2025年3月5日",
+   "venue": "川崎",
+   "race_name": "アクアF賞",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 11,
+   "popularity": null,
+   "finish": "2",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2025年1月25日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 9,
+   "finish": "7",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2024年12月21日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 13,
+   "finish": "7",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2024年11月30日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 11,
+   "finish": "12",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2024年11月9日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 9,
+   "finish": "6",
+   "jockey": "丸田 恭介"
+  }
+ ],
+ "name": "トキメキジニア",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022100323/E2",
+ "last_card": "20261101",
+ "fetched": "2026-11-20 05:25"
+}

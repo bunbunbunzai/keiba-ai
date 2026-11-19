@@ -1,0 +1,156 @@
+{
+ "profile": {
+  "父": "Tapit",
+  "性別": "牡",
+  "馬主名": "(株)山紫水明",
+  "母": "L' Age d'Or",
+  "馬齢": "4歳",
+  "調教師名": "中内田 充正 （栗東）",
+  "母の父": "Medaglia d'Oro",
+  "生年月日": "2022年4月21日",
+  "母の母": "Mona de Momma",
+  "毛色": "栗毛",
+  "産地": "米",
+  "馬名意味": "金鵄",
+  "取引市場": "",
+  "総賞金": "39,190,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 11,
+  "wins": 3,
+  "second": 2,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 11,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年6月21日",
+   "venue": "東京",
+   "race_name": "甲州街道特別",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "4",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年1月31日",
+   "venue": "東京",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年12月6日",
+   "venue": "阪神",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "13",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年10月11日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年6月22日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年4月13日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年2月16日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 11,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年1月13日",
+   "venue": "中京",
+   "race_name": "シンザン記念",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 9,
+   "finish": "11",
+   "jockey": "A.ルメートル"
+  },
+  {
+   "date": "2024年11月9日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2024年9月28日",
+   "venue": "中京",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "川田 将雅"
+  }
+ ],
+ "name": "ゴールデンカイト",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022110129/00",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 04:57"
+}

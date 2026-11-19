@@ -1,0 +1,102 @@
+{
+ "profile": {
+  "父": "オルフェーヴル",
+  "性別": "牡",
+  "馬主名": "田畑 利彦",
+  "母": "ヴァンゴーゴー",
+  "馬齢": "3歳",
+  "調教師名": "栗田 徹 （美浦）",
+  "母の父": "Dutch Art",
+  "生年月日": "2023年3月30日",
+  "生産牧場": "谷川牧場",
+  "母の母": "Baldovina",
+  "毛色": "鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "冠名+神童(神の子)",
+  "取引市場": "2024年 セレクトセール",
+  "総賞金": "18,727,000 円",
+  "内付加賞": "127,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 6,
+  "wins": 1,
+  "second": 1,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "新潟",
+   "race_name": "柏崎特別",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2026年9月27日",
+   "venue": "中山",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 5,
+   "finish": "15",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年4月11日",
+   "venue": "中山",
+   "race_name": "NZT",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 9,
+   "finish": "9",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2026年3月21日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年1月4日",
+   "venue": "中山",
+   "race_name": "ジュニアC",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2025年12月14日",
+   "venue": "中山",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "菅原 明良"
+  }
+ ],
+ "name": "ジーティーシンドウ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023102083/19",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 05:52"
+}

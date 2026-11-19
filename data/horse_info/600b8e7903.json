@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "サートゥルナーリア",
+  "性別": "牝",
+  "馬主名": "山本 英俊",
+  "母": "アドマイヤリード",
+  "馬齢": "3歳",
+  "調教師名": "栗田 徹 （美浦）",
+  "母の父": "ステイゴールド",
+  "生年月日": "2023年3月21日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "ベルアリュール2",
+  "毛色": "黒鹿毛",
+  "産地": "安平町",
+  "馬名意味": "薔薇の品種名",
+  "取引市場": "2024年 セレクトセール",
+  "総賞金": "7,700,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 1,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "福島",
+   "race_name": "土湯温泉特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 11,
+   "finish": "14",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2026年10月17日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 4,
+   "finish": "17",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2026年8月22日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 13,
+   "finish": "1",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2026年7月5日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 4,
+   "finish": "13",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2026年5月10日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 6,
+   "finish": "9",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年3月7日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 4,
+   "finish": "8",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年12月20日",
+   "venue": "中山",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 17,
+   "popularity": 6,
+   "finish": "3",
+   "jockey": "横山 武史"
+  }
+ ],
+ "name": "セシルブリュネ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023106841/37",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:28"
+}

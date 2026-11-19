@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "シルバーステート",
+  "性別": "牝",
+  "馬主名": "TNレーシング",
+  "母": "インザスポットライト",
+  "馬齢": "3歳",
+  "調教師名": "田中 克典 （栗東）",
+  "母の父": "Exceed And Excel",
+  "生年月日": "2023年2月9日",
+  "生産牧場": "レイクヴィラファーム",
+  "母の母": "Naruko",
+  "毛色": "鹿毛",
+  "産地": "洞爺湖町",
+  "馬名意味": "オーストラリアにある丘の名前",
+  "取引市場": "2024年 セレクトセール",
+  "総賞金": "26,800,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 2,
+  "second": 1,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 17,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2026年9月21日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2026年8月23日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 17,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年6月7日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2026年3月1日",
+   "venue": "阪神",
+   "race_name": "チューリップ",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 10,
+   "finish": "5",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2026年1月10日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 7,
+   "finish": "1",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2025年10月18日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "北村 友一"
+  }
+ ],
+ "name": "ダンデノン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023103886/E9",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:16"
+}

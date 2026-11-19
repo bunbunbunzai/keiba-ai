@@ -1,0 +1,102 @@
+{
+ "profile": {
+  "父": "ダノンキングリー",
+  "性別": "牡",
+  "馬主名": "�M田 幸一",
+  "母": "アルカイクスマイル",
+  "馬齢": "3歳",
+  "調教師名": "伊藤 大士 （美浦）",
+  "母の父": "クロフネ",
+  "生年月日": "2023年3月18日",
+  "生産牧場": "梅田牧場",
+  "母の母": "アルカイックレディ",
+  "毛色": "青鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "家族名の組合せ+冠名(人名より)",
+  "取引市場": "2024年 北海道サマーセール",
+  "総賞金": "10,700,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 6,
+  "wins": 1,
+  "second": 2,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年10月25日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 5,
+   "finish": "12",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2026年10月3日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 3,
+   "finish": "10",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2026年5月3日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 12,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "M.ディー"
+  },
+  {
+   "date": "2026年4月18日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "M.ディー"
+  },
+  {
+   "date": "2026年3月28日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "M.ディー"
+  },
+  {
+   "date": "2025年6月21日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 8,
+   "finish": "6",
+   "jockey": "M.ディー"
+  }
+ ],
+ "name": "マサッチェハマー",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023105077/A2",
+ "last_card": "20261025",
+ "fetched": "2026-11-20 06:01"
+}

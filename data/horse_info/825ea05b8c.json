@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "コントレイル",
+  "性別": "牝",
+  "馬主名": "田畑 利彦",
+  "母": "レディオブキャメロット",
+  "馬齢": "3歳",
+  "調教師名": "矢作 芳人 （栗東）",
+  "母の父": "Montjeu",
+  "生年月日": "2023年2月7日",
+  "生産牧場": "タイヘイ牧場",
+  "母の母": "Marquesa",
+  "毛色": "鹿毛",
+  "産地": "新ひだか町",
+  "馬名意味": "冠名+天空に現れる光",
+  "取引市場": "2023年 セレクトセール",
+  "総賞金": "14,670,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "5,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 1,
+  "second": 2,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年10月31日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 4,
+   "finish": "6",
+   "jockey": "吉田 隼人"
+  },
+  {
+   "date": "2026年10月17日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "吉田 隼人"
+  },
+  {
+   "date": "2026年6月21日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年6月7日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年2月15日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 2,
+   "finish": "5",
+   "jockey": "藤岡 佑介"
+  },
+  {
+   "date": "2026年1月25日",
+   "venue": "京都",
+   "race_name": "河津桜賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 9,
+   "popularity": 5,
+   "finish": "9",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年8月17日",
+   "venue": "札幌",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 5,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "藤岡 佑介"
+  }
+ ],
+ "name": "ジーティーメティオ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023105375/4F",
+ "last_card": "20261031",
+ "fetched": "2026-11-20 05:40"
+}

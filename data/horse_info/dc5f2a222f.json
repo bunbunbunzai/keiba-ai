@@ -1,0 +1,168 @@
+{
+ "profile": {
+  "父": "キズナ",
+  "性別": "牝",
+  "馬主名": "里見 美惠子",
+  "母": "ファータグリーン",
+  "馬齢": "4歳",
+  "調教師名": "古賀 慎明 （美浦）",
+  "母の父": "タニノギムレット",
+  "生年月日": "2022年2月26日",
+  "生産牧場": "本間牧場",
+  "母の母": "レディーダービー",
+  "毛色": "黒鹿毛",
+  "産地": "日高町",
+  "馬名意味": "冠名+妖精",
+  "取引市場": "2024年 JRAブリーズアップセール",
+  "総賞金": "15,420,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 12,
+  "wins": 1,
+  "second": 3,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "福島",
+   "race_name": "二本松特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 7,
+   "finish": "6",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2026年10月17日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 10,
+   "finish": "5",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2026年8月2日",
+   "venue": "新潟",
+   "race_name": "五頭連峰特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 7,
+   "finish": "13",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2026年5月3日",
+   "venue": "新潟",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 1,
+   "finish": "8",
+   "jockey": "舟山 瑠泉"
+  },
+  {
+   "date": "2026年2月14日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2025年11月16日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 13,
+   "popularity": 1,
+   "finish": "7",
+   "jockey": "北村 宏司"
+  },
+  {
+   "date": "2025年10月18日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 18,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "舟山 瑠泉"
+  },
+  {
+   "date": "2025年8月23日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2025年7月26日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 18,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2025年5月24日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 17,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2025年5月3日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 12,
+   "popularity": 12,
+   "finish": "2",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2025年3月22日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 17,
+   "popularity": 5,
+   "finish": "8",
+   "jockey": "北村 宏司"
+  }
+ ],
+ "name": "ミエノフェアリー",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022102064/E0",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:51"
+}

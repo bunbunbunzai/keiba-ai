@@ -1,0 +1,102 @@
+{
+ "profile": {
+  "父": "サンダースノー",
+  "性別": "牡",
+  "馬主名": "ゴドルフィン",
+  "母": "セイントヘレナ",
+  "馬齢": "3歳",
+  "調教師名": "小島 茂之 （美浦）",
+  "母の父": "ディープスカイ",
+  "生年月日": "2023年4月27日",
+  "生産牧場": "ダーレー・ジャパン・ファーム(有)",
+  "母の母": "オルダニー",
+  "毛色": "鹿毛",
+  "産地": "日高町",
+  "馬名意味": "セントエルモの火から",
+  "取引市場": "",
+  "総賞金": "15,700,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 6,
+  "wins": 2,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月1日",
+   "venue": "東京",
+   "race_name": "清里特別",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 6,
+   "finish": "7",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2026年6月13日",
+   "venue": "東京",
+   "race_name": "日野特別",
+   "surface": "ダ",
+   "distance": 2100,
+   "field": 14,
+   "popularity": 6,
+   "finish": "11",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2026年5月2日",
+   "venue": "京都",
+   "race_name": "ユニコーンS",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 12,
+   "popularity": 6,
+   "finish": "10",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年3月22日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 11,
+   "finish": "1",
+   "jockey": "斎藤 新"
+  },
+  {
+   "date": "2025年11月2日",
+   "venue": "京都",
+   "race_name": "もちの木賞",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 13,
+   "finish": "12",
+   "jockey": "横山 琉人"
+  },
+  {
+   "date": "2025年10月11日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 13,
+   "finish": "1",
+   "jockey": "菅原 明良"
+  }
+ ],
+ "name": "セイントエルモズ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023101132/98",
+ "last_card": "20261101",
+ "fetched": "2026-11-20 05:32"
+}

@@ -1,0 +1,157 @@
+{
+ "profile": {
+  "父": "タリスマニック",
+  "性別": "牝",
+  "馬主名": "ゴドルフィン",
+  "母": "ラドルチェ",
+  "馬齢": "3歳",
+  "調教師名": "小栗 実 （栗東）",
+  "母の父": "Gone West",
+  "生年月日": "2023年3月19日",
+  "生産牧場": "ダーレー・ジャパン・ファーム(有)",
+  "母の母": "Sharp Cat",
+  "毛色": "青鹿毛",
+  "産地": "日高町",
+  "馬名意味": "お菓子やデザートの盛り合わせ(伊)",
+  "取引市場": "",
+  "総賞金": "15,446,000 円",
+  "内付加賞": "46,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 11,
+  "wins": 1,
+  "second": 1,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 11,
+   "finish": "9",
+   "jockey": "古川 奈穂"
+  },
+  {
+   "date": "2026年10月18日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 15,
+   "finish": "11",
+   "jockey": "永島 まなみ"
+  },
+  {
+   "date": "2026年7月12日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 17,
+   "popularity": 8,
+   "finish": "15",
+   "jockey": "森田 誠也"
+  },
+  {
+   "date": "2026年6月27日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 9,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "森田 誠也"
+  },
+  {
+   "date": "2026年4月11日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 11,
+   "finish": "12",
+   "jockey": "田山 旺佑"
+  },
+  {
+   "date": "2026年3月22日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 11,
+   "popularity": 4,
+   "finish": "8",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2026年2月8日",
+   "venue": "小倉",
+   "race_name": "かささぎ賞",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 6,
+   "finish": "3",
+   "jockey": "鮫島 克駿"
+  },
+  {
+   "date": "2026年1月24日",
+   "venue": "小倉",
+   "race_name": "萌黄賞",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 8,
+   "finish": "4",
+   "jockey": "石川 裕紀人"
+  },
+  {
+   "date": "2025年11月22日",
+   "venue": "京都",
+   "race_name": "秋明菊賞",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 9,
+   "popularity": 5,
+   "finish": "7",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2025年8月23日",
+   "venue": "札幌",
+   "race_name": "クローバー賞",
+   "surface": "芝",
+   "distance": 1500,
+   "field": 9,
+   "popularity": 2,
+   "finish": "6",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年8月10日",
+   "venue": "札幌",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1500,
+   "field": 12,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "横山 武史"
+  }
+ ],
+ "name": "ドルチェミスト",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023101174/BE",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:48"
+}

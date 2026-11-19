@@ -1,0 +1,112 @@
+{
+ "profile": {
+  "父": "McKinzie",
+  "性別": "牡",
+  "馬主名": "琴浦 諒",
+  "母": "Blueeyesintherein",
+  "馬齢": "3歳",
+  "調教師名": "杉山 佳明 （栗東）",
+  "母の父": "Magna Graduate",
+  "生年月日": "2023年4月3日",
+  "母の母": "Tartufi",
+  "毛色": "黒鹿毛",
+  "産地": "米",
+  "馬名意味": "母名より+父名",
+  "取引市場": "",
+  "総賞金": "35,452,000 円",
+  "内付加賞": "52,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 3,
+  "second": 1,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 9,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年9月20日",
+   "venue": "中山",
+   "race_name": "汐留特別",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年7月4日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 13,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年5月9日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "川又 賢治"
+  },
+  {
+   "date": "2026年2月28日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "川又 賢治"
+  },
+  {
+   "date": "2025年12月21日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "川又 賢治"
+  },
+  {
+   "date": "2025年11月29日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "川又 賢治"
+  }
+ ],
+ "name": "ブルーマッキンジー",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023110106/13",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:50"
+}

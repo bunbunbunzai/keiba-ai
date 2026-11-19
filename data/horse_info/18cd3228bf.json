@@ -1,0 +1,146 @@
+{
+ "profile": {
+  "父": "モーリス",
+  "性別": "牡",
+  "馬主名": "(株)社台レースホース",
+  "母": "マジックリアリズム",
+  "馬齢": "3歳",
+  "調教師名": "栗田 徹 （美浦）",
+  "母の父": "ディープインパクト",
+  "生年月日": "2023年4月2日",
+  "生産牧場": "社台ファーム",
+  "母の母": "ソーマジック",
+  "毛色": "鹿毛",
+  "産地": "千歳市",
+  "馬名意味": "カードマジックにおけるテクニックの一種",
+  "取引市場": "",
+  "総賞金": "15,300,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 10,
+  "wins": 1,
+  "second": 1,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 16,
+   "popularity": 4,
+   "finish": "12",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2026年8月22日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 12,
+   "popularity": 4,
+   "finish": "4",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年8月16日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 12,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "岩田 康誠"
+  },
+  {
+   "date": "2026年7月26日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年5月9日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 6,
+   "finish": "14",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年4月11日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 11,
+   "finish": "3",
+   "jockey": "岩田 康誠"
+  },
+  {
+   "date": "2026年2月14日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 11,
+   "finish": "13",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2025年12月13日",
+   "venue": "中山",
+   "race_name": "黒松賞",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 13,
+   "popularity": 10,
+   "finish": "11",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2025年10月25日",
+   "venue": "新潟",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2025年8月30日",
+   "venue": "新潟",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "戸崎 圭太"
+  }
+ ],
+ "name": "ラテラルパーム",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023103557/99",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:50"
+}

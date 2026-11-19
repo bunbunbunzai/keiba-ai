@@ -1,0 +1,168 @@
+{
+ "profile": {
+  "父": "ミスターメロディ",
+  "性別": "牡",
+  "馬主名": "小原 準一郎",
+  "母": "レッジョエミリア",
+  "馬齢": "3歳",
+  "調教師名": "金成 貴史 （美浦）",
+  "母の父": "エイシンヒカリ",
+  "生年月日": "2023年3月24日",
+  "生産牧場": "ナカノファーム",
+  "母の母": "プリンセスメーカー",
+  "毛色": "栗毛",
+  "産地": "日高町",
+  "馬名意味": "筋が通った",
+  "取引市場": "",
+  "総賞金": "38,175,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "38,175,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "22,200,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 11,
+  "wins": 4,
+  "second": 3,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "福島",
+   "race_name": "みちのくS",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 14,
+   "finish": "16",
+   "jockey": "石神 深道"
+  },
+  {
+   "date": "2026年10月11日",
+   "venue": "",
+   "race_name": "JRAへ転入",
+   "surface": null,
+   "distance": null,
+   "field": null,
+   "popularity": null,
+   "finish": "",
+   "jockey": ""
+  },
+  {
+   "date": "2026年6月30日",
+   "venue": "大井",
+   "race_name": "優駿スプリント競走(",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 8,
+   "finish": "4",
+   "jockey": "本田 正重"
+  },
+  {
+   "date": "2026年6月4日",
+   "venue": "船橋",
+   "race_name": "若潮スプリント(S3",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "本田 正重"
+  },
+  {
+   "date": "2026年4月21日",
+   "venue": "浦和",
+   "race_name": "'26アヴニールスプ",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 8,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "本田 正重"
+  },
+  {
+   "date": "2026年3月12日",
+   "venue": "船橋",
+   "race_name": "ネクストスター東日本",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 9,
+   "popularity": 6,
+   "finish": "1",
+   "jockey": "本田 正重"
+  },
+  {
+   "date": "2026年2月11日",
+   "venue": "船橋",
+   "race_name": "寒椿スプリント",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 11,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "本田 正重"
+  },
+  {
+   "date": "2026年1月20日",
+   "venue": "船橋",
+   "race_name": "若駒スプリント",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 10,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "本田 正重"
+  },
+  {
+   "date": "2025年12月10日",
+   "venue": "船橋",
+   "race_name": "ジュニアスプリント",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "本田 正重"
+  },
+  {
+   "date": "2025年11月4日",
+   "venue": "船橋",
+   "race_name": "シーサイドアイドル特",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 12,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "本田 正重"
+  },
+  {
+   "date": "2025年7月3日",
+   "venue": "船橋",
+   "race_name": "普通2歳二",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 5,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "本田 正重"
+  },
+  {
+   "date": "2025年6月5日",
+   "venue": "船橋",
+   "race_name": "ライラックデビュー",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 9,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "本田 正重"
+  }
+ ],
+ "name": "メイクセンス",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023105755/F3",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:54"
+}

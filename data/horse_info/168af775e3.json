@@ -1,0 +1,157 @@
+{
+ "profile": {
+  "父": "レイデオロ",
+  "性別": "牡",
+  "馬主名": "谷掛 龍夫",
+  "母": "ジョイエピフォラ",
+  "馬齢": "3歳",
+  "調教師名": "武 英智 （栗東）",
+  "母の父": "Fortify",
+  "生年月日": "2023年2月8日",
+  "生産牧場": "社台ファーム",
+  "母の母": "Stormy Epistola",
+  "毛色": "鹿毛",
+  "産地": "千歳市",
+  "馬名意味": "イワシの大群(大きな魚影)",
+  "取引市場": "2025年 千葉サラブレッドセール",
+  "総賞金": "32,027,000 円",
+  "内付加賞": "27,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 11,
+  "wins": 2,
+  "second": 2,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "京都",
+   "race_name": "木津川特別",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 10,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年10月18日",
+   "venue": "京都",
+   "race_name": "宝ケ池特別",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 7,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2026年8月23日",
+   "venue": "中京",
+   "race_name": "有松特別",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 1,
+   "finish": "6",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2026年8月1日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2026年6月20日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 1,
+   "finish": "6",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年4月4日",
+   "venue": "阪神",
+   "race_name": "チャーチルC",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 12,
+   "finish": "5",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年3月8日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 9,
+   "finish": "2",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2025年11月16日",
+   "venue": "京都",
+   "race_name": "黄菊賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 8,
+   "popularity": 7,
+   "finish": "7",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年10月19日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 6,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年8月24日",
+   "venue": "中京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "富田 暁"
+  },
+  {
+   "date": "2025年8月3日",
+   "venue": "中京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 7,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "A.バデル"
+  }
+ ],
+ "name": "サーディンラン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023103440/33",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 04:58"
+}

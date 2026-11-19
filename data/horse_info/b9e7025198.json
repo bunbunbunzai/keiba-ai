@@ -1,0 +1,179 @@
+{
+ "profile": {
+  "父": "ワールドエース",
+  "性別": "牡",
+  "馬主名": "吉田 和美",
+  "母": "ヒカルアモーレ",
+  "馬齢": "4歳",
+  "調教師名": "千葉 直人 （美浦）",
+  "母の父": "クロフネ",
+  "生年月日": "2022年4月26日",
+  "生産牧場": "(有)社台コーポレーション白老ファーム",
+  "母の母": "グレイトフィーヴァー",
+  "毛色": "芦毛",
+  "産地": "白老町",
+  "馬名意味": "愛の世界(伊)",
+  "取引市場": "",
+  "総賞金": "78,806,000 円",
+  "内付加賞": "506,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "12,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 13,
+  "wins": 1,
+  "second": 4,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "東京",
+   "race_name": "奥多摩S",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 17,
+   "popularity": 5,
+   "finish": "9",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2026年8月30日",
+   "venue": "札幌",
+   "race_name": "日高S",
+   "surface": "芝",
+   "distance": 1500,
+   "field": 14,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2026年6月21日",
+   "venue": "東京",
+   "race_name": "多摩川S",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2026年4月26日",
+   "venue": "東京",
+   "race_name": "湘南S",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2026年2月15日",
+   "venue": "東京",
+   "race_name": "雲雀S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 4,
+   "finish": "6",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2025年11月8日",
+   "venue": "東京",
+   "race_name": "錦秋S",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 3,
+   "finish": "8",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2025年8月31日",
+   "venue": "札幌",
+   "race_name": "日高S",
+   "surface": "芝",
+   "distance": 1500,
+   "field": 13,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年6月22日",
+   "venue": "東京",
+   "race_name": "多摩川S",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "15",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2025年5月11日",
+   "venue": "東京",
+   "race_name": "NHKマイル",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 6,
+   "finish": "4",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2025年3月22日",
+   "venue": "中京",
+   "race_name": "ファルコンS",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 6,
+   "finish": "2",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2025年1月5日",
+   "venue": "中山",
+   "race_name": "ジュニアC",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "T.マーカンド"
+  },
+  {
+   "date": "2024年8月31日",
+   "venue": "札幌",
+   "race_name": "札幌2歳S",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2024年6月22日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 7,
+   "finish": "1",
+   "jockey": "杉原 誠人"
+  }
+ ],
+ "name": "モンドデラモーレ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022105830/39",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:19"
+}

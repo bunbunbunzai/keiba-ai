@@ -1,0 +1,157 @@
+{
+ "profile": {
+  "父": "モーリス",
+  "性別": "牡",
+  "馬主名": "Hishi Partners(同)",
+  "母": "アシュリン",
+  "馬齢": "4歳",
+  "調教師名": "堀 宣行 （美浦）",
+  "母の父": "マンハッタンカフェ",
+  "生年月日": "2022年2月26日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "アンティックドール",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "冠名+サンスクリットで「平和」という意味の人名より",
+  "取引市場": "2023年 セレクトセール",
+  "総賞金": "58,093,000 円",
+  "内付加賞": "623,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 11,
+  "wins": 3,
+  "second": 2,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "東京",
+   "race_name": "奥多摩S",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 17,
+   "popularity": 2,
+   "finish": "13",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年10月3日",
+   "venue": "東京",
+   "race_name": "白秋S",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 4,
+   "finish": "4",
+   "jockey": "大野 拓弥"
+  },
+  {
+   "date": "2026年4月12日",
+   "venue": "中山",
+   "race_name": "あけぼのS",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 12,
+   "popularity": 2,
+   "finish": "6",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2026年3月14日",
+   "venue": "中山",
+   "race_name": "幕張S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2026年2月15日",
+   "venue": "東京",
+   "race_name": "雲雀S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "R.キング"
+  },
+  {
+   "date": "2025年11月1日",
+   "venue": "東京",
+   "race_name": "紅葉S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 12,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "D.レーン"
+  },
+  {
+   "date": "2025年9月21日",
+   "venue": "中山",
+   "race_name": "木更津特別",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 9,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "J.モレイラ"
+  },
+  {
+   "date": "2025年8月9日",
+   "venue": "札幌",
+   "race_name": "厚岸特別",
+   "surface": "芝",
+   "distance": 1500,
+   "field": 11,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "R.キング"
+  },
+  {
+   "date": "2024年11月2日",
+   "venue": "東京",
+   "race_name": "京王杯2歳S",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "藤岡 佑介"
+  },
+  {
+   "date": "2024年9月1日",
+   "venue": "札幌",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1500,
+   "field": 12,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "藤岡 佑介"
+  },
+  {
+   "date": "2024年7月27日",
+   "venue": "札幌",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1500,
+   "field": 14,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "藤岡 佑介"
+  }
+ ],
+ "name": "ヒシアマン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022104594/E3",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:20"
+}

@@ -1,0 +1,135 @@
+{
+ "profile": {
+  "父": "キタサンブラック",
+  "性別": "牡",
+  "馬主名": "(株)Gリビエール・レーシング",
+  "母": "シルヴァーコード",
+  "馬齢": "5歳",
+  "調教師名": "蛯名 正義 （美浦）",
+  "母の父": "スウェプトオーヴァーボード",
+  "生年月日": "2021年3月28日",
+  "生産牧場": "岡田スタツド",
+  "母の母": "クラックコード",
+  "毛色": "芦毛",
+  "産地": "新ひだか町",
+  "馬名意味": "革命(西)",
+  "取引市場": "",
+  "総賞金": "18,290,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 9,
+  "wins": 1,
+  "second": 2,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "江田 照男"
+  },
+  {
+   "date": "2026年10月18日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "江田 照男"
+  },
+  {
+   "date": "2026年9月22日",
+   "venue": "中山",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "江田 照男"
+  },
+  {
+   "date": "2026年8月15日",
+   "venue": "新潟",
+   "race_name": "三国特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 9,
+   "finish": "5",
+   "jockey": "江田 照男"
+  },
+  {
+   "date": "2025年9月6日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 14,
+   "popularity": 6,
+   "finish": "4",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2025年8月31日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 12,
+   "popularity": 9,
+   "finish": "4",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2024年9月16日",
+   "venue": "中山",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 5,
+   "finish": "10",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2024年6月29日",
+   "venue": "福島",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "木幡 育也"
+  },
+  {
+   "date": "2024年6月16日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 7,
+   "finish": "5",
+   "jockey": "木幡 育也"
+  }
+ ],
+ "name": "レボルシオン",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021103500/0C",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 04:02"
+}

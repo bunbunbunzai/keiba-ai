@@ -1,0 +1,79 @@
+{
+ "profile": {
+  "父": "Yaupon",
+  "性別": "牝",
+  "馬主名": "(株)G1レーシング",
+  "母": "Folklore",
+  "馬齢": "3歳",
+  "調教師名": "高野 友和 （栗東）",
+  "母の父": "Tiznow",
+  "生年月日": "2023年3月15日",
+  "母の母": "Contrive",
+  "毛色": "鹿毛",
+  "産地": "米",
+  "馬名意味": "伝統的な言い伝え、伝統的な知恵。母名より連想",
+  "取引市場": "",
+  "総賞金": "9,100,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 4,
+  "wins": 1,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 8,
+   "finish": "2",
+   "jockey": "富田 暁"
+  },
+  {
+   "date": "2026年8月29日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 10,
+   "finish": "1",
+   "jockey": "富田 暁"
+  },
+  {
+   "date": "2026年7月26日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 9,
+   "finish": "7",
+   "jockey": "富田 暁"
+  },
+  {
+   "date": "2026年5月31日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 9,
+   "finish": "16",
+   "jockey": "斎藤 新"
+  }
+ ],
+ "name": "トラッドロア",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023110010/40",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:33"
+}

@@ -1,0 +1,146 @@
+{
+ "profile": {
+  "父": "サトノダイヤモンド",
+  "性別": "せん",
+  "馬主名": "岡田 牧雄",
+  "母": "ホットスウェル",
+  "馬齢": "3歳",
+  "調教師名": "畠山 吉宏 （美浦）",
+  "母の父": "Fusaichi Pegasus",
+  "生年月日": "2023年5月10日",
+  "生産牧場": "高橋 陵",
+  "母の母": "New Meaning",
+  "毛色": "鹿毛",
+  "産地": "新ひだか町",
+  "馬名意味": "大きな波のうねり",
+  "取引市場": "2024年 北海道サマーセール",
+  "総賞金": "14,900,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 10,
+  "wins": 1,
+  "second": 1,
+  "third": 3
+ },
+ "runs": [
+  {
+   "date": "2026年10月31日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 2100,
+   "field": 15,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2026年9月27日",
+   "venue": "中山",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2026年9月13日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 9,
+   "finish": "3",
+   "jockey": "西塚 洸二"
+  },
+  {
+   "date": "2026年8月15日",
+   "venue": "新潟",
+   "race_name": "三国特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 8,
+   "finish": "10",
+   "jockey": "武藤 雅"
+  },
+  {
+   "date": "2026年3月28日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2026年3月7日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 11,
+   "finish": "7",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年2月15日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 2100,
+   "field": 13,
+   "popularity": 4,
+   "finish": "11",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年2月1日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 2100,
+   "field": 13,
+   "popularity": 6,
+   "finish": "3",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年1月11日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 17,
+   "popularity": 15,
+   "finish": "11",
+   "jockey": "丸田 恭介"
+  },
+  {
+   "date": "2025年12月6日",
+   "venue": "阪神",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 9,
+   "finish": "8",
+   "jockey": "丸田 恭介"
+  }
+ ],
+ "name": "グランドスウェル",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023102833/51",
+ "last_card": "20261031",
+ "fetched": "2026-11-20 05:39"
+}

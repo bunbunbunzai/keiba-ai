@@ -1,0 +1,102 @@
+{
+ "profile": {
+  "父": "パイロ",
+  "性別": "牝",
+  "馬主名": "芳賀 美知子",
+  "母": "ホウショウレイル",
+  "馬齢": "3歳",
+  "調教師名": "東田 明士 （栗東）",
+  "母の父": "ヴィクトワールピサ",
+  "生年月日": "2023年5月6日",
+  "生産牧場": "エトルタファーム",
+  "母の母": "ホウショウアマネ",
+  "毛色": "黒鹿毛",
+  "産地": "日高町",
+  "馬名意味": "冠名+光(ラテン語)",
+  "取引市場": "",
+  "総賞金": "25,184,000 円",
+  "内付加賞": "84,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 6,
+  "wins": 2,
+  "second": 0,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月8日",
+   "venue": "福島",
+   "race_name": "河北新報杯",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 15,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "角田 大和"
+  },
+  {
+   "date": "2026年10月18日",
+   "venue": "京都",
+   "race_name": "聚楽第特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2026年7月12日",
+   "venue": "小倉",
+   "race_name": "八女特別",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 10,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "角田 大和"
+  },
+  {
+   "date": "2026年6月27日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2026年3月15日",
+   "venue": "中京",
+   "race_name": "昇竜S",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 10,
+   "finish": "6",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2026年1月17日",
+   "venue": "京都",
+   "race_name": "3歳新馬",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "角田 大和"
+  }
+ ],
+ "name": "ホウショウルクス",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023106298/86",
+ "last_card": "20261108",
+ "fetched": "2026-11-20 04:52"
+}

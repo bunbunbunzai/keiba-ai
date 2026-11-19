@@ -1,0 +1,201 @@
+{
+ "profile": {
+  "父": "ノヴェリスト",
+  "性別": "牡",
+  "馬主名": "相馬 勇",
+  "母": "サンマルアリュール",
+  "馬齢": "4歳",
+  "調教師名": "大橋 勇樹 （栗東）",
+  "母の父": "ゴールドアリュール",
+  "生年月日": "2022年4月20日",
+  "生産牧場": "木戸口牧場",
+  "母の母": "ミスサイベリア",
+  "毛色": "栗毛",
+  "産地": "浦河町",
+  "馬名意味": "冠名+斬新",
+  "取引市場": "",
+  "総賞金": "63,733,000 円",
+  "内付加賞": "433,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 3,
+  "second": 6,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "東京",
+   "race_name": "銀嶺S",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "岩田 康誠"
+  },
+  {
+   "date": "2026年8月2日",
+   "venue": "中京",
+   "race_name": "浜松特別",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 11,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2026年7月12日",
+   "venue": "福島",
+   "race_name": "彦星賞",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 16,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年6月13日",
+   "venue": "阪神",
+   "race_name": "安芸特別",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2026年3月7日",
+   "venue": "阪神",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2026年2月7日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2026年1月25日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2026年1月12日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 2,
+   "finish": "13",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2025年10月26日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 11,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2025年10月11日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2025年9月20日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2025年6月22日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 9,
+   "finish": "7",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2025年6月7日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 10,
+   "finish": "4",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2025年3月16日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2025年2月22日",
+   "venue": "京都",
+   "race_name": "3歳新馬",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "田口 貫太"
+  }
+ ],
+ "name": "サンマルノヴェル",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022102716/CD",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:57"
+}

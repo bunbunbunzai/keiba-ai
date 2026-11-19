@@ -1,0 +1,168 @@
+{
+ "profile": {
+  "父": "カレンブラックヒル",
+  "性別": "牡",
+  "馬主名": "(株)京都ホースレーシング",
+  "母": "サンバホイッスル",
+  "馬齢": "3歳",
+  "調教師名": "安達 昭夫 （栗東）",
+  "母の父": "サウスヴィグラス",
+  "生年月日": "2023年3月11日",
+  "生産牧場": "木村牧場",
+  "母の母": "チャームカーニバル",
+  "毛色": "青鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "打楽器のみで演奏するサンバのスタイル",
+  "取引市場": "",
+  "総賞金": "10,940,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "2,000,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 12,
+  "wins": 2,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "京都",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 11,
+   "popularity": 9,
+   "finish": "10",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年10月7日",
+   "venue": "園田",
+   "race_name": "逆瀬川特別",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 12,
+   "popularity": null,
+   "finish": "1",
+   "jockey": "秋山 稔樹"
+  },
+  {
+   "date": "2026年6月28日",
+   "venue": "小倉",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 16,
+   "popularity": 4,
+   "finish": "10",
+   "jockey": "秋山 稔樹"
+  },
+  {
+   "date": "2026年5月31日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 7,
+   "finish": "8",
+   "jockey": "川須 栄彦"
+  },
+  {
+   "date": "2026年5月3日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 12,
+   "finish": "13",
+   "jockey": "川須 栄彦"
+  },
+  {
+   "date": "2026年2月15日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 8,
+   "finish": "9",
+   "jockey": "松岡 正海"
+  },
+  {
+   "date": "2026年1月10日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 10,
+   "finish": "8",
+   "jockey": "柴田 裕一郎"
+  },
+  {
+   "date": "2025年10月26日",
+   "venue": "新潟",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "柴田 裕一郎"
+  },
+  {
+   "date": "2025年10月11日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 8,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2025年9月27日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "川須 栄彦"
+  },
+  {
+   "date": "2025年9月6日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 9,
+   "popularity": 5,
+   "finish": "5",
+   "jockey": "川須 栄彦"
+  },
+  {
+   "date": "2025年6月22日",
+   "venue": "阪神",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 6,
+   "finish": "4",
+   "jockey": "川須 栄彦"
+  }
+ ],
+ "name": "バトゥカーダ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023105708/FC",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 04:57"
+}

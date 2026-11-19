@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "ロードカナロア",
+  "性別": "牡",
+  "馬主名": "(有)キャロットファーム",
+  "母": "シーブルック",
+  "馬齢": "3歳",
+  "調教師名": "木村 哲也 （美浦）",
+  "母の父": "Hinchinbrook",
+  "生年月日": "2023年2月10日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "Midnight Revels",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "驚くべき。稲妻のような鮮烈な走りを期待して",
+  "取引市場": "",
+  "総賞金": "59,084,000 円",
+  "内付加賞": "574,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "24,500,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 2,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "東京",
+   "race_name": "オーロカップ",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 6,
+   "finish": "14",
+   "jockey": "A.プーシャン"
+  },
+  {
+   "date": "2026年10月12日",
+   "venue": "京都",
+   "race_name": "MBSスワン",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 13,
+   "finish": "4",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2026年7月26日",
+   "venue": "新潟",
+   "race_name": "関屋記念",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 9,
+   "finish": "9",
+   "jockey": "丸山 元気"
+  },
+  {
+   "date": "2026年5月10日",
+   "venue": "東京",
+   "race_name": "NHKマイル",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 7,
+   "finish": "7",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2026年4月4日",
+   "venue": "阪神",
+   "race_name": "チャーチルC",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 1,
+   "finish": "12",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2026年1月12日",
+   "venue": "京都",
+   "race_name": "シンザン記念",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 9,
+   "finish": "1",
+   "jockey": "T.ハマーハンセン"
+  },
+  {
+   "date": "2025年11月16日",
+   "venue": "京都",
+   "race_name": "黄菊賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 8,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年9月15日",
+   "venue": "中山",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  }
+ ],
+ "name": "サンダーストラック",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023107053/94",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:58"
+}

@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "キタサンブラック",
+  "性別": "牡",
+  "馬主名": "前田 幸治",
+  "母": "アンジュシュエット",
+  "馬齢": "3歳",
+  "調教師名": "武 幸四郎 （栗東）",
+  "母の父": "フレンチデピュティ",
+  "生年月日": "2023年4月23日",
+  "生産牧場": "桑田牧場",
+  "母の母": "ショウナンガッド",
+  "毛色": "鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "ギリシャ神話に登場する不老不死の神馬",
+  "取引市場": "2023年 セレクトセール",
+  "総賞金": "13,100,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 1,
+  "second": 2,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年10月31日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年10月18日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2026年8月2日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 6,
+   "popularity": 4,
+   "finish": "6",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年7月11日",
+   "venue": "小倉",
+   "race_name": "英彦山特別",
+   "surface": "芝",
+   "distance": 2600,
+   "field": 11,
+   "popularity": 5,
+   "finish": "10",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2026年4月4日",
+   "venue": "中山",
+   "race_name": "山吹賞",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 12,
+   "popularity": 4,
+   "finish": "9",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2026年3月8日",
+   "venue": "中山",
+   "race_name": "ディープ記念",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 6,
+   "finish": "8",
+   "jockey": "高杉 吏麒"
+  },
+  {
+   "date": "2026年1月31日",
+   "venue": "京都",
+   "race_name": "3歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "高杉 吏麒"
+  }
+ ],
+ "name": "バリオス",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023105354/BC",
+ "last_card": "20261031",
+ "fetched": "2026-11-20 05:34"
+}

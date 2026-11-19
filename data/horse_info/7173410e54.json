@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "アルアイン",
+  "性別": "牝",
+  "馬主名": "(有)サンデーレーシング",
+  "母": "バンゴール",
+  "馬齢": "3歳",
+  "調教師名": "小笠 倫弘 （美浦）",
+  "母の父": "キングカメハメハ",
+  "生年月日": "2023年2月6日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "ローザブランカ",
+  "毛色": "黒鹿毛",
+  "産地": "安平町",
+  "馬名意味": "薔薇の品種名",
+  "取引市場": "",
+  "総賞金": "270,014,000 円",
+  "内付加賞": "8,614,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "105,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 3,
+  "second": 1,
+  "third": 3
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "京都",
+   "race_name": "エリザベス杯",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 18,
+   "popularity": 7,
+   "finish": "1",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年5月24日",
+   "venue": "東京",
+   "race_name": "優駿牝馬",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 18,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "D.レーン"
+  },
+  {
+   "date": "2026年4月26日",
+   "venue": "東京",
+   "race_name": "フローラS",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 12,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "D.レーン"
+  },
+  {
+   "date": "2026年2月10日",
+   "venue": "京都",
+   "race_name": "きさらぎ賞",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "藤岡 佑介"
+  },
+  {
+   "date": "2025年12月6日",
+   "venue": "中京",
+   "race_name": "こうやまき賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "武藤 雅"
+  },
+  {
+   "date": "2025年10月5日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2025年8月17日",
+   "venue": "新潟",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "戸崎 圭太"
+  }
+ ],
+ "name": "ラフターラインズ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023107154/38",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:52"
+}

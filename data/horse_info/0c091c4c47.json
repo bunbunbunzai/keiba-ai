@@ -1,0 +1,200 @@
+{
+ "profile": {
+  "父": "Cajun Breeze",
+  "性別": "牡",
+  "馬主名": "(株)吉澤ホールディングス",
+  "母": "Goldminer's Dream",
+  "馬齢": "5歳",
+  "調教師名": "池江 泰寿 （栗東）",
+  "母の父": "Distorted Humor",
+  "生年月日": "2021年3月21日",
+  "母の母": "Quite a Ruckus",
+  "毛色": "栗毛",
+  "産地": "米",
+  "馬名意味": "冠名+3月",
+  "取引市場": "",
+  "総賞金": "34,130,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "15,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 3,
+  "second": 1,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "福島",
+   "race_name": "キビタキS",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 6,
+   "finish": "12",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2026年2月7日",
+   "venue": "京都",
+   "race_name": "橿原S",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 4,
+   "finish": "11",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年11月15日",
+   "venue": "福島",
+   "race_name": "フルーツライ",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 16,
+   "popularity": 6,
+   "finish": "5",
+   "jockey": "松本 大輝"
+  },
+  {
+   "date": "2025年7月12日",
+   "venue": "小倉",
+   "race_name": "釜山S",
+   "surface": "ダ",
+   "distance": 1000,
+   "field": 10,
+   "popularity": 2,
+   "finish": "8",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2025年6月15日",
+   "venue": "阪神",
+   "race_name": "リボン賞",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 3,
+   "finish": "15",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2025年4月13日",
+   "venue": "福島",
+   "race_name": "やまびこS",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 16,
+   "popularity": 2,
+   "finish": "5",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2025年3月1日",
+   "venue": "中山",
+   "race_name": "春風S",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 3,
+   "finish": "6",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2024年12月22日",
+   "venue": "中山",
+   "race_name": "フェアウェル",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "12",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2024年12月1日",
+   "venue": "中山",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "W.ビュイック"
+  },
+  {
+   "date": "2024年11月3日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1150,
+   "field": 10,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2024年10月20日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 13,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2024年5月18日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2024年2月25日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 2,
+   "finish": "12",
+   "jockey": "A.ルメートル"
+  },
+  {
+   "date": "2023年12月2日",
+   "venue": "中京",
+   "race_name": "2歳未勝利",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "永島 まなみ"
+  },
+  {
+   "date": "2023年10月28日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 11,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "J.モレイラ"
+  }
+ ],
+ "name": "アメリカンマーチ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021110136/2B",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:16"
+}

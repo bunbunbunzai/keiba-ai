@@ -1,0 +1,201 @@
+{
+ "profile": {
+  "父": "サトノダイヤモンド",
+  "性別": "牡",
+  "馬主名": "杉山 忠国",
+  "母": "ビーウインド",
+  "馬齢": "5歳",
+  "調教師名": "上村 洋行 （栗東）",
+  "母の父": "スピニングワールド",
+  "生年月日": "2021年4月27日",
+  "生産牧場": "杵臼牧場",
+  "母の母": "ビクトリーマッハ",
+  "毛色": "黒鹿毛",
+  "産地": "浦河町",
+  "馬名意味": "ダイヤモンドに似ている宝石、バッデレイ石",
+  "取引市場": "",
+  "総賞金": "106,632,000 円",
+  "内付加賞": "1,152,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "38,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 5,
+  "second": 2,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "京都",
+   "race_name": "アンドロメダ",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年8月15日",
+   "venue": "中京",
+   "race_name": "高山S",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 8,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年6月6日",
+   "venue": "阪神",
+   "race_name": "垂水S",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年5月17日",
+   "venue": "新潟",
+   "race_name": "弥彦S",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 6,
+   "finish": "7",
+   "jockey": "富田 暁"
+  },
+  {
+   "date": "2026年4月12日",
+   "venue": "阪神",
+   "race_name": "京橋S",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年1月4日",
+   "venue": "京都",
+   "race_name": "寿ステークス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 9,
+   "popularity": 3,
+   "finish": "6",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2025年10月5日",
+   "venue": "京都",
+   "race_name": "大原S",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 9,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年7月5日",
+   "venue": "小倉",
+   "race_name": "マレーシアC",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 1,
+   "finish": "7",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年6月7日",
+   "venue": "阪神",
+   "race_name": "垂水S",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2025年3月15日",
+   "venue": "阪神",
+   "race_name": "難波S",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2025年2月16日",
+   "venue": "京都",
+   "race_name": "春日特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 9,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2024年9月22日",
+   "venue": "中京",
+   "race_name": "神戸新聞杯",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 14,
+   "popularity": 7,
+   "finish": "7",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2024年8月18日",
+   "venue": "新潟",
+   "race_name": "阿賀野川特別",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 13,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2024年6月23日",
+   "venue": "京都",
+   "race_name": "木屋町特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 8,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2024年5月4日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 16,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "岩田 望来"
+  }
+ ],
+ "name": "バッデレイト",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021102728/37",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:15"
+}

@@ -1,0 +1,157 @@
+{
+ "profile": {
+  "父": "グレーターロンドン",
+  "性別": "牡",
+  "馬主名": "伊藤 功一",
+  "母": "オールタイムベスト",
+  "馬齢": "5歳",
+  "調教師名": "吉岡 辰弥 （栗東）",
+  "母の父": "ブライアンズタイム",
+  "生年月日": "2021年4月17日",
+  "生産牧場": "下河辺牧場",
+  "母の母": "ウィルダネスストーム",
+  "毛色": "栗毛",
+  "産地": "日高町",
+  "馬名意味": "幸せ時間。母名より連想",
+  "取引市場": "",
+  "総賞金": "113,299,300 円",
+  "内付加賞": "1,230,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "6,269,300 円",
+  "収得賞金（平地）": "38,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 11,
+  "wins": 5,
+  "second": 1,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "東京",
+   "race_name": "オーロカップ",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2026年2月14日",
+   "venue": "サウ",
+   "race_name": "1351TS",
+   "surface": "芝",
+   "distance": 1351,
+   "field": 13,
+   "popularity": null,
+   "finish": "6",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年12月27日",
+   "venue": "阪神",
+   "race_name": "阪神カップ",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "3",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2025年11月16日",
+   "venue": "東京",
+   "race_name": "オーロカップ",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2025年7月27日",
+   "venue": "新潟",
+   "race_name": "関屋記念",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 3,
+   "finish": "9",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2025年2月22日",
+   "venue": "京都",
+   "race_name": "阪急杯",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 1,
+   "finish": "5",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2024年12月15日",
+   "venue": "京都",
+   "race_name": "東山S",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "R.ムーア"
+  },
+  {
+   "date": "2024年9月28日",
+   "venue": "中山",
+   "race_name": "秋風S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "J.モレイラ"
+  },
+  {
+   "date": "2024年9月1日",
+   "venue": "中京",
+   "race_name": "有松特別",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2024年6月22日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2024年4月13日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "鮫島 克駿"
+  }
+ ],
+ "name": "フォーチュンタイム",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021101384/18",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:59"
+}

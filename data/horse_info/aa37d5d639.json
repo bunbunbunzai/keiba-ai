@@ -1,0 +1,168 @@
+{
+ "profile": {
+  "父": "ブリックスアンドモルタル",
+  "性別": "牝",
+  "馬主名": "ライオンレースホース(株)",
+  "母": "カイゼリン",
+  "馬齢": "4歳",
+  "調教師名": "井上 智史 （栗東）",
+  "母の父": "アドマイヤベガ",
+  "生年月日": "2022年5月3日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "ブロードアピール",
+  "毛色": "黒鹿毛",
+  "産地": "安平町",
+  "馬名意味": "美しいおうし座(独)。母父名より連想。本馬がおうし座生まれのため",
+  "取引市場": "",
+  "総賞金": "19,114,000 円",
+  "内付加賞": "114,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 12,
+  "wins": 1,
+  "second": 1,
+  "third": 4
+ },
+ "runs": [
+  {
+   "date": "2026年10月31日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 8,
+   "finish": "7",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年10月24日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 12,
+   "popularity": 4,
+   "finish": "12",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年8月30日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年5月31日",
+   "venue": "東京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年5月16日",
+   "venue": "新潟",
+   "race_name": "石打特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年3月22日",
+   "venue": "中京",
+   "race_name": "4歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 17,
+   "popularity": 9,
+   "finish": "7",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2025年11月22日",
+   "venue": "福島",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 8,
+   "finish": "6",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2025年10月26日",
+   "venue": "新潟",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 4,
+   "finish": "5",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2025年7月5日",
+   "venue": "福島",
+   "race_name": "伊達特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 3,
+   "finish": "8",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2025年4月19日",
+   "venue": "中山",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 8,
+   "popularity": 3,
+   "finish": "3",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2025年1月18日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 7,
+   "finish": "1",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2024年11月17日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 9,
+   "popularity": 5,
+   "finish": "3",
+   "jockey": "三浦 皇成"
+  }
+ ],
+ "name": "シェーンシュティア",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022104716/AB",
+ "last_card": "20261031",
+ "fetched": "2026-11-20 05:40"
+}

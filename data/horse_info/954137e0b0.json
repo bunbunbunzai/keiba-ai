@@ -1,0 +1,146 @@
+{
+ "profile": {
+  "父": "ディーマジェスティ",
+  "性別": "牡",
+  "馬主名": "(有)フジワラ・ファーム",
+  "母": "ブリリン",
+  "馬齢": "3歳",
+  "調教師名": "北出 成人 （栗東）",
+  "母の父": "タイキシャトル",
+  "生年月日": "2023年4月26日",
+  "生産牧場": "フジワラフアーム",
+  "母の母": "ダイヤモンドクイン",
+  "毛色": "栗毛",
+  "産地": "新ひだか町",
+  "馬名意味": "捕食者(仏)",
+  "取引市場": "",
+  "総賞金": "19,730,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 10,
+  "wins": 2,
+  "second": 0,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年10月31日",
+   "venue": "東京",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 13,
+   "popularity": 5,
+   "finish": "8",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2026年10月10日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2026年9月27日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "9",
+   "jockey": "亀田 温心"
+  },
+  {
+   "date": "2026年9月13日",
+   "venue": "阪神",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 6,
+   "finish": "3",
+   "jockey": "亀田 温心"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 4,
+   "finish": "7",
+   "jockey": "酒井 学"
+  },
+  {
+   "date": "2026年5月3日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 11,
+   "finish": "5",
+   "jockey": "秋山 稔樹"
+  },
+  {
+   "date": "2026年1月12日",
+   "venue": "京都",
+   "race_name": "シンザン記念",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 16,
+   "finish": "14",
+   "jockey": "亀田 温心"
+  },
+  {
+   "date": "2025年12月6日",
+   "venue": "中京",
+   "race_name": "こうやまき賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 7,
+   "finish": "5",
+   "jockey": "菊沢 一樹"
+  },
+  {
+   "date": "2025年11月22日",
+   "venue": "京都",
+   "race_name": "秋明菊賞",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 9,
+   "popularity": 4,
+   "finish": "6",
+   "jockey": "亀田 温心"
+  },
+  {
+   "date": "2025年9月28日",
+   "venue": "阪神",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "亀田 温心"
+  }
+ ],
+ "name": "プレダトゥール",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023103171/43",
+ "last_card": "20261031",
+ "fetched": "2026-11-20 05:41"
+}

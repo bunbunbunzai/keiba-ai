@@ -1,0 +1,223 @@
+{
+ "profile": {
+  "父": "ダノンバラード",
+  "性別": "牡",
+  "馬主名": "(株)サラブレッドクラブ・ラフィアン",
+  "母": "エントリーチケット",
+  "馬齢": "4歳",
+  "調教師名": "宮 徹 （栗東）",
+  "母の父": "マツリダゴッホ",
+  "生年月日": "2022年3月18日",
+  "生産牧場": "ビッグレッドファーム",
+  "母の母": "コスモエンドレス",
+  "毛色": "鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "冠名+母名の一部",
+  "取引市場": "",
+  "総賞金": "126,392,000 円",
+  "内付加賞": "1,292,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "34,500,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 16,
+  "wins": 3,
+  "second": 5,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月15日",
+   "venue": "東京",
+   "race_name": "オーロカップ",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 2,
+   "finish": "8",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年10月12日",
+   "venue": "京都",
+   "race_name": "MBSスワン",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 5,
+   "finish": "6",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2026年6月14日",
+   "venue": "東京",
+   "race_name": "パラダイスS",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 13,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2026年5月2日",
+   "venue": "東京",
+   "race_name": "京王杯SC",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 7,
+   "finish": "3",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年2月21日",
+   "venue": "阪神",
+   "race_name": "阪急杯",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 2,
+   "finish": "9",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2026年1月24日",
+   "venue": "京都",
+   "race_name": "睦月S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年11月15日",
+   "venue": "東京",
+   "race_name": "奥多摩S",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年10月12日",
+   "venue": "京都",
+   "race_name": "三年坂S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "和田 竜二"
+  },
+  {
+   "date": "2025年9月14日",
+   "venue": "阪神",
+   "race_name": "仲秋S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 11,
+   "popularity": 4,
+   "finish": "2",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年8月2日",
+   "venue": "中京",
+   "race_name": "豊明S",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "和田 竜二"
+  },
+  {
+   "date": "2025年5月11日",
+   "venue": "東京",
+   "race_name": "NHKマイル",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 13,
+   "finish": "8",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2025年1月13日",
+   "venue": "中京",
+   "race_name": "シンザン記念",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年11月2日",
+   "venue": "東京",
+   "race_name": "京王杯2歳S",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年10月5日",
+   "venue": "東京",
+   "race_name": "サウジRC",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 7,
+   "popularity": 5,
+   "finish": "3",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年9月8日",
+   "venue": "中京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 7,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年8月31日",
+   "venue": "中京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 8,
+   "popularity": null,
+   "finish": "取消",
+   "jockey": "和田 竜二"
+  },
+  {
+   "date": "2024年8月11日",
+   "venue": "新潟",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "佐々木 大輔"
+  }
+ ],
+ "name": "マイネルチケット",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022106768/BF",
+ "last_card": "20261115",
+ "fetched": "2026-11-20 03:58"
+}

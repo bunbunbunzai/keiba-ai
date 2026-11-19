@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "ドレフォン",
+  "性別": "牡",
+  "馬主名": "西本 資史",
+  "母": "オモテナシ2",
+  "馬齢": "3歳",
+  "調教師名": "小島 茂之 （美浦）",
+  "母の父": "Henrythenavigator",
+  "生年月日": "2023年2月7日",
+  "生産牧場": "チャンピオンズファーム",
+  "母の母": "Million Gift",
+  "毛色": "鹿毛",
+  "産地": "新ひだか町",
+  "馬名意味": "冠名+輝き(ポルトガル語)",
+  "取引市場": "2023年 セレクトセール",
+  "総賞金": "11,220,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "4,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 1,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月14日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2026年10月25日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 4,
+   "finish": "4",
+   "jockey": "菅原 明良"
+  },
+  {
+   "date": "2026年10月4日",
+   "venue": "東京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 9,
+   "finish": "5",
+   "jockey": "横山 琉人"
+  },
+  {
+   "date": "2026年8月30日",
+   "venue": "札幌",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 11,
+   "popularity": 7,
+   "finish": "8",
+   "jockey": "横山 琉人"
+  },
+  {
+   "date": "2026年5月17日",
+   "venue": "京都",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 16,
+   "finish": "11",
+   "jockey": "川須 栄彦"
+  },
+  {
+   "date": "2026年4月25日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 12,
+   "finish": "9",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2026年2月7日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 6,
+   "finish": "1",
+   "jockey": "田辺 裕信"
+  },
+  {
+   "date": "2026年1月25日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 16,
+   "popularity": 14,
+   "finish": "10",
+   "jockey": "長岡 禎仁"
+  }
+ ],
+ "name": "フクシマブリルハム",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002023105405/10",
+ "last_card": "20261114",
+ "fetched": "2026-11-20 04:10"
+}

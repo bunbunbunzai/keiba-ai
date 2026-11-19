@@ -1,0 +1,223 @@
+{
+ "profile": {
+  "父": "マインドユアビスケッツ",
+  "性別": "せん",
+  "馬主名": "(株)社台レースホース",
+  "母": "スカーレル",
+  "馬齢": "5歳",
+  "調教師名": "渡辺 薫彦 （栗東）",
+  "母の父": "ゴールドアリュール",
+  "生年月日": "2021年3月25日",
+  "生産牧場": "(有)社台コーポレーション白老ファーム",
+  "母の母": "ドライアッド",
+  "毛色": "栗毛",
+  "産地": "白老町",
+  "馬名意味": "梨の木(独)",
+  "取引市場": "",
+  "総賞金": "28,146,000 円",
+  "内付加賞": "136,000 円",
+  "内地方賞金": "800,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 17,
+  "wins": 2,
+  "second": 3,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年11月1日",
+   "venue": "京都",
+   "race_name": "愛宕特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 6,
+   "finish": "2",
+   "jockey": "太宰 啓介"
+  },
+  {
+   "date": "2026年10月18日",
+   "venue": "京都",
+   "race_name": "聚楽第特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 6,
+   "finish": "2",
+   "jockey": "太宰 啓介"
+  },
+  {
+   "date": "2026年9月27日",
+   "venue": "阪神",
+   "race_name": "3歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 2000,
+   "field": 12,
+   "popularity": 9,
+   "finish": "6",
+   "jockey": "太宰 啓介"
+  },
+  {
+   "date": "2026年8月22日",
+   "venue": "中京",
+   "race_name": "大府特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 11,
+   "finish": "6",
+   "jockey": "太宰 啓介"
+  },
+  {
+   "date": "2026年8月1日",
+   "venue": "中京",
+   "race_name": "日進特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 4,
+   "finish": "8",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2026年5月23日",
+   "venue": "京都",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "松若 風馬"
+  },
+  {
+   "date": "2026年4月19日",
+   "venue": "阪神",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "古川 吉洋"
+  },
+  {
+   "date": "2026年3月29日",
+   "venue": "阪神",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 7,
+   "finish": "2",
+   "jockey": "古川 吉洋"
+  },
+  {
+   "date": "2025年4月20日",
+   "venue": "阪神",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 8,
+   "finish": "8",
+   "jockey": "和田 竜二"
+  },
+  {
+   "date": "2025年4月5日",
+   "venue": "阪神",
+   "race_name": "4歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 7,
+   "popularity": 7,
+   "finish": "5",
+   "jockey": "亀田 温心"
+  },
+  {
+   "date": "2024年12月8日",
+   "venue": "中京",
+   "race_name": "大須特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 7,
+   "finish": "5",
+   "jockey": "亀田 温心"
+  },
+  {
+   "date": "2024年11月24日",
+   "venue": "京都",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 4,
+   "finish": "12",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2024年9月1日",
+   "venue": "佐賀",
+   "race_name": "サマーカップ",
+   "surface": "ダ",
+   "distance": 1860,
+   "field": 8,
+   "popularity": null,
+   "finish": "1",
+   "jockey": "石川 慎将"
+  },
+  {
+   "date": "2024年7月20日",
+   "venue": "小倉",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1700,
+   "field": 16,
+   "popularity": 13,
+   "finish": "6",
+   "jockey": "酒井 学"
+  },
+  {
+   "date": "2024年4月20日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 11,
+   "popularity": 10,
+   "finish": "11",
+   "jockey": "酒井 学"
+  },
+  {
+   "date": "2024年1月28日",
+   "venue": "京都",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 11,
+   "popularity": 9,
+   "finish": "9",
+   "jockey": "酒井 学"
+  },
+  {
+   "date": "2024年1月13日",
+   "venue": "京都",
+   "race_name": "3歳新馬",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 9,
+   "finish": "13",
+   "jockey": "酒井 学"
+  }
+ ],
+ "name": "ビルンバウム",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021104872/E4",
+ "last_card": "20261101",
+ "fetched": "2026-11-20 05:21"
+}

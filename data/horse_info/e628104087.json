@@ -1,0 +1,157 @@
+{
+ "profile": {
+  "父": "ミッキーアイル",
+  "性別": "せん",
+  "馬主名": "(有)サンデーレーシング",
+  "母": "カレドニアレディ",
+  "馬齢": "4歳",
+  "調教師名": "森 一誠 （美浦）",
+  "母の父": "Firebreak",
+  "生年月日": "2022年2月20日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "Granuaile O'Malley",
+  "毛色": "黒鹿毛",
+  "産地": "安平町",
+  "馬名意味": "「カレドニア人の砦」を意味するスコットランドの町名",
+  "取引市場": "",
+  "総賞金": "23,900,000 円",
+  "内付加賞": "0 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "9,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 11,
+  "wins": 2,
+  "second": 2,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年11月7日",
+   "venue": "福島",
+   "race_name": "飯坂温泉特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 8,
+   "finish": "6",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年7月19日",
+   "venue": "福島",
+   "race_name": "南相馬特別",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 11,
+   "finish": "4",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年4月4日",
+   "venue": "中山",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "12",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2026年1月17日",
+   "venue": "中山",
+   "race_name": "4歳上2勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "9",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2025年12月20日",
+   "venue": "中山",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2025年9月13日",
+   "venue": "中山",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "杉原 誠人"
+  },
+  {
+   "date": "2025年7月26日",
+   "venue": "新潟",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 17,
+   "popularity": 1,
+   "finish": "7",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2025年5月31日",
+   "venue": "東京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "D.レーン"
+  },
+  {
+   "date": "2024年10月27日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 11,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2024年9月21日",
+   "venue": "中山",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2024年7月28日",
+   "venue": "新潟",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 12,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "川田 将雅"
+  }
+ ],
+ "name": "ダンケルド",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002022104722/EF",
+ "last_card": "20261107",
+ "fetched": "2026-11-20 05:14"
+}
