@@ -1,6 +1,6 @@
 {
  "date": "20261119",
- "updated": "2026-11-19 13:03",
+ "updated": "2026-11-19 13:07",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -714,8 +714,8 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": 17.2,
-   "popularity": 5
+   "odds": 18.8,
+   "popularity": 6
   },
   {
    "race_id": "202611192015120401",
@@ -792,8 +792,8 @@
     "field": 7,
     "popularity": 4
    },
-   "odds": 20.2,
-   "popularity": 4
+   "odds": 37.6,
+   "popularity": 7
   },
   {
    "race_id": "202611192320130209",
@@ -813,8 +813,8 @@
     "field": 7,
     "popularity": null
    },
-   "odds": 40.5,
-   "popularity": 7
+   "odds": 22.8,
+   "popularity": 5
   },
   {
    "race_id": "202611192726180509",
