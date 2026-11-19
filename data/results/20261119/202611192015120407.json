@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261119",
  "race_id": "202611192015120407",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "アズライトアスール",
    "time": "1:42.2",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 40.1,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "アクアジェット",
    "time": "1:42.4",
    "margin": "１ １／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 39.3,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "リバイブメイラード",
    "time": "1:43.0",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 40.1,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "マニス",
    "time": "1:43.4",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 39.9,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "アンリミテッド",
    "time": "1:43.5",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 40.9,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "バレアレス",
    "time": "1:43.8",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 41.7,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "フタバサクセス",
    "time": "1:44.5",
    "margin": "３ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 40.9,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ハイアップグレード",
    "time": "1:44.5",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 41.1,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "スズノハマヤ",
    "time": "1:44.6",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 42.1,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "オールケアドリーム",
    "time": "1:45.0",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 42.9,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "サラニキケン",
    "time": "1:45.6",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 12,
+   "last3f": 41.7,
    "popularity": null
   },
   {
@@ -198,8 +198,8 @@
    "name": "パルマシェール",
    "time": "1:47.4",
    "margin": "９",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 44.3,
    "popularity": null
   }
  ]
