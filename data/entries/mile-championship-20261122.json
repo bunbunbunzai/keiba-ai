@@ -1,0 +1,183 @@
+{
+ "slug": "mile-championship",
+ "date": "20261122",
+ "race": "マイルチャンピオンシップ",
+ "grade": "G1",
+ "venue": "京都",
+ "key": "mile",
+ "source": "https://www.jra.go.jp/datafile/ranking/g1/2026/mile.html",
+ "kind": "prerating",
+ "published": "2026-11-16",
+ "max_runners": 18,
+ "horses": [
+  {
+   "name": "アドマイヤズーム",
+   "sex": "牡",
+   "age": "4",
+   "trainer": "友道康夫",
+   "rating": "112 M",
+   "rating_race": "読売マイラーズC1着"
+  },
+  {
+   "name": "アンパドゥ(イギリス産)",
+   "sex": "牡",
+   "age": "5",
+   "trainer": "木村哲也",
+   "rating": "114 M",
+   "rating_race": "関屋記念1着"
+  },
+  {
+   "name": "ウォーターリヒト",
+   "sex": "牡",
+   "age": "5",
+   "trainer": "石橋守",
+   "rating": "111 M",
+   "rating_race": "東京新聞杯3着"
+  },
+  {
+   "name": "エコロアルバ",
+   "sex": "牡",
+   "age": "3",
+   "trainer": "手塚貴久",
+   "rating": "111 M",
+   "rating_race": "富士S3着、オーロC1着"
+  },
+  {
+   "name": "エコロブルーム",
+   "sex": "牡",
+   "age": "5",
+   "trainer": "加藤征弘",
+   "rating": "111 M",
+   "rating_race": "京成杯オータムハンデキャップ2着"
+  },
+  {
+   "name": "エンブロイダリー",
+   "sex": "牝",
+   "age": "4",
+   "trainer": "森一誠",
+   "rating": "117 M",
+   "rating_race": "ヴィクトリアマイル1着"
+  },
+  {
+   "name": "オフトレイル(イギリス産)",
+   "sex": "牡",
+   "age": "5",
+   "trainer": "吉村圭司",
+   "rating": "115 M",
+   "rating_race": "安田記念6着、スワンS3着"
+  },
+  {
+   "name": "ガイアフォース",
+   "sex": "牡",
+   "age": "7",
+   "trainer": "杉山晴紀",
+   "rating": "117 M",
+   "rating_race": "安田記念2着"
+  },
+  {
+   "name": "ココナッツブラウン",
+   "sex": "牝",
+   "age": "6",
+   "trainer": "上村洋行",
+   "rating": "111 M",
+   "rating_race": "ヴィクトリアマイル5着"
+  },
+  {
+   "name": "シックスペンス",
+   "sex": "牡",
+   "age": "5",
+   "trainer": "田中博康",
+   "rating": "118 M",
+   "rating_race": "安田記念1着"
+  },
+  {
+   "name": "ジューンテイク",
+   "sex": "牡",
+   "age": "5",
+   "trainer": "武英智",
+   "rating": "114 I,L",
+   "rating_race": "京都記念1着、金鯱賞4着"
+  },
+  {
+   "name": "スズハローム",
+   "sex": "牡",
+   "age": "6",
+   "trainer": "牧田和弥",
+   "rating": "113 M",
+   "rating_race": "スワンS2着"
+  },
+  {
+   "name": "スターアニス",
+   "sex": "牝",
+   "age": "3",
+   "trainer": "高野友和",
+   "rating": "116 M",
+   "rating_race": "桜花賞1着"
+  },
+  {
+   "name": "ドラゴンブースト",
+   "sex": "牡",
+   "age": "4",
+   "trainer": "藤野健太",
+   "rating": "110 M",
+   "rating_race": "読売マイラーズC2着"
+  },
+  {
+   "name": "ピコローズ",
+   "sex": "牝",
+   "age": "4",
+   "trainer": "伊藤大士",
+   "rating": "102 M",
+   "rating_race": "京成杯オータムハンデキャップ1着"
+  },
+  {
+   "name": "マジックサンズ",
+   "sex": "牡",
+   "age": "4",
+   "trainer": "須貝尚介",
+   "rating": "109 M",
+   "rating_race": "富士S4着"
+  },
+  {
+   "name": "レザベーション",
+   "sex": "牡",
+   "age": "3",
+   "trainer": "松下武士",
+   "rating": "110 M",
+   "rating_race": "ニュージーランドトロフィー1着、NHKマイルC6着"
+  },
+  {
+   "name": "レッドシュヴェルト",
+   "sex": "牡",
+   "age": "6",
+   "trainer": "尾関知人",
+   "rating": "103 M",
+   "rating_race": "ポートアイランドS3着"
+  },
+  {
+   "name": "ロデオドライブ",
+   "sex": "牡",
+   "age": "3",
+   "trainer": "辻哲英",
+   "rating": "118 I",
+   "rating_race": "新潟記念2着"
+  },
+  {
+   "name": "ワールズエンド",
+   "sex": "牡",
+   "age": "5",
+   "trainer": "池添学",
+   "rating": "117 M",
+   "rating_race": "安田記念2着"
+  },
+  {
+   "name": "エルデナリErdenali(フランス産)",
+   "sex": "せん",
+   "age": "3",
+   "trainer": "F.グラファール(フランス)",
+   "rating": "124 М",
+   "rating_race": "ムーランドロンシャン賞1着"
+  }
+ ],
+ "fetched": "2026-11-20 02:08"
+}
