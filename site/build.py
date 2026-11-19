@@ -1810,7 +1810,12 @@ def glossary_term_pages() -> dict[str, str]:
                 + (f"<section class='card'><h2>関連する用語</h2><ul>{rel}</ul></section>" if rel else "")
                 + (f"<section class='card'><h2>「{esc(x.get('category', ''))}」のほかの用語</h2><p>" + "　".join(f"<a href='/glossary/{y['slug']}/'>{esc(y['term'])}</a>" for y in same) + "</p></section>" if same else "")
                 + f"<p class='meta'>AIが書いた説明を、{esc(x.get('updated', ''))}時点で掲載。ルールの正式な内容は主催者の発表を確認してほしい。</p>")
-        write(path, page(f"{x['term']}とは｜競馬用語集｜{SITE_NAME}", body, path, desc=f"{x['term']}とは：{x['short']}", head_extra=jsonld(ld)))
+        # 題名に答えの要点を入れる（検索では5〜7位に出ているのに押されていなかった。「とは｜用語集」だけでは中身が伝わらない）
+        gist = re.sub(r"(である|のこと|こと|をいう|を指す|を表す)?。$", "", x["short"].strip())
+        gist = gist if len(gist) <= 30 else ""
+        title = (f"{x['term']}とは？{gist}{'【競馬用語】' if len(x['term']) + len(gist) <= 26 else ''}｜{SITE_NAME}" if gist else f"{x['term']}とは？意味と使い方を例つきで解説【競馬用語】｜{SITE_NAME}")
+        desc = (f"{x['term']}（{x['reading']}）とは、" if x.get("reading") else f"{x['term']}とは、") + x["short"] + (f" 例：{x['example']}" if x.get("example") else "")
+        write(path, page(title, body, path, desc=desc[:118], head_extra=jsonld(ld)))
         out[path] = x.get("updated")
     return out
 
@@ -2056,6 +2061,10 @@ h1 small{display:block;font-size:14px;color:var(--mut);font-family:"Hiragino San
 th.sortable{cursor:pointer;user-select:none}th.sortable:hover{color:var(--acc)}th[data-dir=asc]::after{content:" ▲";font-size:10px}th[data-dir=desc]::after{content:" ▼";font-size:10px}
 .cd{color:var(--acc);font-weight:700}
 .bets .bo{margin-left:.5em;font-size:12px;color:var(--mut);font-weight:400}.betnote{font-size:13px;color:var(--mut);margin:6px 0 0;line-height:1.6}
+.zkbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:60;max-width:560px;margin:0 auto;display:flex;align-items:center;gap:8px;background:var(--panel);color:var(--fg);border:1px solid var(--line);border-left:4px solid var(--acc);box-shadow:0 6px 18px rgba(0,0,0,.18);padding:8px 8px 8px 10px;font-size:14px;line-height:1.5}
+.zkbar.fab{right:92px}.zkbar img{flex:none;width:36px;height:36px}.zkbar span{flex:1;min-width:0}.zkbar button{font:inherit;cursor:pointer;flex:none}
+.zkbar .go{background:var(--acc);color:var(--bg);border:0;padding:8px 12px;font-weight:700;border-radius:2px}.zkbar .x{background:transparent;border:0;color:var(--mut);font-size:20px;line-height:1;padding:6px 8px}
+@media print{.zkbar{display:none}}
 .zkw-bg{position:fixed;inset:0;z-index:80;background:rgba(10,20,14,.45);display:flex;align-items:center;justify-content:center;padding:16px}
 .zkw{position:relative;width:420px;max-width:100%;background:var(--panel);color:var(--fg);border-radius:18px;padding:20px 20px 16px;box-shadow:0 16px 40px rgba(0,0,0,.3);border-top:6px solid var(--acc)}
 .zkw .zkw-in{display:flex;gap:14px;align-items:flex-start}.zkw img{flex:none;width:96px;height:96px}
@@ -2211,7 +2220,15 @@ function show(i){if(bg)return;last=document.activeElement;bg=document.createElem
  bg.addEventListener('click',function(e){if(e.target===bg)close(bg.dataset.step==='0'?'skip':'close',+bg.dataset.step);});document.body.appendChild(bg);document.addEventListener('keydown',kd,true);render(i);}
 var fb=document.querySelector('.prefs');if(fb){var gb=document.createElement('button');gb.type='button';gb.className='zkguide';gb.textContent='全頭くんのサイト案内';gb.onclick=function(){ga('welcome_reopen');show(1);};fb.appendChild(gb);}
 if(seen()||navigator.webdriver||/bot|crawl|spider|lighthouse|headless/i.test(navigator.userAgent)||SK.some(function(p){return location.pathname.indexOf(p)===0;}))return;
-setTimeout(function(){if(document.querySelector('.askpop.open'))return;if(seen())return;show(0);ga('welcome_shown',{page:location.pathname});},1500);
+/* 初めての人への案内は、画面をふさがない小さな帯で出す（中央に出していた案内は7割の人が閉じていた）。3回見せたら出さない */
+var n=0;try{n=+(localStorage.getItem(K+'_n')||0);}catch(e){}
+if(n>=3){seen('auto');return;}
+setTimeout(function(){if(document.querySelector('.askpop.open')||seen())return;try{localStorage.setItem(K+'_n',String(n+1));}catch(e){}
+ var bar=document.createElement('div');bar.className='zkbar'+(document.querySelector('.zkfab')?' fab':'');bar.setAttribute('role','region');bar.setAttribute('aria-label','サイトの案内');
+ bar.innerHTML='<img src="/assets/zk-normal.png" alt="" width="36" height="36"><span>はじめての方へ：サイトの見方を1分で案内します</span><button type="button" class="go">見方を知る</button><button type="button" class="x" aria-label="閉じる">×</button>';
+ bar.querySelector('.go').onclick=function(){bar.remove();seen('start');ga('welcome_start');show(1);};
+ bar.querySelector('.x').onclick=function(){bar.remove();seen('skip');ga('welcome_skip',{step:0});};
+ document.body.appendChild(bar);ga('welcome_shown',{page:location.pathname,form:'bar'});},2500);
 })();
 (function(){var n=document.querySelector('header nav');if(!n)return;function f(){var o=n.scrollWidth>n.clientWidth+4;n.classList.toggle('ovf',o);n.classList.toggle('beg',n.scrollLeft<=4);n.classList.toggle('end',!o||n.scrollLeft+n.clientWidth>=n.scrollWidth-4);}var a=n.querySelector('a.on');if(a&&a.offsetLeft+a.offsetWidth>n.clientWidth)n.scrollLeft=a.offsetLeft-(n.clientWidth-a.offsetWidth)/2;f();n.addEventListener('scroll',f,{passive:true});window.addEventListener('resize',f);})();
 """

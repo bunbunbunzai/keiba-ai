@@ -61,7 +61,8 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
                 horses[name].append({"d": d, "p": p, "num": num, "mark": mm.get(num, ""), "score": e.get("score"),
                                      "win_pct": e.get("win_pct"), "comment": e.get("comment") or "", "finish": _finish(p, num),
                                      "odds": rh.get("odds"), "pop": rh.get("popularity"), "jockey": rh.get("jockey"),
-                                     "sire": rh.get("sire"), "sex_age": rh.get("sex_age"), "past": rh.get("past") or []})
+                                     "sire": rh.get("sire"), "dam": rh.get("dam"), "damsire": rh.get("damsire"), "trainer": rh.get("trainer"),
+                                     "sex_age": rh.get("sex_age"), "past": rh.get("past") or []})
     index_rows = []
     notes_dir = B.ROOT / "data" / "horse_notes"
     for name, items in horses.items():
@@ -79,9 +80,29 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
         latest = items[0]
         prof = "・".join(x for x in (latest.get("sex_age") or "", f"父{latest['sire']}" if latest.get("sire") else "") if x)
         venues = sorted({B.VENUE_NAME.get(B.venue_of(x["p"]), B.venue_of(x["p"])) for x in items})
-        lead = (f"{name}{'（' + prof + '）' if prof else ''}は、このサイトのAI予想で{len(items)}回評価され、◎は{n_hon}回。"
+        # 馬名で調べる人が知りたい順に書く：どんな馬か → 次に走るレース → 直近の結果 → このサイトのAIの評価
+        nxt = [x for x in items if x["d"] >= today and not x["finish"].isdigit() and x["finish"] not in ("取消", "除外", "中止")]
+        nxt = sorted(nxt, key=lambda x: x["d"])[:1]
+        last_run = runs[0] if runs else None
+        jra = any(B.venue_of(x["p"]) in ("札幌", "函館", "福島", "新潟", "東京", "中山", "中京", "京都", "阪神", "小倉") for x in items)
+        sa = latest.get("sex_age") or ""
+        lead = (f"{name}{'（' + prof + '）' if prof else ''}の成績とAI評価。"
+                + (f"次走は{B.md(nxt[0]['d'])}の{B.race_label(nxt[0]['p'])}（AIの印は{nxt[0]['mark'] or '無印'}）。" if nxt else "")
+                + (f"直近は{B.md(last_run['d'])}の{B.race_label(last_run['p'])}で{last_run['finish']}着"
+                   + (f"（{last_run['pop']}番人気）" if last_run.get("pop") else "") + "。" if last_run else "")
+                + f"このサイトのAI予想では{len(items)}回評価し、◎は{n_hon}回。"
                 + (f"結果が出ている{len(runs)}走で1着{wins}回・3着以内{top3}回（3着内率{pct(top3, len(runs))}）。" if runs else "")
                 + f"主な出走場：{'・'.join(venues[:4])}。")
+        prof_rows = [("性齢", sa), ("父", latest.get("sire")), ("母", latest.get("dam")), ("母の父", latest.get("damsire")),
+                     ("調教師", latest.get("trainer")), ("主な出走", ("中央競馬" if jra else "地方競馬") + "（" + "・".join(venues[:4]) + "）"),
+                     ("最近の騎手", "、".join(dict.fromkeys(x["jockey"] for x in items[:5] if x.get("jockey"))))]
+        prof_html = ("<section class='card'><h2>プロフィール</h2><div class='scroll'><table><tbody>"
+                     + "".join(f"<tr><th>{k}</th><td>{esc(v)}</td></tr>" for k, v in prof_rows if v) + "</tbody></table></div></section>")
+        next_html = ""
+        if nxt:
+            x = nxt[0]
+            next_html = (f"<p class='notice'>次走：<a href='{B.race_path(x['d'], x['p'])}'>{esc(B.md(x['d']))} {esc(B.race_label(x['p']))}</a>"
+                         f"（AIの印：{esc(x['mark'] or '無印')}{'・想定勝率' + str(x['win_pct']) + '%' if x['win_pct'] is not None else ''}）→ 全頭の評価と買い目を見る</p>")
         rows = []
         for x in items:
             p = x["p"]
@@ -93,21 +114,22 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
                         f"<td>{esc(od)}</td><td>{esc(fin)}</td><td>{esc(x['jockey'] or '')}</td></tr>")
         comments = "".join(f"<li><b>{esc(B.md(x['d']))} {esc(B.race_label(x['p']))}</b>：{esc(x['comment'])}</li>" for x in items[:6] if x["comment"])
         body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/horse/'>馬別</a> › {esc(name)}</p>"
-                f"<h1>{esc(name)} AI評価と成績の履歴</h1><p class='answer'>{esc(lead)}</p>"
+                f"<h1>{esc(name)}の成績とAI評価</h1><p class='answer'>{esc(lead)}</p>{next_html}"
                 f"<div class='kpis'><div><b>{len(items)}</b><span>評価回数</span></div><div><b>{n_hon}</b><span>◎の回数</span></div>"
                 f"<div><b>{wins}・{top3}</b><span>1着・3着内（{len(runs)}走）</span></div></div>"
                 f"<section class='card'><h2>出走ごとのAI評価</h2><div class='scroll'><table><thead><tr><th>レース</th><th>印</th><th>評価点</th><th>想定勝率</th><th>単勝</th><th>着順</th><th>騎手</th></tr></thead>"
                 f"<tbody>{''.join(rows)}</tbody></table></div></section>"
                 + (f"<section class='card'><h2>AIの見立て</h2><div class='kaiko'>{B.zk('normal', 48)}<p><b>全頭くん</b>{esc(note['text'])}</p></div>"
                    f"<p class='meta'>近走と、このサイトのAIの評価をもとにAIが書いた寸評（{esc(B.md(note['updated']))}時点）。</p></section>" if note else "")
-                + _past_html(latest.get("past") or [], esc)
+                + _past_html(latest.get("past") or [], esc) + prof_html
                 + (f"<section class='card'><h2>レースごとのAIの短評</h2><ul>{comments}</ul></section>" if comments else "")
                 + "<p class='meta'>評価点はAIが5軸で採点した合計、想定勝率はAIの見立て。単勝は予想時点のオッズ。着順は主催者の発表が正。</p>")
         ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": B.SITE_NAME, "item": B.BASE_URL + "/"},
             {"@type": "ListItem", "position": 2, "name": "馬別", "item": B.BASE_URL + "/horse/"},
             {"@type": "ListItem", "position": 3, "name": name, "item": B.BASE_URL + path}]}
-        write(path, page(f"{name} AI評価の履歴（印・想定勝率・着順）｜{B.SITE_NAME}", body, path, desc=lead[:120], head_extra=jsonld(ld)))
+        title = (f"{name}{'（' + sa + '）' if sa else ''}の成績・{'次走と' if nxt else '近走と'}AI評価｜{B.SITE_NAME}")
+        write(path, page(title, body, path, desc=lead[:120], head_extra=jsonld(ld)))
         lastmod[path] = f"{latest['d'][:4]}-{latest['d'][4:6]}-{latest['d'][6:8]}"
         index_rows.append((latest["d"], name, path, len(items), n_hon))
     index_rows.sort(key=lambda x: (x[0], x[3]), reverse=True)
