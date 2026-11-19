@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261119",
  "race_id": "202611192726180501",
- "tries": 3,
+ "tries": 6,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,116 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 6,
+   "name": "ママトモ",
+   "time": "1:35.1",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 41.7,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 1,
+   "number": 1,
+   "name": "テイケイアンジェ",
+   "time": "1:35.4",
+   "margin": "１ ３／４",
+   "pos4": 2,
+   "last3f": 41.5,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 10,
+   "name": "ジーティーパール",
+   "time": "1:35.9",
+   "margin": "３",
+   "pos4": 6,
+   "last3f": 41.2,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 3,
+   "name": "メイショウセツゲツ",
+   "time": "1:36.1",
+   "margin": "３／４",
+   "pos4": 3,
+   "last3f": 42.1,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 7,
+   "name": "ミトロージア",
+   "time": "1:36.4",
+   "margin": "２",
+   "pos4": 6,
+   "last3f": 42.0,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 5,
+   "name": "ニックオブタイム",
+   "time": "1:36.5",
+   "margin": "１／２",
+   "pos4": 9,
+   "last3f": 41.4,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 9,
+   "name": "エザルターレ",
+   "time": "1:36.5",
+   "margin": "ハナ",
+   "pos4": 5,
+   "last3f": 42.1,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 8,
+   "name": "キョウワグロリア",
+   "time": "1:37.2",
+   "margin": "４",
+   "pos4": 6,
+   "last3f": 43.2,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "ヘルタースケルター",
+   "time": "1:37.3",
+   "margin": "１／２",
+   "pos4": 3,
+   "last3f": 43.8,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 4,
+   "number": 4,
+   "name": "ミラクルサーダ",
+   "time": "1:37.8",
+   "margin": "３",
+   "pos4": 9,
+   "last3f": 43.2,
+   "popularity": null
+  }
+ ]
 }
