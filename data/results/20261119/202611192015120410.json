@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261119",
  "race_id": "202611192015120410",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "ケイアイエルナト",
    "time": "1:41.5",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 39.5,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "トイロ",
    "time": "1:42.1",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 39.8,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "トクシーティグレ",
    "time": "1:42.3",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 39.4,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "レペンテ",
    "time": "1:43.4",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 40.3,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "アウトビアンキ",
    "time": "1:43.6",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 41.1,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ペルセイズ",
    "time": "1:44.0",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 42.0,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "クインズマカロン",
    "time": "1:44.0",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 41.4,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "カセノルーパス",
    "time": "1:45.3",
    "margin": "６",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 43.5,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "エスプリブルズアイ",
    "time": "1:46.0",
    "margin": "３ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 43.4,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "ジーゲル",
    "time": "1:46.0",
    "margin": "ハナ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 41.5,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "サドル",
    "time": "1:46.1",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 43.9,
    "popularity": null
   },
   {
@@ -198,8 +198,8 @@
    "name": "ニジコ",
    "time": "1:50.0",
    "margin": "大差",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 45.5,
    "popularity": null
   }
  ]
