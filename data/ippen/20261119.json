@@ -1,6 +1,6 @@
 {
  "date": "20261119",
- "updated": "2026-11-19 14:54",
+ "updated": "2026-11-19 14:57",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -928,6 +928,20 @@
     "aitop"
    ],
    "odds": 4.5,
+   "popularity": 2
+  },
+  {
+   "race_id": "202611192015120403",
+   "results_key": "202611192015120403",
+   "venue": "大井",
+   "race_no": 3,
+   "post_time": "15:35",
+   "number": 3,
+   "name": "ナンデデルマ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 5.4,
    "popularity": 2
   },
   {
