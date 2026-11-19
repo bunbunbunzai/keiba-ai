@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261119",
  "race_id": "202611192015120409",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "イマーシブ",
    "time": "1:14.7",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 38.0,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "インペリオ",
    "time": "1:15.4",
    "margin": "３ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 38.3,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "スマイルケイ",
    "time": "1:15.5",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 39.0,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "コブラツイスト",
    "time": "1:15.5",
    "margin": "ハナ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 38.8,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "チェイスザファイア",
    "time": "1:15.6",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 39.1,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "オレンジマン",
    "time": "1:15.8",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 38.6,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "アヤサンジョリーン",
    "time": "1:15.8",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 38.4,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "マロンカラノテガミ",
    "time": "1:16.0",
    "margin": "１ １／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 39.0,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "インサイダー",
    "time": "1:16.6",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 15,
+   "last3f": 39.1,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "ブライトイメル",
    "time": "1:16.6",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 40.3,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "ピオニー",
    "time": "1:16.6",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 39.4,
    "popularity": null
   },
   {
@@ -198,8 +198,8 @@
    "name": "モンサンヴデット",
    "time": "1:16.7",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 39.7,
    "popularity": null
   },
   {
@@ -209,8 +209,8 @@
    "name": "コンサントレ",
    "time": "1:16.9",
    "margin": "１ １／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 40.5,
    "popularity": null
   },
   {
@@ -220,8 +220,8 @@
    "name": "ロンフォン",
    "time": "1:17.1",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 39.9,
    "popularity": null
   },
   {
@@ -231,8 +231,8 @@
    "name": "セントリアン",
    "time": "1:17.3",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 41.1,
    "popularity": null
   }
  ]
