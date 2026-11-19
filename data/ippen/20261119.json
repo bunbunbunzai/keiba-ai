@@ -1,6 +1,6 @@
 {
  "date": "20261119",
- "updated": "2026-11-19 11:56",
+ "updated": "2026-11-19 12:02",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -314,8 +314,22 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": 27.9,
-   "popularity": 9
+   "odds": 29.9,
+   "popularity": 7
+  },
+  {
+   "race_id": "202611192726180505",
+   "results_key": "202611192726180505",
+   "venue": "園田",
+   "race_no": 5,
+   "post_time": "12:40",
+   "number": 3,
+   "name": "ハイライフ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 3.6,
+   "popularity": 2
   },
   {
    "race_id": "202611192726180505",
@@ -336,8 +350,8 @@
     "field": 10,
     "popularity": 3
    },
-   "odds": 27.9,
-   "popularity": 9
+   "odds": 40.9,
+   "popularity": 10
   },
   {
    "race_id": "202611192726180505",
@@ -357,8 +371,8 @@
     "field": 11,
     "popularity": 11
    },
-   "odds": 20.6,
-   "popularity": 6
+   "odds": 32.4,
+   "popularity": 8
   },
   {
    "race_id": "202611192726180505",
@@ -378,8 +392,8 @@
     "field": 12,
     "popularity": 6
    },
-   "odds": 9.5,
-   "popularity": 5
+   "odds": 6.5,
+   "popularity": 4
   },
   {
    "race_id": "202611192320130206",
