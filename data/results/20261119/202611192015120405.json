@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261119",
  "race_id": "202611192015120405",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,116 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 9,
+   "name": "モナミ",
+   "time": "1:42.9",
+   "margin": "",
+   "pos4": 3,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 7,
+   "name": "ロイヤルカラット",
+   "time": "1:43.3",
+   "margin": "２",
+   "pos4": 1,
+   "last3f": 40.3,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "ブルーキャット",
+   "time": "1:43.4",
+   "margin": "１／２",
+   "pos4": 1,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 4,
+   "name": "プレイバック",
+   "time": "1:44.0",
+   "margin": "３",
+   "pos4": 4,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 8,
+   "name": "クルーミーズクライ",
+   "time": "1:44.2",
+   "margin": "１ １／４",
+   "pos4": 5,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 5,
+   "name": "ラインシルバー",
+   "time": "1:45.4",
+   "margin": "６",
+   "pos4": 8,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 10,
+   "name": "メイショウカジボウ",
+   "time": "1:45.8",
+   "margin": "２",
+   "pos4": 6,
+   "last3f": 42.2,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "ボンヴィアッジョ",
+   "time": "1:46.0",
+   "margin": "１ １／４",
+   "pos4": 7,
+   "last3f": 41.8,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "レンソイス",
+   "time": "1:46.9",
+   "margin": "４",
+   "pos4": 8,
+   "last3f": 41.6,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 6,
+   "number": 6,
+   "name": "ディサイドオンミー",
+   "time": "1:49.0",
+   "margin": "１０",
+   "pos4": 10,
+   "last3f": 43.1,
+   "popularity": null
+  }
+ ]
 }
