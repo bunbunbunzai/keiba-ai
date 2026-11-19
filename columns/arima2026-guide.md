@@ -53,6 +53,7 @@ hero: g-turf-winter
 - [投票する馬を選ぶ②：3歳の有力馬](/column/arima2026-vote-3sai/)
 - [投票する馬を選ぶ③：昨年の投票上位20頭の今年](/column/arima2026-vote-kyonen/)
 - [投票する馬を選ぶ④：中山の重賞で成績の良い馬](/column/arima2026-vote-nakayama/)
+- JRAの一覧に出てこない馬：[POG人気馬](/column/arima2026-oshi-pog/)・[名牝の子](/column/arima2026-oshi-meihin/)・[名馬の弟・妹](/column/arima2026-oshi-kyodai/)・[白毛](/column/arima2026-oshi-shiroge/)・[名前が面白い馬](/column/arima2026-oshi-namae/)・[障害の名馬](/column/arima2026-oshi-shogai/)
 - [過去20年の結果一覧（2006〜2025年）](/column/arima-kinen-kako-kekka/)
 - [人気と枠順の傾向（過去20年）](/column/arima-kinen-ninki-waku/)
 - [年齢・性別・騎手の傾向（過去20年）](/column/arima-kinen-nenrei-kishu/)

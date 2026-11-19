@@ -143,7 +143,7 @@ def gdata_notice(esc, slug: str) -> str:
     arts = sorted(_GDATA.get(slug) or [], key=lambda c: int(c.get("order") or 0))
     if not arts:
         return ""
-    label = {"kako-kekka": "過去の結果一覧", "ninki-waku": "人気・枠順・脚質の傾向", "nenrei-kishu": "年齢・性別・騎手・厩舎の傾向", "jinx": "ジンクス（今年も続くか）"}
+    label = {"kako-kekka": "過去の結果一覧", "ninki-waku": "人気・枠順・脚質の傾向", "nenrei-kishu": "年齢・性別・騎手・厩舎の傾向", "jinx": "ジンクス（今年も続くか）", "zenso": "前走別の成績（ローテーション）"}
     return ("<section class='card'><h2>過去20年のデータ</h2><ul>"
             + "".join(f"<li><a href='/column/{c['slug']}/'>{esc(label.get(c.get('kind'), c.get('title', '')))}</a></li>" for c in arts)
             + "</ul><p class='meta'>JRA公式の全着順から集計した記事。</p></section>")

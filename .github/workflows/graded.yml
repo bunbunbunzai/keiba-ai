@@ -1,7 +1,8 @@
 name: graded (重賞の過去成績を集めてデータ記事を作る)
 
 # 毎日1回：JRAの重賞一覧から過去の成績を集め（集め終えた年は読まない）、
-# 2週間以内に行われる重賞の「過去10年データ記事」を作る。記事は集計だけで作り、AIは呼ばない。
+# 5週間以内に行われる重賞の「過去20年データ記事」と、その年の重賞の振り返り記事を作る。記事は集計だけで作り、AIは呼ばない。
+# 記事は検索に載るまで時間がかかるので、レースの5週間前には出しておく（2026-11-20 に16日前から変更）。
 on:
   schedule:
     - cron: "23 17 * * *"   # JST 2:23
@@ -22,7 +23,7 @@ on:
       days:
         description: "何日先までの重賞の記事を作るか"
         required: false
-        default: "16"
+        default: "35"
 
 permissions:
   contents: write
@@ -47,15 +48,15 @@ jobs:
         env:
           MODE: ${{ inputs.mode || 'all' }}
           MINUTES: ${{ inputs.minutes || '200' }}
-          DAYS: ${{ inputs.days || '16' }}
+          DAYS: ${{ inputs.days || '35' }}
           URLS: ${{ inputs.urls }}
         run: |
           case "$MODE" in
             probe)  python -u graded_hist.py --probe $URLS ;;
             sample) python -u graded_hist.py --years 2 --sample ;;
             hist)   python -u graded_hist.py --max-minutes "$MINUTES" ;;
-            cols)   python -u graded_cols.py --days "$DAYS" ;;
-            *)      python -u graded_hist.py --max-minutes "$MINUTES"; python -u graded_cols.py --days "$DAYS" ;;
+            cols)   python -u graded_cols.py --days "$DAYS"; python -u year_cols.py; python -u records_cols.py ;;
+            *)      python -u graded_hist.py --max-minutes "$MINUTES"; python -u graded_cols.py --days "$DAYS"; python -u year_cols.py; python -u records_cols.py ;;
           esac
       - name: 保存
         run: |

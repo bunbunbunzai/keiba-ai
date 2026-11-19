@@ -382,6 +382,8 @@ FEATURE_SERIES = [
     ("jc2026", "特集：ジャパンカップ2026", "11月29日（日）東京芝2400mのジャパンカップに向けて、過去10年の全着順（JRA公式の成績）から人気・枠・年齢・前走・騎手の傾向と、今年の有力馬をまとめている。"),
     ("jcd2026", "特集：チャンピオンズカップ2026", "12月6日（日）中京ダート1800m。過去10年の全着順から、人気・枠・年齢・騎手の傾向と、JBC・みやこSなど前哨戦の結果をまとめている。"),
     ("arima2026", "特集：有馬記念2026", "12月27日（日）中山芝2500m。ファン投票の日程と過去の1位馬の成績、過去の全着順から見た人気・枠・年齢・騎手の傾向をまとめている。"),
+    ("year2026", "特集：2026年の重賞を振り返る", "2026年のJRAの重賞の結果を、G1の全結果・高配当・騎手・調教師・人気の傾向などに分けてJRA公式の成績から集計している。レースが終わるたびに自動で更新する。"),
+    ("g1kiroku", "G1の記録（2006年以降）", "JRAの平地のG1を、2006年以降の全着順（JRA公式の成績）から集計した記録集。荒れるG1・堅いG1、高配当、騎手・調教師のランキング、連覇、年齢、牝馬の記録。"),
     ("jbc2026", "特集：JBC2026（金沢・門別）", "11月3日に行われたJBC4競走の結果と、このサイトのAI予想の振り返り。"),
 ]
 FEATURE_IDS = tuple(sid for sid, _, _ in FEATURE_SERIES)
@@ -685,7 +687,7 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
             d = arts[0].get("race_date", "")
             when = f"{int(d[4:6])}月{int(d[6:8])}日" if len(d) == 8 else ""
             blocks += (f"<li><b>{esc(arts[0].get('race_name', ''))}</b>" + (f"（{when}）" if when else "") + "："
-                       + "・".join(f"<a href='/column/{o['slug']}/'>{esc({'kako-kekka': '過去の結果', 'ninki-waku': '人気・枠順・脚質', 'nenrei-kishu': '年齢・騎手・厩舎', 'jinx': 'ジンクス'}.get(o.get('kind'), o.get('title', '')))}</a>" for o in arts) + "</li>")
+                       + "・".join(f"<a href='/column/{o['slug']}/'>{esc({'kako-kekka': '過去の結果', 'ninki-waku': '人気・枠順・脚質', 'nenrei-kishu': '年齢・騎手・厩舎', 'jinx': 'ジンクス', 'zenso': '前走別'}.get(o.get('kind'), o.get('title', '')))}</a>" for o in arts) + "</li>")
         gdata_items = ("<h2 id='gdata'>重賞の過去20年データ（レースごと）</h2><p class='meta'>JRAの重賞ごとに、過去20年の全着順（JRA公式の成績）から人気・枠順・脚質・年齢・騎手の傾向と、数字の偏り（ジンクス）を集計している。レースの約2週間前に自動で公開する。</p>"
                        f"<ul>{blocks}</ul>" + (f"<p class='meta'>日付の近い{min(20, len(races))}レースを表示。</p>" if len(races) > 20 else ""))
         jumps.append(("gdata", "重賞の過去20年データ"))

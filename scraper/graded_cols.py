@@ -108,6 +108,42 @@ def keyed(all_: dict[int, list[dict]]) -> dict[str, dict[int, dict]]:
     return out
 
 
+# ---------- 前走（直前に走ったJRAの重賞）の索引 ----------
+PRIOR: dict[str, list[tuple]] = {}
+PRIOR_DAYS = 200  # これより前の重賞は「前走」とみなさない（休み明けや重賞以外のレースをはさんだ可能性が高い）
+
+
+def build_prior(K: dict[str, dict[int, dict]]) -> None:
+    """{馬名: [(日付, slug, 略称, 格, 着順, 人気), ...]}。同じ名前の別の馬を混ぜないよう、使うときは日付の近さで絞る。"""
+    PRIOR.clear()
+    for slug, ys in K.items():
+        known = {y: r["grade"] for y, r in ys.items() if r.get("grade")}
+        for y, r in ys.items():
+            g = r.get("grade") or ""
+            if not g and known:  # 2007〜2015年は格の記録が欠けているので、いちばん近い年の格で補う
+                g = known[min(known, key=lambda k: (abs(k - y), k))]
+            if g and r.get("surface") == "障" and not g.startswith("J"):  # 2006年の障害は「G1」などと書かれている
+                g = "J・" + g
+            for x in r.get("rows") or []:
+                if x.get("name"):
+                    PRIOR.setdefault(x["name"], []).append((r["date"], slug, r.get("abbr", ""), g, x.get("fin"), x.get("pop")))
+    for v in PRIOR.values():
+        v.sort()
+
+
+def prior_of(name: str, date: str):
+    """date より前で、いちばん近いJRAの重賞の出走（PRIOR_DAYS 日以内）。無ければ None。"""
+    d0 = datetime.strptime(date, "%Y%m%d")
+    best = None
+    for t in PRIOR.get(name, []):
+        if t[0] >= date:
+            break
+        best = t
+    if best and (d0 - datetime.strptime(best[0], "%Y%m%d")).days <= PRIOR_DAYS:
+        return best
+    return None
+
+
 # ---------- 集計 ----------
 def runners(r: dict) -> list[dict]:
     return [x for x in r.get("rows") or [] if x.get("pop")]
@@ -276,8 +312,9 @@ def this_year(rc: Race) -> str:
 
 
 def links(rc: Race, me: str) -> str:
-    items = [("kako-kekka", "過去の結果一覧"), ("ninki-waku", "人気・枠順・脚質の傾向"), ("nenrei-kishu", "年齢・性別・騎手・厩舎の傾向"), ("jinx", "ジンクス")]
-    out = [f"- [{rc.name}の{t}](/column/{rc.slug}-{k}/)" for k, t in items if k != me]
+    items = [("kako-kekka", "過去の結果一覧"), ("ninki-waku", "人気・枠順・脚質の傾向"), ("nenrei-kishu", "年齢・性別・騎手・厩舎の傾向"), ("jinx", "ジンクス"),
+             ("zenso", "前走別の成績（ローテーション）")]
+    out = [f"- [{rc.name}の{t}](/column/{rc.slug}-{k}/)" for k, t in items if k != me and (k != "zenso" or zenso_ok(rc))]
     if (DATA_DIR / "race_guides" / f"{rc.slug}.json").exists():
         out.append(f"- [{rc.name}のレースガイドとAI予想](/graded/{rc.slug}/)")
     return "\n".join(out)
@@ -905,7 +942,103 @@ def jinx(rc: Race) -> str | None:
     return front(rc, "jinx", 4, title, desc, lead, "col-ninki-shoritsu" if False else None) + body
 
 
-KINDS = {"kako-kekka": kako10, "ninki-waku": ninki, "nenrei-kishu": nenrei, "jinx": jinx}
+# ---------- 記事5：前走別の成績（ローテーション） ----------
+def prior_name(slug: str, abbr: str) -> str:
+    return NAME_BY_SLUG.get(slug) or expand(abbr)
+
+
+def zenso_rows(rc: Race) -> list[dict]:
+    out = []
+    for x in rc.R:
+        t = prior_of(x["name"], rc.past[x["year"]]["date"])
+        out.append(dict(x, prior=t))
+    return out
+
+
+def zenso_ok(rc: Race) -> bool:
+    """前走が重賞の馬が4割以上いて、5頭以上の組が3つ以上あるレースだけ作る（2歳戦などは重賞以外から来る馬が多く、分けても意味が薄い）。"""
+    if not PRIOR:
+        return False
+    v = zenso_rows(rc)
+    has = [x for x in v if x["prior"]]
+    if not v or len(has) / len(v) < 0.4:
+        return False
+    c = Counter(x["prior"][1] for x in has)
+    return sum(1 for k, n in c.items() if n >= 5) >= 3
+
+
+def gap_b(days: int) -> str:
+    w = days // 7 - 1  # 「中◯週」：前走の翌週から数えた週の数
+    return "中2週以内" if w <= 2 else "中3〜5週" if w <= 5 else "中6〜9週" if w <= 9 else "中10週以上"
+
+
+def zenso(rc: Race) -> str | None:
+    if not zenso_ok(rc):
+        return None
+    v = zenso_rows(rc)
+    has = [x for x in v if x["prior"]]
+    no = [x for x in v if not x["prior"]]
+    by = defaultdict(list)
+    for x in has:
+        by[x["prior"][1]].append(x)
+    groups = sorted(by.items(), key=lambda kv: (-sum(fin(x) == 1 for x in kv[1]), -sum(fin(x) <= 3 for x in kv[1]), -len(kv[1])))
+    main_g = [(s_, xs) for s_, xs in groups if len(xs) >= 5][:10]
+    rest = [x for s_, xs in groups if (s_, xs) not in main_g for x in xs]
+    nm = {s_: prior_name(s_, xs[0]["prior"][2]) for s_, xs in groups}
+    wins = [x for x in v if fin(x) == 1]
+    wc = Counter(x["prior"][1] if x["prior"] else "-" for x in wins)
+    top_s, top_n = max(((k, n) for k, n in wc.items() if k != "-"), key=lambda kv: kv[1], default=("-", 0))
+    lead = (f"{rc.name}の{rc.kako}（{rc.span}）に出走した{len(v)}頭を、直前に走ったJRAの重賞（前走）で分けて集計した。"
+            + (f"勝ち馬{len(wins)}頭の前走は{nm[top_s]}が{top_n}頭で最も多い。" if top_n else "")
+            + f"前走が重賞だった馬は{len(has)}頭（{100 * len(has) / len(v):.0f}%）で、勝ち馬では{sum(1 for x in wins if x['prior'])}頭。")
+    title = (f"{rc.name}の前走別データ：勝ち馬の前走は{nm[top_s]}が最多の{top_n}頭（{rc.kako}）" if top_n
+             else f"{rc.name}の前走別データ（{rc.kako}）")
+    desc = (f"{rc.name}（{rc.grade()}）{rc.span}の出走馬を、前走のレース・着順・格・間隔で分けた成績をJRA公式の成績から集計。"
+            + "、".join(f"{nm[s_]}組は{fmt(rec(xs))}" for s_, xs in main_g[:3]) + "。")
+    t1 = "| 前走 " + THEAD + "\n".join(row(nm[s_] + "組", rec(xs)) for s_, xs in main_g)
+    if rest:
+        t1 += "\n" + row("その他の重賞", rec(rest))
+    t1 += "\n" + row("重賞以外・休み明け", rec(no))
+    best = max(main_g, key=lambda kv: (rec(kv[1])["r3"], rec(kv[1])["wr"]))
+    txt1 = (f"5頭以上が出走した前走のなかで、3着以内に入る割合が最も高いのは{nm[best[0]]}組（{rec(best[1])['r3']:.0f}%、{len(best[1])}頭）。"
+            f"前走が重賞以外だったり、{PRIOR_DAYS}日より前の重賞から休み明けで出走したりした馬は{len(no)}頭で、成績は{fmt(rec(no))}。")
+    fb = defaultdict(list)
+    for x in has:
+        f_ = x["prior"][4]
+        k = "前走1着" if f_ == 1 else "前走2〜3着" if isinstance(f_, int) and f_ <= 3 else "前走4〜5着" if isinstance(f_, int) and f_ <= 5 \
+            else "前走6〜9着" if isinstance(f_, int) and f_ <= 9 else "前走10着以下・中止など"
+        fb[k].append(x)
+    FK = ["前走1着", "前走2〜3着", "前走4〜5着", "前走6〜9着", "前走10着以下・中止など"]
+    t2 = "| 前走の着順 " + THEAD + "\n".join(row(k, rec(fb[k])) for k in FK if fb[k])
+    gb = defaultdict(list)
+    for x in has:
+        g_ = x["prior"][3] or "重賞"
+        gb["J・G" if g_.startswith("J") else g_].append(x)
+    t3 = "| 前走の格 " + THEAD + "\n".join(row(f"前走{k}", rec(gb[k])) for k in ("G1", "G2", "G3", "J・G") if gb.get(k))
+    ib = defaultdict(list)
+    for x in has:
+        ib[gap_b((datetime.strptime(rc.past[x["year"]]["date"], "%Y%m%d") - datetime.strptime(x["prior"][0], "%Y%m%d")).days)].append(x)
+    IK = ["中2週以内", "中3〜5週", "中6〜9週", "中10週以上"]
+    t4 = "| 前走からの間隔 " + THEAD + "\n".join(row(k, rec(ib[k])) for k in IK if ib[k])
+    w_t = "| 年 | 勝ち馬（人気） | 前走 | 前走の着順（人気） |\n|---|---|---|---|\n"
+    for y in rc.ys:
+        for x in [x for x in v if x["year"] == y and fin(x) == 1][:1]:
+            t = x["prior"]
+            w_t += (f"| {y} | {x['name']}（{x['pop']}） | " + (f"{nm.get(t[1]) or prior_name(t[1], t[2])} | {t[4]}着（{t[5]}番人気） |" if t else "重賞以外・休み明け | ― |") + "\n")
+    body = (f"{this_year(rc)}{rc.venue_note()}\n\n"
+            f"## 前走のレース別の成績\n\n{t1}\n\n{txt1}\n\n"
+            f"## 前走の着順別の成績\n\n前走が重賞だった{len(has)}頭を、その重賞での着順で分けた。\n\n{t2}\n\n"
+            f"## 前走の格別の成績\n\n{t3}\n\n"
+            f"## 前走からの間隔\n\n「中◯週」は、前走の翌週から数えて何週あいたか。前走が重賞だった馬だけを数えている。\n\n{t4}\n\n"
+            f"## 勝ち馬の前走（{rc.span}）\n\n{w_t}\n"
+            f"## 集計の方法\n\n- 前走は、そのレースの前に走った**JRAの重賞**（{PRIOR_DAYS}日以内）。重賞以外のレース（オープン特別・条件戦）、地方・海外のレースは分からないため、「重賞以外・休み明け」にまとめた\n"
+            f"- 同じ名前の別の馬を混ぜないよう、{PRIOR_DAYS}日より前の重賞は前走とみなしていない\n"
+            f"- 2007〜2015年の重賞は格（G1・G2・G3）の記録が欠けているため、同じレースのいちばん近い年の格で補った\n- 成績の並びは「1着-2着-3着-4着以下」\n\n{CAUTION}\n\n"
+            f"## あわせて読みたい\n\n{links(rc, 'zenso')}\n\n## 出典\n\n{rc.src()}\n")
+    return front(rc, "zenso", 5, title, desc, lead) + body
+
+
+KINDS = {"kako-kekka": kako10, "ninki-waku": ninki, "nenrei-kishu": nenrei, "jinx": jinx, "zenso": zenso}
 
 
 def front_year(p: Path) -> int | None:
@@ -930,6 +1063,7 @@ def main() -> None:
         print("今年の重賞一覧がまだ無い")
         return
     K = keyed(all_)
+    build_prior(K)
     lo, hi = now.strftime("%Y%m%d"), (now + timedelta(days=a.days)).strftime("%Y%m%d")
     n = 0
     for slug, ys in sorted(K.items(), key=lambda kv: (kv[1].get(year) or {}).get("date", "9")):
