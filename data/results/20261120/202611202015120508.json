@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261120",
  "race_id": "202611202015120508",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "タイセツレーヴ",
    "time": "1:41.6",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 38.6,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "スカイイズユアーズ",
    "time": "1:42.4",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 39.5,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "グロワールスカイ",
    "time": "1:42.5",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 39.0,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "グレン",
    "time": "1:42.5",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 39.4,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "ヴァルチャースター",
    "time": "1:42.6",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 39.3,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ワールドフォンテン",
    "time": "1:42.7",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 39.6,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "フクオトコ",
    "time": "1:42.8",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 39.2,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ニシノミチアキ",
    "time": "1:42.8",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 39.1,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "ブッシュテソーロ",
    "time": "1:42.8",
    "margin": "ハナ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 39.9,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "ボラボラフレイバー",
    "time": "1:42.9",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 12,
+   "last3f": 39.1,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "ユウユウスターリー",
    "time": "1:44.6",
    "margin": "８",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 41.3,
    "popularity": null
   },
   {
@@ -198,8 +198,8 @@
    "name": "ミノコクシュタルク",
    "time": "1:45.0",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 13,
+   "last3f": 40.6,
    "popularity": null
   },
   {
@@ -209,8 +209,8 @@
    "name": "ヴァンビー",
    "time": "1:45.4",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 42.5,
    "popularity": null
   }
  ]
