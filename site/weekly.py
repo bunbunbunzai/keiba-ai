@@ -22,7 +22,8 @@ WD = "月火水木金土日"
 JRA = ("札幌", "函館", "福島", "新潟", "東京", "中山", "中京", "京都", "阪神", "小倉")
 # 手で書いた特集（columns の series）と重賞ページの対応
 FEATURE_RACE = {"eliza2026": "queen-elizabeth-cup", "mile2026": "mile-championship", "jc2026": "japan-cup",
-                "jcd2026": "champions-cup", "arima2026": "arima-kinen"}
+                "jcd2026": "champions-cup", "arima2026": "arima-kinen", "hjf2026": "hanshin-juvenile-fillies", "afs2026": "asahi-hai-fs",
+                "daishogai2026": "nakayama-daishogai", "hopeful2026": "hopeful-stakes", "tdt2026": "tokyo-daishoten"}
 
 _B = None
 TODAY = ""

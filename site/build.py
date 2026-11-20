@@ -920,7 +920,13 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
         done = any(str(x.get("finish") or "").isdigit() for x in (p.get("_result") or {}).get("rows") or [])
         title = (f"{cn}{date[:4]}（{g}）の結果とAI予想の答え合わせ｜{SITE_NAME}" if done
                  else f"【AI予想】{cn}{date[:4]}（{g}） 全頭診断と買い目｜{SITE_NAME}")
-    desc = answer_sentence(date, p) + " 全頭の評価点・短評と買い目を掲載。"
+    # 説明文は120〜150字ほどに（Bingの指摘：短すぎる）。答え → コース・頭数・発走 → 相手の印 → 載っているもの、の順
+    _mk = p.get("marks", {})
+    _sub = "・".join(f"{m}{horse_name(p, _mk[m])}" for m in ("〇", "▲") if _mk.get(m) is not None and horse_name(p, _mk[m]))
+    _cond = race_cond(p).replace(" ", "・") + (f"・{r.get('post_time')}発走" if r.get("post_time") else "")
+    _done = any(str(x.get("finish") or "").isdigit() for x in (p.get("_result") or {}).get("rows") or [])
+    desc = (answer_sentence(date, p) + (f"{_cond}。" if _cond else "") + (f"相手は{_sub}。" if _sub else "")
+            + "全頭の評価点・短評と買い目" + ("、結果と払戻" if _done else "") + "を掲載。")
     return page(title, body, path, desc=desc, noindex=p.get("confidence") == "見送り", head_extra="".join(jsonld(x) for x in ld),
                 og_image=race_og(date, p))
 
@@ -934,8 +940,16 @@ FEATURES = [  # トップに出す特集（期間限定）：(表示する最終
      "過去10年の全着順から、人気・枠・年齢・前走・騎手の傾向と、カランダガン、ダノンデサイルなど有力馬を15本の記事でまとめた。"),
     ("20261206", "/column/champions-cup2026-guide/", "特集：チャンピオンズカップ2026（12月6日）",
      "過去10年の全着順から、人気・枠・年齢・騎手の傾向と、JBC・みやこSなど前哨戦の結果をまとめた。"),
+    ("20261213", "/column/hanshin-jf2026-guide/", "特集：阪神ジュベナイルフィリーズ2026（12月13日）",
+     "今年の2歳重賞の結果と、過去10年の人気・枠・騎手の傾向、勝ち馬の一覧、登録馬をまとめた。"),
+    ("20261220", "/column/asahi-hai-fs2026-guide/", "特集：朝日杯フューチュリティステークス2026（12月20日）",
+     "今年の2歳重賞の結果と、過去10年の人気・枠・騎手の傾向、勝ち馬の一覧、登録馬をまとめた。"),
+    ("20261226", "/column/hopeful2026-guide/", "特集：ホープフルステークス・中山大障害2026（12月26日）",
+     "2歳の中距離G1と障害のG1。今年の重賞の結果と、過去10年の傾向・勝ち馬・登録馬をまとめた。"),
     ("20261227", "/column/arima2026-guide/", "特集：有馬記念2026（12月27日）",
      "ファン投票の日程と過去の1位馬の成績、過去の全着順から見た人気・枠・年齢・騎手の傾向をまとめた。"),
+    ("20261229", "/column/tokyo-daishoten2026-guide/", "特集：東京大賞典2026（12月29日）",
+     "オメガパフュームの4連覇、2025年の地方馬の優勝など、過去10年の勝ち馬と前哨戦の結果をまとめた。"),
 ]
 FEATURE_HUB = "/column/aki-g1-2026/"  # 特集の一覧（バナーの末尾にリンクする）
 
@@ -1862,6 +1876,7 @@ def limits_page(t: dict, worst_venue: tuple[str, str] | None) -> str:
 
 
 SITE_CHANGES = [
+    ("2026-11-20", "阪神ジュベナイルフィリーズ・朝日杯フューチュリティステークス・ホープフルステークス・中山大障害・東京大賞典の特集まとめを追加した（日程・条件、今年の前哨戦の結果、過去10年の傾向と勝ち馬）。G1の特集まとめには、JRAが発表した登録馬の一覧が自動で載るようにした。レースのページなどの説明文を、検索結果で中身が伝わる長さにした。"),
     ("2026-11-20", "G1の出走予定馬と重賞に登録した馬は、AIがまだ評価していなくても馬のページを作るようにした（JRAの競走馬情報から、これまでの成績・毛色・馬名の意味・セリ・生産牧場・獲得賞金・JRAの重賞の勝ちを載せる）。今ある馬のページにも同じ情報を足した。重賞ページの題名に、レースの年と日付を入れた。レースのあとの2週間は、結果とAI予想の答え合わせを先に出す。"),
     ("2026-11-20", "有馬記念ファン投票で、JRAの投票サイトの一覧に出てこない馬を紹介する記事を6本追加（POGで人気だった馬、名牝の子、名馬の弟・妹、白毛の馬、名前が面白い馬、障害の名馬）。重賞の「前走別の成績」、2026年の重賞の振り返り（G1全結果・高配当・騎手・調教師など9本）、G1の記録（2006年以降の7本）、JRAを走った3歳以上の全頭の競走馬情報から数えた「競走馬のデータ」（毛色の割合、馬名の付け方と冠名、セリ出身馬の成績の3本）を追加した。重賞の過去データ記事は、レースの5週間前に出すようにした。"),
     ("2026-11-20", "G1の出走予定馬（JRAが発表する登録馬とプレレーティング）を、重賞ページに直近の出走・今年の重賞成績つきで載せるようにした。毎日昼に確かめ、発表があれば自動で更新する。登録馬に載った馬のページには次走予定を出す。"),
@@ -2397,7 +2412,9 @@ def build() -> None:
                                 f"<p class='crumb'><a href='/'>トップ</a> › {fmt_date(d)}</p><h1>{fmt_date(d)}のAI予想</h1>"
                                 f"<p class='answer'>{fmt_date(d)}は{len({venue_of(p) for p in ps})}場・{len(ps)}レースを予想。当日回収率は{roi_txt(st, rt)}。</p>"
                                 + day_list(d, ps), day_path(d),
-                                desc=f"{fmt_date(d)}の競馬（JRA・地方）全{len(ps)}レースのAI予想と結果。当日回収率{roi_txt(st, rt)}。", og_image=dog))
+                                desc=(f"{fmt_date(d)}の競馬（JRA・地方）全{len(ps)}レースのAI予想と結果。当日回収率{roi_txt(st, rt)}。"
+                                      f"開催は{'・'.join(dict.fromkeys(VENUE_NAME.get(venue_of(p), venue_of(p)) for p in ps))}。"
+                                      "レースごとの◎・自信度・買い目と、的中・払戻を1ページの一覧で見られる。"), og_image=dog))
         lastmod[day_path(d)] = f"{d[:4]}-{d[4:6]}-{d[6:8]}"
     # トップ：今日（無ければ最新日）を中心に
     led = ledger()
@@ -2426,7 +2443,8 @@ def build() -> None:
                {"@context": "https://schema.org", "@type": "WebSite", "name": SITE_NAME, "url": BASE_URL + "/",
                 "potentialAction": {"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": BASE_URL + "/search/?q={search_term_string}"}, "query-input": "required name=search_term_string"}}]
     write("/", page(f"{SITE_NAME}｜今日の競馬AI予想（JRA・地方 全レース）と回収率", body, "/",
-                    desc=f"AIが中央競馬・地方競馬の全レースを毎日予想。今日の予想と、外れも含めた全成績（累計回収率{t['roi']}）を公開。",
+                    desc=(f"AIが中央競馬・地方競馬の全レースを毎日予想。今日の予想と、外れも含めた全成績（累計回収率{t['roi']}）を公開。"
+                          "重賞の全頭診断と過去20年のデータ、G1の特集、競馬場ごとの傾向、初心者向けの用語集とコラムもある。"),
                     head_extra="".join(jsonld(x) for x in site_ld),
                     og_image=f"/og/{main_d}/day.jpg" if main_d and (OUT / "og" / main_d / "day.jpg").exists() else "/og/default.jpg"))
     write("/results/", results_page(led, venue_of_race))
@@ -2507,7 +2525,7 @@ def build() -> None:
     write("/about/", page(f"予想の方法とよくある質問 | {SITE_NAME}", ABOUT, "/about/", head_extra=jsonld(FAQ_LD),
                           desc="競馬全頭ログの予想の作り方（評価の5軸・印・自信度・買い目）と、回収率の計算方法。"))
     write("/operator/", page(f"運営者情報 | {SITE_NAME}", OPERATOR, "/operator/", desc=f"{SITE_NAME}の運営者・連絡先・SNS・運営の支援についての情報。"))
-    write("/privacy/", page(f"プライバシーポリシー | {SITE_NAME}", PRIVACY, "/privacy/", desc=f"{SITE_NAME}のプライバシーポリシー。アクセス解析・広告（Google AdSense）・アフィリエイト・お問い合わせ・全頭くんへの質問で扱う情報と、その使い方。"))
+    write("/privacy/", page(f"プライバシーポリシー | {SITE_NAME}", PRIVACY, "/privacy/", desc=f"{SITE_NAME}のプライバシーポリシー。アクセス解析・広告（Google AdSense）・アフィリエイト・お問い合わせ・全頭くんへの質問で扱う情報と、その使い方。Cookieの使い方と、アクセス解析やパーソナライズ広告を止める方法も載せている。"))
     today_iso = now.strftime("%Y-%m-%d")
     column.HORSE_NAMES = LINK_HORSES
     lastmod.update(column.build(write, page, jsonld, BASE_URL, SITE_NAME, STATS_FROM, today_iso))

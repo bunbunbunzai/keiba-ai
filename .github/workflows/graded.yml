@@ -55,8 +55,8 @@ jobs:
             probe)  python -u graded_hist.py --probe $URLS ;;
             sample) python -u graded_hist.py --years 2 --sample ;;
             hist)   python -u graded_hist.py --max-minutes "$MINUTES" ;;
-            cols)   python -u graded_cols.py --days "$DAYS"; python -u year_cols.py; python -u records_cols.py ;;
-            *)      python -u graded_hist.py --max-minutes "$MINUTES"; python -u graded_cols.py --days "$DAYS"; python -u year_cols.py; python -u records_cols.py ;;
+            cols)   python -u graded_cols.py --days "$DAYS"; python -u year_cols.py; python -u records_cols.py; python -u g1_hub_cols.py ;;
+            *)      python -u graded_hist.py --max-minutes "$MINUTES"; python -u graded_cols.py --days "$DAYS"; python -u year_cols.py; python -u records_cols.py; python -u g1_hub_cols.py ;;
           esac
       - name: 保存
         run: |
