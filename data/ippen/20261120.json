@@ -1,6 +1,6 @@
 {
  "date": "20261120",
- "updated": "2026-11-20 11:24",
+ "updated": "2026-11-20 11:39",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -350,7 +350,7 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": 36.2,
+   "odds": 30.7,
    "popularity": 10
   },
   {
@@ -364,7 +364,7 @@
    "types": [
     "aitop"
    ],
-   "odds": 13.6,
+   "odds": 17.0,
    "popularity": 7
   },
   {
@@ -385,29 +385,8 @@
     "field": 16,
     "popularity": 9
    },
-   "odds": 12.0,
-   "popularity": 5
-  },
-  {
-   "race_id": "202611202726180605",
-   "results_key": "202611202726180605",
-   "venue": "園田",
-   "race_no": 5,
-   "post_time": "12:40",
-   "number": 7,
-   "name": "エラガバリウム",
-   "types": [
-    "letdown"
-   ],
-   "gap_days": 75,
-   "last": {
-    "date": "2026-09-06",
-    "finish": 13,
-    "field": 18,
-    "popularity": 3
-   },
-   "odds": 18.1,
-   "popularity": 8
+   "odds": 10.9,
+   "popularity": 6
   },
   {
    "race_id": "202611202726180606",
