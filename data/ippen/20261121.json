@@ -1,6 +1,6 @@
 {
  "date": "20261121",
- "updated": "2026-11-21 07:37",
+ "updated": "2026-11-21 08:17",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -70,6 +70,20 @@
    },
    "odds": 107.9,
    "popularity": 15
+  },
+  {
+   "race_id": "jra_20261121_福島_01",
+   "results_key": "jra_03_01",
+   "venue": "福島",
+   "race_no": 1,
+   "post_time": "09:45",
+   "number": 7,
+   "name": "ピュアティアラ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 14.3,
+   "popularity": 6
   },
   {
    "race_id": "jra_20261121_京都_01",
