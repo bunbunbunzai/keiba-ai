@@ -1,0 +1,173 @@
+{
+ "source": "rakuten",
+ "date": "20261120",
+ "race_id": "202611202320130312",
+ "tries": 1,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "2",
+    "yen": 200
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "2-8",
+    "yen": 1900
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "2",
+    "yen": 110
+   },
+   {
+    "combo": "8",
+    "yen": 190
+   },
+   {
+    "combo": "9",
+    "yen": 130
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-8",
+    "yen": 420
+   },
+   {
+    "combo": "2-9",
+    "yen": 140
+   },
+   {
+    "combo": "8-9",
+    "yen": 420
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-8",
+    "yen": 220
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-8-9",
+    "yen": 890
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "2-8-9",
+    "yen": 4490
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-8",
+    "yen": 810
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 2,
+   "number": 2,
+   "name": "カツノサンキュウ",
+   "time": "1:31.2",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 8,
+   "name": "マウンテンピオニー",
+   "time": "1:31.5",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 9,
+   "name": "アメリータ",
+   "time": "1:31.9",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 4,
+   "name": "リックノワール",
+   "time": "1:32.1",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 3,
+   "number": 3,
+   "name": "ギンノアラナミ",
+   "time": "1:32.3",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 1,
+   "number": 1,
+   "name": "アースリーブラ",
+   "time": "1:32.5",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 7,
+   "name": "マリエ",
+   "time": "1:33.0",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 5,
+   "number": 5,
+   "name": "ミラクルム",
+   "time": "1:33.2",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 6,
+   "number": 6,
+   "name": "ノアブラック",
+   "time": "1:34.7",
+   "margin": "７",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
+}
