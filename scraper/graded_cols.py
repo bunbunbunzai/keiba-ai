@@ -1,7 +1,7 @@
 """重賞の「過去20年データ記事」を自動で作る（集計だけで作り、AIは呼ばない）。
 
 元データは graded_hist.py が集めた data/graded_hist/<年>.json（JRA公式の全着順・払戻）。
-今日から --days 日以内に行われる JRA の重賞について、レースごとに4本の記事を columns/ に書く：
+今日から --days 日以内に行われる JRA のG1（J・G1を含む）について、レースごとに4本の記事を columns/ に書く（2026-11-20からG1だけ。G2・G3は --slug で指定したときだけ）：
 
   <slug>-kako-kekka.md    過去20年の結果一覧（勝ち馬・2〜3着・配当・共通点）
   <slug>-ninki-waku.md    人気・枠順・脚質の傾向
@@ -1074,6 +1074,11 @@ def main() -> None:
             if slug not in a.slug:
                 continue
         elif not (lo <= cur["date"] <= hi):
+            continue
+        elif cur.get("grade") not in ("G1", "J・G1"):
+            # 2026-11-20〜：自動で書くのはG1だけ。G2・G3まで1レース4〜5本ずつ書くと数が多くなりすぎ、
+            # Googleにサイト全体を「量産された記事」と見られやすいため（--slug で名前を指定したときは書く）
+            print("skip（G1以外は自動で書かない）:", slug, cur.get("grade"), flush=True)
             continue
         if slug.startswith("abbr:"):
             print("skip（重賞ページの名前が決まらない）:", cur["abbr"], cur["date"], flush=True)

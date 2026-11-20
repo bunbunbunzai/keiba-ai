@@ -726,6 +726,24 @@ def ask_context(date: str, p: dict) -> str:
 
 
 # ---------------- レースページ ----------------
+JRA_VENUES = ("札幌", "函館", "福島", "新潟", "東京", "中山", "中京", "京都", "阪神", "小倉")
+HIDE_LOCAL_AFTER = 3  # 地方の重賞以外のレース予想は、レースの日からこの日数たったらGoogleに載せない
+
+
+def race_hidden(date: str, p: dict) -> bool:
+    """Googleに載せないレース予想のページ（2026-11-20〜）：地方の重賞以外のレースで、レースの日から3日たったもの。
+    地方の毎日のレースは1日に100前後あり、レースが終わると検索されることがほとんど無い（11月上旬でも検索結果に出たのは1日12回ほど）。
+    同じ形のページが増え続けると、Googleにサイト全体を「量産されたページ」と見られやすいので、終わったものから外す。
+    ページ自体（成績の記録）とサイト内のリンクは残す。中央のレースと重賞は今までどおり載せる。"""
+    if venue_of(p) in JRA_VENUES or str(p.get("race_id", "")).startswith("jra"):
+        return False
+    r = p.get("_race") or {}
+    if extra.grade_of(r, p.get("race_name") or r.get("race_name") or r.get("title_text") or ""):
+        return False
+    lim = (datetime.strptime(TODAY, "%Y%m%d") - timedelta(days=HIDE_LOCAL_AFTER)).strftime("%Y%m%d") if TODAY else ""
+    return bool(lim) and date <= lim
+
+
 def race_page(date: str, p: dict, prev_next: tuple) -> str:
     r = p["_race"]
     mk = mark_map(p)
@@ -927,8 +945,8 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
     _done = any(str(x.get("finish") or "").isdigit() for x in (p.get("_result") or {}).get("rows") or [])
     desc = (answer_sentence(date, p) + (f"{_cond}。" if _cond else "") + (f"相手は{_sub}。" if _sub else "")
             + "全頭の評価点・短評と買い目" + ("、結果と払戻" if _done else "") + "を掲載。")
-    return page(title, body, path, desc=desc, noindex=p.get("confidence") == "見送り", head_extra="".join(jsonld(x) for x in ld),
-                og_image=race_og(date, p))
+    return page(title, body, path, desc=desc, noindex=p.get("confidence") == "見送り" or race_hidden(date, p),
+                head_extra="".join(jsonld(x) for x in ld), og_image=race_og(date, p))
 
 
 FEATURES = [  # トップに出す特集（期間限定）：(表示する最終日, リンク, 見出し, 説明)。日付の近い順に並べ、最初に当てはまる1つを出す
@@ -2397,7 +2415,7 @@ def build() -> None:
             path = race_path(d, p)
             write(path, race_page(d, p, pn))
             write(f"/races/{d}/{p['race_id']}.html", redirect_page(path))
-            if p.get("confidence") != "見送り":
+            if p.get("confidence") != "見送り" and not race_hidden(d, p):
                 lastmod[path] = f"{d[:4]}-{d[4:6]}-{d[6:8]}"
         st, rt = day_stats(ps)
         day_rows.append((d, len(ps), roi_txt(st, rt)))
@@ -2613,7 +2631,8 @@ def build() -> None:
         f"- [買い方別の回収率]({BASE_URL}/strategy/)\n- [重賞回顧]({BASE_URL}/review/)\n- [馬別のAI評価履歴]({BASE_URL}/horse/)\n- [予想の方法]({BASE_URL}/about/)\n" + (f"- [初心者向けコラム]({BASE_URL}/column/)：馬券の種類・回収率・人気と勝率などを実データで解説\n" if HAS_COLUMN else "") + f"- [全予想の記録CSV]({REPO}/blob/main/results_ledger.csv)\n"
         + _more, encoding="utf-8")
     fixed = {"/": today_iso, "/results/": today_iso, "/strategy/": today_iso, "/ippen/": today_iso, "/about/": None, "/contact/": None, "/glossary/": None, "/limits/": today_iso, "/changelog/": today_iso, "/operator/": None, "/privacy/": None}
-    sm = "".join(f"<url><loc>{BASE_URL}{u}</loc>{f'<lastmod>{m}</lastmod>' if m else ''}</url>"
+    # 更新日は今日より先にしない（前の日に予想を出すレースや、その馬・コースのページはレースの日付が入り、未来の日付になっていた）
+    sm = "".join(f"<url><loc>{BASE_URL}{u}</loc>{f'<lastmod>{min(m, today_iso)}</lastmod>' if m else ''}</url>"
                  for u, m in list(fixed.items()) + sorted(lastmod.items(), reverse=True))
     (OUT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + sm + "</urlset>\n", encoding="utf-8")
     print(f"built {len(dates)} days into {OUT}")

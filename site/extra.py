@@ -526,8 +526,9 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
                 f"<div class='kpis'><div><b>{len(items)}</b><span>◎の騎乗</span></div><div><b>{pct(win, len(items))}</b><span>勝率</span></div>"
                 f"<div><b>{pct(top3, len(items))}</b><span>3着内率</span></div></div>"
                 f"<section class='card'><h2>◎で騎乗した最近のレース</h2><ul class='races'>{lis}</ul></section>")
-        write(path, page(f"{name}騎手 AI予想◎の成績（勝率・複勝率）｜{B.SITE_NAME}", body, path, desc=lead[:120]))
-        lastmod[path] = iso(max(d for d, *_ in items))
+        # 騎手ごとのページは中身が少なく（本文の中央値は約600字）、検索でもほとんど出ていなかったので、Googleには載せない（2026-11-20〜）。
+        # 一覧の /jockey/ は載せたまま
+        write(path, page(f"{name}騎手 AI予想◎の成績（勝率・複勝率）｜{B.SITE_NAME}", body, path, desc=lead[:120], noindex=True))
         jlist.append((name, path, len(items), pct(win, len(items)), pct(top3, len(items))))
     jlist.sort(key=lambda x: -x[2])
     write("/jockey/", page(f"騎手別 AI予想◎の成績｜{B.SITE_NAME}",

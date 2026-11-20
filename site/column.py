@@ -494,6 +494,21 @@ def subst(s: str, v: dict) -> str:
     return re.sub(r"\{\{([^{}\n]+?)\}\}", lambda m: v.get(m.group(1).strip(), m.group(0)), s)
 
 
+def _hidden_gdata(c: dict) -> bool:
+    """Googleに載せない重賞データ記事（2026-11-20〜）：自動で作った重賞のデータ記事（series: gdata）のうち、G1（J・G1を含む）以外のレースの分。
+    G2・G3まで1レース4〜5本ずつ自動で書いた記事が5日で86本に増え、Googleにサイト全体を量産と見られやすいため。
+    ページとサイト内のリンクは残し、noindex にしてサイトマップから外す。レースの格は data/graded_hist（weekly._K）から引く。"""
+    if c.get("series") != "gdata" or not c.get("race"):
+        return False
+    import weekly  # noqa: PLC0415
+    ys = weekly._K.get(c["race"]) or {}
+    if not ys:  # 重賞の一覧が読めないときは、隠さない（間違って全部を外さないように）
+        return False
+    y = int(re.sub(r"\D", "", str(c.get("year") or c.get("race_date") or ""))[:4] or 0)
+    g = (ys.get(y) or {}).get("grade") or next((r.get("grade") for _, r in sorted(ys.items(), reverse=True) if r.get("grade")), "")
+    return g not in ("G1", "J・G1")
+
+
 def columns() -> list[dict]:
     return sorted((parse(f) for f in COLDIR.glob("*.md")), key=lambda c: (c["order"], c["slug"]))
 
@@ -665,9 +680,10 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
             html_ = html_.replace(
                 "<p class='meta'>公開", f"<picture>{src}<img class='hero' src='/assets/{hero}.jpg' alt='' width='1200' height='800' fetchpriority='high'></picture><p class='meta'>公開", 1)
             ld["image"] = base_url + og_img
-        write(path, page(f"{title} | {site_name}", html_, path, desc=desc, noindex=c["draft"],
+        hide = c["draft"] or _hidden_gdata(c)
+        write(path, page(f"{title} | {site_name}", html_, path, desc=desc, noindex=hide,
                          head_extra=jsonld(ld) + jsonld(crumb), og_image=og_img))
-        if not c["draft"]:
+        if not hide:
             lastmod[path] = mod_iso
     def clip(lis: list, n: int = 6) -> str:
         """一覧が長くなりすぎないよう、最初の n 本だけ見せて残りは畳む（スマホで1ページが長すぎたため）。"""

@@ -267,9 +267,14 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
             title = head + ("次走・" if nxt or ent else "") + ("馬名の意味とAI評価" if meaning else ("AI評価" if nxt or ent else "近走とAI評価"))
         else:
             title = head + ("次走と馬名の意味" if meaning else "次走と血統")
-        write(path, page(f"{title}｜{B.SITE_NAME}", body, path, desc=lead[:120], head_extra=jsonld(ld)))
+        # Googleに載せる馬のページは、JRAの馬ページの情報がある馬か、AIが3回以上評価した馬だけ（2026-11-20〜）。
+        # 地方の下級条件の馬など、評価1〜2回だけのページが全体の8割を超え、11月のGoogleの大きな更新でサイト全体の評価が下がったため。
+        # ページ自体とサイト内のリンクは残す（見に来た人には変わらない）。条件に合わないページは noindex にしてサイトマップから外す
+        index_me = bool(info) or len(items) >= 3
+        write(path, page(f"{title}｜{B.SITE_NAME}", body, path, desc=lead[:120], head_extra=jsonld(ld), noindex=not index_me))
         last_d = latest.get("d") or _ymd(info_runs[0]["date"]) if (items or info_runs) else today
-        lastmod[path] = max(f"{last_d[:4]}-{last_d[4:6]}-{last_d[6:8]}", (info.get("fetched") or "")[:10] if not items else "")
+        if index_me:
+            lastmod[path] = max(f"{last_d[:4]}-{last_d[4:6]}-{last_d[6:8]}", (info.get("fetched") or "")[:10] if not items else "")
         index_rows.append((last_d, name, path, len(items), n_hon))
     index_rows.sort(key=lambda x: (x[0], x[3]), reverse=True)
     lis = "".join(f"<li><a href='{r[2]}'><span>{esc(r[1])}</span><span>{f'{r[3]}回評価・◎{r[4]}回' if r[3] else '重賞に登録・AI評価はこれから'}</span></a></li>"
