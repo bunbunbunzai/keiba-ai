@@ -1,6 +1,6 @@
 {
  "date": "20261120",
- "updated": "2026-11-20 12:04",
+ "updated": "2026-11-20 12:26",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -427,8 +427,8 @@
     "field": 10,
     "popularity": 10
    },
-   "odds": 32.0,
-   "popularity": 9
+   "odds": 119.2,
+   "popularity": 12
   },
   {
    "race_id": "202611202320130307",
@@ -448,8 +448,8 @@
     "field": 10,
     "popularity": 4
    },
-   "odds": 15.2,
-   "popularity": 6
+   "odds": 70.4,
+   "popularity": 10
   },
   {
    "race_id": "202611202320130307",
@@ -470,7 +470,7 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": 15.2,
+   "odds": 11.7,
    "popularity": 6
   },
   {
@@ -491,8 +491,8 @@
     "field": 9,
     "popularity": 6
    },
-   "odds": 5.0,
-   "popularity": 2
+   "odds": 17.6,
+   "popularity": 8
   },
   {
    "race_id": "202611202726180607",
@@ -512,8 +512,8 @@
     "field": 11,
     "popularity": 7
    },
-   "odds": 12.6,
-   "popularity": 5
+   "odds": 3.3,
+   "popularity": 2
   },
   {
    "race_id": "202611202726180607",
@@ -533,7 +533,7 @@
     "field": 11,
     "popularity": 9
    },
-   "odds": 31.6,
+   "odds": 77.3,
    "popularity": 7
   },
   {
@@ -554,8 +554,8 @@
     "field": 11,
     "popularity": 10
    },
-   "odds": 5.7,
-   "popularity": 4
+   "odds": 30.9,
+   "popularity": 6
   },
   {
    "race_id": "202611202726180607",
@@ -575,8 +575,8 @@
     "field": 11,
     "popularity": 11
    },
-   "odds": 3.7,
-   "popularity": 2
+   "odds": 11.8,
+   "popularity": 5
   },
   {
    "race_id": "202611202320130308",
@@ -598,6 +598,20 @@
    },
    "odds": 3.1,
    "popularity": 1
+  },
+  {
+   "race_id": "202611202320130308",
+   "results_key": "202611202320130308",
+   "venue": "笠松",
+   "race_no": 8,
+   "post_time": "14:00",
+   "number": 5,
+   "name": "サイモンカーチス",
+   "types": [
+    "aitop"
+   ],
+   "odds": 18.8,
+   "popularity": 8
   },
   {
    "race_id": "202611202320130308",
@@ -768,6 +782,20 @@
    "popularity": 5
   },
   {
+   "race_id": "202611202726180609",
+   "results_key": "202611202726180609",
+   "venue": "園田",
+   "race_no": 9,
+   "post_time": "14:45",
+   "number": 5,
+   "name": "メイショウマンゲツ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 41.6,
+   "popularity": 9
+  },
+  {
    "race_id": "202611202015120502",
    "results_key": "202611202015120502",
    "venue": "大井",
@@ -850,6 +878,20 @@
    },
    "odds": null,
    "popularity": null
+  },
+  {
+   "race_id": "202611202320130310",
+   "results_key": "202611202320130310",
+   "venue": "笠松",
+   "race_no": 10,
+   "post_time": "15:10",
+   "number": 7,
+   "name": "ヨザクラギンジ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 7.8,
+   "popularity": 3
   },
   {
    "race_id": "202611202320130310",

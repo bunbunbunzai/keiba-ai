@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261120",
  "race_id": "202611202726180604",
- "tries": 1,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,116 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 2,
+   "number": 2,
+   "name": "タマゴ",
+   "time": "1:32.7",
+   "margin": "",
+   "pos4": null,
+   "last3f": 40.5,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 10,
+   "name": "ゲンタツ",
+   "time": "1:33.5",
+   "margin": "５",
+   "pos4": null,
+   "last3f": 40.8,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 7,
+   "name": "メイショウトッド",
+   "time": "1:34.3",
+   "margin": "５",
+   "pos4": null,
+   "last3f": 41.7,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 3,
+   "name": "ブチエーコウネ",
+   "time": "1:35.4",
+   "margin": "７",
+   "pos4": null,
+   "last3f": 43.0,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 9,
+   "name": "チョウリニア",
+   "time": "1:35.8",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": 41.2,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 5,
+   "name": "ダイメイプリンス",
+   "time": "1:36.3",
+   "margin": "３",
+   "pos4": null,
+   "last3f": 42.5,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 6,
+   "name": "エルヴィオラ",
+   "time": "1:36.4",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": 43.7,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 8,
+   "name": "アルリフラ",
+   "time": "1:36.8",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": 43.1,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 4,
+   "number": 4,
+   "name": "ナツミカンチャン",
+   "time": "1:36.8",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": 42.4,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 1,
+   "number": 1,
+   "name": "ティアラアスール",
+   "time": "1:37.0",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": 43.5,
+   "popularity": null
+  }
+ ]
 }
