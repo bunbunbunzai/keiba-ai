@@ -1,0 +1,97 @@
+{
+ "date": "20261122",
+ "updated": "2026-11-21 03:16",
+ "types": {
+  "layoff": "休み明け（90日超）",
+  "rebound": "前走大敗からの巻き返し",
+  "letdown": "前走で人気を裏切った人気薄",
+  "aitop": "AIの評価点1位（◎ではない馬）"
+ },
+ "horses": [
+  {
+   "race_id": "jra_20261122_京都_11",
+   "results_key": "jra_08_11",
+   "venue": "京都",
+   "race_no": 11,
+   "post_time": "15:40",
+   "number": 2,
+   "name": "エンブロイダリー",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 189,
+   "last": {
+    "date": "2026年5月17日",
+    "finish": 1,
+    "field": 18,
+    "popularity": 1
+   },
+   "odds": 6.5,
+   "popularity": 2
+  },
+  {
+   "race_id": "jra_20261122_京都_11",
+   "results_key": "jra_08_11",
+   "venue": "京都",
+   "race_no": 11,
+   "post_time": "15:40",
+   "number": 4,
+   "name": "シックスペンス",
+   "types": [
+    "layoff",
+    "rebound"
+   ],
+   "gap_days": 98,
+   "last": {
+    "date": "2026年8月16日",
+    "finish": 10,
+    "field": 10,
+    "popularity": null
+   },
+   "odds": 29.1,
+   "popularity": 11
+  },
+  {
+   "race_id": "jra_20261122_京都_11",
+   "results_key": "jra_08_11",
+   "venue": "京都",
+   "race_no": 11,
+   "post_time": "15:40",
+   "number": 7,
+   "name": "ココナッツブラウン",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 112,
+   "last": {
+    "date": "2026年8月2日",
+    "finish": 1,
+    "field": 14,
+    "popularity": 1
+   },
+   "odds": 38.7,
+   "popularity": 12
+  },
+  {
+   "race_id": "jra_20261122_京都_11",
+   "results_key": "jra_08_11",
+   "venue": "京都",
+   "race_no": 11,
+   "post_time": "15:40",
+   "number": 11,
+   "name": "ガイアフォース",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 168,
+   "last": {
+    "date": "2026年6月7日",
+    "finish": 2,
+    "field": 17,
+    "popularity": 1
+   },
+   "odds": 8.3,
+   "popularity": 6
+  }
+ ]
+}
