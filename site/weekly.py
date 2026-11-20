@@ -285,6 +285,17 @@ def _waku_day(d: str) -> str:
     return (x - timedelta(days=(x.weekday() - 4) % 7)).strftime("%Y%m%d")
 
 
+def _waku_when(slug: str, d: str) -> str:
+    """出走馬が決まってから枠順が出るまでの「いつ」。はっきり分かるのは土日のG1（金曜の朝）と有馬記念（木曜の夕方の公開抽選）だけ。
+    ほかの重賞（前日発売の無いレース・月曜の祝日のレースなど）は日が変わるので空（「枠順の確定で決まる」とだけ書く）。"""
+    x = _dt(d)
+    if slug == "arima-kinen":
+        return f"{day_jp((x - timedelta(days=(x.weekday() - 3) % 7)).strftime('%Y%m%d'))}の夕方の公開抽選"
+    if _sched_of(slug, d).get("grade") in ("G1", "J・G1") and x.weekday() in (5, 6):
+        return f"{day_jp(_waku_day(d))}の朝"
+    return ""
+
+
 def _kg(w) -> str:
     try:
         return f"{float(w):.1f}"
@@ -334,7 +345,7 @@ def _pre(slug: str) -> dict | None:
                     + f"。{len(hs)}頭の騎手・斤量つき。AI予想は{prev}の夜までに公開。")
             return {"phase": "waku", "date": d, "head": f"{name}{y}の枠順確定・出走馬{len(hs)}頭", "desc": desc, "since": w["since"]}
         desc = (f"{day_jp(d)}に{where}で行われる{name}{y}の出走馬{len(hs)}頭が決まった。{'、'.join(top)}など、騎手・斤量つき。"
-                f"馬番と枠番は{day_jp(_waku_day(d))}ごろに決まり、AI予想は{prev}の夜までに公開。")
+                f"馬番と枠番は{_waku_when(slug, d) or '枠順の確定'}で決まり、AI予想は{prev}の夜までに公開。")
         return {"phase": "runners", "date": d, "head": f"{name}{y}の出走馬確定（{len(hs)}頭）", "desc": desc, "since": w["since"]}
     e = ENTRIES.get(slug)
     if e and e["date"] == d:
@@ -402,7 +413,7 @@ def waku_section(slug: str) -> str:
         intro = f"{esc(when)}の{esc(name)}の枠順が確定した（JRA発表）。このサイトのAI予想は{esc(publish_when(d))}。"
     else:
         head = f"{name}{d[:4]}の出走馬（{len(hs)}頭）"
-        intro = (f"{esc(day_jp(d))}の{esc(name)}に出走する{len(hs)}頭が決まった（JRA発表）。馬番と枠番は、{esc(day_jp(_waku_day(d)))}ごろの枠順の確定で決まる。"
+        intro = (f"{esc(day_jp(d))}の{esc(name)}に出走する{len(hs)}頭が決まった（JRA発表）。馬番と枠番は、{esc(_waku_when(slug, d) + 'の') if _waku_when(slug, d) else ''}枠順の確定で決まる。"
                  f"このサイトのAI予想は{esc(publish_when(d))}（枠順の確定後）。")
     at = (w.get("fetched") or "")[:16]
     return (f"<section class='card' id='entries'><h2>{esc(head)}</h2><p>{intro}</p>"

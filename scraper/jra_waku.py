@@ -22,6 +22,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import time
 from datetime import datetime, timedelta, timezone
 
 from common import DATA_DIR, PoliteSession, save_json, save_raw
@@ -58,10 +59,16 @@ def run(days: int, probe: bool) -> int:
     sess = PoliteSession(min_interval=5.0, encoding="shift_jis")
     saved = 0
     for d in dates:
-        try:
-            pages = find_all_race_pages(sess, d)
-        except Exception as e:  # noqa: BLE001
-            print(f"{d}: 出馬表の一覧を開けず（{e}）")
+        pages = None
+        for attempt in range(2):  # JRAが一時的に 403 を返すことがある（2026-11-20に1回）。1分あけて1回だけやり直す
+            try:
+                pages = find_all_race_pages(sess, d)
+                break
+            except Exception as e:  # noqa: BLE001
+                print(f"{d}: 出馬表の一覧を開けず（{e}）" + ("。1分後にやり直す" if attempt == 0 else ""))
+                if attempt == 0:
+                    time.sleep(60)
+        if pages is None:
             continue
         if not pages:
             print(f"{d}: 出馬表はまだ出ていない")
