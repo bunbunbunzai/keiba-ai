@@ -1,7 +1,7 @@
 """馬ごとのページ（/horse/<id>/）：このサイトでの評価点・印・想定勝率と、実際の着順の履歴。
 
 作る馬：2回以上評価した馬、1回でもAIの寸評（data/horse_notes）がある馬、重賞で評価した馬、
-JRA発表のG1出走予定馬でJRAの馬ページの情報（data/horse_info）がある馬（AIの評価がまだでも作る。G1の週は馬名で調べる人が多い）。
+JRA発表のG1出走予定馬と重賞の特別登録馬で、JRAの馬ページの情報（data/horse_info）がある馬（AIの評価がまだでも作る。重賞の週は馬名で調べる人が多い）。
 JRAの馬ページの情報がある馬は、毛色・馬名の意味・セリ・生産牧場・獲得賞金・これまでの成績も載せる。IDは馬名のハッシュ。
 """
 from __future__ import annotations
@@ -26,9 +26,10 @@ def prepare(B) -> None:
 
 
 def extra_names() -> set[str]:
-    """評価が足りなくてもページを作る馬：JRA発表のG1出走予定馬で、JRAの馬ページの情報がある馬（weekly.prepare のあとで呼ぶ）。"""
+    """評価が足りなくてもページを作る馬：JRA発表のG1出走予定馬と、これからの重賞の特別登録馬で、
+    JRAの馬ページの情報がある馬（weekly.prepare のあとで呼ぶ）。"""
     import weekly  # noqa: PLC0415
-    return {n for n in weekly.ENTRY_BY_HORSE if n in INFO}
+    return {n for n in list(weekly.ENTRY_BY_HORSE) + list(weekly.NOM_BY_HORSE) if n in INFO}
 
 
 def _finish(p: dict, num) -> str:
@@ -66,6 +67,19 @@ def _past_html(past: list, esc) -> str:
             "<p class='meta'>最後に評価したレースの出馬表に載っていた近走。</p></section>")
 
 
+ABROAD = {"仏": "フランス", "英": "イギリス", "米": "アメリカ", "愛": "アイルランド", "豪": "オーストラリア", "ア首": "UAE", "サウ": "サウジアラビア",
+          "香港": "香港", "華": "台湾", "韓": "韓国", "独": "ドイツ", "伊": "イタリア", "加": "カナダ", "新": "シンガポール"}
+LOCAL = {"名古": "名古屋"}  # JRAの成績表で短く書かれる地方の競馬場
+
+
+def _where(r: dict) -> str:
+    """成績の開催場の書き方をそろえる：海外は「ジャック・ル（フランス）」、名古屋などは正式名に。"""
+    v, n = r.get("venue") or "", nfkc(r.get("race_name") or "")
+    if v in ABROAD:
+        return f"{n}（{ABROAD[v]}）"
+    return f"{LOCAL.get(v, v)}{' ' if v else ''}{n}"
+
+
 def _ymd(s: str) -> str:
     m = re.match(r"(\d{4})年(\d{1,2})月(\d{1,2})日", s or "")
     return f"{m.group(1)}{int(m.group(2)):02d}{int(m.group(3)):02d}" if m else ""
@@ -89,7 +103,7 @@ def _info_runs_html(x: dict, esc) -> str:
     rs = runs[:10]
     rows = "".join(
         f"<tr><td class='nw'>{esc(_ymd(r['date'])[:4])}/{int(_ymd(r['date'])[4:6])}/{int(_ymd(r['date'])[6:8])}</td>"
-        f"<td>{esc(r.get('venue') or '')} {esc(nfkc(r.get('race_name') or ''))}</td>"
+        f"<td>{esc(_where(r))}</td>"
         f"<td>{esc((r.get('surface') or '') + (str(r.get('distance')) + 'm' if r.get('distance') else ''))}</td>"
         f"<td>{esc(r.get('field') or '-')}{'頭' if r.get('field') else ''}</td>"
         f"<td>{esc(r.get('popularity') or '-')}{'番人気' if r.get('popularity') else ''}</td>"
@@ -168,16 +182,17 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
         last_run = runs[0] if runs else None
         ir = next((r for r in info_runs if (r.get("finish") or "").isdigit()), None) if not last_run else None
         jra = any(B.venue_of(x["p"]) in JRA for x in items) or any(r.get("venue") in JRA for r in info_runs[:10])
-        ent = None if nxt else weekly.ENTRY_BY_HORSE.get(name)  # JRA発表のG1出走予定馬に載っている（予想はまだ）
+        ent = None if nxt else (weekly.ENTRY_BY_HORSE.get(name) or weekly.NOM_BY_HORSE.get(name))  # JRA発表の出走予定馬・特別登録馬に載っている（予想はまだ）
+        ent_note = "（特別登録）" if ent and ent.get("kind") == "nom" else "（JRA発表の出走予定馬）"
         wins_g = gw.get(name) or []
         rec = info.get("record") or {}
         lead = (f"{name}{'（' + prof + '）' if prof else ''}の成績{'とAI評価' if items else ''}。"
                 + (f"馬名の意味は「{meaning[:40]}」。" if meaning else "")
                 + (f"次走は{B.md(nxt[0]['d'])}の{B.race_label(nxt[0]['p'])}（AIの印は{nxt[0]['mark'] or '無印'}）。" if nxt else "")
-                + (f"次走予定は{weekly.day_jp(ent['date'])}の{ent['name']}（JRA発表の出走予定馬）。" if ent else "")
+                + (f"次走予定は{weekly.day_jp(ent['date'])}の{ent['name']}{ent_note}。" if ent else "")
                 + (f"直近は{B.md(last_run['d'])}の{B.race_label(last_run['p'])}で{last_run['finish']}着"
                    + (f"（{last_run['pop']}番人気）" if last_run.get("pop") else "") + "。" if last_run else "")
-                + (f"直近は{int(_ymd(ir['date'])[4:6])}/{int(_ymd(ir['date'])[6:8])}の{ir.get('venue', '')}{nfkc(ir.get('race_name') or '')}で{ir['finish']}着"
+                + (f"直近は{int(_ymd(ir['date'])[4:6])}/{int(_ymd(ir['date'])[6:8])}の{_where(ir).replace(' ', '')}で{ir['finish']}着"
                    + (f"（{ir['popularity']}番人気）" if ir.get("popularity") else "") + "。" if ir else "")
                 + (f"通算{rec.get('starts', 0)}戦{rec.get('wins', 0)}勝。" if rec.get("starts") else "")
                 + (f"JRAの重賞は{len(wins_g)}勝。" if wins_g else "")
@@ -209,7 +224,7 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
         # 馬名で調べた人の次の1クリック：次走があればそのレースの予想と対戦、G1の出走予定馬ならその一覧、無ければ今週末のまとめ
         if ent:
             next_html = (f"<p class='notice'>次走予定：<a href='/graded/{ent['slug']}/#entries'>{esc(weekly.day_jp(ent['date']))} {esc(ent['name'])}</a>"
-                         "（JRA発表の出走予定馬に掲載）→ ほかの登録馬と、直近の出走・今年の成績の一覧を見る</p>")
+                         f"{'（JRAの特別登録馬に掲載）' if ent.get('kind') == 'nom' else '（JRA発表の出走予定馬に掲載）'}→ ほかの登録馬と、直近の出走・成績の一覧を見る</p>")
             nstep = weekly.next_card("horse", slug=ent["slug"])
         else:
             nstep = weekly.next_card("horse", race=(nxt[0]["d"], nxt[0]["p"]) if nxt else ((items[0]["d"], items[0]["p"]) if items and items[0]["d"] >= B.TODAY else None))
@@ -257,11 +272,11 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
         lastmod[path] = max(f"{last_d[:4]}-{last_d[4:6]}-{last_d[6:8]}", (info.get("fetched") or "")[:10] if not items else "")
         index_rows.append((last_d, name, path, len(items), n_hon))
     index_rows.sort(key=lambda x: (x[0], x[3]), reverse=True)
-    lis = "".join(f"<li><a href='{r[2]}'><span>{esc(r[1])}</span><span>{f'{r[3]}回評価・◎{r[4]}回' if r[3] else 'G1出走予定・AI評価はこれから'}</span></a></li>"
+    lis = "".join(f"<li><a href='{r[2]}'><span>{esc(r[1])}</span><span>{f'{r[3]}回評価・◎{r[4]}回' if r[3] else '重賞に登録・AI評価はこれから'}</span></a></li>"
                   for r in index_rows[:300])
     write("/horse/", page(f"馬別 AI評価の履歴一覧｜{B.SITE_NAME}",
                           "<p class='crumb'><a href='/'>トップ</a> › 馬別</p><h1>馬別のAI評価履歴</h1>" + B.banner("horses") +
-                          f"<p class='answer'>このサイトで評価した馬と、JRA発表のG1出走予定馬の{len(index_rows):,}頭の、印・想定勝率・着順の履歴。最近出走した順。</p>"
+                          f"<p class='answer'>このサイトで評価した馬と、これからの重賞に登録した馬の{len(index_rows):,}頭の、印・想定勝率・着順の履歴。最近出走した順。</p>"
                           f"<ul class='days'>{lis}</ul>" + ("<p class='meta'>300頭まで表示。</p>" if len(index_rows) > 300 else ""),
                           "/horse/", desc="AI予想で評価した馬とG1の出走予定馬の、印・評価点・想定勝率と実際の着順の履歴。", noindex=not index_rows))
     if index_rows:

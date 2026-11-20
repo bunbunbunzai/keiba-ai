@@ -35,6 +35,9 @@ ENTRIES: dict[str, dict] = {}       # 重賞の slug → 出走予定馬（JRA�
 ENTRY_BY_HORSE: dict[str, dict] = {}  # 馬名 → {date, slug, name}（出走予定馬に載っている、これからのG1）
 LAST_RUN: dict[str, dict] = {}      # 馬名 → このサイトで予想したレースでの直近の結果（出走予定馬の分だけ）
 GRADED_YEAR: dict[str, list] = {}   # 馬名 → 今年のJRA重賞の出走（data/graded_hist。出走予定馬の分だけ）
+NOMS: dict[str, dict] = {}          # 重賞の slug → 特別レース登録馬（data/nominations。JRA発表。プレレーティングより前から出る）
+NOM_BY_HORSE: dict[str, dict] = {}  # 馬名 → {date, slug, name}（これからの重賞に特別登録している）
+JRA_VENUE_CODE = {"01": "札幌", "02": "函館", "03": "福島", "04": "新潟", "05": "東京", "06": "中山", "07": "中京", "08": "京都", "09": "阪神", "10": "小倉"}
 
 
 def _schedule(root, today: str) -> list[dict]:
@@ -91,6 +94,60 @@ def prepare(B, by_date: dict, today: str) -> None:
     for v in list(FEAT.values()) + list(GDATA.values()):
         v.sort(key=lambda c: int(c.get("order") or 0))
     _load_entries(B, by_date)
+    _load_nominations(B)
+
+
+def _load_nominations(B) -> None:
+    """data/nominations（scraper/jra_nominations.py が「特別レース登録馬」から作る）のうち、これからの重賞の分を読む。"""
+    import unicodedata  # noqa: PLC0415
+    import extra  # noqa: PLC0415
+    nf = lambda x: unicodedata.normalize("NFKC", str(x or "")).replace(" ", "").replace("\u3000", "")
+    NOMS.clear(); NOM_BY_HORSE.clear()
+    for f in sorted((B.ROOT / "data" / "nominations").glob("*.json")):
+        d = B.load_json(f) or {}
+        if not d.get("grade") or d.get("date", "") < TODAY or not d.get("horses"):
+            continue
+        venue = JRA_VENUE_CODE.get((d.get("cname") or "")[9:11], "")
+        slug = extra.graded_slug(d.get("race") or "", B.VENUE_SLUG.get(venue, "venue"))
+        if slug not in SCHED_BY_SLUG:
+            continue
+        sch = SCHED_BY_SLUG.get(slug) or []
+        name = next((r["name"] for r in sch if r["date"] == d["date"]), "") or d.get("race", "")
+        NOMS[slug] = {**d, "name": name, "venue": venue}
+        for h in d["horses"]:
+            NOM_BY_HORSE.setdefault(nf(h["name"]), {"date": d["date"], "slug": slug, "name": name, "kind": "nom"})
+
+
+def nominations_section(slug: str) -> str:
+    """プレレーティング（出走予定馬）がまだの重賞に出す「特別登録馬」の表（JRA発表）。"""
+    d = NOMS.get(slug)
+    if not d or slug in ENTRIES or _B is None:
+        return ""
+    B, esc = _B, _B.esc
+    import horses  # noqa: PLC0415
+    import unicodedata  # noqa: PLC0415
+    nf = lambda x: unicodedata.normalize("NFKC", str(x or "")).replace(" ", "").replace("\u3000", "")
+    rows = ""
+    for h in d["horses"]:
+        nm = nf(h["name"])
+        x = horses.INFO.get(nm) or {}
+        ip = x.get("profile") or {}
+        sa = h.get("sex_age") or (f"{ip.get('性別', '')}{re.sub(r'[^0-9]', '', ip.get('馬齢', ''))}" if ip.get("性別") else "")
+        run = next((r for r in x.get("runs") or [] if (r.get("finish") or "").isdigit()), None)
+        rd = (run or {}).get("date", "")
+        rd = rd[5:] if rd[:4] == TODAY[:4] else rd  # 今年なら「11月1日」、去年より前なら「2025年12月28日」
+        last = f"{esc(rd)} {esc(horses._where(run))} {esc(run.get('finish', ''))}着" if run else "-"
+        rec = x.get("record") or {}
+        rows += (f"<tr><td class='nm'>{B.link_horse(h['name'])}</td><td class='nw'>{esc(sa)}</td>"
+                 f"<td>{esc(re.sub(r'（.*?）', '', ip.get('調教師名', '')).strip())}</td><td>{last}</td>"
+                 f"<td class='nw'>{esc(str(rec.get('starts', '')) + '戦' + str(rec.get('wins', '')) + '勝') if rec else '-'}</td></tr>")
+    when = f"このサイトのAI予想は{esc(publish_when(d['date']))}（枠順の確定後）。"
+    return (f"<section class='card' id='entries'><h2>{esc(d['name'])}{d['date'][:4]}の特別登録馬（{len(d['horses'])}頭）</h2>"
+            f"<p>{esc(day_jp(d['date']))}の{esc(d['name'])}に特別登録した馬の一覧（JRA発表）。実際に出走する馬は、出馬投票と枠順の確定で決まる。{when}</p>"
+            "<div class='scroll'><table class='ent'><thead><tr><th>馬名</th><th>性齢</th><th>調教師</th><th>直近の出走</th><th>通算</th></tr></thead>"
+            f"<tbody>{rows}</tbody></table></div>"
+            f"<p class='meta'>出典：JRA「特別レース登録馬」（{esc((d.get('fetched') or '')[:10])}時点）。直近の出走と通算の成績はJRAの競走馬情報による（地方・海外のレースを含む）。"
+            "外国馬・地方馬は一覧に入らないことがある。</p></section>")
 
 
 def _load_entries(B, by_date: dict) -> None:
