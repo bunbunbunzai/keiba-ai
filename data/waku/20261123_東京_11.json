@@ -1,0 +1,138 @@
+{
+ "fetched": "2026-11-20 12:01",
+ "date": "20261123",
+ "race_no": 11,
+ "venue": "東京",
+ "post_time": "15:30",
+ "title_text": "第31回 東京スポーツ杯2歳ステークス 2歳 オープン （国際）（指定） 馬齢",
+ "grade": "G2",
+ "race_name": "東京スポーツ杯2歳ステークス",
+ "distance": 1800,
+ "surface": "芝",
+ "course_text": "コース： 1,800 メートル （芝・左）",
+ "numbered": false,
+ "field": 12,
+ "horses": [
+  {
+   "frame": null,
+   "number": null,
+   "name": "オンユアマークス",
+   "horse_url": "/JRADB/accessU.html?CNAME=pw01dud002024104698/F8",
+   "sex_age": "牡2",
+   "weight": 56.0,
+   "jockey": "武 豊",
+   "trainer": "松永 幹夫"
+  },
+  {
+   "frame": null,
+   "number": null,
+   "name": "キングリア",
+   "horse_url": "/JRADB/accessU.html?CNAME=pw01dud002024106684/FA",
+   "sex_age": "牡2",
+   "weight": 56.0,
+   "jockey": "川田 将雅",
+   "trainer": "中内田 充正"
+  },
+  {
+   "frame": null,
+   "number": null,
+   "name": "コラリオン",
+   "horse_url": "/JRADB/accessU.html?CNAME=pw01dud002024106471/2F",
+   "sex_age": "牡2",
+   "weight": 56.0,
+   "jockey": "坂井 瑠星",
+   "trainer": "伊坂 重信"
+  },
+  {
+   "frame": null,
+   "number": null,
+   "name": "ショウナンガレオン",
+   "horse_url": "/JRADB/accessU.html?CNAME=pw01dud002024106438/14",
+   "sex_age": "牡2",
+   "weight": 56.0,
+   "jockey": "鮫島 克駿",
+   "trainer": "加藤 士津八"
+  },
+  {
+   "frame": null,
+   "number": null,
+   "name": "ジョドレルバンク",
+   "horse_url": "/JRADB/accessU.html?CNAME=pw01dud002024106161/8C",
+   "sex_age": "牡2",
+   "weight": 56.0,
+   "jockey": "J.モレイラ",
+   "trainer": "武井 亮"
+  },
+  {
+   "frame": null,
+   "number": null,
+   "name": "シルヴァノーブル",
+   "horse_url": "/JRADB/accessU.html?CNAME=pw01dud002024101851/28",
+   "sex_age": "牡2",
+   "weight": 56.0,
+   "jockey": "横山 典弘",
+   "trainer": "昆 貢"
+  },
+  {
+   "frame": null,
+   "number": null,
+   "name": "スローブギ",
+   "horse_url": "/JRADB/accessU.html?CNAME=pw01dud002024105964/7E",
+   "sex_age": "牡2",
+   "weight": 56.0,
+   "jockey": "松山 弘平",
+   "trainer": "和田 勇介"
+  },
+  {
+   "frame": null,
+   "number": null,
+   "name": "ダノンダックス",
+   "horse_url": "/JRADB/accessU.html?CNAME=pw01dud002024106662/F4",
+   "sex_age": "牡2",
+   "weight": 56.0,
+   "jockey": "C.ルメール",
+   "trainer": "田中 博康"
+  },
+  {
+   "frame": null,
+   "number": null,
+   "name": "ティフォシ",
+   "horse_url": "/JRADB/accessU.html?CNAME=pw01dud002024103816/05",
+   "sex_age": "牡2",
+   "weight": 56.0,
+   "jockey": "M.デムーロ",
+   "trainer": "宮地 貴稔"
+  },
+  {
+   "frame": null,
+   "number": null,
+   "name": "テンカタイヘイ",
+   "horse_url": "/JRADB/accessU.html?CNAME=pw01dud002024106851/D3",
+   "sex_age": "牡2",
+   "weight": 56.0,
+   "jockey": "横山 和生",
+   "trainer": "小野 次郎"
+  },
+  {
+   "frame": null,
+   "number": null,
+   "name": "ニースケンス",
+   "horse_url": "/JRADB/accessU.html?CNAME=pw01dud002024107189/33",
+   "sex_age": "牡2",
+   "weight": 56.0,
+   "jockey": "原 優介",
+   "trainer": "小島 茂之"
+  },
+  {
+   "frame": null,
+   "number": null,
+   "name": "ビンドゥング",
+   "horse_url": "/JRADB/accessU.html?CNAME=pw01dud002024107180/28",
+   "sex_age": "牡2",
+   "weight": 56.0,
+   "jockey": "戸崎 圭太",
+   "trainer": "上村 洋行"
+  }
+ ],
+ "source": "jra"
+}
