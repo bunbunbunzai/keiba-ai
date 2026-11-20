@@ -3,7 +3,7 @@
 G1の出走予定馬（data/entries。JRAのプレレーティングで、馬ページのリンクが無い）や重賞の登録馬について、
 JRAの馬ページ（horse_info.py）を取るために使う。入口はJRAのメニューの「特別レース登録馬」。JRAのサイトは1ページごとに5秒あける。
 保存：data/nominations/<登録馬の一覧ページのID>.json
-  {fetched, title, date, horses: [{name, url, sex_age}]}（1ページに複数レースがあるときは races にも分ける）
+  {fetched, cname, race, title, grade, date, horses: [{name, url, sex_age}]}（1ページ1レース）
 
   python jra_nominations.py            # 取って保存
   python jra_nominations.py --probe    # 生のHTMLも data/raw/<今日>/jra_nominations に残す（形の確認用）
@@ -51,13 +51,16 @@ def horse_links(html: str) -> list[dict]:
     return out
 
 
-def page_title(html: str) -> str:
+GRADE = {"GⅠ": "G1", "GⅡ": "G2", "GⅢ": "G3", "J・GⅠ": "J・G1", "J・GⅡ": "J・G2", "J・GⅢ": "J・G3", "L": "L"}
+
+
+def race_info(html: str) -> dict:
+    """登録馬のページの、レース名（「マイルチャンピオンシップ」）・条件つきの題名・格（G1など。無ければ空）。"""
     s = BeautifulSoup(html, "html.parser")
-    for sel in ("h1", "h2", "h3", "caption", "title"):
-        el = s.find(sel)
-        if el and nf(el.get_text()):
-            return " ".join(el.get_text(" ").split())[:80]
-    return ""
+    one = lambda sel: " ".join((s.select_one(sel).get_text(" ") if s.select_one(sel) else "").split())
+    img = s.select_one(".grade_icon img")
+    g = (img.get("alt") or "").strip() if img else ""
+    return {"race": one("span.race_name") or one(".race_name"), "title": one(".race_title")[:120], "grade": GRADE.get(g, g)}
 
 
 def run(probe: bool) -> int:
@@ -83,17 +86,24 @@ def run(probe: bool) -> int:
         hs = horse_links(html)
         if hs:
             d = re.search(r"(20\d{2})年\s*(\d{1,2})月\s*(\d{1,2})日", BeautifulSoup(html, "html.parser").get_text(" "))
-            save_json(f"nominations/{key}.json", {"fetched": datetime.now(JST).strftime("%Y-%m-%d %H:%M"), "cname": cname,
-                                                  "title": page_title(html), "date": f"{d.group(1)}{int(d.group(2)):02d}{int(d.group(3)):02d}" if d else "",
+            ri = race_info(html)
+            save_json(f"nominations/{key}.json", {"fetched": datetime.now(JST).strftime("%Y-%m-%d %H:%M"), "cname": cname, **ri,
+                                                  "date": f"{d.group(1)}{int(d.group(2)):02d}{int(d.group(3)):02d}" if d else "",
                                                   "horses": hs})
             saved += 1
-            print(f"{cname}: {page_title(html)} {len(hs)}頭")
+            print(f"{cname}: {ri['race']}（{ri['grade'] or '-'}） {len(hs)}頭")
             continue
         if depth >= 2:
             continue
         for p, c, label in actions(html):
             if c.startswith("pw03") and c not in seen:  # 特別レース登録馬の中だけをたどる
                 queue.append((p, c, depth + 1))
+    # 終わったレースの登録馬は1週間で消す（馬ページのリンクは horse_info に残る）
+    old = (datetime.now(JST) - timedelta(days=7)).strftime("%Y%m%d")
+    for f in (DATA_DIR / "nominations").glob("*.json"):
+        m = re.search(r"(20\d{6})_[0-9A-Fa-f]{2}$", f.stem)
+        if m and m.group(1) < old:
+            f.unlink()
     print(f"ページ {pages}・保存 {saved}")
     return saved
 

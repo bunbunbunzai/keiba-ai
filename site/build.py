@@ -916,7 +916,10 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
     g = extra.grade_of(r, gname)
     if g:
         cn = extra.clean_name(gname)
-        title = f"【AI予想】{cn}{date[:4]}（{g}） 全頭診断と買い目｜{SITE_NAME}"
+        # 結果が出たら「結果」で調べる人向けの題名に変える（レースのあとは「予想」より「結果」で探される）
+        done = any(str(x.get("finish") or "").isdigit() for x in (p.get("_result") or {}).get("rows") or [])
+        title = (f"{cn}{date[:4]}（{g}）の結果とAI予想の答え合わせ｜{SITE_NAME}" if done
+                 else f"【AI予想】{cn}{date[:4]}（{g}） 全頭診断と買い目｜{SITE_NAME}")
     desc = answer_sentence(date, p) + " 全頭の評価点・短評と買い目を掲載。"
     return page(title, body, path, desc=desc, noindex=p.get("confidence") == "見送り", head_extra="".join(jsonld(x) for x in ld),
                 og_image=race_og(date, p))
@@ -1829,11 +1832,16 @@ def glossary_term_pages() -> dict[str, str]:
                 + f"<p class='meta'>AIが書いた説明を、{esc(x.get('updated', ''))}時点で掲載。ルールの正式な内容は主催者の発表を確認してほしい。</p>"
                 + weekly.next_card("glossary"))
         # 題名に答えの要点を入れる（検索では5〜7位に出ているのに押されていなかった。「とは｜用語集」だけでは中身が伝わらない）
-        gist = re.sub(r"(である|のこと|こと|をいう|を指す|を表す)?。$", "", x["short"].strip())
-        gist = gist if len(gist) <= 30 else ""
+        # 文の終わりの言い切り（「〜ということ。」など）を外す。外したあとに「という」「と」が残る形（文の途中で切れて見える）は使わない
+        gist = re.sub(r"(ということ|のことである|のことをいう|である|のこと|こと|をいう|を指す|を表す)?。$", "", x["short"].strip())
+        gist = gist if len(gist) <= 30 and not re.search(r"(という|といった|を|が|に|で|や|、)$", gist) else ""
         title = (f"{x['term']}とは？{gist}{'【競馬用語】' if len(x['term']) + len(gist) <= 26 else ''}｜{SITE_NAME}" if gist else f"{x['term']}とは？意味と使い方を例つきで解説【競馬用語】｜{SITE_NAME}")
         desc = (f"{x['term']}（{x['reading']}）とは、" if x.get("reading") else f"{x['term']}とは、") + x["short"] + (f" 例：{x['example']}" if x.get("example") else "")
-        write(path, page(title, body, path, desc=desc[:118], head_extra=jsonld(ld)))
+        bc = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": SITE_NAME, "item": BASE_URL + "/"},
+            {"@type": "ListItem", "position": 2, "name": "用語集", "item": BASE_URL + "/glossary/"},
+            {"@type": "ListItem", "position": 3, "name": x["term"], "item": BASE_URL + path}]}
+        write(path, page(title, body, path, desc=desc[:118], head_extra=jsonld(ld) + jsonld(bc)))
         out[path] = x.get("updated")
     return out
 
@@ -1854,6 +1862,7 @@ def limits_page(t: dict, worst_venue: tuple[str, str] | None) -> str:
 
 
 SITE_CHANGES = [
+    ("2026-11-20", "G1の出走予定馬と重賞に登録した馬は、AIがまだ評価していなくても馬のページを作るようにした（JRAの競走馬情報から、これまでの成績・毛色・馬名の意味・セリ・生産牧場・獲得賞金・JRAの重賞の勝ちを載せる）。今ある馬のページにも同じ情報を足した。重賞ページの題名に、レースの年と日付を入れた。レースのあとの2週間は、結果とAI予想の答え合わせを先に出す。"),
     ("2026-11-20", "有馬記念ファン投票で、JRAの投票サイトの一覧に出てこない馬を紹介する記事を6本追加（POGで人気だった馬、名牝の子、名馬の弟・妹、白毛の馬、名前が面白い馬、障害の名馬）。重賞の「前走別の成績」、2026年の重賞の振り返り（G1全結果・高配当・騎手・調教師など9本）、G1の記録（2006年以降の7本）、JRAを走った3歳以上の全頭の競走馬情報から数えた「競走馬のデータ」（毛色の割合、馬名の付け方と冠名、セリ出身馬の成績の3本）を追加した。重賞の過去データ記事は、レースの5週間前に出すようにした。"),
     ("2026-11-20", "G1の出走予定馬（JRAが発表する登録馬とプレレーティング）を、重賞ページに直近の出走・今年の重賞成績つきで載せるようにした。毎日昼に確かめ、発表があれば自動で更新する。登録馬に載った馬のページには次走予定を出す。"),
     ("2026-11-20", "コラム本文に出てくる馬の名前から、その馬の成績とAI評価のページへ進めるようにした。サイトマップの更新日を、記事の中身が変わった日に直した（これまでは毎日すべての記事を更新扱いにしていた）。初めての人への案内の帯は、記事を読みに来た最初のページでは出さないようにした。"),
@@ -2010,7 +2019,7 @@ table{border-collapse:collapse;width:100%;font-size:14px;background:var(--panel)
 .horses th,.horses td:not(.cmt){white-space:nowrap}.horses .cmt{min-width:260px}.mark{font-weight:700;color:var(--acc)}tr.mk td{background:var(--acc-soft)}
 .chart{width:100%;height:auto}.chart .ln{fill:none;stroke:var(--acc);stroke-width:2.5}.chart .base{stroke:var(--mut);stroke-dasharray:4 4}.chart .pt{fill:var(--acc)}.chart .lbl{fill:var(--mut);font-size:12px}.chart .end{text-anchor:end;fill:var(--fg)}.chart .mid{text-anchor:middle}
 .days{list-style:none;padding:0;margin:0;background:var(--panel);border-top:2px solid var(--rule);border-bottom:1px solid var(--line)}.days li+li{border-top:1px solid var(--line)}
-.days a{display:flex;justify-content:space-between;gap:12px;padding:9px 10px;color:var(--fg)}.days a:hover{text-decoration:none;background:var(--acc-soft)}.days a span:last-child{color:var(--mut);white-space:nowrap}
+.days a{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2px 12px;padding:9px 10px;color:var(--fg)}.days a:hover{text-decoration:none;background:var(--acc-soft)}.days a span:last-child{color:var(--mut);white-space:nowrap}
 .pn{display:flex;justify-content:space-between;gap:12px;margin:24px 0;font-size:14px}
 .foot{color:var(--mut);font-size:12px;padding:20px 16px 44px;border-top:3px solid var(--rule);max-width:960px}.foot .sns a,.foot .sitemap-links a{color:var(--fg)}
 .sp{display:grid;grid-template-columns:270px 1fr;gap:16px}.sp img{width:100%;height:auto}.sp pre{white-space:pre-wrap;font:inherit;font-size:13px;background:var(--panel);padding:8px;border:1px solid var(--line)}
@@ -2336,12 +2345,16 @@ def build() -> None:
     HIST_STATS = build_hist_stats()
     # 内部リンク用：馬別・騎手別・コース別ページが作られる対象を先に数える
     _hc, _jc, _cc = defaultdict(int), defaultdict(int), defaultdict(int)
+    _gr: set = set()  # 重賞で評価した馬（評価が1回でも馬のページを作る。重賞の週は馬名で調べる人が多い）
     for d, ps in by_date.items():
         for p in ps:
+            _g = extra.grade_of(p["_race"], p.get("race_name") or p["_race"].get("race_name") or p["_race"].get("title_text") or "")
             for e in p.get("horses", []):
                 nm = extra.nfkc(e.get("name") or "").replace(" ", "")
                 if nm:
                     _hc[nm] += 1
+                    if _g:
+                        _gr.add(nm)
             if d >= STATS_FROM:
                 sc_ = scored(p)
                 hon_ = p.get("marks", {}).get("◎")
@@ -2353,7 +2366,9 @@ def build() -> None:
                     surf = "turf" if r_.get("surface") == "芝" else "jump" if r_.get("surface") == "障" else "dirt"
                     _cc[f"{VENUE_SLUG.get(venue_of(p), 'venue')}-{surf}-{int(r_['distance'])}"] += 1
     _noted = {f.stem for f in (ROOT / "data" / "horse_notes").glob("*.json")}
-    LINK_HORSES.clear(); LINK_HORSES.update(k for k, n in _hc.items() if n >= 2 or extra.short_id(k) in _noted)
+    LINK_HORSES.clear(); LINK_HORSES.update(k for k, n in _hc.items() if n >= 2 or extra.short_id(k) in _noted or k in _gr)
+    import sys as _sys
+    horses.prepare(_sys.modules[__name__])  # JRAの馬ページの情報（毛色・馬名の意味など）
     LINK_JOCKEYS.clear(); LINK_JOCKEYS.update(k for k, n in _jc.items() if n >= 5)
     LINK_COURSES.clear(); LINK_COURSES.update(k for k, n in _cc.items() if n >= 5)
     for d in dates:
@@ -2427,6 +2442,7 @@ def build() -> None:
     lastmod.update(venue_pages(by_date, led, venue_of_race))
     import sys as _sys
     weekly.prepare(_sys.modules[__name__], by_date, today)
+    LINK_HORSES.update(horses.extra_names())  # G1の出走予定馬（JRAの馬ページの情報がある馬）にもページを作り、出走予定馬の表からリンクする
     lastmod.update(extra.build_pages(_sys.modules[__name__], by_date, today))
     lastmod.update(review.build_pages(_sys.modules[__name__], by_date, today))
     lastmod.update(horses.build_pages(_sys.modules[__name__], by_date, today))
@@ -2560,11 +2576,23 @@ def build() -> None:
         pass
     (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n" + ("Disallow: /league/\n" if LEAGUE_URL and LEAGUE_OWNERS and os.environ.get("LEAGUE_PUBLIC") != "1" else "") + ("Disallow: /vs/\n" if LEAGUE_URL and not VS_PUBLIC else "")
                                     + f"Sitemap: {BASE_URL}/sitemap.xml\n", encoding="utf-8")
+    # AI検索向けの案内：主なページに加えて、特集（G1ごと）とデータ記事（G1の記録・今年の振り返り・競走馬のデータ）も載せる
+    try:
+        _cols = [c for c in column.columns() if not c["draft"]]
+    except Exception:  # noqa: BLE001
+        _cols = []
+    _feat = "".join(f"- [{head}]({BASE_URL}/column/#{sid})：{note}\n" for sid, head, note in column.FEATURE_SERIES
+                    if any(c.get("series") == sid for c in _cols))
+    _data = "".join(f"- [{c['title']}]({BASE_URL}/column/{c['slug']}/)\n" for c in _cols if c.get("series") in ("g1kiroku", "year2026", "umadata"))
+    _more = (f"\n## 調べもの\n\n- [競馬用語集]({BASE_URL}/glossary/)：馬券・レース・展開の言葉の意味\n- [競馬場ガイド]({BASE_URL}/venue/)：中央・地方の競馬場ごとのAI予想の成績と当日の傾向\n"
+             f"- [コース別のデータ]({BASE_URL}/course/)\n- [騎手別のデータ]({BASE_URL}/jockey/)\n- [AI予想の限界と注意点]({BASE_URL}/limits/)\n"
+             + (f"\n## 特集\n\n{_feat}" if _feat else "") + (f"\n## データ記事\n\n{_data}" if _data else ""))
     (OUT / "llms.txt").write_text(
         f"# {SITE_NAME}\n\n> AI（Claude）が日本の競馬（JRA・地方）の全レースを毎日予想し、外れも含めた全予想の回収率を公開するサイト。\n\n"
         f"- [今日の予想]({BASE_URL}/)\n- [今週末の競馬まとめ]({BASE_URL}/weekend/)：今週の重賞とAI予想の公開状況・G1特集・この1週間の重賞の結果（毎週更新）\n"
         f"- [重賞のAI予想一覧]({BASE_URL}/graded/)\n- [成績・回収率]({BASE_URL}/results/)：累計{t['n']}レース・回収率{t['roi']}\n"
-        f"- [買い方別の回収率]({BASE_URL}/strategy/)\n- [重賞回顧]({BASE_URL}/review/)\n- [馬別のAI評価履歴]({BASE_URL}/horse/)\n- [予想の方法]({BASE_URL}/about/)\n" + (f"- [初心者向けコラム]({BASE_URL}/column/)：馬券の種類・回収率・人気と勝率などを実データで解説\n" if HAS_COLUMN else "") + f"- [全予想の記録CSV]({REPO}/blob/main/results_ledger.csv)\n", encoding="utf-8")
+        f"- [買い方別の回収率]({BASE_URL}/strategy/)\n- [重賞回顧]({BASE_URL}/review/)\n- [馬別のAI評価履歴]({BASE_URL}/horse/)\n- [予想の方法]({BASE_URL}/about/)\n" + (f"- [初心者向けコラム]({BASE_URL}/column/)：馬券の種類・回収率・人気と勝率などを実データで解説\n" if HAS_COLUMN else "") + f"- [全予想の記録CSV]({REPO}/blob/main/results_ledger.csv)\n"
+        + _more, encoding="utf-8")
     fixed = {"/": today_iso, "/results/": today_iso, "/strategy/": today_iso, "/ippen/": today_iso, "/about/": None, "/contact/": None, "/glossary/": None, "/limits/": today_iso, "/changelog/": today_iso, "/operator/": None, "/privacy/": None}
     sm = "".join(f"<url><loc>{BASE_URL}{u}</loc>{f'<lastmod>{m}</lastmod>' if m else ''}</url>"
                  for u, m in list(fixed.items()) + sorted(lastmod.items(), reverse=True))

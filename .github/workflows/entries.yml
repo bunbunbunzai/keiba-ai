@@ -1,7 +1,8 @@
 name: entries (G1の出走予定馬)
 
 # 毎日1回：10日以内に行われるJRAのG1について、JRAの「GⅠ競走プレレーティング」（レース週の月曜11時ごろ発表）から
-# 出走予定馬を取り、data/entries に保存する。変わったときだけ保存してサイトを作り直す。AIは呼ばない。
+# 出走予定馬を取り、data/entries に保存する。あわせて特別レース登録馬（馬ページへのリンク）と、出走予定馬・重賞の登録馬のJRAの馬ページも取る。
+# 変わったときだけ保存してサイトを作り直す。AIは呼ばない。
 on:
   schedule:
     - cron: "17 3 * * *"   # JST 12:17（月曜11時の発表のあと）
@@ -57,11 +58,16 @@ jobs:
         env:
           PROBE: ${{ inputs.probe && '--probe' || '' }}
         run: python -u jra_nominations.py $PROBE
+      - name: 出走予定馬・重賞の登録馬の馬ページ（毛色・馬名の意味・全成績。馬のページに使う）
+        working-directory: scraper
+        continue-on-error: true
+        timeout-minutes: 20
+        run: python -u horse_info.py --entrants --fresh 7
       - name: 保存
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for d in data/entries data/nominations data/raw; do [ -e "$d" ] && git add "$d"; done
+          for d in data/entries data/nominations data/horse_info data/raw; do [ -e "$d" ] && git add "$d"; done
           if git diff --cached --quiet; then echo "変更なし"; exit 0; fi
           git commit -q -m "entries: G1の出走予定馬を更新"
           for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && break; sleep 7; done

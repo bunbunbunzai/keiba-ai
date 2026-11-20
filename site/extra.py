@@ -256,6 +256,81 @@ def pct(a, b) -> str:
     return f"{100 * a / b:.1f}%" if b else "―"
 
 
+PRE_DAYS = 35     # レースのこの日数前から、題名に年と「AI予想」を入れる（過去データの記事を出し始めるのと同じ）
+PRE_DAYS_G1 = 45  # G1は早くから「レース名＋年」で調べられる（有馬記念はファン投票のころから）
+RESULT_DAYS = 14  # レースのあとこの日数は、題名を「結果とAI予想の答え合わせ」にする（日程の取り込みも14日前まで）
+
+
+def _winner(B, p: dict) -> tuple[str, str]:
+    """予想したレースの1着馬の名前と人気（結果が出ていなければ空）。"""
+    rows = (p.get("_result") or {}).get("rows") or []
+    num = next((x.get("number") for x in rows if str(x.get("finish")) == "1"), None)
+    if num is None:
+        return "", ""
+    h = next((x for x in p["_race"].get("horses") or [] if x.get("number") == num), {})
+    return B.horse_name(p, num) or h.get("name") or "", str(h.get("popularity") or "")
+
+
+def graded_phase(B, slug: str, name: str, g: str, et, has_gdata: bool) -> dict | None:
+    """_graded_phase の結果に、その題名になった日（サイトマップの更新日に使う）を足す。"""
+    from datetime import datetime, timedelta  # noqa: PLC0415
+    ph = _graded_phase(B, slug, name, g, et, has_gdata)
+    if ph:
+        back = {"pre": PRE_DAYS_G1 if g == "G1" else PRE_DAYS, "pred": 2, "result": 0}[ph["phase"]]
+        x = min(datetime.strptime(ph["date"], "%Y%m%d") - timedelta(days=back), datetime.strptime(B.TODAY, "%Y%m%d"))
+        ph["since"] = x.strftime("%Y-%m-%d")
+    return ph
+
+
+def _phase_day(ph: dict | None) -> str:
+    return (ph or {}).get("since", "")
+
+
+def _graded_phase(B, slug: str, name: str, g: str, et, has_gdata: bool) -> dict | None:
+    """重賞ページの題名・見出し・説明文を、レースまでの日数と結果の有無で切り替える。
+    検索は「レース名＋年」「＋予想」「＋結果」で調べる人が多い。時期の外れたとき（次の年の日程がまだ）は None（いつもの題名）。
+    pre：PRE_DAYS日前から（出走予定馬が出ていればその頭数も）、pred：AI予想を公開済みで発走前、result：結果が出てからRESULT_DAYS日。"""
+    import weekly  # noqa: PLC0415
+    from datetime import datetime  # noqa: PLC0415
+    today = B.TODAY
+    span = "過去20年" if has_gdata else "過去"
+    days_to = lambda d: (datetime.strptime(d, "%Y%m%d") - datetime.strptime(today, "%Y%m%d")).days
+    sch = sorted(weekly.SCHED_BY_SLUG.get(slug) or [], key=lambda r: r["date"])
+    preds = {d: p for d, p, *_ in weekly.PREDS.get(slug) or []}
+    up = [r for r in sch if r["date"] >= today and days_to(r["date"]) <= (PRE_DAYS_G1 if g == "G1" else PRE_DAYS)]
+    done = [r for r in sch if r["date"] <= today and -days_to(r["date"]) <= RESULT_DAYS]
+    r = up[0] if up else (done[-1] if done else None)
+    if not r:
+        return None
+    d, y = r["date"], r["date"][:4]
+    p = preds.get(d)
+    win, pop = _winner(B, p) if p else ("", "")
+    where = f"{r.get('venue', '')}{r.get('course', '')}"
+    if p and win:  # 結果が出た
+        hon = p.get("marks", {}).get("◎")
+        sc = B.scored(p)
+        res = ("的中（回収率" + B.roi_txt(sc["stake"], sc["return"]) + "）") if sc and sc.get("stake") and sc.get("return") else "不的中" if sc and sc.get("stake") else "見送り"
+        return {"phase": "result", "date": d,
+                "title": f"{name}{y}の結果とAI予想の答え合わせ・{span}の傾向", "h1": f"{name}{y}の結果とAI予想（{g}）",
+                "desc": f"{y}年の{name}は{win}が1着" + (f"（{pop}番人気）" if pop else "") + f"。このサイトのAI予想は◎{hon}{B.horse_name(p, hon)}で{res}。"
+                        f"全頭の評価点・買い目と、{span}の傾向をまとめている。"}
+    if not up:  # 予想していないレースが終わったあと
+        return {"phase": "result", "date": d, "title": f"{name}{y}の結果と{span}の傾向", "h1": f"{name}{y}の結果と傾向（{g}）",
+                "desc": f"{name}{y}（{weekly.day_jp(d)}・{where}）の結果と、{span}の人気・枠・前走のデータ。"}
+    if p:  # 予想を公開済み（発走前、または結果の反映待ち）
+        hon = p.get("marks", {}).get("◎")
+        return {"phase": "pred", "date": d,
+                "title": f"【AI予想】{name}{y} 全頭診断と買い目・{span}の傾向", "h1": f"{name}{y} AI予想と傾向（{g}）",
+                "desc": f"{name}{y}（{weekly.day_jp(d)}・{where}）のAI予想は◎{hon}{B.horse_name(p, hon)}。全頭の評価点・印・買い目と、{span}の傾向をまとめている。"}
+    if et:  # 出走予定馬（JRA発表）が出ていて、予想はまだ
+        return {"phase": "pre", "date": d, "title": f"{et[0]}とAI予想・{span}の傾向", "h1": f"{et[0]}とAI予想（{g}）", "desc": et[1]}
+    md = f"{int(d[4:6])}月{int(d[6:8])}日"
+    return {"phase": "pre", "date": d,
+            "title": f"{name}{y}のAI予想と{span}の傾向（{md}）", "h1": f"{name}{y}のAI予想と傾向（{g}・{md}）",
+            "desc": f"{name}{y}は{weekly.day_jp(d)}に{where}で行われる。このサイトのAI予想は{weekly.publish_when(d)}。"
+                    f"{span}の人気・枠・前走のデータとレースの特徴をまとめている。"}
+
+
 def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
     """B は build モジュール（page・write・esc などを使う）。{path: lastmod} を返す。"""
     global _COURSE_PAGES, _COURSE_INPUTS
@@ -299,8 +374,10 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
                 f"（{B.fmt_date(latest[0])}）。全頭の評価点・印・買い目と、確定後の的中・回収率を年ごとに記録している。")
         import weekly  # noqa: PLC0415
         et = weekly.entries_title(slug)  # 出走予定馬が出ていて、今年の予想がまだのとき
+        ph = graded_phase(B, slug, name, g, et, bool(weekly.GDATA.get(slug)))
+        h1 = ph["h1"] if ph else (et[0] + "とAI予想（" + g + "）" if et else name + " AI予想と傾向（" + g + "）")
         body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/graded/'>重賞</a> › {esc(name)}</p>"
-                f"<h1>{esc(et[0] + 'とAI予想（' + g + '）') if et else esc(name) + ' AI予想と傾向（' + esc(g) + '）'}</h1>{B.banner(_pic_banner(B, p0, d0), name)}<p class='answer'>{esc(lead)}</p>"
+                f"<h1>{esc(h1)}</h1>{B.banner(_pic_banner(B, p0, d0), name)}<p class='answer'>{esc(lead)}</p>"
                 + _next(slug) + weekly.entries_section(slug) + feature_notice(esc, name, feats) + gdata_notice(esc, slug) + race_guide_html(B, slug) +
                 f"<section class='card'><h2>年ごとのAI予想と結果</h2><ul class='days'>{''.join(lis)}</ul></section>"
                 f"<p class='meta'>毎年このページに追加される。最新の予想はレース当日の昼（重賞は前日夜にも）公開。</p>"
@@ -309,9 +386,9 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
             {"@type": "ListItem", "position": 1, "name": B.SITE_NAME, "item": B.BASE_URL + "/"},
             {"@type": "ListItem", "position": 2, "name": "重賞", "item": B.BASE_URL + "/graded/"},
             {"@type": "ListItem", "position": 3, "name": name, "item": B.BASE_URL + path}]}
-        write(path, page(f"{et[0]}とAI予想・過去の結果｜{B.SITE_NAME}" if et else f"【AI予想】{name} 全頭診断と買い目・過去の結果｜{B.SITE_NAME}", body, path,
-                         desc=(et[1] if et else lead)[:120], head_extra=jsonld(ld)))
-        lastmod[path] = max(iso(items[0][0]), weekly.entries_date(slug))
+        title = (ph["title"] if ph else f"{et[0]}とAI予想・過去の結果" if et else f"{name}の傾向・過去の結果とAI予想の記録")
+        write(path, page(f"{title}｜{B.SITE_NAME}", body, path, desc=(ph["desc"] if ph else et[1] if et else lead)[:120], head_extra=jsonld(ld)))
+        lastmod[path] = max(iso(items[0][0]), weekly.entries_date(slug), _phase_day(ph))
         rows_all.append((latest[0], latest[1], name, g, slug))
     # 予想がまだ無い重賞も、ガイドがあればページを作る（レース前から検索の受け皿にする）
     guide_only = []
@@ -322,8 +399,10 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
         path = f"/graded/{slug}/"
         import weekly  # noqa: PLC0415
         et = weekly.entries_title(slug)
+        ph = graded_phase(B, slug, name, g, et, bool(weekly.GDATA.get(slug)))
+        h1 = ph["h1"] if ph else (et[0] + "と傾向（" + g + "）" if et else name + "の傾向とレースガイド（" + g + "）")
         body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/graded/'>重賞</a> › {esc(name)}</p>"
-                f"<h1>{esc(et[0] + 'と傾向（' + g + '）') if et else esc(name) + 'の傾向とレースガイド（' + esc(g) + '）'}</h1><p class='answer'>{esc(gd.get('lead', ''))}</p>"
+                f"<h1>{esc(h1)}</h1><p class='answer'>{esc(gd.get('lead', ''))}</p>"
                 + _next(slug) + weekly.entries_section(slug) + feature_notice(esc, name, feats) + gdata_notice(esc, slug) + race_guide_html(B, slug, show_lead=not gd.get("lead"))
                 + "<p class='meta'>このレースのAI予想（全頭の評価点・印・買い目）は、レースの前日夜または当日昼にこのページに追加される。</p>")
         body += B.share_links(B.BASE_URL + path, f"{name}の傾向とレースガイド（{g}）", f"競馬全頭ログ,{name.replace('(', '').replace(')', '')}")
@@ -331,9 +410,9 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
             {"@type": "ListItem", "position": 1, "name": B.SITE_NAME, "item": B.BASE_URL + "/"},
             {"@type": "ListItem", "position": 2, "name": "重賞", "item": B.BASE_URL + "/graded/"},
             {"@type": "ListItem", "position": 3, "name": name, "item": B.BASE_URL + path}]}
-        write(path, page(f"{et[0]}と傾向・過去の結果｜{B.SITE_NAME}" if et else f"{name}の傾向・過去の結果とレースガイド｜{B.SITE_NAME}", body, path,
-                         desc=(et[1] if et else gd.get("lead", ""))[:120], head_extra=jsonld(ld)))
-        lastmod[path] = max(gd.get("updated") or "", weekly.entries_date(slug)) or None
+        title = ph["title"] if ph else (f"{et[0]}と傾向・過去の結果" if et else f"{name}の傾向・過去の結果とレースガイド")
+        write(path, page(f"{title}｜{B.SITE_NAME}", body, path, desc=(ph["desc"] if ph else et[1] if et else gd.get("lead", ""))[:120], head_extra=jsonld(ld)))
+        lastmod[path] = max(gd.get("updated") or "", weekly.entries_date(slug), _phase_day(ph)) or None
         guide_only.append((slug, name, g, venue))
     rows_all.sort(key=lambda x: (x[0], x[1]["_race"].get("post_time") or ""), reverse=True)
     upcoming = [r for r in rows_all if r[0] >= today]

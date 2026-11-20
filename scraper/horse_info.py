@@ -9,6 +9,7 @@
 
 使い方: python horse_info.py --names ボクマダネムイヨ,ジョスラン
         python horse_info.py --from 20261025 --min-age 3
+        python horse_info.py --entrants    # これからのG1の出走予定馬と重賞の特別登録馬（entries の毎日の回で使う）
 """
 from __future__ import annotations
 
@@ -60,7 +61,38 @@ def card_horses(since: str = "", names: set[str] | None = None, min_age: int = 0
             if min_age and (not m or int(m.group(1)) + now().year - int(d[:4]) < min_age):
                 continue
             out[nm] = {"url": h["horse_url"], "date": d, "sex_age": h.get("sex_age")}
+    if names is not None:  # 馬名を指定したときは、特別レース登録馬（jra_nominations.py）のリンクも使う（出馬表に出る前の週でも取れる）
+        for f in sorted((DATA_DIR / "nominations").glob("*.json")):
+            try:
+                race = json.loads(f.read_text(encoding="utf-8"))
+            except Exception:  # noqa: BLE001
+                continue
+            for h in race.get("horses", []):
+                nm = (h.get("name") or "").replace(" ", "").replace("　", "")
+                if nm in names and h.get("url") and nm not in out:
+                    out[nm] = {"url": h["url"], "date": race.get("date") or "", "sex_age": h.get("sex_age")}
     return out
+
+
+def entrants() -> list[str]:
+    """これからのG1の出走予定馬（data/entries）と、これからの重賞の特別登録馬（data/nominations）の馬名。"""
+    today = now().strftime("%Y%m%d")
+    out: list[str] = []
+    for f in sorted((DATA_DIR / "entries").glob("*.json")):
+        try:
+            d = json.loads(f.read_text(encoding="utf-8"))
+        except Exception:  # noqa: BLE001
+            continue
+        if d.get("date", "") >= today:
+            out += [h.get("name") or "" for h in d.get("horses") or [] if not h.get("foreign")]
+    for f in sorted((DATA_DIR / "nominations").glob("*.json")):
+        try:
+            d = json.loads(f.read_text(encoding="utf-8"))
+        except Exception:  # noqa: BLE001
+            continue
+        if d.get("date", "") >= today and d.get("grade"):
+            out += [h.get("name") or "" for h in d.get("horses") or []]
+    return list(dict.fromkeys(n.replace(" ", "").replace("　", "") for n in out if n))
 
 
 def parse(html: str) -> dict:
@@ -136,8 +168,14 @@ if __name__ == "__main__":
     ap.add_argument("--min-age", type=int, default=0)
     ap.add_argument("--fresh", type=int, default=7, help="この日数以内に取った馬は取り直さない（0で毎回取る）")
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--entrants", action="store_true", help="これからのG1の出走予定馬と重賞の特別登録馬を取る")
     a = ap.parse_args()
     nm = [x.strip() for x in re.split(r"[,、\s]+", a.names) if x.strip()]
+    if a.entrants:
+        nm = list(dict.fromkeys(nm + entrants()))
+        print("出走予定・登録馬", len(nm), "頭")
+        if not nm:
+            raise SystemExit(0)
     if not nm and not a.since:
         ap.error("--names か --from のどちらかを指定する")
     run(nm, a.since, a.min_age, a.fresh, a.limit)
