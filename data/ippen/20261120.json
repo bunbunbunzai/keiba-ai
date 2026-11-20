@@ -1,6 +1,6 @@
 {
  "date": "20261120",
- "updated": "2026-11-20 13:45",
+ "updated": "2026-11-20 13:55",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -673,7 +673,7 @@
     "field": 8,
     "popularity": null
    },
-   "odds": 96.5,
+   "odds": 73.7,
    "popularity": 10
   },
   {
@@ -694,7 +694,7 @@
     "field": 11,
     "popularity": null
    },
-   "odds": 120.7,
+   "odds": 119.7,
    "popularity": 11
   },
   {
@@ -897,8 +897,29 @@
     "field": 11,
     "popularity": 9
    },
-   "odds": 164.8,
-   "popularity": 11
+   "odds": 118.5,
+   "popularity": 12
+  },
+  {
+   "race_id": "202611202726180610",
+   "results_key": "202611202726180610",
+   "venue": "園田",
+   "race_no": 10,
+   "post_time": "15:20",
+   "number": 7,
+   "name": "ルクスドリーム",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 23,
+   "last": {
+    "date": "2026-10-28",
+    "finish": 8,
+    "field": 12,
+    "popularity": 3
+   },
+   "odds": 11.8,
+   "popularity": 7
   },
   {
    "race_id": "202611202726180610",
@@ -919,8 +940,8 @@
     "field": 12,
     "popularity": 2
    },
-   "odds": 14.9,
-   "popularity": 4
+   "odds": 32.3,
+   "popularity": 10
   },
   {
    "race_id": "202611202726180610",
@@ -940,7 +961,7 @@
     "field": 10,
     "popularity": 3
    },
-   "odds": 10.9,
+   "odds": 6.9,
    "popularity": 3
   },
   {
@@ -961,8 +982,8 @@
     "field": 9,
     "popularity": 3
    },
-   "odds": 16.4,
-   "popularity": 5
+   "odds": 3.9,
+   "popularity": 2
   },
   {
    "race_id": "202611202320130311",
