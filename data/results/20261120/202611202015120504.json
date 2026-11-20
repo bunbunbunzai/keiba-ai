@@ -1,0 +1,184 @@
+{
+ "source": "rakuten",
+ "date": "20261120",
+ "race_id": "202611202015120504",
+ "tries": 1,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "9",
+    "yen": 100
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "9-1",
+    "yen": 1810
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "9",
+    "yen": 100
+   },
+   {
+    "combo": "1",
+    "yen": 560
+   },
+   {
+    "combo": "5",
+    "yen": 240
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-9",
+    "yen": 520
+   },
+   {
+    "combo": "5-9",
+    "yen": 300
+   },
+   {
+    "combo": "1-5",
+    "yen": 2630
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-8",
+    "yen": 1190
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-5-9",
+    "yen": 4870
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "9-1-5",
+    "yen": 9190
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-9",
+    "yen": 1590
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 9,
+   "name": "キングパッション",
+   "time": "1:41.6",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 1,
+   "number": 1,
+   "name": "スクラッチクラッチ",
+   "time": "1:43.4",
+   "margin": "９",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 5,
+   "name": "イトウ",
+   "time": "1:43.5",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 10,
+   "name": "アップタウンガール",
+   "time": "1:43.7",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 8,
+   "name": "ブラヴォケラトプス",
+   "time": "1:43.7",
+   "margin": "ハナ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 6,
+   "name": "シンアルマトゥラ",
+   "time": "1:44.3",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 2,
+   "number": 2,
+   "name": "グリューネベルグ",
+   "time": "1:44.3",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 7,
+   "name": "エクラシェール",
+   "time": "1:44.7",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 4,
+   "number": 4,
+   "name": "デルバイス",
+   "time": "1:48.2",
+   "margin": "大差",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 3,
+   "number": 3,
+   "name": "ヘクセンハウス",
+   "time": "1:48.8",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
+}
