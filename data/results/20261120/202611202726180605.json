@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261120",
  "race_id": "202611202726180605",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "メイショウドキョウ",
    "time": "1:32.9",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 38.5,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ランボーリープ",
    "time": "1:33.3",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 38.9,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "クリオロゴールド",
    "time": "1:34.3",
    "margin": "６",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 39.7,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "セレナリス",
    "time": "1:34.5",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 39.8,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "エラガバリウム",
    "time": "1:34.8",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 39.4,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "クールブレーブ",
    "time": "1:34.9",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 40.2,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "ナッシングベター",
    "time": "1:34.9",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 40.2,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "シャインフリーリー",
    "time": "1:35.1",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 39.6,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "サンライズマーク",
    "time": "1:35.1",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 39.6,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "サイモンエクセラー",
    "time": "1:35.2",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 40.4,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "モンテール",
    "time": "1:35.4",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 40.3,
    "popularity": null
   },
   {
@@ -198,8 +198,8 @@
    "name": "マエストロライト",
    "time": "1:35.5",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 12,
+   "last3f": 39.9,
    "popularity": null
   }
  ]
