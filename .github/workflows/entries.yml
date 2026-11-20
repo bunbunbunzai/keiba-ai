@@ -36,7 +36,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -51,11 +51,17 @@ jobs:
           DATE: ${{ inputs.date }}
           PROBE: ${{ inputs.probe && '--probe' || '' }}
         run: python -u jra_entries.py --days "$DAYS" ${SLUG:+--slug "$SLUG"} ${DATE:+--date "$DATE"} $PROBE
+      - name: 特別レース登録馬（馬ページへのリンク）
+        working-directory: scraper
+        continue-on-error: true
+        env:
+          PROBE: ${{ inputs.probe && '--probe' || '' }}
+        run: python -u jra_nominations.py $PROBE
       - name: 保存
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for d in data/entries data/raw; do [ -e "$d" ] && git add "$d"; done
+          for d in data/entries data/nominations data/raw; do [ -e "$d" ] && git add "$d"; done
           if git diff --cached --quiet; then echo "変更なし"; exit 0; fi
           git commit -q -m "entries: G1の出走予定馬を更新"
           for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && break; sleep 7; done
