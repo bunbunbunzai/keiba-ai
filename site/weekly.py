@@ -38,10 +38,14 @@ LAST_RUN: dict[str, dict] = {}      # 馬名 → このサイトで予想した�
 GRADED_YEAR: dict[str, list] = {}   # 馬名 → 今年のJRA重賞の出走（data/graded_hist。出走予定馬の分だけ）
 NOMS: dict[str, dict] = {}          # 重賞の slug → 特別レース登録馬（data/nominations。JRA発表。プレレーティングより前から出る）
 NOM_BY_HORSE: dict[str, dict] = {}  # 馬名 → {date, slug, name}（これからの重賞に特別登録している）
-JRA_VENUE_CODE = {"01": "札幌", "02": "函館", "03": "福島", "04": "新潟", "05": "東京", "06": "中山", "07": "中京", "08": "京都", "09": "阪神", "10": "小倉"}
+WAKU: dict[str, dict] = {}          # 重賞の slug → 出走馬・枠順（JRA発表。data/races の出馬表か data/waku。これから行われるレースだけ）
+_K: dict = {}                       # graded_cols.keyed（JRA重賞の全年の結果。特集まとめの結果の箱に使う）
+GRADES = ("G1", "G2", "G3", "J・G1", "J・G2", "J・G3")
+JRA_VENUE_CODE ={"01": "札幌", "02": "函館", "03": "福島", "04": "新潟", "05": "東京", "06": "中山", "07": "中京", "08": "京都", "09": "阪神", "10": "小倉"}
 
 
 def _schedule(root, today: str) -> list[dict]:
+    global _K
     try:
         sys.path.insert(0, str(root / "scraper"))
         import graded_cols as G  # noqa: PLC0415
@@ -49,6 +53,7 @@ def _schedule(root, today: str) -> list[dict]:
             keyed = G.keyed(G.load_all())
     except Exception:  # noqa: BLE001
         return []
+    _K = keyed
     lo = (datetime.strptime(today, "%Y%m%d") - timedelta(days=14)).strftime("%Y%m%d")
     out = []
     for slug, years in keyed.items():
@@ -96,6 +101,7 @@ def prepare(B, by_date: dict, today: str) -> None:
         v.sort(key=lambda c: int(c.get("order") or 0))
     _load_entries(B, by_date)
     _load_nominations(B)
+    _load_waku(B)
 
 
 def _load_nominations(B) -> None:
@@ -254,22 +260,294 @@ def entries_section(slug: str) -> str:
 
 
 def entries_date(slug: str) -> str:
-    """出走予定馬を取り込んだ日（YYYY-MM-DD）。サイトマップの更新日に使う。無ければ空。"""
+    """題名の元にしたJRAの発表（枠順・出走馬・出走予定馬）を取り込んだ日（YYYY-MM-DD）。サイトマップの更新日に使う。無ければ空。"""
+    x = _pre(slug)
+    if x:
+        return x["since"]
     d = ENTRIES.get(slug)
     return (d.get("fetched") or d.get("published") or "")[:10] if d else ""
 
 
 def entries_title(slug: str) -> tuple[str, str] | None:
-    """出走予定馬が出ていて、そのレースの予想がまだのときの (題名の頭, 説明文)。"""
-    d = ENTRIES.get(slug)
-    if not d or any(dd == d["date"] for dd, *_ in PREDS.get(slug) or []):
+    """JRAの発表（枠順・出走馬・出走予定馬）が出ていて、そのレースの予想がまだのときの (題名の頭, 説明文)。"""
+    x = _pre(slug)
+    return (x["head"], x["desc"]) if x else None
+
+
+def _iso(d: str) -> str:
+    return f"{d[:4]}-{d[4:6]}-{d[6:8]}"
+
+
+def _waku_day(d: str) -> str:
+    """枠順（馬番）が出る日。JRA：G1など前日発売のある重賞は、その週の金曜の朝（G1の週は9時すぎ）。
+    出走馬（馬番なし）はその前の木曜の16時すぎ。有馬記念は木曜の夕方の公開抽選で決まる（https://www.jra.go.jp/faq/pop02/2_2.html）。"""
+    x = _dt(d)
+    return (x - timedelta(days=(x.weekday() - 4) % 7)).strftime("%Y%m%d")
+
+
+def _kg(w) -> str:
+    try:
+        return f"{float(w):.1f}"
+    except (TypeError, ValueError):
+        return str(w or "")
+
+
+def _nf(x) -> str:
+    import unicodedata  # noqa: PLC0415
+    return unicodedata.normalize("NFKC", str(x or "")).replace(" ", "").replace("　", "")
+
+
+def _top_names(slug: str, names: list[str], n: int = 3) -> list[str]:
+    """説明文に名前を出す馬：JRAのプレレーティングの高い順。無い馬は獲得賞金（JRAの馬ページの総賞金）の多い順。"""
+    import horses  # noqa: PLC0415
+    rt = {_nf(h["name"]): _rating_num(h) for h in (ENTRIES.get(slug) or {}).get("horses") or []}
+
+    def prize(nm: str) -> int:
+        s = ((horses.INFO.get(_nf(nm)) or {}).get("profile") or {}).get("総賞金") or ""
+        return int(re.sub(r"\D", "", s) or 0)
+    return sorted(names, key=lambda nm: (-rt.get(_nf(nm), 0), -prize(nm)))[:n]
+
+
+def _sched_of(slug: str, d: str) -> dict:
+    return next((r for r in SCHED_BY_SLUG.get(slug) or [] if r["date"] == d), {})
+
+
+def _pre(slug: str) -> dict | None:
+    """これから行われる重賞で、予想がまだのときの、JRAの発表のうち新しいもの：
+    枠順（馬番あり）→ 出走馬（木曜の夕方。馬番なし）→ 出走予定馬（G1のプレレーティング）。
+    特別登録馬は外国馬が入らず頭数が実際と違うことがあるので、題名には使わない。{phase, head, desc, since} か None。"""
+    up = sorted((r for r in SCHED_BY_SLUG.get(slug) or [] if r["date"] >= TODAY), key=lambda r: r["date"])
+    if not up or any(dd == up[0]["date"] for dd, *_ in PREDS.get(slug) or []):
         return None
-    n = len(d["horses"])
-    names = "、".join(h["name"] for h in sorted(d["horses"], key=lambda h: -_rating_num(h))[:3])
-    prev = (_dt(d["date"]) - timedelta(days=1)).strftime("%Y%m%d")
-    desc = (f"{d['name']}{d['date'][:4]}（{day_jp(d['date'])}・{d.get('venue', '')}{d.get('course', '')}）の出走予定馬{n}頭。"
-            f"{names}など、直近の出走・今年の重賞成績・レーティングつき。AI予想は{day_jp(prev)}の夜までに公開。")
-    return f"{d['name']}{d['date'][:4]}の出走予定馬（{n}頭）", desc
+    r = up[0]
+    d, name, y = r["date"], r["name"], r["date"][:4]
+    where = f"{r.get('venue', '')}{r.get('course', '')}"
+    prev = day_jp((_dt(d) - timedelta(days=1)).strftime("%Y%m%d"))
+    w = WAKU.get(slug)
+    if w and w["date"] == d:
+        hs = w["horses"]
+        top = _top_names(slug, [h["name"] for h in hs])
+        if w["numbered"]:
+            pos = {h["name"]: h for h in hs}
+            desc = (f"{day_jp(d)}に{where}で行われる{name}{y}の枠順が確定した。"
+                    + "、".join(f"{x}は{pos[x].get('frame')}枠{pos[x].get('number')}番" for x in top)
+                    + f"。{len(hs)}頭の騎手・斤量つき。AI予想は{prev}の夜までに公開。")
+            return {"phase": "waku", "date": d, "head": f"{name}{y}の枠順確定・出走馬{len(hs)}頭", "desc": desc, "since": w["since"]}
+        desc = (f"{day_jp(d)}に{where}で行われる{name}{y}の出走馬{len(hs)}頭が決まった。{'、'.join(top)}など、騎手・斤量つき。"
+                f"馬番と枠番は{day_jp(_waku_day(d))}ごろに決まり、AI予想は{prev}の夜までに公開。")
+        return {"phase": "runners", "date": d, "head": f"{name}{y}の出走馬確定（{len(hs)}頭）", "desc": desc, "since": w["since"]}
+    e = ENTRIES.get(slug)
+    if e and e["date"] == d:
+        n = len(e["horses"])
+        names = "、".join(h["name"] for h in sorted(e["horses"], key=lambda h: -_rating_num(h))[:3])
+        desc = (f"{day_jp(d)}に{e.get('venue', '') or r.get('venue', '')}{e.get('course', '') or r.get('course', '')}で行われる{e['name']}{y}の出走予定馬{n}頭。"
+                f"{names}など、直近の出走・今年の重賞成績・レーティングつき。AI予想は{prev}の夜までに公開。")
+        return {"phase": "entries", "date": d, "head": f"{e['name']}{y}の出走予定馬（{n}頭）", "desc": desc,
+                "since": (e.get("fetched") or e.get("published") or "")[:10]}
+    return None
+
+
+def _load_waku(B) -> None:
+    """出走馬・枠順（JRA発表）。予想の元データの出馬表（data/races。近走つき。金曜の昼と前日の夕方に取る）と、
+    scraper/jra_waku.py が木曜の夕方（出走馬。馬番なし）と金曜の朝（枠順）に取る data/waku を見て、馬番の入っている方を使う。"""
+    import extra  # noqa: PLC0415
+    WAKU.clear()
+    hi = (_dt(TODAY) + timedelta(days=5)).strftime("%Y%m%d")
+    for d in sorted({r["date"] for r in SCHED if TODAY <= r["date"] <= hi}):
+        cands = [("card", f) for f in sorted((B.ROOT / "data" / "races" / d).glob("jra_*.json"))]
+        cands += [("waku", f) for f in sorted((B.ROOT / "data" / "waku").glob(f"{d}_*.json"))]
+        for src, f in cands:
+            x = B.load_json(f) or {}
+            if x.get("grade") not in GRADES or not x.get("horses"):
+                continue
+            slug = extra.graded_slug(x.get("race_name") or x.get("title_text") or "", B.VENUE_SLUG.get(x.get("venue", ""), "venue"))
+            if not _sched_of(slug, d):
+                continue
+            num = all(h.get("number") for h in x["horses"])
+            cur = WAKU.get(slug)
+            if cur and (cur["numbered"], cur["src"] == "card") >= (num, src == "card"):
+                continue
+            WAKU[slug] = {**x, "date": d, "src": src, "numbered": num,
+                          "since": (x.get("fetched") or "")[:10] or _iso(min(TODAY, _waku_day(d)))}
+
+
+def waku_section(slug: str) -> str:
+    """これから行われる重賞の出走馬・枠順の表（JRA発表）。AI予想を公開していれば、印と予想ページへのリンクも付ける。"""
+    w = WAKU.get(slug)
+    if not w or _B is None:
+        return ""
+    B, esc = _B, _B.esc
+    d = w["date"]
+    name = _sched_of(slug, d).get("name") or w.get("race_name", "")
+    pred = next((p for dd, p, *_ in PREDS.get(slug) or [] if dd == d), None)
+    mk = B.mark_map(pred) if pred and pred.get("confidence") != "見送り" else {}
+    num = w["numbered"]
+    hs = sorted(w["horses"], key=lambda h: h.get("number") or 99) if num else list(w["horses"])
+    rows = ""
+    for h in hs:
+        n, fr = h.get("number"), h.get("frame")
+        rows += ("<tr>" + (f"<td class='nw'><b class='fr f{esc(fr or '')}'>{esc(fr or '')}</b></td><td class='nw'>{esc(n)}</td>" if num else "")
+                 + (f"<td class='nw'><b>{esc(mk.get(n, ''))}</b></td>" if mk else "")
+                 + f"<td class='nm'>{B.link_horse(h['name'])}</td><td class='nw'>{esc(h.get('sex_age') or '')}</td>"
+                 f"<td class='nw'>{esc(_kg(h.get('weight')))}</td><td>{esc(h.get('jockey') or '')}</td><td>{esc(h.get('trainer') or '')}</td></tr>")
+    th = ("<th>枠</th><th>馬番</th>" if num else "") + ("<th>AIの印</th>" if mk else "") + "<th>馬名</th><th>性齢</th><th>斤量</th><th>騎手</th><th>調教師</th>"
+    pt = w.get("post_time") or ""
+    when = f"{day_jp(d)}{f'{pt}発走' if pt else ''}"
+    if num and mk:
+        head = f"{name}{d[:4]}の枠順とAIの印"
+        intro = (f"{esc(when)}の{esc(name)}の枠順（JRA発表）と、このサイトのAIの印（当日のオッズで変わることがある）。"
+                 f"<a href='{B.race_path(d, pred)}'>全頭の評価点・短評と買い目を見る</a>")
+    elif num:
+        head = f"{name}{d[:4]}の枠順（{len(hs)}頭）"
+        intro = f"{esc(when)}の{esc(name)}の枠順が確定した（JRA発表）。このサイトのAI予想は{esc(publish_when(d))}。"
+    else:
+        head = f"{name}{d[:4]}の出走馬（{len(hs)}頭）"
+        intro = (f"{esc(day_jp(d))}の{esc(name)}に出走する{len(hs)}頭が決まった（JRA発表）。馬番と枠番は、{esc(day_jp(_waku_day(d)))}ごろの枠順の確定で決まる。"
+                 f"このサイトのAI予想は{esc(publish_when(d))}（枠順の確定後）。")
+    at = (w.get("fetched") or "")[:16]
+    return (f"<section class='card' id='entries'><h2>{esc(head)}</h2><p>{intro}</p>"
+            f"<div class='scroll'><table class='ent nfix'><thead><tr>{th}</tr></thead><tbody>{rows}</tbody></table></div>"
+            f"<p class='meta'>出典：JRA「出馬表」{f'（{esc(at)}時点）' if at else ''}。出走取消・競走除外などで変わることがある。</p></section>")
+
+
+def live_section(slug: str) -> str:
+    """重賞ページ・特集まとめに出すJRA発表の馬の表。出ている中でいちばん新しいもの：枠順（出走馬）→ 出走予定馬 → 特別登録馬。"""
+    return waku_section(slug) or entries_section(slug) or nominations_section(slug)
+
+
+def _guide_name(slug: str) -> str:
+    return ((_B.load_json(_B.ROOT / "data" / "race_guides" / f"{slug}.json") or {}).get("name") or "") if _B else ""
+
+
+def _result_of(slug: str, year: str) -> dict | None:
+    """その年のレースの結果：このサイトが予想したレースの結果（data/results）を先に、無ければJRA重賞の成績（data/graded_hist）。"""
+    B = _B
+    for d, p, name, g in reversed(PREDS.get(slug) or []):
+        if d[:4] != year:
+            continue
+        rows = sorted((x for x in (p.get("_result") or {}).get("rows") or [] if str(x.get("finish") or "").isdigit()),
+                      key=lambda x: int(x["finish"]))
+        if len(rows) < 3:
+            continue
+        hs = {h.get("number"): h for h in p["_race"].get("horses") or []}
+        r = p["_race"]
+        sch = _sched_of(slug, d)
+        return {"date": d, "name": sch.get("name") or _guide_name(slug) or name, "p": p,
+                "venue": sch.get("venue") or r.get("venue") or B.venue_of(p),
+                "course": sch.get("course") or f"{ {'ダ': 'ダート', '障': '障害'}.get(r.get('surface'), r.get('surface') or '') }{r.get('distance') or ''}m".replace(" ", ""),
+                "rows": [{"fin": int(x["finish"]), "num": x.get("number"), "frame": (hs.get(x.get("number")) or {}).get("frame"),
+                          "name": x.get("name") or (hs.get(x.get("number")) or {}).get("name") or "", "pop": x.get("popularity"),
+                          "jockey": (hs.get(x.get("number")) or {}).get("jockey") or ""} for x in rows],
+                "pay": {k: [(v.get("combo"), v.get("yen"), v.get("pop")) for v in vs or []] for k, vs in ((p.get("_result") or {}).get("payouts") or {}).items()}}
+    r = (_K.get(slug) or {}).get(int(year)) if year.isdigit() else None
+    rows = sorted((x for x in (r or {}).get("rows") or [] if isinstance(x.get("fin"), int)), key=lambda x: x["fin"])
+    if len(rows) < 3:
+        return None
+    return {"date": r["date"], "name": _guide_name(slug) or r.get("name") or r.get("abbr") or "", "p": None, "venue": r.get("venue") or "",
+            "course": (r.get("course") or "").replace(" ", "").replace(",", "").replace("メートル", "m"),
+            "rows": [{"fin": x["fin"], "num": x.get("num"), "frame": x.get("frame"), "name": x.get("name") or "", "pop": x.get("pop"),
+                      "jockey": x.get("jockey") or ""} for x in rows],
+            "pay": {k: [tuple(v) for v in vs or []] for k, vs in (r.get("pay") or {}).items()}}
+
+
+def _yen(pay: dict, k: str, pop: bool = False) -> str:
+    v = [x for x in pay.get(k) or [] if x and x[1]]
+    return "・".join(f"{int(x[1]):,}円" + (f"（{x[2]}番人気）" if pop and len(x) > 2 and x[2] else "") for x in v)
+
+
+def _hon_line(res: dict) -> str:
+    """結果の箱・説明文に使う「AIの◎は〇〇で3着」の文（予想していない・見送りのときは空）。"""
+    p = res.get("p")
+    if not p or p.get("confidence") == "見送り" or (p.get("marks") or {}).get("◎") is None:
+        return ""
+    hon = p["marks"]["◎"]
+    me = next((x for x in res["rows"] if x.get("num") == hon), None)
+    return f"AIの◎{_B.horse_name(p, hon)}は" + (f"{me['fin']}着" if me else "着順なし（取消・除外・中止など）")
+
+
+def result_box(slug: str, year: str) -> str:
+    """終わったG1の特集まとめの冒頭に出す結果の箱：上位5頭（人気・騎手）、主な払戻、AIの◎の着順と予想ページへのリンク。"""
+    res = _result_of(slug, year)
+    if not res or _B is None:
+        return ""
+    B, esc = _B, _B.esc
+    d, rows = res["date"], res["rows"]
+    who = lambda x: x["name"] + (f"（{x['pop']}番人気）" if x.get("pop") else "")
+    trs = "".join(
+        f"<tr><td class='nw'>{x['fin']}着</td><td class='nw'>"
+        + (f"<b class='fr f{esc(x['frame'])}'>{esc(x['num'])}</b>" if x.get("frame") else esc(x.get("num") or ""))
+        + f"</td><td class='nm'>{B.link_horse(x['name'])}</td><td class='nw'>{esc(str(x['pop']) + '番人気') if x.get('pop') else '-'}</td>"
+        f"<td>{esc(x.get('jockey') or '')}</td></tr>" for x in rows[:5])
+    pays = "、".join(f"{k} {_yen(res['pay'], k, pop=k == '3連単')}" for k in ("単勝", "馬連", "3連複", "3連単") if _yen(res["pay"], k))
+    ai = ""
+    p = res.get("p")
+    hl = _hon_line(res)
+    if hl:
+        sc = B.scored(p)
+        bet = ("買い目は的中（払戻" + f"{sc['return']:,}" + "円）。") if sc and sc.get("return") else ("買い目は不的中。" if sc else "")
+        ai = f"<p>このサイトの{esc(hl)}。{esc(bet)}<a href='{B.race_path(d, p)}'>AI予想の答え合わせ（全頭の評価点と着順）を見る</a></p>"
+    return (f"<section class='card' id='result'><h2>{esc(res['name'])}{year}の結果</h2>"
+            f"<p>{esc(day_jp(d))}に{esc(res['venue'])}競馬場の{esc(res['course'])}で行われ、{esc(who(rows[0]))}が勝った。"
+            f"2着は{esc(who(rows[1]))}、3着は{esc(who(rows[2]))}。</p>"
+            "<div class='scroll'><table class='ent nfix'><thead><tr><th>着順</th><th>馬番</th><th>馬名</th><th>人気</th><th>騎手</th></tr></thead>"
+            f"<tbody>{trs}</tbody></table></div>" + (f"<p>払戻（100円あたり）：{esc(pays)}。</p>" if pays else "") + ai
+            + "<p class='meta'>出典：JRAのレース結果。</p></section>")
+
+
+def _pred_since(p: dict, d: str) -> str:
+    """予想を最初に公開した日（updates の最初の時刻「11/20 11:30」）。分からなければ今日。"""
+    m = re.match(r"(\d{1,2})/(\d{1,2})", ((p.get("updates") or [{}])[0] or {}).get("at") or "")
+    if not m:
+        return _iso(TODAY)
+    y = int(d[:4]) - (1 if int(m.group(1)) > int(d[4:6]) else 0)
+    return min(f"{y}-{int(m.group(1)):02d}-{int(m.group(2)):02d}", _iso(TODAY))
+
+
+def hub_phase(slug: str, year: str) -> dict | None:
+    """特集まとめ（〇〇2026-guide）の題名・説明文を、レースの進み具合で変える（検索で使われる言葉が「出走予定馬」→「枠順」→「予想」→「結果」と移るため）。
+    出走予定馬（月曜のプレレーティング）→ 出走馬（木曜の夕方）→ 枠順（金曜の朝）→ AI予想（金曜の昼）→ 結果。
+    どれでもないとき（登録の前）は None（記事に書いた題名のまま）。{phase, title, desc, since(YYYY-MM-DD)}"""
+    if _B is None:
+        return None
+    B = _B
+    tail = "過去10年の傾向もまとめた特集のトップページ。"
+    res = _result_of(slug, year)
+    if res:
+        t = res["rows"]
+        who = lambda x: x["name"] + (f"（{x['pop']}番人気）" if x.get("pop") else "")
+        tan, t3 = _yen(res["pay"], "単勝"), _yen(res["pay"], "3連単")
+        hl = _hon_line(res)
+        desc = (f"{res['name']}{year}は{who(t[0])}が勝った。2着{who(t[1])}、3着{who(t[2])}。"
+                + (f"単勝{tan}" + (f"、3連単{t3}" if t3 else "") + "。" if tan else "") + (f"{hl}。" if hl else "")
+                + f"{day_jp(res['date'])}の{res['venue']}{res['course']}の結果と払戻、AI予想の答え合わせ、" + tail)
+        return {"phase": "result", "title": f"{res['name']}{year}の結果と払戻・AI予想の答え合わせ【特集まとめ】", "desc": desc,
+                "since": _iso(res["date"])}
+    sch = next((r for r in sorted(SCHED_BY_SLUG.get(slug) or [], key=lambda r: r["date"]) if r["date"][:4] == year and r["date"] >= TODAY), None)
+    if not sch:
+        return None
+    d, name = sch["date"], sch["name"]
+    where = f"{sch.get('venue', '')}{sch.get('course', '')}"
+    pred = next((p for dd, p, *_ in PREDS.get(slug) or [] if dd == d), None)
+    if pred:
+        pt = pred["_race"].get("post_time") or ""
+        head = f"{name}{year}のAI予想"
+        when = f"{day_jp(d)}{pt + '発走' if pt else ''}、{where}の"
+        mk = pred.get("marks") or {}
+        hon = mk.get("◎")
+        if pred.get("confidence") == "見送り" or hon is None:
+            desc = head + "は見送り（データ不足などで買い目なし）。" + when + "枠順と全頭の評価点、" + tail
+        else:
+            h = next((x for x in pred["_race"].get("horses") or [] if x.get("number") == hon), {})
+            sub = "・".join(f"{m}{B.horse_name(pred, mk[m])}" for m in ("〇", "▲") if mk.get(m) is not None and B.horse_name(pred, mk[m]))
+            desc = (head + "は◎" + (f"{h['frame']}枠" if h.get("frame") else "") + f"{hon}番{B.horse_name(pred, hon)}"
+                    + (f"、相手は{sub}" if sub else "") + "。" + when + "枠順と全頭の評価点・印、" + tail)
+        return {"phase": "pred", "title": f"【AI予想】{name}{year}の枠順と全頭診断・過去10年の傾向【特集まとめ】", "desc": desc,
+                "since": _pred_since(pred, d)}
+    x = _pre(slug)
+    if x and x["date"] == d:
+        return {"phase": x["phase"], "title": x["head"] + ("・日程" if x["phase"] == "entries" else "") + "と過去10年の傾向【特集まとめ】",
+                "desc": x["desc"] + tail, "since": x["since"]}
+    return None
 
 
 # ---------- 日付の言い方 ----------
@@ -566,6 +844,8 @@ CSS = """
 .wk-st{margin:6px 0}.wk-st.on{font-weight:700}.wk-l{font-size:13px;margin:4px 0 0;line-height:1.9}
 .bm{border-left:4px solid var(--acc)}
 .ent td,.ent th{vertical-align:top}.ent td.nm{white-space:nowrap}.ent small{color:var(--mut);font-size:12px}.bm details{margin:6px 0}.bm summary{cursor:pointer;color:var(--acc)}
+/* 枠順・結果の表：1列目が枠・着順なので、馬名用の1列目の幅と固定をやめる */
+.scroll table.ent.nfix td:first-child,.scroll table.ent.nfix th:first-child{min-width:0;position:static;box-shadow:none}
 """
 
 JS = r"""

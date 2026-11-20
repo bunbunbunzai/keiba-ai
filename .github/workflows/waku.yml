@@ -1,0 +1,58 @@
+name: waku (重賞の出走馬・枠順)
+
+# JRAの出馬表から、3日以内に行われる重賞の出走馬・枠順だけを取り data/waku に保存する（scraper/jra_waku.py）。AIは呼ばない。
+# 特集まとめと重賞ページの「出走馬・枠順」の表と題名に使う（予想の元データの出馬表は、金曜の昼の早出し予想と前日の夕方に別に取る）。
+# JRAの発表：出走馬（馬番なし）は木曜の16時すぎ、G1の週の枠順は金曜の9時すぎ。有馬記念は木曜の17〜18時の公開抽選で決まる。
+# 変わったときだけ保存してサイトを作り直す。
+on:
+  schedule:
+    - cron: "40 7 * * 4"    # 木曜 16:40 JST（出走馬の発表のあと）
+    - cron: "40 10 * * 4"   # 木曜 19:40 JST（有馬記念の公開枠順抽選のあと。ほかの週は変わらなければ何もしない）
+    - cron: "25 0 * * 5"    # 金曜 9:25 JST（G1の週の枠順の発表のあと）
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "何日先までの重賞を見るか"
+        required: false
+        default: "3"
+      probe:
+        description: "取ったページも data/raw に残す（読み取りの確認用）"
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: entries
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q -r requirements.txt
+      - name: 取得
+        working-directory: scraper
+        env:
+          DAYS: ${{ inputs.days || '3' }}
+          PROBE: ${{ inputs.probe && '--probe' || '' }}
+        run: python -u jra_waku.py --days "$DAYS" $PROBE
+      - name: 保存
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for d in data/waku data/raw; do [ -e "$d" ] && git add "$d"; done
+          if git diff --cached --quiet; then echo "変更なし"; exit 0; fi
+          git commit -q -m "waku: 重賞の出走馬・枠順を更新"
+          for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && break; sleep 7; done
+          gh workflow run pages.yml --ref main
+        env:
+          GH_TOKEN: ${{ github.token }}

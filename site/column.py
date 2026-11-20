@@ -535,9 +535,17 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
         tables["aff_saikyo"] = __import__("build").aff_saikyo()
     except Exception:  # noqa: BLE001
         tables["aff_rakuten"] = tables["aff_saikyo"] = ""
+    # 特集まとめ（〇〇2026-guide）の題名・説明文は、レースの進み具合（出走予定馬→出走馬→枠順→AI予想→結果）で変える。
+    # 一覧や関連記事の題名もそろうように、ここで書き換えておく
+    import weekly  # noqa: PLC0415
+    for c in cols:
+        if c["slug"].endswith("-guide") and c.get("series") in weekly.FEATURE_RACE and re.search(r"\d{4}$", c["series"]):
+            ph = weekly.hub_phase(weekly.FEATURE_RACE[c["series"]], c["series"][-4:])
+            if ph:
+                c.update(title=ph["title"], description=ph["desc"], _since=ph["since"], _phase=ph["phase"])
     pub = [c for c in cols if not c["draft"]]
     lastmod = {}
-    autos_new = sorted((o for o in pub if o.get("auto") == "true"), key=lambda o: o.get("date", ""), reverse=True)
+    autos_new =sorted((o for o in pub if o.get("auto") == "true"), key=lambda o: o.get("date", ""), reverse=True)
     _tk = today_iso.replace("-", "")
     # 重賞のデータ記事：これから行われるレースを日付の近い順に、終わったレースは新しい順に続ける
     gdata_new = sorted((o for o in pub if o.get("series") == "gdata"),
@@ -604,6 +612,8 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
         if related:
             related += "<p class='morelink'><a href='/column/'>コラムの一覧へ →</a></p>"
         mod_iso, dyn = modified(c, v, today_iso)
+        if c.get("_since"):  # 題名が変わった日（JRAの発表・予想の公開・結果）を更新日にする
+            mod_iso = min(max(mod_iso, c["_since"]), today_iso)
         ld = {"@context": "https://schema.org", "@type": "Article", "headline": title, "description": desc,
               "datePublished": _iso(c.get("date")) or c.get("date"), "dateModified": mod_iso, "inLanguage": "ja",
               "author": {"@type": "Organization", "name": site_name, "url": base_url + "/operator/"},
@@ -618,11 +628,16 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
         ns_where = "feature" if c.get("series") in FEATURE_IDS else "gdata" if c.get("series") == "gdata" else "column"
         ns_top = weekly.next_mini(ns_where, rslug) if rslug else ""
         ns_box = "" if auto_c else weekly.next_card(ns_where, slug=rslug)
-        # 特集まとめ（〇〇2026-guide）には、JRA発表の登録馬（出走予定馬・特別登録馬）の表を自動で差し込む。
-        # 位置は「レースの基本情報」のすぐ後（2つ目の見出しの前）。登録の発表前やレースのあとは何も出さない
+        # 特集まとめ（〇〇2026-guide）には、JRA発表の馬の表（枠順・出走馬・出走予定馬・特別登録馬のうち新しいもの）を自動で差し込む。
+        # 位置は「レースの基本情報」のすぐ後（2つ目の見出しの前）。登録の発表前は何も出さない。
+        # レースが終わったら、表の代わりに結果の箱（上位5頭・払戻・AIの◎の着順）を記事の冒頭に出す
         if rslug and c["slug"].endswith("-guide") and c.get("series") in weekly.FEATURE_RACE:
-            live = weekly.entries_section(rslug) or weekly.nominations_section(rslug)
-            if live:
+            yr = c["series"][-4:]
+            box = "" if re.search(rf"{yr}年の結果</h2>", body_html) else weekly.result_box(rslug, yr)
+            live = "" if box else weekly.live_section(rslug)
+            if box:
+                body_html = box + body_html
+            elif live:
                 i = [m.start() for m in re.finditer(r"<h2[ >]", body_html)]
                 body_html = (body_html[:i[1]] + live + body_html[i[1]:]) if len(i) >= 2 else body_html + live
         html_ = (("<p class='draft'>下書き（検索エンジンには出ず、一覧にも載らない）</p>" if c["draft"] else "")

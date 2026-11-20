@@ -123,7 +123,9 @@ def build(cfg: dict, all_: dict, K: dict) -> tuple[str, str, str, str]:
     name, d, slug = cfg["name"], cfg["date"], cfg["slug"]
     x = dt(d)
     nom = (x - timedelta(days=(x.weekday() - 6) % 7 or 7)).strftime("%Y%m%d")  # その週の前の日曜（特別登録の締め切り）
-    waku = (x - timedelta(days=(x.weekday() - 3) % 7)).strftime("%Y%m%d")      # その週の木曜（枠順の確定）
+    # JRA：出走馬（馬番なし）はその週の木曜の16時すぎ、G1の枠順は金曜の9時すぎ（https://www.jra.go.jp/faq/pop02/2_2.html）
+    thu = (x - timedelta(days=(x.weekday() - 3) % 7)).strftime("%Y%m%d")
+    waku = (x - timedelta(days=(x.weekday() - 4) % 7)).strftime("%Y%m%d")
     P = past10(K, slug)
     s = stats(P)
     this = (K.get(slug) or {}).get(YEAR)
@@ -134,14 +136,13 @@ def build(cfg: dict, all_: dict, K: dict) -> tuple[str, str, str, str]:
     # ---- 本文 ----
     body = "## レースの基本情報\n\n"
     body += (f"- レース：第{cfg['no']}回{name}（{cfg['grade']}）\n- 日時：{YEAR}年{jp(d)}\n- 場所：{cfg['place']}\n- 条件：{cfg['cond']}\n"
-             f"- 特別登録の締め切り：{jp(nom)}（登録した馬はJRAが発表する）\n- 枠順の確定：{jp(waku)}の予定\n"
-             f"- このサイトのAI予想：レースの前日の夜までに公開（枠順の確定後）\n\n")
+             f"- 特別登録の締め切り：{jp(nom)}（登録した馬はJRAが発表する）\n"
+             f"- 出走馬の確定：{jp(thu)}の夕方（馬番・枠番はまだ）\n- 枠順の確定：{jp(waku)}の朝\n"
+             f"- このサイトのAI予想：枠順の確定後、{jp(waku)}の昼〜レースの前日の夜に公開\n\n")
     if not done:
-        body += f"> 登録馬の一覧は、JRAの特別登録の発表（{jp(nom, False)}ごろ）のあと、このページと[{name}のページ](/graded/{slug}/)に自動で載る。\n\n"
-    if done:
-        t = top3(this)
-        body += (f"## {YEAR}年の結果\n\n{YEAR}年の{name}は{who(t[0])}が勝った。2着は{who(t[1])}、3着は{who(t[2])}。"
-                 f"このサイトのAI予想と答え合わせは[{name}のページ](/graded/{slug}/)にある。\n\n")
+        body += (f"> 登録馬・出走馬・枠順は、JRAの発表（{jp(nom, False)}ごろから）のあと、このページと[{name}のページ](/graded/{slug}/)に自動で載る。"
+                 "レースが終わると、このページの冒頭に結果と払戻が自動で載る。\n\n")
+    # レースが終わったら、結果（上位5頭・払戻・AIの◎の着順）はサイトを作るとき（site/weekly.py の result_box）に記事の冒頭へ自動で入る
     # 前哨戦
     if pr:
         if cfg["kind"] == "2yo":
