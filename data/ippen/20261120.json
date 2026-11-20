@@ -1,6 +1,6 @@
 {
  "date": "20261120",
- "updated": "2026-11-20 13:04",
+ "updated": "2026-11-20 13:10",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -652,7 +652,7 @@
     "field": 9,
     "popularity": null
    },
-   "odds": 27.0,
+   "odds": 108.1,
    "popularity": 8
   },
   {
@@ -715,8 +715,8 @@
     "field": 10,
     "popularity": 10
    },
-   "odds": 20.8,
-   "popularity": 5
+   "odds": 22.5,
+   "popularity": 7
   },
   {
    "race_id": "202611202320130309",
@@ -736,7 +736,7 @@
     "field": 8,
     "popularity": 4
    },
-   "odds": 20.8,
+   "odds": 13.2,
    "popularity": 5
   },
   {
@@ -757,29 +757,8 @@
     "field": 12,
     "popularity": null
    },
-   "odds": 5.2,
-   "popularity": 2
-  },
-  {
-   "race_id": "202611202320130309",
-   "results_key": "202611202320130309",
-   "venue": "笠松",
-   "race_no": 9,
-   "post_time": "14:35",
-   "number": 8,
-   "name": "トサノリンドウ",
-   "types": [
-    "letdown"
-   ],
-   "gap_days": 15,
-   "last": {
-    "date": "2026-11-05",
-    "finish": 7,
-    "field": 8,
-    "popularity": 3
-   },
-   "odds": 20.8,
-   "popularity": 5
+   "odds": 2.2,
+   "popularity": 1
   },
   {
    "race_id": "202611202726180609",
