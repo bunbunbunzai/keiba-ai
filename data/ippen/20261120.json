@@ -1,6 +1,6 @@
 {
  "date": "20261120",
- "updated": "2026-11-20 10:52",
+ "updated": "2026-11-20 10:58",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -89,8 +89,22 @@
     "field": 12,
     "popularity": 3
    },
-   "odds": 41.8,
-   "popularity": 7
+   "odds": 10.6,
+   "popularity": 4
+  },
+  {
+   "race_id": "202611202726180603",
+   "results_key": "202611202726180603",
+   "venue": "園田",
+   "race_no": 3,
+   "post_time": "11:40",
+   "number": 5,
+   "name": "フィフスドア",
+   "types": [
+    "aitop"
+   ],
+   "odds": 5.7,
+   "popularity": 3
   },
   {
    "race_id": "202611202320130304",
@@ -110,8 +124,8 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": 32.8,
-   "popularity": 9
+   "odds": 63.0,
+   "popularity": 8
   },
   {
    "race_id": "202611202320130304",
@@ -131,8 +145,22 @@
     "field": 9,
     "popularity": null
    },
-   "odds": 24.6,
-   "popularity": 8
+   "odds": 55.2,
+   "popularity": 7
+  },
+  {
+   "race_id": "202611202320130304",
+   "results_key": "202611202320130304",
+   "venue": "笠松",
+   "race_no": 4,
+   "post_time": "11:55",
+   "number": 9,
+   "name": "ジーティーパリス",
+   "types": [
+    "aitop"
+   ],
+   "odds": 36.8,
+   "popularity": 6
   },
   {
    "race_id": "202611202320130304",
@@ -152,8 +180,8 @@
     "field": 9,
     "popularity": 4
    },
-   "odds": 16.4,
-   "popularity": 7
+   "odds": 4.1,
+   "popularity": 3
   },
   {
    "race_id": "202611202726180604",
@@ -173,8 +201,8 @@
     "field": 9,
     "popularity": 9
    },
-   "odds": null,
-   "popularity": null
+   "odds": 184.0,
+   "popularity": 9
   },
   {
    "race_id": "202611202726180604",
@@ -195,7 +223,7 @@
     "field": 9,
     "popularity": 1
    },
-   "odds": 1.1,
+   "odds": 1.2,
    "popularity": 1
   },
   {
@@ -217,8 +245,8 @@
     "field": 10,
     "popularity": 9
    },
-   "odds": 40.6,
-   "popularity": 6
+   "odds": 30.6,
+   "popularity": 5
   },
   {
    "race_id": "202611202726180604",
@@ -238,7 +266,7 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": 162.4,
+   "odds": 92.0,
    "popularity": 7
   },
   {
