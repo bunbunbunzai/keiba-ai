@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261120",
  "race_id": "202611202726180612",
- "tries": 1,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "マルベック",
    "time": "1:21.3",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 40.4,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ジュディーイメル",
    "time": "1:21.4",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 40.5,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "プリンセスダーコ",
    "time": "1:21.5",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 39.8,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "エコロセレナ",
    "time": "1:21.7",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 41.2,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "タンタンドル",
    "time": "1:21.9",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 39.9,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ノルディア",
    "time": "1:21.9",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 40.6,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "ヨシノアヴァンセ",
    "time": "1:22.1",
    "margin": "１ １／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 40.4,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "キタノセレナード",
    "time": "1:22.3",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 40.2,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "アウローラルミエル",
    "time": "1:22.4",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 41.0,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "ファイナルコマンド",
    "time": "1:22.5",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 41.7,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "イデアールマッチ",
    "time": "1:22.5",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 40.9,
    "popularity": null
   },
   {
@@ -198,8 +198,8 @@
    "name": "モンテジュエル",
    "time": "1:26.9",
    "margin": "大差",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 12,
+   "last3f": 45.3,
    "popularity": null
   }
  ]
