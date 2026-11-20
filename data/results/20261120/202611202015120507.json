@@ -1,0 +1,173 @@
+{
+ "source": "rakuten",
+ "date": "20261120",
+ "race_id": "202611202015120507",
+ "tries": 1,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "4",
+    "yen": 1190
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "4-8",
+    "yen": 1500
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "4",
+    "yen": 130
+   },
+   {
+    "combo": "8",
+    "yen": 100
+   },
+   {
+    "combo": "3",
+    "yen": 400
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-8",
+    "yen": 130
+   },
+   {
+    "combo": "3-4",
+    "yen": 970
+   },
+   {
+    "combo": "3-8",
+    "yen": 580
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-8",
+    "yen": 200
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-4-8",
+    "yen": 1540
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "4-8-3",
+    "yen": 14130
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-8",
+    "yen": 260
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 4,
+   "name": "ペイシャケリー",
+   "time": "59.9",
+   "margin": "",
+   "pos4": 2,
+   "last3f": 36.3,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 8,
+   "name": "ピコピンク",
+   "time": "1:00.3",
+   "margin": "２",
+   "pos4": 3,
+   "last3f": 36.5,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "アンモニャイト",
+   "time": "1:00.8",
+   "margin": "２ １／２",
+   "pos4": 3,
+   "last3f": 36.8,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "フレンドリーシップ",
+   "time": "1:00.9",
+   "margin": "クビ",
+   "pos4": 8,
+   "last3f": 36.3,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 5,
+   "name": "エーデルリッター",
+   "time": "1:00.9",
+   "margin": "アタマ",
+   "pos4": 7,
+   "last3f": 36.7,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 1,
+   "number": 1,
+   "name": "サマニデンカ",
+   "time": "1:00.9",
+   "margin": "アタマ",
+   "pos4": 1,
+   "last3f": 37.5,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 6,
+   "name": "クミンフレイバー",
+   "time": "1:01.0",
+   "margin": "１／２",
+   "pos4": 3,
+   "last3f": 37.0,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 9,
+   "name": "シュルーズベリー",
+   "time": "1:01.3",
+   "margin": "１ ３／４",
+   "pos4": 6,
+   "last3f": 37.3,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 7,
+   "name": "サウンドキングダム",
+   "time": "1:01.7",
+   "margin": "２",
+   "pos4": 9,
+   "last3f": 36.7,
+   "popularity": null
+  }
+ ]
+}
