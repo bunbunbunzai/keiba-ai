@@ -1,0 +1,141 @@
+{
+ "source": "rakuten",
+ "date": "20261120",
+ "race_id": "202611202320130301",
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "7",
+    "yen": 200
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "7-6",
+    "yen": 270
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "7",
+    "yen": 120
+   },
+   {
+    "combo": "6",
+    "yen": 110
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "6-7",
+    "yen": 100
+   },
+   {
+    "combo": "2-7",
+    "yen": 280
+   },
+   {
+    "combo": "2-6",
+    "yen": 280
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-6-7",
+    "yen": 380
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "7-6-2",
+    "yen": 890
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "6-7",
+    "yen": 140
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 7,
+   "name": "キナコチャン",
+   "time": "50.3",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 6,
+   "name": "ブラックレイシ",
+   "time": "51.3",
+   "margin": "５",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 2,
+   "number": 2,
+   "name": "エムティグレース",
+   "time": "51.8",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 4,
+   "name": "ジャムリスチール",
+   "time": "52.0",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 5,
+   "name": "ウサギイモウト",
+   "time": "52.4",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 1,
+   "number": 1,
+   "name": "アイファービャッコ",
+   "time": "53.6",
+   "margin": "６",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 3,
+   "name": "テンリュウブラック",
+   "time": "53.9",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
+}
