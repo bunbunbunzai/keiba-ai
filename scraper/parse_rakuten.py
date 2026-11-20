@@ -147,7 +147,8 @@ def parse_card(html: str, race_id: str) -> dict:
             "sire": nl[0] if nl else None,
             "dam": nl[2].split(" (")[0] if len(nl) > 2 else None,
             "damsire": (re.search(r"\((.+?)\)", name_td.get_text()) or [None, None])[1],
-            "odds": _num(om.group(1)) if om and om.group(1) != "-" else None,
+            # 発売前は「0.0（-人気）」と出るので、0以下はオッズ無しとして扱う
+            "odds": (_num(om.group(1)) or None) if om and om.group(1) != "-" else None,
             "popularity": _num(om.group(2), int) if om and om.group(2) != "-" else None,
             "sex_age": prof[0] if prof else None,
             "weight": _num(prof[2]) if len(prof) > 2 else None,
