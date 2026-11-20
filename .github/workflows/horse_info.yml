@@ -1,8 +1,12 @@
 name: horse_info (JRAの馬ページの詳しい情報)
 
-# 手動で動かす：JRAの馬ページから毛色・馬名の意味・取引市場・賞金・全成績を取り、data/horse_info に保存する。
-# コラム（有馬記念のファン投票の馬の紹介など）の事実確認に使う。AIは呼ばない。JRAは1ページごとに5秒あける。
+# JRAの馬ページから毛色・馬名の意味・取引市場・賞金・全成績を取り、data/horse_info に保存する。
+# そのあと、データ記事（毛色の割合・馬名の付け方・セリ出身馬の成績）を作り直して公開する。AIは呼ばない。JRAは1ページごとに5秒あける。
+# 定時：毎月最初の火曜の朝（毎週火曜に起動し、日付が1〜7日のときだけ動く）。28日前からの出馬表に出た3歳以上の馬を取り直す（約2時間半）。
+# 手動：馬名を入れればその馬だけ。空なら定時と同じ全頭の取り直し。
 on:
+  schedule:
+    - cron: "43 18 * * 1"   # 火曜 3:43 JST（GitHubの定時起動は遅れることがある）
   workflow_dispatch:
     inputs:
       names:
@@ -10,7 +14,7 @@ on:
         required: false
         default: ""
       from:
-        description: "この日以降の出馬表に出た馬（YYYYMMDD）"
+        description: "この日以降の出馬表に出た馬（YYYYMMDD）。馬名も日付も空なら28日前から"
         required: false
         default: ""
       min_age:
@@ -35,7 +39,20 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      go: ${{ steps.g.outputs.go }}
+    steps:
+      - id: g
+        name: 定時の起動は、その月の最初の火曜だけ動かす
+        run: |
+          d=$(TZ=Asia/Tokyo date +%-d)
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$d" -gt 7 ]; then echo "go=0" >> "$GITHUB_OUTPUT"; echo "今月の分は済み（${d}日）"; else echo "go=1" >> "$GITHUB_OUTPUT"; fi
+
   run:
+    needs: gate
+    if: needs.gate.outputs.go == '1'
     runs-on: ubuntu-latest
     timeout-minutes: 300
     steps:
@@ -53,7 +70,10 @@ jobs:
           MIN_AGE: ${{ inputs.min_age }}
           FRESH: ${{ inputs.fresh }}
           LIMIT: ${{ inputs.limit }}
-        run: python -u horse_info.py ${NAMES:+--names "$NAMES"} ${FROM:+--from "$FROM"} --min-age "$MIN_AGE" --fresh "$FRESH" --limit "$LIMIT"
+        run: |
+          if [ -z "$NAMES" ] && [ -z "$FROM" ]; then FROM=$(TZ=Asia/Tokyo date -d '28 days ago' +%Y%m%d); fi
+          echo "names=${NAMES:-（全頭）} from=${FROM:-（指定なし）}"
+          python -u horse_info.py ${NAMES:+--names "$NAMES"} ${FROM:+--from "$FROM"} --min-age "${MIN_AGE:-3}" --fresh "${FRESH:-7}" --limit "${LIMIT:-0}"
       - name: データ記事（毛色・馬名の意味・セリ）を作り直す
         if: always()
         working-directory: scraper
@@ -63,7 +83,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for d in data/horse_info columns; do [ -e "$d" ] && git add "$d"; done
+          for d in data/horse_info data/horse_info_scan.json columns; do [ -e "$d" ] && git add "$d"; done
           if git diff --cached --quiet; then echo "変更なし"; exit 0; fi
           git commit -q -m "horse_info: JRAの馬ページの情報とデータ記事を更新"
           for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && break; sleep 7; done

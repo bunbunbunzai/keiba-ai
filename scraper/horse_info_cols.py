@@ -1,7 +1,7 @@
 """JRAの馬ページの全頭データ（data/horse_info。horse_info.py が集める）から、毛色・馬名の意味・セリのデータ記事を作る。AIは呼ばない。
 
-対象は、集めたなかで3歳以上の馬のうち、出馬表を集めた期間（いちばん古い〜新しい出馬表の日）にJRAのレースを実際に走った馬
-（取消・除外だけの馬は除く）。数が少ないとき（1,000頭未満）は作らない。
+対象は、集めたなかで3歳以上の馬のうち、全頭を取り直したときの期間（load() を参照）にJRAのレースを実際に走った馬
+（取消・除外だけの馬は除く）。数が少ないとき（1,000頭未満）は作らない。毎月最初の火曜に horse_info.yml が取り直して作り直す。
 重賞の勝ちは data/graded_hist（JRAの重賞の全着順）から数え、馬ページの成績に同じ日の1着があるものだけを本人の勝ちとみなす
 （昔の同名の馬と取り違えないため）。
 
@@ -40,7 +40,18 @@ def jp(d: str) -> str:
     return f"{int(d[4:6])}月{int(d[6:8])}日"
 
 
+def started(r: dict) -> bool:
+    """JRAのレースを実際に走った（着順がついた、または競走中止・失格）。取消・除外は走っていない。"""
+    return r.get("venue") in JRA and ((r.get("finish") or "").isdigit() or r.get("finish") in ("中止", "失格"))
+
+
 def load() -> tuple[list[dict], str, str]:
+    """対象の馬と、対象期間の最初と最後の開催日（YYYYMMDD）。
+
+    期間のはじめは、全頭を取り直したときに見た出馬表のいちばん古い日（data/horse_info_scan.json の from。
+    無ければ、集めた馬の出馬表の日のいちばん古い日）。おわりは、集めた馬が走ったJRAのレースのいちばん新しい日（今日まで）。
+    この期間にJRAのレースを走った3歳以上の馬だけを数える（前の月に取った馬で、この期間に走っていない馬は入らない）。
+    """
     raw = []
     for f in sorted((DATA_DIR / "horse_info").glob("*.json")):
         try:
@@ -48,13 +59,22 @@ def load() -> tuple[list[dict], str, str]:
         except Exception:  # noqa: BLE001
             continue
         age = re.sub(r"\D", "", d.get("profile", {}).get("馬齢", ""))
-        if age and int(age) >= 3 and d.get("last_card"):
+        if age and int(age) >= 3:
             raw.append(d)
     if not raw:
         return [], "", ""
-    a, b = min(h["last_card"] for h in raw), max(h["last_card"] for h in raw)
-    ran = lambda r: r.get("venue") in JRA and a <= ymd(r.get("date", "")) <= b and ((r.get("finish") or "").isdigit() or r.get("finish") in ("中止", "失格"))
-    return [h for h in raw if any(ran(r) for r in h.get("runs", []))], a, b
+    try:
+        scan = json.loads((DATA_DIR / "horse_info_scan.json").read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        scan = {}
+    a = scan.get("from") or min((h.get("last_card") or "99999999") for h in raw)
+    today = datetime.now(JST).strftime("%Y%m%d")
+    b = max((ymd(r.get("date", "")) for h in raw for r in h.get("runs", []) if started(r) and a <= ymd(r.get("date", "")) <= today), default="")
+    if not b:
+        return [], "", ""
+    inw = lambda h: [ymd(r.get("date", "")) for r in h.get("runs", []) if started(r) and a <= ymd(r.get("date", "")) <= b]
+    hs = [h for h in raw if inw(h)]
+    return hs, min(d for h in hs for d in inw(h)), b
 
 
 def jra_runs(h: dict) -> list[dict]:
@@ -117,7 +137,7 @@ def caution(a: str, b: str, n: int, rate: bool) -> str:
          "いま走っている馬だけを数えているので、引退した馬や2歳の馬は入っていない。")
     if rate:
         s += "勝率・3着内率は、これまでのJRAのレースだけで数えた（地方・海外のレースは除く）。重賞はJRAの重賞（障害を含む）。"
-    return s
+    return s + "数字は毎月はじめに、その前の4週間にJRAのレースを走った馬で数え直す。"
 
 
 def sexage(h: dict) -> str:

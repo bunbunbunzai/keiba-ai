@@ -3,8 +3,9 @@
 対象は data/races の中央の出馬表に載った馬（馬ページのリンクを持っている馬）。
   --names A,B,C            : その馬だけ
   --from YYYYMMDD          : その日以降の出馬表に出た馬すべて（--min-age で年齢をしぼる）
-保存：data/horse_info/<馬名のmd5の先頭10文字>.json
+保存：data/horse_info/<馬名のmd5の先頭10文字>.json（--from だけで動かしたときは data/horse_info_scan.json に見た期間も残す）
 すでに --fresh 日以内に取った馬は取り直さない。JRAのサイトは1ページごとに5秒あける。
+毎月最初の火曜に horse_info.yml が、28日前からの出馬表に出た3歳以上の馬を取り直す。
 
 使い方: python horse_info.py --names ボクマダネムイヨ,ジョスラン
         python horse_info.py --from 20261025 --min-age 3
@@ -55,7 +56,8 @@ def card_horses(since: str = "", names: set[str] | None = None, min_age: int = 0
             if names is not None and nm not in names:
                 continue
             m = re.search(r"(\d+)", h.get("sex_age") or "")
-            if min_age and (not m or int(m.group(1)) < min_age):
+            # 年齢は1月1日にひとつ上がるので、去年の出馬表の年齢は今年の年齢に直して比べる
+            if min_age and (not m or int(m.group(1)) + now().year - int(d[:4]) < min_age):
                 continue
             out[nm] = {"url": h["horse_url"], "date": d, "sex_age": h.get("sex_age")}
     return out
@@ -92,6 +94,10 @@ def run(names: list[str], since: str, min_age: int, fresh: int, limit: int) -> i
     if missing:
         print("出馬表に馬ページのリンクが無い馬:", "、".join(missing))
     OUT.mkdir(parents=True, exist_ok=True)
+    # 全頭の取り直し（--from だけ）のときは、どの日からの出馬表を見たかを残す（データ記事の対象期間に使う）
+    scan = {"from": since, "min_age": min_age, "started": now().strftime("%Y-%m-%d %H:%M"), "targets": len(targets)} if since and not names else None
+    if scan:
+        save_json("horse_info_scan.json", scan)
     sess = PoliteSession(min_interval=5.0, encoding="shift_jis")
     n = 0
     for nm, t in sorted(targets.items(), key=lambda kv: kv[1]["date"], reverse=True):
@@ -118,6 +124,8 @@ def run(names: list[str], since: str, min_age: int, fresh: int, limit: int) -> i
         if names or n % 100 == 0:
             print(f"{n} {nm}: {p.get('毛色', '')} {p.get('馬名意味', '')[:30]} {got['record']}")
     print(f"保存 {n}頭")
+    if scan:
+        save_json("horse_info_scan.json", {**scan, "finished": now().strftime("%Y-%m-%d %H:%M"), "saved": n})
     return n
 
 
