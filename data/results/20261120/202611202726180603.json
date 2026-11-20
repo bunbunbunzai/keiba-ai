@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261120",
  "race_id": "202611202726180603",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -71,8 +71,8 @@
    "name": "マイネルトラキア",
    "time": "1:57.6",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 40.7,
    "popularity": null
   },
   {
@@ -82,8 +82,8 @@
    "name": "アビル",
    "time": "1:57.7",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 41.2,
    "popularity": null
   },
   {
@@ -93,8 +93,8 @@
    "name": "ロミヒ",
    "time": "1:58.3",
    "margin": "３ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 41.9,
    "popularity": null
   },
   {
@@ -104,8 +104,8 @@
    "name": "カイリ",
    "time": "1:58.8",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 41.6,
    "popularity": null
   },
   {
@@ -115,8 +115,8 @@
    "name": "コパノキャスター",
    "time": "1:58.8",
    "margin": "ハナ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 40.9,
    "popularity": null
   },
   {
@@ -126,8 +126,8 @@
    "name": "フィフスドア",
    "time": "1:59.0",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 41.4,
    "popularity": null
   },
   {
@@ -137,8 +137,8 @@
    "name": "ホワイトジェイド",
    "time": "1:59.3",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 41.9,
    "popularity": null
   },
   {
@@ -148,8 +148,8 @@
    "name": "トランセンデンタル",
    "time": "2:01.4",
    "margin": "大差",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 43.4,
    "popularity": null
   }
  ]
