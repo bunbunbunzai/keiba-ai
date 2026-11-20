@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261120",
  "race_id": "202611202726180601",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "ニネンエフグミ",
    "time": "1:32.8",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 40.1,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "アウトサイドベット",
    "time": "1:34.6",
    "margin": "大差",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 39.9,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "アネモスエルピーダ",
    "time": "1:34.8",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 41.3,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "エイシンリキュウ",
    "time": "1:34.8",
    "margin": "ハナ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 41.5,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "サティンボディス",
    "time": "1:36.0",
    "margin": "７",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 42.3,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "デュランヴェリテ",
    "time": "1:36.0",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 42.5,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "エアザキントス",
    "time": "1:36.3",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 42.3,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ベーディーナ",
    "time": "1:37.4",
    "margin": "７",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 43.4,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "ユウバエ",
    "time": "1:37.4",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 44.4,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "ドゥーエニシング",
    "time": "1:37.6",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 44.5,
    "popularity": null
   }
  ]
