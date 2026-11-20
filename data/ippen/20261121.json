@@ -1,6 +1,6 @@
 {
  "date": "20261121",
- "updated": "2026-11-21 08:17",
+ "updated": "2026-11-21 08:47",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -126,6 +126,20 @@
    },
    "odds": 59.2,
    "popularity": 13
+  },
+  {
+   "race_id": "jra_20261121_福島_02",
+   "results_key": "jra_03_02",
+   "venue": "福島",
+   "race_no": 2,
+   "post_time": "10:15",
+   "number": 5,
+   "name": "ワイドデコラシオン",
+   "types": [
+    "aitop"
+   ],
+   "odds": 9.1,
+   "popularity": 3
   },
   {
    "race_id": "jra_20261121_福島_02",
