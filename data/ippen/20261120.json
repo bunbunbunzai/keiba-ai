@@ -1,6 +1,6 @@
 {
  "date": "20261120",
- "updated": "2026-11-20 12:45",
+ "updated": "2026-11-20 12:50",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -436,6 +436,20 @@
    "venue": "笠松",
    "race_no": 7,
    "post_time": "13:30",
+   "number": 1,
+   "name": "アンクロワヤブル",
+   "types": [
+    "aitop"
+   ],
+   "odds": 10.7,
+   "popularity": 4
+  },
+  {
+   "race_id": "202611202320130307",
+   "results_key": "202611202320130307",
+   "venue": "笠松",
+   "race_no": 7,
+   "post_time": "13:30",
    "number": 5,
    "name": "カレンアイバーソン",
    "types": [
@@ -448,7 +462,7 @@
     "field": 10,
     "popularity": 4
    },
-   "odds": 70.4,
+   "odds": 91.0,
    "popularity": 10
   },
   {
@@ -470,8 +484,8 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": 11.7,
-   "popularity": 6
+   "odds": 13.4,
+   "popularity": 5
   },
   {
    "race_id": "202611202320130307",
@@ -491,7 +505,7 @@
     "field": 9,
     "popularity": 6
    },
-   "odds": 17.6,
+   "odds": 45.5,
    "popularity": 8
   },
   {
@@ -512,8 +526,8 @@
     "field": 11,
     "popularity": 7
    },
-   "odds": 3.3,
-   "popularity": 2
+   "odds": 5.4,
+   "popularity": 3
   },
   {
    "race_id": "202611202726180607",
@@ -533,7 +547,7 @@
     "field": 11,
     "popularity": 9
    },
-   "odds": 77.3,
+   "odds": 86.5,
    "popularity": 7
   },
   {
@@ -554,7 +568,7 @@
     "field": 11,
     "popularity": 10
    },
-   "odds": 30.9,
+   "odds": 43.2,
    "popularity": 6
   },
   {
@@ -575,7 +589,7 @@
     "field": 11,
     "popularity": 11
    },
-   "odds": 11.8,
+   "odds": 13.6,
    "popularity": 5
   },
   {
