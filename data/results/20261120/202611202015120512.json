@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261120",
  "race_id": "202611202015120512",
- "tries": 1,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,160 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 3,
+   "number": 4,
+   "name": "ペピタドーロ",
+   "time": "1:27.2",
+   "margin": "",
+   "pos4": 4,
+   "last3f": 36.9,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "frame": 4,
+   "number": 5,
+   "name": "ライムフレイバー",
+   "time": "1:27.5",
+   "margin": "１ １／２",
+   "pos4": 6,
+   "last3f": 36.9,
+   "popularity": 5
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 13,
+   "name": "アベニンスマイル",
+   "time": "1:27.7",
+   "margin": "１ １／４",
+   "pos4": 1,
+   "last3f": 37.6,
+   "popularity": 6
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "アレンパ",
+   "time": "1:28.5",
+   "margin": "４",
+   "pos4": 6,
+   "last3f": 37.8,
+   "popularity": 10
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 12,
+   "name": "ペイドラロワール",
+   "time": "1:28.5",
+   "margin": "アタマ",
+   "pos4": 13,
+   "last3f": 37.4,
+   "popularity": 4
+  },
+  {
+   "finish": "6",
+   "frame": 3,
+   "number": 3,
+   "name": "グロリオサ",
+   "time": "1:29.1",
+   "margin": "３",
+   "pos4": 12,
+   "last3f": 38.1,
+   "popularity": 8
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 6,
+   "name": "ゴルトリッチ",
+   "time": "1:29.2",
+   "margin": "３／４",
+   "pos4": 10,
+   "last3f": 38.4,
+   "popularity": 12
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 14,
+   "name": "フミバレンタイン",
+   "time": "1:29.2",
+   "margin": "同着",
+   "pos4": 10,
+   "last3f": 38.6,
+   "popularity": 11
+  },
+  {
+   "finish": "9",
+   "frame": 6,
+   "number": 10,
+   "name": "ホワイトマジック",
+   "time": "1:29.4",
+   "margin": "１",
+   "pos4": 1,
+   "last3f": 39.3,
+   "popularity": 2
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 8,
+   "name": "スミソニアン",
+   "time": "1:29.7",
+   "margin": "１ ３／４",
+   "pos4": 14,
+   "last3f": 38.2,
+   "popularity": 14
+  },
+  {
+   "finish": "11",
+   "frame": 6,
+   "number": 9,
+   "name": "シャドウキャッスル",
+   "time": "1:29.8",
+   "margin": "１／２",
+   "pos4": 6,
+   "last3f": 39.4,
+   "popularity": 3
+  },
+  {
+   "finish": "12",
+   "frame": 5,
+   "number": 7,
+   "name": "アジアジェニファー",
+   "time": "1:30.1",
+   "margin": "１ ３／４",
+   "pos4": 6,
+   "last3f": 39.5,
+   "popularity": 9
+  },
+  {
+   "finish": "13",
+   "frame": 7,
+   "number": 11,
+   "name": "スピードパンサー",
+   "time": "1:30.8",
+   "margin": "３ １／２",
+   "pos4": 1,
+   "last3f": 40.7,
+   "popularity": 7
+  },
+  {
+   "finish": "14",
+   "frame": 1,
+   "number": 1,
+   "name": "フレンドローマ",
+   "time": "1:30.9",
+   "margin": "３／４",
+   "pos4": 5,
+   "last3f": 40.5,
+   "popularity": 13
+  }
+ ]
 }
