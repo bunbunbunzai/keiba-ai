@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "ドレフォン",
+  "性別": "牝",
+  "馬主名": "吉田 勝己",
+  "母": "エピセアローム",
+  "馬齢": "3歳",
+  "調教師名": "高野 友和 （栗東）",
+  "母の父": "ダイワメジャー",
+  "生年月日": "2023年2月4日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "ラタフィア",
+  "毛色": "栗毛",
+  "産地": "安平町",
+  "馬名意味": "中国原産の香辛料、八角",
+  "取引市場": "",
+  "総賞金": "279,027,000 円",
+  "内付加賞": "29,677,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "112,500,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 3,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年9月27日",
+   "venue": "中山",
+   "race_name": "スプリンター",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2026年5月24日",
+   "venue": "東京",
+   "race_name": "優駿牝馬",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 18,
+   "popularity": 1,
+   "finish": "12",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2026年4月12日",
+   "venue": "阪神",
+   "race_name": "桜花賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年12月14日",
+   "venue": "阪神",
+   "race_name": "阪神JF",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年8月31日",
+   "venue": "中京",
+   "race_name": "中京2歳S",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 13,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年7月12日",
+   "venue": "小倉",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 10,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年6月29日",
+   "venue": "小倉",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 10,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "松山 弘平"
+  }
+ ],
+ "name": "スターアニス",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud102023106920/BC",
+ "last_card": "20261122",
+ "fetched": "2026-11-20 10:32"
+}

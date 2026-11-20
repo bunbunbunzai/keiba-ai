@@ -1,0 +1,201 @@
+{
+ "profile": {
+  "父": "ホークビル",
+  "性別": "牝",
+  "馬主名": "平井 裕",
+  "母": "フェリーチェレガロ",
+  "馬齢": "5歳",
+  "調教師名": "田中 克典 （栗東）",
+  "母の父": "マンハッタンカフェ",
+  "生年月日": "2021年3月11日",
+  "生産牧場": "白井牧場",
+  "母の母": "チャッターリップス",
+  "毛色": "鹿毛",
+  "産地": "日高町",
+  "馬名意味": "イタリアの女性名",
+  "取引市場": "",
+  "総賞金": "69,568,000 円",
+  "内付加賞": "788,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "24,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 15,
+  "wins": 4,
+  "second": 3,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年8月2日",
+   "venue": "札幌",
+   "race_name": "クイーンS",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 10,
+   "finish": "5",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2026年7月11日",
+   "venue": "函館",
+   "race_name": "五稜郭S",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2026年6月13日",
+   "venue": "函館",
+   "race_name": "松前特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2025年11月24日",
+   "venue": "福島",
+   "race_name": "五色沼特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 4,
+   "finish": "15",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年9月7日",
+   "venue": "札幌",
+   "race_name": "HTB賞",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 3,
+   "finish": "7",
+   "jockey": "古川 吉洋"
+  },
+  {
+   "date": "2025年8月9日",
+   "venue": "札幌",
+   "race_name": "藻岩山特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2025年7月19日",
+   "venue": "函館",
+   "race_name": "かもめ島特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2025年6月14日",
+   "venue": "函館",
+   "race_name": "松前特別",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 7,
+   "finish": "2",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2025年1月11日",
+   "venue": "中京",
+   "race_name": "恵那特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 8,
+   "finish": "10",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2024年12月8日",
+   "venue": "中山",
+   "race_name": "チバテレ杯",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 3,
+   "finish": "9",
+   "jockey": "津村 明秀"
+  },
+  {
+   "date": "2024年8月11日",
+   "venue": "札幌",
+   "race_name": "藻岩山特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 12,
+   "popularity": 2,
+   "finish": "8",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2024年7月7日",
+   "venue": "函館",
+   "race_name": "3歳上1勝クラス",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2024年6月15日",
+   "venue": "函館",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2024年4月13日",
+   "venue": "阪神",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "高倉 稜"
+  },
+  {
+   "date": "2024年3月17日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 11,
+   "finish": "2",
+   "jockey": "高倉 稜"
+  }
+ ],
+ "name": "カテリーナ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud002021101485/BC",
+ "last_card": "20261121",
+ "fetched": "2026-11-20 10:33"
+}

@@ -1,0 +1,190 @@
+{
+ "profile": {
+  "父": "スワーヴリチャード",
+  "性別": "牡",
+  "馬主名": "(有)シルクレーシング",
+  "母": "エッジースタイル",
+  "馬齢": "5歳",
+  "調教師名": "武井 亮 （美浦）",
+  "母の父": "ハービンジャー",
+  "生年月日": "2021年3月16日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "ランズエッジ",
+  "毛色": "栗毛",
+  "産地": "安平町",
+  "馬名意味": "洗練された。母名より連想",
+  "取引市場": "",
+  "総賞金": "401,912,000 円",
+  "内付加賞": "32,712,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "144,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 14,
+  "wins": 4,
+  "second": 1,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年8月30日",
+   "venue": "新潟",
+   "race_name": "新潟記念",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 11,
+   "popularity": 7,
+   "finish": "5",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2026年3月15日",
+   "venue": "中京",
+   "race_name": "金鯱賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 7,
+   "finish": "14",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2025年12月14日",
+   "venue": "香港",
+   "race_name": "香港ヴァーズ",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 11,
+   "popularity": null,
+   "finish": "10",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年11月2日",
+   "venue": "東京",
+   "race_name": "天皇賞(秋)",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 11,
+   "finish": "5",
+   "jockey": "A.プーシャン"
+  },
+  {
+   "date": "2025年6月15日",
+   "venue": "阪神",
+   "race_name": "宝塚記念",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 17,
+   "popularity": 6,
+   "finish": "14",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年3月29日",
+   "venue": "中山",
+   "race_name": "日経賞",
+   "surface": "芝",
+   "distance": 2500,
+   "field": 15,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2024年12月22日",
+   "venue": "中山",
+   "race_name": "有馬記念",
+   "surface": "芝",
+   "distance": 2500,
+   "field": 15,
+   "popularity": 1,
+   "finish": "6",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2024年10月20日",
+   "venue": "京都",
+   "race_name": "菊花賞",
+   "surface": "芝",
+   "distance": 3000,
+   "field": 18,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2024年9月16日",
+   "venue": "中山",
+   "race_name": "セントライト",
+   "surface": "芝",
+   "distance": 2200,
+   "field": 14,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2024年5月26日",
+   "venue": "東京",
+   "race_name": "東京優駿",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 17,
+   "popularity": 4,
+   "finish": "11",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2024年4月14日",
+   "venue": "中山",
+   "race_name": "皐月賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 17,
+   "popularity": 6,
+   "finish": "4",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2024年1月14日",
+   "venue": "中山",
+   "race_name": "京成杯",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2023年11月5日",
+   "venue": "東京",
+   "race_name": "百日草特別",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 9,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2023年8月13日",
+   "venue": "札幌",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "横山 武史"
+  }
+ ],
+ "name": "アーバンシック",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud102021105436/82",
+ "last_card": "20261129",
+ "fetched": "2026-11-20 10:30"
+}

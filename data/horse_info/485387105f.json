@@ -1,0 +1,179 @@
+{
+ "profile": {
+  "父": "スクリーンヒーロー",
+  "性別": "牡",
+  "馬主名": "水谷 美穂",
+  "母": "トーコーディオーネ",
+  "馬齢": "4歳",
+  "調教師名": "藤野 健太 （栗東）",
+  "母の父": "エンパイアメーカー",
+  "生年月日": "2022年3月17日",
+  "生産牧場": "ゼットステーブル",
+  "母の母": "タイキメビウス",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "ドラゴンのブースト",
+  "取引市場": "2023年 北海道セレクションセール",
+  "総賞金": "117,712,000 円",
+  "内付加賞": "1,212,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "59,500,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 13,
+  "wins": 3,
+  "second": 3,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年10月4日",
+   "venue": "東京",
+   "race_name": "毎日王冠",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 17,
+   "popularity": 8,
+   "finish": "11",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2026年6月7日",
+   "venue": "東京",
+   "race_name": "安田記念",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 17,
+   "popularity": 13,
+   "finish": "8",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2026年4月26日",
+   "venue": "京都",
+   "race_name": "マイラーズC",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 9,
+   "finish": "2",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2026年3月8日",
+   "venue": "阪神",
+   "race_name": "大阪城S",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 7,
+   "finish": "1",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年2月7日",
+   "venue": "京都",
+   "race_name": "アルデバラン",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 16,
+   "popularity": 9,
+   "finish": "16",
+   "jockey": "吉村 誠之助"
+  },
+  {
+   "date": "2025年12月21日",
+   "venue": "中山",
+   "race_name": "ディセンバー",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2025年6月1日",
+   "venue": "東京",
+   "race_name": "東京優駿",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 18,
+   "popularity": 18,
+   "finish": "15",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2025年4月20日",
+   "venue": "中山",
+   "race_name": "皐月賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 17,
+   "finish": "17",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2025年1月19日",
+   "venue": "中山",
+   "race_name": "京成杯",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 14,
+   "popularity": 7,
+   "finish": "2",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2024年12月15日",
+   "venue": "京都",
+   "race_name": "朝日杯FS",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 10,
+   "finish": "7",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2024年11月9日",
+   "venue": "京都",
+   "race_name": "デイリー2S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 7,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2024年10月12日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 8,
+   "finish": "1",
+   "jockey": "田口 貫太"
+  },
+  {
+   "date": "2024年9月21日",
+   "venue": "中京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 11,
+   "finish": "7",
+   "jockey": "田口 貫太"
+  }
+ ],
+ "name": "ドラゴンブースト",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud102022105891/F3",
+ "last_card": "20261122",
+ "fetched": "2026-11-20 10:32"
+}

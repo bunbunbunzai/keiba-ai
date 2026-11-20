@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "ダイワメジャー",
+  "性別": "牡",
+  "馬主名": "原村 正紀",
+  "母": "シュガーショック",
+  "馬齢": "5歳",
+  "調教師名": "加藤 征弘 （美浦）",
+  "母の父": "Candy Ride",
+  "生年月日": "2021年4月8日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "Enthusiastically",
+  "毛色": "栗毛",
+  "産地": "安平町",
+  "馬名意味": "冠名+開花",
+  "取引市場": "2022年 セレクトセール",
+  "総賞金": "126,253,000 円",
+  "内付加賞": "1,853,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "61,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 3,
+  "second": 2,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年9月5日",
+   "venue": "中山",
+   "race_name": "京成杯AH",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 5,
+   "finish": "2",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年5月31日",
+   "venue": "京都",
+   "race_name": "安土城S",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 17,
+   "popularity": 7,
+   "finish": "1",
+   "jockey": "菱田 裕二"
+  },
+  {
+   "date": "2025年5月11日",
+   "venue": "新潟",
+   "race_name": "谷川岳S",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "丹内 祐次"
+  },
+  {
+   "date": "2025年4月5日",
+   "venue": "中山",
+   "race_name": "ダービーCT",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": null,
+   "finish": "除外",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2024年4月6日",
+   "venue": "中山",
+   "race_name": "NZT",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "横山 武史"
+  },
+  {
+   "date": "2024年1月8日",
+   "venue": "京都",
+   "race_name": "シンザン記念",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2023年11月11日",
+   "venue": "東京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2023年10月15日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "浜中 俊"
+  }
+ ],
+ "name": "エコロブルーム",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud102021105565/70",
+ "last_card": "20261122",
+ "fetched": "2026-11-20 10:31"
+}

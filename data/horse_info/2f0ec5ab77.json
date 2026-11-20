@@ -1,0 +1,179 @@
+{
+ "profile": {
+  "父": "キズナ",
+  "性別": "牡",
+  "馬主名": "(有)サンデーレーシング",
+  "母": "コナブリュワーズ",
+  "馬齢": "4歳",
+  "調教師名": "須貝 尚介 （栗東）",
+  "母の父": "キングカメハメハ",
+  "生年月日": "2022年3月25日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "アンブロワーズ",
+  "毛色": "黒鹿毛",
+  "産地": "安平町",
+  "馬名意味": "潮の満ち引きで砂浜が消えて見える、カイルアコナの神秘のビーチ",
+  "取引市場": "",
+  "総賞金": "111,421,000 円",
+  "内付加賞": "1,521,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "46,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 13,
+  "wins": 2,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年10月17日",
+   "venue": "東京",
+   "race_name": "富士S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年8月16日",
+   "venue": "札幌",
+   "race_name": "札幌記念",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": 4,
+   "finish": "6",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年6月28日",
+   "venue": "函館",
+   "race_name": "函館記念",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 15,
+   "popularity": 4,
+   "finish": "5",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年5月9日",
+   "venue": "東京",
+   "race_name": "エプソムC",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 17,
+   "popularity": 6,
+   "finish": "4",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年3月1日",
+   "venue": "中山",
+   "race_name": "中山記念",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 6,
+   "finish": "6",
+   "jockey": "横山 和生"
+  },
+  {
+   "date": "2026年2月10日",
+   "venue": "東京",
+   "race_name": "東京新聞杯",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 7,
+   "finish": "12",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年11月23日",
+   "venue": "京都",
+   "race_name": "マイルCS",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 9,
+   "finish": "8",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年10月18日",
+   "venue": "東京",
+   "race_name": "富士S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 2,
+   "finish": "10",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年5月11日",
+   "venue": "東京",
+   "race_name": "NHKマイル",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年4月20日",
+   "venue": "中山",
+   "race_name": "皐月賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 16,
+   "finish": "6",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2024年12月28日",
+   "venue": "中山",
+   "race_name": "ホープフルS",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 2,
+   "finish": "16",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2024年8月31日",
+   "venue": "札幌",
+   "race_name": "札幌2歳S",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2024年7月7日",
+   "venue": "函館",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "佐々木 大輔"
+  }
+ ],
+ "name": "マジックサンズ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud102022104772/26",
+ "last_card": "20261122",
+ "fetched": "2026-11-20 10:32"
+}

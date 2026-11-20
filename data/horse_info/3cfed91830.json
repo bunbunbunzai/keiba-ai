@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "モーリス",
+  "性別": "牡",
+  "馬主名": "近藤 旬子",
+  "母": "ダイワズーム",
+  "馬齢": "4歳",
+  "調教師名": "友道 康夫 （栗東）",
+  "母の父": "ハーツクライ",
+  "生年月日": "2022年2月28日",
+  "生産牧場": "社台ファーム",
+  "母の母": "フォルナリーナ",
+  "毛色": "鹿毛",
+  "産地": "千歳市",
+  "馬名意味": "冠名+母名の一部、素早く動く",
+  "取引市場": "2023年 セレクトセール",
+  "総賞金": "160,320,000 円",
+  "内付加賞": "2,720,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "79,500,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 3,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年10月17日",
+   "venue": "東京",
+   "race_name": "富士S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 3,
+   "finish": "6",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2026年4月26日",
+   "venue": "京都",
+   "race_name": "マイラーズC",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年10月13日",
+   "venue": "京都",
+   "race_name": "MBSスワン",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 2,
+   "finish": "6",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年5月11日",
+   "venue": "東京",
+   "race_name": "NHKマイル",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 1,
+   "finish": "14",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年4月12日",
+   "venue": "中山",
+   "race_name": "NZT",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2024年12月15日",
+   "venue": "京都",
+   "race_name": "朝日杯FS",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2024年11月10日",
+   "venue": "京都",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2024年10月5日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 15,
+   "popularity": 1,
+   "finish": "4",
+   "jockey": "川田 将雅"
+  }
+ ],
+ "name": "アドマイヤズーム",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud102022105396/3D",
+ "last_card": "20261122",
+ "fetched": "2026-11-20 10:31"
+}

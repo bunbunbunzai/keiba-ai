@@ -1,0 +1,135 @@
+{
+ "profile": {
+  "父": "レイデオロ",
+  "性別": "牡",
+  "馬主名": "竹田 寿",
+  "母": "アニメイトバイオ",
+  "馬齢": "4歳",
+  "調教師名": "今野 貞一 （栗東）",
+  "母の父": "ゼンノロブロイ",
+  "生年月日": "2022年3月10日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "レーゲンボーゲン",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "興奮する+冠名",
+  "取引市場": "",
+  "総賞金": "108,561,000 円",
+  "内付加賞": "4,491,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "24,500,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 9,
+  "wins": 2,
+  "second": 1,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2025年12月28日",
+   "venue": "中山",
+   "race_name": "有馬記念",
+   "surface": "芝",
+   "distance": 2500,
+   "field": 16,
+   "popularity": 7,
+   "finish": "8",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2025年10月26日",
+   "venue": "京都",
+   "race_name": "菊花賞",
+   "surface": "芝",
+   "distance": 3000,
+   "field": 18,
+   "popularity": 13,
+   "finish": "3",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2025年6月29日",
+   "venue": "福島",
+   "race_name": "ラジNIK賞",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 14,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "荻野 極"
+  },
+  {
+   "date": "2025年5月17日",
+   "venue": "京都",
+   "race_name": "あずさ賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 6,
+   "finish": "2",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2025年3月30日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 13,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2025年3月15日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2025年1月6日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 9,
+   "finish": "3",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2024年12月14日",
+   "venue": "中京",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "小沢 大仁"
+  },
+  {
+   "date": "2024年10月12日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 13,
+   "popularity": 6,
+   "finish": "8",
+   "jockey": "鮫島 克駿"
+  }
+ ],
+ "name": "エキサイトバイオ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud102022104614/7B",
+ "last_card": "20261121",
+ "fetched": "2026-11-20 10:34"
+}
