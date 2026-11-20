@@ -1,6 +1,6 @@
 {
  "date": "20261120",
- "updated": "2026-11-20 20:19",
+ "updated": "2026-11-20 20:59",
  "bias": {
   "大井ダ": {
    "judgement": "先行有利",
@@ -15,12 +15,13 @@
     7,
     8,
     9,
-    10
+    10,
+    11
    ],
-   "front_share": 0.95,
-   "inner_share": 0.35,
-   "outer_share": 0.45,
-   "horses": 20
+   "front_share": 0.91,
+   "inner_share": 0.41,
+   "outer_share": 0.41,
+   "horses": 22
   },
   "笠松ダ": {
    "judgement": "先行有利",
