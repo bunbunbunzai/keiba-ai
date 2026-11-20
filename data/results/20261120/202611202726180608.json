@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261120",
  "race_id": "202611202726180608",
- "tries": 1,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,105 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 1,
+   "number": 1,
+   "name": "ヨドノルーキー",
+   "time": "1:35.5",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 41.9,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 3,
+   "number": 3,
+   "name": "タンバッフェ",
+   "time": "1:35.8",
+   "margin": "１ １／２",
+   "pos4": 1,
+   "last3f": 42.4,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 5,
+   "name": "ワンダートリガー",
+   "time": "1:35.8",
+   "margin": "アタマ",
+   "pos4": 4,
+   "last3f": 42.0,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 4,
+   "name": "ノルドステラ",
+   "time": "1:36.1",
+   "margin": "１ １／２",
+   "pos4": 6,
+   "last3f": 41.9,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 7,
+   "name": "エコロアモーレ",
+   "time": "1:36.2",
+   "margin": "１／２",
+   "pos4": 7,
+   "last3f": 42.2,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 8,
+   "name": "シマノダイヤモンド",
+   "time": "1:36.2",
+   "margin": "アタマ",
+   "pos4": 9,
+   "last3f": 41.6,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 9,
+   "name": "エイシンサイネリア",
+   "time": "1:36.3",
+   "margin": "１／２",
+   "pos4": 4,
+   "last3f": 42.5,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 6,
+   "number": 6,
+   "name": "タスマンハイウェイ",
+   "time": "1:37.1",
+   "margin": "５",
+   "pos4": 8,
+   "last3f": 43.3,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "アルザード",
+   "time": "1:37.2",
+   "margin": "１／２",
+   "pos4": 3,
+   "last3f": 43.9,
+   "popularity": null
+  }
+ ]
 }
