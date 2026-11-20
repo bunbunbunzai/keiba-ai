@@ -1,0 +1,206 @@
+{
+ "source": "rakuten",
+ "date": "20261120",
+ "race_id": "202611202726180612",
+ "tries": 1,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "6",
+    "yen": 440
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "6-12",
+    "yen": 850
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "6",
+    "yen": 140
+   },
+   {
+    "combo": "12",
+    "yen": 120
+   },
+   {
+    "combo": "8",
+    "yen": 490
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "6-12",
+    "yen": 230
+   },
+   {
+    "combo": "6-8",
+    "yen": 1050
+   },
+   {
+    "combo": "8-12",
+    "yen": 680
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-8",
+    "yen": 330
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "6-8-12",
+    "yen": 1630
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "6-12-8",
+    "yen": 6080
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "6-12",
+    "yen": 320
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 6,
+   "name": "マルベック",
+   "time": "1:21.3",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 12,
+   "name": "ジュディーイメル",
+   "time": "1:21.4",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 8,
+   "name": "プリンセスダーコ",
+   "time": "1:21.5",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "エコロセレナ",
+   "time": "1:21.7",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 11,
+   "name": "タンタンドル",
+   "time": "1:21.9",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 3,
+   "number": 3,
+   "name": "ノルディア",
+   "time": "1:21.9",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 5,
+   "name": "ヨシノアヴァンセ",
+   "time": "1:22.1",
+   "margin": "１ １／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 6,
+   "number": 7,
+   "name": "キタノセレナード",
+   "time": "1:22.3",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 1,
+   "number": 1,
+   "name": "アウローラルミエル",
+   "time": "1:22.4",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 4,
+   "number": 4,
+   "name": "ファイナルコマンド",
+   "time": "1:22.5",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 7,
+   "number": 10,
+   "name": "イデアールマッチ",
+   "time": "1:22.5",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 7,
+   "number": 9,
+   "name": "モンテジュエル",
+   "time": "1:26.9",
+   "margin": "大差",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
+}
