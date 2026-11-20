@@ -2,7 +2,216 @@
  "source": "rakuten",
  "date": "20261120",
  "race_id": "202611202015120508",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "4",
+    "yen": 140
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "4-11",
+    "yen": 1000
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "4",
+    "yen": 120
+   },
+   {
+    "combo": "11",
+    "yen": 240
+   },
+   {
+    "combo": "5",
+    "yen": 370
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-11",
+    "yen": 460
+   },
+   {
+    "combo": "4-5",
+    "yen": 520
+   },
+   {
+    "combo": "5-11",
+    "yen": 3060
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-7",
+    "yen": 410
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-5-11",
+    "yen": 3510
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "4-11-5",
+    "yen": 8110
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-11",
+    "yen": 900
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 4,
+   "name": "タイセツレーヴ",
+   "time": "1:41.6",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 11,
+   "name": "スカイイズユアーズ",
+   "time": "1:42.4",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 5,
+   "name": "グロワールスカイ",
+   "time": "1:42.5",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 12,
+   "name": "グレン",
+   "time": "1:42.5",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 1,
+   "number": 1,
+   "name": "ヴァルチャースター",
+   "time": "1:42.6",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "ワールドフォンテン",
+   "time": "1:42.7",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 9,
+   "name": "フクオトコ",
+   "time": "1:42.8",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "ニシノミチアキ",
+   "time": "1:42.8",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 10,
+   "name": "ブッシュテソーロ",
+   "time": "1:42.8",
+   "margin": "ハナ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 8,
+   "number": 13,
+   "name": "ボラボラフレイバー",
+   "time": "1:42.9",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 5,
+   "number": 6,
+   "name": "ユウユウスターリー",
+   "time": "1:44.6",
+   "margin": "８",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 5,
+   "number": 7,
+   "name": "ミノコクシュタルク",
+   "time": "1:45.0",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "13",
+   "frame": 6,
+   "number": 8,
+   "name": "ヴァンビー",
+   "time": "1:45.4",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
