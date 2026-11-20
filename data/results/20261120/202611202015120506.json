@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261120",
  "race_id": "202611202015120506",
- "tries": 1,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,160 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 9,
+   "name": "リコーヘンメリー",
+   "time": "1:14.1",
+   "margin": "",
+   "pos4": 4,
+   "last3f": 37.3,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 4,
+   "number": 5,
+   "name": "リアンリーヴァ",
+   "time": "1:14.3",
+   "margin": "１",
+   "pos4": 2,
+   "last3f": 37.7,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 1,
+   "number": 1,
+   "name": "ノーブルオーディン",
+   "time": "1:14.4",
+   "margin": "３／４",
+   "pos4": 1,
+   "last3f": 38.0,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 10,
+   "name": "ボビー",
+   "time": "1:14.5",
+   "margin": "３／４",
+   "pos4": 11,
+   "last3f": 36.7,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 3,
+   "number": 3,
+   "name": "コイゴロモ",
+   "time": "1:14.7",
+   "margin": "１",
+   "pos4": 2,
+   "last3f": 38.2,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 4,
+   "number": 6,
+   "name": "マインゴールド",
+   "time": "1:15.0",
+   "margin": "１ ３／４",
+   "pos4": 8,
+   "last3f": 37.6,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 12,
+   "name": "アルデフォックス",
+   "time": "1:15.2",
+   "margin": "１",
+   "pos4": 7,
+   "last3f": 38.0,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 5,
+   "number": 8,
+   "name": "ロードオブファイア",
+   "time": "1:15.4",
+   "margin": "１",
+   "pos4": 11,
+   "last3f": 37.4,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 7,
+   "name": "シュヴァルニブロン",
+   "time": "1:15.5",
+   "margin": "１／２",
+   "pos4": 4,
+   "last3f": 38.7,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 2,
+   "number": 2,
+   "name": "エレレラナキラ",
+   "time": "1:15.5",
+   "margin": "アタマ",
+   "pos4": 13,
+   "last3f": 37.0,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 8,
+   "number": 13,
+   "name": "ワイルドノブクン",
+   "time": "1:15.8",
+   "margin": "１ １／２",
+   "pos4": 8,
+   "last3f": 38.4,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 7,
+   "number": 11,
+   "name": "ベイステート",
+   "time": "1:15.8",
+   "margin": "クビ",
+   "pos4": 8,
+   "last3f": 38.4,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 8,
+   "number": 14,
+   "name": "プロミスライン",
+   "time": "1:15.8",
+   "margin": "同着",
+   "pos4": 6,
+   "last3f": 39.0,
+   "popularity": null
+  },
+  {
+   "finish": "14",
+   "frame": 3,
+   "number": 4,
+   "name": "キャリアラダー",
+   "time": "1:15.9",
+   "margin": "１／２",
+   "pos4": 13,
+   "last3f": 37.5,
+   "popularity": null
+  }
+ ]
 }
