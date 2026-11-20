@@ -175,7 +175,7 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
         coat = _clean(ip.get("毛色") or cp.get("毛色") or "")
         market = _clean(ip.get("取引市場") or cp.get("取引市場") or "")
         info_runs = [r for r in info.get("runs") or [] if _ymd(r.get("date", ""))]
-        venues = sorted({B.VENUE_NAME.get(B.venue_of(x["p"]), B.venue_of(x["p"])) for x in items}) or sorted({r.get("venue") for r in info_runs[:10] if r.get("venue")})
+        venues = sorted({B.VENUE_NAME.get(B.venue_of(x["p"]), B.venue_of(x["p"])) for x in items}) or sorted({ABROAD.get(r["venue"], LOCAL.get(r["venue"], r["venue"])) for r in info_runs[:10] if r.get("venue")})
         # 馬名で調べる人が知りたい順に書く：どんな馬か → 次に走るレース → 直近の結果 → このサイトのAIの評価
         nxt = [x for x in items if x["d"] >= today and not x["finish"].isdigit() and x["finish"] not in ("取消", "除外", "中止")]
         nxt = sorted(nxt, key=lambda x: x["d"])[:1]
