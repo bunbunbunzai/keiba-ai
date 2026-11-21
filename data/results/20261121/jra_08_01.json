@@ -7,48 +7,148 @@
    "time": "1:26.0",
    "margin": "",
    "corners": "2-2",
-   "last3f": null,
+   "last3f": 37.6,
    "popularity": 2
   },
   {
    "finish": "2",
    "number": 13,
    "name": "ラッキーハナコ",
-   "time": "",
+   "time": "1:27.0",
    "margin": "６",
    "corners": "7-8",
-   "last3f": null,
+   "last3f": 38.0,
    "popularity": 3
   },
   {
    "finish": "3",
    "number": 11,
    "name": "オンアロール",
-   "time": "",
+   "time": "1:27.1",
    "margin": "３／４",
    "corners": "3-5",
-   "last3f": null,
+   "last3f": 38.4,
    "popularity": 11
   },
   {
    "finish": "4",
    "number": 12,
    "name": "スカイランデヴー",
-   "time": "",
+   "time": "1:27.2",
    "margin": "クビ",
    "corners": "7-8",
-   "last3f": null,
+   "last3f": 38.2,
    "popularity": 6
   },
   {
    "finish": "5",
    "number": 8,
    "name": "クリコリンダ",
-   "time": "",
+   "time": "1:27.2",
    "margin": "クビ",
    "corners": "7-6",
-   "last3f": null,
+   "last3f": 38.3,
    "popularity": 5
+  },
+  {
+   "finish": "6",
+   "number": 4,
+   "name": "ドミナント",
+   "time": "1:27.3",
+   "margin": "１／２",
+   "corners": "6-6",
+   "last3f": 38.5,
+   "popularity": 1
+  },
+  {
+   "finish": "7",
+   "number": 1,
+   "name": "キミチャン",
+   "time": "1:27.6",
+   "margin": "１ 3/4",
+   "corners": "10-10",
+   "last3f": 38.3,
+   "popularity": 12
+  },
+  {
+   "finish": "8",
+   "number": 3,
+   "name": "キャンディリヒト",
+   "time": "1:27.6",
+   "margin": "クビ",
+   "corners": "1-1",
+   "last3f": 39.3,
+   "popularity": 7
+  },
+  {
+   "finish": "9",
+   "number": 15,
+   "name": "クインズローマ",
+   "time": "1:27.9",
+   "margin": "１ 3/4",
+   "corners": "10-10",
+   "last3f": 38.6,
+   "popularity": 4
+  },
+  {
+   "finish": "10",
+   "number": 2,
+   "name": "ヴァニーユ",
+   "time": "1:28.0",
+   "margin": "１／２",
+   "corners": "3-3",
+   "last3f": 39.4,
+   "popularity": 9
+  },
+  {
+   "finish": "11",
+   "number": 5,
+   "name": "サメーダン",
+   "time": "1:28.0",
+   "margin": "クビ",
+   "corners": "3-3",
+   "last3f": 39.4,
+   "popularity": 10
+  },
+  {
+   "finish": "12",
+   "number": 6,
+   "name": "クレールオーブ",
+   "time": "1:28.1",
+   "margin": "クビ",
+   "corners": "14-12",
+   "last3f": 38.4,
+   "popularity": 15
+  },
+  {
+   "finish": "13",
+   "number": 7,
+   "name": "ホットハニーラグ",
+   "time": "1:28.3",
+   "margin": "１ 1/4",
+   "corners": "12-12",
+   "last3f": 38.7,
+   "popularity": 8
+  },
+  {
+   "finish": "14",
+   "number": 10,
+   "name": "ミスティ",
+   "time": "1:28.4",
+   "margin": "１",
+   "corners": "14-14",
+   "last3f": 38.6,
+   "popularity": 14
+  },
+  {
+   "finish": "15",
+   "number": 9,
+   "name": "サイモンククナ",
+   "time": "1:29.6",
+   "margin": "７",
+   "corners": "13-15",
+   "last3f": 39.8,
+   "popularity": 13
   }
  ],
  "payouts": {
