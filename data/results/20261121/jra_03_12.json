@@ -6,49 +6,159 @@
    "name": "ステキサプライズ",
    "time": "1:10.9",
    "margin": "",
-   "corners": "",
-   "last3f": null,
+   "corners": "4-5",
+   "last3f": 35.9,
    "popularity": 5
   },
   {
    "finish": "2",
    "number": 14,
    "name": "マテンロウカナロア",
-   "time": "",
+   "time": "1:11.2",
    "margin": "１ 1/2",
-   "corners": "",
-   "last3f": null,
+   "corners": "4-3",
+   "last3f": 36.2,
    "popularity": 3
   },
   {
    "finish": "3",
    "number": 4,
    "name": "ヤマニンフェイエル",
-   "time": "",
+   "time": "1:11.2",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "1-2",
+   "last3f": 36.5,
    "popularity": 4
   },
   {
    "finish": "4",
    "number": 7,
    "name": "ルシェロアズーリ",
-   "time": "",
+   "time": "1:11.2",
    "margin": "ハナ",
-   "corners": "",
-   "last3f": null,
+   "corners": "2-1",
+   "last3f": 36.5,
    "popularity": 2
   },
   {
    "finish": "5",
    "number": 10,
    "name": "ダブルチャレンジ",
-   "time": "",
+   "time": "1:11.3",
    "margin": "１／２",
-   "corners": "",
-   "last3f": null,
+   "corners": "10-7",
+   "last3f": 36.0,
    "popularity": 9
+  },
+  {
+   "finish": "6",
+   "number": 6,
+   "name": "ブライトフレア",
+   "time": "1:11.3",
+   "margin": "クビ",
+   "corners": "15-12",
+   "last3f": 35.6,
+   "popularity": 10
+  },
+  {
+   "finish": "7",
+   "number": 15,
+   "name": "レッドカメリア",
+   "time": "1:11.7",
+   "margin": "２",
+   "corners": "14-12",
+   "last3f": 36.1,
+   "popularity": 8
+  },
+  {
+   "finish": "8",
+   "number": 11,
+   "name": "レモンバーム",
+   "time": "1:11.8",
+   "margin": "１／２",
+   "corners": "3-3",
+   "last3f": 37.0,
+   "popularity": 14
+  },
+  {
+   "finish": "9",
+   "number": 3,
+   "name": "テリオスルル",
+   "time": "1:11.8",
+   "margin": "クビ",
+   "corners": "8-9",
+   "last3f": 36.6,
+   "popularity": 15
+  },
+  {
+   "finish": "10",
+   "number": 13,
+   "name": "グロリアスマーチ",
+   "time": "1:11.9",
+   "margin": "１／２",
+   "corners": "4-7",
+   "last3f": 36.9,
+   "popularity": 1
+  },
+  {
+   "finish": "11",
+   "number": 8,
+   "name": "アウローラシエル",
+   "time": "1:12.0",
+   "margin": "クビ",
+   "corners": "8-9",
+   "last3f": 36.9,
+   "popularity": 12
+  },
+  {
+   "finish": "12",
+   "number": 5,
+   "name": "ステートオブロック",
+   "time": "1:12.0",
+   "margin": "クビ",
+   "corners": "10-12",
+   "last3f": 36.7,
+   "popularity": 7
+  },
+  {
+   "finish": "13",
+   "number": 2,
+   "name": "ニルマーネル",
+   "time": "1:12.1",
+   "margin": "クビ",
+   "corners": "13-12",
+   "last3f": 36.6,
+   "popularity": 6
+  },
+  {
+   "finish": "14",
+   "number": 12,
+   "name": "グランルーチェ",
+   "time": "1:12.3",
+   "margin": "１ 1/2",
+   "corners": "10-9",
+   "last3f": 36.9,
+   "popularity": 16
+  },
+  {
+   "finish": "15",
+   "number": 9,
+   "name": "グリフォン",
+   "time": "1:12.4",
+   "margin": "１／２",
+   "corners": "4-5",
+   "last3f": 37.5,
+   "popularity": 13
+  },
+  {
+   "finish": "16",
+   "number": 16,
+   "name": "シャインズオンユー",
+   "time": "1:12.7",
+   "margin": "２",
+   "corners": "16-16",
+   "last3f": 36.7,
+   "popularity": 11
   }
  ],
  "payouts": {
