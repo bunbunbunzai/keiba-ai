@@ -1,6 +1,6 @@
 {
  "date": "20261122",
- "updated": "2026-11-21 03:49",
+ "updated": "2026-11-21 17:25",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -8,6 +8,195 @@
   "aitop": "AIの評価点1位（◎ではない馬）"
  },
  "horses": [
+  {
+   "race_id": "jra_20261122_東京_01",
+   "results_key": "jra_05_01",
+   "venue": "東京",
+   "race_no": 1,
+   "post_time": "09:50",
+   "number": 6,
+   "name": "セイカタカキヤチク",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 43,
+   "last": {
+    "date": "2026年10月10日",
+    "finish": 12,
+    "field": 16,
+    "popularity": 2
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_01",
+   "results_key": "jra_05_01",
+   "venue": "東京",
+   "race_no": 1,
+   "post_time": "09:50",
+   "number": 14,
+   "name": "コパノコーリング",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 98,
+   "last": {
+    "date": "2026年8月16日",
+    "finish": 5,
+    "field": 12,
+    "popularity": 12
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_02",
+   "results_key": "jra_05_02",
+   "venue": "東京",
+   "race_no": 2,
+   "post_time": "10:20",
+   "number": 13,
+   "name": "アラータス",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 92,
+   "last": {
+    "date": "2026年8月22日",
+    "finish": 3,
+    "field": 7,
+    "popularity": 4
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_03",
+   "results_key": "jra_05_03",
+   "venue": "東京",
+   "race_no": 3,
+   "post_time": "10:50",
+   "number": 2,
+   "name": "スナッチアップ",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 99,
+   "last": {
+    "date": "2026年8月15日",
+    "finish": 4,
+    "field": 15,
+    "popularity": 2
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_03",
+   "results_key": "jra_05_03",
+   "venue": "東京",
+   "race_no": 3,
+   "post_time": "10:50",
+   "number": 6,
+   "name": "シーズザチャンス",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 141,
+   "last": {
+    "date": "2026年7月4日",
+    "finish": 6,
+    "field": 8,
+    "popularity": 6
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_03",
+   "results_key": "jra_05_03",
+   "venue": "東京",
+   "race_no": 3,
+   "post_time": "10:50",
+   "number": 8,
+   "name": "ペアレンツハート",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 112,
+   "last": {
+    "date": "2026年8月2日",
+    "finish": 8,
+    "field": 13,
+    "popularity": 2
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_03",
+   "results_key": "jra_05_03",
+   "venue": "東京",
+   "race_no": 3,
+   "post_time": "10:50",
+   "number": 17,
+   "name": "ジーティーマルク",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 99,
+   "last": {
+    "date": "2026年8月15日",
+    "finish": 6,
+    "field": 15,
+    "popularity": 6
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_京都_03",
+   "results_key": "jra_08_03",
+   "venue": "京都",
+   "race_no": 3,
+   "post_time": "11:05",
+   "number": 6,
+   "name": "マハロハ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 14,
+   "last": {
+    "date": "2026年11月8日",
+    "finish": 11,
+    "field": 15,
+    "popularity": 6
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_京都_03",
+   "results_key": "jra_08_03",
+   "venue": "京都",
+   "race_no": 3,
+   "post_time": "11:05",
+   "number": 9,
+   "name": "マーヴィン",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 106,
+   "last": {
+    "date": "2026年8月8日",
+    "finish": 12,
+    "field": 12,
+    "popularity": 5
+   },
+   "odds": null,
+   "popularity": null
+  },
   {
    "race_id": "202611221106070401",
    "results_key": "202611221106070401",
@@ -72,6 +261,432 @@
    "popularity": null
   },
   {
+   "race_id": "jra_20261122_京都_06",
+   "results_key": "jra_08_06",
+   "venue": "京都",
+   "race_no": 6,
+   "post_time": "12:55",
+   "number": 7,
+   "name": "ラフォン",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 399,
+   "last": {
+    "date": "2025年10月19日",
+    "finish": 7,
+    "field": 12,
+    "popularity": 1
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_京都_06",
+   "results_key": "jra_08_06",
+   "venue": "京都",
+   "race_no": 6,
+   "post_time": "12:55",
+   "number": 8,
+   "name": "フレイムスター",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 50,
+   "last": {
+    "date": "2026年10月3日",
+    "finish": 16,
+    "field": 16,
+    "popularity": 4
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_京都_06",
+   "results_key": "jra_08_06",
+   "venue": "京都",
+   "race_no": 6,
+   "post_time": "12:55",
+   "number": 9,
+   "name": "アンピュルシオン",
+   "types": [
+    "layoff",
+    "rebound"
+   ],
+   "gap_days": 148,
+   "last": {
+    "date": "2026年6月27日",
+    "finish": 16,
+    "field": 16,
+    "popularity": 13
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_京都_06",
+   "results_key": "jra_08_06",
+   "venue": "京都",
+   "race_no": 6,
+   "post_time": "12:55",
+   "number": 15,
+   "name": "ビサーロ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 29,
+   "last": {
+    "date": "2026年10月24日",
+    "finish": 9,
+    "field": 12,
+    "popularity": 4
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_07",
+   "results_key": "jra_05_07",
+   "venue": "東京",
+   "race_no": 7,
+   "post_time": "13:10",
+   "number": 4,
+   "name": "パッセージピーク",
+   "types": [
+    "layoff",
+    "rebound"
+   ],
+   "gap_days": 127,
+   "last": {
+    "date": "2026年7月18日",
+    "finish": 9,
+    "field": 12,
+    "popularity": 4
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_07",
+   "results_key": "jra_05_07",
+   "venue": "東京",
+   "race_no": 7,
+   "post_time": "13:10",
+   "number": 5,
+   "name": "オメガディコン",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 49,
+   "last": {
+    "date": "2026年10月4日",
+    "finish": 14,
+    "field": 17,
+    "popularity": 12
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_07",
+   "results_key": "jra_05_07",
+   "venue": "東京",
+   "race_no": 7,
+   "post_time": "13:10",
+   "number": 10,
+   "name": "ヴァルカンテソーロ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 57,
+   "last": {
+    "date": "2026年9月26日",
+    "finish": 15,
+    "field": 18,
+    "popularity": 3
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_07",
+   "results_key": "jra_05_07",
+   "venue": "東京",
+   "race_no": 7,
+   "post_time": "13:10",
+   "number": 14,
+   "name": "スワーヴゴダイヴァ",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 363,
+   "last": {
+    "date": "2025年11月24日",
+    "finish": 6,
+    "field": 18,
+    "popularity": 6
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_京都_07",
+   "results_key": "jra_08_07",
+   "venue": "京都",
+   "race_no": 7,
+   "post_time": "13:25",
+   "number": 2,
+   "name": "ローレルオーブ",
+   "types": [
+    "layoff",
+    "rebound"
+   ],
+   "gap_days": 155,
+   "last": {
+    "date": "2026年6月20日",
+    "finish": 6,
+    "field": 8,
+    "popularity": 4
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_京都_07",
+   "results_key": "jra_08_07",
+   "venue": "京都",
+   "race_no": 7,
+   "post_time": "13:25",
+   "number": 9,
+   "name": "ドリームプレミア",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 15,
+   "last": {
+    "date": "2026年11月7日",
+    "finish": 11,
+    "field": 16,
+    "popularity": 1
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_京都_07",
+   "results_key": "jra_08_07",
+   "venue": "京都",
+   "race_no": 7,
+   "post_time": "13:25",
+   "number": 12,
+   "name": "ボンドマティーニ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 64,
+   "last": {
+    "date": "2026年9月19日",
+    "finish": 11,
+    "field": 12,
+    "popularity": 1
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_京都_07",
+   "results_key": "jra_08_07",
+   "venue": "京都",
+   "race_no": 7,
+   "post_time": "13:25",
+   "number": 14,
+   "name": "ヴァロンブローサ",
+   "types": [
+    "layoff",
+    "rebound"
+   ],
+   "gap_days": 232,
+   "last": {
+    "date": "2026年4月4日",
+    "finish": 9,
+    "field": 9,
+    "popularity": 7
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_京都_07",
+   "results_key": "jra_08_07",
+   "venue": "京都",
+   "race_no": 7,
+   "post_time": "13:25",
+   "number": 16,
+   "name": "スピルイット",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 308,
+   "last": {
+    "date": "2026年1月18日",
+    "finish": 3,
+    "field": 17,
+    "popularity": 9
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_京都_07",
+   "results_key": "jra_08_07",
+   "venue": "京都",
+   "race_no": 7,
+   "post_time": "13:25",
+   "number": 18,
+   "name": "ドゥラシェーナ",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 210,
+   "last": {
+    "date": "2026年4月26日",
+    "finish": 9,
+    "field": 13,
+    "popularity": 7
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_08",
+   "results_key": "jra_05_08",
+   "venue": "東京",
+   "race_no": 8,
+   "post_time": "13:40",
+   "number": 1,
+   "name": "バロンドール",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 182,
+   "last": {
+    "date": "2026年5月24日",
+    "finish": 4,
+    "field": 16,
+    "popularity": 9
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_08",
+   "results_key": "jra_05_08",
+   "venue": "東京",
+   "race_no": 8,
+   "post_time": "13:40",
+   "number": 5,
+   "name": "ノアヴィヴァーチェ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 49,
+   "last": {
+    "date": "2026年10月4日",
+    "finish": 11,
+    "field": 16,
+    "popularity": 9
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_08",
+   "results_key": "jra_05_08",
+   "venue": "東京",
+   "race_no": 8,
+   "post_time": "13:40",
+   "number": 6,
+   "name": "ジェシーテソーロ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 14,
+   "last": {
+    "date": "2026年11月8日",
+    "finish": 14,
+    "field": 15,
+    "popularity": 12
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_08",
+   "results_key": "jra_05_08",
+   "venue": "東京",
+   "race_no": 8,
+   "post_time": "13:40",
+   "number": 7,
+   "name": "ホウオウフェイント",
+   "types": [
+    "layoff",
+    "rebound"
+   ],
+   "gap_days": 623,
+   "last": {
+    "date": "2025年3月9日",
+    "finish": 12,
+    "field": 15,
+    "popularity": 7
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_08",
+   "results_key": "jra_05_08",
+   "venue": "東京",
+   "race_no": 8,
+   "post_time": "13:40",
+   "number": 11,
+   "name": "グレイルクエスト",
+   "types": [
+    "layoff",
+    "rebound"
+   ],
+   "gap_days": 210,
+   "last": {
+    "date": "2026年4月26日",
+    "finish": 12,
+    "field": 14,
+    "popularity": 8
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_08",
+   "results_key": "jra_05_08",
+   "venue": "東京",
+   "race_no": 8,
+   "post_time": "13:40",
+   "number": 15,
+   "name": "サンダーロード",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 189,
+   "last": {
+    "date": "2026年5月17日",
+    "finish": 15,
+    "field": 15,
+    "popularity": 13
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
    "race_id": "202611221106070404",
    "results_key": "202611221106070404",
    "venue": "水沢",
@@ -88,6 +703,91 @@
     "finish": 6,
     "field": 10,
     "popularity": 6
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_京都_08",
+   "results_key": "jra_08_08",
+   "venue": "京都",
+   "race_no": 8,
+   "post_time": "13:55",
+   "number": 4,
+   "name": "サイモンゼスト",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 21,
+   "last": {
+    "date": "2026年11月1日",
+    "finish": 10,
+    "field": 10,
+    "popularity": 8
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_京都_08",
+   "results_key": "jra_08_08",
+   "venue": "京都",
+   "race_no": 8,
+   "post_time": "13:55",
+   "number": 5,
+   "name": "ユージュアーナ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 8,
+   "last": {
+    "date": "2026年11月14日",
+    "finish": 12,
+    "field": 15,
+    "popularity": 13
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_京都_08",
+   "results_key": "jra_08_08",
+   "venue": "京都",
+   "race_no": 8,
+   "post_time": "13:55",
+   "number": 6,
+   "name": "アンティスマ",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 112,
+   "last": {
+    "date": "2026年8月2日",
+    "finish": 1,
+    "field": 9,
+    "popularity": 1
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_京都_08",
+   "results_key": "jra_08_08",
+   "venue": "京都",
+   "race_no": 8,
+   "post_time": "13:55",
+   "number": 9,
+   "name": "クリノフィガロ",
+   "types": [
+    "layoff",
+    "rebound"
+   ],
+   "gap_days": 154,
+   "last": {
+    "date": "2026年6月21日",
+    "finish": 9,
+    "field": 13,
+    "popularity": 3
    },
    "odds": null,
    "popularity": null
@@ -130,6 +830,90 @@
     "finish": 8,
     "field": 10,
     "popularity": 10
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_09",
+   "results_key": "jra_05_09",
+   "venue": "東京",
+   "race_no": 9,
+   "post_time": "14:10",
+   "number": 1,
+   "name": "セプタードアイル",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 56,
+   "last": {
+    "date": "2026年9月27日",
+    "finish": 6,
+    "field": 7,
+    "popularity": 4
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_09",
+   "results_key": "jra_05_09",
+   "venue": "東京",
+   "race_no": 9,
+   "post_time": "14:10",
+   "number": 3,
+   "name": "カナデルペガサス",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 29,
+   "last": {
+    "date": "2026年10月24日",
+    "finish": 12,
+    "field": 13,
+    "popularity": 12
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_09",
+   "results_key": "jra_05_09",
+   "venue": "東京",
+   "race_no": 9,
+   "post_time": "14:10",
+   "number": 6,
+   "name": "ピコベリー",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 29,
+   "last": {
+    "date": "2026年10月24日",
+    "finish": 11,
+    "field": 13,
+    "popularity": 5
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_09",
+   "results_key": "jra_05_09",
+   "venue": "東京",
+   "race_no": 9,
+   "post_time": "14:10",
+   "number": 9,
+   "name": "セイウンシャラ",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 91,
+   "last": {
+    "date": "2026年8月23日",
+    "finish": 1,
+    "field": 12,
+    "popularity": 11
    },
    "odds": null,
    "popularity": null
@@ -198,6 +982,113 @@
    "popularity": null
   },
   {
+   "race_id": "jra_20261122_京都_09",
+   "results_key": "jra_08_09",
+   "venue": "京都",
+   "race_no": 9,
+   "post_time": "14:25",
+   "number": 7,
+   "name": "モアニ",
+   "types": [
+    "layoff",
+    "rebound"
+   ],
+   "gap_days": 126,
+   "last": {
+    "date": "2026年7月19日",
+    "finish": 7,
+    "field": 8,
+    "popularity": 4
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_京都_09",
+   "results_key": "jra_08_09",
+   "venue": "京都",
+   "race_no": 9,
+   "post_time": "14:25",
+   "number": 9,
+   "name": "ジャズ",
+   "types": [
+    "layoff",
+    "rebound"
+   ],
+   "gap_days": 119,
+   "last": {
+    "date": "2026年7月26日",
+    "finish": 7,
+    "field": 9,
+    "popularity": 6
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_京都_09",
+   "results_key": "jra_08_09",
+   "venue": "京都",
+   "race_no": 9,
+   "post_time": "14:25",
+   "number": 10,
+   "name": "オックスアイ",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 91,
+   "last": {
+    "date": "2026年8月23日",
+    "finish": 5,
+    "field": 14,
+    "popularity": 10
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_京都_09",
+   "results_key": "jra_08_09",
+   "venue": "京都",
+   "race_no": 9,
+   "post_time": "14:25",
+   "number": 11,
+   "name": "バルセシート",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 77,
+   "last": {
+    "date": "2026年9月6日",
+    "finish": 5,
+    "field": 7,
+    "popularity": 1
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_京都_09",
+   "results_key": "jra_08_09",
+   "venue": "京都",
+   "race_no": 9,
+   "post_time": "14:25",
+   "number": 13,
+   "name": "タナブイハチターボ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 15,
+   "last": {
+    "date": "2026年11月7日",
+    "finish": 12,
+    "field": 16,
+    "popularity": 2
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
    "race_id": "202611220304170202",
    "results_key": "202611220304170202",
    "venue": "帯広ば",
@@ -261,6 +1152,153 @@
    "popularity": null
   },
   {
+   "race_id": "jra_20261122_東京_10",
+   "results_key": "jra_05_10",
+   "venue": "東京",
+   "race_no": 10,
+   "post_time": "14:45",
+   "number": 1,
+   "name": "トラペジスト",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 84,
+   "last": {
+    "date": "2026年8月30日",
+    "finish": 11,
+    "field": 14,
+    "popularity": 14
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_10",
+   "results_key": "jra_05_10",
+   "venue": "東京",
+   "race_no": 10,
+   "post_time": "14:45",
+   "number": 3,
+   "name": "ビップディラン",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 91,
+   "last": {
+    "date": "2026年8月23日",
+    "finish": 1,
+    "field": 14,
+    "popularity": 2
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_10",
+   "results_key": "jra_05_10",
+   "venue": "東京",
+   "race_no": 10,
+   "post_time": "14:45",
+   "number": 5,
+   "name": "ジッピーチューン",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 77,
+   "last": {
+    "date": "2026年9月6日",
+    "finish": 10,
+    "field": 11,
+    "popularity": 3
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_10",
+   "results_key": "jra_05_10",
+   "venue": "東京",
+   "race_no": 10,
+   "post_time": "14:45",
+   "number": 7,
+   "name": "ボーモンド",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 189,
+   "last": {
+    "date": "2026年5月17日",
+    "finish": 11,
+    "field": 13,
+    "popularity": 13
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_10",
+   "results_key": "jra_05_10",
+   "venue": "東京",
+   "race_no": 10,
+   "post_time": "14:45",
+   "number": 9,
+   "name": "マルチャン",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 92,
+   "last": {
+    "date": "2026年8月22日",
+    "finish": 7,
+    "field": 18,
+    "popularity": 12
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_10",
+   "results_key": "jra_05_10",
+   "venue": "東京",
+   "race_no": 10,
+   "post_time": "14:45",
+   "number": 11,
+   "name": "プッシュオン",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 189,
+   "last": {
+    "date": "2026年5月17日",
+    "finish": 9,
+    "field": 13,
+    "popularity": 12
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_10",
+   "results_key": "jra_05_10",
+   "venue": "東京",
+   "race_no": 10,
+   "post_time": "14:45",
+   "number": 13,
+   "name": "テウメッサ",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 92,
+   "last": {
+    "date": "2026年8月22日",
+    "finish": 17,
+    "field": 18,
+    "popularity": 15
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
    "race_id": "202611221106070406",
    "results_key": "202611221106070406",
    "venue": "水沢",
@@ -298,6 +1336,113 @@
     "finish": 10,
     "field": 12,
     "popularity": 8
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_京都_10",
+   "results_key": "jra_08_10",
+   "venue": "京都",
+   "race_no": 10,
+   "post_time": "15:00",
+   "number": 4,
+   "name": "コーラルクラウン",
+   "types": [
+    "layoff",
+    "rebound"
+   ],
+   "gap_days": 189,
+   "last": {
+    "date": "2026年5月17日",
+    "finish": 11,
+    "field": 16,
+    "popularity": 2
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_京都_10",
+   "results_key": "jra_08_10",
+   "venue": "京都",
+   "race_no": 10,
+   "post_time": "15:00",
+   "number": 7,
+   "name": "ヴィリアリート",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 113,
+   "last": {
+    "date": "2026年8月1日",
+    "finish": 10,
+    "field": 16,
+    "popularity": 8
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_京都_10",
+   "results_key": "jra_08_10",
+   "venue": "京都",
+   "race_no": 10,
+   "post_time": "15:00",
+   "number": 10,
+   "name": "スニーカースキル",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 49,
+   "last": {
+    "date": "2026年10月4日",
+    "finish": 16,
+    "field": 16,
+    "popularity": 6
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_京都_10",
+   "results_key": "jra_08_10",
+   "venue": "京都",
+   "race_no": 10,
+   "post_time": "15:00",
+   "number": 12,
+   "name": "メイケイレイン",
+   "types": [
+    "layoff",
+    "rebound"
+   ],
+   "gap_days": 189,
+   "last": {
+    "date": "2026年5月17日",
+    "finish": 13,
+    "field": 16,
+    "popularity": 3
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_京都_10",
+   "results_key": "jra_08_10",
+   "venue": "京都",
+   "race_no": 10,
+   "post_time": "15:00",
+   "number": 13,
+   "name": "ヤマニンシュラ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 50,
+   "last": {
+    "date": "2026年10月3日",
+    "finish": 14,
+    "field": 16,
+    "popularity": 10
    },
    "odds": null,
    "popularity": null
@@ -387,6 +1532,69 @@
    "popularity": null
   },
   {
+   "race_id": "jra_20261122_東京_11",
+   "results_key": "jra_05_11",
+   "venue": "東京",
+   "race_no": 11,
+   "post_time": "15:20",
+   "number": 2,
+   "name": "スマートジュリアス",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 101,
+   "last": {
+    "date": "2026年8月13日",
+    "finish": 6,
+    "field": 10,
+    "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_11",
+   "results_key": "jra_05_11",
+   "venue": "東京",
+   "race_no": 11,
+   "post_time": "15:20",
+   "number": 3,
+   "name": "ワイワイレジェンド",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 28,
+   "last": {
+    "date": "2026年10月25日",
+    "finish": 16,
+    "field": 16,
+    "popularity": 3
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_11",
+   "results_key": "jra_05_11",
+   "venue": "東京",
+   "race_no": 11,
+   "post_time": "15:20",
+   "number": 7,
+   "name": "ペイシャケイプ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 78,
+   "last": {
+    "date": "2026年9月5日",
+    "finish": 11,
+    "field": 12,
+    "popularity": 2
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
    "race_id": "202611221106070407",
    "results_key": "202611221106070407",
    "venue": "水沢",
@@ -467,8 +1675,8 @@
     "field": 18,
     "popularity": 1
    },
-   "odds": null,
-   "popularity": null
+   "odds": 6.1,
+   "popularity": 3
   },
   {
    "race_id": "jra_20261122_京都_11",
@@ -489,8 +1697,29 @@
     "field": 10,
     "popularity": null
    },
-   "odds": null,
-   "popularity": null
+   "odds": 41.1,
+   "popularity": 12
+  },
+  {
+   "race_id": "jra_20261122_京都_11",
+   "results_key": "jra_08_11",
+   "venue": "京都",
+   "race_no": 11,
+   "post_time": "15:40",
+   "number": 5,
+   "name": "アドマイヤズーム",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 36,
+   "last": {
+    "date": "2026年10月17日",
+    "finish": 6,
+    "field": 14,
+    "popularity": 3
+   },
+   "odds": 8.3,
+   "popularity": 6
   },
   {
    "race_id": "jra_20261122_京都_11",
@@ -510,8 +1739,8 @@
     "field": 14,
     "popularity": 1
    },
-   "odds": null,
-   "popularity": null
+   "odds": 37.8,
+   "popularity": 11
   },
   {
    "race_id": "jra_20261122_京都_11",
@@ -531,8 +1760,8 @@
     "field": 17,
     "popularity": 1
    },
-   "odds": null,
-   "popularity": null
+   "odds": 7.1,
+   "popularity": 5
   },
   {
    "race_id": "202611220304170204",
@@ -594,6 +1823,90 @@
     "finish": null,
     "field": 9,
     "popularity": null
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_12",
+   "results_key": "jra_05_12",
+   "venue": "東京",
+   "race_no": 12,
+   "post_time": "16:05",
+   "number": 5,
+   "name": "メローネ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 57,
+   "last": {
+    "date": "2026年9月26日",
+    "finish": 13,
+    "field": 16,
+    "popularity": 15
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_12",
+   "results_key": "jra_05_12",
+   "venue": "東京",
+   "race_no": 12,
+   "post_time": "16:05",
+   "number": 6,
+   "name": "パーティーガール",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 21,
+   "last": {
+    "date": "2026年11月1日",
+    "finish": 10,
+    "field": 13,
+    "popularity": 11
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_12",
+   "results_key": "jra_05_12",
+   "venue": "東京",
+   "race_no": 12,
+   "post_time": "16:05",
+   "number": 10,
+   "name": "メランジェ",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 28,
+   "last": {
+    "date": "2026年10月25日",
+    "finish": 9,
+    "field": 9,
+    "popularity": 5
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_東京_12",
+   "results_key": "jra_05_12",
+   "venue": "東京",
+   "race_no": 12,
+   "post_time": "16:05",
+   "number": 15,
+   "name": "ロジャリーマイン",
+   "types": [
+    "layoff"
+   ],
+   "gap_days": 120,
+   "last": {
+    "date": "2026年7月25日",
+    "finish": 1,
+    "field": 17,
+    "popularity": 10
    },
    "odds": null,
    "popularity": null
@@ -678,6 +1991,27 @@
     "date": "2026-11-07",
     "finish": 8,
     "field": 10,
+    "popularity": 9
+   },
+   "odds": null,
+   "popularity": null
+  },
+  {
+   "race_id": "jra_20261122_京都_12",
+   "results_key": "jra_08_12",
+   "venue": "京都",
+   "race_no": 12,
+   "post_time": "16:20",
+   "number": 2,
+   "name": "トーセントラム",
+   "types": [
+    "rebound"
+   ],
+   "gap_days": 77,
+   "last": {
+    "date": "2026年9月6日",
+    "finish": 7,
+    "field": 9,
     "popularity": 9
    },
    "odds": null,
