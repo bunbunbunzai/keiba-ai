@@ -1,6 +1,6 @@
 {
  "date": "20261121",
- "updated": "2026-11-21 15:28",
+ "updated": "2026-11-21 15:33",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -2488,6 +2488,27 @@
    "venue": "福島",
    "race_no": 12,
    "post_time": "15:55",
+   "number": 4,
+   "name": "ヤマニンフェイエル",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 34,
+   "last": {
+    "date": "2026年10月18日",
+    "finish": 9,
+    "field": 18,
+    "popularity": 3
+   },
+   "odds": 7.6,
+   "popularity": 4
+  },
+  {
+   "race_id": "jra_20261121_福島_12",
+   "results_key": "jra_03_12",
+   "venue": "福島",
+   "race_no": 12,
+   "post_time": "15:55",
    "number": 5,
    "name": "ステートオブロック",
    "types": [
@@ -2500,7 +2521,7 @@
     "field": 16,
     "popularity": 7
    },
-   "odds": 10.8,
+   "odds": 15.1,
    "popularity": 7
   },
   {
@@ -2521,7 +2542,7 @@
     "field": 15,
     "popularity": 11
    },
-   "odds": 60.3,
+   "odds": 67.7,
    "popularity": 16
   },
   {
@@ -2578,8 +2599,8 @@
     "field": 14,
     "popularity": 3
    },
-   "odds": 9.3,
-   "popularity": 6
+   "odds": 8.7,
+   "popularity": 5
   },
   {
    "race_id": "jra_20261121_京都_12",
@@ -2599,7 +2620,7 @@
     "field": 10,
     "popularity": 10
    },
-   "odds": 97.2,
+   "odds": 134.2,
    "popularity": 13
   },
   {
