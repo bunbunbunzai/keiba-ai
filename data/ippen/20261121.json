@@ -1,6 +1,6 @@
 {
  "date": "20261121",
- "updated": "2026-11-21 08:47",
+ "updated": "2026-11-21 09:22",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -625,6 +625,20 @@
    },
    "odds": 33.4,
    "popularity": 9
+  },
+  {
+   "race_id": "jra_20261121_福島_06",
+   "results_key": "jra_03_06",
+   "venue": "福島",
+   "race_no": 6,
+   "post_time": "12:40",
+   "number": 3,
+   "name": "ポンピエ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 11.6,
+   "popularity": 6
   },
   {
    "race_id": "jra_20261121_福島_06",
