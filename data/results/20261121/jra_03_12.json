@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 1,
+   "name": "ステキサプライズ",
+   "time": "1:10.9",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "2",
+   "number": 14,
+   "name": "マテンロウカナロア",
+   "time": "",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "number": 4,
+   "name": "ヤマニンフェイエル",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "4",
+   "number": 7,
+   "name": "ルシェロアズーリ",
+   "time": "",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "5",
+   "number": 10,
+   "name": "ダブルチャレンジ",
+   "time": "",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "1",
+    "yen": 790,
+    "pop": 5
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "1",
+    "yen": 260,
+    "pop": 3
+   },
+   {
+    "combo": "14",
+    "yen": 300,
+    "pop": 6
+   },
+   {
+    "combo": "4",
+    "yen": 260,
+    "pop": 4
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-7",
+    "yen": 650,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-14",
+    "yen": 2210,
+    "pop": 24
+   },
+   {
+    "combo": "1-4",
+    "yen": 1330,
+    "pop": 14
+   },
+   {
+    "combo": "4-14",
+    "yen": 1480,
+    "pop": 16
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-14",
+    "yen": 5820,
+    "pop": 20
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "1-14",
+    "yen": 14190,
+    "pop": 59
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-4-14",
+    "yen": 16120,
+    "pop": 49
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "1-14-4",
+    "yen": 104600,
+    "pop": 357
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261121",
+ "venue_code": "03",
+ "race_no": 12,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603051220261121/C2",
+ "title": "レース結果 JRA"
+}
