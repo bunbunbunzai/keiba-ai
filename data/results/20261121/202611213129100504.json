@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261121",
  "race_id": "202611213129100504",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "バスターコール",
    "time": "1:32.8",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 40.3,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ペイシャマイデイズ",
    "time": "1:33.2",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 40.2,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ヴィーラー",
    "time": "1:33.8",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 40.7,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "タマモアマルフィ",
    "time": "1:34.8",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 42.0,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "ロードベルファスト",
    "time": "1:35.1",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 41.3,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "アキヤン",
    "time": "1:37.0",
    "margin": "９",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 42.8,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "バリキング",
    "time": "1:37.4",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 44.2,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "エートゥージー",
    "time": "1:37.7",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 44.3,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "ビビットピンク",
    "time": "1:37.7",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 44.0,
    "popularity": null
   }
  ]
