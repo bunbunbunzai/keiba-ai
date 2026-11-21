@@ -7,48 +7,148 @@
    "time": "2:23.2",
    "margin": "",
    "corners": "1-1-1-2",
-   "last3f": null,
+   "last3f": 34.9,
    "popularity": 1
   },
   {
    "finish": "2",
    "number": 5,
    "name": "ベトルス",
-   "time": "",
+   "time": "2:23.3",
    "margin": "クビ",
    "corners": "13-13-13-11",
-   "last3f": null,
+   "last3f": 34.1,
    "popularity": 2
   },
   {
    "finish": "3",
    "number": 9,
    "name": "オメガナビゲーター",
-   "time": "",
+   "time": "2:23.4",
    "margin": "１",
    "corners": "14-14-15-15",
-   "last3f": null,
+   "last3f": 33.9,
    "popularity": 8
   },
   {
    "finish": "4",
    "number": 6,
    "name": "ロードガレリア",
-   "time": "",
+   "time": "2:23.5",
    "margin": "クビ",
    "corners": "14-14-13-14",
-   "last3f": null,
+   "last3f": 34.3,
    "popularity": 6
   },
   {
    "finish": "5",
    "number": 15,
    "name": "クルミナーレ",
-   "time": "",
+   "time": "2:23.5",
    "margin": "アタマ",
    "corners": "9-8-7-7",
-   "last3f": null,
+   "last3f": 34.7,
    "popularity": 3
+  },
+  {
+   "finish": "6",
+   "number": 2,
+   "name": "サトノパトリオット",
+   "time": "2:23.6",
+   "margin": "１／２",
+   "corners": "4-4-4-3",
+   "last3f": 35.1,
+   "popularity": 4
+  },
+  {
+   "finish": "7",
+   "number": 1,
+   "name": "アットアブラスト",
+   "time": "2:23.8",
+   "margin": "１ 1/4",
+   "corners": "8-8-7-7",
+   "last3f": 35.1,
+   "popularity": 9
+  },
+  {
+   "finish": "8",
+   "number": 8,
+   "name": "キントリヒ",
+   "time": "2:23.8",
+   "margin": "クビ",
+   "corners": "10-10-10-11",
+   "last3f": 34.8,
+   "popularity": 13
+  },
+  {
+   "finish": "9",
+   "number": 14,
+   "name": "スピードリッチ",
+   "time": "2:23.8",
+   "margin": "アタマ",
+   "corners": "10-10-10-7",
+   "last3f": 34.9,
+   "popularity": 7
+  },
+  {
+   "finish": "10",
+   "number": 3,
+   "name": "サトノクローク",
+   "time": "2:23.9",
+   "margin": "クビ",
+   "corners": "10-10-10-11",
+   "last3f": 34.9,
+   "popularity": 11
+  },
+  {
+   "finish": "11",
+   "number": 13,
+   "name": "ウインデイジー",
+   "time": "2:23.9",
+   "margin": "クビ",
+   "corners": "4-4-4-1",
+   "last3f": 35.6,
+   "popularity": 5
+  },
+  {
+   "finish": "12",
+   "number": 11,
+   "name": "キーパフォーマー",
+   "time": "2:24.1",
+   "margin": "１",
+   "corners": "7-7-7-3",
+   "last3f": 35.5,
+   "popularity": 12
+  },
+  {
+   "finish": "13",
+   "number": 4,
+   "name": "ナムラフッカー",
+   "time": "2:24.7",
+   "margin": "３ 1/2",
+   "corners": "4-4-6-7",
+   "last3f": 36.1,
+   "popularity": 14
+  },
+  {
+   "finish": "14",
+   "number": 12,
+   "name": "リーティアコナル",
+   "time": "2:25.9",
+   "margin": "７",
+   "corners": "2-3-2-3",
+   "last3f": 37.5,
+   "popularity": 10
+  },
+  {
+   "finish": "15",
+   "number": 10,
+   "name": "ルクスビッグスター",
+   "time": "2:26.8",
+   "margin": "５",
+   "corners": "2-2-2-3",
+   "last3f": 38.4,
+   "popularity": 15
   }
  ],
  "payouts": {
