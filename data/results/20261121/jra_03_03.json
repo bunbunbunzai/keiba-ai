@@ -1,0 +1,238 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 14,
+   "name": "ランフェザー",
+   "time": "1:43.9",
+   "margin": "レコード",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 11,
+   "name": "テンソンコウリン",
+   "time": "1:44.1",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "number": 13,
+   "name": "エコロガルディア",
+   "time": "1:45.2",
+   "margin": "７",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "number": 15,
+   "name": "プリマアルバ",
+   "time": "1:45.5",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "number": 10,
+   "name": "ボンジュールパリ",
+   "time": "1:45.6",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "6",
+   "number": 9,
+   "name": "マイバーゲン",
+   "time": "1:46.3",
+   "margin": "４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "7",
+   "number": 12,
+   "name": "スクリプトール",
+   "time": "1:46.3",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "8",
+   "number": 6,
+   "name": "エスアンヴィユ",
+   "time": "1:46.3",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "9",
+   "number": 5,
+   "name": "カリスマン",
+   "time": "1:46.4",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "10",
+   "number": 4,
+   "name": "グリームウッド",
+   "time": "1:47.3",
+   "margin": "５",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "11",
+   "number": 8,
+   "name": "コルキス",
+   "time": "1:47.9",
+   "margin": "３ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "12",
+   "number": 2,
+   "name": "タクミオジュウ",
+   "time": "1:47.9",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "13",
+   "number": 3,
+   "name": "レガシーマインド",
+   "time": "1:48.0",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "14",
+   "number": 7,
+   "name": "ラヴァレード",
+   "time": "1:48.3",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "15",
+   "number": 1,
+   "name": "マックスプロックス",
+   "time": "1:49.0",
+   "margin": "４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 14
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "14",
+    "yen": 180,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "14",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "11",
+    "yen": 170,
+    "pop": 2
+   },
+   {
+    "combo": "13",
+    "yen": 190,
+    "pop": 4
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "6-8",
+    "yen": 380,
+    "pop": 2
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "11-14",
+    "yen": 210,
+    "pop": 1
+   },
+   {
+    "combo": "13-14",
+    "yen": 260,
+    "pop": 2
+   },
+   {
+    "combo": "11-13",
+    "yen": 610,
+    "pop": 6
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "11-14",
+    "yen": 470,
+    "pop": 1
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "14-11",
+    "yen": 710,
+    "pop": 1
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "11-13-14",
+    "yen": 920,
+    "pop": 1
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "14-11-13",
+    "yen": 2310,
+    "pop": 1
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261121",
+ "venue_code": "03",
+ "race_no": 3,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603050320261121/25",
+ "title": "レース結果 JRA"
+}
