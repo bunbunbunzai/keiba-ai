@@ -2981,6 +2981,20 @@
    "venue": "帯広ば",
    "race_no": 8,
    "post_time": "18:00",
+   "number": 4,
+   "name": "ナカサンブライアン",
+   "types": [
+    "aitop"
+   ],
+   "odds": 10.7,
+   "popularity": 5
+  },
+  {
+   "race_id": "202611210304170108",
+   "results_key": "202611210304170108",
+   "venue": "帯広ば",
+   "race_no": 8,
+   "post_time": "18:00",
    "number": 5,
    "name": "ジェイドラゴン",
    "types": [
