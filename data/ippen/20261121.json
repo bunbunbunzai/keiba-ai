@@ -1,6 +1,6 @@
 {
  "date": "20261121",
- "updated": "2026-11-21 19:12",
+ "updated": "2026-11-21 19:18",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -3493,7 +3493,7 @@
     "field": 11,
     "popularity": 1
    },
-   "odds": 6.9,
+   "odds": 10.4,
    "popularity": 5
   },
   {
@@ -3514,8 +3514,22 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": 37.7,
+   "odds": 75.0,
    "popularity": 10
+  },
+  {
+   "race_id": "202611213129100510",
+   "results_key": "202611213129100510",
+   "venue": "高知",
+   "race_no": 10,
+   "post_time": "19:50",
+   "number": 10,
+   "name": "トップアメリカン",
+   "types": [
+    "aitop"
+   ],
+   "odds": 6.3,
+   "popularity": 3
   },
   {
    "race_id": "202611210304170112",
@@ -3535,7 +3549,7 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": 56.0,
+   "odds": 52.0,
    "popularity": 9
   },
   {
@@ -3556,7 +3570,7 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": 3.1,
+   "odds": 3.6,
    "popularity": 1
   },
   {
@@ -3578,8 +3592,8 @@
     "field": 10,
     "popularity": 1
    },
-   "odds": 6.2,
-   "popularity": 4
+   "odds": 6.4,
+   "popularity": 5
   },
   {
    "race_id": "202611213230140110",
