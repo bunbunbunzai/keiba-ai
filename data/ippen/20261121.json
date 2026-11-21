@@ -1,6 +1,6 @@
 {
  "date": "20261121",
- "updated": "2026-11-21 10:09",
+ "updated": "2026-11-21 10:48",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1828,8 +1828,8 @@
     "field": 11,
     "popularity": 2
    },
-   "odds": null,
-   "popularity": null
+   "odds": 10.6,
+   "popularity": 3
   },
   {
    "race_id": "jra_20261121_京都_10",
@@ -2527,8 +2527,8 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": null,
-   "popularity": null
+   "odds": 13.6,
+   "popularity": 6
   },
   {
    "race_id": "202611210304170106",
@@ -2779,8 +2779,8 @@
     "field": 11,
     "popularity": 2
    },
-   "odds": null,
-   "popularity": null
+   "odds": 3.2,
+   "popularity": 2
   },
   {
    "race_id": "202611213129100506",
@@ -3179,8 +3179,8 @@
     "field": 12,
     "popularity": 1
    },
-   "odds": null,
-   "popularity": null
+   "odds": 3.0,
+   "popularity": 1
   },
   {
    "race_id": "202611210304170111",
@@ -3242,8 +3242,8 @@
     "field": 11,
     "popularity": 1
    },
-   "odds": null,
-   "popularity": null
+   "odds": 2.2,
+   "popularity": 1
   },
   {
    "race_id": "202611213129100510",
@@ -3410,8 +3410,8 @@
     "field": 8,
     "popularity": 1
    },
-   "odds": null,
-   "popularity": null
+   "odds": 1.2,
+   "popularity": 1
   },
   {
    "race_id": "202611213129100511",
@@ -3473,8 +3473,8 @@
     "field": 11,
     "popularity": 9
    },
-   "odds": null,
-   "popularity": null
+   "odds": 8.2,
+   "popularity": 4
   },
   {
    "race_id": "202611213129100512",
@@ -3494,8 +3494,8 @@
     "field": 9,
     "popularity": 5
    },
-   "odds": null,
-   "popularity": null
+   "odds": 57.6,
+   "popularity": 9
   },
   {
    "race_id": "202611213129100512",
@@ -3515,8 +3515,29 @@
     "field": 10,
     "popularity": 10
    },
-   "odds": null,
-   "popularity": null
+   "odds": 57.6,
+   "popularity": 9
+  },
+  {
+   "race_id": "202611213129100512",
+   "results_key": "202611213129100512",
+   "venue": "高知",
+   "race_no": 12,
+   "post_time": "20:50",
+   "number": 12,
+   "name": "ダノンタッチダウン",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 13,
+   "last": {
+    "date": "2026-11-08",
+    "finish": 8,
+    "field": 9,
+    "popularity": 2
+   },
+   "odds": 28.8,
+   "popularity": 8
   }
  ]
 }
