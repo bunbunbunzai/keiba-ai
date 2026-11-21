@@ -1,6 +1,6 @@
 {
  "date": "20261121",
- "updated": "2026-11-21 10:48",
+ "updated": "2026-11-21 12:25",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1286,6 +1286,20 @@
    "venue": "京都",
    "race_no": 8,
    "post_time": "13:55",
+   "number": 7,
+   "name": "ジューンアゲイン",
+   "types": [
+    "aitop"
+   ],
+   "odds": 5.7,
+   "popularity": 2
+  },
+  {
+   "race_id": "jra_20261121_京都_08",
+   "results_key": "jra_08_08",
+   "venue": "京都",
+   "race_no": 8,
+   "post_time": "13:55",
    "number": 8,
    "name": "ナリタヒカリ",
    "types": [
@@ -1830,6 +1844,20 @@
    },
    "odds": 10.6,
    "popularity": 3
+  },
+  {
+   "race_id": "jra_20261121_京都_10",
+   "results_key": "jra_08_10",
+   "venue": "京都",
+   "race_no": 10,
+   "post_time": "15:01",
+   "number": 2,
+   "name": "サトノパトリオット",
+   "types": [
+    "aitop"
+   ],
+   "odds": 9.1,
+   "popularity": 4
   },
   {
    "race_id": "jra_20261121_京都_10",
@@ -2527,6 +2555,20 @@
     "field": 10,
     "popularity": 8
    },
+   "odds": 13.6,
+   "popularity": 6
+  },
+  {
+   "race_id": "202611213129100504",
+   "results_key": "202611213129100504",
+   "venue": "高知",
+   "race_no": 4,
+   "post_time": "16:40",
+   "number": 6,
+   "name": "タマモアマルフィ",
+   "types": [
+    "aitop"
+   ],
    "odds": 13.6,
    "popularity": 6
   },
