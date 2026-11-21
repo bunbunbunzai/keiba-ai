@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261121",
  "race_id": "202611210304170104",
- "tries": 3,
+ "tries": 6,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,116 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 3,
+   "number": 3,
+   "name": "モンスター",
+   "time": "1:54.4",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 9,
+   "name": "イワキフィニティー",
+   "time": "1:59.0",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "フクマルペガサス",
+   "time": "2:02.9",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 7,
+   "name": "シャインクィーン",
+   "time": "2:03.9",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 6,
+   "name": "ジェイインター",
+   "time": "2:09.6",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 5,
+   "name": "アーススノーパール",
+   "time": "2:14.4",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 8,
+   "name": "ツカサブルージェイ",
+   "time": "2:20.4",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 10,
+   "name": "ケンハヤチ",
+   "time": "2:25.0",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 1,
+   "number": 1,
+   "name": "ゴブリン",
+   "time": "2:40.8",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 2,
+   "number": 2,
+   "name": "ホクショウジェイク",
+   "time": "-",
+   "margin": "中止",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
