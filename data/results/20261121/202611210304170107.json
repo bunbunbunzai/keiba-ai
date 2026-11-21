@@ -2,7 +2,172 @@
  "source": "rakuten",
  "date": "20261121",
  "race_id": "202611210304170107",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 3,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "8",
+    "yen": 240
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "8-9",
+    "yen": 2140
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "8",
+    "yen": 150
+   },
+   {
+    "combo": "9",
+    "yen": 160
+   },
+   {
+    "combo": "4",
+    "yen": 190
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "8-9",
+    "yen": 460
+   },
+   {
+    "combo": "4-8",
+    "yen": 290
+   },
+   {
+    "combo": "4-9",
+    "yen": 650
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "8-8",
+    "yen": 1180
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-8-9",
+    "yen": 2240
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "8-9-4",
+    "yen": 9680
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "8-9",
+    "yen": 1320
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 8,
+   "name": "コトブキクィーン",
+   "time": "2:01.8",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 9,
+   "name": "ジェイマーサ",
+   "time": "2:08.2",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "ホクセイダイジン",
+   "time": "2:09.8",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "ニジイロアオゾラ",
+   "time": "2:10.2",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 6,
+   "name": "ツガルタカラフジ",
+   "time": "2:11.0",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 1,
+   "number": 1,
+   "name": "イッポンマツ",
+   "time": "2:17.7",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 3,
+   "name": "テンボシヴィーナス",
+   "time": "2:21.5",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 7,
+   "name": "サカノウンカイ",
+   "time": "2:29.8",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 5,
+   "name": "リュウセイ",
+   "time": "2:32.1",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
