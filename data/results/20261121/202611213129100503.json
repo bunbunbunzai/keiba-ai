@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261121",
  "race_id": "202611213129100503",
- "tries": 2,
+ "tries": 5,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,116 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 4,
+   "name": "フランスゴデイナ",
+   "time": "1:33.8",
+   "margin": "",
+   "pos4": 2,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 3,
+   "number": 3,
+   "name": "フウリンカザン",
+   "time": "1:35.1",
+   "margin": "６",
+   "pos4": 4,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 5,
+   "name": "ベアエクスプレス",
+   "time": "1:35.2",
+   "margin": "３／４",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 7,
+   "name": "ワンダーミューズ",
+   "time": "1:36.2",
+   "margin": "５",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 2,
+   "number": 2,
+   "name": "ワイドアルバ",
+   "time": "1:36.4",
+   "margin": "１",
+   "pos4": 6,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 6,
+   "name": "コントリビュート",
+   "time": "1:36.6",
+   "margin": "１",
+   "pos4": 5,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 10,
+   "name": "エスケーブラッド",
+   "time": "1:37.2",
+   "margin": "３",
+   "pos4": 7,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 8,
+   "name": "レリッシュ",
+   "time": "1:39.2",
+   "margin": "大差",
+   "pos4": 9,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 1,
+   "number": 1,
+   "name": "スマイル",
+   "time": "1:41.6",
+   "margin": "大差",
+   "pos4": 8,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 8,
+   "number": 9,
+   "name": "デアアテナ",
+   "time": "-",
+   "margin": "取消",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }

@@ -2,7 +2,172 @@
  "source": "rakuten",
  "date": "20261121",
  "race_id": "202611210304170105",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 4,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "7",
+    "yen": 340
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "7-4",
+    "yen": 5710
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "7",
+    "yen": 120
+   },
+   {
+    "combo": "4",
+    "yen": 270
+   },
+   {
+    "combo": "6",
+    "yen": 170
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-7",
+    "yen": 670
+   },
+   {
+    "combo": "6-7",
+    "yen": 230
+   },
+   {
+    "combo": "4-6",
+    "yen": 970
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-7",
+    "yen": 3380
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-6-7",
+    "yen": 2850
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "7-4-6",
+    "yen": 14000
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-7",
+    "yen": 4000
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 7,
+   "name": "ビエイニトドケ",
+   "time": "2:12.7",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 4,
+   "number": 4,
+   "name": "シレトコセンプー",
+   "time": "2:13.8",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 6,
+   "name": "ツナノタチヤマ",
+   "time": "2:15.3",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 9,
+   "name": "タマシゲ",
+   "time": "2:22.0",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 8,
+   "name": "ミサキビクトリー",
+   "time": "2:22.2",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 3,
+   "number": 3,
+   "name": "ムツアラシ",
+   "time": "2:39.3",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 2,
+   "number": 2,
+   "name": "パワーウンカイ",
+   "time": "2:39.7",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "ハゴロモグレース",
+   "time": "2:43.7",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 5,
+   "name": "イワキライジン",
+   "time": "2:52.3",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
