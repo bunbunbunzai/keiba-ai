@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 13,
+   "name": "ポートデラメール",
+   "time": "1:23.8",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 5,
+   "name": "ブロンテス",
+   "time": "",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "3",
+   "number": 10,
+   "name": "レーティッシュ",
+   "time": "",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "4",
+   "number": 6,
+   "name": "ワイズギャング",
+   "time": "",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "5",
+   "number": 12,
+   "name": "モズケイスター",
+   "time": "",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "13",
+    "yen": 230,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "13",
+    "yen": 140,
+    "pop": 1
+   },
+   {
+    "combo": "5",
+    "yen": 300,
+    "pop": 5
+   },
+   {
+    "combo": "10",
+    "yen": 370,
+    "pop": 6
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-7",
+    "yen": 910,
+    "pop": 4
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "5-13",
+    "yen": 520,
+    "pop": 4
+   },
+   {
+    "combo": "10-13",
+    "yen": 660,
+    "pop": 6
+   },
+   {
+    "combo": "5-10",
+    "yen": 2440,
+    "pop": 31
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "5-13",
+    "yen": 1280,
+    "pop": 3
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "13-5",
+    "yen": 1820,
+    "pop": 4
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "5-10-13",
+    "yen": 5550,
+    "pop": 19
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "13-5-10",
+    "yen": 18460,
+    "pop": 53
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261121",
+ "venue_code": "08",
+ "race_no": 8,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605050820261121/82",
+ "title": "レース結果 JRA"
+}
