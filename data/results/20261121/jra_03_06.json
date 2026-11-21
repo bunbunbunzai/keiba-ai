@@ -1,0 +1,238 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 7,
+   "name": "リュウカルネ",
+   "time": "1:43.5",
+   "margin": "",
+   "corners": "1-1-1-1",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 11,
+   "name": "メイショウアボット",
+   "time": "1:43.5",
+   "margin": "クビ",
+   "corners": "2-2-2-2",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "3",
+   "number": 9,
+   "name": "クルビデンス",
+   "time": "1:43.7",
+   "margin": "１ 1/4",
+   "corners": "5-5-4-4",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "4",
+   "number": 3,
+   "name": "ポンピエ",
+   "time": "1:44.0",
+   "margin": "１ 1/2",
+   "corners": "13-11-12-11",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "5",
+   "number": 10,
+   "name": "バケラッタ",
+   "time": "1:44.0",
+   "margin": "ハナ",
+   "corners": "3-3-4-4",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "6",
+   "number": 12,
+   "name": "スノースコール",
+   "time": "1:44.1",
+   "margin": "３／４",
+   "corners": "3-3-2-2",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "7",
+   "number": 1,
+   "name": "チェイサー",
+   "time": "1:44.1",
+   "margin": "ハナ",
+   "corners": "7-7-9-8",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "8",
+   "number": 15,
+   "name": "ナリノシャーウッド",
+   "time": "1:44.2",
+   "margin": "３／４",
+   "corners": "7-7-7-6",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "9",
+   "number": 2,
+   "name": "ギャランドゥ",
+   "time": "1:44.2",
+   "margin": "ハナ",
+   "corners": "15-15-14-14",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "10",
+   "number": 6,
+   "name": "レッドフロイデ",
+   "time": "1:44.2",
+   "margin": "ハナ",
+   "corners": "13-11-9-9",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "11",
+   "number": 14,
+   "name": "ブリスキー",
+   "time": "1:44.5",
+   "margin": "１ 3/4",
+   "corners": "5-5-4-6",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "12",
+   "number": 13,
+   "name": "ブリッジエフェクト",
+   "time": "1:46.0",
+   "margin": "９",
+   "corners": "7-7-7-9",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "13",
+   "number": 4,
+   "name": "アラクラン",
+   "time": "1:46.1",
+   "margin": "３／４",
+   "corners": "7-7-9-12",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "14",
+   "number": 5,
+   "name": "ララエキリーブル",
+   "time": "1:46.3",
+   "margin": "１ 1/4",
+   "corners": "11-13-12-12",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "15",
+   "number": 8,
+   "name": "ナクライト",
+   "time": "1:46.6",
+   "margin": "１ 1/2",
+   "corners": "11-13-14-15",
+   "last3f": null,
+   "popularity": 5
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "7",
+    "yen": 210,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "7",
+    "yen": 130,
+    "pop": 1
+   },
+   {
+    "combo": "11",
+    "yen": 430,
+    "pop": 8
+   },
+   {
+    "combo": "9",
+    "yen": 420,
+    "pop": 6
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-6",
+    "yen": 1300,
+    "pop": 6
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "7-11",
+    "yen": 1550,
+    "pop": 17
+   },
+   {
+    "combo": "7-9",
+    "yen": 1010,
+    "pop": 8
+   },
+   {
+    "combo": "9-11",
+    "yen": 8470,
+    "pop": 66
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "7-11",
+    "yen": 3810,
+    "pop": 13
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "7-11",
+    "yen": 4880,
+    "pop": 17
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "7-9-11",
+    "yen": 25520,
+    "pop": 84
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "7-11-9",
+    "yen": 75490,
+    "pop": 247
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261121",
+ "venue_code": "03",
+ "race_no": 6,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603050620261121/44",
+ "title": "レース結果 JRA"
+}
