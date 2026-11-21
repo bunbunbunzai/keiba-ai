@@ -1,6 +1,6 @@
 {
  "date": "20261121",
- "updated": "2026-11-21 16:33",
+ "updated": "2026-11-21 16:44",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -2824,7 +2824,7 @@
     "field": 11,
     "popularity": 5
    },
-   "odds": 86.0,
+   "odds": 163.1,
    "popularity": 11
   },
   {
@@ -2845,8 +2845,8 @@
     "field": 10,
     "popularity": 6
    },
-   "odds": 13.2,
-   "popularity": 6
+   "odds": 10.5,
+   "popularity": 4
   },
   {
    "race_id": "202611210304170107",
@@ -2866,7 +2866,7 @@
     "field": 10,
     "popularity": 3
    },
-   "odds": 3.2,
+   "odds": 2.6,
    "popularity": 1
   },
   {
@@ -2887,7 +2887,7 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": 4.4,
+   "odds": 6.7,
    "popularity": 3
   },
   {
@@ -2929,8 +2929,29 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": 29.3,
+   "odds": 19.3,
    "popularity": 8
+  },
+  {
+   "race_id": "202611213129100506",
+   "results_key": "202611213129100506",
+   "venue": "高知",
+   "race_no": 6,
+   "post_time": "17:45",
+   "number": 3,
+   "name": "エンファサイズ",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 14,
+   "last": {
+    "date": "2026-11-07",
+    "finish": 7,
+    "field": 11,
+    "popularity": 3
+   },
+   "odds": 10.2,
+   "popularity": 5
   },
   {
    "race_id": "202611213129100506",
@@ -2951,7 +2972,7 @@
     "field": 11,
     "popularity": 2
    },
-   "odds": 14.6,
+   "odds": 11.8,
    "popularity": 7
   },
   {
@@ -2972,22 +2993,8 @@
     "field": 11,
     "popularity": 9
    },
-   "odds": 88.0,
+   "odds": 22.0,
    "popularity": 10
-  },
-  {
-   "race_id": "202611210304170108",
-   "results_key": "202611210304170108",
-   "venue": "帯広ば",
-   "race_no": 8,
-   "post_time": "18:00",
-   "number": 4,
-   "name": "ナカサンブライアン",
-   "types": [
-    "aitop"
-   ],
-   "odds": 10.7,
-   "popularity": 5
   },
   {
    "race_id": "202611210304170108",
@@ -3007,8 +3014,8 @@
     "field": 10,
     "popularity": 4
    },
-   "odds": 6.5,
-   "popularity": 3
+   "odds": 5.4,
+   "popularity": 2
   },
   {
    "race_id": "202611210304170108",
@@ -3028,7 +3035,7 @@
     "field": 10,
     "popularity": 9
    },
-   "odds": 2.2,
+   "odds": 2.8,
    "popularity": 1
   },
   {
@@ -3049,8 +3056,8 @@
     "field": 10,
     "popularity": 6
    },
-   "odds": 14.8,
-   "popularity": 6
+   "odds": 19.2,
+   "popularity": 9
   },
   {
    "race_id": "202611213230140106",
