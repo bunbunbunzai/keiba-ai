@@ -1,6 +1,6 @@
 {
  "date": "20261121",
- "updated": "2026-11-21 13:36",
+ "updated": "2026-11-21 13:46",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -2012,8 +2012,22 @@
     "field": 9,
     "popularity": 7
    },
-   "odds": null,
-   "popularity": null
+   "odds": 4.6,
+   "popularity": 2
+  },
+  {
+   "race_id": "202611210304170103",
+   "results_key": "202611210304170103",
+   "venue": "帯広ば",
+   "race_no": 3,
+   "post_time": "15:15",
+   "number": 3,
+   "name": "ホクセイキンボシ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 11.7,
+   "popularity": 6
   },
   {
    "race_id": "202611210304170103",
@@ -2024,7 +2038,8 @@
    "number": 10,
    "name": "ヒサノタイガー",
    "types": [
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 5,
    "last": {
@@ -2033,8 +2048,8 @@
     "field": 9,
     "popularity": 2
    },
-   "odds": null,
-   "popularity": null
+   "odds": 8.5,
+   "popularity": 5
   },
   {
    "race_id": "jra_20261121_福島_11",
