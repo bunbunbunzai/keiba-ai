@@ -1,6 +1,6 @@
 {
  "date": "20261121",
- "updated": "2026-11-21 19:18",
+ "updated": "2026-11-21 19:27",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -3648,7 +3648,7 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": 8.9,
+   "odds": 8.6,
    "popularity": 5
   },
   {
@@ -3669,8 +3669,8 @@
     "field": 11,
     "popularity": 9
    },
-   "odds": 17.8,
-   "popularity": 7
+   "odds": 18.6,
+   "popularity": 8
   },
   {
    "race_id": "202611213129100511",
@@ -3690,7 +3690,7 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": 24.7,
+   "odds": 26.1,
    "popularity": 9
   },
   {
@@ -3732,7 +3732,7 @@
     "field": 10,
     "popularity": 4
    },
-   "odds": 7.6,
+   "odds": 7.4,
    "popularity": 3
   },
   {
@@ -3783,20 +3783,6 @@
    "venue": "高知",
    "race_no": 12,
    "post_time": "20:50",
-   "number": 1,
-   "name": "カラバッシュ",
-   "types": [
-    "aitop"
-   ],
-   "odds": 8.9,
-   "popularity": 5
-  },
-  {
-   "race_id": "202611213129100512",
-   "results_key": "202611213129100512",
-   "venue": "高知",
-   "race_no": 12,
-   "post_time": "20:50",
    "number": 5,
    "name": "オーシンミリオン",
    "types": [
@@ -3809,8 +3795,8 @@
     "field": 11,
     "popularity": 9
    },
-   "odds": 6.5,
-   "popularity": 4
+   "odds": 7.4,
+   "popularity": 5
   },
   {
    "race_id": "202611213129100512",
@@ -3830,7 +3816,7 @@
     "field": 9,
     "popularity": 5
    },
-   "odds": 21.2,
+   "odds": 29.0,
    "popularity": 11
   },
   {
@@ -3851,8 +3837,29 @@
     "field": 10,
     "popularity": 10
    },
-   "odds": 20.3,
-   "popularity": 10
+   "odds": 12.6,
+   "popularity": 8
+  },
+  {
+   "race_id": "202611213129100512",
+   "results_key": "202611213129100512",
+   "venue": "高知",
+   "race_no": 12,
+   "post_time": "20:50",
+   "number": 12,
+   "name": "ダノンタッチダウン",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 13,
+   "last": {
+    "date": "2026-11-08",
+    "finish": 8,
+    "field": 9,
+    "popularity": 2
+   },
+   "odds": 7.0,
+   "popularity": 4
   }
  ]
 }
