@@ -6,49 +6,159 @@
    "name": "ビーマックス",
    "time": "1:06.8",
    "margin": "",
-   "corners": "",
-   "last3f": null,
+   "corners": "2-1",
+   "last3f": 36.2,
    "popularity": 7
   },
   {
    "finish": "2",
    "number": 1,
    "name": "ソニックブレイカー",
-   "time": "",
+   "time": "1:06.9",
    "margin": "１／２",
-   "corners": "",
-   "last3f": null,
+   "corners": "4-4",
+   "last3f": 36.0,
    "popularity": 1
   },
   {
    "finish": "3",
    "number": 14,
    "name": "ゼファーテソーロ",
-   "time": "",
+   "time": "1:07.0",
    "margin": "３／４",
-   "corners": "",
-   "last3f": null,
+   "corners": "9-10",
+   "last3f": 35.8,
    "popularity": 6
   },
   {
    "finish": "4",
    "number": 7,
    "name": "モズオウンゴール",
-   "time": "",
+   "time": "1:07.1",
    "margin": "１／２",
-   "corners": "",
-   "last3f": null,
+   "corners": "3-3",
+   "last3f": 36.3,
    "popularity": 3
   },
   {
    "finish": "5",
    "number": 16,
    "name": "ナムラモモ",
-   "time": "",
+   "time": "1:07.3",
    "margin": "１ 1/4",
-   "corners": "",
-   "last3f": null,
+   "corners": "6-6",
+   "last3f": 36.3,
    "popularity": 9
+  },
+  {
+   "finish": "6",
+   "number": 9,
+   "name": "レイアポポ",
+   "time": "1:07.4",
+   "margin": "１／２",
+   "corners": "16-13",
+   "last3f": 35.7,
+   "popularity": 13
+  },
+  {
+   "finish": "7",
+   "number": 6,
+   "name": "ペルセポネ",
+   "time": "1:07.5",
+   "margin": "１／２",
+   "corners": "6-6",
+   "last3f": 36.5,
+   "popularity": 2
+  },
+  {
+   "finish": "8",
+   "number": 15,
+   "name": "コックピットサイト",
+   "time": "1:07.5",
+   "margin": "ハナ",
+   "corners": "9-10",
+   "last3f": 36.3,
+   "popularity": 4
+  },
+  {
+   "finish": "9",
+   "number": 8,
+   "name": "パルプフィクション",
+   "time": "1:07.7",
+   "margin": "３／４",
+   "corners": "9-6",
+   "last3f": 36.5,
+   "popularity": 14
+  },
+  {
+   "finish": "10",
+   "number": 11,
+   "name": "クインズポラリス",
+   "time": "1:07.9",
+   "margin": "１ 1/4",
+   "corners": "13-13",
+   "last3f": 36.4,
+   "popularity": 5
+  },
+  {
+   "finish": "11",
+   "number": 10,
+   "name": "フェデルミエール",
+   "time": "1:08.1",
+   "margin": "１ 1/4",
+   "corners": "13-13",
+   "last3f": 36.6,
+   "popularity": 16
+  },
+  {
+   "finish": "12",
+   "number": 4,
+   "name": "インディゴアスール",
+   "time": "1:08.2",
+   "margin": "１／２",
+   "corners": "4-5",
+   "last3f": 37.3,
+   "popularity": 11
+  },
+  {
+   "finish": "13",
+   "number": 2,
+   "name": "ショウナンラリー",
+   "time": "1:08.4",
+   "margin": "１",
+   "corners": "1-2",
+   "last3f": 37.8,
+   "popularity": 12
+  },
+  {
+   "finish": "14",
+   "number": 13,
+   "name": "ビーグラッド",
+   "time": "1:08.5",
+   "margin": "１／２",
+   "corners": "13-13",
+   "last3f": 37.0,
+   "popularity": 8
+  },
+  {
+   "finish": "15",
+   "number": 5,
+   "name": "ニシノラヴァンダ",
+   "time": "1:08.5",
+   "margin": "クビ",
+   "corners": "12-9",
+   "last3f": 37.2,
+   "popularity": 10
+  },
+  {
+   "finish": "16",
+   "number": 12,
+   "name": "ペイシャヴァルツー",
+   "time": "1:10.4",
+   "margin": "大差",
+   "corners": "6-10",
+   "last3f": 39.4,
+   "popularity": 15
   }
  ],
  "payouts": {
