@@ -1,6 +1,6 @@
 {
  "date": "20261121",
- "updated": "2026-11-21 13:11",
+ "updated": "2026-11-21 13:27",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1386,6 +1386,20 @@
    "venue": "帯広ば",
    "race_no": 1,
    "post_time": "14:05",
+   "number": 2,
+   "name": "トヨミヒラリ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 5.9,
+   "popularity": 4
+  },
+  {
+   "race_id": "202611210304170101",
+   "results_key": "202611210304170101",
+   "venue": "帯広ば",
+   "race_no": 1,
+   "post_time": "14:05",
    "number": 4,
    "name": "コトミチャン",
    "types": [
@@ -1398,8 +1412,8 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": 5.4,
-   "popularity": 4
+   "odds": 4.4,
+   "popularity": 2
   },
   {
    "race_id": "202611210304170101",
@@ -1419,8 +1433,8 @@
     "field": 10,
     "popularity": 9
    },
-   "odds": 20.0,
-   "popularity": 7
+   "odds": 33.4,
+   "popularity": 8
   },
   {
    "race_id": "202611210304170101",
@@ -1440,7 +1454,7 @@
     "field": 10,
     "popularity": 10
    },
-   "odds": 17.7,
+   "odds": 7.8,
    "popularity": 6
   },
   {
@@ -1857,8 +1871,8 @@
     "field": 11,
     "popularity": 2
    },
-   "odds": 10.6,
-   "popularity": 3
+   "odds": 5.7,
+   "popularity": 2
   },
   {
    "race_id": "jra_20261121_京都_10",
