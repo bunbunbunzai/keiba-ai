@@ -1,6 +1,6 @@
 {
  "date": "20261121",
- "updated": "2026-11-21 17:08",
+ "updated": "2026-11-21 18:54",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -3387,7 +3387,35 @@
     "field": 12,
     "popularity": 1
    },
-   "odds": 4.9,
+   "odds": 1.8,
+   "popularity": 1
+  },
+  {
+   "race_id": "202611213129100509",
+   "results_key": "202611213129100509",
+   "venue": "高知",
+   "race_no": 9,
+   "post_time": "19:20",
+   "number": 10,
+   "name": "メイショウカズサ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 8.0,
+   "popularity": 3
+  },
+  {
+   "race_id": "202611210304170111",
+   "results_key": "202611210304170111",
+   "venue": "帯広ば",
+   "race_no": 11,
+   "post_time": "19:30",
+   "number": 1,
+   "name": "ジェイエクスプレス",
+   "types": [
+    "aitop"
+   ],
+   "odds": 5.4,
    "popularity": 2
   },
   {
@@ -3408,8 +3436,8 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": 10.2,
-   "popularity": 6
+   "odds": 32.2,
+   "popularity": 9
   },
   {
    "race_id": "202611213230140109",
@@ -3455,7 +3483,8 @@
    "number": 3,
    "name": "コパノハンプトン",
    "types": [
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 28,
    "last": {
@@ -3464,8 +3493,8 @@
     "field": 11,
     "popularity": 1
    },
-   "odds": 7.7,
-   "popularity": 3
+   "odds": 6.9,
+   "popularity": 5
   },
   {
    "race_id": "202611213129100510",
@@ -3485,7 +3514,7 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": 60.0,
+   "odds": 37.7,
    "popularity": 10
   },
   {
@@ -3506,8 +3535,8 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": 33.8,
-   "popularity": 7
+   "odds": 56.0,
+   "popularity": 9
   },
   {
    "race_id": "202611210304170112",
@@ -3527,7 +3556,7 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": 1.1,
+   "odds": 3.1,
    "popularity": 1
   },
   {
@@ -3549,22 +3578,8 @@
     "field": 10,
     "popularity": 1
    },
-   "odds": 33.8,
-   "popularity": 7
-  },
-  {
-   "race_id": "202611210304170112",
-   "results_key": "202611210304170112",
-   "venue": "帯広ば",
-   "race_no": 12,
-   "post_time": "20:00",
-   "number": 9,
-   "name": "ホクショウラナ",
-   "types": [
-    "aitop"
-   ],
-   "odds": 21.5,
-   "popularity": 5
+   "odds": 6.2,
+   "popularity": 4
   },
   {
    "race_id": "202611213230140110",
