@@ -1,6 +1,6 @@
 {
  "date": "20261121",
- "updated": "2026-11-21 16:44",
+ "updated": "2026-11-21 16:49",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -2908,8 +2908,8 @@
     "field": 12,
     "popularity": 9
    },
-   "odds": 7.4,
-   "popularity": 2
+   "odds": 10.6,
+   "popularity": 3
   },
   {
    "race_id": "202611213129100506",
@@ -3077,7 +3077,7 @@
     "field": 12,
     "popularity": 4
    },
-   "odds": 10.5,
+   "odds": 11.8,
    "popularity": 5
   },
   {
@@ -3098,8 +3098,22 @@
     "field": 12,
     "popularity": 8
    },
-   "odds": 27.3,
-   "popularity": 8
+   "odds": 16.6,
+   "popularity": 7
+  },
+  {
+   "race_id": "202611213129100507",
+   "results_key": "202611213129100507",
+   "venue": "高知",
+   "race_no": 7,
+   "post_time": "18:15",
+   "number": 3,
+   "name": "スクーバー",
+   "types": [
+    "aitop"
+   ],
+   "odds": 24.7,
+   "popularity": 6
   },
   {
    "race_id": "202611213129100507",
@@ -3119,7 +3133,7 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": 87.3,
+   "odds": 37.8,
    "popularity": 9
   },
   {
