@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 7,
+   "name": "イドム",
+   "time": "1:52.4",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "2",
+   "number": 3,
+   "name": "プリズンブレイク",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "3",
+   "number": 1,
+   "name": "スターマイン",
+   "time": "",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "number": 9,
+   "name": "アントレピード",
+   "time": "",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "5",
+   "number": 14,
+   "name": "コスモバルムンク",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "7",
+    "yen": 740,
+    "pop": 4
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "7",
+    "yen": 240,
+    "pop": 3
+   },
+   {
+    "combo": "3",
+    "yen": 360,
+    "pop": 6
+   },
+   {
+    "combo": "1",
+    "yen": 250,
+    "pop": 4
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-4",
+    "yen": 2350,
+    "pop": 12
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-7",
+    "yen": 1360,
+    "pop": 19
+   },
+   {
+    "combo": "1-7",
+    "yen": 870,
+    "pop": 6
+   },
+   {
+    "combo": "1-3",
+    "yen": 1120,
+    "pop": 10
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-7",
+    "yen": 3950,
+    "pop": 18
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "7-3",
+    "yen": 7290,
+    "pop": 31
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-3-7",
+    "yen": 6340,
+    "pop": 14
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "7-3-1",
+    "yen": 42510,
+    "pop": 122
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261121",
+ "venue_code": "03",
+ "race_no": 7,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603050720261121/F9",
+ "title": "レース結果 JRA"
+}
