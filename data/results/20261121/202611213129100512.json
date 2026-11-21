@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261121",
  "race_id": "202611213129100512",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 11,
+   "name": "ジョウショーブリエ",
+   "time": "1:33.6",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 40.9,
+   "popularity": 3
+  },
+  {
+   "finish": "2",
+   "frame": 4,
+   "number": 4,
+   "name": "シーザソング",
+   "time": "1:33.9",
+   "margin": "１ １／２",
+   "pos4": 2,
+   "last3f": 41.2,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 7,
+   "name": "ソックス",
+   "time": "1:34.1",
+   "margin": "３／４",
+   "pos4": 3,
+   "last3f": 41.0,
+   "popularity": 6
+  },
+  {
+   "finish": "4",
+   "frame": 1,
+   "number": 1,
+   "name": "カラバッシュ",
+   "time": "1:34.8",
+   "margin": "３",
+   "pos4": 10,
+   "last3f": 41.4,
+   "popularity": 2
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 5,
+   "name": "オーシンミリオン",
+   "time": "1:35.0",
+   "margin": "３／４",
+   "pos4": 6,
+   "last3f": 41.7,
+   "popularity": 4
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 12,
+   "name": "ダノンタッチダウン",
+   "time": "1:35.3",
+   "margin": "１ １／２",
+   "pos4": 4,
+   "last3f": 42.0,
+   "popularity": 7
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 8,
+   "name": "メイショウゴウケツ",
+   "time": "1:35.4",
+   "margin": "１／２",
+   "pos4": 8,
+   "last3f": 41.8,
+   "popularity": 9
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 9,
+   "name": "サンシャインビーチ",
+   "time": "1:35.9",
+   "margin": "２ １／２",
+   "pos4": 8,
+   "last3f": 43.0,
+   "popularity": 11
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 10,
+   "name": "シデンイッセン",
+   "time": "1:36.1",
+   "margin": "１",
+   "pos4": 7,
+   "last3f": 43.1,
+   "popularity": 5
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 6,
+   "name": "ベルベットアノ",
+   "time": "1:36.4",
+   "margin": "１ １／２",
+   "pos4": 4,
+   "last3f": 43.7,
+   "popularity": 8
+  },
+  {
+   "finish": "11",
+   "frame": 3,
+   "number": 3,
+   "name": "チョットヤバイヨネ",
+   "time": "1:37.2",
+   "margin": "４",
+   "pos4": 11,
+   "last3f": 44.1,
+   "popularity": 10
+  },
+  {
+   "finish": "12",
+   "frame": 2,
+   "number": 2,
+   "name": "コスモラパウィラ",
+   "time": "1:39.1",
+   "margin": "９",
+   "pos4": 12,
+   "last3f": 45.5,
+   "popularity": 12
+  }
+ ]
 }
