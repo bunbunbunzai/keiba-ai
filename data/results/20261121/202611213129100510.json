@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261121",
  "race_id": "202611213129100510",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,116 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 1,
+   "number": 1,
+   "name": "トサノシュジンコウ",
+   "time": "1:32.5",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 2,
+   "number": 2,
+   "name": "プレジール",
+   "time": "1:32.8",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 5,
+   "name": "カールスバート",
+   "time": "1:32.8",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 9,
+   "name": "ブラッティーキッド",
+   "time": "1:32.8",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 4,
+   "name": "フライヤートゥルー",
+   "time": "1:34.2",
+   "margin": "７",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 10,
+   "name": "トップアメリカン",
+   "time": "1:34.2",
+   "margin": "ハナ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 3,
+   "name": "コパノハンプトン",
+   "time": "1:34.4",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 6,
+   "number": 6,
+   "name": "アプサラー",
+   "time": "1:34.6",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 8,
+   "name": "コスモシーウルフ",
+   "time": "1:35.5",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 7,
+   "name": "サノノスピード",
+   "time": "1:36.7",
+   "margin": "６",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
