@@ -1,6 +1,6 @@
 {
  "date": "20261121",
- "updated": "2026-11-21 14:41",
+ "updated": "2026-11-21 14:48",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -2175,7 +2175,7 @@
     "field": 11,
     "popularity": 10
    },
-   "odds": 7.7,
+   "odds": 9.3,
    "popularity": 8
   },
   {
@@ -2197,7 +2197,7 @@
     "field": 12,
     "popularity": 2
    },
-   "odds": 4.8,
+   "odds": 4.6,
    "popularity": 1
   },
   {
@@ -2218,7 +2218,7 @@
     "field": 11,
     "popularity": 8
    },
-   "odds": 5.0,
+   "odds": 4.9,
    "popularity": 2
   },
   {
@@ -2239,7 +2239,7 @@
     "field": 7,
     "popularity": 6
    },
-   "odds": 166.6,
+   "odds": 113.4,
    "popularity": 10
   },
   {
@@ -2528,8 +2528,22 @@
     "field": 10,
     "popularity": 2
    },
-   "odds": null,
-   "popularity": null
+   "odds": 7.5,
+   "popularity": 3
+  },
+  {
+   "race_id": "202611210304170105",
+   "results_key": "202611210304170105",
+   "venue": "帯広ば",
+   "race_no": 5,
+   "post_time": "16:15",
+   "number": 7,
+   "name": "ビエイニトドケ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 7.5,
+   "popularity": 3
   },
   {
    "race_id": "jra_20261121_京都_12",
