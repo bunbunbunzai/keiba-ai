@@ -1,6 +1,6 @@
 {
  "date": "20261122",
- "updated": "2026-11-22 00:17",
+ "updated": "2026-11-22 01:13",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -2845,27 +2845,6 @@
     "finish": 4,
     "field": 11,
     "popularity": 6
-   },
-   "odds": null,
-   "popularity": null
-  },
-  {
-   "race_id": "202611223129100607",
-   "results_key": "202611223129100607",
-   "venue": "高知",
-   "race_no": 7,
-   "post_time": "18:45",
-   "number": 3,
-   "name": "リプレーザ",
-   "types": [
-    "layoff"
-   ],
-   "gap_days": 224,
-   "last": {
-    "date": "2026-04-12",
-    "finish": 1,
-    "field": 9,
-    "popularity": 1
    },
    "odds": null,
    "popularity": null
