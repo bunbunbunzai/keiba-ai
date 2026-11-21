@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 12,
+   "name": "メルカントゥール",
+   "time": "1:56.8",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "2",
+   "number": 10,
+   "name": "テーオーマルコーニ",
+   "time": "1:57.1",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "number": 9,
+   "name": "レッドプロフェシー",
+   "time": "1:57.6",
+   "margin": "２ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "4",
+   "number": 3,
+   "name": "メリークリスマス",
+   "time": "1:57.8",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "number": 14,
+   "name": "チェリヴェント",
+   "time": "1:57.9",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "6",
+   "number": 2,
+   "name": "ゼットリアン",
+   "time": "1:57.9",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "number": 15,
+   "name": "リビアングラス",
+   "time": "1:58.0",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "8",
+   "number": 11,
+   "name": "ハヤテノフクノスケ",
+   "time": "1:58.2",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "9",
+   "number": 1,
+   "name": "ヒルノハンブルク",
+   "time": "1:58.5",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "10",
+   "number": 5,
+   "name": "センツブラッド",
+   "time": "1:59.2",
+   "margin": "４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "11",
+   "number": 6,
+   "name": "ヤマニンブークリエ",
+   "time": "1:59.3",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "12",
+   "number": 8,
+   "name": "アスクデビューモア",
+   "time": "1:59.4",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "13",
+   "number": 7,
+   "name": "マキシ",
+   "time": "1:59.5",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "14",
+   "number": 4,
+   "name": "ポッドロゴ",
+   "time": "1:59.6",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "15",
+   "number": 13,
+   "name": "カネフラ",
+   "time": "1:59.7",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "除外",
+   "number": 16,
+   "name": "サイモンシュバリエ",
+   "time": "",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": null
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "12",
+    "yen": 400,
+    "pop": 3
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "12",
+    "yen": 160,
+    "pop": 2
+   },
+   {
+    "combo": "10",
+    "yen": 140,
+    "pop": 1
+   },
+   {
+    "combo": "9",
+    "yen": 330,
+    "pop": 6
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-6",
+    "yen": 670,
+    "pop": 2
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "10-12",
+    "yen": 350,
+    "pop": 2
+   },
+   {
+    "combo": "9-12",
+    "yen": 1050,
+    "pop": 14
+   },
+   {
+    "combo": "9-10",
+    "yen": 830,
+    "pop": 7
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "10-12",
+    "yen": 730,
+    "pop": 2
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "12-10",
+    "yen": 1470,
+    "pop": 6
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "9-10-12",
+    "yen": 3350,
+    "pop": 9
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "12-10-9",
+    "yen": 12910,
+    "pop": 24
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261121",
+ "venue_code": "08",
+ "race_no": 11,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605051120261121/E1",
+ "title": "レース結果 JRA"
+}
