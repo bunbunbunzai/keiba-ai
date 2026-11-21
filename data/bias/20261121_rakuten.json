@@ -1,6 +1,6 @@
 {
  "date": "20261121",
- "updated": "2026-11-21 16:44",
+ "updated": "2026-11-21 16:50",
  "bias": {
   "高知ダ": {
    "judgement": "フラット",
@@ -16,7 +16,7 @@
    "horses": 6
   },
   "佐賀ダ": {
-   "judgement": "先行有利・外",
+   "judgement": "先行有利",
    "confidence": "中",
    "races": [
     1,
@@ -24,9 +24,9 @@
     3
    ],
    "front_share": 1.0,
-   "inner_share": 0.0,
-   "outer_share": 0.75,
-   "horses": 4
+   "inner_share": 0.33,
+   "outer_share": 0.5,
+   "horses": 6
   }
  }
 }

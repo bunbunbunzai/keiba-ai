@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261121",
  "race_id": "202611213230140103",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -71,7 +71,7 @@
    "name": "マッドヘッドラブ",
    "time": "1:33.9",
    "margin": "",
-   "pos4": null,
+   "pos4": 1,
    "last3f": null,
    "popularity": null
   },
@@ -82,7 +82,7 @@
    "name": "ウインイルネージュ",
    "time": "1:34.4",
    "margin": "２ １／２",
-   "pos4": null,
+   "pos4": 2,
    "last3f": null,
    "popularity": null
   },
@@ -93,7 +93,7 @@
    "name": "マイネルガンナー",
    "time": "1:35.3",
    "margin": "５",
-   "pos4": null,
+   "pos4": 4,
    "last3f": null,
    "popularity": null
   },
@@ -104,7 +104,7 @@
    "name": "ゴールデンマーチ",
    "time": "1:35.3",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 3,
    "last3f": null,
    "popularity": null
   },
@@ -115,7 +115,7 @@
    "name": "バチェラーパーティ",
    "time": "1:35.8",
    "margin": "２ １／２",
-   "pos4": null,
+   "pos4": 4,
    "last3f": null,
    "popularity": null
   },
@@ -126,7 +126,7 @@
    "name": "ケイツーコルーニ",
    "time": "1:35.9",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 6,
    "last3f": null,
    "popularity": null
   },
@@ -137,7 +137,7 @@
    "name": "クラリスヒメ",
    "time": "1:36.2",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 7,
    "last3f": null,
    "popularity": null
   },
@@ -148,7 +148,7 @@
    "name": "リケアカッペリーニ",
    "time": "1:37.1",
    "margin": "５",
-   "pos4": null,
+   "pos4": 8,
    "last3f": null,
    "popularity": null
   }
