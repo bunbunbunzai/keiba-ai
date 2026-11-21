@@ -1,6 +1,6 @@
 {
  "date": "20261121",
- "updated": "2026-11-21 14:37",
+ "updated": "2026-11-21 14:41",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -2418,34 +2418,13 @@
    "venue": "帯広ば",
    "race_no": 4,
    "post_time": "15:45",
-   "number": 3,
-   "name": "モンスター",
-   "types": [
-    "letdown"
-   ],
-   "gap_days": 15,
-   "last": {
-    "date": "2026-11-06",
-    "finish": 6,
-    "field": 10,
-    "popularity": 1
-   },
-   "odds": 11.4,
-   "popularity": 7
-  },
-  {
-   "race_id": "202611210304170104",
-   "results_key": "202611210304170104",
-   "venue": "帯広ば",
-   "race_no": 4,
-   "post_time": "15:45",
    "number": 5,
    "name": "アーススノーパール",
    "types": [
     "aitop"
    ],
-   "odds": 6.0,
-   "popularity": 3
+   "odds": 7.7,
+   "popularity": 4
   },
   {
    "race_id": "202611210304170104",
@@ -2465,8 +2444,8 @@
     "field": 10,
     "popularity": 9
    },
-   "odds": 7.3,
-   "popularity": 4
+   "odds": 10.0,
+   "popularity": 5
   },
   {
    "race_id": "202611213230140102",
