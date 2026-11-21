@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 13,
+   "name": "ジャヤ",
+   "time": "1:09.3",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "2",
+   "number": 15,
+   "name": "ティンタアマレラ",
+   "time": "",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "number": 4,
+   "name": "スマートエール",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "4",
+   "number": 17,
+   "name": "カツダルマ",
+   "time": "",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "5",
+   "number": 8,
+   "name": "アルテクィーン",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "13",
+    "yen": 6340,
+    "pop": 13
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "13",
+    "yen": 1350,
+    "pop": 13
+   },
+   {
+    "combo": "15",
+    "yen": 190,
+    "pop": 3
+   },
+   {
+    "combo": "4",
+    "yen": 300,
+    "pop": 4
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "7-7",
+    "yen": 13630,
+    "pop": 28
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "13-15",
+    "yen": 3940,
+    "pop": 36
+   },
+   {
+    "combo": "4-13",
+    "yen": 12260,
+    "pop": 77
+   },
+   {
+    "combo": "4-15",
+    "yen": 1740,
+    "pop": 16
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "13-15",
+    "yen": 11710,
+    "pop": 32
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "13-15",
+    "yen": 26350,
+    "pop": 73
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-13-15",
+    "yen": 76390,
+    "pop": 181
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "13-15-4",
+    "yen": 701850,
+    "pop": 1269
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261121",
+ "venue_code": "08",
+ "race_no": 3,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605050320261121/F9",
+ "title": "レース結果 JRA"
+}
