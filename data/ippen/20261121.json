@@ -1,6 +1,6 @@
 {
  "date": "20261121",
- "updated": "2026-11-21 15:08",
+ "updated": "2026-11-21 15:13",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -2533,7 +2533,8 @@
    "number": 5,
    "name": "イワキライジン",
    "types": [
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 7,
    "last": {
@@ -2542,8 +2543,8 @@
     "field": 10,
     "popularity": 2
    },
-   "odds": 7.5,
-   "popularity": 3
+   "odds": 7.9,
+   "popularity": 4
   },
   {
    "race_id": "202611210304170105",
@@ -2556,7 +2557,7 @@
    "types": [
     "aitop"
    ],
-   "odds": 7.5,
+   "odds": 5.7,
    "popularity": 3
   },
   {
@@ -2661,8 +2662,8 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": 13.6,
-   "popularity": 6
+   "odds": 6.9,
+   "popularity": 4
   },
   {
    "race_id": "202611213129100504",
@@ -2675,8 +2676,8 @@
    "types": [
     "aitop"
    ],
-   "odds": 13.6,
-   "popularity": 6
+   "odds": 8.4,
+   "popularity": 5
   },
   {
    "race_id": "202611210304170106",
