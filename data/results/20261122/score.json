@@ -1,12 +1,12 @@
 {
  "date": "20261122",
- "updated": "2026-11-22 20:26",
+ "updated": "2026-11-22 20:32",
  "races_total": 70,
- "races_scored": 67,
- "stake": 6100,
- "return": 6090,
+ "races_scored": 68,
+ "stake": 6200,
+ "return": 6190,
  "roi": 99.8,
- "hit_races": 45,
+ "hit_races": 46,
  "honmei_win": 26,
  "honmei_top3": 50,
  "races": [
@@ -591,10 +591,12 @@
     null
    ],
    "stake": 100,
-   "return": 0,
-   "roi": 0.0,
-   "hits": [],
-   "voided": true
+   "return": 100,
+   "roi": 100.0,
+   "hits": [
+    "複勝 6 100円"
+   ],
+   "voided": false
   },
   {
    "race_id": "202611223129100611",
