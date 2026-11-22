@@ -6,49 +6,159 @@
    "name": "シャドウアリア",
    "time": "1:25.8",
    "margin": "",
-   "corners": "",
-   "last3f": null,
+   "corners": "3-2",
+   "last3f": 37.2,
    "popularity": 1
   },
   {
    "finish": "2",
    "number": 3,
    "name": "ダノンマローネ",
-   "time": "",
+   "time": "1:26.1",
    "margin": "２",
-   "corners": "",
-   "last3f": null,
+   "corners": "3-2",
+   "last3f": 37.5,
    "popularity": 3
   },
   {
    "finish": "3",
    "number": 1,
    "name": "スノーノート",
-   "time": "",
+   "time": "1:26.5",
    "margin": "２ 1/2",
-   "corners": "",
-   "last3f": null,
+   "corners": "1-1",
+   "last3f": 38.2,
    "popularity": 7
   },
   {
    "finish": "4",
    "number": 7,
    "name": "ミラージュスター",
-   "time": "",
+   "time": "1:27.3",
    "margin": "５",
-   "corners": "",
-   "last3f": null,
+   "corners": "5-5",
+   "last3f": 38.5,
    "popularity": 2
   },
   {
    "finish": "5",
    "number": 15,
    "name": "ウィッチズレター",
-   "time": "",
+   "time": "1:27.7",
    "margin": "２ 1/2",
-   "corners": "",
-   "last3f": null,
+   "corners": "15-13",
+   "last3f": 37.4,
    "popularity": 9
+  },
+  {
+   "finish": "6",
+   "number": 12,
+   "name": "ネスガドル",
+   "time": "1:27.8",
+   "margin": "１／２",
+   "corners": "12-12",
+   "last3f": 37.8,
+   "popularity": 4
+  },
+  {
+   "finish": "7",
+   "number": 16,
+   "name": "ユイノガルベス",
+   "time": "1:27.9",
+   "margin": "１／２",
+   "corners": "14-15",
+   "last3f": 37.5,
+   "popularity": 11
+  },
+  {
+   "finish": "8",
+   "number": 9,
+   "name": "コスモパリジェンヌ",
+   "time": "1:28.1",
+   "margin": "１ 1/2",
+   "corners": "8-7",
+   "last3f": 38.9,
+   "popularity": 6
+  },
+  {
+   "finish": "9",
+   "number": 2,
+   "name": "ライクアストーム",
+   "time": "1:28.1",
+   "margin": "アタマ",
+   "corners": "5-7",
+   "last3f": 38.9,
+   "popularity": 12
+  },
+  {
+   "finish": "10",
+   "number": 8,
+   "name": "ワンダーシズク",
+   "time": "1:28.2",
+   "margin": "１／２",
+   "corners": "11-11",
+   "last3f": 38.3,
+   "popularity": 15
+  },
+  {
+   "finish": "11",
+   "number": 13,
+   "name": "ガヤーズジャーニー",
+   "time": "1:28.4",
+   "margin": "１ 1/4",
+   "corners": "8-7",
+   "last3f": 39.2,
+   "popularity": 5
+  },
+  {
+   "finish": "12",
+   "number": 11,
+   "name": "トモジャボーテ",
+   "time": "1:28.8",
+   "margin": "２ 1/2",
+   "corners": "13-13",
+   "last3f": 38.6,
+   "popularity": 13
+  },
+  {
+   "finish": "13",
+   "number": 4,
+   "name": "フェザリー",
+   "time": "1:29.3",
+   "margin": "３",
+   "corners": "2-2",
+   "last3f": 40.8,
+   "popularity": 8
+  },
+  {
+   "finish": "14",
+   "number": 6,
+   "name": "ユメユメ",
+   "time": "1:29.4",
+   "margin": "１／２",
+   "corners": "5-5",
+   "last3f": 40.5,
+   "popularity": 14
+  },
+  {
+   "finish": "15",
+   "number": 10,
+   "name": "ハルマン",
+   "time": "1:31.6",
+   "margin": "大差",
+   "corners": "15-16",
+   "last3f": 40.6,
+   "popularity": 16
+  },
+  {
+   "finish": "中止",
+   "number": 14,
+   "name": "サクラトップラック",
+   "time": "",
+   "margin": "",
+   "corners": "8-7",
+   "last3f": null,
+   "popularity": 10
   }
  ],
  "payouts": {
