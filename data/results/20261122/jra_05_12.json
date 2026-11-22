@@ -1,0 +1,158 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 12,
+   "name": "ライネリーベ",
+   "time": "1:20.8",
+   "margin": "",
+   "corners": "4-4",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "2",
+   "number": 4,
+   "name": "デイトナチャンプ",
+   "time": "",
+   "margin": "クビ",
+   "corners": "7-5",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "2",
+   "number": 13,
+   "name": "ラパンチュール",
+   "time": "",
+   "margin": "同着",
+   "corners": "8-8",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "4",
+   "number": 9,
+   "name": "スペルーチェ",
+   "time": "",
+   "margin": "１ 1/4",
+   "corners": "13-14",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "5",
+   "number": 7,
+   "name": "イヌボウノウタゴエ",
+   "time": "",
+   "margin": "クビ",
+   "corners": "12-12",
+   "last3f": null,
+   "popularity": 2
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "12",
+    "yen": 630,
+    "pop": 5
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "12",
+    "yen": 220,
+    "pop": 4
+   },
+   {
+    "combo": "4",
+    "yen": 310,
+    "pop": 6
+   },
+   {
+    "combo": "13",
+    "yen": 160,
+    "pop": 1
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-6",
+    "yen": 1090,
+    "pop": 13
+   },
+   {
+    "combo": "6-7",
+    "yen": 480,
+    "pop": 3
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-12",
+    "yen": 1660,
+    "pop": 19
+   },
+   {
+    "combo": "12-13",
+    "yen": 460,
+    "pop": 4
+   },
+   {
+    "combo": "4-13",
+    "yen": 930,
+    "pop": 11
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-12",
+    "yen": 2140,
+    "pop": 16
+   },
+   {
+    "combo": "12-13",
+    "yen": 560,
+    "pop": 3
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "12-4",
+    "yen": 4510,
+    "pop": 35
+   },
+   {
+    "combo": "12-13",
+    "yen": 1140,
+    "pop": 7
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-12-13",
+    "yen": 5150,
+    "pop": 16
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "12-4-13",
+    "yen": 18940,
+    "pop": 128
+   },
+   {
+    "combo": "12-13-4",
+    "yen": 13310,
+    "pop": 90
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261122",
+ "venue_code": "05",
+ "race_no": 12,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605051220261122/75",
+ "title": "レース結果 JRA"
+}

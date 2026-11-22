@@ -1,6 +1,6 @@
 {
  "date": "20261122",
- "updated": "2026-11-22 16:16",
+ "updated": "2026-11-22 16:18",
  "bias": {
   "東京ダ": {
    "judgement": "フラット",
@@ -26,12 +26,13 @@
     3,
     5,
     9,
-    10
+    10,
+    12
    ],
-   "front_share": 0.5,
-   "inner_share": 0.1,
-   "outer_share": 0.4,
-   "horses": 10
+   "front_share": 0.54,
+   "inner_share": 0.15,
+   "outer_share": 0.46,
+   "horses": 13
   },
   "京都ダ": {
    "judgement": "内先行",
