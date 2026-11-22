@@ -2,7 +2,172 @@
  "source": "rakuten",
  "date": "20261122",
  "race_id": "202611220304170208",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 3,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "2",
+    "yen": 290
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "2-4",
+    "yen": 2380
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "2",
+    "yen": 140
+   },
+   {
+    "combo": "4",
+    "yen": 230
+   },
+   {
+    "combo": "9",
+    "yen": 120
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-4",
+    "yen": 460
+   },
+   {
+    "combo": "2-9",
+    "yen": 190
+   },
+   {
+    "combo": "4-9",
+    "yen": 440
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-4",
+    "yen": 1880
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-4-9",
+    "yen": 1190
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "2-4-9",
+    "yen": 7140
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-4",
+    "yen": 1370
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 2,
+   "number": 2,
+   "name": "ジェイノミキ",
+   "time": "1:56.6",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 4,
+   "number": 4,
+   "name": "ブラックバカラ",
+   "time": "2:01.4",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 9,
+   "name": "ブループリンセス",
+   "time": "2:06.2",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 7,
+   "name": "アグライア",
+   "time": "2:08.0",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 5,
+   "name": "ミスベンティ",
+   "time": "2:09.0",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 8,
+   "name": "ミストレンタ",
+   "time": "2:09.3",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 6,
+   "name": "サトノブレイカー",
+   "time": "2:11.7",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "タカラオー",
+   "time": "2:14.4",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 3,
+   "number": 3,
+   "name": "クリスタルケルビム",
+   "time": "2:23.7",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
