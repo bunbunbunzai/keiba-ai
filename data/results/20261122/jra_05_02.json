@@ -1,0 +1,218 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 13,
+   "name": "アラータス",
+   "time": "1:48.6",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "2",
+   "number": 12,
+   "name": "ペントザリス",
+   "time": "1:48.7",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "number": 11,
+   "name": "マイネルカピラリス",
+   "time": "1:49.4",
+   "margin": "４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "4",
+   "number": 6,
+   "name": "リバーススイープ",
+   "time": "1:49.4",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "number": 7,
+   "name": "ケイツーラリ",
+   "time": "1:49.7",
+   "margin": "１ 3/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "6",
+   "number": 3,
+   "name": "タイセイリメンバー",
+   "time": "1:49.8",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "7",
+   "number": 4,
+   "name": "セイウンサイフィー",
+   "time": "1:49.8",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "8",
+   "number": 9,
+   "name": "ヴェットビルズ",
+   "time": "1:50.0",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "9",
+   "number": 10,
+   "name": "ニシノカサブランカ",
+   "time": "1:50.6",
+   "margin": "３ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "10",
+   "number": 5,
+   "name": "ニシノエテルノ",
+   "time": "1:50.8",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "11",
+   "number": 8,
+   "name": "アーバンアート",
+   "time": "1:50.9",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "12",
+   "number": 1,
+   "name": "コスモディプロマ",
+   "time": "1:51.0",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "13",
+   "number": 2,
+   "name": "スターホッピング",
+   "time": "1:53.2",
+   "margin": "大差",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "13",
+    "yen": 490,
+    "pop": 3
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "13",
+    "yen": 130,
+    "pop": 3
+   },
+   {
+    "combo": "12",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "11",
+    "yen": 640,
+    "pop": 8
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "8-8",
+    "yen": 270,
+    "pop": 2
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "12-13",
+    "yen": 180,
+    "pop": 2
+   },
+   {
+    "combo": "11-13",
+    "yen": 2140,
+    "pop": 19
+   },
+   {
+    "combo": "11-12",
+    "yen": 1380,
+    "pop": 12
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "12-13",
+    "yen": 230,
+    "pop": 1
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "13-12",
+    "yen": 780,
+    "pop": 4
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "11-12-13",
+    "yen": 2840,
+    "pop": 7
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "13-12-11",
+    "yen": 11370,
+    "pop": 31
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261122",
+ "venue_code": "05",
+ "race_no": 2,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605050220261122/23",
+ "title": "レース結果 JRA"
+}
