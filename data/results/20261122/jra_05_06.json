@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 5,
+   "name": "シャドウアリア",
+   "time": "1:25.8",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 3,
+   "name": "ダノンマローネ",
+   "time": "",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "number": 1,
+   "name": "スノーノート",
+   "time": "",
+   "margin": "２ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "4",
+   "number": 7,
+   "name": "ミラージュスター",
+   "time": "",
+   "margin": "５",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "5",
+   "number": 15,
+   "name": "ウィッチズレター",
+   "time": "",
+   "margin": "２ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "5",
+    "yen": 310,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "5",
+    "yen": 150,
+    "pop": 1
+   },
+   {
+    "combo": "3",
+    "yen": 240,
+    "pop": 3
+   },
+   {
+    "combo": "1",
+    "yen": 330,
+    "pop": 6
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-3",
+    "yen": 910,
+    "pop": 2
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-5",
+    "yen": 510,
+    "pop": 2
+   },
+   {
+    "combo": "1-5",
+    "yen": 920,
+    "pop": 8
+   },
+   {
+    "combo": "1-3",
+    "yen": 1520,
+    "pop": 21
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-5",
+    "yen": 1200,
+    "pop": 2
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "5-3",
+    "yen": 2010,
+    "pop": 3
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-3-5",
+    "yen": 5160,
+    "pop": 14
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "5-3-1",
+    "yen": 15660,
+    "pop": 32
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261122",
+ "venue_code": "05",
+ "race_no": 6,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605050620261122/F7",
+ "title": "レース結果 JRA"
+}

@@ -1,13 +1,14 @@
 {
  "date": "20261122",
- "updated": "2026-11-22 12:48",
+ "updated": "2026-11-22 12:53",
  "bias": {
   "東京ダ": {
    "judgement": "先行有利",
-   "confidence": "弱",
+   "confidence": "中",
    "races": [
     1,
-    4
+    4,
+    6
    ],
    "front_share": 0.75,
    "inner_share": 0.0,
