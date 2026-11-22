@@ -1,0 +1,218 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 11,
+   "name": "ルージュスプリヤ",
+   "time": "1:07.7",
+   "margin": "",
+   "corners": "1-1",
+   "last3f": 33.4,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 3,
+   "name": "シカゴスティング",
+   "time": "1:07.7",
+   "margin": "ハナ",
+   "corners": "6-6",
+   "last3f": 33.0,
+   "popularity": 6
+  },
+  {
+   "finish": "3",
+   "number": 12,
+   "name": "ジョヴィアン",
+   "time": "1:07.8",
+   "margin": "１／２",
+   "corners": "9-8",
+   "last3f": 32.8,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "number": 9,
+   "name": "マリノトニトゥルス",
+   "time": "1:07.9",
+   "margin": "３／４",
+   "corners": "3-2",
+   "last3f": 33.4,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "number": 10,
+   "name": "ディアドコス",
+   "time": "1:08.0",
+   "margin": "１／２",
+   "corners": "6-6",
+   "last3f": 33.2,
+   "popularity": 4
+  },
+  {
+   "finish": "6",
+   "number": 8,
+   "name": "メルトユアハート",
+   "time": "1:08.0",
+   "margin": "クビ",
+   "corners": "3-4",
+   "last3f": 33.4,
+   "popularity": 7
+  },
+  {
+   "finish": "7",
+   "number": 1,
+   "name": "トーラスシャイン",
+   "time": "1:08.1",
+   "margin": "クビ",
+   "corners": "9-10",
+   "last3f": 33.1,
+   "popularity": 9
+  },
+  {
+   "finish": "8",
+   "number": 5,
+   "name": "クリエープキー",
+   "time": "1:08.1",
+   "margin": "クビ",
+   "corners": "3-4",
+   "last3f": 33.6,
+   "popularity": 13
+  },
+  {
+   "finish": "9",
+   "number": 6,
+   "name": "ルーフ",
+   "time": "1:08.2",
+   "margin": "クビ",
+   "corners": "6-8",
+   "last3f": 33.4,
+   "popularity": 8
+  },
+  {
+   "finish": "10",
+   "number": 7,
+   "name": "ポエットリー",
+   "time": "1:08.2",
+   "margin": "ハナ",
+   "corners": "11-11",
+   "last3f": 33.1,
+   "popularity": 12
+  },
+  {
+   "finish": "11",
+   "number": 4,
+   "name": "ミロワール",
+   "time": "1:08.2",
+   "margin": "クビ",
+   "corners": "12-13",
+   "last3f": 32.9,
+   "popularity": 10
+  },
+  {
+   "finish": "12",
+   "number": 13,
+   "name": "ファビュラススター",
+   "time": "1:08.3",
+   "margin": "１／２",
+   "corners": "2-2",
+   "last3f": 33.9,
+   "popularity": 2
+  },
+  {
+   "finish": "13",
+   "number": 2,
+   "name": "トーセントラム",
+   "time": "1:08.4",
+   "margin": "３／４",
+   "corners": "12-11",
+   "last3f": 33.1,
+   "popularity": 11
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "11",
+    "yen": 150,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "11",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "3",
+    "yen": 370,
+    "pop": 8
+   },
+   {
+    "combo": "12",
+    "yen": 250,
+    "pop": 4
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-7",
+    "yen": 1700,
+    "pop": 6
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-11",
+    "yen": 650,
+    "pop": 8
+   },
+   {
+    "combo": "11-12",
+    "yen": 420,
+    "pop": 4
+   },
+   {
+    "combo": "3-12",
+    "yen": 2840,
+    "pop": 26
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-11",
+    "yen": 1770,
+    "pop": 6
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "11-3",
+    "yen": 1960,
+    "pop": 7
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-11-12",
+    "yen": 4340,
+    "pop": 14
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "11-3-12",
+    "yen": 14500,
+    "pop": 46
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261122",
+ "venue_code": "08",
+ "race_no": 12,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605061220261122/C6",
+ "title": "レース結果 JRA"
+}
