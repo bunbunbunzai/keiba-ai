@@ -1,6 +1,6 @@
 {
  "date": "20261122",
- "updated": "2026-11-22 17:08",
+ "updated": "2026-11-22 19:05",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -3328,8 +3328,7 @@
    "number": 4,
    "name": "スカイライト",
    "types": [
-    "rebound",
-    "letdown"
+    "rebound"
    ],
    "gap_days": 14,
    "last": {
@@ -3338,8 +3337,8 @@
     "field": 7,
     "popularity": 2
    },
-   "odds": 9.1,
-   "popularity": 4
+   "odds": 5.2,
+   "popularity": 2
   },
   {
    "race_id": "202611223129100609",
@@ -3359,8 +3358,8 @@
     "field": 8,
     "popularity": 4
    },
-   "odds": 4.0,
-   "popularity": 2
+   "odds": 7.2,
+   "popularity": 4
   },
   {
    "race_id": "202611223230140210",
@@ -3416,8 +3415,8 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": 15.5,
-   "popularity": 6
+   "odds": 16.4,
+   "popularity": 7
   },
   {
    "race_id": "202611220304170212",
@@ -3437,8 +3436,8 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": 18.4,
-   "popularity": 7
+   "odds": 6.9,
+   "popularity": 5
   },
   {
    "race_id": "202611220304170212",
@@ -3451,8 +3450,8 @@
    "types": [
     "aitop"
    ],
-   "odds": 14.4,
-   "popularity": 5
+   "odds": 14.0,
+   "popularity": 6
   },
   {
    "race_id": "202611223129100610",
@@ -3472,8 +3471,8 @@
     "field": 11,
     "popularity": 9
    },
-   "odds": 8.0,
-   "popularity": 2
+   "odds": 12.8,
+   "popularity": 5
   },
   {
    "race_id": "202611223230140211",
