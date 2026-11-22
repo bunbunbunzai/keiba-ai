@@ -1,6 +1,6 @@
 {
  "date": "20261122",
- "updated": "2026-11-22 13:04",
+ "updated": "2026-11-22 13:14",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1047,7 +1047,7 @@
     "popularity": 8
    },
    "odds": 8.1,
-   "popularity": 4
+   "popularity": 5
   },
   {
    "race_id": "202611221106070405",
@@ -1067,8 +1067,8 @@
     "field": 12,
     "popularity": 11
    },
-   "odds": 13.2,
-   "popularity": 7
+   "odds": 14.4,
+   "popularity": 8
   },
   {
    "race_id": "202611221106070405",
@@ -1081,8 +1081,8 @@
    "types": [
     "aitop"
    ],
-   "odds": 9.6,
-   "popularity": 5
+   "odds": 5.9,
+   "popularity": 2
   },
   {
    "race_id": "202611221106070405",
@@ -1102,7 +1102,7 @@
     "field": 10,
     "popularity": null
    },
-   "odds": 2.4,
+   "odds": 2.7,
    "popularity": 1
   },
   {
@@ -1231,8 +1231,8 @@
     "field": 9,
     "popularity": 4
    },
-   "odds": null,
-   "popularity": null
+   "odds": 14.6,
+   "popularity": 7
   },
   {
    "race_id": "202611220304170202",
@@ -1252,8 +1252,8 @@
     "field": 10,
     "popularity": 6
    },
-   "odds": null,
-   "popularity": null
+   "odds": 4.2,
+   "popularity": 1
   },
   {
    "race_id": "202611220304170202",
@@ -1273,8 +1273,8 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": null,
-   "popularity": null
+   "odds": 102.4,
+   "popularity": 10
   },
   {
    "race_id": "jra_20261122_東京_10",
