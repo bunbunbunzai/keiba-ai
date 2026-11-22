@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261122",
  "race_id": "202611223230140211",
- "tries": 2,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,160 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 9,
+   "name": "ダリアフレイバー",
+   "time": "1:32.1",
+   "margin": "",
+   "pos4": null,
+   "last3f": 39.3,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 14,
+   "name": "グリュイエール",
+   "time": "1:32.4",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": 41.3,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 12,
+   "name": "ミユンガー",
+   "time": "1:32.7",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": 41.0,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 5,
+   "name": "イントゥゴールデン",
+   "time": "1:32.9",
+   "margin": "１ １／４",
+   "pos4": null,
+   "last3f": 40.9,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 13,
+   "name": "メイショウシュハリ",
+   "time": "1:32.9",
+   "margin": "同着",
+   "pos4": null,
+   "last3f": 41.8,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 7,
+   "name": "アステリアート",
+   "time": "1:33.4",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": 42.7,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 2,
+   "number": 2,
+   "name": "フライトブルー",
+   "time": "1:33.5",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": 42.8,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "タンタンリーライズ",
+   "time": "1:33.5",
+   "margin": "ハナ",
+   "pos4": null,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 1,
+   "number": 1,
+   "name": "クロゴウ",
+   "time": "1:33.9",
+   "margin": "２",
+   "pos4": null,
+   "last3f": 40.3,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 4,
+   "number": 6,
+   "name": "バババブーン",
+   "time": "1:34.0",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": 39.8,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 7,
+   "number": 11,
+   "name": "ヴァレスカ",
+   "time": "1:34.0",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": 40.1,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 6,
+   "number": 10,
+   "name": "ライトニングラン",
+   "time": "1:34.1",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": 43.2,
+   "popularity": null
+  },
+  {
+   "finish": "13",
+   "frame": 5,
+   "number": 8,
+   "name": "イズジョーレイナス",
+   "time": "1:34.5",
+   "margin": "２",
+   "pos4": null,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "14",
+   "frame": 3,
+   "number": 4,
+   "name": "ジーティーカメリア",
+   "time": "1:34.6",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": 41.0,
+   "popularity": null
+  }
+ ]
 }
