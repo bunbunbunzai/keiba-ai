@@ -1,6 +1,6 @@
 {
  "date": "20261122",
- "updated": "2026-11-22 20:07",
+ "updated": "2026-11-22 20:12",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -3556,8 +3556,29 @@
     "field": 11,
     "popularity": 10
    },
-   "odds": 8.6,
+   "odds": 9.4,
    "popularity": 6
+  },
+  {
+   "race_id": "202611223129100611",
+   "results_key": "202611223129100611",
+   "venue": "高知",
+   "race_no": 11,
+   "post_time": "20:50",
+   "number": 12,
+   "name": "ヤマニンルーバス",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 14,
+   "last": {
+    "date": "2026-11-08",
+    "finish": 6,
+    "field": 10,
+    "popularity": 3
+   },
+   "odds": 7.7,
+   "popularity": 4
   }
  ]
 }
