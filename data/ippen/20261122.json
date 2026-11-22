@@ -1,6 +1,6 @@
 {
  "date": "20261122",
- "updated": "2026-11-22 16:42",
+ "updated": "2026-11-22 16:49",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -2470,8 +2470,7 @@
    "number": 3,
    "name": "ミシェラドラータ",
    "types": [
-    "layoff",
-    "aitop"
+    "layoff"
    ],
    "gap_days": 168,
    "last": {
@@ -2513,18 +2512,10 @@
    "number": 2,
    "name": "タナキーボー",
    "types": [
-    "letdown",
     "aitop"
    ],
-   "gap_days": 20,
-   "last": {
-    "date": "2026-11-02",
-    "finish": 6,
-    "field": 10,
-    "popularity": 1
-   },
-   "odds": 10.0,
-   "popularity": 7
+   "odds": 6.8,
+   "popularity": 3
   },
   {
    "race_id": "202611221106070410",
@@ -2544,8 +2535,8 @@
     "field": 12,
     "popularity": 8
    },
-   "odds": 7.8,
-   "popularity": 4
+   "odds": 13.5,
+   "popularity": 7
   },
   {
    "race_id": "202611220304170207",
@@ -2565,8 +2556,8 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": 27.2,
-   "popularity": 8
+   "odds": 27.6,
+   "popularity": 9
   },
   {
    "race_id": "202611220304170207",
@@ -2586,7 +2577,7 @@
     "field": 10,
     "popularity": 9
    },
-   "odds": 1.8,
+   "odds": 1.9,
    "popularity": 1
   },
   {
@@ -2607,7 +2598,7 @@
     "field": 10,
     "popularity": 10
    },
-   "odds": 54.5,
+   "odds": 69.0,
    "popularity": 10
   },
   {
@@ -2628,7 +2619,7 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": 20.4,
+   "odds": 21.8,
    "popularity": 6
   },
   {
@@ -2674,6 +2665,20 @@
    "popularity": 5
   },
   {
+   "race_id": "202611223129100605",
+   "results_key": "202611223129100605",
+   "venue": "高知",
+   "race_no": 5,
+   "post_time": "17:45",
+   "number": 3,
+   "name": "ダノンオンザビート",
+   "types": [
+    "aitop"
+   ],
+   "odds": 6.3,
+   "popularity": 2
+  },
+  {
    "race_id": "202611221106070411",
    "results_key": "202611221106070411",
    "venue": "水沢",
@@ -2691,8 +2696,8 @@
     "field": 12,
     "popularity": 7
    },
-   "odds": 42.0,
-   "popularity": 10
+   "odds": 40.6,
+   "popularity": 8
   },
   {
    "race_id": "202611221106070411",
@@ -2712,8 +2717,8 @@
     "field": 12,
     "popularity": 6
    },
-   "odds": 5.8,
-   "popularity": 3
+   "odds": 11.0,
+   "popularity": 5
   },
   {
    "race_id": "202611221106070411",
@@ -2733,8 +2738,8 @@
     "field": 11,
     "popularity": 3
    },
-   "odds": 31.5,
-   "popularity": 9
+   "odds": 68.8,
+   "popularity": 10
   },
   {
    "race_id": "202611221106070411",
@@ -2754,7 +2759,7 @@
     "field": 12,
     "popularity": 10
    },
-   "odds": 11.1,
+   "odds": 21.3,
    "popularity": 7
   },
   {
@@ -2776,8 +2781,22 @@
     "field": 10,
     "popularity": 2
    },
-   "odds": 7.4,
+   "odds": 12.7,
    "popularity": 6
+  },
+  {
+   "race_id": "202611220304170208",
+   "results_key": "202611220304170208",
+   "venue": "帯広ば",
+   "race_no": 8,
+   "post_time": "17:55",
+   "number": 1,
+   "name": "タカラオー",
+   "types": [
+    "aitop"
+   ],
+   "odds": 15.9,
+   "popularity": 4
   },
   {
    "race_id": "202611220304170208",
@@ -2797,8 +2816,8 @@
     "field": 10,
     "popularity": 9
    },
-   "odds": 16.0,
-   "popularity": 6
+   "odds": 23.9,
+   "popularity": 7
   },
   {
    "race_id": "202611220304170208",
@@ -2818,7 +2837,7 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": 28.8,
+   "odds": 23.9,
    "popularity": 7
   },
   {
@@ -2839,8 +2858,8 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": 28.8,
-   "popularity": 7
+   "odds": 19.9,
+   "popularity": 6
   },
   {
    "race_id": "202611223230140206",
@@ -2926,6 +2945,20 @@
    },
    "odds": 50.4,
    "popularity": 9
+  },
+  {
+   "race_id": "202611223230140206",
+   "results_key": "202611223230140206",
+   "venue": "佐賀",
+   "race_no": 6,
+   "post_time": "18:05",
+   "number": 12,
+   "name": "ユイノササヤキ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 14.4,
+   "popularity": 6
   },
   {
    "race_id": "202611223129100606",
