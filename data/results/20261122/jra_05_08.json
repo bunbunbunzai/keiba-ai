@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 10,
+   "name": "シャンハイナイト",
+   "time": "1:36.9",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "2",
+   "number": 4,
+   "name": "タイセイジェイド",
+   "time": "",
+   "margin": "２ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "number": 12,
+   "name": "ケープウィッカム",
+   "time": "",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "4",
+   "number": 14,
+   "name": "キングツェッペリン",
+   "time": "",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "5",
+   "number": 5,
+   "name": "ノアヴィヴァーチェ",
+   "time": "",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "10",
+    "yen": 3730,
+    "pop": 10
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "10",
+    "yen": 680,
+    "pop": 10
+   },
+   {
+    "combo": "4",
+    "yen": 270,
+    "pop": 3
+   },
+   {
+    "combo": "12",
+    "yen": 140,
+    "pop": 1
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-5",
+    "yen": 3410,
+    "pop": 12
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-10",
+    "yen": 3420,
+    "pop": 37
+   },
+   {
+    "combo": "10-12",
+    "yen": 1980,
+    "pop": 23
+   },
+   {
+    "combo": "4-12",
+    "yen": 530,
+    "pop": 2
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-10",
+    "yen": 13070,
+    "pop": 37
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "10-4",
+    "yen": 29780,
+    "pop": 79
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-10-12",
+    "yen": 12260,
+    "pop": 41
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "10-4-12",
+    "yen": 128850,
+    "pop": 378
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261122",
+ "venue_code": "05",
+ "race_no": 8,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605050820261122/61",
+ "title": "レース結果 JRA"
+}
