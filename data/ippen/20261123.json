@@ -1,6 +1,6 @@
 {
  "date": "20261123",
- "updated": "2026-11-23 07:37",
+ "updated": "2026-11-23 08:33",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -70,6 +70,20 @@
    },
    "odds": 70.3,
    "popularity": 10
+  },
+  {
+   "race_id": "jra_20261123_東京_01",
+   "results_key": "jra_05_01",
+   "venue": "東京",
+   "race_no": 1,
+   "post_time": "10:00",
+   "number": 7,
+   "name": "ドーリック",
+   "types": [
+    "aitop"
+   ],
+   "odds": 6.7,
+   "popularity": 4
   },
   {
    "race_id": "jra_20261123_東京_01",
