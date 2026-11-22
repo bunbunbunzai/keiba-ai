@@ -1,0 +1,130 @@
+{
+ "date": "20261123",
+ "updated": "2026-11-23 06:14",
+ "races_total": 17,
+ "races_scored": 0,
+ "stake": 0,
+ "return": 0,
+ "roi": null,
+ "hit_races": 0,
+ "honmei_win": 0,
+ "honmei_top3": 0,
+ "races": [
+  {
+   "race_id": "202611231106070501",
+   "confidence": "C",
+   "honmei": 10,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611231106070502",
+   "confidence": "C",
+   "honmei": 7,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611231106070503",
+   "confidence": "C",
+   "honmei": 4,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "202611231106070512",
+   "confidence": "C",
+   "honmei": 3,
+   "honmei_finish": null,
+   "top3": [
+    null,
+    null,
+    null
+   ],
+   "stake": 100,
+   "return": 0,
+   "roi": 0.0,
+   "hits": [],
+   "voided": true
+  },
+  {
+   "race_id": "jra_20261123_東京_01",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261123_東京_02",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261123_東京_03",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261123_東京_04",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261123_東京_05",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261123_東京_06",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261123_東京_11",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261123_福島_01",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261123_福島_02",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261123_福島_03",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261123_福島_04",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261123_福島_05",
+   "status": "結果未取得"
+  },
+  {
+   "race_id": "jra_20261123_福島_06",
+   "status": "結果未取得"
+  }
+ ]
+}
