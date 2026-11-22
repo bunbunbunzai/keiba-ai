@@ -1,6 +1,6 @@
 {
  "date": "20261123",
- "updated": "2026-11-22 17:26",
+ "updated": "2026-11-22 18:41",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1821,27 +1821,6 @@
     "finish": 8,
     "field": 8,
     "popularity": 1
-   },
-   "odds": null,
-   "popularity": null
-  },
-  {
-   "race_id": "202611230304170304",
-   "results_key": "202611230304170304",
-   "venue": "帯広ば",
-   "race_no": 4,
-   "post_time": "15:40",
-   "number": 4,
-   "name": "シンエイライデン",
-   "types": [
-    "rebound"
-   ],
-   "gap_days": 15,
-   "last": {
-    "date": "2026-11-08",
-    "finish": 7,
-    "field": 10,
-    "popularity": 10
    },
    "odds": null,
    "popularity": null
