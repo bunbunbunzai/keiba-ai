@@ -1,6 +1,6 @@
 {
  "date": "20261122",
- "updated": "2026-11-22 14:35",
+ "updated": "2026-11-22 14:39",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1662,7 +1662,7 @@
    "types": [
     "aitop"
    ],
-   "odds": 13.0,
+   "odds": 11.9,
    "popularity": 3
   },
   {
@@ -1683,7 +1683,7 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": 40.7,
+   "odds": 35.7,
    "popularity": 6
   },
   {
@@ -1704,7 +1704,7 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": 33.3,
+   "odds": 21.4,
    "popularity": 5
   },
   {
@@ -1725,8 +1725,8 @@
     "field": 7,
     "popularity": 5
    },
-   "odds": 40.7,
-   "popularity": 6
+   "odds": 42.8,
+   "popularity": 7
   },
   {
    "race_id": "jra_20261122_東京_11",
@@ -2191,8 +2191,8 @@
     "field": 12,
     "popularity": 4
    },
-   "odds": 11.2,
-   "popularity": 5
+   "odds": 10.2,
+   "popularity": 2
   },
   {
    "race_id": "202611221106070408",
@@ -2213,8 +2213,29 @@
     "field": 12,
     "popularity": 10
    },
-   "odds": 22.4,
-   "popularity": 9
+   "odds": 13.1,
+   "popularity": 4
+  },
+  {
+   "race_id": "202611221106070408",
+   "results_key": "202611221106070408",
+   "venue": "水沢",
+   "race_no": 8,
+   "post_time": "16:05",
+   "number": 9,
+   "name": "クリダーム",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 14,
+   "last": {
+    "date": "2026-11-08",
+    "finish": 12,
+    "field": 12,
+    "popularity": 2
+   },
+   "odds": 14.5,
+   "popularity": 7
   },
   {
    "race_id": "202611221106070408",
@@ -2234,7 +2255,7 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": 11.2,
+   "odds": 13.8,
    "popularity": 5
   },
   {
