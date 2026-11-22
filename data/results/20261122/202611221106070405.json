@@ -2,7 +2,155 @@
  "source": "rakuten",
  "date": "20261122",
  "race_id": "202611221106070405",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "8",
+    "yen": 190
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "8-7",
+    "yen": 580
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "8",
+    "yen": 130
+   },
+   {
+    "combo": "7",
+    "yen": 190
+   },
+   {
+    "combo": "6",
+    "yen": 610
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "7-8",
+    "yen": 250
+   },
+   {
+    "combo": "6-8",
+    "yen": 760
+   },
+   {
+    "combo": "6-7",
+    "yen": 1210
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "6-7-8",
+    "yen": 1850
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "8-7-6",
+    "yen": 4240
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "7-8",
+    "yen": 400
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 8,
+   "name": "ピレネー",
+   "time": "1:25.1",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 7,
+   "name": "アルミノダンク",
+   "time": "1:25.2",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 6,
+   "name": "ガミラスマリアナ",
+   "time": "1:27.3",
+   "margin": "大差",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 1,
+   "number": 1,
+   "name": "コイコイ",
+   "time": "1:27.8",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 4,
+   "name": "リュウノファイアー",
+   "time": "1:28.3",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "カイノマクアケ",
+   "time": "1:28.5",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 5,
+   "name": "アラジンチャンス",
+   "time": "1:31.3",
+   "margin": "大差",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "プリンセスマッシュ",
+   "time": "1:33.1",
+   "margin": "大差",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
