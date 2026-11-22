@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261122",
  "race_id": "202611221106070405",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -71,7 +71,7 @@
    "name": "ピレネー",
    "time": "1:25.1",
    "margin": "",
-   "pos4": null,
+   "pos4": 2,
    "last3f": null,
    "popularity": null
   },
@@ -82,7 +82,7 @@
    "name": "アルミノダンク",
    "time": "1:25.2",
    "margin": "３／４",
-   "pos4": null,
+   "pos4": 1,
    "last3f": null,
    "popularity": null
   },
@@ -93,7 +93,7 @@
    "name": "ガミラスマリアナ",
    "time": "1:27.3",
    "margin": "大差",
-   "pos4": null,
+   "pos4": 4,
    "last3f": null,
    "popularity": null
   },
@@ -104,7 +104,7 @@
    "name": "コイコイ",
    "time": "1:27.8",
    "margin": "３",
-   "pos4": null,
+   "pos4": 6,
    "last3f": null,
    "popularity": null
   },
@@ -115,7 +115,7 @@
    "name": "リュウノファイアー",
    "time": "1:28.3",
    "margin": "３",
-   "pos4": null,
+   "pos4": 4,
    "last3f": null,
    "popularity": null
   },
@@ -126,7 +126,7 @@
    "name": "カイノマクアケ",
    "time": "1:28.5",
    "margin": "１",
-   "pos4": null,
+   "pos4": 3,
    "last3f": null,
    "popularity": null
   },
@@ -137,7 +137,7 @@
    "name": "アラジンチャンス",
    "time": "1:31.3",
    "margin": "大差",
-   "pos4": null,
+   "pos4": 7,
    "last3f": null,
    "popularity": null
   },
@@ -148,7 +148,7 @@
    "name": "プリンセスマッシュ",
    "time": "1:33.1",
    "margin": "大差",
-   "pos4": null,
+   "pos4": 8,
    "last3f": null,
    "popularity": null
   }
