@@ -1,6 +1,6 @@
 {
  "date": "20261122",
- "updated": "2026-11-22 12:30",
+ "updated": "2026-11-22 12:38",
  "bias": {
   "東京ダ": {
    "judgement": "先行有利",
@@ -44,7 +44,8 @@
    "judgement": "フラット",
    "confidence": "弱",
    "races": [
-    3
+    3,
+    5
    ],
    "front_share": 0.5,
    "inner_share": 0.0,
