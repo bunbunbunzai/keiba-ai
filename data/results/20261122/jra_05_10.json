@@ -1,0 +1,238 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 14,
+   "name": "デンプシー",
+   "time": "1:33.5",
+   "margin": "",
+   "corners": "11-11",
+   "last3f": 32.9,
+   "popularity": 3
+  },
+  {
+   "finish": "2",
+   "number": 9,
+   "name": "マルチャン",
+   "time": "1:33.6",
+   "margin": "１／２",
+   "corners": "8-9",
+   "last3f": 33.1,
+   "popularity": 13
+  },
+  {
+   "finish": "3",
+   "number": 6,
+   "name": "ウフドゥウフ",
+   "time": "1:33.6",
+   "margin": "ハナ",
+   "corners": "9-9",
+   "last3f": 33.1,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "number": 3,
+   "name": "ビップディラン",
+   "time": "1:33.6",
+   "margin": "アタマ",
+   "corners": "5-5",
+   "last3f": 33.4,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "number": 11,
+   "name": "プッシュオン",
+   "time": "1:33.7",
+   "margin": "クビ",
+   "corners": "12-13",
+   "last3f": 32.9,
+   "popularity": 10
+  },
+  {
+   "finish": "6",
+   "number": 5,
+   "name": "ジッピーチューン",
+   "time": "1:33.7",
+   "margin": "ハナ",
+   "corners": "4-4",
+   "last3f": 33.6,
+   "popularity": 1
+  },
+  {
+   "finish": "7",
+   "number": 10,
+   "name": "レッドアトレーヴ",
+   "time": "1:33.8",
+   "margin": "１／２",
+   "corners": "9-8",
+   "last3f": 33.4,
+   "popularity": 7
+  },
+  {
+   "finish": "8",
+   "number": 15,
+   "name": "ホウオウシェリー",
+   "time": "1:34.0",
+   "margin": "１ 1/4",
+   "corners": "2-2",
+   "last3f": 34.2,
+   "popularity": 6
+  },
+  {
+   "finish": "9",
+   "number": 7,
+   "name": "ボーモンド",
+   "time": "1:34.0",
+   "margin": "ハナ",
+   "corners": "5-5",
+   "last3f": 33.7,
+   "popularity": 12
+  },
+  {
+   "finish": "10",
+   "number": 12,
+   "name": "コスモサガルマータ",
+   "time": "1:34.0",
+   "margin": "アタマ",
+   "corners": "15-15",
+   "last3f": 32.9,
+   "popularity": 8
+  },
+  {
+   "finish": "11",
+   "number": 13,
+   "name": "テウメッサ",
+   "time": "1:34.0",
+   "margin": "クビ",
+   "corners": "12-11",
+   "last3f": 33.3,
+   "popularity": 14
+  },
+  {
+   "finish": "12",
+   "number": 2,
+   "name": "アルトゥーム",
+   "time": "1:34.1",
+   "margin": "３／４",
+   "corners": "14-14",
+   "last3f": 33.1,
+   "popularity": 11
+  },
+  {
+   "finish": "13",
+   "number": 8,
+   "name": "フォルテム",
+   "time": "1:34.3",
+   "margin": "３／４",
+   "corners": "1-1",
+   "last3f": 34.7,
+   "popularity": 9
+  },
+  {
+   "finish": "14",
+   "number": 4,
+   "name": "ガリレア",
+   "time": "1:34.5",
+   "margin": "１ 1/2",
+   "corners": "5-5",
+   "last3f": 34.3,
+   "popularity": 5
+  },
+  {
+   "finish": "15",
+   "number": 1,
+   "name": "トラペジスト",
+   "time": "1:34.9",
+   "margin": "２ 1/2",
+   "corners": "3-3",
+   "last3f": 34.9,
+   "popularity": 15
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "14",
+    "yen": 800,
+    "pop": 3
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "14",
+    "yen": 270,
+    "pop": 4
+   },
+   {
+    "combo": "9",
+    "yen": 1120,
+    "pop": 13
+   },
+   {
+    "combo": "6",
+    "yen": 150,
+    "pop": 1
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-8",
+    "yen": 4760,
+    "pop": 15
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "9-14",
+    "yen": 4410,
+    "pop": 44
+   },
+   {
+    "combo": "6-14",
+    "yen": 690,
+    "pop": 7
+   },
+   {
+    "combo": "6-9",
+    "yen": 2580,
+    "pop": 28
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "9-14",
+    "yen": 17420,
+    "pop": 42
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "14-9",
+    "yen": 26680,
+    "pop": 71
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "6-9-14",
+    "yen": 13850,
+    "pop": 44
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "14-9-6",
+    "yen": 108580,
+    "pop": 317
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261122",
+ "venue_code": "05",
+ "race_no": 10,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605051020261122/0B",
+ "title": "レース結果 JRA"
+}
