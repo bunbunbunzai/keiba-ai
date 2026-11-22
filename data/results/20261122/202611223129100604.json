@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261122",
  "race_id": "202611223129100604",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -71,8 +71,8 @@
    "name": "ジュゲムーン",
    "time": "1:31.9",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 40.3,
    "popularity": null
   },
   {
@@ -82,8 +82,8 @@
    "name": "グッドウッドガイ",
    "time": "1:32.2",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 39.0,
    "popularity": null
   },
   {
@@ -93,8 +93,8 @@
    "name": "ワイドカント",
    "time": "1:32.3",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 40.1,
    "popularity": null
   },
   {
@@ -104,8 +104,8 @@
    "name": "ミシェラドラータ",
    "time": "1:32.4",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 40.9,
    "popularity": null
   },
   {
@@ -115,8 +115,8 @@
    "name": "ウインヴェルデ",
    "time": "1:32.6",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 40.0,
    "popularity": null
   },
   {
@@ -126,8 +126,8 @@
    "name": "ティアップエックス",
    "time": "1:32.7",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 40.1,
    "popularity": null
   },
   {
@@ -137,8 +137,8 @@
    "name": "エナジーポコアポコ",
    "time": "1:33.1",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 40.6,
    "popularity": null
   },
   {
@@ -148,8 +148,8 @@
    "name": "エイシングラス",
    "time": "1:33.6",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 39.6,
    "popularity": null
   }
  ]
