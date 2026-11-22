@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 9,
+   "name": "モデレートゲイル",
+   "time": "2:12.3",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 15,
+   "name": "タイセイデクスター",
+   "time": "",
+   "margin": "３ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "3",
+   "number": 2,
+   "name": "オルブライト",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "4",
+   "number": 16,
+   "name": "タイセイエムロード",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "5",
+   "number": 4,
+   "name": "パッセージピーク",
+   "time": "",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "9",
+    "yen": 210,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "9",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "15",
+    "yen": 250,
+    "pop": 3
+   },
+   {
+    "combo": "2",
+    "yen": 960,
+    "pop": 13
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-8",
+    "yen": 680,
+    "pop": 2
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "9-15",
+    "yen": 410,
+    "pop": 2
+   },
+   {
+    "combo": "2-9",
+    "yen": 1740,
+    "pop": 18
+   },
+   {
+    "combo": "2-15",
+    "yen": 5170,
+    "pop": 53
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "9-15",
+    "yen": 1060,
+    "pop": 3
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "9-15",
+    "yen": 1530,
+    "pop": 3
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-9-15",
+    "yen": 11470,
+    "pop": 37
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "9-15-2",
+    "yen": 31370,
+    "pop": 92
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261122",
+ "venue_code": "05",
+ "race_no": 7,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605050720261122/AC",
+ "title": "レース結果 JRA"
+}
