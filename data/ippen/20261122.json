@@ -1,6 +1,6 @@
 {
  "date": "20261122",
- "updated": "2026-11-22 10:10",
+ "updated": "2026-11-22 11:00",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -258,8 +258,8 @@
     "field": 14,
     "popularity": 7
    },
-   "odds": null,
-   "popularity": null
+   "odds": 5.6,
+   "popularity": 2
   },
   {
    "race_id": "202611221106070401",
@@ -279,8 +279,29 @@
     "field": 17,
     "popularity": 12
    },
-   "odds": null,
-   "popularity": null
+   "odds": 20.0,
+   "popularity": 3
+  },
+  {
+   "race_id": "202611221106070402",
+   "results_key": "202611221106070402",
+   "venue": "水沢",
+   "race_no": 2,
+   "post_time": "12:35",
+   "number": 8,
+   "name": "コスモシュンライ",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 14,
+   "last": {
+    "date": "2026-11-08",
+    "finish": 7,
+    "field": 10,
+    "popularity": 1
+   },
+   "odds": 30.4,
+   "popularity": 10
   },
   {
    "race_id": "202611221106070402",
@@ -300,8 +321,8 @@
     "field": 15,
     "popularity": 15
    },
-   "odds": null,
-   "popularity": null
+   "odds": 4.3,
+   "popularity": 1
   },
   {
    "race_id": "jra_20261122_京都_06",
@@ -474,6 +495,27 @@
    },
    "odds": 9.1,
    "popularity": 5
+  },
+  {
+   "race_id": "202611221106070403",
+   "results_key": "202611221106070403",
+   "venue": "水沢",
+   "race_no": 3,
+   "post_time": "13:10",
+   "number": 9,
+   "name": "マリヨンヌ",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 14,
+   "last": {
+    "date": "2026-11-08",
+    "finish": 8,
+    "field": 11,
+    "popularity": 3
+   },
+   "odds": 52.0,
+   "popularity": 10
   },
   {
    "race_id": "jra_20261122_京都_07",
@@ -749,8 +791,8 @@
     "field": 10,
     "popularity": 6
    },
-   "odds": null,
-   "popularity": null
+   "odds": 7.8,
+   "popularity": 4
   },
   {
    "race_id": "jra_20261122_京都_08",
@@ -982,8 +1024,8 @@
     "field": 8,
     "popularity": 8
    },
-   "odds": null,
-   "popularity": null
+   "odds": 9.2,
+   "popularity": 5
   },
   {
    "race_id": "202611221106070405",
@@ -1003,8 +1045,8 @@
     "field": 12,
     "popularity": 11
    },
-   "odds": null,
-   "popularity": null
+   "odds": 9.2,
+   "popularity": 5
   },
   {
    "race_id": "202611221106070405",
@@ -1024,8 +1066,8 @@
     "field": 10,
     "popularity": null
    },
-   "odds": null,
-   "popularity": null
+   "odds": 9.2,
+   "popularity": 5
   },
   {
    "race_id": "jra_20261122_京都_09",
@@ -1363,8 +1405,8 @@
     "field": 12,
     "popularity": 10
    },
-   "odds": null,
-   "popularity": null
+   "odds": 19.2,
+   "popularity": 6
   },
   {
    "race_id": "202611221106070406",
@@ -1384,8 +1426,8 @@
     "field": 12,
     "popularity": 8
    },
-   "odds": null,
-   "popularity": null
+   "odds": 19.2,
+   "popularity": 6
   },
   {
    "race_id": "jra_20261122_京都_10",
@@ -1684,8 +1726,8 @@
     "field": 12,
     "popularity": 11
    },
-   "odds": null,
-   "popularity": null
+   "odds": 31.2,
+   "popularity": 9
   },
   {
    "race_id": "202611223129100601",
@@ -1705,8 +1747,8 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": null,
-   "popularity": null
+   "odds": 6.2,
+   "popularity": 4
   },
   {
    "race_id": "202611223129100601",
@@ -1726,8 +1768,8 @@
     "field": 13,
     "popularity": 3
    },
-   "odds": null,
-   "popularity": null
+   "odds": 5.2,
+   "popularity": 3
   },
   {
    "race_id": "jra_20261122_京都_11",
@@ -1896,8 +1938,8 @@
     "field": 9,
     "popularity": null
    },
-   "odds": null,
-   "popularity": null
+   "odds": 4.0,
+   "popularity": 2
   },
   {
    "race_id": "jra_20261122_東京_12",
@@ -2022,8 +2064,8 @@
     "field": 12,
     "popularity": 4
    },
-   "odds": null,
-   "popularity": null
+   "odds": 11.2,
+   "popularity": 5
   },
   {
    "race_id": "202611221106070408",
@@ -2044,8 +2086,8 @@
     "field": 12,
     "popularity": 10
    },
-   "odds": null,
-   "popularity": null
+   "odds": 22.4,
+   "popularity": 9
   },
   {
    "race_id": "202611221106070408",
@@ -2065,8 +2107,8 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": null,
-   "popularity": null
+   "odds": 11.2,
+   "popularity": 5
   },
   {
    "race_id": "202611220304170205",
@@ -2128,8 +2170,8 @@
     "field": 18,
     "popularity": 6
    },
-   "odds": null,
-   "popularity": null
+   "odds": 6.0,
+   "popularity": 3
   },
   {
    "race_id": "202611221106070409",
@@ -2149,8 +2191,8 @@
     "field": 12,
     "popularity": 10
    },
-   "odds": null,
-   "popularity": null
+   "odds": 26.4,
+   "popularity": 8
   },
   {
    "race_id": "202611220304170206",
@@ -2275,8 +2317,8 @@
     "field": 8,
     "popularity": 2
    },
-   "odds": null,
-   "popularity": null
+   "odds": 12.8,
+   "popularity": 5
   },
   {
    "race_id": "202611223129100604",
@@ -2296,8 +2338,8 @@
     "field": 10,
     "popularity": 3
    },
-   "odds": null,
-   "popularity": null
+   "odds": 3.2,
+   "popularity": 1
   },
   {
    "race_id": "202611221106070410",
@@ -2317,8 +2359,8 @@
     "field": 12,
     "popularity": 8
    },
-   "odds": null,
-   "popularity": null
+   "odds": 12.4,
+   "popularity": 5
   },
   {
    "race_id": "202611220304170207",
@@ -2443,8 +2485,8 @@
     "field": 12,
     "popularity": 7
    },
-   "odds": null,
-   "popularity": null
+   "odds": 9.3,
+   "popularity": 5
   },
   {
    "race_id": "202611221106070411",
@@ -2464,8 +2506,29 @@
     "field": 12,
     "popularity": 6
    },
-   "odds": null,
-   "popularity": null
+   "odds": 5.6,
+   "popularity": 4
+  },
+  {
+   "race_id": "202611221106070411",
+   "results_key": "202611221106070411",
+   "venue": "水沢",
+   "race_no": 11,
+   "post_time": "17:50",
+   "number": 5,
+   "name": "スターシューター",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 54,
+   "last": {
+    "date": "2026-09-29",
+    "finish": 6,
+    "field": 11,
+    "popularity": 3
+   },
+   "odds": 14.0,
+   "popularity": 7
   },
   {
    "race_id": "202611221106070411",
@@ -2506,8 +2569,8 @@
     "field": 10,
     "popularity": 2
    },
-   "odds": null,
-   "popularity": null
+   "odds": 4.6,
+   "popularity": 2
   },
   {
    "race_id": "202611220304170208",
@@ -2675,8 +2738,29 @@
     "field": 10,
     "popularity": 9
    },
-   "odds": null,
-   "popularity": null
+   "odds": 3.7,
+   "popularity": 1
+  },
+  {
+   "race_id": "202611223129100606",
+   "results_key": "202611223129100606",
+   "venue": "高知",
+   "race_no": 6,
+   "post_time": "18:15",
+   "number": 6,
+   "name": "スノープリンス",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 14,
+   "last": {
+    "date": "2026-11-08",
+    "finish": 8,
+    "field": 12,
+    "popularity": 3
+   },
+   "odds": 11.2,
+   "popularity": 4
   },
   {
    "race_id": "202611220304170209",
@@ -2823,8 +2907,8 @@
     "field": 11,
     "popularity": 6
    },
-   "odds": null,
-   "popularity": null
+   "odds": 2.8,
+   "popularity": 2
   },
   {
    "race_id": "202611223129100607",
@@ -2907,8 +2991,29 @@
     "field": 12,
     "popularity": 5
    },
-   "odds": null,
-   "popularity": null
+   "odds": 10.4,
+   "popularity": 4
+  },
+  {
+   "race_id": "202611223129100608",
+   "results_key": "202611223129100608",
+   "venue": "高知",
+   "race_no": 8,
+   "post_time": "19:15",
+   "number": 9,
+   "name": "セイウンガレオン",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 15,
+   "last": {
+    "date": "2026-11-07",
+    "finish": 8,
+    "field": 11,
+    "popularity": 3
+   },
+   "odds": 10.4,
+   "popularity": 4
   },
   {
    "race_id": "202611223230140209",
@@ -3054,8 +3159,8 @@
     "field": 11,
     "popularity": 9
    },
-   "odds": null,
-   "popularity": null
+   "odds": 2.3,
+   "popularity": 1
   },
   {
    "race_id": "202611223230140211",
@@ -3117,8 +3222,29 @@
     "field": 11,
     "popularity": 10
    },
-   "odds": null,
-   "popularity": null
+   "odds": 9.3,
+   "popularity": 4
+  },
+  {
+   "race_id": "202611223129100611",
+   "results_key": "202611223129100611",
+   "venue": "高知",
+   "race_no": 11,
+   "post_time": "20:50",
+   "number": 12,
+   "name": "ヤマニンルーバス",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 14,
+   "last": {
+    "date": "2026-11-08",
+    "finish": 6,
+    "field": 10,
+    "popularity": 3
+   },
+   "odds": 18.7,
+   "popularity": 8
   }
  ]
 }
