@@ -1,6 +1,6 @@
 {
  "date": "20261122",
- "updated": "2026-11-22 11:33",
+ "updated": "2026-11-22 11:58",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -289,27 +289,6 @@
    "venue": "水沢",
    "race_no": 2,
    "post_time": "12:35",
-   "number": 8,
-   "name": "コスモシュンライ",
-   "types": [
-    "letdown"
-   ],
-   "gap_days": 14,
-   "last": {
-    "date": "2026-11-08",
-    "finish": 7,
-    "field": 10,
-    "popularity": 1
-   },
-   "odds": 9.9,
-   "popularity": 4
-  },
-  {
-   "race_id": "202611221106070402",
-   "results_key": "202611221106070402",
-   "venue": "水沢",
-   "race_no": 2,
-   "post_time": "12:35",
    "number": 10,
    "name": "ゴールドアテネ",
    "types": [
@@ -322,7 +301,7 @@
     "field": 15,
     "popularity": 15
    },
-   "odds": 11.6,
+   "odds": 10.5,
    "popularity": 5
   },
   {
