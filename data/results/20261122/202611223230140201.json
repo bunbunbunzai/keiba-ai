@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261122",
  "race_id": "202611223230140201",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -77,7 +77,7 @@
    "name": "ハクアイファミリー",
    "time": "1:33.2",
    "margin": "",
-   "pos4": null,
+   "pos4": 1,
    "last3f": null,
    "popularity": null
   },
@@ -88,7 +88,7 @@
    "name": "エカヒリオ",
    "time": "1:33.4",
    "margin": "１ １／４",
-   "pos4": null,
+   "pos4": 3,
    "last3f": null,
    "popularity": null
   },
@@ -99,7 +99,7 @@
    "name": "サンベニト",
    "time": "1:33.4",
    "margin": "ハナ",
-   "pos4": null,
+   "pos4": 3,
    "last3f": null,
    "popularity": null
   },
@@ -110,7 +110,7 @@
    "name": "ドラゴンアイ",
    "time": "1:33.5",
    "margin": "１／２",
-   "pos4": null,
+   "pos4": 5,
    "last3f": null,
    "popularity": null
   },
@@ -121,7 +121,7 @@
    "name": "ビバムチャチョ",
    "time": "1:33.7",
    "margin": "３／４",
-   "pos4": null,
+   "pos4": 2,
    "last3f": null,
    "popularity": null
   },
@@ -132,7 +132,7 @@
    "name": "チャイロサマー",
    "time": "1:33.9",
    "margin": "１",
-   "pos4": null,
+   "pos4": 5,
    "last3f": null,
    "popularity": null
   },
@@ -143,7 +143,7 @@
    "name": "ツキヨノネガイ",
    "time": "1:34.0",
    "margin": "１／２",
-   "pos4": null,
+   "pos4": 7,
    "last3f": null,
    "popularity": null
   },
@@ -154,7 +154,7 @@
    "name": "ニシノキヅイタラ",
    "time": "1:34.5",
    "margin": "２ １／２",
-   "pos4": null,
+   "pos4": 8,
    "last3f": null,
    "popularity": null
   },
@@ -165,7 +165,7 @@
    "name": "ムーンオブザグラス",
    "time": "1:35.7",
    "margin": "６",
-   "pos4": null,
+   "pos4": 9,
    "last3f": null,
    "popularity": null
   }
