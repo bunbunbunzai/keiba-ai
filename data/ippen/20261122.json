@@ -1,6 +1,6 @@
 {
  "date": "20261122",
- "updated": "2026-11-22 11:58",
+ "updated": "2026-11-22 12:30",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -482,6 +482,20 @@
    "venue": "水沢",
    "race_no": 3,
    "post_time": "13:10",
+   "number": 8,
+   "name": "メイショウアユカゼ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 15.1,
+   "popularity": 9
+  },
+  {
+   "race_id": "202611221106070403",
+   "results_key": "202611221106070403",
+   "venue": "水沢",
+   "race_no": 3,
+   "post_time": "13:10",
    "number": 9,
    "name": "マリヨンヌ",
    "types": [
@@ -494,8 +508,8 @@
     "field": 11,
     "popularity": 3
    },
-   "odds": 52.0,
-   "popularity": 10
+   "odds": 6.7,
+   "popularity": 4
   },
   {
    "race_id": "jra_20261122_京都_07",
@@ -771,8 +785,8 @@
     "field": 10,
     "popularity": 6
    },
-   "odds": 7.8,
-   "popularity": 4
+   "odds": 14.8,
+   "popularity": 3
   },
   {
    "race_id": "jra_20261122_京都_08",
@@ -950,6 +964,20 @@
    "venue": "東京",
    "race_no": 9,
    "post_time": "14:10",
+   "number": 5,
+   "name": "サトノスプレマシー",
+   "types": [
+    "aitop"
+   ],
+   "odds": 5.3,
+   "popularity": 3
+  },
+  {
+   "race_id": "jra_20261122_東京_09",
+   "results_key": "jra_05_09",
+   "venue": "東京",
+   "race_no": 9,
+   "post_time": "14:10",
    "number": 6,
    "name": "ピコベリー",
    "types": [
@@ -1027,6 +1055,20 @@
    },
    "odds": 9.2,
    "popularity": 5
+  },
+  {
+   "race_id": "202611221106070405",
+   "results_key": "202611221106070405",
+   "venue": "水沢",
+   "race_no": 5,
+   "post_time": "14:15",
+   "number": 7,
+   "name": "アルミノダンク",
+   "types": [
+    "aitop"
+   ],
+   "odds": 12.2,
+   "popularity": 8
   },
   {
    "race_id": "202611221106070405",
@@ -1376,7 +1418,8 @@
    "number": 2,
    "name": "マルケイファイン",
    "types": [
-    "rebound"
+    "rebound",
+    "aitop"
    ],
    "gap_days": 14,
    "last": {
@@ -2288,7 +2331,8 @@
    "number": 3,
    "name": "ミシェラドラータ",
    "types": [
-    "layoff"
+    "layoff",
+    "aitop"
    ],
    "gap_days": 168,
    "last": {
@@ -2320,6 +2364,20 @@
    },
    "odds": 3.2,
    "popularity": 1
+  },
+  {
+   "race_id": "202611221106070410",
+   "results_key": "202611221106070410",
+   "venue": "水沢",
+   "race_no": 10,
+   "post_time": "17:15",
+   "number": 2,
+   "name": "タナキーボー",
+   "types": [
+    "aitop"
+   ],
+   "odds": 6.2,
+   "popularity": 3
   },
   {
    "race_id": "202611221106070410",
