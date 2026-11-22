@@ -1,6 +1,6 @@
 {
  "date": "20261122",
- "updated": "2026-11-22 15:09",
+ "updated": "2026-11-22 15:15",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -2035,18 +2035,10 @@
    "number": 11,
    "name": "オグナ",
    "types": [
-    "letdown",
     "aitop"
    ],
-   "gap_days": 14,
-   "last": {
-    "date": "2026-11-08",
-    "finish": 7,
-    "field": 11,
-    "popularity": 2
-   },
-   "odds": 6.9,
-   "popularity": 4
+   "odds": 5.1,
+   "popularity": 3
   },
   {
    "race_id": "202611223129100602",
@@ -2277,7 +2269,7 @@
     "field": 10,
     "popularity": 9
    },
-   "odds": 13.5,
+   "odds": 14.2,
    "popularity": 6
   },
   {
@@ -2340,8 +2332,8 @@
     "field": 12,
     "popularity": 10
    },
-   "odds": 26.4,
-   "popularity": 8
+   "odds": 19.8,
+   "popularity": 10
   },
   {
    "race_id": "202611220304170206",
