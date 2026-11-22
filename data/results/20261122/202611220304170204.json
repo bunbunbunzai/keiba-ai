@@ -2,7 +2,172 @@
  "source": "rakuten",
  "date": "20261122",
  "race_id": "202611220304170204",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 3,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "4",
+    "yen": 400
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "4-5",
+    "yen": 13150
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "4",
+    "yen": 160
+   },
+   {
+    "combo": "5",
+    "yen": 1300
+   },
+   {
+    "combo": "6",
+    "yen": 390
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-5",
+    "yen": 2570
+   },
+   {
+    "combo": "4-6",
+    "yen": 500
+   },
+   {
+    "combo": "5-6",
+    "yen": 4030
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-5",
+    "yen": 13590
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-5-6",
+    "yen": 10900
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "4-5-6",
+    "yen": 162110
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-5",
+    "yen": 11070
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 4,
+   "name": "レオナウイン",
+   "time": "2:08.9",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "ブレイブハート",
+   "time": "2:09.8",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 6,
+   "name": "ホクセイアサノヤマ",
+   "time": "2:10.0",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 8,
+   "name": "ハートキング",
+   "time": "2:11.5",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 7,
+   "name": "トップエミー",
+   "time": "2:11.7",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 1,
+   "number": 1,
+   "name": "ヒゴサクラ",
+   "time": "2:16.2",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 9,
+   "name": "コーチャンファスト",
+   "time": "2:29.9",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 2,
+   "number": 2,
+   "name": "ディオネダイヤ",
+   "time": "2:35.6",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 3,
+   "number": 3,
+   "name": "リキ",
+   "time": "2:45.6",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
