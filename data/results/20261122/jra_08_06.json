@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 16,
+   "name": "ダノンステート",
+   "time": "1:11.8",
+   "margin": "",
+   "corners": "6-6",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "number": 4,
+   "name": "スターフュージョン",
+   "time": "1:11.9",
+   "margin": "３／４",
+   "corners": "1-1",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "number": 7,
+   "name": "ラフォン",
+   "time": "1:12.0",
+   "margin": "アタマ",
+   "corners": "2-2",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "4",
+   "number": 13,
+   "name": "ヒッグスボソン",
+   "time": "1:12.3",
+   "margin": "２",
+   "corners": "14-12",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "number": 14,
+   "name": "サンライズジュピタ",
+   "time": "1:12.4",
+   "margin": "３／４",
+   "corners": "5-4",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "6",
+   "number": 3,
+   "name": "ペンテリコン",
+   "time": "1:12.5",
+   "margin": "クビ",
+   "corners": "3-3",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "7",
+   "number": 15,
+   "name": "ビサーロ",
+   "time": "1:12.5",
+   "margin": "クビ",
+   "corners": "7-7",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "8",
+   "number": 10,
+   "name": "サヨノパララックス",
+   "time": "1:12.6",
+   "margin": "１／２",
+   "corners": "13-12",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "9",
+   "number": 11,
+   "name": "ジューンオアシス",
+   "time": "1:12.8",
+   "margin": "１",
+   "corners": "10-10",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "10",
+   "number": 6,
+   "name": "クリノミニスター",
+   "time": "1:13.0",
+   "margin": "１ 1/2",
+   "corners": "10-10",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "11",
+   "number": 2,
+   "name": "スズノソレイユ",
+   "time": "1:13.0",
+   "margin": "クビ",
+   "corners": "10-12",
+   "last3f": null,
+   "popularity": 16
+  },
+  {
+   "finish": "12",
+   "number": 5,
+   "name": "エシェックオロワ",
+   "time": "1:13.1",
+   "margin": "１／２",
+   "corners": "7-7",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "13",
+   "number": 1,
+   "name": "オドラニャソンソン",
+   "time": "1:13.2",
+   "margin": "１／２",
+   "corners": "14-12",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "14",
+   "number": 9,
+   "name": "アンピュルシオン",
+   "time": "1:13.3",
+   "margin": "クビ",
+   "corners": "7-7",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "15",
+   "number": 8,
+   "name": "フレイムスター",
+   "time": "1:13.4",
+   "margin": "３／４",
+   "corners": "14-12",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "16",
+   "number": 12,
+   "name": "エンブルーシャ",
+   "time": "1:15.4",
+   "margin": "大差",
+   "corners": "3-4",
+   "last3f": null,
+   "popularity": 12
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "16",
+    "yen": 340,
+    "pop": 2
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "16",
+    "yen": 140,
+    "pop": 2
+   },
+   {
+    "combo": "4",
+    "yen": 130,
+    "pop": 1
+   },
+   {
+    "combo": "7",
+    "yen": 250,
+    "pop": 5
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-8",
+    "yen": 510,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-16",
+    "yen": 270,
+    "pop": 1
+   },
+   {
+    "combo": "7-16",
+    "yen": 700,
+    "pop": 7
+   },
+   {
+    "combo": "4-7",
+    "yen": 530,
+    "pop": 5
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-16",
+    "yen": 590,
+    "pop": 1
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "16-4",
+    "yen": 1180,
+    "pop": 2
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-7-16",
+    "yen": 1770,
+    "pop": 3
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "16-4-7",
+    "yen": 8800,
+    "pop": 15
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261122",
+ "venue_code": "08",
+ "race_no": 6,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605060620261122/48",
+ "title": "レース結果 JRA"
+}
