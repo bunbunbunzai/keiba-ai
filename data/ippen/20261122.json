@@ -1,6 +1,6 @@
 {
  "date": "20261122",
- "updated": "2026-11-22 13:43",
+ "updated": "2026-11-22 13:49",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1476,7 +1476,7 @@
     "field": 12,
     "popularity": 10
    },
-   "odds": 4.7,
+   "odds": 5.1,
    "popularity": 2
   },
   {
@@ -1497,7 +1497,7 @@
     "field": 12,
     "popularity": 8
    },
-   "odds": 13.6,
+   "odds": 15.4,
    "popularity": 7
   },
   {
@@ -1671,6 +1671,20 @@
    "venue": "佐賀",
    "race_no": 1,
    "post_time": "15:15",
+   "number": 1,
+   "name": "ハクアイファミリー",
+   "types": [
+    "aitop"
+   ],
+   "odds": 11.1,
+   "popularity": 4
+  },
+  {
+   "race_id": "202611223230140201",
+   "results_key": "202611223230140201",
+   "venue": "佐賀",
+   "race_no": 1,
+   "post_time": "15:15",
    "number": 5,
    "name": "ビバムチャチョ",
    "types": [
@@ -1683,8 +1697,8 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": null,
-   "popularity": null
+   "odds": 44.5,
+   "popularity": 7
   },
   {
    "race_id": "202611223230140201",
@@ -1704,8 +1718,8 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": null,
-   "popularity": null
+   "odds": 26.7,
+   "popularity": 5
   },
   {
    "race_id": "202611223230140201",
@@ -1725,8 +1739,8 @@
     "field": 7,
     "popularity": 5
    },
-   "odds": null,
-   "popularity": null
+   "odds": 26.7,
+   "popularity": 5
   },
   {
    "race_id": "jra_20261122_東京_11",

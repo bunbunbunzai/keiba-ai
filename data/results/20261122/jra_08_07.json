@@ -1,0 +1,268 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 5,
+   "name": "ページターナー",
+   "time": "2:24.7",
+   "margin": "",
+   "corners": "4-4-4-4",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 9,
+   "name": "ドリームプレミア",
+   "time": "2:24.7",
+   "margin": "クビ",
+   "corners": "12-12-14-12",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "number": 2,
+   "name": "ローレルオーブ",
+   "time": "2:24.8",
+   "margin": "クビ",
+   "corners": "9-10-7-8",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "4",
+   "number": 12,
+   "name": "ボンドマティーニ",
+   "time": "2:24.8",
+   "margin": "アタマ",
+   "corners": "4-5-6-7",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "5",
+   "number": 16,
+   "name": "スピルイット",
+   "time": "2:24.9",
+   "margin": "クビ",
+   "corners": "6-7-9-2",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "6",
+   "number": 17,
+   "name": "ゴールドアクセス",
+   "time": "2:24.9",
+   "margin": "ハナ",
+   "corners": "15-15-16-14",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "number": 14,
+   "name": "ヴァロンブローサ",
+   "time": "2:24.9",
+   "margin": "クビ",
+   "corners": "9-8-10-8",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "8",
+   "number": 10,
+   "name": "パーヴォ",
+   "time": "2:25.2",
+   "margin": "２",
+   "corners": "17-17-14-14",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "9",
+   "number": 1,
+   "name": "コワンニシタガウ",
+   "time": "2:25.4",
+   "margin": "３／４",
+   "corners": "14-14-10-12",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "10",
+   "number": 4,
+   "name": "タイセイアビオン",
+   "time": "2:25.5",
+   "margin": "１／２",
+   "corners": "6-5-4-4",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "11",
+   "number": 7,
+   "name": "レイアン",
+   "time": "2:25.6",
+   "margin": "３／４",
+   "corners": "15-15-16-17",
+   "last3f": null,
+   "popularity": 17
+  },
+  {
+   "finish": "12",
+   "number": 15,
+   "name": "アスクファイアモア",
+   "time": "2:25.7",
+   "margin": "１／２",
+   "corners": "12-13-13-14",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "13",
+   "number": 3,
+   "name": "ゴールデンテティス",
+   "time": "2:25.7",
+   "margin": "ハナ",
+   "corners": "1-1-1-1",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "14",
+   "number": 13,
+   "name": "ペガサスジルシ",
+   "time": "2:26.4",
+   "margin": "４",
+   "corners": "8-8-7-8",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "15",
+   "number": 6,
+   "name": "ノブレスラブリエ",
+   "time": "2:27.0",
+   "margin": "３ 1/2",
+   "corners": "2-2-2-2",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "16",
+   "number": 18,
+   "name": "ドゥラシェーナ",
+   "time": "2:27.7",
+   "margin": "４",
+   "corners": "9-10-10-8",
+   "last3f": null,
+   "popularity": 16
+  },
+  {
+   "finish": "17",
+   "number": 8,
+   "name": "ウインヘリオドール",
+   "time": "2:27.8",
+   "margin": "１／２",
+   "corners": "3-3-2-4",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "18",
+   "number": 11,
+   "name": "ピエナオルフェ",
+   "time": "2:27.9",
+   "margin": "１／２",
+   "corners": "18-18-18-17",
+   "last3f": null,
+   "popularity": 18
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "5",
+    "yen": 410,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "5",
+    "yen": 170,
+    "pop": 1
+   },
+   {
+    "combo": "9",
+    "yen": 170,
+    "pop": 2
+   },
+   {
+    "combo": "2",
+    "yen": 320,
+    "pop": 6
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-5",
+    "yen": 670,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "5-9",
+    "yen": 510,
+    "pop": 1
+   },
+   {
+    "combo": "2-5",
+    "yen": 1010,
+    "pop": 10
+   },
+   {
+    "combo": "2-9",
+    "yen": 940,
+    "pop": 9
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "5-9",
+    "yen": 1200,
+    "pop": 1
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "5-9",
+    "yen": 2330,
+    "pop": 2
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-5-9",
+    "yen": 4080,
+    "pop": 5
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "5-9-2",
+    "yen": 17970,
+    "pop": 16
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261122",
+ "venue_code": "08",
+ "race_no": 7,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605060720261122/FD",
+ "title": "レース結果 JRA"
+}
