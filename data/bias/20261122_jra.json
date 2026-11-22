@@ -1,5 +1,17 @@
 {
  "date": "20261122",
- "updated": "2026-11-22 05:08",
- "bias": {}
+ "updated": "2026-11-22 10:04",
+ "bias": {
+  "東京ダ": {
+   "judgement": "フラット",
+   "confidence": "弱",
+   "races": [
+    1
+   ],
+   "front_share": 0.5,
+   "inner_share": 0.0,
+   "outer_share": 0.0,
+   "horses": 2
+  }
+ }
 }
