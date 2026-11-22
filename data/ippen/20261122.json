@@ -1,6 +1,6 @@
 {
  "date": "20261122",
- "updated": "2026-11-22 13:28",
+ "updated": "2026-11-22 13:40",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1046,8 +1046,8 @@
     "field": 8,
     "popularity": 8
    },
-   "odds": 8.1,
-   "popularity": 5
+   "odds": 11.6,
+   "popularity": 6
   },
   {
    "race_id": "202611221106070405",
@@ -1067,8 +1067,8 @@
     "field": 12,
     "popularity": 11
    },
-   "odds": 14.4,
-   "popularity": 8
+   "odds": 16.1,
+   "popularity": 7
   },
   {
    "race_id": "202611221106070405",
@@ -1081,8 +1081,8 @@
    "types": [
     "aitop"
    ],
-   "odds": 5.9,
-   "popularity": 2
+   "odds": 6.1,
+   "popularity": 4
   },
   {
    "race_id": "202611221106070405",
@@ -1102,8 +1102,8 @@
     "field": 10,
     "popularity": null
    },
-   "odds": 2.7,
-   "popularity": 1
+   "odds": 4.0,
+   "popularity": 2
   },
   {
    "race_id": "jra_20261122_京都_09",
@@ -1231,8 +1231,22 @@
     "field": 9,
     "popularity": 4
    },
-   "odds": 14.6,
-   "popularity": 7
+   "odds": 22.7,
+   "popularity": 8
+  },
+  {
+   "race_id": "202611220304170202",
+   "results_key": "202611220304170202",
+   "venue": "帯広ば",
+   "race_no": 2,
+   "post_time": "14:40",
+   "number": 4,
+   "name": "ディーエフアレス",
+   "types": [
+    "aitop"
+   ],
+   "odds": 7.0,
+   "popularity": 2
   },
   {
    "race_id": "202611220304170202",
@@ -1252,8 +1266,29 @@
     "field": 10,
     "popularity": 6
    },
-   "odds": 4.2,
-   "popularity": 1
+   "odds": 8.5,
+   "popularity": 3
+  },
+  {
+   "race_id": "202611220304170202",
+   "results_key": "202611220304170202",
+   "venue": "帯広ば",
+   "race_no": 2,
+   "post_time": "14:40",
+   "number": 7,
+   "name": "ホープノチカラ",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 14,
+   "last": {
+    "date": "2026-11-08",
+    "finish": 8,
+    "field": 10,
+    "popularity": 1
+   },
+   "odds": 10.7,
+   "popularity": 6
   },
   {
    "race_id": "202611220304170202",
@@ -1273,7 +1308,7 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": 102.4,
+   "odds": 51.2,
    "popularity": 10
   },
   {
