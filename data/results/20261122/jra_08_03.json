@@ -1,0 +1,178 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 5,
+   "name": "メイショウジェード",
+   "time": "2:00.8",
+   "margin": "",
+   "corners": "4-3-3-3",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 4,
+   "name": "クオーレサンライズ",
+   "time": "2:00.8",
+   "margin": "クビ",
+   "corners": "7-8-7-6",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "number": 7,
+   "name": "ヒロノリホープ",
+   "time": "2:00.9",
+   "margin": "１／２",
+   "corners": "3-3-3-3",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "number": 8,
+   "name": "キララハピネス",
+   "time": "2:01.6",
+   "margin": "４",
+   "corners": "6-6-5-5",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "number": 6,
+   "name": "マハロハ",
+   "time": "2:01.9",
+   "margin": "１ 3/4",
+   "corners": "1-1-1-1",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "6",
+   "number": 1,
+   "name": "シルヴァニクス",
+   "time": "2:02.5",
+   "margin": "４",
+   "corners": "2-2-2-2",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "7",
+   "number": 3,
+   "name": "ホウオウトリリオン",
+   "time": "2:03.6",
+   "margin": "７",
+   "corners": "9-9-9-9",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "8",
+   "number": 2,
+   "name": "ドラゴンアンセム",
+   "time": "2:03.8",
+   "margin": "１ 1/4",
+   "corners": "7-7-8-8",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "9",
+   "number": 9,
+   "name": "マーヴィン",
+   "time": "2:05.9",
+   "margin": "大差",
+   "corners": "4-5-5-7",
+   "last3f": null,
+   "popularity": 8
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "5",
+    "yen": 150,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "5",
+    "yen": 100,
+    "pop": 1
+   },
+   {
+    "combo": "4",
+    "yen": 120,
+    "pop": 2
+   },
+   {
+    "combo": "7",
+    "yen": 120,
+    "pop": 3
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-5",
+    "yen": 300,
+    "pop": 2
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-5",
+    "yen": 150,
+    "pop": 1
+   },
+   {
+    "combo": "5-7",
+    "yen": 160,
+    "pop": 2
+   },
+   {
+    "combo": "4-7",
+    "yen": 330,
+    "pop": 5
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-5",
+    "yen": 310,
+    "pop": 1
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "5-4",
+    "yen": 440,
+    "pop": 1
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-5-7",
+    "yen": 380,
+    "pop": 1
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "5-4-7",
+    "yen": 1230,
+    "pop": 1
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261122",
+ "venue_code": "08",
+ "race_no": 3,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605060320261122/29",
+ "title": "レース結果 JRA"
+}
