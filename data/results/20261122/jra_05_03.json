@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 10,
+   "name": "サルーミアモール",
+   "time": "1:23.0",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "2",
+   "number": 18,
+   "name": "ジョワリヴレ",
+   "time": "",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "3",
+   "number": 11,
+   "name": "イントリー",
+   "time": "",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "4",
+   "number": 15,
+   "name": "ボルトライン",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "5",
+   "number": 4,
+   "name": "ディーヴァソラーレ",
+   "time": "",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "10",
+    "yen": 1040,
+    "pop": 5
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "10",
+    "yen": 310,
+    "pop": 4
+   },
+   {
+    "combo": "18",
+    "yen": 350,
+    "pop": 6
+   },
+   {
+    "combo": "11",
+    "yen": 560,
+    "pop": 8
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-8",
+    "yen": 1840,
+    "pop": 6
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "10-18",
+    "yen": 1480,
+    "pop": 18
+   },
+   {
+    "combo": "10-11",
+    "yen": 2190,
+    "pop": 24
+   },
+   {
+    "combo": "11-18",
+    "yen": 2750,
+    "pop": 30
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "10-18",
+    "yen": 3940,
+    "pop": 11
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "10-18",
+    "yen": 7450,
+    "pop": 24
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "10-11-18",
+    "yen": 22370,
+    "pop": 70
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "10-18-11",
+    "yen": 118800,
+    "pop": 361
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261122",
+ "venue_code": "05",
+ "race_no": 3,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605050320261122/D8",
+ "title": "レース結果 JRA"
+}
