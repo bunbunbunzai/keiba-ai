@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 5,
+   "name": "サノノソルジャー",
+   "time": "1:08.7",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "number": 11,
+   "name": "ヴァーヴイレヴン",
+   "time": "",
+   "margin": "１ 3/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "3",
+   "number": 1,
+   "name": "レーヴデリオン",
+   "time": "",
+   "margin": "３",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "number": 3,
+   "name": "サザンマキシム",
+   "time": "",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "5",
+   "number": 15,
+   "name": "ソウラスフロス",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 16
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "5",
+    "yen": 490,
+    "pop": 2
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "5",
+    "yen": 190,
+    "pop": 2
+   },
+   {
+    "combo": "11",
+    "yen": 880,
+    "pop": 9
+   },
+   {
+    "combo": "1",
+    "yen": 260,
+    "pop": 4
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-6",
+    "yen": 450,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "5-11",
+    "yen": 1750,
+    "pop": 18
+   },
+   {
+    "combo": "1-5",
+    "yen": 440,
+    "pop": 4
+   },
+   {
+    "combo": "1-11",
+    "yen": 2310,
+    "pop": 25
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "5-11",
+    "yen": 6150,
+    "pop": 18
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "5-11",
+    "yen": 9760,
+    "pop": 30
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-5-11",
+    "yen": 9890,
+    "pop": 33
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "5-11-1",
+    "yen": 80100,
+    "pop": 210
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261123",
+ "venue_code": "03",
+ "race_no": 1,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603060120261123/A8",
+ "title": "レース結果 JRA"
+}
