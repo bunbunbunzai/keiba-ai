@@ -2,7 +2,183 @@
  "source": "rakuten",
  "date": "20261123",
  "race_id": "202611231106070509",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "1",
+    "yen": 290
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "1-5",
+    "yen": 11680
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "1",
+    "yen": 190
+   },
+   {
+    "combo": "5",
+    "yen": 710
+   },
+   {
+    "combo": "9",
+    "yen": 190
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-5",
+    "yen": 1890
+   },
+   {
+    "combo": "1-9",
+    "yen": 360
+   },
+   {
+    "combo": "5-9",
+    "yen": 2240
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-5",
+    "yen": 6390
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-5-9",
+    "yen": 8810
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "1-5-9",
+    "yen": 48580
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-5",
+    "yen": 6090
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 1,
+   "number": 1,
+   "name": "サウンドノバ",
+   "time": "1:43.3",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.1,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "コスモレンブランサ",
+   "time": "1:44.4",
+   "margin": "７",
+   "pos4": 3,
+   "last3f": 40.1,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 9,
+   "name": "スターアドミラル",
+   "time": "1:44.4",
+   "margin": "クビ",
+   "pos4": 6,
+   "last3f": 39.4,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 10,
+   "name": "ユウユウコラソン",
+   "time": "1:44.6",
+   "margin": "１ １／４",
+   "pos4": 5,
+   "last3f": 40.3,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 8,
+   "name": "ハチャトリアン",
+   "time": "1:44.8",
+   "margin": "３／４",
+   "pos4": 2,
+   "last3f": 40.6,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 4,
+   "number": 4,
+   "name": "ネイビス",
+   "time": "1:44.8",
+   "margin": "クビ",
+   "pos4": 8,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 6,
+   "number": 6,
+   "name": "アユツリー",
+   "time": "1:45.0",
+   "margin": "１",
+   "pos4": 4,
+   "last3f": 40.3,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 2,
+   "number": 2,
+   "name": "コンバットモモヒメ",
+   "time": "1:45.1",
+   "margin": "１／２",
+   "pos4": 7,
+   "last3f": 40.7,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 7,
+   "name": "マーゴットミトス",
+   "time": "1:47.1",
+   "margin": "大差",
+   "pos4": 9,
+   "last3f": 42.2,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 3,
+   "number": 3,
+   "name": "アカイツメ",
+   "time": "-",
+   "margin": "取消",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
