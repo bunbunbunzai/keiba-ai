@@ -1,0 +1,228 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 4,
+   "name": "アウスヴァール",
+   "time": "3:04.6",
+   "margin": "",
+   "corners": "3-4-2-2",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 10,
+   "name": "トータルクラリティ",
+   "time": "3:05.0",
+   "margin": "２",
+   "corners": "6-6-4-4",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "number": 3,
+   "name": "ディズレーリ",
+   "time": "3:05.6",
+   "margin": "３ 1/2",
+   "corners": "9-9-6-5",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "4",
+   "number": 6,
+   "name": "ノブダブルホワイト",
+   "time": "3:05.7",
+   "margin": "３／４",
+   "corners": "1-1-1-1",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "5",
+   "number": 13,
+   "name": "ジングアップ",
+   "time": "3:06.2",
+   "margin": "３",
+   "corners": "14-13-10-8",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "6",
+   "number": 11,
+   "name": "コブラ",
+   "time": "3:06.7",
+   "margin": "３ 1/2",
+   "corners": "3-2-2-2",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "7",
+   "number": 14,
+   "name": "アスクエピソード",
+   "time": "3:07.6",
+   "margin": "５",
+   "corners": "8-8-7-6",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "8",
+   "number": 9,
+   "name": "ヤマニンエンディマ",
+   "time": "3:08.2",
+   "margin": "３ 1/2",
+   "corners": "2-2-4-6",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "9",
+   "number": 2,
+   "name": "ストラクチャー",
+   "time": "3:08.4",
+   "margin": "１ 1/4",
+   "corners": "12-11-12-13",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "10",
+   "number": 1,
+   "name": "ロックウイズユー",
+   "time": "3:08.7",
+   "margin": "２",
+   "corners": "11-11-12-10",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "11",
+   "number": 7,
+   "name": "ツーエムクロノス",
+   "time": "3:10.1",
+   "margin": "８",
+   "corners": "9-10-10-10",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "12",
+   "number": 12,
+   "name": "ヴィクトリーロード",
+   "time": "3:16.8",
+   "margin": "大差",
+   "corners": "12-13-14-14",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "中止",
+   "number": 5,
+   "name": "マグナレガリア",
+   "time": "",
+   "margin": "",
+   "corners": "3-4-7-10",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "中止",
+   "number": 8,
+   "name": "ジュリアスローズ",
+   "time": "",
+   "margin": "",
+   "corners": "6-6-9-9",
+   "last3f": null,
+   "popularity": 13
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "4",
+    "yen": 190,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "4",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "10",
+    "yen": 360,
+    "pop": 7
+   },
+   {
+    "combo": "3",
+    "yen": 610,
+    "pop": 9
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-6",
+    "yen": 600,
+    "pop": 2
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-10",
+    "yen": 510,
+    "pop": 4
+   },
+   {
+    "combo": "3-4",
+    "yen": 980,
+    "pop": 13
+   },
+   {
+    "combo": "3-10",
+    "yen": 3800,
+    "pop": 32
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-10",
+    "yen": 1310,
+    "pop": 5
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "4-10",
+    "yen": 1600,
+    "pop": 5
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-4-10",
+    "yen": 8120,
+    "pop": 24
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "4-10-3",
+    "yen": 24260,
+    "pop": 72
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261123",
+ "venue_code": "03",
+ "race_no": 4,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603060420261123/C7",
+ "title": "レース結果 JRA"
+}
