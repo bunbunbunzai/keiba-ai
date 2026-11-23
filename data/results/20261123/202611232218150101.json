@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261123",
  "race_id": "202611232218150101",
- "tries": 6,
+ "tries": 7,
  "payouts": {
   "単勝": [
    {
@@ -77,7 +77,7 @@
    "name": "レヴェンドール",
    "time": "1:39.3",
    "margin": "",
-   "pos4": null,
+   "pos4": 2,
    "last3f": 40.7,
    "popularity": null
   },
@@ -88,7 +88,7 @@
    "name": "マイネルオラクル",
    "time": "1:39.5",
    "margin": "１",
-   "pos4": null,
+   "pos4": 1,
    "last3f": 41.5,
    "popularity": null
   },
@@ -99,7 +99,7 @@
    "name": "オメガオリーブ",
    "time": "1:40.7",
    "margin": "６",
-   "pos4": null,
+   "pos4": 5,
    "last3f": 41.3,
    "popularity": null
   },
@@ -110,7 +110,7 @@
    "name": "ノクターナルハント",
    "time": "1:41.0",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 3,
    "last3f": 42.2,
    "popularity": null
   },
@@ -121,7 +121,7 @@
    "name": "モーブプリエール",
    "time": "1:41.5",
    "margin": "２ １／２",
-   "pos4": null,
+   "pos4": 3,
    "last3f": 42.6,
    "popularity": null
   },
@@ -132,7 +132,7 @@
    "name": "アドバンスジェンヌ",
    "time": "1:42.6",
    "margin": "５",
-   "pos4": null,
+   "pos4": 5,
    "last3f": 43.7,
    "popularity": null
   },
@@ -143,7 +143,7 @@
    "name": "トモロウィンアスク",
    "time": "1:43.6",
    "margin": "５",
-   "pos4": null,
+   "pos4": 7,
    "last3f": 44.2,
    "popularity": null
   },
@@ -154,7 +154,7 @@
    "name": "スカッシュボーイ",
    "time": "1:44.6",
    "margin": "５",
-   "pos4": null,
+   "pos4": 8,
    "last3f": 44.6,
    "popularity": null
   },
@@ -165,7 +165,7 @@
    "name": "ビースペシフィック",
    "time": "1:45.3",
    "margin": "３",
-   "pos4": null,
+   "pos4": 9,
    "last3f": 45.2,
    "popularity": null
   }
