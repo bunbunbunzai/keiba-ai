@@ -343,9 +343,14 @@ def banner(slug: str, alt: str = "") -> str:
             f"loading='eager' fetchpriority='high' decoding='async'></picture></div>")
 
 
-def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False, head_extra: str = "",
+def page(title: str, body: str, path: str, desc: str = "", noindex: bool | str = False, head_extra: str = "",
          og_image: str = "/og/default.jpg") -> str:
+    """noindex=True はどの検索にも載せない（下書き・見送りなど）。noindex="google" は Google の検索にだけ載せない
+    （2026-11-23〜。Googleの評価のために数を絞るページ用。BingやChatGPTなどの検索からは今までどおり見える）。"""
     d = desc or "AIが日本の競馬（JRA・地方）の全レースを毎日予想し、外れも含めた全予想の回収率を公開しています。"
+    robots = ('<meta name="robots" content="noindex">' if noindex is True
+              else '<meta name="robots" content="max-image-preview:large">'
+              + ('<meta name="googlebot" content="noindex">' if noindex == "google" else ""))
     return f"""<!doctype html>
 <html lang="ja"><head><meta charset="utf-8">
 {GA_TAG}
@@ -354,7 +359,7 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool = False
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(d)}">
 <link rel="canonical" href="{BASE_URL}{path}">
-{'<meta name="robots" content="noindex">' if noindex else '<meta name="robots" content="max-image-preview:large">'}
+{robots}
 <meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(d)}">
 <meta property="og:url" content="{BASE_URL}{path}"><meta property="og:type" content="website"><meta property="og:site_name" content="{SITE_NAME}">
 <meta property="og:image" content="{BASE_URL}{og_image}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
@@ -728,19 +733,20 @@ def ask_context(date: str, p: dict) -> str:
 # ---------------- レースページ ----------------
 JRA_VENUES = ("札幌", "函館", "福島", "新潟", "東京", "中山", "中京", "京都", "阪神", "小倉")
 HIDE_LOCAL_AFTER = 3  # 地方の重賞以外のレース予想は、レースの日からこの日数たったらGoogleに載せない
+HIDE_JRA_AFTER = 7    # 中央の重賞以外のレース予想は1週間
 
 
 def race_hidden(date: str, p: dict) -> bool:
-    """Googleに載せないレース予想のページ（2026-11-20〜）：地方の重賞以外のレースで、レースの日から3日たったもの。
-    地方の毎日のレースは1日に100前後あり、レースが終わると検索されることがほとんど無い（11月上旬でも検索結果に出たのは1日12回ほど）。
+    """Googleに載せないレース予想のページ：重賞以外のレースで、レースの日から地方は3日（2026-11-20〜）、中央は7日（11-23〜）たったもの。
+    毎日のレースは1日に100前後あり、レースが終わると検索されることがほとんど無い（11月上旬でも検索結果に出たのは1日12回ほど）。
     同じ形のページが増え続けると、Googleにサイト全体を「量産されたページ」と見られやすいので、終わったものから外す。
-    ページ自体（成績の記録）とサイト内のリンクは残す。中央のレースと重賞は今までどおり載せる。"""
-    if venue_of(p) in JRA_VENUES or str(p.get("race_id", "")).startswith("jra"):
-        return False
+    ページ自体（成績の記録）とサイト内のリンクは残し、BingやChatGPTなどからは今までどおり見える（page の noindex="google"）。重賞は載せたまま。"""
     r = p.get("_race") or {}
     if extra.grade_of(r, p.get("race_name") or r.get("race_name") or r.get("title_text") or ""):
         return False
-    lim = (datetime.strptime(TODAY, "%Y%m%d") - timedelta(days=HIDE_LOCAL_AFTER)).strftime("%Y%m%d") if TODAY else ""
+    jra = venue_of(p) in JRA_VENUES or str(p.get("race_id", "")).startswith("jra")
+    days = HIDE_JRA_AFTER if jra else HIDE_LOCAL_AFTER
+    lim = (datetime.strptime(TODAY, "%Y%m%d") - timedelta(days=days)).strftime("%Y%m%d") if TODAY else ""
     return bool(lim) and date <= lim
 
 
@@ -945,7 +951,7 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
     _done = any(str(x.get("finish") or "").isdigit() for x in (p.get("_result") or {}).get("rows") or [])
     desc = (answer_sentence(date, p) + (f"{_cond}。" if _cond else "") + (f"相手は{_sub}。" if _sub else "")
             + "全頭の評価点・短評と買い目" + ("、結果と払戻" if _done else "") + "を掲載。")
-    return page(title, body, path, desc=desc, noindex=p.get("confidence") == "見送り" or race_hidden(date, p),
+    return page(title, body, path, desc=desc, noindex=True if p.get("confidence") == "見送り" else ("google" if race_hidden(date, p) else False),
                 head_extra="".join(jsonld(x) for x in ld), og_image=race_og(date, p))
 
 
@@ -1053,6 +1059,7 @@ def race_cond(p: dict) -> str:
 
 ALL_DATES: list[str] = []
 LINK_HORSES: set = set()
+INDEXNOW_SUFFIX: dict = {}  # ページ → 更新日に足す印（結果が出たレースの "r" など）。Bingなどへの更新のお知らせ（site/indexnow.py）で「変わった」と分かるように
 LINK_JOCKEYS: set = set()
 LINK_COURSES: set = set()
 FEED_EXTRA: list = []
@@ -2417,6 +2424,8 @@ def build() -> None:
             write(f"/races/{d}/{p['race_id']}.html", redirect_page(path))
             if p.get("confidence") != "見送り" and not race_hidden(d, p):
                 lastmod[path] = f"{d[:4]}-{d[4:6]}-{d[6:8]}"
+                if (p.get("_result") or {}).get("rows"):
+                    INDEXNOW_SUFFIX[path] = "r"  # 結果が載ったら、もう1回だけ知らせる
         st, rt = day_stats(ps)
         day_rows.append((d, len(ps), roi_txt(st, rt)))
         day_money[d] = (st, rt)
@@ -2635,6 +2644,12 @@ def build() -> None:
     sm = "".join(f"<url><loc>{BASE_URL}{u}</loc>{f'<lastmod>{min(m, today_iso)}</lastmod>' if m else ''}</url>"
                  for u, m in list(fixed.items()) + sorted(lastmod.items(), reverse=True))
     (OUT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + sm + "</urlset>\n", encoding="utf-8")
+    # Bingなどへの更新のお知らせ（IndexNow）用：ページごとの「いまの状態」（更新日＋印）の一覧。
+    # site/indexnow.py が公開中の一覧と比べ、新しいページ・状態が変わったページだけを送る（同じページの送り直しをやめる）。
+    # Googleにだけ載せないページのうち、G2・G3の重賞データ記事は Bing には知らせる（column.BING_EXTRA）
+    state = {u: (min(m, today_iso) if m else "-") + INDEXNOW_SUFFIX.get(u, "") for u, m in list(fixed.items()) + list(lastmod.items())}
+    state.update({u: min(m, today_iso) for u, m in getattr(column, "BING_EXTRA", {}).items() if u not in state})
+    (OUT / "indexnow-state.json").write_text(json.dumps(state, ensure_ascii=False, separators=(",", ":"), sort_keys=True), encoding="utf-8")
     print(f"built {len(dates)} days into {OUT}")
 
 

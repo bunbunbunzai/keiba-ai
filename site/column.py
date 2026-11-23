@@ -494,6 +494,9 @@ def subst(s: str, v: dict) -> str:
     return re.sub(r"\{\{([^{}\n]+?)\}\}", lambda m: v.get(m.group(1).strip(), m.group(0)), s)
 
 
+BING_EXTRA: dict[str, str] = {}  # Googleにだけ載せない記事（G2・G3の重賞データ記事）のパス → 更新日。build.py が IndexNow 用の一覧に足す
+
+
 def _hidden_gdata(c: dict) -> bool:
     """Googleに載せない重賞データ記事（2026-11-20〜）：自動で作った重賞のデータ記事（series: gdata）のうち、G1（J・G1を含む）以外のレースの分。
     G2・G3まで1レース4〜5本ずつ自動で書いた記事が5日で86本に増え、Googleにサイト全体を量産と見られやすいため。
@@ -681,7 +684,9 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
                 "<p class='meta'>公開", f"<picture>{src}<img class='hero' src='/assets/{hero}.jpg' alt='' width='1200' height='800' fetchpriority='high'></picture><p class='meta'>公開", 1)
             ld["image"] = base_url + og_img
         hide = c["draft"] or _hidden_gdata(c)
-        write(path, page(f"{title} | {site_name}", html_, path, desc=desc, noindex=hide,
+        if hide and not c["draft"]:
+            BING_EXTRA[path] = mod_iso  # Googleにだけ載せないが、Bingなどには更新を知らせる
+        write(path, page(f"{title} | {site_name}", html_, path, desc=desc, noindex=True if c["draft"] else ("google" if hide else False),
                          head_extra=jsonld(ld) + jsonld(crumb), og_image=og_img))
         if not hide:
             lastmod[path] = mod_iso

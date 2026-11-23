@@ -584,21 +584,26 @@ def publish_when(d: str) -> str:
 
 
 # ---------- どのレースへ案内するか ----------
+SCHED_SOON, SCHED_FAR = 14, 120  # 「次のレース」を案内する範囲（日）。日程には来年の分も入るので、遠いレースは案内しない
+
+
 def target(slug: str) -> tuple | None:
-    """('pred', 日付, 予想, 名前) 予想を公開済みで発走前／('done', …) 発走後3日以内／('sched', 日付, 日程, 名前) 予想はまだ／None。"""
+    """('pred', 日付, 予想, 名前) 予想を公開済みで発走前／('done', …) 発走後3日以内／('sched', 日付, 日程, 名前) 予想はまだ／None。
+    終わったばかりのレース（3日以内）があるときは、次のレースが2週間以内でなければ結果を案内する（1年先の同じレースを案内しないように）。"""
     B = _B
     preds = PREDS.get(slug) or []
     for d, p, name, _g in preds:
         if d >= TODAY and B.before_post(d, p) or d > TODAY:
             return ("pred", d, p, name)
-    for r in SCHED_BY_SLUG.get(slug) or []:
-        if r["date"] >= TODAY and not any(d == r["date"] for d, *_ in preds):
-            return ("sched", r["date"], r, r["name"])
     lo = (_dt(TODAY) - timedelta(days=3)).strftime("%Y%m%d")
-    for d, p, name, _g in reversed(preds):
-        if d >= lo:
-            return ("done", d, p, name)
-    return None
+    done = next((("done", d, p, name) for d, p, name, _g in reversed(preds) if d >= lo), None)
+    soon, far = ((_dt(TODAY) + timedelta(days=n)).strftime("%Y%m%d") for n in (SCHED_SOON, SCHED_FAR))
+    for r in sorted(SCHED_BY_SLUG.get(slug) or [], key=lambda r: r["date"]):
+        if r["date"] >= TODAY and not any(d == r["date"] for d, *_ in preds):
+            if r["date"] <= (soon if done else far):
+                return ("sched", r["date"], r, r["name"])
+            break
+    return done
 
 
 def _a(href: str, head: str, sub: str, where: str, to: str, main: bool = False) -> str:

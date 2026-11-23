@@ -7,6 +7,7 @@
   {"year": 2025, "complete": true, "races": [{date, abbr, grade, venue, cond, course, surface, distance, url,
     title, name, slug, track, rows: [{fin, frame, num, name, sex, age, kg, jockey, time, margin, corners, last3f, pop, trainer}], pay: {...}}]}
   今年の分は、まだ行われていないレースも日程として入る（rows なし）。過去の年は全レースを取れたら complete にして、以後は読まない。
+  来年の分は、JRAが一覧を出していれば（例年9月の終わりに発表）日程だけを保存する（年をまたぐ特集まとめ・今週末のまとめ用）。
 
   python graded_hist.py --years 11 --max-minutes 120
 """
@@ -404,6 +405,25 @@ def save_year(d: dict) -> None:
     (OUT / f"{d['year']}.json").write_text(json.dumps(d, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
 
+def next_year(sess, now) -> None:
+    """来年の重賞の日程（一覧のページだけ。成績はまだ無い）。JRAがまだ出していない・読めないときは何もしない。
+    年が明けると、この年は「今年」としていつもの流れ（成績を足していく）に入る。"""
+    y = now.year + 1
+    try:
+        listed = parse_list(sess.get(LIST.format(y=y)).text, y)
+    except Exception as e:  # noqa: BLE001
+        print("next-year list error", y, e, flush=True)
+        return
+    listed = [r for r in listed if r["date"][:4] == str(y) and r["abbr"] and r["venue"] in VENUES]
+    if len(listed) < 100:  # 例年は約140レース。少なすぎるときは作りかけのページと見て保存しない
+        print("next-year list too short", y, len(listed), flush=True)
+        return
+    for r in listed:
+        r["name"], r["slug"] = slug_for("", r["abbr"], r["venue"])
+    save_year({"year": y, "updated": now.strftime("%Y-%m-%d %H:%M"), "races": listed, "complete": False})
+    print(y, "races（日程のみ）", len(listed), flush=True)
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--years", type=int, default=21, help="今年を含めてさかのぼる年数")
@@ -422,6 +442,8 @@ def main() -> None:
     now = datetime.now(JST)
     sess = PoliteSession(min_interval=5.0, encoding="shift_jis")
     fetched = 0
+    if not a.sample and now.month >= 9:
+        next_year(sess, now)
     for y in range(now.year, now.year - a.years, -1):
         if time.monotonic() > deadline:
             break

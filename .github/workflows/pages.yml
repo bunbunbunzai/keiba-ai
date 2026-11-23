@@ -51,6 +51,11 @@ jobs:
           LEAGUE_URL: ${{ vars.LEAGUE_URL == 'off' && '' || vars.LEAGUE_URL || 'https://keiba-league.bunbunbunzai.workers.dev' }}
           VS_PUBLIC: ${{ vars.VS_PUBLIC || '1' }}  # 月間ランキングを一般公開（repository variable で 0 にすると合言葉つきに戻る）
           LEAGUE_OWNERS: ${{ vars.LEAGUE_OWNERS }}
+      # 検索エンジン（Bing など）に知らせるページの一覧を作る：公開中のサイトと比べて、新しいページ・中身が変わったページだけ。
+      # 公開の前に比べる（公開のあとでは差が無くなるため）。失敗しても公開は止めない
+      - name: 更新を知らせるページの一覧を作る（IndexNow）
+        continue-on-error: true
+        run: python site/indexnow.py diff
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
@@ -68,4 +73,4 @@ jobs:
       - name: 検索エンジンに更新を通知（IndexNow）
         if: success()
         continue-on-error: true
-        run: python site/indexnow.py
+        run: python site/indexnow.py send

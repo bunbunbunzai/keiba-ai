@@ -11,9 +11,11 @@
 1. publish：画像が公開URLで見られる「ready」の投稿を X・Instagram に出す（鍵が無ければ draft のまま）
 2. prepare：新しく条件を満たした投稿の画像と文面を social/<日付>/ に作る（→ commit・push・サイト再公開 → 次の回で publish）
 
-設定 social/config.json：{"x": true, "instagram": true, "x_url": "none" | "graded" | "key" | "all", "x_kinds": [...]}
+設定 social/config.json：{"x": true, "instagram": true, "x_url": "none" | "graded" | "key" | "all", "x_kinds": [...], "x_scope": "g1"}
   x_kinds: X に出す投稿の種類（無ければ全部）。2026-11-20から重賞（grade_pre・grade_res）と大きな的中（hit）だけ
   （Xの投稿238件でサイトへの流入が2回だったため、流入は期待せず費用を抑える。全成績・厳選・勝負レースはサイトで公開を続ける）
+  x_scope: "g1" と書くと、X に出すのは G1（J・G1 と地方の Jpn1 を含む）の予想と結果だけになる（2026-11-23から。
+  投稿388件でフォロワー0人だったため、いちばん見られる G1 だけに絞った）。この1行を消すと x_kinds どおり（重賞すべて＋大きな的中）に戻る
   x_url: X の本文にサイトのURLを入れる投稿の範囲。none=入れない、graded=重賞のみ、key=重賞・勝負レース・全成績、all=全部
   （X API の従量課金はURL付き投稿が約0.20ドル、URL無しが約0.015ドルと差が大きいため範囲を選べる）
 鍵（GitHub Secrets → 環境変数）：X_API_KEY X_API_SECRET X_ACCESS_TOKEN X_ACCESS_SECRET / IG_USER_ID IG_ACCESS_TOKEN
@@ -141,6 +143,23 @@ def ledger_roi() -> str:
     rows = [r for r in csv.DictReader(f.open(encoding="utf-8")) if r["date"] >= STATS_FROM and int(r["stake"] or 0) > 0]
     st, rt = sum(int(r["stake"]) for r in rows), sum(int(r["return"]) for r in rows)
     return f"{100 * rt / st:.1f}%" if st else "―"
+
+
+# ---------------- X に出す範囲 ----------------
+def is_g1(g) -> bool:
+    """G1（障害の J・G1、地方の Jpn1 を含む）か。"""
+    return nfkc(g or "").upper().replace(" ", "") in ("G1", "J・G1", "JPN1")
+
+
+def x_wanted(cfg: dict, kind: str, grade) -> bool:
+    """この投稿を X に出すか（social/config.json の x・x_kinds・x_scope で決まる）。"""
+    if not cfg.get("x", True):
+        return False
+    if cfg.get("x_kinds") and kind not in cfg["x_kinds"]:
+        return False
+    if cfg.get("x_scope") == "g1":
+        return kind in ("grade_pre", "grade_res") and is_g1(grade)
+    return True
 
 
 # ---------------- 投稿の候補 ----------------
@@ -520,9 +539,10 @@ def prepare(date: str, cfg: dict) -> int:
             social_img.render(f2, cd)
             images.append(f"/social/{date}/{f2.name}")
         t = texts(date, c, cfg)
-        st["posts"][c["id"]] = {"kind": c["kind"], "image": images[0], "images": images, "x_text": t["x"], "x_thread": thread_texts(date, c),
+        grade = (c.get("p") or {}).get("_grade") or ""  # 1レースの投稿だけ（厳選・全成績には無い）
+        st["posts"][c["id"]] = {"kind": c["kind"], "grade": grade, "image": images[0], "images": images, "x_text": t["x"], "x_thread": thread_texts(date, c),
                                 "ig_caption": t["instagram"], "url": t["url"], "created": now().strftime("%Y-%m-%d %H:%M"),
-                                "x": "pending" if cfg.get("x", True) and (not cfg.get("x_kinds") or c["kind"] in cfg["x_kinds"]) else "off",
+                                "x": "pending" if x_wanted(cfg, c["kind"], grade) else "off",
                                 "instagram": "pending" if cfg.get("instagram", True) else "off"}
         n += 1
     save_state(date, st)
@@ -679,7 +699,7 @@ def publish(date: str, dry: bool = False, only: str = "") -> int:
     # Instagram側でAPIが止められている間は送らない（失敗を重ねない）。毎回の確認で解除されたら自動で再開する
     cfg_ = load(SOCIAL / "config.json", {}) or {}
     ig_on = cfg_.get("instagram", True)
-    x_kinds = cfg_.get("x_kinds") or []  # 設定を変える前に作った下書きも、対象外の種類は X に出さない
+    # 設定を変える前に作った下書きも、対象外のものは X に出さない（x_wanted で種類と範囲を確かめる）
     ig_blocked = (not only) and "API access blocked" in " ".join((load(SOCIAL / "status.json", {}) or {}).get("ig_probe") or [])  # 投稿IDを指定した手動テストでは送る
     for pid, e in st["posts"].items():
         if only and pid != only:
@@ -701,7 +721,7 @@ def publish(date: str, dry: bool = False, only: str = "") -> int:
             if k == "instagram" and not ig_on and not only:
                 e[k] = "off"
                 continue
-            if k == "x" and x_kinds and e.get("kind") not in x_kinds and not only:
+            if k == "x" and not x_wanted(cfg_, e.get("kind"), e.get("grade")) and not only:
                 e[k] = "off"
                 continue
             if k == "instagram" and ig_blocked and not dry:
