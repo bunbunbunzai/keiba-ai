@@ -1,6 +1,6 @@
 {
  "date": "20261123",
- "updated": "2026-11-23 10:59",
+ "updated": "2026-11-23 11:02",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -569,8 +569,8 @@
     "field": 12,
     "popularity": 5
    },
-   "odds": 12.9,
-   "popularity": 5
+   "odds": 8.9,
+   "popularity": 3
   },
   {
    "race_id": "202611231106070501",
@@ -590,8 +590,8 @@
     "field": 8,
     "popularity": null
    },
-   "odds": 10.5,
-   "popularity": 3
+   "odds": 5.7,
+   "popularity": 2
   },
   {
    "race_id": "202611231106070501",
@@ -611,8 +611,8 @@
     "field": 12,
     "popularity": 2
    },
-   "odds": 168.8,
-   "popularity": 9
+   "odds": 30.2,
+   "popularity": 6
   },
   {
    "race_id": "202611231106070502",
@@ -632,8 +632,22 @@
     "field": 10,
     "popularity": 1
    },
-   "odds": 9.9,
-   "popularity": 4
+   "odds": 3.9,
+   "popularity": 2
+  },
+  {
+   "race_id": "202611231106070502",
+   "results_key": "202611231106070502",
+   "venue": "水沢",
+   "race_no": 2,
+   "post_time": "12:10",
+   "number": 7,
+   "name": "ツキノマバタキ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 11.7,
+   "popularity": 6
   },
   {
    "race_id": "202611231106070502",
@@ -653,7 +667,7 @@
     "field": 9,
     "popularity": 3
    },
-   "odds": 2.1,
+   "odds": 3.3,
    "popularity": 1
   },
   {
