@@ -6,7 +6,7 @@
    "name": "ラインホルト",
    "time": "1:38.7",
    "margin": "",
-   "corners": "",
+   "corners": "2-3",
    "last3f": null,
    "popularity": 1
   },
@@ -14,9 +14,9 @@
    "finish": "2",
    "number": 5,
    "name": "タイセイパーシスト",
-   "time": "",
+   "time": "1:39.1",
    "margin": "２ 1/2",
-   "corners": "",
+   "corners": "1-1",
    "last3f": null,
    "popularity": 6
   },
@@ -24,9 +24,9 @@
    "finish": "3",
    "number": 7,
    "name": "ドーリック",
-   "time": "",
+   "time": "1:39.3",
    "margin": "１ 1/2",
-   "corners": "",
+   "corners": "6-6",
    "last3f": null,
    "popularity": 2
   },
@@ -34,9 +34,9 @@
    "finish": "4",
    "number": 10,
    "name": "ジーティーイレブン",
-   "time": "",
+   "time": "1:39.4",
    "margin": "クビ",
-   "corners": "",
+   "corners": "2-2",
    "last3f": null,
    "popularity": 4
   },
@@ -44,11 +44,91 @@
    "finish": "5",
    "number": 9,
    "name": "ピエナモルタル",
-   "time": "",
+   "time": "1:39.5",
    "margin": "１／２",
-   "corners": "",
+   "corners": "5-5",
    "last3f": null,
    "popularity": 7
+  },
+  {
+   "finish": "6",
+   "number": 2,
+   "name": "パラダイムシフト",
+   "time": "1:39.6",
+   "margin": "３／４",
+   "corners": "8-8",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "7",
+   "number": 13,
+   "name": "パレスラン",
+   "time": "1:39.9",
+   "margin": "２",
+   "corners": "12-12",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "8",
+   "number": 12,
+   "name": "イントゥーザブルー",
+   "time": "1:40.2",
+   "margin": "１ 1/2",
+   "corners": "2-3",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "9",
+   "number": 3,
+   "name": "ロイヤルガンモ",
+   "time": "1:40.8",
+   "margin": "４",
+   "corners": "10-9",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "10",
+   "number": 6,
+   "name": "セイウンガジュマル",
+   "time": "1:41.1",
+   "margin": "１ 3/4",
+   "corners": "6-6",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "11",
+   "number": 11,
+   "name": "フリューゲルホープ",
+   "time": "1:41.3",
+   "margin": "１ 1/4",
+   "corners": "10-10",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "12",
+   "number": 8,
+   "name": "パネヴァ",
+   "time": "1:41.3",
+   "margin": "クビ",
+   "corners": "9-10",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "13",
+   "number": 1,
+   "name": "アルファマロン",
+   "time": "1:41.7",
+   "margin": "２ 1/2",
+   "corners": "13-13",
+   "last3f": null,
+   "popularity": 8
   }
  ],
  "payouts": {
