@@ -122,6 +122,12 @@ def feature_links() -> dict[str, tuple[str, str]]:
         name = re.sub(r"\d{4}.*$", "", head.replace("特集：", "")).strip()
         if sid in hubs and name:
             out[name] = (hubs[sid], head.replace("特集：", ""))
+    # 1レース1シリーズの特集まとめ（2027年〜。頭書きに race_name がある）：これから行われるレースの分だけ、重賞ページから案内する
+    import weekly  # noqa: PLC0415
+    for c in column.columns():
+        if (not c["draft"] and c["slug"].endswith("-guide") and c.get("race_name") and c.get("series") in weekly.FEATURE_RACE
+                and (c.get("race_date") or "") >= (weekly.TODAY or "")):
+            out[c["race_name"]] = (c["slug"], f"{c['race_name']}{str(c['series'])[-4:]}")
     return out
 
 

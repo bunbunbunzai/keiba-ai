@@ -35,6 +35,7 @@ import review
 import horses
 import monthly
 import weekly
+import glossdata
 import ippen as IPPEN  # scraper/（strategy が sys.path に入れる）
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -434,6 +435,10 @@ def predictions(date: str) -> list[dict]:
         p["_race"] = load_json(ROOT / "data" / "races" / date / f"{p['race_id']}.json") or {}
         for h_ in p["_race"].get("horses") or []:  # 騎手名：見習いの印を外し、地方の略称は正式な氏名に（分かる分だけ）
             if h_.get("jockey"):
+                h_["jockey_raw"] = h_["jockey"]  # 出馬表に書かれたままの形（前走の騎手との比べ・減量の印の集計に使う。site/glossdata.py）
+                mk_ = re.search(r"[▲△☆★◇]", h_["jockey"])
+                if mk_:
+                    h_["jockey_mark"] = mk_.group(0)
                 h_["jockey"] = extra.jockey_name(h_["jockey"], h_.get("jockey_id"))
         p["_score"] = sc_by.get(p["race_id"])
         p["_result"] = load_json(ROOT / "data" / "results" / date / f"{p.get('results_key') or p['race_id']}.json") or {}
@@ -974,15 +979,42 @@ FEATURES = [  # トップに出す特集（期間限定）：(表示する最終
      "ファン投票の日程と過去の1位馬の成績、過去の全着順から見た人気・枠・年齢・騎手の傾向をまとめた。"),
     ("20261229", "/column/tokyo-daishoten2026-guide/", "特集：東京大賞典2026（12月29日）",
      "オメガパフュームの4連覇、2025年の地方馬の優勝など、過去10年の勝ち馬と前哨戦の結果をまとめた。"),
+    # 2027年（日付はJRAが発表した2027年の重賞の一覧による。特集まとめは scraper/g1_hub_cols.py がレースの約5か月前から作る）
+    ("20270104", "/column/nakayama-kimpai2027-guide/", "特集：中山金杯・京都金杯2027（1月4日）",
+     "年明け最初の重賞。前哨戦の結果と、過去10年の人気・枠・騎手の傾向、勝ち馬の一覧をまとめた。"),
+    ("20270221", "/column/february-stakes2027-guide/", "特集：フェブラリーステークス2027（2月21日）",
+     "その年最初のG1。前哨戦の日程と結果、過去10年の人気・枠・騎手の傾向、勝ち馬の一覧をまとめた。"),
+    ("20270328", "/column/takamatsunomiya-kinen2027-guide/", "特集：高松宮記念2027（3月28日）",
+     "春のスプリントG1。前哨戦の日程と結果、過去10年の人気・枠・騎手の傾向、勝ち馬の一覧をまとめた。"),
+    ("20270404", "/column/osaka-hai2027-guide/", "特集：大阪杯2027（4月4日）",
+     "春の中距離G1。前哨戦の日程と結果、過去10年の人気・枠・騎手の傾向、勝ち馬の一覧をまとめた。"),
+    ("20270411", "/column/oka-sho2027-guide/", "特集：桜花賞2027（4月11日）",
+     "牝馬三冠の1戦目。前哨戦の日程と結果、過去10年の人気・枠・騎手の傾向、勝ち馬の一覧をまとめた。"),
+    ("20270418", "/column/satsuki-sho2027-guide/", "特集：皐月賞2027（4月18日）",
+     "クラシック三冠の1戦目。前哨戦の日程と結果、過去10年の人気・枠・騎手の傾向、勝ち馬の一覧をまとめた。"),
+    ("20270502", "/column/tenno-sho-spring2027-guide/", "特集：天皇賞(春)2027（5月2日）",
+     "芝3200mのG1。前哨戦の日程と結果、過去10年の人気・枠・騎手の傾向、勝ち馬の一覧をまとめた。"),
+    ("20270509", "/column/nhk-mile-cup2027-guide/", "特集：NHKマイルカップ2027（5月9日）",
+     "3歳のマイルG1。前哨戦の日程と結果、過去10年の人気・枠・騎手の傾向、勝ち馬の一覧をまとめた。"),
+    ("20270516", "/column/victoria-mile2027-guide/", "特集：ヴィクトリアマイル2027（5月16日）",
+     "春の牝馬のG1。前哨戦の日程と結果、過去10年の人気・枠・騎手の傾向、勝ち馬の一覧をまとめた。"),
+    ("20270523", "/column/oaks2027-guide/", "特集：オークス2027（5月23日）",
+     "牝馬三冠の2戦目。前哨戦の日程と結果、過去10年の人気・枠・騎手の傾向、勝ち馬の一覧をまとめた。"),
+    ("20270530", "/column/derby2027-guide/", "特集：日本ダービー2027（5月30日）",
+     "3歳馬の頂点を決めるG1。前哨戦の日程と結果、過去10年の人気・枠・騎手の傾向、勝ち馬の一覧をまとめた。"),
+    ("20270606", "/column/yasuda-kinen2027-guide/", "特集：安田記念2027（6月6日）",
+     "春のマイルG1。前哨戦の日程と結果、過去10年の人気・枠・騎手の傾向、勝ち馬の一覧をまとめた。"),
+    ("20270613", "/column/takarazuka-kinen2027-guide/", "特集：宝塚記念2027（6月13日）",
+     "上半期のグランプリ。前哨戦の日程と結果、過去10年の人気・枠・騎手の傾向、勝ち馬の一覧をまとめた。"),
 ]
-FEATURE_HUB = "/column/aki-g1-2026/"  # 特集の一覧（バナーの末尾にリンクする）
+FEATURE_HUBS = (("2027", "/column/g1-nittei-2027/", "2027年のG1日程を見る"), ("2026", "/column/aki-g1-2026/", "秋のG1特集をすべて見る"))  # 特集の一覧（年ごと。バナーの末尾にリンクする）
 
 
 def feature_banner() -> str:
     for last, href, title, text in FEATURES:
         if TODAY <= last and (ROOT / "columns" / (href.strip("/").split("/")[-1] + ".md")).exists():
-            hub = (f"　<a href='{FEATURE_HUB}'>秋のG1特集をすべて見る</a>"
-                   if (ROOT / "columns" / (FEATURE_HUB.strip("/").split("/")[-1] + ".md")).exists() else "")
+            hub = next((f"　<a href='{h}'>{esc(t)}</a>" for y, h, t in FEATURE_HUBS
+                        if last[:4] == y and (ROOT / "columns" / (h.strip("/").split("/")[-1] + ".md")).exists()), "")
             return f"<p class='notice feature'><a href='{href}'><b>{esc(title)}</b></a>　{esc(text)}{hub}</p>"
     return ""
 
@@ -1842,7 +1874,7 @@ def glossary_page() -> str:
                   + "</ul></section>" for c, lst in cats.items())
     return page(f"競馬用語集：馬券・レース・コース・展開の言葉{f'（{len(terms)}語）' if terms else ''} | {SITE_NAME}",
                 f"<p class='crumb'><a href='/'>トップ</a> › 用語集</p><h1>競馬用語集</h1>" + banner("glossary") +
-                f"<p class='answer'>競馬でよく使う言葉を、始めたばかりの人にも分かるように説明している。予想ページの用語をタップするとここに飛ぶ。</p>"
+                f"<p class='answer'>競馬でよく使う言葉を、始めたばかりの人にも分かるように説明している。それぞれの用語のページには、払戻の大きさ・人気別の成績・このサイトのAIの成績など、実際のレースから数えた数字も載せている。予想ページの用語をタップするとここに飛ぶ。</p>"
                 + gen + f"<section class='card'><h2>このサイトの予想で使う言葉</h2><dl class='gloss'>{items}</dl></section>", "/glossary/",
                 desc="競馬用語集。単勝・複勝・3連単などの馬券、重賞・ハンデ戦などのレース、逃げ・差しなどの展開、馬体重・斤量など、競馬の言葉を初心者向けに説明。")
 
@@ -1856,8 +1888,13 @@ def glossary_term_pages() -> dict[str, str]:
         rel = "".join(f"<li><a href='/glossary/{r}/'>{esc(by[r]['term'])}</a>：{esc(by[r]['short'])}</li>" for r in x.get("related") or [] if r in by)
         same = [y for y in terms if y.get("category") == x.get("category") and y["slug"] != x["slug"]][:8]
         col = GLOSS_COLUMN.get(x["slug"])
-        col_html = (f"<section class='card'><h2>実際のデータで見る</h2><p>このサイトの全レースの記録を使った解説：<a href='/column/{col}/'>コラムを読む</a></p></section>"
-                    if col and (ROOT / "columns" / f"{col}.md").exists() else "")
+        col_ok = bool(col and (ROOT / "columns" / f"{col}.md").exists())
+        # このサイトが集めた記録から、その用語に関係する数字を足す（一般的な説明だけでは、どのサイトにもある内容になるため）
+        gd_html, _gd_text = glossdata.section(x["slug"], x["term"])
+        if gd_html and col_ok:  # くわしい解説のコラムがある用語は、数字の箱の最後から案内する
+            gd_html = gd_html.replace("<p class='meta'>元にした記録", f"<p>この用語をデータでくわしく見た<a href='/column/{col}/'>コラム</a>もある。</p><p class='meta'>元にした記録", 1)
+        col_html = (gd_html or (f"<section class='card'><h2>実際のデータで見る</h2><p>このサイトの全レースの記録を使った解説：<a href='/column/{col}/'>コラムを読む</a></p></section>"
+                                if col_ok else ""))
         ld = {"@context": "https://schema.org", "@type": "DefinedTerm", "name": x["term"], "description": x["short"],
               "inDefinedTermSet": {"@type": "DefinedTermSet", "name": f"{SITE_NAME} 競馬用語集", "url": BASE_URL + "/glossary/"}, "url": BASE_URL + path}
         body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/glossary/'>用語集</a> › {esc(x['term'])}</p>"
@@ -1881,7 +1918,9 @@ def glossary_term_pages() -> dict[str, str]:
             {"@type": "ListItem", "position": 2, "name": "用語集", "item": BASE_URL + "/glossary/"},
             {"@type": "ListItem", "position": 3, "name": x["term"], "item": BASE_URL + path}]}
         write(path, page(title, body, path, desc=desc[:118], head_extra=jsonld(ld) + jsonld(bc)))
-        out[path] = x.get("updated")
+        # 更新日：数字は毎日少しずつ変わるが、検索エンジンへのお知らせは週に1回で足りるので、その週の月曜にする
+        wk = (datetime.strptime(TODAY, "%Y%m%d") - timedelta(days=datetime.strptime(TODAY, "%Y%m%d").weekday())).strftime("%Y-%m-%d") if TODAY else ""
+        out[path] = max(x.get("updated") or "", wk) if gd_html else x.get("updated")
     return out
 
 
@@ -1901,6 +1940,8 @@ def limits_page(t: dict, worst_venue: tuple[str, str] | None) -> str:
 
 
 SITE_CHANGES = [
+    ("2026-11-23", "G1の特集まとめの冒頭に、開催日・コースと、発表の順番（出走馬 → 枠順 → AI予想 → レース）のうち今どこまで進んだか、その時点の入口（出走馬の一覧、AI予想・全頭診断・「AI vs あなた」、結果と答え合わせ）をまとめた箱を置いた。用語集のすべての用語に、実際のレースの数字を足した（中央競馬の約1万レースの払戻・人気別の成績・枠や4コーナーの位置ごとの成績、今年の重賞の結果、このサイトのAIの印の成績など。サイトの更新のたびに数え直す）。"),
+    ("2026-11-23", "2027年のG1日程の一覧と、2027年の特集まとめ（中山金杯・京都金杯・フェブラリーステークス・高松宮記念・大阪杯・桜花賞・中山グランドジャンプ・皐月賞）を公開した。日付はJRAが発表した2027年の重賞の一覧による。前哨戦の結果は、レースが終わるたびに自動で入る。天皇賞（春）より先のレースは、レースの約5か月前から順に公開する。X（@zentou_log）への自動投稿は、G1の予想と結果だけにした。"),
     ("2026-11-20", "G1の特集まとめは、レースが近づくと題名と中身が自動で変わるようにした。出走予定馬の発表、出走馬の確定（木曜の夕方）、枠順の確定（金曜の朝）、AI予想の公開と進むごとにJRAの発表の表を入れ替え、枠順の表にはAIの印も付ける。レースが終わると、結果・払戻・AIの◎の着順を記事の冒頭に載せる。"),
     ("2026-11-20", "阪神ジュベナイルフィリーズ・朝日杯フューチュリティステークス・ホープフルステークス・中山大障害・東京大賞典の特集まとめを追加した（日程・条件、今年の前哨戦の結果、過去10年の傾向と勝ち馬）。G1の特集まとめには、JRAが発表した登録馬の一覧が自動で載るようにした。レースのページなどの説明文を、検索結果で中身が伝わる長さにした。"),
     ("2026-11-20", "G1の出走予定馬と重賞に登録した馬は、AIがまだ評価していなくても馬のページを作るようにした（JRAの競走馬情報から、これまでの成績・毛色・馬名の意味・セリ・生産牧場・獲得賞金・JRAの重賞の勝ちを載せる）。今ある馬のページにも同じ情報を足した。重賞ページの題名に、レースの年と日付を入れた。レースのあとの2週間は、結果とAI予想の答え合わせを先に出す。"),
@@ -2319,14 +2360,14 @@ RACESIM_V = _hashlib.md5(RACESIM_JS.encode("utf-8")).hexdigest()[:8]
 RACESIM3D_JS = (Path(__file__).resolve().parent / "racesim3d.js").read_bytes()  # 重賞の3D表示（site/3d で three.js から作る）
 RACEHORSE_GLB = (Path(__file__).resolve().parent / "3d" / "racehorse.glb").read_bytes()  # 馬と騎手の3Dモデル
 RACESIM3D_V = _hashlib.md5(RACESIM3D_JS + RACEHORSE_GLB).hexdigest()[:8]
-ASSET_V = _hashlib.md5((CSS + JS + EXTRA_CSS + EXTRA_JS + weekly.CSS + weekly.JS).encode("utf-8")).hexdigest()[:8]  # 追加分の見た目を変えたときも古いCSSが残らないように
+ASSET_V = _hashlib.md5((CSS + JS + EXTRA_CSS + EXTRA_JS + weekly.CSS + weekly.JS + glossdata.CSS).encode("utf-8")).hexdigest()[:8]  # 追加分の見た目を変えたときも古いCSSが残らないように
 
 
 def build() -> None:
     if OUT.exists():
         shutil.rmtree(OUT)
     OUT.mkdir()
-    (OUT / "style.css").write_text(CSS + EXTRA_CSS + weekly.CSS, encoding="utf-8")
+    (OUT / "style.css").write_text(CSS + EXTRA_CSS + weekly.CSS + glossdata.CSS, encoding="utf-8")
     (OUT / "manifest.webmanifest").write_text(json.dumps({
         "name": SITE_NAME, "short_name": SITE_NAME, "start_url": "/", "display": "standalone", "background_color": "#f2f3f0", "theme_color": "#146b45", "lang": "ja",
         "icons": [{"src": "/assets/logo-mark.png", "sizes": "512x512", "type": "image/png"}, {"src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png"}, {"src": "/assets/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}, {"src": "/assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png"}]},
@@ -2538,6 +2579,11 @@ def build() -> None:
                        + ("<p class='notice'><a href='/vs/'>月間ランキングに参加する（名前を決めるだけ・無料）→</a>　<a href='/vs/guide/'>遊び方</a></p>" if LEAGUE_URL and VS_PUBLIC else "") +
                        "<p class='meta'>勝敗は「あなたの◎の着順」と「AIの◎の着順」を比べて決める。同着は引き分け。結果がまだ出ていないレースは数えない。</p>", "/me/", noindex=True))
     write("/glossary/", glossary_page())
+    try:  # 用語のページに足す「実際のレースの数字」を数える。数えられなくても、用語のページは説明だけで出す
+        glossdata.prepare(_sys.modules[__name__], by_date, sg, weekly._K)
+    except Exception as e:  # noqa: BLE001
+        print("glossdata: 集計に失敗", repr(e))
+        glossdata._B = None
     lastmod.update(glossary_term_pages())
     _vb = defaultdict(lambda: [0, 0, 0])
     for r in led:

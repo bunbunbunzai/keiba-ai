@@ -23,7 +23,12 @@ JRA = ("札幌", "函館", "福島", "新潟", "東京", "中山", "中京", "�
 # 手で書いた特集（columns の series）と重賞ページの対応
 FEATURE_RACE = {"eliza2026": "queen-elizabeth-cup", "mile2026": "mile-championship", "jc2026": "japan-cup",
                 "jcd2026": "champions-cup", "arima2026": "arima-kinen", "hjf2026": "hanshin-juvenile-fillies", "afs2026": "asahi-hai-fs",
-                "daishogai2026": "nakayama-daishogai", "hopeful2026": "hopeful-stakes", "tdt2026": "tokyo-daishoten"}
+                "daishogai2026": "nakayama-daishogai", "hopeful2026": "hopeful-stakes", "tdt2026": "tokyo-daishoten",
+                # 2027年（scraper/g1_hub_cols.py の NEXT が、レースの約5か月前から特集まとめを作る）
+                "nkimpai2027": "nakayama-kimpai", "kkimpai2027": "kyoto-kimpai", "feb2027": "february-stakes", "takamatsu2027": "takamatsunomiya-kinen",
+                "osaka2027": "osaka-hai", "oka2027": "oka-sho", "ngj2027": "nakayama-grand-jump", "satsuki2027": "satsuki-sho",
+                "tenharu2027": "tenno-sho-spring", "nhk2027": "nhk-mile-cup", "vm2027": "victoria-mile", "oaks2027": "oaks", "derby2027": "derby",
+                "yasuda2027": "yasuda-kinen", "takara2027": "takarazuka-kinen"}
 
 _B = None
 TODAY = ""
@@ -573,6 +578,14 @@ def _md(d: str) -> str:
 def _hub_col(slug: str, year: str) -> str:
     """そのレース・その年の特集まとめ（〇〇<年>-guide）の記事名。無ければ空。"""
     return next((c["slug"] for c in FEAT.get(slug) or [] if c["slug"].endswith("-guide") and str(c.get("series", ""))[-4:] == year), "")
+
+
+def hub_date(series) -> str:
+    """特集（series）のレースの日（YYYYMMDD）。レースの特集でない・日程が分からなければ空。"""
+    slug = FEATURE_RACE.get(series or "")
+    y = str(series or "")[-4:]
+    r = (_K.get(slug) or {}).get(int(y)) if slug and y.isdigit() else None
+    return (r or {}).get("date", "")
 
 
 def _next_hub(after: str) -> tuple | None:

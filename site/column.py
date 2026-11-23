@@ -391,8 +391,14 @@ FEATURE_SERIES = [
     ("g1kiroku", "G1の記録（2006年以降）", "JRAの平地のG1を、2006年以降の全着順（JRA公式の成績）から集計した記録集。荒れるG1・堅いG1、高配当、騎手・調教師のランキング、連覇、年齢、牝馬の記録。"),
     ("umadata", "競走馬のデータ（毛色・名前・セリ）", "JRAで走っている3歳以上の馬の競走馬情報を1頭ずつ調べて、毛色の割合、馬名の付け方と冠名、セリで取引された馬の成績を数えた。"),
     ("jbc2026", "特集：JBC2026（金沢・門別）", "11月3日に行われたJBC4競走の結果と、このサイトのAI予想の振り返り。"),
+    ("g12027", "特集：2027年のG1・重賞", "2027年のJRAのG1の日程と、各レースの特集まとめ（日程・前哨戦の結果・過去10年の傾向）。レースの約5か月前から順に公開している。"),
 ]
-FEATURE_IDS = tuple(sid for sid, _, _ in FEATURE_SERIES)
+# 2027年の特集まとめ（1レース1シリーズ。scraper/g1_hub_cols.py の NEXT、site/weekly.py の FEATURE_RACE と同じ名前）。
+# コラムの一覧では、1レースずつ見出しを立てると長くなるので、「特集：2027年のG1・重賞」（g12027）の下にレースの日付順でまとめる
+FEATURE_2027 = ("nkimpai2027", "kkimpai2027", "feb2027", "takamatsu2027", "osaka2027", "oka2027", "ngj2027", "satsuki2027",
+                "tenharu2027", "nhk2027", "vm2027", "oaks2027", "derby2027", "yasuda2027", "takara2027")
+FEATURE_GROUP = {"g12027": FEATURE_2027}
+FEATURE_IDS = tuple(sid for sid, _, _ in FEATURE_SERIES) + FEATURE_2027
 
 
 def hero_of(c: dict) -> str:
@@ -623,6 +629,10 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
         elif c.get("series") in FEATURE_IDS:  # 特集の記事は、同じ特集の記事を先に並べ、ほかの特集の入口（order 1）を続ける
             same = sorted((o for o in pub if o is not c and o.get("series") == c.get("series")), key=lambda o: int(o.get("order") or 0))
             others = [o for o in pub if o is not c and o.get("series") in FEATURE_IDS and o.get("series") != c.get("series") and str(o.get("order")) == "1"]
+            # 特集が増えたので、これから行われるレースの特集（日付の近い順）を先に、6つまで。レースの日は weekly.hub_date から
+            import weekly as _wk  # noqa: PLC0415
+            _hd = {o["slug"]: (_wk.hub_date(o.get("series")) or o.get("race_date") or "") for o in others}
+            others = sorted(others, key=lambda o: (not _hd[o["slug"]], _hd[o["slug"]] < _tk, _hd[o["slug"]] if _hd[o["slug"]] >= _tk else str(99999999 - int(_hd[o["slug"]] or 0))))[:6]
             related = (rel_block("この特集のほかの記事", same, False) + rel_block("ほかの特集", others, False)
                        + rel_block("最近の重賞の全頭診断", autos_new[:3], False))
         else:
@@ -715,6 +725,9 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
     jumps = []  # 一覧の上に並べる、各見出しへのジャンプ
     for sid, head, note in FEATURE_SERIES:
         feats = sorted((c for c in pub if c.get("series") == sid), key=lambda c: int(c.get("order") or 0))
+        # まとめて出すシリーズ（2027年の特集まとめ）：これからのレースを日付の近い順に、終わったレースはそのあとに
+        grp = sorted((c for c in pub if c.get("series") in FEATURE_GROUP.get(sid, ())), key=lambda c: (c.get("race_date", "") < _tk, c.get("race_date", "")))
+        feats += grp
         if feats:
             feat_items += (f"<h2 id='{sid}'>{esc(head)}</h2><p class='meta'>{esc(note)}</p>"
                            + clip([_li(c) for c in feats], 5))
