@@ -1,6 +1,6 @@
 {
  "date": "20261123",
- "updated": "2026-11-23 18:44",
+ "updated": "2026-11-23 19:03",
  "bias": {
   "水沢ダ": {
    "judgement": "内先行",
@@ -38,25 +38,27 @@
     8,
     9
    ],
-   "front_share": 0.88,
-   "inner_share": 0.19,
-   "outer_share": 0.38,
-   "horses": 16
+   "front_share": 0.89,
+   "inner_share": 0.28,
+   "outer_share": 0.33,
+   "horses": 18
   },
   "佐賀ダ": {
    "judgement": "先行有利",
-   "confidence": "中",
+   "confidence": "強",
    "races": [
     1,
     2,
     3,
     4,
-    5
+    5,
+    6,
+    7
    ],
-   "front_share": 0.83,
-   "inner_share": 0.25,
-   "outer_share": 0.42,
-   "horses": 12
+   "front_share": 0.86,
+   "inner_share": 0.36,
+   "outer_share": 0.36,
+   "horses": 14
   }
  }
 }

@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261123",
  "race_id": "202611232218150109",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "ニャンタロウ",
    "time": "1:28.6",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 38.6,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "スターキャンディ",
    "time": "1:28.8",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 38.2,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "エムティジーク",
    "time": "1:29.1",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 38.3,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "シャンパンスター",
    "time": "1:29.3",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 38.2,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "パッションビート",
    "time": "1:30.3",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 39.0,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "グラシアレス",
    "time": "1:30.6",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 39.7,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "ベラジオスパーク",
    "time": "1:30.7",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 38.8,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ケーズコマクサ",
    "time": "1:30.8",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 39.8,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "フェイスリフト",
    "time": "1:31.4",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 40.6,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "リュウノタイタン",
    "time": "1:32.4",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 41.8,
    "popularity": null
   }
  ]
