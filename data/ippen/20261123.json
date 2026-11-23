@@ -1,6 +1,6 @@
 {
  "date": "20261123",
- "updated": "2026-11-23 13:26",
+ "updated": "2026-11-23 13:32",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1423,7 +1423,7 @@
     "field": 11,
     "popularity": 5
    },
-   "odds": 48.9,
+   "odds": 52.9,
    "popularity": 9
   },
   {
@@ -1444,8 +1444,8 @@
     "field": 7,
     "popularity": 5
    },
-   "odds": 40.8,
-   "popularity": 8
+   "odds": 37.8,
+   "popularity": 7
   },
   {
    "race_id": "202611231106070506",
@@ -1458,8 +1458,8 @@
    "types": [
     "aitop"
    ],
-   "odds": 5.9,
-   "popularity": 4
+   "odds": 5.7,
+   "popularity": 3
   },
   {
    "race_id": "jra_20261123_福島_10",
@@ -1665,8 +1665,8 @@
     "field": 9,
     "popularity": 6
    },
-   "odds": null,
-   "popularity": null
+   "odds": 3.3,
+   "popularity": 1
   },
   {
    "race_id": "202611230304170303",
@@ -1686,8 +1686,8 @@
     "field": 9,
     "popularity": 9
    },
-   "odds": null,
-   "popularity": null
+   "odds": 3.8,
+   "popularity": 3
   },
   {
    "race_id": "202611230304170303",
@@ -1698,7 +1698,8 @@
    "number": 10,
    "name": "コトブキエルダー",
    "types": [
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 7,
    "last": {
@@ -1707,8 +1708,8 @@
     "field": 9,
     "popularity": 3
    },
-   "odds": null,
-   "popularity": null
+   "odds": 25.9,
+   "popularity": 7
   },
   {
    "race_id": "202611232218150104",
