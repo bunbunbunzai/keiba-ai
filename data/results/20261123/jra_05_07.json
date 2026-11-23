@@ -6,49 +6,159 @@
    "name": "ゴールドブレイズ",
    "time": "1:24.9",
    "margin": "",
-   "corners": "",
-   "last3f": null,
+   "corners": "8-8",
+   "last3f": 35.9,
    "popularity": 5
   },
   {
    "finish": "2",
    "number": 14,
    "name": "クアロアランチ",
-   "time": "",
+   "time": "1:25.0",
    "margin": "３／４",
-   "corners": "",
-   "last3f": null,
+   "corners": "2-2",
+   "last3f": 36.6,
    "popularity": 1
   },
   {
    "finish": "3",
    "number": 15,
    "name": "デスサイズ",
-   "time": "",
+   "time": "1:25.1",
    "margin": "１／２",
-   "corners": "",
-   "last3f": null,
+   "corners": "3-3",
+   "last3f": 36.6,
    "popularity": 4
   },
   {
    "finish": "4",
    "number": 6,
    "name": "トワイライトビュー",
-   "time": "",
+   "time": "1:25.3",
    "margin": "１ 1/4",
-   "corners": "",
-   "last3f": null,
+   "corners": "12-12",
+   "last3f": 36.0,
    "popularity": 2
   },
   {
    "finish": "5",
    "number": 16,
    "name": "ユイノカタリベ",
-   "time": "",
+   "time": "1:25.4",
    "margin": "クビ",
-   "corners": "",
-   "last3f": null,
+   "corners": "12-12",
+   "last3f": 36.1,
    "popularity": 8
+  },
+  {
+   "finish": "6",
+   "number": 12,
+   "name": "スタームーンナイト",
+   "time": "1:25.4",
+   "margin": "アタマ",
+   "corners": "1-1",
+   "last3f": 37.1,
+   "popularity": 3
+  },
+  {
+   "finish": "7",
+   "number": 10,
+   "name": "イスキオス",
+   "time": "1:25.6",
+   "margin": "１ 1/4",
+   "corners": "8-8",
+   "last3f": 36.6,
+   "popularity": 6
+  },
+  {
+   "finish": "8",
+   "number": 9,
+   "name": "ザローズハーツ",
+   "time": "1:25.8",
+   "margin": "１ 1/4",
+   "corners": "7-7",
+   "last3f": 37.0,
+   "popularity": 7
+  },
+  {
+   "finish": "9",
+   "number": 11,
+   "name": "マナマカナ",
+   "time": "1:25.8",
+   "margin": "ハナ",
+   "corners": "14-14",
+   "last3f": 36.3,
+   "popularity": 10
+  },
+  {
+   "finish": "10",
+   "number": 4,
+   "name": "メラヴィリオーザ",
+   "time": "1:26.1",
+   "margin": "１ 3/4",
+   "corners": "15-15",
+   "last3f": 35.9,
+   "popularity": 12
+  },
+  {
+   "finish": "11",
+   "number": 3,
+   "name": "オブシディアン",
+   "time": "1:26.1",
+   "margin": "クビ",
+   "corners": "16-15",
+   "last3f": 36.0,
+   "popularity": 13
+  },
+  {
+   "finish": "12",
+   "number": 13,
+   "name": "マイネルブリオン",
+   "time": "1:26.1",
+   "margin": "ハナ",
+   "corners": "3-4",
+   "last3f": 37.5,
+   "popularity": 9
+  },
+  {
+   "finish": "13",
+   "number": 5,
+   "name": "リッチハンター",
+   "time": "1:26.4",
+   "margin": "１ 3/4",
+   "corners": "6-4",
+   "last3f": 37.8,
+   "popularity": 15
+  },
+  {
+   "finish": "14",
+   "number": 1,
+   "name": "サーロー",
+   "time": "1:26.9",
+   "margin": "２ 1/2",
+   "corners": "3-4",
+   "last3f": 38.3,
+   "popularity": 11
+  },
+  {
+   "finish": "15",
+   "number": 7,
+   "name": "ワタシイノッテマス",
+   "time": "1:27.8",
+   "margin": "５",
+   "corners": "10-10",
+   "last3f": 38.6,
+   "popularity": 14
+  },
+  {
+   "finish": "16",
+   "number": 8,
+   "name": "サツキバラード",
+   "time": "1:27.9",
+   "margin": "１／２",
+   "corners": "10-10",
+   "last3f": 38.7,
+   "popularity": 16
   }
  ],
  "payouts": {
