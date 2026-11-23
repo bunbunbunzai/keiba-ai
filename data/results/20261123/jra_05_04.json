@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 5,
+   "name": "リズムオブサンダー",
+   "time": "1:38.8",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 8,
+   "name": "メジャーシンガー",
+   "time": "",
+   "margin": "３ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "number": 4,
+   "name": "ゼットターム",
+   "time": "",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "4",
+   "number": 3,
+   "name": "レイデアルマス",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "number": 9,
+   "name": "ラヴレヴァルール",
+   "time": "",
+   "margin": "２ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "5",
+    "yen": 190,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "5",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "8",
+    "yen": 110,
+    "pop": 2
+   },
+   {
+    "combo": "4",
+    "yen": 140,
+    "pop": 3
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-5",
+    "yen": 210,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "5-8",
+    "yen": 130,
+    "pop": 1
+   },
+   {
+    "combo": "4-5",
+    "yen": 240,
+    "pop": 2
+   },
+   {
+    "combo": "4-8",
+    "yen": 270,
+    "pop": 3
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "5-8",
+    "yen": 210,
+    "pop": 1
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "5-8",
+    "yen": 330,
+    "pop": 1
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-5-8",
+    "yen": 380,
+    "pop": 1
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "5-8-4",
+    "yen": 980,
+    "pop": 1
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261123",
+ "venue_code": "05",
+ "race_no": 4,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605060420261123/BD",
+ "title": "レース結果 JRA"
+}
