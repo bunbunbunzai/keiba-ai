@@ -39,6 +39,7 @@ GRADED_YEAR: dict[str, list] = {}   # 馬名 → 今年のJRA重賞の出走（d
 NOMS: dict[str, dict] = {}          # 重賞の slug → 特別レース登録馬（data/nominations。JRA発表。プレレーティングより前から出る）
 NOM_BY_HORSE: dict[str, dict] = {}  # 馬名 → {date, slug, name}（これからの重賞に特別登録している）
 WAKU: dict[str, dict] = {}          # 重賞の slug → 出走馬・枠順（JRA発表。data/races の出馬表か data/waku。これから行われるレースだけ）
+AUTO_COL: dict[str, str] = {}       # レースID → そのレースの全頭診断の記事（columns の auto: true）
 _K: dict = {}                       # graded_cols.keyed（JRA重賞の全年の結果。特集まとめの結果の箱に使う）
 GRADES = ("G1", "G2", "G3", "J・G1", "J・G2", "J・G3")
 JRA_VENUE_CODE ={"01": "札幌", "02": "函館", "03": "福島", "04": "新潟", "05": "東京", "06": "中山", "07": "中京", "08": "京都", "09": "阪神", "10": "小倉"}
@@ -88,10 +89,12 @@ def prepare(B, by_date: dict, today: str) -> None:
                 PREDS.setdefault(slug, []).append((d, p, extra.clean_name(name), g))
     for v in PREDS.values():
         v.sort(key=lambda x: (x[0], x[1]["_race"].get("post_time") or ""))
-    FEAT.clear(); GDATA.clear()
+    FEAT.clear(); GDATA.clear(); AUTO_COL.clear()
     for c in column.columns():
         if c["draft"]:
             continue
+        if c.get("auto") == "true" and c.get("race_id"):
+            AUTO_COL[c["race_id"]] = c["slug"]
         s = c.get("series")
         if s in FEATURE_RACE:
             FEAT.setdefault(FEATURE_RACE[s], []).append(c)
@@ -561,6 +564,184 @@ def hub_phase(slug: str, year: str) -> dict | None:
     return None
 
 
+# ---------- 特集まとめの冒頭の箱 ----------
+def _md(d: str) -> str:
+    x = _dt(d)
+    return f"{x.month}/{x.day}({WD[x.weekday()]})"
+
+
+def _hub_col(slug: str, year: str) -> str:
+    """そのレース・その年の特集まとめ（〇〇<年>-guide）の記事名。無ければ空。"""
+    return next((c["slug"] for c in FEAT.get(slug) or [] if c["slug"].endswith("-guide") and str(c.get("series", ""))[-4:] == year), "")
+
+
+def _next_hub(after: str) -> tuple | None:
+    """after より後に行われるレースのうち、特集まとめがある、いちばん近いもの：(記事名, レース名, 日付)。"""
+    best = None
+    for series, slug in FEATURE_RACE.items():
+        y = series[-4:]
+        r = (_K.get(slug) or {}).get(int(y)) if y.isdigit() else None
+        col = _hub_col(slug, y)
+        if r and col and r["date"] > after and r["date"] >= TODAY and (best is None or r["date"] < best[2]):
+            best = (col, _guide_name(slug) or r.get("name") or r.get("abbr") or "", r["date"])
+    return best
+
+
+def _hub_days(slug: str, d: str, g1: bool) -> dict:
+    """発表の日どり：{出走馬・枠順・AI予想: (日付, 時間帯)}。日が言えないものは入れない。
+    言えるのは土日のレース（出走馬は木曜の夕方）で、枠順は土日のG1（金曜の朝）と有馬記念（木曜の夕方の公開抽選）だけ（_waku_when と同じ決まり）。"""
+    x = _dt(d)
+    wk = x.weekday() in (5, 6)
+    thu = (x - timedelta(days=(x.weekday() - 3) % 7)).strftime("%Y%m%d")
+    first = x - timedelta(days=2 if x.weekday() in (6, 0) else 1)
+    first = min(max(first, _dt(TODAY)), x) if TODAY else first  # 予定の日を過ぎても予想がまだなら、今日
+    out = {}
+    if slug == "arima-kinen":
+        out["出走馬"], out["枠順"] = (thu, "午後"), (thu, "夕方の抽選")
+    elif wk:
+        out["出走馬"] = (thu, "夕方")
+        if g1:
+            out["枠順"] = (_waku_day(d), "朝")
+    if wk or slug == "arima-kinen":
+        out["AI予想"] = (first.strftime("%Y%m%d"), "昼から")
+    return out
+
+
+def hub_top(slug: str, year: str, anchors: dict | None = None, post_hint: str = "", meta: dict | None = None) -> str:
+    """特集まとめ（〇〇<年>-guide）の題名のすぐ下に置く箱：開催日・コース・格、発表の順番のうち今どこか、
+    その段階でいちばん見たいページへの大きな入口（AI予想・全頭診断・「AI vs あなた」、出走馬の表、結果）。
+    検索から来た人の入口は特集まとめが多いのに、開催日や予想への入口が長い前文の下にあった（スマホで2画面め以降）ため。
+    日程はJRAの重賞の一覧（data/graded_hist）から。一覧に無いレース（地方の東京大賞典など）は、記事の頭書きの
+    race_date・race_venue・race_course・race_grade（meta）を使う。どちらも無ければ空を返す（記事に書いた前文のまま）。"""
+    if _B is None or not year.isdigit():
+        return ""
+    B, esc = _B, _B.esc
+    anchors = anchors or {}
+    row = (_K.get(slug) or {}).get(int(year))
+    jra = bool(row)  # JRAの重賞（出走馬・枠順の表が自動で載る）
+    if not row and meta and re.fullmatch(r"\d{8}", str(meta.get("date") or "")) and str(meta["date"])[:4] == year:
+        row = {"date": str(meta["date"]), "venue": meta.get("venue") or "", "course": meta.get("course") or "",
+               "grade": meta.get("grade") or "", "cond": meta.get("cond") or ""}
+    res = _result_of(slug, year)
+    if not row and not res:
+        return ""
+    d = (res or row)["date"]
+    sch = _sched_of(slug, d)
+    name = (res or {}).get("name") or sch.get("name") or _guide_name(slug) or (row or {}).get("name") or (row or {}).get("abbr") or ""
+    venue = (res or {}).get("venue") or (row or {}).get("venue") or ""
+    course = (res or {}).get("course") or ((row or {}).get("course") or "").replace(" ", "").replace(",", "").replace("メートル", "m")
+    course = re.sub(r"^ダ(?!ー)", "ダート", re.sub(r"^障(?!害)", "障害", course))  # 一覧の略し方（ダ・障）をそのまま出さない
+    grade = (row or {}).get("grade") or sch.get("grade") or ""
+    cond = (row or {}).get("cond") or ""
+    pred = next((p for dd, p, *_ in PREDS.get(slug) or [] if dd == d), None)
+    w = WAKU.get(slug) if (WAKU.get(slug) or {}).get("date") == d else None
+    e = ENTRIES.get(slug) if (ENTRIES.get(slug) or {}).get("date") == d else None
+    nom = NOMS.get(slug) if (NOMS.get(slug) or {}).get("date") == d else None
+    post = (pred or {}).get("_race", {}).get("post_time") or (w or {}).get("post_time") or ""
+    post_txt = f"{post}発走" if post else (f"{post_hint}発走予定" if post_hint else "")
+    days = (_dt(d) - _dt(TODAY)).days
+    left = "終了" if res else ("今日" if days == 0 else "明日" if days == 1 else f"あと{days}日" if days > 1 else "")
+    skip = bool(pred) and (pred.get("confidence") == "見送り" or (pred.get("marks") or {}).get("◎") is None)
+    path = B.race_path(d, pred) if pred else ""
+    open_ = bool(pred) and (d > TODAY or B.before_post(d, pred))  # 予想を公開済みで発走前
+
+    # --- 開催日・コース・格 ---
+    gc = "・".join(x for x in (grade, cond) if x)
+    facts = (f"<div><dt>開催日</dt><dd>{esc(day_jp(d))}"
+             + (f"<small>{esc('・'.join(x for x in (post_txt, left) if x))}</small>" if post_txt or left else "") + "</dd></div>"
+             + f"<div><dt>コース</dt><dd>{esc(venue)} {esc(course)}" + (f"<small>{esc(gc)}</small>" if gc else "") + "</dd></div>")
+
+    # --- 発表の順番と、今どこか ---
+    done = [bool(w or pred or res), bool((w and w["numbered"]) or pred or res), bool(pred or res), bool(res)]
+    cur = done.index(False) if False in done else -1
+    steps = ""
+    prev = (_dt(d) - timedelta(days=1)).strftime("%Y%m%d")
+    # 地方のレースは、ふだんの全レースと同じく前日の夜に予想を出す（出走馬・枠順の日どりは主催者しだいなので書かない）
+    days_of = _hub_days(slug, d, grade in ("G1", "J・G1")) if jra else {"AI予想": (prev, "夜")}
+    pub = publish_when(d) if jra else f"{day_jp(prev)}の夜に公開予定"
+    for i, label in enumerate(("出走馬", "枠順", "AI予想", "レース")):
+        cls = "done" if done[i] else ("now" if i == cur else "")
+        mark = "<i aria-hidden='true'>✓</i>" if done[i] else ""
+        day, tm = (d, post) if label == "レース" else days_of.get(label, ("", "枠順のあと" if label == "AI予想" else ""))
+        when = ("<span>済み</span>" if done[i] and i < 3
+                else (f"<span>{esc(_md(day))}</span>" if day else "") + (f"<span>{esc(tm)}</span>" if tm else ""))
+        steps += (f"<li{f' class={chr(39)}{cls}{chr(39)}' if cls else ''}{' aria-current=' + chr(39) + 'step' + chr(39) if i == cur else ''}>"
+                  f"<b>{mark}{esc(label)}</b>{when}</li>")
+
+    # --- いまの段階をひとことで ---
+    wk_when = _waku_when(slug, d)
+    run_when = f"{day_jp(days_of['出走馬'][0])}の{days_of['出走馬'][1]}" if "出走馬" in days_of else ""
+    hl = _hon_line(res) if res else ""
+    if res:
+        t = res["rows"][0]
+        now = (f"レースは終わりました。勝ったのは{t['name']}" + (f"（{t['pop']}番人気）" if t.get("pop") else "") + "。"
+               + (f"このサイトの{hl}でした。" if hl else ""))
+    elif pred and not open_:
+        now = "発走しました。結果が確定すると、このページに着順と払戻が載ります。"
+    elif pred and skip:
+        now = "AI予想は見送り（買い目なし）にしました。全頭の評価点は公開しています。"
+    elif pred:
+        hon = pred["marks"]["◎"]
+        h = next((x for x in pred["_race"].get("horses") or [] if x.get("number") == hon), {})
+        now = (f"AI予想を公開しています。◎は" + (f"{h['frame']}枠" if h.get("frame") else "") + f"{hon}番{B.horse_name(pred, hon)}"
+               + (f"（自信度{pred['confidence']}）" if pred.get("confidence") else "") + "。当日のオッズで見直すことがあります。")
+    elif w and w["numbered"]:
+        now = f"枠順が決まりました（{len(w['horses'])}頭）。AI予想は{pub}です。"
+    elif w:
+        now = (f"出走馬{len(w['horses'])}頭が決まりました。馬番と枠番は"
+               + (f"{wk_when}{'に' if wk_when.endswith('朝') else 'で'}" if wk_when else "枠順の確定で") + "決まります。")
+    elif e:
+        now = (f"JRAが出走予定馬{len(e['horses'])}頭を発表しました。" + (f"出走馬は{run_when}に確定します。" if run_when else "出走馬の確定はこれからです。"))
+    elif nom:
+        now = (f"JRAが特別登録馬{len(nom['horses'])}頭を発表しました（外国馬は入っていません）。"
+               + (f"出走馬は{run_when}に確定します。" if run_when else "出走馬の確定はこれからです。"))
+    elif jra:
+        now = ("出走馬の発表はこれからです。" + (f"{run_when}に確定し、" if run_when else "JRAが発表すると、") + "このページに一覧が載ります。")
+    else:
+        now = f"出走馬の発表はこれからです。主催者が発表したあと、AI予想を{pub.replace('に公開予定', '')}に公開します。"
+
+    # --- 入口 ---
+    W = "hubtop"
+    btns = ""
+    auto = AUTO_COL.get((pred or {}).get("race_id", ""), "")
+    trend = anchors.get("trend")
+    if res:
+        if pred and not skip:
+            btns += _a(path, "AI予想の答え合わせを見る", (hl + "。" if hl else "") + "全頭の評価点と着順", W, "race", main=True)
+        btns += _a("#result", "結果と払戻", "上位5頭・単勝から3連単まで", W, "result", main=not btns)
+        nx = _next_hub(d)
+        if nx:
+            btns += _a(f"/column/{nx[0]}/", f"次は{nx[1]}（{_md(nx[2])}）", "日程・出走馬・過去10年の傾向の特集まとめ", W, "nexthub")
+        if _vs_ok():
+            btns += _a("/vs/", "AI vs あなた 月間ランキング", "今月の順位と、AIの◎との対戦成績", W, "vsrank")
+    elif pred:
+        hon = (pred.get("marks") or {}).get("◎")
+        sub = "全頭の評価点と印" if skip else f"◎{hon} {B.horse_name(pred, hon)}・全頭の評価点と買い目"
+        btns += _a(path, f"{name}のAI予想を見る", sub, W, "race", main=True)
+        if auto:
+            btns += _a(f"/column/{auto}/", "全頭診断を読む", "1頭ずつの短評・展開の読み・外れる形", W, "shindan")
+        if _vs_ok() and open_ and not skip:
+            btns += _a(path + "#vs", "このレースでAIと単勝勝負", "あなたの◎を1頭選ぶだけ・無料。月間ランキングに載る", W, "vs")
+        if w:
+            btns += _a("#entries", "枠順とAIの印の表", "このページの下にあります", W, "entries")
+    else:
+        live = ((f"枠順（{len(w['horses'])}頭）" if w["numbered"] else f"出走馬（{len(w['horses'])}頭）") if w
+                else f"出走予定馬（{len(e['horses'])}頭）" if e else f"特別登録馬（{len(nom['horses'])}頭）" if nom else "")
+        tr_btn = lambda main: _a(trend, anchors.get("trend_head") or "過去10年の傾向", anchors.get("trend_sub") or "人気・枠・年齢・前走のデータ", W, "trend", main=main)
+        if live:
+            btns += _a("#entries", f"{live}の一覧を見る", "JRAの発表。このページの下にあります", W, "entries", main=True)
+        elif trend:
+            btns += tr_btn(True)
+        btns += (f"<div class='nbtn wait'><b>AI予想は{esc(pub)}</b><small>枠順が決まってから公開します。公開後はここから見られます</small></div>")
+        if live and trend:
+            btns += tr_btn(False)
+        if _vs_ok():
+            btns += _a("/vs/guide/", "AI vs あなた 月間ランキング", "予想の公開後、このレースでもAIと◎で勝負できます", W, "vsguide")
+    return (f"<section class='hubtop' aria-label='{esc(name)}{year}の日程といまの段階'><dl class='hubfacts'>{facts}</dl>"
+            + ("" if res else f"<ol class='hubsteps'>{steps}</ol>")  # 終わったレースは順番の表示を出さない（全部「済み」になるだけ）
+            + f"<p class='hubnow'>{esc(now)}</p><div class='nbtns'>{btns}</div></section>")
+
+
 # ---------- 日付の言い方 ----------
 def _dt(d: str) -> datetime:
     return datetime.strptime(d, "%Y%m%d")
@@ -854,6 +1035,19 @@ CSS = """
 .nbtn b{display:block;font-size:15px;line-height:1.4;color:var(--acc)}.nbtn small{display:block;font-size:12px;color:var(--mut);line-height:1.5;margin-top:2px}
 .nbtn.main{background:var(--acc);border-color:var(--acc)}.nbtn.main b,.nbtn.main small{color:var(--bg)}
 .nbtn:hover{text-decoration:none;filter:brightness(1.05)}.nmini a{font-weight:700}
+.nbtn.wait{border-style:dashed;border-left-style:solid;border-left-color:var(--line);background:none}.nbtn.wait b{color:var(--fg)}
+/* 特集まとめの冒頭：開催日・コース、発表の順番（今どこか）、入口 */
+.hubtop{border-top:3px solid var(--rule);border-bottom:1px solid var(--line);background:var(--panel);padding:12px 14px 6px;margin:10px 0 16px}
+.hubfacts{display:flex;flex-wrap:wrap;gap:6px 22px;margin:0 0 10px}.hubfacts div{min-width:0}
+.hubfacts dt{font-size:12px;color:var(--mut);line-height:1.4}.hubfacts dd{margin:0;font-size:17px;font-weight:700;line-height:1.4}
+.hubfacts dd small{display:block;font-size:12px;font-weight:400;color:var(--mut)}
+.hubsteps{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;margin:0 0 8px;padding:0}
+.hubsteps li{border-top:4px solid var(--line);padding:5px 2px 0;min-width:0}
+.hubsteps b{display:block;font-size:13px;line-height:1.4}.hubsteps span{display:block;font-size:11.5px;color:var(--mut);line-height:1.45}
+.hubsteps i{font-style:normal;color:var(--acc);margin-right:2px}
+.hubsteps li.done{border-top-color:var(--acc)}.hubsteps li.done b{color:var(--mut);font-weight:400}
+.hubsteps li.now{border-top-color:var(--fg)}.hubsteps li.now span{color:var(--fg);font-weight:700}
+.hubnow{margin:0 0 4px;font-size:15px;line-height:1.7}.hubtop .nbtns{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
 .wk{list-style:none;padding:0;margin:0}.wk-r{padding:12px 0;border-bottom:1px solid var(--line)}.wk-r:last-child{border-bottom:0}
 .wk-r h3{margin:0 0 2px;font-size:17px}.wk-g{display:inline-block;font-size:12px;padding:1px 6px;margin-right:6px;border:1px solid var(--line);vertical-align:2px}
 .wk-g.gG1,.wk-g.gJG1{background:var(--acc);color:var(--bg);border-color:var(--acc)}

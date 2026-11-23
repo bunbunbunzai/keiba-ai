@@ -51,8 +51,16 @@ jobs:
           LEAGUE_URL: ${{ vars.LEAGUE_URL == 'off' && '' || vars.LEAGUE_URL || 'https://keiba-league.bunbunbunzai.workers.dev' }}
           VS_PUBLIC: ${{ vars.VS_PUBLIC || '1' }}  # 月間ランキングを一般公開（repository variable で 0 にすると合言葉つきに戻る）
           LEAGUE_OWNERS: ${{ vars.LEAGUE_OWNERS }}
-      # 検索エンジン（Bing など）に知らせるページの一覧を作る：公開中のサイトと比べて、新しいページ・中身が変わったページだけ。
-      # 公開の前に比べる（公開のあとでは差が無くなるため）。失敗しても公開は止めない
+      # 検索エンジン（Bing など）に知らせるページの一覧を作る：前回までに知らせた状態（.indexnow/sent.json。cache で引き継ぐ）と比べて、
+      # 新しいページ・中身が変わったページだけ。状態を進めるのは、公開と送信が済んだあと（下の2つの手順）。
+      # 新しい公開に追い越されて取り消された回は状態が進まないので、次の回がまとめて送る。失敗しても公開は止めない
+      - name: 前回までに知らせた内容を読む（IndexNow）
+        uses: actions/cache/restore@v4
+        continue-on-error: true
+        with:
+          path: .indexnow
+          key: indexnow-sent-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: indexnow-sent-
       - name: 更新を知らせるページの一覧を作る（IndexNow）
         continue-on-error: true
         run: python site/indexnow.py diff
@@ -71,6 +79,14 @@ jobs:
         if: steps.d.outcome == 'failure'
         uses: actions/deploy-pages@v4
       - name: 検索エンジンに更新を通知（IndexNow）
+        id: inow
         if: success()
         continue-on-error: true
         run: python site/indexnow.py send
+      - name: 知らせた内容を保存（IndexNow）
+        if: success() && steps.inow.outputs.saved == '1'
+        continue-on-error: true
+        uses: actions/cache/save@v4
+        with:
+          path: .indexnow
+          key: indexnow-sent-${{ github.run_id }}-${{ github.run_attempt }}

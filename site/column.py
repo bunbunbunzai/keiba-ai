@@ -645,12 +645,25 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
         rslug = weekly.FEATURE_RACE.get(c.get("series")) or (c.get("race") if c.get("series") == "gdata" else None)
         ns_where = "feature" if c.get("series") in FEATURE_IDS else "gdata" if c.get("series") == "gdata" else "column"
         ns_top = weekly.next_mini(ns_where, rslug) if rslug else ""
+        hub_top = ""
         ns_box = "" if auto_c else weekly.next_card(ns_where, slug=rslug)
         # 特集まとめ（〇〇2026-guide）には、JRA発表の馬の表（枠順・出走馬・出走予定馬・特別登録馬のうち新しいもの）を自動で差し込む。
         # 位置は「レースの基本情報」のすぐ後（2つ目の見出しの前）。登録の発表前は何も出さない。
         # レースが終わったら、表の代わりに結果の箱（上位5頭・払戻・AIの◎の着順）を記事の冒頭に出す
         if rslug and c["slug"].endswith("-guide") and c.get("series") in weekly.FEATURE_RACE:
             yr = c["series"][-4:]
+            # 題名のすぐ下に、開催日・コース・いまの段階と、予想などへの入口の箱を置く（スマホの最初の画面で分かるように）
+            am = re.search(r"<h2 id='(s\d+)'>([^<]*過去\d+年[^<]*)</h2>", body_html)
+            pm = re.search(r"(\d{1,2}:\d{2})発走", c["body"])
+            anc = {"trend": f"#{am.group(1)}" if am else ""}
+            if am and "傾向" not in am.group(2) and "データ" not in am.group(2):  # 「過去10年の勝ち馬」など、見出しどおりの名前で案内する
+                anc.update(trend_head=am.group(2).strip(), trend_sub="このページの下にあります")
+            hub_top = weekly.hub_top(rslug, yr, anc, pm.group(1) if pm else "",
+                                     {"date": c.get("race_date"), "venue": c.get("race_venue"), "course": c.get("race_course"), "grade": c.get("race_grade")})
+            if hub_top:
+                ns_top = ""  # 箱に同じ案内が入るので、1行の案内は出さない
+                if c.get("_phase") == "result":
+                    lead = ""  # レース前に書いた前文（「〜で行われる」）は、結果が出たら出さない（すぐ下に結果の箱がある）
             box = "" if re.search(rf"{yr}年の結果</h2>", body_html) else weekly.result_box(rslug, yr)
             live = "" if box else weekly.live_section(rslug)
             if box:
@@ -660,7 +673,7 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
                 body_html = (body_html[:i[1]] + live + body_html[i[1]:]) if len(i) >= 2 else body_html + live
         html_ = (("<p class='draft'>下書き（検索エンジンには出ず、一覧にも載らない）</p>" if c["draft"] else "")
                  + f"<p class='crumb'><a href='/'>トップ</a> › <a href='/column/'>コラム</a></p><article class='col'>"
-                 f"<h1>{esc(title)}</h1><p class='meta'>公開 {esc(c.get('date'))}"
+                 f"<h1>{esc(title)}</h1>{hub_top}<p class='meta'>公開 {esc(c.get('date'))}"
                  + (f"・データは{esc(v['asof'])}までの記録で自動更新" if dyn else (f"・更新 {esc(mod_iso)}" if mod_iso > (_iso(c.get('date')) or mod_iso) else "")) + "</p>"
                  + (f"<p class='answer'>{inline(lead)}</p>" if lead else "") + ns_top + body_html + "</article>" + ns_box
                  + "<section class='card'><h2>このサイトについて</h2>"

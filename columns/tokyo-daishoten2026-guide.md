@@ -6,6 +6,10 @@ date: 2026-11-20
 draft: false
 order: 1
 series: tdt2026
+race_date: 20261229
+race_venue: 大井
+race_course: ダート2000m
+race_grade: G1
 hero: g-dirt-day
 ---
 ## レースの基本情報
