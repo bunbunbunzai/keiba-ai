@@ -1,6 +1,6 @@
 {
  "date": "20261123",
- "updated": "2026-11-23 13:38",
+ "updated": "2026-11-23 13:42",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1738,6 +1738,27 @@
    "venue": "水沢",
    "race_no": 7,
    "post_time": "15:10",
+   "number": 4,
+   "name": "ノーブルブロウ",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 14,
+   "last": {
+    "date": "2026-11-09",
+    "finish": 8,
+    "field": 12,
+    "popularity": 3
+   },
+   "odds": 30.4,
+   "popularity": 10
+  },
+  {
+   "race_id": "202611231106070507",
+   "results_key": "202611231106070507",
+   "venue": "水沢",
+   "race_no": 7,
+   "post_time": "15:10",
    "number": 9,
    "name": "ドナアフロディテ",
    "types": [
@@ -1750,7 +1771,7 @@
     "field": 9,
     "popularity": 4
    },
-   "odds": 8.5,
+   "odds": 7.6,
    "popularity": 2
   },
   {
