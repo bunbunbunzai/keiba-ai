@@ -2,7 +2,155 @@
  "source": "rakuten",
  "date": "20261123",
  "race_id": "202611232218150105",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 3,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "4",
+    "yen": 190
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "4-8",
+    "yen": 550
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "4",
+    "yen": 120
+   },
+   {
+    "combo": "8",
+    "yen": 120
+   },
+   {
+    "combo": "3",
+    "yen": 1270
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "4-8",
+    "yen": 180
+   },
+   {
+    "combo": "3-4",
+    "yen": 1470
+   },
+   {
+    "combo": "3-8",
+    "yen": 1120
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-4-8",
+    "yen": 4640
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "4-8-3",
+    "yen": 8390
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "4-8",
+    "yen": 370
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 4,
+   "name": "ギザキズラヴ",
+   "time": "1:39.0",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 41.0,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 8,
+   "name": "ノクスカンパーナ",
+   "time": "1:39.3",
+   "margin": "１ １／２",
+   "pos4": 5,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "エイシンリーディン",
+   "time": "1:40.0",
+   "margin": "３",
+   "pos4": 4,
+   "last3f": 41.4,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 5,
+   "name": "フェイトブレイカー",
+   "time": "1:40.3",
+   "margin": "１ １／２",
+   "pos4": 1,
+   "last3f": 42.4,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 1,
+   "number": 1,
+   "name": "モロノディアマンテ",
+   "time": "1:40.4",
+   "margin": "３／４",
+   "pos4": 6,
+   "last3f": 41.2,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "セランディア",
+   "time": "1:41.8",
+   "margin": "７",
+   "pos4": 7,
+   "last3f": 42.2,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 7,
+   "name": "ロックフラワー",
+   "time": "1:42.0",
+   "margin": "３／４",
+   "pos4": 3,
+   "last3f": 44.1,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 6,
+   "number": 6,
+   "name": "ブラックエンペラー",
+   "time": "1:44.2",
+   "margin": "大差",
+   "pos4": 8,
+   "last3f": 42.6,
+   "popularity": null
+  }
+ ]
 }
