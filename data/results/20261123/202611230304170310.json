@@ -2,7 +2,172 @@
  "source": "rakuten",
  "date": "20261123",
  "race_id": "202611230304170310",
- "tries": 2,
- "payouts": {},
- "rows": []
+ "tries": 3,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "9",
+    "yen": 300
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "9-2",
+    "yen": 870
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "9",
+    "yen": 120
+   },
+   {
+    "combo": "2",
+    "yen": 150
+   },
+   {
+    "combo": "5",
+    "yen": 280
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-9",
+    "yen": 200
+   },
+   {
+    "combo": "5-9",
+    "yen": 580
+   },
+   {
+    "combo": "2-5",
+    "yen": 580
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-8",
+    "yen": 320
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-5-9",
+    "yen": 1660
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "9-2-5",
+    "yen": 7890
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-9",
+    "yen": 430
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 9,
+   "name": "タカシオ",
+   "time": "1:54.8",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 2,
+   "number": 2,
+   "name": "キタサカエカイザー",
+   "time": "1:54.8",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 5,
+   "name": "ジェイマーシー",
+   "time": "1:56.0",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 3,
+   "name": "ビッグシラヌイ",
+   "time": "1:56.7",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 8,
+   "name": "ジェイライアン",
+   "time": "1:56.9",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 4,
+   "number": 4,
+   "name": "アスノチカラ",
+   "time": "2:07.5",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 1,
+   "number": 1,
+   "name": "サカノテッペン",
+   "time": "2:11.4",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 7,
+   "name": "コウシュハキング",
+   "time": "2:17.5",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 6,
+   "number": 6,
+   "name": "ビックコンボ",
+   "time": "2:25.0",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
