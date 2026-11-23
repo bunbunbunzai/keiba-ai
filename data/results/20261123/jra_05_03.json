@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 8,
+   "name": "タッカーヴィーナス",
+   "time": "2:02.3",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "number": 2,
+   "name": "アスクゴクジョウ",
+   "time": "",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "number": 7,
+   "name": "カペラテソーロ",
+   "time": "",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "number": 1,
+   "name": "サーギュスターヴ",
+   "time": "",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "number": 6,
+   "name": "テイクユアタイム",
+   "time": "",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": null
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "8",
+    "yen": 1590,
+    "pop": null
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "8",
+    "yen": 230,
+    "pop": null
+   },
+   {
+    "combo": "2",
+    "yen": 110,
+    "pop": null
+   },
+   {
+    "combo": "7",
+    "yen": 310,
+    "pop": null
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-7",
+    "yen": 390,
+    "pop": null
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-8",
+    "yen": 490,
+    "pop": null
+   },
+   {
+    "combo": "7-8",
+    "yen": 2270,
+    "pop": null
+   },
+   {
+    "combo": "2-7",
+    "yen": 600,
+    "pop": null
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-8",
+    "yen": 1150,
+    "pop": null
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "8-2",
+    "yen": 4670,
+    "pop": null
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-7-8",
+    "yen": 4880,
+    "pop": null
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "8-2-7",
+    "yen": 48620,
+    "pop": null
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261123",
+ "venue_code": "05",
+ "race_no": 3,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605060320261123/08",
+ "title": "レース結果 JRA"
+}
