@@ -1,0 +1,124 @@
+{
+ "profile": {
+  "父": "マテラスカイ",
+  "性別": "牝",
+  "馬主名": "(同)TO RACING",
+  "母": "ミニーアイル",
+  "馬齢": "3歳",
+  "調教師名": "上村 洋行 （栗東）",
+  "母の父": "ミッキーアイル",
+  "生年月日": "2023年2月10日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "アイランドファッション",
+  "毛色": "芦毛",
+  "産地": "安平町",
+  "馬名意味": "女神(伊)+冠名",
+  "取引市場": "",
+  "総賞金": "69,367,000 円",
+  "内付加賞": "567,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "29,500,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 8,
+  "wins": 3,
+  "second": 1,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年7月5日",
+   "venue": "小倉",
+   "race_name": "北九州記念",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 13,
+   "popularity": 2,
+   "finish": "10",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年5月30日",
+   "venue": "京都",
+   "race_name": "葵ステークス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2026年4月11日",
+   "venue": "阪神",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2026年3月7日",
+   "venue": "阪神",
+   "race_name": "Fレビュー",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 5,
+   "finish": "4",
+   "jockey": "酒井 学"
+  },
+  {
+   "date": "2026年2月7日",
+   "venue": "京都",
+   "race_name": "エルフィンS",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 9,
+   "popularity": 4,
+   "finish": "5",
+   "jockey": "北村 友一"
+  },
+  {
+   "date": "2025年12月28日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 17,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "岩田 望来"
+  },
+  {
+   "date": "2025年12月7日",
+   "venue": "阪神",
+   "race_name": "2歳未勝利",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "A.プーシャン"
+  },
+  {
+   "date": "2025年10月18日",
+   "venue": "京都",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "岩田 望来"
+  }
+ ],
+ "name": "デアヴェローチェ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud102023107264/60",
+ "last_card": "20261129",
+ "fetched": "2026-11-23 22:07"
+}

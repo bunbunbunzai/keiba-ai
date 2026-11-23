@@ -1,0 +1,113 @@
+{
+ "profile": {
+  "父": "リアルスティール",
+  "性別": "牡",
+  "馬主名": "近藤 旬子",
+  "母": "デイトライン",
+  "馬齢": "3歳",
+  "調教師名": "友道 康夫 （栗東）",
+  "母の父": "Zoffany",
+  "生年月日": "2023年1月23日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "パシフィックリム",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "冠名+4枚の同じ数字のカードが揃った強力な役(ポーカー用語)",
+  "取引市場": "2023年 セレクトセール",
+  "総賞金": "111,606,000 円",
+  "内付加賞": "1,106,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "23,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 7,
+  "wins": 2,
+  "second": 0,
+  "third": 3
+ },
+ "runs": [
+  {
+   "date": "2026年10月4日",
+   "venue": "東京",
+   "race_name": "毎日王冠",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 17,
+   "popularity": 4,
+   "finish": "17",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年5月10日",
+   "venue": "東京",
+   "race_name": "NHKマイル",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 6,
+   "finish": "3",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年4月19日",
+   "venue": "中山",
+   "race_name": "皐月賞",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 18,
+   "popularity": 7,
+   "finish": "15",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年3月8日",
+   "venue": "中山",
+   "race_name": "ディープ記念",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 10,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年12月21日",
+   "venue": "阪神",
+   "race_name": "朝日杯FS",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年11月15日",
+   "venue": "京都",
+   "race_name": "デイリー2S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年10月18日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "坂井 瑠星"
+  }
+ ],
+ "name": "アドマイヤクワッズ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud102023105311/0A",
+ "last_card": "20261128",
+ "fetched": "2026-11-23 22:08"
+}

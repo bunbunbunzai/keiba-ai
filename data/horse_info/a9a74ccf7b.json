@@ -1,0 +1,212 @@
+{
+ "profile": {
+  "父": "アドマイヤマーズ",
+  "性別": "牝",
+  "馬主名": "奈村 睦弘",
+  "母": "サンクイーン2",
+  "馬齢": "4歳",
+  "調教師名": "長谷川 浩大 （栗東）",
+  "母の父": "Storm Cat",
+  "生年月日": "2022年4月7日",
+  "生産牧場": "谷川牧場",
+  "母の母": "Fountain of Peace",
+  "毛色": "栗毛",
+  "産地": "浦河町",
+  "馬名意味": "冠名+人名より",
+  "取引市場": "",
+  "総賞金": "107,626,000 円",
+  "内付加賞": "1,226,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "37,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 16,
+  "wins": 4,
+  "second": 3,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年8月23日",
+   "venue": "札幌",
+   "race_name": "キーンランド",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 8,
+   "finish": "13",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2026年8月9日",
+   "venue": "札幌",
+   "race_name": "UHB賞",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2026年6月27日",
+   "venue": "函館",
+   "race_name": "青函S",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2026年5月17日",
+   "venue": "京都",
+   "race_name": "栗東S",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 5,
+   "finish": "12",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2026年3月22日",
+   "venue": "中京",
+   "race_name": "愛知杯",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 6,
+   "finish": "8",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2026年2月15日",
+   "venue": "小倉",
+   "race_name": "北九州短距離",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 1,
+   "finish": "6",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2025年11月30日",
+   "venue": "京都",
+   "race_name": "京阪杯",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 2,
+   "finish": "13",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年10月4日",
+   "venue": "京都",
+   "race_name": "オパールS",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2025年8月24日",
+   "venue": "札幌",
+   "race_name": "キーンランド",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 8,
+   "finish": "4",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2025年7月5日",
+   "venue": "函館",
+   "race_name": "TVh杯",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 14,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2025年4月13日",
+   "venue": "阪神",
+   "race_name": "桜花賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 16,
+   "finish": "13",
+   "jockey": "藤岡 佑介"
+  },
+  {
+   "date": "2025年3月2日",
+   "venue": "阪神",
+   "race_name": "チューリップ",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 3,
+   "finish": "5",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2025年1月18日",
+   "venue": "中京",
+   "race_name": "紅梅S",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2024年12月7日",
+   "venue": "中京",
+   "race_name": "つわぶき賞",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 2,
+   "finish": "2",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2024年10月5日",
+   "venue": "京都",
+   "race_name": "りんどう賞",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 10,
+   "popularity": 2,
+   "finish": "4",
+   "jockey": "西村 淳也"
+  },
+  {
+   "date": "2024年9月14日",
+   "venue": "中京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 11,
+   "popularity": 5,
+   "finish": "1",
+   "jockey": "浜中 俊"
+  }
+ ],
+ "name": "ナムラクララ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud102022102887/C8",
+ "last_card": "20261129",
+ "fetched": "2026-11-23 22:07"
+}

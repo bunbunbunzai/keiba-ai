@@ -1,0 +1,102 @@
+{
+ "profile": {
+  "父": "シルバーステート",
+  "性別": "牝",
+  "馬主名": "(株)Gリビエール・レーシング",
+  "母": "デサフィアンテ",
+  "馬齢": "3歳",
+  "調教師名": "武 幸四郎 （栗東）",
+  "母の父": "キングカメハメハ",
+  "生年月日": "2023年1月12日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "アヴェンチュラ",
+  "毛色": "黒鹿毛",
+  "産地": "安平町",
+  "馬名意味": "純白の+喜び(仏)",
+  "取引市場": "2023年 セレクトセール",
+  "総賞金": "72,291,000 円",
+  "内付加賞": "791,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "36,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 6,
+  "wins": 4,
+  "second": 0,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年10月3日",
+   "venue": "京都",
+   "race_name": "オパールS",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2026年8月16日",
+   "venue": "中京",
+   "race_name": "中京記念",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 4,
+   "finish": "14",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2026年4月12日",
+   "venue": "阪神",
+   "race_name": "桜花賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 3,
+   "finish": "11",
+   "jockey": "浜中 俊"
+  },
+  {
+   "date": "2026年1月17日",
+   "venue": "京都",
+   "race_name": "紅梅S",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 9,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年10月19日",
+   "venue": "京都",
+   "race_name": "もみじS",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 7,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年9月6日",
+   "venue": "札幌",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1500,
+   "field": 10,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "浜中 俊"
+  }
+ ],
+ "name": "リリージョワ",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud102023105312/7D",
+ "last_card": "20261129",
+ "fetched": "2026-11-23 22:08"
+}

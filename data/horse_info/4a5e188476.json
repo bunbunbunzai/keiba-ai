@@ -1,0 +1,146 @@
+{
+ "profile": {
+  "父": "レイデオロ",
+  "性別": "牝",
+  "馬主名": "(株)ウイン",
+  "母": "ダイワベスパー",
+  "馬齢": "4歳",
+  "調教師名": "西園 翔太 （栗東）",
+  "母の父": "ダイワメジャー",
+  "生年月日": "2022年2月21日",
+  "生産牧場": "コスモヴューファーム",
+  "母の母": "ダイワリプルス",
+  "毛色": "黒鹿毛",
+  "産地": "新冠町",
+  "馬名意味": "冠名+黄昏、夕暮れ、薄明",
+  "取引市場": "",
+  "総賞金": "64,180,000 円",
+  "内付加賞": "780,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "31,500,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 10,
+  "wins": 4,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年10月11日",
+   "venue": "東京",
+   "race_name": "アイルランド",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 8,
+   "finish": "14",
+   "jockey": "横山 典弘"
+  },
+  {
+   "date": "2026年6月21日",
+   "venue": "東京",
+   "race_name": "府中牝馬S",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 9,
+   "finish": "2",
+   "jockey": "横山 典弘"
+  },
+  {
+   "date": "2026年5月2日",
+   "venue": "東京",
+   "race_name": "京王杯SC",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 5,
+   "finish": "16",
+   "jockey": "横山 典弘"
+  },
+  {
+   "date": "2026年3月22日",
+   "venue": "中京",
+   "race_name": "愛知杯",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 4,
+   "finish": "7",
+   "jockey": "横山 典弘"
+  },
+  {
+   "date": "2026年2月1日",
+   "venue": "東京",
+   "race_name": "節分S",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 15,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年12月21日",
+   "venue": "阪神",
+   "race_name": "六甲アイラS",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 2,
+   "finish": "12",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年10月25日",
+   "venue": "東京",
+   "race_name": "精進湖特別",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 12,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "武 豊"
+  },
+  {
+   "date": "2025年5月31日",
+   "venue": "京都",
+   "race_name": "葵ステークス",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 1,
+   "finish": "13",
+   "jockey": "A.シュタルケ"
+  },
+  {
+   "date": "2025年5月3日",
+   "venue": "東京",
+   "race_name": "3歳1勝クラス",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 9,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2025年2月15日",
+   "venue": "東京",
+   "race_name": "3歳新馬",
+   "surface": "ダ",
+   "distance": 1400,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "川田 将雅"
+  }
+ ],
+ "name": "ウイントワイライト",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud102022106232/CF",
+ "last_card": "20261128",
+ "fetched": "2026-11-23 22:08"
+}

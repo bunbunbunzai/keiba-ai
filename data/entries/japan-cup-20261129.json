@@ -1,0 +1,185 @@
+{
+ "slug": "japan-cup",
+ "date": "20261129",
+ "race": "ジャパンC",
+ "grade": "G1",
+ "venue": "東京",
+ "key": "jc",
+ "source": "https://www.jra.go.jp/datafile/ranking/g1/2026/jc.html",
+ "kind": "prerating",
+ "published": "2026-11-23",
+ "max_runners": 18,
+ "registered": 12,
+ "registered_foreign": 6,
+ "horses": [
+  {
+   "name": "アーバンシック",
+   "sex": "牡",
+   "age": "5",
+   "trainer": "武井亮",
+   "rating": "−",
+   "rating_race": ""
+  },
+  {
+   "name": "ヴェルテンベルク",
+   "sex": "牡",
+   "age": "6",
+   "trainer": "宮本博",
+   "rating": "116E",
+   "rating_race": "天皇賞(春)2着"
+  },
+  {
+   "name": "エキサイトバイオ",
+   "sex": "牡",
+   "age": "4",
+   "trainer": "今野貞一",
+   "rating": "−",
+   "rating_race": ""
+  },
+  {
+   "name": "クロワデュノール",
+   "sex": "牡",
+   "age": "4",
+   "trainer": "斉藤崇史",
+   "rating": "122I,L",
+   "rating_race": "大阪杯1着、宝塚記念2着"
+  },
+  {
+   "name": "コスモキュランダ",
+   "sex": "牡",
+   "age": "5",
+   "trainer": "加藤士津八",
+   "rating": "118L",
+   "rating_race": "宝塚記念4着"
+  },
+  {
+   "name": "シェイクユアハート",
+   "sex": "牡",
+   "age": "6",
+   "trainer": "宮徹",
+   "rating": "117I",
+   "rating_race": "札幌記念1着"
+  },
+  {
+   "name": "タガノデュード",
+   "sex": "牡",
+   "age": "5",
+   "trainer": "宮徹",
+   "rating": "117I",
+   "rating_race": "大阪杯4着"
+  },
+  {
+   "name": "ダノンデサイル",
+   "sex": "牡",
+   "age": "5",
+   "trainer": "安田翔伍",
+   "rating": "124I",
+   "rating_race": "天皇賞(秋)1着"
+  },
+  {
+   "name": "ファイアンクランツ",
+   "sex": "牡",
+   "age": "4",
+   "trainer": "堀宣行",
+   "rating": "110L",
+   "rating_race": "目黒記念1着"
+  },
+  {
+   "name": "ヘデントール",
+   "sex": "牡",
+   "age": "5",
+   "trainer": "木村哲也",
+   "rating": "114E",
+   "rating_race": "天皇賞(春)5着"
+  },
+  {
+   "name": "マスカレードボール",
+   "sex": "牡",
+   "age": "4",
+   "trainer": "手塚貴久",
+   "rating": "122I",
+   "rating_race": "クイーンエリザベスII世C2着"
+  },
+  {
+   "name": "メイショウタバル",
+   "sex": "牡",
+   "age": "5",
+   "trainer": "石橋守",
+   "rating": "123L",
+   "rating_race": "宝塚記念1着"
+  },
+  {
+   "name": "エシカルダイヤモンド",
+   "sex": "せん",
+   "age": "6",
+   "trainer": "W.マリンズ",
+   "rating": "113L",
+   "rating_race": "ケンタッキーターフカップS2着",
+   "origin": "アイルランド産",
+   "name_en": "EthicalDiamond",
+   "country": "アイルランド",
+   "foreign": true
+  },
+  {
+   "name": "オンブズマン",
+   "sex": "牡",
+   "age": "5",
+   "trainer": "J&T.ゴスデン",
+   "rating": "131I",
+   "rating_race": "プリンスオブウェールズS1着、チャンピオンS1着",
+   "origin": "アイルランド産",
+   "name_en": "Ombudsman",
+   "country": "イギリス",
+   "foreign": true
+  },
+  {
+   "name": "カランダガン",
+   "sex": "せん",
+   "age": "5",
+   "trainer": "F.グラファール",
+   "rating": "124I,L",
+   "rating_race": "キングジョージVI世&クイーンエリザベスS2着、チャンピオンS2着",
+   "origin": "アイルランド産",
+   "name_en": "Calandagan",
+   "country": "フランス",
+   "foreign": true
+  },
+  {
+   "name": "ゴリアット",
+   "sex": "せん",
+   "age": "6",
+   "trainer": "F.グラファール",
+   "rating": "120L",
+   "rating_race": "オイロパ賞1着",
+   "origin": "ドイツ産",
+   "name_en": "Goliath",
+   "country": "フランス",
+   "foreign": true
+  },
+  {
+   "name": "テアオ",
+   "sex": "牡",
+   "age": "4",
+   "trainer": "J.サドラー",
+   "rating": "120I",
+   "rating_race": "ラテンアメリカ大賞1着",
+   "origin": "チリ産",
+   "name_en": "Teao",
+   "country": "アメリカ",
+   "foreign": true
+  },
+  {
+   "name": "ミニーホーク",
+   "sex": "牝",
+   "age": "4",
+   "trainer": "A.オブライエン",
+   "rating": "121I",
+   "rating_race": "プリンスオブウェールズS2着",
+   "origin": "アイルランド産",
+   "name_en": "MinnieHauk",
+   "country": "アイルランド",
+   "foreign": true
+  }
+ ],
+ "fetched": "2026-11-23 22:04"
+}

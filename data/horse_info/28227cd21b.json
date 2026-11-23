@@ -1,0 +1,146 @@
+{
+ "profile": {
+  "父": "キズナ",
+  "性別": "牝",
+  "馬主名": "(有)シルクレーシング",
+  "母": "パーシステントリー",
+  "馬齢": "5歳",
+  "調教師名": "大久保 龍志 （栗東）",
+  "母の父": "Smoke Glacken",
+  "生年月日": "2021年2月3日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "Just Reward",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "二つの+愛情をつなぐ。父名、本馬の馬体より連想",
+  "取引市場": "",
+  "総賞金": "287,592,000 円",
+  "内付加賞": "5,342,000 円",
+  "内地方賞金": "14,850,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "121,400,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 10,
+  "wins": 7,
+  "second": 1,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年10月6日",
+   "venue": "大井",
+   "race_name": "レディスプレ",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": null,
+   "finish": "4",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2026年2月22日",
+   "venue": "東京",
+   "race_name": "フェブラリー",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年12月7日",
+   "venue": "中京",
+   "race_name": "チャンピオン",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年11月9日",
+   "venue": "京都",
+   "race_name": "みやこS",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年8月28日",
+   "venue": "門別",
+   "race_name": "ブリーダーズ",
+   "surface": "ダ",
+   "distance": 2000,
+   "field": 9,
+   "popularity": null,
+   "finish": "2",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年6月14日",
+   "venue": "阪神",
+   "race_name": "三宮S",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年2月1日",
+   "venue": "京都",
+   "race_name": "舞鶴S",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2025年1月11日",
+   "venue": "中京",
+   "race_name": "恵那特別",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2024年9月8日",
+   "venue": "中京",
+   "race_name": "3歳上1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 10,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "坂井 瑠星"
+  },
+  {
+   "date": "2024年8月18日",
+   "venue": "中京",
+   "race_name": "3歳未勝利",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 4,
+   "finish": "1",
+   "jockey": "坂井 瑠星"
+  }
+ ],
+ "name": "ダブルハートボンド",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud102021105700/33",
+ "last_card": "20261206",
+ "fetched": "2026-11-23 22:06"
+}

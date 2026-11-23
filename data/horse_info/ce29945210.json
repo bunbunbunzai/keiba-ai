@@ -1,0 +1,190 @@
+{
+ "profile": {
+  "父": "ドレフォン",
+  "性別": "牡",
+  "馬主名": "野田 みづき",
+  "母": "スペシャルグルーヴ",
+  "馬齢": "5歳",
+  "調教師名": "田中 博康 （美浦）",
+  "母の父": "スペシャルウィーク",
+  "生年月日": "2021年5月5日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "ソニックグルーヴ",
+  "毛色": "栗毛",
+  "産地": "安平町",
+  "馬名意味": "冠名+がんばれ",
+  "取引市場": "",
+  "総賞金": "548,387,000 円",
+  "内付加賞": "1,587,000 円",
+  "内地方賞金": "417,500,000 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "255,200,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 14,
+  "wins": 9,
+  "second": 3,
+  "third": 2
+ },
+ "runs": [
+  {
+   "date": "2026年9月30日",
+   "venue": "船橋",
+   "race_name": "日本テレビ盃",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 9,
+   "popularity": null,
+   "finish": "1",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2026年7月1日",
+   "venue": "大井",
+   "race_name": "帝王賞",
+   "surface": "ダ",
+   "distance": 2000,
+   "field": 13,
+   "popularity": null,
+   "finish": "1",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2026年5月5日",
+   "venue": "船橋",
+   "race_name": "かしわ記念",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 13,
+   "popularity": null,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年12月29日",
+   "venue": "大井",
+   "race_name": "東京大賞典",
+   "surface": "ダ",
+   "distance": 2000,
+   "field": 15,
+   "popularity": null,
+   "finish": "2",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年11月3日",
+   "venue": "船橋",
+   "race_name": "JBCクラシ",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 13,
+   "popularity": null,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年7月2日",
+   "venue": "大井",
+   "race_name": "帝王賞",
+   "surface": "ダ",
+   "distance": 2000,
+   "field": 13,
+   "popularity": null,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年4月19日",
+   "venue": "阪神",
+   "race_name": "アンタレスS",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 12,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "C.ルメール"
+  },
+  {
+   "date": "2025年2月23日",
+   "venue": "東京",
+   "race_name": "フェブラリー",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年12月19日",
+   "venue": "名古",
+   "race_name": "名古屋大賞典",
+   "surface": "ダ",
+   "distance": 2000,
+   "field": 12,
+   "popularity": null,
+   "finish": "1",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年10月2日",
+   "venue": "大井",
+   "race_name": "ジャパンDC",
+   "surface": "ダ",
+   "distance": 2000,
+   "field": 15,
+   "popularity": null,
+   "finish": "2",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年8月4日",
+   "venue": "新潟",
+   "race_name": "レパードS",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 15,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2024年4月27日",
+   "venue": "京都",
+   "race_name": "ユニコーンS",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 16,
+   "popularity": 1,
+   "finish": "3",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2023年12月10日",
+   "venue": "中山",
+   "race_name": "2歳1勝クラス",
+   "surface": "ダ",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "戸崎 圭太"
+  },
+  {
+   "date": "2023年10月15日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "ダ",
+   "distance": 1600,
+   "field": 16,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "津村 明秀"
+  }
+ ],
+ "name": "ミッキーファイト",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud102021105615/51",
+ "last_card": "20261206",
+ "fetched": "2026-11-23 22:07"
+}

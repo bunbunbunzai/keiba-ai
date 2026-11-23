@@ -1,0 +1,135 @@
+{
+ "profile": {
+  "父": "ロードカナロア",
+  "性別": "牡",
+  "馬主名": "(有)サンデーレーシング",
+  "母": "ドナウブルー",
+  "馬齢": "4歳",
+  "調教師名": "斉藤 崇史 （栗東）",
+  "母の父": "ディープインパクト",
+  "生年月日": "2022年3月1日",
+  "生産牧場": "ノーザンファーム",
+  "母の母": "ドナブリーニ",
+  "毛色": "鹿毛",
+  "産地": "安平町",
+  "馬名意味": "「美しき青きドナウ」を初演したウィーンの音楽堂の名前",
+  "取引市場": "",
+  "総賞金": "82,815,000 円",
+  "内付加賞": "915,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "24,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 9,
+  "wins": 4,
+  "second": 2,
+  "third": 1
+ },
+ "runs": [
+  {
+   "date": "2026年10月3日",
+   "venue": "京都",
+   "race_name": "オパールS",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 3,
+   "finish": "2",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年8月9日",
+   "venue": "中京",
+   "race_name": "CBC賞",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 18,
+   "popularity": 1,
+   "finish": "9",
+   "jockey": "川田 将雅"
+  },
+  {
+   "date": "2026年5月16日",
+   "venue": "京都",
+   "race_name": "鞍馬S",
+   "surface": "芝",
+   "distance": 1200,
+   "field": 16,
+   "popularity": 2,
+   "finish": "3",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2026年2月21日",
+   "venue": "阪神",
+   "race_name": "阪急杯",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 18,
+   "popularity": 3,
+   "finish": "4",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2025年12月21日",
+   "venue": "阪神",
+   "race_name": "六甲アイラS",
+   "surface": "芝",
+   "distance": 1400,
+   "field": 14,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "C.デムーロ"
+  },
+  {
+   "date": "2025年8月3日",
+   "venue": "中京",
+   "race_name": "納屋橋特別",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 8,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "団野 大成"
+  },
+  {
+   "date": "2024年11月24日",
+   "venue": "東京",
+   "race_name": "ベゴニア賞",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 10,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "C.デムーロ"
+  },
+  {
+   "date": "2024年10月26日",
+   "venue": "京都",
+   "race_name": "萩ステークス",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 6,
+   "popularity": 1,
+   "finish": "2",
+   "jockey": "C.デムーロ"
+  },
+  {
+   "date": "2024年7月28日",
+   "venue": "新潟",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 9,
+   "popularity": 1,
+   "finish": "1",
+   "jockey": "団野 大成"
+  }
+ ],
+ "name": "ディアナザール",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud102022104933/BB",
+ "last_card": "20261128",
+ "fetched": "2026-11-23 22:09"
+}

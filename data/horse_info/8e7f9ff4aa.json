@@ -1,0 +1,157 @@
+{
+ "profile": {
+  "父": "ブリックスアンドモルタル",
+  "性別": "牡",
+  "馬主名": "(株)G1レーシング",
+  "母": "アッフィラート",
+  "馬齢": "5歳",
+  "調教師名": "堀 宣行 （美浦）",
+  "母の父": "ディープインパクト",
+  "生年月日": "2021年2月24日",
+  "生産牧場": "(有)社台コーポレーション白老ファーム",
+  "母の母": "レディオブヴェニス",
+  "毛色": "青鹿毛",
+  "産地": "白老町",
+  "馬名意味": "イランにある完全レンガ造の塔。母名、父名および父父名より連想",
+  "取引市場": "",
+  "総賞金": "70,211,000 円",
+  "内付加賞": "411,000 円",
+  "内地方賞金": "0 円",
+  "内海外賞金": "0 円",
+  "収得賞金（平地）": "20,000,000 円",
+  "収得賞金（障害）": "0 円"
+ },
+ "record": {
+  "starts": 10,
+  "wins": 2,
+  "second": 1,
+  "third": 0
+ },
+ "runs": [
+  {
+   "date": "2026年8月8日",
+   "venue": "新潟",
+   "race_name": "関越S",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 10,
+   "finish": "2",
+   "jockey": "三浦 皇成"
+  },
+  {
+   "date": "2026年5月24日",
+   "venue": "京都",
+   "race_name": "都大路S",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 13,
+   "popularity": 7,
+   "finish": "9",
+   "jockey": "菱田 裕二"
+  },
+  {
+   "date": "2026年1月12日",
+   "venue": "中山",
+   "race_name": "ニューイヤー",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 14,
+   "popularity": 9,
+   "finish": "7",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2025年12月21日",
+   "venue": "中山",
+   "race_name": "ディセンバー",
+   "surface": "芝",
+   "distance": 1800,
+   "field": 16,
+   "popularity": 9,
+   "finish": "13",
+   "jockey": "佐々木 大輔"
+  },
+  {
+   "date": "2024年12月7日",
+   "venue": "京都",
+   "race_name": "リゲルS",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 13,
+   "popularity": 2,
+   "finish": "10",
+   "jockey": "L.デットーリ"
+  },
+  {
+   "date": "2024年10月19日",
+   "venue": "東京",
+   "race_name": "富士S",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 17,
+   "popularity": 5,
+   "finish": "10",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2024年5月26日",
+   "venue": "東京",
+   "race_name": "東京優駿",
+   "surface": "芝",
+   "distance": 2400,
+   "field": 17,
+   "popularity": 11,
+   "finish": "13",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2024年5月5日",
+   "venue": "東京",
+   "race_name": "NHKマイル",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 18,
+   "popularity": 4,
+   "finish": "4",
+   "jockey": "J.モレイラ"
+  },
+  {
+   "date": "2023年12月28日",
+   "venue": "中山",
+   "race_name": "ホープフルS",
+   "surface": "芝",
+   "distance": 2000,
+   "field": 16,
+   "popularity": null,
+   "finish": "取消",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2023年10月7日",
+   "venue": "東京",
+   "race_name": "サウジRC",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 9,
+   "popularity": 3,
+   "finish": "1",
+   "jockey": "松山 弘平"
+  },
+  {
+   "date": "2023年6月10日",
+   "venue": "東京",
+   "race_name": "2歳新馬",
+   "surface": "芝",
+   "distance": 1600,
+   "field": 12,
+   "popularity": 2,
+   "finish": "1",
+   "jockey": "D.レーン"
+  }
+ ],
+ "name": "ゴンバデカーブース",
+ "url": "/JRADB/accessU.html?CNAME=pw01dud102021104825/D4",
+ "last_card": "20261128",
+ "fetched": "2026-11-23 22:09"
+}
