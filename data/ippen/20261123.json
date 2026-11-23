@@ -1,6 +1,6 @@
 {
  "date": "20261123",
- "updated": "2026-11-23 16:51",
+ "updated": "2026-11-23 16:56",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -2884,8 +2884,8 @@
     "field": 11,
     "popularity": 9
    },
-   "odds": 34.9,
-   "popularity": 5
+   "odds": 23.9,
+   "popularity": 6
   },
   {
    "race_id": "202611233230140305",
@@ -2905,7 +2905,7 @@
     "field": 14,
     "popularity": 6
    },
-   "odds": 63.1,
+   "odds": 38.9,
    "popularity": 9
   },
   {
@@ -2926,7 +2926,7 @@
     "field": 9,
     "popularity": 3
    },
-   "odds": 8.6,
+   "odds": 11.2,
    "popularity": 6
   },
   {
@@ -2948,8 +2948,8 @@
     "field": 8,
     "popularity": 2
    },
-   "odds": 9.2,
-   "popularity": 7
+   "odds": 15.2,
+   "popularity": 8
   },
   {
    "race_id": "202611232218150108",
@@ -2969,8 +2969,8 @@
     "field": 11,
     "popularity": 8
    },
-   "odds": 7.8,
-   "popularity": 5
+   "odds": 12.1,
+   "popularity": 7
   },
   {
    "race_id": "202611230304170308",
@@ -3102,7 +3102,7 @@
     "field": 12,
     "popularity": 5
    },
-   "odds": 14.3,
+   "odds": 21.2,
    "popularity": 7
   },
   {
@@ -3123,8 +3123,8 @@
     "field": 8,
     "popularity": 5
    },
-   "odds": 8.6,
-   "popularity": 5
+   "odds": 9.8,
+   "popularity": 6
   },
   {
    "race_id": "202611232218150109",
@@ -3144,7 +3144,7 @@
     "field": 12,
     "popularity": 2
    },
-   "odds": 22.3,
+   "odds": 78.1,
    "popularity": 7
   },
   {
@@ -3156,7 +3156,8 @@
    "number": 1,
    "name": "トマランサーヨウコ",
    "types": [
-    "letdown"
+    "letdown",
+    "aitop"
    ],
    "gap_days": 9,
    "last": {
@@ -3399,6 +3400,20 @@
    },
    "odds": 12.8,
    "popularity": 7
+  },
+  {
+   "race_id": "202611230304170312",
+   "results_key": "202611230304170312",
+   "venue": "帯広ば",
+   "race_no": 12,
+   "post_time": "20:05",
+   "number": 4,
+   "name": "タンジロウ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 13.6,
+   "popularity": 8
   },
   {
    "race_id": "202611233230140310",

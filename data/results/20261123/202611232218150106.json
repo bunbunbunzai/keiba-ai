@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261123",
  "race_id": "202611232218150106",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,127 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 7,
+   "name": "エコロブレード",
+   "time": "1:37.4",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "テイコク",
+   "time": "1:38.1",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 6,
+   "name": "イサムサンカ",
+   "time": "1:38.2",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 3,
+   "name": "シスターアクト",
+   "time": "1:38.6",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 4,
+   "name": "サクラサルーテ",
+   "time": "1:39.3",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 8,
+   "name": "レグナム",
+   "time": "1:39.7",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 2,
+   "number": 2,
+   "name": "タルバン",
+   "time": "1:40.1",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "ワーキングアセット",
+   "time": "1:40.2",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 11,
+   "name": "フェイマスダンディ",
+   "time": "1:40.2",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 9,
+   "name": "ウインバーテックス",
+   "time": "1:40.4",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 8,
+   "number": 10,
+   "name": "キャッツライズ",
+   "time": "1:41.2",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
