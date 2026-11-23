@@ -1,18 +1,18 @@
 {
  "date": "20261123",
- "updated": "2026-11-23 10:28",
+ "updated": "2026-11-23 10:43",
  "bias": {
   "福島ダ": {
-   "judgement": "フラット・内",
+   "judgement": "内先行",
    "confidence": "弱",
    "races": [
     1,
     2
    ],
-   "front_share": 0.5,
-   "inner_share": 0.5,
+   "front_share": 0.75,
+   "inner_share": 0.75,
    "outer_share": 0.0,
-   "horses": 2
+   "horses": 4
   },
   "東京ダ": {
    "judgement": "内先行",

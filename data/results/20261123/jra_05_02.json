@@ -1,0 +1,258 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 12,
+   "name": "ランギヌイ",
+   "time": "1:34.5",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 13,
+   "name": "ショウナンバラモン",
+   "time": "1:34.7",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "number": 11,
+   "name": "ポエジア",
+   "time": "1:34.7",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "4",
+   "number": 7,
+   "name": "ソウカイウォーリア",
+   "time": "1:34.9",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "number": 17,
+   "name": "アラベスクテソーロ",
+   "time": "1:35.1",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "6",
+   "number": 5,
+   "name": "ポテ",
+   "time": "1:35.1",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "7",
+   "number": 2,
+   "name": "テリオスブギ",
+   "time": "1:35.3",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "8",
+   "number": 8,
+   "name": "ブラックナザレ",
+   "time": "1:35.3",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "9",
+   "number": 1,
+   "name": "ルギッドドランジュ",
+   "time": "1:35.5",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "10",
+   "number": 9,
+   "name": "レイナクリューソス",
+   "time": "1:35.6",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "11",
+   "number": 15,
+   "name": "サウザンボム",
+   "time": "1:35.8",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "12",
+   "number": 6,
+   "name": "リアルジャパン",
+   "time": "1:36.0",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "13",
+   "number": 4,
+   "name": "セールデュクール",
+   "time": "1:36.2",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 16
+  },
+  {
+   "finish": "14",
+   "number": 10,
+   "name": "プレシャスローズ",
+   "time": "1:36.2",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "15",
+   "number": 3,
+   "name": "ダディーズレガリア",
+   "time": "1:36.9",
+   "margin": "４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "16",
+   "number": 16,
+   "name": "サムワンユーラヴド",
+   "time": "1:37.6",
+   "margin": "４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "17",
+   "number": 14,
+   "name": "ミコウェイ",
+   "time": "1:38.0",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 17
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "12",
+    "yen": 150,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "12",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "13",
+    "yen": 170,
+    "pop": 2
+   },
+   {
+    "combo": "11",
+    "yen": 280,
+    "pop": 6
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "6-7",
+    "yen": 500,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "12-13",
+    "yen": 240,
+    "pop": 1
+   },
+   {
+    "combo": "11-12",
+    "yen": 380,
+    "pop": 3
+   },
+   {
+    "combo": "11-13",
+    "yen": 1460,
+    "pop": 16
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "12-13",
+    "yen": 520,
+    "pop": 1
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "12-13",
+    "yen": 700,
+    "pop": 1
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "11-12-13",
+    "yen": 1940,
+    "pop": 4
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "12-13-11",
+    "yen": 4460,
+    "pop": 7
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261123",
+ "venue_code": "05",
+ "race_no": 2,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605060220261123/53",
+ "title": "レース結果 JRA"
+}
