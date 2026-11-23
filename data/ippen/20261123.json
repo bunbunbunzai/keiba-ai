@@ -1,6 +1,6 @@
 {
  "date": "20261123",
- "updated": "2026-11-23 19:11",
+ "updated": "2026-11-23 19:17",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -3383,8 +3383,22 @@
     "field": 12,
     "popularity": 9
    },
-   "odds": 18.5,
-   "popularity": 7
+   "odds": 50.7,
+   "popularity": 8
+  },
+  {
+   "race_id": "202611233230140309",
+   "results_key": "202611233230140309",
+   "venue": "佐賀",
+   "race_no": 9,
+   "post_time": "19:45",
+   "number": 6,
+   "name": "カンカール",
+   "types": [
+    "aitop"
+   ],
+   "odds": 5.9,
+   "popularity": 3
   },
   {
    "race_id": "202611233230140309",
@@ -3395,7 +3409,8 @@
    "number": 7,
    "name": "カイリクイーン",
    "types": [
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 16,
    "last": {
@@ -3404,8 +3419,8 @@
     "field": 10,
     "popularity": 2
    },
-   "odds": 3.9,
-   "popularity": 2
+   "odds": 10.3,
+   "popularity": 4
   },
   {
    "race_id": "202611230304170312",
