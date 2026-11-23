@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261123",
  "race_id": "202611232218150110",
- "tries": 5,
+ "tries": 6,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "マジックオーラ",
    "time": "1:38.5",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 39.1,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "デルマシラカミ",
    "time": "1:39.1",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 39.1,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "インディクイーン",
    "time": "1:39.1",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 39.9,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "カツラコマチ",
    "time": "1:39.4",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 39.6,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "トクシーゼファー",
    "time": "1:40.2",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 40.8,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ウルヴァリン",
    "time": "1:40.7",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 40.1,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "ニテンイチリュウ",
    "time": "1:41.5",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 41.5,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "セレナブリーズ",
    "time": "1:41.9",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 42.5,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "マイトビーウォン",
    "time": "1:42.9",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 42.1,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "レフィノス",
    "time": "1:44.6",
    "margin": "８",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 12,
+   "last3f": 42.7,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "スプレンドーレ",
    "time": "1:44.8",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 10,
+   "last3f": 44.1,
    "popularity": null
   },
   {
@@ -198,8 +198,8 @@
    "name": "オッスイレブン",
    "time": "1:45.1",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 45.5,
    "popularity": null
   }
  ]
