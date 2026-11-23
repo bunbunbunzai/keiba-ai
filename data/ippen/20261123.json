@@ -1,6 +1,6 @@
 {
  "date": "20261123",
- "updated": "2026-11-23 14:37",
+ "updated": "2026-11-23 14:55",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -2025,8 +2025,7 @@
    "number": 1,
    "name": "ハクアイボヌール",
    "types": [
-    "rebound",
-    "letdown"
+    "rebound"
    ],
    "gap_days": 14,
    "last": {
@@ -2035,8 +2034,8 @@
     "field": 8,
     "popularity": 1
    },
-   "odds": 11.8,
-   "popularity": 4
+   "odds": 8.4,
+   "popularity": 3
   },
   {
    "race_id": "202611230304170304",
@@ -2161,7 +2160,7 @@
     "field": 10,
     "popularity": 6
    },
-   "odds": 18.0,
+   "odds": 10.9,
    "popularity": 6
   },
   {
@@ -2346,8 +2345,8 @@
     "field": 12,
     "popularity": 4
    },
-   "odds": 6.8,
-   "popularity": 3
+   "odds": 9.7,
+   "popularity": 6
   },
   {
    "race_id": "202611231106070509",
@@ -2358,8 +2357,7 @@
    "number": 9,
    "name": "スターアドミラル",
    "types": [
-    "rebound",
-    "aitop"
+    "rebound"
    ],
    "gap_days": 27,
    "last": {
@@ -2368,8 +2366,8 @@
     "field": 12,
     "popularity": 11
    },
-   "odds": 9.0,
-   "popularity": 4
+   "odds": 5.0,
+   "popularity": 3
   },
   {
    "race_id": "202611232218150106",

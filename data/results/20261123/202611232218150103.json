@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261123",
  "race_id": "202611232218150103",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -71,8 +71,8 @@
    "name": "ソルティアーラ",
    "time": "1:32.6",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 40.3,
    "popularity": null
   },
   {
@@ -82,8 +82,8 @@
    "name": "ヒロピアーナ",
    "time": "1:33.2",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 39.8,
    "popularity": null
   },
   {
@@ -93,8 +93,8 @@
    "name": "ユイアンゴロー",
    "time": "1:33.6",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 40.4,
    "popularity": null
   },
   {
@@ -104,8 +104,8 @@
    "name": "グランフォワイエ",
    "time": "1:34.7",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 42.3,
    "popularity": null
   },
   {
@@ -115,8 +115,8 @@
    "name": "アンフォーギヴン",
    "time": "1:34.9",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 40.5,
    "popularity": null
   },
   {
@@ -126,8 +126,8 @@
    "name": "タワワ",
    "time": "1:35.5",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 40.9,
    "popularity": null
   },
   {
@@ -137,8 +137,8 @@
    "name": "ミディエイター",
    "time": "1:35.6",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 41.9,
    "popularity": null
   },
   {
@@ -148,8 +148,8 @@
    "name": "チアフルマノン",
    "time": "1:37.4",
    "margin": "９",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 41.7,
    "popularity": null
   }
  ]
