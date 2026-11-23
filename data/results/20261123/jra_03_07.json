@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 12,
+   "name": "ベラジオリン",
+   "time": "1:07.9",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 8,
+   "name": "ララバッカナール",
+   "time": "",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "number": 14,
+   "name": "アツキヤマト",
+   "time": "",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "4",
+   "number": 10,
+   "name": "ファンシーフリル",
+   "time": "",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "5",
+   "number": 9,
+   "name": "ダイイズキャスト",
+   "time": "",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "12",
+    "yen": 340,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "12",
+    "yen": 170,
+    "pop": 2
+   },
+   {
+    "combo": "8",
+    "yen": 200,
+    "pop": 3
+   },
+   {
+    "combo": "14",
+    "yen": 520,
+    "pop": 10
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-6",
+    "yen": 580,
+    "pop": 2
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "8-12",
+    "yen": 420,
+    "pop": 2
+   },
+   {
+    "combo": "12-14",
+    "yen": 1640,
+    "pop": 23
+   },
+   {
+    "combo": "8-14",
+    "yen": 1740,
+    "pop": 25
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "8-12",
+    "yen": 740,
+    "pop": 1
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "12-8",
+    "yen": 1460,
+    "pop": 2
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "8-12-14",
+    "yen": 6020,
+    "pop": 19
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "12-8-14",
+    "yen": 21140,
+    "pop": 47
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261123",
+ "venue_code": "03",
+ "race_no": 7,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603060720261123/E6",
+ "title": "レース結果 JRA"
+}
