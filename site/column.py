@@ -799,6 +799,9 @@ def _aff_for(c: dict, tables: dict) -> str:
         return ""
     if c.get("series") == "gdata":
         return tables.get("aff_saikyo", "")
+    if c.get("slug", "").endswith("-guide"):  # 特集まとめ：地方のレース（front matter に race_venue がある）は楽天競馬、中央は競馬最強の法則WEB
+        v = c.get("race_venue") or ""
+        return tables.get("aff_rakuten" if v and not v.endswith(_JRA_VENUES) else "aff_saikyo", "")
     if c.get("auto") == "true":
         head = c.get("body", "")[:400]
         m = re.search(r"レース：.*?([^\s（）()]+)競馬場", head)

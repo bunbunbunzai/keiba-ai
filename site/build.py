@@ -103,6 +103,9 @@ details.colgrp>summary{cursor:pointer;font-weight:700;padding:10px 0;font-size:1
 
 # レースページ：ページ内の目次（各欄へ飛ぶ）と、全頭評価の並べ替え（馬番順／評価点順／印のある馬だけ）
 EXTRA_JS = r"""
+(function(){var ul=document.querySelector('ul.rcap');if(!ul)return;function open(){ul.classList.remove('rcap');var m=document.querySelector('.rmore');if(m)m.hidden=true;}
+var b=document.querySelector('.rcap-all');if(b)b.addEventListener('click',open);document.querySelectorAll('.filters[data-kind]').forEach(function(f){f.addEventListener('click',open)});
+try{var sv=JSON.parse(localStorage.getItem('filters')||'{}');if((sv.venue&&sv.venue!=='all')||(sv.conf&&sv.conf!=='all'))open();}catch(e){}})();
 (function(){var hl=document.querySelector('main ul.hl');if(!hl)return;
 function ga(n,p){try{if(window.gtag)gtag('event',n,p||{})}catch(e){}}
 var ans=document.querySelector('main p.answer'),hs=[].slice.call(document.querySelectorAll('main section.card>h2'));
@@ -158,6 +161,19 @@ def aff_rakuten(kind: str = "race") -> str:
         return f"<p class='aff'><span class='pr'>PR</span>この場の馬券は{a}（地方競馬全場・登録無料）でネット購入できる。</p>"
     return (f"<div class='aff affbox'><span class='pr'>PR</span><p>地方競馬の馬券をネットで買うなら{a}。全15場（ばんえい含む）に対応し、登録無料。楽天銀行なら入出金が即時で、購入額に応じて楽天ポイントが貯まる。</p>"
             f"<a href='{AFF_RAKUTEN.format(id=70)}' target='_blank' rel='nofollow sponsored noopener' data-aff='rakuten-keiba-banner'><img src='{AFF_RAKUTEN_IMG.format(id=70)}' alt='楽天競馬' width='728' height='90' loading='lazy'></a></div>")
+def aff_line(kind: str = "jra") -> str:
+    """重賞ページ・特集まとめ・用語集に置く1行のPR（2026-11-24。それまでは地方のレースページと一部のコラムにしか無く、人が来るページに導線が無かった）。
+    jra：中央の重賞（競馬最強の法則WEB）、nar：地方の重賞（楽天競馬）、gloss：用語集（楽天競馬）。"""
+    if kind == "jra":
+        return (f"<p class='aff'><span class='pr'>PR</span>AIの予想と、人間の予想家の見解を比べたい人には"
+                f"<a href='{AFF_SAIKYO_TXT_URL}' target='_blank' rel='nofollow sponsored noopener' data-aff='saikyo-web'>競馬最強の法則WEB</a>（無料会員登録あり）がある。"
+                f"<img src='{AFF_SAIKYO_TXT_PX}' alt='' width='1' height='1' style='position:absolute;width:1px;height:1px'></p>")
+    a = f"<a href='{AFF_RAKUTEN.format(id=14)}' target='_blank' rel='nofollow sponsored noopener' data-aff='rakuten-keiba'>楽天競馬</a>"
+    if kind == "nar":
+        return f"<p class='aff'><span class='pr'>PR</span>このレースの馬券は{a}（地方競馬全場・登録無料）でネット購入できる。</p>"
+    return f"<p class='aff'><span class='pr'>PR</span>地方競馬は平日も毎日開催している。馬券は{a}（全場対応・登録無料）でネット購入できる。</p>"
+
+
 STATS_FROM = "20261026"  # 自動運用を始めた日。これより前（試運転）は成績に含めない
 GENSEN_FROM = "20261111"  # 厳選レース（自信度A・◎の単複1点）の成績を数え始めた日
 VENUE_SLUG = {
@@ -919,10 +935,11 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
     body = f"""
 <p class="crumb"><a href="/">トップ</a> › <a href="{day_path(date)}">{fmt_date(date)}</a> › <a href="{venue_path(venue)}">{esc(VENUE_NAME.get(venue, venue))}</a> › {race_no(p)}R</p>
 <h1>{esc(race_label(p))} 予想</h1><p class="meta">{esc(meta)}{course_link(p)}</p>
+<div class="mtop"><div class="marks">{marks_html}</div>{f"<p class='subs'>{esc(subs)}</p>" if subs else ''}
+<p class="mconf">{term("confidence", "自信度")} <span class="conf c{esc(p.get('confidence'))}">{esc(p.get('confidence'))}</span>{"<a class='gensen' href='/results/#gensen'>厳選レース</a>" if p.get('confidence') == 'A' and date >= GENSEN_FROM else ''}</p></div>
 <p class="answer">{esc(answer_sentence(date, p))}</p>
 {pre_odds_notice(date, p)}
-<section class="card"><div class="marks">{marks_html}</div>{f"<p class='subs'>{esc(subs)}</p>" if subs else ''}
-<p>{term("confidence", "自信度")} <span class="conf c{esc(p.get('confidence'))}">{esc(p.get('confidence'))}</span></p>
+<section class="card">
 <h2>結論</h2>{plain_line(p)}<p class="sum">{esc(p.get('summary'))}</p>{ai_top_line(p)}
 <h3>買い目（各100円・計{len(p.get('bets', []))}点）</h3><ul class="bets">{bets or '<li>買い目なし</li>'}</ul>{bets_note}{aff_rakuten('race') if not str(p['race_id']).startswith('jra_') and p.get('confidence') != '見送り' else ''}</section>
 {res_html}
@@ -933,7 +950,7 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
 <p class="meta">{term("score", "評価点")}は45点満点。{term("adjpct", "補正勝率")}は単勝オッズとAIの評価点を合わせた勝つ確率で、◎と自信度はこれで決めている。{term("value", "妙味")}は「AIの{term("winpct", "想定勝率")}×単勝オッズ」（参考）。1.2以上なら配当の割に勝ち目がある狙い目、0.8未満なら人気しすぎ（過剰人気）という目安（オッズは予想を出した時点のもの）。用語は<a href="/glossary/">用語集</a>へ。</p></section>
 {racesim.section(p, frame_of, RACESIM_V, d3=f"/racesim3d.js?v={RACESIM3D_V}" if g0 else None)}
 {ippen_line(date, p)}
-{f'<section class="card"><h2>更新履歴</h2><ul>{updates}</ul></section>' if updates else ''}
+{f'<section class="card"><h2>更新履歴</h2>' + (f"<details class='fold'><summary>{len(p.get('updates', []))}件の更新を見る</summary><ul>{updates}</ul></details>" if len(p.get('updates', [])) > 2 else f"<ul>{updates}</ul>") + '</section>' if updates else ''}
 {graded_link}
 {ask_html}
 {vs_html}
@@ -1268,7 +1285,7 @@ def scoreboard(date: str, preds: list[dict]) -> str:
     bet = [p for p in preds if p.get("confidence") != "見送り"]
     done = [scored(p) for p in bet if scored(p)]
     if not done:
-        return (f"<section class='card live'><h2>当日の成績</h2>{banner('morning')}<p>結果が出たレース 0／{len(bet)}。最初のレースの結果が出ると、ここに的中数と回収率が表示される。</p></section>")
+        return f"<p class='meta live0'>当日の成績：結果が出たレース 0／{len(bet)}。最初のレースの結果が出ると、的中数と回収率がここに出る。</p>"
     st, rt = sum(s["stake"] for s in done), sum(s["return"] for s in done)
     hit = sum(1 for s in done if s["return"] > 0)
     win = sum(1 for s in done if str(s.get("honmei_finish")) == "1")
@@ -1510,13 +1527,39 @@ def gensen_day(date: str, preds: list[dict]) -> str:
            if act.get("n") else "")
     expl = (f"<p class='meta'>◎の{term('adjpct', '補正勝率')}が50%以上のレース。買い目は他と同じ◎の単勝か複勝1点。"
             f"{esc(rec)}<a href='/results/#gensen'>厳選レースの成績</a></p>")
+    kp = (f"<div class='gkpi'><div><b>{esc(act['hit'])}</b><span>的中率</span></div><div><b>{esc(act['top3'])}</b><span>◎の3着内率</span></div>"
+          f"<div><b>{esc(act['roi'])}</b><span>回収率</span></div><div><b>{act['n']}</b><span>レース（{int(GENSEN_FROM[4:6])}/{int(GENSEN_FROM[6:8])}〜）</span></div></div>"
+          if act.get("n") else "")
     if not a:
         return f"<section class='card gensen-box'>{head}<p>{when}は◎の補正勝率が50%に届くレースが無い。</p>{expl}</section>"
-    return (f"<section class='card gensen-box'>{head}<ul class='races rlist'>"
+    return (f"<section class='card gensen-box'>{head}{kp}<ul class='races rlist'>"
             + "".join(race_item(date, p) for p in a) + f"</ul>{expl}</section>")
 
 
-def day_list(date: str, preds: list[dict]) -> str:
+RECENT_HIT_DAYS = 3
+
+
+def recent_hits(by_date: dict, upto: str) -> str:
+    """トップ：直近3日の的中（払戻の大きい順に5件）。外れを隠さないよう、同じ期間の全体の的中数と回収率も必ず添える。"""
+    ds = [d for d in sorted(by_date, reverse=True) if d <= upto][:RECENT_HIT_DAYS]
+    done = [(d, p, scored(p)) for d in ds for p in by_date[d] if scored(p) and scored(p).get("stake") and not scored(p).get("voided")]
+    wins = sorted([x for x in done if x[2]["return"] > x[2]["stake"]], key=lambda x: -x[2]["return"])[:5]
+    if len(done) < 10 or not wins:
+        return ""
+    st, rt = sum(x[2]["stake"] for x in done), sum(x[2]["return"] for x in done)
+    lis = "".join(
+        f"<li><a href='{race_path(d, p)}'><span class='rno'>{md(d)} {esc(extra.nfkc(race_label(p)))}</span>"
+        f"<span class='hon'>◎{p['marks'].get('◎')} {esc(horse_name(p, p['marks'].get('◎')))}</span>"
+        f"<span class='res hit'>{esc((sc.get('hits') or [''])[0])}</span></a></li>" for d, p, sc in wins)
+    return (f"<section class='card picks hits'><h2>直近{len(ds)}日の的中<small>払戻の大きい順</small></h2><ul class='races'>{lis}</ul>"
+            f"<p class='meta'>この{len(ds)}日間は{len(done)}レース中{sum(1 for x in done if x[2]['return'] > 0)}レース的中・回収率{roi_txt(st, rt)}（外れたレースも含む）。"
+            f"<a href='/results/'>すべての成績</a></p></section>")
+
+
+LIST_CAP = 12  # 過去の日の一覧で、最初に見せるレース数（1日70レースを全部並べると、スマホで画面16枚分の長さになる）
+
+
+def day_list(date: str, preds: list[dict], mid: str = "") -> str:
     venues = sorted({venue_of(p) for p in preds})
     today = date == TODAY
     h, hid = hero(date, preds)
@@ -1529,9 +1572,11 @@ def day_list(date: str, preds: list[dict]) -> str:
     if len(gl) >= 2:
         glist = ("<section class='card'><h2>{}の重賞</h2><ul class='races rlist'>".format("今日" if today else "この日")
                  + "".join(race_item(date, p) for p in sorted(gl, key=lambda q: q["_race"].get("post_time") or "")) + "</ul></section>")
-    return (stale + tmr + date_tabs(date) + h + scoreboard(date, preds) + gensen_day(date, preds) + glist + picks_html(date, preds, today, hid) + filters(venues)
+    cap = not today and len(preds) > LIST_CAP + 6
+    return (stale + tmr + date_tabs(date) + h + gensen_day(date, preds) + scoreboard(date, preds) + mid + glist + picks_html(date, preds, today, hid) + filters(venues)
             + (f"<p class='jump'><a href='#next' class='to-next'>次の発走へ ↓</a><button class='toggle-gone'>発走済みを表示</button></p>" if today else "")
-            + "<ul class='races rlist'>" + "".join(race_item(date, p) for p in preds) + "</ul>")
+            + f"<ul class='races rlist{' rcap' if cap else ''}'>" + "".join(race_item(date, p) for p in preds) + "</ul>"
+            + (f"<p class='jump rmore'><button type='button' class='rcap-all'>残りの{len(preds) - LIST_CAP}レースも表示</button></p>" if cap else ""))
 
 
 PAST_ON_TOP = 14  # トップの「過去の予想」に出す日数（それより前は /days/ へ）
@@ -1945,7 +1990,7 @@ def glossary_term_pages() -> dict[str, str]:
                 + (f"<section class='card'><h2>関連する用語</h2><ul>{rel}</ul></section>" if rel else "")
                 + (f"<section class='card'><h2>「{esc(x.get('category', ''))}」のほかの用語</h2><p>" + "　".join(f"<a href='/glossary/{y['slug']}/'>{esc(y['term'])}</a>" for y in same) + "</p></section>" if same else "")
                 + f"<p class='meta'>AIが書いた説明を、{esc(x.get('updated', ''))}時点で掲載。ルールの正式な内容は主催者の発表を確認してほしい。</p>"
-                + weekly.next_card("glossary"))
+                + aff_line("gloss") + weekly.next_card("glossary"))
         # 題名に答えの要点を入れる（検索では5〜7位に出ているのに押されていなかった。「とは｜用語集」だけでは中身が伝わらない）
         # 文の終わりの言い切り（「〜ということ。」など）を外す。外したあとに「という」「と」が残る形（文の途中で切れて見える）は使わない
         gist = re.sub(r"(ということ|のことである|のことをいう|である|のこと|こと|をいう|を指す|を表す)?。$", "", x["short"].strip())
@@ -1979,6 +2024,7 @@ def limits_page(t: dict, worst_venue: tuple[str, str] | None) -> str:
 
 
 SITE_CHANGES = [
+    ("2026-11-24", "最初の画面を見直した。トップは説明文を短くして今のルールの回収率を先に書き、今日の目玉レースと厳選レース（的中率・◎の3着内率・回収率つき）を上に、直近3日の的中（同じ期間の全体の的中数と回収率つき）をその下に置いた。レースページは◎〇▲と自信度を一番上に移し、ページ内の目次はスマホで横1行にした。過去の日の一覧は最初の12レースだけを見せ、残りはボタンで開く。スマホではヘッダーを低くした。重賞ページ・特集まとめ・用語集にPRの案内を1行足し、PRのリンクがどの種類のページで押されたかを記録するようにした。"),
     ("2026-11-24", "レースページの買い目の下に「相手を絡めるなら（参考）」として、◎と〇・▲のワイド・馬連の組み合わせを載せた。このサイトの買い目ではなく、成績にも数えない（◎の複勝にワイドか馬連を1点足すと、自信度Aのレースの回収率が約100%から約85%に下がったため、買い目は◎の単勝か複勝1点のままにしている）。結果が出たあとは、当たり外れと払戻を表示する。"),
     ("2026-11-23", "G1の特集まとめの冒頭に、開催日・コースと、発表の順番（出走馬 → 枠順 → AI予想 → レース）のうち今どこまで進んだか、その時点の入口（出走馬の一覧、AI予想・全頭診断・「AI vs あなた」、結果と答え合わせ）をまとめた箱を置いた。用語集のすべての用語に、実際のレースの数字を足した（中央競馬の約1万レースの払戻・人気別の成績・枠や4コーナーの位置ごとの成績、今年の重賞の結果、このサイトのAIの印の成績など。サイトの更新のたびに数え直す）。"),
     ("2026-11-23", "2027年のG1日程の一覧と、2027年の特集まとめ（中山金杯・京都金杯・フェブラリーステークス・高松宮記念・大阪杯・桜花賞・中山グランドジャンプ・皐月賞）を公開した。日付はJRAが発表した2027年の重賞の一覧による。前哨戦の結果は、レースが終わるたびに自動で入る。天皇賞（春）より先のレースは、レースの約5か月前から順に公開する。X（@zentou_log）への自動投稿は、G1の予想と結果だけにした。"),
@@ -2213,7 +2259,11 @@ h1 small{display:block;font-size:14px;color:var(--mut);font-family:"Hiragino San
 .prefs .theme{border:1px solid var(--line);background:var(--panel);color:var(--fg);border-radius:2px;padding:2px 10px;font:inherit;font-size:12px;cursor:pointer}
 th.sortable{cursor:pointer;user-select:none}th.sortable:hover{color:var(--acc)}th[data-dir=asc]::after{content:" ▲";font-size:10px}th[data-dir=desc]::after{content:" ▼";font-size:10px}
 .cd{color:var(--acc);font-weight:700}
-.bets .bo{margin-left:.5em;font-size:12px;color:var(--mut);font-weight:400}.betnote{font-size:13px;color:var(--mut);margin:6px 0 0;line-height:1.6}.refc{margin-top:14px;padding-top:10px;border-top:1px dashed var(--line)}.refc h3{margin:0 0 4px;font-size:14px}.bets.ref li{border-style:dashed;background:transparent}
+.bets .bo{margin-left:.5em;font-size:12px;color:var(--mut);font-weight:400}.betnote{font-size:13px;color:var(--mut);margin:6px 0 0;line-height:1.6}.mtop{margin:10px 0 4px;padding:10px 14px;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--acc)}.mtop .marks{margin:0 0 2px}.mtop .subs{margin:0 0 4px}.mtop .mconf{margin:0;font-size:14px}.mtop a.gensen{margin-left:8px;font-size:12px;border:1px solid var(--acc);color:var(--acc);padding:1px 8px;border-radius:2px;font-weight:700}
+.gkpi{display:flex;flex-wrap:wrap;gap:4px 22px;margin:6px 0 8px}.gkpi div{display:flex;flex-direction:column}.gkpi b{font-family:"Shippori Mincho B1",serif;font-size:24px;line-height:1.2;color:var(--acc)}.gkpi span{font-size:12px;color:var(--mut)}
+.live0{margin:10px 0}.hits h2 small{font-size:12px;color:var(--mut);font-weight:400;margin-left:8px}.rcap li:nth-child(n+13){display:none}.rmore{margin:8px 0 0}details.fold summary{cursor:pointer;color:var(--acc);font-size:14px}
+@media (max-width:720px){.logo small{display:none}.bar{padding:8px 0 6px;flex-wrap:nowrap}.bar .logo{flex:1 1 auto}.logo img{width:36px;height:36px}.roi-badge{flex-basis:auto!important;margin-left:auto!important;text-align:right;white-space:nowrap}.roi-badge .rn{display:none}ul.rtoc{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px}ul.rtoc li{flex:0 0 auto}.gkpi{gap:4px 16px}.gkpi b{font-size:20px}.mtop .marks{gap:2px 18px}.mtop .marks b{font-size:22px}.mtop .marks span{font-size:16px}.mtop .marks .m:first-child span{font-size:18px}}
+.refc{margin-top:14px;padding-top:10px;border-top:1px dashed var(--line)}.refc h3{margin:0 0 4px;font-size:14px}.bets.ref li{border-style:dashed;background:transparent}
 .zkbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:60;max-width:560px;margin:0 auto;display:flex;align-items:center;gap:8px;background:var(--panel);color:var(--fg);border:1px solid var(--line);border-left:4px solid var(--acc);box-shadow:0 6px 18px rgba(0,0,0,.18);padding:8px 8px 8px 10px;font-size:14px;line-height:1.5}
 .zkbar.fab{right:92px}.zkbar img{flex:none;width:36px;height:36px}.zkbar span{flex:1;min-width:0}.zkbar button{font:inherit;cursor:pointer;flex:none}
 .zkbar .go{background:var(--acc);color:var(--bg);border:0;padding:8px 12px;font-weight:700;border-radius:2px}.zkbar .x{background:transparent;border:0;color:var(--mut);font-size:20px;line-height:1;padding:6px 8px}
@@ -2283,7 +2333,8 @@ function ga(n,p){try{if(window.gtag)gtag('event',n,p||{})}catch(e){}}
 document.addEventListener('click',function(e){var a=e.target.closest('a');if(!a)return;var h=a.href||'';
  if(a.closest('.share')){ga('share',{method:/line/.test(h)?'line':'x',page:location.pathname});return;}
  if(/x\\.com\\/zentou_log|instagram\\.com\\/zentou_log/.test(h)){ga('sns_follow',{network:/instagram/.test(h)?'instagram':'x'});return;}
- if(a.dataset.aff){ga('affiliate_click',{program:a.dataset.aff,page:location.pathname});}});
+ if(a.dataset.aff){var pp=location.pathname,pt=/^[/]\\d{4}[/]\\d\\d[/]\\d\\d[/][^/]+[/]/.test(pp)?'race':/^[/]venue[/]/.test(pp)?'venue':/^[/]graded[/]/.test(pp)?'graded':/^[/]glossary[/]/.test(pp)?'glossary':/^[/]column[/].*-guide[/]/.test(pp)?'hub':/^[/]column[/]/.test(pp)?'column':'other';
+  ga('affiliate_click',{program:a.dataset.aff,page:pp,placement:pt});ga('aff_click_'+pt,{program:a.dataset.aff,page:pp});}});
 (function(){var p=location.pathname,best=null;document.querySelectorAll('header nav a').forEach(function(a){var h=a.getAttribute('href');if(h==='/'?(p==='/'||/^[/]\\d{4}[/]/.test(p)):p.indexOf(h)===0){if(!best||h.length>best.getAttribute('href').length)best=a;}});if(best)best.classList.add('on');})();
 (function(){var f=document.querySelector('.srch'),inp=f&&f.querySelector('input'),box=f&&f.querySelector('.sres'),idx=null,t;
  function norm(x){return (x||'').normalize('NFKC').replace(/[\\s　]/g,'').toLowerCase();}
@@ -2430,11 +2481,11 @@ def build() -> None:
     if len(nrows) >= RULE_MIN:  # 今のルールの成績がたまったら、見出しはそちらを出す
         st0, rt0 = sum(int(r["stake"]) for r in nrows), sum(int(r["return"]) for r in nrows)
         HEADER_ROI = (f"<a class='roi-badge' href='/results/'>{int(RULE_FROM[4:6])}/{int(RULE_FROM[6:8])}〜の回収率 <b>{roi_txt(st0, rt0)}</b>"
-                      f"（{len(nrows)}レース・外れ込み）</a>")
+                      f"<span class='rn'>（{len(nrows)}レース・外れも含む）</span></a>")
     elif mrows:
         st0, rt0 = sum(int(r["stake"]) for r in mrows), sum(int(r["return"]) for r in mrows)
         HEADER_ROI = (f"<a class='roi-badge' href='/results/'>{int(mrows[0]['date'][4:6])}月の回収率 <b>{roi_txt(st0, rt0)}</b>"
-                      f"（{len(mrows)}レース・外れも含む）</a>")
+                      f"<span class='rn'>（{len(mrows)}レース・外れも含む）</span></a>")
     if ASSETS.exists():
         shutil.copytree(ASSETS, OUT / "assets", ignore=shutil.ignore_patterns("og-base.png", "src", "sns-*"))
     og.site_image(OUT / "og" / "default.jpg", "全レースAI予想と回収率の記録",
@@ -2532,7 +2583,9 @@ def build() -> None:
     main_d = today if today in by_date else (dates[0] if dates else None)
     if main_d:
         head = "今日の予想" if main_d == today else f"{fmt_date(main_d)}の予想"
-        top_list = f"<section class='today'>{day_list(main_d, by_date[main_d])}</section>"
+        _mid = (recent_hits(by_date, main_d) + feature_banner()
+                + "<p class='notice'><a href='/weekend/' data-ns='top' data-ns-to='weekend'><b>今週末の競馬まとめ</b></a>　重賞のAI予想の公開状況・特集・先週の結果を毎週入れ替えています（ブックマーク推奨）。</p>")
+        top_list = f"<section class='today'>{day_list(main_d, by_date[main_d], mid=_mid)}</section>"
     else:
         head, top_list = "今日の予想", "<p>予想はまだありません。</p>"
     past_rows = [x for x in day_rows if x[0] != main_d]
@@ -2541,11 +2594,9 @@ def build() -> None:
     if len(past_rows) > PAST_ON_TOP:  # トップには直近だけ。全部の日付は /days/ に月ごとにまとめる
         past += f"<li><a href='/days/'><span>すべての日付（{len(day_rows)}日分）</span><span>月ごとに見る →</span></a></li>"
     body = (f"<h1>{head}<small>{fmt_date(main_d) if main_d else ''}</small></h1>"
-            f"<p class='answer'>AIが日本の競馬（JRA・地方）の全レースを毎日予想し、外れも含めた成績を公開している。累計回収率は{t['roi']}（{t['n']}レース。◎が3着以内に入った割合は{t['top3']}）。"
-            + (f"今のルール（{rule_label()}、買い目は◎の単勝か複勝1点）では{tn_['roi']}（{tn_['n']}レース）。" if tn_["n"] else "")
+            f"<p class='answer'>AIが中央・地方の全レースを毎日予想し、外れたレースも含めた成績を公開している。"
+            + (f"今のルール（{rule_label()}）の回収率は{tn_['roi']}（{tn_['n']}レース）。" if tn_["n"] >= RULE_MIN else f"累計回収率は{t['roi']}（{t['n']}レース）。")
             + f"<a href='/results/'>成績の詳細</a>　<span class='meta'>最終更新 {now.strftime('%m/%d %H:%M')}</span></p>"
-            + feature_banner()
-            + "<p class='notice'><a href='/weekend/' data-ns='top' data-ns-to='weekend'><b>今週末の競馬まとめ</b></a>　重賞のAI予想の公開状況・特集・先週の結果を毎週入れ替えています（ブックマーク推奨）。</p>"
             + top_list + (f"<section id='past'><h2>過去の予想</h2><ul class='days'>{past}</ul></section>" if past else ""))
     site_ld = [{"@context": "https://schema.org", "@type": "Organization", "name": SITE_NAME, "url": BASE_URL + "/", "logo": BASE_URL + "/assets/logo-mark.png",
                 "sameAs": [X_URL, IG_URL], "contactPoint": {"@type": "ContactPoint", "contactType": "customer support", "url": BASE_URL + "/contact/"}},

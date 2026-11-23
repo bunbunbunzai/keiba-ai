@@ -387,6 +387,7 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
                 + _next(slug) + weekly.live_section(slug) + feature_notice(esc, name, feats) + gdata_notice(esc, slug) + race_guide_html(B, slug) +
                 f"<section class='card'><h2>年ごとのAI予想と結果</h2><ul class='days'>{''.join(lis)}</ul></section>"
                 f"<p class='meta'>毎年このページに追加される。最新の予想はレース当日の昼（重賞は前日夜にも）公開。</p>"
+                + B.aff_line("nar" if str(g).startswith("Jpn") or not str(g).startswith(("G", "J")) else "jra")
                 + B.share_links(B.BASE_URL + path, f"{name}のAI予想と傾向（{g}）", f"競馬全頭ログ,{name.replace('(', '').replace(')', '')}"))
         ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": B.SITE_NAME, "item": B.BASE_URL + "/"},
@@ -411,6 +412,7 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
                 f"<h1>{esc(h1)}</h1><p class='answer'>{esc(gd.get('lead', ''))}</p>"
                 + _next(slug) + weekly.live_section(slug) + feature_notice(esc, name, feats) + gdata_notice(esc, slug) + race_guide_html(B, slug, show_lead=not gd.get("lead"))
                 + "<p class='meta'>このレースのAI予想（全頭の評価点・印・買い目）は、レースの前日夜または当日昼にこのページに追加される。</p>")
+        body += B.aff_line("nar" if str(g).startswith("Jpn") or not str(g).startswith(("G", "J")) else "jra")
         body += B.share_links(B.BASE_URL + path, f"{name}の傾向とレースガイド（{g}）", f"競馬全頭ログ,{name.replace('(', '').replace(')', '')}")
         ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": B.SITE_NAME, "item": B.BASE_URL + "/"},

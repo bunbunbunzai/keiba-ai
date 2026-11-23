@@ -269,12 +269,31 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
                     f"<div><b>{esc(_yen(ip.get('総賞金') or '') or '-')}</b><span>獲得賞金</span></div></div>")
             evals = ("<section class='card'><h2>このサイトのAIの評価</h2><p>まだ評価していない。出走するレースのAI予想（全頭の評価点・印・買い目）を出したときに、"
                      "このページにも評価の記録が加わる。</p></section>")
+        # 同じレースで走った馬（直近の1レース）：馬名で来た人が、相手の馬やそのレースの予想へ進めるようにする（2026-11-24）
+        rivals = ""
+        if items:
+            x0 = items[0]
+            mk0 = B.mark_map(x0["p"]) if hasattr(B, "mark_map") else {}
+            lis_r = []
+            for e in sorted(x0["p"].get("horses", []), key=lambda e: -(e.get("score") or 0)):
+                if e.get("name") == name or not e.get("name"):
+                    continue
+                m_ = mk0.get(e.get("number"), "")
+                fin_ = _finish(x0["p"], e.get("number"))
+                lis_r.append(f"<li>{esc(m_)}{' ' if m_ else ''}{B.link_horse(e.get('name'))}<small>　評価点{esc(e.get('score') if e.get('score') is not None else '-')}"
+                             f"{'・' + esc(fin_) + '着' if str(fin_).isdigit() else ''}</small></li>")
+                if len(lis_r) >= 5:
+                    break
+            if lis_r:
+                rivals = (f"<section class='card'><h2>同じレースで走った馬<small>{esc(B.md(x0['d']))} {esc(B.race_label(x0['p']))}</small></h2>"
+                          f"<ul class='rivals'>{''.join(lis_r)}</ul>"
+                          f"<p class='meta'>AIの評価点が高かった順に5頭。<a href='{B.race_path(x0['d'], x0['p'])}'>このレースの全頭の評価と結果を見る</a></p></section>")
         body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/horse/'>馬別</a> › {esc(name)}</p>"
                 f"<h1>{esc(name)}の成績{'とAI評価' if items else '・次走と馬名の意味' if meaning else 'と次走'}</h1><p class='answer'>{esc(lead)}</p>{next_html}"
                 + kpis + evals
                 + (f"<section class='card'><h2>AIの見立て</h2><div class='kaiko'>{B.zk('normal', 48)}<p><b>全頭くん</b>{esc(note['text'])}</p></div>"
                    f"<p class='meta'>近走と、このサイトのAIの評価をもとにAIが書いた寸評（{esc(B.md(note['updated']))}時点）。</p></section>" if note else "")
-                + nstep + wins_html
+                + nstep + rivals + wins_html
                 + (_info_runs_html(info, esc) if info_runs else _past_html(latest.get("past") or [], esc)) + prof_html
                 + (f"<section class='card'><h2>レースごとのAIの短評</h2><ul>{comments}</ul></section>" if comments else "")
                 + ("<p class='meta'>評価点はAIが5軸で採点した合計、想定勝率はAIの見立て。単勝は予想時点のオッズ。着順は主催者の発表が正。</p>" if items else
