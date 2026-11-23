@@ -6,49 +6,159 @@
    "name": "ベラジオリン",
    "time": "1:07.9",
    "margin": "",
-   "corners": "",
-   "last3f": null,
+   "corners": "2-2",
+   "last3f": 35.8,
    "popularity": 1
   },
   {
    "finish": "2",
    "number": 8,
    "name": "ララバッカナール",
-   "time": "",
+   "time": "1:07.9",
    "margin": "ハナ",
-   "corners": "",
-   "last3f": null,
+   "corners": "4-4",
+   "last3f": 35.6,
    "popularity": 3
   },
   {
    "finish": "3",
    "number": 14,
    "name": "アツキヤマト",
-   "time": "",
+   "time": "1:08.1",
    "margin": "１ 1/4",
-   "corners": "",
-   "last3f": null,
+   "corners": "8-7",
+   "last3f": 35.3,
    "popularity": 10
   },
   {
    "finish": "4",
    "number": 10,
    "name": "ファンシーフリル",
-   "time": "",
+   "time": "1:08.2",
    "margin": "３／４",
-   "corners": "",
-   "last3f": null,
+   "corners": "2-2",
+   "last3f": 36.1,
    "popularity": 2
   },
   {
    "finish": "5",
    "number": 9,
    "name": "ダイイズキャスト",
-   "time": "",
+   "time": "1:08.4",
    "margin": "３／４",
-   "corners": "",
-   "last3f": null,
+   "corners": "6-6",
+   "last3f": 35.9,
    "popularity": 7
+  },
+  {
+   "finish": "6",
+   "number": 11,
+   "name": "ディヴァインスカイ",
+   "time": "1:08.7",
+   "margin": "２",
+   "corners": "11-10",
+   "last3f": 35.5,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "number": 3,
+   "name": "アイファーファイト",
+   "time": "1:08.8",
+   "margin": "１",
+   "corners": "14-13",
+   "last3f": 35.5,
+   "popularity": 13
+  },
+  {
+   "finish": "8",
+   "number": 4,
+   "name": "シュークリーム",
+   "time": "1:08.9",
+   "margin": "クビ",
+   "corners": "1-1",
+   "last3f": 36.9,
+   "popularity": 6
+  },
+  {
+   "finish": "9",
+   "number": 16,
+   "name": "パワポケビー",
+   "time": "1:08.9",
+   "margin": "ハナ",
+   "corners": "8-12",
+   "last3f": 36.1,
+   "popularity": 14
+  },
+  {
+   "finish": "10",
+   "number": 6,
+   "name": "ヨドノゴールド",
+   "time": "1:09.0",
+   "margin": "クビ",
+   "corners": "4-5",
+   "last3f": 36.7,
+   "popularity": 9
+  },
+  {
+   "finish": "11",
+   "number": 7,
+   "name": "タイセイドゥマーニ",
+   "time": "1:09.0",
+   "margin": "クビ",
+   "corners": "6-8",
+   "last3f": 36.6,
+   "popularity": 8
+  },
+  {
+   "finish": "12",
+   "number": 1,
+   "name": "ブルーユンチェリー",
+   "time": "1:09.3",
+   "margin": "１ 1/2",
+   "corners": "11-10",
+   "last3f": 36.2,
+   "popularity": 12
+  },
+  {
+   "finish": "13",
+   "number": 15,
+   "name": "シェーンルスカ",
+   "time": "1:09.3",
+   "margin": "クビ",
+   "corners": "15-16",
+   "last3f": 35.7,
+   "popularity": 15
+  },
+  {
+   "finish": "14",
+   "number": 13,
+   "name": "ミスタートントン",
+   "time": "1:09.4",
+   "margin": "１／２",
+   "corners": "8-8",
+   "last3f": 36.6,
+   "popularity": 4
+  },
+  {
+   "finish": "15",
+   "number": 2,
+   "name": "エルル",
+   "time": "1:09.5",
+   "margin": "クビ",
+   "corners": "11-14",
+   "last3f": 36.3,
+   "popularity": 11
+  },
+  {
+   "finish": "16",
+   "number": 5,
+   "name": "カップッチョ",
+   "time": "1:09.6",
+   "margin": "１／２",
+   "corners": "15-15",
+   "last3f": 36.1,
+   "popularity": 16
   }
  ],
  "payouts": {
