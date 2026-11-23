@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 11,
+   "name": "シャルクハフト",
+   "time": "2:08.9",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "2",
+   "number": 1,
+   "name": "ペンナヴェローチェ",
+   "time": "2:09.1",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "3",
+   "number": 7,
+   "name": "ビービーアジャイル",
+   "time": "2:09.3",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "4",
+   "number": 6,
+   "name": "コズミックダンサー",
+   "time": "2:09.6",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "5",
+   "number": 4,
+   "name": "タイセイカイザー",
+   "time": "2:09.7",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "6",
+   "number": 3,
+   "name": "サンライズオスカー",
+   "time": "2:10.1",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "7",
+   "number": 5,
+   "name": "インペリアルライン",
+   "time": "2:10.2",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "8",
+   "number": 15,
+   "name": "ブレトワルダ",
+   "time": "2:10.2",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "9",
+   "number": 13,
+   "name": "メイショウフジ",
+   "time": "2:10.3",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "10",
+   "number": 2,
+   "name": "インジケーター",
+   "time": "2:11.0",
+   "margin": "４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "11",
+   "number": 8,
+   "name": "ラフエイジアン",
+   "time": "2:11.2",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "12",
+   "number": 10,
+   "name": "ホウオウバリスタ",
+   "time": "2:12.6",
+   "margin": "８",
+   "corners": "",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "13",
+   "number": 14,
+   "name": "ロングウェイホーム",
+   "time": "2:13.4",
+   "margin": "５",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "14",
+   "number": 9,
+   "name": "サークルオブジョイ",
+   "time": "2:13.4",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "15",
+   "number": 12,
+   "name": "ガルダイア",
+   "time": "2:19.6",
+   "margin": "大差",
+   "corners": "",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "16",
+   "number": 16,
+   "name": "ルーラーリッチ",
+   "time": "2:20.1",
+   "margin": "３",
+   "corners": "",
+   "last3f": null,
+   "popularity": 16
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "11",
+    "yen": 3570,
+    "pop": 10
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "11",
+    "yen": 850,
+    "pop": 10
+   },
+   {
+    "combo": "1",
+    "yen": 320,
+    "pop": 3
+   },
+   {
+    "combo": "7",
+    "yen": 340,
+    "pop": 5
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-6",
+    "yen": 10810,
+    "pop": 24
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-11",
+    "yen": 3450,
+    "pop": 37
+   },
+   {
+    "combo": "7-11",
+    "yen": 5710,
+    "pop": 52
+   },
+   {
+    "combo": "1-7",
+    "yen": 1300,
+    "pop": 13
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-11",
+    "yen": 13330,
+    "pop": 35
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "11-1",
+    "yen": 27860,
+    "pop": 75
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-7-11",
+    "yen": 51950,
+    "pop": 129
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "11-1-7",
+    "yen": 386940,
+    "pop": 851
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261123",
+ "venue_code": "05",
+ "race_no": 10,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605061020261123/3B",
+ "title": "レース結果 JRA"
+}
