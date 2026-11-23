@@ -1,6 +1,6 @@
 {
  "date": "20261123",
- "updated": "2026-11-23 14:29",
+ "updated": "2026-11-23 14:33",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1764,7 +1764,7 @@
     "field": 12,
     "popularity": 3
    },
-   "odds": 41.0,
+   "odds": 40.3,
    "popularity": 9
   },
   {
@@ -1785,7 +1785,7 @@
     "field": 9,
     "popularity": 4
    },
-   "odds": 12.1,
+   "odds": 10.8,
    "popularity": 3
   },
   {
@@ -2170,6 +2170,20 @@
    "venue": "佐賀",
    "race_no": 2,
    "post_time": "16:00",
+   "number": 5,
+   "name": "レネガード",
+   "types": [
+    "aitop"
+   ],
+   "odds": 6.0,
+   "popularity": 4
+  },
+  {
+   "race_id": "202611233230140302",
+   "results_key": "202611233230140302",
+   "venue": "佐賀",
+   "race_no": 2,
+   "post_time": "16:00",
    "number": 6,
    "name": "スエズマックス",
    "types": [
@@ -2182,8 +2196,8 @@
     "field": 12,
     "popularity": 5
    },
-   "odds": null,
-   "popularity": null
+   "odds": 10.4,
+   "popularity": 5
   },
   {
    "race_id": "jra_20261123_東京_12",
