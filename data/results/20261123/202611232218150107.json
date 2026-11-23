@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261123",
  "race_id": "202611232218150107",
- "tries": 3,
+ "tries": 5,
  "payouts": {
   "単勝": [
    {
@@ -67,7 +67,7 @@
    "name": "ワールズコライド",
    "time": "1:29.5",
    "margin": "",
-   "pos4": null,
+   "pos4": 1,
    "last3f": 38.1,
    "popularity": null
   },
@@ -78,7 +78,7 @@
    "name": "ブルーシンフォニー",
    "time": "1:29.8",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 2,
    "last3f": 37.9,
    "popularity": null
   },
@@ -89,7 +89,7 @@
    "name": "カズロレアート",
    "time": "1:30.0",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 5,
    "last3f": 37.4,
    "popularity": null
   },
@@ -100,7 +100,7 @@
    "name": "アオイミモザ",
    "time": "1:30.4",
    "margin": "２",
-   "pos4": null,
+   "pos4": 3,
    "last3f": 38.7,
    "popularity": null
   },
@@ -111,7 +111,7 @@
    "name": "イルミネーター",
    "time": "1:30.7",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 3,
    "last3f": 38.5,
    "popularity": null
   },
@@ -122,7 +122,7 @@
    "name": "オレンタノ",
    "time": "1:31.0",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 7,
    "last3f": 37.7,
    "popularity": null
   },
@@ -133,7 +133,7 @@
    "name": "オラヴェリタス",
    "time": "1:31.0",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 5,
    "last3f": 38.5,
    "popularity": null
   }
