@@ -1,6 +1,6 @@
 {
  "date": "20261123",
- "updated": "2026-11-23 15:12",
+ "updated": "2026-11-23 15:19",
  "bias": {
   "福島ダ": {
    "judgement": "フラット",
@@ -42,10 +42,10 @@
     8,
     10
    ],
-   "front_share": 0.75,
+   "front_share": 0.8,
    "inner_share": 0.5,
-   "outer_share": 0.12,
-   "horses": 8
+   "outer_share": 0.1,
+   "horses": 10
   },
   "東京芝": {
    "judgement": "差し有利",
