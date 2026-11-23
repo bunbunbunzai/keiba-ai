@@ -1,6 +1,6 @@
 {
  "date": "20261123",
- "updated": "2026-11-23 17:03",
+ "updated": "2026-11-23 18:44",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -3285,8 +3285,43 @@
     "field": 9,
     "popularity": 9
    },
-   "odds": 57.3,
-   "popularity": 9
+   "odds": 9.4,
+   "popularity": 6
+  },
+  {
+   "race_id": "202611230304170310",
+   "results_key": "202611230304170310",
+   "venue": "帯広ば",
+   "race_no": 10,
+   "post_time": "19:05",
+   "number": 6,
+   "name": "ビックコンボ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 9.1,
+   "popularity": 5
+  },
+  {
+   "race_id": "202611233230140308",
+   "results_key": "202611233230140308",
+   "venue": "佐賀",
+   "race_no": 8,
+   "post_time": "19:15",
+   "number": 2,
+   "name": "オンリーラヴ",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 9,
+   "last": {
+    "date": "2026-11-14",
+    "finish": 8,
+    "field": 12,
+    "popularity": 2
+   },
+   "odds": 9.9,
+   "popularity": 5
   },
   {
    "race_id": "202611230304170311",
@@ -3306,7 +3341,7 @@
     "field": 10,
     "popularity": 6
    },
-   "odds": 5.2,
+   "odds": 12.0,
    "popularity": 3
   },
   {
@@ -3327,8 +3362,8 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": 16.0,
-   "popularity": 5
+   "odds": 24.4,
+   "popularity": 6
   },
   {
    "race_id": "202611233230140309",
@@ -3391,7 +3426,7 @@
     "field": 9,
     "popularity": 4
    },
-   "odds": 12.8,
+   "odds": 19.1,
    "popularity": 7
   },
   {
@@ -3405,8 +3440,8 @@
    "types": [
     "aitop"
    ],
-   "odds": 13.6,
-   "popularity": 8
+   "odds": 16.0,
+   "popularity": 5
   },
   {
    "race_id": "202611233230140310",
