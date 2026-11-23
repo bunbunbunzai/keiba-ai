@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 10,
+   "name": "メルシージュテーム",
+   "time": "1:24.2",
+   "margin": "",
+   "corners": "8-9",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "2",
+   "number": 1,
+   "name": "マーゴットサンズ",
+   "time": "1:24.3",
+   "margin": "１",
+   "corners": "2-2",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "number": 15,
+   "name": "エリカマユーリ",
+   "time": "1:24.4",
+   "margin": "クビ",
+   "corners": "4-4",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "4",
+   "number": 5,
+   "name": "ヴィンブルレー",
+   "time": "1:24.4",
+   "margin": "アタマ",
+   "corners": "15-16",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "5",
+   "number": 13,
+   "name": "レディサン",
+   "time": "1:24.6",
+   "margin": "１ 1/4",
+   "corners": "13-13",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "6",
+   "number": 16,
+   "name": "エンヴェロップ",
+   "time": "1:24.7",
+   "margin": "１／２",
+   "corners": "6-6",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "7",
+   "number": 12,
+   "name": "ユーティジャーニー",
+   "time": "1:24.7",
+   "margin": "アタマ",
+   "corners": "11-11",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "8",
+   "number": 4,
+   "name": "エーリアル",
+   "time": "1:24.7",
+   "margin": "ハナ",
+   "corners": "4-4",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "9",
+   "number": 8,
+   "name": "シュレン",
+   "time": "1:24.7",
+   "margin": "アタマ",
+   "corners": "8-9",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "10",
+   "number": 11,
+   "name": "ベルメサイア",
+   "time": "1:24.9",
+   "margin": "１ 1/4",
+   "corners": "11-11",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "11",
+   "number": 2,
+   "name": "グラティアム",
+   "time": "1:25.0",
+   "margin": "アタマ",
+   "corners": "8-7",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "12",
+   "number": 3,
+   "name": "ミヤエスケープ",
+   "time": "1:25.0",
+   "margin": "ハナ",
+   "corners": "15-14",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "13",
+   "number": 14,
+   "name": "タマモジャスミン",
+   "time": "1:25.3",
+   "margin": "２",
+   "corners": "13-14",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "14",
+   "number": 9,
+   "name": "レディゴディヴァ",
+   "time": "1:25.6",
+   "margin": "２",
+   "corners": "2-2",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "15",
+   "number": 6,
+   "name": "スミレファースト",
+   "time": "1:26.1",
+   "margin": "３",
+   "corners": "1-1",
+   "last3f": null,
+   "popularity": 16
+  },
+  {
+   "finish": "16",
+   "number": 7,
+   "name": "サロニコス",
+   "time": "1:29.4",
+   "margin": "大差",
+   "corners": "6-7",
+   "last3f": null,
+   "popularity": 12
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "10",
+    "yen": 3130,
+    "pop": 10
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "10",
+    "yen": 540,
+    "pop": 11
+   },
+   {
+    "combo": "1",
+    "yen": 160,
+    "pop": 2
+   },
+   {
+    "combo": "15",
+    "yen": 120,
+    "pop": 1
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-5",
+    "yen": 2090,
+    "pop": 8
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-10",
+    "yen": 1210,
+    "pop": 14
+   },
+   {
+    "combo": "10-15",
+    "yen": 1990,
+    "pop": 23
+   },
+   {
+    "combo": "1-15",
+    "yen": 310,
+    "pop": 1
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-10",
+    "yen": 3410,
+    "pop": 14
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "10-1",
+    "yen": 12380,
+    "pop": 35
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-10-15",
+    "yen": 7290,
+    "pop": 17
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "10-1-15",
+    "yen": 99570,
+    "pop": 320
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261123",
+ "venue_code": "05",
+ "race_no": 8,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605060820261123/91",
+ "title": "レース結果 JRA"
+}
