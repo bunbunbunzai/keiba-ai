@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 6,
+   "name": "カテドラルクォーツ",
+   "time": "2:03.2",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 10,
+   "name": "レッドレグルス",
+   "time": "2:03.6",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "3",
+   "number": 4,
+   "name": "ポッドクロス",
+   "time": "2:03.6",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "4",
+   "number": 3,
+   "name": "ウインポセイドン",
+   "time": "2:04.0",
+   "margin": "２ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "5",
+   "number": 8,
+   "name": "ゼットエイト",
+   "time": "2:04.5",
+   "margin": "２ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "6",
+   "number": 7,
+   "name": "キューティリップ",
+   "time": "2:04.5",
+   "margin": "アタマ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "7",
+   "number": 14,
+   "name": "クラシカルカイザー",
+   "time": "2:04.5",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "8",
+   "number": 13,
+   "name": "シーギリヤロック",
+   "time": "2:04.6",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "9",
+   "number": 11,
+   "name": "マジックファイヤー",
+   "time": "2:04.7",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "10",
+   "number": 12,
+   "name": "マイネルダンク",
+   "time": "2:05.2",
+   "margin": "３ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "11",
+   "number": 1,
+   "name": "アスクメークシェア",
+   "time": "2:05.5",
+   "margin": "１ 3/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "12",
+   "number": 9,
+   "name": "サトノオラシオン",
+   "time": "2:06.0",
+   "margin": "２ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "13",
+   "number": 16,
+   "name": "ラッキーベイ",
+   "time": "2:06.3",
+   "margin": "１ 3/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "14",
+   "number": 5,
+   "name": "スーパーチャンド",
+   "time": "2:07.4",
+   "margin": "７",
+   "corners": "",
+   "last3f": null,
+   "popularity": 14
+  },
+  {
+   "finish": "15",
+   "number": 15,
+   "name": "キングプロフィット",
+   "time": "2:07.7",
+   "margin": "２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 16
+  },
+  {
+   "finish": "16",
+   "number": 2,
+   "name": "トクシージェネラル",
+   "time": "2:08.4",
+   "margin": "４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 15
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "6",
+    "yen": 420,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "6",
+    "yen": 170,
+    "pop": 1
+   },
+   {
+    "combo": "10",
+    "yen": 420,
+    "pop": 9
+   },
+   {
+    "combo": "4",
+    "yen": 200,
+    "pop": 3
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-5",
+    "yen": 2420,
+    "pop": 11
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "6-10",
+    "yen": 1480,
+    "pop": 22
+   },
+   {
+    "combo": "4-6",
+    "yen": 580,
+    "pop": 2
+   },
+   {
+    "combo": "4-10",
+    "yen": 1170,
+    "pop": 17
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "6-10",
+    "yen": 4160,
+    "pop": 19
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "6-10",
+    "yen": 6200,
+    "pop": 23
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-6-10",
+    "yen": 6670,
+    "pop": 18
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "6-10-4",
+    "yen": 37890,
+    "pop": 108
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261123",
+ "venue_code": "03",
+ "race_no": 12,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0103202603061220261123/AF",
+ "title": "レース結果 JRA"
+}
