@@ -1,6 +1,6 @@
 {
  "date": "20261123",
- "updated": "2026-11-23 18:44",
+ "updated": "2026-11-23 18:51",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -3383,8 +3383,8 @@
     "field": 12,
     "popularity": 9
    },
-   "odds": 7.6,
-   "popularity": 4
+   "odds": 18.5,
+   "popularity": 7
   },
   {
    "race_id": "202611233230140309",
@@ -3395,8 +3395,7 @@
    "number": 7,
    "name": "カイリクイーン",
    "types": [
-    "rebound",
-    "letdown"
+    "rebound"
    ],
    "gap_days": 16,
    "last": {
@@ -3405,8 +3404,8 @@
     "field": 10,
     "popularity": 2
    },
-   "odds": 17.3,
-   "popularity": 7
+   "odds": 3.9,
+   "popularity": 2
   },
   {
    "race_id": "202611230304170312",
