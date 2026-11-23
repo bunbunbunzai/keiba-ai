@@ -805,6 +805,7 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
         bets_note = f"<p class='betnote'>{esc(p['bet_note'])}。" + ("推定は単勝オッズから計算した目安で、実際のオッズとは違う。" if "推定" in p["bet_note"] else "") + "</p>"
     else:
         bets_note = ""
+    bets_note += ref_combos(p)
     marks_html = "".join(
         f"<div class='m'><b>{m}</b><span>{esc(n)} {esc(horse_name(p, n))}</span></div>"
         for m in ("◎", "〇", "▲") for n in [p.get("marks", {}).get(m)] if n is not None)
@@ -1165,6 +1166,44 @@ def course_link(p: dict) -> str:
     if key not in LINK_COURSES:
         return ""
     return f"　<a href='/course/{key}/'>このコースの傾向</a>"
+
+
+def ref_combos(p) -> str:
+    """相手を絡めた参考の組み合わせ（ワイド・馬連）。買い目ではなく、成績にも数えない（2026-11-24から）。
+    11/11〜11/23の694レースで、◎の複勝に ワイド◎-〇 か 馬連◎-〇 を足すと、自信度Aのレースの回収率は約100%→約85%に下がった
+    （Aのワイド◎-〇単独は69%・的中43%）。買い目に入れると成績が下がるので、読む人の参考として表示だけする。"""
+    m = p.get("marks") or {}
+    h, o, s = m.get("◎"), m.get("〇"), m.get("▲")
+    if p.get("confidence") == "見送り" or h is None or o is None:
+        return ""
+    pay = (p.get("_result") or {}).get("payouts") or {}
+
+    def key(a, b):
+        return "-".join(str(x) for x in sorted([a, b], key=lambda x: int(x)))
+
+    def paid(kind, combo):
+        for x in pay.get(kind, []) or []:
+            try:
+                if key(*str(x.get("combo")).split("-")) == combo:
+                    return x.get("yen")
+            except (TypeError, ValueError):
+                pass
+        return None
+
+    try:
+        items = [("ワイド", key(h, o)), ("馬連", key(h, o))] + ([("ワイド", key(h, s))] if s is not None else [])
+    except (TypeError, ValueError):
+        return ""
+    done = bool(pay.get("ワイド") or pay.get("馬連"))
+    lis = ""
+    for kind, combo in items:
+        y = paid(kind, combo) if done else None
+        lis += (f"<li class='{'won' if y else ''}'>{kind} {esc(combo)}"
+                + (f"<span class='bo'>{'的中 ' + format(y, ',') + '円' if y else '外れ'}</span>" if done else "") + "</li>")
+    return ("<div class='refc'><h3>相手を絡めるなら（参考）</h3>"
+            f"<ul class='bets ref'>{lis}</ul>"
+            "<p class='betnote'>◎と〇・▲の組み合わせ。このサイトの買い目ではなく、成績にも数えない。"
+            "これまでの集計では、◎の単勝・複勝だけを買うより回収率が低い。</p></div>")
 
 
 def plain_line(p: dict) -> str:
@@ -1940,6 +1979,7 @@ def limits_page(t: dict, worst_venue: tuple[str, str] | None) -> str:
 
 
 SITE_CHANGES = [
+    ("2026-11-24", "レースページの買い目の下に「相手を絡めるなら（参考）」として、◎と〇・▲のワイド・馬連の組み合わせを載せた。このサイトの買い目ではなく、成績にも数えない（◎の複勝にワイドか馬連を1点足すと、自信度Aのレースの回収率が約100%から約85%に下がったため、買い目は◎の単勝か複勝1点のままにしている）。結果が出たあとは、当たり外れと払戻を表示する。"),
     ("2026-11-23", "G1の特集まとめの冒頭に、開催日・コースと、発表の順番（出走馬 → 枠順 → AI予想 → レース）のうち今どこまで進んだか、その時点の入口（出走馬の一覧、AI予想・全頭診断・「AI vs あなた」、結果と答え合わせ）をまとめた箱を置いた。用語集のすべての用語に、実際のレースの数字を足した（中央競馬の約1万レースの払戻・人気別の成績・枠や4コーナーの位置ごとの成績、今年の重賞の結果、このサイトのAIの印の成績など。サイトの更新のたびに数え直す）。"),
     ("2026-11-23", "2027年のG1日程の一覧と、2027年の特集まとめ（中山金杯・京都金杯・フェブラリーステークス・高松宮記念・大阪杯・桜花賞・中山グランドジャンプ・皐月賞）を公開した。日付はJRAが発表した2027年の重賞の一覧による。前哨戦の結果は、レースが終わるたびに自動で入る。天皇賞（春）より先のレースは、レースの約5か月前から順に公開する。X（@zentou_log）への自動投稿は、G1の予想と結果だけにした。"),
     ("2026-11-20", "G1の特集まとめは、レースが近づくと題名と中身が自動で変わるようにした。出走予定馬の発表、出走馬の確定（木曜の夕方）、枠順の確定（金曜の朝）、AI予想の公開と進むごとにJRAの発表の表を入れ替え、枠順の表にはAIの印も付ける。レースが終わると、結果・払戻・AIの◎の着順を記事の冒頭に載せる。"),
@@ -2173,7 +2213,7 @@ h1 small{display:block;font-size:14px;color:var(--mut);font-family:"Hiragino San
 .prefs .theme{border:1px solid var(--line);background:var(--panel);color:var(--fg);border-radius:2px;padding:2px 10px;font:inherit;font-size:12px;cursor:pointer}
 th.sortable{cursor:pointer;user-select:none}th.sortable:hover{color:var(--acc)}th[data-dir=asc]::after{content:" ▲";font-size:10px}th[data-dir=desc]::after{content:" ▼";font-size:10px}
 .cd{color:var(--acc);font-weight:700}
-.bets .bo{margin-left:.5em;font-size:12px;color:var(--mut);font-weight:400}.betnote{font-size:13px;color:var(--mut);margin:6px 0 0;line-height:1.6}
+.bets .bo{margin-left:.5em;font-size:12px;color:var(--mut);font-weight:400}.betnote{font-size:13px;color:var(--mut);margin:6px 0 0;line-height:1.6}.refc{margin-top:14px;padding-top:10px;border-top:1px dashed var(--line)}.refc h3{margin:0 0 4px;font-size:14px}.bets.ref li{border-style:dashed;background:transparent}
 .zkbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:60;max-width:560px;margin:0 auto;display:flex;align-items:center;gap:8px;background:var(--panel);color:var(--fg);border:1px solid var(--line);border-left:4px solid var(--acc);box-shadow:0 6px 18px rgba(0,0,0,.18);padding:8px 8px 8px 10px;font-size:14px;line-height:1.5}
 .zkbar.fab{right:92px}.zkbar img{flex:none;width:36px;height:36px}.zkbar span{flex:1;min-width:0}.zkbar button{font:inherit;cursor:pointer;flex:none}
 .zkbar .go{background:var(--acc);color:var(--bg);border:0;padding:8px 12px;font-weight:700;border-radius:2px}.zkbar .x{background:transparent;border:0;color:var(--mut);font-size:20px;line-height:1;padding:6px 8px}
