@@ -1,0 +1,218 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 5,
+   "name": "ヴォラーレジャン",
+   "time": "1:22.9",
+   "margin": "",
+   "corners": "2-2",
+   "last3f": 34.0,
+   "popularity": 3
+  },
+  {
+   "finish": "2",
+   "number": 3,
+   "name": "ランブルトーン",
+   "time": "1:23.0",
+   "margin": "１／２",
+   "corners": "1-1",
+   "last3f": 34.2,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "number": 12,
+   "name": "ジャスパーレビン",
+   "time": "1:23.7",
+   "margin": "４",
+   "corners": "7-5",
+   "last3f": 34.2,
+   "popularity": 4
+  },
+  {
+   "finish": "4",
+   "number": 8,
+   "name": "クリコマキシマス",
+   "time": "1:23.7",
+   "margin": "アタマ",
+   "corners": "7-7",
+   "last3f": 33.9,
+   "popularity": 7
+  },
+  {
+   "finish": "5",
+   "number": 6,
+   "name": "ヴェスタル",
+   "time": "1:23.9",
+   "margin": "１ 1/4",
+   "corners": "7-9",
+   "last3f": 33.9,
+   "popularity": 2
+  },
+  {
+   "finish": "6",
+   "number": 11,
+   "name": "スイートリベンジ",
+   "time": "1:24.1",
+   "margin": "１ 1/4",
+   "corners": "5-5",
+   "last3f": 34.6,
+   "popularity": 5
+  },
+  {
+   "finish": "7",
+   "number": 4,
+   "name": "ブラックパンツァー",
+   "time": "1:24.2",
+   "margin": "１",
+   "corners": "5-7",
+   "last3f": 34.5,
+   "popularity": 6
+  },
+  {
+   "finish": "8",
+   "number": 10,
+   "name": "プリヴィレッジ",
+   "time": "1:24.2",
+   "margin": "アタマ",
+   "corners": "3-4",
+   "last3f": 35.1,
+   "popularity": 8
+  },
+  {
+   "finish": "9",
+   "number": 7,
+   "name": "マリノボヌール",
+   "time": "1:24.4",
+   "margin": "１ 1/4",
+   "corners": "10-11",
+   "last3f": 34.3,
+   "popularity": 12
+  },
+  {
+   "finish": "10",
+   "number": 13,
+   "name": "キタノダンサー",
+   "time": "1:24.5",
+   "margin": "１／２",
+   "corners": "12-11",
+   "last3f": 34.3,
+   "popularity": 9
+  },
+  {
+   "finish": "11",
+   "number": 2,
+   "name": "ポストオピュレンス",
+   "time": "1:24.6",
+   "margin": "３／４",
+   "corners": "13-13",
+   "last3f": 34.1,
+   "popularity": 10
+  },
+  {
+   "finish": "12",
+   "number": 9,
+   "name": "カゼノセイレイ",
+   "time": "1:24.8",
+   "margin": "１ 1/4",
+   "corners": "11-9",
+   "last3f": 34.8,
+   "popularity": 13
+  },
+  {
+   "finish": "13",
+   "number": 1,
+   "name": "シックスアワーズ",
+   "time": "1:25.0",
+   "margin": "１ 1/4",
+   "corners": "4-3",
+   "last3f": 36.0,
+   "popularity": 11
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "5",
+    "yen": 600,
+    "pop": 3
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "5",
+    "yen": 150,
+    "pop": 3
+   },
+   {
+    "combo": "3",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "12",
+    "yen": 160,
+    "pop": 4
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-4",
+    "yen": 330,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-5",
+    "yen": 230,
+    "pop": 1
+   },
+   {
+    "combo": "5-12",
+    "yen": 450,
+    "pop": 5
+   },
+   {
+    "combo": "3-12",
+    "yen": 240,
+    "pop": 3
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-5",
+    "yen": 480,
+    "pop": 1
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "5-3",
+    "yen": 1350,
+    "pop": 5
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-5-12",
+    "yen": 890,
+    "pop": 2
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "5-3-12",
+    "yen": 5430,
+    "pop": 15
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261123",
+ "venue_code": "05",
+ "race_no": 6,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605060620261123/27",
+ "title": "レース結果 JRA"
+}
