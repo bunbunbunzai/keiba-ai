@@ -1,6 +1,6 @@
 {
  "date": "20261123",
- "updated": "2026-11-23 21:00",
+ "updated": "2026-11-23 23:54",
  "races_total": 69,
  "races_scored": 69,
  "stake": 6600,
@@ -776,11 +776,11 @@
    "race_id": "202611233230140311",
    "confidence": "C",
    "honmei": 14,
-   "honmei_finish": null,
+   "honmei_finish": "8",
    "top3": [
-    null,
-    null,
-    null
+    1,
+    4,
+    6
    ],
    "stake": 100,
    "return": 0,
