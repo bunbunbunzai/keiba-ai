@@ -1,6 +1,6 @@
 {
  "date": "20261123",
- "updated": "2026-11-23 16:18",
+ "updated": "2026-11-23 16:24",
  "bias": {
   "水沢ダ": {
    "judgement": "内先行",
@@ -39,12 +39,13 @@
    "judgement": "先行有利・外",
    "confidence": "弱",
    "races": [
-    1
+    1,
+    2
    ],
    "front_share": 1.0,
    "inner_share": 0.0,
    "outer_share": 0.5,
-   "horses": 2
+   "horses": 4
   }
  }
 }
