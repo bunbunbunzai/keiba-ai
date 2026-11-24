@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261124",
  "race_id": "202611241813080108",
- "tries": 5,
+ "tries": 6,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "アンパト",
    "time": "2:12.3",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 39.5,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "タマモコンペイトウ",
    "time": "2:12.7",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 40.6,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "マチルダ",
    "time": "2:13.0",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 40.9,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "エクセルグラン",
    "time": "2:13.5",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 40.5,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "スマートビアンカ",
    "time": "2:14.3",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 40.3,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ウインオアシス",
    "time": "2:14.8",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 42.6,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "エムオースイート",
    "time": "2:14.8",
    "margin": "ハナ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 41.0,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "アンティシパル",
    "time": "2:15.2",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 42.2,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "フォレバーアイヤ",
    "time": "2:16.0",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 41.6,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "インベンション",
    "time": "2:19.2",
    "margin": "大差",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 10,
+   "last3f": 45.6,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "カイジンビリーヴ",
    "time": "2:21.6",
    "margin": "大差",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 46.2,
    "popularity": null
   },
   {
