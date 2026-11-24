@@ -1,6 +1,6 @@
 {
  "date": "20261124",
- "updated": "2026-11-24 16:24",
+ "updated": "2026-11-24 16:29",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1493,8 +1493,22 @@
     "field": 12,
     "popularity": 12
    },
-   "odds": 87.2,
+   "odds": 92.8,
    "popularity": 10
+  },
+  {
+   "race_id": "202611242433170107",
+   "results_key": "202611242433170107",
+   "venue": "名古屋",
+   "race_no": 7,
+   "post_time": "17:55",
+   "number": 4,
+   "name": "メイショウハネウマ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 19.3,
+   "popularity": 4
   },
   {
    "race_id": "202611242433170107",
@@ -1535,7 +1549,7 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": 18.1,
+   "odds": 19.3,
    "popularity": 4
   },
   {
@@ -1557,7 +1571,7 @@
     "field": 11,
     "popularity": 3
    },
-   "odds": 31.1,
+   "odds": 30.9,
    "popularity": 7
   },
   {

@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261124",
  "race_id": "202611242433170104",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "チェリカキング",
    "time": "1:39.4",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 39.6,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ムーヴザニードル",
    "time": "1:39.4",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 40.3,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "チョコブラウニー",
    "time": "1:39.8",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 40.4,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "デルマテイネ",
    "time": "1:40.0",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 40.6,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "クールロジック",
    "time": "1:40.5",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 40.6,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ダディーズソード",
    "time": "1:40.7",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 41.5,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "アライブテーラー",
    "time": "1:40.8",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 41.7,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ウォーブレイク",
    "time": "1:41.0",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 41.7,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "コスモゼーリエ",
    "time": "1:41.1",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 12,
+   "last3f": 40.6,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "ローズバラード",
    "time": "1:41.1",
    "margin": "ハナ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 41.9,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "ミツカネルナ",
    "time": "1:41.1",
    "margin": "ハナ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 41.7,
    "popularity": null
   },
   {
@@ -198,8 +198,8 @@
    "name": "ミスデルマー",
    "time": "1:41.2",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 41.5,
    "popularity": null
   }
  ]
