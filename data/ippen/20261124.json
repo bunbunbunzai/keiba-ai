@@ -1,6 +1,6 @@
 {
  "date": "20261124",
- "updated": "2026-11-24 12:28",
+ "updated": "2026-11-24 12:31",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -257,8 +257,7 @@
    "number": 1,
    "name": "グランクリュ",
    "types": [
-    "rebound",
-    "letdown"
+    "rebound"
    ],
    "gap_days": 15,
    "last": {
@@ -267,8 +266,8 @@
     "field": 12,
     "popularity": 3
    },
-   "odds": 31.2,
-   "popularity": 5
+   "odds": 13.3,
+   "popularity": 3
   },
   {
    "race_id": "202611241106070605",
@@ -289,8 +288,8 @@
     "field": 11,
     "popularity": 3
    },
-   "odds": 31.2,
-   "popularity": 5
+   "odds": 20.8,
+   "popularity": 6
   },
   {
    "race_id": "202611241813080105",
