@@ -736,6 +736,11 @@ def hist_stats_text(key: str, label: str) -> str:
     return "\n".join(lines)
 
 
+# 全頭くんの質問例（タップでそのまま送れる）。レース前と結果が出たあとで分ける
+ASK_CHIPS = ("◎を選んだ理由は？", "穴で面白い馬は？", "このコースは前に行く馬が有利？", "買い目の考え方を教えて")
+ASK_CHIPS_DONE = ("予想と結果を振り返って", "勝ち馬の評価はどうだった？", "展開の読みは合っていた？")
+
+
 def ask_context(date: str, p: dict) -> str:
     """「AIに質問」に渡すレース情報：出馬表と近走（digest と同じ形）＋AIの予想。"""
     import sys as _s
@@ -924,8 +929,9 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
         ask_html = (f"<section class='card zkteaser'>{zk('normal', 48)}<p>{'このレースの結果と予想の振り返りを' if ask_done else 'このレースのことを'}<b>全頭くん</b>に聞ける。<br><span class='meta'>画面右下のボタンからも開けます</span></p><button type='button' class='zkopen'>質問する</button></section>"
                     f"<button type='button' class='zkfab' aria-label='全頭くんに質問できるよ' aria-expanded='false' aria-controls='askpop'>{zk('normal', 56) or '?'}<span class='zktip'>質問できるよ</span></button>"
                     f"<section id='askpop' class='card ask askpop' role='dialog' aria-label='全頭くんに質問' data-page='{race_path(date, p)}' data-post='{post_key}' data-url='{ASK_URL}'{" data-zk='1'" if HAS_ZK else ''}{" data-done='1'" if ask_done else ''}>"
-                    f"<h2 class='zkh'>{zk('normal', 48)}<span>全頭くんに質問<small>{esc(race_label(p))}について答えます</small></span><button type='button' class='zkclose' aria-label='閉じる'>×</button></h2><p class='meta'>出走馬の近走やAIの評価、これまでの予想の記録をもとに、短く答えます。たとえば「◎を選んだ理由は？」「3連単で△を2着まで入れるべき？」「このコースの3連単の配当はどれくらい？」。質問できるのは発走5分前まで、1日30回までです（予想そのものは発走20分前以降は変わりません）（混み合う日は早めに受付を終えることがあります）。</p>"
-                    f"<div class='pick'><input type='text' maxlength='200' placeholder='{'「なぜ外れた？」など、結果について質問' if ask_done else 'このレースについて質問'}' aria-label='質問'> <button type='button' class='go'>聞く</button></div>"
+                    f"<h2 class='zkh'>{zk('normal', 48)}<span>全頭くんに質問<small>{esc(race_label(p))}について答えます</small></span><button type='button' class='zkclose' aria-label='閉じる'>×</button></h2><p class='meta'>出走馬の近走やAIの評価、これまでの予想の記録をもとに答えます。下の質問をタップするだけでも聞けて、続けて質問もできます。質問できるのは発走5分前まで、1日30回までです（予想そのものは発走20分前以降は変わりません）（混み合う日は早めに受付を終えることがあります）。</p>"
+                    f"<div class='zkchips' role='group' aria-label='質問の例'>{''.join(f"<button type='button' class='zkchip'>{esc(c)}</button>" for c in (ASK_CHIPS_DONE if ask_done else ASK_CHIPS))}</div>"
+                    f"<div class='pick'><input type='text' maxlength='200' placeholder='{'「なぜ外れた？」など、結果について質問' if ask_done else '自分の言葉で質問してもOK'}' aria-label='質問'> <button type='button' class='go'>聞く</button></div>"
                     f"<div class='alog'></div><p class='meta'>答えはAIの見立てで、的中を保証するものではありません。サイトの記録に無いことはWebで調べて答えることがあり、そのときは出典を表示します。質問の内容は回答にだけ使い、保存しません。</p></section>")
     updates = "".join(f"<li><b>{esc(u.get('at'))}</b> {esc(u.get('text'))}</li>" for u in p.get("updates", []))
     meta = "・".join(x for x in [
@@ -2127,7 +2133,7 @@ PRIVACY = f"""<h1>プライバシーポリシー</h1>
 </tbody></table></div></section>
 <section class="card"><h2>改定</h2><p>本ポリシーは必要に応じて改定することがあります。制定日：2026年10月27日／改定日：2026年11月13日（広告・アフィリエイト・全頭くんへの質問・ブラウザへの保存・外部のサービスに送られる情報について追記）</p></section>"""
 
-CSS = """.ask .alog{margin-top:10px}.ask .qa{border-top:1px solid var(--line);padding:8px 0}.ask .qa .q{color:var(--mut);font-size:13px}.ask .qa .a{margin:4px 0 0;line-height:1.7}.ask input{flex:1;min-width:0}.ask .pick{display:flex;gap:8px}.ask .err{color:var(--hit);font-size:13px}
+CSS = """.ask .alog{margin-top:10px}.ask .qa{border-top:1px solid var(--line);padding:8px 0}.ask .qa .q{color:var(--mut);font-size:13px}.ask .qa .a{margin:4px 0 0;line-height:1.7;white-space:pre-wrap}.zkchips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.zkchip{background:var(--acc-soft);color:inherit;border:1px solid var(--acc);border-radius:999px;padding:6px 12px;font-size:13px;cursor:pointer}.zkchip:disabled{opacity:.4;cursor:not-allowed}.ask input{flex:1;min-width:0}.ask .pick{display:flex;gap:8px}.ask .err{color:var(--hit);font-size:13px}
 .kaiko{display:flex;gap:10px;align-items:flex-start;border-left:3px solid var(--acc);padding:8px 10px;background:var(--acc-soft);line-height:1.7}.kaiko p{margin:0}.kaiko b{display:block;font-size:12px;color:var(--mut)}
 .zk{flex:none}
 .zkh{display:flex;align-items:center;gap:10px}.zkh small{display:block;font-size:12px;font-weight:400;color:var(--mut)}
@@ -2332,20 +2338,20 @@ nav.toc{display:block;margin:16px 0 20px;padding:10px 16px 12px;background:var(-
 """
 
 JS = """(function(){document.querySelectorAll('.ptabs').forEach(function(t){var bs=t.querySelectorAll('button');function show(k){bs.forEach(function(b){var on=b.dataset.p===k;b.classList.toggle('on',on);b.setAttribute('aria-selected',on?'true':'false')});document.querySelectorAll('.period').forEach(function(d){d.hidden=d.dataset.p!==k});}bs.forEach(function(b){b.addEventListener('click',function(){show(b.dataset.p);try{localStorage.setItem('period',b.dataset.p)}catch(e){}})});var k=t.dataset.def;try{var v=localStorage.getItem('period');if(v)k=v}catch(e){}if(!t.querySelector("[data-p='"+k+"']"))k=t.dataset.def;show(k);});})();
-(function(){var s=document.querySelector('.ask');if(!s)return;var inp=s.querySelector('input'),btn=s.querySelector('.go'),log=s.querySelector('.alog'),busy=false;
+(function(){var s=document.querySelector('.ask');if(!s)return;var inp=s.querySelector('input'),btn=s.querySelector('.go'),log=s.querySelector('.alog'),busy=false,hist=[],chips=s.querySelectorAll('.zkchip');
 function key(){var d=new Date();return 'askn:'+d.getFullYear()+d.getMonth()+d.getDate();}
 function add(cls,t){var d=document.createElement('div');d.className='qa';var q=document.createElement('p');q.className=cls;q.textContent=t;d.appendChild(q);log.appendChild(d);return d;}
-function go(){var q=(inp.value||'').trim();if(!q||busy)return;var n=0;try{n=parseInt(localStorage.getItem(key())||'0',10);}catch(e){}
+function go(via){var q=(inp.value||'').trim();if(!q||busy)return;var n=0;try{n=parseInt(localStorage.getItem(key())||'0',10);}catch(e){}
 if(n>=30){add('err','今日の質問は30回までです。また明日どうぞ。');return;}busy=true;btn.disabled=true;var box=add('q',q);var bub=document.createElement('div');bub.className='bub';var im=null;if(s.dataset.zk){im=document.createElement('img');im.className='zk';im.width=40;im.height=40;im.alt='全頭くん';im.src='/assets/zk-think.png';bub.appendChild(im);}var a=document.createElement('p');a.className='a';a.textContent='考え中…';bub.appendChild(a);box.appendChild(bub);function face(f){if(im)im.src='/assets/zk-'+f+'.png';}inp.value='';
-fetch(s.dataset.url+'/ask',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({page:s.dataset.page,q:q})}).then(function(r){return r.json().then(function(j){return [r.status,j];});}).then(function(x){var j=x[1];if(j.answer){a.textContent=j.answer;face('normal');if(j.sources&&j.sources.length){var sp=document.createElement('p');sp.className='src';sp.appendChild(document.createTextNode('出典：'));j.sources.forEach(function(x,i){if(!/^https?:/.test(x.url))return;var l=document.createElement('a');l.href=x.url;l.target='_blank';l.rel='noopener nofollow';l.textContent=x.title||x.url;if(i)sp.appendChild(document.createTextNode('、'));sp.appendChild(l);});box.appendChild(sp);}try{localStorage.setItem(key(),String(n+1));}catch(e){}if(window.gtag)gtag('event','ask',{page:location.pathname});}else{a.className='err';a.textContent=j.error||'うまく答えられませんでした。聞き方を変えてもう一度どうぞ。';face('sorry');}}).catch(function(){a.className='err';a.textContent='つながりませんでした。通信状態を確認して、もう一度どうぞ。';face('sorry');}).then(function(){busy=false;btn.disabled=false;});}
+fetch(s.dataset.url+'/ask',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({page:s.dataset.page,q:q,history:hist.slice(-3)})}).then(function(r){return r.json().then(function(j){return [r.status,j];});}).then(function(x){var j=x[1];if(j.answer){a.textContent=j.answer;face('normal');if(x[0]===200&&!j.debug)hist.push({q:q,a:j.answer});if(j.sources&&j.sources.length){var sp=document.createElement('p');sp.className='src';sp.appendChild(document.createTextNode('出典：'));j.sources.forEach(function(x,i){if(!/^https?:/.test(x.url))return;var l=document.createElement('a');l.href=x.url;l.target='_blank';l.rel='noopener nofollow';l.textContent=x.title||x.url;if(i)sp.appendChild(document.createTextNode('、'));sp.appendChild(l);});box.appendChild(sp);}try{localStorage.setItem(key(),String(n+1));}catch(e){}if(window.gtag)gtag('event','ask',{page:location.pathname,via:via==='chip'?'chip':'text',turn:hist.length});log.scrollTop=log.scrollHeight;bub.scrollIntoView({block:'nearest'});}else{a.className='err';a.textContent=j.error||'うまく答えられませんでした。聞き方を変えてもう一度どうぞ。';face('sorry');}}).catch(function(){a.className='err';a.textContent='つながりませんでした。通信状態を確認して、もう一度どうぞ。';face('sorry');}).then(function(){busy=false;btn.disabled=false;});}
 var fab=document.querySelector('.zkfab');function open(v){s.classList.toggle('open',v);if(fab){fab.setAttribute('aria-expanded',v?'true':'false');fab.classList.add('seen');}try{sessionStorage.setItem('zkseen','1');}catch(e){}if(v&&!inp.disabled)setTimeout(function(){inp.focus();},50);if(v&&window.gtag)gtag('event','ask_open',{page:location.pathname});}
 try{if(sessionStorage.getItem('zkseen')&&fab)fab.classList.add('seen');}catch(e){}
 if(fab)fab.addEventListener('click',function(){open(!s.classList.contains('open'));});
 document.querySelectorAll('.zkopen').forEach(function(b){b.addEventListener('click',function(){open(true);});});
 var cl=s.querySelector('.zkclose');if(cl)cl.addEventListener('click',function(){open(false);if(fab)fab.focus();});
 document.addEventListener('keydown',function(e){if(e.key==='Escape'&&s.classList.contains('open')){open(false);if(fab)fab.focus();}});
-btn.addEventListener('click',go);inp.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();go();}});
-var post=s.dataset.post,now=new Date(Date.now()+9*3600*1000),k=now.toISOString().slice(0,10).replace(/-/g,'')+now.toISOString().slice(11,16).replace(':','');if(post&&k>=post&&!s.dataset.done){inp.disabled=true;btn.disabled=true;inp.placeholder='発走5分前を過ぎたので、質問の受付は終わりました';}})();
+btn.addEventListener('click',function(){go();});inp.addEventListener('keydown',function(e){if(e.key==='Enter'&&!e.isComposing){e.preventDefault();go();}});chips.forEach(function(c){c.addEventListener('click',function(){if(busy||inp.disabled)return;inp.value=c.textContent;go('chip');});});
+var post=s.dataset.post,now=new Date(Date.now()+9*3600*1000),k=now.toISOString().slice(0,10).replace(/-/g,'')+now.toISOString().slice(11,16).replace(':','');if(post&&k>=post&&!s.dataset.done){inp.disabled=true;btn.disabled=true;chips.forEach(function(c){c.disabled=true;});inp.placeholder='発走5分前を過ぎたので、質問の受付は終わりました';}})();
 (function(){
 function ga(n,p){try{if(window.gtag)gtag('event',n,p||{})}catch(e){}}
 document.addEventListener('click',function(e){var a=e.target.closest('a');if(!a)return;var h=a.href||'';

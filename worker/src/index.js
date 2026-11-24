@@ -1,8 +1,8 @@
 /* 「AIに質問」の裏側（Cloudflare Workers）。
  *
- * POST /ask  {page: "/2026/11/03/funabashi/01r/", q: "◎を軽視した理由は？"}
+ * POST /ask  {page: "/2026/11/03/funabashi/01r/", q: "◎を軽視した理由は？", history: [{q, a}]（直近のやりとり・任意）}
  *   → サイトが公開している /askdata/<date>/<venue>-<NN>.json（出馬表・近走・AIの予想）を読み、
- *     その情報だけを根拠に Anthropic API（Haiku）で短く答える。
+ *     その情報だけを根拠に Anthropic API（Sonnet）で答える。直近3往復までの続きの質問に対応。
  * 制限：質問200字まで、発走5分前以降は受けない、IPごとに1分5回・1日30回、サイト全体で1日600回。
  * 鍵は wrangler secret（ANTHROPIC_API_KEY）。サイトのHTMLには出ない。
  */
@@ -61,7 +61,8 @@ export class Limits {
 const SYSTEM = `あなたは「競馬全頭ログ」（AIが中央・地方の全レースを予想し、外れも含めた成績を公開するサイト）の公式キャラクター「全頭くん」。レースページで読者の質問に答える。
 根拠にしてよいのは、与えられた【レース情報】（出馬表・各馬の近走・AIの予想と短評）、【過去の公式レース結果】、【このサイトの過去の記録】、それに馬券の種類やルールなど競馬の一般的な知識。
 使い分け：コースの傾向・人気・配当など「競馬そのもの」の質問は、レース数の多い【過去の公式レース結果】を主な根拠にする。AIの印（◎〇▲△）がどれくらい来るかなど「このサイトの予想」の質問は【このサイトの過去の記録】を使う。両方あるときは、どちらの数字かが分かるように書く。
-日本語のです・ます調で、やさしく4文以内（250字以内）で答える。絵文字なし。競馬を始めたばかりの人にも分かる言葉を使い、「想定勝率×単勝」「妙味」「過剰人気」などサイト内の用語は「人気の割に勝ち目がある」「人気ほどの勝ち目はない」のように言い換える。
+日本語のです・ます調で、やさしく答える。長さは400字以内で、ひとことで済む質問は短く、理由や比較を聞かれたら根拠の数字や近走を挙げて具体的に答える。最初の1文で結論を言う。複数の馬や買い方をくらべるときは、行頭に「・」を付けた箇条書き（1行に1頭・1項目、改行で区切る）を使ってよい。見出しや記号での装飾（#、*、表）は使わない。絵文字なし。
+前のやりとりがあるときは、その続きとして答える（「その馬」「じゃあ2着は？」などは直前の話題を指す）。前に答えた内容と食い違うときは、【レース情報】のデータを正しいものとして答え直す。競馬を始めたばかりの人にも分かる言葉を使い、「想定勝率×単勝」「妙味」「過剰人気」などサイト内の用語は「人気の割に勝ち目がある」「人気ほどの勝ち目はない」のように言い換える。
 このサイトの◎（本命）と自信度は「補正勝率」（単勝オッズとAIの評価点を合わせて計算した勝つ確率。自信度Aは50%以上）で決めている。「AIの想定勝率」はオッズを見ないAI自身の見積もりで、◎と違う馬が1位のことがある。聞かれたら、この違いを説明する。
 【過去の記録】の見出しの意味：［A］その着順の馬が何の印だったか（レース単位の割合）、［B］その印の馬1頭あたりの着順の割合、［C］券種ごとの払戻（中央値・平均・最高・1万円以上の割合）、［D］1番人気の成績、［E］勝ち馬の位置取りと枠、［F］このサイトの買い目の的中率と回収率。［A］と［B］は意味が違うので混ぜて比べない。全体・競馬場・コースの数字があるときは、レース数の多いものを中心にし、少ないものは「参考程度」と添える。
 買い方の相談（例：「3連単で△を2着まで入れるべき？」「3連単の配当はどれくらい？」「このコースは前に行く馬が有利？」）には、これらの数字を示して、どちらの考え方にどんな根拠があるかを答える。フォーメーションや流しの点数は計算して示してよい。ただし「買うべき」とは言わず、決めるのは読者だと分かる言い方にする。
@@ -75,12 +76,12 @@ function boosted(env) {
   return !!env.BOOST_UNTIL && new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10) <= env.BOOST_UNTIL;
 }
 
-async function askClaude(env, context, q, allowSearch) {
+async function askClaude(env, context, q, allowSearch, history) {
   const body = {
     model: boosted(env) && env.MODEL_BOOST ? env.MODEL_BOOST : (env.MODEL || "claude-haiku-5-5"),
     max_tokens: 4000,
     system: SYSTEM + (allowSearch ? SEARCH_NOTE : NO_SEARCH_NOTE),
-    messages: [{ role: "user", content: `【レース情報】\n${context}\n\n【質問】${q}` }],
+    messages: buildMessages(context, q, history),
   };
   if (allowSearch) {
     body.tools = [{ type: "web_search_20250305", name: "web_search", max_uses: 1,
@@ -111,6 +112,28 @@ async function askClaude(env, context, q, allowSearch) {
   const text = texts.map((c) => c.text).join("").trim();
   if (!text) console.log("empty answer", j.stop_reason, JSON.stringify(j.usage), content.map((c) => c.type).join(","));
   return { text, sources, searches, stop: j.stop_reason, types: content.map((c) => c.type).join(",") };
+}
+
+// 直近のやりとり（読者の画面から送られてくる）を会話の形に直す。レース情報は最初の質問にだけ付ける
+function cleanHistory(raw, maxQ) {
+  if (!Array.isArray(raw)) return [];
+  const out = [];
+  for (const h of raw.slice(-3)) {
+    const q = String((h && h.q) || "").trim().slice(0, maxQ);
+    const a = String((h && h.a) || "").trim().slice(0, 600);
+    if (q && a) out.push({ q, a });
+  }
+  return out;
+}
+
+function buildMessages(context, q, history) {
+  const qs = (history || []).map((h) => h.q).concat([q]);
+  const msgs = [];
+  qs.forEach((x, i) => {
+    msgs.push({ role: "user", content: i === 0 ? `【レース情報】\n${context}\n\n【質問】${x}` : `【質問】${x}` });
+    if (i < qs.length - 1) msgs.push({ role: "assistant", content: history[i].a });
+  });
+  return msgs;
 }
 
 const SEARCH_NOTE = `
@@ -168,7 +191,7 @@ export default {
       const sk = `search:${day}`;
       const used = await (await lim.fetch("https://limits/", { method: "POST", body: JSON.stringify({ peek: sk }) })).json();
       const allowSearch = used.n < parseInt((boosted(env) && env.LIMIT_SEARCH_DAY_BOOST) || env.LIMIT_SEARCH_DAY || "20", 10);
-      const ans = await askClaude(env, data.context, q, allowSearch);
+      const ans = await askClaude(env, data.context, q, allowSearch, cleanHistory(body.history, maxQ));
       if (ans.searches) await lim.fetch("https://limits/", { method: "POST", body: JSON.stringify({ add: { k: sk, n: ans.searches, ttl: 86400 } }) });
       return reply(env, req, 200, { answer: ans.text || "うまく答えられませんでした。聞き方を変えて、もう一度どうぞ。", sources: ans.sources,
         ...(ans.text ? {} : { debug: `${ans.stop}|${ans.types}` }) });

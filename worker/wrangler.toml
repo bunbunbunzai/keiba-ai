@@ -13,8 +13,8 @@ new_sqlite_classes = ["Limits"]
 
 [vars]
 SITE_ORIGIN = "https://www.ai-keiba-log.com"
-MODEL = "claude-haiku-5-5"
-# 制限（1日あたり）。費用の上限はこれで決まる：1回あたり約0.3〜1円
+MODEL = "claude-sonnet-5-5"
+# 制限（1日あたり）。費用の上限はこれで決まる：1回あたり約1〜4円（Sonnet・続きの質問は少し増える）
 LIMIT_IP_DAY = "30"
 LIMIT_IP_MIN = "5"
 LIMIT_SITE_DAY = "600"
