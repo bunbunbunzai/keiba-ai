@@ -419,7 +419,7 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool | str =
 <p>出走表や結果など正式な情報は、各主催者の発表をご確認ください。成績は、すべての買い目を1点100円ずつ買ったとして計算しています。</p>
 <p class="support">このサイトは個人が運営しています。サーバー代やX投稿のAPI代の支援は <a href="{OFUSE_URL}" target="_blank" rel="noopener">OFUSE（投げ銭・ファンレター）</a> から。支援の有無で予想の内容や公開範囲は変わりません。</p>
 <p class="sns">重賞の予想と大きな的中は <a href="{X_URL}" target="_blank" rel="noopener me">X（@zentou_log）</a> でも配信中</p>
-<p class="sitemap-links"><a href="/graded/">重賞</a>　<a href="/review/">重賞回顧</a>　<a href="/monthly/">月次レポート</a>　<a href="/days/">過去の予想</a>　{VS_FOOT}<a href="/strategy/">買い方別の回収率</a>　<a href="/venue/">競馬場別</a>　<a href="/about/">予想の方法</a>　<a href="/ippen/">実験中の狙い馬</a>　<a href="/course/">コース別</a>　<a href="/jockey/">騎手別</a>　<a href="/horse/">馬別</a>　<a href="/column/">コラム</a>　<a href="/glossary/">用語集</a>　<a href="/limits/">AI予想の限界</a>　<a href="/changelog/">更新履歴</a></p>
+<p class="sitemap-links"><a href="/graded/">重賞</a>　<a href="/review/">重賞回顧</a>　<a href="/monthly/">月次レポート</a>　<a href="/days/">過去の予想</a>　<a href="/furusato/">馬のふるさと納税</a>　{VS_FOOT}<a href="/strategy/">買い方別の回収率</a>　<a href="/venue/">競馬場別</a>　<a href="/about/">予想の方法</a>　<a href="/ippen/">実験中の狙い馬</a>　<a href="/course/">コース別</a>　<a href="/jockey/">騎手別</a>　<a href="/horse/">馬別</a>　<a href="/column/">コラム</a>　<a href="/glossary/">用語集</a>　<a href="/limits/">AI予想の限界</a>　<a href="/changelog/">更新履歴</a></p>
 <p class="prefs"><button type="button" class="theme" data-mode="auto">表示：自動</button></p>
 <p><a href="/operator/">運営者情報</a>　<a href="/privacy/">プライバシーポリシー</a>　<a href="/contact/">お問い合わせ</a></p>
 </footer>
@@ -1832,6 +1832,7 @@ def venue_pages(by_date: dict, led: list[dict], venue_of_race: dict) -> dict[str
                 f"<div class='kpis'><div><b>{t['n']}</b><span>予想したレース</span></div><div><b>{t['roi']}</b><span>回収率</span></div>"
                 f"<div><b>{t['hit']}</b><span>的中率</span></div><div><b>{t['top3']}</b><span>◎の3着内率</span></div></div>"
                 + (aff_rakuten('venue') if slug not in ("sapporo", "hakodate", "fukushima", "niigata", "tokyo", "nakayama", "chukyo", "kyoto", "hanshin", "kokura") else "")
+                + (furusato_line('venue') if slug == 'ooi' and any('大井競馬場' in it['title'] for it in furusato_items('visit')) else "")
                 + venue_guide_html(slug)
                 + f"<section class='card'><h2>最近の予想</h2>{''.join(recent)}</section>{bias_html}"
                 + (f"<section class='card'><h2>過去の開催日</h2><ul class='days'>{days_html}</ul></section>" if days_html else ""))
@@ -2032,6 +2033,69 @@ def glossary_term_pages() -> dict[str, str]:
     return out
 
 
+FURUSATO = load_json(ROOT / "data" / "furusato.json") or {}
+FURU_GROUPS = [("support", "引退した馬を支援する", "引退した競走馬が余生を過ごす牧場や、その世話をする団体への寄付。返礼品のないものが多く、少額から選べる。"),
+               ("visit", "馬に会う・競馬場で観る", "牧場や施設で馬に会える券、競馬場の指定席、自分の名前を付けられるレースなど、出かけて楽しむ返礼品。"),
+               ("goods", "名馬・競馬のグッズ", "競馬場やトレーニング・センターのある町、名馬が暮らす町の返礼品。")]
+
+
+def furusato_url(it: dict) -> str:
+    """楽天ふるさと納税の返礼品へのリンク（A8.net 経由の楽天アフィリエイト）。A8の楽天ツールが出すリンクと同じ形に組み立てる。"""
+    from urllib.parse import quote
+    q = lambda x: quote(x, safe="")  # noqa: E731
+    inner = (f"https://hb.afl.rakuten.co.jp/hgc/{it['hgc']}/{FURUSATO['media']}_{FURUSATO['a8mat'].replace('+', '_')}"
+             f"?pc={q(it['item'])}&m={q(it['m'])}&rafcid={FURUSATO['rafcid']}")
+    return f"https://rpx.a8.net/svt/ejp?a8mat={FURUSATO['a8mat']}&rakuten=y&a8ejpredirect={q(inner)}"
+
+
+def furusato_items(group: str | None = None) -> list[dict]:
+    return [it for it in FURUSATO.get("items", []) if (group is None or it["group"] == group) and not (it.get("until") and TODAY and TODAY > it["until"])]
+
+
+def furusato_card(it: dict) -> str:
+    u = furusato_url(it)
+    a = f"href='{u}' target='_blank' rel='nofollow sponsored noopener' data-aff='rakuten-furusato'"
+    return (f"<li><a class='fimg' {a}><img src='{esc(it['img'])}?_ex=128x128' alt='' width='96' height='96' loading='lazy'></a>"
+            f"<div><b>{esc(it['title'])}</b><span class='meta'>{esc(it['city'])}・寄付額 {esc(it['price'])}</span>"
+            f"<p>{esc(it['note'])}</p><a class='fbtn' {a}>楽天ふるさと納税で見る</a></div></li>")
+
+
+def furusato_page() -> str:
+    """馬に関わるふるさと納税のまとめ（2026-11-25）。競馬そのものの広告がほとんど無いので、馬券を買わない人にも関係のある案内として作った。
+    ポイント還元の話は書かない（2025年10月から、ふるさと納税サイトのポイント付与は禁止）。"""
+    chk = FURUSATO.get("checked", "")
+    chk_jp = f"{int(chk[:4])}年{int(chk[5:7])}月{int(chk[8:10])}日" if chk else ""
+    secs = "".join(
+        f"<section class='card'><h2 id='{g}'>{esc(h)}</h2><p>{esc(lead)}</p><ul class='furu'>{''.join(furusato_card(it) for it in furusato_items(g))}</ul></section>"
+        for g, h, lead in FURU_GROUPS if furusato_items(g))
+    n = len(furusato_items())
+    body = (f"<p class='crumb'><a href='/'>トップ</a> › 馬に関わるふるさと納税</p><h1>馬に関わるふるさと納税まとめ</h1>"
+            f"<p class='answer'>引退した競走馬の支援、馬に会える券や競馬場の指定席、名馬のグッズなど、馬と競馬に関わるふるさと納税の返礼品を{n}件まとめた。"
+            f"寄付額は1,000円からあり、返礼品を受け取らずに馬の支援だけをすることもできる。</p>"
+            f"<p class='aff'><span class='pr'>PR</span>このページのリンクは広告（楽天ふるさと納税）を含む。寄付額と受付の状況は{chk_jp}に確認したもので、変わることがある。申し込みの前に、リンク先の表示を確かめてほしい。</p>"
+            + secs +
+            "<section class='card'><h2>ふるさと納税のしくみ（かんたんに）</h2><ul>"
+            "<li>自治体に寄付をすると、寄付額から2,000円を引いた額が、所得税と住民税から差し引かれる。</li>"
+            "<li>差し引かれる額には上限があり、収入や家族の人数で変わる。上限を超えた分は自己負担になる。</li>"
+            "<li>その年の分として扱われるのは、12月31日までに支払いが済んだ寄付。</li>"
+            "<li>会社員などで寄付先が5つまでなら、確定申告をしなくてよい「ワンストップ特例」が使える（寄付のたびに申請が必要）。</li></ul>"
+            "<p class='meta'>正確な条件と上限の額は、総務省の「ふるさと納税ポータルサイト」や各サイトの計算ページで確認してほしい。</p></section>"
+            "<section class='card'><h2>このページについて</h2><p>このサイトの運営者が、楽天市場に出ている返礼品から馬・競馬に関わるものを選んだ。"
+            "寄付の集まり方や使い道は自治体と各団体が決めていて、このサイトは関わっていない。返礼品は予告なく終わることがある。</p></section>"
+            + f"<img src='https://www16.a8.net/0.gif?a8mat={FURUSATO.get('a8mat', '')}' alt='' width='1' height='1' style='position:absolute;width:1px;height:1px'>"
+            + share_links(BASE_URL + "/furusato/", "馬に関わるふるさと納税まとめ（引退馬の支援・競馬場の指定席・名馬のグッズ）"))
+    return page(f"馬に関わるふるさと納税まとめ｜引退馬の支援・競馬場の指定席・名馬グッズ｜{SITE_NAME}", body, "/furusato/",
+                desc=f"引退した競走馬の支援（1,000円〜）、馬に会える券、大井競馬場の指定席、名馬のグッズなど、馬と競馬に関わるふるさと納税の返礼品{n}件を種類別にまとめた。")
+
+
+def furusato_line(where: str = "") -> str:
+    """ほかのページからの案内（サイト内リンク。広告ではない）。"""
+    if not FURUSATO.get("items"):
+        return ""
+    return (f"<p class='notice'><a href='/furusato/' data-ns='{where}' data-ns-to='furusato'><b>馬に関わるふるさと納税まとめ</b></a>　"
+            "引退した競走馬の支援（1,000円〜）、競馬場の指定席、名馬のグッズ。今年の分は12月31日まで。</p>")
+
+
 def limits_page(t: dict, worst_venue: tuple[str, str] | None) -> str:
     wv = f"場別では{esc(worst_venue[0])}が最も悪く（回収率{esc(worst_venue[1])}）、" if worst_venue else ""
     body = f"""<p class='crumb'><a href='/'>トップ</a> › AI予想の限界と注意点</p><h1>AI予想の限界と注意点</h1>{banner('limits')}
@@ -2048,6 +2112,7 @@ def limits_page(t: dict, worst_venue: tuple[str, str] | None) -> str:
 
 
 SITE_CHANGES = [
+    ("2026-11-25", "「馬に関わるふるさと納税まとめ」のページを作った。引退した競走馬の支援、馬に会える券や競馬場の指定席、名馬のグッズを種類別に載せている。リンクは広告（楽天ふるさと納税）で、ページの上にその旨を書いた。"),
     ("2026-11-25", "楽天競馬のPRに公式のバナーを足した。対象は、馬券を買う場面のページ（結果が出る前の地方のレースページの買い目の下、地方の競馬場ページ、地方の重賞ページ、地方競馬のコラムの末尾）。バナーの大きさは画面の幅で出し分ける（PCは728×90、スマホは310×60）。結果が出たあとのレースページと用語集は、これまでどおり文の1行だけ。"),
     ("2026-11-24", "最初の画面を見直した。トップは説明文を短くして今のルールの回収率を先に書き、今日の目玉レースと厳選レース（的中率・◎の3着内率・回収率つき）を上に、直近3日の的中（同じ期間の全体の的中数と回収率つき）をその下に置いた。レースページは◎〇▲と自信度を一番上に移し、ページ内の目次はスマホで横1行にした。過去の日の一覧は最初の12レースだけを見せ、残りはボタンで開く。スマホではヘッダーを低くした。重賞ページ・特集まとめ・用語集にPRの案内を1行足し、PRのリンクがどの種類のページで押されたかを記録するようにした。"),
     ("2026-11-24", "レースページの買い目の下に「相手を絡めるなら（参考）」として、◎と〇・▲のワイド・馬連の組み合わせを載せた。このサイトの買い目ではなく、成績にも数えない（◎の複勝にワイドか馬連を1点足すと、自信度Aのレースの回収率が約100%から約85%に下がったため、買い目は◎の単勝か複勝1点のままにしている）。結果が出たあとは、当たり外れと払戻を表示する。"),
@@ -2288,6 +2353,7 @@ th.sortable{cursor:pointer;user-select:none}th.sortable:hover{color:var(--acc)}t
 .gkpi{display:flex;flex-wrap:wrap;gap:4px 22px;margin:6px 0 8px}.gkpi div{display:flex;flex-direction:column}.gkpi b{font-family:"Shippori Mincho B1",serif;font-size:24px;line-height:1.2;color:var(--acc)}.gkpi span{font-size:12px;color:var(--mut)}
 .live0{margin:10px 0}.hits h2 small{font-size:12px;color:var(--mut);font-weight:400;margin-left:8px}.rcap li:nth-child(n+13){display:none}.rmore{margin:8px 0 0}details.fold summary{cursor:pointer;color:var(--acc);font-size:14px}
 @media (max-width:720px){.logo small{display:none}.bar{padding:8px 0 6px;flex-wrap:nowrap}.bar .logo{flex:1 1 auto}.logo img{width:36px;height:36px}.roi-badge{flex-basis:auto!important;margin-left:auto!important;text-align:right;white-space:nowrap}.roi-badge .rn{display:none}ul.rtoc{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px}ul.rtoc li{flex:0 0 auto}.gkpi{gap:4px 16px}.gkpi b{font-size:20px}.mtop .marks{gap:2px 18px}.mtop .marks b{font-size:22px}.mtop .marks span{font-size:16px}.mtop .marks .m:first-child span{font-size:18px}}
+.furu{list-style:none;margin:0;padding:0}.furu li{display:flex;gap:12px;padding:12px 0;border-top:1px solid var(--line)}.furu li:first-child{border-top:0}.furu .fimg{flex:0 0 96px}.furu img{display:block;width:96px;height:96px;object-fit:cover;background:var(--panel)}.furu b{display:block;line-height:1.5}.furu .meta{display:block;margin:2px 0}.furu p{margin:4px 0 8px;font-size:14px}.fbtn{display:inline-block;border:1px solid var(--acc);color:var(--acc);padding:4px 12px;font-size:13px;font-weight:700;text-decoration:none;border-radius:2px}.fbtn:hover{background:var(--acc);color:#fff}
 .refc{margin-top:14px;padding-top:10px;border-top:1px dashed var(--line)}.refc h3{margin:0 0 4px;font-size:14px}.bets.ref li{border-style:dashed;background:transparent}
 .zkbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:60;max-width:560px;margin:0 auto;display:flex;align-items:center;gap:8px;background:var(--panel);color:var(--fg);border:1px solid var(--line);border-left:4px solid var(--acc);box-shadow:0 6px 18px rgba(0,0,0,.18);padding:8px 8px 8px 10px;font-size:14px;line-height:1.5}
 .zkbar.fab{right:92px}.zkbar img{flex:none;width:36px;height:36px}.zkbar span{flex:1;min-width:0}.zkbar button{font:inherit;cursor:pointer;flex:none}
@@ -2609,7 +2675,8 @@ def build() -> None:
     if main_d:
         head = "今日の予想" if main_d == today else f"{fmt_date(main_d)}の予想"
         _mid = (recent_hits(by_date, main_d) + feature_banner()
-                + "<p class='notice'><a href='/weekend/' data-ns='top' data-ns-to='weekend'><b>今週末の競馬まとめ</b></a>　重賞のAI予想の公開状況・特集・先週の結果を毎週入れ替えています（ブックマーク推奨）。</p>")
+                + "<p class='notice'><a href='/weekend/' data-ns='top' data-ns-to='weekend'><b>今週末の競馬まとめ</b></a>　重賞のAI予想の公開状況・特集・先週の結果を毎週入れ替えています（ブックマーク推奨）。</p>"
+                + (furusato_line("top") if TODAY[4:6] in ("11", "12") else ""))
         if main_d == today and any(not str(p["race_id"]).startswith("jra_") for p in by_date[main_d]):
             _mid += aff_rakuten("top")  # 地方の開催がある日だけ（全体の3割が見るページに、収益の出口が無かった）
         top_list = f"<section class='today' id='today'>{day_list(main_d, by_date[main_d], mid=_mid)}</section>"
@@ -2715,6 +2782,8 @@ def build() -> None:
         if v:
             _vb[v][0] += int(r["stake"]); _vb[v][1] += int(r["return"]); _vb[v][2] += 1
     _wv = min(((v, x) for v, x in _vb.items() if x[2] >= 20), key=lambda kv: kv[1][1] / kv[1][0], default=None)
+    if FURUSATO.get("items"):
+        write("/furusato/", furusato_page())
     write("/limits/", limits_page(t, (VENUE_NAME.get(_wv[0], _wv[0]), roi_txt(_wv[1][0], _wv[1][1])) if _wv else None))
     write("/changelog/", changelog_page())
     write("/contact/", page(f"お問い合わせ | {SITE_NAME}", f"<p class='crumb'><a href='/'>トップ</a> › お問い合わせ</p>" + CONTACT, "/contact/",
@@ -2809,7 +2878,7 @@ def build() -> None:
         f"- [重賞のAI予想一覧]({BASE_URL}/graded/)\n- [成績・回収率]({BASE_URL}/results/)：累計{t['n']}レース・回収率{t['roi']}\n"
         f"- [買い方別の回収率]({BASE_URL}/strategy/)\n- [重賞回顧]({BASE_URL}/review/)\n- [馬別のAI評価履歴]({BASE_URL}/horse/)\n- [予想の方法]({BASE_URL}/about/)\n" + (f"- [初心者向けコラム]({BASE_URL}/column/)：馬券の種類・回収率・人気と勝率などを実データで解説\n" if HAS_COLUMN else "") + f"- [全予想の記録CSV]({REPO}/blob/main/results_ledger.csv)\n"
         + _more, encoding="utf-8")
-    fixed = {"/": today_iso, "/results/": today_iso, "/strategy/": today_iso, "/ippen/": today_iso, "/about/": None, "/contact/": None, "/glossary/": None, "/limits/": today_iso, "/changelog/": today_iso, "/operator/": None, "/privacy/": None}
+    fixed = {"/": today_iso, "/results/": today_iso, "/strategy/": today_iso, "/ippen/": today_iso, "/about/": None, "/contact/": None, "/glossary/": None, "/limits/": today_iso, **({"/furusato/": FURUSATO.get("checked")} if FURUSATO.get("items") else {}), "/changelog/": today_iso, "/operator/": None, "/privacy/": None}
     # 更新日は今日より先にしない（前の日に予想を出すレースや、その馬・コースのページはレースの日付が入り、未来の日付になっていた）
     sm = "".join(f"<url><loc>{BASE_URL}{u}</loc>{f'<lastmod>{min(m, today_iso)}</lastmod>' if m else ''}</url>"
                  for u, m in list(fixed.items()) + sorted(lastmod.items(), reverse=True))
