@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261124",
  "race_id": "202611242433170109",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 2,
+   "number": 2,
+   "name": "マコトアディントン",
+   "time": "1:36.6",
+   "margin": "",
+   "pos4": null,
+   "last3f": 39.0,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 11,
+   "name": "ロングトーン",
+   "time": "1:37.1",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": 39.9,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 9,
+   "name": "イズルード",
+   "time": "1:37.1",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": 40.1,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 10,
+   "name": "ハンナパール",
+   "time": "1:37.2",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": 39.9,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 8,
+   "name": "レジーナチェリ",
+   "time": "1:37.3",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": 39.9,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 5,
+   "name": "シスターネビュラ",
+   "time": "1:37.8",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": 39.1,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 4,
+   "name": "パー",
+   "time": "1:37.8",
+   "margin": "ハナ",
+   "pos4": null,
+   "last3f": 40.8,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 5,
+   "number": 6,
+   "name": "アスキステソーロ",
+   "time": "1:38.4",
+   "margin": "３",
+   "pos4": null,
+   "last3f": 38.8,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 3,
+   "number": 3,
+   "name": "アミアン",
+   "time": "1:38.8",
+   "margin": "２",
+   "pos4": null,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 6,
+   "number": 7,
+   "name": "サンマイメ",
+   "time": "1:39.5",
+   "margin": "３",
+   "pos4": null,
+   "last3f": 40.7,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 8,
+   "number": 12,
+   "name": "ホウオウシーザー",
+   "time": "1:40.7",
+   "margin": "６",
+   "pos4": null,
+   "last3f": 41.9,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 1,
+   "number": 1,
+   "name": "オレイニウタイマス",
+   "time": "1:41.0",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": 41.4,
+   "popularity": null
+  }
+ ]
 }
