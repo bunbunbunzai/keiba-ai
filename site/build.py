@@ -154,10 +154,14 @@ def aff_saikyo() -> str:
 
 def aff_rakuten_banner(wide: bool = True) -> str:
     """楽天競馬の公式バナー（TGアフィリエイトの管理画面のもの。2026-11-25）。wide：468x60（ID 37。スマホでは幅に合わせて縮む）、
-    False：310x60（ID 67。スマホの幅にそのまま入る。レースページの買い目の下）。728x90（ID 70）はスマホで縮むと字が読めないのでやめた。"""
-    i, w = (37, 468) if wide else (67, 310)
-    return (f"<a class='affbn' href='{AFF_RAKUTEN.format(id=i)}' target='_blank' rel='nofollow sponsored noopener' data-aff='rakuten-keiba-banner'>"
-            f"<img src='{AFF_RAKUTEN_IMG.format(id=i)}' alt='楽天競馬 エントリーと新規会員登録で1,000円分' width='{w}' height='60' loading='lazy'></a>")
+    False：310x60（ID 67。スマホの幅にそのまま入る。レースページの買い目の下）。728x90（ID 70）はスマホで縮むと字が読めないのでスマホでは使わない。
+    PCでは小さく見えるので、画面の幅で出し分ける（2026-11-25）：wide は PC 728x90（ID 70）／スマホ 468x60、wide=False は PC 468x60／スマホ 310x60。
+    リンク先のIDをバナーごとに合わせるため、2つ並べて片方を隠す（隠れた側の画像は loading=lazy で読み込まれない）。"""
+    def one(i, w, h, cls):
+        return (f"<a class='affbn {cls}' href='{AFF_RAKUTEN.format(id=i)}' target='_blank' rel='nofollow sponsored noopener' data-aff='rakuten-keiba-banner'>"
+                f"<img src='{AFF_RAKUTEN_IMG.format(id=i)}' alt='楽天競馬 エントリーと新規会員登録で1,000円分' width='{w}' height='{h}' style='width:100%;max-width:{w}px;height:auto' loading='lazy'></a>")
+    # スマホはどちらも 310x60（468x60 を縮めると字が小さくなるので、縮めずに収まる大きさにする）
+    return (one(70, 728, 90, "pc") if wide else one(37, 468, 60, "pc")) + one(67, 310, 60, "sp")
 
 
 def aff_rakuten(kind: str = "race", banner: bool = True) -> str:
@@ -2037,7 +2041,7 @@ def limits_page(t: dict, worst_venue: tuple[str, str] | None) -> str:
 
 
 SITE_CHANGES = [
-    ("2026-11-25", "楽天競馬のPRに公式のバナーを足した。対象は、馬券を買う場面のページ（結果が出る前の地方のレースページの買い目の下、地方の競馬場ページ、地方の重賞ページ、地方競馬のコラムの末尾）。結果が出たあとのレースページと用語集は、これまでどおり文の1行だけ。"),
+    ("2026-11-25", "楽天競馬のPRに公式のバナーを足した。対象は、馬券を買う場面のページ（結果が出る前の地方のレースページの買い目の下、地方の競馬場ページ、地方の重賞ページ、地方競馬のコラムの末尾）。バナーの大きさは画面の幅で出し分ける（PCは728×90か468×60、スマホは310×60）。結果が出たあとのレースページと用語集は、これまでどおり文の1行だけ。"),
     ("2026-11-24", "最初の画面を見直した。トップは説明文を短くして今のルールの回収率を先に書き、今日の目玉レースと厳選レース（的中率・◎の3着内率・回収率つき）を上に、直近3日の的中（同じ期間の全体の的中数と回収率つき）をその下に置いた。レースページは◎〇▲と自信度を一番上に移し、ページ内の目次はスマホで横1行にした。過去の日の一覧は最初の12レースだけを見せ、残りはボタンで開く。スマホではヘッダーを低くした。重賞ページ・特集まとめ・用語集にPRの案内を1行足し、PRのリンクがどの種類のページで押されたかを記録するようにした。"),
     ("2026-11-24", "レースページの買い目の下に「相手を絡めるなら（参考）」として、◎と〇・▲のワイド・馬連の組み合わせを載せた。このサイトの買い目ではなく、成績にも数えない（◎の複勝にワイドか馬連を1点足すと、自信度Aのレースの回収率が約100%から約85%に下がったため、買い目は◎の単勝か複勝1点のままにしている）。結果が出たあとは、当たり外れと払戻を表示する。"),
     ("2026-11-23", "G1の特集まとめの冒頭に、開催日・コースと、発表の順番（出走馬 → 枠順 → AI予想 → レース）のうち今どこまで進んだか、その時点の入口（出走馬の一覧、AI予想・全頭診断・「AI vs あなた」、結果と答え合わせ）をまとめた箱を置いた。用語集のすべての用語に、実際のレースの数字を足した（中央競馬の約1万レースの払戻・人気別の成績・枠や4コーナーの位置ごとの成績、今年の重賞の結果、このサイトのAIの印の成績など。サイトの更新のたびに数え直す）。"),
@@ -2144,7 +2148,7 @@ CSS = """.ask .alog{margin-top:10px}.ask .qa{border-top:1px solid var(--line);pa
 @media (max-width:520px){.card.askpop{left:8px;right:8px;width:auto;max-width:none;bottom:92px;max-height:68vh}}
 @media (prefers-reduced-motion:no-preference){.askpop.open{animation:zkup .18s ease-out}@keyframes zkup{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}}
 .aff{font-size:13px;color:var(--mut);margin:10px 0 0;padding:8px 10px;border:1px dashed var(--line);background:var(--bg)}.aff a{color:var(--acc);font-weight:700}.pr{display:inline-block;font-size:10px;border:1px solid var(--mut);border-radius:2px;padding:0 4px;margin-right:6px;vertical-align:middle;color:var(--mut)}
-.affbox{margin:24px 0}.affbox.affrace{margin:12px 0 0}.affbox .pr{margin-bottom:6px}.affbn{display:block;max-width:468px}.affrace .affbn{max-width:310px}.affbox p{margin:0 0 8px;font-size:14px;color:var(--fg)}.affbox img{max-width:100%;height:auto;display:block}
+.affbox{margin:24px 0}.affbox.affrace{margin:12px 0 0}.affbox .pr{margin-bottom:6px}.affbn{display:block;max-width:100%}.affbn.pc{display:none}@media (min-width:800px){.affbn.pc{display:block}.affbn.sp{display:none}}.affbox p{margin:0 0 8px;font-size:14px;color:var(--fg)}.affbox img{max-width:100%;height:auto;display:block}
 :root{--bg:#f2f3f0;--panel:#fff;--fg:#17201b;--mut:#5f6761;--line:#d9dcd6;--rule:#17201b;--acc:#146b45;--acc-soft:#e3efe8;--hit:#c0122d;--hit-soft:#fbe9ec;--tg:#8a6100;--miss:#7a807b;--card:var(--panel);--won:var(--hit-soft)}
 @media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#141614;--panel:#1c1f1c;--fg:#ecefe9;--mut:#a4aba5;--line:#343934;--rule:#ecefe9;--acc:#6cc497;--acc-soft:#1f2e26;--hit:#ff7b8c;--hit-soft:#3a2126;--tg:#d9a93a;--miss:#8b918c}}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
