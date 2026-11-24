@@ -2,7 +2,205 @@
  "source": "rakuten",
  "date": "20261124",
  "race_id": "202611242433170103",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "3",
+    "yen": 200
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "3-5",
+    "yen": 770
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "3",
+    "yen": 130
+   },
+   {
+    "combo": "5",
+    "yen": 160
+   },
+   {
+    "combo": "4",
+    "yen": 280
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-5",
+    "yen": 160
+   },
+   {
+    "combo": "3-4",
+    "yen": 560
+   },
+   {
+    "combo": "4-5",
+    "yen": 500
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-5",
+    "yen": 510
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-4-5",
+    "yen": 1290
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "3-5-4",
+    "yen": 4830
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-5",
+    "yen": 420
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 3,
+   "number": 3,
+   "name": "ニュークリアス",
+   "time": "1:39.4",
+   "margin": "",
+   "pos4": 5,
+   "last3f": 40.0,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "サノノスレーヴ",
+   "time": "1:40.4",
+   "margin": "５",
+   "pos4": 1,
+   "last3f": 41.0,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "アルファリラエ",
+   "time": "1:40.7",
+   "margin": "１ １／２",
+   "pos4": 8,
+   "last3f": 40.9,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 6,
+   "name": "コハクロン",
+   "time": "1:40.8",
+   "margin": "１／２",
+   "pos4": 1,
+   "last3f": 41.7,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 8,
+   "name": "リアンマカ",
+   "time": "1:40.9",
+   "margin": "１／２",
+   "pos4": 1,
+   "last3f": 41.8,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 10,
+   "name": "セレスティアハート",
+   "time": "1:41.1",
+   "margin": "１",
+   "pos4": 4,
+   "last3f": 42.0,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 11,
+   "name": "メイショウツキヨ",
+   "time": "1:41.4",
+   "margin": "１ １／２",
+   "pos4": 6,
+   "last3f": 41.5,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 9,
+   "name": "テルケンユミグラス",
+   "time": "1:41.4",
+   "margin": "アタマ",
+   "pos4": 11,
+   "last3f": 41.8,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 6,
+   "number": 7,
+   "name": "オーキッドワン",
+   "time": "1:41.6",
+   "margin": "１",
+   "pos4": 6,
+   "last3f": 41.9,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 8,
+   "number": 12,
+   "name": "チャームドウイング",
+   "time": "1:41.9",
+   "margin": "１ １／２",
+   "pos4": 9,
+   "last3f": 42.6,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 1,
+   "number": 1,
+   "name": "プリヴィマーク",
+   "time": "1:41.9",
+   "margin": "ハナ",
+   "pos4": 12,
+   "last3f": 41.7,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 2,
+   "number": 2,
+   "name": "アットザラヴアスク",
+   "time": "1:44.3",
+   "margin": "大差",
+   "pos4": 9,
+   "last3f": 44.8,
+   "popularity": null
+  }
+ ]
 }
