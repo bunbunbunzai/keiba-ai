@@ -1200,6 +1200,20 @@
    "venue": "浦和",
    "race_no": 10,
    "post_time": "17:10",
+   "number": 11,
+   "name": "モズリバーシャトー",
+   "types": [
+    "aitop"
+   ],
+   "odds": 6.8,
+   "popularity": 3
+  },
+  {
+   "race_id": "202611241813080110",
+   "results_key": "202611241813080110",
+   "venue": "浦和",
+   "race_no": 10,
+   "post_time": "17:10",
    "number": 12,
    "name": "マジュツシカエル",
    "types": [
@@ -1340,6 +1354,20 @@
    },
    "odds": 18.9,
    "popularity": 9
+  },
+  {
+   "race_id": "202611241106070611",
+   "results_key": "202611241106070611",
+   "venue": "水沢",
+   "race_no": 11,
+   "post_time": "17:30",
+   "number": 8,
+   "name": "サティスファイア",
+   "types": [
+    "aitop"
+   ],
+   "odds": 9.3,
+   "popularity": 5
   },
   {
    "race_id": "202611241106070611",
