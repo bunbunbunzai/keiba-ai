@@ -1,6 +1,6 @@
 {
  "date": "20261124",
- "updated": "2026-11-24 11:19",
+ "updated": "2026-11-24 11:24",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -47,8 +47,8 @@
     "field": 7,
     "popularity": 5
    },
-   "odds": 14.9,
-   "popularity": 3
+   "odds": 39.6,
+   "popularity": 7
   },
   {
    "race_id": "202611241813080101",
@@ -69,7 +69,7 @@
     "field": 7,
     "popularity": 1
    },
-   "odds": 11.4,
+   "odds": 32.4,
    "popularity": 6
   },
   {
@@ -90,7 +90,7 @@
     "field": 11,
     "popularity": 8
    },
-   "odds": 24.2,
+   "odds": 87.4,
    "popularity": 7
   },
   {
@@ -111,8 +111,8 @@
     "field": 12,
     "popularity": 10
    },
-   "odds": 3.8,
-   "popularity": 2
+   "odds": 19.7,
+   "popularity": 3
   },
   {
    "race_id": "202611241813080101",
@@ -132,7 +132,7 @@
     "field": 12,
     "popularity": 4
    },
-   "odds": 3.7,
+   "odds": 1.0,
    "popularity": 1
   },
   {
@@ -153,8 +153,22 @@
     "field": 12,
     "popularity": 5
    },
-   "odds": 5.7,
+   "odds": 24.4,
    "popularity": 4
+  },
+  {
+   "race_id": "202611241106070603",
+   "results_key": "202611241106070603",
+   "venue": "水沢",
+   "race_no": 3,
+   "post_time": "12:45",
+   "number": 1,
+   "name": "ノボリスマイル",
+   "types": [
+    "aitop"
+   ],
+   "odds": 6.9,
+   "popularity": 2
   },
   {
    "race_id": "202611241106070603",
@@ -174,7 +188,7 @@
     "field": 11,
     "popularity": 4
    },
-   "odds": 11.8,
+   "odds": 23.6,
    "popularity": 4
   },
   {
@@ -195,7 +209,7 @@
     "field": 12,
     "popularity": 5
    },
-   "odds": 4.1,
+   "odds": 5.3,
    "popularity": 2
   },
   {
@@ -217,8 +231,8 @@
     "field": 12,
     "popularity": 5
    },
-   "odds": 18.1,
-   "popularity": 5
+   "odds": 8.2,
+   "popularity": 4
   },
   {
    "race_id": "202611241106070605",
