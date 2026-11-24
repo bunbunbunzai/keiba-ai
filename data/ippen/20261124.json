@@ -1,6 +1,6 @@
 {
  "date": "20261124",
- "updated": "2026-11-24 16:44",
+ "updated": "2026-11-24 16:48",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1247,7 +1247,7 @@
     "field": 16,
     "popularity": 9
    },
-   "odds": 1.7,
+   "odds": 1.8,
    "popularity": 1
   },
   {
@@ -1268,8 +1268,8 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": 72.0,
-   "popularity": 12
+   "odds": 43.2,
+   "popularity": 9
   },
   {
    "race_id": "202611242433170106",
@@ -1310,7 +1310,7 @@
     "field": 7,
     "popularity": 4
    },
-   "odds": 15.4,
+   "odds": 17.2,
    "popularity": 5
   },
   {
@@ -1732,20 +1732,6 @@
    "popularity": 7
   },
   {
-   "race_id": "202611241813080112",
-   "results_key": "202611241813080112",
-   "venue": "浦和",
-   "race_no": 12,
-   "post_time": "18:20",
-   "number": 12,
-   "name": "ユメデアエタラ",
-   "types": [
-    "aitop"
-   ],
-   "odds": 2.7,
-   "popularity": 1
-  },
-  {
    "race_id": "202611242433170108",
    "results_key": "202611242433170108",
    "venue": "名古屋",
@@ -1927,6 +1913,20 @@
    },
    "odds": 60.8,
    "popularity": 10
+  },
+  {
+   "race_id": "202611242433170111",
+   "results_key": "202611242433170111",
+   "venue": "名古屋",
+   "race_no": 11,
+   "post_time": "20:15",
+   "number": 6,
+   "name": "イザベルソレイユ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 5.6,
+   "popularity": 3
   },
   {
    "race_id": "202611242433170111",
