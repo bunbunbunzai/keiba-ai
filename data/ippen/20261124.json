@@ -1,6 +1,6 @@
 {
  "date": "20261124",
- "updated": "2026-11-24 13:18",
+ "updated": "2026-11-24 13:22",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -257,7 +257,8 @@
    "number": 1,
    "name": "グランクリュ",
    "types": [
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 15,
    "last": {
@@ -266,8 +267,8 @@
     "field": 12,
     "popularity": 3
    },
-   "odds": 12.1,
-   "popularity": 3
+   "odds": 15.4,
+   "popularity": 4
   },
   {
    "race_id": "202611241106070605",
@@ -288,8 +289,8 @@
     "field": 11,
     "popularity": 3
    },
-   "odds": 28.4,
-   "popularity": 7
+   "odds": 23.9,
+   "popularity": 6
   },
   {
    "race_id": "202611241813080105",
@@ -473,22 +474,8 @@
     "field": 12,
     "popularity": 12
    },
-   "odds": 62.0,
-   "popularity": 8
-  },
-  {
-   "race_id": "202611241813080106",
-   "results_key": "202611241813080106",
-   "venue": "浦和",
-   "race_no": 6,
-   "post_time": "14:50",
-   "number": 4,
-   "name": "サンライズハンター",
-   "types": [
-    "aitop"
-   ],
-   "odds": 20.6,
-   "popularity": 4
+   "odds": 34.3,
+   "popularity": 7
   },
   {
    "race_id": "202611241813080106",
@@ -508,8 +495,8 @@
     "field": 12,
     "popularity": 9
    },
-   "odds": null,
-   "popularity": null
+   "odds": 214.6,
+   "popularity": 13
   },
   {
    "race_id": "202611241106070607",
