@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261124",
  "race_id": "202611241813080110",
- "tries": 2,
+ "tries": 7,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 2,
+   "number": 2,
+   "name": "アラビアンレイン",
+   "time": "46.5",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 35.0,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 3,
+   "number": 3,
+   "name": "ズルタナイト",
+   "time": "46.5",
+   "margin": "クビ",
+   "pos4": 1,
+   "last3f": 34.9,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 1,
+   "number": 1,
+   "name": "ルールメイプル",
+   "time": "47.0",
+   "margin": "２ １／２",
+   "pos4": 7,
+   "last3f": 34.8,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 4,
+   "name": "リブートパワー",
+   "time": "47.2",
+   "margin": "１",
+   "pos4": 5,
+   "last3f": 35.0,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 5,
+   "name": "スピークイージー",
+   "time": "47.3",
+   "margin": "クビ",
+   "pos4": 3,
+   "last3f": 35.4,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 7,
+   "name": "クラレーヴ",
+   "time": "47.5",
+   "margin": "１ １／２",
+   "pos4": 5,
+   "last3f": 35.6,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 6,
+   "name": "エルガー",
+   "time": "47.8",
+   "margin": "１ １／２",
+   "pos4": 8,
+   "last3f": 35.6,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 10,
+   "name": "ボディコンシャス",
+   "time": "48.0",
+   "margin": "１ １／２",
+   "pos4": 4,
+   "last3f": 36.4,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 12,
+   "name": "マジュツシカエル",
+   "time": "48.3",
+   "margin": "１ １／２",
+   "pos4": 8,
+   "last3f": 36.3,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 6,
+   "number": 8,
+   "name": "ベニシア",
+   "time": "48.3",
+   "margin": "アタマ",
+   "pos4": 10,
+   "last3f": 36.3,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 8,
+   "number": 11,
+   "name": "モズリバーシャトー",
+   "time": "48.9",
+   "margin": "３",
+   "pos4": 11,
+   "last3f": 36.6,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 7,
+   "number": 9,
+   "name": "セイウンハルカニ",
+   "time": "49.4",
+   "margin": "２ １／２",
+   "pos4": 12,
+   "last3f": 36.5,
+   "popularity": null
+  }
+ ]
 }
