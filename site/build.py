@@ -2036,7 +2036,9 @@ def glossary_term_pages() -> dict[str, str]:
 FURUSATO = load_json(ROOT / "data" / "furusato.json") or {}
 FURU_GROUPS = [("support", "引退した馬を支援する", "引退した競走馬が余生を過ごす牧場や、その世話をする団体への寄付。返礼品のないものが多く、少額から選べる。"),
                ("visit", "馬に会う・競馬場で観る", "牧場や施設で馬に会える券、競馬場の指定席、自分の名前を付けられるレースなど、出かけて楽しむ返礼品。"),
-               ("goods", "名馬・競馬のグッズ", "競馬場やトレーニング・センターのある町、名馬が暮らす町の返礼品。")]
+               ("meiba", "名馬ごとのグッズ", "引退した名馬が暮らす町や、ゆかりのある町の返礼品。同じ馬の品が続くように並べている。"),
+               ("jra", "トレーニング・センターの町の品", "JRAの美浦（茨城県）・栗東（滋賀県）のトレーニング・センターにちなんだ返礼品。調教で使われたゼッケンや蹄鉄など。"),
+               ("goods", "そのほかの馬・競馬のグッズ", "勝負服や蹄鉄を使った品、馬のまちのお菓子など。")]
 
 
 def furusato_url(it: dict) -> str:
@@ -2049,7 +2051,8 @@ def furusato_url(it: dict) -> str:
 
 
 def furusato_items(group: str | None = None) -> list[dict]:
-    return [it for it in FURUSATO.get("items", []) if (group is None or it["group"] == group) and not (it.get("until") and TODAY and TODAY > it["until"])]
+    out = [it for it in FURUSATO.get("items", []) if (group is None or it["group"] == group) and not (it.get("until") and TODAY and TODAY > it["until"])]
+    return sorted(out, key=lambda it: it.get("horse", "")) if group == "meiba" else out
 
 
 def furusato_card(it: dict) -> str:
@@ -2065,12 +2068,15 @@ def furusato_page() -> str:
     ポイント還元の話は書かない（2025年10月から、ふるさと納税サイトのポイント付与は禁止）。"""
     chk = FURUSATO.get("checked", "")
     chk_jp = f"{int(chk[:4])}年{int(chk[5:7])}月{int(chk[8:10])}日" if chk else ""
-    secs = "".join(
+    horses = list(dict.fromkeys(it["horse"] for it in furusato_items("meiba") if it.get("horse")))
+    toc = ("<p class='ftoc'>" + "".join(f"<a href='#{g}'>{esc(h)}（{len(furusato_items(g))}）</a>" for g, h, _ in FURU_GROUPS if furusato_items(g)) + "</p>"
+           + (f"<p class='meta'>名馬：{'・'.join(esc(h) for h in horses)}</p>" if horses else ""))
+    secs = toc + "".join(
         f"<section class='card'><h2 id='{g}'>{esc(h)}</h2><p>{esc(lead)}</p><ul class='furu'>{''.join(furusato_card(it) for it in furusato_items(g))}</ul></section>"
         for g, h, lead in FURU_GROUPS if furusato_items(g))
     n = len(furusato_items())
     body = (f"<p class='crumb'><a href='/'>トップ</a> › 馬に関わるふるさと納税</p><h1>馬に関わるふるさと納税まとめ</h1>"
-            f"<p class='answer'>引退した競走馬の支援、馬に会える券や競馬場の指定席、名馬のグッズなど、馬と競馬に関わるふるさと納税の返礼品を{n}件まとめた。"
+            f"<p class='answer'>引退した競走馬の支援、馬に会える券や競馬場の指定席、名馬ごとのグッズ、トレーニング・センターの町の品など、馬と競馬に関わるふるさと納税の返礼品を{n}件まとめた。"
             f"寄付額は1,000円からあり、返礼品を受け取らずに馬の支援だけをすることもできる。</p>"
             f"<p class='aff'><span class='pr'>PR</span>このページのリンクは広告（楽天ふるさと納税）を含む。寄付額と受付の状況は{chk_jp}に確認したもので、変わることがある。申し込みの前に、リンク先の表示を確かめてほしい。</p>"
             + secs +
@@ -2112,7 +2118,7 @@ def limits_page(t: dict, worst_venue: tuple[str, str] | None) -> str:
 
 
 SITE_CHANGES = [
-    ("2026-11-25", "「馬に関わるふるさと納税まとめ」のページを作った。引退した競走馬の支援、馬に会える券や競馬場の指定席、名馬のグッズを種類別に載せている。リンクは広告（楽天ふるさと納税）で、ページの上にその旨を書いた。"),
+    ("2026-11-25", "「馬に関わるふるさと納税まとめ」のページを作った。引退した競走馬の支援、馬に会える券や競馬場の指定席、名馬ごとのグッズ（オジュウチョウサン、タニノギムレット、オグリキャップなど）、美浦・栗東のトレーニング・センターの町の品を種類別に載せている（43件）。リンクは広告（楽天ふるさと納税）で、ページの上にその旨を書いた。"),
     ("2026-11-25", "楽天競馬のPRに公式のバナーを足した。対象は、馬券を買う場面のページ（結果が出る前の地方のレースページの買い目の下、地方の競馬場ページ、地方の重賞ページ、地方競馬のコラムの末尾）。バナーの大きさは画面の幅で出し分ける（PCは728×90、スマホは310×60）。結果が出たあとのレースページと用語集は、これまでどおり文の1行だけ。"),
     ("2026-11-24", "最初の画面を見直した。トップは説明文を短くして今のルールの回収率を先に書き、今日の目玉レースと厳選レース（的中率・◎の3着内率・回収率つき）を上に、直近3日の的中（同じ期間の全体の的中数と回収率つき）をその下に置いた。レースページは◎〇▲と自信度を一番上に移し、ページ内の目次はスマホで横1行にした。過去の日の一覧は最初の12レースだけを見せ、残りはボタンで開く。スマホではヘッダーを低くした。重賞ページ・特集まとめ・用語集にPRの案内を1行足し、PRのリンクがどの種類のページで押されたかを記録するようにした。"),
     ("2026-11-24", "レースページの買い目の下に「相手を絡めるなら（参考）」として、◎と〇・▲のワイド・馬連の組み合わせを載せた。このサイトの買い目ではなく、成績にも数えない（◎の複勝にワイドか馬連を1点足すと、自信度Aのレースの回収率が約100%から約85%に下がったため、買い目は◎の単勝か複勝1点のままにしている）。結果が出たあとは、当たり外れと払戻を表示する。"),
@@ -2353,7 +2359,7 @@ th.sortable{cursor:pointer;user-select:none}th.sortable:hover{color:var(--acc)}t
 .gkpi{display:flex;flex-wrap:wrap;gap:4px 22px;margin:6px 0 8px}.gkpi div{display:flex;flex-direction:column}.gkpi b{font-family:"Shippori Mincho B1",serif;font-size:24px;line-height:1.2;color:var(--acc)}.gkpi span{font-size:12px;color:var(--mut)}
 .live0{margin:10px 0}.hits h2 small{font-size:12px;color:var(--mut);font-weight:400;margin-left:8px}.rcap li:nth-child(n+13){display:none}.rmore{margin:8px 0 0}details.fold summary{cursor:pointer;color:var(--acc);font-size:14px}
 @media (max-width:720px){.logo small{display:none}.bar{padding:8px 0 6px;flex-wrap:nowrap}.bar .logo{flex:1 1 auto}.logo img{width:36px;height:36px}.roi-badge{flex-basis:auto!important;margin-left:auto!important;text-align:right;white-space:nowrap}.roi-badge .rn{display:none}ul.rtoc{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px}ul.rtoc li{flex:0 0 auto}.gkpi{gap:4px 16px}.gkpi b{font-size:20px}.mtop .marks{gap:2px 18px}.mtop .marks b{font-size:22px}.mtop .marks span{font-size:16px}.mtop .marks .m:first-child span{font-size:18px}}
-.furu{list-style:none;margin:0;padding:0}.furu li{display:flex;gap:12px;padding:12px 0;border-top:1px solid var(--line)}.furu li:first-child{border-top:0}.furu .fimg{flex:0 0 96px}.furu img{display:block;width:96px;height:96px;object-fit:cover;background:var(--panel)}.furu b{display:block;line-height:1.5}.furu .meta{display:block;margin:2px 0}.furu p{margin:4px 0 8px;font-size:14px}.fbtn{display:inline-block;border:1px solid var(--acc);color:var(--acc);padding:4px 12px;font-size:13px;font-weight:700;text-decoration:none;border-radius:2px}.fbtn:hover{background:var(--acc);color:#fff}
+.ftoc{display:flex;flex-wrap:wrap;gap:6px 8px;margin:12px 0 6px}.ftoc a{border:1px solid var(--line);padding:4px 10px;font-size:13px;text-decoration:none;background:var(--panel)}.furu{list-style:none;margin:0;padding:0}.furu li{display:flex;gap:12px;padding:12px 0;border-top:1px solid var(--line)}.furu li:first-child{border-top:0}.furu .fimg{flex:0 0 96px}.furu img{display:block;width:96px;height:96px;object-fit:cover;background:var(--panel)}.furu b{display:block;line-height:1.5}.furu .meta{display:block;margin:2px 0}.furu p{margin:4px 0 8px;font-size:14px}.fbtn{display:inline-block;border:1px solid var(--acc);color:var(--acc);padding:4px 12px;font-size:13px;font-weight:700;text-decoration:none;border-radius:2px}.fbtn:hover{background:var(--acc);color:#fff}
 .refc{margin-top:14px;padding-top:10px;border-top:1px dashed var(--line)}.refc h3{margin:0 0 4px;font-size:14px}.bets.ref li{border-style:dashed;background:transparent}
 .zkbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:60;max-width:560px;margin:0 auto;display:flex;align-items:center;gap:8px;background:var(--panel);color:var(--fg);border:1px solid var(--line);border-left:4px solid var(--acc);box-shadow:0 6px 18px rgba(0,0,0,.18);padding:8px 8px 8px 10px;font-size:14px;line-height:1.5}
 .zkbar.fab{right:92px}.zkbar img{flex:none;width:36px;height:36px}.zkbar span{flex:1;min-width:0}.zkbar button{font:inherit;cursor:pointer;flex:none}
