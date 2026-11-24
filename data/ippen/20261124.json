@@ -1,6 +1,6 @@
 {
  "date": "20261124",
- "updated": "2026-11-24 16:38",
+ "updated": "2026-11-24 16:44",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1149,7 +1149,7 @@
     "field": 12,
     "popularity": 3
    },
-   "odds": 9.2,
+   "odds": 10.0,
    "popularity": 5
   },
   {
@@ -1170,7 +1170,7 @@
     "field": 11,
     "popularity": 5
    },
-   "odds": 12.2,
+   "odds": 11.3,
    "popularity": 6
   },
   {
@@ -1191,7 +1191,7 @@
     "field": 12,
     "popularity": 5
    },
-   "odds": 94.0,
+   "odds": 118.7,
    "popularity": 11
   },
   {
@@ -1205,7 +1205,7 @@
    "types": [
     "aitop"
    ],
-   "odds": 7.9,
+   "odds": 7.1,
    "popularity": 4
   },
   {
@@ -1226,8 +1226,8 @@
     "field": 12,
     "popularity": 5
    },
-   "odds": 50.0,
-   "popularity": 10
+   "odds": 49.3,
+   "popularity": 9
   },
   {
    "race_id": "202611242433170106",
@@ -1331,8 +1331,8 @@
     "field": 12,
     "popularity": 7
    },
-   "odds": 13.9,
-   "popularity": 6
+   "odds": 17.5,
+   "popularity": 8
   },
   {
    "race_id": "202611241106070611",
@@ -1352,22 +1352,8 @@
     "field": 11,
     "popularity": 5
    },
-   "odds": 18.8,
+   "odds": 20.9,
    "popularity": 9
-  },
-  {
-   "race_id": "202611241106070611",
-   "results_key": "202611241106070611",
-   "venue": "水沢",
-   "race_no": 11,
-   "post_time": "17:30",
-   "number": 8,
-   "name": "サティスファイア",
-   "types": [
-    "aitop"
-   ],
-   "odds": 7.4,
-   "popularity": 4
   },
   {
    "race_id": "202611241106070611",
@@ -1388,8 +1374,8 @@
     "field": 7,
     "popularity": 1
    },
-   "odds": 5.0,
-   "popularity": 2
+   "odds": 6.0,
+   "popularity": 3
   },
   {
    "race_id": "202611241106070611",
@@ -1409,8 +1395,8 @@
     "field": 10,
     "popularity": 6
    },
-   "odds": 15.4,
-   "popularity": 8
+   "odds": 6.4,
+   "popularity": 4
   },
   {
    "race_id": "202611241813080111",
@@ -1430,7 +1416,7 @@
     "field": 13,
     "popularity": 9
    },
-   "odds": 25.1,
+   "odds": 26.4,
    "popularity": 9
   },
   {
@@ -1451,8 +1437,8 @@
     "field": 13,
     "popularity": 8
    },
-   "odds": 51.3,
-   "popularity": 10
+   "odds": 55.0,
+   "popularity": 11
   },
   {
    "race_id": "202611241813080111",
@@ -1472,7 +1458,7 @@
     "field": 12,
     "popularity": 10
    },
-   "odds": 125.0,
+   "odds": 126.2,
    "popularity": 14
   },
   {
