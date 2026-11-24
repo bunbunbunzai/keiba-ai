@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261124",
  "race_id": "202611241813080103",
- "tries": 4,
+ "tries": 5,
  "payouts": {
   "単勝": [
    {
@@ -71,9 +71,9 @@
    "name": "オオカンザクラ",
    "time": "46.9",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 1,
+   "last3f": 35.1,
+   "popularity": 2
   },
   {
    "finish": "2",
@@ -82,9 +82,9 @@
    "name": "エルクラウン",
    "time": "47.9",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 3,
+   "last3f": 35.3,
+   "popularity": 4
   },
   {
    "finish": "3",
@@ -93,9 +93,9 @@
    "name": "マリアナフレイバー",
    "time": "47.9",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 2,
+   "last3f": 35.6,
+   "popularity": 1
   },
   {
    "finish": "4",
@@ -104,9 +104,9 @@
    "name": "サフィレット",
    "time": "48.0",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 4,
+   "last3f": 35.6,
+   "popularity": 3
   },
   {
    "finish": "5",
@@ -115,9 +115,9 @@
    "name": "トワイライトレイ",
    "time": "48.6",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 5,
+   "last3f": 36.0,
+   "popularity": 5
   },
   {
    "finish": "6",
@@ -126,9 +126,9 @@
    "name": "ニッショウドラゴン",
    "time": "48.8",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 6,
+   "last3f": 36.5,
+   "popularity": 7
   },
   {
    "finish": "7",
@@ -137,9 +137,9 @@
    "name": "ジュンクラノスケ",
    "time": "50.0",
    "margin": "６",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 7,
+   "last3f": 36.2,
+   "popularity": 6
   },
   {
    "finish": "8",
@@ -148,9 +148,9 @@
    "name": "スターツヨシ",
    "time": "50.3",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 8,
+   "last3f": 37.3,
+   "popularity": 8
   }
  ]
 }
