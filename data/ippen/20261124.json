@@ -1,6 +1,6 @@
 {
  "date": "20261124",
- "updated": "2026-11-24 13:02",
+ "updated": "2026-11-24 13:07",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -417,8 +417,22 @@
     "field": 11,
     "popularity": 1
    },
-   "odds": 15.6,
-   "popularity": 5
+   "odds": 1.4,
+   "popularity": 1
+  },
+  {
+   "race_id": "202611241106070606",
+   "results_key": "202611241106070606",
+   "venue": "水沢",
+   "race_no": 6,
+   "post_time": "14:35",
+   "number": 5,
+   "name": "オーケースマイル",
+   "types": [
+    "aitop"
+   ],
+   "odds": 11.5,
+   "popularity": 4
   },
   {
    "race_id": "202611241106070606",
@@ -438,8 +452,8 @@
     "field": 8,
     "popularity": 8
    },
-   "odds": 31.2,
-   "popularity": 7
+   "odds": 39.7,
+   "popularity": 10
   },
   {
    "race_id": "202611241813080106",
