@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261124",
  "race_id": "202611241813080105",
- "tries": 5,
+ "tries": 6,
  "payouts": {
   "単勝": [
    {
@@ -77,9 +77,9 @@
    "name": "カシノユメミヅキ",
    "time": "1:38.5",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 4,
+   "last3f": 38.7,
+   "popularity": 3
   },
   {
    "finish": "2",
@@ -88,9 +88,9 @@
    "name": "パッションローザ",
    "time": "1:38.8",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 2,
+   "last3f": 40.0,
+   "popularity": 6
   },
   {
    "finish": "3",
@@ -99,9 +99,9 @@
    "name": "ノベンバーベイズ",
    "time": "1:39.0",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 1,
+   "last3f": 41.2,
+   "popularity": 4
   },
   {
    "finish": "4",
@@ -110,9 +110,9 @@
    "name": "ナムラシンジロー",
    "time": "1:39.1",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 4,
+   "last3f": 40.6,
+   "popularity": 1
   },
   {
    "finish": "5",
@@ -121,9 +121,9 @@
    "name": "マッキュラシオン",
    "time": "1:39.2",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 4,
+   "last3f": 40.1,
+   "popularity": 2
   },
   {
    "finish": "6",
@@ -132,9 +132,9 @@
    "name": "コンバットステート",
    "time": "1:39.2",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 2,
+   "last3f": 41.0,
+   "popularity": 11
   },
   {
    "finish": "7",
@@ -143,9 +143,9 @@
    "name": "フリーダムスタイル",
    "time": "1:39.4",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 7,
+   "last3f": 38.9,
+   "popularity": 10
   },
   {
    "finish": "8",
@@ -154,9 +154,9 @@
    "name": "テンザンパパ",
    "time": "1:39.7",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 9,
+   "last3f": 39.5,
+   "popularity": 8
   },
   {
    "finish": "9",
@@ -165,9 +165,9 @@
    "name": "センプレヴェルデ",
    "time": "1:40.2",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 9,
+   "last3f": 41.2,
+   "popularity": 7
   },
   {
    "finish": "10",
@@ -176,9 +176,9 @@
    "name": "レイランディ",
    "time": "1:40.5",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 11,
+   "last3f": 40.0,
+   "popularity": 9
   },
   {
    "finish": "11",
@@ -187,9 +187,9 @@
    "name": "センチュリーラヴ",
    "time": "1:41.0",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 8,
+   "last3f": 41.8,
+   "popularity": 5
   }
  ]
 }
