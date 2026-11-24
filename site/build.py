@@ -2055,11 +2055,11 @@ def furusato_items(group: str | None = None) -> list[dict]:
     return sorted(out, key=lambda it: it.get("horse", "")) if group == "meiba" else out
 
 
-def furusato_card(it: dict) -> str:
+def furusato_card(it: dict, page_link: bool = False) -> str:
     u = furusato_url(it)
     a = f"href='{u}' target='_blank' rel='nofollow sponsored noopener' data-aff='rakuten-furusato'"
     return (f"<li><a class='fimg' {a}><img src='{esc(it['img'])}?_ex=128x128' alt='' width='96' height='96' loading='lazy'></a>"
-            f"<div><b>{esc(it['title'])}</b><span class='meta'>{esc(it['city'])}・寄付額 {esc(it['price'])}</span>"
+            f"<div><b>{esc(it['title'])}</b>" + (f"<a class='fhorse' href='/meiba/{MEIBA_SLUG[it['horse']]}/'>{esc(it['horse'])}の現在</a>" if page_link and it.get("horse") in MEIBA_SLUG else "") + f"<span class='meta'>{esc(it['city'])}・寄付額 {esc(it['price'])}</span>"
             f"<p>{esc(it['note'])}</p><a class='fbtn' {a}>楽天ふるさと納税で見る</a></div></li>")
 
 
@@ -2070,9 +2070,9 @@ def furusato_page() -> str:
     chk_jp = f"{int(chk[:4])}年{int(chk[5:7])}月{int(chk[8:10])}日" if chk else ""
     horses = list(dict.fromkeys(it["horse"] for it in furusato_items("meiba") if it.get("horse")))
     toc = ("<p class='ftoc'>" + "".join(f"<a href='#{g}'>{esc(h)}（{len(furusato_items(g))}）</a>" for g, h, _ in FURU_GROUPS if furusato_items(g)) + "</p>"
-           + (f"<p class='meta'>名馬：{'・'.join(esc(h) for h in horses)}</p>" if horses else ""))
+           + (f"<p class='meta'>名馬：{'・'.join((f'<a href=\'/meiba/{MEIBA_SLUG[h]}/\'>{esc(h)}</a>' if h in MEIBA_SLUG else esc(h)) for h in horses)}</p>" if horses else ""))
     secs = toc + "".join(
-        f"<section class='card'><h2 id='{g}'>{esc(h)}</h2><p>{esc(lead)}</p><ul class='furu'>{''.join(furusato_card(it) for it in furusato_items(g))}</ul></section>"
+        f"<section class='card'><h2 id='{g}'>{esc(h)}</h2><p>{esc(lead)}</p><ul class='furu'>{''.join(furusato_card(it, page_link=True) for it in furusato_items(g))}</ul></section>"
         for g, h, lead in FURU_GROUPS if furusato_items(g))
     n = len(furusato_items())
     body = (f"<p class='crumb'><a href='/'>トップ</a> › 馬に関わるふるさと納税</p><h1>馬に関わるふるさと納税まとめ</h1>"
@@ -2094,6 +2094,50 @@ def furusato_page() -> str:
             + share_links(BASE_URL + "/furusato/", "馬に関わるふるさと納税まとめ（引退馬の支援・競馬場の指定席・名馬のグッズ）"))
     return page(f"馬に関わるふるさと納税まとめ｜引退馬の支援・競馬場の指定席・名馬グッズ｜{SITE_NAME}", body, "/furusato/",
                 desc=f"引退した競走馬の支援（1,000円〜）、馬に会える券、大井競馬場の指定席、名馬のグッズなど、馬と競馬に関わるふるさと納税の返礼品{n}件を種類別にまとめた。")
+
+
+MEIBA = load_json(ROOT / "data" / "meiba.json") or {}
+MEIBA_SLUG = {x["name"]: x["slug"] for x in MEIBA.get("items", [])}
+
+
+def meiba_pages() -> dict[str, str]:
+    """引退した名馬のページ（2026-11-25）。馬名で調べた人に、現役のころの成績・引退後の暮らし・応援のしかた（ふるさと納税のグッズと寄付）をまとめて見せる。
+    事実は data/meiba.json の sources で確かめたものだけを書く。"""
+    out = {}
+    chk = MEIBA.get("checked", "")
+    chk_jp = f"{int(chk[:4])}年{int(chk[5:7])}月{int(chk[8:10])}日" if chk else ""
+    allx = MEIBA.get("items", [])
+    for x in allx:
+        path = f"/meiba/{x['slug']}/"
+        goods = [it for it in furusato_items("meiba") if it.get("horse") == x["name"]]
+        sup = [it for it in furusato_items("support") if "ヴェルサイユ" in it["title"]]
+        prof = "".join(f"<tr><th>{esc(k)}</th><td>{esc(v)}</td></tr>" for k, v in [["生年月日", x["born"]]] + x.get("profile", []))
+        others = "　".join(f"<a href='/meiba/{y['slug']}/'>{esc(y['name'])}</a>" for y in allx if y["slug"] != x["slug"])
+        src = "".join(f"<li><a href='{esc(u)}' target='_blank' rel='noopener'>{esc(t)}</a></li>" for t, u in x.get("sources", []))
+        body = (f"<p class='crumb'><a href='/'>トップ</a> › <a href='/furusato/#meiba'>馬に関わるふるさと納税</a> › {esc(x['name'])}</p>"
+                f"<h1>{esc(x['name'])}の現在：引退後の暮らしと応援のしかた</h1>"
+                f"<p class='answer'>{esc(x['now'])}（{chk_jp}に確認）{esc(x['career'])}</p>"
+                f"<section class='card'><h2>プロフィール</h2><div class='scroll'><table><tbody>{prof}</tbody></table></div></section>"
+                f"<section class='card'><h2>主な成績</h2><p>{esc(x['career'])}</p><ul>{''.join(f'<li>{esc(w)}</li>' for w in x['wins'])}</ul></section>"
+                f"<section class='card'><h2>引退してから</h2><p>{esc(x['after'])}</p><p>{esc(x['now'])}</p>"
+                "<p class='meta'>馬の居場所や見学の可否は変わることがある。会いに行く前に、牧場の公式サイトで見学の決まりを確認してほしい。</p></section>"
+                + (f"<section class='card'><h2>{esc(x['name'])}を応援する</h2>"
+                   "<p class='aff'><span class='pr'>PR</span>下のリンクは広告（楽天ふるさと納税）を含む。寄付額と受付の状況は変わることがある。</p>"
+                   f"<ul class='furu'>{''.join(furusato_card(it) for it in goods + sup)}</ul>"
+                   "<p class='meta'>ほかの名馬のグッズや、引退馬を支援する寄付は<a href='/furusato/'>馬に関わるふるさと納税まとめ</a>に載せている。"
+                   "支援のしかた全体は<a href='/column/guide-intaiba-shien/'>引退した競走馬を支援する方法</a>にまとめた。</p></section>" if goods or sup else "")
+                + f"<section class='card'><h2>同じ牧場で暮らす名馬</h2><p>{others}</p></section>"
+                f"<section class='card'><h2>出典</h2><ul>{src}</ul><p class='meta'>公開情報をもとにAIがまとめた（{chk_jp}時点）。</p></section>"
+                + (f"<img src='https://www16.a8.net/0.gif?a8mat={FURUSATO.get('a8mat', '')}' alt='' width='1' height='1' style='position:absolute;width:1px;height:1px'>" if goods or sup else "")
+                + share_links(BASE_URL + path, f"{x['name']}の現在：引退後の暮らしと応援のしかた"))
+        bc = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": SITE_NAME, "item": BASE_URL + "/"},
+            {"@type": "ListItem", "position": 2, "name": "馬に関わるふるさと納税", "item": BASE_URL + "/furusato/"},
+            {"@type": "ListItem", "position": 3, "name": x["name"], "item": BASE_URL + path}]}
+        write(path, page(f"{x['name']}の現在｜引退後の暮らし・主な成績・グッズ｜{SITE_NAME}", body, path,
+                         desc=(x["now"] + x["career"])[:118], head_extra=jsonld(bc)))
+        out[path] = chk
+    return out
 
 
 def furusato_line(where: str = "") -> str:
@@ -2120,6 +2164,7 @@ def limits_page(t: dict, worst_venue: tuple[str, str] | None) -> str:
 
 
 SITE_CHANGES = [
+    ("2026-11-25", "引退した名馬のページを8頭ぶん作った（オジュウチョウサン、タニノギムレット、ワンダーアキュート、アドマイヤジャパン、ローズキングダム、エイシンフラッシュ、ヒルノダムール、トランセンド）。主な成績、引退後の暮らし、応援のしかたを、出典つきで載せている。"),
     ("2026-11-25", "ガイド「引退した競走馬を支援する方法」を追加した。ふるさと納税まとめの説明文のうち、牧場の場所などの書き方が不正確だったところを直した（Yogiboヴェルサイユリゾートファームは日高町にあり、グッズは平取町の返礼品）。"),
     ("2026-11-25", "「馬に関わるふるさと納税まとめ」のページを作った。引退した競走馬の支援、馬に会える券や競馬場の指定席、名馬ごとのグッズ（オジュウチョウサン、タニノギムレット、オグリキャップなど）、美浦・栗東のトレーニング・センターの町の品を種類別に載せている（43件）。リンクは広告（楽天ふるさと納税）で、ページの上にその旨を書いた。"),
     ("2026-11-25", "楽天競馬のPRに公式のバナーを足した。対象は、馬券を買う場面のページ（結果が出る前の地方のレースページの買い目の下、地方の競馬場ページ、地方の重賞ページ、地方競馬のコラムの末尾）。バナーの大きさは画面の幅で出し分ける（PCは728×90、スマホは310×60）。結果が出たあとのレースページと用語集は、これまでどおり文の1行だけ。"),
@@ -2362,7 +2407,7 @@ th.sortable{cursor:pointer;user-select:none}th.sortable:hover{color:var(--acc)}t
 .gkpi{display:flex;flex-wrap:wrap;gap:4px 22px;margin:6px 0 8px}.gkpi div{display:flex;flex-direction:column}.gkpi b{font-family:"Shippori Mincho B1",serif;font-size:24px;line-height:1.2;color:var(--acc)}.gkpi span{font-size:12px;color:var(--mut)}
 .live0{margin:10px 0}.hits h2 small{font-size:12px;color:var(--mut);font-weight:400;margin-left:8px}.rcap li:nth-child(n+13){display:none}.rmore{margin:8px 0 0}details.fold summary{cursor:pointer;color:var(--acc);font-size:14px}
 @media (max-width:720px){.logo small{display:none}.bar{padding:8px 0 6px;flex-wrap:nowrap}.bar .logo{flex:1 1 auto}.logo img{width:36px;height:36px}.roi-badge{flex-basis:auto!important;margin-left:auto!important;text-align:right;white-space:nowrap}.roi-badge .rn{display:none}ul.rtoc{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px}ul.rtoc li{flex:0 0 auto}.gkpi{gap:4px 16px}.gkpi b{font-size:20px}.mtop .marks{gap:2px 18px}.mtop .marks b{font-size:22px}.mtop .marks span{font-size:16px}.mtop .marks .m:first-child span{font-size:18px}}
-.ftoc{display:flex;flex-wrap:wrap;gap:6px 8px;margin:12px 0 6px}.ftoc a{border:1px solid var(--line);padding:4px 10px;font-size:13px;text-decoration:none;background:var(--panel)}.furu{list-style:none;margin:0;padding:0}.furu li{display:flex;gap:12px;padding:12px 0;border-top:1px solid var(--line)}.furu li:first-child{border-top:0}.furu .fimg{flex:0 0 96px}.furu img{display:block;width:96px;height:96px;object-fit:cover;background:var(--panel)}.furu b{display:block;line-height:1.5}.furu .meta{display:block;margin:2px 0}.furu p{margin:4px 0 8px;font-size:14px}.fbtn{display:inline-block;border:1px solid var(--acc);color:var(--acc);padding:4px 12px;font-size:13px;font-weight:700;text-decoration:none;border-radius:2px}.fbtn:hover{background:var(--acc);color:#fff}
+.fhorse{display:inline-block;font-size:12px;margin:2px 0;color:var(--acc)}.ftoc{display:flex;flex-wrap:wrap;gap:6px 8px;margin:12px 0 6px}.ftoc a{border:1px solid var(--line);padding:4px 10px;font-size:13px;text-decoration:none;background:var(--panel)}.furu{list-style:none;margin:0;padding:0}.furu li{display:flex;gap:12px;padding:12px 0;border-top:1px solid var(--line)}.furu li:first-child{border-top:0}.furu .fimg{flex:0 0 96px}.furu img{display:block;width:96px;height:96px;object-fit:cover;background:var(--panel)}.furu b{display:block;line-height:1.5}.furu .meta{display:block;margin:2px 0}.furu p{margin:4px 0 8px;font-size:14px}.fbtn{display:inline-block;border:1px solid var(--acc);color:var(--acc);padding:4px 12px;font-size:13px;font-weight:700;text-decoration:none;border-radius:2px}.fbtn:hover{background:var(--acc);color:#fff}
 .refc{margin-top:14px;padding-top:10px;border-top:1px dashed var(--line)}.refc h3{margin:0 0 4px;font-size:14px}.bets.ref li{border-style:dashed;background:transparent}
 .zkbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:60;max-width:560px;margin:0 auto;display:flex;align-items:center;gap:8px;background:var(--panel);color:var(--fg);border:1px solid var(--line);border-left:4px solid var(--acc);box-shadow:0 6px 18px rgba(0,0,0,.18);padding:8px 8px 8px 10px;font-size:14px;line-height:1.5}
 .zkbar.fab{right:92px}.zkbar img{flex:none;width:36px;height:36px}.zkbar span{flex:1;min-width:0}.zkbar button{font:inherit;cursor:pointer;flex:none}
@@ -2793,6 +2838,7 @@ def build() -> None:
     _wv = min(((v, x) for v, x in _vb.items() if x[2] >= 20), key=lambda kv: kv[1][1] / kv[1][0], default=None)
     if FURUSATO.get("items"):
         write("/furusato/", furusato_page())
+    _meiba_mod = meiba_pages() if MEIBA.get("items") else {}
     write("/limits/", limits_page(t, (VENUE_NAME.get(_wv[0], _wv[0]), roi_txt(_wv[1][0], _wv[1][1])) if _wv else None))
     write("/changelog/", changelog_page())
     write("/contact/", page(f"お問い合わせ | {SITE_NAME}", f"<p class='crumb'><a href='/'>トップ</a> › お問い合わせ</p>" + CONTACT, "/contact/",
@@ -2888,6 +2934,7 @@ def build() -> None:
         f"- [買い方別の回収率]({BASE_URL}/strategy/)\n- [重賞回顧]({BASE_URL}/review/)\n- [馬別のAI評価履歴]({BASE_URL}/horse/)\n- [予想の方法]({BASE_URL}/about/)\n" + (f"- [初心者向けコラム]({BASE_URL}/column/)：馬券の種類・回収率・人気と勝率などを実データで解説\n" if HAS_COLUMN else "") + f"- [全予想の記録CSV]({REPO}/blob/main/results_ledger.csv)\n"
         + _more, encoding="utf-8")
     fixed = {"/": today_iso, "/results/": today_iso, "/strategy/": today_iso, "/ippen/": today_iso, "/about/": None, "/contact/": None, "/glossary/": None, "/limits/": today_iso, **({"/furusato/": FURUSATO.get("checked")} if FURUSATO.get("items") else {}), "/changelog/": today_iso, "/operator/": None, "/privacy/": None}
+    fixed.update(_meiba_mod)
     # 更新日は今日より先にしない（前の日に予想を出すレースや、その馬・コースのページはレースの日付が入り、未来の日付になっていた）
     sm = "".join(f"<url><loc>{BASE_URL}{u}</loc>{f'<lastmod>{min(m, today_iso)}</lastmod>' if m else ''}</url>"
                  for u, m in list(fixed.items()) + sorted(lastmod.items(), reverse=True))
