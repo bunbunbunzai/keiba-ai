@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261124",
  "race_id": "202611242433170110",
- "tries": 5,
+ "tries": 6,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "レイジングスラスト",
    "time": "2:15.9",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 40.8,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ルクスシュナイダー",
    "time": "2:16.0",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 40.5,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "サバンナモンキー",
    "time": "2:16.8",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 41.7,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "ワイルドハンター",
    "time": "2:16.9",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 40.5,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "スフレ",
    "time": "2:17.2",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 41.1,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ビーチボーイ",
    "time": "2:17.3",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 41.8,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "ミーハ",
    "time": "2:17.4",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 42.3,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "スカイダンスタイム",
    "time": "2:17.8",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 41.4,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "リュクスドレフォン",
    "time": "2:19.1",
    "margin": "６",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 42.9,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "ショウナンナツゾラ",
    "time": "2:20.0",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 43.2,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "エコロスヴァル",
    "time": "2:20.2",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 43.5,
    "popularity": null
   },
   {
