@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261124",
  "race_id": "202611241813080112",
- "tries": 4,
+ "tries": 5,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "オオタニズスマイル",
    "time": "2:10.8",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 38.9,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ユメデアエタラ",
    "time": "2:10.9",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 39.9,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ベルルート",
    "time": "2:12.1",
    "margin": "６",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 39.5,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "リケアオランジュ",
    "time": "2:12.8",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 40.5,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "フォートウィリアム",
    "time": "2:13.1",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 40.7,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ライヴジントニック",
    "time": "2:13.4",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 42.3,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "フォーゲルヴァイデ",
    "time": "2:13.6",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 42.2,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ゴールドキッド",
    "time": "2:13.9",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 41.8,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "レーヌバンケット",
    "time": "2:14.1",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 41.6,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "ポピーレッド",
    "time": "2:14.5",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 43.5,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "サマーストーリー",
    "time": "2:14.6",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 42.5,
    "popularity": null
   },
   {
@@ -198,8 +198,8 @@
    "name": "ディセントラライズ",
    "time": "2:16.0",
    "margin": "７",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 12,
+   "last3f": 41.8,
    "popularity": null
   }
  ]
