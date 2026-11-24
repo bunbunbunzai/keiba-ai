@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261124",
  "race_id": "202611241813080101",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "オーキッドティアラ",
    "time": "47.7",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 35.6,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ユウユウカルバドス",
    "time": "48.5",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 36.5,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "カンサッリス",
    "time": "49.1",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 36.4,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "フラワーリボン",
    "time": "49.2",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 37.1,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "ビナドリーム",
    "time": "49.2",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 35.6,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ワダカツ",
    "time": "49.3",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 36.0,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "アーサフロウジョン",
    "time": "49.4",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 36.5,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ユウユウウタゲ",
    "time": "50.2",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 36.9,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "ビナエン",
    "time": "51.1",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 37.4,
    "popularity": null
   }
  ]
