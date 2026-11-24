@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261124",
  "race_id": "202611241813080109",
- "tries": 4,
+ "tries": 5,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "ホテルストリート",
    "time": "1:35.6",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 37.8,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "フローティンローズ",
    "time": "1:35.7",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 37.6,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ダンシングラスカル",
    "time": "1:36.2",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 38.6,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "コスモグッドラック",
    "time": "1:36.7",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 38.1,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "イデアクリスタル",
    "time": "1:36.7",
    "margin": "ハナ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 38.4,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ヴェルデヴェント",
    "time": "1:36.9",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 38.6,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "アパショナード",
    "time": "1:37.0",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 37.6,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ダイヤクリスタル",
    "time": "1:37.2",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 39.2,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "キタノドンカルロ",
    "time": "1:37.8",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 38.8,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "アンブレラダンス",
    "time": "1:38.2",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 39.9,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "ニキ",
    "time": "1:38.5",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 40.2,
    "popularity": null
   },
   {
