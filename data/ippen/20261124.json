@@ -1,6 +1,6 @@
 {
  "date": "20261124",
- "updated": "2026-11-24 12:13",
+ "updated": "2026-11-24 12:28",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -235,6 +235,20 @@
    "popularity": 5
   },
   {
+   "race_id": "202611241106070604",
+   "results_key": "202611241106070604",
+   "venue": "水沢",
+   "race_no": 4,
+   "post_time": "13:25",
+   "number": 5,
+   "name": "マッシブショット",
+   "types": [
+    "aitop"
+   ],
+   "odds": 5.7,
+   "popularity": 2
+  },
+  {
    "race_id": "202611241106070605",
    "results_key": "202611241106070605",
    "venue": "水沢",
@@ -277,6 +291,20 @@
    },
    "odds": 31.2,
    "popularity": 5
+  },
+  {
+   "race_id": "202611241813080105",
+   "results_key": "202611241813080105",
+   "venue": "浦和",
+   "race_no": 5,
+   "post_time": "14:20",
+   "number": 1,
+   "name": "ナムラシンジロー",
+   "types": [
+    "aitop"
+   ],
+   "odds": 2.9,
+   "popularity": 2
   },
   {
    "race_id": "202611241813080105",
@@ -455,6 +483,20 @@
    "venue": "浦和",
    "race_no": 6,
    "post_time": "14:50",
+   "number": 4,
+   "name": "サンライズハンター",
+   "types": [
+    "aitop"
+   ],
+   "odds": 20.6,
+   "popularity": 4
+  },
+  {
+   "race_id": "202611241813080106",
+   "results_key": "202611241813080106",
+   "venue": "浦和",
+   "race_no": 6,
+   "post_time": "14:50",
    "number": 9,
    "name": "ブルドッグガール",
    "types": [
@@ -574,6 +616,20 @@
    },
    "odds": 23.6,
    "popularity": 5
+  },
+  {
+   "race_id": "202611241813080107",
+   "results_key": "202611241813080107",
+   "venue": "浦和",
+   "race_no": 7,
+   "post_time": "15:25",
+   "number": 2,
+   "name": "マイネルメテオーラ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 33.1,
+   "popularity": 6
   },
   {
    "race_id": "202611241813080107",
@@ -1612,6 +1668,20 @@
    "popularity": 9
   },
   {
+   "race_id": "202611241813080112",
+   "results_key": "202611241813080112",
+   "venue": "浦和",
+   "race_no": 12,
+   "post_time": "18:20",
+   "number": 12,
+   "name": "ユメデアエタラ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 6.3,
+   "popularity": 2
+  },
+  {
    "race_id": "202611242433170108",
    "results_key": "202611242433170108",
    "venue": "名古屋",
@@ -1715,6 +1785,20 @@
     "field": 11,
     "popularity": 3
    },
+   "odds": 13.0,
+   "popularity": 4
+  },
+  {
+   "race_id": "202611242433170109",
+   "results_key": "202611242433170109",
+   "venue": "名古屋",
+   "race_no": 9,
+   "post_time": "19:05",
+   "number": 11,
+   "name": "ロングトーン",
+   "types": [
+    "aitop"
+   ],
    "odds": 13.0,
    "popularity": 4
   },
