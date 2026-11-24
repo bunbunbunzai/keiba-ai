@@ -49,6 +49,7 @@ jobs:
           X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           META_BUSINESS_ID: "1775467983753893"
         run: |
           D="${{ inputs.date }}"; O="${{ inputs.only }}"
@@ -59,6 +60,21 @@ jobs:
             P=$((P + $(echo "$OUT" | python -c 'import sys,json;print(json.load(sys.stdin)["prepared"])')))
           done
           echo "prepared=$P" >> "$GITHUB_OUTPUT"
+      - name: Threadsの鍵の延長（週1回。GH_SECRETS_PAT を登録してある場合だけ）
+        # Threadsの鍵は60日で切れる。延長した鍵を GitHub Secrets に書き戻すには、Secrets を書ける鍵（GH_SECRETS_PAT）が要る。
+        # 無ければ何もしない（その場合は60日以内に開発者サイトで鍵を作り直して THREADS_ACCESS_TOKEN を更新する）。
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_SECRETS_PAT }}
+          R: ${{ github.repository }}
+        run: |
+          [ -n "$THREADS_ACCESS_TOKEN" ] && [ -n "$GH_TOKEN" ] || exit 0
+          LAST=$(python -c 'import json;print(json.load(open("social/status.json")).get("threads_refreshed",""))' 2>/dev/null || true)
+          if [ -n "$LAST" ] && [ $(( ($(date +%s) - $(date -d "$LAST" +%s)) / 86400 )) -lt 7 ]; then exit 0; fi
+          F="$RUNNER_TEMP/th_new"
+          python scraper/social.py --threads-refresh "$F" || true
+          if [ -s "$F" ]; then gh secret set THREADS_ACCESS_TOKEN -R "$R" < "$F" || echo "::warning::Threadsの鍵を保存できませんでした"; fi
+          rm -f "$F"
       - name: 保存
         run: |
           git config user.name "keiba-ai-bot"

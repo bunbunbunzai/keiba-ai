@@ -1,4 +1,4 @@
-"""X・Instagram への自動投稿。
+"""X・Instagram・Threads への自動投稿。
 
 投稿するもの（1レース・1日につき1回だけ）
 - hit       ：大きな的中だけ（払戻が購入額の3倍以上かつ300円以上のプラス。1日3件まで。小さな的中は summary の一覧にまとめる。重賞は grade_res）
@@ -18,7 +18,12 @@
   投稿388件でフォロワー0人だったため、いちばん見られる G1 だけに絞った）。この1行を消すと x_kinds どおり（重賞すべて＋大きな的中）に戻る
   x_url: X の本文にサイトのURLを入れる投稿の範囲。none=入れない、graded=重賞のみ、key=重賞・勝負レース・全成績、all=全部
   （X API の従量課金はURL付き投稿が約0.20ドル、URL無しが約0.015ドルと差が大きいため範囲を選べる）
-鍵（GitHub Secrets → 環境変数）：X_API_KEY X_API_SECRET X_ACCESS_TOKEN X_ACCESS_SECRET / IG_USER_ID IG_ACCESS_TOKEN
+  threads: Threads に出すか。threads_kinds: 出す投稿の種類（無ければ全部）。
+  threads_scope: "jra" と書くと、重賞の予想・結果は中央の重賞と G1（Jpn1 を含む）だけ（地方の重賞は毎日あり、件数が増えすぎるため）
+  threads_max_per_day: 1日に出す件数の上限（全成績は数えない。開設直後は少なく始めて、慣れたら増やす）
+  threads_link_kinds: 本文にサイトのリンクを付ける投稿の種類（毎回リンクを付けるとスパム扱いされやすいので絞る）
+  Threads は画像なしの文字だけで出す。文面は X の流用ではなく、返信をもらいやすい問いかけ型にする（2026-11-25）
+鍵（GitHub Secrets → 環境変数）：X_API_KEY X_API_SECRET X_ACCESS_TOKEN X_ACCESS_SECRET / IG_USER_ID IG_ACCESS_TOKEN / THREADS_ACCESS_TOKEN
 
 使い方: python scraper/social.py --date 20261101 [--prepare-only] [--dry-run]
 """
@@ -160,6 +165,97 @@ def x_wanted(cfg: dict, kind: str, grade) -> bool:
     if cfg.get("x_scope") == "g1":
         return kind in ("grade_pre", "grade_res") and is_g1(grade)
     return True
+
+
+def is_jra(p) -> bool:
+    return str((p or {}).get("race_id", "")).startswith("jra_")
+
+
+def threads_wanted(cfg: dict, c: dict, posts: dict | None = None) -> bool:
+    """この投稿を Threads に出すか（social/config.json の threads・threads_kinds・threads_scope で決まる）。"""
+    if not cfg.get("threads", False):
+        return False
+    kind = c["kind"]
+    if cfg.get("threads_kinds") and kind not in cfg["threads_kinds"]:
+        return False
+    p = c.get("p")
+    if kind in ("grade_pre", "grade_res") and cfg.get("threads_scope") == "jra":
+        if not (is_jra(p) or is_g1(p.get("_grade"))):
+            return False
+    # 前日夜に同じレースの予想を出していれば、当日の発走前にもう一度は出さない（ほぼ同じ内容の連投を避ける）
+    if kind == "grade_pre" and not c.get("eve") and posts is not None:
+        if (posts.get(f"eve-{p['race_id']}") or {}).get("threads") in ("pending", "draft", "posted"):
+            return False
+    return True
+
+
+THREADS_MAX = 480  # 上限は500字。少し余裕を見る
+THREADS_Q = {
+    "grade_pre": ["みなさんの本命はどの馬ですか？", "あなたの◎は決まりましたか？", "この予想に乗りますか？逆らいますか？"],
+    "grade_res_hit": ["みなさんの馬券はどうでしたか？", "当たった方、いますか？"],
+    "grade_res_miss": ["みなさんの結果はどうでしたか？", "的中した方、買い方を教えてください。"],
+    "gensen": ["気になるレースはありますか？", "みなさんが今日狙っているレースはどこですか？"],
+    "summary": ["今日の競馬、みなさんはどうでしたか？", "みなさんの今日の収支はどうでしたか？"],
+    "hit": ["このレース、買っていた方はいますか？"],
+}
+
+
+def pick_q(key: str, seed: str) -> str:
+    """問いかけの言い回しを投稿ごとに変える（毎回同じ型だと機械的に見えるため）。同じ投稿なら毎回同じものを選ぶ。"""
+    qs = THREADS_Q[key]
+    return qs[sum(seed.encode("utf-8")) % len(qs)]
+
+
+def fit_threads(lines: list[str], tail: list[str]) -> str:
+    """本文（lines）を下から削って上限に収める。tail（問いかけ・注記・タグ）は残す。"""
+    body = [x for x in lines if x]
+    while True:
+        t = "\n".join(body + [""] + tail)
+        if len(t) <= THREADS_MAX or len(body) <= 2:
+            return t[:THREADS_MAX]
+        body = body[:-1]
+
+
+def threads_text(date: str, c: dict) -> str:
+    kind, seed = c["kind"], c["id"]
+    note = "※予想は情報提供です。馬券は20歳から。"
+    if kind == "summary":
+        rs = c["rs"]
+        done = [p["_score"] for p in rs if p["_score"]]
+        st, rt = sum(s["stake"] for s in done), sum(s["return"] for s in done)
+        hit = sum(1 for s in done if s["return"] > 0)
+        venues = "・".join(sorted({venue(p) for p in rs}))
+        lines = [f"{fmt_md(date)}のAI予想、全{len(done)}レースの成績です（{venues}）。",
+                 f"的中{hit}レース、回収率{100 * rt / st:.1f}%、収支{rt - st:+,}円。" if st else "",
+                 "外れたレースも含めて全部載せています（各点100円）。", f"累計の回収率は{ledger_roi()}。"]
+        return fit_threads(lines, [pick_q("summary", seed), "#競馬予想"])
+    if kind in ("gensen", "picks"):
+        lines = ["今日、AIが「◎が勝つ確率50%以上」と見ているレースです。" if kind == "gensen" else "今日、AIの予想で的中しやすいと見ているレースです。"]
+        for p in c["ps"]:
+            hon = p["marks"]["◎"]
+            lines.append(f"{p['_race'].get('post_time') or ''} {venue(p)}{rno(p)}R ◎{hon}{horse(p, hon)}")
+        return fit_threads(lines, [pick_q("gensen", seed), note, "#競馬予想"])
+    p, sc, g = c["p"], c["p"]["_score"], c["p"]["_grade"]
+    name = rname(p) or f"{venue(p)}{rno(p)}R"
+    head = name + (f"（{g}）" if g and g not in name else "")
+    tag = "#" + (re.sub(r"[()（）・\s'’.&]", "", rname(p)) if g and rname(p) else "競馬予想")
+    hon = (p.get("marks") or {}).get("◎")
+    if kind == "grade_pre":
+        pt = p["_race"].get("post_time") or ""
+        when = f"明日{fmt_md(date)} {pt}発走" if c.get("eve") else f"今日{pt}発走"
+        summ = nfkc(p.get("summary") or "")
+        lines = [f"{head}、AIの本命は◎{hon}{horse(p, hon)}です。", f"{venue(p)}{rno(p)}R・{when}", marks_line(p), f"自信度{p.get('confidence')}",
+                 summ[:120] + ("…" if len(summ) > 120 else "")]
+        return fit_threads(lines, [pick_q("grade_pre", seed), note, tag])
+    win = sc["return"] > 0
+    if win:
+        lines = [f"{head}、AI予想は的中でした。", marks_line(p)] + hits_line(sc) + [f"投資{sc['stake']:,}円→払戻{sc['return']:,}円（回収率{100 * sc['return'] / sc['stake']:.0f}%）"]
+        q = pick_q("hit" if kind == "hit" else "grade_res_hit", seed)
+    else:
+        top = "-".join(str(x) for x in (sc.get("top3") or []) if x is not None)
+        lines = [f"{head}、AI予想は外れました。", marks_line(p), f"結果は{top}。投資{sc['stake']:,}円が戻らず。", "外れも隠さず全部載せています。"]
+        q = pick_q("grade_res_miss", seed)
+    return fit_threads(lines, [q, tag])
 
 
 # ---------------- 投稿の候補 ----------------
@@ -544,6 +640,12 @@ def prepare(date: str, cfg: dict) -> int:
                                 "ig_caption": t["instagram"], "url": t["url"], "created": now().strftime("%Y-%m-%d %H:%M"),
                                 "x": "pending" if x_wanted(cfg, c["kind"], grade) else "off",
                                 "instagram": "pending" if cfg.get("instagram", True) else "off"}
+        if cfg.get("threads", False):  # Threads を使っていない間は何も書かない（過去の記録と同じ形のまま）
+            ok = threads_wanted(cfg, c, st["posts"])
+            st["posts"][c["id"]]["threads"] = "pending" if ok else "off"
+            if ok:
+                st["posts"][c["id"]]["threads_text"] = threads_text(date, c)
+                st["posts"][c["id"]]["threads_link"] = c["kind"] in (cfg.get("threads_link_kinds") or [])
         n += 1
     save_state(date, st)
     return n
@@ -556,6 +658,56 @@ def has_x() -> bool:
 
 def has_ig() -> bool:
     return all(os.environ.get(k) for k in ("IG_USER_ID", "IG_ACCESS_TOKEN"))
+
+
+def has_threads() -> bool:
+    return bool(os.environ.get("THREADS_ACCESS_TOKEN", "").strip())
+
+
+THREADS_API = "https://graph.threads.net/v1.0"
+
+
+def _threads_err(r) -> str:
+    try:
+        return str((r.json() or {}).get("error", r.text))[:300]  # Threads側の理由をそのまま残す（鍵は含まれない）
+    except Exception:  # noqa: BLE001
+        return r.text[:300]
+
+
+def post_threads(text: str, link: str | None = None) -> str:
+    """文字だけの投稿を1件出す（下書きを作る→公開する、の2段階）。link を渡すとリンクのカードが付く。"""
+    import requests
+
+    tok = os.environ["THREADS_ACCESS_TOKEN"].strip()
+    data = {"media_type": "TEXT", "text": text, "access_token": tok}
+    if link:
+        data["link_attachment"] = link
+    r = requests.post(f"{THREADS_API}/me/threads", timeout=60, data=data)
+    if not r.ok:
+        raise RuntimeError(f"threads create {r.status_code}: {_threads_err(r)}")
+    cid = r.json()["id"]
+    for i in range(3):  # 作った直後は公開できないことがあるので、少し待ってやり直す
+        time.sleep(3 + 5 * i)
+        r = requests.post(f"{THREADS_API}/me/threads_publish", timeout=60, data={"creation_id": cid, "access_token": tok})
+        if r.ok:
+            return r.json()["id"]
+    raise RuntimeError(f"threads publish {r.status_code}: {_threads_err(r)}")
+
+
+def threads_refresh(out: Path) -> dict:
+    """鍵（60日で切れる）を延長し、新しい鍵を out に書く。中身は表示しない。戻り値は期限の日付だけ。"""
+    import requests
+
+    r = requests.get("https://graph.threads.net/refresh_access_token", timeout=30,
+                     params={"grant_type": "th_refresh_token", "access_token": os.environ["THREADS_ACCESS_TOKEN"].strip()})
+    if not r.ok:
+        return {"error": f"{r.status_code}: {_threads_err(r)}"}
+    j = r.json()
+    out.write_text(j["access_token"], encoding="utf-8")
+    return {"expires": (now() + timedelta(seconds=int(j.get("expires_in") or 0))).strftime("%Y%m%d")}
+
+
+THREADS_STOP_AFTER = 3  # 続けてこの回数失敗したら送るのをやめる（止められているのに送り続けて印象を悪くしない）
 
 
 def _x_auth():
@@ -693,6 +845,9 @@ def live(url: str) -> bool:
         return False
 
 
+TH: dict = {}  # Threads の連続失敗回数（publish が更新し、最後に status.json へ書く）
+
+
 def publish(date: str, dry: bool = False, only: str = "") -> int:
     st = load_state(date)
     n = 0
@@ -700,11 +855,13 @@ def publish(date: str, dry: bool = False, only: str = "") -> int:
     cfg_ = load(SOCIAL / "config.json", {}) or {}
     ig_on = cfg_.get("instagram", True)
     # 設定を変える前に作った下書きも、対象外のものは X に出さない（x_wanted で種類と範囲を確かめる）
+    TH["fail_streak"] = int((load(SOCIAL / "status.json", {}) or {}).get("threads_fail_streak") or 0)
+    th_paused = TH["fail_streak"] >= THREADS_STOP_AFTER
     ig_blocked = (not only) and "API access blocked" in " ".join((load(SOCIAL / "status.json", {}) or {}).get("ig_probe") or [])  # 投稿IDを指定した手動テストでは送る
     for pid, e in st["posts"].items():
         if only and pid != only:
             continue
-        todo = [k for k in ("x", "instagram") if e.get(k) in ("pending", "draft")]
+        todo = [k for k in ("x", "instagram", "threads") if e.get(k) in ("pending", "draft")]
         if not todo:
             continue
         img_url = BASE_URL + e["image"]
@@ -715,9 +872,23 @@ def publish(date: str, dry: bool = False, only: str = "") -> int:
         if age > timedelta(hours=6):
             continue  # 古い下書きは出さない（鍵を設定した直後に過去分がまとめて出ないように）
         imgs = e.get("images") or [e["image"]]
-        if not dry and not all(live(BASE_URL + u) for u in imgs):
-            continue  # まだサイトに出ていない（次の公開後に出す）
+        imgs_live = dry or all(live(BASE_URL + u) for u in imgs)
         for k in todo:
+            if k != "threads" and not imgs_live:
+                continue  # 画像がまだサイトに出ていない（次の公開後に出す）。Threads は文字だけなので待たない
+            if k == "threads":
+                if not cfg_.get("threads", False) and not only:
+                    e[k] = "off"
+                    continue
+                if th_paused and not only and not dry:
+                    e["threads_wait"] = "続けて失敗したため停止中（social/status.json の threads_fail_streak を消すと再開）"
+                    continue
+                if e.get("kind") != "summary" and not only:  # 1日の上限（全成績は数えない）
+                    cnt = sum(1 for e2 in st["posts"].values() if e2.get("threads") == "posted" and e2.get("kind") != "summary")
+                    if cnt >= int(cfg_.get("threads_max_per_day") or 99):
+                        e[k] = "off"
+                        e["threads_skip"] = "1日の上限"
+                        continue
             if k == "instagram" and not ig_on and not only:
                 e[k] = "off"
                 continue
@@ -727,13 +898,16 @@ def publish(date: str, dry: bool = False, only: str = "") -> int:
             if k == "instagram" and ig_blocked and not dry:
                 e["instagram_wait"] = "Instagram側でAPIが止められているため待機"
                 continue
-            ok = has_x() if k == "x" else has_ig()
+            ok = has_x() if k == "x" else has_ig() if k == "instagram" else has_threads()
             if dry or not ok:
                 e[k] = "draft"
                 continue
             try:
                 if k == "x":
                     e["x_id"] = post_x(e["x_text"], ROOT / imgs[0].lstrip("/"), [ROOT / u.lstrip("/") for u in imgs[1:]])
+                elif k == "threads":
+                    e["threads_id"] = post_threads(e["threads_text"], e["url"] if e.get("threads_link") else None)
+                    TH["fail_streak"] = 0
                 else:
                     e["instagram_id"] = post_ig(e["ig_caption"], BASE_URL + imgs[0], [BASE_URL + u for u in imgs[1:]])
                 e[k] = "posted"
@@ -750,6 +924,9 @@ def publish(date: str, dry: bool = False, only: str = "") -> int:
                             break
                     e["x_thread_ids"] = ids
             except Exception as ex:  # noqa: BLE001
+                if k == "threads":
+                    TH["fail_streak"] = TH.get("fail_streak", 0) + 1
+                    th_paused = TH["fail_streak"] >= THREADS_STOP_AFTER
                 e[f"{k}_error"] = str(ex)[:300]
                 e[f"{k}_tries"] = e.get(f"{k}_tries", 0) + 1
                 if e[f"{k}_tries"] >= 3:
@@ -765,11 +942,33 @@ if __name__ == "__main__":
     ap.add_argument("--prepare-only", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--only", default="", help="この投稿IDだけ出す（手動テスト用。準備はしない）")
+    ap.add_argument("--threads-refresh", default="", help="Threadsの鍵を延長し、新しい鍵をこのファイルに書く（中身は表示しない）")
     a = ap.parse_args()
     cfg = load(SOCIAL / "config.json", {}) or {}
+    if a.threads_refresh:
+        res = threads_refresh(Path(a.threads_refresh)) if has_threads() else {"error": "no key"}
+        sp = SOCIAL / "status.json"
+        old = load(sp, {}) or {}
+        if res.get("expires"):
+            old["threads_expires"], old["threads_refreshed"] = res["expires"], now().strftime("%Y%m%d")
+            old.pop("threads_refresh_error", None)
+        else:
+            old["threads_refresh_error"] = res.get("error", "")[:200]
+        sp.write_text(json.dumps(old), encoding="utf-8")
+        print(json.dumps({"refreshed": bool(res.get("expires"))}))
+        sys.exit(0)
     posted = 0 if a.prepare_only else publish(a.date, a.dry_run, a.only)
     made = 0 if a.only else prepare(a.date, cfg)
     status = {"x_keys": has_x(), "ig_keys": has_ig()}  # 鍵の有無だけ（中身は書かない）
+    if cfg.get("threads", False):
+        old_t = load(SOCIAL / "status.json", {}) or {}
+        status["threads_keys"] = has_threads()
+        for k_ in ("threads_expires", "threads_refreshed", "threads_refresh_error"):
+            if old_t.get(k_):
+                status[k_] = old_t[k_]
+        streak = TH.get("fail_streak", int(old_t.get("threads_fail_streak") or 0))
+        if streak:
+            status["threads_fail_streak"] = streak
     if not cfg.get("instagram", True):
         status["ig"] = "off"  # 設定で止めている間は確認も送らない（social/config.json の instagram を true に戻すと再開）
     elif has_ig():
