@@ -745,11 +745,12 @@ def hub_top(slug: str, year: str, anchors: dict | None = None, post_hint: str = 
             btns += _a("#entries", f"{live}の一覧を見る", "JRAの発表。このページの下にあります", W, "entries", main=True)
         elif trend:
             btns += tr_btn(True)
-        btns += (f"<div class='nbtn wait'><b>AI予想は{esc(pub)}</b><small>枠順が決まってから公開します。公開後はここから見られます</small></div>")
+        btns += (f"<div class='nbtn wait'><b>AI予想は{esc(pub)}</b><small>枠順が決まってから公開します。公開後はここから見られます</small>"
+                 f"{remind(slug, d, name, W)}</div>")
         if live and trend:
             btns += tr_btn(False)
-        if _vs_ok():
-            btns += _a("/vs/guide/", "AI vs あなた 月間ランキング", "予想の公開後、このレースでもAIと◎で勝負できます", W, "vsguide")
+        # 予想の公開前に来た人にも、いま見られるものを出す（特集まとめは検索の入口で、ここで帰る人が多い）
+        btns += _weekend_btn(W) + _today_btn(W)
     return (f"<section class='hubtop' aria-label='{esc(name)}{year}の日程といまの段階'><dl class='hubfacts'>{facts}</dl>"
             + ("" if res else f"<ol class='hubsteps'>{steps}</ol>")  # 終わったレースは順番の表示を出さない（全部「済み」になるだけ）
             + f"<p class='hubnow'>{esc(now)}</p><div class='nbtns'>{btns}</div></section>")
@@ -824,6 +825,59 @@ def _race_btns(d: str, p: dict, name: str, where: str) -> str:
     if _vs_ok() and p.get("confidence") != "見送り" and (d > TODAY or B.before_post(d, p)):
         out += _a(path + "#vs", "このレースでAIと単勝勝負", "あなたの◎を1頭選ぶだけ・無料。月間ランキングに載る", where, "vs")
     return out
+
+
+def _today_btn(where: str, main: bool = False) -> str:
+    return _a("/", "今日のAI予想", "中央・地方の全レースの印と買い目を公開中", where, "today", main)
+
+
+def remind(slug: str, d: str, name: str, where: str) -> str:
+    """予想の公開前に来た人が、公開のころに戻ってこられるようにする1行：カレンダー登録（Google・.ics）とXのフォロー。
+    予定はレース当日の終日。.ics には前日の朝9時の通知を付ける（iPhoneのカレンダーなどで鳴る）。"""
+    if _B is None:
+        return ""
+    from urllib.parse import quote  # noqa: PLC0415
+    B, esc = _B, _B.esc
+    year = d[:4]
+    url = f"{B.BASE_URL}/column/{_hub_col(slug, year)}/" if _hub_col(slug, year) else f"{B.BASE_URL}/weekend/"
+    end = (_dt(d) + timedelta(days=1)).strftime("%Y%m%d")
+    title = f"{name}{year}｜AI予想を見る（{B.SITE_NAME}）"
+    note = f"AI予想は{publish_when(d)}（枠順の確定後）。全頭の評価と買い目： {url}"
+    ics_path = f"/cal/{slug}-{year}.ics"
+    def fold(x):  # .ics の決まり：, ; \ と改行を逃がす
+        return x.replace("\\", "\\\\").replace(",", "\\,").replace(";", "\\;").replace("\n", "\\n")
+    B.write(ics_path, "\r\n".join([
+        "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//ai-keiba-log.com//zentou-log//JA", "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
+        "BEGIN:VEVENT", f"UID:{slug}-{year}@ai-keiba-log.com", f"DTSTAMP:{datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')}",
+        f"DTSTART;VALUE=DATE:{d}", f"DTEND;VALUE=DATE:{end}", f"SUMMARY:{fold(title)}", f"DESCRIPTION:{fold(note)}", f"URL:{url}",
+        "TRANSP:TRANSPARENT", "BEGIN:VALARM", "ACTION:DISPLAY", f"DESCRIPTION:{fold(name + 'のAI予想を公開中')}", "TRIGGER:-PT15H", "END:VALARM",
+        "END:VEVENT", "END:VCALENDAR", ""]))
+    gcal = ("https://calendar.google.com/calendar/render?action=TEMPLATE"
+            f"&text={quote(title)}&dates={d}/{end}&details={quote(note)}")
+    return ("<p class='hubremind'><span>公開を忘れないように</span>"
+            f"<a href='{esc(gcal)}' target='_blank' rel='noopener nofollow' data-ns='{esc(where)}' data-ns-to='gcal'>Googleカレンダーに登録</a>"
+            f"<a href='{ics_path}' data-ns='{esc(where)}' data-ns-to='ics'>iPhone・Outlookのカレンダーに登録</a>"
+            f"<a href='{B.X_URL}' target='_blank' rel='noopener' data-ns='{esc(where)}' data-ns-to='xfollow'>Xで公開の知らせを受け取る</a></p>")
+
+
+def today_mini(where: str) -> str:
+    """レースにひもづかないコラムの冒頭に置く1行。検索から来た人が、今日の予想へ1回で進めるように。"""
+    return (f"<p class='notice nmini'><b>今日のAI予想を公開中</b>（中央・地方の全レース）："
+            f"<a href='/' data-ns='{_B.esc(where)}-top' data-ns-to='today'>印と買い目を見る</a></p>")
+
+
+def mid_line(where: str, slug: str | None = None) -> str:
+    """記事の途中（データを読み終えたあたり）に置く1行。下の「次に見る」まで読まずに帰る人が多いため。"""
+    if _B is None:
+        return ""
+    B, esc = _B, _B.esc
+    w = esc(where) + "-mid"
+    race = ""
+    if slug and (t := target(slug)) and t[0] == "pred":
+        race = f"<a href='{B.race_path(t[1], t[2])}' data-ns='{w}' data-ns-to='race'>{esc(t[3])}のAI予想（公開中）</a>　"
+    return (f"<p class='notice nmini nmid'><b>このデータをAIはどう使う？</b>　{race}"
+            f"<a href='/' data-ns='{w}' data-ns-to='today'>今日のAI予想</a>　"
+            f"<a href='/weekend/' data-ns='{w}' data-ns-to='weekend'>今週末の重賞まとめ</a></p>")
 
 
 def _weekend_btn(where: str, main: bool = False) -> str:
@@ -1043,6 +1097,12 @@ def build_page(by_date: dict) -> dict[str, str]:
 
 
 CSS = """
+.hubremind{margin:8px 0 0;font-size:13px;line-height:1.6;display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center}.hubremind span{color:var(--mut);width:100%}
+.hubremind a{display:inline-block;border:1px solid var(--acc);border-radius:999px;padding:6px 12px;text-decoration:none;color:var(--acc);background:var(--panel);font-weight:700}
+.nmid{margin:18px 0}.nmid a{white-space:nowrap}
+.tiles{display:grid;gap:8px;grid-template-columns:repeat(3,1fr);margin:10px 0 14px}.tiles a{display:block;border:1px solid var(--line);border-top:3px solid var(--acc);background:var(--panel);padding:10px 12px;text-decoration:none;color:var(--fg);min-height:44px}
+.tiles b{display:block;font-size:15px;color:var(--acc);line-height:1.4}.tiles small{display:block;font-size:12px;color:var(--mut);line-height:1.5;margin-top:2px}
+@media (max-width:560px){.tiles{grid-template-columns:1fr}.tiles a{display:flex;gap:8px;align-items:baseline;justify-content:space-between}.tiles small{margin:0;text-align:right}}
 .nstep h2{margin-bottom:6px}.nbtns{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin:8px 0}
 .nbtn{display:block;border:1px solid var(--line);border-left:4px solid var(--acc);background:var(--panel);padding:10px 12px;text-decoration:none;color:var(--fg);min-height:44px}
 .nbtn b{display:block;font-size:15px;line-height:1.4;color:var(--acc)}.nbtn small{display:block;font-size:12px;color:var(--mut);line-height:1.5;margin-top:2px}
@@ -1073,5 +1133,7 @@ CSS = """
 
 JS = r"""
 document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e.target.closest('a[data-ns]'):null;
- if(a&&window.gtag){try{gtag('event','next_step',{from:a.dataset.ns,to:a.dataset.nsTo||''});}catch(x){}}});
+ if(a&&window.gtag){try{gtag('event','next_step',{from:a.dataset.ns,to:a.dataset.nsTo||''});}catch(x){}return;}
+ var n=e.target&&e.target.closest?e.target.closest('header nav a,footer .sitemap-links a'):null;
+ if(n&&window.gtag){try{gtag('event','next_step',{from:n.closest('header')?'header':'footer',to:n.getAttribute('href')});}catch(x){}}});
 """

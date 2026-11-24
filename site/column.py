@@ -654,7 +654,7 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
         import weekly  # noqa: PLC0415
         rslug = weekly.FEATURE_RACE.get(c.get("series")) or (c.get("race") if c.get("series") == "gdata" else None)
         ns_where = "feature" if c.get("series") in FEATURE_IDS else "gdata" if c.get("series") == "gdata" else "column"
-        ns_top = weekly.next_mini(ns_where, rslug) if rslug else ""
+        ns_top = weekly.next_mini(ns_where, rslug) if rslug else ("" if auto_c or c["draft"] else weekly.today_mini(ns_where))
         hub_top = ""
         ns_box = "" if auto_c else weekly.next_card(ns_where, slug=rslug)
         # 特集まとめ（〇〇2026-guide）には、JRA発表の馬の表（枠順・出走馬・出走予定馬・特別登録馬のうち新しいもの）を自動で差し込む。
@@ -681,6 +681,17 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
             elif live:
                 i = [m.start() for m in re.finditer(r"<h2[ >]", body_html)]
                 body_html = (body_html[:i[1]] + live + body_html[i[1]:]) if len(i) >= 2 else body_html + live
+        # 導線（2026-11-25）：入口の多いコラムは1ページで帰る人がほとんどだった（特集まとめで1人あたり1.0〜1.25ページ）。
+        # 記事の途中に1行、「次に見る」の箱は出典の一覧より上に置く（出典は長く、箱が画面7つ分ほど下になっていた）
+        if not auto_c:
+            h2s = [m.start() for m in re.finditer(r"<h2[ >]", body_html)]
+            if len(h2s) >= 4:
+                k = h2s[(len(h2s) + 1) // 2]
+                body_html = body_html[:k] + weekly.mid_line(ns_where, rslug) + body_html[k:]
+        sm = re.search(r"<h2[^>]*>(?:出典|参考|参考にした資料)[^<]*</h2>", body_html)
+        if ns_box and sm:
+            body_html = body_html[:sm.start()] + ns_box + body_html[sm.start():]
+            ns_box = ""
         html_ = (("<p class='draft'>下書き（検索エンジンには出ず、一覧にも載らない）</p>" if c["draft"] else "")
                  + f"<p class='crumb'><a href='/'>トップ</a> › <a href='/column/'>コラム</a></p><article class='col'>"
                  f"<h1>{esc(title)}</h1>{hub_top}<p class='meta'>公開 {esc(c.get('date'))}"

@@ -410,7 +410,7 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool | str =
 <header class="top"><div class="wrap">
 <div class="bar"><a class="logo" href="/">{'<img src="/assets/logo-mark-96.png" alt="" width="44" height="44">' if LOGO else ''}<span><b>{SITE_NAME}</b><small>{SITE_SUB}</small></span></a>{HEADER_ROI}</div>
 <form class="srch" action="/search/" role="search"><input type="search" name="q" placeholder="馬名・レース名で検索" aria-label="サイト内検索" autocomplete="off"><div class="sres" hidden></div></form>
-<nav><a href="/">今日の予想</a><a href="/weekend/">今週末</a><a href="/graded/">重賞</a><a href="/results/">成績</a><a href="/strategy/">買い方別</a><a href="/venue/">競馬場</a>{'<a href="/column/">コラム</a>' if HAS_COLUMN else ''}<a href="/about/">予想の方法</a></nav>
+<nav><a href="/">今日の予想</a><a href="/weekend/">今週末</a><a href="/graded/">重賞</a><a href="/results/">成績</a>{'<a href="/vs/">AI vs あなた</a>' if VS_FOOT else ''}{'<a href="/column/">コラム</a>' if HAS_COLUMN else ''}</nav>
 </div></header>
 <main class="wrap" id="main">{body}</main>
 <a class="totop" href="#main" hidden aria-label="ページの先頭へ">↑</a>
@@ -419,7 +419,7 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool | str =
 <p>出走表や結果など正式な情報は、各主催者の発表をご確認ください。成績は、すべての買い目を1点100円ずつ買ったとして計算しています。</p>
 <p class="support">このサイトは個人が運営しています。サーバー代やX投稿のAPI代の支援は <a href="{OFUSE_URL}" target="_blank" rel="noopener">OFUSE（投げ銭・ファンレター）</a> から。支援の有無で予想の内容や公開範囲は変わりません。</p>
 <p class="sns">重賞の予想と大きな的中は <a href="{X_URL}" target="_blank" rel="noopener me">X（@zentou_log）</a> でも配信中</p>
-<p class="sitemap-links"><a href="/graded/">重賞</a>　<a href="/review/">重賞回顧</a>　<a href="/monthly/">月次レポート</a>　<a href="/days/">過去の予想</a>　{VS_FOOT}<a href="/strategy/">買い方別の回収率</a>　<a href="/ippen/">実験中の狙い馬</a>　<a href="/course/">コース別</a>　<a href="/jockey/">騎手別</a>　<a href="/horse/">馬別</a>　<a href="/column/">コラム</a>　<a href="/glossary/">用語集</a>　<a href="/limits/">AI予想の限界</a>　<a href="/changelog/">更新履歴</a></p>
+<p class="sitemap-links"><a href="/graded/">重賞</a>　<a href="/review/">重賞回顧</a>　<a href="/monthly/">月次レポート</a>　<a href="/days/">過去の予想</a>　{VS_FOOT}<a href="/strategy/">買い方別の回収率</a>　<a href="/venue/">競馬場別</a>　<a href="/about/">予想の方法</a>　<a href="/ippen/">実験中の狙い馬</a>　<a href="/course/">コース別</a>　<a href="/jockey/">騎手別</a>　<a href="/horse/">馬別</a>　<a href="/column/">コラム</a>　<a href="/glossary/">用語集</a>　<a href="/limits/">AI予想の限界</a>　<a href="/changelog/">更新履歴</a></p>
 <p class="prefs"><button type="button" class="theme" data-mode="auto">表示：自動</button></p>
 <p><a href="/operator/">運営者情報</a>　<a href="/privacy/">プライバシーポリシー</a>　<a href="/contact/">お問い合わせ</a></p>
 </footer>
@@ -967,6 +967,8 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
 <h2>結論</h2>{plain_line(p)}<p class="sum">{esc(p.get('summary'))}</p>{ai_top_line(p)}
 <h3>買い目（各100円・計{len(p.get('bets', []))}点）</h3><ul class="bets">{bets or '<li>買い目なし</li>'}</ul>{bets_note}{aff_rakuten('race', banner=not scored(p)) if not str(p['race_id']).startswith('jra_') and p.get('confidence') != '見送り' else ''}</section>
 {res_html}
+{vs_html}
+{ask_html}
 <section class="card"><h2>{term("pace", "展開予想")}</h2><p>{esc(p.get('pace'))}</p></section>
 {bias_html}
 <section class="card"><h2>全頭評価</h2>
@@ -976,8 +978,6 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
 {ippen_line(date, p)}
 {f'<section class="card"><h2>更新履歴</h2>' + (f"<details class='fold'><summary>{len(p.get('updates', []))}件の更新を見る</summary><ul>{updates}</ul></details>" if len(p.get('updates', [])) > 2 else f"<ul>{updates}</ul>") + '</section>' if updates else ''}
 {graded_link}
-{ask_html}
-{vs_html}
 {share_html}
 {nav}
 """
@@ -2358,7 +2358,7 @@ function ga(n,p){try{if(window.gtag)gtag('event',n,p||{})}catch(e){}}
 document.addEventListener('click',function(e){var a=e.target.closest('a');if(!a)return;var h=a.href||'';
  if(a.closest('.share')){ga('share',{method:/line/.test(h)?'line':'x',page:location.pathname});return;}
  if(/x\\.com\\/zentou_log|instagram\\.com\\/zentou_log/.test(h)){ga('sns_follow',{network:/instagram/.test(h)?'instagram':'x'});return;}
- if(a.dataset.aff){var pp=location.pathname,pt=/^[/]\\d{4}[/]\\d\\d[/]\\d\\d[/][^/]+[/]/.test(pp)?'race':/^[/]venue[/]/.test(pp)?'venue':/^[/]graded[/]/.test(pp)?'graded':/^[/]glossary[/]/.test(pp)?'glossary':/^[/]column[/].*-guide[/]/.test(pp)?'hub':/^[/]column[/]/.test(pp)?'column':'other';
+ if(a.dataset.aff){var pp=location.pathname,pt=/^[/]\\d{4}[/]\\d\\d[/]\\d\\d[/][^/]+[/]/.test(pp)?'race':/^[/]venue[/]/.test(pp)?'venue':/^[/]graded[/]/.test(pp)?'graded':/^[/]glossary[/]/.test(pp)?'glossary':/^[/]column[/].*-guide[/]/.test(pp)?'hub':/^[/]column[/]/.test(pp)?'column':pp==='/'?'top':'other';
   ga('affiliate_click',{program:a.dataset.aff,page:pp,placement:pt});ga('aff_click_'+pt,{program:a.dataset.aff,page:pp});}});
 (function(){var p=location.pathname,best=null;document.querySelectorAll('header nav a').forEach(function(a){var h=a.getAttribute('href');if(h==='/'?(p==='/'||/^[/]\\d{4}[/]/.test(p)):p.indexOf(h)===0){if(!best||h.length>best.getAttribute('href').length)best=a;}});if(best)best.classList.add('on');})();
 (function(){var f=document.querySelector('.srch'),inp=f&&f.querySelector('input'),box=f&&f.querySelector('.sres'),idx=null,t;
@@ -2610,7 +2610,9 @@ def build() -> None:
         head = "今日の予想" if main_d == today else f"{fmt_date(main_d)}の予想"
         _mid = (recent_hits(by_date, main_d) + feature_banner()
                 + "<p class='notice'><a href='/weekend/' data-ns='top' data-ns-to='weekend'><b>今週末の競馬まとめ</b></a>　重賞のAI予想の公開状況・特集・先週の結果を毎週入れ替えています（ブックマーク推奨）。</p>")
-        top_list = f"<section class='today'>{day_list(main_d, by_date[main_d], mid=_mid)}</section>"
+        if main_d == today and any(not str(p["race_id"]).startswith("jra_") for p in by_date[main_d]):
+            _mid += aff_rakuten("top")  # 地方の開催がある日だけ（全体の3割が見るページに、収益の出口が無かった）
+        top_list = f"<section class='today' id='today'>{day_list(main_d, by_date[main_d], mid=_mid)}</section>"
     else:
         head, top_list = "今日の予想", "<p>予想はまだありません。</p>"
     past_rows = [x for x in day_rows if x[0] != main_d]
@@ -2622,6 +2624,12 @@ def build() -> None:
             f"<p class='answer'>AIが中央・地方の全レースを毎日予想し、外れたレースも含めた成績を公開している。"
             + (f"今のルール（{rule_label()}）の回収率は{tn_['roi']}（{tn_['n']}レース）。" if tn_["n"] >= RULE_MIN else f"累計回収率は{t['roi']}（{t['n']}レース）。")
             + f"<a href='/results/'>成績の詳細</a>　<span class='meta'>最終更新 {now.strftime('%m/%d %H:%M')}</span></p>"
+            + ("<nav class='tiles' aria-label='このサイトでできること'>"
+               + (f"<a href='#today' data-ns='top-tile' data-ns-to='today'><b>{'今日' if main_d == today else '最新'}の予想を見る</b><small>全{len(by_date[main_d])}レースの印と買い目</small></a>" if main_d else "")
+               + "<a href='/results/' data-ns='top-tile' data-ns-to='results'><b>成績を確かめる</b><small>外れも含めた回収率</small></a>"
+               + ("<a href='/vs/guide/' data-ns='top-tile' data-ns-to='vsguide'><b>AIと◎で勝負する</b><small>無料・登録なし</small></a>" if VS_FOOT
+                  else "<a href='/about/' data-ns='top-tile' data-ns-to='about'><b>予想の方法を知る</b><small>印と自信度の決め方</small></a>")
+               + "</nav>")
             + top_list + (f"<section id='past'><h2>過去の予想</h2><ul class='days'>{past}</ul></section>" if past else ""))
     site_ld = [{"@context": "https://schema.org", "@type": "Organization", "name": SITE_NAME, "url": BASE_URL + "/", "logo": BASE_URL + "/assets/logo-mark.png",
                 "sameAs": [X_URL, IG_URL], "contactPoint": {"@type": "ContactPoint", "contactType": "customer support", "url": BASE_URL + "/contact/"}},
