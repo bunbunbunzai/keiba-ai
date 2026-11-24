@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261124",
  "race_id": "202611241813080111",
- "tries": 8,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "フランキングライン",
    "time": "1:28.4",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 37.5,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ダテオトコ",
    "time": "1:29.2",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 37.8,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ケンブレナム",
    "time": "1:29.4",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 37.8,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "チュラット",
    "time": "1:29.5",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 38.1,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "マスクドサムライ",
    "time": "1:29.7",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 38.0,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ダイバオーソ",
    "time": "1:29.9",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 37.6,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "カムバック",
    "time": "1:29.9",
    "margin": "ハナ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 38.0,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "スマイルスライヴ",
    "time": "1:30.2",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 39.2,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "ノヴァヴィア",
    "time": "1:30.2",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 39.1,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "ツーピース",
    "time": "1:30.4",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 39.0,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "フォースチルドレン",
    "time": "1:30.8",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 38.3,
    "popularity": null
   },
   {
@@ -198,8 +198,8 @@
    "name": "ノリノリソックス",
    "time": "1:30.8",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 13,
+   "last3f": 38.7,
    "popularity": null
   },
   {
@@ -209,8 +209,8 @@
    "name": "ブレストサンダー",
    "time": "1:30.9",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 12,
+   "last3f": 38.6,
    "popularity": null
   },
   {
@@ -220,8 +220,8 @@
    "name": "プローラーティオー",
    "time": "1:32.0",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 14,
+   "last3f": 40.3,
    "popularity": null
   }
  ]
