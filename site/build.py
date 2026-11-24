@@ -157,9 +157,10 @@ def aff_rakuten_banner(wide: bool = True) -> str:
     False：310x60（ID 67。スマホの幅にそのまま入る。レースページの買い目の下）。728x90（ID 70）はスマホで縮むと字が読めないのでスマホでは使わない。
     PCでは小さく見えるので、画面の幅で出し分ける（2026-11-25）：wide は PC 728x90（ID 70）／スマホ 468x60、wide=False は PC 468x60／スマホ 310x60。
     リンク先のIDをバナーごとに合わせるため、2つ並べて片方を隠す（隠れた側の画像は loading=lazy で読み込まれない）。"""
+    # 枠の端から端まで広げる（2026-11-25。元の大きさのままだと、PCでは枠の左に寄って小さく見えた）。縦横の比は変えない
     def one(i, w, h, cls):
         return (f"<a class='affbn {cls}' href='{AFF_RAKUTEN.format(id=i)}' target='_blank' rel='nofollow sponsored noopener' data-aff='rakuten-keiba-banner'>"
-                f"<img src='{AFF_RAKUTEN_IMG.format(id=i)}' alt='楽天競馬 エントリーと新規会員登録で1,000円分' width='{w}' height='{h}' style='width:100%;max-width:{w}px;height:auto' loading='lazy'></a>")
+                f"<img src='{AFF_RAKUTEN_IMG.format(id=i)}' alt='楽天競馬 エントリーと新規会員登録で1,000円分' width='{w}' height='{h}' style='width:100%;height:auto' loading='lazy'></a>")
     # スマホはどちらも 310x60（468x60 を縮めると字が小さくなるので、縮めずに収まる大きさにする）
     return (one(70, 728, 90, "pc") if wide else one(37, 468, 60, "pc")) + one(67, 310, 60, "sp")
 
