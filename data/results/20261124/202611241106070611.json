@@ -2,7 +2,194 @@
  "source": "rakuten",
  "date": "20261124",
  "race_id": "202611241106070611",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 4,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "8",
+    "yen": 540
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "8-6",
+    "yen": 2450
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "8",
+    "yen": 200
+   },
+   {
+    "combo": "6",
+    "yen": 150
+   },
+   {
+    "combo": "5",
+    "yen": 220
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "6-8",
+    "yen": 450
+   },
+   {
+    "combo": "5-8",
+    "yen": 580
+   },
+   {
+    "combo": "5-6",
+    "yen": 620
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "6-7",
+    "yen": 440
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "5-6-8",
+    "yen": 3410
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "8-6-5",
+    "yen": 16420
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "6-8",
+    "yen": 1540
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 8,
+   "name": "サティスファイア",
+   "time": "1:41.9",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 6,
+   "name": "ハクシンパーソナル",
+   "time": "1:42.0",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 5,
+   "name": "タイセイストラーダ",
+   "time": "1:42.1",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 7,
+   "name": "コパノマロン",
+   "time": "1:42.1",
+   "margin": "ハナ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 1,
+   "number": 1,
+   "name": "ウイニングライブ",
+   "time": "1:42.4",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "ラティサワー",
+   "time": "1:42.8",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 4,
+   "name": "ミライヘノシンゲキ",
+   "time": "1:43.5",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "グッデーサイレンス",
+   "time": "1:43.8",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 9,
+   "name": "アポロプラネット",
+   "time": "1:44.3",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 8,
+   "number": 10,
+   "name": "ソルエストレーラ",
+   "time": "1:44.6",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 8,
+   "number": 11,
+   "name": "リリードリーマー",
+   "time": "1:46.9",
+   "margin": "大差",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
