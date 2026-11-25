@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261125",
  "race_id": "202611252726190112",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -77,9 +77,9 @@
    "name": "ミスジェイド",
    "time": "1:31.6",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 1,
+   "last3f": 40.0,
+   "popularity": 1
   },
   {
    "finish": "2",
@@ -88,9 +88,9 @@
    "name": "アンデルマット",
    "time": "1:32.5",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 4,
+   "last3f": 40.6,
+   "popularity": 9
   },
   {
    "finish": "3",
@@ -99,9 +99,9 @@
    "name": "ブラックジャック",
    "time": "1:32.5",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 2,
+   "last3f": 40.8,
+   "popularity": 2
   },
   {
    "finish": "4",
@@ -110,9 +110,9 @@
    "name": "トウケイタンホイザ",
    "time": "1:33.0",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 6,
+   "last3f": 40.6,
+   "popularity": 12
   },
   {
    "finish": "5",
@@ -121,9 +121,9 @@
    "name": "アカオー",
    "time": "1:33.1",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 3,
+   "last3f": 42.1,
+   "popularity": 4
   },
   {
    "finish": "6",
@@ -132,9 +132,9 @@
    "name": "マカセナハレ",
    "time": "1:33.2",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 10,
+   "last3f": 40.7,
+   "popularity": 6
   },
   {
    "finish": "7",
@@ -143,9 +143,9 @@
    "name": "ネバーセイグッバイ",
    "time": "1:33.3",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 6,
+   "last3f": 41.8,
+   "popularity": 7
   },
   {
    "finish": "8",
@@ -154,9 +154,9 @@
    "name": "マテンロウタイム",
    "time": "1:33.8",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 9,
+   "last3f": 41.7,
+   "popularity": 3
   },
   {
    "finish": "9",
@@ -165,9 +165,9 @@
    "name": "キンセンオー",
    "time": "1:33.9",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 8,
+   "last3f": 42.0,
+   "popularity": 8
   },
   {
    "finish": "10",
@@ -176,9 +176,9 @@
    "name": "スマートビーナス",
    "time": "1:34.3",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 10,
+   "last3f": 42.0,
+   "popularity": 10
   },
   {
    "finish": "11",
@@ -187,9 +187,9 @@
    "name": "ダイシンアレス",
    "time": "1:34.6",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 4,
+   "last3f": 43.5,
+   "popularity": 5
   },
   {
    "finish": "12",
@@ -198,9 +198,9 @@
    "name": "マラカイト",
    "time": "1:35.0",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 12,
+   "last3f": 41.3,
+   "popularity": 11
   }
  ]
 }
