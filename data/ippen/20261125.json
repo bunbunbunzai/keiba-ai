@@ -1,6 +1,6 @@
 {
  "date": "20261125",
- "updated": "2026-11-25 13:03",
+ "updated": "2026-11-25 13:14",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -594,8 +594,29 @@
     "field": 12,
     "popularity": 4
    },
-   "odds": 45.0,
-   "popularity": 8
+   "odds": 9.6,
+   "popularity": 5
+  },
+  {
+   "race_id": "202611252433170201",
+   "results_key": "202611252433170201",
+   "venue": "名古屋",
+   "race_no": 1,
+   "post_time": "14:40",
+   "number": 9,
+   "name": "バチラ",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 15,
+   "last": {
+    "date": "2026-11-10",
+    "finish": 6,
+    "field": 12,
+    "popularity": 1
+   },
+   "odds": 11.5,
+   "popularity": 6
   },
   {
    "race_id": "202611252433170201",
@@ -616,8 +637,8 @@
     "field": 11,
     "popularity": 9
    },
-   "odds": 16.3,
-   "popularity": 4
+   "odds": 5.7,
+   "popularity": 3
   },
   {
    "race_id": "202611251813080206",
