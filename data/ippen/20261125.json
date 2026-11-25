@@ -1,6 +1,6 @@
 {
  "date": "20261125",
- "updated": "2026-11-25 12:13",
+ "updated": "2026-11-25 12:29",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -203,6 +203,20 @@
    "venue": "園田",
    "race_no": 6,
    "post_time": "13:20",
+   "number": 1,
+   "name": "メイショウテンテン",
+   "types": [
+    "aitop"
+   ],
+   "odds": 9.4,
+   "popularity": 6
+  },
+  {
+   "race_id": "202611252726190106",
+   "results_key": "202611252726190106",
+   "venue": "園田",
+   "race_no": 6,
+   "post_time": "13:20",
    "number": 6,
    "name": "ナリタセレーノ",
    "types": [
@@ -215,8 +229,8 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": 32.6,
-   "popularity": 7
+   "odds": 34.1,
+   "popularity": 9
   },
   {
    "race_id": "202611252726190106",
@@ -236,8 +250,8 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": null,
-   "popularity": null
+   "odds": 56.8,
+   "popularity": 10
   },
   {
    "race_id": "202611251813080203",
@@ -257,8 +271,8 @@
     "field": 8,
     "popularity": 6
    },
-   "odds": null,
-   "popularity": null
+   "odds": 14.0,
+   "popularity": 6
   },
   {
    "race_id": "202611251813080203",
@@ -278,7 +292,7 @@
     "field": 7,
     "popularity": 1
    },
-   "odds": 6.4,
+   "odds": 6.0,
    "popularity": 2
   },
   {
@@ -299,8 +313,8 @@
     "field": 10,
     "popularity": null
    },
-   "odds": null,
-   "popularity": null
+   "odds": 9.6,
+   "popularity": 5
   },
   {
    "race_id": "202611251813080204",
@@ -320,8 +334,8 @@
     "field": 14,
     "popularity": 14
    },
-   "odds": 12.0,
-   "popularity": 4
+   "odds": 46.1,
+   "popularity": 11
   },
   {
    "race_id": "202611251813080204",
@@ -362,8 +376,8 @@
     "field": 12,
     "popularity": 10
    },
-   "odds": null,
-   "popularity": null
+   "odds": 24.6,
+   "popularity": 6
   },
   {
    "race_id": "202611251813080204",
@@ -383,8 +397,8 @@
     "field": 7,
     "popularity": 4
    },
-   "odds": 12.0,
-   "popularity": 4
+   "odds": 36.5,
+   "popularity": 9
   },
   {
    "race_id": "202611252726190107",
@@ -533,6 +547,20 @@
    },
    "odds": 7.4,
    "popularity": 3
+  },
+  {
+   "race_id": "202611252726190108",
+   "results_key": "202611252726190108",
+   "venue": "園田",
+   "race_no": 8,
+   "post_time": "14:30",
+   "number": 3,
+   "name": "ミヤジマミコ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 8.1,
+   "popularity": 4
   },
   {
    "race_id": "202611252726190108",
@@ -893,6 +921,20 @@
    },
    "odds": 35.3,
    "popularity": 6
+  },
+  {
+   "race_id": "202611252726190110",
+   "results_key": "202611252726190110",
+   "venue": "園田",
+   "race_no": 10,
+   "post_time": "15:35",
+   "number": 8,
+   "name": "スマートビビット",
+   "types": [
+    "aitop"
+   ],
+   "odds": 53.0,
+   "popularity": 8
   },
   {
    "race_id": "202611252726190110",

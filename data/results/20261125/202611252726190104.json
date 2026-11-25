@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261125",
  "race_id": "202611252726190104",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,116 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 3,
+   "number": 3,
+   "name": "シェナクィーン",
+   "time": "1:22.3",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 40.5,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 8,
+   "name": "ペイシャメダリスト",
+   "time": "1:22.3",
+   "margin": "アタマ",
+   "pos4": 3,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 1,
+   "number": 1,
+   "name": "トランペシア",
+   "time": "1:22.3",
+   "margin": "ハナ",
+   "pos4": 4,
+   "last3f": 39.9,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 4,
+   "name": "メイショウコトダマ",
+   "time": "1:22.4",
+   "margin": "クビ",
+   "pos4": 1,
+   "last3f": 40.5,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 6,
+   "name": "バークエム",
+   "time": "1:22.6",
+   "margin": "１ １／４",
+   "pos4": 5,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 7,
+   "number": 7,
+   "name": "ステップアイ",
+   "time": "1:22.9",
+   "margin": "２",
+   "pos4": 7,
+   "last3f": 40.0,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 5,
+   "name": "トレジャーブルー",
+   "time": "1:23.0",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": 40.8,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 10,
+   "name": "マジックエミリア",
+   "time": "1:23.1",
+   "margin": "３／４",
+   "pos4": 8,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 9,
+   "name": "ノブノキャット",
+   "time": "1:25.0",
+   "margin": "大差",
+   "pos4": 9,
+   "last3f": 42.1,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 2,
+   "number": 2,
+   "name": "トゥモローズウェイ",
+   "time": "1:26.5",
+   "margin": "９",
+   "pos4": 10,
+   "last3f": 44.1,
+   "popularity": null
+  }
+ ]
 }
