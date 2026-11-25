@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261125",
  "race_id": "202611251813080212",
- "tries": 5,
+ "tries": 6,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "マシュー",
    "time": "1:27.7",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 37.7,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ストゥディア",
    "time": "1:28.0",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 38.2,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ピーチピーチ",
    "time": "1:28.3",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 38.1,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "イサチルカゼニタツ",
    "time": "1:28.5",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 37.2,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "ダイバヤタガラス",
    "time": "1:28.5",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 37.8,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ジョセフィーナ",
    "time": "1:28.6",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 37.9,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "ゴーオンパーパス",
    "time": "1:28.7",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 38.5,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ローアヴァンフレア",
    "time": "1:29.4",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 38.2,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "ゴールドソニック",
    "time": "1:29.4",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 38.0,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "カイトキング",
    "time": "1:29.4",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 38.7,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "バンボリーナ",
    "time": "1:30.2",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 12,
+   "last3f": 38.8,
    "popularity": null
   },
   {
@@ -198,8 +198,8 @@
    "name": "ブレイヴルーラー",
    "time": "1:31.0",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 40.9,
    "popularity": null
   },
   {
@@ -209,8 +209,8 @@
    "name": "グレイスカリヨン",
    "time": "1:31.1",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 12,
+   "last3f": 41.0,
    "popularity": null
   },
   {
