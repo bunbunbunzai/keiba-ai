@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261125",
  "race_id": "202611251813080203",
- "tries": 4,
+ "tries": 5,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "ウィズボンド",
    "time": "1:31.0",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 40.3,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "シナノダムール",
    "time": "1:31.4",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 40.4,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ノーブルフリージア",
    "time": "1:31.4",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 40.4,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "タカイチイーロン",
    "time": "1:31.5",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 41.0,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "ツガノヤマト",
    "time": "1:31.5",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 40.2,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ニエリカ",
    "time": "1:31.6",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 41.0,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "ジーティーマルーン",
    "time": "1:32.1",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 41.6,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "オンブラドーロ",
    "time": "1:32.1",
    "margin": "ハナ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 10,
+   "last3f": 40.2,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "ユウユウヒレシュ",
    "time": "1:32.2",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 39.3,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "フルールバトル",
    "time": "1:33.5",
    "margin": "６",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 43.1,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "トーケンジンバック",
    "time": "1:34.0",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 12,
+   "last3f": 40.6,
    "popularity": null
   },
   {
@@ -198,8 +198,8 @@
    "name": "スモモサンジョ",
    "time": "1:34.0",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 43.6,
    "popularity": null
   }
  ]
