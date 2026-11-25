@@ -1,6 +1,6 @@
 {
  "date": "20261125",
- "updated": "2026-11-25 14:09",
+ "updated": "2026-11-25 14:14",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -735,8 +735,8 @@
    "types": [
     "aitop"
    ],
-   "odds": 17.6,
-   "popularity": 7
+   "odds": 13.7,
+   "popularity": 5
   },
   {
    "race_id": "202611252726190109",
@@ -756,7 +756,7 @@
     "field": 10,
     "popularity": 3
    },
-   "odds": 52.9,
+   "odds": 54.5,
    "popularity": 10
   },
   {
@@ -778,7 +778,7 @@
     "field": 9,
     "popularity": 5
    },
-   "odds": 38.8,
+   "odds": 42.9,
    "popularity": 9
   },
   {
@@ -800,7 +800,7 @@
     "field": 12,
     "popularity": 2
    },
-   "odds": 1.8,
+   "odds": 2.1,
    "popularity": 1
   },
   {
@@ -821,7 +821,7 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": 109.1,
+   "odds": 112.0,
    "popularity": 11
   },
   {
@@ -842,7 +842,7 @@
     "field": 16,
     "popularity": 7
    },
-   "odds": 10.1,
+   "odds": 9.9,
    "popularity": 4
   },
   {
@@ -968,22 +968,8 @@
     "field": 16,
     "popularity": 11
    },
-   "odds": 35.3,
-   "popularity": 6
-  },
-  {
-   "race_id": "202611252726190110",
-   "results_key": "202611252726190110",
-   "venue": "園田",
-   "race_no": 10,
-   "post_time": "15:35",
-   "number": 8,
-   "name": "スマートビビット",
-   "types": [
-    "aitop"
-   ],
-   "odds": 53.0,
-   "popularity": 8
+   "odds": 4.4,
+   "popularity": 2
   },
   {
    "race_id": "202611252726190110",
@@ -1003,7 +989,7 @@
     "field": 11,
     "popularity": 7
    },
-   "odds": 159.2,
+   "odds": 26.9,
    "popularity": 10
   },
   {
@@ -1024,8 +1010,8 @@
     "field": 9,
     "popularity": 6
    },
-   "odds": 21.2,
-   "popularity": 3
+   "odds": 18.9,
+   "popularity": 9
   },
   {
    "race_id": "202611252433170203",
