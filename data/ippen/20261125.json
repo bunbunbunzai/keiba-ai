@@ -1,6 +1,6 @@
 {
  "date": "20261125",
- "updated": "2026-11-25 12:32",
+ "updated": "2026-11-25 12:55",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -203,20 +203,6 @@
    "venue": "園田",
    "race_no": 6,
    "post_time": "13:20",
-   "number": 1,
-   "name": "メイショウテンテン",
-   "types": [
-    "aitop"
-   ],
-   "odds": 9.4,
-   "popularity": 6
-  },
-  {
-   "race_id": "202611252726190106",
-   "results_key": "202611252726190106",
-   "venue": "園田",
-   "race_no": 6,
-   "post_time": "13:20",
    "number": 6,
    "name": "ナリタセレーノ",
    "types": [
@@ -229,7 +215,7 @@
     "field": 10,
     "popularity": 5
    },
-   "odds": 34.1,
+   "odds": 49.6,
    "popularity": 9
   },
   {
@@ -250,7 +236,7 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": 56.8,
+   "odds": 121.2,
    "popularity": 10
   },
   {
@@ -271,8 +257,8 @@
     "field": 8,
     "popularity": 6
    },
-   "odds": 14.0,
-   "popularity": 6
+   "odds": 5.6,
+   "popularity": 3
   },
   {
    "race_id": "202611251813080203",
@@ -292,8 +278,8 @@
     "field": 7,
     "popularity": 1
    },
-   "odds": 6.0,
-   "popularity": 2
+   "odds": 9.5,
+   "popularity": 5
   },
   {
    "race_id": "202611251813080203",
@@ -313,8 +299,8 @@
     "field": 10,
     "popularity": null
    },
-   "odds": 9.6,
-   "popularity": 5
+   "odds": 5.3,
+   "popularity": 2
   },
   {
    "race_id": "202611251813080204",
@@ -334,7 +320,7 @@
     "field": 14,
     "popularity": 14
    },
-   "odds": 46.1,
+   "odds": 53.7,
    "popularity": 11
   },
   {
@@ -355,7 +341,7 @@
     "field": 8,
     "popularity": 4
    },
-   "odds": 2.0,
+   "odds": 2.4,
    "popularity": 1
   },
   {
@@ -376,7 +362,7 @@
     "field": 12,
     "popularity": 10
    },
-   "odds": 24.6,
+   "odds": 31.3,
    "popularity": 6
   },
   {
@@ -397,7 +383,7 @@
     "field": 7,
     "popularity": 4
    },
-   "odds": 36.5,
+   "odds": 43.0,
    "popularity": 9
   },
   {
@@ -439,8 +425,8 @@
     "field": 11,
     "popularity": 3
    },
-   "odds": 32.8,
-   "popularity": 3
+   "odds": 110.0,
+   "popularity": 11
   },
   {
    "race_id": "202611251813080205",
@@ -460,8 +446,8 @@
     "field": 10,
     "popularity": 9
    },
-   "odds": 32.8,
-   "popularity": 3
+   "odds": 30.0,
+   "popularity": 6
   },
   {
    "race_id": "202611251813080205",
@@ -481,8 +467,8 @@
     "field": 11,
     "popularity": 9
    },
-   "odds": null,
-   "popularity": null
+   "odds": 58.9,
+   "popularity": 9
   },
   {
    "race_id": "202611251813080205",
@@ -502,8 +488,8 @@
     "field": 13,
     "popularity": 11
    },
-   "odds": null,
-   "popularity": null
+   "odds": 97.0,
+   "popularity": 10
   },
   {
    "race_id": "202611252726190108",
