@@ -1,6 +1,6 @@
 {
  "date": "20261125",
- "updated": "2026-11-25 14:47",
+ "updated": "2026-11-25 14:58",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -947,7 +947,7 @@
     "field": 12,
     "popularity": 12
    },
-   "odds": 16.0,
+   "odds": 19.9,
    "popularity": 8
   },
   {
@@ -1116,8 +1116,8 @@
     "field": 8,
     "popularity": null
    },
-   "odds": 42.1,
-   "popularity": 13
+   "odds": 40.5,
+   "popularity": 12
   },
   {
    "race_id": "202611251813080208",
@@ -1137,7 +1137,7 @@
     "field": 12,
     "popularity": 1
    },
-   "odds": 3.2,
+   "odds": 3.4,
    "popularity": 1
   },
   {
@@ -1149,7 +1149,8 @@
    "number": 8,
    "name": "ネイビーシンデレラ",
    "types": [
-    "layoff"
+    "layoff",
+    "letdown"
    ],
    "gap_days": 106,
    "last": {
@@ -1158,8 +1159,8 @@
     "field": 12,
     "popularity": 3
    },
-   "odds": 7.1,
-   "popularity": 3
+   "odds": 7.5,
+   "popularity": 4
   },
   {
    "race_id": "202611251813080208",
@@ -1179,8 +1180,8 @@
     "field": 14,
     "popularity": 8
    },
-   "odds": 32.2,
-   "popularity": 10
+   "odds": 34.7,
+   "popularity": 11
   },
   {
    "race_id": "202611252726190111",
@@ -1221,8 +1222,8 @@
     "field": 10,
     "popularity": 9
    },
-   "odds": null,
-   "popularity": null
+   "odds": 9.2,
+   "popularity": 4
   },
   {
    "race_id": "202611252433170204",
@@ -1242,8 +1243,8 @@
     "field": 10,
     "popularity": 3
    },
-   "odds": 8.0,
-   "popularity": 4
+   "odds": 13.1,
+   "popularity": 6
   },
   {
    "race_id": "202611251813080209",

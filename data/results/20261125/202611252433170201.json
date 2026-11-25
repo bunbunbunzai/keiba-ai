@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261125",
  "race_id": "202611252433170201",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 9,
+   "name": "バチラ",
+   "time": "1:38.7",
+   "margin": "",
+   "pos4": null,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 4,
+   "number": 4,
+   "name": "ラブミーアゲイン",
+   "time": "1:39.2",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 11,
+   "name": "スウィートラキ",
+   "time": "1:39.4",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": 41.2,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 5,
+   "name": "アルディメント",
+   "time": "1:39.4",
+   "margin": "ハナ",
+   "pos4": null,
+   "last3f": 40.3,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 2,
+   "number": 2,
+   "name": "ピグマリオン",
+   "time": "1:39.5",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": 41.0,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 7,
+   "name": "シシリアンマインド",
+   "time": "1:39.6",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": 40.5,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 1,
+   "number": 1,
+   "name": "シェリーシュシュ",
+   "time": "1:39.8",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "ラヴズプレミアム",
+   "time": "1:40.9",
+   "margin": "５",
+   "pos4": null,
+   "last3f": 42.1,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 6,
+   "name": "ラブウェイ",
+   "time": "1:41.9",
+   "margin": "５",
+   "pos4": null,
+   "last3f": 42.3,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 10,
+   "name": "カイトアザリー",
+   "time": "1:42.1",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": 42.6,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 8,
+   "number": 12,
+   "name": "モメンタムシフト",
+   "time": "1:43.0",
+   "margin": "４",
+   "pos4": null,
+   "last3f": 44.3,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 6,
+   "number": 8,
+   "name": "ハナムラサキ",
+   "time": "1:43.1",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": 44.1,
+   "popularity": null
+  }
+ ]
 }
