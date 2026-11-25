@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261125",
  "race_id": "202611252726190102",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,116 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 3,
+   "number": 3,
+   "name": "シャッタースピード",
+   "time": "1:35.2",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 7,
+   "name": "ジョウショータイプ",
+   "time": "1:35.9",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 1,
+   "number": 1,
+   "name": "デリカテッセン",
+   "time": "1:36.1",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 8,
+   "name": "ゴールドプレミアム",
+   "time": "1:36.1",
+   "margin": "ハナ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 4,
+   "name": "シンプウコエド",
+   "time": "1:36.2",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 6,
+   "name": "ファストワーカー",
+   "time": "1:36.5",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 10,
+   "name": "シトロネット",
+   "time": "1:36.7",
+   "margin": "１ １／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 2,
+   "number": 2,
+   "name": "アラジャイ",
+   "time": "1:36.9",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 9,
+   "name": "チェリースカヤ",
+   "time": "1:36.9",
+   "margin": "ハナ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 5,
+   "name": "モイエンド",
+   "time": "1:39.5",
+   "margin": "大差",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
