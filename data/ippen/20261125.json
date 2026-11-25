@@ -1,6 +1,6 @@
 {
  "date": "20261125",
- "updated": "2026-11-25 12:57",
+ "updated": "2026-11-25 13:03",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -509,8 +509,8 @@
     "field": 11,
     "popularity": 11
    },
-   "odds": 27.2,
-   "popularity": 7
+   "odds": 12.6,
+   "popularity": 6
   },
   {
    "race_id": "202611252726190108",
@@ -531,22 +531,8 @@
     "field": 12,
     "popularity": 9
    },
-   "odds": 7.4,
-   "popularity": 3
-  },
-  {
-   "race_id": "202611252726190108",
-   "results_key": "202611252726190108",
-   "venue": "園田",
-   "race_no": 8,
-   "post_time": "14:30",
-   "number": 3,
-   "name": "ミヤジマミコ",
-   "types": [
-    "aitop"
-   ],
-   "odds": 8.1,
-   "popularity": 4
+   "odds": 3.6,
+   "popularity": 1
   },
   {
    "race_id": "202611252726190108",
@@ -566,7 +552,7 @@
     "field": 10,
     "popularity": 9
    },
-   "odds": 9.0,
+   "odds": 10.3,
    "popularity": 5
   },
   {
@@ -587,8 +573,8 @@
     "field": 9,
     "popularity": 7
    },
-   "odds": 1.8,
-   "popularity": 1
+   "odds": 5.6,
+   "popularity": 3
   },
   {
    "race_id": "202611252433170201",
