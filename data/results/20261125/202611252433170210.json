@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261125",
  "race_id": "202611252433170210",
- "tries": 4,
+ "tries": 5,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 10,
+   "name": "シュテフィ",
+   "time": "1:35.5",
+   "margin": "",
+   "pos4": 3,
+   "last3f": 39.1,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 2,
+   "number": 2,
+   "name": "ココデイック",
+   "time": "1:35.7",
+   "margin": "１",
+   "pos4": 1,
+   "last3f": 39.8,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "ノーブルアクト",
+   "time": "1:35.9",
+   "margin": "１",
+   "pos4": 2,
+   "last3f": 39.8,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 7,
+   "name": "メモリードライブ",
+   "time": "1:36.1",
+   "margin": "３／４",
+   "pos4": 4,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 9,
+   "name": "ドラゴステ",
+   "time": "1:36.2",
+   "margin": "３／４",
+   "pos4": 7,
+   "last3f": 38.7,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 11,
+   "name": "タマモヒロイン",
+   "time": "1:36.4",
+   "margin": "３／４",
+   "pos4": 5,
+   "last3f": 39.9,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 6,
+   "name": "トーマステソーロ",
+   "time": "1:36.9",
+   "margin": "２ １／２",
+   "pos4": 7,
+   "last3f": 39.5,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 6,
+   "number": 8,
+   "name": "ロイヤルテール",
+   "time": "1:37.0",
+   "margin": "クビ",
+   "pos4": 5,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 5,
+   "name": "バレアリックシー",
+   "time": "1:37.0",
+   "margin": "クビ",
+   "pos4": 7,
+   "last3f": 39.8,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 12,
+   "name": "ロックマジェスティ",
+   "time": "1:37.0",
+   "margin": "同着",
+   "pos4": 11,
+   "last3f": 39.8,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 3,
+   "number": 3,
+   "name": "ロンギングナイス",
+   "time": "1:37.5",
+   "margin": "２ １／２",
+   "pos4": 10,
+   "last3f": 40.0,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 1,
+   "number": 1,
+   "name": "マローソ",
+   "time": "1:41.1",
+   "margin": "大差",
+   "pos4": 12,
+   "last3f": 44.6,
+   "popularity": null
+  }
+ ]
 }
