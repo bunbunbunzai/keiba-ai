@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261125",
  "race_id": "202611251813080212",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,160 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 3,
+   "number": 3,
+   "name": "マシュー",
+   "time": "1:27.7",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 4,
+   "number": 5,
+   "name": "ストゥディア",
+   "time": "1:28.0",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 2,
+   "number": 2,
+   "name": "ピーチピーチ",
+   "time": "1:28.3",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 6,
+   "name": "イサチルカゼニタツ",
+   "time": "1:28.5",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 5,
+   "number": 7,
+   "name": "ダイバヤタガラス",
+   "time": "1:28.5",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 10,
+   "name": "ジョセフィーナ",
+   "time": "1:28.6",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 4,
+   "name": "ゴーオンパーパス",
+   "time": "1:28.7",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 14,
+   "name": "ローアヴァンフレア",
+   "time": "1:29.4",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 1,
+   "number": 1,
+   "name": "ゴールドソニック",
+   "time": "1:29.4",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 11,
+   "name": "カイトキング",
+   "time": "1:29.4",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 6,
+   "number": 9,
+   "name": "バンボリーナ",
+   "time": "1:30.2",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 8,
+   "number": 13,
+   "name": "ブレイヴルーラー",
+   "time": "1:31.0",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "13",
+   "frame": 5,
+   "number": 8,
+   "name": "グレイスカリヨン",
+   "time": "1:31.1",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 7,
+   "number": 12,
+   "name": "デザートウインド",
+   "time": "-",
+   "margin": "中止",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
