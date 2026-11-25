@@ -1,6 +1,6 @@
 {
  "date": "20261126",
- "updated": "2026-11-25 06:12",
+ "updated": "2026-11-25 18:24",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1382,27 +1382,6 @@
    "venue": "園田",
    "race_no": 12,
    "post_time": "16:45",
-   "number": 7,
-   "name": "ザゴリ",
-   "types": [
-    "rebound"
-   ],
-   "gap_days": 14,
-   "last": {
-    "date": "2026-11-12",
-    "finish": 10,
-    "field": 12,
-    "popularity": 10
-   },
-   "odds": null,
-   "popularity": null
-  },
-  {
-   "race_id": "202611262726190212",
-   "results_key": "202611262726190212",
-   "venue": "園田",
-   "race_no": 12,
-   "post_time": "16:45",
    "number": 11,
    "name": "ボンズドゥッカ",
    "types": [
@@ -1667,8 +1646,8 @@
     "field": 14,
     "popularity": 10
    },
-   "odds": null,
-   "popularity": null
+   "odds": 11.8,
+   "popularity": 5
   },
   {
    "race_id": "202611261813080311",
@@ -1688,8 +1667,8 @@
     "field": 14,
     "popularity": null
    },
-   "odds": null,
-   "popularity": null
+   "odds": 15.2,
+   "popularity": 6
   },
   {
    "race_id": "202611261813080311",
@@ -1709,8 +1688,8 @@
     "field": 11,
     "popularity": 7
    },
-   "odds": null,
-   "popularity": null
+   "odds": 2.4,
+   "popularity": 1
   },
   {
    "race_id": "202611261813080311",
@@ -1721,7 +1700,8 @@
    "number": 10,
    "name": "ブルーメンガルテン",
    "types": [
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 35,
    "last": {
@@ -1730,8 +1710,8 @@
     "field": 12,
     "popularity": 3
    },
-   "odds": null,
-   "popularity": null
+   "odds": 20.3,
+   "popularity": 7
   },
   {
    "race_id": "202611261813080311",
@@ -1751,8 +1731,8 @@
     "field": 11,
     "popularity": 9
    },
-   "odds": null,
-   "popularity": null
+   "odds": 37.4,
+   "popularity": 12
   },
   {
    "race_id": "202611262433170307",
