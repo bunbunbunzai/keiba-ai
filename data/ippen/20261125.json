@@ -1,6 +1,6 @@
 {
  "date": "20261125",
- "updated": "2026-11-25 13:27",
+ "updated": "2026-11-25 13:33",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -730,6 +730,20 @@
    "venue": "園田",
    "race_no": 9,
    "post_time": "15:00",
+   "number": 2,
+   "name": "メイショウライズ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 17.8,
+   "popularity": 6
+  },
+  {
+   "race_id": "202611252726190109",
+   "results_key": "202611252726190109",
+   "venue": "園田",
+   "race_no": 9,
+   "post_time": "15:00",
    "number": 4,
    "name": "エルグランゴラッソ",
    "types": [
@@ -742,8 +756,8 @@
     "field": 10,
     "popularity": 3
    },
-   "odds": 34.0,
-   "popularity": 7
+   "odds": 47.8,
+   "popularity": 10
   },
   {
    "race_id": "202611252726190109",
@@ -764,8 +778,8 @@
     "field": 9,
     "popularity": 5
    },
-   "odds": 22.6,
-   "popularity": 6
+   "odds": 43.2,
+   "popularity": 9
   },
   {
    "race_id": "202611252726190109",
@@ -786,8 +800,8 @@
     "field": 12,
     "popularity": 2
    },
-   "odds": 3.2,
-   "popularity": 2
+   "odds": 1.4,
+   "popularity": 1
   },
   {
    "race_id": "202611252726190109",
@@ -807,8 +821,8 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": null,
-   "popularity": null
+   "odds": 89.3,
+   "popularity": 11
   },
   {
    "race_id": "202611252726190109",
@@ -828,8 +842,8 @@
     "field": 16,
     "popularity": 7
    },
-   "odds": 2.6,
-   "popularity": 1
+   "odds": 9.5,
+   "popularity": 3
   },
   {
    "race_id": "202611252433170202",
