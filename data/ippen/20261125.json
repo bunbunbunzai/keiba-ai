@@ -1,6 +1,6 @@
 {
  "date": "20261125",
- "updated": "2026-11-25 11:20",
+ "updated": "2026-11-25 11:22",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -194,8 +194,30 @@
     "field": 12,
     "popularity": 4
    },
-   "odds": 6.8,
+   "odds": 6.0,
    "popularity": 3
+  },
+  {
+   "race_id": "202611251813080202",
+   "results_key": "202611251813080202",
+   "venue": "浦和",
+   "race_no": 2,
+   "post_time": "12:50",
+   "number": 10,
+   "name": "ゲットデザイアー",
+   "types": [
+    "letdown",
+    "aitop"
+   ],
+   "gap_days": 20,
+   "last": {
+    "date": "2026-11-05",
+    "finish": 6,
+    "field": 12,
+    "popularity": 1
+   },
+   "odds": 9.2,
+   "popularity": 4
   },
   {
    "race_id": "202611252726190106",
