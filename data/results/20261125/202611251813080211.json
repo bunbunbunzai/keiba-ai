@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261125",
  "race_id": "202611251813080211",
- "tries": 8,
+ "tries": 2,
  "payouts": {
   "単勝": [
    {
@@ -77,9 +77,9 @@
    "name": "イッテラッシャイ",
    "time": "2:05.3",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 1,
+   "last3f": 39.5,
+   "popularity": 1
   },
   {
    "finish": "2",
@@ -88,9 +88,9 @@
    "name": "ナルカミ",
    "time": "2:06.0",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 2,
+   "last3f": 40.1,
+   "popularity": 3
   },
   {
    "finish": "3",
@@ -99,9 +99,9 @@
    "name": "モックモック",
    "time": "2:06.2",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 3,
+   "last3f": 38.7,
+   "popularity": 4
   },
   {
    "finish": "4",
@@ -110,9 +110,9 @@
    "name": "メイショウズイウン",
    "time": "2:06.3",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 4,
+   "last3f": 38.8,
+   "popularity": 2
   },
   {
    "finish": "5",
@@ -121,9 +121,9 @@
    "name": "リケアカプチーノ",
    "time": "2:06.7",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 5,
+   "last3f": 38.4,
+   "popularity": 5
   },
   {
    "finish": "6",
@@ -132,9 +132,9 @@
    "name": "ランリョウオー",
    "time": "2:07.3",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 6,
+   "last3f": 38.8,
+   "popularity": 8
   },
   {
    "finish": "7",
@@ -143,9 +143,9 @@
    "name": "アルラ",
    "time": "2:07.8",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 7,
+   "last3f": 38.7,
+   "popularity": 7
   },
   {
    "finish": "8",
@@ -154,9 +154,9 @@
    "name": "モコパンチ",
    "time": "2:08.9",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 8,
+   "last3f": 39.8,
+   "popularity": 9
   },
   {
    "finish": "9",
@@ -165,9 +165,9 @@
    "name": "ルトンワージ",
    "time": "2:11.9",
    "margin": "大差",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 9,
+   "last3f": 43.6,
+   "popularity": 6
   }
  ]
 }
