@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261125",
  "race_id": "202611251813080205",
- "tries": 5,
+ "tries": 6,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "ウインマデイラ",
    "time": "1:28.1",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 39.2,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ウィゾマニア",
    "time": "1:29.0",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 39.9,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "モーイーワヒネ",
    "time": "1:29.5",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 39.2,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "コンバットキック",
    "time": "1:30.0",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 39.1,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "イノ",
    "time": "1:30.3",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 38.7,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "シナノクリスタル",
    "time": "1:30.3",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 39.2,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "レコパンマミー",
    "time": "1:30.6",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 10,
+   "last3f": 38.5,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ヘウレシス",
    "time": "1:30.7",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 40.4,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "ヨンクン",
    "time": "1:31.0",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 39.9,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "ニシノウール",
    "time": "1:31.7",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 39.0,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "スピラヴィオ",
    "time": "1:32.0",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 41.7,
    "popularity": null
   },
   {
@@ -198,8 +198,8 @@
    "name": "ジョーリベリカ",
    "time": "1:33.2",
    "margin": "６",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 41.9,
    "popularity": null
   },
   {
@@ -209,8 +209,8 @@
    "name": "キングハービン",
    "time": "1:34.5",
    "margin": "６",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 13,
+   "last3f": 41.0,
    "popularity": null
   }
  ]
