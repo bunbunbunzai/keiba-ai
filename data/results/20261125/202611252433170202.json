@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261125",
  "race_id": "202611252433170202",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 2,
+   "number": 2,
+   "name": "フクチャンダイオウ",
+   "time": "1:39.8",
+   "margin": "",
+   "pos4": 5,
+   "last3f": 39.3,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 8,
+   "name": "マイネルカイザー",
+   "time": "1:39.8",
+   "margin": "アタマ",
+   "pos4": 3,
+   "last3f": 39.5,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 11,
+   "name": "レイナデルアイレ",
+   "time": "1:40.1",
+   "margin": "１ １／２",
+   "pos4": 1,
+   "last3f": 40.0,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 6,
+   "name": "ウインファイネスト",
+   "time": "1:40.1",
+   "margin": "クビ",
+   "pos4": 6,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 10,
+   "name": "ビオトープ",
+   "time": "1:40.3",
+   "margin": "１",
+   "pos4": 1,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 4,
+   "number": 4,
+   "name": "キタノタイキ",
+   "time": "1:40.8",
+   "margin": "２ １／２",
+   "pos4": 3,
+   "last3f": 40.6,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 12,
+   "name": "エンデューロ",
+   "time": "1:41.4",
+   "margin": "３",
+   "pos4": 7,
+   "last3f": 41.2,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "アンヌグロース",
+   "time": "1:41.6",
+   "margin": "１",
+   "pos4": 8,
+   "last3f": 40.8,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 9,
+   "name": "マッサーノ",
+   "time": "1:42.1",
+   "margin": "２ １／２",
+   "pos4": 9,
+   "last3f": 41.3,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 1,
+   "number": 1,
+   "name": "ガムピーリング",
+   "time": "1:42.5",
+   "margin": "２",
+   "pos4": 10,
+   "last3f": 41.4,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 5,
+   "number": 5,
+   "name": "メイショウウミカゼ",
+   "time": "1:42.6",
+   "margin": "クビ",
+   "pos4": 10,
+   "last3f": 41.5,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 6,
+   "number": 7,
+   "name": "ヤタガラスマヒナ",
+   "time": "1:42.8",
+   "margin": "１",
+   "pos4": 12,
+   "last3f": 41.9,
+   "popularity": null
+  }
+ ]
 }
