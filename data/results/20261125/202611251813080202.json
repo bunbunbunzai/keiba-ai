@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261125",
  "race_id": "202611251813080202",
- "tries": 4,
+ "tries": 5,
  "payouts": {
   "単勝": [
    {
@@ -67,6 +67,9 @@
     "combo": "2-11",
     "yen": 790
    }
+  ],
+  "_refund": [
+   "10"
   ]
  },
  "rows": [
@@ -77,9 +80,9 @@
    "name": "シャコンヌ",
    "time": "1:25.2",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 1,
+   "last3f": 37.8,
+   "popularity": 3
   },
   {
    "finish": "2",
@@ -88,9 +91,9 @@
    "name": "タイシタモンダロ",
    "time": "1:25.4",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 2,
+   "last3f": 38.0,
+   "popularity": 2
   },
   {
    "finish": "3",
@@ -99,9 +102,9 @@
    "name": "コロディア",
    "time": "1:25.6",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 3,
+   "last3f": 37.9,
+   "popularity": 1
   },
   {
    "finish": "4",
@@ -110,9 +113,9 @@
    "name": "ヤサカソレイユ",
    "time": "1:25.8",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 4,
+   "last3f": 38.1,
+   "popularity": 6
   },
   {
    "finish": "5",
@@ -121,9 +124,9 @@
    "name": "リュウノファントム",
    "time": "1:26.1",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 5,
+   "last3f": 38.4,
+   "popularity": 5
   },
   {
    "finish": "6",
@@ -132,9 +135,9 @@
    "name": "ニシノテンカフブ",
    "time": "1:26.6",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 9,
+   "last3f": 37.7,
+   "popularity": 7
   },
   {
    "finish": "7",
@@ -143,9 +146,9 @@
    "name": "シーギリア",
    "time": "1:26.7",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 6,
+   "last3f": 39.0,
+   "popularity": 4
   },
   {
    "finish": "8",
@@ -154,9 +157,9 @@
    "name": "シェナリオン",
    "time": "1:26.8",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 7,
+   "last3f": 38.7,
+   "popularity": 8
   },
   {
    "finish": "9",
@@ -165,9 +168,9 @@
    "name": "エースフラワー",
    "time": "1:26.9",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 8,
+   "last3f": 38.4,
+   "popularity": 9
   },
   {
    "finish": "-",
