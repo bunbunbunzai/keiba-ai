@@ -1,6 +1,6 @@
 {
  "date": "20261125",
- "updated": "2026-11-25 15:02",
+ "updated": "2026-11-25 15:08",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1201,8 +1201,8 @@
     "field": 9,
     "popularity": 5
    },
-   "odds": 20.6,
-   "popularity": 6
+   "odds": 25.5,
+   "popularity": 5
   },
   {
    "race_id": "202611252433170204",
@@ -1264,8 +1264,8 @@
     "field": 10,
     "popularity": 3
    },
-   "odds": 16.0,
-   "popularity": 4
+   "odds": 5.6,
+   "popularity": 2
   },
   {
    "race_id": "202611251813080209",
@@ -1286,8 +1286,8 @@
     "field": 12,
     "popularity": 7
    },
-   "odds": null,
-   "popularity": null
+   "odds": 4.8,
+   "popularity": 1
   },
   {
    "race_id": "202611251813080209",
@@ -1307,8 +1307,22 @@
     "field": 12,
     "popularity": 10
    },
-   "odds": 2.6,
-   "popularity": 1
+   "odds": 12.0,
+   "popularity": 8
+  },
+  {
+   "race_id": "202611251813080209",
+   "results_key": "202611251813080209",
+   "venue": "浦和",
+   "race_no": 9,
+   "post_time": "16:35",
+   "number": 10,
+   "name": "セイウンユズカ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 8.3,
+   "popularity": 5
   },
   {
    "race_id": "202611252726190112",

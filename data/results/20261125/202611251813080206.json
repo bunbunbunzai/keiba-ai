@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261125",
  "race_id": "202611251813080206",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 7,
+   "name": "キョウエイセレッソ",
+   "time": "1:37.3",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 10,
+   "name": "イエスユイキャン",
+   "time": "1:37.4",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 2,
+   "number": 2,
+   "name": "ラブミーヘンリー",
+   "time": "1:37.7",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 11,
+   "name": "ヴェントベローチェ",
+   "time": "1:38.0",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 1,
+   "number": 1,
+   "name": "ガラデラパンテラ",
+   "time": "1:38.1",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 6,
+   "name": "レバット",
+   "time": "1:38.6",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 4,
+   "name": "ナムラミック",
+   "time": "1:38.8",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "メイショウセオト",
+   "time": "1:38.8",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 12,
+   "name": "ブラックハニー",
+   "time": "1:39.3",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 5,
+   "name": "プリンセスサクラ",
+   "time": "1:39.4",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 7,
+   "number": 9,
+   "name": "パワーマジック",
+   "time": "1:40.3",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 6,
+   "number": 8,
+   "name": "トニトゥルス",
+   "time": "1:41.9",
+   "margin": "８",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
