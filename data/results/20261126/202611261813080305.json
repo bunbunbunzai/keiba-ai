@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261126",
  "race_id": "202611261813080305",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,149 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 8,
+   "number": 12,
+   "name": "ジーティーアムール",
+   "time": "1:29.2",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 1,
+   "number": 1,
+   "name": "ダイヤモンドキッス",
+   "time": "1:29.7",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 2,
+   "number": 2,
+   "name": "ロワゾブルーチヌ",
+   "time": "1:29.7",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 13,
+   "name": "アルジェナー",
+   "time": "1:29.8",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 11,
+   "name": "オランジー",
+   "time": "1:30.0",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 9,
+   "name": "アンジェマリーナ",
+   "time": "1:30.1",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 10,
+   "name": "セイウンシリウス",
+   "time": "1:30.3",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 4,
+   "number": 4,
+   "name": "レモンドロップ",
+   "time": "1:30.4",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 6,
+   "name": "ラグーンリバティ",
+   "time": "1:30.4",
+   "margin": "ハナ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 6,
+   "number": 8,
+   "name": "ミライヘホウショウ",
+   "time": "1:30.6",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 5,
+   "number": 7,
+   "name": "キミハレモネード",
+   "time": "1:30.8",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 4,
+   "number": 5,
+   "name": "ハブル",
+   "time": "1:31.4",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "13",
+   "frame": 3,
+   "number": 3,
+   "name": "コンバットトーラス",
+   "time": "1:35.2",
+   "margin": "大差",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
