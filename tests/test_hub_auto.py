@@ -142,6 +142,25 @@ def test_build_auto_after_keep_window():
     assert H.build_next(cfg, all_, K, "2026-12-25") is None, "作り直しの期間（レースの14日後まで）を過ぎたら作らない"
 
 
+def test_one_bad_race_does_not_stop_the_rest():
+    """1レースのデータがおかしくても、ほかのレースの特集まとめは作る（毎日の自動処理を止めない）。"""
+    all_, K = data()
+    real_build, real_write, wrote = H.build_next, H.write, []
+
+    def build(cfg, *a):
+        if cfg["slug"] == "keihan-hai":
+            raise StopIteration("勝ち馬の行が無い")
+        return real_build(cfg, *a)
+    try:
+        H.build_next, H.write = build, lambda slug, *a, **k: wrote.append(slug) or True
+        with contextlib.redirect_stdout(io.StringIO()) as out:
+            n = H.write_auto(all_, K, "2026-11-26")
+    finally:
+        H.build_next, H.write = real_build, real_write
+    assert "keihan-hai2026-guide" not in wrote and "stayers-stakes2026-guide" in wrote and n == len(wrote) >= 5
+    assert "keihan-hai" in out.getvalue(), "作れなかったレースは名前を出す"
+
+
 def test_next_unchanged():
     all_, K = data()
     feb = next(c for c in H.NEXT if c["series"] == "feb2027")

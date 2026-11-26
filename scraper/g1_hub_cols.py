@@ -555,6 +555,24 @@ def build_index(K: dict, year: int, today: str) -> tuple[str, str, str, str] | N
     return title, desc, lead, body
 
 
+def write_auto(all_: dict, K: dict, today: str) -> int:
+    """G1以外の重賞の特集まとめを書き、書いた本数を返す。1レースで失敗しても、ほかのレースは続ける
+    （毎日の自動処理（graded）の途中にあるので、ここで止まると重賞のデータの保存まで止まる）。"""
+    n = 0
+    for cfg in auto_cfgs(K, today):
+        try:
+            out = build_next(cfg, all_, K, today)
+            if not out:
+                continue
+            gslug, title, desc, lead, body, extra = out
+            if write(gslug, cfg["series"], cfg["hero"], title, desc, lead, body, today, first=today, extra=extra):
+                n += 1
+                print("wrote", gslug)
+        except Exception as e:  # noqa: BLE001
+            print(f"特集まとめを作れなかった（{cfg['slug']}）: {type(e).__name__} {e}")
+    return n
+
+
 def main() -> None:
     with contextlib.redirect_stdout(io.StringIO()):
         all_ = G.load_all()
@@ -570,14 +588,7 @@ def main() -> None:
         if write(gslug, cfg["series"], cfg["hero"], title, desc, lead, body, today, first=today, extra=extra):
             n += 1
             print("wrote", gslug)
-    for cfg in auto_cfgs(K, today):  # G1以外の重賞（NEXT の分を書いたあとに見るので、手で設定した金杯などとは重ならない）
-        out = build_next(cfg, all_, K, today)
-        if not out:
-            continue
-        gslug, title, desc, lead, body, extra = out
-        if write(gslug, cfg["series"], cfg["hero"], title, desc, lead, body, today, first=today, extra=extra):
-            n += 1
-            print("wrote", gslug)
+    n += write_auto(all_, K, today)  # G1以外の重賞（NEXT の分を書いたあとに見るので、手で設定した金杯などとは重ならない）
     for year in sorted({int(c["series"][-4:]) for c in NEXT}):
         idx = build_index(K, year, today)
         if idx and write(NEXT_INDEX, f"g1{year}", "g-turf-spring", *idx, today, first=today):
