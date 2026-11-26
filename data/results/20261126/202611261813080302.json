@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261126",
  "race_id": "202611261813080302",
- "tries": 5,
+ "tries": 6,
  "payouts": {
   "単勝": [
    {
@@ -67,6 +67,9 @@
     "combo": "3-7",
     "yen": 1690
    }
+  ],
+  "_refund": [
+   "9"
   ]
  },
  "rows": [
@@ -77,9 +80,9 @@
    "name": "ペントハウス",
    "time": "1:30.2",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 1,
+   "last3f": 38.9,
+   "popularity": 5
   },
   {
    "finish": "2",
@@ -88,9 +91,9 @@
    "name": "オーシンラッシュ",
    "time": "1:30.4",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 1,
+   "last3f": 39.0,
+   "popularity": 2
   },
   {
    "finish": "3",
@@ -99,9 +102,9 @@
    "name": "マロンフエルテ",
    "time": "1:30.5",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 3,
+   "last3f": 38.5,
+   "popularity": 9
   },
   {
    "finish": "4",
@@ -110,9 +113,9 @@
    "name": "ウチュウノキボウ",
    "time": "1:30.8",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 5,
+   "last3f": 38.4,
+   "popularity": 3
   },
   {
    "finish": "5",
@@ -121,9 +124,9 @@
    "name": "ジューンスマッシュ",
    "time": "1:30.9",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 4,
+   "last3f": 39.1,
+   "popularity": 1
   },
   {
    "finish": "6",
@@ -132,9 +135,9 @@
    "name": "トーケンジンロック",
    "time": "1:30.9",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 9,
+   "last3f": 37.3,
+   "popularity": 4
   },
   {
    "finish": "7",
@@ -143,9 +146,9 @@
    "name": "ランワールドワン",
    "time": "1:31.2",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 11,
+   "last3f": 37.6,
+   "popularity": 11
   },
   {
    "finish": "8",
@@ -154,9 +157,9 @@
    "name": "エミネントキャリア",
    "time": "1:31.3",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 7,
+   "last3f": 39.1,
+   "popularity": 6
   },
   {
    "finish": "9",
@@ -165,9 +168,9 @@
    "name": "プリヤンカー",
    "time": "1:31.3",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 6,
+   "last3f": 39.6,
+   "popularity": 7
   },
   {
    "finish": "10",
@@ -176,9 +179,9 @@
    "name": "エスケイドラゴン",
    "time": "1:31.3",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 8,
+   "last3f": 39.3,
+   "popularity": 12
   },
   {
    "finish": "11",
@@ -187,9 +190,9 @@
    "name": "カペラスター",
    "time": "1:31.6",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 9,
+   "last3f": 38.8,
+   "popularity": 8
   },
   {
    "finish": "12",
@@ -198,9 +201,9 @@
    "name": "サンドロック",
    "time": "1:34.9",
    "margin": "大差",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 12,
+   "last3f": 41.3,
+   "popularity": 10
   },
   {
    "finish": "-",
