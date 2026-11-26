@@ -1,6 +1,6 @@
 {
  "date": "20261126",
- "updated": "2026-11-26 16:28",
+ "updated": "2026-11-26 16:29",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1696,6 +1696,20 @@
    "venue": "浦和",
    "race_no": 10,
    "post_time": "17:10",
+   "number": 6,
+   "name": "クラウディルックス",
+   "types": [
+    "aitop"
+   ],
+   "odds": 4.6,
+   "popularity": 3
+  },
+  {
+   "race_id": "202611261813080310",
+   "results_key": "202611261813080310",
+   "venue": "浦和",
+   "race_no": 10,
+   "post_time": "17:10",
    "number": 8,
    "name": "ビナラオカイ",
    "types": [
@@ -1783,7 +1797,8 @@
    "number": 7,
    "name": "アルゴフィリオ",
    "types": [
-    "letdown"
+    "letdown",
+    "aitop"
    ],
    "gap_days": 14,
    "last": {
@@ -1836,6 +1851,20 @@
    },
    "odds": 14.3,
    "popularity": 8
+  },
+  {
+   "race_id": "202611262218150207",
+   "results_key": "202611262218150207",
+   "venue": "金沢",
+   "race_no": 7,
+   "post_time": "17:40",
+   "number": 4,
+   "name": "ジェッディンデデン",
+   "types": [
+    "aitop"
+   ],
+   "odds": 4.7,
+   "popularity": 3
   },
   {
    "race_id": "202611261813080311",
