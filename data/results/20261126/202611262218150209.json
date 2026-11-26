@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261126",
  "race_id": "202611262218150209",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,105 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 7,
+   "name": "シュガーシャック",
+   "time": "1:37.7",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "エレクトロン",
+   "time": "1:38.3",
+   "margin": "３",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "ロングロングロング",
+   "time": "1:38.8",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 6,
+   "name": "ラブソング",
+   "time": "1:39.6",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 9,
+   "name": "ウインルナロッサ",
+   "time": "1:39.7",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "ヨドノストーリー",
+   "time": "1:39.9",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 1,
+   "number": 1,
+   "name": "ビックハート",
+   "time": "1:41.1",
+   "margin": "６",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 8,
+   "name": "カンプウ",
+   "time": "1:41.1",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 4,
+   "number": 4,
+   "name": "ムーンライトアリア",
+   "time": "1:41.4",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
