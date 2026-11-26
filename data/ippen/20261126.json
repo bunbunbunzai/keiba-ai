@@ -1,6 +1,6 @@
 {
  "date": "20261126",
- "updated": "2026-11-26 11:07",
+ "updated": "2026-11-26 11:12",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -140,6 +140,20 @@
    "venue": "園田",
    "race_no": 3,
    "post_time": "11:40",
+   "number": 1,
+   "name": "ベビーヴァギー",
+   "types": [
+    "aitop"
+   ],
+   "odds": 6.3,
+   "popularity": 3
+  },
+  {
+   "race_id": "202611262726190203",
+   "results_key": "202611262726190203",
+   "venue": "園田",
+   "race_no": 3,
+   "post_time": "11:40",
    "number": 9,
    "name": "テクノドラゴン",
    "types": [
@@ -152,8 +166,22 @@
     "field": 10,
     "popularity": 9
    },
-   "odds": 26.5,
-   "popularity": 7
+   "odds": 36.5,
+   "popularity": 9
+  },
+  {
+   "race_id": "202611262726190204",
+   "results_key": "202611262726190204",
+   "venue": "園田",
+   "race_no": 4,
+   "post_time": "12:10",
+   "number": 4,
+   "name": "ブレッシングアイル",
+   "types": [
+    "aitop"
+   ],
+   "odds": 13.4,
+   "popularity": 6
   },
   {
    "race_id": "202611262726190204",
@@ -173,8 +201,8 @@
     "field": 12,
     "popularity": 7
    },
-   "odds": 6.6,
-   "popularity": 4
+   "odds": 7.5,
+   "popularity": 5
   },
   {
    "race_id": "202611262726190204",
@@ -194,8 +222,22 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": 2.9,
+   "odds": 3.7,
    "popularity": 1
+  },
+  {
+   "race_id": "202611261813080301",
+   "results_key": "202611261813080301",
+   "venue": "浦和",
+   "race_no": 1,
+   "post_time": "12:20",
+   "number": 8,
+   "name": "コパノブロンド",
+   "types": [
+    "aitop"
+   ],
+   "odds": 10.7,
+   "popularity": 5
   },
   {
    "race_id": "202611261813080301",
@@ -215,8 +257,8 @@
     "field": 9,
     "popularity": 7
    },
-   "odds": null,
-   "popularity": null
+   "odds": 36.8,
+   "popularity": 10
   },
   {
    "race_id": "202611262726190205",
