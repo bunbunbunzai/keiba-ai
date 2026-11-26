@@ -1,6 +1,6 @@
 {
  "date": "20261126",
- "updated": "2026-11-26 11:58",
+ "updated": "2026-11-26 12:08",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -278,8 +278,8 @@
     "field": 11,
     "popularity": 11
    },
-   "odds": 22.8,
-   "popularity": 8
+   "odds": 13.0,
+   "popularity": 6
   },
   {
    "race_id": "202611262726190205",
@@ -299,8 +299,8 @@
     "field": 12,
     "popularity": 6
    },
-   "odds": 15.6,
-   "popularity": 6
+   "odds": 14.5,
+   "popularity": 7
   },
   {
    "race_id": "202611262726190205",
@@ -320,8 +320,8 @@
     "field": 10,
     "popularity": 1
    },
-   "odds": 2.5,
-   "popularity": 1
+   "odds": 3.9,
+   "popularity": 2
   },
   {
    "race_id": "202611262726190205",
@@ -342,22 +342,8 @@
     "field": 10,
     "popularity": 3
    },
-   "odds": 14.1,
-   "popularity": 5
-  },
-  {
-   "race_id": "202611262726190205",
-   "results_key": "202611262726190205",
-   "venue": "園田",
-   "race_no": 5,
-   "post_time": "12:45",
-   "number": 12,
-   "name": "サクラヴィグール",
-   "types": [
-    "aitop"
-   ],
-   "odds": 6.3,
-   "popularity": 3
+   "odds": 9.1,
+   "popularity": 4
   },
   {
    "race_id": "202611261813080302",
