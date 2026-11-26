@@ -1,14 +1,14 @@
 {
  "date": "20261126",
- "updated": "2026-11-26 13:04",
+ "updated": "2026-11-26 13:34",
  "races_total": 48,
- "races_scored": 7,
- "stake": 700,
- "return": 330,
- "roi": 47.1,
- "hit_races": 3,
+ "races_scored": 9,
+ "stake": 900,
+ "return": 530,
+ "roi": 58.9,
+ "hit_races": 5,
  "honmei_win": 3,
- "honmei_top3": 3,
+ "honmei_top3": 4,
  "races": [
   {
    "race_id": "202611261813080301",
@@ -30,11 +30,11 @@
    "race_id": "202611261813080302",
    "confidence": "C",
    "honmei": 1,
-   "honmei_finish": null,
+   "honmei_finish": "5",
    "top3": [
-    null,
-    null,
-    null
+    3,
+    7,
+    12
    ],
    "stake": 100,
    "return": 0,
@@ -53,10 +53,12 @@
     null
    ],
    "stake": 100,
-   "return": 0,
-   "roi": 0.0,
-   "hits": [],
-   "voided": true
+   "return": 100,
+   "roi": 100.0,
+   "hits": [
+    "複勝 11 100円"
+   ],
+   "voided": false
   },
   {
    "race_id": "202611261813080304",
@@ -92,7 +94,7 @@
   },
   {
    "race_id": "202611261813080306",
-   "confidence": "C",
+   "confidence": "B",
    "honmei": 2,
    "honmei_finish": null,
    "top3": [
@@ -204,7 +206,7 @@
   },
   {
    "race_id": "202611262218150201",
-   "confidence": "B",
+   "confidence": "A",
    "honmei": 9,
    "honmei_finish": null,
    "top3": [
@@ -396,7 +398,7 @@
   },
   {
    "race_id": "202611262433170301",
-   "confidence": "C",
+   "confidence": "A",
    "honmei": 3,
    "honmei_finish": null,
    "top3": [
@@ -676,17 +678,19 @@
    "race_id": "202611262726190206",
    "confidence": "B",
    "honmei": 10,
-   "honmei_finish": null,
+   "honmei_finish": "2",
    "top3": [
-    null,
-    null,
-    null
+    1,
+    10,
+    9
    ],
    "stake": 100,
-   "return": 0,
-   "roi": 0.0,
-   "hits": [],
-   "voided": true
+   "return": 100,
+   "roi": 100.0,
+   "hits": [
+    "複勝 10 100円"
+   ],
+   "voided": false
   },
   {
    "race_id": "202611262726190207",
@@ -706,7 +710,7 @@
   },
   {
    "race_id": "202611262726190208",
-   "confidence": "A",
+   "confidence": "B",
    "honmei": 2,
    "honmei_finish": null,
    "top3": [
