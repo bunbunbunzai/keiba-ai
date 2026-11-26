@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261126",
  "race_id": "202611262433170310",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -77,7 +77,7 @@
    "name": "ゴールデンリング",
    "time": "55.1",
    "margin": "",
-   "pos4": null,
+   "pos4": 1,
    "last3f": 36.0,
    "popularity": null
   },
@@ -88,7 +88,7 @@
    "name": "エイトワン",
    "time": "55.5",
    "margin": "２",
-   "pos4": null,
+   "pos4": 3,
    "last3f": 35.6,
    "popularity": null
   },
@@ -99,7 +99,7 @@
    "name": "ブライトファントム",
    "time": "56.1",
    "margin": "３",
-   "pos4": null,
+   "pos4": 3,
    "last3f": 36.9,
    "popularity": null
   },
@@ -110,7 +110,7 @@
    "name": "ジェイエルバルカー",
    "time": "56.2",
    "margin": "１／２",
-   "pos4": null,
+   "pos4": 2,
    "last3f": 37.1,
    "popularity": null
   },
@@ -121,7 +121,7 @@
    "name": "ロレンツォ",
    "time": "56.4",
    "margin": "１",
-   "pos4": null,
+   "pos4": 9,
    "last3f": 35.4,
    "popularity": null
   },
@@ -132,7 +132,7 @@
    "name": "コパカツ",
    "time": "56.7",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 8,
    "last3f": 37.2,
    "popularity": null
   },
@@ -143,7 +143,7 @@
    "name": "ラグナキリア",
    "time": "56.7",
    "margin": "クビ",
-   "pos4": null,
+   "pos4": 6,
    "last3f": 36.8,
    "popularity": null
   },
@@ -154,7 +154,7 @@
    "name": "ヴェッツラー",
    "time": "56.7",
    "margin": "アタマ",
-   "pos4": null,
+   "pos4": 6,
    "last3f": 36.8,
    "popularity": null
   },
@@ -165,7 +165,7 @@
    "name": "プリモパイソン",
    "time": "57.0",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 5,
    "last3f": 37.3,
    "popularity": null
   },
@@ -176,7 +176,7 @@
    "name": "ジュンフィレンツェ",
    "time": "57.1",
    "margin": "３／４",
-   "pos4": null,
+   "pos4": 9,
    "last3f": 36.2,
    "popularity": null
   },
@@ -187,7 +187,7 @@
    "name": "ディサーニング",
    "time": "57.4",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 11,
    "last3f": 36.3,
    "popularity": null
   },
