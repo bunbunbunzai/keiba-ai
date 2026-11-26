@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261126",
  "race_id": "202611262433170304",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 4,
+   "name": "ファインヒメ",
+   "time": "1:37.9",
+   "margin": "",
+   "pos4": 5,
+   "last3f": 39.4,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 1,
+   "number": 1,
+   "name": "ロジシーザ",
+   "time": "1:38.2",
+   "margin": "１ １／２",
+   "pos4": 1,
+   "last3f": 40.0,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 12,
+   "name": "ノヴァレジーナ",
+   "time": "1:38.6",
+   "margin": "２",
+   "pos4": 2,
+   "last3f": 40.3,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 7,
+   "name": "ナガノキングダイヤ",
+   "time": "1:38.7",
+   "margin": "３／４",
+   "pos4": 2,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 11,
+   "name": "ロードリュイール",
+   "time": "1:38.8",
+   "margin": "クビ",
+   "pos4": 8,
+   "last3f": 39.8,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 6,
+   "name": "オーケーエレガンス",
+   "time": "1:38.8",
+   "margin": "アタマ",
+   "pos4": 5,
+   "last3f": 40.3,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 10,
+   "name": "ウインモアナ",
+   "time": "1:39.0",
+   "margin": "１",
+   "pos4": 7,
+   "last3f": 40.5,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "オーパパ",
+   "time": "1:39.3",
+   "margin": "１ １／２",
+   "pos4": 2,
+   "last3f": 40.8,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "ニシキビブラビブレ",
+   "time": "1:39.9",
+   "margin": "３",
+   "pos4": 11,
+   "last3f": 40.7,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 6,
+   "number": 8,
+   "name": "ヴィスメンティス",
+   "time": "1:40.0",
+   "margin": "１／２",
+   "pos4": 9,
+   "last3f": 41.5,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 7,
+   "number": 9,
+   "name": "ウェルックス",
+   "time": "1:40.3",
+   "margin": "１ １／２",
+   "pos4": 10,
+   "last3f": 41.2,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 5,
+   "number": 5,
+   "name": "スムースオペレター",
+   "time": "1:43.1",
+   "margin": "大差",
+   "pos4": 11,
+   "last3f": 43.8,
+   "popularity": null
+  }
+ ]
 }
