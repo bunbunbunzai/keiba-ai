@@ -16,6 +16,10 @@ sys.path.insert(0, str(ROOT / "scraper"))
 import g1_hub_cols as H  # noqa: E402
 import graded_cols as G  # noqa: E402
 
+sys.path.insert(0, str(ROOT / "site"))
+import column  # noqa: E402
+import weekly  # noqa: E402
+
 _KA = {}
 
 
@@ -144,6 +148,116 @@ def test_next_unchanged():
     out = H.build_next(feb, all_, K, "2026-11-26")
     assert out and "前哨戦" in out[1] and "hub" not in out[5], "手で設定した来年の特集まとめは、これまでどおり"
     assert "/column/g1-nittei-2027/" in out[4]
+
+
+
+# ---------- サイト側（site/column.py・site/weekly.py） ----------
+@contextlib.contextmanager
+def site_state():
+    """登録した自動の特集まとめと weekly の状態を、テストのあとで元に戻す。"""
+    saved = dict(fr=dict(weekly.FEATURE_RACE), ids=column.FEATURE_IDS, grp=dict(column.FEATURE_GROUP),
+                 auto=set(weekly.AUTO_HUBS), K=weekly._K, feat=dict(weekly.FEAT), today=weekly.TODAY)
+    try:
+        yield
+    finally:
+        weekly.FEATURE_RACE.clear()
+        weekly.FEATURE_RACE.update(saved["fr"])
+        column.FEATURE_IDS = saved["ids"]
+        column.FEATURE_GROUP.clear()
+        column.FEATURE_GROUP.update(saved["grp"])
+        weekly.AUTO_HUBS.clear()
+        weekly.AUTO_HUBS.update(saved["auto"])
+        weekly._K, weekly.TODAY = saved["K"], saved["today"]
+        weekly.FEAT.clear()
+        weekly.FEAT.update(saved["feat"])
+
+
+def auto_col(race, year="2026", date="20261205", **over):
+    c = {"slug": f"{race}{year}-guide", "series": f"{race}{year}", "hub": "auto", "race": race, "race_date": date,
+         "race_grade": "G3", "draft": False, "order": 1, "title": race}
+    c.update(over)
+    return c
+
+
+def test_register_auto_hubs():
+    with site_state():
+        got = column.register_auto_hubs([auto_col("x"), {"slug": "y", "series": "y2026", "draft": False},
+                                         auto_col("z", draft=True)])
+        assert got == ("x2026",)
+        assert weekly.FEATURE_RACE["x2026"] == "x" and "x2026" in column.FEATURE_IDS and "x2026" in weekly.AUTO_HUBS
+        assert "y2026" not in column.FEATURE_IDS and "z2026" not in column.FEATURE_IDS, "自動でない記事・下書きは登録しない"
+        assert column.FEATURE_GROUP["jusho"] == ("x2026",)
+        assert "jc2026" in column.FEATURE_IDS and weekly.FEATURE_RACE["jc2026"] == "japan-cup", "手で作った特集はそのまま"
+        assert column.register_auto_hubs([auto_col("w")]) == ("w2026",)
+        assert "x2026" not in weekly.FEATURE_RACE and "x2026" not in column.FEATURE_IDS, "何度呼んでも、最後に渡した分だけ"
+        assert column.FEATURE_IDS.count("w2026") == 1
+    assert "w2026" not in weekly.FEATURE_RACE
+
+
+def test_register_never_overrides_manual_series():
+    with site_state():
+        got = column.register_auto_hubs([auto_col("nakayama-kimpai", series="nkimpai2027")])
+        assert got == () and weekly.FEATURE_RACE["nkimpai2027"] == "nakayama-kimpai", "手で設定した特集の名前と重なったら登録しない"
+
+
+def test_hidden_hub():
+    assert column._hidden_hub({"hub": "auto", "race_grade": "G3"}) is True
+    assert column._hidden_hub({"hub": "auto", "race_grade": "J・G2"}) is True
+    assert column._hidden_hub({"hub": "auto", "race_grade": "G1"}) is False
+    assert column._hidden_hub({"race_grade": "G3"}) is False, "手で作った特集まとめ（金杯など）は隠さない"
+
+
+def test_feature_rel_for_g1_page():
+    jc = {"slug": "jc2026-guide", "series": "jc2026", "order": 1, "race_date": "20261129", "draft": False}
+    jc2 = {"slug": "jc2026-waku", "series": "jc2026", "order": 2, "draft": False}
+    arima = {"slug": "arima2026-guide", "series": "arima2026", "order": 1, "race_date": "20261227", "draft": False}
+    st, ch, old = auto_col("stayers-stakes", date="20261205"), auto_col("capella-stakes", date="20261213"), auto_col("musashino-stakes", date="20261114")
+    with site_state():
+        weekly._K = {}
+        column.register_auto_hubs([st, ch, old])
+        rel = dict(column._feature_rel(jc, [jc, jc2, arima, st, ch, old], "20261126"))
+    assert [o["slug"] for o in rel["この特集のほかの記事"]] == ["jc2026-waku"]
+    assert [o["slug"] for o in rel["ほかの特集"]] == ["arima2026-guide"], "G2・G3の特集まとめで、G1の特集が押し出されない"
+    assert [o["slug"] for o in rel["近く行われる重賞（G2・G3）の特集まとめ"]] == ["stayers-stakes2026-guide", "capella-stakes2026-guide"], \
+        "これから行われるレースを日付順に（終わったレースは出さない）"
+
+
+def test_feature_rel_for_auto_page():
+    jc = {"slug": "jc2026-guide", "series": "jc2026", "order": 1, "race_date": "20261129", "draft": False}
+    eliza = {"slug": "eliza2026-guide", "series": "eliza2026", "order": 1, "race_date": "20261115", "draft": False}
+    aki = {"slug": "aki-g1-2026", "series": "aki2026", "order": 1, "draft": False}
+    st, ch = auto_col("stayers-stakes", date="20261205", race_name="ステイヤーズステークス"), auto_col("capella-stakes", date="20261213")
+    data2, data1 = ({"slug": f"stayers-stakes-{k}", "series": "gdata", "race": "stayers-stakes", "order": n, "draft": False}
+                    for k, n in (("jinx", 4), ("kako-kekka", 1)))
+    other_data = {"slug": "capella-stakes-jinx", "series": "gdata", "race": "capella-stakes", "order": 1, "draft": False}
+    with site_state():
+        weekly._K = {}
+        column.register_auto_hubs([st, ch])
+        rel = column._feature_rel(st, [jc, eliza, aki, st, ch, data2, data1, other_data], "20261126")
+    heads = [h for h, _ in rel]
+    assert heads == ["ステイヤーズステークスのデータ記事", "近く行われるG1の特集まとめ", "ほかの重賞（G2・G3）の特集まとめ"]
+    d = dict(rel)
+    assert [o["slug"] for o in d["ステイヤーズステークスのデータ記事"]] == ["stayers-stakes-kako-kekka", "stayers-stakes-jinx"]
+    assert [o["slug"] for o in d["近く行われるG1の特集まとめ"]] == ["jc2026-guide"], "終わったレース・日付の無い特集は出さない"
+    assert [o["slug"] for o in d["ほかの重賞（G2・G3）の特集まとめ"]] == ["capella-stakes2026-guide"]
+
+
+def test_next_hub_prefers_g1_from_g1_pages():
+    with site_state():
+        weekly._K = {"stayers-stakes": {2026: {"date": "20261205"}}, "champions-cup": {2026: {"date": "20261206"}}}
+        weekly.TODAY = "20261130"
+        column.register_auto_hubs([auto_col("stayers-stakes")])
+        weekly.FEAT.clear()
+        weekly.FEAT.update({"stayers-stakes": [{"slug": "stayers-stakes2026-guide", "series": "stayers-stakes2026"}],
+                            "champions-cup": [{"slug": "champions-cup2026-guide", "series": "jcd2026"}]})
+        assert weekly._next_hub("20261129")[0] == "champions-cup2026-guide", "G1の特集まとめの「次は」は、次のG1"
+        assert weekly._next_hub("20261129", auto=True)[0] == "stayers-stakes2026-guide", "G2・G3の特集まとめからは、いちばん近いレース"
+
+
+def test_sched_name_expands_abbr():
+    assert weekly._full_name("中山牝馬S") == "中山牝馬ステークス"
+    assert weekly._full_name("阪神C") == "阪神カップ"
+    assert weekly._full_name("京阪杯") == "京阪杯"
 
 
 if __name__ == "__main__":

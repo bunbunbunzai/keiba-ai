@@ -2990,7 +2990,7 @@ def build() -> None:
     except Exception:  # noqa: BLE001
         _cols = []
     _feat = "".join(f"- [{head}]({BASE_URL}/column/#{sid})：{note}\n" for sid, head, note in column.FEATURE_SERIES
-                    if any(c.get("series") == sid for c in _cols))
+                    if any(c.get("series") == sid or c.get("series") in column.FEATURE_GROUP.get(sid, ()) for c in _cols))
     _data = "".join(f"- [{c['title']}]({BASE_URL}/column/{c['slug']}/)\n" for c in _cols if c.get("series") in ("g1kiroku", "year2026", "umadata"))
     _more = (f"\n## 調べもの\n\n- [競馬用語集]({BASE_URL}/glossary/)：馬券・レース・展開の言葉の意味\n- [競馬場ガイド]({BASE_URL}/venue/)：中央・地方の競馬場ごとのAI予想の成績と当日の傾向\n"
              f"- [コース別のデータ]({BASE_URL}/course/)\n- [騎手別のデータ]({BASE_URL}/jockey/)\n- [AI予想の限界と注意点]({BASE_URL}/limits/)\n"

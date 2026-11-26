@@ -394,13 +394,70 @@ FEATURE_SERIES = [
     ("umadata", "競走馬のデータ（毛色・名前・セリ）", "JRAで走っている3歳以上の馬の競走馬情報を1頭ずつ調べて、毛色の割合、馬名の付け方と冠名、セリで取引された馬の成績を数えた。"),
     ("jbc2026", "特集：JBC2026（金沢・門別）", "11月3日に行われたJBC4競走の結果と、このサイトのAI予想の振り返り。"),
     ("g12027", "特集：2027年のG1・重賞", "2027年のJRAのG1の日程と、各レースの特集まとめ（日程・前哨戦の結果・過去10年の傾向）。レースの約5か月前から順に公開している。"),
+    ("jusho", "重賞の特集まとめ（G2・G3）", "G1以外のJRAの重賞を、レースの約5週間前から1レースずつまとめている。日程と去年の結果、過去10年の人気・枠・騎手の傾向と勝ち馬。"),
 ]
 # 2027年の特集まとめ（1レース1シリーズ。scraper/g1_hub_cols.py の NEXT、site/weekly.py の FEATURE_RACE と同じ名前）。
 # コラムの一覧では、1レースずつ見出しを立てると長くなるので、「特集：2027年のG1・重賞」（g12027）の下にレースの日付順でまとめる
 FEATURE_2027 = ("nkimpai2027", "kkimpai2027", "feb2027", "takamatsu2027", "osaka2027", "oka2027", "ngj2027", "satsuki2027",
                 "tenharu2027", "nhk2027", "vm2027", "oaks2027", "derby2027", "yasuda2027", "takara2027")
-FEATURE_GROUP = {"g12027": FEATURE_2027}
-FEATURE_IDS = tuple(sid for sid, _, _ in FEATURE_SERIES) + FEATURE_2027
+FEATURE_GROUP = {"g12027": FEATURE_2027, "jusho": ()}
+_BASE_IDS = tuple(sid for sid, _, _ in FEATURE_SERIES) + FEATURE_2027
+FEATURE_IDS = _BASE_IDS  # register_auto_hubs が、G1以外の重賞の特集まとめ（自動）の分を足す
+
+
+def register_auto_hubs(cols: list[dict] | None = None) -> tuple[str, ...]:
+    """G1以外の重賞の特集まとめ（scraper/g1_hub_cols.py が作る。頭書きに hub: auto）を、特集として登録する：
+    weekly.FEATURE_RACE（series → 重賞の slug）・FEATURE_IDS・FEATURE_GROUP["jusho"]（コラムの一覧の見出し）。
+    登録した series をレースの日付順で返す。何度呼んでも、最後に渡した記事の分だけが登録された状態になる。
+    手で設定した特集（weekly.FEATURE_RACE にもとからある名前）は上書きしない。"""
+    global FEATURE_IDS
+    import weekly  # noqa: PLC0415
+    for sid in list(weekly.AUTO_HUBS):
+        weekly.FEATURE_RACE.pop(sid, None)
+    weekly.AUTO_HUBS.clear()
+    cols = columns() if cols is None else cols
+    hubs = sorted(((c.get("race_date") or "", c["series"], c["race"]) for c in cols
+                   if not c.get("draft") and c.get("hub") == "auto" and c.get("race") and re.search(r"\d{4}$", str(c.get("series") or ""))
+                   and c["series"] not in weekly.FEATURE_RACE))
+    got = tuple(dict.fromkeys(sid for _, sid, _ in hubs))
+    for _, sid, race in hubs:
+        weekly.FEATURE_RACE[sid] = race
+        weekly.AUTO_HUBS.add(sid)
+    FEATURE_GROUP["jusho"] = got
+    FEATURE_IDS = _BASE_IDS + got
+    return got
+
+
+def _hidden_hub(c: dict) -> bool:
+    """Googleに載せない特集まとめ：G1以外の重賞の、自動で作った特集まとめ（2026-11-26〜）。
+    Bingの検索とAIの回答の入口にするためのページで、Googleには量産と見られないよう、重賞のデータ記事と同じく noindex にしてサイトマップから外す。"""
+    return c.get("hub") == "auto" and (c.get("race_grade") or "") not in ("G1", "J・G1")
+
+
+def _feature_rel(c: dict, pub: list[dict], tk: str) -> list[tuple[str, list[dict]]]:
+    """特集の記事の下に並べる関連リスト：[(見出し, 記事)]。tk は今日（YYYYMMDD）。
+    G1などの特集：この特集のほかの記事・ほかの特集（6本。G2・G3の特集まとめは入れない）・近く行われるG2・G3の特集まとめ（4本）。
+    G2・G3の特集まとめ（自動）：そのレースのデータ記事・近く行われるG1の特集まとめ（4本）・ほかのG2・G3の特集まとめ（4本）。"""
+    import weekly  # noqa: PLC0415
+    autos = set(FEATURE_GROUP.get("jusho", ()))
+    day = lambda o: weekly.hub_date(o.get("series")) or o.get("race_date") or ""
+    order = lambda o: int(o.get("order") or 0)
+
+    def upcoming(pool: list[dict], n: int) -> list[dict]:
+        return [o for _, o in sorted(((day(o), o) for o in pool if day(o) and day(o) >= tk), key=lambda t: (t[0], t[1]["slug"]))][:n]
+    firsts = [o for o in pub if o is not c and str(o.get("order")) == "1" and o.get("series") in FEATURE_IDS and o.get("series") != c.get("series")]
+    if c.get("series") in autos:
+        data = sorted((o for o in pub if o.get("series") == "gdata" and o.get("race") == c.get("race")), key=order)
+        g1 = [o for o in firsts if o["series"] not in autos and (o.get("race_grade") or "G1") in ("G1", "J・G1")]
+        return [(f"{c.get('race_name') or 'このレース'}のデータ記事", data), ("近く行われるG1の特集まとめ", upcoming(g1, 4)),
+                ("ほかの重賞（G2・G3）の特集まとめ", upcoming([o for o in firsts if o["series"] in autos], 4))]
+    same = sorted((o for o in pub if o is not c and o.get("series") == c.get("series")), key=order)
+    # ほかの特集：これから行われるレースの特集（日付の近い順）を先に、6つまで
+    others = [o for o in firsts if o["series"] not in autos]
+    hd = {o["slug"]: day(o) for o in others}
+    others = sorted(others, key=lambda o: (not hd[o["slug"]], hd[o["slug"]] < tk, hd[o["slug"]] if hd[o["slug"]] >= tk else str(99999999 - int(hd[o["slug"]] or 0))))[:6]
+    return [("この特集のほかの記事", same), ("ほかの特集", others),
+            ("近く行われる重賞（G2・G3）の特集まとめ", upcoming([o for o in firsts if o["series"] in autos], 4))]
 
 
 def hero_of(c: dict) -> str:
@@ -653,13 +710,7 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
             related = (rel_block(f"{c.get('race_name', 'このレース')}のデータ記事", same, False) + rel_block("ほかの重賞のデータ記事", near, False)
                        + rel_block("最近の重賞の全頭診断", autos_new[:3], False))
         elif c.get("series") in FEATURE_IDS:  # 特集の記事は、同じ特集の記事を先に並べ、ほかの特集の入口（order 1）を続ける
-            same = sorted((o for o in pub if o is not c and o.get("series") == c.get("series")), key=lambda o: int(o.get("order") or 0))
-            others = [o for o in pub if o is not c and o.get("series") in FEATURE_IDS and o.get("series") != c.get("series") and str(o.get("order")) == "1"]
-            # 特集が増えたので、これから行われるレースの特集（日付の近い順）を先に、6つまで。レースの日は weekly.hub_date から
-            import weekly as _wk  # noqa: PLC0415
-            _hd = {o["slug"]: (_wk.hub_date(o.get("series")) or o.get("race_date") or "") for o in others}
-            others = sorted(others, key=lambda o: (not _hd[o["slug"]], _hd[o["slug"]] < _tk, _hd[o["slug"]] if _hd[o["slug"]] >= _tk else str(99999999 - int(_hd[o["slug"]] or 0))))[:6]
-            related = (rel_block("この特集のほかの記事", same, False) + rel_block("ほかの特集", others, False)
+            related = ("".join(rel_block(h, items, False) for h, items in _feature_rel(c, pub, _tk))
                        + rel_block("最近の重賞の全頭診断", autos_new[:3], False))
         else:
             related = rel_block("関連するコラム", similar(c, 6), True) + rel_block("最近の重賞の全頭診断", autos_new[:3], False)
@@ -743,7 +794,7 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
             html_ = html_.replace(
                 "<p class='meta'>公開", f"<picture>{src}<img class='hero' src='/assets/{hero}.jpg' alt='' width='1200' height='800' fetchpriority='high'></picture><p class='meta'>公開", 1)
             ld["image"] = base_url + og_img
-        hide = c["draft"] or _hidden_gdata(c)
+        hide = c["draft"] or _hidden_gdata(c) or _hidden_hub(c)
         if hide and not c["draft"]:
             BING_EXTRA[path] = mod_iso  # Googleにだけ載せないが、Bingなどには更新を知らせる
         write(path, page(f"{title} | {site_name}", html_, path, desc=desc, noindex=True if c["draft"] else ("google" if hide else False),
