@@ -1,0 +1,128 @@
+{
+ "fetched": "2026-11-27 02:53",
+ "date": "20261128",
+ "race_no": 11,
+ "venue": "京都",
+ "post_time": "15:40",
+ "title_text": "第13回 ラジオNIKKEI杯京都2歳ステークス 2歳 オープン （国際）（指定） 馬齢",
+ "grade": "G3",
+ "race_name": "ラジオNIKKEI杯京都2歳ステークス",
+ "distance": 2000,
+ "surface": "芝",
+ "course_text": "コース： 2,000 メートル （芝・右）",
+ "numbered": false,
+ "field": 11,
+ "horses": [
+  {
+   "frame": null,
+   "number": null,
+   "name": "アーケントレイル",
+   "horse_url": "/JRADB/accessU.html?CNAME=pw01dud002024106928/F9",
+   "sex_age": "牡2",
+   "weight": 56.0,
+   "jockey": "岩田 望来",
+   "trainer": "矢作 芳人"
+  },
+  {
+   "frame": null,
+   "number": null,
+   "name": "エトワールハマー",
+   "horse_url": "/JRADB/accessU.html?CNAME=pw01dud002024100737/9A",
+   "sex_age": "牡2",
+   "weight": 56.0,
+   "jockey": "武 豊",
+   "trainer": "武 幸四郎"
+  },
+  {
+   "frame": null,
+   "number": null,
+   "name": "ゴールデンプロミス",
+   "horse_url": "/JRADB/accessU.html?CNAME=pw01dud002024107196/EA",
+   "sex_age": "牡2",
+   "weight": 56.0,
+   "jockey": "坂井 瑠星",
+   "trainer": "矢作 芳人"
+  },
+  {
+   "frame": null,
+   "number": null,
+   "name": "サノノキセキ",
+   "horse_url": "/JRADB/accessU.html?CNAME=pw01dud002024100178/27",
+   "sex_age": "牡2",
+   "weight": 56.0,
+   "jockey": "小林 美駒",
+   "trainer": "尾形 和幸"
+  },
+  {
+   "frame": null,
+   "number": null,
+   "name": "シャローチャンプ",
+   "horse_url": "/JRADB/accessU.html?CNAME=pw01dud002024106271/CD",
+   "sex_age": "牡2",
+   "weight": 56.0,
+   "jockey": "C.デムーロ",
+   "trainer": "安田 翔伍"
+  },
+  {
+   "frame": null,
+   "number": null,
+   "name": "ショウナンバトレニ",
+   "horse_url": "/JRADB/accessU.html?CNAME=pw01dud002024107009/82",
+   "sex_age": "牡2",
+   "weight": 56.0,
+   "jockey": "松山 弘平",
+   "trainer": "高野 友和"
+  },
+  {
+   "frame": null,
+   "number": null,
+   "name": "ドラゴンバルド",
+   "horse_url": "/JRADB/accessU.html?CNAME=pw01dud002024106649/F9",
+   "sex_age": "牡2",
+   "weight": 56.0,
+   "jockey": "J.モレイラ",
+   "trainer": "福永 祐一"
+  },
+  {
+   "frame": null,
+   "number": null,
+   "name": "ネーロノワール",
+   "horse_url": "/JRADB/accessU.html?CNAME=pw01dud002024100638/DC",
+   "sex_age": "牝2",
+   "weight": 55.0,
+   "jockey": "川田 将雅",
+   "trainer": "斉藤 崇史"
+  },
+  {
+   "frame": null,
+   "number": null,
+   "name": "ノヴァヴェローチェ",
+   "horse_url": "/JRADB/accessU.html?CNAME=pw01dud002024106455/DB",
+   "sex_age": "牡2",
+   "weight": 56.0,
+   "jockey": "北村 友一",
+   "trainer": "上村 洋行"
+  },
+  {
+   "frame": null,
+   "number": null,
+   "name": "フェイマスジャズ",
+   "horse_url": "/JRADB/accessU.html?CNAME=pw01dud002024102965/24",
+   "sex_age": "牝2",
+   "weight": 55.0,
+   "jockey": "杉原 誠人",
+   "trainer": "大和田 成"
+  },
+  {
+   "frame": null,
+   "number": null,
+   "name": "ポルトブルー",
+   "horse_url": "/JRADB/accessU.html?CNAME=pw01dud002024103455/0E",
+   "sex_age": "牡2",
+   "weight": 56.0,
+   "jockey": "西村 淳也",
+   "trainer": "浜田 多実雄"
+  }
+ ],
+ "source": "jra"
+}
