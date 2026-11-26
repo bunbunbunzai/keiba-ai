@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261126",
  "race_id": "202611261813080305",
- "tries": 4,
+ "tries": 5,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "ジーティーアムール",
    "time": "1:29.2",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 38.7,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ダイヤモンドキッス",
    "time": "1:29.7",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 39.0,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ロワゾブルーチヌ",
    "time": "1:29.7",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 38.1,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "アルジェナー",
    "time": "1:29.8",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 39.3,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "オランジー",
    "time": "1:30.0",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 10,
+   "last3f": 37.5,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "アンジェマリーナ",
    "time": "1:30.1",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 39.0,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "セイウンシリウス",
    "time": "1:30.3",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 12,
+   "last3f": 38.3,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "レモンドロップ",
    "time": "1:30.4",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 39.8,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "ラグーンリバティ",
    "time": "1:30.4",
    "margin": "ハナ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 39.9,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "ミライヘホウショウ",
    "time": "1:30.6",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 38.9,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "キミハレモネード",
    "time": "1:30.8",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 39.7,
    "popularity": null
   },
   {
@@ -198,8 +198,8 @@
    "name": "ハブル",
    "time": "1:31.4",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 41.2,
    "popularity": null
   },
   {
@@ -209,8 +209,8 @@
    "name": "コンバットトーラス",
    "time": "1:35.2",
    "margin": "大差",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 13,
+   "last3f": 43.5,
    "popularity": null
   }
  ]
