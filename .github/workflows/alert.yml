@@ -5,7 +5,7 @@ name: alert (自動処理が失敗したら知らせる)
 # 取り消し（次の実行に追い越された公開など）は失敗に数えない。
 on:
   workflow_run:
-    workflows: ["daily (毎日の自動取得)", "live (レースごとの結果・回収率の即時集計)", "pages (サイトの生成と公開)", "social (X・Instagramへの自動投稿)", "graded (重賞の過去成績を集めてデータ記事を作る)"]
+    workflows: ["daily (毎日の自動取得)", "live (レースごとの結果・回収率の即時集計)", "pages (サイトの生成と公開)", "social (X・Instagramへの自動投稿)", "graded (重賞の過去成績を集めてデータ記事を作る)", "size (サイトの大きさの見張り)"]
     types: [completed]
 
 permissions:

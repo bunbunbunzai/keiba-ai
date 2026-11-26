@@ -36,6 +36,7 @@ import horses
 import monthly
 import weekly
 import glossdata
+import sitekit
 import ippen as IPPEN  # scraper/（strategy が sys.path に入れる）
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -108,7 +109,7 @@ var b=document.querySelector('.rcap-all');if(b)b.addEventListener('click',open);
 try{var sv=JSON.parse(localStorage.getItem('filters')||'{}');if((sv.venue&&sv.venue!=='all')||(sv.conf&&sv.conf!=='all'))open();}catch(e){}})();
 (function(){var hl=document.querySelector('main ul.hl');if(!hl)return;
 function ga(n,p){try{if(window.gtag)gtag('event',n,p||{})}catch(e){}}
-var ans=document.querySelector('main p.answer'),hs=[].slice.call(document.querySelectorAll('main section.card>h2'));
+var ans=document.querySelector('main p.answer'),hs=[].slice.call(document.querySelectorAll('main section.card>h2:not(.zkh)'));
 if(ans&&hs.length>3){var ul=document.createElement('ul');ul.className='rtoc';ul.setAttribute('aria-label','このページの目次');
  hs.forEach(function(h,i){var c=h.cloneNode(true);[].forEach.call(c.querySelectorAll('small,.tag,span'),function(x){x.remove();});var t=c.textContent.trim();if(!t)return;if(!h.id)h.id='s'+i;
   var li=document.createElement('li'),a=document.createElement('a');a.href='#'+h.id;a.textContent=t;a.addEventListener('click',function(){ga('race_toc',{to:t});});li.appendChild(a);ul.appendChild(li);});
@@ -306,6 +307,7 @@ GLOSSARY = [
     ("bias", "トラックバイアス", "その日の馬場で、先行馬が残りやすいか、内枠が有利かなどの偏り。その日の午前のレース結果から見極め、傾向がはっきりしているときだけ午後の予想に使う。"),
     ("roi", "回収率", "払戻金の合計÷購入金額の合計×100（%）。100%を超えれば勝ち。このサイトでは、外れたレースも含めて、すべての買い目を1点100円ずつ買ったとして計算している。"),
     ("torigami", "トリガミ", "馬券は当たったが、払戻が買った金額を下回ること。「的中」でも収支はマイナス。"),
+    ("motogaeshi", "元返し", "馬券は当たったが、払戻が買った金額と同じで、収支が0円になること。1倍台の人気馬の複勝で起きやすい（複勝の払戻は最低でも100円）。"),
     ("formation", "3連複フォーメーション", "1頭目◎、2頭目〇▲、3頭目は印全部、という組み合わせの3連複。このサイトでは11月2日〜10日に買っていたが、11月11日にやめた（平均の回収率は◎の単複と同程度で、ぶれがはるかに大きかった）。"),
     ("gensen", "厳選レース", "自信度A（◎の補正勝率50%以上）のレース。全体の1割ほどで、成績を別に集計している。買い目は他のレースと同じ◎の単複1点。"),
     ("ippen", "一変候補", "休み明け・前走で大敗したが以前は好走していた馬・前走で人気を裏切った人気薄など、成績が一変するかもしれない馬。実験として毎日記録しているが、予想や成績には数えていない。"),
@@ -378,10 +380,17 @@ def banner(slug: str, alt: str = "") -> str:
             f"loading='eager' fetchpriority='high' decoding='async'></picture></div>")
 
 
+NOINDEX_PAGES: dict[str, str] = {}  # Google にだけ載せないページ → その設定に変わった日（"" は最初から）。/sitemap-noindex.xml を作る
+
+
 def page(title: str, body: str, path: str, desc: str = "", noindex: bool | str = False, head_extra: str = "",
-         og_image: str = "/og/default.jpg") -> str:
+         og_image: str = "/og/default.jpg", hidden: str | None = None) -> str:
     """noindex=True はどの検索にも載せない（下書き・見送りなど）。noindex="google" は Google の検索にだけ載せない
-    （2026-11-23〜。Googleの評価のために数を絞るページ用。BingやChatGPTなどの検索からは今までどおり見える）。"""
+    （2026-11-23〜。Googleの評価のために数を絞るページ用。BingやChatGPTなどの検索からは今までどおり見える）。
+    hidden は、そのページが Google に載せない設定へ変わった日（YYYY-MM-DD）。"" は生まれたときから載せないページ。
+    省くと sitekit.NOINDEX_SINCE（馬・騎手・データ記事をまとめて載せない設定にした日）。"""
+    if noindex == "google":
+        NOINDEX_PAGES[path] = sitekit.NOINDEX_SINCE if hidden is None else hidden
     d = desc or "AIが日本の競馬（JRA・地方）の全レースを毎日予想し、外れも含めた全予想の回収率を公開しています。"
     robots = ('<meta name="robots" content="noindex">' if noindex is True
               else '<meta name="robots" content="max-image-preview:large">'
@@ -401,8 +410,6 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool | str =
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{BASE_URL}{og_image}">
 <meta name="theme-color" content="#146b45"><link rel="manifest" href="/manifest.webmanifest">
 {FAVICON}<link rel="alternate" type="application/rss+xml" title="{SITE_NAME}" href="/feed.xml">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@800&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@800&display=swap"></noscript>
 <link rel="stylesheet" href="/style.css?v={ASSET_V}">
 {head_extra}
 </head><body data-built="{BUILT_ISO}">
@@ -416,6 +423,7 @@ def page(title: str, body: str, path: str, desc: str = "", noindex: bool | str =
 <a class="totop" href="#main" hidden aria-label="ページの先頭へ">↑</a>
 <footer class="wrap foot">
 <p>本サイトの予想は情報提供を目的としたもので、的中や利益を保証するものではありません。馬券の購入はご自身の判断と責任で行ってください。20歳未満の方は馬券を購入できません。</p>
+<p class="help">馬券を買いすぎてしまう不安があるときは、<a href="https://www.jra.go.jp/news/other/izon.html" target="_blank" rel="noopener">JRAの案内する相談先（公営競技ギャンブル依存症カウンセリングセンター）</a>へ。</p>
 <p>出走表や結果など正式な情報は、各主催者の発表をご確認ください。成績は、すべての買い目を1点100円ずつ買ったとして計算しています。</p>
 <p class="support">このサイトは個人が運営しています。サーバー代やX投稿のAPI代の支援は <a href="{OFUSE_URL}" target="_blank" rel="noopener">OFUSE（投げ銭・ファンレター）</a> から。支援の有無で予想の内容や公開範囲は変わりません。</p>
 <p class="sns">重賞の予想と大きな的中は <a href="{X_URL}" target="_blank" rel="noopener me">X（@zentou_log）</a> でも配信中</p>
@@ -527,9 +535,9 @@ def horse_name(p: dict, num) -> str:
 
 
 def race_label(p: dict) -> str:
-    # 全角の「Ｃ３」などは半角にそろえる（一覧の race_short と同じ表記にする）
-    name = extra.nfkc(p.get("race_name") or p["_race"].get("race_name") or p["_race"].get("title_text") or "")
-    return f"{venue_of(p)}{race_no(p)}R {' '.join(name.split())}".strip()
+    # 全角の「Ｃ３」などは半角にそろえ、同じ語の繰り返し（園田・盛岡の「C2二 C2二 3歳以上」）と、区分だけの「重賞」を外す
+    name = sitekit.tidy_race_name(p.get("race_name") or p["_race"].get("race_name") or p["_race"].get("title_text") or "")
+    return f"{venue_of(p)}{race_no(p)}R {name}".strip()
 
 
 NOW_KEY = ""  # build() の最初に設定（YYYYMMDDHHMM・日本時間）。発走前かどうかの判定に使う
@@ -794,6 +802,12 @@ def race_hidden(date: str, p: dict) -> bool:
     return bool(lim) and date <= lim
 
 
+def race_hidden_since(date: str, p: dict) -> str:
+    """race_hidden のレースが、Google に載せない設定へ変わった日（YYYY-MM-DD）。地方は 2026-11-20、中央は 11-23 に決まりを入れた。"""
+    jra = venue_of(p) in JRA_VENUES or str(p.get("race_id", "")).startswith("jra")
+    return sitekit.hidden_since(date, HIDE_JRA_AFTER if jra else HIDE_LOCAL_AFTER, "2026-11-23" if jra else "2026-11-20")
+
+
 def race_page(date: str, p: dict, prev_next: tuple) -> str:
     r = p["_race"]
     mk = mark_map(p)
@@ -855,12 +869,13 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
     if sc and "stake" in sc and not sc.get("voided"):
         hit = sc["return"] > 0
         tg = 0 < sc["return"] < sc["stake"]
+        even = hit and sc["return"] == sc["stake"]
         res_html = (f"<section class='card'><h2>結果</h2><p>1〜3着：{esc(' - '.join(str(x) for x in top3))}"
                     f"／◎は{esc(sc.get('honmei_finish') or '-')}着</p>"
-                    f"<p class='big {'tg' if tg else 'hit' if hit else 'miss'}'>{'的中（トリガミ：払戻が購入額を下回る）' if tg else '的中' if hit else '不的中'}　購入{sc['stake']:,}円・払戻{sc['return']:,}円・"
+                    f"<p class='big {'tg' if tg else 'hit' if hit else 'miss'}'>{'的中（トリガミ：払戻が購入額を下回る）' if tg else '的中（元返し：払戻が購入額と同じ）' if even else '的中' if hit else '不的中'}　購入{sc['stake']:,}円・払戻{sc['return']:,}円・"
                     f"このレースの回収率{roi_txt(sc['stake'], sc['return'])}（収支{sc['return'] - sc['stake']:+,}円）</p>"
                     + "".join(f"<p>{esc(x)}</p>" for x in sc.get("hits", []))
-                    + (f"<h3>回顧</h3><div class='kaiko'>{zk('joy' if hit and not tg else 'sorry', 48)}<p><b>全頭くん</b>{esc(rv['text'])}</p></div>" if (rv := load_json(ROOT / "data" / "reviews" / date / f"{p['race_id']}.json")) and rv.get("text") else "")
+                    + (f"<h3>回顧</h3><div class='kaiko'>{zk('joy' if hit and not tg and not even else 'sorry', 48)}<p><b>全頭くん</b>{esc(rv['text'])}</p></div>" if (rv := load_json(ROOT / "data" / "reviews" / date / f"{p['race_id']}.json")) and rv.get("text") else "")
                     + (f"<p class='meta'>{esc(SCORE_UPDATED.get(date))}時点の結果</p>" if SCORE_UPDATED.get(date) else "") + "</section>")
     gname0 = p.get("race_name") or r.get("race_name") or r.get("title_text") or ""
     g0 = extra.grade_of(r, gname0)
@@ -998,8 +1013,9 @@ def race_page(date: str, p: dict, prev_next: tuple) -> str:
     _done = any(str(x.get("finish") or "").isdigit() for x in (p.get("_result") or {}).get("rows") or [])
     desc = (answer_sentence(date, p) + (f"{_cond}。" if _cond else "") + (f"相手は{_sub}。" if _sub else "")
             + "全頭の評価点・短評と買い目" + ("、結果と払戻" if _done else "") + "を掲載。")
-    return page(title, body, path, desc=desc, noindex=True if p.get("confidence") == "見送り" else ("google" if race_hidden(date, p) else False),
-                head_extra="".join(jsonld(x) for x in ld), og_image=race_og(date, p))
+    hide = race_hidden(date, p)
+    return page(title, body, path, desc=desc, noindex=True if p.get("confidence") == "見送り" else ("google" if hide else False),
+                head_extra="".join(jsonld(x) for x in ld), og_image=race_og(date, p), hidden=race_hidden_since(date, p) if hide else None)
 
 
 FEATURES = [  # トップに出す特集（期間限定）：(表示する最終日, リンク, 見出し, 説明)。日付の近い順に並べ、最初に当てはまる1つを出す
@@ -1119,9 +1135,8 @@ def race_short(p: dict, n: int = 18) -> str:
     """一覧用の短いレース名（重賞は正式名、それ以外は条件名を切り詰め）。"""
     name = p.get("race_name") or p["_race"].get("race_name") or p["_race"].get("title_text") or ""
     name = " ".join(extra.nfkc(name).split())
-    g = extra.grade_of(p["_race"], name)
-    if g:
-        name = extra.clean_name(name)
+    g = extra.grade_of(p["_race"], name)  # 格付けは整える前の名前で見る（「重賞」の語で見分けるレースがある）
+    name = extra.clean_name(name) if g else sitekit.tidy_race_name(name)
     return name[:n] + ("…" if len(name) > n else "")
 
 
@@ -1268,12 +1283,8 @@ def race_item(date: str, p: dict) -> str:
     sc = scored(p)
     badge = ""
     if sc and sc["stake"]:
-        if not sc["return"]:
-            badge = f"<span class='res miss'>不的中 −{sc['stake']:,}円</span>"
-        elif sc["return"] < sc["stake"]:
-            badge = f"<span class='res tg'>的中 {sc['return'] - sc['stake']:+,}円（トリガミ）</span>"
-        else:
-            badge = f"<span class='res hit'>的中 {sc['return'] - sc['stake']:+,}円・{roi_txt(sc['stake'], sc['return'])}</span>"
+        cls, txt = sitekit.result_badge(sc["stake"], sc["return"], roi_txt(sc["stake"], sc["return"]))
+        badge = f"<span class='res {cls}'>{esc(txt)}</span>"
     hon = p.get("marks", {}).get("◎")
     hon_txt = "見送り" if p.get("confidence") == "見送り" else f"◎{hon} {horse_name(p, hon)}"
     odds_txt = ""
@@ -1554,8 +1565,9 @@ def gensen_day(date: str, preds: list[dict]) -> str:
     kp = (f"<div class='gkpi'><div><b>{esc(act['hit'])}</b><span>的中率</span></div><div><b>{esc(act['top3'])}</b><span>◎の3着内率</span></div>"
           f"<div><b>{esc(act['roi'])}</b><span>回収率</span></div><div><b>{act['n']}</b><span>レース（{int(GENSEN_FROM[4:6])}/{int(GENSEN_FROM[6:8])}〜）</span></div></div>"
           if act.get("n") else "")
-    if not a:
-        return f"<section class='card gensen-box'>{head}<p>{when}は◎の補正勝率が50%に届くレースが無い。</p>{expl}</section>"
+    if not a:  # 無い日に大きな枠を出すと、スマホの最初の画面がそれで埋まる（2026-11-26〜1行に）
+        return (f"<p class='meta gensen-none'>{when}の厳選レース（◎の{term('adjpct', '補正勝率')}50%以上）は無し。"
+                f"{esc(rec)}<a href='/results/#gensen'>厳選レースの成績</a></p>")
     return (f"<section class='card gensen-box'>{head}{kp}<ul class='races rlist'>"
             + "".join(race_item(date, p) for p in a) + f"</ul>{expl}</section>")
 
@@ -1745,6 +1757,42 @@ def _period_html(rows: list[dict], venue_of_race: dict, full: bool) -> str:
             + (f"<section class='card'><h2>月別</h2><p>{month_sentence}</p><div class='scroll'>{table(monthly_, '月')}</div></section>" if full else "")
             + (f"<section class='card'><h2>券種別</h2>{column.stats(STATS_FROM)[1]['table_bets']}</section>" if full else "")
             + f"<section class='card'><h2>日別</h2><div class='scroll'>{table(daily, '日付')}</div></section>")
+
+
+def baseline_section(by_date: dict) -> str:
+    """買い方別のページ：「1番人気の馬を買うだけ」の回収率と、このサイトの買い目を同じレースで比べる（2026-11-26〜）。
+    人気は発走の約8分前に記録した単勝の人気（data/final_odds）。記録が無いレースと、払戻が無効のレースは比べない。"""
+    rows = []
+    days = [d for d in sorted(by_date) if d >= RULE_FROM]
+    for d in days:
+        for p in by_date[d]:
+            sc = p.get("_score") or {}
+            if sc.get("voided"):
+                continue
+            fo = load_json(ROOT / "data" / "final_odds" / d / f"{p['race_id']}.json") or {}
+            rows.append({"d": d, "pop": fo.get("popularity"), "payouts": (p.get("_result") or {}).get("payouts"),
+                         "stake": sc.get("stake") or 0, "ret": sc.get("return") or 0, "honmei": (p.get("marks") or {}).get("◎"),
+                         "jra": venue_of(p) in JRA_VENUES or str(p.get("race_id", "")).startswith("jra")})
+    b = sitekit.favorite_baseline(rows)
+    if not b:
+        return ""
+    last = max(r["d"] for r in rows if r["pop"] and (r["payouts"] or {}).get("複勝"))  # 比べた最後の日（今日の分は人気の記録がまだ無いことが多い）
+    # スマホでは表の右側が隠れるので、このサイトの買い目を左に置く
+    trs = "".join(f"<tr><td>{lab}</td><td><b>{x['site']:.1f}%</b></td><td>{x['fuku']:.1f}%</td><td>{x['tan']:.1f}%</td><td>{x['n']}</td>"
+                  f"<td>{round(x['same'] / x['n'] * 100)}%</td></tr>"
+                  for key, lab in (("all", "全体"), ("jra", "中央"), ("nar", "地方")) if (x := b.get(key)))
+    a = b["all"]
+    gap = a["site"] - max(a["fuku"], a["tan"])
+    verdict = (f"この期間は、このサイトの買い目（{a['site']:.1f}%）が、1番人気を買うだけの回収率を{gap:.1f}ポイント上回っている。" if gap > 0 else
+               f"この期間は、このサイトの買い目（{a['site']:.1f}%）が、1番人気を買うだけの回収率（複勝{a['fuku']:.1f}%・単勝{a['tan']:.1f}%）に届いていない。")
+    return (f"<section class='card' id='baseline'><h2>比べる基準：1番人気を買うだけなら</h2>"
+            f"<p>{int(RULE_FROM[4:6])}月{int(RULE_FROM[6:8])}日〜{int(last[4:6])}月{int(last[6:8])}日の{a['n']}レースで、1番人気の馬を100円ずつ買った場合と、"
+            f"このサイトの買い目の回収率を、同じレースで比べた。{esc(verdict)}</p>"
+            "<div class='scroll'><table><thead><tr><th>区分</th><th>このサイトの買い目</th><th>1番人気の複勝</th><th>1番人気の単勝</th><th>レース数</th><th>◎が1番人気</th></tr></thead>"
+            f"<tbody>{trs}</tbody></table></div>"
+            "<p class='meta'>人気は発走の約8分前に記録した単勝の人気で、最終の人気と少し違うことがある（記録が無いレースは比べていない）。"
+            "単勝・複勝は売上の2割ほどが差し引かれてから払い戻されるので、1番人気を買い続けても回収率はふつう100%に届かない。"
+            "AIの予想に意味があるかは、まずこの基準を上回れるかで見られる。</p></section>")
 
 
 def results_page(rows: list[dict], venue_of_race: dict) -> str:
@@ -2164,6 +2212,11 @@ def limits_page(t: dict, worst_venue: tuple[str, str] | None) -> str:
 
 
 SITE_CHANGES = [
+    ("2026-11-26", "「買い方別の回収率」に、1番人気の馬を買うだけの場合との比較を載せた（11月11日からの、発走前の人気が分かるレース。今のところ、このサイトの買い目はこの基準に届いていない）。"
+                   "払戻が購入額と同じだったレースは「的中・元返し ±0円」と書くようにした。園田・盛岡のレース名で同じ語が2回並んでいたのを直した。"
+                   "レースページの目次に「×」が出ていたのと、朝のまだ発走前の時間に「最終更新から時間がたっています」と出ていたのを直した。"
+                   "厳選レースが無い日は、大きな枠をやめて1行にした。見出しの書体を端末の明朝体にして、読み込み中に画面がずれないようにした。"
+                   "フッターに、馬券を買いすぎてしまう不安があるときの相談先を載せた。コラムをRSSでも配信するようにした。G1の特集まとめから馬券の買い方の説明へ進めるようにした。"),
     ("2026-11-25", "引退した名馬のページを8頭ぶん作った（オジュウチョウサン、タニノギムレット、ワンダーアキュート、アドマイヤジャパン、ローズキングダム、エイシンフラッシュ、ヒルノダムール、トランセンド）。主な成績、引退後の暮らし、応援のしかたを、出典つきで載せている。"),
     ("2026-11-25", "ガイド「引退した競走馬を支援する方法」を追加した。ふるさと納税まとめの説明文のうち、牧場の場所などの書き方が不正確だったところを直した（Yogiboヴェルサイユリゾートファームは日高町にあり、グッズは平取町の返礼品）。"),
     ("2026-11-25", "「馬に関わるふるさと納税まとめ」のページを作った。引退した競走馬の支援、馬に会える券や競馬場の指定席、名馬ごとのグッズ（オジュウチョウサン、タニノギムレット、オグリキャップなど）、美浦・栗東のトレーニング・センターの町の品を種類別に載せている（43件）。リンクは広告（楽天ふるさと納税）で、ページの上にその旨を書いた。"),
@@ -2281,15 +2334,15 @@ CSS = """.ask .alog{margin-top:10px}.ask .qa{border-top:1px solid var(--line);pa
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 "BIZ UDPGothic","Hiragino Sans","Noto Sans JP",system-ui,sans-serif;font-variant-numeric:tabular-nums}
 a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}main p a:not([class]),.col li a:not([class]),.card ul:not([class]) li>a:not([class]),.foot p:not(.sitemap-links):not(.sns) a{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}.foot .sitemap-links a,.foot .sns a{display:inline-block;padding:6px 2px;min-height:24px}:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
 .wrap{max-width:960px;margin:0 auto;padding:0 16px}
-h1,h2,h3,.kpis b,.marks b,.sum{font-family:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif;font-weight:800;letter-spacing:.01em}
+h1,h2,h3,.kpis b,.marks b,.sum{font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP","Noto Serif CJK JP",serif;font-weight:800;letter-spacing:.01em}
 h1{font-size:28px;line-height:1.35;margin:22px 0 6px}h2{font-size:19px;line-height:1.4;margin:22px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--rule)}h3{font-size:16px;margin:18px 0 6px}
 p{margin:8px 0}
 /* ヘッダー：帳面の表紙 */
 .top{background:var(--panel);border-bottom:3px solid var(--rule)}.top .wrap{padding:0 16px}
 .bar{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;padding:12px 0 8px}.bar .logo{flex:1 1 240px}.roi-badge{margin-left:auto}
 .logo{display:flex;align-items:center;gap:12px;color:var(--fg);line-height:1.25}.logo:hover{text-decoration:none}.logo img{display:block}
-.logo span{display:flex;flex-direction:column}.logo b{font-family:"Shippori Mincho B1",serif;font-weight:800;font-size:22px;letter-spacing:.04em}.logo small{font-size:12px;color:var(--mut);margin-top:2px}
-.roi-badge{font-size:13px;color:var(--mut);white-space:nowrap;border-left:1px solid var(--line);padding-left:12px}.roi-badge b{color:var(--fg);font-size:18px;font-family:"Shippori Mincho B1",serif;margin-left:2px}.roi-badge:hover{text-decoration:none}
+.logo span{display:flex;flex-direction:column}.logo b{font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP","Noto Serif CJK JP",serif;font-weight:800;font-size:22px;letter-spacing:.04em}.logo small{font-size:12px;color:var(--mut);margin-top:2px}
+.roi-badge{font-size:13px;color:var(--mut);white-space:nowrap;border-left:1px solid var(--line);padding-left:12px}.roi-badge b{color:var(--fg);font-size:18px;font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP","Noto Serif CJK JP",serif;margin-left:2px}.roi-badge:hover{text-decoration:none}
 nav{display:flex;gap:0 2px;font-size:14px;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:0 12px}nav::-webkit-scrollbar{display:none}
 nav a{white-space:nowrap;color:var(--fg);padding:8px 10px 9px;border-bottom:3px solid transparent;margin-bottom:-3px}nav a:hover{text-decoration:none;color:var(--acc)}nav a.on{border-bottom-color:var(--acc);color:var(--acc);font-weight:700}
 /* 本文 */
@@ -2370,12 +2423,12 @@ table{border-collapse:collapse;width:100%;font-size:14px;background:var(--panel)
 /* 目玉レース */
 .hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:0 20px;align-items:center;background:var(--panel);border-top:3px solid var(--rule);border-bottom:1px solid var(--line);margin:0 0 14px;padding:14px}
 .hero img{width:100%;height:auto;display:block;border:1px solid var(--line)}.hero h2{border:0;padding:0;margin:2px 0 4px;font-size:22px}.hero h2 a{color:var(--fg)}.hero .meta{margin:0 0 8px}
-.aitop{font-size:14px;background:var(--acc-soft);padding:8px 10px;margin:8px 0;line-height:1.7}.hlabel{margin:0;font-size:13px;color:var(--mut)}.hmarks{display:flex;flex-wrap:wrap;gap:4px 18px;margin:4px 0;font-weight:700}.hmarks b{color:var(--acc);font-size:20px;margin-right:4px;font-family:"Shippori Mincho B1",serif}
+.aitop{font-size:14px;background:var(--acc-soft);padding:8px 10px;margin:8px 0;line-height:1.7}.hlabel{margin:0;font-size:13px;color:var(--mut)}.hmarks{display:flex;flex-wrap:wrap;gap:4px 18px;margin:4px 0;font-weight:700}.hmarks b{color:var(--acc);font-size:20px;margin-right:4px;font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP","Noto Serif CJK JP",serif}
 .hres{margin:6px 0 0;font-weight:700;font-size:15px}.hres.miss{color:var(--miss)}
 @media (max-width:720px){.hero{grid-template-columns:1fr;gap:10px;padding:12px}.hero h2{font-size:20px}}
 /* レース行 */
 .rlist a{display:grid;grid-template-columns:52px minmax(0,1.4fr) minmax(0,1fr) 30px auto;gap:2px 10px;align-items:center;padding:8px 10px 8px 8px}
-.rb{display:inline-block;background:var(--rule);color:var(--bg);font-weight:700;font-size:13px;text-align:center;padding:3px 0;border-radius:2px;line-height:1.2;font-family:"Shippori Mincho B1",serif}
+.rb{display:inline-block;background:var(--rule);color:var(--bg);font-weight:700;font-size:13px;text-align:center;padding:3px 0;border-radius:2px;line-height:1.2;font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP","Noto Serif CJK JP",serif}
 .rinfo{display:flex;flex-direction:column;min-width:0}.rname{font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.rsub{color:var(--mut);font-size:12px;white-space:nowrap}
 .rlist .hon{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.rlist .res{text-align:right;white-space:nowrap}
 .rlist li.gone .rb{background:var(--mut)}.rlist li.next .rb{background:var(--acc)}.rlist li.next .rsub::after{content:"　次に発走";color:var(--acc);font-weight:700}
@@ -2392,7 +2445,7 @@ h1 small{display:block;font-size:14px;color:var(--mut);font-family:"Hiragino San
 
 .notice{background:var(--acc-soft);border-left:4px solid var(--acc);padding:8px 12px;margin:12px 0;font-size:14px}.notice.stale{background:#fff4d6;border-left-color:#c98a00;color:#5a3d00}.odds{display:block;color:var(--mut);font-size:12px;font-weight:400}.rlist .hon{white-space:normal}
 
-.term{color:inherit;border-bottom:1px dotted var(--acc);text-decoration:none}.term:hover{color:var(--acc);text-decoration:none}.plain{background:var(--panel);border:1px solid var(--line);padding:8px 12px;margin:0 0 10px;font-size:15px}.gloss dt{font-weight:700;margin-top:14px;font-family:"Shippori Mincho B1",serif;font-size:17px}.gloss dd{margin:2px 0 0;padding-left:0}.log{padding-left:1.2em}.log li{margin:6px 0}
+.term{color:inherit;border-bottom:1px dotted var(--acc);text-decoration:none}.term:hover{color:var(--acc);text-decoration:none}.plain{background:var(--panel);border:1px solid var(--line);padding:8px 12px;margin:0 0 10px;font-size:15px}.gloss dt{font-weight:700;margin-top:14px;font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP","Noto Serif CJK JP",serif;font-size:17px}.gloss dd{margin:2px 0 0;padding-left:0}.log{padding-left:1.2em}.log li{margin:6px 0}
 
 .srch{position:relative;margin:0 0 6px}.srch input{width:100%;max-width:360px;font:inherit;font-size:14px;padding:6px 10px;border:1px solid var(--line);border-radius:2px;background:var(--panel);color:var(--fg)}.sres{position:absolute;z-index:20;left:0;top:100%;width:100%;max-width:360px;background:var(--panel);border:1px solid var(--line);box-shadow:0 6px 18px rgba(0,0,0,.08)}.sres a{display:flex;flex-direction:column;padding:6px 10px;color:var(--fg);border-bottom:1px solid var(--line)}.sres a:hover{background:var(--acc-soft);text-decoration:none}.sres small{color:var(--mut);font-size:12px}.sres p{padding:6px 10px}#sr a{display:flex;justify-content:space-between;gap:12px;padding:8px 10px;border-bottom:1px solid var(--line);color:var(--fg)}#sr{background:var(--panel);border-top:2px solid var(--rule)}
 
@@ -2404,7 +2457,7 @@ h1 small{display:block;font-size:14px;color:var(--mut);font-family:"Hiragino San
 th.sortable{cursor:pointer;user-select:none}th.sortable:hover{color:var(--acc)}th[data-dir=asc]::after{content:" ▲";font-size:10px}th[data-dir=desc]::after{content:" ▼";font-size:10px}
 .cd{color:var(--acc);font-weight:700}
 .bets .bo{margin-left:.5em;font-size:12px;color:var(--mut);font-weight:400}.betnote{font-size:13px;color:var(--mut);margin:6px 0 0;line-height:1.6}.mtop{margin:10px 0 4px;padding:10px 14px;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--acc)}.mtop .marks{margin:0 0 2px}.mtop .subs{margin:0 0 4px}.mtop .mconf{margin:0;font-size:14px}.mtop a.gensen{margin-left:8px;font-size:12px;border:1px solid var(--acc);color:var(--acc);padding:1px 8px;border-radius:2px;font-weight:700}
-.gkpi{display:flex;flex-wrap:wrap;gap:4px 22px;margin:6px 0 8px}.gkpi div{display:flex;flex-direction:column}.gkpi b{font-family:"Shippori Mincho B1",serif;font-size:24px;line-height:1.2;color:var(--acc)}.gkpi span{font-size:12px;color:var(--mut)}
+.gkpi{display:flex;flex-wrap:wrap;gap:4px 22px;margin:6px 0 8px}.gkpi div{display:flex;flex-direction:column}.gkpi b{font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP","Noto Serif CJK JP",serif;font-size:24px;line-height:1.2;color:var(--acc)}.gkpi span{font-size:12px;color:var(--mut)}
 .live0{margin:10px 0}.hits h2 small{font-size:12px;color:var(--mut);font-weight:400;margin-left:8px}.rcap li:nth-child(n+13){display:none}.rmore{margin:8px 0 0}details.fold summary{cursor:pointer;color:var(--acc);font-size:14px}
 @media (max-width:720px){.logo small{display:none}.bar{padding:8px 0 6px;flex-wrap:nowrap}.bar .logo{flex:1 1 auto}.logo img{width:36px;height:36px}.roi-badge{flex-basis:auto!important;margin-left:auto!important;text-align:right;white-space:nowrap}.roi-badge .rn{display:none}ul.rtoc{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px}ul.rtoc li{flex:0 0 auto}.gkpi{gap:4px 16px}.gkpi b{font-size:20px}.mtop .marks{gap:2px 18px}.mtop .marks b{font-size:22px}.mtop .marks span{font-size:16px}.mtop .marks .m:first-child span{font-size:18px}}
 .fhorse{display:inline-block;font-size:12px;margin:2px 0;color:var(--acc)}.ftoc{display:flex;flex-wrap:wrap;gap:6px 8px;margin:12px 0 6px}.ftoc a{border:1px solid var(--line);padding:4px 10px;font-size:13px;text-decoration:none;background:var(--panel)}.furu{list-style:none;margin:0;padding:0}.furu li{display:flex;gap:12px;padding:12px 0;border-top:1px solid var(--line)}.furu li:first-child{border-top:0}.furu .fimg{flex:0 0 96px}.furu img{display:block;width:96px;height:96px;object-fit:cover;background:var(--panel)}.furu b{display:block;line-height:1.5}.furu .meta{display:block;margin:2px 0}.furu p{margin:4px 0 8px;font-size:14px}.fbtn{display:inline-block;border:1px solid var(--acc);color:var(--acc);padding:4px 12px;font-size:13px;font-weight:700;text-decoration:none;border-radius:2px}.fbtn:hover{background:var(--acc);color:#fff}
@@ -2513,7 +2566,7 @@ function apply(){document.querySelectorAll('.races li').forEach(function(li){
 document.querySelectorAll('.filters[data-kind]').forEach(function(f){f.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;
  f.querySelectorAll('button').forEach(function(x){x.classList.toggle('on',x===b)});var k=f.dataset.kind;st[k]=b.dataset[k];try{localStorage.setItem('filters',JSON.stringify(st))}catch(e){}apply();});});
 var now=new Date(Date.now()+9*3600e3),s=now.toISOString().replace(/[-:T]/g,'').slice(0,12),first=null;
-(function(){var b=document.body.dataset.built;if(!b)return;var age=(Date.now()-Date.parse(b))/36e5;var st=document.querySelector('.notice.stale');if(st&&age>6)st.hidden=false;
+(function(){var b=document.body.dataset.built;if(!b)return;var age=(Date.now()-Date.parse(b))/36e5;var st=document.querySelector('.notice.stale');if(st&&age>6){var nowk=new Date(Date.now()+9*3600e3).toISOString().replace(/[-:T]/g,'').slice(0,12),rows=[].slice.call(document.querySelectorAll('.races li[data-post]')).filter(function(li){return li.dataset.post.length>=12});if(!rows.length||rows.some(function(li){return li.dataset.post<=nowk&&li.dataset.conf!=='見送り'&&!li.querySelector('.res.hit,.res.miss,.res.tg')}))st.hidden=false;}
  if(document.querySelector('.today')&&document.querySelector('.races li[data-post]')){var pend=[].some.call(document.querySelectorAll('.races li[data-post]'),function(li){return !li.querySelector('.res.hit,.res.miss,.res.tg')&&li.dataset.conf!=='見送り'});
   if(pend){setInterval(function(){var ae=document.activeElement;if(document.visibilityState!=='visible'||(ae&&/^(INPUT|SELECT|TEXTAREA)$/.test(ae.tagName))||document.querySelector('.zkw-bg,.askpop.open'))return;location.reload();},5*60*1000);}}})();
 document.querySelectorAll('.races li[data-post]').forEach(function(li){var p=li.dataset.post;if(p.length<12)return;
@@ -2638,6 +2691,7 @@ def build() -> None:
     now = datetime.now(JST)
     today = now.strftime("%Y%m%d")
     global TODAY, ALL_DATES, BUILT_ISO, NOW_KEY
+    NOINDEX_PAGES.clear()
     TODAY = today
     BUILT_ISO = now.strftime('%Y-%m-%dT%H:%M:%S+09:00')
     NOW_KEY = now.strftime("%Y%m%d%H%M")
@@ -2767,6 +2821,7 @@ def build() -> None:
     sg = strategy.collect(by_date, STATS_FROM)
     s_body, s_rank = strategy.render(sg, esc, roi_txt, f"{int(STATS_FROM[4:6])}月{int(STATS_FROM[6:8])}日", fmt_date(max(by_date)) if by_date else "")
     s_best = f"回収率が最も高い買い方は「{s_rank[0][0]}」の{s_rank[0][1]:.1f}%（{s_rank[0][2]}レース）。" if s_rank else ""
+    s_body += baseline_section(by_date)
     write("/strategy/", page(f"買い方別の回収率：◎単勝だけ・自信度別・期待値別で比べる | {SITE_NAME}",
                              f"<p class='crumb'><a href='/'>トップ</a> › <a href='/results/'>成績</a> › 買い方別</p><h1>買い方別の回収率</h1>{banner('strategy')}" + s_body
                              + "<p class='meta'>全体の成績は<a href='/results/'>成績ページ</a>、券種の説明は<a href='/column/baken-shurui/'>コラム</a>へ。</p>",
@@ -2898,6 +2953,19 @@ def build() -> None:
     for path_, title_ in [(x, y) for x, y in FEED_EXTRA][:10]:
         items.append(f"<item><title>{esc(title_)}</title><link>{BASE_URL}{path_}</link><guid>{BASE_URL}{path_}</guid>"
                      f"<pubDate>{now.strftime('%a, %d %b %Y %H:%M:%S %z')}</pubDate><description>{esc(title_)}</description></item>")
+    # コラム（新しく書いた・書き直した順に15本）。Google に載せないデータ記事は入れない（2026-11-26〜）
+    try:
+        _fc = [c for c in column.columns() if f"/column/{c['slug']}/" not in NOINDEX_PAGES]
+    except Exception:  # noqa: BLE001
+        _fc = []
+    _fdesc = {f"/column/{c['slug']}/": c.get("description") or c["title"] for c in _fc}
+    for path_, title_, day_ in sitekit.column_feed(_fc):
+        try:
+            pub = datetime.strptime(day_[:10], "%Y-%m-%d").replace(tzinfo=JST, hour=9)
+        except ValueError:
+            continue
+        items.append(f"<item><title>{esc(title_)}</title><link>{BASE_URL}{path_}</link><guid>{BASE_URL}{path_}</guid>"
+                     f"<pubDate>{pub.strftime('%a, %d %b %Y %H:%M:%S %z')}</pubDate><description>{esc(_fdesc.get(path_, title_))}</description></item>")
     (OUT / "feed.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel>'
         f"<title>{SITE_NAME}</title><link>{BASE_URL}/</link><description>{SITE_SUB}</description><language>ja</language>"
@@ -2939,13 +3007,19 @@ def build() -> None:
     sm = "".join(f"<url><loc>{BASE_URL}{u}</loc>{f'<lastmod>{min(m, today_iso)}</lastmod>' if m else ''}</url>"
                  for u, m in list(fixed.items()) + sorted(lastmod.items(), reverse=True))
     (OUT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + sm + "</urlset>\n", encoding="utf-8")
+    # Google にだけ載せない設定へ変わったページの一覧。Search Console の「サイトマップ」から送り、早めに見直してもらう。
+    # Bing には知らせたくないので robots.txt には書かない（Bing などには今までどおり見えるページ）
+    (OUT / "sitemap-noindex.xml").write_text(sitekit.noindex_sitemap(NOINDEX_PAGES, BASE_URL, today_iso), encoding="utf-8")
     # Bingなどへの更新のお知らせ（IndexNow）用：ページごとの「いまの状態」（更新日＋印）の一覧。
     # site/indexnow.py が公開中の一覧と比べ、新しいページ・状態が変わったページだけを送る（同じページの送り直しをやめる）。
     # Googleにだけ載せないページのうち、G2・G3の重賞データ記事は Bing には知らせる（column.BING_EXTRA）
     state = {u: (min(m, today_iso) if m else "-") + INDEXNOW_SUFFIX.get(u, "") for u, m in list(fixed.items()) + list(lastmod.items())}
     state.update({u: min(m, today_iso) for u, m in getattr(column, "BING_EXTRA", {}).items() if u not in state})
     (OUT / "indexnow-state.json").write_text(json.dumps(state, ensure_ascii=False, separators=(",", ":"), sort_keys=True), encoding="utf-8")
-    print(f"built {len(dates)} days into {OUT}")
+    # サイト全体の大きさとファイル数（GitHub Pages の上限は1GB）。毎日の見張り（.github/workflows/size.yml）が公開中のこれを読む。必ず最後に書く
+    stats = sitekit.dir_stats(OUT)
+    (OUT / "build-stats.json").write_text(json.dumps({**stats, "built": BUILT_ISO}), encoding="utf-8")
+    print(f"built {len(dates)} days into {OUT}（{stats['bytes'] / 1e6:,.0f}MB・{stats['files']:,}ファイル）")
 
 
 if __name__ == "__main__":
