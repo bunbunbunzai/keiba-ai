@@ -1,6 +1,6 @@
 {
  "date": "20261126",
- "updated": "2026-11-26 13:45",
+ "updated": "2026-11-26 13:51",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -960,6 +960,20 @@
    "popularity": 7
   },
   {
+   "race_id": "202611261813080306",
+   "results_key": "202611261813080306",
+   "venue": "浦和",
+   "race_no": 6,
+   "post_time": "14:50",
+   "number": 2,
+   "name": "ロイヤルエンペラー",
+   "types": [
+    "aitop"
+   ],
+   "odds": 3.0,
+   "popularity": 2
+  },
+  {
    "race_id": "202611262726190209",
    "results_key": "202611262726190209",
    "venue": "園田",
@@ -1019,7 +1033,7 @@
     "field": 11,
     "popularity": 6
    },
-   "odds": 13.6,
+   "odds": 12.5,
    "popularity": 7
   },
   {
