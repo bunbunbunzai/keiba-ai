@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261126",
  "race_id": "202611261813080308",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "ダブルレイズカード",
    "time": "1:36.6",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 37.5,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ヤマタケコーチャン",
    "time": "1:36.7",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 37.8,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "フルーツパフェ",
    "time": "1:38.6",
    "margin": "９",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 38.1,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "ファイナルワンダー",
    "time": "1:38.7",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 38.8,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "ミスレイヴバンプ",
    "time": "1:38.8",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 39.3,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ルチェッタ",
    "time": "1:38.9",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 38.4,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "キョウエイサマンサ",
    "time": "1:39.0",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 39.2,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ピノヌイ",
    "time": "1:40.7",
    "margin": "８",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 39.6,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "ポレポレ",
    "time": "1:40.8",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 40.3,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "キャプティバ",
    "time": "1:41.1",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 10,
+   "last3f": 38.0,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "ロジドレフォン",
    "time": "1:43.0",
    "margin": "９",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 37.7,
    "popularity": null
   },
   {
