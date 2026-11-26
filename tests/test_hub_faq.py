@@ -47,6 +47,7 @@ def test_jra_sunday_g1():
         assert w in when, w
     tv = by_q(jc(), "中継")
     assert "みんなのKEIBA" in tv and "無料" in tv
+    assert "変わることがある" in tv, "放送時間の変更は、決まったことのようには書かない"
     money = by_q(jc(), "いくら")
     assert "100円" in money and "20歳" in money
     net = by_q(jc(), "ネットで")

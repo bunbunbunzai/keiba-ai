@@ -99,7 +99,7 @@ def _tv(info: dict, wd: int, clock: str) -> str:
         post = info.get("post") or ""
         if clock and not (TV_FROM <= post.zfill(5) < TV_TO):
             a += f"このレースは{clock}発走で、ふだんの放送時間（15時〜16時）には入らない。"
-        a += "G1の日などは放送時間が変わるので、" + guide
+        a += "G1の日などは放送時間が変わることがあるので、" + guide
     a += f"ネットでは、JRAが全レースの中継を無料で配信している（[JRAのレースライブ]({SRC['live']})。YouTubeのJRA公式チャンネルやJRAのアプリでも見られる）。"
     return a
 
