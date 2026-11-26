@@ -1,6 +1,6 @@
 {
  "date": "20261126",
- "updated": "2026-11-26 12:58",
+ "updated": "2026-11-26 13:04",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -745,7 +745,7 @@
     "field": 11,
     "popularity": 7
    },
-   "odds": 22.1,
+   "odds": 37.6,
    "popularity": 7
   },
   {
@@ -766,7 +766,7 @@
     "field": 9,
     "popularity": 7
    },
-   "odds": 35.3,
+   "odds": 44.7,
    "popularity": 8
   },
   {
@@ -778,8 +778,7 @@
    "number": 7,
    "name": "ブレッティレディ",
    "types": [
-    "rebound",
-    "letdown"
+    "rebound"
    ],
    "gap_days": 15,
    "last": {
@@ -788,8 +787,8 @@
     "field": 12,
     "popularity": 3
    },
-   "odds": 15.3,
-   "popularity": 5
+   "odds": 13.5,
+   "popularity": 3
   },
   {
    "race_id": "202611262726190208",
@@ -809,7 +808,7 @@
     "field": 12,
     "popularity": 10
    },
-   "odds": 19.6,
+   "odds": 35.9,
    "popularity": 6
   },
   {
@@ -830,8 +829,8 @@
     "field": 12,
     "popularity": 10
    },
-   "odds": 88.4,
-   "popularity": 9
+   "odds": 103.4,
+   "popularity": 10
   },
   {
    "race_id": "202611262726190208",
@@ -851,7 +850,7 @@
     "field": 9,
     "popularity": 6
    },
-   "odds": 14.7,
+   "odds": 16.8,
    "popularity": 4
   },
   {
