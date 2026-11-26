@@ -1,6 +1,6 @@
 {
  "date": "20261126",
- "updated": "2026-11-26 13:16",
+ "updated": "2026-11-26 13:21",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -573,7 +573,8 @@
    "number": 12,
    "name": "ジュンインパルス",
    "types": [
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 64,
    "last": {
@@ -582,8 +583,8 @@
     "field": 12,
     "popularity": 3
    },
-   "odds": 5.1,
-   "popularity": 2
+   "odds": 6.6,
+   "popularity": 4
   },
   {
    "race_id": "202611262726190207",
@@ -681,7 +682,7 @@
    "types": [
     "aitop"
    ],
-   "odds": 12.1,
+   "odds": 11.0,
    "popularity": 7
   },
   {
@@ -703,7 +704,7 @@
     "field": 11,
     "popularity": 2
    },
-   "odds": 38.6,
+   "odds": 36.8,
    "popularity": 12
   },
   {
@@ -724,8 +725,8 @@
     "field": 12,
     "popularity": 6
    },
-   "odds": 4.9,
-   "popularity": 1
+   "odds": 6.1,
+   "popularity": 2
   },
   {
    "race_id": "202611262726190208",
@@ -934,8 +935,8 @@
     "field": 9,
     "popularity": 9
    },
-   "odds": null,
-   "popularity": null
+   "odds": 24.5,
+   "popularity": 5
   },
   {
    "race_id": "202611262218150202",
@@ -955,8 +956,8 @@
     "field": 9,
     "popularity": 6
    },
-   "odds": null,
-   "popularity": null
+   "odds": 49.0,
+   "popularity": 6
   },
   {
    "race_id": "202611262726190209",
