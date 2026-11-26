@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261126",
  "race_id": "202611262218150201",
- "tries": 5,
+ "tries": 6,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "サワエ",
    "time": "1:38.0",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 40.1,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ダイヒョウカーク",
    "time": "1:39.4",
    "margin": "７",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 41.8,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ファインブルー",
    "time": "1:40.5",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 41.3,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "グレイイメル",
    "time": "1:40.8",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 42.9,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "クロシオカレント",
    "time": "1:41.2",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 40.0,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "スギノダイナミック",
    "time": "1:41.3",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 40.0,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "ヴェリーヌ",
    "time": "1:42.2",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 41.2,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "デルマアソ",
    "time": "1:44.9",
    "margin": "大差",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 47.2,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "ナムラジャクソン",
    "time": "1:46.3",
    "margin": "７",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 44.9,
    "popularity": null
   }
  ]
