@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261126",
  "race_id": "202611262218150211",
- "tries": 5,
+ "tries": 6,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "メイショウヒュウガ",
    "time": "1:29.3",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 38.5,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "サンシップ",
    "time": "1:29.6",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 37.5,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "デルマスソバライ",
    "time": "1:29.8",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 37.3,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "ダイヤモンドビーチ",
    "time": "1:29.9",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 38.1,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "レッツリブオン",
    "time": "1:30.1",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 39.1,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "リリーブライト",
    "time": "1:30.4",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 37.4,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "ピースオーシャン",
    "time": "1:30.7",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 36.8,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ナインパワー",
    "time": "1:30.8",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 38.1,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "ラブリーサイン",
    "time": "1:31.0",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 40.1,
    "popularity": null
   },
   {
