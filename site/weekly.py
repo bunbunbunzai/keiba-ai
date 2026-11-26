@@ -913,6 +913,18 @@ def _weekend_btn(where: str, main: bool = False) -> str:
     return _a("/weekend/", "今週末の競馬まとめ", "重賞のAI予想・特集・先週の結果を毎週入れ替え。ブックマークに", where, "weekend", main)
 
 
+def _buy_guide_btn(slug: str, where: str) -> str:
+    """G1 の特集まとめから、馬券の買い方のガイドへ（特集を読む人の多くは、そのあと馬券を買う。2026-11-26〜）。地方の競馬場なら地方の買い方。"""
+    venue = next((r.get("venue") for r in SCHED_BY_SLUG.get(slug) or [] if r.get("venue")), "") or \
+        (_B.load_json(_B.ROOT / "data" / "race_guides" / f"{slug}.json") or {}).get("venue") or ""
+    local = bool(venue) and venue not in JRA
+    col = "guide-chiho-baken-kaikata" if local else "guide-jra-baken-kaikata"
+    if not (_B.ROOT / "columns" / f"{col}.md").exists():
+        return ""
+    return _a(f"/column/{col}/", f"馬券の買い方（{'地方競馬' if local else '中央競馬'}）",
+              "ネット投票の種類と始め方・20歳から" if local else "ネット投票・競馬場・ウインズでの買い方・20歳から", where, "howtobuy")
+
+
 def next_card(where: str, slug: str | None = None, race: tuple | None = None, here_graded: bool = False) -> str:
     """ページの下（馬のページは上）に置く「次に見る」。race=(日付, 予想) を渡せばそのレースへ、slug なら重賞の今年のレースへ。"""
     if _B is None:
@@ -944,6 +956,8 @@ def next_card(where: str, slug: str | None = None, race: tuple | None = None, he
                 btns += _a(f"/graded/{slug}/", f"{name}の傾向と過去のAI予想", "予想を公開したらこのページにも追加", where, "graded")
     if not btns:
         btns = _a("/", "今日のAI予想", "中央・地方の全レースの印と買い目", where, "today", main=True) + _weekend_btn(where)
+    if where == "feature" and slug:
+        btns += _buy_guide_btn(slug, where)
     if _vs_ok() and "data-ns-to='vs'" not in btns:
         btns += _a("/vs/guide/", "AI vs あなた 月間ランキング", "AIと同じレースで◎を選んで勝負。参加は名前を決めるだけ", where, "vsguide")
     return f"<section class='card nstep'><h2>次に見る</h2>{note}<div class='nbtns'>{btns}</div></section>"

@@ -51,6 +51,11 @@ jobs:
           LEAGUE_URL: ${{ vars.LEAGUE_URL == 'off' && '' || vars.LEAGUE_URL || 'https://keiba-league.bunbunbunzai.workers.dev' }}
           VS_PUBLIC: ${{ vars.VS_PUBLIC || '1' }}  # 月間ランキングを一般公開（repository variable で 0 にすると合言葉つきに戻る）
           LEAGUE_OWNERS: ${{ vars.LEAGUE_OWNERS }}
+      # できたサイトの点検（レース名の崩れ・フッターの相談先・サイトマップ・RSS・大きさの記録など）。
+      # 問題があればこの手順だけ失敗の印が付く。公開は止めない
+      - name: できたサイトの点検
+        continue-on-error: true
+        run: python tests/site_smoke.py _site
       # 検索エンジン（Bing など）に知らせるページの一覧を作る：前回までに知らせた状態（.indexnow/sent.json。cache で引き継ぐ）と比べて、
       # 新しいページ・中身が変わったページだけ。状態を進めるのは、公開と送信が済んだあと（下の2つの手順）。
       # 新しい公開に追い越されて取り消された回は状態が進まないので、次の回がまとめて送る。失敗しても公開は止めない

@@ -1,0 +1,32 @@
+name: size (サイトの大きさの見張り)
+
+# 公開中のサイトの大きさ（build-stats.json。site/build.py が最後に書く）を毎日1回見る。
+# GitHub Pages は公開できるサイトの大きさが1GBまでなので、800MBを超えたら失敗にして、
+# alert.yml の「自動処理の失敗」Issue で知らせる（対策を考える時間を2〜3か月ほど取れる）。
+# ファイル数は記録だけ（Cloudflare など他の置き場へ移すときの目安。無料の枠は2万ファイル）。
+on:
+  schedule:
+    - cron: "17 22 * * *"   # JST 7:17
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 公開中のサイトの大きさを見る
+        run: |
+          curl -fsS --retry 3 --retry-delay 20 "https://www.ai-keiba-log.com/build-stats.json?t=$(date +%s)" -o stats.json
+          python3 - <<'PY'
+          import json, sys
+          s = json.load(open("stats.json"))
+          mb, files = s["bytes"] / 1e6, s["files"]
+          print(f"サイトの大きさ {mb:,.0f}MB・{files:,}ファイル（{s.get('built', '')} に作成）")
+          if mb > 800:
+              print("::error::公開中のサイトが800MBを超えました（GitHub Pages の上限は1GB）。古いページや画像の整理か、置き場の移転を検討してください。")
+              sys.exit(1)
+          if files > 20000:
+              print("::warning::ファイル数が2万を超えました（Cloudflare の無料の枠を超える数。今の GitHub Pages では問題ありません）。")
+          PY

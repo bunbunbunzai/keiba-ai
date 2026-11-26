@@ -313,7 +313,9 @@ def build_pages(B, by_date: dict, today: str) -> dict[str, str]:
         # 条件に合わないページも残し、サイト内のリンクもそのまま。Googleにだけ載せない設定（noindex="google"）にしてサイトマップから外す
         index_me = (any(_major_graded(x["p"]) for x in items) or name in hist
                     or bool(weekly.ENTRY_BY_HORSE.get(name) or weekly.NOM_BY_HORSE.get(name)))
-        write(path, page(f"{title}｜{B.SITE_NAME}", body, path, desc=lead[:120], head_extra=jsonld(ld), noindex=False if index_me else "google"))
+        born = min((x["d"] for x in items), default="")  # このサイトで最初に評価した日（JRAの情報だけの馬は ""）
+        write(path, page(f"{title}｜{B.SITE_NAME}", body, path, desc=lead[:120], head_extra=jsonld(ld), noindex=False if index_me else "google",
+                         hidden=None if born and born < B.sitekit.NOINDEX_SINCE.replace("-", "") else ""))
         last_d = latest.get("d") or _ymd(info_runs[0]["date"]) if (items or info_runs) else today
         if index_me:
             lastmod[path] = max(f"{last_d[:4]}-{last_d[4:6]}-{last_d[6:8]}", (info.get("fetched") or "")[:10] if not items else "")

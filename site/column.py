@@ -747,7 +747,8 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
         if hide and not c["draft"]:
             BING_EXTRA[path] = mod_iso  # Googleにだけ載せないが、Bingなどには更新を知らせる
         write(path, page(f"{title} | {site_name}", html_, path, desc=desc, noindex=True if c["draft"] else ("google" if hide else False),
-                         head_extra=jsonld(ld) + jsonld(crumb) + (jsonld(faq_ld) if faq_ld else ""), og_image=og_img))
+                         head_extra=jsonld(ld) + jsonld(crumb) + (jsonld(faq_ld) if faq_ld else ""), og_image=og_img,
+                         **({"hidden": "2026-11-20" if (_iso(c.get("date")) or "") < "2026-11-20" else ""} if hide and not c["draft"] else {})))
         if not hide:
             lastmod[path] = mod_iso
     def clip(lis: list, n: int = 6) -> str:
