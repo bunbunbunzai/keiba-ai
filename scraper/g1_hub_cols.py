@@ -9,6 +9,10 @@ Bingの検索では、この形の特集まとめ（ジャパンカップ・有�
 来年のレース（NEXT）は、JRAが出した来年の重賞の一覧（data/graded_hist/<来年>.json）の日程で、レースの AHEAD_DAYS 日前から作る
 （2026-11-23〜。1〜2月はG1が無いので、金杯も作る）。条件はレースガイド（data/race_guides）から引き、前哨戦の日程と結果を毎日入れ替える。
 
+G1以外のJRAの重賞（G2・G3・J・G2・J・G3）も、レースの HUB_DAYS 日前から同じ形で1レース1本作る（auto_cfgs。2026-11-26〜）。
+Bingの検索とAIの回答ではG1の特集まとめがよく使われていて、G2・G3にも同じ形の入口を置くため。
+Googleには載せない（頭書きの hub: auto を見て site/column.py が noindex にし、サイトマップから外す）。
+
   python g1_hub_cols.py
 """
 from __future__ import annotations
@@ -307,6 +311,11 @@ def time_jp(t: str) -> str:
     return f"{m.group(1)}分{m.group(2)}秒{m.group(3)}" if m else (t or "")
 
 
+def cond_jp(c: str) -> str:
+    """重賞の一覧の出走条件（「3歳以上牝」）を文にする（「3歳以上の牝馬」）。"""
+    return re.sub(r"^(\d歳(?:以上)?)牝$", r"\1の牝馬", c or "")
+
+
 def next_guide_slug(cfg: dict) -> str:
     return f"{cfg['slug']}{cfg['series'][-4:]}-guide"
 
@@ -337,7 +346,8 @@ def past_block(name: str, slug: str, P: dict, s: dict) -> str:
 
 
 def build_next(cfg: dict, all_: dict, K: dict, today: str) -> tuple | None:
-    """来年のレースの特集まとめ。日程が無い・過去のデータが無い・まだ遠いレースは None。"""
+    """来年のレース（NEXT）と、G1以外の重賞（auto_cfgs）の特集まとめ。日程が無い・過去のデータが無い・まだ遠いレースは None。
+    cfg の ahead（何日前から作るか）・keep（レースの何日後まで作り直すか）・about（レースをひとことで）・auto（自動で選んだレース）は無くてもよい。"""
     slug, year = cfg["slug"], int(cfg["series"][-4:])
     r = (K.get(slug) or {}).get(year)
     P = past10(K, slug, year)
@@ -346,11 +356,15 @@ def build_next(cfg: dict, all_: dict, K: dict, today: str) -> tuple | None:
     d = r["date"]
     gslug = next_guide_slug(cfg)
     days = (dt(d) - dt(today.replace("-", ""))).days
-    if not (COLS / f"{gslug}.md").exists() and not (0 <= days <= AHEAD_DAYS):
+    if not (COLS / f"{gslug}.md").exists() and not (0 <= days <= cfg.get("ahead", AHEAD_DAYS)):
         return None
+    if cfg.get("keep") is not None and days < -cfg["keep"]:
+        return None
+    auto = bool(cfg.get("auto"))
     g = guide_of(slug)
+    has_g = bool(g)  # レースガイドがあれば、重賞のページ（/graded/<slug>/）もある
     facts = {str(f.get("k")): str(f.get("v")) for f in g.get("facts") or []}
-    name = g.get("name") or r.get("name") or ab(r)
+    name = g.get("name") or (G.expand(ab(r)) if auto else r.get("name") or ab(r))
     grade = r.get("grade") or ""
     place_s = f"{r.get('venue', '')}{course_s(r)}"
     x = dt(d)
@@ -365,8 +379,9 @@ def build_next(cfg: dict, all_: dict, K: dict, today: str) -> tuple | None:
     waku = (x - timedelta(days=(x.weekday() - 4) % 7)).strftime("%Y%m%d")
     # ---- 基本情報 ----
     body = "## レースの基本情報\n\n"
-    body += f"- レース：{no}{name}（{grade}）\n- 日時：{year}年{jp(d)}\n- 場所：{facts.get('競馬場・距離') or place_s}\n"
-    body += f"- 出られる馬：{facts['出走条件']}\n" if facts.get("出走条件") else f"- 出られる馬：{r.get('cond', '')}\n"
+    place = facts.get("競馬場・距離") or (f"{r.get('venue', '')}競馬場の{course_s(r)}" if auto else place_s)
+    body += f"- レース：{no}{name}（{grade}）\n- 日時：{year}年{jp(d)}\n- 場所：{place}\n"
+    body += f"- 出られる馬：{facts['出走条件']}\n" if facts.get("出走条件") else f"- 出られる馬：{cond_jp(r.get('cond', '')) if auto else r.get('cond', '')}\n"
     body += f"- 負担重量：{facts['負担重量']}\n" if facts.get("負担重量") else ""
     if g1:
         body += (f"- 出走馬の確定：{jp(thu)}の夕方（馬番・枠番はまだ）\n- 枠順の確定：{jp(waku)}の朝\n"
@@ -374,8 +389,10 @@ def build_next(cfg: dict, all_: dict, K: dict, today: str) -> tuple | None:
     else:
         body += "- 出走馬・枠順：JRAの発表のあと、このページに載る\n- このサイトのAI予想：枠順の確定後、レースの前日の夜までに公開\n\n"
     if not done:
-        body += (f"> 日付は、JRAが発表した{year}年の重賞の一覧による。場所・出られる馬・負担重量は{year - 1}年までの内容で、{year}年の正式な条件はJRAの発表で確かめてほしい。"
-                 f"登録馬・出走馬・枠順は、JRAの発表のあと、このページと[{name}のページ](/graded/{slug}/)に自動で載る。\n\n")
+        body += (f"> 日付は、JRAが発表した{year}年の重賞の一覧による。"
+                 + (f"場所・出られる馬・負担重量は{year - 1}年までの内容で、" if has_g else "")
+                 + f"{year}年の正式な条件はJRAの発表で確かめてほしい。"
+                 + "登録馬・出走馬・枠順は、JRAの発表のあと、このページ" + (f"と[{name}のページ](/graded/{slug}/)" if has_g else "") + "に自動で載る。\n\n")
     # ---- 去年の結果 ----
     lt = top3(last) if G.runners(last) else []
     if len(lt) >= 3:
@@ -412,20 +429,81 @@ def build_next(cfg: dict, all_: dict, K: dict, today: str) -> tuple | None:
     links = [("kako-kekka", "過去20年の結果一覧"), ("ninki-waku", "人気と枠順の傾向（過去20年）"), ("nenrei-kishu", "年齢・性別・騎手の傾向（過去20年）"),
              ("zenso", "前走別の成績（ローテーション）"), ("jinx", "ジンクス・データで見る傾向")]
     body += "".join(f"- [{name}の{t}](/column/{slug}-{k}/)\n" for k, t in links if exists(f"{slug}-{k}"))
-    body += f"- [{name}のレースガイド（歴史・条件・主な前哨戦）とAI予想](/graded/{slug}/)\n"
-    body += f"\nほかのレースは[{year}年のG1日程と特集の一覧](/column/{NEXT_INDEX}/)から。\n\n"
+    if has_g or not auto:
+        body += f"- [{name}のレースガイド（歴史・条件・主な前哨戦）とAI予想](/graded/{slug}/)\n"
+    if auto:  # G1以外の重賞：その週の重賞へ案内する（G1の日程の一覧には載らないレースのため）
+        body += "\nこの週末のほかの重賞は[今週末の重賞まとめ](/weekend/)から。\n\n"
+    else:
+        body += f"\nほかのレースは[{year}年のG1日程と特集の一覧](/column/{NEXT_INDEX}/)から。\n\n"
     body += (f"## 出典\n\n- 日程：JRA「[{year}年 重賞競走一覧](https://www.jra.go.jp/datafile/seiseki/replay/{year}/jyusyo.html)」\n"
-             f"- 場所・出られる馬・負担重量・前哨戦：このサイトのレースガイド（JRAの発表にもとづく{year - 1}年までの内容）\n"
-             f"- 過去10年の着順・配当、前哨戦の結果：JRA公式の成績（このサイトが集めたJRAの重賞の全着順）\n")
+             + (f"- 場所・出られる馬・負担重量{'・前哨戦' if rows else ''}：このサイトのレースガイド（JRAの発表にもとづく{year - 1}年までの内容）\n" if has_g
+                else f"- 場所・出られる馬：JRA「{year}年 重賞競走一覧」\n")
+             + f"- 過去10年の着順・配当{'、前哨戦の結果' if rows else ''}：JRA公式の成績（このサイトが集めたJRAの重賞の全着順）\n")
     # ---- 題名など ----
-    title = f"{name}{year}はいつ？日程・前哨戦と過去10年の傾向【特集まとめ】"
+    title = f"{name}{year}はいつ？日程{'・前哨戦' if rows else ''}と過去10年の傾向【特集まとめ】"
     lw = f"{year - 1}年は{who(lt[0])}が勝った。" if lt else ""
-    lead = (f"{no}{name}は{year}年{jp(d)}、{r.get('venue', '')}競馬場の{course_s(r)}で行われる。{cfg['about']}レースだ。"
-            f"過去10年は1番人気が{fav[0]}勝し、3着以内に{sum(fav)}回入った。" + lw)
+    lead = (f"{no}{name}は{year}年{jp(d)}、{r.get('venue', '')}競馬場の{course_s(r)}で行われる。" + (f"{cfg['about']}レースだ。" if cfg.get("about") else "")
+            + f"過去10年は1番人気が{fav[0]}勝し、3着以内に{sum(fav)}回入った。" + lw)
     desc = (f"{year}年の{name}（{grade}・{place_s}）は{jp(d)}。{lw}"
-            f"前哨戦の日程と結果、過去10年の全着順から分かる人気・枠・騎手の傾向と勝ち馬の一覧をまとめた特集のトップページ。")
+            + ("前哨戦の日程と結果、" if rows else "") + "過去10年の全着順から分かる人気・枠・騎手の傾向と勝ち馬の一覧をまとめた特集のトップページ。")
     extra = {"race_name": name, "race_date": d, "race_venue": r.get("venue", ""), "race_course": course_s(r), "race_grade": grade}
+    if auto:
+        extra.update(race=slug, hub="auto")
     return gslug, title, desc, lead, body, extra
+
+
+# ---------- G1以外の重賞の特集まとめ ----------
+HUB_DAYS = 35       # レースの何日前から作るか（重賞のデータ記事と同じ。1週間に増えるのは2〜4本）
+HUB_KEEP = 14       # レースの何日後まで作り直すか（結果を入れるため。そのあとは触らない）
+HUB_MIN_YEARS = 8   # 過去の開催がこれより少ないレースは作らない（「過去10年の傾向」が書けない）
+HUB_GRADES = ("G2", "G3", "J・G2", "J・G3")
+_SLUG_OK = re.compile(r"^[a-z0-9][a-z0-9-]*$")
+
+
+def auto_hero(r: dict) -> str:
+    """記事の見出しの画像：障害・ダート・芝の短距離（1400m以下）・長距離（3000m以上）、ほかは季節で。"""
+    if r.get("surface") == "障":
+        return "g-jump"
+    if r.get("surface") == "ダ":
+        return "g-dirt-day"
+    dist = int(r.get("distance") or 0)
+    if dist and dist <= 1400:
+        return "g-sprint"
+    if dist >= 3000:
+        return "g-stayer"
+    m = int(str(r.get("date") or "20260101")[4:6])
+    return "g-turf-" + ("spring" if 3 <= m <= 5 else "summer" if 6 <= m <= 8 else "autumn" if 9 <= m <= 11 else "winter")
+
+
+def _manual_guide(path) -> bool:
+    """その名前の特集まとめが、手で作った（自動でない）記事としてあるか。"""
+    if not path.exists():
+        return False
+    return not re.search(r"^hub:\s*auto\s*$", path.read_text(encoding="utf-8").split("\n---", 1)[0], re.M)
+
+
+def auto_cfgs(K: dict, today: str, cols=None) -> list[dict]:
+    """G1以外のJRAの重賞のうち、特集まとめを作る（作り直す）レース。レースの日付順。today は YYYY-MM-DD。
+    レースの HUB_DAYS 日前から HUB_KEEP 日後まで。過去の開催が HUB_MIN_YEARS 回未満のレース・
+    手で作った特集まとめ（金杯など）があるレース・URLにできない名前のレース（一覧の略称で束ねたもの）は作らない。"""
+    cols = COLS if cols is None else cols
+    t = dt(today.replace("-", ""))
+    out = []
+    for slug, ys in K.items():
+        if not _SLUG_OK.match(slug):
+            continue
+        for y, r in ys.items():
+            if r.get("grade") not in HUB_GRADES or not re.fullmatch(r"\d{8}", str(r.get("date") or "")):
+                continue
+            if not (-HUB_KEEP <= (dt(r["date"]) - t).days <= HUB_DAYS):
+                continue
+            if len(past10(K, slug, y)) < HUB_MIN_YEARS:
+                continue
+            cfg = {"series": f"{slug}{y}", "slug": slug, "hero": auto_hero(r), "ahead": HUB_DAYS, "keep": HUB_KEEP, "auto": True}
+            if _manual_guide(cols / f"{next_guide_slug(cfg)}.md"):
+                continue
+            out.append((r["date"], slug, cfg))
+    return [c for _, _, c in sorted(out, key=lambda x: (x[0], x[1]))]
 
 
 def build_index(K: dict, year: int, today: str) -> tuple[str, str, str, str] | None:
@@ -477,6 +555,24 @@ def build_index(K: dict, year: int, today: str) -> tuple[str, str, str, str] | N
     return title, desc, lead, body
 
 
+def write_auto(all_: dict, K: dict, today: str) -> int:
+    """G1以外の重賞の特集まとめを書き、書いた本数を返す。1レースで失敗しても、ほかのレースは続ける
+    （毎日の自動処理（graded）の途中にあるので、ここで止まると重賞のデータの保存まで止まる）。"""
+    n = 0
+    for cfg in auto_cfgs(K, today):
+        try:
+            out = build_next(cfg, all_, K, today)
+            if not out:
+                continue
+            gslug, title, desc, lead, body, extra = out
+            if write(gslug, cfg["series"], cfg["hero"], title, desc, lead, body, today, first=today, extra=extra):
+                n += 1
+                print("wrote", gslug)
+        except Exception as e:  # noqa: BLE001
+            print(f"特集まとめを作れなかった（{cfg['slug']}）: {type(e).__name__} {e}")
+    return n
+
+
 def main() -> None:
     with contextlib.redirect_stdout(io.StringIO()):
         all_ = G.load_all()
@@ -492,6 +588,7 @@ def main() -> None:
         if write(gslug, cfg["series"], cfg["hero"], title, desc, lead, body, today, first=today, extra=extra):
             n += 1
             print("wrote", gslug)
+    n += write_auto(all_, K, today)  # G1以外の重賞（NEXT の分を書いたあとに見るので、手で設定した金杯などとは重ならない）
     for year in sorted({int(c["series"][-4:]) for c in NEXT}):
         idx = build_index(K, year, today)
         if idx and write(NEXT_INDEX, f"g1{year}", "g-turf-spring", *idx, today, first=today):

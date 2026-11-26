@@ -46,8 +46,18 @@ NOM_BY_HORSE: dict[str, dict] = {}  # 馬名 → {date, slug, name}（これか�
 WAKU: dict[str, dict] = {}          # 重賞の slug → 出走馬・枠順（JRA発表。data/races の出馬表か data/waku。これから行われるレースだけ）
 AUTO_COL: dict[str, str] = {}       # レースID → そのレースの全頭診断の記事（columns の auto: true）
 _K: dict = {}                       # graded_cols.keyed（JRA重賞の全年の結果。特集まとめの結果の箱に使う）
+AUTO_HUBS: set[str] = set()          # FEATURE_RACE のうち、G1以外の重賞の特集まとめ（自動。column.register_auto_hubs が足す）の series
 GRADES = ("G1", "G2", "G3", "J・G1", "J・G2", "J・G3")
 JRA_VENUE_CODE ={"01": "札幌", "02": "函館", "03": "福島", "04": "新潟", "05": "東京", "06": "中山", "07": "中京", "08": "京都", "09": "阪神", "10": "小倉"}
+
+
+def _full_name(abbr: str) -> str:
+    """重賞の一覧の略し方（「中山牝馬S」「阪神C」）を正式な名前に。レースガイドが無いレースの名前に使う。"""
+    try:
+        import graded_cols as G  # noqa: PLC0415
+        return G.expand(abbr or "")
+    except Exception:  # noqa: BLE001
+        return abbr or ""
 
 
 def _schedule(root, today: str) -> list[dict]:
@@ -82,7 +92,7 @@ def prepare(B, by_date: dict, today: str) -> None:
     SCHED = _schedule(B.ROOT, today)
     for r in SCHED:
         g = B.load_json(B.ROOT / "data" / "race_guides" / f"{r['slug']}.json") or {}
-        r["name"] = g.get("name") or r["abbr"]
+        r["name"] = g.get("name") or _full_name(r["abbr"])
         SCHED_BY_SLUG.setdefault(r["slug"], []).append(r)
     PREDS.clear()
     for d, ps in by_date.items():
@@ -95,7 +105,9 @@ def prepare(B, by_date: dict, today: str) -> None:
     for v in PREDS.values():
         v.sort(key=lambda x: (x[0], x[1]["_race"].get("post_time") or ""))
     FEAT.clear(); GDATA.clear(); AUTO_COL.clear()
-    for c in column.columns():
+    cols = column.columns()
+    column.register_auto_hubs(cols)  # G1以外の重賞の特集まとめ（自動）も FEATURE_RACE に入れてから、レースごとの特集を集める
+    for c in cols:
         if c["draft"]:
             continue
         if c.get("auto") == "true" and c.get("race_id"):
@@ -588,10 +600,13 @@ def hub_date(series) -> str:
     return (r or {}).get("date", "")
 
 
-def _next_hub(after: str) -> tuple | None:
-    """after より後に行われるレースのうち、特集まとめがある、いちばん近いもの：(記事名, レース名, 日付)。"""
+def _next_hub(after: str, auto: bool = False) -> tuple | None:
+    """after より後に行われるレースのうち、特集まとめがある、いちばん近いもの：(記事名, レース名, 日付)。
+    auto が False（G1などの特集まとめから案内するとき）は、G1以外の重賞の特集まとめ（自動）を選ばない。"""
     best = None
     for series, slug in FEATURE_RACE.items():
+        if series in AUTO_HUBS and not auto:
+            continue
         y = series[-4:]
         r = (_K.get(slug) or {}).get(int(y)) if y.isdigit() else None
         col = _hub_col(slug, y)
@@ -751,7 +766,7 @@ def hub_top(slug: str, year: str, anchors: dict | None = None, post_hint: str = 
         if pred and not skip:
             btns += _a(path, "AI予想の答え合わせを見る", (hl + "。" if hl else "") + "全頭の評価点と着順", W, "race", main=True)
         btns += _a("#result", "結果と払戻", "上位5頭・単勝から3連単まで", W, "result", main=not btns)
-        nx = _next_hub(d)
+        nx = _next_hub(d, auto=f"{slug}{year}" in AUTO_HUBS)
         if nx:
             btns += _a(f"/column/{nx[0]}/", f"次は{nx[1]}（{_md(nx[2])}）", "日程・出走馬・過去10年の傾向の特集まとめ", W, "nexthub")
         if _vs_ok():
