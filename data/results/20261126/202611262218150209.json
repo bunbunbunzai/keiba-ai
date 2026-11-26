@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261126",
  "race_id": "202611262218150209",
- "tries": 5,
+ "tries": 6,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "シュガーシャック",
    "time": "1:37.7",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 40.0,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "エレクトロン",
    "time": "1:38.3",
    "margin": "３",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 40.4,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ロングロングロング",
    "time": "1:38.8",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 39.3,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "ラブソング",
    "time": "1:39.6",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 40.9,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "ウインルナロッサ",
    "time": "1:39.7",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 41.8,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ヨドノストーリー",
    "time": "1:39.9",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 40.9,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "ビックハート",
    "time": "1:41.1",
    "margin": "６",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 41.6,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "カンプウ",
    "time": "1:41.1",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 43.4,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "ムーンライトアリア",
    "time": "1:41.4",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 41.5,
    "popularity": null
   }
  ]
