@@ -1,6 +1,6 @@
 {
  "date": "20261126",
- "updated": "2026-11-26 16:48",
+ "updated": "2026-11-26 16:54",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1797,7 +1797,8 @@
    "number": 7,
    "name": "アルゴフィリオ",
    "types": [
-    "letdown"
+    "letdown",
+    "aitop"
    ],
    "gap_days": 14,
    "last": {
@@ -2095,8 +2096,22 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": 12.8,
+   "odds": 12.5,
    "popularity": 6
+  },
+  {
+   "race_id": "202611261813080312",
+   "results_key": "202611261813080312",
+   "venue": "浦和",
+   "race_no": 12,
+   "post_time": "18:20",
+   "number": 7,
+   "name": "ヴルールドロワ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 6.9,
+   "popularity": 4
   },
   {
    "race_id": "202611261813080312",
@@ -2137,7 +2152,7 @@
     "field": 9,
     "popularity": 6
    },
-   "odds": 4.1,
+   "odds": 4.0,
    "popularity": 2
   },
   {
@@ -2329,6 +2344,20 @@
    },
    "odds": 11.4,
    "popularity": 5
+  },
+  {
+   "race_id": "202611262218150210",
+   "results_key": "202611262218150210",
+   "venue": "金沢",
+   "race_no": 10,
+   "post_time": "19:25",
+   "number": 1,
+   "name": "ホワイトヘッド",
+   "types": [
+    "aitop"
+   ],
+   "odds": 5.3,
+   "popularity": 2
   },
   {
    "race_id": "202611262218150210",
@@ -2540,6 +2569,20 @@
    },
    "odds": 75.7,
    "popularity": 12
+  },
+  {
+   "race_id": "202611262218150212",
+   "results_key": "202611262218150212",
+   "venue": "金沢",
+   "race_no": 12,
+   "post_time": "20:35",
+   "number": 6,
+   "name": "ハイエストポイント",
+   "types": [
+    "aitop"
+   ],
+   "odds": 8.4,
+   "popularity": 2
   },
   {
    "race_id": "202611262218150212",
