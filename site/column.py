@@ -24,6 +24,8 @@ import re
 from collections import Counter, defaultdict
 from pathlib import Path
 
+import hubfaq  # 特集まとめに入れる「よくある質問」
+
 ROOT = Path(__file__).resolve().parent.parent
 COLDIR = ROOT / "columns"
 BET_KEYS = {"単勝": "tan", "複勝": "fuku", "枠連": "wakuren", "馬連": "umaren", "ワイド": "wide",
@@ -522,6 +524,28 @@ def columns() -> list[dict]:
     return sorted((parse(f) for f in COLDIR.glob("*.md")), key=lambda c: (c["order"], c["slug"]))
 
 
+def _with_faq(c: dict, tables: dict) -> tuple[str, dict | None]:
+    """（「よくある質問」を差し込んだ本文の Markdown, 検索エンジン向けの FAQPage）。
+    差し込むのは、レースの特集まとめ（〇〇<年>-guide）の、レースの前だけ（文面は site/hubfaq.py、日程は weekly.hub_info）。
+    ほかの記事・日程が分からない・レースが終わった・作れなかったときは、本文をそのまま返す（記事は必ず出す）。
+    質問の中にPR（そのレースを買えるサイト）を出したら c["_faq_pr"] を立て、記事の末尾には同じPRを出さない（_aff_for）。"""
+    import weekly  # noqa: PLC0415
+    c["_faq_pr"] = False
+    rslug = weekly.FEATURE_RACE.get(c.get("series") or "")
+    if not rslug or not c.get("slug", "").endswith("-guide"):
+        return c["body"], None
+    try:
+        info = weekly.hub_info(rslug, str(c["series"])[-4:], {"date": c.get("race_date"), "venue": c.get("race_venue"),
+                                                              "course": c.get("race_course"), "grade": c.get("race_grade")},
+                               hubfaq.post_hint(c["body"]))
+        md, ld = hubfaq.faq_md(info), hubfaq.faq_ld(info)
+    except Exception as e:  # noqa: BLE001
+        print(f"[column] よくある質問を作れなかった（{c.get('slug')}）: {e}")
+        return c["body"], None
+    c["_faq_pr"] = "{{aff_nar}}" in md and bool(tables.get("aff_nar"))
+    return hubfaq.insert_md(c["body"], md), ld
+
+
 TOC_MIN = 4  # 見出し（##）がこの数以上ある記事には目次を付ける
 _TOC_H2 = re.compile(r"^<h2>(.*?)</h2>$", re.M)
 
@@ -557,8 +581,9 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
     try:
         tables["aff_rakuten"] = __import__("build").aff_rakuten("column")
         tables["aff_saikyo"] = __import__("build").aff_saikyo()
+        tables["aff_nar"] = __import__("build").aff_line("nar")  # 特集まとめの「よくある質問」（地方のレース）の中に置くPR
     except Exception:  # noqa: BLE001
-        tables["aff_rakuten"] = tables["aff_saikyo"] = ""
+        tables["aff_rakuten"] = tables["aff_saikyo"] = tables["aff_nar"] = ""
     # 特集まとめ（〇〇2026-guide）の題名・説明文は、レースの進み具合（出走予定馬→出走馬→枠順→AI予想→結果）で変える。
     # 一覧や関連記事の題名もそろうように、ここで書き換えておく
     import weekly  # noqa: PLC0415
@@ -614,7 +639,8 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
         path = f"/column/{c['slug']}/"
         title, lead = subst(c.get("title", ""), v), subst(c.get("lead", ""), v)
         desc = subst(c.get("description", ""), v)
-        body_html = add_toc(render(subst(c["body"], v), tables))
+        body_md, faq_ld = _with_faq(c, tables)  # 特集まとめには、レースの前だけ「よくある質問」を差し込む
+        body_html = add_toc(render(subst(body_md, v), tables))
         body_html = link_horses(body_html, HORSE_NAMES, lambda nm: f"/horse/{_B.extra.short_id(nm)}/")
         auto_c = c.get("auto") == "true"
         # 記事の下の関連リスト：以前は全記事の題名を並べていた（80本近く）。読む人が選びやすいように絞る
@@ -721,7 +747,7 @@ def build(write, page, jsonld, base_url: str, site_name: str, stats_from: str, t
         if hide and not c["draft"]:
             BING_EXTRA[path] = mod_iso  # Googleにだけ載せないが、Bingなどには更新を知らせる
         write(path, page(f"{title} | {site_name}", html_, path, desc=desc, noindex=True if c["draft"] else ("google" if hide else False),
-                         head_extra=jsonld(ld) + jsonld(crumb), og_image=og_img))
+                         head_extra=jsonld(ld) + jsonld(crumb) + (jsonld(faq_ld) if faq_ld else ""), og_image=og_img))
         if not hide:
             lastmod[path] = mod_iso
     def clip(lis: list, n: int = 6) -> str:
@@ -806,7 +832,7 @@ def _aff_for(c: dict, tables: dict) -> str:
 
     中央の重賞：競馬最強の法則WEB（人間の予想家の見解と比べたい人向け）。地方の重賞：楽天競馬（そのレースを買える）。
     """
-    if "{aff_" in c.get("body", ""):
+    if "{aff_" in c.get("body", "") or c.get("_faq_pr"):  # _faq_pr：「よくある質問」の中に、そのレースを買えるサイトのPRを出した
         return ""
     if c.get("series") == "gdata":
         return tables.get("aff_saikyo", "")
