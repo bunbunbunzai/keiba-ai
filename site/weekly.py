@@ -620,32 +620,61 @@ def _hub_days(slug: str, d: str, g1: bool) -> dict:
     return out
 
 
-def hub_top(slug: str, year: str, anchors: dict | None = None, post_hint: str = "", meta: dict | None = None) -> str:
-    """特集まとめ（〇〇<年>-guide）の題名のすぐ下に置く箱：開催日・コース・格、発表の順番のうち今どこか、
-    その段階でいちばん見たいページへの大きな入口（AI予想・全頭診断・「AI vs あなた」、出走馬の表、結果）。
-    検索から来た人の入口は特集まとめが多いのに、開催日や予想への入口が長い前文の下にあった（スマホで2画面め以降）ため。
-    日程はJRAの重賞の一覧（data/graded_hist）から。一覧に無いレース（地方の東京大賞典など）は、記事の頭書きの
-    race_date・race_venue・race_course・race_grade（meta）を使う。どちらも無ければ空を返す（記事に書いた前文のまま）。"""
-    if _B is None or not year.isdigit():
-        return ""
-    B, esc = _B, _B.esc
-    anchors = anchors or {}
+def _hub_facts(slug: str, year: str, meta: dict | None = None) -> dict | None:
+    """特集まとめに出す、そのレースの日程：{date, name, venue, course, grade, cond, jra, res}。
+    JRAの重賞の一覧（data/graded_hist）から。一覧に無いレース（地方の東京大賞典など）は、記事の頭書きの
+    race_date・race_venue・race_course・race_grade（meta）を使う。どちらも無ければ None。
+    冒頭の箱（hub_top）と「よくある質問」（hub_info）が同じ日程を出すように、ここだけで決める。"""
+    if _B is None or not str(year).isdigit():
+        return None
     row = (_K.get(slug) or {}).get(int(year))
-    jra = bool(row)  # JRAの重賞（出走馬・枠順の表が自動で載る）
+    jra = bool(row)
     if not row and meta and re.fullmatch(r"\d{8}", str(meta.get("date") or "")) and str(meta["date"])[:4] == year:
         row = {"date": str(meta["date"]), "venue": meta.get("venue") or "", "course": meta.get("course") or "",
                "grade": meta.get("grade") or "", "cond": meta.get("cond") or ""}
     res = _result_of(slug, year)
     if not row and not res:
-        return ""
+        return None
     d = (res or row)["date"]
     sch = _sched_of(slug, d)
     name = (res or {}).get("name") or sch.get("name") or _guide_name(slug) or (row or {}).get("name") or (row or {}).get("abbr") or ""
     venue = (res or {}).get("venue") or (row or {}).get("venue") or ""
     course = (res or {}).get("course") or ((row or {}).get("course") or "").replace(" ", "").replace(",", "").replace("メートル", "m")
     course = re.sub(r"^ダ(?!ー)", "ダート", re.sub(r"^障(?!害)", "障害", course))  # 一覧の略し方（ダ・障）をそのまま出さない
-    grade = (row or {}).get("grade") or sch.get("grade") or ""
-    cond = (row or {}).get("cond") or ""
+    return {"date": d, "name": name, "venue": venue, "course": course, "grade": (row or {}).get("grade") or sch.get("grade") or "",
+            "cond": (row or {}).get("cond") or "", "jra": jra, "res": res}
+
+
+def hub_info(slug: str, year: str, meta: dict | None = None, post_hint: str = "") -> dict | None:
+    """特集まとめに入れる「よくある質問」（site/hubfaq.py）に渡す、そのレースの日程といまの段階。日程が分からなければ None。
+    post_hint は記事に書いた発走の予定時刻（出馬表が出るまでは、これを「予定」として出す）。"""
+    f = _hub_facts(slug, year, meta)
+    if not f:
+        return None
+    d = f["date"]
+    pred = next((p for dd, p, *_ in PREDS.get(slug) or [] if dd == d), None)
+    w = WAKU.get(slug) if (WAKU.get(slug) or {}).get("date") == d else None
+    post = (pred or {}).get("_race", {}).get("post_time") or (w or {}).get("post_time") or ""
+    phase = "result" if f["res"] else "pred" if pred else (hub_phase(slug, year) or {}).get("phase")
+    return {"slug": slug, "name": f["name"], "year": str(year), "date": d, "venue": f["venue"], "course": f["course"], "grade": f["grade"],
+            "jra": f["jra"], "post": post or post_hint, "post_fixed": bool(post), "phase": phase,
+            "pred_path": _B.race_path(d, pred) if pred else "", "publish": publish_when(d) if f["jra"] else "",
+            "today": TODAY, "graded_page": _has_graded(slug)}
+
+
+def hub_top(slug: str, year: str, anchors: dict | None = None, post_hint: str = "", meta: dict | None = None) -> str:
+    """特集まとめ（〇〇<年>-guide）の題名のすぐ下に置く箱：開催日・コース・格、発表の順番のうち今どこか、
+    その段階でいちばん見たいページへの大きな入口（AI予想・全頭診断・「AI vs あなた」、出走馬の表、結果）。
+    検索から来た人の入口は特集まとめが多いのに、開催日や予想への入口が長い前文の下にあった（スマホで2画面め以降）ため。
+    日程はJRAの重賞の一覧（data/graded_hist）から。一覧に無いレース（地方の東京大賞典など）は、記事の頭書きの
+    race_date・race_venue・race_course・race_grade（meta）を使う。どちらも無ければ空を返す（記事に書いた前文のまま）。"""
+    f = _hub_facts(slug, year, meta)
+    if not f:
+        return ""
+    B, esc = _B, _B.esc
+    anchors = anchors or {}
+    d, name, venue, course, grade, cond = f["date"], f["name"], f["venue"], f["course"], f["grade"], f["cond"]
+    jra, res = f["jra"], f["res"]  # jra：JRAの重賞（出走馬・枠順の表が自動で載る）
     pred = next((p for dd, p, *_ in PREDS.get(slug) or [] if dd == d), None)
     w = WAKU.get(slug) if (WAKU.get(slug) or {}).get("date") == d else None
     e = ENTRIES.get(slug) if (ENTRIES.get(slug) or {}).get("date") == d else None

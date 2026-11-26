@@ -94,6 +94,24 @@ def test_sale_time_only_for_checked_year():
     assert "金曜の18時30分" in sat
 
 
+def test_tv_programs_only_for_checked_year():
+    feb = jc(name="フェブラリーステークス", slug="february-stakes", year="2027", date="20270221", venue="東京", course="ダート1600m",
+             today="20270201", post="")
+    tv = by_q(feb, "中継")
+    for w in ("みんなのKEIBA", "ウイニング競馬", "15時"):
+        assert w not in tv, f"確かめていない年の番組名・放送時間を書いている（{w}）"
+    assert hubfaq.SRC["tv"] in tv and "無料" in tv, "案内へのリンクと、ネットの無料中継は出す"
+    jump = by_q(jc(name="中山グランドジャンプ", slug="nakayama-grand-jump", year="2027", date="20270417", venue="中山", course="障害4260m",
+                   grade="J・G1", today="20270401", post="14:40", post_fixed=True), "中継")
+    assert "ウイニング競馬" not in jump and "入らない" not in jump, "放送時間を確かめていない年は、発走時刻と比べない"
+
+
+def test_local_race_prediction_day():
+    ai = by_q(tdt(), "AI予想")
+    assert "12月28日（月）の夜" in ai, "特集まとめの冒頭の箱と同じ日どり（前日の夜）"
+    assert "当日" not in ai
+
+
 def test_pred_published():
     ai = by_q(jc(phase="pred", pred_path="/2026/11/29/tokyo/12r/"), "AI予想")
     assert "(/2026/11/29/tokyo/12r/)" in ai and "公開中" in ai
@@ -164,6 +182,185 @@ def test_post_hint():
     assert hubfaq.post_hint("- 日時：2026年12月6日（日）中京11R・15時40分発走予定") == "15:40"
     assert hubfaq.post_hint("受付は9時5分から") == ""
     assert hubfaq.post_hint("") == ""
+
+
+# ---------- 特集まとめへの差し込み（site/weekly.py の hub_info、site/column.py の _aff_for） ----------
+import contextlib  # noqa: E402
+import json  # noqa: E402
+import tempfile  # noqa: E402
+import types  # noqa: E402
+
+import column  # noqa: E402
+import weekly  # noqa: E402
+
+
+def _load_json(p):
+    try:
+        return json.loads(Path(p).read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return None
+
+
+@contextlib.contextmanager
+def weekly_state(today="20261126", K=None, preds=None, waku=None, guides=None):
+    """weekly の状態（サイトを組み立てるときに prepare が入れるもの）を、テスト用の小さな中身に入れ替える。
+    guides はレースガイド（data/race_guides/<slug>.json）の {slug: レース名}。"""
+    names = ("_B", "TODAY", "_K", "SCHED_BY_SLUG", "PREDS", "WAKU", "ENTRIES", "NOMS")
+    saved = {n: getattr(weekly, n) for n in names}
+    with tempfile.TemporaryDirectory() as d:
+        root = Path(d)
+        (root / "data" / "race_guides").mkdir(parents=True)
+        for g, nm in (guides or {}).items():
+            (root / "data" / "race_guides" / f"{g}.json").write_text(json.dumps({"slug": g, "name": nm}), encoding="utf-8")
+        B = types.SimpleNamespace(ROOT=root, esc=str, load_json=_load_json,
+                                  race_path=lambda dd, p: f"/{dd[:4]}/{dd[4:6]}/{dd[6:]}/tokyo/12r/")
+        K = K or {}
+        sched = {s: [{"date": r["date"], "name": r.get("name", ""), "grade": r.get("grade", ""), "venue": r.get("venue", ""),
+                      "course": r.get("course", ""), "slug": s} for r in ys.values()] for s, ys in K.items()}
+        try:
+            weekly._B, weekly.TODAY, weekly._K, weekly.SCHED_BY_SLUG = B, today, K, sched
+            weekly.PREDS, weekly.WAKU, weekly.ENTRIES, weekly.NOMS = preds or {}, waku or {}, {}, {}
+            yield
+        finally:
+            for n, v in saved.items():
+                setattr(weekly, n, v)
+
+
+TDT_GUIDE = {"tokyo-daishoten": "東京大賞典"}
+JC_ROW = {"date": "20261129", "name": "ジャパンカップ", "grade": "G1", "venue": "東京", "course": "芝 2,400 メートル", "cond": "3歳以上"}
+
+
+def test_hub_info_before_entries():
+    with weekly_state(K={"japan-cup": {2026: JC_ROW}}, guides={"japan-cup": "ジャパンカップ"}):
+        info = weekly.hub_info("japan-cup", "2026", post_hint="15:40")
+    assert info["date"] == "20261129" and info["venue"] == "東京" and info["course"] == "芝2400m" and info["grade"] == "G1"
+    assert info["name"] == "ジャパンカップ" and info["jra"] is True and info["today"] == "20261126"
+    assert info["post"] == "15:40" and info["post_fixed"] is False, "記事の予定時刻は「予定」として扱う"
+    assert info["phase"] is None and info["pred_path"] == ""
+    assert "11月27日（金）" in info["publish"] and info["graded_page"] is True
+    assert len(hubfaq.faq_items(info)) == 6, "hub_info の形のまま、よくある質問を作れる"
+
+
+def test_hub_info_course_wording():
+    row = dict(JC_ROW, date="20261206", name="チャンピオンズカップ", venue="中京", course="ダ 1,800 メートル")
+    with weekly_state(K={"champions-cup": {2026: row}}):
+        info = weekly.hub_info("champions-cup", "2026")
+    assert info["course"] == "ダート1800m" and info["post"] == "" and info["graded_page"] is False
+
+
+def test_hub_info_with_prediction():
+    pred = {"race_id": "jra_x", "marks": {"◎": 3}, "confidence": "B", "_race": {"post_time": "15:40", "horses": []}}
+    with weekly_state(K={"japan-cup": {2026: JC_ROW}}, preds={"japan-cup": [("20261129", pred, "ジャパンカップ", "G1")]}):
+        info = weekly.hub_info("japan-cup", "2026", post_hint="15:35")
+    assert info["phase"] == "pred" and info["pred_path"] == "/2026/11/29/tokyo/12r/"
+    assert info["post"] == "15:40" and info["post_fixed"] is True, "出馬表の時刻が、記事の予定時刻より優先"
+
+
+def test_hub_info_post_time_from_entries_table():
+    waku = {"japan-cup": {"date": "20261129", "post_time": "15:40", "numbered": False, "horses": [{"name": "ア"}],
+                          "src": "waku", "since": "2026-11-26"}}
+    with weekly_state(K={"japan-cup": {2026: JC_ROW}}, waku=waku):
+        info = weekly.hub_info("japan-cup", "2026")
+    assert info["post"] == "15:40" and info["post_fixed"] is True
+
+
+def test_hub_info_local_race_from_front_matter():
+    meta = {"date": "20261229", "venue": "大井", "course": "ダート2000m", "grade": "G1"}
+    with weekly_state(guides=TDT_GUIDE):
+        info = weekly.hub_info("tokyo-daishoten", "2026", meta=meta)
+        none = weekly.hub_info("tokyo-daishoten", "2026")
+        other_year = weekly.hub_info("tokyo-daishoten", "2027", meta=meta)
+    with weekly_state():
+        unnamed = weekly.hub_info("tokyo-daishoten", "2026", meta=meta)
+    assert info["jra"] is False and info["date"] == "20261229" and info["venue"] == "大井" and info["course"] == "ダート2000m"
+    assert info["name"] == "東京大賞典", "一覧に無いレースの名前は、レースガイドから"
+    assert unnamed["name"] == "" and hubfaq.faq_md(unnamed) == "", "名前が分からないレースには、よくある質問を出さない"
+    assert info["publish"] == "", "地方のレースの公開の日どりは、中央の決まりでは言えない"
+    assert none is None and other_year is None, "日程が分からなければ None（よくある質問を出さない）"
+
+
+def test_hub_info_finished_race():
+    rows = [{"fin": i, "num": i, "frame": i, "name": f"ウマ{i}", "pop": i, "jockey": "騎手"} for i in (1, 2, 3)]
+    done = dict(JC_ROW, date="20261122", name="マイルチャンピオンシップ", venue="京都", course="芝 1,600 メートル", rows=rows, pay={})
+    with weekly_state(K={"mile-championship": {2026: done}}):
+        info = weekly.hub_info("mile-championship", "2026")
+    assert info["phase"] == "result" and hubfaq.faq_md(info) == ""
+
+
+def test_hub_info_bad_year():
+    with weekly_state(K={"japan-cup": {2026: JC_ROW}}):
+        assert weekly.hub_info("japan-cup", "") is None and weekly.hub_info("japan-cup", "abcd") is None
+
+
+def test_aff_for_skips_when_faq_has_pr():
+    tables = {"aff_rakuten": "R", "aff_saikyo": "S"}
+    c = {"slug": "tokyo-daishoten2026-guide", "race_venue": "大井", "body": ""}
+    assert column._aff_for(c, tables) == "R"
+    assert column._aff_for(dict(c, _faq_pr=True), tables) == "", "よくある質問の中にPRを出したページでは、末尾のPRを出さない"
+
+
+JC_COL = {"slug": "jc2026-guide", "series": "jc2026",
+          "body": "## レースの基本情報\n\n- 日時：2026年11月29日（日）15:40発走予定\n\n## 特集の記事\n\n- [枠順](/column/jc2026-waku/)\n\n## 出典\n\n- JRA\n"}
+TDT_COL = {"slug": "tokyo-daishoten2026-guide", "series": "tdt2026", "race_date": "20261229", "race_venue": "大井",
+           "race_course": "ダート2000m", "race_grade": "G1", "body": "## レースの基本情報\n\n- 場所：大井競馬場\n\n## 特集の記事\n\n- a\n"}
+TABLES = {"aff_rakuten": "R", "aff_saikyo": "S", "aff_nar": "<div class='aff'>PR</div>"}
+
+
+def test_with_faq_inserts_before_feature_list():
+    c = dict(JC_COL)
+    with weekly_state(K={"japan-cup": {2026: JC_ROW}}):
+        body, ld = column._with_faq(c, TABLES)
+    assert body.index("## レースの基本情報") < body.index("## ジャパンカップ2026のよくある質問") < body.index("## 特集の記事")
+    assert "発走は15時40分の予定。" in body, "記事に書いた発走の予定時刻を使う"
+    assert ld["@type"] == "FAQPage" and len(ld["mainEntity"]) == 6
+    assert c["_faq_pr"] is False and column._aff_for(c, TABLES) == "S", "中央のレースは、末尾のPRをこれまでどおり出す"
+
+
+def test_with_faq_leaves_other_articles_alone():
+    with weekly_state(K={"japan-cup": {2026: JC_ROW}}):
+        for c in ({"slug": "jc2026-waku", "series": "jc2026", "body": "本文\n"},     # 特集の中の、まとめ以外の記事
+                  {"slug": "tansho-fukusho", "body": "本文\n"},                        # ふつうのコラム
+                  {"slug": "x2026-guide", "series": "x2026", "body": "本文\n"}):       # レースに結びついていない特集
+            assert column._with_faq(c, TABLES) == ("本文\n", None) and c["_faq_pr"] is False
+
+
+def test_with_faq_local_race_pr_once():
+    c = dict(TDT_COL)
+    with weekly_state(guides=TDT_GUIDE):
+        body, ld = column._with_faq(c, TABLES)
+    assert body.count("{{aff_nar}}") == 1 and "大井競馬場のダート2000m" in body and ld["@type"] == "FAQPage"
+    assert c["_faq_pr"] is True and column._aff_for(c, TABLES) == "", "同じPRを、質問の中と末尾の2か所に出さない"
+
+
+def test_with_faq_keeps_end_pr_when_box_is_missing():
+    c = dict(TDT_COL)
+    with weekly_state(guides=TDT_GUIDE):
+        column._with_faq(c, dict(TABLES, aff_nar=""))
+    assert c["_faq_pr"] is False and column._aff_for(c, TABLES) == "R", "質問の中のPRが作れなかったら、末尾のPRを残す"
+
+
+def test_with_faq_finished_race():
+    rows = [{"fin": i, "num": i, "frame": i, "name": f"ウマ{i}", "pop": i, "jockey": "騎手"} for i in (1, 2, 3)]
+    with weekly_state(K={"japan-cup": {2026: dict(JC_ROW, date="20261122", rows=rows, pay={})}}):
+        assert column._with_faq(dict(JC_COL), TABLES) == (JC_COL["body"], None)
+
+
+def test_with_faq_never_breaks_the_page():
+    with weekly_state(K={"japan-cup": {2026: JC_ROW}}):
+        weekly._K = None  # 重賞の一覧が壊れていても、記事はそのまま出す
+        assert column._with_faq(dict(JC_COL), TABLES) == (JC_COL["body"], None)
+
+
+def test_faq_renders_with_site_markdown():
+    """よくある質問の Markdown が、このサイトの Markdown の読み方（column.render）で意図どおりのHTMLになる。"""
+    with weekly_state(guides=TDT_GUIDE):
+        body, _ = column._with_faq(dict(TDT_COL), TABLES)
+    out = column.render(body, TABLES)
+    assert out.count("<h2>東京大賞典2026のよくある質問</h2>") == 1 and out.count("<h3>") == 5
+    assert out.count("<div class='aff'>PR</div>") == 1 and "{{" not in out
+    assert "<a href='/column/tansho-fukusho/'>単勝と複勝の違い</a>" in out
+    assert out.index("よくある質問</h2>") < out.index("<div class='aff'>PR</div>") < out.index("<h2>特集の記事</h2>")
+    assert "](" not in out and "**" not in out, "リンクや強調の書き方が、そのまま出ていない"
 
 
 if __name__ == "__main__":

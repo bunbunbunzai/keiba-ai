@@ -14,7 +14,7 @@
 
 - 文は「である」調。内部の用語（phase・hub・noindex など）を読者向けの文に出さない。
 - 事実は `site/hubfaq.py` の定数に出どころのURLと確認日（2026-11-26）を残す。確かめていないことは書かない。
-- ネット投票の発売開始の時刻を書くのは、表を確かめた年（`SALE_YEAR = 2026`）のレースだけ。
+- 地上波の番組名・放送時間と、ネット投票の発売開始の時刻を書くのは、表を確かめた年（`CHECKED_YEAR = 2026`）のレースだけ。
 - 発走時刻は、データ（出馬表・予想）か記事の予定時刻があるときだけ書く。無ければ時刻を書かない。
 - G1以外の重賞の特集まとめは Google にだけ noindex、サイトマップに入れない、IndexNow の一覧には入れる。
 - 作り始めはレースの35日前（`HUB_DAYS = 35`）、作り直しはレースの14日後まで（`HUB_KEEP = 14`）、過去の開催が8回未満（`HUB_MIN_YEARS = 8`）のレースは作らない。
@@ -63,7 +63,7 @@
   - `test_insert_md`：`## 特集の記事` の直前／無ければ `## 出典` の直前／どちらも無ければ末尾。`faq=""` なら本文は変わらない。
   - `test_post_hint`：`"15:40発走予定" → "15:40"`、`"15時40分発走予定" → "15:40"`、`"9時5分"` は発走が無いので `""`。
 - [ ] **Step 2: 失敗を確かめる** `python -m pytest tests/test_hub_faq.py -q` → `ModuleNotFoundError: hubfaq`
-- [ ] **Step 3: `site/hubfaq.py` を書く。** 定数 `CHECKED = "2026-11-26"`、`SALE_YEAR = 2026`、`SRC`（JRAのURL：tvradio・racelive・soku/about・soku/instructions/hatsubai/jra・kouza/baken・ticket・news/202512/121402）、`NAR_NOTES = {"tokyo-daishoten": …}`。文面は設計メモ「決めたこと」のとおり。地上波の放送時間は 15:00〜16:00。
+- [ ] **Step 3: `site/hubfaq.py` を書く。** 定数 `CHECKED = "2026-11-26"`、`CHECKED_YEAR = 2026`、`SRC`（JRAのURL：tvradio・racelive・soku/about・soku/instructions/hatsubai/jra・kouza/baken・ticket・news/202512/121402）、`NAR_NOTES = {"tokyo-daishoten": …}`。文面は設計メモ「決めたこと」のとおり。地上波の放送時間は 15:00〜16:00。
 - [ ] **Step 4: 通ることを確かめる** `python -m pytest tests/test_hub_faq.py -q` と `python tests/test_hub_faq.py`
 - [ ] **Step 5: Commit** `よくある質問の文面（site/hubfaq.py）とテスト`
 

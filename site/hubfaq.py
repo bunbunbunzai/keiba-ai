@@ -5,15 +5,15 @@ Bing の検索と AI の回答で引用されているのは、ふだん競馬�
 site/column.py がサイトを組み立てるときに記事の本文（Markdown）へ差し込み、レースが終わったら出さない。
 
 書いてよいのは、下の SRC のページで確かめたことだけ。番組や発売の時刻は年ごとに変わるので、
-年が替わったら SRC を見直して CHECKED・SALE_YEAR を直す（直すまで、確かめていない年の発売時刻は自動で出なくなる）。
+年が替わったら SRC を見直して CHECKED・CHECKED_YEAR を直す（直すまで、確かめていない年のレースには番組名・放送時間・発売開始の時刻を書かない）。
 """
 from __future__ import annotations
 
 import re
-from datetime import datetime
+from datetime import datetime, timedelta
 
 CHECKED = "2026-11-26"  # 下の事実を公式ページで確かめた日
-SALE_YEAR = 2026        # ネット投票の発売開始の時刻を確かめた年（この年のレースにだけ時刻を書く）
+CHECKED_YEAR = 2026     # 地上波の番組・放送時間と、ネット投票の発売開始の時刻を確かめた年（この年のレースにだけ書く）
 TV_FROM, TV_TO = "15:00", "16:00"  # 地上波の競馬中継のふだんの放送時間（土曜・日曜）
 
 SRC = {
@@ -69,9 +69,14 @@ def _usable(info) -> bool:
     return not (info.get("today") and info["date"] < info["today"])  # 日を過ぎたら、結果がまだでも出さない
 
 
+def _checked_year(info: dict) -> bool:
+    """番組や発売の時刻を確かめた年のレースか（レースの日の年で見る）。"""
+    return str(info["date"])[:4] == str(CHECKED_YEAR)
+
+
 def _sale_from(info: dict, wd: int) -> str:
     """ネット投票（即PAT）で買えるようになる時刻。確かめた年の土曜・日曜のレースだけ。"""
-    if str(info.get("year")) != str(SALE_YEAR):
+    if not _checked_year(info):
         return ""
     if wd == 5:
         return "土曜のレースの馬券は、前日の金曜の18時30分から発売される。"
@@ -83,16 +88,18 @@ def _sale_from(info: dict, wd: int) -> str:
 
 
 def _tv(info: dict, wd: int, clock: str) -> str:
-    if wd == 5:
-        a = "地上波では、土曜の競馬中継（関東はテレビ東京「ウイニング競馬」、15時〜16時）がある。放送する局は地域で違う。"
-    elif wd == 6:
-        a = "地上波では、日曜の競馬中継（関東はフジテレビ「みんなのKEIBA」、15時〜16時）がある。放送する局は地域で違う。"
+    guide = f"[JRAのテレビ・ラジオ中継の案内]({SRC['tv']})で確かめてほしい。"
+    if wd not in (5, 6):
+        a = "土曜・日曜以外の開催日は、地上波で放送する局や時間がふだんと違うので、" + guide
+    elif not _checked_year(info):  # 番組名と放送時間は、確かめた年の分だけ書く
+        a = "地上波の競馬中継は、放送する局や時間が年や地域で違うので、" + guide
     else:
-        a = "土曜・日曜以外の開催日は、地上波で放送する局や時間がふだんと違う。"
-    post = info.get("post") or ""
-    if wd in (5, 6) and clock and not (TV_FROM <= post.zfill(5) < TV_TO):
-        a += f"このレースは{clock}発走で、ふだんの放送時間（15時〜16時）には入らない。"
-    a += f"G1の日などは放送時間が変わるので、[JRAのテレビ・ラジオ中継の案内]({SRC['tv']})で確かめてほしい。"
+        a = ("地上波では、土曜の競馬中継（関東はテレビ東京「ウイニング競馬」、15時〜16時）がある。" if wd == 5
+             else "地上波では、日曜の競馬中継（関東はフジテレビ「みんなのKEIBA」、15時〜16時）がある。") + "放送する局は地域で違う。"
+        post = info.get("post") or ""
+        if clock and not (TV_FROM <= post.zfill(5) < TV_TO):
+            a += f"このレースは{clock}発走で、ふだんの放送時間（15時〜16時）には入らない。"
+        a += "G1の日などは放送時間が変わるので、" + guide
     a += f"ネットでは、JRAが全レースの中継を無料で配信している（[JRAのレースライブ]({SRC['live']})。YouTubeのJRA公式チャンネルやJRAのアプリでも見られる）。"
     return a
 
@@ -159,8 +166,9 @@ def faq_items(info) -> list[dict]:
         ai += f"全頭の評価点と印、買い目を無料で公開する。{keep}"
         if info.get("graded_page") and slug:
             ai += f"公開すると[{name}のページ](/graded/{slug}/)にも載る。"
-    else:
-        ai = f"レースの前日の夜〜当日に公開する。全頭の評価点と印、買い目を無料で公開する。{keep}"
+    else:  # 地方のレースは、ふだんの全レースと同じく前日の夜（特集まとめの冒頭の箱と同じ日どり）
+        prev = datetime.strptime(info["date"], "%Y%m%d") - timedelta(days=1)
+        ai = f"レースの前日の{prev.month}月{prev.day}日（{WD[prev.weekday()]}）の夜に公開する予定。全頭の評価点と印、買い目を無料で公開する。{keep}"
     add("このサイトのAI予想はいつ出る？", ai)
     return out
 
