@@ -1,6 +1,6 @@
 {
  "date": "20261126",
- "updated": "2026-11-26 14:26",
+ "updated": "2026-11-26 14:30",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -977,7 +977,7 @@
     "field": 11,
     "popularity": 6
    },
-   "odds": 45.6,
+   "odds": 41.1,
    "popularity": 7
   },
   {
@@ -998,8 +998,8 @@
     "field": 12,
     "popularity": 7
    },
-   "odds": 22.4,
-   "popularity": 5
+   "odds": 26.7,
+   "popularity": 6
   },
   {
    "race_id": "202611262433170302",
@@ -1237,8 +1237,8 @@
     "field": 9,
     "popularity": 4
    },
-   "odds": null,
-   "popularity": null
+   "odds": 6.1,
+   "popularity": 3
   },
   {
    "race_id": "202611262218150204",
@@ -1249,7 +1249,8 @@
    "number": 4,
    "name": "エースオブゴールド",
    "types": [
-    "rebound"
+    "rebound",
+    "aitop"
    ],
    "gap_days": 13,
    "last": {
@@ -1258,8 +1259,8 @@
     "field": 9,
     "popularity": 1
    },
-   "odds": null,
-   "popularity": null
+   "odds": 5.6,
+   "popularity": 2
   },
   {
    "race_id": "202611262218150204",
@@ -1279,8 +1280,8 @@
     "field": 9,
     "popularity": 8
    },
-   "odds": null,
-   "popularity": null
+   "odds": 27.0,
+   "popularity": 6
   },
   {
    "race_id": "202611261813080308",
