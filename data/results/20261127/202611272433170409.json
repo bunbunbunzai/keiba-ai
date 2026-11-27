@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261127",
  "race_id": "202611272433170409",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 9,
+   "name": "グレートアゲイン",
+   "time": "1:50.9",
+   "margin": "",
+   "pos4": null,
+   "last3f": 38.7,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 12,
+   "name": "サトノセレナーデ",
+   "time": "1:52.2",
+   "margin": "６",
+   "pos4": null,
+   "last3f": 39.9,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 5,
+   "number": 6,
+   "name": "ノーブルスナイパー",
+   "time": "1:53.0",
+   "margin": "４",
+   "pos4": null,
+   "last3f": 40.1,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 2,
+   "number": 2,
+   "name": "コスモコロネット",
+   "time": "1:53.9",
+   "margin": "４",
+   "pos4": null,
+   "last3f": 40.7,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 1,
+   "number": 1,
+   "name": "ブリリアントギフト",
+   "time": "1:54.4",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": 41.5,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 7,
+   "name": "ミヤビエクセレント",
+   "time": "1:55.1",
+   "margin": "３",
+   "pos4": null,
+   "last3f": 42.4,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 4,
+   "number": 4,
+   "name": "マサハヤルージュ",
+   "time": "1:55.5",
+   "margin": "２",
+   "pos4": null,
+   "last3f": 43.2,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 6,
+   "number": 8,
+   "name": "セレスト",
+   "time": "1:55.7",
+   "margin": "１",
+   "pos4": null,
+   "last3f": 42.5,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 3,
+   "number": 3,
+   "name": "アイタロオ",
+   "time": "1:55.8",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": 42.9,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 10,
+   "name": "ターミネーター",
+   "time": "1:55.9",
+   "margin": "１／２",
+   "pos4": null,
+   "last3f": 41.4,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 5,
+   "number": 5,
+   "name": "トータルダイヤ",
+   "time": "1:56.3",
+   "margin": "２",
+   "pos4": null,
+   "last3f": 43.6,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 8,
+   "number": 11,
+   "name": "クールシェリー",
+   "time": "1:56.4",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": 43.7,
+   "popularity": null
+  }
+ ]
 }
