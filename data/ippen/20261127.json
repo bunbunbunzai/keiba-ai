@@ -1,6 +1,6 @@
 {
  "date": "20261127",
- "updated": "2026-11-27 14:52",
+ "updated": "2026-11-27 15:02",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -777,7 +777,7 @@
     "field": 10,
     "popularity": 1
    },
-   "odds": 3.4,
+   "odds": 3.9,
    "popularity": 2
   },
   {
@@ -798,8 +798,8 @@
     "field": 11,
     "popularity": 6
    },
-   "odds": 11.9,
-   "popularity": 5
+   "odds": 14.6,
+   "popularity": 7
   },
   {
    "race_id": "202611272433170403",
@@ -926,7 +926,7 @@
     "field": 13,
     "popularity": 8
    },
-   "odds": 15.8,
+   "odds": 15.2,
    "popularity": 8
   },
   {
@@ -947,7 +947,7 @@
     "field": 14,
     "popularity": 10
    },
-   "odds": 12.8,
+   "odds": 13.2,
    "popularity": 7
   },
   {
@@ -968,7 +968,7 @@
     "field": 14,
     "popularity": 10
    },
-   "odds": 73.2,
+   "odds": 83.6,
    "popularity": 11
   },
   {
@@ -982,7 +982,7 @@
    "types": [
     "aitop"
    ],
-   "odds": 8.2,
+   "odds": 9.1,
    "popularity": 5
   },
   {
@@ -1089,8 +1089,22 @@
     "field": 11,
     "popularity": 8
    },
-   "odds": null,
-   "popularity": null
+   "odds": 110.7,
+   "popularity": 12
+  },
+  {
+   "race_id": "202611272433170404",
+   "results_key": "202611272433170404",
+   "venue": "名古屋",
+   "race_no": 4,
+   "post_time": "16:25",
+   "number": 7,
+   "name": "ルージュソムニウム",
+   "types": [
+    "aitop"
+   ],
+   "odds": 11.2,
+   "popularity": 3
   },
   {
    "race_id": "202611272433170404",
@@ -1110,8 +1124,8 @@
     "field": 12,
     "popularity": 10
    },
-   "odds": 12.0,
-   "popularity": 3
+   "odds": 70.4,
+   "popularity": 9
   },
   {
    "race_id": "202611271813080409",
