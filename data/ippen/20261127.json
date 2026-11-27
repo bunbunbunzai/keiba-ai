@@ -1,6 +1,6 @@
 {
  "date": "20261127",
- "updated": "2026-11-27 13:20",
+ "updated": "2026-11-27 13:27",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -385,8 +385,8 @@
     "field": 9,
     "popularity": 3
    },
-   "odds": 109.7,
-   "popularity": 9
+   "odds": 53.6,
+   "popularity": 6
   },
   {
    "race_id": "202611272726190307",
@@ -406,8 +406,8 @@
     "field": 11,
     "popularity": 6
    },
-   "odds": 70.5,
-   "popularity": 8
+   "odds": 97.2,
+   "popularity": 9
   },
   {
    "race_id": "202611272726190307",
@@ -420,7 +420,7 @@
    "types": [
     "aitop"
    ],
-   "odds": 4.9,
+   "odds": 3.2,
    "popularity": 3
   },
   {
@@ -441,7 +441,7 @@
     "field": 17,
     "popularity": null
    },
-   "odds": 58.1,
+   "odds": 64.8,
    "popularity": 7
   },
   {
@@ -567,7 +567,7 @@
     "field": 12,
     "popularity": 7
    },
-   "odds": 10.2,
+   "odds": 10.4,
    "popularity": 4
   },
   {
@@ -611,6 +611,20 @@
    "venue": "浦和",
    "race_no": 6,
    "post_time": "14:50",
+   "number": 3,
+   "name": "サフラナール",
+   "types": [
+    "aitop"
+   ],
+   "odds": 7.8,
+   "popularity": 6
+  },
+  {
+   "race_id": "202611271813080406",
+   "results_key": "202611271813080406",
+   "venue": "浦和",
+   "race_no": 6,
+   "post_time": "14:50",
    "number": 7,
    "name": "ラエティティア",
    "types": [
@@ -623,8 +637,8 @@
     "field": 12,
     "popularity": 10
    },
-   "odds": 97.6,
-   "popularity": 5
+   "odds": 9.9,
+   "popularity": 8
   },
   {
    "race_id": "202611272726190309",
