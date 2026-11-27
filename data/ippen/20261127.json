@@ -1,6 +1,6 @@
 {
  "date": "20261127",
- "updated": "2026-11-27 15:06",
+ "updated": "2026-11-27 15:11",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1160,8 +1160,8 @@
     "field": 9,
     "popularity": 4
    },
-   "odds": 107.2,
-   "popularity": 6
+   "odds": 24.9,
+   "popularity": 8
   },
   {
    "race_id": "202611271813080409",
@@ -1181,8 +1181,22 @@
     "field": 8,
     "popularity": 4
    },
-   "odds": 21.4,
-   "popularity": 3
+   "odds": 14.9,
+   "popularity": 6
+  },
+  {
+   "race_id": "202611271813080409",
+   "results_key": "202611271813080409",
+   "venue": "浦和",
+   "race_no": 9,
+   "post_time": "16:35",
+   "number": 5,
+   "name": "クウレイナニ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 3.9,
+   "popularity": 2
   },
   {
    "race_id": "202611271813080409",
@@ -1202,8 +1216,8 @@
     "field": 11,
     "popularity": 10
    },
-   "odds": null,
-   "popularity": null
+   "odds": 79.1,
+   "popularity": 10
   },
   {
    "race_id": "202611272726190312",
