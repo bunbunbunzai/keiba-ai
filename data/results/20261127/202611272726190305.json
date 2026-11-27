@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261127",
  "race_id": "202611272726190305",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,127 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 5,
+   "name": "アークブリッツ",
+   "time": "1:20.3",
+   "margin": "",
+   "pos4": null,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 9,
+   "name": "ルヴァロワール",
+   "time": "1:21.1",
+   "margin": "５",
+   "pos4": null,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 10,
+   "name": "グランキンバリー",
+   "time": "1:21.2",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": 40.6,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 4,
+   "number": 4,
+   "name": "エクスペリオン",
+   "time": "1:21.3",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 7,
+   "name": "モンサンヴェロニカ",
+   "time": "1:21.3",
+   "margin": "ハナ",
+   "pos4": null,
+   "last3f": 39.1,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "テイムキッド",
+   "time": "1:21.3",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": 39.5,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 1,
+   "number": 1,
+   "name": "メメボス",
+   "time": "1:21.7",
+   "margin": "２ １／２",
+   "pos4": null,
+   "last3f": 40.7,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "レスプレンドール",
+   "time": "1:21.7",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": 40.3,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 6,
+   "number": 6,
+   "name": "アイルトン",
+   "time": "1:22.8",
+   "margin": "７",
+   "pos4": null,
+   "last3f": 41.9,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 8,
+   "number": 11,
+   "name": "ディルガーム",
+   "time": "1:24.8",
+   "margin": "大差",
+   "pos4": null,
+   "last3f": 42.4,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 7,
+   "number": 8,
+   "name": "リコーリュウセイ",
+   "time": "1:24.8",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": 41.4,
+   "popularity": null
+  }
+ ]
 }
