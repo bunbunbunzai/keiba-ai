@@ -1,6 +1,6 @@
 {
  "date": "20261127",
- "updated": "2026-11-27 13:45",
+ "updated": "2026-11-27 13:53",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -567,7 +567,7 @@
     "field": 12,
     "popularity": 7
    },
-   "odds": 10.4,
+   "odds": 5.7,
    "popularity": 4
   },
   {
@@ -616,8 +616,8 @@
    "types": [
     "aitop"
    ],
-   "odds": 7.8,
-   "popularity": 6
+   "odds": 6.8,
+   "popularity": 3
   },
   {
    "race_id": "202611271813080406",
@@ -637,8 +637,29 @@
     "field": 12,
     "popularity": 10
    },
-   "odds": 9.9,
+   "odds": 11.9,
    "popularity": 8
+  },
+  {
+   "race_id": "202611271813080406",
+   "results_key": "202611271813080406",
+   "venue": "浦和",
+   "race_no": 6,
+   "post_time": "14:50",
+   "number": 9,
+   "name": "シェナノクインサー",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 36,
+   "last": {
+    "date": "2026-10-22",
+    "finish": 7,
+    "field": 11,
+    "popularity": 2
+   },
+   "odds": 7.9,
+   "popularity": 5
   },
   {
    "race_id": "202611272726190309",
