@@ -1,6 +1,6 @@
 {
  "date": "20261127",
- "updated": "2026-11-27 16:05",
+ "updated": "2026-11-27 16:06",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1176,20 +1176,6 @@
    "venue": "浦和",
    "race_no": 9,
    "post_time": "16:35",
-   "number": 5,
-   "name": "クウレイナニ",
-   "types": [
-    "aitop"
-   ],
-   "odds": 3.1,
-   "popularity": 2
-  },
-  {
-   "race_id": "202611271813080409",
-   "results_key": "202611271813080409",
-   "venue": "浦和",
-   "race_no": 9,
-   "post_time": "16:35",
    "number": 7,
    "name": "ラグーンプリンセス",
    "types": [
@@ -1507,6 +1493,20 @@
    },
    "odds": 12.2,
    "popularity": 7
+  },
+  {
+   "race_id": "202611272433170406",
+   "results_key": "202611272433170406",
+   "venue": "名古屋",
+   "race_no": 6,
+   "post_time": "17:30",
+   "number": 12,
+   "name": "マイネルスラーヴァ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 5.8,
+   "popularity": 2
   },
   {
    "race_id": "202611271813080411",
