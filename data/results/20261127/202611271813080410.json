@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261127",
  "race_id": "202611271813080410",
- "tries": 3,
+ "tries": 8,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,138 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 1,
+   "number": 1,
+   "name": "アルヴァレス",
+   "time": "1:35.1",
+   "margin": "",
+   "pos4": 2,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 7,
+   "name": "デアシュトゥルム",
+   "time": "1:35.4",
+   "margin": "１ １／２",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "シトラスフレイバー",
+   "time": "1:35.7",
+   "margin": "１ １／２",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 6,
+   "name": "サンリコリス",
+   "time": "1:35.8",
+   "margin": "３／４",
+   "pos4": 8,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 11,
+   "name": "フクチャンキング",
+   "time": "1:36.2",
+   "margin": "２",
+   "pos4": 5,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 3,
+   "number": 3,
+   "name": "ブレイジングヒート",
+   "time": "1:36.3",
+   "margin": "クビ",
+   "pos4": 9,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 5,
+   "name": "メロスゴー",
+   "time": "1:36.4",
+   "margin": "１／２",
+   "pos4": 5,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 2,
+   "number": 2,
+   "name": "ネライウチ",
+   "time": "1:36.8",
+   "margin": "２",
+   "pos4": 10,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 7,
+   "number": 10,
+   "name": "ハナチルサト",
+   "time": "1:36.8",
+   "margin": "アタマ",
+   "pos4": 10,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 8,
+   "number": 12,
+   "name": "ジュンゴールド",
+   "time": "1:37.5",
+   "margin": "３",
+   "pos4": 5,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 6,
+   "number": 8,
+   "name": "ドリームファイター",
+   "time": "1:37.8",
+   "margin": "１ １／２",
+   "pos4": 4,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "12",
+   "frame": 7,
+   "number": 9,
+   "name": "アイグレース",
+   "time": "1:38.0",
+   "margin": "３／４",
+   "pos4": 12,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
