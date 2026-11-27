@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261127",
  "race_id": "202611271813080405",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "シェリー",
    "time": "48.5",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 36.0,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "カスタネアローズ",
    "time": "48.7",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 35.9,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "スターハル",
    "time": "48.8",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 36.2,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "マカンコーサッポー",
    "time": "49.0",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 36.4,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "ミーコノデバンダ",
    "time": "49.1",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 36.3,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "ニコニコニコル",
    "time": "49.2",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 36.3,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "サノノラブミー",
    "time": "49.6",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 8,
+   "last3f": 36.2,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ダイメイナガス",
    "time": "49.8",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 37.0,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "ムゾラシカ",
    "time": "49.8",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 36.0,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "ヒシルリアン",
    "time": "49.9",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 10,
+   "last3f": 36.1,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "シンデレラリバティ",
    "time": "50.9",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 12,
+   "last3f": 37.1,
    "popularity": null
   },
   {
@@ -198,8 +198,8 @@
    "name": "ギルランダ",
    "time": "50.9",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 10,
+   "last3f": 37.1,
    "popularity": null
   }
  ]
