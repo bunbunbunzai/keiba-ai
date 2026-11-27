@@ -1,6 +1,6 @@
 {
  "date": "20261127",
- "updated": "2026-11-27 19:50",
+ "updated": "2026-11-27 20:15",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1874,29 +1874,8 @@
     "field": 12,
     "popularity": 11
    },
-   "odds": 21.6,
-   "popularity": 9
-  },
-  {
-   "race_id": "202611272433170412",
-   "results_key": "202611272433170412",
-   "venue": "名古屋",
-   "race_no": 12,
-   "post_time": "20:50",
-   "number": 9,
-   "name": "スパルタンワールド",
-   "types": [
-    "letdown"
-   ],
-   "gap_days": 14,
-   "last": {
-    "date": "2026-11-13",
-    "finish": 6,
-    "field": 12,
-    "popularity": 3
-   },
-   "odds": 10.3,
-   "popularity": 6
+   "odds": 18.7,
+   "popularity": 7
   },
   {
    "race_id": "202611272433170412",
@@ -1909,8 +1888,8 @@
    "types": [
     "aitop"
    ],
-   "odds": 7.2,
-   "popularity": 3
+   "odds": 6.9,
+   "popularity": 4
   }
  ]
 }
