@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261127",
  "race_id": "202611272726190308",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -59,5 +59,94 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 6,
+   "name": "ディザーヴユー",
+   "time": "1:53.4",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 39.9,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 5,
+   "number": 5,
+   "name": "ラズライトタッカー",
+   "time": "1:53.6",
+   "margin": "３／４",
+   "pos4": 2,
+   "last3f": 40.0,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "ムーンレイデオ",
+   "time": "1:53.9",
+   "margin": "１ ３／４",
+   "pos4": 5,
+   "last3f": 39.4,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 7,
+   "name": "クリスタルピット",
+   "time": "1:53.9",
+   "margin": "アタマ",
+   "pos4": 3,
+   "last3f": 39.7,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 3,
+   "number": 3,
+   "name": "アントラシート",
+   "time": "1:54.7",
+   "margin": "５",
+   "pos4": 6,
+   "last3f": 40.6,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "シェナマックス",
+   "time": "1:54.8",
+   "margin": "クビ",
+   "pos4": 4,
+   "last3f": 40.8,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 1,
+   "number": 1,
+   "name": "ビッキーファースト",
+   "time": "1:56.8",
+   "margin": "大差",
+   "pos4": 6,
+   "last3f": 43.0,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 8,
+   "number": 8,
+   "name": "ジーティーエイト",
+   "time": "-",
+   "margin": "取消",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
