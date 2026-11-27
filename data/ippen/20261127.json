@@ -1,6 +1,6 @@
 {
  "date": "20261127",
- "updated": "2026-11-27 13:27",
+ "updated": "2026-11-27 13:31",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -658,22 +658,8 @@
     "field": 10,
     "popularity": 10
    },
-   "odds": null,
-   "popularity": null
-  },
-  {
-   "race_id": "202611272726190309",
-   "results_key": "202611272726190309",
-   "venue": "園田",
-   "race_no": 9,
-   "post_time": "15:00",
-   "number": 10,
-   "name": "ウインソラネル",
-   "types": [
-    "aitop"
-   ],
-   "odds": 6.1,
-   "popularity": 4
+   "odds": 40.3,
+   "popularity": 10
   },
   {
    "race_id": "202611271813080407",
