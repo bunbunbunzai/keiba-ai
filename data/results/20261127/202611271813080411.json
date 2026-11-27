@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261127",
  "race_id": "202611271813080411",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -77,9 +77,9 @@
    "name": "オニアシ",
    "time": "1:27.6",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 5,
+   "last3f": 37.5,
+   "popularity": 7
   },
   {
    "finish": "2",
@@ -88,9 +88,9 @@
    "name": "ドレッド",
    "time": "1:27.6",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 8,
+   "last3f": 36.9,
+   "popularity": 4
   },
   {
    "finish": "3",
@@ -99,9 +99,9 @@
    "name": "エアポートライナー",
    "time": "1:27.6",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 1,
+   "last3f": 37.9,
+   "popularity": 2
   },
   {
    "finish": "4",
@@ -110,9 +110,9 @@
    "name": "リョウタスペシャル",
    "time": "1:27.6",
    "margin": "ハナ",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 4,
+   "last3f": 37.7,
+   "popularity": 6
   },
   {
    "finish": "5",
@@ -121,9 +121,9 @@
    "name": "スタンリーテソーロ",
    "time": "1:27.8",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 9,
+   "last3f": 37.1,
+   "popularity": 10
   },
   {
    "finish": "6",
@@ -132,9 +132,9 @@
    "name": "ブラックエックス",
    "time": "1:27.8",
    "margin": "ハナ",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 2,
+   "last3f": 39.1,
+   "popularity": 3
   },
   {
    "finish": "7",
@@ -143,9 +143,9 @@
    "name": "エリンアキレウス",
    "time": "1:28.0",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 7,
+   "last3f": 37.6,
+   "popularity": 13
   },
   {
    "finish": "8",
@@ -154,9 +154,9 @@
    "name": "スペンサーバローズ",
    "time": "1:28.0",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 11,
+   "last3f": 37.0,
+   "popularity": 11
   },
   {
    "finish": "9",
@@ -165,9 +165,9 @@
    "name": "シュガーコルト",
    "time": "1:28.0",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 9,
+   "last3f": 37.6,
+   "popularity": 14
   },
   {
    "finish": "10",
@@ -176,9 +176,9 @@
    "name": "ラブリービュー",
    "time": "1:28.1",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 2,
+   "last3f": 38.2,
+   "popularity": 9
   },
   {
    "finish": "11",
@@ -187,9 +187,9 @@
    "name": "タイムモーメント",
    "time": "1:28.5",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 6,
+   "last3f": 38.3,
+   "popularity": 12
   },
   {
    "finish": "12",
@@ -198,9 +198,9 @@
    "name": "サトノフェニックス",
    "time": "1:28.6",
    "margin": "クビ",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 11,
+   "last3f": 38.1,
+   "popularity": 1
   },
   {
    "finish": "13",
@@ -209,9 +209,9 @@
    "name": "トノパー",
    "time": "1:28.7",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 13,
+   "last3f": 38.2,
+   "popularity": 5
   },
   {
    "finish": "14",
@@ -220,9 +220,9 @@
    "name": "ケンキートス",
    "time": "1:28.7",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
-   "popularity": null
+   "pos4": 14,
+   "last3f": 38.3,
+   "popularity": 8
   }
  ]
 }
