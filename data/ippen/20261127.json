@@ -1,6 +1,6 @@
 {
  "date": "20261127",
- "updated": "2026-11-27 11:17",
+ "updated": "2026-11-27 11:20",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -174,8 +174,22 @@
     "field": 11,
     "popularity": 3
    },
-   "odds": 15.0,
-   "popularity": 6
+   "odds": 20.8,
+   "popularity": 7
+  },
+  {
+   "race_id": "202611272726190305",
+   "results_key": "202611272726190305",
+   "venue": "園田",
+   "race_no": 5,
+   "post_time": "12:45",
+   "number": 4,
+   "name": "エクスペリオン",
+   "types": [
+    "aitop"
+   ],
+   "odds": 7.3,
+   "popularity": 4
   },
   {
    "race_id": "202611272726190306",
