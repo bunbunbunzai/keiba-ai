@@ -1,6 +1,6 @@
 {
  "date": "20261127",
- "updated": "2026-11-27 16:53",
+ "updated": "2026-11-27 17:05",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1448,8 +1448,8 @@
     "field": 11,
     "popularity": 3
    },
-   "odds": 32.0,
-   "popularity": 11
+   "odds": 52.7,
+   "popularity": 10
   },
   {
    "race_id": "202611272433170406",
@@ -1469,8 +1469,8 @@
     "field": 12,
     "popularity": 6
    },
-   "odds": 11.6,
-   "popularity": 8
+   "odds": 14.3,
+   "popularity": 6
   },
   {
    "race_id": "202611272433170406",
@@ -1491,22 +1491,8 @@
     "field": 12,
     "popularity": 3
    },
-   "odds": 10.9,
+   "odds": 14.3,
    "popularity": 6
-  },
-  {
-   "race_id": "202611272433170406",
-   "results_key": "202611272433170406",
-   "venue": "名古屋",
-   "race_no": 6,
-   "post_time": "17:30",
-   "number": 12,
-   "name": "マイネルスラーヴァ",
-   "types": [
-    "aitop"
-   ],
-   "odds": 6.2,
-   "popularity": 2
   },
   {
    "race_id": "202611271813080411",
@@ -1632,7 +1618,7 @@
     "field": 11,
     "popularity": 11
    },
-   "odds": 85.1,
+   "odds": 64.2,
    "popularity": 9
   },
   {
@@ -1654,7 +1640,7 @@
     "field": 11,
     "popularity": 3
    },
-   "odds": 94.5,
+   "odds": 69.2,
    "popularity": 10
   },
   {
@@ -1675,7 +1661,7 @@
     "field": 12,
     "popularity": 12
    },
-   "odds": 60.8,
+   "odds": 60.0,
    "popularity": 8
   },
   {
@@ -1696,8 +1682,8 @@
     "field": 12,
     "popularity": 7
    },
-   "odds": 20.2,
-   "popularity": 3
+   "odds": 14.7,
+   "popularity": 2
   },
   {
    "race_id": "202611272433170407",
@@ -1717,8 +1703,8 @@
     "field": 12,
     "popularity": 12
    },
-   "odds": 851.2,
-   "popularity": 12
+   "odds": 75.0,
+   "popularity": 11
   },
   {
    "race_id": "202611271813080412",
