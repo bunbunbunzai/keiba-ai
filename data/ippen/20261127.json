@@ -1,6 +1,6 @@
 {
  "date": "20261127",
- "updated": "2026-11-27 15:30",
+ "updated": "2026-11-27 16:05",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1146,8 +1146,8 @@
     "field": 9,
     "popularity": 4
    },
-   "odds": 24.9,
-   "popularity": 8
+   "odds": 23.6,
+   "popularity": 7
   },
   {
    "race_id": "202611271813080409",
@@ -1167,7 +1167,7 @@
     "field": 8,
     "popularity": 4
    },
-   "odds": 14.9,
+   "odds": 15.9,
    "popularity": 6
   },
   {
@@ -1181,7 +1181,7 @@
    "types": [
     "aitop"
    ],
-   "odds": 3.9,
+   "odds": 3.1,
    "popularity": 2
   },
   {
@@ -1202,8 +1202,8 @@
     "field": 11,
     "popularity": 10
    },
-   "odds": 79.1,
-   "popularity": 10
+   "odds": 76.2,
+   "popularity": 11
   },
   {
    "race_id": "202611272726190312",
@@ -1216,7 +1216,7 @@
    "types": [
     "aitop"
    ],
-   "odds": 6.3,
+   "odds": 4.8,
    "popularity": 3
   },
   {
@@ -1237,7 +1237,7 @@
     "field": 12,
     "popularity": 1
    },
-   "odds": 3.0,
+   "odds": 3.5,
    "popularity": 1
   },
   {
@@ -1258,7 +1258,7 @@
     "field": 12,
     "popularity": 8
    },
-   "odds": 24.2,
+   "odds": 22.4,
    "popularity": 8
   },
   {
@@ -1279,8 +1279,8 @@
     "field": 12,
     "popularity": 11
    },
-   "odds": null,
-   "popularity": null
+   "odds": 80.4,
+   "popularity": 12
   },
   {
    "race_id": "202611272433170405",
@@ -1300,8 +1300,8 @@
     "field": 12,
     "popularity": 9
    },
-   "odds": null,
-   "popularity": null
+   "odds": 23.8,
+   "popularity": 6
   },
   {
    "race_id": "202611272433170405",
@@ -1312,7 +1312,8 @@
    "number": 8,
    "name": "フークベルエ",
    "types": [
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 14,
    "last": {
@@ -1321,8 +1322,8 @@
     "field": 12,
     "popularity": 2
    },
-   "odds": null,
-   "popularity": null
+   "odds": 45.9,
+   "popularity": 8
   },
   {
    "race_id": "202611272433170405",
@@ -1342,8 +1343,8 @@
     "field": 11,
     "popularity": 4
    },
-   "odds": 94.4,
-   "popularity": 3
+   "odds": 8.5,
+   "popularity": 4
   },
   {
    "race_id": "202611272433170405",
@@ -1363,8 +1364,8 @@
     "field": 12,
     "popularity": 10
    },
-   "odds": 94.4,
-   "popularity": 3
+   "odds": 33.8,
+   "popularity": 7
   },
   {
    "race_id": "202611271813080410",
@@ -1384,8 +1385,8 @@
     "field": 14,
     "popularity": 4
    },
-   "odds": 33.8,
-   "popularity": 3
+   "odds": 6.0,
+   "popularity": 2
   },
   {
    "race_id": "202611271813080410",
@@ -1398,8 +1399,8 @@
    "types": [
     "aitop"
    ],
-   "odds": 101.6,
-   "popularity": 9
+   "odds": 6.5,
+   "popularity": 3
   },
   {
    "race_id": "202611271813080410",
@@ -1419,8 +1420,8 @@
     "field": 14,
     "popularity": 13
    },
-   "odds": 33.8,
-   "popularity": 3
+   "odds": 44.4,
+   "popularity": 12
   },
   {
    "race_id": "202611271813080410",
@@ -1440,8 +1441,29 @@
     "field": 13,
     "popularity": 8
    },
-   "odds": 101.6,
-   "popularity": 9
+   "odds": 18.0,
+   "popularity": 10
+  },
+  {
+   "race_id": "202611272433170406",
+   "results_key": "202611272433170406",
+   "venue": "名古屋",
+   "race_no": 6,
+   "post_time": "17:30",
+   "number": 2,
+   "name": "スマートカリーナ",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 27,
+   "last": {
+    "date": "2026-10-31",
+    "finish": 7,
+    "field": 11,
+    "popularity": 3
+   },
+   "odds": 31.2,
+   "popularity": 11
   },
   {
    "race_id": "202611272433170406",
@@ -1461,8 +1483,8 @@
     "field": 12,
     "popularity": 6
    },
-   "odds": 6.4,
-   "popularity": 3
+   "odds": 11.0,
+   "popularity": 5
   },
   {
    "race_id": "202611272433170406",
@@ -1473,7 +1495,8 @@
    "number": 10,
    "name": "アインホルン",
    "types": [
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 14,
    "last": {
@@ -1482,8 +1505,8 @@
     "field": 12,
     "popularity": 3
    },
-   "odds": 6.4,
-   "popularity": 3
+   "odds": 12.2,
+   "popularity": 7
   },
   {
    "race_id": "202611271813080411",
@@ -1503,8 +1526,8 @@
     "field": 9,
     "popularity": 7
    },
-   "odds": 40.0,
-   "popularity": 5
+   "odds": 25.6,
+   "popularity": 8
   },
   {
    "race_id": "202611271813080411",
@@ -1524,8 +1547,8 @@
     "field": 13,
     "popularity": 10
    },
-   "odds": 120.0,
-   "popularity": 9
+   "odds": 226.3,
+   "popularity": 14
   },
   {
    "race_id": "202611271813080411",
@@ -1545,8 +1568,8 @@
     "field": 8,
     "popularity": 4
    },
-   "odds": 1.1,
-   "popularity": 1
+   "odds": 28.7,
+   "popularity": 9
   },
   {
    "race_id": "202611271813080411",
@@ -1567,8 +1590,8 @@
     "field": 13,
     "popularity": 4
    },
-   "odds": 40.0,
-   "popularity": 5
+   "odds": 29.4,
+   "popularity": 10
   },
   {
    "race_id": "202611271813080411",
@@ -1588,8 +1611,8 @@
     "field": 9,
     "popularity": 5
    },
-   "odds": 120.0,
-   "popularity": 9
+   "odds": 63.5,
+   "popularity": 11
   },
   {
    "race_id": "202611272433170407",
@@ -1609,8 +1632,8 @@
     "field": 11,
     "popularity": 11
    },
-   "odds": null,
-   "popularity": null
+   "odds": 123.6,
+   "popularity": 10
   },
   {
    "race_id": "202611272433170407",
@@ -1621,7 +1644,8 @@
    "number": 2,
    "name": "エイシンピサロ",
    "types": [
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 15,
    "last": {
@@ -1630,8 +1654,8 @@
     "field": 11,
     "popularity": 3
    },
-   "odds": 4.0,
-   "popularity": 3
+   "odds": 105.9,
+   "popularity": 9
   },
   {
    "race_id": "202611272433170407",
@@ -1651,8 +1675,8 @@
     "field": 12,
     "popularity": 12
    },
-   "odds": null,
-   "popularity": null
+   "odds": 52.9,
+   "popularity": 8
   },
   {
    "race_id": "202611272433170407",
@@ -1672,8 +1696,8 @@
     "field": 12,
     "popularity": 7
    },
-   "odds": 8.0,
-   "popularity": 4
+   "odds": 18.0,
+   "popularity": 2
   },
   {
    "race_id": "202611272433170407",
@@ -1714,8 +1738,8 @@
     "field": 14,
     "popularity": 11
    },
-   "odds": null,
-   "popularity": null
+   "odds": 27.2,
+   "popularity": 10
   },
   {
    "race_id": "202611271813080412",
@@ -1735,8 +1759,8 @@
     "field": 14,
     "popularity": 6
    },
-   "odds": 7.8,
-   "popularity": 4
+   "odds": 7.4,
+   "popularity": 3
   },
   {
    "race_id": "202611272433170408",
@@ -1756,8 +1780,8 @@
     "field": 12,
     "popularity": 1
    },
-   "odds": 6.4,
-   "popularity": 3
+   "odds": 29.1,
+   "popularity": 7
   },
   {
    "race_id": "202611272433170409",
@@ -1768,7 +1792,8 @@
    "number": 3,
    "name": "アイタロオ",
    "types": [
-    "layoff"
+    "layoff",
+    "letdown"
    ],
    "gap_days": 148,
    "last": {
@@ -1777,8 +1802,8 @@
     "field": 12,
     "popularity": 2
    },
-   "odds": null,
-   "popularity": null
+   "odds": 52.9,
+   "popularity": 7
   },
   {
    "race_id": "202611272433170411",
@@ -1798,8 +1823,8 @@
     "field": 12,
     "popularity": 8
    },
-   "odds": 1.6,
-   "popularity": 1
+   "odds": 8.7,
+   "popularity": 3
   },
   {
    "race_id": "202611272433170411",
@@ -1820,8 +1845,8 @@
     "field": 11,
     "popularity": 4
    },
-   "odds": 9.2,
-   "popularity": 3
+   "odds": 10.8,
+   "popularity": 5
   },
   {
    "race_id": "202611272433170411",
@@ -1841,8 +1866,8 @@
     "field": 11,
     "popularity": 2
    },
-   "odds": 18.4,
-   "popularity": 5
+   "odds": 21.9,
+   "popularity": 8
   },
   {
    "race_id": "202611272433170412",
@@ -1862,8 +1887,8 @@
     "field": 12,
     "popularity": 11
    },
-   "odds": 17.2,
-   "popularity": 4
+   "odds": 16.9,
+   "popularity": 9
   }
  ]
 }
