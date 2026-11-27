@@ -1,6 +1,6 @@
 {
  "date": "20261127",
- "updated": "2026-11-27 17:08",
+ "updated": "2026-11-27 18:18",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1779,8 +1779,7 @@
    "number": 3,
    "name": "アイタロオ",
    "types": [
-    "layoff",
-    "letdown"
+    "layoff"
    ],
    "gap_days": 148,
    "last": {
@@ -1789,8 +1788,22 @@
     "field": 12,
     "popularity": 2
    },
-   "odds": 52.9,
-   "popularity": 7
+   "odds": 43.1,
+   "popularity": 3
+  },
+  {
+   "race_id": "202611272433170410",
+   "results_key": "202611272433170410",
+   "venue": "名古屋",
+   "race_no": 10,
+   "post_time": "19:40",
+   "number": 11,
+   "name": "トレジャービート",
+   "types": [
+    "aitop"
+   ],
+   "odds": 4.6,
+   "popularity": 2
   },
   {
    "race_id": "202611272433170411",
