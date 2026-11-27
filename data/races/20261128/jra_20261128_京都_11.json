@@ -23,7 +23,7 @@
    "weight": 56.0,
    "jockey": "岩田 望来",
    "trainer": "矢作 芳人",
-   "odds": 22.6,
+   "odds": 18.9,
    "profile": {
     "父": "コントレイル",
     "性別": "牡",
@@ -94,7 +94,7 @@
    "weight": 56.0,
    "jockey": "C.デムーロ",
    "trainer": "安田 翔伍",
-   "odds": 14.9,
+   "odds": 9.8,
    "profile": {
     "父": "インディチャンプ",
     "性別": "牡",
@@ -165,7 +165,7 @@
    "weight": 56.0,
    "jockey": "松山 弘平",
    "trainer": "高野 友和",
-   "odds": 9.6,
+   "odds": 7.0,
    "profile": {
     "父": "エピファネイア",
     "性別": "牡",
@@ -236,7 +236,7 @@
    "weight": 55.0,
    "jockey": "杉原 誠人",
    "trainer": "大和田 成",
-   "odds": 38.2,
+   "odds": 32.5,
    "profile": {
     "父": "シュヴァルグラン",
     "性別": "牝",
@@ -286,7 +286,7 @@
    "weight": 56.0,
    "jockey": "武 豊",
    "trainer": "武 幸四郎",
-   "odds": 7.3,
+   "odds": 5.9,
    "profile": {
     "父": "エフフォーリア",
     "性別": "牡",
@@ -378,7 +378,7 @@
    "weight": 56.0,
    "jockey": "坂井 瑠星",
    "trainer": "矢作 芳人",
-   "odds": 7.9,
+   "odds": 6.2,
    "profile": {
     "父": "コントレイル",
     "性別": "牡",
@@ -449,7 +449,7 @@
    "weight": 56.0,
    "jockey": "西村 淳也",
    "trainer": "浜田 多実雄",
-   "odds": 43.5,
+   "odds": 34.2,
    "profile": {
     "父": "エピファネイア",
     "性別": "牡",
@@ -520,7 +520,7 @@
    "weight": 56.0,
    "jockey": "北村 友一",
    "trainer": "上村 洋行",
-   "odds": 4.1,
+   "odds": 3.6,
    "profile": {
     "父": "エフフォーリア",
     "性別": "牡",
@@ -561,7 +561,7 @@
   },
   {
    "frame": 7,
-   "number": 9,
+   "number": null,
    "name": "ネーロノワール",
    "horse_url": "/JRADB/accessU.html?CNAME=pw01dud002024100638/DC",
    "body_weight": null,
@@ -570,44 +570,9 @@
    "weight": 55.0,
    "jockey": "川田 将雅",
    "trainer": "斉藤 崇史",
-   "odds": 4.7,
-   "profile": {
-    "父": "キタサンブラック",
-    "性別": "牝",
-    "馬主名": "ゴドルフィン",
-    "母": "エオリア 産駒",
-    "馬齢": "2歳",
-    "調教師名": "斉藤 崇史 （栗東）",
-    "母の父": "ストリートセンス",
-    "生年月日": "2024年3月11日",
-    "生産牧場": "ダーレー・ジャパン・ファーム(有)",
-    "毛色": "黒鹿毛",
-    "馬名意味": "黒(伊)+黒(仏)",
-    "取引市場": ""
-   },
-   "past": [
-    {
-     "date": "2026年9月26日",
-     "venue": "阪神",
-     "race_name": "2歳新馬",
-     "surface": "芝",
-     "distance": 2000,
-     "track": "良",
-     "field": 14,
-     "popularity": 1,
-     "finish": "1",
-     "jockey": "川田 将雅",
-     "weight": 55.0,
-     "body_weight": 504,
-     "time": "2:03.3",
-     "opponent": "(トップオブドリーム)",
-     "result_url": "/JRADB/accessS.html?CNAME=pw01sde1009202604080520260926/25",
-     "corners": "14-13-6-4",
-     "last3f": 34.9,
-     "margin": "",
-     "number": 10
-    }
-   ]
+   "odds": null,
+   "profile": null,
+   "past": null
   },
   {
    "frame": 8,
@@ -620,7 +585,7 @@
    "weight": 56.0,
    "jockey": "J.モレイラ",
    "trainer": "福永 祐一",
-   "odds": 3.9,
+   "odds": 3.7,
    "profile": {
     "父": "コントレイル",
     "性別": "牡",
@@ -691,7 +656,7 @@
    "weight": 56.0,
    "jockey": "小林 美駒",
    "trainer": "尾形 和幸",
-   "odds": 47.4,
+   "odds": 40.1,
    "profile": {
     "父": "キセキ",
     "性別": "牡",
