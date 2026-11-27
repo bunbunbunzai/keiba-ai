@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261127",
  "race_id": "202611272726190309",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,116 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 8,
+   "name": "キーベスト",
+   "time": "1:32.5",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 40.0,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 1,
+   "number": 1,
+   "name": "コテツハマー",
+   "time": "1:32.6",
+   "margin": "１／２",
+   "pos4": 1,
+   "last3f": 40.2,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 10,
+   "name": "ウインソラネル",
+   "time": "1:32.7",
+   "margin": "１／２",
+   "pos4": 3,
+   "last3f": 40.1,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 6,
+   "number": 6,
+   "name": "レヴィアタン",
+   "time": "1:32.7",
+   "margin": "クビ",
+   "pos4": 8,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 8,
+   "number": 9,
+   "name": "インジェクション",
+   "time": "1:33.3",
+   "margin": "３ １／２",
+   "pos4": 4,
+   "last3f": 40.5,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 4,
+   "number": 4,
+   "name": "ヤマノインパクト",
+   "time": "1:33.3",
+   "margin": "クビ",
+   "pos4": 4,
+   "last3f": 40.5,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 3,
+   "name": "サンウイング",
+   "time": "1:33.3",
+   "margin": "ハナ",
+   "pos4": 9,
+   "last3f": 39.6,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 2,
+   "number": 2,
+   "name": "ホウオウヌーヴォー",
+   "time": "1:33.6",
+   "margin": "１ ３／４",
+   "pos4": 4,
+   "last3f": 40.9,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 5,
+   "name": "ハイレジリエンス",
+   "time": "1:34.2",
+   "margin": "３ １／２",
+   "pos4": 7,
+   "last3f": 41.4,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 7,
+   "number": 7,
+   "name": "ムーンガーデン",
+   "time": "1:34.7",
+   "margin": "３",
+   "pos4": 10,
+   "last3f": 41.3,
+   "popularity": null
+  }
+ ]
 }
