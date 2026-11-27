@@ -1,6 +1,6 @@
 {
  "date": "20261127",
- "updated": "2026-11-27 16:42",
+ "updated": "2026-11-27 16:53",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1738,7 +1738,7 @@
     "field": 14,
     "popularity": 11
    },
-   "odds": 27.2,
+   "odds": 33.3,
    "popularity": 10
   },
   {
@@ -1750,7 +1750,8 @@
    "number": 12,
    "name": "メイショウフソウ",
    "types": [
-    "rebound"
+    "rebound",
+    "aitop"
    ],
    "gap_days": 23,
    "last": {
@@ -1759,7 +1760,7 @@
     "field": 14,
     "popularity": 6
    },
-   "odds": 7.4,
+   "odds": 5.3,
    "popularity": 3
   },
   {
@@ -1889,6 +1890,20 @@
    },
    "odds": 16.9,
    "popularity": 9
+  },
+  {
+   "race_id": "202611272433170412",
+   "results_key": "202611272433170412",
+   "venue": "名古屋",
+   "race_no": 12,
+   "post_time": "20:50",
+   "number": 10,
+   "name": "ゼーブルージュ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 8.4,
+   "popularity": 4
   }
  ]
 }
