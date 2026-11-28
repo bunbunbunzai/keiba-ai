@@ -2,7 +2,172 @@
  "source": "rakuten",
  "date": "20261128",
  "race_id": "202611283230140402",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "1",
+    "yen": 110
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "1-9",
+    "yen": 1710
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "1",
+    "yen": 100
+   },
+   {
+    "combo": "9",
+    "yen": 200
+   },
+   {
+    "combo": "8",
+    "yen": 130
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-9",
+    "yen": 570
+   },
+   {
+    "combo": "1-8",
+    "yen": 260
+   },
+   {
+    "combo": "8-9",
+    "yen": 1830
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-8",
+    "yen": 440
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-8-9",
+    "yen": 2820
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "1-9-8",
+    "yen": 11720
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-9",
+    "yen": 1320
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 1,
+   "number": 1,
+   "name": "テムグロリア",
+   "time": "1:25.6",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 9,
+   "name": "リモンタセーラ",
+   "time": "1:26.3",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 8,
+   "name": "ミトノキセキ",
+   "time": "1:26.5",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 3,
+   "name": "ミトノホープ",
+   "time": "1:26.9",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 7,
+   "number": 7,
+   "name": "ニシノマティーニ",
+   "time": "1:27.0",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 6,
+   "name": "シナノエレガンス",
+   "time": "1:27.7",
+   "margin": "４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 5,
+   "number": 5,
+   "name": "イケノミセスグリン",
+   "time": "1:27.7",
+   "margin": "クビ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 4,
+   "number": 4,
+   "name": "プレアミータマ",
+   "time": "1:27.9",
+   "margin": "１",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "プレアウィン",
+   "time": "1:28.3",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
