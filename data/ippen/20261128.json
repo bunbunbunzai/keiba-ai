@@ -1,6 +1,6 @@
 {
  "date": "20261128",
- "updated": "2026-11-28 10:49",
+ "updated": "2026-11-28 12:30",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -936,6 +936,20 @@
    "venue": "東京",
    "race_no": 9,
    "post_time": "14:15",
+   "number": 3,
+   "name": "ユウトザユウト",
+   "types": [
+    "aitop"
+   ],
+   "odds": 7.2,
+   "popularity": 5
+  },
+  {
+   "race_id": "jra_20261128_東京_09",
+   "results_key": "jra_05_09",
+   "venue": "東京",
+   "race_no": 9,
+   "post_time": "14:15",
    "number": 9,
    "name": "ダブルメッセージ",
    "types": [
@@ -1402,7 +1416,8 @@
    "number": 3,
    "name": "アドマイヤクワッズ",
    "types": [
-    "rebound"
+    "rebound",
+    "aitop"
    ],
    "gap_days": 55,
    "last": {
