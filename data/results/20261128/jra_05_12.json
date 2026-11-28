@@ -6,7 +6,7 @@
    "name": "エーデルゼーレ",
    "time": "2:26.4",
    "margin": "",
-   "corners": "",
+   "corners": "6-6-5-3",
    "last3f": null,
    "popularity": 1
   },
@@ -14,9 +14,9 @@
    "finish": "2",
    "number": 8,
    "name": "ヴォートセレスト",
-   "time": "",
+   "time": "2:26.4",
    "margin": "クビ",
-   "corners": "",
+   "corners": "3-4-3-5",
    "last3f": null,
    "popularity": 3
   },
@@ -24,9 +24,9 @@
    "finish": "3",
    "number": 16,
    "name": "ジワタネホ",
-   "time": "",
+   "time": "2:26.8",
    "margin": "２ 1/2",
-   "corners": "",
+   "corners": "3-2-2-2",
    "last3f": null,
    "popularity": 6
   },
@@ -34,9 +34,9 @@
    "finish": "4",
    "number": 4,
    "name": "マイネルアウルム",
-   "time": "",
+   "time": "2:27.0",
    "margin": "１ 1/2",
-   "corners": "",
+   "corners": "11-10-9-10",
    "last3f": null,
    "popularity": 7
   },
@@ -44,11 +44,141 @@
    "finish": "5",
    "number": 7,
    "name": "ピースフルマインド",
-   "time": "",
+   "time": "2:27.0",
    "margin": "ハナ",
-   "corners": "",
+   "corners": "9-8-7-6",
    "last3f": null,
    "popularity": 14
+  },
+  {
+   "finish": "6",
+   "number": 13,
+   "name": "クレアノア",
+   "time": "2:27.1",
+   "margin": "１／２",
+   "corners": "11-11-9-10",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "7",
+   "number": 18,
+   "name": "ディヒターリーベ",
+   "time": "2:27.3",
+   "margin": "１ 1/4",
+   "corners": "13-13-12-14",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "8",
+   "number": 14,
+   "name": "ウップヘリーア",
+   "time": "2:27.5",
+   "margin": "１ 1/4",
+   "corners": "1-1-1-1",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "9",
+   "number": 11,
+   "name": "ボンボンベイビー",
+   "time": "2:27.6",
+   "margin": "クビ",
+   "corners": "15-15-15-15",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "10",
+   "number": 5,
+   "name": "コレクテイニア",
+   "time": "2:27.7",
+   "margin": "３／４",
+   "corners": "15-15-15-15",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "11",
+   "number": 3,
+   "name": "ポッポノフェスタ",
+   "time": "2:27.7",
+   "margin": "クビ",
+   "corners": "13-13-12-12",
+   "last3f": null,
+   "popularity": 15
+  },
+  {
+   "finish": "12",
+   "number": 2,
+   "name": "ウルフマン",
+   "time": "2:27.7",
+   "margin": "ハナ",
+   "corners": "3-4-5-6",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "13",
+   "number": 9,
+   "name": "トラストモアリズム",
+   "time": "2:27.7",
+   "margin": "アタマ",
+   "corners": "18-18-18-18",
+   "last3f": null,
+   "popularity": 18
+  },
+  {
+   "finish": "14",
+   "number": 17,
+   "name": "エテルニータ",
+   "time": "2:27.7",
+   "margin": "ハナ",
+   "corners": "9-11-12-12",
+   "last3f": null,
+   "popularity": 12
+  },
+  {
+   "finish": "15",
+   "number": 12,
+   "name": "デリシュー",
+   "time": "2:28.1",
+   "margin": "２",
+   "corners": "17-15-15-17",
+   "last3f": null,
+   "popularity": 16
+  },
+  {
+   "finish": "16",
+   "number": 6,
+   "name": "ビリングス",
+   "time": "2:28.2",
+   "margin": "１／２",
+   "corners": "2-2-3-3",
+   "last3f": null,
+   "popularity": 13
+  },
+  {
+   "finish": "17",
+   "number": 1,
+   "name": "レイナエヴィータ",
+   "time": "2:28.2",
+   "margin": "クビ",
+   "corners": "7-6-7-8",
+   "last3f": null,
+   "popularity": 17
+  },
+  {
+   "finish": "18",
+   "number": 15,
+   "name": "ガローファノ",
+   "time": "2:30.5",
+   "margin": "大差",
+   "corners": "7-8-9-8",
+   "last3f": null,
+   "popularity": 8
   }
  ],
  "payouts": {
