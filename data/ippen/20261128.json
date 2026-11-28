@@ -1,6 +1,6 @@
 {
  "date": "20261128",
- "updated": "2026-11-28 14:17",
+ "updated": "2026-11-28 14:21",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1752,8 +1752,22 @@
     "field": 10,
     "popularity": 9
    },
-   "odds": null,
-   "popularity": null
+   "odds": 14.8,
+   "popularity": 5
+  },
+  {
+   "race_id": "202611280304170404",
+   "results_key": "202611280304170404",
+   "venue": "帯広ば",
+   "race_no": 4,
+   "post_time": "15:50",
+   "number": 4,
+   "name": "パワーシンデレラ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 14.8,
+   "popularity": 5
   },
   {
    "race_id": "202611280304170404",
@@ -1773,8 +1787,8 @@
     "field": 10,
     "popularity": 6
    },
-   "odds": null,
-   "popularity": null
+   "odds": 16.9,
+   "popularity": 8
   },
   {
    "race_id": "202611280304170404",
@@ -1794,8 +1808,8 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": null,
-   "popularity": null
+   "odds": 6.2,
+   "popularity": 4
   },
   {
    "race_id": "202611283230140403",
