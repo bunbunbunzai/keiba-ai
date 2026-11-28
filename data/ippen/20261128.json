@@ -1,6 +1,6 @@
 {
  "date": "20261128",
- "updated": "2026-11-28 14:47",
+ "updated": "2026-11-28 14:54",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1626,8 +1626,8 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": 32.4,
-   "popularity": 9
+   "odds": 24.2,
+   "popularity": 8
   },
   {
    "race_id": "202611283129110102",
@@ -1647,8 +1647,8 @@
     "field": 11,
     "popularity": 9
    },
-   "odds": 22.2,
-   "popularity": 6
+   "odds": 8.9,
+   "popularity": 3
   },
   {
    "race_id": "202611283129110102",
@@ -1668,7 +1668,7 @@
     "field": 6,
     "popularity": 5
    },
-   "odds": 42.2,
+   "odds": 48.4,
    "popularity": 10
   },
   {
@@ -1689,8 +1689,8 @@
     "field": 10,
     "popularity": 6
    },
-   "odds": 16.8,
-   "popularity": 4
+   "odds": 24.2,
+   "popularity": 8
   },
   {
    "race_id": "jra_20261128_京都_11",
@@ -1829,7 +1829,7 @@
     "field": 10,
     "popularity": 4
    },
-   "odds": 46.8,
+   "odds": 53.3,
    "popularity": 10
   },
   {
@@ -1850,7 +1850,7 @@
     "field": 10,
     "popularity": 4
    },
-   "odds": 29.3,
+   "odds": 33.9,
    "popularity": 7
   },
   {
@@ -2169,8 +2169,8 @@
     "field": 10,
     "popularity": 10
    },
-   "odds": null,
-   "popularity": null
+   "odds": 15.8,
+   "popularity": 8
   },
   {
    "race_id": "202611280304170405",
@@ -2190,8 +2190,29 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": null,
-   "popularity": null
+   "odds": 42.1,
+   "popularity": 9
+  },
+  {
+   "race_id": "202611280304170405",
+   "results_key": "202611280304170405",
+   "venue": "帯広ば",
+   "race_no": 5,
+   "post_time": "16:20",
+   "number": 7,
+   "name": "イワキマッシグラ",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 22,
+   "last": {
+    "date": "2026-11-06",
+    "finish": 9,
+    "field": 10,
+    "popularity": 2
+   },
+   "odds": 42.1,
+   "popularity": 9
   },
   {
    "race_id": "202611283129110104",
