@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261128",
  "race_id": "202611283230140411",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -63,5 +63,94 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 4,
+   "number": 4,
+   "name": "テイエムダイタカ",
+   "time": "1:29.1",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 8,
+   "name": "ラディアントホース",
+   "time": "1:29.5",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 1,
+   "number": 1,
+   "name": "エコロファルコン",
+   "time": "1:29.9",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 5,
+   "name": "トリオンファーレ",
+   "time": "1:30.2",
+   "margin": "１ １／２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 2,
+   "number": 2,
+   "name": "イナフセド",
+   "time": "1:30.6",
+   "margin": "２",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 6,
+   "name": "ベイデンマリーナ",
+   "time": "1:30.6",
+   "margin": "アタマ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 7,
+   "number": 7,
+   "name": "テクノダイヤモンド",
+   "time": "1:30.6",
+   "margin": "ハナ",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 3,
+   "number": 3,
+   "name": "フクノブルジュ",
+   "time": "1:30.8",
+   "margin": "３／４",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
