@@ -1,6 +1,6 @@
 {
  "date": "20261128",
- "updated": "2026-11-28 16:46",
+ "updated": "2026-11-28 16:52",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -2435,8 +2435,8 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": 10.8,
-   "popularity": 4
+   "odds": 15.5,
+   "popularity": 7
   },
   {
    "race_id": "202611280304170407",
@@ -2456,8 +2456,8 @@
     "field": 10,
     "popularity": 10
    },
-   "odds": 21.6,
-   "popularity": 7
+   "odds": 17.1,
+   "popularity": 8
   },
   {
    "race_id": "202611280304170407",
@@ -2477,7 +2477,7 @@
     "field": 10,
     "popularity": 4
    },
-   "odds": 24.3,
+   "odds": 27.2,
    "popularity": 9
   },
   {
@@ -2636,6 +2636,20 @@
    "popularity": 6
   },
   {
+   "race_id": "202611280304170409",
+   "results_key": "202611280304170409",
+   "venue": "帯広ば",
+   "race_no": 9,
+   "post_time": "18:25",
+   "number": 3,
+   "name": "デッカクナーレ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 20.9,
+   "popularity": 7
+  },
+  {
    "race_id": "202611283129110108",
    "results_key": "202611283129110108",
    "venue": "高知",
@@ -2788,6 +2802,20 @@
    "venue": "佐賀",
    "race_no": 9,
    "post_time": "19:05",
+   "number": 7,
+   "name": "ヴァイスウィッチ",
+   "types": [
+    "aitop"
+   ],
+   "odds": 8.3,
+   "popularity": 5
+  },
+  {
+   "race_id": "202611283230140409",
+   "results_key": "202611283230140409",
+   "venue": "佐賀",
+   "race_no": 9,
+   "post_time": "19:05",
    "number": 9,
    "name": "ヘルト",
    "types": [
@@ -2896,7 +2924,8 @@
    "number": 10,
    "name": "エクストラノート",
    "types": [
-    "letdown"
+    "letdown",
+    "aitop"
    ],
    "gap_days": 14,
    "last": {
