@@ -2,7 +2,172 @@
  "source": "rakuten",
  "date": "20261128",
  "race_id": "202611280304170408",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 3,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "7",
+    "yen": 290
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "7-8",
+    "yen": 1700
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "7",
+    "yen": 150
+   },
+   {
+    "combo": "8",
+    "yen": 140
+   },
+   {
+    "combo": "9",
+    "yen": 190
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "7-8",
+    "yen": 390
+   },
+   {
+    "combo": "7-9",
+    "yen": 380
+   },
+   {
+    "combo": "8-9",
+    "yen": 580
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "7-8",
+    "yen": 570
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "7-8-9",
+    "yen": 1780
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "7-8-9",
+    "yen": 5430
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "7-8",
+    "yen": 1060
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 7,
+   "number": 7,
+   "name": "ハゴロモゴールド",
+   "time": "1:40.2",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 8,
+   "number": 8,
+   "name": "クリスタルソウル",
+   "time": "1:40.8",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 8,
+   "number": 9,
+   "name": "ホクセイワッショイ",
+   "time": "1:42.0",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 5,
+   "number": 5,
+   "name": "ツカサエンゼル",
+   "time": "1:43.8",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 4,
+   "name": "バニラ",
+   "time": "1:45.2",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 6,
+   "number": 6,
+   "name": "フェアリーマックス",
+   "time": "1:53.8",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 3,
+   "name": "ハゴロモミニョン",
+   "time": "1:54.2",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 1,
+   "number": 1,
+   "name": "ジェイノダイジン",
+   "time": "1:55.2",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "ツガルユリ",
+   "time": "2:01.9",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }

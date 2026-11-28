@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261128",
  "race_id": "202611283129110106",
- "tries": 3,
+ "tries": 7,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,105 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 1,
+   "number": 1,
+   "name": "カイザーブリッツ",
+   "time": "1:47.7",
+   "margin": "",
+   "pos4": 1,
+   "last3f": 40.0,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 7,
+   "name": "ボルドーリスクレス",
+   "time": "1:48.0",
+   "margin": "１ １／２",
+   "pos4": 2,
+   "last3f": 40.0,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 2,
+   "number": 2,
+   "name": "ウインドファルクス",
+   "time": "1:48.1",
+   "margin": "１／２",
+   "pos4": 3,
+   "last3f": 40.0,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 3,
+   "name": "アイファーバトル",
+   "time": "1:48.3",
+   "margin": "１",
+   "pos4": 4,
+   "last3f": 39.9,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 6,
+   "name": "ダートレイジング",
+   "time": "1:48.3",
+   "margin": "アタマ",
+   "pos4": 4,
+   "last3f": 40.0,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 4,
+   "number": 4,
+   "name": "テソリーノ",
+   "time": "1:49.2",
+   "margin": "４",
+   "pos4": 9,
+   "last3f": 40.4,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 9,
+   "name": "サーマウント",
+   "time": "1:49.5",
+   "margin": "１ １／２",
+   "pos4": 7,
+   "last3f": 41.3,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 8,
+   "name": "ダノンジャスティス",
+   "time": "1:49.9",
+   "margin": "２",
+   "pos4": 7,
+   "last3f": 41.9,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 5,
+   "number": 5,
+   "name": "ハッピービバーク",
+   "time": "1:50.0",
+   "margin": "クビ",
+   "pos4": 6,
+   "last3f": 41.8,
+   "popularity": null
+  }
+ ]
 }
