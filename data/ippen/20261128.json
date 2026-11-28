@@ -1,6 +1,6 @@
 {
  "date": "20261128",
- "updated": "2026-11-28 13:16",
+ "updated": "2026-11-28 13:26",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1307,8 +1307,8 @@
     "field": 9,
     "popularity": 3
    },
-   "odds": 12.4,
-   "popularity": 6
+   "odds": 36.0,
+   "popularity": 7
   },
   {
    "race_id": "202611283129110101",
@@ -1328,8 +1328,22 @@
     "field": 10,
     "popularity": 7
    },
-   "odds": null,
-   "popularity": null
+   "odds": 57.2,
+   "popularity": 9
+  },
+  {
+   "race_id": "202611283129110101",
+   "results_key": "202611283129110101",
+   "venue": "高知",
+   "race_no": 1,
+   "post_time": "14:55",
+   "number": 7,
+   "name": "オーシンホエール",
+   "types": [
+    "aitop"
+   ],
+   "odds": 5.8,
+   "popularity": 2
   },
   {
    "race_id": "jra_20261128_京都_10",

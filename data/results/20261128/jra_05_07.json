@@ -1,0 +1,208 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 11,
+   "name": "カットソロ",
+   "time": "2:13.1",
+   "margin": "",
+   "corners": "8-9-10-6",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "2",
+   "number": 3,
+   "name": "ガウラディスコ",
+   "time": "2:13.4",
+   "margin": "１ 1/2",
+   "corners": "1-1-1-1",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "number": 12,
+   "name": "グランドスウェル",
+   "time": "2:13.4",
+   "margin": "ハナ",
+   "corners": "2-2-2-2",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "4",
+   "number": 9,
+   "name": "クアッドフォルツァ",
+   "time": "2:13.4",
+   "margin": "クビ",
+   "corners": "4-5-4-6",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "5",
+   "number": 8,
+   "name": "パンキー",
+   "time": "2:13.6",
+   "margin": "３／４",
+   "corners": "3-3-2-3",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "6",
+   "number": 6,
+   "name": "ジェネラスキング",
+   "time": "2:13.8",
+   "margin": "１ 1/2",
+   "corners": "12-12-6-3",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "7",
+   "number": 10,
+   "name": "ペネトレイトゴー",
+   "time": "2:13.9",
+   "margin": "クビ",
+   "corners": "6-6-6-6",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "8",
+   "number": 2,
+   "name": "タイセツナヒ",
+   "time": "2:14.6",
+   "margin": "４",
+   "corners": "10-9-10-11",
+   "last3f": null,
+   "popularity": 9
+  },
+  {
+   "finish": "9",
+   "number": 4,
+   "name": "ムーランブルー",
+   "time": "2:14.6",
+   "margin": "ハナ",
+   "corners": "10-9-12-11",
+   "last3f": null,
+   "popularity": 11
+  },
+  {
+   "finish": "10",
+   "number": 1,
+   "name": "エマージェンス",
+   "time": "2:15.1",
+   "margin": "３ 1/2",
+   "corners": "4-6-6-6",
+   "last3f": null,
+   "popularity": 10
+  },
+  {
+   "finish": "11",
+   "number": 7,
+   "name": "ゴールドビリーヴ",
+   "time": "2:16.1",
+   "margin": "６",
+   "corners": "6-8-9-10",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "12",
+   "number": 5,
+   "name": "アイルドゥレーヴェ",
+   "time": "2:17.5",
+   "margin": "９",
+   "corners": "8-3-4-3",
+   "last3f": null,
+   "popularity": 12
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "11",
+    "yen": 940,
+    "pop": 4
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "11",
+    "yen": 280,
+    "pop": 4
+   },
+   {
+    "combo": "3",
+    "yen": 160,
+    "pop": 3
+   },
+   {
+    "combo": "12",
+    "yen": 120,
+    "pop": 1
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-8",
+    "yen": 490,
+    "pop": 2
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-11",
+    "yen": 760,
+    "pop": 7
+   },
+   {
+    "combo": "11-12",
+    "yen": 490,
+    "pop": 4
+   },
+   {
+    "combo": "3-12",
+    "yen": 320,
+    "pop": 2
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-11",
+    "yen": 2410,
+    "pop": 7
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "11-3",
+    "yen": 4950,
+    "pop": 16
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-11-12",
+    "yen": 2000,
+    "pop": 4
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "11-3-12",
+    "yen": 14460,
+    "pop": 40
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261128",
+ "venue_code": "05",
+ "race_no": 7,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605070720261128/00",
+ "title": "レース結果 JRA"
+}
