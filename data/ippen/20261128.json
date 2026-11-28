@@ -1,6 +1,6 @@
 {
  "date": "20261128",
- "updated": "2026-11-28 17:02",
+ "updated": "2026-11-28 19:21",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -3032,8 +3032,7 @@
    "number": 4,
    "name": "ゼントユウイ",
    "types": [
-    "rebound",
-    "letdown"
+    "rebound"
    ],
    "gap_days": 14,
    "last": {
@@ -3042,7 +3041,28 @@
     "field": 11,
     "popularity": 3
    },
-   "odds": 25.4,
+   "odds": 18.7,
+   "popularity": 3
+  },
+  {
+   "race_id": "202611283129110110",
+   "results_key": "202611283129110110",
+   "venue": "高知",
+   "race_no": 10,
+   "post_time": "19:45",
+   "number": 11,
+   "name": "オールデュスヴラン",
+   "types": [
+    "letdown"
+   ],
+   "gap_days": 14,
+   "last": {
+    "date": "2026-11-14",
+    "finish": 6,
+    "field": 12,
+    "popularity": 3
+   },
+   "odds": 29.2,
    "popularity": 5
   },
   {
@@ -3063,8 +3083,8 @@
     "field": 9,
     "popularity": 7
    },
-   "odds": 9.8,
-   "popularity": 7
+   "odds": 11.7,
+   "popularity": 5
   },
   {
    "race_id": "202611280304170412",
@@ -3075,7 +3095,8 @@
    "number": 9,
    "name": "フジエース",
    "types": [
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 20,
    "last": {
@@ -3084,8 +3105,8 @@
     "field": 10,
     "popularity": 2
    },
-   "odds": 7.6,
-   "popularity": 3
+   "odds": 12.5,
+   "popularity": 6
   },
   {
    "race_id": "202611283230140412",
