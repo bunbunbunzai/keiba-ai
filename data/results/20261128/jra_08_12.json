@@ -7,48 +7,178 @@
    "time": "1:08.2",
    "margin": "",
    "corners": "1-1",
-   "last3f": null,
+   "last3f": 33.8,
    "popularity": 2
   },
   {
    "finish": "2",
    "number": 2,
    "name": "マウンテンバローズ",
-   "time": "",
+   "time": "1:08.4",
    "margin": "１ 1/4",
    "corners": "3-2",
-   "last3f": null,
+   "last3f": 33.7,
    "popularity": 1
   },
   {
    "finish": "3",
    "number": 5,
    "name": "クイーンズデイ",
-   "time": "",
+   "time": "1:08.7",
    "margin": "１ 3/4",
    "corners": "7-6",
-   "last3f": null,
+   "last3f": 33.7,
    "popularity": 5
   },
   {
    "finish": "4",
    "number": 10,
    "name": "ピアストイヤーズ",
-   "time": "",
+   "time": "1:08.9",
    "margin": "１ 1/2",
    "corners": "8-8",
-   "last3f": null,
+   "last3f": 33.8,
    "popularity": 4
   },
   {
    "finish": "5",
    "number": 8,
    "name": "スネーフリンガ",
-   "time": "",
+   "time": "1:09.0",
    "margin": "１／２",
    "corners": "13-10",
-   "last3f": null,
+   "last3f": 33.5,
    "popularity": 7
+  },
+  {
+   "finish": "6",
+   "number": 9,
+   "name": "サンライズプルート",
+   "time": "1:09.0",
+   "margin": "ハナ",
+   "corners": "4-6",
+   "last3f": 34.1,
+   "popularity": 6
+  },
+  {
+   "finish": "7",
+   "number": 11,
+   "name": "ピースフルナイト",
+   "time": "1:09.1",
+   "margin": "３／４",
+   "corners": "13-12",
+   "last3f": 33.6,
+   "popularity": 18
+  },
+  {
+   "finish": "8",
+   "number": 7,
+   "name": "マルカオペラ",
+   "time": "1:09.2",
+   "margin": "３／４",
+   "corners": "18-18",
+   "last3f": 33.2,
+   "popularity": 14
+  },
+  {
+   "finish": "9",
+   "number": 16,
+   "name": "ラインピクシー",
+   "time": "1:09.3",
+   "margin": "１／２",
+   "corners": "9-8",
+   "last3f": 34.2,
+   "popularity": 3
+  },
+  {
+   "finish": "10",
+   "number": 1,
+   "name": "セイプリーズ",
+   "time": "1:09.3",
+   "margin": "ハナ",
+   "corners": "9-10",
+   "last3f": 34.0,
+   "popularity": 15
+  },
+  {
+   "finish": "11",
+   "number": 14,
+   "name": "ラスティングスノー",
+   "time": "1:09.5",
+   "margin": "１",
+   "corners": "12-12",
+   "last3f": 34.1,
+   "popularity": 12
+  },
+  {
+   "finish": "12",
+   "number": 4,
+   "name": "メイショウミリオレ",
+   "time": "1:09.5",
+   "margin": "クビ",
+   "corners": "15-14",
+   "last3f": 33.7,
+   "popularity": 11
+  },
+  {
+   "finish": "13",
+   "number": 3,
+   "name": "ギフテッド",
+   "time": "1:09.5",
+   "margin": "ハナ",
+   "corners": "15-15",
+   "last3f": 33.7,
+   "popularity": 16
+  },
+  {
+   "finish": "14",
+   "number": 12,
+   "name": "ユメシバイ",
+   "time": "1:09.6",
+   "margin": "１／２",
+   "corners": "15-15",
+   "last3f": 33.9,
+   "popularity": 10
+  },
+  {
+   "finish": "15",
+   "number": 18,
+   "name": "パールフロント",
+   "time": "1:09.6",
+   "margin": "ハナ",
+   "corners": "4-5",
+   "last3f": 34.9,
+   "popularity": 8
+  },
+  {
+   "finish": "16",
+   "number": 17,
+   "name": "ブルボンクイーン",
+   "time": "1:10.0",
+   "margin": "２",
+   "corners": "4-2",
+   "last3f": 35.3,
+   "popularity": 17
+  },
+  {
+   "finish": "17",
+   "number": 15,
+   "name": "エルサトアナ",
+   "time": "1:10.4",
+   "margin": "２ 1/2",
+   "corners": "9-15",
+   "last3f": 35.0,
+   "popularity": 13
+  },
+  {
+   "finish": "18",
+   "number": 6,
+   "name": "ファイツオン",
+   "time": "1:10.8",
+   "margin": "２ 1/2",
+   "corners": "2-2",
+   "last3f": 36.2,
+   "popularity": 9
   }
  ],
  "payouts": {
