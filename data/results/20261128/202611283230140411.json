@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261128",
  "race_id": "202611283230140411",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -71,7 +71,7 @@
    "name": "テイエムダイタカ",
    "time": "1:29.1",
    "margin": "",
-   "pos4": null,
+   "pos4": 1,
    "last3f": null,
    "popularity": null
   },
@@ -82,7 +82,7 @@
    "name": "ラディアントホース",
    "time": "1:29.5",
    "margin": "２",
-   "pos4": null,
+   "pos4": 2,
    "last3f": null,
    "popularity": null
   },
@@ -93,7 +93,7 @@
    "name": "エコロファルコン",
    "time": "1:29.9",
    "margin": "２",
-   "pos4": null,
+   "pos4": 3,
    "last3f": null,
    "popularity": null
   },
@@ -104,7 +104,7 @@
    "name": "トリオンファーレ",
    "time": "1:30.2",
    "margin": "１ １／２",
-   "pos4": null,
+   "pos4": 6,
    "last3f": null,
    "popularity": null
   },
@@ -115,7 +115,7 @@
    "name": "イナフセド",
    "time": "1:30.6",
    "margin": "２",
-   "pos4": null,
+   "pos4": 4,
    "last3f": null,
    "popularity": null
   },
@@ -126,7 +126,7 @@
    "name": "ベイデンマリーナ",
    "time": "1:30.6",
    "margin": "アタマ",
-   "pos4": null,
+   "pos4": 5,
    "last3f": null,
    "popularity": null
   },
@@ -137,7 +137,7 @@
    "name": "テクノダイヤモンド",
    "time": "1:30.6",
    "margin": "ハナ",
-   "pos4": null,
+   "pos4": 7,
    "last3f": null,
    "popularity": null
   },
@@ -148,7 +148,7 @@
    "name": "フクノブルジュ",
    "time": "1:30.8",
    "margin": "３／４",
-   "pos4": null,
+   "pos4": 7,
    "last3f": null,
    "popularity": null
   }
