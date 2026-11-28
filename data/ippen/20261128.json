@@ -1,6 +1,6 @@
 {
  "date": "20261128",
- "updated": "2026-11-28 13:52",
+ "updated": "2026-11-28 14:03",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -1120,20 +1120,6 @@
    "venue": "帯広ば",
    "race_no": 2,
    "post_time": "14:40",
-   "number": 1,
-   "name": "ジェイカイン",
-   "types": [
-    "aitop"
-   ],
-   "odds": 12.5,
-   "popularity": 5
-  },
-  {
-   "race_id": "202611280304170402",
-   "results_key": "202611280304170402",
-   "venue": "帯広ば",
-   "race_no": 2,
-   "post_time": "14:40",
    "number": 2,
    "name": "キンリュウ",
    "types": [
@@ -1147,8 +1133,8 @@
     "field": 9,
     "popularity": 1
    },
-   "odds": 32.3,
-   "popularity": 9
+   "odds": 14.3,
+   "popularity": 7
   },
   {
    "race_id": "202611280304170402",
@@ -1168,7 +1154,7 @@
     "field": 10,
     "popularity": 2
    },
-   "odds": 3.4,
+   "odds": 4.7,
    "popularity": 2
   },
   {
@@ -1189,8 +1175,8 @@
     "field": 9,
     "popularity": 3
    },
-   "odds": 18.8,
-   "popularity": 7
+   "odds": 6.3,
+   "popularity": 5
   },
   {
    "race_id": "202611283230140401",
@@ -1640,8 +1626,8 @@
     "field": 10,
     "popularity": 8
    },
-   "odds": 130.8,
-   "popularity": 7
+   "odds": 37.0,
+   "popularity": 9
   },
   {
    "race_id": "202611283129110102",
@@ -1661,8 +1647,8 @@
     "field": 11,
     "popularity": 9
    },
-   "odds": 87.2,
-   "popularity": 4
+   "odds": 22.6,
+   "popularity": 6
   },
   {
    "race_id": "202611283129110102",
@@ -1682,8 +1668,8 @@
     "field": 6,
     "popularity": 5
    },
-   "odds": 87.2,
-   "popularity": 4
+   "odds": 45.2,
+   "popularity": 10
   },
   {
    "race_id": "202611283129110102",
@@ -1703,8 +1689,8 @@
     "field": 10,
     "popularity": 6
    },
-   "odds": 65.4,
-   "popularity": 3
+   "odds": 16.9,
+   "popularity": 4
   },
   {
    "race_id": "jra_20261128_京都_11",
