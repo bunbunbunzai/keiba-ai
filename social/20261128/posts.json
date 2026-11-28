@@ -39,9 +39,10 @@
    "created": "2026-11-28 12:20",
    "x": "off",
    "instagram": "off",
-   "threads": "pending",
+   "threads": "off",
    "threads_text": "今日、AIが「◎が勝つ確率50%以上」と見ているレースです。\n15:30 高知2R ◎11ルビーグラス\n\nみなさんが今日狙っているレースはどこですか？\n※予想は情報提供です。馬券は20歳から。\n#競馬予想",
-   "threads_link": false
+   "threads_link": false,
+   "threads_skip": "1日の上限"
   }
  }
 }
