@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 2,
+   "name": "ミッキーダムール",
+   "time": "1:33.6",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 15,
+   "name": "フィールドノート",
+   "time": "",
+   "margin": "１",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "number": 7,
+   "name": "エラルディーク",
+   "time": "",
+   "margin": "３／４",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "4",
+   "number": 3,
+   "name": "タッセルノット",
+   "time": "",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "5",
+   "number": 9,
+   "name": "プリムツァール",
+   "time": "",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "2",
+    "yen": 220,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "2",
+    "yen": 120,
+    "pop": 1
+   },
+   {
+    "combo": "15",
+    "yen": 130,
+    "pop": 2
+   },
+   {
+    "combo": "7",
+    "yen": 150,
+    "pop": 3
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-8",
+    "yen": 390,
+    "pop": 1
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "2-15",
+    "yen": 230,
+    "pop": 1
+   },
+   {
+    "combo": "2-7",
+    "yen": 340,
+    "pop": 2
+   },
+   {
+    "combo": "7-15",
+    "yen": 460,
+    "pop": 7
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "2-15",
+    "yen": 540,
+    "pop": 1
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "2-15",
+    "yen": 870,
+    "pop": 1
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "2-7-15",
+    "yen": 1170,
+    "pop": 1
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "2-15-7",
+    "yen": 3890,
+    "pop": 2
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261128",
+ "venue_code": "05",
+ "race_no": 8,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605070820261128/B5",
+ "title": "レース結果 JRA"
+}
