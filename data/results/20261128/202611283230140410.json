@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261128",
  "race_id": "202611283230140410",
- "tries": 3,
+ "tries": 4,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "ルシアージュ",
    "time": "1:57.3",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 39.2,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "ヒオウギ",
    "time": "1:57.8",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 40.0,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "サイモングリット",
    "time": "1:58.0",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 39.8,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "ヴァンロゼ",
    "time": "1:58.3",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 39.7,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "サンライズグレート",
    "time": "1:58.3",
    "margin": "アタマ",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 40.5,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "リンクアームズ",
    "time": "1:59.2",
    "margin": "５",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 41.0,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "メニー",
    "time": "1:59.5",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 41.1,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "カナデルエア",
    "time": "1:59.6",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 40.3,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "シュライバー",
    "time": "2:00.1",
    "margin": "２ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 11,
+   "last3f": 39.7,
    "popularity": null
   },
   {
@@ -176,8 +176,8 @@
    "name": "フクライキリシマ",
    "time": "2:00.3",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 42.3,
    "popularity": null
   },
   {
@@ -187,8 +187,8 @@
    "name": "デルマツリダシ",
    "time": "2:01.8",
    "margin": "８",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 10,
+   "last3f": 43.4,
    "popularity": null
   },
   {
@@ -198,8 +198,8 @@
    "name": "チェンジオブハート",
    "time": "2:03.0",
    "margin": "６",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 12,
+   "last3f": 42.6,
    "popularity": null
   }
  ]
