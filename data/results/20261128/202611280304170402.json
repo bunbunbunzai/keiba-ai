@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261128",
  "race_id": "202611280304170402",
- "tries": 2,
+ "tries": 3,
  "payouts": {
   "単勝": [
    {
@@ -69,5 +69,105 @@
    }
   ]
  },
- "rows": []
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 6,
+   "name": "フカガワハナビ",
+   "time": "2:00.3",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 4,
+   "number": 4,
+   "name": "アルバノチカラ",
+   "time": "2:10.7",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 3,
+   "number": 3,
+   "name": "ファーストヒロイン",
+   "time": "2:15.1",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 8,
+   "number": 9,
+   "name": "ショウライトモモ",
+   "time": "2:15.6",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 1,
+   "number": 1,
+   "name": "ジェイカイン",
+   "time": "2:15.8",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "キンリュウ",
+   "time": "2:17.1",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 8,
+   "name": "ジェイクリス",
+   "time": "2:19.7",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 7,
+   "number": 7,
+   "name": "アアモンドワク",
+   "time": "3:05.9",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "-",
+   "frame": 5,
+   "number": 5,
+   "name": "ショウナンボーイ",
+   "time": "-",
+   "margin": "中止",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
