@@ -1,6 +1,6 @@
 {
  "date": "20261128",
- "updated": "2026-11-28 13:26",
+ "updated": "2026-11-28 13:31",
  "types": {
   "layoff": "休み明け（90日超）",
   "rebound": "前走大敗からの巻き返し",
@@ -864,7 +864,7 @@
     "field": 10,
     "popularity": 6
    },
-   "odds": 17.4,
+   "odds": 10.7,
    "popularity": 6
   },
   {
@@ -876,7 +876,8 @@
    "number": 2,
    "name": "ジェイメーカー",
    "types": [
-    "rebound"
+    "rebound",
+    "letdown"
    ],
    "gap_days": 20,
    "last": {
@@ -885,8 +886,8 @@
     "field": 10,
     "popularity": 3
    },
-   "odds": 4.4,
-   "popularity": 2
+   "odds": 9.3,
+   "popularity": 5
   },
   {
    "race_id": "202611280304170401",
@@ -906,8 +907,8 @@
     "field": 10,
     "popularity": 9
    },
-   "odds": 32.8,
-   "popularity": 8
+   "odds": 21.5,
+   "popularity": 7
   },
   {
    "race_id": "202611280304170401",
@@ -927,8 +928,8 @@
     "field": 10,
     "popularity": 10
    },
-   "odds": 52.4,
-   "popularity": 10
+   "odds": 23.1,
+   "popularity": 8
   },
   {
    "race_id": "jra_20261128_東京_09",
