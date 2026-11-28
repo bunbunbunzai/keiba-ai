@@ -1,0 +1,188 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 3,
+   "name": "レイワブライト",
+   "time": "1:26.9",
+   "margin": "",
+   "corners": "1-1",
+   "last3f": 37.4,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "number": 8,
+   "name": "レグルステソーロ",
+   "time": "1:27.0",
+   "margin": "１／２",
+   "corners": "3-2",
+   "last3f": 37.4,
+   "popularity": 1
+  },
+  {
+   "finish": "3",
+   "number": 7,
+   "name": "パルジャニア",
+   "time": "1:27.5",
+   "margin": "３",
+   "corners": "2-2",
+   "last3f": 37.9,
+   "popularity": 9
+  },
+  {
+   "finish": "4",
+   "number": 10,
+   "name": "レムニスケート",
+   "time": "1:27.8",
+   "margin": "１ 1/2",
+   "corners": "10-10",
+   "last3f": 36.7,
+   "popularity": 10
+  },
+  {
+   "finish": "5",
+   "number": 5,
+   "name": "カルネアデス",
+   "time": "1:27.9",
+   "margin": "１／２",
+   "corners": "3-5",
+   "last3f": 37.9,
+   "popularity": 8
+  },
+  {
+   "finish": "6",
+   "number": 2,
+   "name": "ゾディアカルライト",
+   "time": "1:27.9",
+   "margin": "クビ",
+   "corners": "6-5",
+   "last3f": 37.8,
+   "popularity": 4
+  },
+  {
+   "finish": "7",
+   "number": 1,
+   "name": "アイビーチャッカリ",
+   "time": "1:28.3",
+   "margin": "２ 1/2",
+   "corners": "3-4",
+   "last3f": 38.4,
+   "popularity": 3
+  },
+  {
+   "finish": "8",
+   "number": 4,
+   "name": "メイクユーハッピー",
+   "time": "1:28.5",
+   "margin": "１ 1/4",
+   "corners": "6-5",
+   "last3f": 38.5,
+   "popularity": 5
+  },
+  {
+   "finish": "9",
+   "number": 9,
+   "name": "カーテシー",
+   "time": "1:28.7",
+   "margin": "１ 1/4",
+   "corners": "9-9",
+   "last3f": 38.1,
+   "popularity": 6
+  },
+  {
+   "finish": "10",
+   "number": 6,
+   "name": "キャラメルハート",
+   "time": "1:30.2",
+   "margin": "９",
+   "corners": "8-5",
+   "last3f": 40.2,
+   "popularity": 7
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "3",
+    "yen": 440,
+    "pop": 2
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "3",
+    "yen": 160,
+    "pop": 3
+   },
+   {
+    "combo": "8",
+    "yen": 110,
+    "pop": 1
+   },
+   {
+    "combo": "7",
+    "yen": 810,
+    "pop": 10
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-7",
+    "yen": 530,
+    "pop": 2
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-8",
+    "yen": 250,
+    "pop": 2
+   },
+   {
+    "combo": "3-7",
+    "yen": 2170,
+    "pop": 26
+   },
+   {
+    "combo": "7-8",
+    "yen": 1270,
+    "pop": 14
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-8",
+    "yen": 500,
+    "pop": 2
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "3-8",
+    "yen": 1230,
+    "pop": 5
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-7-8",
+    "yen": 5040,
+    "pop": 17
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "3-8-7",
+    "yen": 21400,
+    "pop": 64
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261128",
+ "venue_code": "05",
+ "race_no": 4,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605070420261128/E1",
+ "title": "レース結果 JRA"
+}
