@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 9,
+   "name": "ドナリー",
+   "time": "1:49.1",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "2",
+   "number": 6,
+   "name": "ウイニングレイ",
+   "time": "",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 2
+  },
+  {
+   "finish": "3",
+   "number": 13,
+   "name": "コールセレスト",
+   "time": "",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "4",
+   "number": 16,
+   "name": "オーケーパートナー",
+   "time": "",
+   "margin": "１／２",
+   "corners": "",
+   "last3f": null,
+   "popularity": 5
+  },
+  {
+   "finish": "5",
+   "number": 12,
+   "name": "ロジヴィジョン",
+   "time": "",
+   "margin": "１ 1/4",
+   "corners": "",
+   "last3f": null,
+   "popularity": 8
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "9",
+    "yen": 580,
+    "pop": 4
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "9",
+    "yen": 180,
+    "pop": 4
+   },
+   {
+    "combo": "6",
+    "yen": 140,
+    "pop": 3
+   },
+   {
+    "combo": "13",
+    "yen": 140,
+    "pop": 2
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "3-5",
+    "yen": 760,
+    "pop": 4
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "6-9",
+    "yen": 370,
+    "pop": 3
+   },
+   {
+    "combo": "9-13",
+    "yen": 630,
+    "pop": 5
+   },
+   {
+    "combo": "6-13",
+    "yen": 430,
+    "pop": 4
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "6-9",
+    "yen": 860,
+    "pop": 3
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "9-6",
+    "yen": 1830,
+    "pop": 6
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "6-9-13",
+    "yen": 1980,
+    "pop": 3
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "9-6-13",
+    "yen": 10470,
+    "pop": 22
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261128",
+ "venue_code": "05",
+ "race_no": 3,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605070320261128/2C",
+ "title": "レース結果 JRA"
+}
