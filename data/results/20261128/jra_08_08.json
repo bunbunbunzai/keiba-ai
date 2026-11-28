@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 12,
+   "name": "モンサンゴールデン",
+   "time": "1:11.8",
+   "margin": "",
+   "corners": "5-4",
+   "last3f": null,
+   "popularity": 4
+  },
+  {
+   "finish": "2",
+   "number": 3,
+   "name": "オプティモ",
+   "time": "",
+   "margin": "３",
+   "corners": "5-4",
+   "last3f": null,
+   "popularity": 8
+  },
+  {
+   "finish": "3",
+   "number": 6,
+   "name": "フェアリーライズ",
+   "time": "",
+   "margin": "ハナ",
+   "corners": "9-7",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "4",
+   "number": 9,
+   "name": "ダノンモンテローザ",
+   "time": "",
+   "margin": "１／２",
+   "corners": "12-11",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "5",
+   "number": 13,
+   "name": "レッドレベンディス",
+   "time": "",
+   "margin": "１／２",
+   "corners": "15-14",
+   "last3f": null,
+   "popularity": 6
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "12",
+    "yen": 830,
+    "pop": 4
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "12",
+    "yen": 250,
+    "pop": 3
+   },
+   {
+    "combo": "3",
+    "yen": 530,
+    "pop": 9
+   },
+   {
+    "combo": "6",
+    "yen": 350,
+    "pop": 7
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "2-7",
+    "yen": 750,
+    "pop": 3
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "3-12",
+    "yen": 1730,
+    "pop": 23
+   },
+   {
+    "combo": "6-12",
+    "yen": 1280,
+    "pop": 17
+   },
+   {
+    "combo": "3-6",
+    "yen": 2270,
+    "pop": 29
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "3-12",
+    "yen": 5400,
+    "pop": 24
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "12-3",
+    "yen": 10190,
+    "pop": 46
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "3-6-12",
+    "yen": 15110,
+    "pop": 56
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "12-3-6",
+    "yen": 83270,
+    "pop": 301
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261128",
+ "venue_code": "08",
+ "race_no": 8,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605070820261128/93",
+ "title": "レース結果 JRA"
+}
