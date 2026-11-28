@@ -2,7 +2,194 @@
  "source": "rakuten",
  "date": "20261128",
  "race_id": "202611283230140406",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 3,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "1",
+    "yen": 100
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "1-4",
+    "yen": 470
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "1",
+    "yen": 100
+   },
+   {
+    "combo": "4",
+    "yen": 180
+   },
+   {
+    "combo": "6",
+    "yen": 190
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "1-4",
+    "yen": 280
+   },
+   {
+    "combo": "1-6",
+    "yen": 220
+   },
+   {
+    "combo": "4-6",
+    "yen": 1920
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "1-4",
+    "yen": 510
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "1-4-6",
+    "yen": 1860
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "1-4-6",
+    "yen": 3750
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "1-4",
+    "yen": 430
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 1,
+   "number": 1,
+   "name": "スターチスブーケ",
+   "time": "1:31.0",
+   "margin": "",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 4,
+   "number": 4,
+   "name": "トール",
+   "time": "1:31.6",
+   "margin": "３",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 6,
+   "number": 6,
+   "name": "フランシーヌ",
+   "time": "1:31.8",
+   "margin": "１",
+   "pos4": 5,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 9,
+   "name": "スマートアクシオン",
+   "time": "1:32.0",
+   "margin": "１ １／４",
+   "pos4": 3,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 6,
+   "number": 7,
+   "name": "ミッキースワン",
+   "time": "1:32.8",
+   "margin": "４",
+   "pos4": 4,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 5,
+   "number": 5,
+   "name": "コスモサンブライト",
+   "time": "1:32.9",
+   "margin": "１／２",
+   "pos4": 5,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 8,
+   "number": 10,
+   "name": "リネンフラッシュ",
+   "time": "1:33.1",
+   "margin": "１",
+   "pos4": 8,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 8,
+   "number": 11,
+   "name": "ルミリオン",
+   "time": "1:33.3",
+   "margin": "１ １／４",
+   "pos4": 5,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 2,
+   "number": 2,
+   "name": "アトラーレ",
+   "time": "1:33.5",
+   "margin": "１",
+   "pos4": 8,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 3,
+   "number": 3,
+   "name": "ショウサンカナヲ",
+   "time": "1:33.8",
+   "margin": "１ １／２",
+   "pos4": 11,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 7,
+   "number": 8,
+   "name": "デリングシチー",
+   "time": "1:34.5",
+   "margin": "４",
+   "pos4": 10,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
