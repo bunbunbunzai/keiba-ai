@@ -2,7 +2,7 @@
  "source": "rakuten",
  "date": "20261128",
  "race_id": "202611283129110107",
- "tries": 4,
+ "tries": 6,
  "payouts": {
   "単勝": [
    {
@@ -77,8 +77,8 @@
    "name": "ペップセ",
    "time": "1:47.2",
    "margin": "",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 5,
+   "last3f": 40.2,
    "popularity": null
   },
   {
@@ -88,8 +88,8 @@
    "name": "アイアンサイズ",
    "time": "1:47.4",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 1,
+   "last3f": 41.1,
    "popularity": null
   },
   {
@@ -99,8 +99,8 @@
    "name": "ローガンパス",
    "time": "1:47.8",
    "margin": "２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 2,
+   "last3f": 41.3,
    "popularity": null
   },
   {
@@ -110,8 +110,8 @@
    "name": "ディースプレマシー",
    "time": "1:47.9",
    "margin": "１／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 4,
+   "last3f": 41.3,
    "popularity": null
   },
   {
@@ -121,8 +121,8 @@
    "name": "バイユーラン",
    "time": "1:48.2",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 40.8,
    "popularity": null
   },
   {
@@ -132,8 +132,8 @@
    "name": "マサウッドテール",
    "time": "1:48.4",
    "margin": "１",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 6,
+   "last3f": 41.8,
    "popularity": null
   },
   {
@@ -143,8 +143,8 @@
    "name": "イエデゴロゴロ",
    "time": "1:49.3",
    "margin": "４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 9,
+   "last3f": 42.0,
    "popularity": null
   },
   {
@@ -154,8 +154,8 @@
    "name": "ショウネンジダイ",
    "time": "1:49.6",
    "margin": "１ １／２",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 7,
+   "last3f": 42.9,
    "popularity": null
   },
   {
@@ -165,8 +165,8 @@
    "name": "バルミュゼット",
    "time": "1:49.7",
    "margin": "３／４",
-   "pos4": null,
-   "last3f": null,
+   "pos4": 3,
+   "last3f": 43.2,
    "popularity": null
   }
  ]
