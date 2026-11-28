@@ -22,12 +22,23 @@
   "収得賞金（障害）": "0 円"
  },
  "record": {
-  "starts": 26,
+  "starts": 27,
   "wins": 4,
   "second": 1,
   "third": 2
  },
  "runs": [
+  {
+   "date": "2026年11月21日",
+   "venue": "京都",
+   "race_name": "シトリンS",
+   "surface": "ダ",
+   "distance": 1900,
+   "field": 15,
+   "popularity": 9,
+   "finish": "7",
+   "jockey": "武 豊"
+  },
   {
    "date": "2026年10月4日",
    "venue": "京都",
@@ -318,5 +329,5 @@
  "name": "リビアングラス",
  "url": "/JRADB/accessU.html?CNAME=pw01dud002020105633/18",
  "last_card": "20261121",
- "fetched": "2026-11-20 10:33"
+ "fetched": "2026-11-28 20:58"
 }
