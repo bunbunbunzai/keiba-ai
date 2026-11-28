@@ -2,7 +2,172 @@
  "source": "rakuten",
  "date": "20261128",
  "race_id": "202611280304170407",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 4,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "5",
+    "yen": 1130
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "5-6",
+    "yen": 3490
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "5",
+    "yen": 310
+   },
+   {
+    "combo": "6",
+    "yen": 210
+   },
+   {
+    "combo": "7",
+    "yen": 160
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "5-6",
+    "yen": 670
+   },
+   {
+    "combo": "5-7",
+    "yen": 580
+   },
+   {
+    "combo": "6-7",
+    "yen": 440
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "5-6",
+    "yen": 1630
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "5-6-7",
+    "yen": 2090
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "5-6-7",
+    "yen": 15810
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "5-6",
+    "yen": 1910
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 5,
+   "number": 5,
+   "name": "ツルイコトカゼ",
+   "time": "1:50.6",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 6,
+   "number": 6,
+   "name": "スカイノチカラ",
+   "time": "1:51.0",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 7,
+   "number": 7,
+   "name": "ヤマノリュウ",
+   "time": "1:52.1",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 3,
+   "number": 3,
+   "name": "ナナイロ",
+   "time": "1:57.3",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 4,
+   "number": 4,
+   "name": "リアステンリュウ",
+   "time": "2:01.0",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 8,
+   "number": 8,
+   "name": "イノスケ",
+   "time": "2:04.3",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 1,
+   "number": 1,
+   "name": "アアモンドラヴリー",
+   "time": "2:15.5",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 2,
+   "number": 2,
+   "name": "キョウエイプラチナ",
+   "time": "2:23.0",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 9,
+   "name": "ワンパク",
+   "time": "2:38.7",
+   "margin": "",
+   "pos4": null,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
