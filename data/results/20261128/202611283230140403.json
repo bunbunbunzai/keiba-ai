@@ -2,7 +2,194 @@
  "source": "rakuten",
  "date": "20261128",
  "race_id": "202611283230140403",
- "tries": 1,
- "payouts": {},
- "rows": []
+ "tries": 2,
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "6",
+    "yen": 120
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "6-9",
+    "yen": 1630
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "6",
+    "yen": 100
+   },
+   {
+    "combo": "9",
+    "yen": 250
+   },
+   {
+    "combo": "4",
+    "yen": 150
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "6-9",
+    "yen": 540
+   },
+   {
+    "combo": "4-6",
+    "yen": 240
+   },
+   {
+    "combo": "4-9",
+    "yen": 1330
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "6-7",
+    "yen": 530
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-6-9",
+    "yen": 2040
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "6-9-4",
+    "yen": 7320
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "6-9",
+    "yen": 1080
+   }
+  ]
+ },
+ "rows": [
+  {
+   "finish": "1",
+   "frame": 6,
+   "number": 6,
+   "name": "チカマヨルキーナ",
+   "time": "1:24.0",
+   "margin": "",
+   "pos4": 5,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "2",
+   "frame": 7,
+   "number": 9,
+   "name": "カシノフレックス",
+   "time": "1:24.3",
+   "margin": "１ １／２",
+   "pos4": 1,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "3",
+   "frame": 4,
+   "number": 4,
+   "name": "ロトピリナ",
+   "time": "1:24.4",
+   "margin": "１／２",
+   "pos4": 4,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "4",
+   "frame": 7,
+   "number": 8,
+   "name": "マイネルジーニアス",
+   "time": "1:24.4",
+   "margin": "クビ",
+   "pos4": 2,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "5",
+   "frame": 1,
+   "number": 1,
+   "name": "ハクアイタワー",
+   "time": "1:24.5",
+   "margin": "１／２",
+   "pos4": 2,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "6",
+   "frame": 2,
+   "number": 2,
+   "name": "バンドネオン",
+   "time": "1:24.7",
+   "margin": "３／４",
+   "pos4": 7,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "7",
+   "frame": 3,
+   "number": 3,
+   "name": "クインズモンブラン",
+   "time": "1:25.3",
+   "margin": "３",
+   "pos4": 7,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "8",
+   "frame": 6,
+   "number": 7,
+   "name": "ダイメイノボル",
+   "time": "1:25.5",
+   "margin": "１",
+   "pos4": 6,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "9",
+   "frame": 8,
+   "number": 11,
+   "name": "バリアシオン",
+   "time": "1:26.6",
+   "margin": "６",
+   "pos4": 9,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "10",
+   "frame": 5,
+   "number": 5,
+   "name": "ベンデュガ",
+   "time": "1:26.9",
+   "margin": "１ １／２",
+   "pos4": 11,
+   "last3f": null,
+   "popularity": null
+  },
+  {
+   "finish": "11",
+   "frame": 8,
+   "number": 10,
+   "name": "リリーサンライズ",
+   "time": "1:28.5",
+   "margin": "８",
+   "pos4": 9,
+   "last3f": null,
+   "popularity": null
+  }
+ ]
 }
