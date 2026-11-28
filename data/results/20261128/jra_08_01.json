@@ -1,0 +1,248 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 15,
+   "name": "ドラゴンジョルノ",
+   "time": "1:24.5",
+   "margin": "",
+   "corners": "3-3",
+   "last3f": 36.1,
+   "popularity": 2
+  },
+  {
+   "finish": "2",
+   "number": 12,
+   "name": "センチュリースカイ",
+   "time": "1:24.5",
+   "margin": "クビ",
+   "corners": "2-2",
+   "last3f": 36.3,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "number": 4,
+   "name": "ムーンパッセ",
+   "time": "1:24.9",
+   "margin": "２ 1/2",
+   "corners": "16-10",
+   "last3f": 35.2,
+   "popularity": 7
+  },
+  {
+   "finish": "4",
+   "number": 7,
+   "name": "テーオーダーウィン",
+   "time": "1:25.1",
+   "margin": "１ 1/4",
+   "corners": "8-7",
+   "last3f": 36.4,
+   "popularity": 4
+  },
+  {
+   "finish": "5",
+   "number": 11,
+   "name": "レクリドジョワ",
+   "time": "1:25.3",
+   "margin": "１ 1/4",
+   "corners": "4-4",
+   "last3f": 36.9,
+   "popularity": 9
+  },
+  {
+   "finish": "6",
+   "number": 10,
+   "name": "エルダークローネ",
+   "time": "1:25.5",
+   "margin": "１ 1/4",
+   "corners": "1-1",
+   "last3f": 37.4,
+   "popularity": 1
+  },
+  {
+   "finish": "7",
+   "number": 13,
+   "name": "ランズエンド",
+   "time": "1:26.1",
+   "margin": "３ 1/2",
+   "corners": "7-7",
+   "last3f": 37.4,
+   "popularity": 10
+  },
+  {
+   "finish": "8",
+   "number": 14,
+   "name": "ウィザードシチー",
+   "time": "1:26.1",
+   "margin": "クビ",
+   "corners": "11-10",
+   "last3f": 36.9,
+   "popularity": 13
+  },
+  {
+   "finish": "9",
+   "number": 6,
+   "name": "モアザンヴォルト",
+   "time": "1:26.4",
+   "margin": "２",
+   "corners": "4-4",
+   "last3f": 38.0,
+   "popularity": 8
+  },
+  {
+   "finish": "10",
+   "number": 5,
+   "name": "カムトゥルー",
+   "time": "1:26.5",
+   "margin": "１／２",
+   "corners": "4-6",
+   "last3f": 37.9,
+   "popularity": 5
+  },
+  {
+   "finish": "11",
+   "number": 16,
+   "name": "ツイストリフト",
+   "time": "1:26.5",
+   "margin": "クビ",
+   "corners": "9-9",
+   "last3f": 37.5,
+   "popularity": 14
+  },
+  {
+   "finish": "12",
+   "number": 1,
+   "name": "ソリドゥス",
+   "time": "1:27.1",
+   "margin": "３ 1/2",
+   "corners": "14-16",
+   "last3f": 37.6,
+   "popularity": 6
+  },
+  {
+   "finish": "13",
+   "number": 3,
+   "name": "キタノディレク",
+   "time": "1:27.2",
+   "margin": "クビ",
+   "corners": "13-13",
+   "last3f": 37.9,
+   "popularity": 16
+  },
+  {
+   "finish": "14",
+   "number": 9,
+   "name": "ティンクルピクシー",
+   "time": "1:28.0",
+   "margin": "５",
+   "corners": "9-10",
+   "last3f": 38.9,
+   "popularity": 12
+  },
+  {
+   "finish": "15",
+   "number": 8,
+   "name": "ソーハッピー",
+   "time": "1:28.1",
+   "margin": "１／２",
+   "corners": "14-13",
+   "last3f": 38.6,
+   "popularity": 15
+  },
+  {
+   "finish": "16",
+   "number": 2,
+   "name": "ミスターキリシマ",
+   "time": "1:28.3",
+   "margin": "１",
+   "corners": "11-13",
+   "last3f": 39.1,
+   "popularity": 11
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "15",
+    "yen": 240,
+    "pop": 2
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "15",
+    "yen": 130,
+    "pop": 2
+   },
+   {
+    "combo": "12",
+    "yen": 170,
+    "pop": 3
+   },
+   {
+    "combo": "4",
+    "yen": 790,
+    "pop": 10
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "6-8",
+    "yen": 640,
+    "pop": 3
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "12-15",
+    "yen": 300,
+    "pop": 2
+   },
+   {
+    "combo": "4-15",
+    "yen": 1930,
+    "pop": 22
+   },
+   {
+    "combo": "4-12",
+    "yen": 2050,
+    "pop": 23
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "12-15",
+    "yen": 740,
+    "pop": 3
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "15-12",
+    "yen": 1060,
+    "pop": 3
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "4-12-15",
+    "yen": 7230,
+    "pop": 21
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "15-12-4",
+    "yen": 23150,
+    "pop": 66
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261128",
+ "venue_code": "08",
+ "race_no": 1,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0108202605070120261128/A0",
+ "title": "レース結果 JRA"
+}
