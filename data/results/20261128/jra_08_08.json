@@ -7,48 +7,148 @@
    "time": "1:11.8",
    "margin": "",
    "corners": "5-4",
-   "last3f": null,
+   "last3f": 35.4,
    "popularity": 4
   },
   {
    "finish": "2",
    "number": 3,
    "name": "オプティモ",
-   "time": "",
+   "time": "1:12.3",
    "margin": "３",
    "corners": "5-4",
-   "last3f": null,
+   "last3f": 35.9,
    "popularity": 8
   },
   {
    "finish": "3",
    "number": 6,
    "name": "フェアリーライズ",
-   "time": "",
+   "time": "1:12.3",
    "margin": "ハナ",
    "corners": "9-7",
-   "last3f": null,
+   "last3f": 35.6,
    "popularity": 7
   },
   {
    "finish": "4",
    "number": 9,
    "name": "ダノンモンテローザ",
-   "time": "",
+   "time": "1:12.4",
    "margin": "１／２",
    "corners": "12-11",
-   "last3f": null,
+   "last3f": 35.4,
    "popularity": 1
   },
   {
    "finish": "5",
    "number": 13,
    "name": "レッドレベンディス",
-   "time": "",
+   "time": "1:12.5",
    "margin": "１／２",
    "corners": "15-14",
-   "last3f": null,
+   "last3f": 35.3,
    "popularity": 6
+  },
+  {
+   "finish": "6",
+   "number": 5,
+   "name": "カワキタマナレア",
+   "time": "1:12.6",
+   "margin": "１",
+   "corners": "2-2",
+   "last3f": 36.5,
+   "popularity": 13
+  },
+  {
+   "finish": "7",
+   "number": 8,
+   "name": "エスカレイト",
+   "time": "1:12.7",
+   "margin": "クビ",
+   "corners": "7-7",
+   "last3f": 36.1,
+   "popularity": 9
+  },
+  {
+   "finish": "8",
+   "number": 11,
+   "name": "カナタコナタ",
+   "time": "1:12.7",
+   "margin": "クビ",
+   "corners": "3-3",
+   "last3f": 36.4,
+   "popularity": 3
+  },
+  {
+   "finish": "9",
+   "number": 7,
+   "name": "ロードヴィゴラス",
+   "time": "1:12.9",
+   "margin": "３／４",
+   "corners": "12-11",
+   "last3f": 35.9,
+   "popularity": 11
+  },
+  {
+   "finish": "10",
+   "number": 15,
+   "name": "ミサビスケッツ",
+   "time": "1:13.0",
+   "margin": "１／２",
+   "corners": "7-7",
+   "last3f": 36.3,
+   "popularity": 5
+  },
+  {
+   "finish": "11",
+   "number": 2,
+   "name": "リアルアルバ",
+   "time": "1:13.4",
+   "margin": "２ 1/2",
+   "corners": "9-7",
+   "last3f": 36.7,
+   "popularity": 2
+  },
+  {
+   "finish": "12",
+   "number": 10,
+   "name": "サヨノジャンボリー",
+   "time": "1:13.6",
+   "margin": "１ 1/2",
+   "corners": "9-11",
+   "last3f": 36.8,
+   "popularity": 14
+  },
+  {
+   "finish": "13",
+   "number": 4,
+   "name": "エコロレバン",
+   "time": "1:14.0",
+   "margin": "２",
+   "corners": "1-1",
+   "last3f": 38.1,
+   "popularity": 10
+  },
+  {
+   "finish": "14",
+   "number": 14,
+   "name": "ヒナアラレ",
+   "time": "1:14.3",
+   "margin": "２",
+   "corners": "12-14",
+   "last3f": 37.3,
+   "popularity": 15
+  },
+  {
+   "finish": "15",
+   "number": 1,
+   "name": "ウーマンズパワー",
+   "time": "1:15.0",
+   "margin": "４",
+   "corners": "3-4",
+   "last3f": 38.8,
+   "popularity": 12
   }
  ],
  "payouts": {
