@@ -1,0 +1,138 @@
+{
+ "rows": [
+  {
+   "finish": "1",
+   "number": 10,
+   "name": "エーデルゼーレ",
+   "time": "2:26.4",
+   "margin": "",
+   "corners": "",
+   "last3f": null,
+   "popularity": 1
+  },
+  {
+   "finish": "2",
+   "number": 8,
+   "name": "ヴォートセレスト",
+   "time": "",
+   "margin": "クビ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 3
+  },
+  {
+   "finish": "3",
+   "number": 16,
+   "name": "ジワタネホ",
+   "time": "",
+   "margin": "２ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 6
+  },
+  {
+   "finish": "4",
+   "number": 4,
+   "name": "マイネルアウルム",
+   "time": "",
+   "margin": "１ 1/2",
+   "corners": "",
+   "last3f": null,
+   "popularity": 7
+  },
+  {
+   "finish": "5",
+   "number": 7,
+   "name": "ピースフルマインド",
+   "time": "",
+   "margin": "ハナ",
+   "corners": "",
+   "last3f": null,
+   "popularity": 14
+  }
+ ],
+ "payouts": {
+  "単勝": [
+   {
+    "combo": "10",
+    "yen": 260,
+    "pop": 1
+   }
+  ],
+  "複勝": [
+   {
+    "combo": "10",
+    "yen": 140,
+    "pop": 2
+   },
+   {
+    "combo": "8",
+    "yen": 160,
+    "pop": 3
+   },
+   {
+    "combo": "16",
+    "yen": 350,
+    "pop": 6
+   }
+  ],
+  "枠連": [
+   {
+    "combo": "4-5",
+    "yen": 820,
+    "pop": 4
+   }
+  ],
+  "ワイド": [
+   {
+    "combo": "8-10",
+    "yen": 320,
+    "pop": 2
+   },
+   {
+    "combo": "10-16",
+    "yen": 1020,
+    "pop": 12
+   },
+   {
+    "combo": "8-16",
+    "yen": 1290,
+    "pop": 13
+   }
+  ],
+  "馬連": [
+   {
+    "combo": "8-10",
+    "yen": 590,
+    "pop": 2
+   }
+  ],
+  "馬単": [
+   {
+    "combo": "10-8",
+    "yen": 1010,
+    "pop": 2
+   }
+  ],
+  "3連複": [
+   {
+    "combo": "8-10-16",
+    "yen": 5110,
+    "pop": 15
+   }
+  ],
+  "3連単": [
+   {
+    "combo": "10-8-16",
+    "yen": 15950,
+    "pop": 38
+   }
+  ]
+ },
+ "source": "jra",
+ "date": "20261128",
+ "venue_code": "05",
+ "race_no": 12,
+ "url": "/JRADB/accessS.html?CNAME=pw01sde0105202605071220261128/C9",
+ "title": "レース結果 JRA"
+}
